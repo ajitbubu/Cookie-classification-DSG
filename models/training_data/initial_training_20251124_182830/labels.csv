@@ -1,0 +1,332 @@
+category,cookie_name,cookie_domain
+Analytics,_ga,google-analytics.com
+Analytics,_gid,google-analytics.com
+Analytics,_gat,google-analytics.com
+Analytics,_gat_gtag_UA,google-analytics.com
+Analytics,_ga_container,googletagmanager.com
+Marketing,_fbp,facebook.com
+Marketing,_fbc,facebook.com
+Marketing,fr,facebook.com
+Marketing,sb,facebook.com
+Marketing,datr,facebook.com
+Analytics,li_sugr,linkedin.com
+Analytics,AnalyticsSyncHistory,linkedin.com
+Analytics,lms_analytics,linkedin.com
+Analytics,UserMatchHistory,linkedin.com
+Analytics,_uetsid,bing.com
+Analytics,_uetvid,bing.com
+Analytics,MUID,microsoft.com
+Marketing,personalization_id,twitter.com
+Marketing,guest_id,twitter.com
+Strictly Necessary,PHPSESSID,example.com
+Strictly Necessary,session_id,example.com
+Strictly Necessary,JSESSIONID,example.com
+Strictly Necessary,csrf_token,example.com
+Strictly Necessary,auth_token,example.com
+Functional,language,example.com
+Functional,currency,example.com
+Functional,timezone,example.com
+Functional,theme,example.com
+Marketing,IDE,doubleclick.net
+Marketing,test_cookie,doubleclick.net
+Marketing,NID,google.com
+Analytics,_ga_8503,google-analytics.com
+Analytics,_gid_2221,google-analytics.com
+Analytics,_gat_3618,google-analytics.com
+Analytics,_gat_gtag_UA,google-analytics.com
+Analytics,_ga_container,googletagmanager.com
+Marketing,_fbp_7239,facebook.com
+Marketing,_fbc,facebook.com
+Marketing,fr_5460,facebook.com
+Marketing,sb_6395,facebook.com
+Marketing,datr_3789,facebook.com
+Analytics,li_sugr,linkedin.com
+Analytics,AnalyticsSyncHistory_8009,linkedin.com
+Analytics,lms_analytics,linkedin.com
+Analytics,UserMatchHistory_6927,linkedin.com
+Analytics,_uetsid_5723,bing.com
+Analytics,_uetvid_6625,bing.com
+Analytics,MUID,microsoft.com
+Marketing,personalization_id_6352,twitter.com
+Marketing,guest_id,twitter.com
+Strictly Necessary,PHPSESSID_2452,example.com
+Strictly Necessary,session_id_6405,example.com
+Strictly Necessary,JSESSIONID,example.com
+Strictly Necessary,csrf_token,example.com
+Strictly Necessary,auth_token_9667,example.com
+Functional,language_7756,example.com
+Functional,currency_9508,example.com
+Functional,timezone_6019,example.com
+Functional,theme_2811,example.com
+Marketing,IDE,doubleclick.net
+Marketing,test_cookie_6800,doubleclick.net
+Marketing,NID_2938,google.com
+Analytics,_ga,google-analytics.com
+Analytics,_gid_5171,google-analytics.com
+Analytics,_gat,google-analytics.com
+Analytics,_gat_gtag_UA_2699,google-analytics.com
+Analytics,_ga_container_6785,googletagmanager.com
+Marketing,_fbp_3239,facebook.com
+Marketing,_fbc,facebook.com
+Marketing,fr_7823,facebook.com
+Marketing,sb,facebook.com
+Marketing,datr_2069,facebook.com
+Analytics,li_sugr,linkedin.com
+Analytics,AnalyticsSyncHistory_6374,linkedin.com
+Analytics,lms_analytics,linkedin.com
+Analytics,UserMatchHistory_5721,linkedin.com
+Analytics,_uetsid,bing.com
+Analytics,_uetvid_5998,bing.com
+Analytics,MUID_8285,microsoft.com
+Marketing,personalization_id,twitter.com
+Marketing,guest_id_3304,twitter.com
+Strictly Necessary,PHPSESSID_5834,example.com
+Strictly Necessary,session_id_9361,example.com
+Strictly Necessary,JSESSIONID,example.com
+Strictly Necessary,csrf_token,example.com
+Strictly Necessary,auth_token_3093,example.com
+Functional,language,example.com
+Functional,currency_9903,example.com
+Functional,timezone,example.com
+Functional,theme,example.com
+Marketing,IDE_2954,doubleclick.net
+Marketing,test_cookie,doubleclick.net
+Marketing,NID,google.com
+Analytics,_ga_8098,google-analytics.com
+Analytics,_gid,google-analytics.com
+Analytics,_gat,google-analytics.com
+Analytics,_gat_gtag_UA_1378,google-analytics.com
+Analytics,_ga_container_6830,googletagmanager.com
+Marketing,_fbp,facebook.com
+Marketing,_fbc_7677,facebook.com
+Marketing,fr_1708,facebook.com
+Marketing,sb_1264,facebook.com
+Marketing,datr,facebook.com
+Analytics,li_sugr_1671,linkedin.com
+Analytics,AnalyticsSyncHistory,linkedin.com
+Analytics,lms_analytics_5695,linkedin.com
+Analytics,UserMatchHistory,linkedin.com
+Analytics,_uetsid_4594,bing.com
+Analytics,_uetvid,bing.com
+Analytics,MUID,microsoft.com
+Marketing,personalization_id,twitter.com
+Marketing,guest_id_3342,twitter.com
+Strictly Necessary,PHPSESSID,example.com
+Strictly Necessary,session_id,example.com
+Strictly Necessary,JSESSIONID_8457,example.com
+Strictly Necessary,csrf_token_9969,example.com
+Strictly Necessary,auth_token_8052,example.com
+Functional,language_2213,example.com
+Functional,currency,example.com
+Functional,timezone_5600,example.com
+Functional,theme_9620,example.com
+Marketing,IDE,doubleclick.net
+Marketing,test_cookie,doubleclick.net
+Marketing,NID,google.com
+Analytics,_ga,google-analytics.com
+Analytics,_gid_7086,google-analytics.com
+Analytics,_gat_2937,google-analytics.com
+Analytics,_gat_gtag_UA_8306,google-analytics.com
+Analytics,_ga_container,googletagmanager.com
+Marketing,_fbp_4395,facebook.com
+Marketing,_fbc,facebook.com
+Marketing,fr,facebook.com
+Marketing,sb_9457,facebook.com
+Marketing,datr_5612,facebook.com
+Analytics,li_sugr_1954,linkedin.com
+Analytics,AnalyticsSyncHistory,linkedin.com
+Analytics,lms_analytics_8373,linkedin.com
+Analytics,UserMatchHistory,linkedin.com
+Analytics,_uetsid,bing.com
+Analytics,_uetvid_1391,bing.com
+Analytics,MUID,microsoft.com
+Marketing,personalization_id_7826,twitter.com
+Marketing,guest_id_7633,twitter.com
+Strictly Necessary,PHPSESSID_8501,example.com
+Strictly Necessary,session_id_9686,example.com
+Strictly Necessary,JSESSIONID_6939,example.com
+Strictly Necessary,csrf_token_5686,example.com
+Strictly Necessary,auth_token,example.com
+Functional,language_3755,example.com
+Functional,currency,example.com
+Functional,timezone,example.com
+Functional,theme,example.com
+Marketing,IDE,doubleclick.net
+Marketing,test_cookie_4771,doubleclick.net
+Marketing,NID_9299,google.com
+Analytics,_ga_4968,google-analytics.com
+Analytics,_gid,google-analytics.com
+Analytics,_gat,google-analytics.com
+Analytics,_gat_gtag_UA,google-analytics.com
+Analytics,_ga_container_9132,googletagmanager.com
+Marketing,_fbp,facebook.com
+Marketing,_fbc,facebook.com
+Marketing,fr_5450,facebook.com
+Marketing,sb,facebook.com
+Marketing,datr_3153,facebook.com
+Analytics,li_sugr_6167,linkedin.com
+Analytics,AnalyticsSyncHistory_2222,linkedin.com
+Analytics,lms_analytics_6791,linkedin.com
+Analytics,UserMatchHistory,linkedin.com
+Analytics,_uetsid_6575,bing.com
+Analytics,_uetvid,bing.com
+Analytics,MUID,microsoft.com
+Marketing,personalization_id_9694,twitter.com
+Marketing,guest_id,twitter.com
+Strictly Necessary,PHPSESSID_6690,example.com
+Strictly Necessary,session_id_7707,example.com
+Strictly Necessary,JSESSIONID,example.com
+Strictly Necessary,csrf_token_5889,example.com
+Strictly Necessary,auth_token_3544,example.com
+Functional,language_2781,example.com
+Functional,currency_4579,example.com
+Functional,timezone,example.com
+Functional,theme,example.com
+Marketing,IDE_3263,doubleclick.net
+Marketing,test_cookie,doubleclick.net
+Marketing,NID_6768,google.com
+Analytics,_ga,google-analytics.com
+Analytics,_gid,google-analytics.com
+Analytics,_gat,google-analytics.com
+Analytics,_gat_gtag_UA_6871,google-analytics.com
+Analytics,_ga_container_5971,googletagmanager.com
+Marketing,_fbp,facebook.com
+Marketing,_fbc,facebook.com
+Marketing,fr,facebook.com
+Marketing,sb,facebook.com
+Marketing,datr_3683,facebook.com
+Analytics,li_sugr_1457,linkedin.com
+Analytics,AnalyticsSyncHistory,linkedin.com
+Analytics,lms_analytics_9994,linkedin.com
+Analytics,UserMatchHistory_6056,linkedin.com
+Analytics,_uetsid_3487,bing.com
+Analytics,_uetvid_5667,bing.com
+Analytics,MUID,microsoft.com
+Marketing,personalization_id_6518,twitter.com
+Marketing,guest_id,twitter.com
+Strictly Necessary,PHPSESSID,example.com
+Strictly Necessary,session_id,example.com
+Strictly Necessary,JSESSIONID_5489,example.com
+Strictly Necessary,csrf_token,example.com
+Strictly Necessary,auth_token,example.com
+Functional,language_6320,example.com
+Functional,currency_9786,example.com
+Functional,timezone_6185,example.com
+Functional,theme_3638,example.com
+Marketing,IDE_9140,doubleclick.net
+Marketing,test_cookie_6841,doubleclick.net
+Marketing,NID_7926,google.com
+Analytics,_ga_6679,google-analytics.com
+Analytics,_gid,google-analytics.com
+Analytics,_gat_9344,google-analytics.com
+Analytics,_gat_gtag_UA,google-analytics.com
+Analytics,_ga_container_7750,googletagmanager.com
+Marketing,_fbp_4882,facebook.com
+Marketing,_fbc,facebook.com
+Marketing,fr_1255,facebook.com
+Marketing,sb,facebook.com
+Marketing,datr_1844,facebook.com
+Analytics,li_sugr,linkedin.com
+Analytics,AnalyticsSyncHistory_5156,linkedin.com
+Analytics,lms_analytics,linkedin.com
+Analytics,UserMatchHistory_4342,linkedin.com
+Analytics,_uetsid,bing.com
+Analytics,_uetvid,bing.com
+Analytics,MUID,microsoft.com
+Marketing,personalization_id_8176,twitter.com
+Marketing,guest_id,twitter.com
+Strictly Necessary,PHPSESSID_2205,example.com
+Strictly Necessary,session_id,example.com
+Strictly Necessary,JSESSIONID_2630,example.com
+Strictly Necessary,csrf_token,example.com
+Strictly Necessary,auth_token_9656,example.com
+Functional,language_3491,example.com
+Functional,currency,example.com
+Functional,timezone,example.com
+Functional,theme_9378,example.com
+Marketing,IDE_5248,doubleclick.net
+Marketing,test_cookie_7441,doubleclick.net
+Marketing,NID_7190,google.com
+Analytics,_ga,google-analytics.com
+Analytics,_gid,google-analytics.com
+Analytics,_gat_9835,google-analytics.com
+Analytics,_gat_gtag_UA_4454,google-analytics.com
+Analytics,_ga_container_7761,googletagmanager.com
+Marketing,_fbp_2970,facebook.com
+Marketing,_fbc_4315,facebook.com
+Marketing,fr_7005,facebook.com
+Marketing,sb_8078,facebook.com
+Marketing,datr_5664,facebook.com
+Analytics,li_sugr_7033,linkedin.com
+Analytics,AnalyticsSyncHistory_2485,linkedin.com
+Analytics,lms_analytics_7359,linkedin.com
+Analytics,UserMatchHistory,linkedin.com
+Analytics,_uetsid_5239,bing.com
+Analytics,_uetvid_3421,bing.com
+Analytics,MUID_3440,microsoft.com
+Marketing,personalization_id,twitter.com
+Marketing,guest_id,twitter.com
+Strictly Necessary,PHPSESSID_5148,example.com
+Strictly Necessary,session_id_8134,example.com
+Strictly Necessary,JSESSIONID_3599,example.com
+Strictly Necessary,csrf_token,example.com
+Strictly Necessary,auth_token,example.com
+Functional,language,example.com
+Functional,currency_5213,example.com
+Functional,timezone,example.com
+Functional,theme_3046,example.com
+Marketing,IDE,doubleclick.net
+Marketing,test_cookie,doubleclick.net
+Marketing,NID_9602,google.com
+Analytics,_ga,google-analytics.com
+Analytics,_gid,google-analytics.com
+Analytics,_gat_1547,google-analytics.com
+Analytics,_gat_gtag_UA_1222,google-analytics.com
+Analytics,_ga_container_6173,googletagmanager.com
+Marketing,_fbp_3946,facebook.com
+Marketing,_fbc,facebook.com
+Marketing,fr_2442,facebook.com
+Marketing,sb_1440,facebook.com
+Marketing,datr,facebook.com
+Analytics,li_sugr,linkedin.com
+Analytics,AnalyticsSyncHistory_6574,linkedin.com
+Analytics,lms_analytics_5716,linkedin.com
+Analytics,UserMatchHistory_4011,linkedin.com
+Analytics,_uetsid_4251,bing.com
+Analytics,_uetvid,bing.com
+Analytics,MUID_9819,microsoft.com
+Marketing,personalization_id_1706,twitter.com
+Marketing,guest_id_1703,twitter.com
+Strictly Necessary,PHPSESSID_8455,example.com
+Strictly Necessary,session_id_7180,example.com
+Strictly Necessary,JSESSIONID,example.com
+Strictly Necessary,csrf_token,example.com
+Strictly Necessary,auth_token_8804,example.com
+Functional,language,example.com
+Functional,currency_8064,example.com
+Functional,timezone_4207,example.com
+Functional,theme,example.com
+Marketing,IDE_7265,doubleclick.net
+Marketing,test_cookie_6336,doubleclick.net
+Marketing,NID,google.com
+Analytics,_ga_3456,google-analytics.com
+Analytics,_gid_1304,google-analytics.com
+Analytics,_gat,google-analytics.com
+Analytics,_gat_gtag_UA_4866,google-analytics.com
+Analytics,_ga_container_7531,googletagmanager.com
+Marketing,_fbp_4857,facebook.com
+Marketing,_fbc,facebook.com
+Marketing,fr,facebook.com
+Marketing,sb_2106,facebook.com
+Marketing,datr,facebook.com
+Analytics,li_sugr_7231,linkedin.com
+Analytics,AnalyticsSyncHistory_4317,linkedin.com
+Analytics,lms_analytics,linkedin.com
+Analytics,UserMatchHistory,linkedin.com
+Analytics,_uetsid_3067,bing.com
+Analytics,_uetvid,bing.com
+Analytics,MUID_3480,microsoft.com
+Marketing,personalization_id,twitter.com
+Marketing,guest_id,twitter.com
+Strictly Necessary,PHPSESSID,example.com
+Strictly Necessary,session_id,example.com

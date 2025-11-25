@@ -1,0 +1,236 @@
+version: '3.8'
+
+services:
+  # Redis for caching and queue management
+  redis:
+    image: redis:7-alpine
+    container_name: cookie-scanner-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    command: redis-server --appendonly yes --maxmemory 2gb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    networks:
+      - scanner-network
+
+  # PostgreSQL for persistent storage
+  postgres:
+    image: postgres:15-alpine
+    container_name: cookie-scanner-db
+    environment:
+      POSTGRES_DB: cookie_scanner
+      POSTGRES_USER: scanner
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-scanner_password}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./backend/db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U scanner"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    networks:
+      - scanner-network
+
+  # Main API Gateway
+  api-gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: cookie-scanner-api
+    ports:
+      - "8000:8000"
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - DATABASE_URL=postgresql://scanner:${DB_PASSWORD:-scanner_password}@postgres:5432/cookie_scanner
+      - WORKER_COUNT=4
+      - MAX_CONCURRENT_PAGES=200
+      - ENABLE_CACHING=true
+    depends_on:
+      redis:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app/backend
+    networks:
+      - scanner-network
+    restart: unless-stopped
+
+  # ML Classification API Service
+  ml-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.ml-api
+    container_name: cookie-scanner-ml-api
+    ports:
+      - "8001:8000"
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=cookie_scanner
+      - DB_USER=scanner
+      - DB_PASSWORD=${DB_PASSWORD:-scanner_password}
+      - ML_SECRET_KEY=${ML_SECRET_KEY:-change-this-secret-key-in-production}
+      - ML_MODEL_VERSION=1.0.0
+      - ML_CONFIDENCE_HIGH=0.85
+      - ML_CONFIDENCE_MEDIUM=0.65
+      - ML_RATE_LIMIT_REQUESTS=100
+      - ML_RATE_LIMIT_WINDOW=60
+      - ML_CACHE_ENABLED=true
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      redis:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app/backend
+      - ./models:/app/models
+      - ml-logs:/app/logs
+    networks:
+      - scanner-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/api/v1/ml/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Scanner Worker 1 (Chromium)
+  scanner-worker-1:
+    build:
+      context: .
+      dockerfile: Dockerfile.worker
+    container_name: scanner-worker-1
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - DATABASE_URL=postgresql://scanner:${DB_PASSWORD:-scanner_password}@postgres:5432/cookie_scanner
+      - WORKER_ID=worker-1
+      - BROWSER_TYPE=chromium
+      - MAX_CONCURRENT_PAGES=100
+      - BROWSER_POOL_SIZE=10
+    depends_on:
+      - redis
+      - postgres
+    volumes:
+      - ./backend:/app/backend
+    networks:
+      - scanner-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+
+  # Scanner Worker 2 (Firefox)
+  scanner-worker-2:
+    build:
+      context: .
+      dockerfile: Dockerfile.worker
+    container_name: scanner-worker-2
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - DATABASE_URL=postgresql://scanner:${DB_PASSWORD:-scanner_password}@postgres:5432/cookie_scanner
+      - WORKER_ID=worker-2
+      - BROWSER_TYPE=firefox
+      - MAX_CONCURRENT_PAGES=100
+      - BROWSER_POOL_SIZE=10
+    depends_on:
+      - redis
+      - postgres
+    volumes:
+      - ./backend:/app/backend
+    networks:
+      - scanner-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+
+  # Scanner Worker 3 (Chromium)
+  scanner-worker-3:
+    build:
+      context: .
+      dockerfile: Dockerfile.worker
+    container_name: scanner-worker-3
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - DATABASE_URL=postgresql://scanner:${DB_PASSWORD:-scanner_password}@postgres:5432/cookie_scanner
+      - WORKER_ID=worker-3
+      - BROWSER_TYPE=chromium
+      - MAX_CONCURRENT_PAGES=100
+      - BROWSER_POOL_SIZE=10
+    depends_on:
+      - redis
+      - postgres
+    volumes:
+      - ./backend:/app/backend
+    networks:
+      - scanner-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+
+  # Frontend
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: cookie-scanner-frontend
+    ports:
+      - "5173:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - api-gateway
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+    networks:
+      - scanner-network
+    restart: unless-stopped
+
+  # Nginx Load Balancer (optional, for production)
+  nginx:
+    image: nginx:alpine
+    container_name: cookie-scanner-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - api-gateway
+      - frontend
+    networks:
+      - scanner-network
+    restart: unless-stopped
+
+volumes:
+  redis-data:
+  postgres-data:
+  ml-logs:
+
+networks:
+  scanner-network:
+    driver: bridge

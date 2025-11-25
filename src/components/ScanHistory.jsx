@@ -29,8 +29,8 @@ const ScanHistory = ({ history = [], onClearHistory, onViewScan, onDeleteScan })
     if (!previousScan) return null;
     
     return {
-      totalCookies: currentScan.totalCookies - previousScan.totalCookies,
-      requiresConsent: currentScan.requiresConsent - previousScan.requiresConsent,
+      totalCookies: (currentScan.totalCookies || 0) - (previousScan.totalCookies || 0),
+      requiresConsent: (currentScan.requiresConsent || 0) - (previousScan.requiresConsent || 0),
       thirdParty: (currentScan.thirdParty || 0) - (previousScan.thirdParty || 0)
     };
   };
@@ -368,7 +368,7 @@ const ScanHistory = ({ history = [], onClearHistory, onViewScan, onDeleteScan })
           <span className="stat-label">Avg Cookies:</span>
           <span className="stat-value">
             {sortedHistory.length > 0 
-              ? Math.round(sortedHistory.reduce((sum, s) => sum + s.totalCookies, 0) / sortedHistory.length)
+              ? Math.round(sortedHistory.reduce((sum, s) => sum + (s.totalCookies || 0), 0) / sortedHistory.length)
               : 0}
           </span>
         </div>
@@ -479,7 +479,7 @@ const ScanHistory = ({ history = [], onClearHistory, onViewScan, onDeleteScan })
                       <div className="party-breakdown">
                         <div className="party-item">
                           <span className="party-badge first-party">1st Party</span>
-                          <span className="party-count">{scan.totalCookies - (scan.thirdParty || 0)}</span>
+                          <span className="party-count">{(scan.totalCookies || 0) - (scan.thirdParty || 0)}</span>
                         </div>
                         <div className="party-item">
                           <span className="party-badge third-party">3rd Party</span>
@@ -502,7 +502,7 @@ const ScanHistory = ({ history = [], onClearHistory, onViewScan, onDeleteScan })
                     <td className="changes-cell">
                       {comparison ? (
                         <div className="changes-container">
-                          {comparison.totalCookies !== 0 && (
+                          {!isNaN(comparison.totalCookies) && comparison.totalCookies !== 0 && (
                             <div className={`change-badge ${comparison.totalCookies > 0 ? 'increase' : 'decrease'}`}>
                               <span className="change-label">Total:</span>
                               <span className="change-value">
@@ -510,7 +510,7 @@ const ScanHistory = ({ history = [], onClearHistory, onViewScan, onDeleteScan })
                               </span>
                             </div>
                           )}
-                          {comparison.requiresConsent !== 0 && (
+                          {!isNaN(comparison.requiresConsent) && comparison.requiresConsent !== 0 && (
                             <div className={`change-badge ${comparison.requiresConsent > 0 ? 'increase' : 'decrease'}`}>
                               <span className="change-label">Consent:</span>
                               <span className="change-value">
@@ -518,7 +518,7 @@ const ScanHistory = ({ history = [], onClearHistory, onViewScan, onDeleteScan })
                               </span>
                             </div>
                           )}
-                          {comparison.thirdParty !== 0 && (
+                          {!isNaN(comparison.thirdParty) && comparison.thirdParty !== 0 && (
                             <div className={`change-badge ${comparison.thirdParty > 0 ? 'increase' : 'decrease'}`}>
                               <span className="change-label">3rd Party:</span>
                               <span className="change-value">
@@ -526,7 +526,9 @@ const ScanHistory = ({ history = [], onClearHistory, onViewScan, onDeleteScan })
                               </span>
                             </div>
                           )}
-                          {comparison.totalCookies === 0 && comparison.requiresConsent === 0 && comparison.thirdParty === 0 && (
+                          {(isNaN(comparison.totalCookies) || comparison.totalCookies === 0) && 
+                           (isNaN(comparison.requiresConsent) || comparison.requiresConsent === 0) && 
+                           (isNaN(comparison.thirdParty) || comparison.thirdParty === 0) && (
                             <span className="no-change">No change</span>
                           )}
                         </div>

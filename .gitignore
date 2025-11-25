@@ -3,19 +3,46 @@ node_modules
 .pnp
 .pnp.js
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
 # Testing
 coverage
+.nyc_output
 
 # Production
 build
 dist
 
-# Misc
-.DS_Store
+# Environment variables
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Misc
+.DS_Store
+*.swp
+*.swo
+*~
+Thumbs.db
 
 # Logs
 npm-debug.log*
@@ -23,15 +50,54 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+*.log
 
 # Editor
 .vscode/*
 !.vscode/extensions.json
 .idea
-*.swp
-*.swo
-*~
+*.sublime-project
+*.sublime-workspace
 
 # Temporary files
-*.log
 .cache
+.temp
+.tmp
+
+# ML Models (if you want to exclude large model files)
+# Uncomment if models should not be committed
+# models/*.pkl
+# models/*.h5
+# models/*.pt
+# models/*.pth
+# *.model
+
+# Training data (if large datasets should be excluded)
+# training_data/*.csv
+# training_data/*.json
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Backup files
+*.bak
+*.backup
+*~

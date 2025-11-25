@@ -1,0 +1,9 @@
+# Model artifacts will be stored here
+# Structure:
+# models/
+#   v1.0.0/
+#     model.pkl
+#     features.json
+#     metadata.json
+#   v1.1.0/
+#     ...

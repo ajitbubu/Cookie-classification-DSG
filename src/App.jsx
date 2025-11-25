@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Shield, Cookie, AlertCircle, Download, RefreshCw, Eye, EyeOff, Globe, Clock, Calendar, Play, Pause, Trash2, Bookmark, Copy, Check, Zap, Layers, X } from 'lucide-react';
+import { Shield, Cookie, AlertCircle, Download, RefreshCw, Eye, EyeOff, Globe, Clock, Calendar, Play, Pause, Trash2, Bookmark, Copy, Check, Zap, Layers, X, GitBranch } from 'lucide-react';
 import CookieScanner from './lib/CookieScanner';
 import DeepScanner from './lib/DeepScanner';
 import { generateBookmarklet, copyToClipboard } from './lib/utils';
 import ScanHistory from './components/ScanHistory';
+import DomainScanHistory from './components/DomainScanHistory';
+import CategoryDropdown from './components/CategoryDropdown';
 import './App.css';
 
 function App() {
@@ -12,15 +14,16 @@ function App() {
   const [scanning, setScanning] = useState(false);
   const [filterCategory, setFilterCategory] = useState('all');
   const [filterRegulation, setFilterRegulation] = useState('all');
-  const [complianceReport, setComplianceReport] = useState(null);
 
   // URL Scanning
   const [targetUrl, setTargetUrl] = useState('');
   const [scanMode, setScanMode] = useState('quick');
 
-  // Deep Scan
+  // Deep Scan - Industry Grade Configuration
   const [deepScanner] = useState(() => new DeepScanner());
-  const [maxPages, setMaxPages] = useState(10);
+  const [maxPages, setMaxPages] = useState(100);  // Default to 100 pages
+  const [concurrency, setConcurrency] = useState(20);  // Default to 20 concurrent
+  const [maxDepth, setMaxDepth] = useState(500);  // Default depth 500
   const [deepScanProgress, setDeepScanProgress] = useState(null);
   const [isDeepScanning, setIsDeepScanning] = useState(false);
 
@@ -50,13 +53,31 @@ function App() {
     }
   });
   const [nextScanTime, setNextScanTime] = useState(null);
+  const [timeUntilNextScan, setTimeUntilNextScan] = useState(null);
   const scheduleTimerRef = useRef(null);
+  const countdownTimerRef = useRef(null);
+
+  // Domain-based scan history
+  const [domainHistory, setDomainHistory] = useState(() => {
+    try {
+      const saved = localStorage.getItem('domainScanHistory');
+      if (!saved) return {};
+      const parsed = JSON.parse(saved);
+      return typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
+    } catch (e) {
+      console.error('Failed to load domain history:', e);
+      return {};
+    }
+  });
 
   // Bookmarklet
   const [bookmarkletCopied, setBookmarkletCopied] = useState(false);
 
   // Comparison notification
   const [comparisonNotification, setComparisonNotification] = useState(null);
+
+  // Results view tab
+  const [resultsTab, setResultsTab] = useState('cookies'); // cookies, categories, vendors, compliance
 
   const handleCopyBookmarklet = async () => {
     try {
@@ -68,45 +89,209 @@ function App() {
     }
   };
 
-  const handleQuickScan = (url = null) => {
+  // ML Classification function
+  const classifyCookiesWithML = async (cookies) => {
+    console.log('Starting ML classification for', cookies.length, 'cookies');
+    
+    try {
+      const requestBody = {
+        cookies: cookies.map(cookie => ({
+          id: `${cookie.name}-${cookie.domain}`,
+          name: cookie.name,
+          domain: cookie.domain,
+          path: cookie.path || '/',
+          expiry_days: cookie.expiry_days,
+          http_only: cookie.httpOnly || false,
+          secure: cookie.secure || false,
+          same_site: cookie.sameSite,
+          value_sample: cookie.value ? cookie.value.substring(0, 50) : '',
+        })),
+        options: {
+          return_explanation: false,
+          find_similar: false,
+        }
+      };
+      
+      console.log('Calling ML API at http://localhost:8001/api/v1/ml/classify');
+      console.log('Request body:', JSON.stringify(requestBody).substring(0, 500));
+      
+      const response = await fetch('http://localhost:8001/api/v1/ml/classify', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestBody)
+      });
+
+      console.log('ML API response status:', response.status);
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log('ML API returned', data.classifications.length, 'classifications');
+        console.log('First classification:', data.classifications[0]);
+        return data.classifications;
+      } else {
+        const errorText = await response.text();
+        console.error('ML API returned error:', response.status, response.statusText, errorText);
+      }
+    } catch (error) {
+      console.error('ML classification API call failed:', error);
+      return null;
+      // Return mock data for demonstration
+      /*return cookies.map(cookie => {
+        // Generate mock ML classification based on cookie name patterns
+        let predicted_category = 'Unknown';
+        let confidence_score = 0.5;
+        let confidence_level = 'Low';
+        
+        const name = cookie.name.toLowerCase();
+        
+        if (name.includes('_ga') || name.includes('analytics') || name.includes('_gid')) {
+          predicted_category = 'Analytics';
+          confidence_score = 0.92;
+          confidence_level = 'High';
+        } else if (name.includes('_fb') || name.includes('ads') || name.includes('marketing')) {
+          predicted_category = 'Marketing';
+          confidence_score = 0.88;
+          confidence_level = 'High';
+        } else if (name.includes('session') || name.includes('csrf') || name.includes('auth')) {
+          predicted_category = 'Strictly Necessary';
+          confidence_score = 0.95;
+          confidence_level = 'High';
+        } else if (name.includes('pref') || name.includes('lang') || name.includes('theme')) {
+          predicted_category = 'Functional';
+          confidence_score = 0.78;
+          confidence_level = 'Medium';
+        } else {
+          // Random confidence for unknown
+          confidence_score = 0.45 + Math.random() * 0.3;
+          confidence_level = confidence_score >= 0.65 ? 'Medium' : 'Low';
+        }
+        
+        return {
+          cookie_id: `${cookie.name}-${cookie.domain}`,
+          predicted_category,
+          confidence_score,
+          confidence_level,
+          auto_classified: confidence_score >= 0.85,
+          requires_review: confidence_score < 0.85,
+        };
+      });*/
+    }
+    return null;
+  };
+
+  const handleQuickScan = async (url = null) => {
+    const scanStartTime = Date.now();
     setScanning(true);
     setDeepScanProgress(null);
 
-    setTimeout(() => {
-      const results = scanner.scan();
-      const scannedUrl = url || window.location.href;
+    // Use async/await properly instead of setTimeout
+    await new Promise(resolve => setTimeout(resolve, 500));
+    
+    const results = scanner.scan();
+    const scannedUrl = url || window.location.href;
 
-      // Extract domain from the scanned URL
-      let domain;
-      try {
-        domain = new URL(scannedUrl).hostname;
-      } catch (e) {
-        domain = window.location.hostname;
+    // Extract domain from the scanned URL
+    let domain;
+    try {
+      domain = new URL(scannedUrl).hostname;
+    } catch (e) {
+      domain = window.location.hostname;
+    }
+
+    // Calculate scan duration
+    const scanEndTime = Date.now();
+    const scanDuration = scanEndTime - scanStartTime;
+
+    const enhancedResults = {
+      ...results,
+      domain: domain,
+      scannedUrl: scannedUrl,
+      scanType: 'quick',
+      scanDuration: scanDuration
+    };
+
+    setScanResult(enhancedResults);
+    addToHistory(enhancedResults);
+    setScanning(false);
+
+    // Classify cookies with ML in the background
+    if (results.cookies && results.cookies.length > 0) {
+      console.log('Classifying', results.cookies.length, 'cookies with ML...');
+      const mlClassifications = await classifyCookiesWithML(results.cookies);
+      console.log('ML classifications received:', mlClassifications);
+      
+      if (mlClassifications) {
+        const updatedCookies = results.cookies.map((cookie, idx) => {
+          const mlData = mlClassifications[idx];
+          
+          // Valid categories that can be trusted from website
+          const validCategories = ['Strictly Necessary', 'Analytics', 'Marketing', 'Functional', 'Social Media'];
+          
+          // Check if cookie has a valid category from the website
+          const hasWebsiteCategory = cookie.category && validCategories.includes(cookie.category);
+          
+          // Check if ML predicted a valid category (not Unknown)
+          const mlPredictedValid = mlData?.predicted_category && 
+            mlData.predicted_category !== 'Unknown' &&
+            validCategories.includes(mlData.predicted_category);
+          
+          if (hasWebsiteCategory) {
+            // Use website category with 100% confidence
+            return {
+              ...cookie,
+              mlClassification: cookie.category,
+              mlConfidence: 1.0,
+              mlConfidenceLevel: 'High',
+              websiteProvided: true
+            };
+          } else if (mlPredictedValid) {
+            // Use ML prediction if it's valid
+            return {
+              ...cookie,
+              mlClassification: mlData.predicted_category,
+              mlConfidence: mlData.confidence_score,
+              mlConfidenceLevel: mlData.confidence_level,
+              websiteProvided: false
+            };
+          } else {
+            // Both are invalid/unknown - show as unclassified with low confidence
+            return {
+              ...cookie,
+              mlClassification: 'Unclassified',
+              mlConfidence: 0.0,
+              mlConfidenceLevel: 'Low',
+              websiteProvided: false
+            };
+          }
+        });
+        
+        console.log('Updated cookies with ML data:', updatedCookies[0]);
+        
+        const updatedResults = {
+          ...enhancedResults,
+          cookies: updatedCookies
+        };
+        
+        setScanResult(updatedResults);
       }
-
-      const enhancedResults = {
-        ...results,
-        domain: domain, // Override with actual scanned domain
-        scannedUrl: scannedUrl,
-        scanType: 'quick'
-      };
-
-      setScanResult(enhancedResults);
-      const compliance = scanner.generateComplianceReport(enhancedResults);
-      setComplianceReport(compliance);
-      addToHistory(enhancedResults);
-      setScanning(false);
-    }, 500);
+    }
   };
 
   const handleDeepScan = async (url = null) => {
+    const scanStartTime = Date.now();
     setIsDeepScanning(true);
     setScanning(true);
     setDeepScanProgress({ current: 0, total: maxPages, status: 'starting' });
 
     try {
       const targetUrl = url || window.location.href;
-      const deepScannerInstance = new DeepScanner({ maxPages });
+      const deepScannerInstance = new DeepScanner({
+        maxPages,
+        concurrency,
+        maxDepth  // Pass maxDepth to backend
+      });
 
       const results = await deepScannerInstance.deepScan(
         targetUrl,
@@ -124,17 +309,82 @@ function App() {
         domain = window.location.hostname;
       }
 
+      // Calculate scan duration
+      const scanEndTime = Date.now();
+      const scanDuration = scanEndTime - scanStartTime;
+
       const enhancedResults = {
         ...results,
         domain: domain, // Override with actual scanned domain
         scannedUrl: targetUrl,
-        scanType: 'deep'
+        scanType: 'deep',
+        scanDuration: scanDuration
       };
 
       setScanResult(enhancedResults);
-      const compliance = scanner.generateComplianceReport(enhancedResults);
-      setComplianceReport(compliance);
       addToHistory(enhancedResults);
+
+      // Classify cookies with ML in the background
+      if (results.cookies && results.cookies.length > 0) {
+        console.log('Classifying', results.cookies.length, 'cookies with ML...');
+        const mlClassifications = await classifyCookiesWithML(results.cookies);
+        console.log('ML classifications received:', mlClassifications);
+        
+        if (mlClassifications) {
+          const updatedCookies = results.cookies.map((cookie, idx) => {
+            const mlData = mlClassifications[idx];
+            
+            // Valid categories that can be trusted from website
+            const validCategories = ['Strictly Necessary', 'Analytics', 'Marketing', 'Functional', 'Social Media'];
+            
+            // Check if cookie has a valid category from the website
+            const hasWebsiteCategory = cookie.category && validCategories.includes(cookie.category);
+            
+            // Check if ML predicted a valid category (not Unknown)
+            const mlPredictedValid = mlData?.predicted_category && 
+              mlData.predicted_category !== 'Unknown' &&
+              validCategories.includes(mlData.predicted_category);
+            
+            if (hasWebsiteCategory) {
+              // Use website category with 100% confidence
+              return {
+                ...cookie,
+                mlClassification: cookie.category,
+                mlConfidence: 1.0,
+                mlConfidenceLevel: 'High',
+                websiteProvided: true
+              };
+            } else if (mlPredictedValid) {
+              // Use ML prediction if it's valid
+              return {
+                ...cookie,
+                mlClassification: mlData.predicted_category,
+                mlConfidence: mlData.confidence_score,
+                mlConfidenceLevel: mlData.confidence_level,
+                websiteProvided: false
+              };
+            } else {
+              // Both are invalid/unknown - show as unclassified with low confidence
+              return {
+                ...cookie,
+                mlClassification: 'Unclassified',
+                mlConfidence: 0.0,
+                mlConfidenceLevel: 'Low',
+                websiteProvided: false
+              };
+            }
+          });
+          
+          console.log('Updated cookies with ML data:', updatedCookies[0]);
+          
+          const updatedResults = {
+            ...enhancedResults,
+            cookies: updatedCookies
+          };
+          
+          setScanResult(updatedResults);
+        }
+      }
     } catch (error) {
       console.error('Deep scan failed:', error);
       alert('Deep scan failed: ' + error.message);
@@ -153,13 +403,123 @@ function App() {
 
     try {
       new URL(targetUrl);
+      // Always use deep scan for remote URLs since quick scan only works on current page
       if (scanMode === 'deep') {
         handleDeepScan(targetUrl);
       } else {
-        handleQuickScan(targetUrl);
+        // For quick scan with URL, use backend with single page scan
+        handleQuickScanRemote(targetUrl);
       }
     } catch (e) {
       alert('Please enter a valid URL (e.g., https://example.com)');
+    }
+  };
+
+  const handleQuickScanRemote = async (url) => {
+    const scanStartTime = Date.now();
+    setScanning(true);
+    setDeepScanProgress(null);
+
+    try {
+      // Use backend API for remote URL scanning
+      const response = await fetch('http://localhost:8001/api/scan', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          url: url,
+          scanType: 'quick',
+          maxPages: 1,
+          concurrency: 1,
+          maxDepth: 1
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error(`Scan failed: ${response.statusText}`);
+      }
+
+      const results = await response.json();
+
+      // Calculate scan duration
+      const scanEndTime = Date.now();
+      const scanDuration = scanEndTime - scanStartTime;
+
+      const enhancedResults = {
+        ...results,
+        scanDuration: scanDuration
+      };
+
+      setScanResult(enhancedResults);
+      addToHistory(enhancedResults);
+      setScanning(false);
+
+      // Classify cookies with ML in the background
+      if (results.cookies && results.cookies.length > 0) {
+        console.log('Classifying', results.cookies.length, 'cookies with ML...');
+        const mlClassifications = await classifyCookiesWithML(results.cookies);
+        console.log('ML classifications received:', mlClassifications);
+        
+        if (mlClassifications) {
+          const updatedCookies = results.cookies.map((cookie, idx) => {
+            const mlData = mlClassifications[idx];
+            
+            // Valid categories that can be trusted from website
+            const validCategories = ['Strictly Necessary', 'Analytics', 'Marketing', 'Functional', 'Social Media'];
+            
+            // Check if cookie has a valid category from the website
+            const hasWebsiteCategory = cookie.category && validCategories.includes(cookie.category);
+            
+            // Check if ML predicted a valid category (not Unknown)
+            const mlPredictedValid = mlData?.predicted_category && 
+              mlData.predicted_category !== 'Unknown' &&
+              validCategories.includes(mlData.predicted_category);
+            
+            if (hasWebsiteCategory) {
+              // Use website category with 100% confidence
+              return {
+                ...cookie,
+                mlClassification: cookie.category,
+                mlConfidence: 1.0,
+                mlConfidenceLevel: 'High',
+                websiteProvided: true
+              };
+            } else if (mlPredictedValid) {
+              // Use ML prediction if it's valid
+              return {
+                ...cookie,
+                mlClassification: mlData.predicted_category,
+                mlConfidence: mlData.confidence_score,
+                mlConfidenceLevel: mlData.confidence_level,
+                websiteProvided: false
+              };
+            } else {
+              // Both are invalid/unknown - show as unclassified with low confidence
+              return {
+                ...cookie,
+                mlClassification: 'Unclassified',
+                mlConfidence: 0.0,
+                mlConfidenceLevel: 'Low',
+                websiteProvided: false
+              };
+            }
+          });
+          
+          console.log('Updated cookies with ML data:', updatedCookies[0]);
+          
+          const updatedResults = {
+            ...enhancedResults,
+            cookies: updatedCookies
+          };
+          
+          setScanResult(updatedResults);
+        }
+      }
+    } catch (error) {
+      console.error('Quick scan failed:', error);
+      alert('Quick scan failed: ' + error.message);
+      setScanning(false);
     }
   };
 
@@ -177,9 +537,9 @@ function App() {
     });
 
     const differences = {
-      totalCookies: newResults.totalCount - previousScan.totalCookies,
-      requiresConsent: newResults.statistics.requiresConsent - previousScan.requiresConsent,
-      thirdParty: newResults.statistics.thirdParty - (previousScan.thirdParty || 0),
+      totalCookies: (newResults.totalCount || 0) - (previousScan.totalCookies || 0),
+      requiresConsent: (newResults.statistics?.requiresConsent || 0) - (previousScan.requiresConsent || 0),
+      thirdParty: (newResults.statistics?.thirdParty || 0) - (previousScan.thirdParty || 0),
       categories: {},
       types: {},
       newCookies: [],
@@ -279,8 +639,26 @@ function App() {
       gdprRisk: results.statistics.requiresConsent > 0 ? 'HIGH' : 'LOW',
       ccpaRisk: results.cookies.some(c => c.category === 'Marketing') ? 'HIGH' : results.cookies.some(c => c.category === 'Analytics') ? 'MEDIUM' : 'LOW',
       dpdpRisk: results.statistics.requiresConsent > 0 ? 'HIGH' : 'LOW',
+      scanType: results.scanType || 'quick',
       fullResults: cleanResults // Store cleaned results for detailed view
     };
+
+    // Add to domain-based history
+    setDomainHistory(prev => {
+      const domain = results.domain;
+      const updated = {
+        ...prev,
+        [domain]: [historyEntry, ...(prev[domain] || [])]
+      };
+      
+      try {
+        localStorage.setItem('domainScanHistory', JSON.stringify(updated));
+      } catch (e) {
+        console.error('Failed to save domain history:', e);
+      }
+      
+      return updated;
+    });
 
     setScanHistory(prev => {
       // Find previous scan for the same domain (most recent one)
@@ -348,6 +726,41 @@ function App() {
     };
     return scheduleInterval * multipliers[scheduleUnit];
   };
+  
+  const formatCountdown = (ms) => {
+    if (!ms || ms <= 0) return '0s';
+    
+    const seconds = Math.floor(ms / 1000);
+    const minutes = Math.floor(seconds / 60);
+    const hours = Math.floor(minutes / 60);
+    const days = Math.floor(hours / 24);
+    
+    if (days > 0) {
+      return `${days}d ${hours % 24}h ${minutes % 60}m`;
+    } else if (hours > 0) {
+      return `${hours}h ${minutes % 60}m ${seconds % 60}s`;
+    } else if (minutes > 0) {
+      return `${minutes}m ${seconds % 60}s`;
+    } else {
+      return `${seconds}s`;
+    }
+  };
+
+  const formatScanDuration = (ms) => {
+    if (!ms || ms <= 0) return '0s';
+    
+    const seconds = Math.floor(ms / 1000);
+    const minutes = Math.floor(seconds / 60);
+    
+    if (minutes > 0) {
+      const remainingSeconds = seconds % 60;
+      return remainingSeconds > 0 ? `${minutes}m ${remainingSeconds}s` : `${minutes}m`;
+    } else if (seconds > 0) {
+      return `${seconds}s`;
+    } else {
+      return `${ms}ms`;
+    }
+  };
 
   const startScheduledScanning = () => {
     setScheduleEnabled(true);
@@ -358,6 +771,21 @@ function App() {
     if (scheduleTimerRef.current) {
       clearInterval(scheduleTimerRef.current);
     }
+    
+    if (countdownTimerRef.current) {
+      clearInterval(countdownTimerRef.current);
+    }
+
+    // Update countdown every second
+    countdownTimerRef.current = setInterval(() => {
+      const now = Date.now();
+      const timeLeft = nextScan.getTime() - now;
+      if (timeLeft > 0) {
+        setTimeUntilNextScan(timeLeft);
+      } else {
+        setTimeUntilNextScan(0);
+      }
+    }, 1000);
 
     scheduleTimerRef.current = setInterval(() => {
       handleQuickScan();
@@ -369,10 +797,16 @@ function App() {
   const stopScheduledScanning = () => {
     setScheduleEnabled(false);
     setNextScanTime(null);
+    setTimeUntilNextScan(null);
 
     if (scheduleTimerRef.current) {
       clearInterval(scheduleTimerRef.current);
       scheduleTimerRef.current = null;
+    }
+    
+    if (countdownTimerRef.current) {
+      clearInterval(countdownTimerRef.current);
+      countdownTimerRef.current = null;
     }
   };
 
@@ -403,11 +837,56 @@ function App() {
   const viewScan = (scan) => {
     if (scan.fullResults) {
       setScanResult(scan.fullResults);
-      const compliance = scanner.generateComplianceReport(scan.fullResults);
-      setComplianceReport(compliance);
       // Scroll to top to show results
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+  };
+
+  // Domain history functions
+  const deleteScanFromDomain = (scanId) => {
+    setDomainHistory(prev => {
+      const updated = { ...prev };
+      
+      // Find and remove the scan from its domain
+      for (const domain in updated) {
+        updated[domain] = updated[domain].filter(scan => scan.id !== scanId);
+        // Remove domain if no scans left
+        if (updated[domain].length === 0) {
+          delete updated[domain];
+        }
+      }
+      
+      try {
+        localStorage.setItem('domainScanHistory', JSON.stringify(updated));
+      } catch (e) {
+        console.error('Failed to update domain history:', e);
+      }
+      
+      return updated;
+    });
+    
+    // Also remove from regular history
+    deleteScan(scanId);
+  };
+
+  const deleteDomain = (domain) => {
+    setDomainHistory(prev => {
+      const updated = { ...prev };
+      const scansToDelete = updated[domain] || [];
+      
+      // Remove from regular history too
+      scansToDelete.forEach(scan => deleteScan(scan.id));
+      
+      delete updated[domain];
+      
+      try {
+        localStorage.setItem('domainScanHistory', JSON.stringify(updated));
+      } catch (e) {
+        console.error('Failed to update domain history:', e);
+      }
+      
+      return updated;
+    });
   };
 
   useEffect(() => {
@@ -474,8 +953,11 @@ function App() {
       <header className="header">
         <div className="header-content">
           <div className="logo-container">
-            <Shield className="logo-icon" />
-            <span className="logo-text">Data Safeguard</span>
+            <img 
+              src="https://cdn.prod.website-files.com/646e363f9c29e4860c52c82e/665f4b9f47a7740de833d1c2_Final%20Data%20Safeguard%20Logo.svg" 
+              alt="Data Safeguard" 
+              className="logo-image"
+            />
           </div>
         </div>
       </header>
@@ -604,231 +1086,182 @@ function App() {
 
         <div className="content-grid">
           <div className="main-column">
-            <section className="scan-controls">
-              <div className="scan-controls-header">
-                <h2>Scan Configuration</h2>
-                <button
-                  onClick={() => scanMode === 'deep' ? handleDeepScan() : handleQuickScan()}
-                  disabled={scanning}
-                  className="btn btn-primary btn-scan-now"
-                >
-                  <RefreshCw className={`icon ${scanning ? 'spinning' : ''}`} />
-                  {scanning ? (scanMode === 'deep' ? 'Deep Scanning...' : 'Scanning...') : 'Scan Now'}
-                </button>
-              </div>
-
-              <div className="scan-mode-tabs">
-                <button
-                  className={`tab ${scanMode === 'quick' ? 'active' : ''}`}
-                  onClick={() => setScanMode('quick')}
-                  disabled={scanning}
-                >
-                  <Zap className="icon" />
-                  Quick Scan
-                </button>
-                <button
-                  className={`tab ${scanMode === 'deep' ? 'active' : ''}`}
-                  onClick={() => setScanMode('deep')}
-                  disabled={scanning}
-                >
-                  <Layers className="icon" />
-                  Deep Scan
-                </button>
-                <button
-                  className={`tab ${scanMode === 'schedule' ? 'active' : ''}`}
-                  onClick={() => setScanMode('schedule')}
-                  disabled={scanning}
-                >
-                  <Clock className="icon" />
-                  Scheduled Scan
-                </button>
-              </div>
-
-              {scanMode === 'quick' && (
-                <div className="scan-panel">
-                  <div className="scan-info-box">
-                    <Zap className="info-icon" />
-                    <div className="scan-info-content">
-                      <h3>Quick Scan</h3>
-                      <p>Instantly scans cookies on the current page only. Fast and efficient for immediate compliance checks.</p>
-                    </div>
-                  </div>
-
-                  <div className="url-input-group">
-                    <input
-                      type="text"
-                      placeholder="Enter website URL (e.g., https://example.com) or leave empty for current page"
-                      value={targetUrl}
-                      onChange={(e) => setTargetUrl(e.target.value)}
-                      className="url-input"
-                      onKeyPress={(e) => e.key === 'Enter' && !scanning && (targetUrl ? handleUrlScan() : handleQuickScan())}
-                      disabled={scanning}
-                    />
-                    <button
-                      onClick={() => targetUrl ? handleUrlScan() : handleQuickScan()}
-                      className="btn btn-primary"
-                      disabled={scanning}
-                    >
-                      <Zap className="icon" />
-                      {scanning ? 'Scanning...' : 'Quick Scan'}
-                    </button>
-                  </div>
-
-                  <div className="current-domain-info">
-                    <Globe className="icon" />
-                    <div>
-                      <p className="domain-label">{targetUrl ? 'Target Domain' : 'Current Domain'}</p>
-                      <p className="domain-value">
-                        {targetUrl ? (() => {
-                          try {
-                            return new URL(targetUrl).hostname;
-                          } catch (e) {
-                            return 'Invalid URL';
-                          }
-                        })() : window.location.hostname}
-                      </p>
-                    </div>
-                  </div>
+            <section className="scan-controls-compact">
+              <div className="scan-compact-wrapper">
+                <div className="scan-mode-selector">
+                  <button
+                    className={`mode-btn ${scanMode === 'quick' ? 'active' : ''}`}
+                    onClick={() => setScanMode('quick')}
+                    disabled={scanning}
+                  >
+                    <Zap size={16} />
+                    <span>Quick</span>
+                  </button>
+                  <button
+                    className={`mode-btn ${scanMode === 'deep' ? 'active' : ''}`}
+                    onClick={() => setScanMode('deep')}
+                    disabled={scanning}
+                  >
+                    <Layers size={16} />
+                    <span>Deep</span>
+                  </button>
+                  <button
+                    className={`mode-btn ${scanMode === 'schedule' ? 'active' : ''}`}
+                    onClick={() => setScanMode('schedule')}
+                    disabled={scanning}
+                  >
+                    <Clock size={16} />
+                    <span>Schedule</span>
+                  </button>
                 </div>
-              )}
 
-              {scanMode === 'deep' && (
-                <div className="scan-panel">
-                  <div className="scan-info-box deep-scan">
-                    <Layers className="info-icon" />
-                    <div className="scan-info-content">
-                      <h3>Deep Scan</h3>
-                      <p>Crawls multiple pages on the website to discover all cookies across different sections. Provides comprehensive coverage.</p>
-                    </div>
+                <div className="scan-input-row">
+                  <input
+                    type="text"
+                    placeholder={scanMode === 'quick' ? 'Enter URL or leave empty for current page' : 'Enter website URL (e.g., https://example.com)'}
+                    value={targetUrl}
+                    onChange={(e) => setTargetUrl(e.target.value)}
+                    className="scan-url-input"
+                    onKeyPress={(e) => e.key === 'Enter' && !scanning && handleUrlScan()}
+                    disabled={scanning}
+                  />
+                  
+                  {scanMode === 'deep' && (
+                    <input
+                      type="number"
+                      placeholder="Pages"
+                      min="1"
+                      max="20000"
+                      value={maxPages}
+                      onChange={(e) => setMaxPages(parseInt(e.target.value) || 1)}
+                      disabled={scanning}
+                      className="scan-pages-input"
+                      title="Maximum pages to scan"
+                    />
+                  )}
+                  
+                  <button
+                    onClick={() => scanMode === 'deep' ? handleUrlScan() : (targetUrl ? handleUrlScan() : handleQuickScan())}
+                    disabled={scanning}
+                    className="btn-scan-compact"
+                  >
+                    <RefreshCw className={`icon ${scanning ? 'spinning' : ''}`} size={18} />
+                    {scanning ? 'Scanning...' : 'Scan'}
+                  </button>
+                </div>
+
+                {!scanning && !targetUrl && scanMode === 'quick' && (
+                  <div className="scan-hint">
+                    <Globe size={12} />
+                    <span>Current: {window.location.hostname}</span>
                   </div>
+                )}
 
-                  <div className="deep-scan-config">
-                    <div className="pages-config-card">
-                      <div className="pages-config-header">
-                        <Layers className="config-icon" />
-                        <div>
-                          <label htmlFor="maxPages">Pages to Scan</label>
-                          <p className="config-description">Select how many pages to crawl (1-50)</p>
-                        </div>
-                      </div>
-                      <div className="pages-config-body">
-                        <input
-                          type="range"
-                          id="maxPages"
-                          min="1"
-                          max="50"
-                          value={maxPages}
-                          onChange={(e) => setMaxPages(parseInt(e.target.value))}
-                          className="pages-slider"
-                          disabled={scanning}
-                        />
-                        <div className="pages-value-display">
-                          <span className="pages-number">{maxPages}</span>
-                          <span className="pages-label">page{maxPages !== 1 ? 's' : ''}</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="url-input-group">
+                {scanMode === 'schedule' && (
+                  <div className="schedule-compact">
+                    <div className="schedule-inputs-row">
+                      <span className="schedule-label">Every</span>
                       <input
-                        type="text"
-                        placeholder="Enter website URL (e.g., https://example.com)"
-                        value={targetUrl}
-                        onChange={(e) => setTargetUrl(e.target.value)}
-                        className="url-input"
-                        onKeyPress={(e) => e.key === 'Enter' && !scanning && handleUrlScan()}
-                        disabled={scanning}
+                        type="number"
+                        min="1"
+                        max="100"
+                        value={scheduleInterval}
+                        onChange={(e) => setScheduleInterval(parseInt(e.target.value) || 1)}
+                        className="schedule-number-input"
+                        disabled={scheduleEnabled}
                       />
-                      <button
-                        onClick={handleUrlScan}
-                        className="btn btn-primary"
-                        disabled={scanning}
+                      <select
+                        value={scheduleUnit}
+                        onChange={(e) => setScheduleUnit(e.target.value)}
+                        className="schedule-unit-select"
+                        disabled={scheduleEnabled}
                       >
-                        <Layers className="icon" />
-                        {isDeepScanning ? 'Scanning...' : 'Start Deep Scan'}
-                      </button>
-                    </div>
-                  </div>
-
-                  {deepScanProgress && (
-                    <div className="deep-scan-progress">
-                      <div className="progress-header">
-                        <span className="progress-label">Scanning Progress</span>
-                        <span className="progress-count">
-                          {deepScanProgress.current} / {deepScanProgress.total} pages
-                        </span>
-                      </div>
-                      <div className="progress-bar">
-                        <div
-                          className="progress-fill"
-                          style={{ width: `${(deepScanProgress.current / deepScanProgress.total) * 100}%` }}
-                        />
-                      </div>
-                      {deepScanProgress.currentUrl && (
-                        <div className="progress-current-url">
-                          Currently scanning: <code>{deepScanProgress.currentUrl}</code>
-                        </div>
+                        <option value="minutes">Minute(s)</option>
+                        <option value="hourly">Hour(s)</option>
+                        <option value="daily">Day(s)</option>
+                        <option value="weekly">Week(s)</option>
+                        <option value="monthly">Month(s)</option>
+                      </select>
+                      {!scheduleEnabled ? (
+                        <button onClick={startScheduledScanning} className="btn-schedule-action start">
+                          <Play size={16} />
+                          Start
+                        </button>
+                      ) : (
+                        <button onClick={stopScheduledScanning} className="btn-schedule-action stop">
+                          <Pause size={16} />
+                          Stop
+                        </button>
                       )}
+                    </div>
+                    {scheduleEnabled && nextScanTime && (
+                      <div className="schedule-next-scan">
+                        <Clock size={12} />
+                        <div className="schedule-countdown-info">
+                          <span className="countdown-label">Next scan in:</span>
+                          <span className="countdown-timer">{formatCountdown(timeUntilNextScan)}</span>
+                          <span className="countdown-date">({nextScanTime.toLocaleString()})</span>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              {deepScanProgress && (
+                    <div className="audit-progress-slim">
+                      <div className="audit-slim-header">
+                        <div className="audit-slim-status">
+                          <div className="status-indicator"></div>
+                          <span className="status-text">Auto-refreshing</span>
+                        </div>
+                        <div className="audit-slim-stats">
+                          <div className="stat-item">
+                            <span className="stat-label">Scan Duration per Page:</span>
+                            <span className="stat-value">{deepScanProgress.avgTimePerPage || '0.5 sec'}</span>
+                          </div>
+                          <div className="stat-item">
+                            <span className="stat-label">Scan Duration:</span>
+                            <span className="stat-value">{deepScanProgress.totalDuration || '0 min, 0 sec'}</span>
+                          </div>
+                          <div className="stat-item">
+                            <span className="stat-label">Pages scanned:</span>
+                            <span className="stat-value-large">{deepScanProgress.current}</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="audit-slim-content">
+                        <h3 className="audit-slim-title">
+                          {deepScanProgress.status === 'complete' 
+                            ? 'Congrats, your audit is complete - here are the results' 
+                            : 'Congrats, your audit is underway - here are the preliminary results'}
+                        </h3>
+                        <p className="audit-slim-subtitle">
+                          Digging into the tags - they're telling quite a story.
+                        </p>
+                      </div>
+
+                      <div className="audit-slim-progress">
+                        <div className="progress-info">
+                          <span className="progress-label">Scanning Pages</span>
+                          <span className="progress-count">{deepScanProgress.current} / {deepScanProgress.total}</span>
+                        </div>
+                        <div className="progress-bar-track">
+                          <div 
+                            className="progress-bar-fill"
+                            style={{ width: `${(deepScanProgress.current / deepScanProgress.total) * 100}%` }}
+                          >
+                            <div className="progress-indicator-dot"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   )}
 
-                  <div className="deep-scan-features">
-                    <div className="features-header">
-                      <Layers className="features-icon" />
-                      <h4>Deep Scan Features</h4>
-                    </div>
-                    <div className="features-grid">
-                      <div className="feature-item">
-                        <div className="feature-icon-wrapper">
-                          <Globe className="feature-icon" />
-                        </div>
-                        <div className="feature-content">
-                          <h5>Multi-Page Scanning</h5>
-                          <p>Scans multiple pages on the website</p>
-                        </div>
-                      </div>
-                      <div className="feature-item">
-                        <div className="feature-icon-wrapper">
-                          <Cookie className="feature-icon" />
-                        </div>
-                        <div className="feature-content">
-                          <h5>Cross-Section Discovery</h5>
-                          <p>Discovers cookies across different sections</p>
-                        </div>
-                      </div>
-                      <div className="feature-item">
-                        <div className="feature-icon-wrapper">
-                          <Eye className="feature-icon" />
-                        </div>
-                        <div className="feature-content">
-                          <h5>Unique Cookie Detection</h5>
-                          <p>Identifies cookies unique to specific pages</p>
-                        </div>
-                      </div>
-                      <div className="feature-item">
-                        <div className="feature-icon-wrapper">
-                          <Shield className="feature-icon" />
-                        </div>
-                        <div className="feature-content">
-                          <h5>Comprehensive Coverage</h5>
-                          <p>Provides complete cookie coverage</p>
-                        </div>
-                      </div>
-                      <div className="feature-item">
-                        <div className="feature-icon-wrapper">
-                          <Layers className="feature-icon" />
-                        </div>
-                        <div className="feature-content">
-                          <h5>Page-Level Tracking</h5>
-                          <p>Shows which cookies appear on which pages</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
+            </section>
 
-              {scanMode === 'bookmarklet' && (
+            {scanMode === 'bookmarklet' && (
                 <div className="scan-panel">
                   <div className="url-input-group">
                     <input
@@ -914,373 +1347,405 @@ function App() {
                 </div>
               )}
 
-              {scanMode === 'schedule' && (
-                <div className="scan-panel">
-                  <div className="scan-info-box schedule-scan">
-                    <Clock className="info-icon" />
-                    <div className="scan-info-content">
-                      <h3>Scheduled Scan</h3>
-                      <p>Automatically scans the current page at regular intervals. Perfect for monitoring cookie changes over time.</p>
-                    </div>
-                  </div>
 
-                  <div className="url-input-group">
-                    <input
-                      type="text"
-                      placeholder="Enter website URL (e.g., https://example.com) or leave empty for current page"
-                      value={targetUrl}
-                      onChange={(e) => setTargetUrl(e.target.value)}
-                      className="url-input"
-                      disabled={scheduleEnabled}
-                    />
-                  </div>
-
-                  <div className="scheduled-url-info">
-                    <Globe className="icon" />
-                    <div>
-                      <p className="domain-label">Scheduled URL</p>
-                      <p className="domain-value">
-                        {targetUrl ? (() => {
-                          try {
-                            return new URL(targetUrl).href;
-                          } catch (e) {
-                            return targetUrl || 'Invalid URL';
-                          }
-                        })() : window.location.href}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="schedule-controls-grid">
-                    <div className="schedule-config-card">
-                      <div className="schedule-config-header">
-                        <Clock className="config-icon" />
-                        <div>
-                          <label>Scan Frequency</label>
-                          <p className="config-description">Set how often to automatically scan</p>
-                        </div>
-                      </div>
-
-                      <div className="schedule-inputs">
-                        <div className="schedule-input-wrapper">
-                          <label htmlFor="scheduleInterval">Every</label>
-                          <input
-                            type="number"
-                            id="scheduleInterval"
-                            min="1"
-                            max="100"
-                            value={scheduleInterval}
-                            onChange={(e) => setScheduleInterval(parseInt(e.target.value) || 1)}
-                            className="schedule-input"
-                            disabled={scheduleEnabled}
-                          />
-                        </div>
-
-                        <div className="schedule-unit-wrapper">
-                          <label htmlFor="scheduleUnit">Unit</label>
-                          <select
-                            id="scheduleUnit"
-                            value={scheduleUnit}
-                            onChange={(e) => setScheduleUnit(e.target.value)}
-                            className="schedule-select"
-                            disabled={scheduleEnabled}
-                          >
-                            <option value="minutes">Minute(s)</option>
-                            <option value="hourly">Hour(s)</option>
-                            <option value="daily">Day(s)</option>
-                            <option value="weekly">Week(s)</option>
-                            <option value="monthly">Month(s)</option>
-                          </select>
-                        </div>
-                      </div>
-
-                      <div className="schedule-preview">
-                        <span className="preview-label">Frequency:</span>
-                        <span className="preview-value">
-                          Every {scheduleInterval} {scheduleUnit === 'hourly' ? 'hour' : scheduleUnit === 'daily' ? 'day' : scheduleUnit === 'weekly' ? 'week' : scheduleUnit === 'monthly' ? 'month' : 'minute'}{scheduleInterval !== 1 ? 's' : ''}
-                        </span>
-                      </div>
-                    </div>
-
-                    <div className="schedule-action-card">
-                      <div className="action-card-content">
-                        <div className="action-icon-wrapper">
-                          {scheduleEnabled ? <Pause className="action-icon" /> : <Play className="action-icon" />}
-                        </div>
-                        <div className="action-info">
-                          <h4>{scheduleEnabled ? 'Schedule Active' : 'Ready to Schedule'}</h4>
-                          <p>{scheduleEnabled ? 'Automatic scans are running' : 'Start automated scanning'}</p>
-                        </div>
-                      </div>
-                      {!scheduleEnabled ? (
-                        <button onClick={startScheduledScanning} className="btn btn-success btn-block">
-                          <Play className="icon" />
-                          Start Schedule
-                        </button>
-                      ) : (
-                        <button onClick={stopScheduledScanning} className="btn btn-danger btn-block">
-                          <Pause className="icon" />
-                          Stop Schedule
-                        </button>
-                      )}
-                    </div>
-                  </div>
-
-                  {scheduleEnabled && nextScanTime && (
-                    <div className="schedule-status">
-                      <Calendar className="icon" />
-                      <div>
-                        <p className="status-label">Next Scan Scheduled</p>
-                        <p className="status-value">{nextScanTime.toLocaleString()}</p>
-                      </div>
-                    </div>
-                  )}
-
-                  {scanResult && scheduleEnabled && (
-                    <div className="schedule-results-preview">
-                      <div className="preview-header">
-                        <Cookie className="icon" />
-                        <h4>Latest Scan Results</h4>
-                      </div>
-                      <div className="preview-stats">
-                        <div className="preview-stat">
-                          <span className="stat-label">Domain:</span>
-                          <span className="stat-value">{scanResult.domain}</span>
-                        </div>
-                        <div className="preview-stat">
-                          <span className="stat-label">Total Cookies:</span>
-                          <span className="stat-value highlight">{scanResult.totalCount}</span>
-                        </div>
-                        <div className="preview-stat">
-                          <span className="stat-label">Requires Consent:</span>
-                          <span className={`stat-value ${scanResult.statistics.requiresConsent > 0 ? 'warning' : 'success'}`}>
-                            {scanResult.statistics.requiresConsent}
-                          </span>
-                        </div>
-                        <div className="preview-stat">
-                          <span className="stat-label">Third Party:</span>
-                          <span className={`stat-value ${scanResult.statistics.thirdParty > 0 ? 'warning' : 'success'}`}>
-                            {scanResult.statistics.thirdParty}
-                          </span>
-                        </div>
-                        <div className="preview-stat">
-                          <span className="stat-label">Last Scanned:</span>
-                          <span className="stat-value">{new Date(scanResult.scannedAt).toLocaleTimeString()}</span>
-                        </div>
-                      </div>
-                      <p className="preview-note">
-                        <AlertCircle size={14} />
-                        Scroll down to see detailed scan results and compliance analysis
-                      </p>
-                    </div>
-                  )}
-                </div>
-              )}
-            </section>
 
             {scanResult && (
               <>
-                <section className="stats-section">
-                  <div className="section-header-with-badge">
-                    <h2>Cookie Summary & Regulation Risk</h2>
-                    <div className="scan-type-badges">
-                      <div className={`scan-type-badge ${scanResult.scanType === 'quick' ? 'quick' : scanResult.scanType === 'deep' ? 'deep' : 'scheduled'}`}>
-                        {scanResult.scanType === 'quick' && <Zap size={16} />}
-                        {scanResult.scanType === 'deep' && <Layers size={16} />}
-                        {!scanResult.scanType && <Clock size={16} />}
-                        <span>{scanResult.scanType === 'deep' ? 'Deep Scan' : scanResult.scanType === 'quick' ? 'Quick Scan' : 'Scheduled Scan'}</span>
-                      </div>
-                      <div className="scan-info-badge">
-                        <Globe size={14} />
-                        <span>{scanResult.domain}</span>
-                      </div>
-                      <div className="scan-info-badge">
-                        <Clock size={14} />
-                        <span>{new Date(scanResult.scannedAt).toLocaleString()}</span>
-                      </div>
+                {/* Slim Results Header */}
+                <section className="results-header-slim">
+                  <div className="results-title-row">
+                    <h2 className="results-title">
+                      {scanning ? 'Scan in progress - here are the preliminary results' : 'Scan complete - here are your results'}
+                    </h2>
+                  </div>
+                  
+                  <div className="results-meta-row">
+                    <span className="meta-item">
+                      <span className="meta-label">Domain:</span>
+                      <span className="meta-value">{scanResult.domain}</span>
+                    </span>
+                    <span className="meta-item">
+                      <span className="meta-label">Scanned:</span>
+                      <span className="meta-value">{new Date(scanResult.scannedAt).toLocaleString()}</span>
+                    </span>
+                    <span className="meta-item">
+                      <span className="meta-label">Scan Type:</span>
+                      <span className="meta-value">{scanResult.scanType === 'deep' ? 'Deep Scan' : scanResult.scanType === 'quick' ? 'Quick Scan' : 'Scheduled Scan'}</span>
+                    </span>
+                    {scanResult.scanType === 'deep' && scanResult.pageResults && (
+                      <span className="meta-item">
+                        <span className="meta-label">Pages Scanned:</span>
+                        <span className="meta-value">{scanResult.pageResults.length}</span>
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Slim Stats Grid */}
+                  <div className="results-stats-grid">
+                    <div className="stat-card-slim">
+                      <span className="stat-card-label">TOTAL COOKIES</span>
+                      <span className="stat-card-value">{scanResult.totalCount || scanResult.cookies?.length || 0}</span>
                     </div>
-                  </div>
-                  <div className="stats-grid">
-                    <StatCard label="Total Cookies" value={scanResult.totalCount} color="blue" />
-                    <StatCard label="Require Consent" value={scanResult.statistics.requiresConsent} color="orange" />
-                    <StatCard label="Third Party" value={scanResult.statistics.thirdParty} color="red" />
-
-                    <RegulationRiskCard
-                      regulation="GDPR"
-                      risk={scanResult.statistics.requiresConsent > 0 ? 'HIGH' : 'LOW'}
-                      count={scanResult.statistics.requiresConsent}
-                    />
-                    <RegulationRiskCard
-                      regulation="CCPA"
-                      risk={scanResult.cookies.some(c => c.category === 'Marketing') ? 'HIGH' : 'LOW'}
-                      count={scanResult.cookies.filter(c => c.category === 'Marketing').length}
-                    />
-                    <RegulationRiskCard
-                      regulation="DPDP"
-                      risk={scanResult.statistics.requiresConsent > 0 ? 'HIGH' : 'LOW'}
-                      count={scanResult.statistics.requiresConsent}
-                    />
-                  </div>
-
-                  {/* Categories Breakdown */}
-                  <div className="breakdown-section">
-                    <h3 className="breakdown-title">
-                      <Layers className="icon" size={20} />
-                      Cookie Categories
-                    </h3>
-                    <div className="breakdown-grid">
-                      {Object.entries(scanResult.statistics.byCategory).map(([category, count]) => (
-                        <div key={category} className={`breakdown-card category-${category.toLowerCase().replace(/\s+/g, '-')}`}>
-                          <div className="breakdown-header">
-                            <span className="breakdown-name">{category}</span>
-                            <span className="breakdown-count">{count}</span>
-                          </div>
-                          <div className="breakdown-bar">
-                            <div
-                              className="breakdown-fill"
-                              style={{ width: `${(count / scanResult.totalCount) * 100}%` }}
-                            />
-                          </div>
-                          <div className="breakdown-percentage">
-                            {Math.round((count / scanResult.totalCount) * 100)}% of total
-                          </div>
-                        </div>
-                      ))}
+                    <div className="stat-card-slim">
+                      <span className="stat-card-label">CATEGORIES</span>
+                      <span className="stat-card-value">{Object.keys(scanResult.statistics?.byCategory || {}).length}</span>
                     </div>
-                  </div>
-
-                  {/* Cookie Types & Party Breakdown */}
-                  <div className="breakdown-section">
-                    <h3 className="breakdown-title">
-                      <Cookie className="icon" size={20} />
-                      Cookie Types & Origin
-                    </h3>
-                    <div className="breakdown-grid-two">
-                      {/* Cookie Types */}
-                      <div className="breakdown-group">
-                        <h4 className="breakdown-subtitle">By Type</h4>
-                        <div className="breakdown-items">
-                          {Object.entries(scanResult.statistics.byType).map(([type, count]) => (
-                            <div key={type} className="breakdown-item">
-                              <div className="item-header">
-                                <span className={`item-badge type-${type.toLowerCase()}`}>{type}</span>
-                                <span className="item-count">{count}</span>
-                              </div>
-                              <div className="item-bar">
-                                <div
-                                  className={`item-fill type-${type.toLowerCase()}`}
-                                  style={{ width: `${(count / scanResult.totalCount) * 100}%` }}
-                                />
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-
-                      {/* Party Type */}
-                      <div className="breakdown-group">
-                        <h4 className="breakdown-subtitle">By Origin</h4>
-                        <div className="breakdown-items">
-                          <div className="breakdown-item">
-                            <div className="item-header">
-                              <span className="item-badge party-first">First Party</span>
-                              <span className="item-count">{scanResult.totalCount - scanResult.statistics.thirdParty}</span>
-                            </div>
-                            <div className="item-bar">
-                              <div
-                                className="item-fill party-first"
-                                style={{ width: `${((scanResult.totalCount - scanResult.statistics.thirdParty) / scanResult.totalCount) * 100}%` }}
-                              />
-                            </div>
-                          </div>
-                          <div className="breakdown-item">
-                            <div className="item-header">
-                              <span className="item-badge party-third">Third Party</span>
-                              <span className="item-count">{scanResult.statistics.thirdParty}</span>
-                            </div>
-                            <div className="item-bar">
-                              <div
-                                className="item-fill party-third"
-                                style={{ width: `${(scanResult.statistics.thirdParty / scanResult.totalCount) * 100}%` }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div className="stat-card-slim">
+                      <span className="stat-card-label">THIRD PARTY</span>
+                      <span className="stat-card-value">{scanResult.statistics?.thirdParty || 0}</span>
                     </div>
-                  </div>
-                </section>
-
-                <section className="table-section">
-                  <div className="table-header">
-                    <h2>Cookie Details & Regulation Analysis</h2>
-                    <div className="table-actions">
-                      <select
-                        value={filterCategory}
-                        onChange={(e) => setFilterCategory(e.target.value)}
-                        className="filter-select"
-                      >
-                        {categories.map(cat => (
-                          <option key={cat} value={cat}>
-                            {cat === 'all' ? 'All Categories' : cat}
-                          </option>
-                        ))}
-                      </select>
-
-                      <select
-                        value={filterRegulation}
-                        onChange={(e) => setFilterRegulation(e.target.value)}
-                        className="filter-select"
-                      >
-                        <option value="all">All Regulations</option>
-                        <option value="GDPR">GDPR Risk</option>
-                        <option value="CCPA">CCPA Risk</option>
-                        <option value="DPDP">DPDP Risk</option>
-                      </select>
-
-                      <button onClick={() => handleExport('json')} className="btn btn-secondary">
-                        <Download className="icon" />
-                        JSON
-                      </button>
-                      <button onClick={() => handleExport('csv')} className="btn btn-secondary">
-                        <Download className="icon" />
-                        CSV
-                      </button>
+                    <div className="stat-card-slim">
+                      <span className="stat-card-label">REQUIRE CONSENT</span>
+                      <span className="stat-card-value">{scanResult.statistics?.requiresConsent || 0}</span>
                     </div>
-                  </div>
-
-                  <div className="table-container">
-                    <table className="cookie-table">
-                      <thead>
-                        <tr>
-                          <th>Cookie Name</th>
-                          <th>Domain</th>
-                          <th>Category</th>
-                          <th>Type</th>
-                          <th>Regulation Risks</th>
-                          <th>Purpose</th>
-                          <th>Value</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {filteredCookies.map((cookie, index) => (
-                          <CookieRowEnhanced
-                            key={index}
-                            cookie={cookie}
-                            getRegulationRisk={getRegulationRisk}
-                            filterRegulation={filterRegulation}
-                          />
-                        ))}
-                      </tbody>
-                    </table>
-                    {filteredCookies.length === 0 && (
-                      <div className="empty-state">
-                        <Cookie className="empty-icon" />
-                        <p>No cookies found matching the selected filters</p>
+                    {scanResult.scanDuration && (
+                      <div className="stat-card-slim">
+                        <span className="stat-card-label">TIME TAKEN</span>
+                        <span className="stat-card-value">{formatScanDuration(scanResult.scanDuration)}</span>
                       </div>
                     )}
                   </div>
                 </section>
+
+                {/* Tabbed Data Section */}
+                <section className="audit-data-section">
+                  <div className="audit-tabs">
+                    <button
+                      className={`audit-tab ${resultsTab === 'cookies' ? 'active' : ''}`}
+                      onClick={() => setResultsTab('cookies')}
+                    >
+                      <Cookie size={18} />
+                      <span className="tab-label">COOKIES</span>
+                      <span className="tab-count">{scanResult.totalCount || scanResult.cookies?.length || 0}</span>
+                    </button>
+                    <button
+                      className={`audit-tab ${resultsTab === 'categories' ? 'active' : ''}`}
+                      onClick={() => setResultsTab('categories')}
+                    >
+                      <Layers size={18} />
+                      <span className="tab-label">CATEGORIES</span>
+                      <span className="tab-count">{Object.keys(scanResult.statistics?.byCategory || {}).length}</span>
+                    </button>
+                    {scanResult.scanType === 'deep' && scanResult.pageResults && (
+                      <button
+                        className={`audit-tab ${resultsTab === 'pages' ? 'active' : ''}`}
+                        onClick={() => setResultsTab('pages')}
+                      >
+                        <Globe size={18} />
+                        <span className="tab-label">PAGES</span>
+                        <span className="tab-count">{scanResult.pageResults.length}</span>
+                      </button>
+                    )}
+                    <button
+                      className={`audit-tab ${resultsTab === 'vendors' ? 'active' : ''}`}
+                      onClick={() => setResultsTab('vendors')}
+                    >
+                      <Globe size={18} />
+                      <span className="tab-label">VENDORS</span>
+                      <span className="tab-count">{new Set((scanResult.cookies || []).map(c => c.domain)).size}</span>
+                    </button>
+                  </div>
+
+                  {/* Cookies Tab */}
+                  {resultsTab === 'cookies' && (
+                    <div className="audit-table-container">
+                      <table className="audit-table">
+                        <thead>
+                          <tr>
+                            <th className="col-icon"></th>
+                            <th className="col-name">COOKIE NAME</th>
+                            <th className="col-vendor">DOMAIN</th>
+                            <th className="col-category">CATEGORY</th>
+                            <th className="col-ml-classification">ML CLASSIFICATION</th>
+                            <th className="col-confidence">CONFIDENCE</th>
+                            <th className="col-type">TYPE</th>
+                            <th className="col-consent">CONSENT</th>
+                            <th className="col-party">PARTY</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {scanResult.cookies.map((cookie, idx) => (
+                            <tr key={idx} className="audit-table-row">
+                              <td className="col-icon">
+                                <Cookie size={16} className="cookie-icon" />
+                              </td>
+                              <td className="col-name">
+                                <span className="cookie-name-text">{cookie.name}</span>
+                              </td>
+                              <td className="col-vendor">{cookie.domain}</td>
+                              <td className="col-category">
+                                <CategoryDropdown
+                                  currentCategory={cookie.category}
+                                  cookieName={cookie.name}
+                                  cookieDomain={cookie.domain}
+                                  scanId={scanResult.scannedAt || Date.now().toString()}
+                                  onCategoryChange={(name, domain, newCategory) => {
+                                    // Update the cookie in the scan result
+                                    const updatedCookies = scanResult.cookies.map(c => {
+                                      if (c.name === name && c.domain === domain) {
+                                        return { ...c, category: newCategory };
+                                      }
+                                      return c;
+                                    });
+                                    setScanResult({ ...scanResult, cookies: updatedCookies });
+                                  }}
+                                />
+                              </td>
+                              <td className="col-ml-classification">
+                                {cookie.mlClassification ? (
+                                  <span className={`ml-badge ml-${cookie.mlClassification.toLowerCase().replace(/\s+/g, '-')}`}>
+                                    {cookie.mlClassification}
+                                  </span>
+                                ) : (
+                                  <span className="ml-badge ml-pending">Analyzing...</span>
+                                )}
+                              </td>
+                              <td className="col-confidence">
+                                {cookie.mlConfidence !== undefined ? (
+                                  <div className="confidence-display">
+                                    <span className={`confidence-badge confidence-${cookie.mlConfidenceLevel?.toLowerCase() || 'low'}`}>
+                                      {(cookie.mlConfidence * 100).toFixed(0)}%
+                                    </span>
+                                    <span className="confidence-level">{cookie.mlConfidenceLevel || 'Low'}</span>
+                                  </div>
+                                ) : (
+                                  <span className="confidence-badge confidence-pending">--</span>
+                                )}
+                              </td>
+                              <td className="col-type">
+                                <span className="type-badge">{cookie.type}</span>
+                              </td>
+                              <td className="col-consent">
+                                {cookie.requiresConsent ? (
+                                  <span className="consent-yes">Required</span>
+                                ) : (
+                                  <span className="consent-no">Not Required</span>
+                                )}
+                              </td>
+                              <td className="col-party">
+                                {cookie.isThirdParty ? (
+                                  <span className="party-third">3rd Party</span>
+                                ) : (
+                                  <span className="party-first">1st Party</span>
+                                )}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                      <div className="audit-table-footer">
+                        <span>Total Rows: {scanResult.totalCount}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Categories Tab */}
+                  {resultsTab === 'categories' && (
+                    <div className="audit-table-container">
+                      <table className="audit-table">
+                        <thead>
+                          <tr>
+                            <th className="col-icon"></th>
+                            <th className="col-category-name">CATEGORY</th>
+                            <th className="col-count">TOTAL COOKIES</th>
+                            <th className="col-consent">REQUIRE CONSENT</th>
+                            <th className="col-party">THIRD PARTY</th>
+                            <th className="col-percentage">PERCENTAGE</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {Object.entries(scanResult.statistics.byCategory).map(([category, count]) => {
+                            const categoryCookies = scanResult.cookies.filter(c => c.category === category);
+                            const consentCount = categoryCookies.filter(c => c.requiresConsent).length;
+                            const thirdPartyCount = categoryCookies.filter(c => c.isThirdParty).length;
+                            const percentage = Math.round((count / scanResult.totalCount) * 100);
+
+                            return (
+                              <tr key={category} className="audit-table-row">
+                                <td className="col-icon">
+                                  <Layers size={16} className="category-icon" />
+                                </td>
+                                <td className="col-category-name">
+                                  <span className={`category-badge category-${category.toLowerCase().replace(/\s+/g, '-')}`}>
+                                    {category}
+                                  </span>
+                                </td>
+                                <td className="col-count">
+                                  <span className="count-value">{count}</span>
+                                </td>
+                                <td className="col-consent">
+                                  <span className="count-value">{consentCount}</span>
+                                </td>
+                                <td className="col-party">
+                                  <span className="count-value">{thirdPartyCount}</span>
+                                </td>
+                                <td className="col-percentage">
+                                  <div className="percentage-bar-container">
+                                    <div className="percentage-bar" style={{ width: `${percentage}%` }}></div>
+                                  </div>
+                                  <span className="percentage-text">{percentage}%</span>
+                                </td>
+                              </tr>
+                            );
+                          })}
+                        </tbody>
+                      </table>
+                      <div className="audit-table-footer">
+                        <span>Total Rows: {Object.keys(scanResult.statistics.byCategory).length}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Pages Tab */}
+                  {resultsTab === 'pages' && scanResult.pageResults && (
+                    <div className="audit-table-container">
+                      <table className="audit-table">
+                        <thead>
+                          <tr>
+                            <th className="col-icon"></th>
+                            <th className="col-page-url">PAGE URL</th>
+                            <th className="col-count">COOKIES</th>
+                            <th className="col-initiators">INITIATORS</th>
+                            <th className="col-duration">DURATION</th>
+                            <th className="col-secure">SECURE</th>
+                            <th className="col-httponly">HTTPONLY</th>
+                            <th className="col-method">METHOD</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {scanResult.pageResults.map((page, idx) => (
+                            <tr key={idx} className="audit-table-row">
+                              <td className="col-icon">
+                                <Globe size={16} className="page-icon" />
+                              </td>
+                              <td className="col-page-url">
+                                <a href={page.url} target="_blank" rel="noopener noreferrer" className="page-url-link">
+                                  {page.url}
+                                </a>
+                              </td>
+                              <td className="col-count">
+                                <span className="count-value">{page.cookieCount || page.cookies?.length || 0}</span>
+                              </td>
+                              <td className="col-initiators">
+                                <span className="count-value">{page.initiators?.length || 0}</span>
+                              </td>
+                              <td className="col-duration">
+                                <span className="duration-value">{page.duration || 'N/A'}</span>
+                              </td>
+                              <td className="col-secure">
+                                <span className={page.cookies?.some(c => c.secure) ? 'status-yes' : 'status-no'}>
+                                  {page.cookies?.filter(c => c.secure).length || 0}
+                                </span>
+                              </td>
+                              <td className="col-httponly">
+                                <span className={page.cookies?.some(c => c.httpOnly) ? 'status-yes' : 'status-no'}>
+                                  {page.cookies?.filter(c => c.httpOnly).length || 0}
+                                </span>
+                              </td>
+                              <td className="col-method">
+                                <span className="method-badge">{page.method || 'Page Load'}</span>
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                      <div className="audit-table-footer">
+                        <span>Total Pages: {scanResult.pageResults.length}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Vendors Tab */}
+                  {resultsTab === 'vendors' && (
+                    <div className="audit-table-container">
+                      <table className="audit-table">
+                        <thead>
+                          <tr>
+                            <th className="col-icon"></th>
+                            <th className="col-vendor-name">DOMAIN/VENDOR</th>
+                            <th className="col-count">TOTAL COOKIES</th>
+                            <th className="col-category">MAIN CATEGORY</th>
+                            <th className="col-party">PARTY TYPE</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {Array.from(new Set(scanResult.cookies.map(c => c.domain))).map(domain => {
+                            const domainCookies = scanResult.cookies.filter(c => c.domain === domain);
+                            const mainCategory = domainCookies.reduce((acc, c) => {
+                              acc[c.category] = (acc[c.category] || 0) + 1;
+                              return acc;
+                            }, {});
+                            const topCategory = Object.entries(mainCategory).sort((a, b) => b[1] - a[1])[0][0];
+                            const isThirdParty = domainCookies[0].isThirdParty;
+
+                            return (
+                              <tr key={domain} className="audit-table-row">
+                                <td className="col-icon">
+                                  <Globe size={16} className="vendor-icon" />
+                                </td>
+                                <td className="col-vendor-name">
+                                  <span className="vendor-name-text">{domain}</span>
+                                </td>
+                                <td className="col-count">
+                                  <span className="count-value">{domainCookies.length}</span>
+                                </td>
+                                <td className="col-category">
+                                  <span className={`category-badge category-${topCategory.toLowerCase().replace(/\s+/g, '-')}`}>
+                                    {topCategory}
+                                  </span>
+                                </td>
+                                <td className="col-party">
+                                  {isThirdParty ? (
+                                    <span className="party-third">3rd Party</span>
+                                  ) : (
+                                    <span className="party-first">1st Party</span>
+                                  )}
+                                </td>
+                              </tr>
+                            );
+                          })}
+                        </tbody>
+                      </table>
+                      <div className="audit-table-footer">
+                        <span>Total Rows: {new Set(scanResult.cookies.map(c => c.domain)).size}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Compliance Tab */}
+                  {resultsTab === 'compliance' && (
+                    <div className="audit-table-container">
+                      <div className="stats-grid">
+                        <RegulationRiskCard
+                          regulation="GDPR"
+                          risk={scanResult.statistics.requiresConsent > 0 ? 'HIGH' : 'LOW'}
+                          count={scanResult.statistics.requiresConsent}
+                        />
+                        <RegulationRiskCard
+                          regulation="CCPA"
+                          risk={scanResult.cookies.some(c => c.category === 'Marketing') ? 'HIGH' : 'LOW'}
+                          count={scanResult.cookies.filter(c => c.category === 'Marketing').length}
+                        />
+                        <RegulationRiskCard
+                          regulation="DPDP"
+                          risk={scanResult.statistics.requiresConsent > 0 ? 'HIGH' : 'LOW'}
+                          count={scanResult.statistics.requiresConsent}
+                        />
+                      </div>
+                    </div>
+                  )}
+                </section>
+
+                {Object.keys(domainHistory).length > 0 && (
+                  <section className="history-section">
+                    <DomainScanHistory
+                      domainHistory={domainHistory}
+                      onViewScan={viewScan}
+                      onDeleteScan={deleteScanFromDomain}
+                      onDeleteDomain={deleteDomain}
+                    />
+                  </section>
+                )}
 
                 {scanHistory.length > 0 && (
                   <section className="history-section">
@@ -1293,52 +1758,6 @@ function App() {
                   </section>
                 )}
 
-                {complianceReport && (
-                  <section className="compliance-section">
-                    <h2>Detailed Compliance Analysis</h2>
-
-                    <div className="compliance-grid">
-                      <DetailedComplianceCard
-                        title="GDPR (EU) Compliance"
-                        regulation="GDPR"
-                        status={complianceReport.gdprCompliance.status}
-                        details={complianceReport.gdprCompliance}
-                        cookies={scanResult.cookies}
-                      />
-
-                      <DetailedComplianceCard
-                        title="CCPA/CPRA (California) Compliance"
-                        regulation="CCPA"
-                        status={complianceReport.ccpaCompliance.status}
-                        details={complianceReport.ccpaCompliance}
-                        cookies={scanResult.cookies}
-                      />
-
-                      <DetailedComplianceCard
-                        title="DPDP (India) Compliance"
-                        regulation="DPDP"
-                        status={complianceReport.gdprCompliance.status}
-                        details={complianceReport.gdprCompliance}
-                        cookies={scanResult.cookies}
-                      />
-                    </div>
-
-                    {complianceReport.recommendations.length > 0 && (
-                      <div className="recommendations">
-                        <h3>Action Items & Recommendations</h3>
-                        {complianceReport.recommendations.map((rec, index) => (
-                          <div key={index} className={`recommendation recommendation-${rec.severity.toLowerCase()}`}>
-                            <AlertCircle className="icon" />
-                            <div>
-                              <p className="rec-message"><strong>{rec.message}</strong></p>
-                              <p className="rec-action">{rec.action}</p>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </section>
-                )}
               </>
             )}
 
@@ -1590,73 +2009,6 @@ function HistoryCard({ entry }) {
         <span className={`risk-badge-small risk-${entry.gdprRisk.toLowerCase()}`}>GDPR: {entry.gdprRisk}</span>
         <span className={`risk-badge-small risk-${entry.ccpaRisk.toLowerCase()}`}>CCPA: {entry.ccpaRisk}</span>
         <span className={`risk-badge-small risk-${entry.dpdpRisk.toLowerCase()}`}>DPDP: {entry.dpdpRisk}</span>
-      </div>
-    </div>
-  );
-}
-
-function DetailedComplianceCard({ title, regulation, status, details, cookies }) {
-  const isCompliant = status === 'COMPLIANT';
-
-  const affectedCookies = cookies.filter(c => {
-    if (regulation === 'GDPR' || regulation === 'DPDP') {
-      return c.requiresConsent;
-    } else if (regulation === 'CCPA') {
-      return c.category === 'Marketing' || c.category === 'Analytics';
-    }
-    return false;
-  });
-
-  return (
-    <div className={`compliance-card-detailed ${isCompliant ? 'compliant' : 'non-compliant'}`}>
-      <div className="compliance-header">
-        <h3>{title}</h3>
-        <span className={`compliance-status status-${isCompliant ? 'compliant' : 'risk'}`}>
-          {status}
-        </span>
-      </div>
-
-      <div className="compliance-body">
-        <div className="compliance-stat">
-          <span className="label">Affected Cookies:</span>
-          <span className="value">{affectedCookies.length}</span>
-        </div>
-
-        <div className="compliance-stat">
-          <span className="label">Compliance Level:</span>
-          <span className={`value ${isCompliant ? 'text-success' : 'text-warning'}`}>
-            {isCompliant ? '✓ Compliant' : '⚠ Action Required'}
-          </span>
-        </div>
-
-        {!isCompliant && (
-          <div className="compliance-actions">
-            <p className="action-title">Required Actions:</p>
-            <ul className="action-list">
-              {regulation === 'GDPR' && (
-                <>
-                  <li>Implement consent banner before loading cookies</li>
-                  <li>Provide granular consent options</li>
-                  <li>Allow users to withdraw consent</li>
-                </>
-              )}
-              {regulation === 'CCPA' && (
-                <>
-                  <li>Implement "Do Not Sell My Data" link</li>
-                  <li>Honor Global Privacy Control (GPC) signals</li>
-                  <li>Provide opt-out mechanism</li>
-                </>
-              )}
-              {regulation === 'DPDP' && (
-                <>
-                  <li>Obtain prior consent before data collection</li>
-                  <li>Disclose data processing purposes</li>
-                  <li>Maintain consent records</li>
-                </>
-              )}
-            </ul>
-          </div>
-        )}
       </div>
     </div>
   );
