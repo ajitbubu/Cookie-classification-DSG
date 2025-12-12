@@ -39,7 +39,7 @@ def main():
     try:
         # Build dataset
         features_df, labels_df = builder.build_training_dataset(
-            include_db_cookies=True,
+            include_db_cookies=False,  # No cookies in DB yet, use common cookies
             include_common_cookies=True,
             synthetic_count=300,  # Create 300 synthetic variations
             min_samples_per_category=100

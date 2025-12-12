@@ -1,5 +1,5 @@
 # Dependencies
-node_modules
+node_modules/
 .pnp
 .pnp.js
 
@@ -23,12 +23,12 @@ dist/
 build/
 
 # Testing
-coverage
+coverage/
 .nyc_output
 
 # Production
-build
-dist
+build/
+dist/
 
 # Environment variables
 .env
@@ -37,13 +37,6 @@ dist
 .env.test.local
 .env.production.local
 
-# Misc
-.DS_Store
-*.swp
-*.swo
-*~
-Thumbs.db
-
 # Logs
 npm-debug.log*
 yarn-debug.log*
@@ -51,35 +44,16 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 *.log
+backend.log
 
-# Editor
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Editor & IDE
+.vscode/
+.idea/
 *.sublime-project
 *.sublime-workspace
-
-# Temporary files
-.cache
-.temp
-.tmp
-
-# ML Models (if you want to exclude large model files)
-# Uncomment if models should not be committed
-# models/*.pkl
-# models/*.h5
-# models/*.pt
-# models/*.pth
-# *.model
-
-# Training data (if large datasets should be excluded)
-# training_data/*.csv
-# training_data/*.json
-
-# Database
-*.db
-*.sqlite
-*.sqlite3
+*.iml
+*.ipr
+*.iws
 
 # OS
 .DS_Store
@@ -88,16 +62,44 @@ lerna-debug.log*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
+Thumbs.db
 Desktop.ini
 
-# IDE
-.vscode/
-.idea/
-*.iml
-*.ipr
-*.iws
+# Temporary files
+.cache/
+.temp/
+.tmp/
+*.swp
+*.swo
+*~
 
 # Backup files
 *.bak
 *.backup
-*~
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker
+.dockerignore
+
+# Data & Output files
+data/output/*.xlsx
+data/output/*.xls
+data/output/*.json
+data/output/*.xml
+data/output/*.log
+
+# ML Models (uncomment if models should not be committed)
+# models/*.pkl
+# models/*.h5
+# models/*.pt
+# models/*.pth
+# *.model
+
+# Training data (uncomment if large datasets should be excluded)
+# training_data/*.csv
+# training_data/*.json
+# data/

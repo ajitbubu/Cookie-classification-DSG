@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "expiry_days": {
+      "type": "number"
+    },
+    "path": {
+      "type": "string"
+    },
+    "http_only": {
+      "type": "boolean"
+    },
+    "secure": {
+      "type": "boolean"
+    },
+    "same_site": {
+      "type": "string"
+    },
+    "value_sample": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "initiated_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "site_domain": {
+      "type": "string"
+    }
+  }
+}

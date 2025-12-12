@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   # Redis for caching and queue management
@@ -43,7 +43,7 @@ services:
   api-gateway:
     build:
       context: .
-      dockerfile: Dockerfile.api
+      dockerfile: docker/Dockerfile.api
     container_name: cookie-scanner-api
     ports:
       - "8000:8000"
@@ -68,7 +68,7 @@ services:
   ml-api:
     build:
       context: .
-      dockerfile: Dockerfile.ml-api
+      dockerfile: docker/Dockerfile.ml-api
     container_name: cookie-scanner-ml-api
     ports:
       - "8001:8000"
@@ -79,7 +79,7 @@ services:
       - DB_USER=scanner
       - DB_PASSWORD=${DB_PASSWORD:-scanner_password}
       - ML_SECRET_KEY=${ML_SECRET_KEY:-change-this-secret-key-in-production}
-      - ML_MODEL_VERSION=1.0.0
+      - ML_MODEL_VERSION=2.0.0
       - ML_CONFIDENCE_HIGH=0.85
       - ML_CONFIDENCE_MEDIUM=0.65
       - ML_RATE_LIMIT_REQUESTS=100
@@ -101,10 +101,16 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '2'
+          cpus: "2"
           memory: 2G
     healthcheck:
-      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/api/v1/ml/health')"]
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import requests; requests.get('http://localhost:8000/api/v1/ml/health')",
+        ]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -113,7 +119,7 @@ services:
   scanner-worker-1:
     build:
       context: .
-      dockerfile: Dockerfile.worker
+      dockerfile: docker/Dockerfile.worker
     container_name: scanner-worker-1
     environment:
       - REDIS_URL=redis://redis:6379
@@ -133,14 +139,14 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '2'
+          cpus: "2"
           memory: 4G
 
   # Scanner Worker 2 (Firefox)
   scanner-worker-2:
     build:
       context: .
-      dockerfile: Dockerfile.worker
+      dockerfile: docker/Dockerfile.worker
     container_name: scanner-worker-2
     environment:
       - REDIS_URL=redis://redis:6379
@@ -160,14 +166,14 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '2'
+          cpus: "2"
           memory: 4G
 
   # Scanner Worker 3 (Chromium)
   scanner-worker-3:
     build:
       context: .
-      dockerfile: Dockerfile.worker
+      dockerfile: docker/Dockerfile.worker
     container_name: scanner-worker-3
     environment:
       - REDIS_URL=redis://redis:6379
@@ -187,14 +193,14 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '2'
+          cpus: "2"
           memory: 4G
 
   # Frontend
   frontend:
     build:
       context: .
-      dockerfile: Dockerfile.frontend
+      dockerfile: docker/Dockerfile.frontend
     container_name: cookie-scanner-frontend
     ports:
       - "5173:3000"

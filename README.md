@@ -37,6 +37,12 @@ npm run preview
   - Social Media
   - Unclassified
 
+- **🆕 ML-Powered Classification** - Machine learning model predicts cookie categories with confidence scores
+  - View ML predictions alongside actual categories
+  - Update categories directly from ML suggestions
+  - Visual indicators show agreement/disagreement between ML and actual categories
+  - Confidence levels (High/Medium/Low) help assess prediction reliability
+
 - **Multi-Jurisdiction Compliance** 
   - GDPR (EU) compliance checking
   - CCPA/CPRA (California) compliance
@@ -68,23 +74,37 @@ npm run preview
 
 ```
 cookie-scanner/
-├── src/
-│   ├── components/
-│   │   ├── ScanHistory.jsx     # 🆕 Scan history component
-│   │   └── ScanHistory.css     # 🆕 History styles
-│   ├── lib/
-│   │   ├── CookieScanner.js    # Core scanning engine
-│   │   └── utils.js            # Utility functions
-│   ├── App.jsx                  # Main application component
-│   ├── App.css                  # Application styles
-│   └── main.jsx                 # Entry point
-├── docs/
-│   ├── SCAN_HISTORY.md         # 🆕 Full history documentation
-│   └── QUICK_START_SCAN_HISTORY.md # 🆕 Quick start guide
-├── public/                      # Static assets
-├── index.html                   # HTML template
-├── vite.config.js              # Vite configuration
-└── package.json                # Dependencies
+├── backend/                     # Python API & Scanner
+│   ├── api/                    # FastAPI endpoints
+│   ├── db/                     # Database models & migrations
+│   ├── scanner/                # Cookie scanning engine
+│   └── worker/                 # Background workers
+├── src/                        # React Frontend
+│   ├── components/             # React components
+│   ├── lib/                    # Utilities & core logic
+│   └── test/                   # Frontend tests
+├── tests/                      # Test Suite
+│   ├── backend/                # Backend tests
+│   ├── ml/                     # ML model tests
+│   └── scripts/                # Test scripts
+├── docs/                       # Documentation
+│   ├── guides/                 # User guides
+│   ├── specs/                  # Technical specs
+│   └── task-completion/        # Task summaries
+├── docker/                     # Docker configurations
+│   ├── Dockerfile.api          # API service
+│   ├── Dockerfile.frontend     # Frontend service
+│   ├── Dockerfile.ml-api       # ML API service
+│   └── Dockerfile.worker       # Worker service
+├── scripts/                    # Utility scripts
+├── data/                       # Data files
+│   └── output/                 # Generated outputs
+├── models/                     # ML models
+├── deployment/                 # Deployment configs
+├── nginx/                      # Nginx configs
+├── docker-compose.yml          # Docker orchestration
+├── package.json                # Node dependencies
+└── requirements.txt            # Python dependencies
 ```
 
 ## 🔧 Usage
@@ -99,6 +119,19 @@ The app automatically scans cookies when loaded. Click "Scan Now" to refresh.
 2. **Enter URL** - Scan any domain (with CORS limitations)
 3. **Bookmarklet** - Scan any website from your bookmarks
 4. **Scheduled Scans** - Automatically scan at regular intervals
+
+### ML Classification & Category Management
+
+The scanner now features an intelligent ML classification system:
+
+1. **View ML Predictions** - Each cookie shows its ML-predicted category with a confidence score
+2. **Update Categories** - Click the ML Classification dropdown to update the actual category
+3. **Visual Indicators**:
+   - ✅ Green checkmark: ML prediction matches actual category
+   - ⚠️ Orange warning: ML prediction differs from actual category
+4. **Confidence Levels** - High/Medium/Low badges indicate prediction reliability
+
+The **Category** column shows the actual stored category (read-only), while the **ML Classification** column shows the ML prediction and allows updates.
 
 ### Filtering
 

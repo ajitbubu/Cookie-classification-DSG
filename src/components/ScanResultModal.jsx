@@ -172,8 +172,12 @@ function ScanResultModal({ scan, onClose }) {
                         {cookie.name}
                       </span>
                       <span className="col-category">
-                        <span className={`cookie-cat-badge category-${cookie.category?.toLowerCase().replace(/\s+/g, '-')}`}>
-                          {cookie.category}
+                        <span 
+                          className={`category-badge category-${(cookie.category || 'uncategorized').toLowerCase().replace(/\s+/g, '-')}`}
+                          role="status"
+                          aria-label={`Cookie category: ${cookie.category || 'Uncategorized'}`}
+                        >
+                          {cookie.category || 'Uncategorized'}
                         </span>
                       </span>
                       <span className="col-domain">{cookie.domain}</span>

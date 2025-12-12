@@ -1,0 +1,196 @@
+{
+  "vendors": [
+    {
+      "vendor_name": "Google LLC",
+      "vendor_domain": "google.com",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["_ga", "_gid", "_gat", "_gat_gtag_*", "_ga_*"],
+      "domain_patterns": ["*.google-analytics.com", "*.googletagmanager.com", "*.google.com"],
+      "confidence_score": 0.95,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "Facebook",
+      "vendor_domain": "facebook.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["_fbp", "_fbc", "fr", "sb", "datr"],
+      "domain_patterns": ["*.facebook.com", "*.facebook.net"],
+      "confidence_score": 0.95,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "LinkedIn Corporation",
+      "vendor_domain": "linkedin.com",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["li_*", "AnalyticsSyncHistory", "lms_analytics", "UserMatchHistory"],
+      "domain_patterns": ["*.linkedin.com"],
+      "confidence_score": 0.93,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "Microsoft Corporation",
+      "vendor_domain": "microsoft.com",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["_uetsid", "_uetvid", "MUID", "MSPTC"],
+      "domain_patterns": ["*.bing.com", "*.microsoft.com"],
+      "confidence_score": 0.92,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "Twitter",
+      "vendor_domain": "twitter.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["personalization_id", "guest_id", "ct0"],
+      "domain_patterns": ["*.twitter.com", "*.twimg.com"],
+      "confidence_score": 0.93,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "HubSpot",
+      "vendor_domain": "hubspot.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["__hstc", "__hssc", "__hssrc", "hubspotutk", "messagesUtk", "__cf_bm"],
+      "domain_patterns": ["*.hubspot.com", "*.hs-analytics.net", "*.hs-scripts.com"],
+      "confidence_score": 0.95,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "IAB TCF",
+      "vendor_domain": "iab.com",
+      "typical_category": "Strictly Necessary",
+      "cookie_name_patterns": ["euconsent-v2", "IABTCF_*", "usprivacy", "euconsent", "cookieConsent", "OptanonConsent"],
+      "domain_patterns": ["*.cookielaw.org", "*.onetrust.com", "*.evidon.com"],
+      "confidence_score": 0.98,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "Google Ads",
+      "vendor_domain": "doubleclick.net",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["IDE", "test_cookie", "__gads", "__gac_*", "DSID", "FLC", "AID", "TAID"],
+      "domain_patterns": ["*.doubleclick.net", "*.googlesyndication.com", "*.googleadservices.com"],
+      "confidence_score": 0.95,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "Hotjar",
+      "vendor_domain": "hotjar.com",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["_hjid", "_hjSessionUser_*", "_hjSession_*", "_hjIncludedInSessionSample_*", "_hjFirstSeen", "_hjAbsoluteSessionInProgress"],
+      "domain_patterns": ["*.hotjar.com", "*.hotjar.io"],
+      "confidence_score": 0.95,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "Segment",
+      "vendor_domain": "segment.com",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["ajs_*", "seg_*", "amplitude_*"],
+      "domain_patterns": ["*.segment.com", "*.segment.io", "cdn.segment.com"],
+      "confidence_score": 0.90,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "Stripe",
+      "vendor_domain": "stripe.com",
+      "typical_category": "Strictly Necessary",
+      "cookie_name_patterns": ["__stripe_mid", "__stripe_sid", "cid", "session"],
+      "domain_patterns": ["*.stripe.com", "js.stripe.com"],
+      "confidence_score": 0.95,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "PayPal",
+      "vendor_domain": "paypal.com",
+      "typical_category": "Strictly Necessary",
+      "cookie_name_patterns": ["LANG", "cookie_check", "ts_c", "ts", "x-pp-s", "l7_az", "enforce_policy"],
+      "domain_patterns": ["*.paypal.com", "*.paypalobjects.com"],
+      "confidence_score": 0.92,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "Shopify",
+      "vendor_domain": "shopify.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["_shopify_*", "cart", "cart_currency", "cart_sig", "cart_ts", "cart_ver", "checkout_token", "secure_customer_sig"],
+      "domain_patterns": ["*.shopify.com", "*.myshopify.com"],
+      "confidence_score": 0.93,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "Intercom",
+      "vendor_domain": "intercom.io",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["intercom-*", "intercom-session-*", "intercom-id-*", "intercom-device-id-*"],
+      "domain_patterns": ["*.intercom.io", "*.intercom.com"],
+      "confidence_score": 0.94,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "Salesforce Pardot",
+      "vendor_domain": "pardot.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["visitor_id*", "pardot", "lpv*", "pi_opt_in"],
+      "domain_patterns": ["*.pardot.com", "*.salesforce.com", "pi.pardot.com"],
+      "confidence_score": 0.92,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "Cloudflare",
+      "vendor_domain": "cloudflare.com",
+      "typical_category": "Strictly Necessary",
+      "cookie_name_patterns": ["__cflb", "__cf_bm", "cf_clearance", "__cfduid"],
+      "domain_patterns": ["*.cloudflare.com", "*.cloudflareinsights.com"],
+      "confidence_score": 0.96,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "Amazon Web Services",
+      "vendor_domain": "aws.amazon.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["AWSALB", "AWSALBCORS", "aws-waf-token"],
+      "domain_patterns": ["*.amazonaws.com", "*.cloudfront.net"],
+      "confidence_score": 0.90,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "YouTube",
+      "vendor_domain": "youtube.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["VISITOR_INFO1_LIVE", "YSC", "PREF", "CONSENT"],
+      "domain_patterns": ["*.youtube.com", "*.youtube-nocookie.com"],
+      "confidence_score": 0.94,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "Vimeo",
+      "vendor_domain": "vimeo.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["vuid", "player"],
+      "domain_patterns": ["*.vimeo.com", "player.vimeo.com"],
+      "confidence_score": 0.91,
+      "source": "manual"
+    },
+    {
+      "vendor_name": "Adobe Analytics",
+      "vendor_domain": "omniture.com",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["s_*", "AMCV_*", "demdex", "dextp", "mbox"],
+      "domain_patterns": ["*.omtrdc.net", "*.2o7.net", "*.demdex.net", "*.omniture.com"],
+      "confidence_score": 0.93,
+      "source": "manual"
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "total_vendors": 20,
+    "categories": {
+      "Analytics": 6,
+      "Marketing": 5,
+      "Strictly Necessary": 4,
+      "Functional": 5
+    },
+    "created_at": "2025-11-26",
+    "description": "Comprehensive vendor pattern database for cookie classification"
+  }
+}

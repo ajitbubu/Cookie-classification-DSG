@@ -1,0 +1,532 @@
+{
+  "vendors": [
+    {
+      "vendor_name": "Amplitude",
+      "vendor_domain": "amplitude.com",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["amplitude_*", "amp_*", "AMP_*"],
+      "domain_patterns": ["*.amplitude.com", "api.amplitude.com", "cdn.amplitude.com"],
+      "confidence_score": 0.94,
+      "source": "manual",
+      "description": "Product analytics platform"
+    },
+    {
+      "vendor_name": "Mixpanel",
+      "vendor_domain": "mixpanel.com",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["mp_*", "mixpanel_*"],
+      "domain_patterns": ["*.mixpanel.com", "api.mixpanel.com", "cdn.mxpnl.com"],
+      "confidence_score": 0.93,
+      "source": "manual",
+      "description": "User analytics platform"
+    },
+    {
+      "vendor_name": "Heap Analytics",
+      "vendor_domain": "heap.io",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["_hp2_*", "heap_*"],
+      "domain_patterns": ["*.heap.io", "*.heapanalytics.com", "cdn.heapanalytics.com"],
+      "confidence_score": 0.91,
+      "source": "manual",
+      "description": "Automatic event tracking analytics"
+    },
+    {
+      "vendor_name": "New Relic",
+      "vendor_domain": "newrelic.com",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["NREUM", "JSESSIONID"],
+      "domain_patterns": ["*.newrelic.com", "*.nr-data.net", "bam.nr-data.net"],
+      "confidence_score": 0.88,
+      "source": "manual",
+      "description": "Application performance monitoring"
+    },
+    {
+      "vendor_name": "Matomo",
+      "vendor_domain": "matomo.org",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["_pk_*", "mtm_*", "matomo_*"],
+      "domain_patterns": ["*.matomo.cloud", "*.piwik.pro"],
+      "confidence_score": 0.90,
+      "source": "manual",
+      "description": "Open source analytics platform"
+    },
+    {
+      "vendor_name": "Optimizely",
+      "vendor_domain": "optimizely.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["optimizelyEndUserId", "optimizelyBuckets", "optimizely_*"],
+      "domain_patterns": ["*.optimizely.com", "cdn.optimizely.com", "logx.optimizely.com"],
+      "confidence_score": 0.92,
+      "source": "manual",
+      "description": "A/B testing and experimentation platform"
+    },
+    {
+      "vendor_name": "VWO",
+      "vendor_domain": "vwo.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["_vis_*", "_vwo_*", "v.gif"],
+      "domain_patterns": ["*.vwo.com", "dev.visualwebsiteoptimizer.com"],
+      "confidence_score": 0.90,
+      "source": "manual",
+      "description": "Visual Website Optimizer - A/B testing"
+    },
+    {
+      "vendor_name": "Criteo",
+      "vendor_domain": "criteo.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["cto_*", "uid", "opt", "dis"],
+      "domain_patterns": ["*.criteo.com", "*.criteo.net", "gum.criteo.com"],
+      "confidence_score": 0.94,
+      "source": "manual",
+      "description": "Personalized retargeting advertising"
+    },
+    {
+      "vendor_name": "Taboola",
+      "vendor_domain": "taboola.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["t_gid", "taboola_*", "trc_*"],
+      "domain_patterns": ["*.taboola.com", "cdn.taboola.com", "trc.taboola.com"],
+      "confidence_score": 0.93,
+      "source": "manual",
+      "description": "Content discovery and native advertising"
+    },
+    {
+      "vendor_name": "Outbrain",
+      "vendor_domain": "outbrain.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["obuid", "outbrain_*"],
+      "domain_patterns": ["*.outbrain.com", "widgets.outbrain.com", "amplify.outbrain.com"],
+      "confidence_score": 0.92,
+      "source": "manual",
+      "description": "Content recommendation platform"
+    },
+    {
+      "vendor_name": "Quantcast",
+      "vendor_domain": "quantcast.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["__qca", "mc", "d"],
+      "domain_patterns": ["*.quantcast.com", "pixel.quantserve.com", "rules.quantcount.com"],
+      "confidence_score": 0.91,
+      "source": "manual",
+      "description": "Audience measurement and advertising"
+    },
+    {
+      "vendor_name": "AppNexus",
+      "vendor_domain": "appnexus.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["uuid2", "anj", "sess", "icu"],
+      "domain_patterns": ["*.adnxs.com", "*.appnexus.com", "ib.adnxs.com"],
+      "confidence_score": 0.90,
+      "source": "manual",
+      "description": "Programmatic advertising platform"
+    },
+    {
+      "vendor_name": "The Trade Desk",
+      "vendor_domain": "thetradedesk.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["TDID", "TDCPM"],
+      "domain_patterns": ["*.adsrvr.org", "*.thetradedesk.com", "insight.adsrvr.org"],
+      "confidence_score": 0.91,
+      "source": "manual",
+      "description": "Demand-side advertising platform"
+    },
+    {
+      "vendor_name": "Pinterest",
+      "vendor_domain": "pinterest.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["_pinterest_*", "_pin_*", "_auth", "_routing_id"],
+      "domain_patterns": ["*.pinterest.com", "*.pinimg.com", "ct.pinterest.com"],
+      "confidence_score": 0.93,
+      "source": "manual",
+      "description": "Visual discovery and social media"
+    },
+    {
+      "vendor_name": "Reddit",
+      "vendor_domain": "reddit.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["_rdt_uuid", "reddaid", "token_v2", "loid"],
+      "domain_patterns": ["*.reddit.com", "*.redditmedia.com", "alb.reddit.com"],
+      "confidence_score": 0.92,
+      "source": "manual",
+      "description": "Social news aggregation platform"
+    },
+    {
+      "vendor_name": "TikTok",
+      "vendor_domain": "tiktok.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["_ttp", "tt_*", "ttwid"],
+      "domain_patterns": ["*.tiktok.com", "*.tiktokv.com", "*.byteoversea.com"],
+      "confidence_score": 0.93,
+      "source": "manual",
+      "description": "Short-form video platform"
+    },
+    {
+      "vendor_name": "Snapchat",
+      "vendor_domain": "snapchat.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["sc_at", "_scid", "_sctr"],
+      "domain_patterns": ["*.snapchat.com", "*.sc-cdn.net", "tr.snapchat.com"],
+      "confidence_score": 0.91,
+      "source": "manual",
+      "description": "Multimedia messaging app"
+    },
+    {
+      "vendor_name": "Zendesk",
+      "vendor_domain": "zendesk.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["_zendesk_*", "_help_center_session", "_zendesk_authenticated", "_zendesk_shared_session"],
+      "domain_patterns": ["*.zendesk.com", "*.zdassets.com", "static.zdassets.com"],
+      "confidence_score": 0.94,
+      "source": "manual",
+      "description": "Customer service and support platform"
+    },
+    {
+      "vendor_name": "Drift",
+      "vendor_domain": "drift.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["driftt_*", "drift_*"],
+      "domain_patterns": ["*.drift.com", "*.driftt.com", "js.driftt.com"],
+      "confidence_score": 0.92,
+      "source": "manual",
+      "description": "Conversational marketing platform"
+    },
+    {
+      "vendor_name": "Mailchimp",
+      "vendor_domain": "mailchimp.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["_AVESTA_ENVIRONMENT", "ak_bmsc", "mc_*"],
+      "domain_patterns": ["*.mailchimp.com", "*.list-manage.com", "chimpstatic.com"],
+      "confidence_score": 0.90,
+      "source": "manual",
+      "description": "Email marketing platform"
+    },
+    {
+      "vendor_name": "Constant Contact",
+      "vendor_domain": "constantcontact.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["ctct_*", "JSESSIONID"],
+      "domain_patterns": ["*.constantcontact.com", "*.ctctcdn.com"],
+      "confidence_score": 0.88,
+      "source": "manual",
+      "description": "Email marketing service"
+    },
+    {
+      "vendor_name": "SendGrid",
+      "vendor_domain": "sendgrid.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["sendgrid_*", "sg_*"],
+      "domain_patterns": ["*.sendgrid.com", "*.sendgrid.net"],
+      "confidence_score": 0.89,
+      "source": "manual",
+      "description": "Email delivery service"
+    },
+    {
+      "vendor_name": "Twilio",
+      "vendor_domain": "twilio.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["twilio_*", "__twilio*"],
+      "domain_patterns": ["*.twilio.com", "*.twiliocdn.com"],
+      "confidence_score": 0.90,
+      "source": "manual",
+      "description": "Cloud communications platform"
+    },
+    {
+      "vendor_name": "WordPress",
+      "vendor_domain": "wordpress.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["wordpress_*", "wp-*", "comment_author_*"],
+      "domain_patterns": ["*.wordpress.com", "*.wp.com", "public-api.wordpress.com"],
+      "confidence_score": 0.92,
+      "source": "manual",
+      "description": "Content management system"
+    },
+    {
+      "vendor_name": "Wix",
+      "vendor_domain": "wix.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["svSession", "hs", "wixClient*", "XSRF-TOKEN"],
+      "domain_patterns": ["*.wix.com", "*.wixsite.com", "*.parastorage.com"],
+      "confidence_score": 0.91,
+      "source": "manual",
+      "description": "Website builder platform"
+    },
+    {
+      "vendor_name": "Squarespace",
+      "vendor_domain": "squarespace.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["SS_*", "crumb", "squarespace-*"],
+      "domain_patterns": ["*.squarespace.com", "*.sqspcdn.com", "static1.squarespace.com"],
+      "confidence_score": 0.90,
+      "source": "manual",
+      "description": "Website builder and hosting"
+    },
+    {
+      "vendor_name": "Typeform",
+      "vendor_domain": "typeform.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["_tf_*", "typeform_*"],
+      "domain_patterns": ["*.typeform.com", "embed.typeform.com"],
+      "confidence_score": 0.89,
+      "source": "manual",
+      "description": "Online form builder"
+    },
+    {
+      "vendor_name": "SurveyMonkey",
+      "vendor_domain": "surveymonkey.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["sm_*", "ep*", "SMCHK"],
+      "domain_patterns": ["*.surveymonkey.com", "*.surveymonkey.net"],
+      "confidence_score": 0.88,
+      "source": "manual",
+      "description": "Online survey platform"
+    },
+    {
+      "vendor_name": "Qualtrics",
+      "vendor_domain": "qualtrics.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["Q_*", "QSI*", "qualtrics_*"],
+      "domain_patterns": ["*.qualtrics.com", "*.siteintercept.qualtrics.com"],
+      "confidence_score": 0.90,
+      "source": "manual",
+      "description": "Experience management platform"
+    },
+    {
+      "vendor_name": "Cookiebot",
+      "vendor_domain": "cookiebot.com",
+      "typical_category": "Strictly Necessary",
+      "cookie_name_patterns": ["CookieConsent", "CookieConsentBulkTicket"],
+      "domain_patterns": ["*.cookiebot.com", "consent.cookiebot.com"],
+      "confidence_score": 0.96,
+      "source": "manual",
+      "description": "Cookie consent management platform"
+    },
+    {
+      "vendor_name": "OneTrust",
+      "vendor_domain": "onetrust.com",
+      "typical_category": "Strictly Necessary",
+      "cookie_name_patterns": ["OptanonConsent", "OptanonAlertBoxClosed", "eupubconsent-v2"],
+      "domain_patterns": ["*.onetrust.com", "cdn.cookielaw.org", "*.cookielaw.org"],
+      "confidence_score": 0.97,
+      "source": "manual",
+      "description": "Privacy and consent management"
+    },
+    {
+      "vendor_name": "Osano",
+      "vendor_domain": "osano.com",
+      "typical_category": "Strictly Necessary",
+      "cookie_name_patterns": ["osano_*", "osano_consent*"],
+      "domain_patterns": ["*.osano.com", "cmp.osano.com"],
+      "confidence_score": 0.94,
+      "source": "manual",
+      "description": "Consent management platform"
+    },
+    {
+      "vendor_name": "Termly",
+      "vendor_domain": "termly.io",
+      "typical_category": "Strictly Necessary",
+      "cookie_name_patterns": ["termly_*", "consent_preferences"],
+      "domain_patterns": ["*.termly.io", "app.termly.io"],
+      "confidence_score": 0.93,
+      "source": "manual",
+      "description": "Privacy compliance platform"
+    },
+    {
+      "vendor_name": "Freshdesk",
+      "vendor_domain": "freshdesk.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["_freshdesk_*", "__fw*"],
+      "domain_patterns": ["*.freshdesk.com", "*.freshworks.com"],
+      "confidence_score": 0.90,
+      "source": "manual",
+      "description": "Customer support software"
+    },
+    {
+      "vendor_name": "LiveChat",
+      "vendor_domain": "livechat.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["__lc*", "lc_*", "main_window_timestamp*"],
+      "domain_patterns": ["*.livechat.com", "*.livechatinc.com", "cdn.livechatinc.com"],
+      "confidence_score": 0.91,
+      "source": "manual",
+      "description": "Live chat support platform"
+    },
+    {
+      "vendor_name": "Tawk.to",
+      "vendor_domain": "tawk.to",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["TawkConnectionTime", "tawk_*"],
+      "domain_patterns": ["*.tawk.to", "embed.tawk.to"],
+      "confidence_score": 0.89,
+      "source": "manual",
+      "description": "Free live chat software"
+    },
+    {
+      "vendor_name": "Crazy Egg",
+      "vendor_domain": "crazyegg.com",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["_ce.s", "_ce.clock*", "ceg.s", "ceg.u"],
+      "domain_patterns": ["*.crazyegg.com", "script.crazyegg.com"],
+      "confidence_score": 0.90,
+      "source": "manual",
+      "description": "Heatmap and user behavior analytics"
+    },
+    {
+      "vendor_name": "Fullstory",
+      "vendor_domain": "fullstory.com",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["fs_uid", "fs_*"],
+      "domain_patterns": ["*.fullstory.com", "rs.fullstory.com"],
+      "confidence_score": 0.91,
+      "source": "manual",
+      "description": "Session replay and analytics"
+    },
+    {
+      "vendor_name": "Lucky Orange",
+      "vendor_domain": "luckyorange.com",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["_lo_*", "luckyorange_*"],
+      "domain_patterns": ["*.luckyorange.com", "*.luckyorange.net"],
+      "confidence_score": 0.88,
+      "source": "manual",
+      "description": "Conversion optimization and analytics"
+    },
+    {
+      "vendor_name": "Sentry",
+      "vendor_domain": "sentry.io",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["sentry-*", "sentrysid"],
+      "domain_patterns": ["*.sentry.io", "*.ingest.sentry.io"],
+      "confidence_score": 0.89,
+      "source": "manual",
+      "description": "Error tracking and monitoring"
+    },
+    {
+      "vendor_name": "Datadog",
+      "vendor_domain": "datadoghq.com",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["dd_*", "datadog*"],
+      "domain_patterns": ["*.datadoghq.com", "*.datadoghq.eu"],
+      "confidence_score": 0.90,
+      "source": "manual",
+      "description": "Monitoring and analytics platform"
+    },
+    {
+      "vendor_name": "Akamai",
+      "vendor_domain": "akamai.com",
+      "typical_category": "Strictly Necessary",
+      "cookie_name_patterns": ["ak_bmsc", "bm_*", "AKA_*"],
+      "domain_patterns": ["*.akamai.com", "*.akamaihd.net", "*.akamaitechnologies.com"],
+      "confidence_score": 0.92,
+      "source": "manual",
+      "description": "CDN and security services"
+    },
+    {
+      "vendor_name": "Fastly",
+      "vendor_domain": "fastly.com",
+      "typical_category": "Strictly Necessary",
+      "cookie_name_patterns": ["fastly_*", "_fastly_*"],
+      "domain_patterns": ["*.fastly.com", "*.fastly.net"],
+      "confidence_score": 0.90,
+      "source": "manual",
+      "description": "Edge cloud platform and CDN"
+    },
+    {
+      "vendor_name": "Cloudinary",
+      "vendor_domain": "cloudinary.com",
+      "typical_category": "Functional",
+      "cookie_name_patterns": ["cloudinary_*", "_cloudinary_session"],
+      "domain_patterns": ["*.cloudinary.com", "res.cloudinary.com"],
+      "confidence_score": 0.88,
+      "source": "manual",
+      "description": "Image and video management"
+    },
+    {
+      "vendor_name": "Google Tag Manager",
+      "vendor_domain": "googletagmanager.com",
+      "typical_category": "Analytics",
+      "cookie_name_patterns": ["_gtm*", "_gcl_*"],
+      "domain_patterns": ["*.googletagmanager.com", "www.googletagmanager.com"],
+      "confidence_score": 0.95,
+      "source": "manual",
+      "description": "Tag management system"
+    },
+    {
+      "vendor_name": "Bing Ads",
+      "vendor_domain": "bing.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["_uetsid", "_uetvid", "MUID", "_EDGE_*"],
+      "domain_patterns": ["*.bing.com", "bat.bing.com", "*.ads.microsoft.com"],
+      "confidence_score": 0.92,
+      "source": "manual",
+      "description": "Microsoft advertising platform"
+    },
+    {
+      "vendor_name": "Yahoo Advertising",
+      "vendor_domain": "yahoo.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["B", "A3", "GUC"],
+      "domain_patterns": ["*.yahoo.com", "*.yimg.com", "sp.analytics.yahoo.com"],
+      "confidence_score": 0.89,
+      "source": "manual",
+      "description": "Yahoo advertising network"
+    },
+    {
+      "vendor_name": "Amazon Advertising",
+      "vendor_domain": "amazon.com",
+      "typical_category": "Marketing",
+      "cookie_name_patterns": ["ad-id", "ad-privacy", "aam_uuid"],
+      "domain_patterns": ["*.amazon-adsystem.com", "*.adsystem.amazon.com", "aax.amazon-adsystem.com"],
+      "confidence_score": 0.91,
+      "source": "manual",
+      "description": "Amazon advertising services"
+    },
+    {
+      "vendor_name": "Auth0",
+      "vendor_domain": "auth0.com",
+      "typical_category": "Strictly Necessary",
+      "cookie_name_patterns": ["auth0*", "_legacy_auth0*", "did", "did_compat"],
+      "domain_patterns": ["*.auth0.com", "cdn.auth0.com"],
+      "confidence_score": 0.94,
+      "source": "manual",
+      "description": "Authentication and authorization platform"
+    },
+    {
+      "vendor_name": "Okta",
+      "vendor_domain": "okta.com",
+      "typical_category": "Strictly Necessary",
+      "cookie_name_patterns": ["JSESSIONID", "DT", "sid", "t"],
+      "domain_patterns": ["*.okta.com", "*.oktacdn.com"],
+      "confidence_score": 0.93,
+      "source": "manual",
+      "description": "Identity and access management"
+    }
+  ],
+  "metadata": {
+    "version": "2.0.0",
+    "total_vendors": 50,
+    "categories": {
+      "Analytics": 13,
+      "Marketing": 16,
+      "Functional": 14,
+      "Strictly Necessary": 7
+    },
+    "created_at": "2025-11-26",
+    "updated_at": "2025-11-26",
+    "description": "Extended vendor pattern database with 50 additional vendors for comprehensive cookie classification",
+    "coverage": [
+      "Analytics platforms (Amplitude, Mixpanel, Heap, New Relic, Matomo)",
+      "Marketing & Advertising (Criteo, Taboola, Outbrain, Quantcast, AppNexus, The Trade Desk)",
+      "Social Media (Pinterest, Reddit, TikTok, Snapchat)",
+      "Communication (Zendesk, Drift, Intercom, LiveChat, Tawk.to)",
+      "Email Marketing (Mailchimp, Constant Contact, SendGrid)",
+      "Website Builders (WordPress, Wix, Squarespace)",
+      "Survey & Forms (Typeform, SurveyMonkey, Qualtrics)",
+      "Consent Management (Cookiebot, OneTrust, Osano, Termly)",
+      "Session Replay (Crazy Egg, Fullstory, Lucky Orange)",
+      "Monitoring (Sentry, Datadog)",
+      "CDN & Security (Akamai, Fastly, Cloudinary)",
+      "Authentication (Auth0, Okta)",
+      "Advertising Networks (Google Tag Manager, Bing Ads, Yahoo, Amazon)"
+    ]
+  }
+}

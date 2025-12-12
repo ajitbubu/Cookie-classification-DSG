@@ -1,0 +1,496 @@
+{
+  "industries": {
+    "finance": {
+      "name": "💰 Finance/Banking Package",
+      "description": "Payment processors, banking, fintech, trading platforms, crypto",
+      "vendors": [
+        {
+          "vendor_name": "Plaid",
+          "vendor_domain": "plaid.com",
+          "typical_category": "Strictly Necessary",
+          "cookie_name_patterns": ["plaid_*", "_plaid_session"],
+          "domain_patterns": ["*.plaid.com", "cdn.plaid.com"],
+          "confidence_score": 0.94,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Coinbase",
+          "vendor_domain": "coinbase.com",
+          "typical_category": "Strictly Necessary",
+          "cookie_name_patterns": ["cb_*", "coinbase_*"],
+          "domain_patterns": ["*.coinbase.com", "*.coinbase.com"],
+          "confidence_score": 0.93,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Robinhood",
+          "vendor_domain": "robinhood.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["robinhood_*", "_rh_session"],
+          "domain_patterns": ["*.robinhood.com"],
+          "confidence_score": 0.91,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Wise",
+          "vendor_domain": "wise.com",
+          "typical_category": "Strictly Necessary",
+          "cookie_name_patterns": ["wise_*", "transferwise_*"],
+          "domain_patterns": ["*.wise.com", "*.transferwise.com"],
+          "confidence_score": 0.92,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Revolut",
+          "vendor_domain": "revolut.com",
+          "typical_category": "Strictly Necessary",
+          "cookie_name_patterns": ["revolut_*", "_revolut_session"],
+          "domain_patterns": ["*.revolut.com"],
+          "confidence_score": 0.91,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Adyen",
+          "vendor_domain": "adyen.com",
+          "typical_category": "Strictly Necessary",
+          "cookie_name_patterns": ["adyen_*", "_adyen_session"],
+          "domain_patterns": ["*.adyen.com", "live.adyen.com"],
+          "confidence_score": 0.93,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Worldpay",
+          "vendor_domain": "worldpay.com",
+          "typical_category": "Strictly Necessary",
+          "cookie_name_patterns": ["wp_*", "worldpay_*"],
+          "domain_patterns": ["*.worldpay.com", "secure.worldpay.com"],
+          "confidence_score": 0.90,
+          "source": "manual"
+        }
+      ]
+    },
+    "healthcare": {
+      "name": "🏥 Healthcare Package",
+      "description": "HIPAA-compliant tools, telehealth, patient portals, health platforms",
+      "vendors": [
+        {
+          "vendor_name": "Epic MyChart",
+          "vendor_domain": "epic.com",
+          "typical_category": "Strictly Necessary",
+          "cookie_name_patterns": ["epic_*", "mychart_*", "ASPSESSIONID*"],
+          "domain_patterns": ["*.epic.com", "*.mychart.org"],
+          "confidence_score": 0.95,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Cerner",
+          "vendor_domain": "cerner.com",
+          "typical_category": "Strictly Necessary",
+          "cookie_name_patterns": ["cerner_*", "healthevet_*"],
+          "domain_patterns": ["*.cerner.com", "*.healthe.care"],
+          "confidence_score": 0.94,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Teladoc",
+          "vendor_domain": "teladoc.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["teladoc_*", "_teladoc_session"],
+          "domain_patterns": ["*.teladoc.com", "members.teladoc.com"],
+          "confidence_score": 0.92,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Zocdoc",
+          "vendor_domain": "zocdoc.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["zd_*", "zocdoc_*"],
+          "domain_patterns": ["*.zocdoc.com", "www.zocdoc.com"],
+          "confidence_score": 0.91,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "WebMD",
+          "vendor_domain": "webmd.com",
+          "typical_category": "Analytics",
+          "cookie_name_patterns": ["webmd_*", "wmd_*"],
+          "domain_patterns": ["*.webmd.com", "img.webmd.com"],
+          "confidence_score": 0.90,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Athenahealth",
+          "vendor_domain": "athenahealth.com",
+          "typical_category": "Strictly Necessary",
+          "cookie_name_patterns": ["athena_*", "_athena_session"],
+          "domain_patterns": ["*.athenahealth.com", "*.athenanet.com"],
+          "confidence_score": 0.93,
+          "source": "manual"
+        }
+      ]
+    },
+    "education": {
+      "name": "📚 Education Package",
+      "description": "LMS platforms, educational tools, student portals, e-learning",
+      "vendors": [
+        {
+          "vendor_name": "Canvas LMS",
+          "vendor_domain": "instructure.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["canvas_*", "_canvas_session"],
+          "domain_patterns": ["*.instructure.com", "*.canvaslms.com"],
+          "confidence_score": 0.94,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Blackboard",
+          "vendor_domain": "blackboard.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["BbRouter", "JSESSIONID", "s_session_id"],
+          "domain_patterns": ["*.blackboard.com", "*.bbcollab.com"],
+          "confidence_score": 0.93,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Moodle",
+          "vendor_domain": "moodle.org",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["MoodleSession", "MOODLEID_"],
+          "domain_patterns": ["*.moodle.org", "*.moodlecloud.com"],
+          "confidence_score": 0.92,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Google Classroom",
+          "vendor_domain": "classroom.google.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["classroom_*", "NID"],
+          "domain_patterns": ["*.classroom.google.com", "classroom.google.com"],
+          "confidence_score": 0.95,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Coursera",
+          "vendor_domain": "coursera.org",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["coursera_*", "__204u", "CSRF3-Token"],
+          "domain_patterns": ["*.coursera.org", "www.coursera.org"],
+          "confidence_score": 0.91,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Udemy",
+          "vendor_domain": "udemy.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["udemy_*", "csrftoken", "client_id"],
+          "domain_patterns": ["*.udemy.com", "www.udemy.com"],
+          "confidence_score": 0.90,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Kahoot",
+          "vendor_domain": "kahoot.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["kahoot_*", "_kahoot_session"],
+          "domain_patterns": ["*.kahoot.com", "play.kahoot.it"],
+          "confidence_score": 0.89,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Turnitin",
+          "vendor_domain": "turnitin.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["turnitin_*", "JSESSIONID"],
+          "domain_patterns": ["*.turnitin.com", "*.turnitinuk.com"],
+          "confidence_score": 0.91,
+          "source": "manual"
+        }
+      ]
+    },
+    "gaming": {
+      "name": "🎮 Gaming Package",
+      "description": "Gaming platforms, game analytics, in-game advertising, esports",
+      "vendors": [
+        {
+          "vendor_name": "Steam",
+          "vendor_domain": "steampowered.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["steamLogin*", "steamMachineAuth*", "steamRememberLogin"],
+          "domain_patterns": ["*.steampowered.com", "store.steampowered.com"],
+          "confidence_score": 0.95,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Epic Games",
+          "vendor_domain": "epicgames.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["epic_*", "EPIC_DEVICE", "EPIC_SESSION_AP"],
+          "domain_patterns": ["*.epicgames.com", "launcher.store.epicgames.com"],
+          "confidence_score": 0.94,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Unity Analytics",
+          "vendor_domain": "unity3d.com",
+          "typical_category": "Analytics",
+          "cookie_name_patterns": ["unity_*", "_u_*"],
+          "domain_patterns": ["*.unity3d.com", "*.unity.com", "analytics.cloud.unity3d.com"],
+          "confidence_score": 0.92,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "GameAnalytics",
+          "vendor_domain": "gameanalytics.com",
+          "typical_category": "Analytics",
+          "cookie_name_patterns": ["ga_*", "gameanalytics_*"],
+          "domain_patterns": ["*.gameanalytics.com", "api.gameanalytics.com"],
+          "confidence_score": 0.91,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Twitch",
+          "vendor_domain": "twitch.tv",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["auth-token", "login", "persistent", "twilight-user.id"],
+          "domain_patterns": ["*.twitch.tv", "www.twitch.tv"],
+          "confidence_score": 0.94,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Discord",
+          "vendor_domain": "discord.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["__dcfduid", "__sdcfduid", "locale"],
+          "domain_patterns": ["*.discord.com", "*.discordapp.com"],
+          "confidence_score": 0.93,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "ironSource",
+          "vendor_domain": "ironsrc.com",
+          "typical_category": "Marketing",
+          "cookie_name_patterns": ["is_*", "ironsource_*"],
+          "domain_patterns": ["*.ironsrc.com", "*.supersonic.com"],
+          "confidence_score": 0.89,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "AppLovin",
+          "vendor_domain": "applovin.com",
+          "typical_category": "Marketing",
+          "cookie_name_patterns": ["applovin_*", "al_*"],
+          "domain_patterns": ["*.applovin.com", "*.applvn.com"],
+          "confidence_score": 0.90,
+          "source": "manual"
+        }
+      ]
+    },
+    "travel": {
+      "name": "🏨 Travel/Hospitality Package",
+      "description": "Booking engines, hotel platforms, airlines, travel metasearch",
+      "vendors": [
+        {
+          "vendor_name": "Booking.com",
+          "vendor_domain": "booking.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["bkng", "bkng_*", "pcm_personalization_disabled"],
+          "domain_patterns": ["*.booking.com", "secure.booking.com"],
+          "confidence_score": 0.95,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Expedia",
+          "vendor_domain": "expedia.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["mc1", "linfo", "currency"],
+          "domain_patterns": ["*.expedia.com", "www.expedia.com"],
+          "confidence_score": 0.94,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Airbnb",
+          "vendor_domain": "airbnb.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["_airbed_session_id", "jitney_client_session_id"],
+          "domain_patterns": ["*.airbnb.com", "www.airbnb.com"],
+          "confidence_score": 0.94,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "TripAdvisor",
+          "vendor_domain": "tripadvisor.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["TASession", "TASSK", "ServerPool"],
+          "domain_patterns": ["*.tripadvisor.com", "www.tripadvisor.com"],
+          "confidence_score": 0.92,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Kayak",
+          "vendor_domain": "kayak.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["kayak_*", "Apache"],
+          "domain_patterns": ["*.kayak.com", "www.kayak.com"],
+          "confidence_score": 0.90,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Hotels.com",
+          "vendor_domain": "hotels.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["MC1", "linfo", "HCOM_*"],
+          "domain_patterns": ["*.hotels.com", "secure.hotels.com"],
+          "confidence_score": 0.91,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Priceline",
+          "vendor_domain": "priceline.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["priceline_*", "sst", "pwa_gaid"],
+          "domain_patterns": ["*.priceline.com", "www.priceline.com"],
+          "confidence_score": 0.89,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Amadeus",
+          "vendor_domain": "amadeus.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["amadeus_*", "amad_*"],
+          "domain_patterns": ["*.amadeus.com", "*.amadeus.net"],
+          "confidence_score": 0.91,
+          "source": "manual"
+        }
+      ]
+    },
+    "general": {
+      "name": "🌐 General/Multi-Industry Package",
+      "description": "Cross-industry tools, utilities, CDNs, general web services",
+      "vendors": [
+        {
+          "vendor_name": "reCAPTCHA",
+          "vendor_domain": "google.com",
+          "typical_category": "Strictly Necessary",
+          "cookie_name_patterns": ["_GRECAPTCHA", "rc::*"],
+          "domain_patterns": ["*.google.com", "www.google.com/recaptcha"],
+          "confidence_score": 0.97,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "hCaptcha",
+          "vendor_domain": "hcaptcha.com",
+          "typical_category": "Strictly Necessary",
+          "cookie_name_patterns": ["hc_*", "hcaptcha_*"],
+          "domain_patterns": ["*.hcaptcha.com", "hcaptcha.com"],
+          "confidence_score": 0.95,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Cloudflare Turnstile",
+          "vendor_domain": "cloudflare.com",
+          "typical_category": "Strictly Necessary",
+          "cookie_name_patterns": ["cf_clearance", "cf_*"],
+          "domain_patterns": ["*.cloudflare.com", "challenges.cloudflare.com"],
+          "confidence_score": 0.96,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Gravatar",
+          "vendor_domain": "gravatar.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["gravatar_*", "_gravatar_session"],
+          "domain_patterns": ["*.gravatar.com", "secure.gravatar.com"],
+          "confidence_score": 0.88,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Disqus",
+          "vendor_domain": "disqus.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["disqus_*", "__jid"],
+          "domain_patterns": ["*.disqus.com", "c.disquscdn.com"],
+          "confidence_score": 0.93,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Vimeo",
+          "vendor_domain": "vimeo.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["vuid", "player"],
+          "domain_patterns": ["*.vimeo.com", "player.vimeo.com"],
+          "confidence_score": 0.91,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "imgur",
+          "vendor_domain": "imgur.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["postpagebeta", "IMGURSESSION"],
+          "domain_patterns": ["*.imgur.com", "i.imgur.com"],
+          "confidence_score": 0.88,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Giphy",
+          "vendor_domain": "giphy.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["giphy_*", "_giphy_session"],
+          "domain_patterns": ["*.giphy.com", "media.giphy.com"],
+          "confidence_score": 0.87,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Font Awesome",
+          "vendor_domain": "fontawesome.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["fa_*", "fontawesome_*"],
+          "domain_patterns": ["*.fontawesome.com", "use.fontawesome.com"],
+          "confidence_score": 0.85,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "jsDelivr",
+          "vendor_domain": "jsdelivr.net",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["jsdelivr_*"],
+          "domain_patterns": ["*.jsdelivr.net", "cdn.jsdelivr.net"],
+          "confidence_score": 0.84,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "Unpkg",
+          "vendor_domain": "unpkg.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["unpkg_*"],
+          "domain_patterns": ["*.unpkg.com", "unpkg.com"],
+          "confidence_score": 0.83,
+          "source": "manual"
+        },
+        {
+          "vendor_name": "cdnjs",
+          "vendor_domain": "cdnjs.com",
+          "typical_category": "Functional",
+          "cookie_name_patterns": ["cdnjs_*"],
+          "domain_patterns": ["*.cdnjs.com", "*.cloudflare.com"],
+          "confidence_score": 0.85,
+          "source": "manual"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "version": "4.0.0",
+    "total_industries": 5,
+    "total_vendors": 61,
+    "industry_breakdown": {
+      "finance": 7,
+      "healthcare": 6,
+      "education": 8,
+      "gaming": 8,
+      "travel": 8,
+      "general": 12
+    },
+    "created_at": "2025-11-26",
+    "description": "Complete industry-specific vendor packages for comprehensive cookie classification across all major sectors"
+  }
+}

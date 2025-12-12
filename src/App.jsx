@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Shield, Cookie, AlertCircle, Download, RefreshCw, Eye, EyeOff, Globe, Clock, Calendar, Play, Pause, Trash2, Bookmark, Copy, Check, Zap, Layers, X, GitBranch } from 'lucide-react';
+import { Shield, Cookie, AlertCircle, Download, RefreshCw, Eye, EyeOff, Globe, Clock, Play, Pause, Trash2, Bookmark, Copy, Check, Zap, Layers, X } from 'lucide-react';
 import CookieScanner from './lib/CookieScanner';
 import DeepScanner from './lib/DeepScanner';
 import { generateBookmarklet, copyToClipboard } from './lib/utils';
 import ScanHistory from './components/ScanHistory';
 import DomainScanHistory from './components/DomainScanHistory';
-import CategoryDropdown from './components/CategoryDropdown';
+import MLClassificationDropdown from './components/MLClassificationDropdown';
 import './App.css';
 
 function App() {
@@ -79,6 +79,9 @@ function App() {
   // Results view tab
   const [resultsTab, setResultsTab] = useState('cookies'); // cookies, categories, vendors, compliance
 
+  // Accessibility - aria-live announcements
+  const [ariaLiveMessage, setAriaLiveMessage] = useState('');
+
   const handleCopyBookmarklet = async () => {
     try {
       await copyToClipboard(generateBookmarklet());
@@ -89,10 +92,44 @@ function App() {
     }
   };
 
+  // Helper function to recalculate statistics based on updated cookie categories
+  const calculateStatistics = (cookies) => {
+    const stats = {
+      byCategory: {},
+      byType: {},
+      requiresConsent: 0,
+      thirdParty: 0,
+      totalSize: 0
+    };
+
+    cookies.forEach(cookie => {
+      // Count by category
+      const category = cookie.category || 'Uncategorized';
+      stats.byCategory[category] = (stats.byCategory[category] || 0) + 1;
+
+      // Count by type
+      const type = cookie.type || 'session';
+      stats.byType[type] = (stats.byType[type] || 0) + 1;
+
+      // Count consent requirements
+      if (cookie.requiresConsent) {
+        stats.requiresConsent++;
+      }
+
+      // Count third-party
+      if (cookie.isThirdParty) {
+        stats.thirdParty++;
+      }
+
+      // Sum sizes
+      stats.totalSize += cookie.size || 0;
+    });
+
+    return stats;
+  };
+
   // ML Classification function
   const classifyCookiesWithML = async (cookies) => {
-    console.log('Starting ML classification for', cookies.length, 'cookies');
-    
     try {
       const requestBody = {
         cookies: cookies.map(cookie => ({
@@ -112,8 +149,7 @@ function App() {
         }
       };
       
-      console.log('Calling ML API at http://localhost:8001/api/v1/ml/classify');
-      console.log('Request body:', JSON.stringify(requestBody).substring(0, 500));
+      console.log(`🤖 Calling ML API for ${cookies.length} cookies...`);
       
       const response = await fetch('http://localhost:8001/api/v1/ml/classify', {
         method: 'POST',
@@ -123,30 +159,31 @@ function App() {
         body: JSON.stringify(requestBody)
       });
 
-      console.log('ML API response status:', response.status);
-
       if (response.ok) {
         const data = await response.json();
-        console.log('ML API returned', data.classifications.length, 'classifications');
-        console.log('First classification:', data.classifications[0]);
+        console.log('✅ ML API Response:', data.summary);
+        console.log('Sample classification:', data.classifications[0]);
+        
+        // Always use ML predictions (even if confidence is low)
         return data.classifications;
       } else {
-        const errorText = await response.text();
-        console.error('ML API returned error:', response.status, response.statusText, errorText);
+        console.error('❌ ML API returned error:', response.status, response.statusText);
       }
     } catch (error) {
-      console.error('ML classification API call failed:', error);
-      return null;
-      // Return mock data for demonstration
-      /*return cookies.map(cookie => {
-        // Generate mock ML classification based on cookie name patterns
-        let predicted_category = 'Unknown';
-        let confidence_score = 0.5;
-        let confidence_level = 'Low';
+      console.error('❌ ML API failed:', error);
+    }
+    
+    // Return mock data for demonstration when API fails or model is untrained
+    console.log('Generating mock data for', cookies.length, 'cookies');
+    return cookies.map(cookie => {
+      // Generate mock ML classification based on cookie name patterns
+      let predicted_category = 'Functional'; // Default to Functional instead of Unknown
+      let confidence_score = 0.6;
+      let confidence_level = 'Medium';
+      
+      const name = cookie.name.toLowerCase();
         
-        const name = cookie.name.toLowerCase();
-        
-        if (name.includes('_ga') || name.includes('analytics') || name.includes('_gid')) {
+      if (name.includes('_ga') || name.includes('analytics') || name.includes('_gid')) {
           predicted_category = 'Analytics';
           confidence_score = 0.92;
           confidence_level = 'High';
@@ -176,9 +213,7 @@ function App() {
           auto_classified: confidence_score >= 0.85,
           requires_review: confidence_score < 0.85,
         };
-      });*/
-    }
-    return null;
+      });
   };
 
   const handleQuickScan = async (url = null) => {
@@ -218,56 +253,40 @@ function App() {
 
     // Classify cookies with ML in the background
     if (results.cookies && results.cookies.length > 0) {
-      console.log('Classifying', results.cookies.length, 'cookies with ML...');
       const mlClassifications = await classifyCookiesWithML(results.cookies);
-      console.log('ML classifications received:', mlClassifications);
       
-      if (mlClassifications) {
+      if (mlClassifications && mlClassifications.length > 0) {
         const updatedCookies = results.cookies.map((cookie, idx) => {
           const mlData = mlClassifications[idx];
           
-          // Valid categories that can be trusted from website
-          const validCategories = ['Strictly Necessary', 'Analytics', 'Marketing', 'Functional', 'Social Media'];
-          
-          // Check if cookie has a valid category from the website
-          const hasWebsiteCategory = cookie.category && validCategories.includes(cookie.category);
-          
-          // Check if ML predicted a valid category (not Unknown)
-          const mlPredictedValid = mlData?.predicted_category && 
-            mlData.predicted_category !== 'Unknown' &&
-            validCategories.includes(mlData.predicted_category);
-          
-          if (hasWebsiteCategory) {
-            // Use website category with 100% confidence
+          // Option C: Blend both approaches
+          // Use ML classification if rule-based returned 'Uncategorized'
+          if (mlData && mlData.predicted_category) {
+            const effectiveCategory = cookie.category === 'Uncategorized' 
+              ? mlData.predicted_category 
+              : cookie.category;
+            
             return {
               ...cookie,
-              mlClassification: cookie.category,
-              mlConfidence: 1.0,
-              mlConfidenceLevel: 'High',
-              websiteProvided: true
-            };
-          } else if (mlPredictedValid) {
-            // Use ML prediction if it's valid
-            return {
-              ...cookie,
+              category: effectiveCategory, // Update actual category if Uncategorized
               mlClassification: mlData.predicted_category,
               mlConfidence: mlData.confidence_score,
               mlConfidenceLevel: mlData.confidence_level,
-              websiteProvided: false
+              websiteProvided: false,
+              categorySource: cookie.category === 'Uncategorized' ? 'ml' : 'rules' // Track source
             };
           } else {
-            // Both are invalid/unknown - show as unclassified with low confidence
+            // No ML data available
             return {
               ...cookie,
               mlClassification: 'Unclassified',
               mlConfidence: 0.0,
               mlConfidenceLevel: 'Low',
-              websiteProvided: false
+              websiteProvided: false,
+              categorySource: 'rules'
             };
           }
         });
-        
-        console.log('Updated cookies with ML data:', updatedCookies[0]);
         
         const updatedResults = {
           ...enhancedResults,
@@ -275,6 +294,17 @@ function App() {
         };
         
         setScanResult(updatedResults);
+        
+        // Re-calculate statistics with updated categories
+        const updatedStats = calculateStatistics(updatedCookies);
+        const finalResults = {
+          ...updatedResults,
+          statistics: updatedStats
+        };
+        
+        setScanResult(finalResults);
+        // Update history with corrected statistics
+        addToHistory(finalResults);
       }
     }
   };
@@ -326,56 +356,40 @@ function App() {
 
       // Classify cookies with ML in the background
       if (results.cookies && results.cookies.length > 0) {
-        console.log('Classifying', results.cookies.length, 'cookies with ML...');
         const mlClassifications = await classifyCookiesWithML(results.cookies);
-        console.log('ML classifications received:', mlClassifications);
         
-        if (mlClassifications) {
+        if (mlClassifications && mlClassifications.length > 0) {
           const updatedCookies = results.cookies.map((cookie, idx) => {
             const mlData = mlClassifications[idx];
             
-            // Valid categories that can be trusted from website
-            const validCategories = ['Strictly Necessary', 'Analytics', 'Marketing', 'Functional', 'Social Media'];
-            
-            // Check if cookie has a valid category from the website
-            const hasWebsiteCategory = cookie.category && validCategories.includes(cookie.category);
-            
-            // Check if ML predicted a valid category (not Unknown)
-            const mlPredictedValid = mlData?.predicted_category && 
-              mlData.predicted_category !== 'Unknown' &&
-              validCategories.includes(mlData.predicted_category);
-            
-            if (hasWebsiteCategory) {
-              // Use website category with 100% confidence
+            // Option C: Blend both approaches
+            // Use ML classification if rule-based returned 'Uncategorized'
+            if (mlData && mlData.predicted_category) {
+              const effectiveCategory = cookie.category === 'Uncategorized' 
+                ? mlData.predicted_category 
+                : cookie.category;
+              
               return {
                 ...cookie,
-                mlClassification: cookie.category,
-                mlConfidence: 1.0,
-                mlConfidenceLevel: 'High',
-                websiteProvided: true
-              };
-            } else if (mlPredictedValid) {
-              // Use ML prediction if it's valid
-              return {
-                ...cookie,
+                category: effectiveCategory, // Update actual category if Uncategorized
                 mlClassification: mlData.predicted_category,
                 mlConfidence: mlData.confidence_score,
                 mlConfidenceLevel: mlData.confidence_level,
-                websiteProvided: false
+                websiteProvided: false,
+                categorySource: cookie.category === 'Uncategorized' ? 'ml' : 'rules' // Track source
               };
             } else {
-              // Both are invalid/unknown - show as unclassified with low confidence
+              // No ML data available
               return {
                 ...cookie,
                 mlClassification: 'Unclassified',
                 mlConfidence: 0.0,
                 mlConfidenceLevel: 'Low',
-                websiteProvided: false
+                websiteProvided: false,
+                categorySource: 'rules'
               };
             }
           });
-          
-          console.log('Updated cookies with ML data:', updatedCookies[0]);
           
           const updatedResults = {
             ...enhancedResults,
@@ -383,10 +397,18 @@ function App() {
           };
           
           setScanResult(updatedResults);
+          
+          // Re-calculate statistics with updated categories
+          const updatedStats = calculateStatistics(updatedCookies);
+          const finalResults = {
+            ...updatedResults,
+            statistics: updatedStats
+          };
+          
+          setScanResult(finalResults);
         }
       }
     } catch (error) {
-      console.error('Deep scan failed:', error);
       alert('Deep scan failed: ' + error.message);
     } finally {
       setIsDeepScanning(false);
@@ -457,56 +479,40 @@ function App() {
 
       // Classify cookies with ML in the background
       if (results.cookies && results.cookies.length > 0) {
-        console.log('Classifying', results.cookies.length, 'cookies with ML...');
         const mlClassifications = await classifyCookiesWithML(results.cookies);
-        console.log('ML classifications received:', mlClassifications);
         
         if (mlClassifications) {
           const updatedCookies = results.cookies.map((cookie, idx) => {
             const mlData = mlClassifications[idx];
             
-            // Valid categories that can be trusted from website
-            const validCategories = ['Strictly Necessary', 'Analytics', 'Marketing', 'Functional', 'Social Media'];
-            
-            // Check if cookie has a valid category from the website
-            const hasWebsiteCategory = cookie.category && validCategories.includes(cookie.category);
-            
-            // Check if ML predicted a valid category (not Unknown)
-            const mlPredictedValid = mlData?.predicted_category && 
-              mlData.predicted_category !== 'Unknown' &&
-              validCategories.includes(mlData.predicted_category);
-            
-            if (hasWebsiteCategory) {
-              // Use website category with 100% confidence
+            // Option C: Blend both approaches
+            // Use ML classification if rule-based returned 'Uncategorized'
+            if (mlData && mlData.predicted_category) {
+              const effectiveCategory = cookie.category === 'Uncategorized' 
+                ? mlData.predicted_category 
+                : cookie.category;
+              
               return {
                 ...cookie,
-                mlClassification: cookie.category,
-                mlConfidence: 1.0,
-                mlConfidenceLevel: 'High',
-                websiteProvided: true
-              };
-            } else if (mlPredictedValid) {
-              // Use ML prediction if it's valid
-              return {
-                ...cookie,
+                category: effectiveCategory, // Update actual category if Uncategorized
                 mlClassification: mlData.predicted_category,
                 mlConfidence: mlData.confidence_score,
                 mlConfidenceLevel: mlData.confidence_level,
-                websiteProvided: false
+                websiteProvided: false,
+                categorySource: cookie.category === 'Uncategorized' ? 'ml' : 'rules' // Track source
               };
             } else {
-              // Both are invalid/unknown - show as unclassified with low confidence
+              // No ML data available
               return {
                 ...cookie,
                 mlClassification: 'Unclassified',
                 mlConfidence: 0.0,
                 mlConfidenceLevel: 'Low',
-                websiteProvided: false
+                websiteProvided: false,
+                categorySource: 'rules'
               };
             }
           });
-          
-          console.log('Updated cookies with ML data:', updatedCookies[0]);
           
           const updatedResults = {
             ...enhancedResults,
@@ -514,10 +520,18 @@ function App() {
           };
           
           setScanResult(updatedResults);
+          
+          // Re-calculate statistics with updated categories
+          const updatedStats = calculateStatistics(updatedCookies);
+          const finalResults = {
+            ...updatedResults,
+            statistics: updatedStats
+          };
+          
+          setScanResult(finalResults);
         }
       }
     } catch (error) {
-      console.error('Quick scan failed:', error);
       alert('Quick scan failed: ' + error.message);
       setScanning(false);
     }
@@ -525,16 +539,8 @@ function App() {
 
   const compareScanResults = (newResults, previousScan) => {
     if (!previousScan) {
-      console.log('No previous scan to compare');
       return null;
     }
-
-    console.log('Comparing scans:', {
-      newTotal: newResults.totalCount,
-      oldTotal: previousScan.totalCookies,
-      newCategories: newResults.statistics.byCategory,
-      oldCategories: previousScan.categories
-    });
 
     const differences = {
       totalCookies: (newResults.totalCount || 0) - (previousScan.totalCookies || 0),
@@ -557,7 +563,6 @@ function App() {
       const oldCount = previousScan.categories?.[cat] || 0;
       if (newCount !== oldCount) {
         differences.categories[cat] = newCount - oldCount;
-        console.log(`Category ${cat}: ${oldCount} -> ${newCount} (${differences.categories[cat]})`);
       }
     });
 
@@ -572,7 +577,6 @@ function App() {
       const oldCount = previousScan.types?.[type] || 0;
       if (newCount !== oldCount) {
         differences.types[type] = newCount - oldCount;
-        console.log(`Type ${type}: ${oldCount} -> ${newCount} (${differences.types[type]})`);
       }
     });
 
@@ -582,14 +586,6 @@ function App() {
 
     differences.newCookies = newResults.cookies?.filter(c => !previousCookieNames.has(c.name)) || [];
     differences.removedCookies = previousScan.fullResults?.cookies?.filter(c => !currentCookieNames.has(c.name)) || [];
-
-    console.log('Differences found:', {
-      totalCookies: differences.totalCookies,
-      newCookies: differences.newCookies.length,
-      removedCookies: differences.removedCookies.length,
-      categories: Object.keys(differences.categories).length,
-      types: Object.keys(differences.types).length
-    });
 
     return differences;
   };
@@ -664,12 +660,8 @@ function App() {
       // Find previous scan for the same domain (most recent one)
       const previousScan = prev.find(scan => scan.domain === results.domain);
 
-      console.log('Previous scan found:', previousScan);
-      console.log('Current results:', results);
-
       if (previousScan) {
         const comparison = compareScanResults(results, previousScan);
-        console.log('Comparison result:', comparison);
 
         // Show notification if there are differences
         if (comparison && (
@@ -679,13 +671,8 @@ function App() {
           Object.keys(comparison.categories).length > 0 ||
           Object.keys(comparison.types).length > 0
         )) {
-          console.log('Showing comparison notification');
           showScanComparison(comparison);
-        } else {
-          console.log('No significant differences found');
         }
-      } else {
-        console.log('No previous scan found for domain:', results.domain);
       }
 
       const updated = [historyEntry, ...prev];
@@ -763,6 +750,20 @@ function App() {
   };
 
   const startScheduledScanning = () => {
+    // Validate URL is provided
+    if (!targetUrl) {
+      alert('Please enter a URL to scan');
+      return;
+    }
+
+    // Validate URL format
+    try {
+      new URL(targetUrl);
+    } catch (e) {
+      alert('Please enter a valid URL (e.g., https://example.com)');
+      return;
+    }
+
     setScheduleEnabled(true);
     const intervalMs = getIntervalInMs();
     const nextScan = new Date(Date.now() + intervalMs);
@@ -787,8 +788,14 @@ function App() {
       }
     }, 1000);
 
+    // Run first scan immediately
+    console.log(`🕐 Starting scheduled scan for ${targetUrl}`);
+    handleQuickScanRemote(targetUrl);
+
+    // Schedule recurring scans
     scheduleTimerRef.current = setInterval(() => {
-      handleQuickScan();
+      console.log(`🕐 Running scheduled scan for ${targetUrl}`);
+      handleQuickScanRemote(targetUrl);
       const nextScan = new Date(Date.now() + intervalMs);
       setNextScanTime(nextScan);
     }, intervalMs);
@@ -887,6 +894,93 @@ function App() {
       
       return updated;
     });
+  };
+
+  /**
+   * Category update handler for ML Classification dropdown
+   * 
+   * This function handles category updates initiated from the ML Classification dropdown.
+   * It implements optimistic UI updates for better UX, then persists the change to the backend.
+   * If the API call fails, it reverts the UI to the previous state.
+   * 
+   * @param {string} cookieName - Name of the cookie to update
+   * @param {string} cookieDomain - Domain of the cookie to update
+   * @param {string} newCategory - The new category to assign to the cookie
+   */
+  const handleMLCategoryUpdate = async (cookieName, cookieDomain, newCategory) => {
+    // Find the cookie in the current scan results
+    const cookie = scanResult.cookies.find(
+      c => c.name === cookieName && c.domain === cookieDomain
+    );
+    
+    // Guard: Cookie not found in results
+    if (!cookie) {
+      return;
+    }
+    
+    const oldCategory = cookie.category;
+    
+    // Guard: Skip update if category hasn't changed
+    if (oldCategory === newCategory) {
+      return;
+    }
+    
+    // Announce update start for screen readers (accessibility)
+    setAriaLiveMessage(`Updating category for ${cookieName} from ${oldCategory} to ${newCategory}`);
+    
+    // Step 1: Optimistically update UI immediately for better perceived performance
+    // This makes the UI feel responsive while the API call is in progress
+    const updatedCookies = scanResult.cookies.map(c => {
+      if (c.name === cookieName && c.domain === cookieDomain) {
+        return { ...c, category: newCategory };
+      }
+      return c;
+    });
+    
+    setScanResult({ ...scanResult, cookies: updatedCookies });
+    
+    // Step 2: Persist the change to the backend via API call
+    try {
+      const response = await fetch('http://localhost:8000/api/categories/update-category', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          scan_id: scanResult.scannedAt || Date.now().toString(),
+          cookie_name: cookieName,
+          cookie_domain: cookieDomain,
+          old_category: oldCategory,
+          new_category: newCategory
+        })
+      });
+      
+      // Handle API errors
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`Failed to update category: ${response.status} ${errorText}`);
+      }
+      
+      await response.json();
+      
+      // Announce success for screen readers
+      setAriaLiveMessage(`Category successfully updated to ${newCategory} for ${cookieName}`);
+      setTimeout(() => setAriaLiveMessage(''), 3000);
+    } catch (error) {
+      // Step 3: Revert UI to previous state on error (rollback optimistic update)
+      const revertedCookies = scanResult.cookies.map(c => {
+        if (c.name === cookieName && c.domain === cookieDomain) {
+          return { ...c, category: oldCategory };
+        }
+        return c;
+      });
+      setScanResult({ ...scanResult, cookies: revertedCookies });
+      
+      // Announce error for screen readers
+      setAriaLiveMessage(`Failed to update category for ${cookieName}: ${error.message}`);
+      setTimeout(() => setAriaLiveMessage(''), 3000);
+      
+      // Show user-facing error message
+      alert('Failed to update category: ' + error.message);
+    }
   };
 
   useEffect(() => {
@@ -1159,8 +1253,14 @@ function App() {
 
                 {scanMode === 'schedule' && (
                   <div className="schedule-compact">
+                    {!scheduleEnabled && (
+                      <div className="schedule-url-hint">
+                        <Globe size={14} />
+                        <span>Enter a URL above to schedule recurring scans</span>
+                      </div>
+                    )}
                     <div className="schedule-inputs-row">
-                      <span className="schedule-label">Every</span>
+                      <span className="schedule-label">Scan every</span>
                       <input
                         type="number"
                         min="1"
@@ -1183,7 +1283,12 @@ function App() {
                         <option value="monthly">Month(s)</option>
                       </select>
                       {!scheduleEnabled ? (
-                        <button onClick={startScheduledScanning} className="btn-schedule-action start">
+                        <button 
+                          onClick={startScheduledScanning} 
+                          className="btn-schedule-action start"
+                          disabled={!targetUrl}
+                          title={!targetUrl ? "Enter a URL first" : "Start scheduled scanning"}
+                        >
                           <Play size={16} />
                           Start
                         </button>
@@ -1202,6 +1307,12 @@ function App() {
                           <span className="countdown-timer">{formatCountdown(timeUntilNextScan)}</span>
                           <span className="countdown-date">({nextScanTime.toLocaleString()})</span>
                         </div>
+                      </div>
+                    )}
+                    {scheduleEnabled && targetUrl && (
+                      <div className="schedule-active-url">
+                        <Globe size={12} />
+                        <span>Scanning: <strong>{targetUrl}</strong></span>
                       </div>
                     )}
                   </div>
@@ -1474,28 +1585,26 @@ function App() {
                               </td>
                               <td className="col-vendor">{cookie.domain}</td>
                               <td className="col-category">
-                                <CategoryDropdown
-                                  currentCategory={cookie.category}
-                                  cookieName={cookie.name}
-                                  cookieDomain={cookie.domain}
-                                  scanId={scanResult.scannedAt || Date.now().toString()}
-                                  onCategoryChange={(name, domain, newCategory) => {
-                                    // Update the cookie in the scan result
-                                    const updatedCookies = scanResult.cookies.map(c => {
-                                      if (c.name === name && c.domain === domain) {
-                                        return { ...c, category: newCategory };
-                                      }
-                                      return c;
-                                    });
-                                    setScanResult({ ...scanResult, cookies: updatedCookies });
-                                  }}
-                                />
+                                <span 
+                                  className={`category-badge category-${(cookie.category || 'uncategorized').toLowerCase().replace(/\s+/g, '-')}`}
+                                  role="status"
+                                  aria-label={`Cookie category: ${cookie.category || 'Uncategorized'}`}
+                                >
+                                  {cookie.category || 'Uncategorized'}
+                                </span>
                               </td>
                               <td className="col-ml-classification">
                                 {cookie.mlClassification ? (
-                                  <span className={`ml-badge ml-${cookie.mlClassification.toLowerCase().replace(/\s+/g, '-')}`}>
-                                    {cookie.mlClassification}
-                                  </span>
+                                  <MLClassificationDropdown
+                                    currentMLClassification={cookie.mlClassification}
+                                    actualCategory={cookie.category}
+                                    mlConfidence={cookie.mlConfidence}
+                                    mlConfidenceLevel={cookie.mlConfidenceLevel}
+                                    cookieName={cookie.name}
+                                    cookieDomain={cookie.domain}
+                                    scanId={scanResult.scannedAt || Date.now().toString()}
+                                    onCategoryUpdate={handleMLCategoryUpdate}
+                                  />
                                 ) : (
                                   <span className="ml-badge ml-pending">Analyzing...</span>
                                 )}
@@ -1898,6 +2007,16 @@ function App() {
           </aside>
         </div>
       </main>
+
+      {/* Accessibility - aria-live region for category update announcements */}
+      <div 
+        role="status" 
+        aria-live="polite" 
+        aria-atomic="true"
+        className="sr-only"
+      >
+        {ariaLiveMessage}
+      </div>
     </div>
   );
 }

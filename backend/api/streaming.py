@@ -102,12 +102,15 @@ async def scan_stream_generator(request: ScanRequest) -> AsyncGenerator[str, Non
                         scan_complete = True
 
         # Send final result if we have one
+        logger.info(f"Checking final result: result={result is not None}, type={type(result).__name__ if result else 'None'}")
+
         if result and not isinstance(result, dict):
             # For quick scan, format the result
             from datetime import datetime
             from urllib.parse import urlparse
             from backend.scanner.classifier import CookieClassifier
 
+            logger.info("Sending quick scan result")
             final_result = {
                 "type": "complete",
                 "result": {
@@ -125,12 +128,15 @@ async def scan_stream_generator(request: ScanRequest) -> AsyncGenerator[str, Non
             yield f"data: {json.dumps(final_result)}\n\n"
         elif result:
             # Deep scan result
+            logger.info(f"Sending deep scan result with {len(result.get('cookies', []))} cookies")
             final_result = {
                 "type": "complete",
                 "result": result,
                 "status": "complete"
             }
             yield f"data: {json.dumps(final_result)}\n\n"
+        else:
+            logger.warning("No result to send!")
         
     except Exception as e:
         logger.error(f"Stream error: {e}")
@@ -140,8 +146,21 @@ async def scan_stream_generator(request: ScanRequest) -> AsyncGenerator[str, Non
             "status": "error"
         }
         yield f"data: {json.dumps(error_data)}\n\n"
-        
+
     finally:
-        # Clean up context
+        # Cancel scan task if still running
+        if 'scan_task' in locals() and not scan_task.done():
+            scan_task.cancel()
+            try:
+                await scan_task
+            except asyncio.CancelledError:
+                logger.info("Scan task cancelled")
+            except Exception as e:
+                logger.error(f"Error cancelling scan task: {e}")
+
+        # Clean up context - wrap in try/except to handle already closed contexts
         if context:
-            await context.close()
+            try:
+                await context.close()
+            except Exception as e:
+                logger.warning(f"Context close error (may be already closed): {e}")

@@ -41,7 +41,7 @@ class CookieScanner:
 
             # Classify cookies using parallel processing for CPU-bound operations
             classified_cookies = await self.classifier.classify_parallel_async(
-                cookies, domain, max_workers=10
+                cookies, domain, max_workers=20
             )
             
             logger.info(f"Found {len(classified_cookies)} cookies on {url}")
