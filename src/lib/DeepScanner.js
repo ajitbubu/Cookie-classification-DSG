@@ -25,6 +25,13 @@ export class DeepScanner {
     const startTime = Date.now();
     let lastUpdateTime = startTime;
 
+    // Deep Scan timeout: 600 seconds (10 minutes)
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => {
+      controller.abort();
+      console.error('⏱️ Deep scan timeout after 10 minutes');
+    }, 600000); // 10 minutes
+
     try {
       // Prepare scan request
       const scanRequest = {
@@ -43,10 +50,12 @@ export class DeepScanner {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(scanRequest)
+        body: JSON.stringify(scanRequest),
+        signal: controller.signal
       });
 
       if (!response.ok) {
+        clearTimeout(timeoutId);
         throw new Error(`Backend error: ${response.status} ${response.statusText}`);
       }
 
@@ -58,6 +67,7 @@ export class DeepScanner {
 
       while (true) {
         if (this.cancelled) {
+          clearTimeout(timeoutId);
           reader.cancel();
           throw new Error('Scan cancelled by user');
         }
@@ -141,12 +151,19 @@ export class DeepScanner {
       }
 
       if (!finalResult) {
+        clearTimeout(timeoutId);
         throw new Error('No result received from backend');
       }
 
+      clearTimeout(timeoutId);
       return this.formatBackendResult(finalResult);
 
     } catch (error) {
+      clearTimeout(timeoutId);
+      if (error.name === 'AbortError') {
+        console.error('Deep scan timeout after 10 minutes');
+        throw new Error('Deep scan timeout after 10 minutes. Try reducing the number of pages or increasing concurrency.');
+      }
       console.error('Deep scan error:', error);
       throw error;
     }

@@ -1,0 +1,464 @@
+/* Confidence Badge Button */
+.confidence-badge-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  width: 100px;
+  height: 29px;
+}
+
+.confidence-badge-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.confidence-badge-btn:active {
+  transform: translateY(0);
+}
+
+/* High Confidence - Light Green */
+.confidence-badge-btn.confidence-high {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+  color: white;
+}
+
+.confidence-badge-btn.confidence-high:hover {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
+
+/* Medium Confidence - Light Orange */
+.confidence-badge-btn.confidence-medium {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: white;
+}
+
+.confidence-badge-btn.confidence-medium:hover {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+/* Low Confidence - Light Red */
+.confidence-badge-btn.confidence-low {
+  background: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
+  color: white;
+}
+
+.confidence-badge-btn.confidence-low:hover {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.sparkle-icon {
+  width: 20px;
+  height: 15px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.confidence-text {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  font-size: 12px;
+}
+
+/* Modal Overlay */
+.confidence-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+  animation: fadeIn 0.2s ease;
+}
+
+/* Modal Container - Slim Design with All Info */
+.confidence-modal {
+  background: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Modal Header - Slim */
+.confidence-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.confidence-level-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+.confidence-level-badge.confidence-high {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+}
+
+.confidence-level-badge.confidence-medium {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+}
+
+.confidence-level-badge.confidence-low {
+  background: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
+}
+
+.confidence-level-badge svg {
+  width: 16px;
+  height: 16px;
+}
+
+.confidence-modal-close {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confidence-modal-close:hover {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+/* Modal Content - Slim with All Info */
+.confidence-modal-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Compact Info */
+.confidence-info-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #f9fafb;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.info-item .label {
+  color: #6b7280;
+  font-weight: 500;
+  min-width: 100px;
+}
+
+.info-item .value {
+  color: #111827;
+  font-weight: 600;
+  flex: 1;
+}
+
+/* Slim Confidence Bar */
+.confidence-bar-slim {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar-label {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.bar-percent {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.bar-track {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.bar-fill.confidence-high {
+  background: linear-gradient(90deg, #4ade80 0%, #22c55e 100%);
+}
+
+.bar-fill.confidence-medium {
+  background: linear-gradient(90deg, #fbbf24 0%, #f59e0b 100%);
+}
+
+.bar-fill.confidence-low {
+  background: linear-gradient(90deg, #f87171 0%, #ef4444 100%);
+}
+
+.bar-scale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  color: #9ca3af;
+  margin-top: 2px;
+}
+
+/* Slim Sections */
+.slim-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.slim-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.slim-text {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.slim-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.slim-list li {
+  font-size: 11px;
+  color: #6b7280;
+  line-height: 1.4;
+  padding-left: 14px;
+  position: relative;
+}
+
+.slim-list li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #9ca3af;
+  font-weight: 700;
+}
+
+/* Slim Recommendation */
+.slim-recommendation {
+  display: flex;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+}
+
+.rec-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #3b82f6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rec-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #1e40af;
+  margin: 0 0 3px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.rec-text {
+  font-size: 11px;
+  color: #1e40af;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.rec-content {
+  flex: 1;
+}
+
+/* Small Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.action-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.action-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.action-btn:active {
+  transform: translateY(0);
+}
+
+.action-btn.confirm {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+  color: white;
+}
+
+.action-btn.confirm:hover {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
+
+.action-btn.ignore {
+  background: linear-gradient(135deg, #94a3b8 0%, #64748b 100%);
+  color: white;
+}
+
+.action-btn.ignore:hover {
+  background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+}
+
+/* Small Feedback */
+.action-feedback {
+  display: flex;
+  justify-content: center;
+}
+
+.feedback-msg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.feedback-msg.confirmed {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+}
+
+.feedback-msg.ignored {
+  background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+  color: #334155;
+  border: 1px solid #94a3b8;
+}
+
+/* Responsive - Slim Design */
+@media (max-width: 640px) {
+  .confidence-modal {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .confidence-modal-header {
+    padding: 10px 14px;
+  }
+
+  .confidence-modal-content {
+    padding: 14px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-btn {
+    width: 100%;
+  }
+}

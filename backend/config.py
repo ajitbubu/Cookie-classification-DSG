@@ -31,7 +31,7 @@ class Settings(BaseSettings):
     INTER_SCAN_DELAY: float = 0.05  # Reduced from 0.1s - delay between scans
     
     # Browser configuration
-    BROWSER_TYPE: str = "firefox"  # or "chromium"
+    BROWSER_TYPE: str = "chromium"  # or "firefox"
     HEADLESS: bool = True
     
     class Config:

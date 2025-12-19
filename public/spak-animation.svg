@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+  viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="gMain" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+      <animate attributeName="x1" values="2;6;2" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="2;6;2" dur="2.4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="24" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="gPurple" x1="0" y1="24" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Pulse + gentle rotate -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate"
+      values="0 12 12; 6 12 12; 0 12 12; -6 12 12; 0 12 12"
+      dur="2.4s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" additive="sum" type="scale"
+      values="1;1.06;1" dur="1.2s" repeatCount="indefinite"/>
+
+    <!-- Main sparkle -->
+    <path fill="url(#gMain)"
+      d="M12 2.6
+         C13.1 6.9 17.1 10.9 21.4 12
+         C17.1 13.1 13.1 17.1 12 21.4
+         C10.9 17.1 6.9 13.1 2.6 12
+         C6.9 10.9 10.9 6.9 12 2.6Z"/>
+  </g>
+
+  <!-- Small spark (top-right) -->
+  <path fill="url(#gBlue)" opacity="0.95"
+    d="M18.2 4.1
+       C18.6 5.6 19.9 6.9 21.4 7.3
+       C19.9 7.7 18.6 9 18.2 10.5
+       C17.8 9 16.5 7.7 15 7.3
+       C16.5 6.9 17.8 5.6 18.2 4.1Z">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Small spark (bottom-right) -->
+  <path fill="url(#gPurple)" opacity="0.9"
+    d="M18.1 15.2
+       C18.4 16.3 19.3 17.2 20.4 17.5
+       C19.3 17.8 18.4 18.7 18.1 19.8
+       C17.8 18.7 16.9 17.8 15.8 17.5
+       C16.9 17.2 17.8 16.3 18.1 15.2Z">
+    <animate attributeName="opacity" values="1;0.25;1" dur="2.0s" repeatCount="indefinite"/>
+  </path>
+</svg>

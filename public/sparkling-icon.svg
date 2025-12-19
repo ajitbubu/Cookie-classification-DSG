@@ -1,0 +1,53 @@
+<svg
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient id="sparkGradientMain" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff2fb2"/>
+      <stop offset="100%" stop-color="#3b6cff"/>
+    </linearGradient>
+
+    <linearGradient id="sparkGradientBlue" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#00c6ff"/>
+    </linearGradient>
+
+    <linearGradient id="sparkGradientPurple" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main large sparkle -->
+  <path
+    d="M100 25
+       C110 60, 140 90, 175 100
+       C140 110, 110 140, 100 175
+       C90 140, 60 110, 25 100
+       C60 90, 90 60, 100 25Z"
+    fill="url(#sparkGradientMain)"
+  />
+
+  <!-- Top right sparkle -->
+  <path
+    d="M150 35
+       C154 52, 168 66, 185 70
+       C168 74, 154 88, 150 105
+       C146 88, 132 74, 115 70
+       C132 66, 146 52, 150 35Z"
+    fill="url(#sparkGradientBlue)"
+  />
+
+  <!-- Bottom right small sparkle -->
+  <path
+    d="M145 125
+       C148 136, 157 145, 168 148
+       C157 151, 148 160, 145 171
+       C142 160, 133 151, 122 148
+       C133 145, 142 136, 145 125Z"
+    fill="url(#sparkGradientPurple)"
+  />
+</svg>

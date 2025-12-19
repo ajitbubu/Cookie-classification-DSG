@@ -3,9 +3,11 @@ import { Shield, Cookie, AlertCircle, Download, RefreshCw, Eye, EyeOff, Globe, C
 import CookieScanner from './lib/CookieScanner';
 import DeepScanner from './lib/DeepScanner';
 import { generateBookmarklet, copyToClipboard } from './lib/utils';
+import { calculateComplianceRisks } from './lib/riskCalculator';
 import ScanHistory from './components/ScanHistory';
 import DomainScanHistory from './components/DomainScanHistory';
 import MLClassificationDropdown from './components/MLClassificationDropdown';
+import ConfidenceBadge from './components/ConfidenceBadge';
 import './App.css';
 
 function App() {
@@ -92,6 +94,39 @@ function App() {
     }
   };
 
+  // Confidence action handlers
+  const handleConfidenceConfirm = (cookieName, classification, confidence) => {
+    console.log(`✓ Confirmed: ${cookieName} as ${classification} (${Math.round(confidence * 100)}%)`);
+    
+    // Save to localStorage for future reference
+    try {
+      const confirmed = JSON.parse(localStorage.getItem('confirmedClassifications') || '{}');
+      confirmed[cookieName] = {
+        classification,
+        confidence,
+        confirmedAt: new Date().toISOString()
+      };
+      localStorage.setItem('confirmedClassifications', JSON.stringify(confirmed));
+    } catch (e) {
+      console.error('Failed to save confirmation:', e);
+    }
+  };
+
+  const handleConfidenceIgnore = (cookieName) => {
+    console.log(`⊘ Ignored: ${cookieName}`);
+    
+    // Save to localStorage to always ignore this cookie's confidence
+    try {
+      const ignored = JSON.parse(localStorage.getItem('ignoredConfidence') || '[]');
+      if (!ignored.includes(cookieName)) {
+        ignored.push(cookieName);
+        localStorage.setItem('ignoredConfidence', JSON.stringify(ignored));
+      }
+    } catch (e) {
+      console.error('Failed to save ignore preference:', e);
+    }
+  };
+
   // Helper function to recalculate statistics based on updated cookie categories
   const calculateStatistics = (cookies) => {
     const stats = {
@@ -128,6 +163,47 @@ function App() {
     return stats;
   };
 
+  // Helper function to create fetch with timeout
+  const fetchWithTimeout = async (url, options = {}, timeoutMs = 30000) => {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+    
+    try {
+      const response = await fetch(url, {
+        ...options,
+        signal: controller.signal
+      });
+      clearTimeout(timeoutId);
+      return response;
+    } catch (error) {
+      clearTimeout(timeoutId);
+      if (error.name === 'AbortError') {
+        throw new Error(`Request timeout after ${timeoutMs / 1000} seconds`);
+      }
+      throw error;
+    }
+  };
+
+  // Helper function to adjust ML confidence when rules and ML agree
+  const adjustMLConfidence = (cookie, mlData) => {
+    let adjustedConfidence = mlData.confidence_score;
+    let adjustedLevel = mlData.confidence_level;
+    
+    // Hybrid confidence boost: If rule-based and ML agree, boost confidence
+    if (cookie.category !== 'Uncategorized' && 
+        cookie.category === mlData.predicted_category) {
+      // Both agree! Boost confidence by 25% (max 95%)
+      adjustedConfidence = Math.min(0.95, mlData.confidence_score + 0.25);
+      if (adjustedConfidence >= 0.85) {
+        adjustedLevel = 'High';
+      } else if (adjustedConfidence >= 0.65) {
+        adjustedLevel = 'Medium';
+      }
+    }
+    
+    return { adjustedConfidence, adjustedLevel };
+  };
+
   // ML Classification function
   const classifyCookiesWithML = async (cookies) => {
     try {
@@ -151,18 +227,28 @@ function App() {
       
       console.log(`🤖 Calling ML API for ${cookies.length} cookies...`);
       
-      const response = await fetch('http://localhost:8001/api/v1/ml/classify', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+      // ML Classification timeout: 30 seconds
+      const response = await fetchWithTimeout(
+        'http://localhost:8001/api/v1/ml/classify',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(requestBody)
         },
-        body: JSON.stringify(requestBody)
-      });
+        30000 // 30 seconds timeout
+      );
 
       if (response.ok) {
         const data = await response.json();
         console.log('✅ ML API Response:', data.summary);
         console.log('Sample classification:', data.classifications[0]);
+        console.log('All classifications:', data.classifications.map(c => ({
+          category: c.predicted_category,
+          confidence: c.confidence_score,
+          level: c.confidence_level
+        })));
         
         // Always use ML predictions (even if confidence is low)
         return data.classifications;
@@ -170,7 +256,11 @@ function App() {
         console.error('❌ ML API returned error:', response.status, response.statusText);
       }
     } catch (error) {
-      console.error('❌ ML API failed:', error);
+      if (error.message.includes('timeout')) {
+        console.error('❌ ML API timeout after 30 seconds');
+      } else {
+        console.error('❌ ML API failed:', error);
+      }
     }
     
     // Return mock data for demonstration when API fails or model is untrained
@@ -202,7 +292,13 @@ function App() {
         } else {
           // Random confidence for unknown
           confidence_score = 0.45 + Math.random() * 0.3;
-          confidence_level = confidence_score >= 0.65 ? 'Medium' : 'Low';
+          if (confidence_score >= 0.85) {
+            confidence_level = 'High';
+          } else if (confidence_score >= 0.65) {
+            confidence_level = 'Medium';
+          } else {
+            confidence_level = 'Low';
+          }
         }
         
         return {
@@ -259,26 +355,31 @@ function App() {
         const updatedCookies = results.cookies.map((cookie, idx) => {
           const mlData = mlClassifications[idx];
           
-          // Option C: Blend both approaches
-          // Use ML classification if rule-based returned 'Uncategorized'
+          // Keep original category from scan, add ML prediction separately
           if (mlData && mlData.predicted_category) {
-            const effectiveCategory = cookie.category === 'Uncategorized' 
+            // Only update category if it was Uncategorized from the scan
+            const finalCategory = cookie.category === 'Uncategorized' 
               ? mlData.predicted_category 
               : cookie.category;
             
+            // Hybrid confidence boost: If rule-based and ML agree, boost confidence
+            const { adjustedConfidence, adjustedLevel } = adjustMLConfidence(cookie, mlData);
+            
             return {
               ...cookie,
-              category: effectiveCategory, // Update actual category if Uncategorized
-              mlClassification: mlData.predicted_category,
-              mlConfidence: mlData.confidence_score,
-              mlConfidenceLevel: mlData.confidence_level,
+              originalCategory: cookie.category, // Store original scan result
+              category: finalCategory, // Update only if Uncategorized
+              mlClassification: mlData.predicted_category, // Always show ML prediction
+              mlConfidence: adjustedConfidence,
+              mlConfidenceLevel: adjustedLevel,
               websiteProvided: false,
-              categorySource: cookie.category === 'Uncategorized' ? 'ml' : 'rules' // Track source
+              categorySource: cookie.category === 'Uncategorized' ? 'ml' : 'rules'
             };
           } else {
             // No ML data available
             return {
               ...cookie,
+              originalCategory: cookie.category,
               mlClassification: 'Unclassified',
               mlConfidence: 0.0,
               mlConfidenceLevel: 'Low',
@@ -362,26 +463,31 @@ function App() {
           const updatedCookies = results.cookies.map((cookie, idx) => {
             const mlData = mlClassifications[idx];
             
-            // Option C: Blend both approaches
-            // Use ML classification if rule-based returned 'Uncategorized'
+            // Keep original category from scan, add ML prediction separately
             if (mlData && mlData.predicted_category) {
-              const effectiveCategory = cookie.category === 'Uncategorized' 
+              // Only update category if it was Uncategorized from the scan
+              const finalCategory = cookie.category === 'Uncategorized' 
                 ? mlData.predicted_category 
                 : cookie.category;
               
+              // Hybrid confidence boost: If rule-based and ML agree, boost confidence
+              const { adjustedConfidence, adjustedLevel } = adjustMLConfidence(cookie, mlData);
+              
               return {
                 ...cookie,
-                category: effectiveCategory, // Update actual category if Uncategorized
-                mlClassification: mlData.predicted_category,
-                mlConfidence: mlData.confidence_score,
-                mlConfidenceLevel: mlData.confidence_level,
+                originalCategory: cookie.category, // Store original scan result
+                category: finalCategory, // Update only if Uncategorized
+                mlClassification: mlData.predicted_category, // Always show ML prediction
+                mlConfidence: adjustedConfidence,
+                mlConfidenceLevel: adjustedLevel,
                 websiteProvided: false,
-                categorySource: cookie.category === 'Uncategorized' ? 'ml' : 'rules' // Track source
+                categorySource: cookie.category === 'Uncategorized' ? 'ml' : 'rules'
               };
             } else {
               // No ML data available
               return {
                 ...cookie,
+                originalCategory: cookie.category,
                 mlClassification: 'Unclassified',
                 mlConfidence: 0.0,
                 mlConfidenceLevel: 'Low',
@@ -444,19 +550,24 @@ function App() {
 
     try {
       // Use backend API for remote URL scanning
-      const response = await fetch('http://localhost:8001/api/scan', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+      // Quick Scan timeout: 120 seconds (2 minutes)
+      const response = await fetchWithTimeout(
+        'http://localhost:8001/api/scan',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            url: url,
+            scanType: 'quick',
+            maxPages: 1,
+            concurrency: 1,
+            maxDepth: 1
+          })
         },
-        body: JSON.stringify({
-          url: url,
-          scanType: 'quick',
-          maxPages: 1,
-          concurrency: 1,
-          maxDepth: 1
-        })
-      });
+        120000 // 120 seconds (2 minutes) timeout
+      );
 
       if (!response.ok) {
         throw new Error(`Scan failed: ${response.statusText}`);
@@ -485,26 +596,31 @@ function App() {
           const updatedCookies = results.cookies.map((cookie, idx) => {
             const mlData = mlClassifications[idx];
             
-            // Option C: Blend both approaches
-            // Use ML classification if rule-based returned 'Uncategorized'
+            // Keep original category from scan, add ML prediction separately
             if (mlData && mlData.predicted_category) {
-              const effectiveCategory = cookie.category === 'Uncategorized' 
+              // Only update category if it was Uncategorized from the scan
+              const finalCategory = cookie.category === 'Uncategorized' 
                 ? mlData.predicted_category 
                 : cookie.category;
               
+              // Hybrid confidence boost: If rule-based and ML agree, boost confidence
+              const { adjustedConfidence, adjustedLevel } = adjustMLConfidence(cookie, mlData);
+              
               return {
                 ...cookie,
-                category: effectiveCategory, // Update actual category if Uncategorized
-                mlClassification: mlData.predicted_category,
-                mlConfidence: mlData.confidence_score,
-                mlConfidenceLevel: mlData.confidence_level,
+                originalCategory: cookie.category, // Store original scan result
+                category: finalCategory, // Update only if Uncategorized
+                mlClassification: mlData.predicted_category, // Always show ML prediction
+                mlConfidence: adjustedConfidence,
+                mlConfidenceLevel: adjustedLevel,
                 websiteProvided: false,
-                categorySource: cookie.category === 'Uncategorized' ? 'ml' : 'rules' // Track source
+                categorySource: cookie.category === 'Uncategorized' ? 'ml' : 'rules'
               };
             } else {
               // No ML data available
               return {
                 ...cookie,
+                originalCategory: cookie.category,
                 mlClassification: 'Unclassified',
                 mlConfidence: 0.0,
                 mlConfidenceLevel: 'Low',
@@ -632,9 +748,7 @@ function App() {
       thirdParty: results.statistics.thirdParty,
       categories: { ...results.statistics.byCategory },
       types: { ...results.statistics.byType },
-      gdprRisk: results.statistics.requiresConsent > 0 ? 'HIGH' : 'LOW',
-      ccpaRisk: results.cookies.some(c => c.category === 'Marketing') ? 'HIGH' : results.cookies.some(c => c.category === 'Analytics') ? 'MEDIUM' : 'LOW',
-      dpdpRisk: results.statistics.requiresConsent > 0 ? 'HIGH' : 'LOW',
+      ...calculateComplianceRisks(results.cookies, results.statistics),
       scanType: results.scanType || 'quick',
       fullResults: cleanResults // Store cleaned results for detailed view
     };
@@ -1586,11 +1700,11 @@ function App() {
                               <td className="col-vendor">{cookie.domain}</td>
                               <td className="col-category">
                                 <span 
-                                  className={`category-badge category-${(cookie.category || 'uncategorized').toLowerCase().replace(/\s+/g, '-')}`}
+                                  className={`category-badge category-${((cookie.originalCategory || cookie.category) || 'uncategorized').toLowerCase().replace(/\s+/g, '-')}`}
                                   role="status"
-                                  aria-label={`Cookie category: ${cookie.category || 'Uncategorized'}`}
+                                  aria-label={`Cookie category: ${(cookie.originalCategory || cookie.category) || 'Uncategorized'}`}
                                 >
-                                  {cookie.category || 'Uncategorized'}
+                                  {(cookie.originalCategory || cookie.category) || 'Uncategorized'}
                                 </span>
                               </td>
                               <td className="col-ml-classification">
@@ -1611,12 +1725,15 @@ function App() {
                               </td>
                               <td className="col-confidence">
                                 {cookie.mlConfidence !== undefined ? (
-                                  <div className="confidence-display">
-                                    <span className={`confidence-badge confidence-${cookie.mlConfidenceLevel?.toLowerCase() || 'low'}`}>
-                                      {(cookie.mlConfidence * 100).toFixed(0)}%
-                                    </span>
-                                    <span className="confidence-level">{cookie.mlConfidenceLevel || 'Low'}</span>
-                                  </div>
+                                  <ConfidenceBadge
+                                    confidence={cookie.mlConfidence}
+                                    confidenceLevel={cookie.mlConfidenceLevel || 'Low'}
+                                    cookieName={cookie.name}
+                                    mlClassification={cookie.mlClassification}
+                                    actualCategory={cookie.originalCategory || cookie.category}
+                                    onConfirm={handleConfidenceConfirm}
+                                    onIgnore={handleConfidenceIgnore}
+                                  />
                                 ) : (
                                   <span className="confidence-badge confidence-pending">--</span>
                                 )}
