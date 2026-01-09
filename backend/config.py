@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     BACKEND_PORT: int = 8000
     
     # CORS
-    ALLOWED_ORIGINS: str = "http://localhost:5173,http://localhost:3000,http://localhost:3001"
+    ALLOWED_ORIGINS: str = "http://localhost:5173,http://localhost:3000,http://localhost:3001,http://localhost:3002"
     
     # Scanning configuration - Industry Grade
     MAX_CONCURRENT_PAGES: int = 100  # Increased from 50 for faster scanning

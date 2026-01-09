@@ -48,7 +48,7 @@ function CategoryDropdown({
 
     try {
       // Call API to update category
-      const response = await fetch('http://localhost:8000/api/categories/update-category', {
+      const response = await fetch('http://localhost:8003/api/categories/update-category', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

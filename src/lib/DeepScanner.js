@@ -9,7 +9,7 @@ export class DeepScanner {
       maxPages: 20000,  // Industry-grade: 20K pages
       maxDepth: 500,    // Industry-grade: deep crawling
       concurrency: 50,  // High-performance parallel scanning
-      backendUrl: 'http://localhost:8001',  // Updated to match running backend
+      backendUrl: 'http://localhost:8000',  // Updated to match running backend
       ...options
     };
 
@@ -93,7 +93,14 @@ export class DeepScanner {
               if (data.type === 'progress') {
                 const now = Date.now();
                 const elapsed = now - startTime;
-                const current = data.current || 0;
+                const current = data.current;
+                
+                // Only process if we have valid current value
+                if (current === undefined || current === null) {
+                  console.warn('Received progress update without current value:', data);
+                  continue;
+                }
+                
                 const avgTimePerPage = current > 0 ? Math.round(elapsed / current / 1000) : 4;
                 
                 // Calculate total duration

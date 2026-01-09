@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Scan Page Count Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .test-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .test-button:hover {
+            background: #0056b3;
+        }
+        .results {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 10px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .progress {
+            background: #e9ecef;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            background: #007bff;
+            height: 20px;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+            color: white;
+            text-align: center;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Deep Scan Page Count Test</h1>
+    
+    <div class="test-container">
+        <h3>Test Deep Scan with Different Page Counts</h3>
+        <p>This will test the backend's ability to simulate scanning the requested number of pages.</p>
+        
+        <button class="test-button" onclick="testDeepScan(5)">Test 5 Pages</button>
+        <button class="test-button" onclick="testDeepScan(10)">Test 10 Pages</button>
+        <button class="test-button" onclick="testDeepScan(25)">Test 25 Pages</button>
+        <button class="test-button" onclick="testDeepScan(50)">Test 50 Pages</button>
+        <button class="test-button" onclick="testDeepScan(100)">Test 100 Pages</button>
+        
+        <div id="progress" class="progress" style="display: none;">
+            <div id="progress-bar" class="progress-bar" style="width: 0%;">0%</div>
+        </div>
+        
+        <div id="results" class="results" style="display: none;"></div>
+    </div>
+
+    <script>
+        let currentEventSource = null;
+
+        function testDeepScan(pageCount) {
+            // Close any existing connection
+            if (currentEventSource) {
+                currentEventSource.close();
+            }
+
+            const resultsDiv = document.getElementById('results');
+            const progressDiv = document.getElementById('progress');
+            const progressBar = document.getElementById('progress-bar');
+            
+            resultsDiv.style.display = 'block';
+            progressDiv.style.display = 'block';
+            resultsDiv.textContent = `Starting deep scan for ${pageCount} pages...\n`;
+            
+            progressBar.style.width = '0%';
+            progressBar.textContent = '0%';
+
+            const scanRequest = {
+                url: 'https://example.com',
+                scanType: 'deep',
+                maxPages: pageCount,
+                concurrency: 10,
+                maxDepth: 3
+            };
+
+            fetch('http://localhost:8003/api/scan-stream', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(scanRequest)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                
+                function readStream() {
+                    return reader.read().then(({ done, value }) => {
+                        if (done) {
+                            resultsDiv.textContent += '\n✅ Stream completed!';
+                            return;
+                        }
+                        
+                        const chunk = decoder.decode(value);
+                        const lines = chunk.split('\n');
+                        
+                        for (const line of lines) {
+                            if (line.startsWith('data: ')) {
+                                try {
+                                    const data = JSON.parse(line.slice(6));
+                                    
+                                    if (data.type === 'progress') {
+                                        const percent = Math.round((data.current / data.total) * 100);
+                                        progressBar.style.width = percent + '%';
+                                        progressBar.textContent = `${percent}% (${data.current}/${data.total})`;
+                                        
+                                        resultsDiv.textContent += `📄 Page ${data.current}/${data.total}: ${data.currentUrl}\n`;
+                                        resultsDiv.scrollTop = resultsDiv.scrollHeight;
+                                    } else if (data.type === 'complete') {
+                                        progressBar.style.width = '100%';
+                                        progressBar.textContent = '100% Complete';
+                                        
+                                        const result = data.result;
+                                        resultsDiv.textContent += `\n🎉 Scan Complete!\n`;
+                                        resultsDiv.textContent += `📊 Total Pages Scanned: ${result.totalPagesScanned}\n`;
+                                        resultsDiv.textContent += `🍪 Total Cookies Found: ${result.totalCount}\n`;
+                                        resultsDiv.textContent += `📈 Statistics:\n`;
+                                        resultsDiv.textContent += `   - By Category: ${JSON.stringify(result.statistics.byCategory, null, 2)}\n`;
+                                        resultsDiv.textContent += `   - Requires Consent: ${result.statistics.requiresConsent}\n`;
+                                        resultsDiv.textContent += `   - Third Party: ${result.statistics.thirdParty}\n`;
+                                        resultsDiv.scrollTop = resultsDiv.scrollHeight;
+                                    }
+                                } catch (e) {
+                                    console.error('Error parsing SSE data:', e);
+                                }
+                            }
+                        }
+                        
+                        return readStream();
+                    });
+                }
+                
+                return readStream();
+            })
+            .catch(error => {
+                resultsDiv.textContent += `\n❌ Error: ${error.message}`;
+                progressDiv.style.display = 'none';
+            });
+        }
+    </script>
+</body>
+</html>

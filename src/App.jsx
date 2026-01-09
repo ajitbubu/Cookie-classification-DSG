@@ -229,7 +229,7 @@ function App() {
       
       // ML Classification timeout: 30 seconds
       const response = await fetchWithTimeout(
-        'http://localhost:8001/api/v1/ml/classify',
+        'http://localhost:8003/api/v1/ml/classify',
         {
           method: 'POST',
           headers: {
@@ -414,7 +414,7 @@ function App() {
     const scanStartTime = Date.now();
     setIsDeepScanning(true);
     setScanning(true);
-    setDeepScanProgress({ current: 0, total: maxPages, status: 'starting' });
+    setDeepScanProgress(null);
 
     try {
       const targetUrl = url || window.location.href;
@@ -552,7 +552,7 @@ function App() {
       // Use backend API for remote URL scanning
       // Quick Scan timeout: 120 seconds (2 minutes)
       const response = await fetchWithTimeout(
-        'http://localhost:8001/api/scan',
+        'http://localhost:8003/api/scan',
         {
           method: 'POST',
           headers: {
@@ -1055,7 +1055,7 @@ function App() {
     
     // Step 2: Persist the change to the backend via API call
     try {
-      const response = await fetch('http://localhost:8000/api/categories/update-category', {
+      const response = await fetch('http://localhost:8003/api/categories/update-category', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -1433,7 +1433,7 @@ function App() {
                 )}
               </div>
 
-              {deepScanProgress && (
+              {deepScanProgress && deepScanProgress.current > 0 && (
                     <div className="audit-progress-slim">
                       <div className="audit-slim-header">
                         <div className="audit-slim-status">
@@ -1641,7 +1641,7 @@ function App() {
                     >
                       <Cookie size={18} />
                       <span className="tab-label">COOKIES</span>
-                      <span className="tab-count">{scanResult.totalCount || scanResult.cookies?.length || 0}</span>
+                      <span className="tab-count">{filteredCookies.length}</span>
                     </button>
                     <button
                       className={`audit-tab ${resultsTab === 'categories' ? 'active' : ''}`}
@@ -1667,7 +1667,7 @@ function App() {
                     >
                       <Globe size={18} />
                       <span className="tab-label">VENDORS</span>
-                      <span className="tab-count">{new Set((scanResult.cookies || []).map(c => c.domain)).size}</span>
+                      <span className="tab-count">{new Set(filteredCookies.map(c => c.domain)).size}</span>
                     </button>
                   </div>
 
@@ -1689,7 +1689,7 @@ function App() {
                           </tr>
                         </thead>
                         <tbody>
-                          {scanResult.cookies.map((cookie, idx) => (
+                          {filteredCookies.map((cookie, idx) => (
                             <tr key={idx} className="audit-table-row">
                               <td className="col-icon">
                                 <Cookie size={16} className="cookie-icon" />
@@ -1895,8 +1895,8 @@ function App() {
                           </tr>
                         </thead>
                         <tbody>
-                          {Array.from(new Set(scanResult.cookies.map(c => c.domain))).map(domain => {
-                            const domainCookies = scanResult.cookies.filter(c => c.domain === domain);
+                          {Array.from(new Set(filteredCookies.map(c => c.domain))).map(domain => {
+                            const domainCookies = filteredCookies.filter(c => c.domain === domain);
                             const mainCategory = domainCookies.reduce((acc, c) => {
                               acc[c.category] = (acc[c.category] || 0) + 1;
                               return acc;
@@ -1933,7 +1933,7 @@ function App() {
                         </tbody>
                       </table>
                       <div className="audit-table-footer">
-                        <span>Total Rows: {new Set(scanResult.cookies.map(c => c.domain)).size}</span>
+                        <span>Total Rows: {new Set(filteredCookies.map(c => c.domain)).size}</span>
                       </div>
                     </div>
                   )}
