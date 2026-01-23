@@ -12,12 +12,14 @@ from dataclasses import dataclass
 from datetime import datetime
 
 from .feature_extractor import FeatureExtractor
+from .feature_extractor_v3 import FeatureExtractorV3
 from .config import (
     get_model_path,
     get_confidence_level,
     should_auto_classify,
     requires_review,
-    CATEGORIES
+    CATEGORIES,
+    CURRENT_MODEL_VERSION
 )
 
 
@@ -62,8 +64,16 @@ class CookieClassifier:
         # Load model components
         self._load_model()
         
-        # Initialize feature extractor
-        self.feature_extractor = FeatureExtractor()
+        # Initialize feature extractor based on actual model features
+        # Check metadata for num_features to determine which extractor to use
+        num_features = self.metadata.get('num_features', 0)
+        
+        if num_features <= 24:  # v3.0.0 uses 16-24 features
+            self.feature_extractor = FeatureExtractorV3()
+            print(f"✅ Using FeatureExtractorV3 (24 features)")
+        else:
+            self.feature_extractor = FeatureExtractor()
+            print(f"✅ Using FeatureExtractor (37 features)")
     
     def _load_model(self):
         """Load model and associated artifacts."""

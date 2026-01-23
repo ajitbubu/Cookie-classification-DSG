@@ -5,11 +5,32 @@ FastAPI endpoints for ML-based cookie classification.
 """
 
 from fastapi import APIRouter, HTTPException, status, Depends, Request
-from pydantic import BaseModel, Field
+from fastapi.responses import JSONResponse
+from pydantic import BaseModel, Field, field_serializer
 from typing import List, Optional, Dict, Any
 from datetime import datetime
 import logging
 import time
+import numpy as np
+import json
+
+
+def convert_numpy_types(obj: Any) -> Any:
+    """Recursively convert numpy types to Python native types"""
+    if isinstance(obj, (np.integer, np.int64, np.int32)):
+        return int(obj)
+    elif isinstance(obj, (np.floating, np.float64, np.float32)):
+        return float(obj)
+    elif isinstance(obj, np.ndarray):
+        return obj.tolist()
+    elif isinstance(obj, dict):
+        return {key: convert_numpy_types(value) for key, value in obj.items()}
+    elif isinstance(obj, (list, tuple)):
+        return [convert_numpy_types(item) for item in obj]
+    elif hasattr(obj, '__dict__'):
+        # Handle dataclass or object with attributes
+        return {key: convert_numpy_types(value) for key, value in obj.__dict__.items()}
+    return obj
 
 from backend.api.ml_classifier.feature_extractor import FeatureExtractor
 from backend.api.ml_classifier.classifier import CookieClassifier
@@ -162,6 +183,15 @@ class AlternativePrediction(BaseModel):
     """Alternative prediction with probability."""
     category: str
     probability: float
+    
+    model_config = {
+        'json_encoders': {
+            np.float32: float,
+            np.float64: float,
+            np.int32: int,
+            np.int64: int,
+        }
+    }
 
 
 class FeatureContribution(BaseModel):
@@ -216,6 +246,15 @@ class Classification(BaseModel):
     model_version: str
     classified_at: str
     processing_time_ms: float
+    
+    model_config = {
+        'json_encoders': {
+            np.float32: float,
+            np.float64: float,
+            np.int32: int,
+            np.int64: int,
+        }
+    }
 
 
 class ClassificationSummary(BaseModel):
@@ -267,7 +306,7 @@ class ClassificationResponse(BaseModel):
 # API Endpoints
 # ============================================================================
 
-@router.post("/classify", response_model=ClassificationResponse)
+@router.post("/classify")
 async def classify_cookies(request: ClassificationRequest):
     """
     Classify cookies using ML model.
@@ -311,7 +350,10 @@ async def classify_cookies(request: ClassificationRequest):
                 # Convert to dict
                 cookie_dict = cookie_input.model_dump()
                 
-                # 1. Classify (classifier will extract features internally)
+                # 1. Extract features (needed for explanation)
+                features = feature_extractor.extract_features(cookie_dict)
+                
+                # 2. Classify (classifier will extract features internally)
                 result = classifier.classify(cookie_dict)
                 
                 # 3. Generate explanation (if requested)
@@ -364,7 +406,7 @@ async def classify_cookies(request: ClassificationRequest):
                                     cookie_id=s.cookie_id,
                                     cookie_name=s.cookie_name,
                                     cookie_domain=s.cookie_domain,
-                                    similarity_score=s.similarity_score,
+                                    similarity_score=float(s.similarity_score),  # Convert to Python float
                                     category=s.category
                                 )
                                 for s in similar[:5]
@@ -394,27 +436,30 @@ async def classify_cookies(request: ClassificationRequest):
                 )
                 
                 # 7. Build classification result
-                classification = Classification(
-                    cookie_id=cookie_input.id,
-                    predicted_category=result.predicted_category,
-                    confidence_score=result.confidence_score,
-                    confidence_level=result.confidence_level,
-                    auto_classified=auto_classified,
-                    requires_review=needs_review,
-                    alternative_predictions=[
+                # Convert all numpy types to Python types
+                result_dict = {
+                    'cookie_id': cookie_input.id,
+                    'predicted_category': result.predicted_category,
+                    'confidence_score': convert_numpy_types(result.confidence_score),
+                    'confidence_level': result.confidence_level,
+                    'auto_classified': auto_classified,
+                    'requires_review': needs_review,
+                    'alternative_predictions': [
                         AlternativePrediction(
                             category=alt.category,
-                            probability=alt.probability
+                            probability=convert_numpy_types(alt.probability)
                         )
                         for alt in result.alternatives
                     ],
-                    explanation=explanation,
-                    vendor_info=None,  # TODO: Add vendor detection
-                    similar_cookies=similar_cookies_info,
-                    model_version=CURRENT_MODEL_VERSION,
-                    classified_at=datetime.now().isoformat(),
-                    processing_time_ms=cookie_time
-                )
+                    'explanation': explanation,
+                    'vendor_info': None,
+                    'similar_cookies': similar_cookies_info,
+                    'model_version': CURRENT_MODEL_VERSION,
+                    'classified_at': datetime.now().isoformat(),
+                    'processing_time_ms': convert_numpy_types(cookie_time)
+                }
+                
+                classification = Classification(**result_dict)
                 
                 classifications.append(classification)
                 
@@ -456,8 +501,8 @@ async def classify_cookies(request: ClassificationRequest):
             total_cookies=len(request.cookies),
             auto_classified=auto_classified_count,
             requires_review=requires_review_count,
-            avg_confidence=avg_confidence,
-            total_processing_time_ms=total_time
+            avg_confidence=convert_numpy_types(avg_confidence),
+            total_processing_time_ms=convert_numpy_types(total_time)
         )
         
         logger.info(
@@ -466,10 +511,42 @@ async def classify_cookies(request: ClassificationRequest):
             f"review: {requires_review_count})"
         )
         
-        return ClassificationResponse(
-            classifications=classifications,
-            summary=summary
-        )
+        # Convert to dict and ensure all numpy types are converted
+        response_data = {
+            'classifications': [
+                {
+                    'cookie_id': c.cookie_id,
+                    'predicted_category': c.predicted_category,
+                    'confidence_score': convert_numpy_types(c.confidence_score),
+                    'confidence_level': c.confidence_level,
+                    'auto_classified': c.auto_classified,
+                    'requires_review': c.requires_review,
+                    'alternative_predictions': [
+                        {
+                            'category': alt.category,
+                            'probability': convert_numpy_types(alt.probability)
+                        }
+                        for alt in c.alternative_predictions
+                    ],
+                    'explanation': convert_numpy_types(c.explanation.model_dump()) if c.explanation else None,
+                    'vendor_info': convert_numpy_types(c.vendor_info.model_dump()) if c.vendor_info else None,
+                    'similar_cookies': convert_numpy_types(c.similar_cookies.model_dump()) if c.similar_cookies else None,
+                    'model_version': c.model_version,
+                    'classified_at': c.classified_at,
+                    'processing_time_ms': convert_numpy_types(c.processing_time_ms)
+                }
+                for c in classifications
+            ],
+            'summary': {
+                'total_cookies': summary.total_cookies,
+                'auto_classified': summary.auto_classified,
+                'requires_review': summary.requires_review,
+                'avg_confidence': convert_numpy_types(summary.avg_confidence),
+                'total_processing_time_ms': convert_numpy_types(summary.total_processing_time_ms)
+            }
+        }
+        
+        return JSONResponse(content=response_data)
         
     except Exception as e:
         logger.error(f"Error in classification endpoint: {e}", exc_info=True)

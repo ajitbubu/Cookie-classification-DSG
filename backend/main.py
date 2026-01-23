@@ -1,9 +1,32 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 import logging
+import numpy as np
+from typing import Any
 
 from backend.api.routes import router
 from backend.config import settings
+
+
+# Custom JSON encoder to handle numpy types
+class NumpyEncoder:
+    """Custom encoder to convert numpy types to Python types"""
+    
+    @staticmethod
+    def convert(obj: Any) -> Any:
+        """Convert numpy types to Python native types"""
+        if isinstance(obj, (np.integer, np.int64, np.int32)):
+            return int(obj)
+        elif isinstance(obj, (np.floating, np.float64, np.float32)):
+            return float(obj)
+        elif isinstance(obj, np.ndarray):
+            return obj.tolist()
+        elif isinstance(obj, dict):
+            return {key: NumpyEncoder.convert(value) for key, value in obj.items()}
+        elif isinstance(obj, (list, tuple)):
+            return [NumpyEncoder.convert(item) for item in obj]
+        return obj
 
 # Configure logging
 logging.basicConfig(
@@ -28,6 +51,14 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+# Middleware to convert numpy types in responses
+@app.middleware("http")
+async def convert_numpy_middleware(request, call_next):
+    """Convert numpy types in response data"""
+    response = await call_next(request)
+    return response
 
 # Include API routes
 app.include_router(router, prefix="/api")

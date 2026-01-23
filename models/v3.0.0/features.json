@@ -1,0 +1,18 @@
+[
+  "expiry_days",
+  "secure",
+  "http_only",
+  "is_third_party",
+  "cookie_name_len",
+  "is_ga_like",
+  "is_fb_like",
+  "has_prefix_utm",
+  "has_consent_kw",
+  "has_session_kw",
+  "domain_length",
+  "is_subdomain",
+  "has_underscore",
+  "has_number",
+  "is_session_cookie",
+  "is_long_term"
+]

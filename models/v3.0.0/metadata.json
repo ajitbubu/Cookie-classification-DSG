@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "model_type": "xgboost",
+  "trained_at": "2026-01-16T20:03:08.693012",
+  "num_features": 16,
+  "categories": [
+    "Advertising",
+    "Analytics",
+    "Functional",
+    "Personalization",
+    "Social Media Tracking",
+    "Strictly Necessary",
+    "Unclassified"
+  ],
+  "training_samples": 80000,
+  "test_samples": 20000,
+  "metrics": {
+    "accuracy": 0.94165,
+    "f1_score": 0.9442856643765212
+  }
+}
