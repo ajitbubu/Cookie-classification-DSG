@@ -1,0 +1,167 @@
+# COPY THESE CELLS TO YOUR COLAB NOTEBOOK
+# Replace Cell 1 with this improved version that auto-finds your files
+
+# ============================================================================
+# CELL 1: Mount Drive and Auto-Find Files
+# ============================================================================
+
+from google.colab import drive
+import os
+
+# Mount Google Drive
+drive.mount('/content/drive')
+
+print("🔍 Searching for your CSV files...")
+print()
+
+# Try common locations
+possible_paths = [
+    '/content/drive/MyDrive/Cookie_Training_Data',
+    '/content/drive/MyDrive/Cookie Training Data',
+    '/content/drive/MyDrive/models/training_data/Training-data-01162026',
+    '/content/drive/MyDrive/Training-data-01162026',
+    '/content/drive/MyDrive',
+]
+
+DATA_DIR = None
+
+for path in possible_paths:
+    train_file = f"{path}/cookie_training_100k_train_80.csv"
+    if os.path.exists(train_file):
+        DATA_DIR = path
+        print(f"✅ Found files at: {DATA_DIR}")
+        break
+
+if DATA_DIR is None:
+    print("❌ Could not find files automatically")
+    print()
+    print("Searching entire Drive (this may take a moment)...")
+    
+    # Deep search
+    for root, dirs, files in os.walk('/content/drive/MyDrive/'):
+        for file in files:
+            if file == 'cookie_training_100k_train_80.csv':
+                DATA_DIR = root
+                print(f"✅ Found files at: {DATA_DIR}")
+                break
+        if DATA_DIR:
+            break
+
+if DATA_DIR is None:
+    print()
+    print("=" * 70)
+    print("FILES NOT FOUND!")
+    print("=" * 70)
+    print()
+    print("Please do ONE of the following:")
+    print()
+    print("Option 1: Upload files to Google Drive")
+    print("  1. Go to Google Drive")
+    print("  2. Create folder: Cookie_Training_Data")
+    print("  3. Upload both CSV files to that folder")
+    print("  4. Re-run this cell")
+    print()
+    print("Option 2: Upload directly to Colab (temporary)")
+    print("  Run this code in a new cell:")
+    print()
+    print("  from google.colab import files")
+    print("  uploaded = files.upload()")
+    print("  DATA_DIR = '/content'")
+    print()
+    raise FileNotFoundError("CSV files not found. Please upload them first.")
+else:
+    # Verify both files exist
+    train_file = f"{DATA_DIR}/cookie_training_100k_train_80.csv"
+    test_file = f"{DATA_DIR}/cookie_training_100k_test_20.csv"
+    
+    if os.path.exists(train_file) and os.path.exists(test_file):
+        print(f"✅ Training file: {train_file}")
+        print(f"✅ Test file: {test_file}")
+        print()
+        print("🎉 Ready to train!")
+    else:
+        print(f"❌ Missing files in {DATA_DIR}")
+        if not os.path.exists(train_file):
+            print(f"  Missing: cookie_training_100k_train_80.csv")
+        if not os.path.exists(test_file):
+            print(f"  Missing: cookie_training_100k_test_20.csv")
+        raise FileNotFoundError("One or both CSV files are missing")
+
+
+# ============================================================================
+# ALTERNATIVE CELL 1: Direct Upload (No Google Drive)
+# ============================================================================
+# Use this if you want to skip Google Drive and upload directly
+
+from google.colab import files
+import os
+
+print("📤 Upload your CSV files")
+print("Select BOTH files when prompted:")
+print("  - cookie_training_100k_train_80.csv")
+print("  - cookie_training_100k_test_20.csv")
+print()
+
+uploaded = files.upload()
+
+# Verify uploads
+if 'cookie_training_100k_train_80.csv' in uploaded and 'cookie_training_100k_test_20.csv' in uploaded:
+    DATA_DIR = '/content'
+    print()
+    print(f"✅ Files uploaded successfully!")
+    print(f"✅ Training file: {len(uploaded['cookie_training_100k_train_80.csv']):,} bytes")
+    print(f"✅ Test file: {len(uploaded['cookie_training_100k_test_20.csv']):,} bytes")
+    print()
+    print("🎉 Ready to train!")
+else:
+    print()
+    print("❌ Missing files! Please upload both:")
+    print("  - cookie_training_100k_train_80.csv")
+    print("  - cookie_training_100k_test_20.csv")
+    raise FileNotFoundError("Both CSV files are required")
+
+
+# ============================================================================
+# VERIFICATION CELL (Optional - add after Cell 1)
+# ============================================================================
+
+import os
+import pandas as pd
+
+print("🔍 Verifying files...")
+print()
+
+train_path = f"{DATA_DIR}/cookie_training_100k_train_80.csv"
+test_path = f"{DATA_DIR}/cookie_training_100k_test_20.csv"
+
+# Check files exist
+print(f"Training file: {train_path}")
+print(f"  Exists: {os.path.exists(train_path)}")
+if os.path.exists(train_path):
+    size_mb = os.path.getsize(train_path) / (1024 * 1024)
+    print(f"  Size: {size_mb:.2f} MB")
+
+print()
+
+print(f"Test file: {test_path}")
+print(f"  Exists: {os.path.exists(test_path)}")
+if os.path.exists(test_path):
+    size_mb = os.path.getsize(test_path) / (1024 * 1024)
+    print(f"  Size: {size_mb:.2f} MB")
+
+print()
+
+# Try loading first few rows
+try:
+    train_sample = pd.read_csv(train_path, nrows=5)
+    print("✅ Training file is readable")
+    print(f"   Columns: {list(train_sample.columns)}")
+    
+    test_sample = pd.read_csv(test_path, nrows=5)
+    print("✅ Test file is readable")
+    print(f"   Columns: {list(test_sample.columns)}")
+    
+    print()
+    print("🎉 All checks passed! Continue with training.")
+except Exception as e:
+    print(f"❌ Error reading files: {e}")
