@@ -1,0 +1,179 @@
+/* Left Sidebar */
+.left-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 64px;
+  background: #0f1729;
+  color: #c8cdd8;
+  display: flex;
+  flex-direction: column;
+  z-index: 1100;
+  transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.left-sidebar.expanded {
+  width: 220px;
+}
+
+.left-sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 12px 0;
+}
+
+/* Brand */
+.left-sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.left-sidebar-logo {
+  color: var(--ds-blue-400, #3D8BFF);
+  flex-shrink: 0;
+}
+
+.left-sidebar-brand-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+/* Nav list */
+.left-sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Nav item button */
+.left-sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  background: transparent;
+  color: #9ba3b5;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: background 0.15s, color 0.15s;
+}
+
+.left-sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.left-sidebar-item:focus-visible {
+  outline: 2px solid var(--ds-blue-400, #3D8BFF);
+  outline-offset: -2px;
+}
+
+.left-sidebar-icon {
+  flex-shrink: 0;
+}
+
+.left-sidebar-label {
+  opacity: 1;
+  transition: opacity 0.15s;
+}
+
+/* Active nav item */
+.left-sidebar-item.active {
+  background: rgba(61, 139, 255, 0.15);
+  color: #3D8BFF;
+}
+
+.left-sidebar-item.active .left-sidebar-icon {
+  color: #3D8BFF;
+}
+
+/* Nav divider */
+.left-sidebar-divider {
+  padding: 6px 12px;
+  list-style: none;
+}
+
+.left-sidebar-divider-line {
+  display: block;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  width: 100%;
+}
+
+/* Footer */
+.left-sidebar-footer {
+  padding: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Toggle button */
+.left-sidebar-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  color: #9ba3b5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.left-sidebar-toggle:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.left-sidebar-toggle:focus-visible {
+  outline: 2px solid var(--ds-blue-400, #3D8BFF);
+  outline-offset: -2px;
+}
+
+/* App layout offset when sidebar is pinned */
+.app-with-sidebar {
+  padding-left: 64px;
+  transition: padding-left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app-with-sidebar.sidebar-pinned {
+  padding-left: 220px;
+}
+
+/* Responsive: hide on small screens */
+@media (max-width: 768px) {
+  .left-sidebar {
+    display: none;
+  }
+  .app-with-sidebar,
+  .app-with-sidebar.sidebar-pinned {
+    padding-left: 0;
+  }
+}

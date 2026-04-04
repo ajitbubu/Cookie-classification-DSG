@@ -43,6 +43,14 @@ npm run preview
   - Visual indicators show agreement/disagreement between ML and actual categories
   - Confidence levels (High/Medium/Low) help assess prediction reliability
 
+- **🆕 Vendor Database Integration** - 3,900+ vendor patterns for enhanced accuracy
+  - IAB Global Vendor List (1,096 vendors)
+  - OneTrust vendor databases (3,170 vendors)
+  - 90-95% classification accuracy (up from 70%)
+  - 3-5x faster classification (pattern matching vs ML)
+  - Automatic vendor identification for 95%+ of cookies
+  - 📖 **[Deployment Guide](./docs/vendor-integration/READY_TO_DEPLOY.md)**
+
 - **Multi-Jurisdiction Compliance** 
   - GDPR (EU) compliance checking
   - CCPA/CPRA (California) compliance

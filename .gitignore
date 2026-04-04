@@ -25,6 +25,7 @@ build/
 # Testing
 coverage/
 .nyc_output
+.hypothesis/
 
 # Production
 build/
@@ -45,10 +46,12 @@ pnpm-debug.log*
 lerna-debug.log*
 *.log
 backend.log
+nohup.out
 
 # Editor & IDE
 .vscode/
 .idea/
+.kiro/
 *.sublime-project
 *.sublime-workspace
 *.iml
@@ -86,20 +89,44 @@ Desktop.ini
 .dockerignore
 
 # Data & Output files
-data/output/*.xlsx
-data/output/*.xls
-data/output/*.json
-data/output/*.xml
-data/output/*.log
+data/output/
+data/category_overrides/*.json
+data/iab_cache/
+data/onetrust_cache/
+data/vendor_intel_cache/
+data/*.parquet
 
-# ML Models (uncomment if models should not be committed)
-# models/*.pkl
-# models/*.h5
-# models/*.pt
-# models/*.pth
-# *.model
+# ML Models - Keep model files but exclude large binaries
+models/**/*.pkl
+models/**/*.h5
+models/**/*.pt
+models/**/*.pth
+models/**/*.model
+models/**/*.bin
+models/.DS_Store
+# Keep model metadata and configs
+!models/**/metadata.json
+!models/**/features.json
+!models/**/config.json
+!models/**/.gitkeep
 
-# Training data (uncomment if large datasets should be excluded)
-# training_data/*.csv
-# training_data/*.json
-# data/
+# Training data
+training_data/
+models/training_data/
+models/training_scripts/
+
+# Nginx SSL certificates (sensitive)
+nginx/ssl/
+
+# Vite temp files
+node_modules/.vite/
+node_modules/.vite-temp/
+vite.config.js.timestamp-*.mjs
+
+# Build logs
+frontend.log
+backend.log
+
+# Docs (generated, not needed in repo)
+docs/
+GITIGNORE_CLEANUP.md

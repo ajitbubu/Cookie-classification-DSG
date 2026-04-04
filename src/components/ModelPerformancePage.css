@@ -1,0 +1,175 @@
+/* ══════════════════════════════════════════════════════════
+   Model Performance Dashboard — ModelPerformancePage.css
+   PRD Sections 9-10 — Light Theme
+   ══════════════════════════════════════════════════════════ */
+
+.mp-page { padding: 24px 32px; max-width: 960px; margin: 0 auto; }
+
+.mp-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
+.mp-header__left { display: flex; align-items: flex-start; gap: 16px; }
+.mp-back-btn {
+  display: flex; align-items: center; gap: 6px;
+  background: var(--bg-tertiary, #f5f7fa); border: 1px solid var(--gray-100, #D9E2EE);
+  border-radius: 8px; color: var(--gray-700, #2C3440); font-size: 12px;
+  padding: 6px 12px; cursor: pointer; margin-top: 4px;
+}
+.mp-back-btn:hover { background: var(--gray-100, #D9E2EE); color: var(--gray-900, #05080F); }
+.mp-title { font-size: 22px; font-weight: 800; color: var(--gray-900, #05080F); margin: 0 0 4px; }
+.mp-subtitle { font-size: 13px; color: var(--gray-500, #9e9e9e); margin: 0; }
+
+.mp-version-badge {
+  font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 8px;
+  background: var(--ds-blue-50, #ECF3FF); color: var(--primary, #1A6DFF);
+}
+
+/* Stats Grid */
+.mp-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
+.mp-stat {
+  background: var(--bg-primary, #fff); border: 1px solid var(--gray-100, #D9E2EE);
+  border-radius: 10px; padding: 14px 16px; text-align: center;
+}
+.mp-stat__value { font-size: 24px; font-weight: 800; color: var(--gray-900, #05080F); }
+.mp-stat__label { font-size: 11px; color: var(--gray-500, #9e9e9e); margin-top: 2px; }
+.mp-stat__trend { font-size: 10px; margin-top: 4px; }
+.mp-stat__trend--up { color: #059669; }
+.mp-stat__trend--down { color: #dc2626; }
+.mp-stat__trend--flat { color: var(--gray-400, #bdbdbd); }
+
+/* Cards */
+.mp-card {
+  background: var(--bg-primary, #fff); border: 1px solid var(--gray-100, #D9E2EE);
+  border-radius: 12px; padding: 18px 20px; margin-bottom: 14px;
+}
+.mp-card__title {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 14px; font-weight: 700; color: var(--gray-900, #05080F); margin: 0 0 12px;
+}
+.mp-card__desc { font-size: 12px; color: var(--gray-500, #9e9e9e); margin: 0 0 12px; }
+
+/* Algorithm Comparison Table */
+.mp-algo-table { border-radius: 8px; overflow: hidden; border: 1px solid var(--gray-100, #D9E2EE); }
+.mp-algo-header {
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  padding: 10px 14px; background: var(--bg-tertiary, #f5f7fa);
+  font-size: 10px; font-weight: 700; color: var(--gray-500, #9e9e9e);
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+.mp-algo-row {
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  padding: 10px 14px; font-size: 13px; color: var(--gray-700, #2C3440);
+  border-top: 1px solid var(--gray-50, #F5F7FA);
+}
+.mp-algo-row--best { background: var(--ds-blue-50, #ECF3FF); font-weight: 600; }
+.mp-algo-name { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--gray-900, #05080F); }
+.mp-algo-best-tag {
+  font-size: 9px; font-weight: 700; text-transform: uppercase;
+  background: #dcfce7; color: #166534; padding: 1px 6px; border-radius: 4px;
+}
+.mp-algo-f1 { font-weight: 700; color: var(--gray-900, #05080F); }
+.mp-algo-note {
+  display: flex; align-items: center; gap: 6px; margin-top: 10px;
+  font-size: 11px; color: var(--gray-500, #9e9e9e);
+}
+
+/* Accuracy Trend Chart */
+.mp-trend-chart {
+  display: flex; align-items: flex-end; gap: 16px; height: 160px;
+  padding: 8px 0 0;
+}
+.mp-trend-item { display: flex; flex-direction: column; align-items: center; flex: 1; height: 100%; }
+.mp-trend-bar-wrap {
+  flex: 1; width: 100%; display: flex; align-items: flex-end; justify-content: center;
+}
+.mp-trend-bar {
+  width: 32px; border-radius: 6px 6px 0 0; min-height: 8px;
+  transition: height 0.4s ease;
+}
+.mp-trend-bar--green { background: #059669; }
+.mp-trend-bar--yellow { background: #d97706; }
+.mp-trend-bar--red { background: #dc2626; }
+.mp-trend-label { font-size: 10px; color: var(--gray-500, #9e9e9e); margin-top: 6px; }
+.mp-trend-value { font-size: 11px; font-weight: 700; color: var(--gray-900, #05080F); }
+
+/* Version History */
+.mp-versions { display: flex; flex-direction: column; gap: 8px; }
+.mp-version-row {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 14px; border-radius: 8px;
+  background: var(--bg-tertiary, #f5f7fa); border: 1px solid var(--gray-50, #F5F7FA);
+}
+.mp-version-row--current { border-color: var(--primary, #1A6DFF); background: var(--ds-blue-50, #ECF3FF); }
+.mp-version-name {
+  font-size: 13px; font-weight: 700; color: var(--gray-900, #05080F);
+  font-family: 'JetBrains Mono', monospace; min-width: 70px;
+}
+.mp-version-date { font-size: 11px; color: var(--gray-500, #9e9e9e); min-width: 90px; }
+.mp-version-accuracy { font-size: 13px; font-weight: 700; }
+.mp-version-accuracy--high { color: #059669; }
+.mp-version-accuracy--mid { color: #d97706; }
+.mp-version-accuracy--low { color: #dc2626; }
+.mp-version-features { font-size: 11px; color: var(--gray-500, #9e9e9e); }
+.mp-version-tag {
+  font-size: 9px; font-weight: 700; text-transform: uppercase;
+  padding: 2px 8px; border-radius: 4px; margin-left: auto;
+}
+.mp-version-tag--active { background: #dcfce7; color: #166534; }
+.mp-version-tag--old { background: var(--gray-100, #D9E2EE); color: var(--gray-500, #9e9e9e); }
+
+/* Training Data */
+.mp-training-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.mp-training-stat {
+  background: var(--bg-tertiary, #f5f7fa); border-radius: 8px; padding: 12px; text-align: center;
+}
+.mp-training-stat__value { font-size: 20px; font-weight: 800; color: var(--gray-900, #05080F); }
+.mp-training-stat__label { font-size: 10px; color: var(--gray-500, #9e9e9e); margin-top: 2px; }
+
+/* Categories List */
+.mp-categories-list { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--gray-100, #D9E2EE); }
+.mp-categories-title { font-size: 12px; font-weight: 700; color: var(--gray-700, #2C3440); margin: 0 0 8px; }
+.mp-categories-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.mp-category-chip {
+  font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 6px;
+}
+.mp-category-chip.cat-analytics-performance { background: #dbeafe; color: #1e40af; }
+.mp-category-chip.cat-functional { background: #fef9c3; color: #854d0e; }
+.mp-category-chip.cat-marketing-advertising { background: #f3e8ff; color: #7c3aed; }
+.mp-category-chip.cat-strictly-necessary { background: #dcfce7; color: #166534; }
+.mp-category-chip.cat-unclassified { background: var(--gray-100, #D9E2EE); color: var(--gray-600, #757575); }
+
+/* Improvements */
+.mp-improvements { display: flex; flex-direction: column; gap: 8px; }
+.mp-improvement-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 12px; border-radius: 8px;
+  background: var(--bg-tertiary, #f5f7fa);
+  font-size: 13px; color: var(--gray-700, #2C3440);
+}
+.mp-improvement-num {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--primary, #1A6DFF); color: #fff;
+  font-size: 11px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+
+/* Override Impact */
+.mp-override-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.mp-override-stat {
+  background: var(--bg-tertiary, #f5f7fa); border-radius: 8px; padding: 12px;
+}
+.mp-override-stat__label { font-size: 11px; color: var(--gray-500, #9e9e9e); margin-bottom: 4px; }
+.mp-override-stat__value { font-size: 16px; font-weight: 700; color: var(--gray-900, #05080F); }
+
+/* Trained Footer */
+.mp-trained-footer {
+  text-align: center; font-size: 11px; color: var(--gray-400, #bdbdbd);
+  padding: 16px 0 8px; margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .mp-page { padding: 16px; }
+  .mp-stats { grid-template-columns: repeat(2, 1fr); }
+  .mp-training-stats { grid-template-columns: 1fr; }
+  .mp-algo-header, .mp-algo-row { grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; font-size: 11px; }
+  .mp-trend-chart { height: 120px; gap: 8px; }
+  .mp-trend-bar { width: 24px; }
+}

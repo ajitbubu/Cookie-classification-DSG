@@ -9,11 +9,12 @@ export class DeepScanner {
       maxPages: 20000,  // Industry-grade: 20K pages
       maxDepth: 500,    // Industry-grade: deep crawling
       concurrency: 50,  // High-performance parallel scanning
-      backendUrl: 'http://localhost:8000',  // Updated to match running backend
+      backendUrl: '',
       ...options
     };
 
     this.cancelled = false;
+    this.paused = false;
     this.eventSource = null;
   }
 
@@ -70,6 +71,11 @@ export class DeepScanner {
           clearTimeout(timeoutId);
           reader.cancel();
           throw new Error('Scan cancelled by user');
+        }
+
+        // Wait while paused
+        while (this.paused && !this.cancelled) {
+          await new Promise(resolve => setTimeout(resolve, 300));
         }
 
         const { done, value } = await reader.read();
@@ -148,9 +154,14 @@ export class DeepScanner {
                   });
                 }
               } else if (data.type === 'error') {
+                clearTimeout(timeoutId);
                 throw new Error(data.message || 'Scan failed');
               }
             } catch (e) {
+              // Rethrow intentional scan errors — only swallow JSON parse errors
+              if (e.message && (e.message.includes('Scan failed') || e.message.includes('timeout') || e.message.includes('NET_') || e.message.includes('cancelled'))) {
+                throw e;
+              }
               console.error('Error parsing SSE data:', e);
             }
           }
@@ -182,11 +193,20 @@ export class DeepScanner {
   formatBackendResult(backendResult) {
     return {
       totalPages: backendResult.totalPagesScanned || backendResult.pageResults?.length || 0,
-      totalCookies: backendResult.totalCount || 0,
-      uniqueCookies: backendResult.totalCount || 0,
+      totalCount: backendResult.totalCount || (backendResult.cookies || []).length || 0,
+      totalCookies: backendResult.totalCount || (backendResult.cookies || []).length || 0,
+      uniqueCookies: backendResult.totalCount || (backendResult.cookies || []).length || 0,
       cookies: backendResult.cookies || [],
       pageResults: backendResult.pageResults || [],
-      statistics: backendResult.statistics || {},
+      statistics: (() => {
+        const s = backendResult.statistics || {};
+        return {
+          ...s,
+          // Normalize backend key names to frontend expected keys
+          thirdParty: s.thirdParty ?? s.thirdPartyCount ?? (backendResult.cookies || []).filter(c => c.isThirdParty).length,
+          requiresConsent: s.requiresConsent ?? s.requiresConsentCount ?? (backendResult.cookies || []).filter(c => c.requiresConsent).length,
+        };
+      })(),
       domain: backendResult.domain,
       scannedUrl: backendResult.scannedUrl,
       scannedAt: backendResult.scannedAt,
@@ -236,10 +256,25 @@ export class DeepScanner {
   }
 
   /**
+   * Pause ongoing scan
+   */
+  pause() {
+    this.paused = true;
+  }
+
+  /**
+   * Resume a paused scan
+   */
+  resume() {
+    this.paused = false;
+  }
+
+  /**
    * Cancel ongoing scan
    */
   cancel() {
     this.cancelled = true;
+    this.paused = false;
     if (this.eventSource) {
       this.eventSource.close();
       this.eventSource = null;

@@ -32,6 +32,24 @@ def convert_numpy_types(obj: Any) -> Any:
         return {key: convert_numpy_types(value) for key, value in obj.__dict__.items()}
     return obj
 
+
+def normalize_category(category: str) -> str:
+    """
+    Normalize model category names to frontend-expected format.
+    
+    Model v6.0.0 uses: Analytics_Performance, Marketing_Advertising, Strictly_Necessary
+    Frontend expects: Analytics, Marketing, Strictly Necessary
+    """
+    category_mapping = {
+        'Analytics_Performance': 'Analytics',
+        'Marketing_Advertising': 'Marketing',
+        'Strictly_Necessary': 'Strictly Necessary',
+        'Functional': 'Functional',
+        'Unclassified': 'Unclassified',
+        'Unknown': 'Unclassified'
+    }
+    return category_mapping.get(category, category)
+
 from backend.api.ml_classifier.feature_extractor import FeatureExtractor
 from backend.api.ml_classifier.classifier import CookieClassifier
 from backend.api.ml_classifier.explainer import ExplainabilityEngine
@@ -52,6 +70,7 @@ from backend.api.ml_classifier.model_registry import (
     get_model_registry,
     ABTestingController
 )
+from backend.db.category_manager import get_category_manager
 
 logger = logging.getLogger(__name__)
 
@@ -246,6 +265,7 @@ class Classification(BaseModel):
     model_version: str
     classified_at: str
     processing_time_ms: float
+    source: str = "ml_prediction"  # Add source field: "knowledge_base", "pattern_match", "ml_prediction"
     
     model_config = {
         'json_encoders': {
@@ -350,15 +370,54 @@ async def classify_cookies(request: ClassificationRequest):
                 # Convert to dict
                 cookie_dict = cookie_input.model_dump()
                 
-                # 1. Extract features (needed for explanation)
-                features = feature_extractor.extract_features(cookie_dict)
+                # 1. Check knowledge base first (user overrides and pattern matches)
+                category_manager = get_category_manager()
+                kb_result = await category_manager.get_category_with_fallback(
+                    cookie_name=cookie_input.name,
+                    cookie_domain=cookie_input.domain,
+                    ml_prediction=None  # Don't provide ML prediction yet
+                )
                 
-                # 2. Classify (classifier will extract features internally)
-                result = classifier.classify(cookie_dict)
+                # 2. If knowledge base or pattern match found, use it
+                if kb_result and kb_result['source'] in ['user_override', 'pattern_match']:
+                    # Use stored category instead of ML prediction
+                    result_category = kb_result['category']
+                    result_confidence = kb_result['confidence']
+                    result_source = kb_result['source']
+                    
+                    # Create minimal result object for consistency
+                    class KBResult:
+                        def __init__(self, category, confidence, source):
+                            self.predicted_category = category
+                            self.confidence_score = confidence
+                            self.confidence_level = get_confidence_level(confidence)
+                            self.alternatives = []
+                            self.source = source
+                    
+                    result = KBResult(result_category, result_confidence, result_source)
+                    features = None  # No features needed for KB results
+                    
+                    logger.info(
+                        f"Using {result_source} for {cookie_input.name}: "
+                        f"{result_category} (confidence: {result_confidence:.2f})"
+                    )
+                else:
+                    # 3. No stored category, use ML classifier
+                    # Extract features (needed for explanation)
+                    features = feature_extractor.extract_features(cookie_dict)
+                    
+                    # Classify (classifier will extract features internally)
+                    result = classifier.classify(cookie_dict)
+                    result.source = 'ml_prediction'
+                    
+                    logger.debug(
+                        f"Using ML prediction for {cookie_input.name}: "
+                        f"{result.predicted_category} (confidence: {result.confidence_score:.2f})"
+                    )
                 
                 # 3. Generate explanation (if requested)
                 explanation = None
-                if explainer and request.options.return_explanation:
+                if explainer and request.options.return_explanation and features is not None:
                     expl = explainer.explain(
                         features=features,
                         prediction=result.predicted_category,
@@ -436,17 +495,20 @@ async def classify_cookies(request: ClassificationRequest):
                 )
                 
                 # 7. Build classification result
+                # Normalize category name for frontend compatibility
+                normalized_category = normalize_category(result.predicted_category)
+                
                 # Convert all numpy types to Python types
                 result_dict = {
                     'cookie_id': cookie_input.id,
-                    'predicted_category': result.predicted_category,
+                    'predicted_category': normalized_category,
                     'confidence_score': convert_numpy_types(result.confidence_score),
                     'confidence_level': result.confidence_level,
                     'auto_classified': auto_classified,
                     'requires_review': needs_review,
                     'alternative_predictions': [
                         AlternativePrediction(
-                            category=alt.category,
+                            category=normalize_category(alt.category),
                             probability=convert_numpy_types(alt.probability)
                         )
                         for alt in result.alternatives
@@ -456,7 +518,8 @@ async def classify_cookies(request: ClassificationRequest):
                     'similar_cookies': similar_cookies_info,
                     'model_version': CURRENT_MODEL_VERSION,
                     'classified_at': datetime.now().isoformat(),
-                    'processing_time_ms': convert_numpy_types(cookie_time)
+                    'processing_time_ms': convert_numpy_types(cookie_time),
+                    'source': getattr(result, 'source', 'ml_prediction')  # Add source field
                 }
                 
                 classification = Classification(**result_dict)
@@ -476,7 +539,7 @@ async def classify_cookies(request: ClassificationRequest):
                 )
                 
             except Exception as e:
-                logger.error(f"Error classifying cookie {cookie_input.name}: {e}")
+                logger.error(f"Error classifying cookie {cookie_input.name}: {e}", exc_info=True)
                 # Return error classification
                 classification = Classification(
                     cookie_id=cookie_input.id,
@@ -533,7 +596,8 @@ async def classify_cookies(request: ClassificationRequest):
                     'similar_cookies': convert_numpy_types(c.similar_cookies.model_dump()) if c.similar_cookies else None,
                     'model_version': c.model_version,
                     'classified_at': c.classified_at,
-                    'processing_time_ms': convert_numpy_types(c.processing_time_ms)
+                    'processing_time_ms': convert_numpy_types(c.processing_time_ms),
+                    'source': c.source  # Include source field
                 }
                 for c in classifications
             ],

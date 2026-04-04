@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Check, ChevronDown } from 'lucide-react';
+import { useToast } from './Toast';
 import './CategoryDropdown.css';
 
 const CATEGORIES = [
@@ -22,6 +23,7 @@ function CategoryDropdown({
   const [selectedCategory, setSelectedCategory] = useState(currentCategory);
   const [isUpdating, setIsUpdating] = useState(false);
   const dropdownRef = useRef(null);
+  const toast = useToast();
 
   useEffect(() => {
     setSelectedCategory(currentCategory);
@@ -48,7 +50,7 @@ function CategoryDropdown({
 
     try {
       // Call API to update category
-      const response = await fetch('http://localhost:8003/api/categories/update-category', {
+      const response = await fetch('/api/categories/update-category', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -71,15 +73,16 @@ function CategoryDropdown({
           onCategoryChange(cookieName, cookieDomain, newCategory);
         }
 
-        // Show success feedback
-        console.log('Category updated:', data);
+        toast.success(`Category updated to "${newCategory}"`, {
+          title: 'Category Changed',
+        });
       } else {
         console.error('Failed to update category');
-        alert('Failed to update category. Please try again.');
+        toast.error('Failed to update category. Please try again.');
       }
     } catch (error) {
       console.error('Error updating category:', error);
-      alert('Error updating category. Please try again.');
+      toast.error('Error updating category. Please try again.');
     } finally {
       setIsUpdating(false);
       setIsOpen(false);

@@ -21,24 +21,25 @@ RUN pip install --no-cache-dir \
     gunicorn \
     uvicorn[standard]
 
-# Ensure Playwright browsers are installed (base image should have them)
-RUN python -m playwright install --with-deps chromium firefox webkit
+# Install only Firefox (Chromium crashes on some platforms)
+RUN python -m playwright install --with-deps firefox
 
 # Copy application code
 COPY backend /app/backend
+COPY models /app/models
 
 # Expose port
-EXPOSE 8000
+EXPOSE 1001
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-    CMD curl -f http://localhost:8000/api/health || exit 1
+    CMD curl -f http://localhost:1001/api/health || exit 1
 
 # Run with Gunicorn for production
 CMD ["gunicorn", "backend.main:app", \
      "--workers", "4", \
      "--worker-class", "uvicorn.workers.UvicornWorker", \
-     "--bind", "0.0.0.0:8000", \
+     "--bind", "0.0.0.0:1001", \
      "--timeout", "300", \
      "--keep-alive", "5", \
      "--access-logfile", "-", \

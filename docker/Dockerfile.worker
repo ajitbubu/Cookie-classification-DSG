@@ -20,9 +20,9 @@ RUN pip install --no-cache-dir \
     celery \
     playwright
 
-# Install Playwright browsers
-RUN playwright install chromium firefox
-RUN playwright install-deps
+# Install only Firefox (Chromium crashes on some platforms)
+RUN playwright install firefox
+RUN playwright install-deps firefox
 
 # Copy application code
 COPY backend /app/backend
@@ -31,8 +31,9 @@ COPY backend /app/backend
 RUN mkdir -p /app/.cache/ms-playwright
 
 # Set environment variables
-ENV PLAYWRIGHT_BROWSERS_PATH=/app/.cache/ms-playwright
+ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
 ENV PYTHONUNBUFFERED=1
+ENV BROWSER_TYPE=firefox
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \

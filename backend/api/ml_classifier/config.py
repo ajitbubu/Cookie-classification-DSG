@@ -11,7 +11,7 @@ from typing import Optional
 # Paths
 BASE_DIR = Path(__file__).parent.parent.parent.parent
 MODELS_DIR = BASE_DIR / "models"
-CURRENT_MODEL_VERSION = os.getenv("ML_MODEL_VERSION", "3.0.0")
+CURRENT_MODEL_VERSION = os.getenv("ML_MODEL_VERSION", "6.0.0")
 MODEL_PATH = MODELS_DIR / f"v{CURRENT_MODEL_VERSION}"
 
 # Classification Thresholds

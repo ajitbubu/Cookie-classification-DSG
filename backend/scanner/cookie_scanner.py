@@ -80,11 +80,11 @@ class CookieScanner:
             
             # Wait for network to be mostly idle to ensure dynamic content loads
             try:
-                await page.goto(url, wait_until="networkidle", timeout=30000)
+                await page.goto(url, wait_until="networkidle", timeout=settings.PAGE_TIMEOUT)
             except Exception as e:
                 logger.warning(f"Network idle timeout for {url}, trying load: {e}")
                 try:
-                    await page.goto(url, wait_until="load", timeout=30000)
+                    await page.goto(url, wait_until="load", timeout=settings.PAGE_TIMEOUT)
                 except Exception as e2:
                     logger.warning(f"Load timeout for {url}, trying domcontentloaded: {e2}")
                     await page.goto(url, wait_until="domcontentloaded", timeout=settings.PAGE_TIMEOUT)

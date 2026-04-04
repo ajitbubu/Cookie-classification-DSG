@@ -7,17 +7,27 @@ class Settings(BaseSettings):
     
     # Server configuration
     BACKEND_HOST: str = "0.0.0.0"
-    BACKEND_PORT: int = 8000
+    BACKEND_PORT: int = 1001
     
     # CORS
-    ALLOWED_ORIGINS: str = "http://localhost:5173,http://localhost:3000,http://localhost:3001,http://localhost:3002"
+    ALLOWED_ORIGINS: str = "http://localhost:5173,http://localhost:3000,http://localhost:3001,http://localhost:1001,http://cookie-scanner-frontend:5173,*"
+    
+    # Database configuration
+    DB_HOST: str = "localhost"
+    DB_PORT: int = 5432
+    DB_NAME: str = "cookie_scanner"
+    DB_USER: str = "scanner"
+    DB_PASSWORD: str = "scanner_password"
+    DB_MIN_POOL_SIZE: int = 5
+    DB_MAX_POOL_SIZE: int = 20
+    DB_TIMEOUT: int = 5
     
     # Scanning configuration - Industry Grade
     MAX_CONCURRENT_PAGES: int = 100  # Increased from 50 for faster scanning
     MIN_CONCURRENT_PAGES: int = 10   # Increased from 5
     MAX_PAGES_PER_SCAN: int = 20000  # Industry-grade: 20K pages
     MAX_DEPTH: int = 500  # Maximum crawl depth
-    PAGE_TIMEOUT: int = 15000  # Reduced from 30s to 15s for faster timeouts
+    PAGE_TIMEOUT: int = 60000  # 60 seconds timeout for complex pages
     
     # Performance tuning
     BATCH_SIZE: int = 150  # Increased from 100 for larger batches

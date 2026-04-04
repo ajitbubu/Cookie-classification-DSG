@@ -1,0 +1,231 @@
+/* ============================================================
+   Toast / Notification System
+   Design tokens: inherits from App.css :root variables
+   ============================================================ */
+
+/* --- Container positions --- */
+.toast-container {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+  max-height: 100vh;
+  overflow: hidden;
+  padding: 16px;
+}
+
+.toast-container--top-right {
+  top: 0;
+  right: 0;
+}
+
+.toast-container--top-left {
+  top: 0;
+  left: 0;
+}
+
+.toast-container--bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.toast-container--bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.toast-container--top-center {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.toast-container--bottom-center {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* --- Toast base --- */
+.toast {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 320px;
+  max-width: 420px;
+  padding: 14px 16px;
+  border-radius: var(--radius-md, 11px);
+  background: var(--bg-primary, #ffffff);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.10),
+    0 1px 4px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid transparent;
+  pointer-events: auto;
+  animation: toast-enter 0.3s ease-out forwards;
+  font-family: 'Lato', sans-serif;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toast--exiting {
+  animation: toast-exit 0.3s ease-in forwards;
+}
+
+/* --- Type variants --- */
+.toast--success {
+  border-left-color: var(--success, #00C4A8);
+}
+.toast--success .toast__icon {
+  color: var(--success, #00C4A8);
+  background: rgba(0, 196, 168, 0.10);
+}
+
+.toast--error {
+  border-left-color: var(--danger, #FF4D4D);
+}
+.toast--error .toast__icon {
+  color: var(--danger, #FF4D4D);
+  background: rgba(255, 77, 77, 0.10);
+}
+
+.toast--warning {
+  border-left-color: var(--warning, #FFBC32);
+}
+.toast--warning .toast__icon {
+  color: var(--warning, #FFBC32);
+  background: rgba(255, 188, 50, 0.10);
+}
+
+.toast--info {
+  border-left-color: var(--primary, #1A6DFF);
+}
+.toast--info .toast__icon {
+  color: var(--primary, #1A6DFF);
+  background: rgba(26, 109, 255, 0.10);
+}
+
+/* --- Icon --- */
+.toast__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: var(--radius-sm, 6px);
+  flex-shrink: 0;
+}
+
+/* --- Body --- */
+.toast__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.toast__title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-900, #05080F);
+  line-height: 1.4;
+  margin-bottom: 2px;
+}
+
+.toast__message {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--gray-600, #757575);
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* --- Actions --- */
+.toast__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.toast__action-btn {
+  background: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary, #1A6DFF);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm, 6px);
+  transition: background 0.15s ease;
+  white-space: nowrap;
+}
+.toast__action-btn:hover {
+  background: var(--bg-secondary, #ECF3FF);
+}
+.toast__action-btn:focus-visible {
+  outline: 2px solid var(--primary, #1A6DFF);
+  outline-offset: 2px;
+}
+
+.toast__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+  color: var(--gray-400, #bdbdbd);
+  cursor: pointer;
+  border-radius: var(--radius-sm, 6px);
+  transition: color 0.15s ease, background 0.15s ease;
+}
+.toast__close:hover {
+  color: var(--gray-700, #2C3440);
+  background: var(--gray-50, #F5F7FA);
+}
+.toast__close:focus-visible {
+  outline: 2px solid var(--primary, #1A6DFF);
+  outline-offset: 2px;
+}
+
+/* --- Animations --- */
+@keyframes toast-enter {
+  from {
+    opacity: 0;
+    transform: translateX(24px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes toast-exit {
+  from {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(24px) scale(0.96);
+  }
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+  .toast-container {
+    padding: 12px;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+  }
+
+  .toast {
+    min-width: unset;
+    max-width: 100%;
+  }
+}

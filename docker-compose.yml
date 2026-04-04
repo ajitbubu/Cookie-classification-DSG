@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   # Redis for caching and queue management
   redis:
@@ -30,9 +28,9 @@ services:
       - "5432:5432"
     volumes:
       - postgres-data:/var/lib/postgresql/data
-      - ./backend/db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./backend/db:/docker-entrypoint-initdb.d:ro
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U scanner"]
+      test: ["CMD-SHELL", "pg_isready -U scanner -d cookie_scanner"]
       interval: 10s
       timeout: 3s
       retries: 3
@@ -46,13 +44,21 @@ services:
       dockerfile: docker/Dockerfile.api
     container_name: cookie-scanner-api
     ports:
-      - "8000:8000"
+      - "1001:1001"
     environment:
+      - BACKEND_PORT=1001
+      - BROWSER_TYPE=firefox
       - REDIS_URL=redis://redis:6379
       - DATABASE_URL=postgresql://scanner:${DB_PASSWORD:-scanner_password}@postgres:5432/cookie_scanner
       - WORKER_COUNT=4
       - MAX_CONCURRENT_PAGES=200
       - ENABLE_CACHING=true
+      - PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=cookie_scanner
+      - DB_USER=scanner
+      - DB_PASSWORD=${DB_PASSWORD:-scanner_password}
     depends_on:
       redis:
         condition: service_healthy
@@ -60,6 +66,7 @@ services:
         condition: service_healthy
     volumes:
       - ./backend:/app/backend
+      - ./models:/app/models
     networks:
       - scanner-network
     restart: unless-stopped
@@ -79,7 +86,7 @@ services:
       - DB_USER=scanner
       - DB_PASSWORD=${DB_PASSWORD:-scanner_password}
       - ML_SECRET_KEY=${ML_SECRET_KEY:-change-this-secret-key-in-production}
-      - ML_MODEL_VERSION=2.0.0
+      - ML_MODEL_VERSION=6.0.0
       - ML_CONFIDENCE_HIGH=0.85
       - ML_CONFIDENCE_MEDIUM=0.65
       - ML_RATE_LIMIT_REQUESTS=100
@@ -115,7 +122,7 @@ services:
       timeout: 10s
       retries: 3
 
-  # Scanner Worker 1 (Chromium)
+  # Scanner Worker 1 (Firefox)
   scanner-worker-1:
     build:
       context: .
@@ -125,7 +132,7 @@ services:
       - REDIS_URL=redis://redis:6379
       - DATABASE_URL=postgresql://scanner:${DB_PASSWORD:-scanner_password}@postgres:5432/cookie_scanner
       - WORKER_ID=worker-1
-      - BROWSER_TYPE=chromium
+      - BROWSER_TYPE=firefox
       - MAX_CONCURRENT_PAGES=100
       - BROWSER_POOL_SIZE=10
     depends_on:
@@ -169,7 +176,7 @@ services:
           cpus: "2"
           memory: 4G
 
-  # Scanner Worker 3 (Chromium)
+  # Scanner Worker 3 (Firefox)
   scanner-worker-3:
     build:
       context: .
@@ -179,7 +186,7 @@ services:
       - REDIS_URL=redis://redis:6379
       - DATABASE_URL=postgresql://scanner:${DB_PASSWORD:-scanner_password}@postgres:5432/cookie_scanner
       - WORKER_ID=worker-3
-      - BROWSER_TYPE=chromium
+      - BROWSER_TYPE=firefox
       - MAX_CONCURRENT_PAGES=100
       - BROWSER_POOL_SIZE=10
     depends_on:
@@ -203,9 +210,10 @@ services:
       dockerfile: docker/Dockerfile.frontend
     container_name: cookie-scanner-frontend
     ports:
-      - "5173:3000"
+      - "5173:5173"
     environment:
-      - VITE_API_URL=http://localhost:8000
+      - VITE_API_URL=http://cookie-scanner-api:1001
+      - CHOKIDAR_USEPOLLING=true
     depends_on:
       - api-gateway
     volumes:

@@ -1,21 +1,47 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Shield, Cookie, AlertCircle, Download, RefreshCw, Eye, EyeOff, Globe, Clock, Play, Pause, Trash2, Bookmark, Copy, Check, Zap, Layers, X } from 'lucide-react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { Shield, Cookie, AlertCircle, Download, RefreshCw, Eye, EyeOff, Globe, Clock, Play, Pause, Trash2, Bookmark, Copy, Check, Zap, Layers, X, Info, Pencil, History, TrendingUp, TrendingDown } from 'lucide-react';
 import CookieScanner from './lib/CookieScanner';
 import DeepScanner from './lib/DeepScanner';
 import { generateBookmarklet, copyToClipboard } from './lib/utils';
 import { calculateComplianceRisks } from './lib/riskCalculator';
+import Navbar from './components/Navbar';
+import LeftSidebar from './components/LeftSidebar';
 import ScanHistory from './components/ScanHistory';
 import DomainScanHistory from './components/DomainScanHistory';
+import ScanHistoryPage from './components/ScanHistoryPage';
+import CompareScanPage from './components/CompareScanPage';
+import ReportsPage from './components/ReportsPage';
+import ReviewQueuePage from './components/ReviewQueuePage';
 import MLClassificationDropdown from './components/MLClassificationDropdown';
 import ConfidenceBadge from './components/ConfidenceBadge';
+import CookieDetailModal from './components/CookieDetailModal';
+import VendorDashboard from './components/VendorDashboard';
+import OverrideModal from './components/OverrideModal';
+import AutoPublishPage from './components/AutoPublishPage';
+import ScheduledScanPage from './components/ScheduledScanPage';
+import MyWebsitesPage from './components/MyWebsitesPage';
+import ModelPerformancePage from './components/ModelPerformancePage';
 import './App.css';
+
+function Tooltip({ text, children }) {
+  return (
+    <span className="tooltip-wrapper">
+      {children}
+      <span className="tooltip-bubble" role="tooltip">{text}</span>
+    </span>
+  );
+}
 
 function App() {
   const [scanner] = useState(() => new CookieScanner());
   const [scanResult, setScanResult] = useState(null);
   const [scanning, setScanning] = useState(false);
+  const [scanError, setScanError] = useState(null);
   const [filterCategory, setFilterCategory] = useState('all');
   const [filterRegulation, setFilterRegulation] = useState('all');
+  const [filterParty, setFilterParty] = useState('all'); // all, first, third
+  const [selectedCookie, setSelectedCookie] = useState(null); // for cookie detail modal
+  const [overrideCookie, setOverrideCookie] = useState(null); // for override modal
 
   // URL Scanning
   const [targetUrl, setTargetUrl] = useState('');
@@ -23,51 +49,80 @@ function App() {
 
   // Deep Scan - Industry Grade Configuration
   const [deepScanner] = useState(() => new DeepScanner());
-  const [maxPages, setMaxPages] = useState(100);  // Default to 100 pages
+  const [maxPages, setMaxPages] = useState(10);  // Default to 10 pages
   const [concurrency, setConcurrency] = useState(20);  // Default to 20 concurrent
-  const [maxDepth, setMaxDepth] = useState(500);  // Default depth 500
+  const [maxDepth, setMaxDepth] = useState(3);  // Default depth 3
   const [deepScanProgress, setDeepScanProgress] = useState(null);
   const [isDeepScanning, setIsDeepScanning] = useState(false);
+  const [scanPaused, setScanPaused] = useState(false);
+  const deepScannerRef = useRef(null);
 
   // Scheduled Scanning
-  const [scheduleEnabled, setScheduleEnabled] = useState(false);
+  const [scheduleScanType, setScheduleScanType] = useState('quick');
   const [scheduleInterval, setScheduleInterval] = useState(30);
   const [scheduleUnit, setScheduleUnit] = useState('minutes');
+  const [scheduleDay, setScheduleDay] = useState('sunday');
+  const [scheduleDate, setScheduleDate] = useState(1);
+  const [scheduleTime, setScheduleTime] = useState('09:00');
+  const [scheduledJobs, setScheduledJobs] = useState(() => {
+    try {
+      const saved = localStorage.getItem('scheduledJobs');
+      if (!saved) return [];
+      const parsed = JSON.parse(saved);
+      return Array.isArray(parsed) ? parsed.map(j => ({ ...j, timerId: null, countdownId: null, timeLeft: null })) : [];
+    } catch (e) {
+      return [];
+    }
+  });
+  const jobTimersRef = useRef({});
+  const [editingJobId, setEditingJobId] = useState(null);
+  const [editForm, setEditForm] = useState({});
   const [scanHistory, setScanHistory] = useState(() => {
-    // Load history from localStorage on initial render
+    // Load history from localStorage on initial render (with pruning)
     try {
       const saved = localStorage.getItem('cookieScanHistory');
       if (!saved) return [];
 
       const parsed = JSON.parse(saved);
-      // Validate that it's an array
       if (!Array.isArray(parsed)) {
         console.warn('Invalid scan history format, resetting');
         localStorage.removeItem('cookieScanHistory');
         return [];
       }
-      return parsed;
+      // Cap to 50 entries and strip fullResults from old ones
+      const pruned = parsed.slice(0, 50).map((entry, i) =>
+        i === 0 ? entry : { ...entry, fullResults: undefined }
+      );
+      try { localStorage.setItem('cookieScanHistory', JSON.stringify(pruned)); } catch (e) { /* noop */ }
+      return pruned;
     } catch (e) {
       console.error('Failed to load scan history:', e);
-      // Clear corrupted data
       localStorage.removeItem('cookieScanHistory');
       return [];
     }
   });
-  const [nextScanTime, setNextScanTime] = useState(null);
-  const [timeUntilNextScan, setTimeUntilNextScan] = useState(null);
-  const scheduleTimerRef = useRef(null);
-  const countdownTimerRef = useRef(null);
 
-  // Domain-based scan history
+  // Domain-based scan history (with startup pruning)
   const [domainHistory, setDomainHistory] = useState(() => {
     try {
       const saved = localStorage.getItem('domainScanHistory');
       if (!saved) return {};
       const parsed = JSON.parse(saved);
-      return typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
+      if (typeof parsed !== 'object' || Array.isArray(parsed)) return {};
+      // Prune on load: cap entries per domain, strip fullResults from old entries
+      const pruned = {};
+      for (const [domain, scans] of Object.entries(parsed)) {
+        if (!Array.isArray(scans)) continue;
+        pruned[domain] = scans.slice(0, 10).map((entry, i) =>
+          i === 0 ? entry : { ...entry, fullResults: undefined }
+        );
+      }
+      // Save the pruned version back
+      try { localStorage.setItem('domainScanHistory', JSON.stringify(pruned)); } catch (e) { /* noop */ }
+      return pruned;
     } catch (e) {
       console.error('Failed to load domain history:', e);
+      localStorage.removeItem('domainScanHistory');
       return {};
     }
   });
@@ -75,8 +130,20 @@ function App() {
   // Bookmarklet
   const [bookmarkletCopied, setBookmarkletCopied] = useState(false);
 
-  // Comparison notification
-  const [comparisonNotification, setComparisonNotification] = useState(null);
+  // Left sidebar
+  const [sidebarPinned, setSidebarPinned] = useState(false);
+
+  // Persistent notification list
+  const [notifications, setNotifications] = useState([]);
+  const unreadCount = notifications.filter(n => !n.read).length;
+
+  // Page-based routing (home = main scanner view, history = scan history page, compare = compare scans page)
+  const [currentPage, setCurrentPage] = useState('home');
+
+  const handleNavigate = (page) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   // Results view tab
   const [resultsTab, setResultsTab] = useState('cookies'); // cookies, categories, vendors, compliance
@@ -125,6 +192,75 @@ function App() {
     } catch (e) {
       console.error('Failed to save ignore preference:', e);
     }
+  };
+
+  // Handle classification override
+  const handleOverrideApply = ({ cookie, newCategory, reason, similarCookies }) => {
+    if (!scanResult) return;
+    const updatedCookies = scanResult.cookies.map(c => {
+      const shouldUpdate =
+        (c.name === cookie.name && c.domain === cookie.domain) ||
+        (similarCookies.includes(c.name) && c.domain === cookie.domain);
+      if (shouldUpdate) {
+        return {
+          ...c,
+          originalCategory: c.originalCategory || c.category,
+          category: newCategory,
+          mlClassification: newCategory,
+          overridden: true,
+          overrideReason: reason,
+          overriddenAt: new Date().toISOString(),
+        };
+      }
+      return c;
+    });
+    setScanResult(prev => ({ ...prev, cookies: updatedCookies }));
+    setOverrideCookie(null);
+    setSelectedCookie(null);
+  };
+
+  // Helper function to normalize category names from ML API
+  const normalizeCategory = (category) => {
+    const mapping = {
+      'Analytics_Performance': 'Analytics',
+      'Marketing_Advertising': 'Marketing',
+      'Strictly_Necessary': 'Strictly Necessary',
+      'Functional': 'Functional',
+      'Unclassified': 'Unclassified',
+      'Unknown': 'Unclassified'
+    };
+    return mapping[category] || category;
+  };
+
+  // Rule-based fallback classifier for when ML returns Unclassified/Unknown
+  const ruleBasedClassify = (cookie) => {
+    const name = (cookie.name || '').toLowerCase();
+    const domain = (cookie.domain || '').toLowerCase();
+
+    if (name.startsWith('_ga') || name === '_gid' || name === '_gat' ||
+        name.includes('analytics') || name.includes('_utm') || name.includes('stat')) {
+      return 'Analytics';
+    }
+    if (name.includes('_fb') || name.includes('fbp') || name.includes('fbc') ||
+        name.includes('ads') || name.includes('marketing') || name.includes('track') ||
+        name.includes('campaign') || name.includes('utm_') || name.startsWith('__gads')) {
+      return 'Marketing';
+    }
+    if (name.includes('session') || name.includes('csrf') || name.includes('xsrf') ||
+        name.includes('auth') || name.includes('token') || name.includes('login') ||
+        name.includes('secure') || name.includes('captcha')) {
+      return 'Strictly Necessary';
+    }
+    if (name.includes('pref') || name.includes('lang') || name.includes('locale') ||
+        name.includes('theme') || name.includes('timezone') || name.includes('currency')) {
+      return 'Functional';
+    }
+    if (domain.includes('google') || domain.includes('doubleclick') || domain.includes('googlesyndication')) {
+      return name.includes('consent') || name.includes('nid') ? 'Functional' : 'Analytics';
+    }
+    if (domain.includes('facebook') || domain.includes('fb.com')) return 'Marketing';
+    if (domain.includes('linkedin')) return 'Marketing';
+    return 'Functional'; // safer default than Unclassified
   };
 
   // Helper function to recalculate statistics based on updated cookie categories
@@ -229,7 +365,7 @@ function App() {
       
       // ML Classification timeout: 30 seconds
       const response = await fetchWithTimeout(
-        'http://localhost:8003/api/v1/ml/classify',
+        '/api/v1/ml/classify',
         {
           method: 'POST',
           headers: {
@@ -357,19 +493,27 @@ function App() {
           
           // Keep original category from scan, add ML prediction separately
           if (mlData && mlData.predicted_category) {
+            // Normalize category name (handle model v6.0.0 format)
+            let normalizedPrediction = normalizeCategory(mlData.predicted_category);
+
+            // If ML returned Unclassified, fall back to rule-based classification
+            if (normalizedPrediction === 'Unclassified') {
+              normalizedPrediction = ruleBasedClassify(cookie);
+            }
+
             // Only update category if it was Uncategorized from the scan
-            const finalCategory = cookie.category === 'Uncategorized' 
-              ? mlData.predicted_category 
+            const finalCategory = cookie.category === 'Uncategorized'
+              ? normalizedPrediction
               : cookie.category;
-            
+
             // Hybrid confidence boost: If rule-based and ML agree, boost confidence
             const { adjustedConfidence, adjustedLevel } = adjustMLConfidence(cookie, mlData);
-            
+
             return {
               ...cookie,
               originalCategory: cookie.category, // Store original scan result
               category: finalCategory, // Update only if Uncategorized
-              mlClassification: mlData.predicted_category, // Always show ML prediction
+              mlClassification: normalizedPrediction, // Always show ML prediction (normalized)
               mlConfidence: adjustedConfidence,
               mlConfidenceLevel: adjustedLevel,
               websiteProvided: false,
@@ -380,7 +524,7 @@ function App() {
             return {
               ...cookie,
               originalCategory: cookie.category,
-              mlClassification: 'Unclassified',
+              mlClassification: ruleBasedClassify(cookie),
               mlConfidence: 0.0,
               mlConfidenceLevel: 'Low',
               websiteProvided: false,
@@ -412,6 +556,7 @@ function App() {
 
   const handleDeepScan = async (url = null) => {
     const scanStartTime = Date.now();
+    setScanError(null);
     setIsDeepScanning(true);
     setScanning(true);
     setDeepScanProgress(null);
@@ -423,6 +568,7 @@ function App() {
         concurrency,
         maxDepth  // Pass maxDepth to backend
       });
+      deepScannerRef.current = deepScannerInstance;
 
       const results = await deepScannerInstance.deepScan(
         targetUrl,
@@ -444,12 +590,14 @@ function App() {
       const scanEndTime = Date.now();
       const scanDuration = scanEndTime - scanStartTime;
 
+      const deepScanId = `${Date.now()}-${Math.random().toString(36).substring(2, 11)}`;
       const enhancedResults = {
         ...results,
         domain: domain, // Override with actual scanned domain
         scannedUrl: targetUrl,
         scanType: 'deep',
-        scanDuration: scanDuration
+        scanDuration: scanDuration,
+        _scanId: deepScanId
       };
 
       setScanResult(enhancedResults);
@@ -465,19 +613,22 @@ function App() {
             
             // Keep original category from scan, add ML prediction separately
             if (mlData && mlData.predicted_category) {
+              let normalizedML = normalizeCategory(mlData.predicted_category);
+              if (normalizedML === 'Unclassified') normalizedML = ruleBasedClassify(cookie);
+
               // Only update category if it was Uncategorized from the scan
-              const finalCategory = cookie.category === 'Uncategorized' 
-                ? mlData.predicted_category 
+              const finalCategory = cookie.category === 'Uncategorized'
+                ? normalizedML
                 : cookie.category;
-              
+
               // Hybrid confidence boost: If rule-based and ML agree, boost confidence
               const { adjustedConfidence, adjustedLevel } = adjustMLConfidence(cookie, mlData);
-              
+
               return {
                 ...cookie,
                 originalCategory: cookie.category, // Store original scan result
                 category: finalCategory, // Update only if Uncategorized
-                mlClassification: mlData.predicted_category, // Always show ML prediction
+                mlClassification: normalizedML, // Always show ML prediction (normalized)
                 mlConfidence: adjustedConfidence,
                 mlConfidenceLevel: adjustedLevel,
                 websiteProvided: false,
@@ -488,7 +639,7 @@ function App() {
               return {
                 ...cookie,
                 originalCategory: cookie.category,
-                mlClassification: 'Unclassified',
+                mlClassification: ruleBasedClassify(cookie),
                 mlConfidence: 0.0,
                 mlConfidenceLevel: 'Low',
                 websiteProvided: false,
@@ -496,30 +647,48 @@ function App() {
               };
             }
           });
-          
+
+          // Build a lookup map: name+domain -> ML-enriched cookie
+          const mlCookieMap = {};
+          updatedCookies.forEach(c => { mlCookieMap[`${c.name}||${c.domain}`] = c; });
+
+          // Propagate ML data into pageResults cookies
+          const updatedPageResults = (enhancedResults.pageResults || []).map(page => ({
+            ...page,
+            cookies: (page.cookies || []).map(c => {
+              const enriched = mlCookieMap[`${c.name}||${c.domain}`];
+              return enriched ? { ...c, ...enriched } : c;
+            })
+          }));
+
           const updatedResults = {
             ...enhancedResults,
-            cookies: updatedCookies
+            cookies: updatedCookies,
+            pageResults: updatedPageResults
           };
-          
+
           setScanResult(updatedResults);
-          
+
           // Re-calculate statistics with updated categories
           const updatedStats = calculateStatistics(updatedCookies);
           const finalResults = {
             ...updatedResults,
             statistics: updatedStats
           };
-          
+
           setScanResult(finalResults);
+          // Update history with ML-corrected statistics (like quick scan does)
+          addToHistory(finalResults);
         }
       }
     } catch (error) {
-      alert('Deep scan failed: ' + error.message);
+      setScanError(error.message || 'Deep scan failed. Please try again.');
     } finally {
       setIsDeepScanning(false);
       setScanning(false);
       setDeepScanProgress(null);
+      setScanPaused(false);
+      deepScannerRef.current = null;
     }
   };
 
@@ -552,7 +721,7 @@ function App() {
       // Use backend API for remote URL scanning
       // Quick Scan timeout: 120 seconds (2 minutes)
       const response = await fetchWithTimeout(
-        'http://localhost:8003/api/scan',
+        '/api/scan',
         {
           method: 'POST',
           headers: {
@@ -598,19 +767,22 @@ function App() {
             
             // Keep original category from scan, add ML prediction separately
             if (mlData && mlData.predicted_category) {
+              let normalizedML = normalizeCategory(mlData.predicted_category);
+              if (normalizedML === 'Unclassified') normalizedML = ruleBasedClassify(cookie);
+
               // Only update category if it was Uncategorized from the scan
-              const finalCategory = cookie.category === 'Uncategorized' 
-                ? mlData.predicted_category 
+              const finalCategory = cookie.category === 'Uncategorized'
+                ? normalizedML
                 : cookie.category;
-              
+
               // Hybrid confidence boost: If rule-based and ML agree, boost confidence
               const { adjustedConfidence, adjustedLevel } = adjustMLConfidence(cookie, mlData);
-              
+
               return {
                 ...cookie,
                 originalCategory: cookie.category, // Store original scan result
                 category: finalCategory, // Update only if Uncategorized
-                mlClassification: mlData.predicted_category, // Always show ML prediction
+                mlClassification: normalizedML, // Always show ML prediction (normalized)
                 mlConfidence: adjustedConfidence,
                 mlConfidenceLevel: adjustedLevel,
                 websiteProvided: false,
@@ -621,7 +793,7 @@ function App() {
               return {
                 ...cookie,
                 originalCategory: cookie.category,
-                mlClassification: 'Unclassified',
+                mlClassification: ruleBasedClassify(cookie),
                 mlConfidence: 0.0,
                 mlConfidenceLevel: 'Low',
                 websiteProvided: false,
@@ -629,22 +801,36 @@ function App() {
               };
             }
           });
-          
+
+          const mlCookieMap2 = {};
+          updatedCookies.forEach(c => { mlCookieMap2[`${c.name}||${c.domain}`] = c; });
+
+          const updatedPageResults2 = (enhancedResults.pageResults || []).map(page => ({
+            ...page,
+            cookies: (page.cookies || []).map(c => {
+              const enriched = mlCookieMap2[`${c.name}||${c.domain}`];
+              return enriched ? { ...c, ...enriched } : c;
+            })
+          }));
+
           const updatedResults = {
             ...enhancedResults,
-            cookies: updatedCookies
+            cookies: updatedCookies,
+            pageResults: updatedPageResults2
           };
-          
+
           setScanResult(updatedResults);
-          
+
           // Re-calculate statistics with updated categories
           const updatedStats = calculateStatistics(updatedCookies);
           const finalResults = {
             ...updatedResults,
             statistics: updatedStats
           };
-          
+
           setScanResult(finalResults);
+          // Update history with ML-corrected statistics
+          addToHistory(finalResults);
         }
       }
     } catch (error) {
@@ -706,6 +892,51 @@ function App() {
     return differences;
   };
 
+  // --- Storage helpers ---
+  const MAX_SCANS_PER_DOMAIN = 10;
+  const MAX_SCAN_HISTORY = 50;
+
+  // Safely write to localStorage with quota fallback
+  const safeLocalStorageSet = (key, data) => {
+    try {
+      localStorage.setItem(key, JSON.stringify(data));
+      return true;
+    } catch (e) {
+      // Quota exceeded — strip fullResults from all but the newest entry and retry
+      console.warn(`Storage quota hit for "${key}", pruning fullResults...`);
+      try {
+        const pruned = Array.isArray(data)
+          ? data.map((entry, i) => i === 0 ? entry : { ...entry, fullResults: undefined })
+          : Object.fromEntries(
+              Object.entries(data).map(([domain, scans]) => [
+                domain,
+                scans.map((entry, i) => i === 0 ? entry : { ...entry, fullResults: undefined })
+              ])
+            );
+        localStorage.setItem(key, JSON.stringify(pruned));
+        return true;
+      } catch (e2) {
+        // Still too big — save without any fullResults
+        console.warn(`Still over quota for "${key}", stripping all fullResults...`);
+        try {
+          const minimal = Array.isArray(data)
+            ? data.map(entry => ({ ...entry, fullResults: undefined }))
+            : Object.fromEntries(
+                Object.entries(data).map(([domain, scans]) => [
+                  domain,
+                  scans.map(entry => ({ ...entry, fullResults: undefined }))
+                ])
+              );
+          localStorage.setItem(key, JSON.stringify(minimal));
+          return true;
+        } catch (e3) {
+          console.error(`Cannot save "${key}" even after pruning:`, e3);
+          return false;
+        }
+      }
+    }
+  };
+
   const cleanResultsForStorage = (results) => {
     // Create a clean copy without circular references or complex objects
     return {
@@ -714,11 +945,16 @@ function App() {
         domain: cookie.domain,
         value: cookie.value,
         category: cookie.category,
+        originalCategory: cookie.originalCategory,
         type: cookie.type,
         purpose: cookie.purpose,
         requiresConsent: cookie.requiresConsent,
         isThirdParty: cookie.isThirdParty,
-        size: cookie.size
+        size: cookie.size,
+        mlClassification: cookie.mlClassification,
+        mlConfidence: cookie.mlConfidence,
+        mlConfidenceLevel: cookie.mlConfidenceLevel,
+        mlReasoning: cookie.mlReasoning
       })),
       statistics: {
         byCategory: { ...results.statistics.byCategory },
@@ -731,93 +967,164 @@ function App() {
       scannedAt: results.scannedAt,
       totalCount: results.totalCount,
       scannedUrl: results.scannedUrl,
-      scanType: results.scanType
+      scanType: results.scanType,
+      pageResults: results.pageResults ? results.pageResults.map(page => ({
+        url: page.url,
+        cookies: page.cookies.map(cookie => ({
+          name: cookie.name,
+          domain: cookie.domain,
+          value: cookie.value,
+          category: cookie.category,
+          originalCategory: cookie.originalCategory,
+          type: cookie.type,
+          purpose: cookie.purpose,
+          requiresConsent: cookie.requiresConsent,
+          isThirdParty: cookie.isThirdParty,
+          size: cookie.size,
+          mlClassification: cookie.mlClassification,
+          mlConfidence: cookie.mlConfidence,
+          mlConfidenceLevel: cookie.mlConfidenceLevel,
+          mlReasoning: cookie.mlReasoning
+        }))
+      })) : undefined
     };
   };
 
   const addToHistory = (results) => {
     const cleanResults = cleanResultsForStorage(results);
 
+    // Derive stats from cookies array when summary fields are missing/zero
+    const cookies = results.cookies || [];
+    const stats = results.statistics || {};
+    const totalCookies = results.totalCount || stats.totalCount || cookies.length || 0;
+    const requiresConsent = stats.requiresConsent || cookies.filter(c => c.requiresConsent).length || 0;
+    const thirdParty = stats.thirdParty || cookies.filter(c => c.isThirdParty || c.type === 'third-party').length || 0;
+
+    // Derive category breakdown from cookies if stats.byCategory is missing or empty
+    let byCategory = stats.byCategory && Object.keys(stats.byCategory).length > 0
+      ? { ...stats.byCategory }
+      : {};
+    if (Object.keys(byCategory).length === 0 && cookies.length > 0) {
+      cookies.forEach(c => {
+        const cat = c.category || 'Uncategorized';
+        byCategory[cat] = (byCategory[cat] || 0) + 1;
+      });
+    }
+
+    // Derive type breakdown from cookies if stats.byType is missing or empty
+    let byType = stats.byType && Object.keys(stats.byType).length > 0
+      ? { ...stats.byType }
+      : {};
+    if (Object.keys(byType).length === 0 && cookies.length > 0) {
+      cookies.forEach(c => {
+        const t = c.isThirdParty ? 'third-party' : (c.type || 'first-party');
+        byType[t] = (byType[t] || 0) + 1;
+      });
+    }
+
     const historyEntry = {
-      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+      id: results._scanId || `${Date.now()}-${Math.random().toString(36).substring(2, 11)}`,
       timestamp: new Date().toISOString(),
       domain: results.domain,
       url: results.scannedUrl,
-      totalCookies: results.totalCount,
-      requiresConsent: results.statistics.requiresConsent,
-      thirdParty: results.statistics.thirdParty,
-      categories: { ...results.statistics.byCategory },
-      types: { ...results.statistics.byType },
-      ...calculateComplianceRisks(results.cookies, results.statistics),
+      totalCookies,
+      requiresConsent,
+      thirdParty,
+      categories: byCategory,
+      types: byType,
+      ...calculateComplianceRisks(cookies, { ...stats, requiresConsent, thirdParty }),
       scanType: results.scanType || 'quick',
       fullResults: cleanResults // Store cleaned results for detailed view
     };
 
-    // Add to domain-based history
+    // Add to domain-based history (capped per domain), replacing existing entry with same id
     setDomainHistory(prev => {
       const domain = results.domain;
-      const updated = {
-        ...prev,
-        [domain]: [historyEntry, ...(prev[domain] || [])]
-      };
-      
-      try {
-        localStorage.setItem('domainScanHistory', JSON.stringify(updated));
-      } catch (e) {
-        console.error('Failed to save domain history:', e);
-      }
-      
+      const existing = prev[domain] || [];
+      const alreadyExists = existing.some(e => e.id === historyEntry.id);
+      const domainScans = alreadyExists
+        ? existing.map(e => e.id === historyEntry.id ? historyEntry : e)
+        : [historyEntry, ...existing].slice(0, MAX_SCANS_PER_DOMAIN);
+      // Strip fullResults from older entries to save space
+      const trimmedScans = domainScans.map((entry, i) =>
+        i === 0 ? entry : { ...entry, fullResults: undefined }
+      );
+      const updated = { ...prev, [domain]: trimmedScans };
+
+      safeLocalStorageSet('domainScanHistory', updated);
+
       return updated;
     });
+
+    // Build notification BEFORE state update (scanHistory is current here)
+    const previousScan = scanHistory.find(scan => scan.domain === results.domain);
+    const pagesScanned = results.pageResults?.length || 1;
+    const comparison = previousScan ? compareScanResults(results, previousScan) : null;
+
+    setNotifications(prev => [{
+      id: `notif-${Date.now()}`,
+      timestamp: new Date().toISOString(),
+      domain: results.domain,
+      pagesScanned,
+      isFirstScan: !previousScan,
+      newCookies: comparison ? comparison.newCookies.length : 0,
+      removedCookies: comparison ? comparison.removedCookies.length : 0,
+      totalCookies: results.totalCount || results.cookies?.length || 0,
+      scanResult: results,
+      read: false,
+    }, ...prev].slice(0, 20));
 
     setScanHistory(prev => {
-      // Find previous scan for the same domain (most recent one)
-      const previousScan = prev.find(scan => scan.domain === results.domain);
-
-      if (previousScan) {
-        const comparison = compareScanResults(results, previousScan);
-
-        // Show notification if there are differences
-        if (comparison && (
-          comparison.totalCookies !== 0 ||
-          comparison.newCookies.length > 0 ||
-          comparison.removedCookies.length > 0 ||
-          Object.keys(comparison.categories).length > 0 ||
-          Object.keys(comparison.types).length > 0
-        )) {
-          showScanComparison(comparison);
-        }
-      }
-
-      const updated = [historyEntry, ...prev];
-      // Persist to localStorage with error handling
-      try {
-        const jsonString = JSON.stringify(updated);
-        localStorage.setItem('cookieScanHistory', jsonString);
-      } catch (e) {
-        console.error('Failed to save scan history:', e);
-        // If storage fails, try to save without fullResults
-        try {
-          const minimalHistory = updated.map(entry => ({
-            ...entry,
-            fullResults: null
-          }));
-          localStorage.setItem('cookieScanHistory', JSON.stringify(minimalHistory));
-        } catch (e2) {
-          console.error('Failed to save minimal scan history:', e2);
-        }
-      }
+      const updated = [historyEntry, ...prev].slice(0, MAX_SCAN_HISTORY);
+      safeLocalStorageSet('cookieScanHistory', updated);
       return updated;
     });
   };
 
-  const showScanComparison = (comparison) => {
-    setComparisonNotification(comparison);
-    // Auto-hide after 10 seconds
-    setTimeout(() => setComparisonNotification(null), 10000);
+  const getNextRunTime = (job) => {
+    const now = new Date();
+    const unit = job.unit;
+    const interval = job.interval || 1;
+
+    if (unit === 'minutes') {
+      return new Date(now.getTime() + interval * 60 * 1000);
+    }
+    if (unit === 'hourly') {
+      return new Date(now.getTime() + interval * 60 * 60 * 1000);
+    }
+
+    // For daily/weekly/monthly, use the scheduled time
+    const [hours, minutes] = (job.scheduleTime || '09:00').split(':').map(Number);
+
+    if (unit === 'daily') {
+      const next = new Date(now);
+      next.setHours(hours, minutes, 0, 0);
+      if (next <= now) next.setDate(next.getDate() + interval);
+      return next;
+    }
+
+    if (unit === 'weekly') {
+      const dayMap = { sunday: 0, monday: 1, tuesday: 2, wednesday: 3, thursday: 4, friday: 5, saturday: 6 };
+      const targetDay = dayMap[job.scheduleDay || 'sunday'];
+      const next = new Date(now);
+      next.setHours(hours, minutes, 0, 0);
+      let daysUntil = targetDay - now.getDay();
+      if (daysUntil < 0 || (daysUntil === 0 && next <= now)) daysUntil += 7;
+      next.setDate(now.getDate() + daysUntil);
+      return next;
+    }
+
+    if (unit === 'monthly') {
+      const targetDate = job.scheduleDate || 1;
+      const next = new Date(now.getFullYear(), now.getMonth(), targetDate, hours, minutes, 0, 0);
+      if (next <= now) next.setMonth(next.getMonth() + 1);
+      return next;
+    }
+
+    return new Date(now.getTime() + 60 * 60 * 1000);
   };
 
-  const getIntervalInMs = () => {
+  const getIntervalInMs = (interval, unit) => {
     const multipliers = {
       'minutes': 60 * 1000,
       'hourly': 60 * 60 * 1000,
@@ -825,7 +1132,7 @@ function App() {
       'weekly': 7 * 24 * 60 * 60 * 1000,
       'monthly': 30 * 24 * 60 * 60 * 1000
     };
-    return scheduleInterval * multipliers[scheduleUnit];
+    return (interval || scheduleInterval) * multipliers[unit || scheduleUnit];
   };
   
   const formatCountdown = (ms) => {
@@ -863,14 +1170,80 @@ function App() {
     }
   };
 
+  const persistScheduledJobs = (jobs) => {
+    try {
+      const toSave = jobs.map(({ timerId, countdownId, timeLeft, ...rest }) => rest);
+      localStorage.setItem('scheduledJobs', JSON.stringify(toSave));
+    } catch (e) {
+      console.error('Failed to persist scheduled jobs:', e);
+    }
+  };
+
+  const runScheduledJob = (job) => {
+    console.log(`🕐 Running scheduled scan for ${job.url}`);
+    if (job.scanType === 'deep') {
+      handleDeepScan(job.url);
+    } else {
+      handleQuickScanRemote(job.url);
+    }
+  };
+
+  const startJobTimers = (job) => {
+    const unit = job.unit;
+    const nextRun = getNextRunTime(job);
+
+    // Countdown timer — updates every second
+    const countdownId = setInterval(() => {
+      setScheduledJobs(prev => prev.map(j => {
+        if (j.id !== job.id) return j;
+        const timeLeft = j.nextRun ? new Date(j.nextRun).getTime() - Date.now() : 0;
+        return { ...j, timeLeft: Math.max(0, timeLeft) };
+      }));
+    }, 1000);
+
+    let timerId;
+    if (unit === 'minutes' || unit === 'hourly') {
+      // Simple interval for short durations
+      const intervalMs = getIntervalInMs(job.interval, job.unit);
+      timerId = setInterval(() => {
+        runScheduledJob(job);
+        const next = getNextRunTime(job);
+        setScheduledJobs(prev => {
+          const updated = prev.map(j => j.id === job.id ? { ...j, nextRun: next.toISOString() } : j);
+          persistScheduledJobs(updated);
+          return updated;
+        });
+      }, intervalMs);
+    } else {
+      // For daily/weekly/monthly, check every 30 seconds if it's time to run
+      timerId = setInterval(() => {
+        const now = Date.now();
+        setScheduledJobs(prev => {
+          const jobState = prev.find(j => j.id === job.id);
+          if (!jobState || jobState.paused) return prev;
+          const runAt = new Date(jobState.nextRun).getTime();
+          if (now >= runAt) {
+            runScheduledJob(job);
+            const next = getNextRunTime(job);
+            const updated = prev.map(j => j.id === job.id ? { ...j, nextRun: next.toISOString() } : j);
+            persistScheduledJobs(updated);
+            return updated;
+          }
+          return prev;
+        });
+      }, 30000);
+    }
+
+    jobTimersRef.current[job.id] = { timerId, countdownId };
+    return { timerId, countdownId, nextRun };
+  };
+
   const startScheduledScanning = () => {
-    // Validate URL is provided
     if (!targetUrl) {
       alert('Please enter a URL to scan');
       return;
     }
 
-    // Validate URL format
     try {
       new URL(targetUrl);
     } catch (e) {
@@ -878,57 +1251,166 @@ function App() {
       return;
     }
 
-    setScheduleEnabled(true);
-    const intervalMs = getIntervalInMs();
-    const nextScan = new Date(Date.now() + intervalMs);
-    setNextScanTime(nextScan);
+    const newJob = {
+      id: Date.now().toString(),
+      url: targetUrl,
+      scanType: scheduleScanType,
+      interval: scheduleInterval,
+      unit: scheduleUnit,
+      scheduleDay: scheduleDay,
+      scheduleDate: scheduleDate,
+      scheduleTime: scheduleTime,
+      maxPages: scheduleScanType === 'deep' ? maxPages : 1,
+      maxDepth: scheduleScanType === 'deep' ? maxDepth : 1,
+      concurrency: scheduleScanType === 'deep' ? concurrency : 1,
+      createdAt: new Date().toISOString()
+    };
 
-    if (scheduleTimerRef.current) {
-      clearInterval(scheduleTimerRef.current);
-    }
-    
-    if (countdownTimerRef.current) {
-      clearInterval(countdownTimerRef.current);
-    }
+    // Calculate next run
+    const nextRun = getNextRunTime(newJob);
+    newJob.nextRun = nextRun.toISOString();
+    newJob.timeLeft = nextRun.getTime() - Date.now();
 
-    // Update countdown every second
-    countdownTimerRef.current = setInterval(() => {
-      const now = Date.now();
-      const timeLeft = nextScan.getTime() - now;
-      if (timeLeft > 0) {
-        setTimeUntilNextScan(timeLeft);
-      } else {
-        setTimeUntilNextScan(0);
-      }
-    }, 1000);
+    // Start timers
+    startJobTimers(newJob);
 
     // Run first scan immediately
-    console.log(`🕐 Starting scheduled scan for ${targetUrl}`);
-    handleQuickScanRemote(targetUrl);
+    runScheduledJob(newJob);
 
-    // Schedule recurring scans
-    scheduleTimerRef.current = setInterval(() => {
-      console.log(`🕐 Running scheduled scan for ${targetUrl}`);
-      handleQuickScanRemote(targetUrl);
-      const nextScan = new Date(Date.now() + intervalMs);
-      setNextScanTime(nextScan);
-    }, intervalMs);
+    setScheduledJobs(prev => {
+      const updated = [...prev, newJob];
+      persistScheduledJobs(updated);
+      return updated;
+    });
+
+    // Reset form
+    setTargetUrl('');
+  };
+
+  const deleteScheduledJob = (jobId) => {
+    // Clear timers
+    const timers = jobTimersRef.current[jobId];
+    if (timers) {
+      clearInterval(timers.timerId);
+      clearInterval(timers.countdownId);
+      delete jobTimersRef.current[jobId];
+    }
+
+    setScheduledJobs(prev => {
+      const updated = prev.filter(j => j.id !== jobId);
+      persistScheduledJobs(updated);
+      return updated;
+    });
+  };
+
+  const togglePauseJob = (jobId) => {
+    const timers = jobTimersRef.current[jobId];
+
+    setScheduledJobs(prev => {
+      const updated = prev.map(j => {
+        if (j.id !== jobId) return j;
+
+        if (j.paused) {
+          // Resume — restart timers
+          startJobTimers(j);
+          return { ...j, paused: false };
+        } else {
+          // Pause — clear timers
+          if (timers) {
+            clearInterval(timers.timerId);
+            clearInterval(timers.countdownId);
+            delete jobTimersRef.current[jobId];
+          }
+          return { ...j, paused: true, timeLeft: null };
+        }
+      });
+      persistScheduledJobs(updated);
+      return updated;
+    });
+  };
+
+  const startEditingJob = (job) => {
+    setEditingJobId(job.id);
+    setEditForm({
+      url: job.url,
+      scanType: job.scanType,
+      interval: job.interval,
+      unit: job.unit,
+      scheduleDay: job.scheduleDay || 'sunday',
+      scheduleDate: job.scheduleDate || 1,
+      scheduleTime: job.scheduleTime || '09:00',
+      maxPages: job.maxPages || 10,
+      maxDepth: job.maxDepth || 3,
+      concurrency: job.concurrency || 20
+    });
+  };
+
+  const cancelEditingJob = () => {
+    setEditingJobId(null);
+    setEditForm({});
+  };
+
+  const saveEditedJob = (jobId) => {
+    // Validate URL
+    try {
+      new URL(editForm.url);
+    } catch (e) {
+      alert('Please enter a valid URL');
+      return;
+    }
+
+    // Clear old timers
+    const timers = jobTimersRef.current[jobId];
+    if (timers) {
+      clearInterval(timers.timerId);
+      clearInterval(timers.countdownId);
+      delete jobTimersRef.current[jobId];
+    }
+
+    setScheduledJobs(prev => {
+      const updated = prev.map(j => {
+        if (j.id !== jobId) return j;
+        const updatedJob = {
+          ...j,
+          url: editForm.url,
+          scanType: editForm.scanType,
+          interval: editForm.interval,
+          unit: editForm.unit,
+          scheduleDay: editForm.scheduleDay || 'sunday',
+          scheduleDate: editForm.scheduleDate || 1,
+          scheduleTime: editForm.scheduleTime || '09:00',
+          maxPages: editForm.scanType === 'deep' ? editForm.maxPages : 1,
+          maxDepth: editForm.scanType === 'deep' ? editForm.maxDepth : 1,
+          concurrency: editForm.scanType === 'deep' ? editForm.concurrency : 1,
+          paused: j.paused
+        };
+        const nextRun = getNextRunTime(updatedJob);
+        updatedJob.nextRun = nextRun.toISOString();
+        // Restart timers if not paused
+        if (!j.paused) {
+          startJobTimers(updatedJob);
+        }
+        return updatedJob;
+      });
+      persistScheduledJobs(updated);
+      return updated;
+    });
+
+    setEditingJobId(null);
+    setEditForm({});
   };
 
   const stopScheduledScanning = () => {
-    setScheduleEnabled(false);
-    setNextScanTime(null);
-    setTimeUntilNextScan(null);
-
-    if (scheduleTimerRef.current) {
-      clearInterval(scheduleTimerRef.current);
-      scheduleTimerRef.current = null;
-    }
-    
-    if (countdownTimerRef.current) {
-      clearInterval(countdownTimerRef.current);
-      countdownTimerRef.current = null;
-    }
+    // Stop all jobs
+    Object.values(jobTimersRef.current).forEach(({ timerId, countdownId }) => {
+      clearInterval(timerId);
+      clearInterval(countdownId);
+    });
+    jobTimersRef.current = {};
+    setScheduledJobs(prev => {
+      persistScheduledJobs([]);
+      return [];
+    });
   };
 
   const clearHistory = () => {
@@ -956,10 +1438,13 @@ function App() {
   };
 
   const viewScan = (scan) => {
+    console.log('viewScan called with:', scan);
     if (scan.fullResults) {
+      console.log('Setting scanResult with fullResults:', scan.fullResults);
       setScanResult(scan.fullResults);
-      // Scroll to top to show results
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      handleNavigate('results');
+    } else {
+      console.warn('No fullResults found in scan:', scan);
     }
   };
 
@@ -1055,7 +1540,7 @@ function App() {
     
     // Step 2: Persist the change to the backend via API call
     try {
-      const response = await fetch('http://localhost:8003/api/categories/update-category', {
+      const response = await fetch('/api/categories/update-category', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -1098,14 +1583,27 @@ function App() {
   };
 
   useEffect(() => {
-    handleQuickScan();
+    // Restart timers for persisted scheduled jobs
+    scheduledJobs.forEach(job => {
+      startJobTimers(job);
+    });
 
     return () => {
-      if (scheduleTimerRef.current) {
-        clearInterval(scheduleTimerRef.current);
-      }
+      Object.values(jobTimersRef.current).forEach(({ timerId, countdownId }) => {
+        clearInterval(timerId);
+        clearInterval(countdownId);
+      });
     };
   }, []);
+
+  // Navigate to results page when scan finishes
+  const wasScanningRef = useRef(false);
+  useEffect(() => {
+    if (wasScanningRef.current && !scanning && scanResult) {
+      handleNavigate('results');
+    }
+    wasScanningRef.current = scanning;
+  }, [scanning]);
 
   const handleExport = (format) => {
     if (!scanResult) return;
@@ -1140,16 +1638,69 @@ function App() {
       risks.push({ regulation: 'DPDP', level: 'HIGH', reason: 'Prior consent required' });
     }
 
+    // CPA (Colorado Privacy Act)
+    if (cookie.category === 'Marketing') {
+      risks.push({ regulation: 'CPA', level: 'HIGH', reason: 'Targeted advertising — opt-out required' });
+    } else if (cookie.isThirdParty && cookie.category === 'Analytics') {
+      risks.push({ regulation: 'CPA', level: 'MEDIUM', reason: 'Third-party profiling — disclosure required' });
+    }
+
     return risks;
   };
 
+  const homeKPIs = useMemo(() => {
+    const domains = new Set(scanHistory.map(s => s.domain)).size;
+    const totalScans = scanHistory.length;
+    const latestCookies = scanHistory[0]?.totalCookies || 0;
+    const highRisk = scanHistory.filter(s => s.gdprRisk === 'HIGH').length;
+    const lowConfidence = (scanResult?.cookies || []).filter(c => c.mlConfidenceLevel === 'Low').length;
+    const now = Date.now();
+    const week = 7 * 24 * 3600 * 1000;
+    const thisWeek = scanHistory.filter(s => now - new Date(s.timestamp) < week).length;
+    const lastWeek = scanHistory.filter(s => {
+      const age = now - new Date(s.timestamp);
+      return age >= week && age < 2 * week;
+    }).length;
+    const trend = totalScans >= 2 ? thisWeek - lastWeek : null;
+    return { domains, totalScans, latestCookies, highRisk, lowConfidence, trend };
+  }, [scanHistory, scanResult]);
+
+  const domainHealth = useMemo(() => {
+    const map = {};
+    scanHistory.forEach(s => {
+      if (!map[s.domain]) map[s.domain] = s;
+    });
+    return Object.values(map).slice(0, 6).map(s => ({
+      domain: s.domain,
+      risk: s.gdprRisk === 'HIGH' || s.ccpaRisk === 'HIGH' ? 'high'
+          : s.gdprRisk === 'MEDIUM' || s.ccpaRisk === 'MEDIUM' ? 'medium' : 'low',
+      lastScan: s.timestamp,
+      totalCookies: s.totalCookies,
+    }));
+  }, [scanHistory]);
+
+  const complianceStrip = useMemo(() => {
+    if (scanResult?.cookies?.length && scanResult?.statistics) {
+      const risks = calculateComplianceRisks(scanResult.cookies, scanResult.statistics);
+      return { gdpr: risks.gdprRisk, ccpa: risks.ccpaRisk, dpdp: risks.dpdpRisk, cpa: null, source: scanResult.domain };
+    }
+    if (scanHistory.length > 0) {
+      const last = scanHistory[0];
+      return { gdpr: last.gdprRisk || 'LOW', ccpa: last.ccpaRisk || 'LOW', dpdp: last.dpdpRisk || 'LOW', cpa: null, source: 'last scan' };
+    }
+    return { gdpr: null, ccpa: null, dpdp: null, cpa: null, source: null };
+  }, [scanResult, scanHistory]);
+
   const filteredCookies = scanResult?.cookies.filter(c => {
     const categoryMatch = filterCategory === 'all' || c.category === filterCategory;
+    const partyMatch = filterParty === 'all' ||
+      (filterParty === 'third' && c.isThirdParty) ||
+      (filterParty === 'first' && !c.isThirdParty);
 
-    if (filterRegulation === 'all') return categoryMatch;
+    if (filterRegulation === 'all') return categoryMatch && partyMatch;
 
     const risks = getRegulationRisk(c);
-    return categoryMatch && risks.some(r => r.regulation === filterRegulation);
+    return categoryMatch && partyMatch && risks.some(r => r.regulation === filterRegulation);
   }) || [];
 
   const categories = scanResult ?
@@ -1157,206 +1708,289 @@ function App() {
     ['all'];
 
   return (
-    <div className="app">
-      <header className="header">
-        <div className="header-content">
-          <div className="logo-container">
-            <img 
-              src="https://cdn.prod.website-files.com/646e363f9c29e4860c52c82e/665f4b9f47a7740de833d1c2_Final%20Data%20Safeguard%20Logo.svg" 
-              alt="Data Safeguard" 
-              className="logo-image"
-            />
+    <div className={`app app-with-sidebar ${sidebarPinned ? 'sidebar-pinned' : ''}`}>
+      <LeftSidebar onPinnedChange={setSidebarPinned} onNavigate={handleNavigate} currentPage={currentPage} />
+      <Navbar
+        notifications={notifications}
+        unreadCount={unreadCount}
+        onNotificationClick={(notif) => {
+          setScanResult(notif.scanResult);
+          setNotifications(prev => prev.map(n => n.id === notif.id ? { ...n, read: true } : n));
+          handleNavigate('results');
+        }}
+        onMarkAllRead={() => setNotifications(prev => prev.map(n => ({ ...n, read: true })))}
+        onClearAll={() => setNotifications([])}
+      />
+
+      {/* Page Router */}
+      {currentPage === 'history' && (
+        <main className="main-content page-content">
+          <ScanHistoryPage
+            scanHistory={scanHistory}
+            domainHistory={domainHistory}
+            onViewScan={viewScan}
+            onDeleteScan={deleteScan}
+            onClearHistory={clearHistory}
+            onDeleteDomain={deleteDomain}
+            deleteScanFromDomain={deleteScanFromDomain}
+            onNavigate={handleNavigate}
+          />
+        </main>
+      )}
+
+      {currentPage === 'compare' && (
+        <main className="main-content page-content">
+          <CompareScanPage
+            scanHistory={scanHistory}
+            onNavigate={handleNavigate}
+          />
+        </main>
+      )}
+
+      {currentPage === 'reports' && (
+        <main className="main-content page-content">
+          <ReportsPage
+            scanHistory={scanHistory}
+            domainHistory={domainHistory}
+            scanResult={scanResult}
+            onNavigate={handleNavigate}
+          />
+        </main>
+      )}
+
+      {currentPage === 'review' && (
+        <main className="main-content page-content">
+          <ReviewQueuePage
+            scanHistory={scanHistory}
+            domainHistory={domainHistory}
+            onNavigate={handleNavigate}
+          />
+        </main>
+      )}
+
+      {currentPage === 'vendors' && (
+        <main className="main-content page-content">
+          <VendorDashboard
+            scanHistory={scanHistory}
+            domainHistory={domainHistory}
+            onNavigate={handleNavigate}
+          />
+        </main>
+      )}
+
+      {currentPage === 'publish' && (
+        <main className="main-content page-content">
+          <AutoPublishPage onNavigate={handleNavigate} />
+        </main>
+      )}
+
+      {currentPage === 'scheduled' && (
+        <main className="main-content page-content">
+          <ScheduledScanPage onNavigate={handleNavigate} />
+        </main>
+      )}
+
+      {currentPage === 'websites' && (
+        <main className="main-content page-content">
+          <MyWebsitesPage
+            domainHistory={domainHistory}
+            scanHistory={scanHistory}
+            onNavigate={handleNavigate}
+          />
+        </main>
+      )}
+
+      {currentPage === 'model' && (
+        <main className="main-content page-content">
+          <ModelPerformancePage onNavigate={handleNavigate} />
+        </main>
+      )}
+
+      {currentPage === 'home' && (
+      <main className="main-content home-dashboard">
+
+        {/* Slim Hero Banner */}
+        <div className="slim-hero">
+          <div className="slim-hero__left">
+            <Shield size={28} className="slim-hero__icon" />
+            <div>
+              <h1 className="slim-hero__title">Cookie Compliance Dashboard</h1>
+              <p className="slim-hero__sub">Monitor, scan, and audit cookies across your websites in real time</p>
+            </div>
+          </div>
+          <div className="slim-hero__badges">
+            <span className="slim-hero__badge slim-hero__badge--gdpr">GDPR</span>
+            <span className="slim-hero__badge slim-hero__badge--ccpa">CCPA</span>
+            <span className="slim-hero__badge slim-hero__badge--dpdp">DPDP</span>
           </div>
         </div>
-      </header>
 
-      <main className="main-content">
-        <section className="hero-section">
-          <div className="hero-content">
-            <div className="hero-badge">
-              <Cookie className="badge-icon" />
-              <span>Cookie Compliance Scanner</span>
-            </div>
-            <h1 className="hero-title">Cookie Scanner & Analyzer</h1>
-            <p className="hero-subtitle">Privacy compliance tool for GDPR, CCPA, and DPDP regulations</p>
-            <div className="hero-features">
-              <div className="hero-feature">
-                <Shield className="feature-icon" size={20} />
-                <span>GDPR Compliant</span>
-              </div>
-              <div className="hero-feature">
-                <Globe className="feature-icon" size={20} />
-                <span>Multi-Region Support</span>
-              </div>
-              <div className="hero-feature">
-                <RefreshCw className="feature-icon" size={20} />
-                <span>Real-time Scanning</span>
-              </div>
+        {/* Zone 1 — KPI Strip */}
+        <div className="kpi-strip">
+          <div className="kpi-tile">
+            <div className="kpi-tile__icon-wrap kpi-tile__icon-wrap--blue"><Globe size={18} /></div>
+            <div className="kpi-tile__body">
+              <span className="kpi-tile__value">{homeKPIs.domains}</span>
+              <span className="kpi-tile__label">Websites Monitored</span>
             </div>
           </div>
-        </section>
-
-        {comparisonNotification && (
-          <div className="comparison-notification">
-            <div className="notification-header">
-              <AlertCircle className="notification-icon" />
-              <h3>Scan Comparison Detected</h3>
-              <button onClick={() => setComparisonNotification(null)} className="notification-close">
-                <X size={20} />
-              </button>
-            </div>
-            <div className="notification-body">
-              {comparisonNotification.totalCookies !== 0 && (
-                <div className={`notification-item ${comparisonNotification.totalCookies > 0 ? 'increase' : 'decrease'}`}>
-                  <span className="item-label">Total Cookies:</span>
-                  <span className="item-value">
-                    {comparisonNotification.totalCookies > 0 ? '+' : ''}{comparisonNotification.totalCookies}
-                  </span>
-                </div>
-              )}
-
-              {comparisonNotification.requiresConsent !== 0 && (
-                <div className={`notification-item ${comparisonNotification.requiresConsent > 0 ? 'increase' : 'decrease'}`}>
-                  <span className="item-label">Requires Consent:</span>
-                  <span className="item-value">
-                    {comparisonNotification.requiresConsent > 0 ? '+' : ''}{comparisonNotification.requiresConsent}
-                  </span>
-                </div>
-              )}
-
-              {comparisonNotification.newCookies.length > 0 && (
-                <div className="notification-section">
-                  <h4>New Cookies ({comparisonNotification.newCookies.length})</h4>
-                  <div className="cookie-list">
-                    {comparisonNotification.newCookies.slice(0, 5).map((cookie, idx) => (
-                      <div key={idx} className="cookie-chip">
-                        <Cookie size={14} />
-                        <span>{cookie.name}</span>
-                        <span className={`chip-category ${cookie.category.toLowerCase().replace(/\s+/g, '-')}`}>
-                          {cookie.category}
-                        </span>
-                      </div>
-                    ))}
-                    {comparisonNotification.newCookies.length > 5 && (
-                      <span className="more-indicator">+{comparisonNotification.newCookies.length - 5} more</span>
-                    )}
-                  </div>
-                </div>
-              )}
-
-              {comparisonNotification.removedCookies.length > 0 && (
-                <div className="notification-section">
-                  <h4>Removed Cookies ({comparisonNotification.removedCookies.length})</h4>
-                  <div className="cookie-list">
-                    {comparisonNotification.removedCookies.slice(0, 5).map((cookie, idx) => (
-                      <div key={idx} className="cookie-chip removed">
-                        <Trash2 size={14} />
-                        <span>{cookie.name}</span>
-                      </div>
-                    ))}
-                    {comparisonNotification.removedCookies.length > 5 && (
-                      <span className="more-indicator">+{comparisonNotification.removedCookies.length - 5} more</span>
-                    )}
-                  </div>
-                </div>
-              )}
-
-              {Object.keys(comparisonNotification.categories).length > 0 && (
-                <div className="notification-section">
-                  <h4>Category Changes</h4>
-                  <div className="changes-grid">
-                    {Object.entries(comparisonNotification.categories).map(([cat, diff]) => (
-                      <div key={cat} className={`change-item ${diff > 0 ? 'increase' : 'decrease'}`}>
-                        <span className="change-label">{cat}:</span>
-                        <span className="change-value">{diff > 0 ? '+' : ''}{diff}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {Object.keys(comparisonNotification.types).length > 0 && (
-                <div className="notification-section">
-                  <h4>Type Changes</h4>
-                  <div className="changes-grid">
-                    {Object.entries(comparisonNotification.types).map(([type, diff]) => (
-                      <div key={type} className={`change-item ${diff > 0 ? 'increase' : 'decrease'}`}>
-                        <span className="change-label">{type}:</span>
-                        <span className="change-value">{diff > 0 ? '+' : ''}{diff}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+          <div className="kpi-tile">
+            <div className="kpi-tile__icon-wrap kpi-tile__icon-wrap--teal"><RefreshCw size={18} /></div>
+            <div className="kpi-tile__body">
+              <span className="kpi-tile__value">{homeKPIs.totalScans}</span>
+              <span className="kpi-tile__label">Total Scans</span>
+              {homeKPIs.trend !== null && (
+                <span className={`kpi-tile__trend kpi-tile__trend--${homeKPIs.trend >= 0 ? 'up' : 'down'}`}>
+                  {homeKPIs.trend >= 0 ? <TrendingUp size={11} /> : <TrendingDown size={11} />}
+                  {Math.abs(homeKPIs.trend)} this week
+                </span>
               )}
             </div>
           </div>
-        )}
+          <div className="kpi-tile">
+            <div className="kpi-tile__icon-wrap kpi-tile__icon-wrap--purple"><Cookie size={18} /></div>
+            <div className="kpi-tile__body">
+              <span className="kpi-tile__value">{homeKPIs.latestCookies}</span>
+              <span className="kpi-tile__label">Cookies Found</span>
+            </div>
+          </div>
+          <div className="kpi-tile">
+            <div className="kpi-tile__icon-wrap kpi-tile__icon-wrap--red"><AlertCircle size={18} /></div>
+            <div className="kpi-tile__body">
+              <span className="kpi-tile__value">{homeKPIs.highRisk}</span>
+              <span className="kpi-tile__label">High Risk Alerts</span>
+            </div>
+          </div>
+          <div className="kpi-tile">
+            <div className="kpi-tile__icon-wrap kpi-tile__icon-wrap--yellow"><Shield size={18} /></div>
+            <div className="kpi-tile__body">
+              <span className="kpi-tile__value">{homeKPIs.lowConfidence}</span>
+              <span className="kpi-tile__label">Pending Reviews</span>
+            </div>
+          </div>
+        </div>
 
-        <div className="content-grid">
-          <div className="main-column">
-            <section className="scan-controls-compact">
+        <section className="scan-controls-compact">
               <div className="scan-compact-wrapper">
-                <div className="scan-mode-selector">
-                  <button
-                    className={`mode-btn ${scanMode === 'quick' ? 'active' : ''}`}
-                    onClick={() => setScanMode('quick')}
-                    disabled={scanning}
-                  >
-                    <Zap size={16} />
-                    <span>Quick</span>
-                  </button>
-                  <button
-                    className={`mode-btn ${scanMode === 'deep' ? 'active' : ''}`}
-                    onClick={() => setScanMode('deep')}
-                    disabled={scanning}
-                  >
-                    <Layers size={16} />
-                    <span>Deep</span>
-                  </button>
-                  <button
-                    className={`mode-btn ${scanMode === 'schedule' ? 'active' : ''}`}
-                    onClick={() => setScanMode('schedule')}
-                    disabled={scanning}
-                  >
-                    <Clock size={16} />
-                    <span>Schedule</span>
-                  </button>
+                <div className="scan-controls__top-row">
+                  <div className="scan-mode-selector">
+                    <Tooltip text="Scans a single page for cookies. Fast and lightweight — great for a quick check.">
+                      <button
+                        className={`mode-btn ${scanMode === 'quick' ? 'active' : ''}`}
+                        onClick={() => setScanMode('quick')}
+                        disabled={scanning}
+                      >
+                        <Zap size={15} />
+                        <span>Quick</span>
+                      </button>
+                    </Tooltip>
+                    <Tooltip text="Crawls multiple pages following links from the start URL. Discovers cookies across your entire site.">
+                      <button
+                        className={`mode-btn ${scanMode === 'deep' ? 'active' : ''}`}
+                        onClick={() => setScanMode('deep')}
+                        disabled={scanning}
+                      >
+                        <Layers size={15} />
+                        <span>Deep</span>
+                      </button>
+                    </Tooltip>
+                    <Tooltip text="Automatically repeats scans at a set interval. Useful for monitoring cookie changes over time.">
+                      <button
+                        className={`mode-btn ${scanMode === 'schedule' ? 'active' : ''}`}
+                        onClick={() => setScanMode('schedule')}
+                        disabled={scanning}
+                      >
+                        <Clock size={15} />
+                        <span>Schedule</span>
+                      </button>
+                    </Tooltip>
+                  </div>
                 </div>
 
                 <div className="scan-input-row">
-                  <input
-                    type="text"
-                    placeholder={scanMode === 'quick' ? 'Enter URL or leave empty for current page' : 'Enter website URL (e.g., https://example.com)'}
-                    value={targetUrl}
-                    onChange={(e) => setTargetUrl(e.target.value)}
-                    className="scan-url-input"
-                    onKeyPress={(e) => e.key === 'Enter' && !scanning && handleUrlScan()}
-                    disabled={scanning}
-                  />
-                  
-                  {scanMode === 'deep' && (
+                  <div className="scan-input-wrapper">
+                    <Globe size={16} className="scan-input-icon" />
                     <input
-                      type="number"
-                      placeholder="Pages"
-                      min="1"
-                      max="20000"
-                      value={maxPages}
-                      onChange={(e) => setMaxPages(parseInt(e.target.value) || 1)}
+                      type="text"
+                      placeholder={scanMode === 'quick' ? 'Enter URL or leave empty for current page' : 'Enter website URL (e.g., https://example.com)'}
+                      value={targetUrl}
+                      onChange={(e) => setTargetUrl(e.target.value)}
+                      className="scan-url-input"
+                      onKeyPress={(e) => e.key === 'Enter' && !scanning && scanMode !== 'schedule' && handleUrlScan()}
                       disabled={scanning}
-                      className="scan-pages-input"
-                      title="Maximum pages to scan"
                     />
+                  </div>
+
+                  {scanMode !== 'schedule' && (
+                    <button
+                      onClick={() => scanMode === 'deep' ? handleUrlScan() : (targetUrl ? handleUrlScan() : handleQuickScan())}
+                      disabled={scanning}
+                      className="btn-scan-compact"
+                    >
+                      <RefreshCw className={`icon ${scanning ? 'spinning' : ''}`} size={16} />
+                      {scanning ? 'Scanning...' : 'Start Scan'}
+                    </button>
                   )}
-                  
-                  <button
-                    onClick={() => scanMode === 'deep' ? handleUrlScan() : (targetUrl ? handleUrlScan() : handleQuickScan())}
-                    disabled={scanning}
-                    className="btn-scan-compact"
-                  >
-                    <RefreshCw className={`icon ${scanning ? 'spinning' : ''}`} size={18} />
-                    {scanning ? 'Scanning...' : 'Scan'}
-                  </button>
                 </div>
+
+                {scanMode === 'deep' && (
+                  <div className="scan-options-row">
+                    <div className="scan-option-group">
+                      <label className="scan-option-label">
+                        Pages
+                        <Tooltip text="The maximum number of pages to scan on the website. Higher values give broader coverage but take longer.">
+                          <Info size={12} className="scan-option-info" />
+                        </Tooltip>
+                      </label>
+                      <input
+                        type="number"
+                        min="1"
+                        max="20000"
+                        value={maxPages}
+                        onChange={(e) => setMaxPages(parseInt(e.target.value) || 1)}
+                        disabled={scanning}
+                        className="scan-option-input"
+                      />
+                    </div>
+                    <div className="scan-option-group">
+                      <label className="scan-option-label">
+                        Depth Level
+                        <Tooltip text="How many clicks deep from the start page to follow links. Level 1 = only the start page's links. Level 3 = links of links of links.">
+                          <Info size={12} className="scan-option-info" />
+                        </Tooltip>
+                      </label>
+                      <input
+                        type="number"
+                        min="1"
+                        max="500"
+                        value={maxDepth}
+                        onChange={(e) => setMaxDepth(parseInt(e.target.value) || 1)}
+                        disabled={scanning}
+                        className="scan-option-input"
+                      />
+                    </div>
+                    <div className="scan-option-group">
+                      <label className="scan-option-label">
+                        Concurrency
+                        <Tooltip text="Number of pages scanned at the same time. Higher values are faster but may overwhelm the target server.">
+                          <Info size={12} className="scan-option-info" />
+                        </Tooltip>
+                      </label>
+                      <input
+                        type="number"
+                        min="1"
+                        max="200"
+                        value={concurrency}
+                        onChange={(e) => setConcurrency(parseInt(e.target.value) || 1)}
+                        disabled={scanning}
+                        className="scan-option-input"
+                      />
+                    </div>
+                    <div className="scan-option-hint">
+                      Scans up to {maxPages} pages, crawling {maxDepth} level{maxDepth > 1 ? 's' : ''} deep with {concurrency} parallel requests
+                    </div>
+                  </div>
+                )}
 
                 {!scanning && !targetUrl && scanMode === 'quick' && (
                   <div className="scan-hint">
@@ -1367,66 +2001,352 @@ function App() {
 
                 {scanMode === 'schedule' && (
                   <div className="schedule-compact">
-                    {!scheduleEnabled && (
-                      <div className="schedule-url-hint">
-                        <Globe size={14} />
-                        <span>Enter a URL above to schedule recurring scans</span>
+                    <div className="schedule-scan-type-row">
+                      <span className="scan-option-label">Scan Type</span>
+                      <div className="schedule-type-toggle">
+                        <Tooltip text="Scans a single page for cookies each time.">
+                          <button
+                            className={`schedule-type-btn ${scheduleScanType === 'quick' ? 'active' : ''}`}
+                            onClick={() => setScheduleScanType('quick')}
+                          >
+                            <Zap size={14} />
+                            Quick
+                          </button>
+                        </Tooltip>
+                        <Tooltip text="Crawls multiple pages each time, following links from the start URL.">
+                          <button
+                            className={`schedule-type-btn ${scheduleScanType === 'deep' ? 'active' : ''}`}
+                            onClick={() => setScheduleScanType('deep')}
+                          >
+                            <Layers size={14} />
+                            Deep
+                          </button>
+                        </Tooltip>
+                      </div>
+                    </div>
+                    {scheduleScanType === 'deep' && (
+                      <div className="scan-options-row">
+                        <div className="scan-option-group">
+                          <label className="scan-option-label">
+                            Pages
+                            <Tooltip text="The maximum number of pages to scan on the website. Higher values give broader coverage but take longer.">
+                              <Info size={12} className="scan-option-info" />
+                            </Tooltip>
+                          </label>
+                          <input
+                            type="number"
+                            min="1"
+                            max="20000"
+                            value={maxPages}
+                            onChange={(e) => setMaxPages(parseInt(e.target.value) || 1)}
+                            className="scan-option-input"
+                          />
+                        </div>
+                        <div className="scan-option-group">
+                          <label className="scan-option-label">
+                            Depth Level
+                            <Tooltip text="How many clicks deep from the start page to follow links. Level 1 = only the start page's links. Level 3 = links of links of links.">
+                              <Info size={12} className="scan-option-info" />
+                            </Tooltip>
+                          </label>
+                          <input
+                            type="number"
+                            min="1"
+                            max="500"
+                            value={maxDepth}
+                            onChange={(e) => setMaxDepth(parseInt(e.target.value) || 1)}
+                            className="scan-option-input"
+                          />
+                        </div>
+                        <div className="scan-option-group">
+                          <label className="scan-option-label">
+                            Concurrency
+                            <Tooltip text="Number of pages scanned at the same time. Higher values are faster but may overwhelm the target server.">
+                              <Info size={12} className="scan-option-info" />
+                            </Tooltip>
+                          </label>
+                          <input
+                            type="number"
+                            min="1"
+                            max="200"
+                            value={concurrency}
+                            onChange={(e) => setConcurrency(parseInt(e.target.value) || 1)}
+                            className="scan-option-input"
+                          />
+                        </div>
                       </div>
                     )}
                     <div className="schedule-inputs-row">
-                      <span className="schedule-label">Scan every</span>
-                      <input
-                        type="number"
-                        min="1"
-                        max="100"
-                        value={scheduleInterval}
-                        onChange={(e) => setScheduleInterval(parseInt(e.target.value) || 1)}
-                        className="schedule-number-input"
-                        disabled={scheduleEnabled}
-                      />
+                      <span className="schedule-label">Repeat</span>
                       <select
                         value={scheduleUnit}
                         onChange={(e) => setScheduleUnit(e.target.value)}
                         className="schedule-unit-select"
-                        disabled={scheduleEnabled}
                       >
-                        <option value="minutes">Minute(s)</option>
-                        <option value="hourly">Hour(s)</option>
-                        <option value="daily">Day(s)</option>
-                        <option value="weekly">Week(s)</option>
-                        <option value="monthly">Month(s)</option>
+                        <option value="minutes">Every X Minutes</option>
+                        <option value="hourly">Every X Hours</option>
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
                       </select>
-                      {!scheduleEnabled ? (
-                        <button 
-                          onClick={startScheduledScanning} 
-                          className="btn-schedule-action start"
-                          disabled={!targetUrl}
-                          title={!targetUrl ? "Enter a URL first" : "Start scheduled scanning"}
-                        >
-                          <Play size={16} />
-                          Start
-                        </button>
-                      ) : (
-                        <button onClick={stopScheduledScanning} className="btn-schedule-action stop">
-                          <Pause size={16} />
-                          Stop
-                        </button>
+                      {(scheduleUnit === 'minutes' || scheduleUnit === 'hourly') && (
+                        <>
+                          <span className="schedule-label">every</span>
+                          <input
+                            type="number"
+                            min="1"
+                            max="100"
+                            value={scheduleInterval}
+                            onChange={(e) => setScheduleInterval(parseInt(e.target.value) || 1)}
+                            className="schedule-number-input"
+                          />
+                          <span className="schedule-label">{scheduleUnit === 'minutes' ? 'min' : 'hr'}</span>
+                        </>
                       )}
                     </div>
-                    {scheduleEnabled && nextScanTime && (
-                      <div className="schedule-next-scan">
-                        <Clock size={12} />
-                        <div className="schedule-countdown-info">
-                          <span className="countdown-label">Next scan in:</span>
-                          <span className="countdown-timer">{formatCountdown(timeUntilNextScan)}</span>
-                          <span className="countdown-date">({nextScanTime.toLocaleString()})</span>
+
+                    {scheduleUnit === 'weekly' && (
+                      <div className="schedule-day-picker">
+                        <span className="scan-option-label">Day of Week</span>
+                        <div className="day-of-week-grid">
+                          {['sunday','monday','tuesday','wednesday','thursday','friday','saturday'].map(day => (
+                            <button
+                              key={day}
+                              className={`day-btn ${scheduleDay === day ? 'active' : ''}`}
+                              onClick={() => setScheduleDay(day)}
+                            >
+                              {day.slice(0, 3)}
+                            </button>
+                          ))}
                         </div>
                       </div>
                     )}
-                    {scheduleEnabled && targetUrl && (
-                      <div className="schedule-active-url">
-                        <Globe size={12} />
-                        <span>Scanning: <strong>{targetUrl}</strong></span>
+
+                    {scheduleUnit === 'monthly' && (
+                      <div className="schedule-day-picker">
+                        <span className="scan-option-label">Day of Month</span>
+                        <div className="day-of-month-grid">
+                          {Array.from({ length: 28 }, (_, i) => (
+                            <button
+                              key={i + 1}
+                              className={`date-btn ${scheduleDate === i + 1 ? 'active' : ''}`}
+                              onClick={() => setScheduleDate(i + 1)}
+                            >
+                              {i + 1}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {(scheduleUnit === 'daily' || scheduleUnit === 'weekly' || scheduleUnit === 'monthly') && (
+                      <div className="schedule-time-picker">
+                        <span className="scan-option-label">Time</span>
+                        <input type="time" value={scheduleTime} onChange={(e) => setScheduleTime(e.target.value)} className="schedule-time-input" />
+                      </div>
+                    )}
+
+                    <button 
+                      onClick={startScheduledScanning} 
+                      className="btn-schedule-action start schedule-add-btn"
+                      disabled={!targetUrl || scanning}
+                      title={!targetUrl ? "Enter a URL first" : "Add scheduled scan"}
+                    >
+                      <Play size={16} />
+                      Add Schedule
+                    </button>
+
+                    {scheduledJobs.length > 0 && (
+                      <div className="scheduled-jobs-list">
+                        <div className="scheduled-jobs-header">
+                          <span className="scheduled-jobs-title">Scheduled Scans ({scheduledJobs.length})</span>
+                          {scheduledJobs.length > 1 && (
+                            <button className="scheduled-jobs-clear" onClick={stopScheduledScanning}>
+                              <Trash2 size={12} />
+                              Clear All
+                            </button>
+                          )}
+                        </div>
+                        {scheduledJobs.map(job => (
+                          <div key={job.id} className={`scheduled-job-card ${editingJobId === job.id ? 'editing' : ''}`}>
+                            {editingJobId === job.id ? (
+                              <div className="scheduled-job-edit-form">
+                                <div className="edit-form-row">
+                                  <label className="scan-option-label">URL</label>
+                                  <input
+                                    type="text"
+                                    value={editForm.url}
+                                    onChange={(e) => setEditForm(f => ({ ...f, url: e.target.value }))}
+                                    className="scan-url-input"
+                                  />
+                                </div>
+                                <div className="edit-form-row">
+                                  <label className="scan-option-label">Scan Type</label>
+                                  <div className="schedule-type-toggle">
+                                    <button
+                                      className={`schedule-type-btn ${editForm.scanType === 'quick' ? 'active' : ''}`}
+                                      onClick={() => setEditForm(f => ({ ...f, scanType: 'quick' }))}
+                                    >
+                                      <Zap size={14} /> Quick
+                                    </button>
+                                    <button
+                                      className={`schedule-type-btn ${editForm.scanType === 'deep' ? 'active' : ''}`}
+                                      onClick={() => setEditForm(f => ({ ...f, scanType: 'deep' }))}
+                                    >
+                                      <Layers size={14} /> Deep
+                                    </button>
+                                  </div>
+                                </div>
+                                {editForm.scanType === 'deep' && (
+                                  <div className="edit-form-row-inline">
+                                    <div className="scan-option-group">
+                                      <label className="scan-option-label">Pages</label>
+                                      <input type="number" min="1" max="20000" value={editForm.maxPages}
+                                        onChange={(e) => setEditForm(f => ({ ...f, maxPages: parseInt(e.target.value) || 1 }))}
+                                        className="scan-option-input" />
+                                    </div>
+                                    <div className="scan-option-group">
+                                      <label className="scan-option-label">Depth</label>
+                                      <input type="number" min="1" max="500" value={editForm.maxDepth}
+                                        onChange={(e) => setEditForm(f => ({ ...f, maxDepth: parseInt(e.target.value) || 1 }))}
+                                        className="scan-option-input" />
+                                    </div>
+                                    <div className="scan-option-group">
+                                      <label className="scan-option-label">Concurrency</label>
+                                      <input type="number" min="1" max="200" value={editForm.concurrency}
+                                        onChange={(e) => setEditForm(f => ({ ...f, concurrency: parseInt(e.target.value) || 1 }))}
+                                        className="scan-option-input" />
+                                    </div>
+                                  </div>
+                                )}
+                                <div className="edit-form-row-inline">
+                                  <div className="scan-option-group">
+                                    <label className="scan-option-label">Repeat</label>
+                                    <select value={editForm.unit}
+                                      onChange={(e) => setEditForm(f => ({ ...f, unit: e.target.value }))}
+                                      className="schedule-unit-select">
+                                      <option value="minutes">Every X Minutes</option>
+                                      <option value="hourly">Every X Hours</option>
+                                      <option value="daily">Daily</option>
+                                      <option value="weekly">Weekly</option>
+                                      <option value="monthly">Monthly</option>
+                                    </select>
+                                  </div>
+                                  {(editForm.unit === 'minutes' || editForm.unit === 'hourly') && (
+                                    <div className="scan-option-group">
+                                      <label className="scan-option-label">Interval</label>
+                                      <input type="number" min="1" max="100" value={editForm.interval}
+                                        onChange={(e) => setEditForm(f => ({ ...f, interval: parseInt(e.target.value) || 1 }))}
+                                        className="scan-option-input" />
+                                    </div>
+                                  )}
+                                </div>
+                                {editForm.unit === 'weekly' && (
+                                  <div className="schedule-day-picker">
+                                    <span className="scan-option-label">Day of Week</span>
+                                    <div className="day-of-week-grid">
+                                      {['sunday','monday','tuesday','wednesday','thursday','friday','saturday'].map(day => (
+                                        <button key={day}
+                                          className={`day-btn ${editForm.scheduleDay === day ? 'active' : ''}`}
+                                          onClick={() => setEditForm(f => ({ ...f, scheduleDay: day }))}
+                                        >{day.slice(0, 3)}</button>
+                                      ))}
+                                    </div>
+                                  </div>
+                                )}
+                                {editForm.unit === 'monthly' && (
+                                  <div className="schedule-day-picker">
+                                    <span className="scan-option-label">Day of Month</span>
+                                    <div className="day-of-month-grid">
+                                      {Array.from({ length: 28 }, (_, i) => (
+                                        <button key={i + 1}
+                                          className={`date-btn ${editForm.scheduleDate === i + 1 ? 'active' : ''}`}
+                                          onClick={() => setEditForm(f => ({ ...f, scheduleDate: i + 1 }))}
+                                        >{i + 1}</button>
+                                      ))}
+                                    </div>
+                                  </div>
+                                )}
+                                {(editForm.unit === 'daily' || editForm.unit === 'weekly' || editForm.unit === 'monthly') && (
+                                  <div className="schedule-time-picker">
+                                    <span className="scan-option-label">Time</span>
+                                    <input type="time" value={editForm.scheduleTime} onChange={(e) => setEditForm(f => ({ ...f, scheduleTime: e.target.value }))} className="schedule-time-input" />
+                                  </div>
+                                )}
+                                <div className="edit-form-actions">
+                                  <button className="edit-form-btn save" onClick={() => saveEditedJob(job.id)}>
+                                    <Check size={14} /> Save
+                                  </button>
+                                  <button className="edit-form-btn cancel" onClick={cancelEditingJob}>
+                                    <X size={14} /> Cancel
+                                  </button>
+                                </div>
+                              </div>
+                            ) : (
+                              <>
+                                <div className="scheduled-job-info">
+                                  <div className="scheduled-job-url">
+                                    <Globe size={13} />
+                                    <span>{job.url}</span>
+                                  </div>
+                                  <div className="scheduled-job-meta">
+                                    <span className={`scheduled-job-type ${job.scanType}`}>
+                                      {job.scanType === 'deep' ? <Layers size={11} /> : <Zap size={11} />}
+                                      {job.scanType}
+                                    </span>
+                                    <span className="scheduled-job-interval">
+                                      {job.unit === 'weekly' 
+                                        ? `Every ${job.scheduleDay || 'sunday'} at ${job.scheduleTime || '09:00'}`
+                                        : job.unit === 'monthly'
+                                        ? `${job.scheduleDate || 1}${['st','nd','rd'][(job.scheduleDate || 1) - 1] || 'th'} of every month at ${job.scheduleTime || '09:00'}`
+                                        : job.unit === 'daily'
+                                        ? `Daily at ${job.scheduleTime || '09:00'}`
+                                        : `Every ${job.interval} ${job.unit}`}
+                                    </span>
+                                    {job.scanType === 'deep' && (
+                                      <span className="scheduled-job-config">
+                                        {job.maxPages}pg · {job.maxDepth}lvl
+                                      </span>
+                                    )}
+                                  </div>
+                                </div>
+                                <div className="scheduled-job-right">
+                                  <div className="scheduled-job-next">
+                                    {job.paused ? (
+                                      <span className="scheduled-job-paused-badge">Paused</span>
+                                    ) : (
+                                      <>
+                                        <Clock size={11} />
+                                        <span>{job.timeLeft != null ? formatCountdown(job.timeLeft) : '--'}</span>
+                                      </>
+                                    )}
+                                  </div>
+                                  <button
+                                    className="scheduled-job-edit"
+                                    onClick={() => startEditingJob(job)}
+                                    title="Edit this scheduled scan"
+                                  >
+                                    <Pencil size={14} />
+                                  </button>
+                                  <button
+                                    className={`scheduled-job-pause ${job.paused ? 'is-paused' : ''}`}
+                                    onClick={() => togglePauseJob(job.id)}
+                                    title={job.paused ? 'Resume this scan' : 'Pause this scan'}
+                                  >
+                                    {job.paused ? <Play size={14} /> : <Pause size={14} />}
+                                  </button>
+                                  <button
+                                    className="scheduled-job-delete"
+                                    onClick={() => deleteScheduledJob(job.id)}
+                                    title="Remove this scheduled scan"
+                                  >
+                                    <Trash2 size={14} />
+                                  </button>
+                                </div>
+                              </>
+                            )}
+                          </div>
+                        ))}
                       </div>
                     )}
                   </div>
@@ -1437,9 +2357,37 @@ function App() {
                     <div className="audit-progress-slim">
                       <div className="audit-slim-header">
                         <div className="audit-slim-status">
-                          <div className="status-indicator"></div>
-                          <span className="status-text">Auto-refreshing</span>
+                          <div className={`status-indicator ${scanPaused ? 'paused' : ''}`}></div>
+                          <span className="status-text">{scanPaused ? 'Paused' : 'Auto-refreshing'}</span>
                         </div>
+                        {isDeepScanning && deepScanProgress.status !== 'complete' && (
+                          <div className="scan-control-buttons">
+                            <button
+                              className={`scan-control-btn ${scanPaused ? 'resume' : 'pause'}`}
+                              onClick={() => {
+                                if (scanPaused) {
+                                  deepScannerRef.current?.resume();
+                                  setScanPaused(false);
+                                } else {
+                                  deepScannerRef.current?.pause();
+                                  setScanPaused(true);
+                                }
+                              }}
+                            >
+                              {scanPaused ? <Play size={14} /> : <Pause size={14} />}
+                              {scanPaused ? 'Resume' : 'Pause'}
+                            </button>
+                            <button
+                              className="scan-control-btn stop"
+                              onClick={() => {
+                                deepScannerRef.current?.cancel();
+                              }}
+                            >
+                              <X size={14} />
+                              Stop
+                            </button>
+                          </div>
+                        )}
                         <div className="audit-slim-stats">
                           <div className="stat-item">
                             <span className="stat-label">Scan Duration per Page:</span>
@@ -1575,565 +2523,587 @@ function App() {
 
 
             {scanResult && (
-              <>
-                {/* Slim Results Header */}
-                <section className="results-header-slim">
-                  <div className="results-title-row">
-                    <h2 className="results-title">
-                      {scanning ? 'Scan in progress - here are the preliminary results' : 'Scan complete - here are your results'}
-                    </h2>
-                  </div>
-                  
-                  <div className="results-meta-row">
-                    <span className="meta-item">
-                      <span className="meta-label">Domain:</span>
-                      <span className="meta-value">{scanResult.domain}</span>
-                    </span>
-                    <span className="meta-item">
-                      <span className="meta-label">Scanned:</span>
-                      <span className="meta-value">{new Date(scanResult.scannedAt).toLocaleString()}</span>
-                    </span>
-                    <span className="meta-item">
-                      <span className="meta-label">Scan Type:</span>
-                      <span className="meta-value">{scanResult.scanType === 'deep' ? 'Deep Scan' : scanResult.scanType === 'quick' ? 'Quick Scan' : 'Scheduled Scan'}</span>
-                    </span>
-                    {scanResult.scanType === 'deep' && scanResult.pageResults && (
-                      <span className="meta-item">
-                        <span className="meta-label">Pages Scanned:</span>
-                        <span className="meta-value">{scanResult.pageResults.length}</span>
-                      </span>
-                    )}
-                  </div>
+              <div className="results-ready-banner">
+                <div className="results-ready-banner__info">
+                  <RefreshCw size={14} />
+                  <span>Last scan: <strong>{scanResult.domain}</strong> — <strong>{scanResult.totalCount}</strong> cookies found</span>
+                </div>
+                <div className="results-ready-banner__actions">
+                  <button className="results-ready-banner__btn" onClick={() => handleNavigate('results')}>
+                    <Eye size={14} /> View Results
+                  </button>
+                  <button className="results-ready-banner__clear" onClick={() => setScanResult(null)} title="Dismiss">
+                    ✕
+                  </button>
+                </div>
+              </div>
+            )}
 
-                  {/* Slim Stats Grid */}
-                  <div className="results-stats-grid">
-                    <div className="stat-card-slim">
-                      <span className="stat-card-label">TOTAL COOKIES</span>
-                      <span className="stat-card-value">{scanResult.totalCount || scanResult.cookies?.length || 0}</span>
-                    </div>
-                    <div className="stat-card-slim">
-                      <span className="stat-card-label">CATEGORIES</span>
-                      <span className="stat-card-value">{Object.keys(scanResult.statistics?.byCategory || {}).length}</span>
-                    </div>
-                    <div className="stat-card-slim">
-                      <span className="stat-card-label">THIRD PARTY</span>
-                      <span className="stat-card-value">{scanResult.statistics?.thirdParty || 0}</span>
-                    </div>
-                    <div className="stat-card-slim">
-                      <span className="stat-card-label">REQUIRE CONSENT</span>
-                      <span className="stat-card-value">{scanResult.statistics?.requiresConsent || 0}</span>
-                    </div>
-                    {scanResult.scanDuration && (
-                      <div className="stat-card-slim">
-                        <span className="stat-card-label">TIME TAKEN</span>
-                        <span className="stat-card-value">{formatScanDuration(scanResult.scanDuration)}</span>
-                      </div>
-                    )}
-                  </div>
-                </section>
+            {scanning && !scanResult && (
+              <div className="loading-state">
+                <div className="loading-state__spinner">
+                  <RefreshCw className="spinning" size={28} />
+                </div>
+                <p className="loading-state__title">Scanning cookies...</p>
+                <p className="loading-state__subtitle">Analyzing page resources and tracking scripts</p>
+              </div>
+            )}
 
-                {/* Tabbed Data Section */}
-                <section className="audit-data-section">
-                  <div className="audit-tabs">
-                    <button
-                      className={`audit-tab ${resultsTab === 'cookies' ? 'active' : ''}`}
-                      onClick={() => setResultsTab('cookies')}
-                    >
-                      <Cookie size={18} />
-                      <span className="tab-label">COOKIES</span>
-                      <span className="tab-count">{filteredCookies.length}</span>
+
+
+        {/* Zone 4b — Dashboard (shown when not actively scanning and there's history) */}
+        {!scanning && scanHistory.length > 0 && (
+          <div className="home-dashboard__body">
+            <div className="home-recent-scans">
+              <div className="home-section-header">
+                <span className="home-section-header__title">Recent Scans</span>
+                <button className="home-section-header__link" onClick={() => handleNavigate('history')}>View all</button>
+              </div>
+              {scanHistory.slice(0, 5).map((scan, idx) => (
+                <div key={idx} className="recent-scan-card">
+                  <div className="recent-scan-card__info">
+                    <span className="recent-scan-card__domain">{scan.domain}</span>
+                    <span className="recent-scan-card__date">{new Date(scan.timestamp).toLocaleDateString()}</span>
+                  </div>
+                  <div className="recent-scan-card__meta">
+                    <span className="recent-scan-card__count"><Cookie size={12} /> {scan.totalCookies}</span>
+                    <span className={`risk-pill risk-pill--${(scan.gdprRisk || 'LOW').toLowerCase()}`}>{scan.gdprRisk || 'LOW'}</span>
+                    <button className="recent-scan-card__eye" onClick={() => viewScan(scan)} title="Load scan results">
+                      <Eye size={14} />
                     </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="home-right-col">
+              <div className="home-right-card">
+                <div className="home-section-header">
+                  <span className="home-section-header__title">Domain Health</span>
+                </div>
+                {domainHealth.map((d, idx) => (
+                  <div key={idx} className="domain-health-row">
+                    <span className="domain-health-row__name">{d.domain}</span>
+                    <span className={`risk-pill risk-pill--${d.risk}`}>{d.risk.toUpperCase()}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="home-right-card">
+                <div className="home-section-header">
+                  <span className="home-section-header__title">Active Schedules</span>
+                  <button className="home-section-header__link" onClick={() => handleNavigate('scheduled')}>Manage</button>
+                </div>
+                <p className="home-right-card__stat">{scheduledJobs.length} scheduled job{scheduledJobs.length !== 1 ? 's' : ''}</p>
+              </div>
+
+              <div className="home-right-card">
+                <div className="home-section-header">
+                  <span className="home-section-header__title">Quick Actions</span>
+                </div>
+                <div className="quick-actions-grid">
+                  <button className="quick-action-btn" onClick={() => handleNavigate('history')}>View Reports</button>
+                  <button className="quick-action-btn" onClick={() => handleNavigate('history')}>Review Queue</button>
+                  <button className="quick-action-btn" onClick={() => handleNavigate('compare')} disabled={scanHistory.length < 2}>Compare Scans</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Scan error banner */}
+        {scanError && !scanning && (
+          <div className="scan-error-banner">
+            <AlertCircle size={16} className="scan-error-banner__icon" />
+            <span className="scan-error-banner__msg">{scanError}</span>
+            <button className="scan-error-banner__close" onClick={() => setScanError(null)}>
+              <X size={14} />
+            </button>
+          </div>
+        )}
+
+        {/* Zone 4c — Zero State */}
+        {!scanResult && !scanning && !scanError && scanHistory.length === 0 && (
+          <div className="home-zero-state">
+            <Globe size={40} className="home-zero-state__icon" />
+            <p className="home-zero-state__msg">No scans yet — enter a URL above to get started</p>
+          </div>
+        )}
+
+        {/* Zone 5 — Compliance Strip */}
+        <div className="compliance-strip">
+          {[
+            { label: 'GDPR', value: complianceStrip.gdpr },
+            { label: 'CCPA', value: complianceStrip.ccpa },
+            { label: 'DPDP', value: complianceStrip.dpdp },
+            { label: 'CPA',  value: complianceStrip.cpa  },
+          ].map(({ label, value }) => (
+            <div key={label} className={`compliance-strip__item compliance-strip__item--${value ? value.toLowerCase() : 'none'}`}>
+              <Shield size={13} />
+              <span className="compliance-strip__label">{label}</span>
+              <span className="compliance-strip__value">{value || '—'}</span>
+            </div>
+          ))}
+          {complianceStrip.source && (
+            <span className="compliance-strip__source">based on {complianceStrip.source}</span>
+          )}
+        </div>
+
+      </main>
+      )}
+
+      {/* ── Results Page ───────────────────────────────────────── */}
+      {currentPage === 'results' && (
+        <main className="main-content page-content">
+          {scanResult ? (
+            <>
+              {/* Back button */}
+              <div className="page-back-row">
+                <button className="page-back-btn" onClick={() => handleNavigate('home')}>
+                  ← Back to Scanner
+                </button>
+              </div>
+
+              {/* Slim Results Header */}
+              <section className="results-header-slim" id="results-header">
+                <div className="results-title-row">
+                  <h2 className="results-title">
+                    {scanning ? 'Scan in progress — here are the preliminary results' : 'Scan complete — here are your results'}
+                  </h2>
+                </div>
+
+                <div className="results-meta-row">
+                  <span className="meta-item">
+                    <span className="meta-label">Domain:</span>
+                    <span className="meta-value">{scanResult.domain}</span>
+                  </span>
+                  <span className="meta-item">
+                    <span className="meta-label">Scanned:</span>
+                    <span className="meta-value">{new Date(scanResult.scannedAt).toLocaleString()}</span>
+                  </span>
+                  <span className="meta-item">
+                    <span className="meta-label">Scan Type:</span>
+                    <span className="meta-value">{scanResult.scanType === 'deep' ? 'Deep Scan' : scanResult.scanType === 'quick' ? 'Quick Scan' : 'Scheduled Scan'}</span>
+                  </span>
+                  {scanResult.scanType === 'deep' && scanResult.pageResults && (
+                    <span className="meta-item">
+                      <span className="meta-label">Pages Scanned:</span>
+                      <span className="meta-value">{scanResult.pageResults.length}</span>
+                    </span>
+                  )}
+                </div>
+
+                {/* Stats Grid */}
+                <div className="results-stats-grid">
+                  <div className="stat-card-slim">
+                    <span className="stat-card-label">TOTAL COOKIES</span>
+                    <span className="stat-card-value">{scanResult.totalCount || scanResult.cookies?.length || 0}</span>
+                  </div>
+                  <div className="stat-card-slim">
+                    <span className="stat-card-label">CATEGORIES</span>
+                    <span className="stat-card-value">{Object.keys(scanResult.statistics?.byCategory || {}).length}</span>
+                  </div>
+                  <div className="stat-card-slim">
+                    <span className="stat-card-label">THIRD PARTY</span>
+                    <span className="stat-card-value">{scanResult.statistics?.thirdParty || 0}</span>
+                  </div>
+                  <div className="stat-card-slim">
+                    <span className="stat-card-label">REQUIRE CONSENT</span>
+                    <span className="stat-card-value">{scanResult.statistics?.requiresConsent || 0}</span>
+                  </div>
+                  {scanResult.scanDuration && (
+                    <div className="stat-card-slim">
+                      <span className="stat-card-label">TIME TAKEN</span>
+                      <span className="stat-card-value">{formatScanDuration(scanResult.scanDuration)}</span>
+                    </div>
+                  )}
+                </div>
+              </section>
+
+              {/* Tabbed Data Section */}
+              <section className="audit-data-section">
+                <div className="audit-tabs">
+                  <button
+                    className={`audit-tab ${resultsTab === 'cookies' ? 'active' : ''}`}
+                    onClick={() => setResultsTab('cookies')}
+                  >
+                    <Cookie size={18} />
+                    <span className="tab-label">COOKIES</span>
+                    <span className="tab-count">{filteredCookies.length}</span>
+                  </button>
+                  <button
+                    className={`audit-tab ${resultsTab === 'categories' ? 'active' : ''}`}
+                    onClick={() => setResultsTab('categories')}
+                  >
+                    <Layers size={18} />
+                    <span className="tab-label">CATEGORIES</span>
+                    <span className="tab-count">{Object.keys(scanResult.statistics?.byCategory || {}).length}</span>
+                  </button>
+                  {scanResult.scanType === 'deep' && scanResult.pageResults && (
                     <button
-                      className={`audit-tab ${resultsTab === 'categories' ? 'active' : ''}`}
-                      onClick={() => setResultsTab('categories')}
-                    >
-                      <Layers size={18} />
-                      <span className="tab-label">CATEGORIES</span>
-                      <span className="tab-count">{Object.keys(scanResult.statistics?.byCategory || {}).length}</span>
-                    </button>
-                    {scanResult.scanType === 'deep' && scanResult.pageResults && (
-                      <button
-                        className={`audit-tab ${resultsTab === 'pages' ? 'active' : ''}`}
-                        onClick={() => setResultsTab('pages')}
-                      >
-                        <Globe size={18} />
-                        <span className="tab-label">PAGES</span>
-                        <span className="tab-count">{scanResult.pageResults.length}</span>
-                      </button>
-                    )}
-                    <button
-                      className={`audit-tab ${resultsTab === 'vendors' ? 'active' : ''}`}
-                      onClick={() => setResultsTab('vendors')}
+                      className={`audit-tab ${resultsTab === 'pages' ? 'active' : ''}`}
+                      onClick={() => setResultsTab('pages')}
                     >
                       <Globe size={18} />
-                      <span className="tab-label">VENDORS</span>
-                      <span className="tab-count">{new Set(filteredCookies.map(c => c.domain)).size}</span>
+                      <span className="tab-label">PAGES</span>
+                      <span className="tab-count">{scanResult.pageResults.length}</span>
                     </button>
-                  </div>
+                  )}
+                  <button
+                    className={`audit-tab ${resultsTab === 'vendors' ? 'active' : ''}`}
+                    onClick={() => setResultsTab('vendors')}
+                  >
+                    <Globe size={18} />
+                    <span className="tab-label">VENDORS</span>
+                    <span className="tab-count">{new Set(filteredCookies.map(c => c.domain)).size}</span>
+                  </button>
+                  <button
+                    className={`audit-tab ${resultsTab === 'compliance' ? 'active' : ''}`}
+                    onClick={() => setResultsTab('compliance')}
+                  >
+                    <Shield size={18} />
+                    <span className="tab-label">COMPLIANCE</span>
+                  </button>
+                </div>
 
-                  {/* Cookies Tab */}
-                  {resultsTab === 'cookies' && (
-                    <div className="audit-table-container">
-                      <table className="audit-table">
-                        <thead>
-                          <tr>
-                            <th className="col-icon"></th>
-                            <th className="col-name">COOKIE NAME</th>
-                            <th className="col-vendor">DOMAIN</th>
-                            <th className="col-category">CATEGORY</th>
-                            <th className="col-ml-classification">ML CLASSIFICATION</th>
-                            <th className="col-confidence">CONFIDENCE</th>
-                            <th className="col-type">TYPE</th>
-                            <th className="col-consent">CONSENT</th>
-                            <th className="col-party">PARTY</th>
+                {/* Cookies Tab */}
+                {resultsTab === 'cookies' && (
+                  <div className="audit-table-container">
+                    <table className="audit-table">
+                      <thead>
+                        <tr>
+                          <th className="col-icon"></th>
+                          <th className="col-name">COOKIE NAME</th>
+                          <th className="col-vendor">DOMAIN</th>
+                          <th className="col-category">CATEGORY</th>
+                          <th className="col-ml-classification">ML CLASSIFICATION</th>
+                          <th className="col-confidence">CONFIDENCE</th>
+                          <th className="col-type">TYPE</th>
+                          <th className="col-consent">CONSENT</th>
+                          <th className="col-party">PARTY</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {filteredCookies.map((cookie, idx) => (
+                          <tr key={idx} className="audit-table-row">
+                            <td className="col-icon">
+                              <Cookie size={16} className="cookie-icon" />
+                            </td>
+                            <td className="col-name">
+                              <span className="cookie-name-text">{cookie.name}</span>
+                            </td>
+                            <td className="col-vendor">{cookie.domain}</td>
+                            <td className="col-category">
+                              <span
+                                className={`category-badge category-${((cookie.originalCategory || cookie.category) || 'uncategorized').toLowerCase().replace(/\s+/g, '-')}`}
+                                role="status"
+                                aria-label={`Cookie category: ${(cookie.originalCategory || cookie.category) || 'Uncategorized'}`}
+                              >
+                                {(cookie.originalCategory || cookie.category) || 'Uncategorized'}
+                              </span>
+                            </td>
+                            <td className="col-ml-classification">
+                              {cookie.mlClassification ? (
+                                <MLClassificationDropdown
+                                  currentMLClassification={cookie.mlClassification}
+                                  actualCategory={cookie.category}
+                                  mlConfidence={cookie.mlConfidence}
+                                  mlConfidenceLevel={cookie.mlConfidenceLevel}
+                                  cookieName={cookie.name}
+                                  cookieDomain={cookie.domain}
+                                  scanId={scanResult.scannedAt || Date.now().toString()}
+                                  onCategoryUpdate={handleMLCategoryUpdate}
+                                />
+                              ) : (
+                                <span className="ml-badge ml-pending">Analyzing...</span>
+                              )}
+                            </td>
+                            <td className="col-confidence">
+                              {cookie.mlConfidence !== undefined ? (
+                                <ConfidenceBadge
+                                  confidence={cookie.mlConfidence}
+                                  confidenceLevel={cookie.mlConfidenceLevel || 'Low'}
+                                  cookieName={cookie.name}
+                                  mlClassification={cookie.mlClassification}
+                                  actualCategory={cookie.originalCategory || cookie.category}
+                                  onConfirm={handleConfidenceConfirm}
+                                  onIgnore={handleConfidenceIgnore}
+                                />
+                              ) : (
+                                <span className="confidence-badge confidence-pending">--</span>
+                              )}
+                            </td>
+                            <td className="col-type">
+                              <span className="type-badge">{cookie.type}</span>
+                            </td>
+                            <td className="col-consent">
+                              {cookie.requiresConsent ? (
+                                <span className="consent-yes">Required</span>
+                              ) : (
+                                <span className="consent-no">Not Required</span>
+                              )}
+                            </td>
+                            <td className="col-party">
+                              {cookie.isThirdParty ? (
+                                <span className="party-third">3rd Party</span>
+                              ) : (
+                                <span className="party-first">1st Party</span>
+                              )}
+                            </td>
                           </tr>
-                        </thead>
-                        <tbody>
-                          {filteredCookies.map((cookie, idx) => (
-                            <tr key={idx} className="audit-table-row">
+                        ))}
+                      </tbody>
+                    </table>
+                    <div className="audit-table-footer">
+                      <span>Total Rows: {scanResult.totalCount}</span>
+                    </div>
+                  </div>
+                )}
+
+                {/* Categories Tab */}
+                {resultsTab === 'categories' && (
+                  <div className="audit-table-container">
+                    <table className="audit-table">
+                      <thead>
+                        <tr>
+                          <th className="col-icon"></th>
+                          <th className="col-category-name">CATEGORY</th>
+                          <th className="col-count">TOTAL COOKIES</th>
+                          <th className="col-consent">REQUIRE CONSENT</th>
+                          <th className="col-party">THIRD PARTY</th>
+                          <th className="col-percentage">PERCENTAGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {Object.entries(scanResult.statistics.byCategory).map(([category, count]) => {
+                          const categoryCookies = scanResult.cookies.filter(c => c.category === category);
+                          const consentCount = categoryCookies.filter(c => c.requiresConsent).length;
+                          const thirdPartyCount = categoryCookies.filter(c => c.isThirdParty).length;
+                          const percentage = Math.round((count / scanResult.totalCount) * 100);
+                          return (
+                            <tr key={category} className="audit-table-row">
                               <td className="col-icon">
-                                <Cookie size={16} className="cookie-icon" />
+                                <Layers size={16} className="category-icon" />
                               </td>
-                              <td className="col-name">
-                                <span className="cookie-name-text">{cookie.name}</span>
-                              </td>
-                              <td className="col-vendor">{cookie.domain}</td>
-                              <td className="col-category">
-                                <span 
-                                  className={`category-badge category-${((cookie.originalCategory || cookie.category) || 'uncategorized').toLowerCase().replace(/\s+/g, '-')}`}
-                                  role="status"
-                                  aria-label={`Cookie category: ${(cookie.originalCategory || cookie.category) || 'Uncategorized'}`}
-                                >
-                                  {(cookie.originalCategory || cookie.category) || 'Uncategorized'}
+                              <td className="col-category-name">
+                                <span className={`category-badge category-${category.toLowerCase().replace(/\s+/g, '-')}`}>
+                                  {category}
                                 </span>
                               </td>
-                              <td className="col-ml-classification">
-                                {cookie.mlClassification ? (
-                                  <MLClassificationDropdown
-                                    currentMLClassification={cookie.mlClassification}
-                                    actualCategory={cookie.category}
-                                    mlConfidence={cookie.mlConfidence}
-                                    mlConfidenceLevel={cookie.mlConfidenceLevel}
-                                    cookieName={cookie.name}
-                                    cookieDomain={cookie.domain}
-                                    scanId={scanResult.scannedAt || Date.now().toString()}
-                                    onCategoryUpdate={handleMLCategoryUpdate}
-                                  />
-                                ) : (
-                                  <span className="ml-badge ml-pending">Analyzing...</span>
-                                )}
+                              <td className="col-count"><span className="count-value">{count}</span></td>
+                              <td className="col-consent"><span className="count-value">{consentCount}</span></td>
+                              <td className="col-party"><span className="count-value">{thirdPartyCount}</span></td>
+                              <td className="col-percentage">
+                                <div className="percentage-bar-container">
+                                  <div className="percentage-bar" style={{ width: `${percentage}%` }}></div>
+                                </div>
+                                <span className="percentage-text">{percentage}%</span>
                               </td>
-                              <td className="col-confidence">
-                                {cookie.mlConfidence !== undefined ? (
-                                  <ConfidenceBadge
-                                    confidence={cookie.mlConfidence}
-                                    confidenceLevel={cookie.mlConfidenceLevel || 'Low'}
-                                    cookieName={cookie.name}
-                                    mlClassification={cookie.mlClassification}
-                                    actualCategory={cookie.originalCategory || cookie.category}
-                                    onConfirm={handleConfidenceConfirm}
-                                    onIgnore={handleConfidenceIgnore}
-                                  />
-                                ) : (
-                                  <span className="confidence-badge confidence-pending">--</span>
-                                )}
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                    <div className="audit-table-footer">
+                      <span>Total Rows: {Object.keys(scanResult.statistics.byCategory).length}</span>
+                    </div>
+                  </div>
+                )}
+
+                {/* Pages Tab */}
+                {resultsTab === 'pages' && scanResult.pageResults && (
+                  <div className="audit-table-container">
+                    <table className="audit-table">
+                      <thead>
+                        <tr>
+                          <th className="col-icon"></th>
+                          <th className="col-page-url">PAGE URL</th>
+                          <th className="col-count">COOKIES</th>
+                          <th className="col-initiators">INITIATORS</th>
+                          <th className="col-duration">DURATION</th>
+                          <th className="col-secure">SECURE</th>
+                          <th className="col-httponly">HTTPONLY</th>
+                          <th className="col-method">METHOD</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {scanResult.pageResults.map((page, idx) => (
+                          <tr key={idx} className="audit-table-row">
+                            <td className="col-icon">
+                              <Globe size={16} className="page-icon" />
+                            </td>
+                            <td className="col-page-url">
+                              <a href={page.url} target="_blank" rel="noopener noreferrer" className="page-url-link">
+                                {page.url}
+                              </a>
+                            </td>
+                            <td className="col-count"><span className="count-value">{page.cookieCount || page.cookies?.length || 0}</span></td>
+                            <td className="col-initiators"><span className="count-value">{page.initiators?.length || 0}</span></td>
+                            <td className="col-duration"><span className="duration-value">{page.duration || 'N/A'}</span></td>
+                            <td className="col-secure">
+                              <span className={page.cookies?.some(c => c.secure) ? 'status-yes' : 'status-no'}>
+                                {page.cookies?.filter(c => c.secure).length || 0}
+                              </span>
+                            </td>
+                            <td className="col-httponly">
+                              <span className={page.cookies?.some(c => c.httpOnly) ? 'status-yes' : 'status-no'}>
+                                {page.cookies?.filter(c => c.httpOnly).length || 0}
+                              </span>
+                            </td>
+                            <td className="col-method">
+                              <span className="method-badge">{page.method || 'Page Load'}</span>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                    <div className="audit-table-footer">
+                      <span>Total Pages: {scanResult.pageResults.length}</span>
+                    </div>
+                  </div>
+                )}
+
+                {/* Vendors Tab */}
+                {resultsTab === 'vendors' && (
+                  <div className="audit-table-container">
+                    <table className="audit-table">
+                      <thead>
+                        <tr>
+                          <th className="col-icon"></th>
+                          <th className="col-vendor-name">DOMAIN/VENDOR</th>
+                          <th className="col-count">TOTAL COOKIES</th>
+                          <th className="col-category">MAIN CATEGORY</th>
+                          <th className="col-party">PARTY TYPE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {Array.from(new Set(filteredCookies.map(c => c.domain))).map(domain => {
+                          const domainCookies = filteredCookies.filter(c => c.domain === domain);
+                          const categoryCount = domainCookies.reduce((acc, c) => {
+                            acc[c.category] = (acc[c.category] || 0) + 1;
+                            return acc;
+                          }, {});
+                          const topCategory = Object.entries(categoryCount).sort((a, b) => b[1] - a[1])[0][0];
+                          const isThirdParty = domainCookies[0].isThirdParty;
+                          return (
+                            <tr key={domain} className="audit-table-row">
+                              <td className="col-icon">
+                                <Globe size={16} className="vendor-icon" />
                               </td>
-                              <td className="col-type">
-                                <span className="type-badge">{cookie.type}</span>
+                              <td className="col-vendor-name">
+                                <span className="vendor-name-text">{domain}</span>
                               </td>
-                              <td className="col-consent">
-                                {cookie.requiresConsent ? (
-                                  <span className="consent-yes">Required</span>
-                                ) : (
-                                  <span className="consent-no">Not Required</span>
-                                )}
+                              <td className="col-count"><span className="count-value">{domainCookies.length}</span></td>
+                              <td className="col-category">
+                                <span className={`category-badge category-${topCategory.toLowerCase().replace(/\s+/g, '-')}`}>
+                                  {topCategory}
+                                </span>
                               </td>
                               <td className="col-party">
-                                {cookie.isThirdParty ? (
+                                {isThirdParty ? (
                                   <span className="party-third">3rd Party</span>
                                 ) : (
                                   <span className="party-first">1st Party</span>
                                 )}
                               </td>
                             </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                      <div className="audit-table-footer">
-                        <span>Total Rows: {scanResult.totalCount}</span>
-                      </div>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                    <div className="audit-table-footer">
+                      <span>Total Rows: {new Set(filteredCookies.map(c => c.domain)).size}</span>
                     </div>
-                  )}
+                  </div>
+                )}
 
-                  {/* Categories Tab */}
-                  {resultsTab === 'categories' && (
-                    <div className="audit-table-container">
-                      <table className="audit-table">
-                        <thead>
-                          <tr>
-                            <th className="col-icon"></th>
-                            <th className="col-category-name">CATEGORY</th>
-                            <th className="col-count">TOTAL COOKIES</th>
-                            <th className="col-consent">REQUIRE CONSENT</th>
-                            <th className="col-party">THIRD PARTY</th>
-                            <th className="col-percentage">PERCENTAGE</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {Object.entries(scanResult.statistics.byCategory).map(([category, count]) => {
-                            const categoryCookies = scanResult.cookies.filter(c => c.category === category);
-                            const consentCount = categoryCookies.filter(c => c.requiresConsent).length;
-                            const thirdPartyCount = categoryCookies.filter(c => c.isThirdParty).length;
-                            const percentage = Math.round((count / scanResult.totalCount) * 100);
-
-                            return (
-                              <tr key={category} className="audit-table-row">
-                                <td className="col-icon">
-                                  <Layers size={16} className="category-icon" />
-                                </td>
-                                <td className="col-category-name">
-                                  <span className={`category-badge category-${category.toLowerCase().replace(/\s+/g, '-')}`}>
-                                    {category}
-                                  </span>
-                                </td>
-                                <td className="col-count">
-                                  <span className="count-value">{count}</span>
-                                </td>
-                                <td className="col-consent">
-                                  <span className="count-value">{consentCount}</span>
-                                </td>
-                                <td className="col-party">
-                                  <span className="count-value">{thirdPartyCount}</span>
-                                </td>
-                                <td className="col-percentage">
-                                  <div className="percentage-bar-container">
-                                    <div className="percentage-bar" style={{ width: `${percentage}%` }}></div>
-                                  </div>
-                                  <span className="percentage-text">{percentage}%</span>
-                                </td>
-                              </tr>
-                            );
-                          })}
-                        </tbody>
-                      </table>
-                      <div className="audit-table-footer">
-                        <span>Total Rows: {Object.keys(scanResult.statistics.byCategory).length}</span>
-                      </div>
+                {/* Compliance Tab */}
+                {resultsTab === 'compliance' && (
+                  <div className="audit-table-container">
+                    <div className="stats-grid">
+                      <RegulationRiskCard
+                        regulation="GDPR"
+                        risk={scanResult.statistics.requiresConsent > 0 ? 'HIGH' : 'LOW'}
+                        count={scanResult.statistics.requiresConsent}
+                      />
+                      <RegulationRiskCard
+                        regulation="CCPA"
+                        risk={scanResult.cookies.some(c => c.category === 'Marketing') ? 'HIGH' : 'LOW'}
+                        count={scanResult.cookies.filter(c => c.category === 'Marketing').length}
+                      />
+                      <RegulationRiskCard
+                        regulation="DPDP"
+                        risk={scanResult.statistics.requiresConsent > 0 ? 'HIGH' : 'LOW'}
+                        count={scanResult.statistics.requiresConsent}
+                      />
                     </div>
-                  )}
+                  </div>
+                )}
+              </section>
 
-                  {/* Pages Tab */}
-                  {resultsTab === 'pages' && scanResult.pageResults && (
-                    <div className="audit-table-container">
-                      <table className="audit-table">
-                        <thead>
-                          <tr>
-                            <th className="col-icon"></th>
-                            <th className="col-page-url">PAGE URL</th>
-                            <th className="col-count">COOKIES</th>
-                            <th className="col-initiators">INITIATORS</th>
-                            <th className="col-duration">DURATION</th>
-                            <th className="col-secure">SECURE</th>
-                            <th className="col-httponly">HTTPONLY</th>
-                            <th className="col-method">METHOD</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {scanResult.pageResults.map((page, idx) => (
-                            <tr key={idx} className="audit-table-row">
-                              <td className="col-icon">
-                                <Globe size={16} className="page-icon" />
-                              </td>
-                              <td className="col-page-url">
-                                <a href={page.url} target="_blank" rel="noopener noreferrer" className="page-url-link">
-                                  {page.url}
-                                </a>
-                              </td>
-                              <td className="col-count">
-                                <span className="count-value">{page.cookieCount || page.cookies?.length || 0}</span>
-                              </td>
-                              <td className="col-initiators">
-                                <span className="count-value">{page.initiators?.length || 0}</span>
-                              </td>
-                              <td className="col-duration">
-                                <span className="duration-value">{page.duration || 'N/A'}</span>
-                              </td>
-                              <td className="col-secure">
-                                <span className={page.cookies?.some(c => c.secure) ? 'status-yes' : 'status-no'}>
-                                  {page.cookies?.filter(c => c.secure).length || 0}
-                                </span>
-                              </td>
-                              <td className="col-httponly">
-                                <span className={page.cookies?.some(c => c.httpOnly) ? 'status-yes' : 'status-no'}>
-                                  {page.cookies?.filter(c => c.httpOnly).length || 0}
-                                </span>
-                              </td>
-                              <td className="col-method">
-                                <span className="method-badge">{page.method || 'Page Load'}</span>
-                              </td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                      <div className="audit-table-footer">
-                        <span>Total Pages: {scanResult.pageResults.length}</span>
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Vendors Tab */}
-                  {resultsTab === 'vendors' && (
-                    <div className="audit-table-container">
-                      <table className="audit-table">
-                        <thead>
-                          <tr>
-                            <th className="col-icon"></th>
-                            <th className="col-vendor-name">DOMAIN/VENDOR</th>
-                            <th className="col-count">TOTAL COOKIES</th>
-                            <th className="col-category">MAIN CATEGORY</th>
-                            <th className="col-party">PARTY TYPE</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {Array.from(new Set(filteredCookies.map(c => c.domain))).map(domain => {
-                            const domainCookies = filteredCookies.filter(c => c.domain === domain);
-                            const mainCategory = domainCookies.reduce((acc, c) => {
-                              acc[c.category] = (acc[c.category] || 0) + 1;
-                              return acc;
-                            }, {});
-                            const topCategory = Object.entries(mainCategory).sort((a, b) => b[1] - a[1])[0][0];
-                            const isThirdParty = domainCookies[0].isThirdParty;
-
-                            return (
-                              <tr key={domain} className="audit-table-row">
-                                <td className="col-icon">
-                                  <Globe size={16} className="vendor-icon" />
-                                </td>
-                                <td className="col-vendor-name">
-                                  <span className="vendor-name-text">{domain}</span>
-                                </td>
-                                <td className="col-count">
-                                  <span className="count-value">{domainCookies.length}</span>
-                                </td>
-                                <td className="col-category">
-                                  <span className={`category-badge category-${topCategory.toLowerCase().replace(/\s+/g, '-')}`}>
-                                    {topCategory}
-                                  </span>
-                                </td>
-                                <td className="col-party">
-                                  {isThirdParty ? (
-                                    <span className="party-third">3rd Party</span>
-                                  ) : (
-                                    <span className="party-first">1st Party</span>
-                                  )}
-                                </td>
-                              </tr>
-                            );
-                          })}
-                        </tbody>
-                      </table>
-                      <div className="audit-table-footer">
-                        <span>Total Rows: {new Set(filteredCookies.map(c => c.domain)).size}</span>
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Compliance Tab */}
-                  {resultsTab === 'compliance' && (
-                    <div className="audit-table-container">
-                      <div className="stats-grid">
-                        <RegulationRiskCard
-                          regulation="GDPR"
-                          risk={scanResult.statistics.requiresConsent > 0 ? 'HIGH' : 'LOW'}
-                          count={scanResult.statistics.requiresConsent}
-                        />
-                        <RegulationRiskCard
-                          regulation="CCPA"
-                          risk={scanResult.cookies.some(c => c.category === 'Marketing') ? 'HIGH' : 'LOW'}
-                          count={scanResult.cookies.filter(c => c.category === 'Marketing').length}
-                        />
-                        <RegulationRiskCard
-                          regulation="DPDP"
-                          risk={scanResult.statistics.requiresConsent > 0 ? 'HIGH' : 'LOW'}
-                          count={scanResult.statistics.requiresConsent}
-                        />
-                      </div>
-                    </div>
-                  )}
+              {/* History sections */}
+              {Object.keys(domainHistory).length > 0 && (
+                <section className="history-section">
+                  <DomainScanHistory
+                    domainHistory={domainHistory}
+                    onViewScan={viewScan}
+                    onDeleteScan={deleteScanFromDomain}
+                    onDeleteDomain={deleteDomain}
+                  />
                 </section>
+              )}
 
-                {Object.keys(domainHistory).length > 0 && (
-                  <section className="history-section">
-                    <DomainScanHistory
-                      domainHistory={domainHistory}
-                      onViewScan={viewScan}
-                      onDeleteScan={deleteScanFromDomain}
-                      onDeleteDomain={deleteDomain}
-                    />
-                  </section>
-                )}
-
-                {scanHistory.length > 0 && (
-                  <section className="history-section">
-                    <ScanHistory
-                      history={scanHistory}
-                      onClearHistory={clearHistory}
-                      onViewScan={viewScan}
-                      onDeleteScan={deleteScan}
-                    />
-                  </section>
-                )}
-
-              </>
-            )}
-
-            {scanning && (
-              <div className="loading-state">
-                <RefreshCw className="spinning icon-large" />
-                <p>Scanning cookies...</p>
-              </div>
-            )}
-          </div>
-
-          {/* Sidebar */}
-          <aside className="sidebar">
-            <div className="sidebar-card info-card">
-              <div className="card-header">
-                <AlertCircle className="card-icon" />
-                <h3>Quick Guide</h3>
-              </div>
-              <div className="card-content">
-                <div className="guide-item">
-                  <Zap className="guide-icon" />
-                  <div>
-                    <h4>Quick Scan</h4>
-                    <p>Instant analysis of current page cookies</p>
-                  </div>
-                </div>
-                <div className="guide-item">
-                  <Layers className="guide-icon" />
-                  <div>
-                    <h4>Deep Scan</h4>
-                    <p>Crawl multiple pages for comprehensive coverage</p>
-                  </div>
-                </div>
-                <div className="guide-item">
-                  <Clock className="guide-icon" />
-                  <div>
-                    <h4>Scheduled Scan</h4>
-                    <p>Automate scans at regular intervals</p>
-                  </div>
-                </div>
-              </div>
+              {scanHistory.length > 0 && (
+                <section className="history-section">
+                  <ScanHistory
+                    history={scanHistory}
+                    onClearHistory={clearHistory}
+                    onViewScan={viewScan}
+                    onDeleteScan={deleteScan}
+                  />
+                </section>
+              )}
+            </>
+          ) : (
+            <div className="home-zero-state">
+              <Globe size={40} className="home-zero-state__icon" />
+              <p className="home-zero-state__msg">No scan results — run a scan first</p>
+              <button className="btn btn-primary" onClick={() => handleNavigate('home')}>← Back to Scanner</button>
             </div>
-
-            <div className="sidebar-card regulation-info-card">
-              <div className="card-header">
-                <Shield className="card-icon" />
-                <h3>Regulations</h3>
-              </div>
-              <div className="card-content">
-                <div className="regulation-item">
-                  <div className="regulation-badge gdpr">GDPR</div>
-                  <p>EU General Data Protection Regulation requires explicit consent for non-essential cookies</p>
-                </div>
-                <div className="regulation-item">
-                  <div className="regulation-badge ccpa">CCPA</div>
-                  <p>California Consumer Privacy Act requires opt-out mechanisms for data selling</p>
-                </div>
-                <div className="regulation-item">
-                  <div className="regulation-badge dpdp">DPDP</div>
-                  <p>India's Digital Personal Data Protection Act mandates prior consent for data processing</p>
-                </div>
-              </div>
-            </div>
-
-            {scanResult && (
-              <div className="sidebar-card stats-card">
-                <div className="card-header">
-                  <Cookie className="card-icon" />
-                  <h3>Scan Summary</h3>
-                </div>
-                <div className="card-content">
-                  <div className="summary-stat">
-                    <span className="stat-label">Domain</span>
-                    <span className="stat-value">{scanResult.domain}</span>
-                  </div>
-                  <div className="summary-stat">
-                    <span className="stat-label">Scan Type</span>
-                    <span className="stat-value">{scanResult.scanType === 'deep' ? 'Deep Scan' : 'Quick Scan'}</span>
-                  </div>
-                  <div className="summary-stat">
-                    <span className="stat-label">Total Cookies</span>
-                    <span className="stat-value highlight">{scanResult.totalCount}</span>
-                  </div>
-                  <div className="summary-stat">
-                    <span className="stat-label">Categories</span>
-                    <span className="stat-value">{Object.keys(scanResult.statistics.byCategory).length}</span>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {scanHistory.length >= 2 && (
-              <div className="sidebar-card test-card">
-                <div className="card-header">
-                  <RefreshCw className="card-icon" />
-                  <h3>Comparison Test</h3>
-                </div>
-                <div className="card-content">
-                  <p style={{ fontSize: '12px', marginBottom: '12px', color: 'var(--gray-600)' }}>
-                    Test the comparison between your last two scans
-                  </p>
-                  <button
-                    onClick={() => {
-                      const latest = scanHistory[0];
-                      const previous = scanHistory[1];
-                      if (latest && previous && latest.fullResults && previous.fullResults) {
-                        const comparison = compareScanResults(latest.fullResults, previous);
-                        if (comparison) {
-                          showScanComparison(comparison);
-                        }
-                      }
-                    }}
-                    className="btn btn-secondary btn-block"
-                    style={{ fontSize: '13px' }}
-                  >
-                    <AlertCircle className="icon" size={16} />
-                    Show Last Comparison
-                  </button>
-                </div>
-              </div>
-            )}
-
-            <div className="sidebar-card tips-card">
-              <div className="card-header">
-                <AlertCircle className="card-icon" />
-                <h3>Best Practices</h3>
-              </div>
-              <div className="card-content">
-                <ul className="tips-list">
-                  <li>Always obtain consent before setting non-essential cookies</li>
-                  <li>Provide clear cookie policies and privacy notices</li>
-                  <li>Allow users to withdraw consent easily</li>
-                  <li>Regularly audit your cookies for compliance</li>
-                  <li>Document your data processing activities</li>
-                </ul>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </main>
+          )}
+        </main>
+      )}
 
       {/* Accessibility - aria-live region for category update announcements */}
-      <div 
-        role="status" 
-        aria-live="polite" 
+      <div
+        role="status"
+        aria-live="polite"
         aria-atomic="true"
         className="sr-only"
       >
         {ariaLiveMessage}
       </div>
+
+      {/* Cookie Detail Modal */}
+      {selectedCookie && (
+        <CookieDetailModal
+          cookie={selectedCookie}
+          onClose={() => setSelectedCookie(null)}
+          onOverride={(cookie) => {
+            setOverrideCookie(cookie);
+          }}
+        />
+      )}
+
+      {/* Override Modal */}
+      {overrideCookie && (
+        <OverrideModal
+          cookie={overrideCookie}
+          allCookies={scanResult?.cookies || []}
+          onClose={() => setOverrideCookie(null)}
+          onApply={handleOverrideApply}
+        />
+      )}
     </div>
   );
 }
