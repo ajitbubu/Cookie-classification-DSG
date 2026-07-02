@@ -78,6 +78,24 @@
   box-sizing: border-box;
 }
 
+/* Accessibility: guarantee a visible keyboard-focus ring app-wide.
+   Many components set `outline: none`, which also strips the keyboard
+   focus indicator. `:focus-visible` only matches keyboard focus, so this
+   restores a ring for keyboard users without adding one on mouse click.
+   `!important` overrides the scattered `outline: none` rules (none of
+   which use !important themselves). */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible,
+[role="button"]:focus-visible,
+[role="menuitem"]:focus-visible {
+  outline: 2px solid var(--ds-blue-500, #1A6DFF) !important;
+  outline-offset: 2px;
+}
+
 body {
   font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background: var(--bg-secondary);
