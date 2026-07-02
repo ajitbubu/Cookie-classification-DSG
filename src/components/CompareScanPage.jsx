@@ -612,7 +612,7 @@ const CompareScanPage = ({ scanHistory, onNavigate }) => {
         </>
       )}
 
-      <style jsx>{`
+      <style>{`
         .csp-page {
           max-width: 1400px;
           margin: 0 auto;
