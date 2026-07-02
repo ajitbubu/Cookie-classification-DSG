@@ -26,11 +26,11 @@ const navItems = [
   { id: 'docs', icon: BookOpen, label: 'Documentation', href: '#docs' },
 ];
 
-function LeftSidebar({ onPinnedChange, onNavigate, currentPage }) {
+function LeftSidebar({ onPinnedChange, onNavigate, currentPage, mobileOpen = false, onMobileClose }) {
   const [pinned, setPinned] = useState(false);
   const [hovered, setHovered] = useState(false);
 
-  const expanded = pinned || hovered;
+  const expanded = pinned || hovered || mobileOpen;
 
   const handleNavClick = (item) => {
     if (item.href) {
@@ -70,12 +70,18 @@ function LeftSidebar({ onPinnedChange, onNavigate, currentPage }) {
   };
 
   return (
-    <nav
-      className={`left-sidebar ${expanded ? 'expanded' : 'collapsed'} ${pinned ? 'pinned' : ''}`}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      aria-label="Main navigation"
-    >
+    <>
+      <div
+        className={`left-sidebar-backdrop ${mobileOpen ? 'visible' : ''}`}
+        onClick={onMobileClose}
+        aria-hidden="true"
+      />
+      <nav
+        className={`left-sidebar ${expanded ? 'expanded' : 'collapsed'} ${pinned ? 'pinned' : ''} ${mobileOpen ? 'mobile-open' : ''}`}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        aria-label="Main navigation"
+      >
       <div className="left-sidebar-inner">
         <div className="left-sidebar-brand">
           <Cookie size={22} className="left-sidebar-logo" />
@@ -96,7 +102,7 @@ function LeftSidebar({ onPinnedChange, onNavigate, currentPage }) {
               <li key={item.id} role="none">
                 <button
                   className={`left-sidebar-item ${isActive(item) ? 'active' : ''}`}
-                  onClick={() => handleNavClick(item)}
+                  onClick={() => { handleNavClick(item); onMobileClose?.(); }}
                   role="menuitem"
                   title={!expanded ? item.label : undefined}
                   aria-current={isActive(item) ? 'page' : undefined}
@@ -132,7 +138,8 @@ function LeftSidebar({ onPinnedChange, onNavigate, currentPage }) {
           </button>
         </div>
       </div>
-    </nav>
+      </nav>
+    </>
   );
 }
 

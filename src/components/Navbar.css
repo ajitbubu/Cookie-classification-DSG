@@ -27,6 +27,9 @@
 
 /* ── Brand ──────────────────────────────────────── */
 .navbar-brand { display: flex; align-items: center; cursor: pointer; }
+
+/* Mobile nav trigger — hidden on desktop, shown at <=768px */
+.navbar-hamburger { display: none; }
 .navbar-logo-img { height: 34px; width: auto; }
 
 /* ── Right section ──────────────────────────────── */
@@ -394,6 +397,25 @@
 .navbar-dropdown__item--danger:hover { background: #fff1f1; }
 
 /* ── Responsive ─────────────────────────────────── */
+@media (max-width: 768px) {
+  .navbar-hamburger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-right: 6px;
+    margin-left: -8px;
+    border: none;
+    background: transparent;
+    color: var(--ds-gray-700, #2c3440);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+  .navbar-hamburger:hover { background: var(--ds-gray-50, #f5f7fa); }
+}
+
 @media (max-width: 480px) {
   .navbar-container { padding: 0 16px; }
   .navbar-avatar-info { display: none; }

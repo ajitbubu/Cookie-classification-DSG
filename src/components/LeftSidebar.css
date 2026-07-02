@@ -168,12 +168,39 @@
 }
 
 /* Responsive: hide on small screens */
+/* Mobile drawer backdrop (hidden on desktop) */
+.left-sidebar-backdrop {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  /* Sidebar becomes an off-canvas drawer, toggled by the navbar hamburger */
   .left-sidebar {
-    display: none;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.25s;
+  }
+  .left-sidebar.mobile-open {
+    transform: translateX(0);
+    visibility: visible;
   }
   .app-with-sidebar,
   .app-with-sidebar.sidebar-pinned {
     padding-left: 0;
+  }
+
+  .left-sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 8, 15, 0.5);
+    z-index: 1099;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+  .left-sidebar-backdrop.visible {
+    opacity: 1;
+    pointer-events: auto;
   }
 }

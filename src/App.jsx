@@ -132,6 +132,7 @@ function App() {
 
   // Left sidebar
   const [sidebarPinned, setSidebarPinned] = useState(false);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   // Persistent notification list
   const [notifications, setNotifications] = useState([]);
@@ -1709,8 +1710,16 @@ function App() {
 
   return (
     <div className={`app app-with-sidebar ${sidebarPinned ? 'sidebar-pinned' : ''}`}>
-      <LeftSidebar onPinnedChange={setSidebarPinned} onNavigate={handleNavigate} currentPage={currentPage} />
+      <LeftSidebar
+        onPinnedChange={setSidebarPinned}
+        onNavigate={handleNavigate}
+        currentPage={currentPage}
+        mobileOpen={mobileNavOpen}
+        onMobileClose={() => setMobileNavOpen(false)}
+      />
       <Navbar
+        navOpen={mobileNavOpen}
+        onMenuToggle={() => setMobileNavOpen(v => !v)}
         notifications={notifications}
         unreadCount={unreadCount}
         onNotificationClick={(notif) => {

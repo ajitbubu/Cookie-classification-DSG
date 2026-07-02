@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { User, Settings, LogOut, ChevronDown, Shield, Bell } from 'lucide-react';
+import { User, Settings, LogOut, ChevronDown, Shield, Bell, Menu } from 'lucide-react';
 import './Navbar.css';
 
 const USER = {
@@ -9,7 +9,7 @@ const USER = {
   initials: 'AS',
 };
 
-function Navbar({ notifications = [], unreadCount = 0, onNotificationClick, onMarkAllRead, onClearAll }) {
+function Navbar({ notifications = [], unreadCount = 0, onNotificationClick, onMarkAllRead, onClearAll, navOpen = false, onMenuToggle }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [notifOpen, setNotifOpen] = useState(false);
@@ -34,6 +34,16 @@ function Navbar({ notifications = [], unreadCount = 0, onNotificationClick, onMa
   return (
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar-container">
+
+        {/* Mobile nav trigger (hidden on desktop via CSS) */}
+        <button
+          className="navbar-hamburger"
+          aria-label="Open navigation menu"
+          aria-expanded={navOpen}
+          onClick={onMenuToggle}
+        >
+          <Menu size={22} />
+        </button>
 
         {/* Brand */}
         <div className="navbar-brand">
