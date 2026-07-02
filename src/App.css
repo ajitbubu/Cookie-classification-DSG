@@ -5110,7 +5110,11 @@ section h2 {
 
   .mode-btn {
     flex: 1;
+    min-width: 0;
     justify-content: center;
+    padding: 7px 6px;
+    gap: 4px;
+    font-size: 12px;
   }
 
   .scan-input-row {
