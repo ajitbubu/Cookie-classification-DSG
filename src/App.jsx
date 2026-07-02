@@ -1945,13 +1945,14 @@ function App() {
                 {scanMode === 'deep' && (
                   <div className="scan-options-row">
                     <div className="scan-option-group">
-                      <label className="scan-option-label">
+                      <label className="scan-option-label" htmlFor="home-scan-pages">
                         Pages
                         <Tooltip text="The maximum number of pages to scan on the website. Higher values give broader coverage but take longer.">
                           <Info size={12} className="scan-option-info" />
                         </Tooltip>
                       </label>
                       <input
+                        id="home-scan-pages"
                         type="number"
                         min="1"
                         max="20000"
@@ -1962,13 +1963,14 @@ function App() {
                       />
                     </div>
                     <div className="scan-option-group">
-                      <label className="scan-option-label">
+                      <label className="scan-option-label" htmlFor="home-scan-depth">
                         Depth Level
                         <Tooltip text="How many clicks deep from the start page to follow links. Level 1 = only the start page's links. Level 3 = links of links of links.">
                           <Info size={12} className="scan-option-info" />
                         </Tooltip>
                       </label>
                       <input
+                        id="home-scan-depth"
                         type="number"
                         min="1"
                         max="500"
@@ -1979,13 +1981,14 @@ function App() {
                       />
                     </div>
                     <div className="scan-option-group">
-                      <label className="scan-option-label">
+                      <label className="scan-option-label" htmlFor="home-scan-concurrency">
                         Concurrency
                         <Tooltip text="Number of pages scanned at the same time. Higher values are faster but may overwhelm the target server.">
                           <Info size={12} className="scan-option-info" />
                         </Tooltip>
                       </label>
                       <input
+                        id="home-scan-concurrency"
                         type="number"
                         min="1"
                         max="200"
