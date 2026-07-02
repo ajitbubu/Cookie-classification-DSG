@@ -18,6 +18,7 @@
   --ds-gray-50: #F5F7FA;
   --ds-gray-100: #D9E2EE;
   --ds-gray-200: #A7B2C8;
+  --ds-gray-500: #5B6576;   /* muted text on white — meets WCAG AA (5.8:1) */
   --ds-gray-700: #2C3440;
   --ds-gray-900: #05080F;
 
@@ -5887,7 +5888,7 @@ section h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 11px;
   font-weight: 500;
-  color: var(--ds-gray-200, #A7B2C8);
+  color: var(--ds-gray-500, #5B6576);
   line-height: 1.2;
 }
 .kpi-tile__trend {
