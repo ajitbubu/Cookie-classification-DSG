@@ -130,3 +130,7 @@ backend.log
 # Docs (generated, not needed in repo)
 docs/
 GITIGNORE_CLEANUP.md
+
+# Claude Code — personal/local overrides, not shared with the team
+CLAUDE.local.md
+.claude/settings.local.json
