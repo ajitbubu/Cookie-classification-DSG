@@ -1,0 +1,185 @@
+/* ============================================================================
+   Sentinel — THEME TOKENS
+   Each [data-theme] block sets only SEED values (brand + canvas ramp + text +
+   semantic bases). Everything else (tints, aliases, shadows) is DERIVED once in
+   the :root block below via color-mix() / var().
+
+   ▶ To re-skin a brand: change the 3 --brand-* seeds in a theme block.
+   ▶ To add a theme: copy a block, give it a new [data-theme] id, register it in
+     design-system/themes/themes.ts.
+   ============================================================================ */
+
+/* ---- DERIVED TOKENS (shared formulas; depend only on the seeds above) ------ */
+:root {
+  --color-primary:        var(--brand-primary);
+  --color-primary-hover:  var(--brand-primary-hover);
+  --color-primary-active: var(--brand-primary-hover);
+  --color-primary-tint:   color-mix(in srgb, var(--brand-primary) 16%, transparent);
+
+  --color-info:           var(--brand-accent);
+  --color-info-tint:      color-mix(in srgb, var(--brand-accent) 16%, transparent);
+
+  --color-safe-tint:      color-mix(in srgb, var(--color-safe) 16%, transparent);
+  --color-warning-tint:   color-mix(in srgb, var(--color-warning) 16%, transparent);
+  --color-critical-tint:  color-mix(in srgb, var(--color-critical) 16%, transparent);
+
+  --shadow-card:   0 8px 24px rgba(0, 0, 0, 0.25);
+  --shadow-raised: 0 12px 32px rgba(0, 0, 0, 0.35);
+  --shadow-focus:  0 0 0 3px color-mix(in srgb, var(--brand-primary) 35%, transparent);
+
+  /* semantic aliases used directly in chrome */
+  --bg-app:         var(--color-canvas);
+  --bg-sunken:      var(--color-canvas-sunken);
+  --surface-card:   var(--color-surface);
+  --surface-raised: var(--color-surface-raised);
+  --surface-input:  var(--color-surface-inset);
+  --border-default: var(--color-border);
+  --border-strong:  var(--color-border-strong);
+  --text-body:      var(--color-text);
+  --text-secondary: var(--color-text-secondary);
+  --text-meta:      var(--color-text-muted);
+  --text-label:     var(--color-text-secondary);
+  --border-subtle:  var(--color-border-subtle);
+  --action:         var(--color-primary);
+  --action-hover:   var(--color-primary-hover);
+  --focus-ring:     var(--color-primary);
+}
+
+/* ============================ SENTINEL · DARK (default) ===================== */
+:root,
+[data-theme="sentinel-dark"] {
+  color-scheme: dark;
+  --brand-primary:        #2563EB;
+  --brand-primary-hover:  #1D4ED8;
+  --brand-accent:         #0284C7;
+
+  --color-canvas:         #0B1220;
+  --color-canvas-sunken:  #080E1A;
+  --color-surface:        #111A2B;
+  --color-surface-raised: #16223A;
+  --color-surface-inset:  #0E1626;
+
+  --color-border:         #243049;
+  --color-border-strong:  #2E3C58;
+  --color-border-subtle:  #1A2438;
+
+  --color-text:           #E6ECF5;
+  --color-text-secondary: #9FB0C9;
+  --color-text-muted:     #6B7B96;
+  --color-text-inverse:   #0B1220;
+
+  --color-primary-text:   #93B4FF;
+  --color-info-text:      #38BDF8;
+
+  --color-safe:           #16A34A;
+  --color-safe-text:      #4ADE80;
+  --color-warning:        #D97706;
+  --color-warning-text:   #FBBF24;
+  --color-critical:       #DC2626;
+  --color-critical-text:  #F87171;
+}
+
+/* ============================ FACEOFF · DARK =============================== */
+[data-theme="faceoff-dark"] {
+  color-scheme: dark;
+  --brand-primary:        #4F7CFF;
+  --brand-primary-hover:  #3B63E6;
+  --brand-accent:         #22D3EE;
+
+  --color-canvas:         #090D18;
+  --color-canvas-sunken:  #060912;
+  --color-surface:        #121829;
+  --color-surface-raised: #1A2238;
+  --color-surface-inset:  #0E1320;
+
+  --color-border:         #232C44;
+  --color-border-strong:  #313D5C;
+  --color-border-subtle:  #182032;
+
+  --color-text:           #EAF0FB;
+  --color-text-secondary: #A2B0CC;
+  --color-text-muted:     #6B7A98;
+  --color-text-inverse:   #060912;
+
+  --color-primary-text:   color-mix(in srgb, var(--brand-primary) 65%, #ffffff);
+  --color-info-text:      color-mix(in srgb, var(--brand-accent) 55%, #ffffff);
+
+  --color-safe:           #16C098;
+  --color-safe-text:      #4FE3BE;
+  --color-warning:        #E0A106;
+  --color-warning-text:   #FBC740;
+  --color-critical:       #F0436B;
+  --color-critical-text:  #FF7A98;
+}
+
+/* ============================ SENTINEL · LIGHT ============================= */
+[data-theme="sentinel-light"] {
+  color-scheme: light;
+  --brand-primary:        #2563EB;
+  --brand-primary-hover:  #1D4ED8;
+  --brand-accent:         #0284C7;
+
+  --color-canvas:         #F5F7FB;
+  --color-canvas-sunken:  #EBEFF6;
+  --color-surface:        #FFFFFF;
+  --color-surface-raised: #F0F4FA;
+  --color-surface-inset:  #F2F5FA;
+
+  --color-border:         #DCE3EE;
+  --color-border-strong:  #C3CEDE;
+  --color-border-subtle:  #EAEFF6;
+
+  --color-text:           #0E1726;
+  --color-text-secondary: #46556E;
+  --color-text-muted:     #74829B;
+  --color-text-inverse:   #FFFFFF;
+
+  --color-primary-text:   #1D4ED8;
+  --color-info-text:      #0369A1;
+
+  --color-safe:           #16A34A;
+  --color-safe-text:      #15803D;
+  --color-warning:        #B45309;
+  --color-warning-text:   #B45309;
+  --color-critical:       #DC2626;
+  --color-critical-text:  #B91C1C;
+
+  --shadow-card:   0 6px 18px rgba(15, 23, 42, 0.08);
+  --shadow-raised: 0 12px 28px rgba(15, 23, 42, 0.14);
+}
+
+/* ============================ FACEOFF · LIGHT ============================= */
+[data-theme="faceoff-light"] {
+  color-scheme: light;
+  --brand-primary:        #4F7CFF;
+  --brand-primary-hover:  #3B63E6;
+  --brand-accent:         #0891B2;
+
+  --color-canvas:         #F4F6FC;
+  --color-canvas-sunken:  #E9EDF7;
+  --color-surface:        #FFFFFF;
+  --color-surface-raised: #F1F4FB;
+  --color-surface-inset:  #F3F6FC;
+
+  --color-border:         #DDE3F0;
+  --color-border-strong:  #C4CCE0;
+  --color-border-subtle:  #ECEFF8;
+
+  --color-text:           #0B1020;
+  --color-text-secondary: #44506C;
+  --color-text-muted:     #717E9B;
+  --color-text-inverse:   #FFFFFF;
+
+  --color-primary-text:   #2C4FCB;
+  --color-info-text:      #0E7490;
+
+  --color-safe:           #0E9F7E;
+  --color-safe-text:      #0B7A60;
+  --color-warning:        #B7820A;
+  --color-warning-text:   #97690A;
+  --color-critical:       #E0335E;
+  --color-critical-text:  #C21E47;
+
+  --shadow-card:   0 6px 18px rgba(15, 23, 42, 0.08);
+  --shadow-raised: 0 12px 28px rgba(15, 23, 42, 0.14);
+}

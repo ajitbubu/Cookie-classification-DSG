@@ -1,0 +1,68 @@
+/* ============================================================================
+   Sentinel — PRIMITIVE TOKENS (theme-independent)
+   Spacing, radius, shadow, type scale, motion, layout.
+   These never change between themes. Colors live in themes.css.
+   8px grid with a 4px half-step.
+   ============================================================================ */
+:root {
+  /* ---- Font families (next/font supplies --font-inter / --font-jetbrains) ---- */
+  --font-sans: var(--font-inter, "Inter"), -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains, "JetBrains Mono"), ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* ---- Type scale (px) ---- */
+  --text-display: 44px;
+  --text-h1:      36px;
+  --text-h2:      28px;
+  --text-h3:      22px;
+  --text-h4:      18px;
+  --text-body-lg: 16px;
+  --text-body:    15px;
+  --text-sm:      13px;
+  --text-xs:      12px;
+  --text-mono:    13px;
+  --text-mono-sm: 12px;
+
+  /* ---- Weights ---- */
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* ---- Line heights ---- */
+  --leading-tight: 1.2;
+  --leading-snug:  1.35;
+  --leading-body:  1.6;
+
+  /* ---- Letter spacing ---- */
+  --tracking-tight:   -0.02em;
+  --tracking-normal:  0;
+  --tracking-eyebrow: 0.08em;
+  --tracking-badge:   0.06em;
+
+  /* ---- Spacing (8px grid; 4px half-step) ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* ---- Radius ---- */
+  --radius-sm: 6px;   /* badges, inputs, small controls */
+  --radius-md: 10px;  /* buttons, nested surfaces */
+  --radius-lg: 16px;  /* cards, panels */
+  --radius-pill: 999px;
+
+  /* ---- Layout ---- */
+  --nav-width: 248px;
+  --topbar-height: 60px;
+  --panel-width: 400px;
+  --content-max: 1180px;
+
+  /* ---- Motion ---- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 120ms;
+  --dur-base: 180ms;
+}
