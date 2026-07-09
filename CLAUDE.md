@@ -2,6 +2,11 @@
 
 Project guide for Claude Code. Loaded at the start of every session in this repo.
 
+Non-Claude agents (OpenAI Codex, Cursor, etc.) don't read this file — they read
+`AGENTS.md` at the repo root instead, which covers the same project overview,
+architecture, commands, and conventions in a tool-agnostic form. Keep the two in sync
+when either changes.
+
 ## What this is
 
 **Cookie Scanner (DataSafeguard)** — a privacy-compliance platform that scans websites
