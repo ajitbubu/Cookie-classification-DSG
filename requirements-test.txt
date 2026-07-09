@@ -1,0 +1,6 @@
+# Test-only dependencies (not needed in production image).
+# Install with: pip install -r requirements-test.txt
+pytest>=7.4
+# httpx<0.28 is required: FastAPI 0.104 / Starlette's TestClient calls
+# httpx.Client(app=...), which httpx 0.28 removed.
+httpx<0.28
