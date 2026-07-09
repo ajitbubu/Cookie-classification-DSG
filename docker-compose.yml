@@ -18,7 +18,7 @@ services:
 
   # PostgreSQL for persistent storage
   postgres:
-    image: postgres:15-alpine
+    image: postgres:17-alpine
     container_name: cookie-scanner-db
     environment:
       POSTGRES_DB: cookie_scanner
