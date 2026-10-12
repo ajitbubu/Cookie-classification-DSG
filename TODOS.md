@@ -32,3 +32,27 @@
   current source. The backend exposes only `/api/scan` and `/api/scan-stream` for scans today. The
   2026-08-05 CEO review blocked three items pending the same persistence investigation.
 - **Depends on / blocked by:** Nothing; unblocks removing the 24C mocks.
+
+## QA (2026-10-12, /qa on feat/ucm-figma-redesign)
+
+### Keep Postgres and Redis running (ISSUE-002, High, infrastructure)
+
+- **What:** Add `restart: unless-stopped` to the `postgres` and `redis` services in `docker-compose.yml`.
+- **Why:** Both stopped twice on 2026-10-12 (Docker restarts) while every other service came back. With
+  Postgres down, approvals and bulk updates are saved to a file but not published ("Saved, but not
+  published: the database is unavailable"), and scanner workers go unhealthy without Redis.
+- **Repro:** `docker compose ps -a` shows postgres/redis `Exited (0)`; bulk-update any cookies on
+  Domain Details → warning toast; API log "Database unavailable, using file storage fallback".
+- **Fix after the change:** `docker compose up -d postgres redis && docker compose restart api-gateway ml-api`.
+
+### Scanner times out on most real sites
+
+- **What:** The backend browser hits `Page.goto: Timeout 60000ms` on vodafone.com, att.com and github.com,
+  and queued requests then time out too (even example.com after a while; `/api/scan` returns 503).
+- **Why:** Most real scans fail; the app now shows these as failed scans with Retry, but no data is collected.
+- **Repro:** Launch New Scan → `https://github.com` → Start Scan; API log shows the 60 s goto timeout.
+
+### Consistent page names (ISSUE-003, Low, content)
+
+- **What:** Breadcrumb says "Websites" while the sidebar says "Website"; the Cookie Inventory page heading
+  reads "Cookie inventory".
