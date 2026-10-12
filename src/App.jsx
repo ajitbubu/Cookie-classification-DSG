@@ -394,7 +394,9 @@ function App() {
       domain: domain,
       scannedUrl: scannedUrl,
       scanType: 'quick',
-      scanDuration: scanDuration
+      scanDuration: scanDuration,
+      // Same id for the ML-corrected save below, so it replaces this entry (ISSUE-004).
+      _scanId: `${Date.now()}-${Math.random().toString(36).substring(2, 11)}`
     };
 
     setScanResult(enhancedResults);
@@ -562,7 +564,7 @@ function App() {
       );
 
       if (!response.ok) {
-        throw new Error(`Scan failed: ${response.statusText}`);
+        throw new Error(response.statusText || `HTTP ${response.status}`);
       }
 
       const results = await response.json();
@@ -573,7 +575,10 @@ function App() {
 
       const enhancedResults = {
         ...results,
-        scanDuration: scanDuration
+        scanDuration: scanDuration,
+        // One id for this scan, so the ML-corrected save below replaces the
+        // first entry instead of adding a second one (ISSUE-004).
+        _scanId: results._scanId || `${Date.now()}-${Math.random().toString(36).substring(2, 11)}`
       };
 
       setScanResult(enhancedResults);
@@ -621,7 +626,8 @@ function App() {
         }
       }
     } catch (error) {
-      alert('Quick scan failed: ' + error.message);
+      // Shown as the failed-scan card on Active Scan, with Retry (ISSUE-001).
+      setScanError(error.message || 'The scan could not be completed.');
       setScanning(false);
     }
   };
@@ -850,7 +856,8 @@ function App() {
     }, ...prev].slice(0, 20));
 
     setScanHistory(prev => {
-      const updated = [historyEntry, ...prev].slice(0, MAX_SCAN_HISTORY);
+      // A later save of the same scan (ML-corrected) replaces the first (ISSUE-004).
+      const updated = [historyEntry, ...prev.filter(e => e.id !== historyEntry.id)].slice(0, MAX_SCAN_HISTORY);
       safeLocalStorageSet('cookieScanHistory', updated);
       return updated;
     });
