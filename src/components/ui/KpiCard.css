@@ -1,0 +1,53 @@
+/* UCM stat card (project/components/ucm/ucm.css .ucm-stat, .ucm-trend) */
+.ui-kpi {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  min-width: 0;
+  padding: 18px 14px;
+  background: var(--ucm-surface);
+  border: 1px solid var(--ucm-blue-4);
+  border-radius: var(--ucm-radius-stat);
+  box-shadow: var(--ucm-shadow-stat);
+}
+
+.ui-kpi__top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.ui-kpi__icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--ucm-blue-4);
+  border-radius: var(--ucm-radius-control);
+  color: var(--ucm-navy);
+}
+
+.ui-kpi__trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 24px;
+  padding: 0 8px 0 4px;
+  border-radius: var(--ucm-radius-tag);
+  font: 500 16px/18px var(--font-sans);
+  letter-spacing: 0.02em;
+}
+.ui-kpi__trend--up { background: var(--ucm-trend-up-bg); color: var(--ucm-green-2); }
+.ui-kpi__trend--down { background: var(--ucm-trend-down-bg); color: var(--ucm-red-2); }
+
+.ui-kpi__body { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+/* Label: navy at 77% (flattened in --color-text-secondary) */
+.ui-kpi__label { font: 400 16px/1.2 var(--font-sans); color: var(--color-text-secondary); }
+.ui-kpi__value {
+  font: 500 var(--fs-kpi)/1.2 var(--font-sans);
+  color: var(--ucm-ink-stat);
+  font-variant-numeric: tabular-nums;
+}
+
+.ui-kpi__value-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.ui-kpi__caption { font-size: var(--fs-xs); color: var(--color-text-muted); }
+.ui-kpi__action { margin-left: auto; }
+
+/* Figma 12.12.31: the Unclassified count is red */
+.ui-kpi__value--critical { color: var(--ucm-red); }

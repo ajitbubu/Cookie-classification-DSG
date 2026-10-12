@@ -10,6 +10,7 @@ class ScanRequest(BaseModel):
     maxPages: int = 20000  # Industry-grade: 20K pages
     concurrency: int = 50  # High-performance parallel scanning
     maxDepth: int = 500  # Industry-grade: deep crawling
+    includeSubdomains: bool = False  # Deep Scan "Follow internal + subdomain links"
     
     @field_validator('scanType')
     @classmethod
@@ -50,7 +51,7 @@ class Cookie(BaseModel):
     httpOnly: bool = False
     secure: bool = False
     sameSite: Optional[str] = None
-    category: str = "Uncategorized"
+    category: str = "Unclassified"
     type: str = "Unknown"
     purpose: str = "Unknown"
     requiresConsent: bool = False

@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useCallback, useRef } from 'react';
 import ToastContainer from './ToastContainer';
+import { useAnnounce } from '../ui/LiveRegion';
 
 const ToastContext = createContext(null);
 
@@ -8,6 +9,9 @@ let toastId = 0;
 export function ToastProvider({ children, position = 'bottom-right', maxToasts = 5 }) {
   const [toasts, setToasts] = useState([]);
   const timersRef = useRef({});
+  // Remaining time per toast, so hover/focus can pause the countdown (28A).
+  const deadlinesRef = useRef({});
+  const announce = useAnnounce();
 
   const removeToast = useCallback((id) => {
     // Mark as exiting for animation
@@ -19,6 +23,7 @@ export function ToastProvider({ children, position = 'bottom-right', maxToasts =
         clearTimeout(timersRef.current[id]);
         delete timersRef.current[id];
       }
+      delete deadlinesRef.current[id];
     }, 300);
   }, []);
 
@@ -37,13 +42,30 @@ export function ToastProvider({ children, position = 'bottom-right', maxToasts =
       });
 
       if (duration > 0) {
+        deadlinesRef.current[id] = { remaining: duration, startedAt: Date.now() };
         timersRef.current[id] = setTimeout(() => removeToast(id), duration);
       }
 
+      announce([title, message].filter(Boolean).join('. '));
       return id;
     },
-    [maxToasts, removeToast]
+    [maxToasts, removeToast, announce]
   );
+
+  const pauseToast = useCallback((id) => {
+    const deadline = deadlinesRef.current[id];
+    if (!deadline || !timersRef.current[id]) return;
+    clearTimeout(timersRef.current[id]);
+    delete timersRef.current[id];
+    deadline.remaining -= Date.now() - deadline.startedAt;
+  }, []);
+
+  const resumeToast = useCallback((id) => {
+    const deadline = deadlinesRef.current[id];
+    if (!deadline || timersRef.current[id]) return;
+    deadline.startedAt = Date.now();
+    timersRef.current[id] = setTimeout(() => removeToast(id), Math.max(deadline.remaining, 0));
+  }, [removeToast]);
 
   const toast = useCallback(
     (messageOrOpts) => {
@@ -64,7 +86,7 @@ export function ToastProvider({ children, position = 'bottom-right', maxToasts =
   return (
     <ToastContext.Provider value={toast}>
       {children}
-      <ToastContainer toasts={toasts} onDismiss={removeToast} position={position} />
+      <ToastContainer toasts={toasts} onDismiss={removeToast} onPause={pauseToast} onResume={resumeToast} position={position} />
     </ToastContext.Provider>
   );
 }

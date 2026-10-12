@@ -8,14 +8,23 @@ const ICONS = {
   info: Info,
 };
 
-export default function Toast({ id, type = 'info', title, message, action, exiting, onDismiss }) {
+// Announced through the shared polite live region (plan 4.3), so no role here.
+// Hover or focus pauses the auto-dismiss countdown (decision 28A).
+export default function Toast({ id, type = 'info', title, message, action, exiting, onDismiss, onPause, onResume }) {
   const Icon = ICONS[type] || Info;
+  const pause = () => onPause?.(id);
+  const resume = (e) => {
+    if (e?.type === 'blur' && e.currentTarget.contains(e.relatedTarget)) return;
+    onResume?.(id);
+  };
 
   return (
     <div
       className={`toast toast--${type}${exiting ? ' toast--exiting' : ''}`}
-      role="alert"
-      aria-live="polite"
+      onMouseEnter={pause}
+      onMouseLeave={resume}
+      onFocus={pause}
+      onBlur={resume}
     >
       <div className="toast__icon">
         <Icon size={18} />

@@ -1,0 +1,69 @@
+/* Launch New Scan control (decision 27C) */
+.launch-scan { display: flex; flex-direction: column; gap: 8px; }
+
+.launch-scan__row { display: flex; align-items: center; gap: 24px; }
+
+/* Figma 1:190494: 50px field, blue-4 border, 8px radius, soft shadow */
+.launch-scan__box {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  height: 50px;
+  padding: 0 0 0 16px;
+  background: var(--ucm-surface);
+  border: 1px solid var(--ucm-blue-4);
+  border-radius: var(--ucm-radius-control);
+  box-shadow: 0 4px 8px rgba(145, 158, 171, 0.14);
+}
+.launch-scan__box:focus-within { outline: 2px solid var(--ucm-brand-accent); outline-offset: 1px; }
+.launch-scan__box--error { border-color: var(--ucm-red); }
+
+.launch-scan__input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: var(--ucm-navy);
+  font: 500 16px/1.2 var(--font-sans);
+}
+.launch-scan__input:focus { outline: none; }
+
+.launch-scan__divider { align-self: stretch; width: 1px; background: var(--ucm-blue-4); }
+
+/* Scan type menu: 180px, zap + label + chevron, no border of its own */
+.launch-scan .ui-menu__button--text {
+  width: 180px;
+  height: 48px;
+  gap: 10px;
+  padding: 0 12px;
+  border: none;
+  border-radius: 0 var(--ucm-radius-control) var(--ucm-radius-control) 0;
+  background: transparent;
+  color: var(--ucm-navy);
+  font: 500 14px/1 var(--font-sans);
+  letter-spacing: -0.02em;
+}
+.launch-scan__type { flex: 1; text-align: left; white-space: nowrap; }
+
+/* Start Scan: Figma green #148018, 40px, play icon */
+.launch-scan__start { height: 40px; padding: 0 22px 0 16px; font-size: 16px; }
+
+
+.launch-scan__spin { animation: launch-scan-spin 1s linear infinite; }
+@keyframes launch-scan-spin { to { transform: rotate(360deg); } }
+
+.launch-scan__error { margin: 0; font-size: var(--fs-sm); color: var(--ucm-red); }
+.launch-scan__hint { margin: 0; font-size: var(--fs-xs); color: var(--color-text-secondary); }
+
+@media (max-width: 768px) {
+  .launch-scan__row { flex-wrap: wrap; gap: 12px; }
+  .launch-scan__box { flex-basis: 100%; }
+  .launch-scan .ui-menu__button--text { width: 150px; }
+  .launch-scan__start { flex: 1; height: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .launch-scan__spin { animation: none; }
+}

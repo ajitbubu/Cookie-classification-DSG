@@ -10,8 +10,7 @@ const CATEGORIES = [
   { value: 'Functional', label: 'Functional', color: '#3D8BFF' },
   { value: 'Analytics', label: 'Analytics', color: '#FFBC32' },
   { value: 'Marketing', label: 'Marketing', color: '#FF4D4D' },
-  { value: 'Preferences', label: 'Preferences', color: '#9B59B6' },
-  { value: 'Uncategorized', label: 'Uncategorized', color: '#95A5A6' }
+  { value: 'Unknown', label: 'Unclassified', color: '#95A5A6' }
 ];
 
 /**
@@ -53,10 +52,15 @@ function MLClassificationDropdown({
   actualCategory,
   mlConfidence,
   mlConfidenceLevel,
-  cookieName, 
-  cookieDomain, 
+  cookieName,
+  cookieDomain,
   scanId,
-  onCategoryUpdate 
+  onCategoryUpdate,
+  showConfidence = true,
+  showAgreement = true,
+  // Label override: the Figma Cookies table labels the control with the model's
+  // suggestion (12.12.39). The menu still marks the stored category as selected.
+  displayValue
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isUpdating, setIsUpdating] = useState(false);
@@ -67,8 +71,8 @@ function MLClassificationDropdown({
   const triggerRef = useRef(null);
   const menuRef = useRef(null);
 
-  // The dropdown shows the actual category (what's stored), not the ML suggestion
-  const displayedCategory = actualCategory || 'Uncategorized';
+  // By default the dropdown shows the actual category (what's stored), not the ML suggestion
+  const displayedCategory = displayValue || actualCategory || 'Uncategorized';
 
   // Handle click outside to close dropdown
   useEffect(() => {
@@ -221,7 +225,7 @@ function MLClassificationDropdown({
             }
           }}
           disabled={isUpdating}
-          aria-label={`Current category: ${displayedCategory}. ML suggests: ${currentMLClassification}. Press Enter or Space to open category selection menu.`}
+          aria-label={`Current category: ${actualCategory || 'Uncategorized'}. ML suggests: ${currentMLClassification || 'no prediction'}. Press Enter or Space to open category selection menu.`}
           aria-haspopup="listbox"
           aria-expanded={isOpen}
           aria-controls="ml-category-listbox"
@@ -236,6 +240,26 @@ function MLClassificationDropdown({
           Selecting a category will update the actual category
         </div>
       </div>
+
+      {showConfidence && mlConfidenceLevel && (
+        <span className={`ml-confidence-badge confidence-${mlConfidenceLevel.toLowerCase()}`}>
+          {mlConfidenceLevel}
+        </span>
+      )}
+
+      {showAgreement && (
+        <span className="ml-agreement-indicator" aria-label={
+          currentMLClassification === actualCategory
+            ? 'Classification agrees with stored category'
+            : 'Classification differs from stored category'
+        }>
+          {currentMLClassification === actualCategory ? (
+            <CheckCircle className="agreement-icon" size={16} aria-hidden="true" />
+          ) : (
+            <AlertTriangle className="disagreement-icon" size={16} aria-hidden="true" />
+          )}
+        </span>
+      )}
 
       {isOpen && (
         <div 

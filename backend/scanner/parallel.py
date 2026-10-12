@@ -5,7 +5,7 @@ from playwright.async_api import BrowserContext
 from urllib.parse import urlparse
 import logging
 
-from backend.scanner.cookie_scanner import CookieScanner
+from backend.scanner.cookie_scanner import CookieScanner, site_root
 from backend.scanner.adaptive import AdaptiveConcurrencyManager
 from backend.config import settings
 
@@ -104,7 +104,8 @@ async def deep_scan_parallel(
     max_pages: int = 10,
     concurrency: int = 5,
     max_depth: int = 2,
-    on_progress: Optional[Callable] = None
+    on_progress: Optional[Callable] = None,
+    include_subdomains: bool = False
 ) -> dict:
     """
     Perform deep scan with parallel page scanning and depth tracking.
@@ -117,12 +118,14 @@ async def deep_scan_parallel(
         concurrency: Number of pages to scan concurrently
         max_depth: Maximum crawl depth
         on_progress: Callback for progress updates
+        include_subdomains: Also follow links to the site's subdomains
     
     Returns:
         Complete scan result with aggregated data
     """
     
     scanner = CookieScanner(context)
+    root = site_root(start_url)
     page_results = []
     error_pages = []
     
@@ -135,7 +138,7 @@ async def deep_scan_parallel(
     
     try:
         # Step 1: Scan the main page (depth 0)
-        logger.info(f"Starting deep scan for: {start_url} (max_pages={max_pages}, max_depth={max_depth})")
+        logger.info(f"Starting deep scan for: {start_url} (max_pages={max_pages}, max_depth={max_depth}, include_subdomains={include_subdomains})")
 
         if on_progress:
             await on_progress({
@@ -189,7 +192,7 @@ async def deep_scan_parallel(
             # Extract from more pages to find more URLs (up to 50 pages per depth level)
             pages_to_extract_from = min(50, len(current_level_urls), max_pages - len(page_results))
             link_extraction_tasks = [
-                scanner.extract_links(url, max_links=settings.BATCH_SIZE)
+                scanner.extract_links(url, max_links=settings.BATCH_SIZE, include_subdomains=include_subdomains, root=root)
                 for url in current_level_urls[:pages_to_extract_from]
             ]
             

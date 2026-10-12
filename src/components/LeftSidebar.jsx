@@ -1,72 +1,70 @@
 import { useState } from 'react';
 import {
-  Home, Search, History, Shield,
-  Settings, ChevronLeft, ChevronRight, Cookie,
-  BarChart3, BookOpen, GitCompare, FileText, ClipboardCheck, Globe, Send, Clock, Brain
+  LayoutDashboard, HeartHandshake, Cookie, FileCheck, FileSearch, Lock, CloudRain, Laptop,
+  ClipboardList, Layers, Settings, ChevronDown, ChevronUp, ShieldCheck,
 } from 'lucide-react';
+import pkg from '../../package.json';
+import { COOKIE_PAGES, navPageFor } from '../lib/routes';
 import './LeftSidebar.css';
 
-const navItems = [
-  { id: 'home', icon: Home, label: 'Home', section: 'kpi-strip', page: 'home' },
-  { id: 'scan', icon: Search, label: 'Scanner', section: 'scan-controls-compact', page: 'home' },
-  { id: 'results', icon: BarChart3, label: 'Results', section: 'results-header', page: 'home' },
-  { id: 'compliance', icon: Shield, label: 'Compliance', section: 'audit-data-section', page: 'home' },
-  { id: 'divider-1', type: 'divider' },
-  { id: 'history', icon: History, label: 'Scan History', page: 'history' },
-  { id: 'compare', icon: GitCompare, label: 'Compare Scans', page: 'compare' },
-  { id: 'divider-2', type: 'divider' },
-  { id: 'reports', icon: FileText, label: 'Reports', page: 'reports' },
-  { id: 'review', icon: ClipboardCheck, label: 'Review Queue', page: 'review' },
-  { id: 'vendors', icon: Globe, label: 'Vendors', page: 'vendors' },
-  { id: 'publish', icon: Send, label: 'Auto-Publish', page: 'publish' },
-  { id: 'scheduled', icon: Clock, label: 'Scheduled Scans', page: 'scheduled' },
-  { id: 'websites', icon: Globe, label: 'My Websites', page: 'websites' },
-  { id: 'model', icon: Brain, label: 'ML Model', page: 'model' },
-  { id: 'divider-3', type: 'divider' },
-  { id: 'docs', icon: BookOpen, label: 'Documentation', href: '#docs' },
+// Full product menu from Figma (1:189760). Only Cookie Classification and
+// Settings > ML Model exist in this app; the other modules are shown as in
+// Figma but disabled, so nothing links to an empty page.
+const MODULES_BEFORE = [
+  { id: 'dashboard', label: 'Dashboard', name: 'Platform dashboard', icon: LayoutDashboard, chevron: true },
+  { id: 'ucm', label: 'UCM', icon: HeartHandshake, chevron: true },
+];
+const MODULES_AFTER = [
+  { id: 'pia', label: 'PIA', icon: FileCheck, chevron: true },
+  { id: 'cdd', label: 'CDD', icon: FileSearch, chevron: true },
+  { id: 'dsar', label: 'DSAR', icon: Lock, chevron: true },
+  { id: 'cdr', label: 'CDR', icon: CloudRain, chevron: true },
+  { id: 'dpm', label: 'DPM', icon: Laptop, chevron: true },
+  { id: 'audit', label: 'Compliance Audit', icon: ClipboardList, chevron: true },
+  { id: 'org', label: 'Organization', icon: Layers },
 ];
 
-function LeftSidebar({ onPinnedChange, onNavigate, currentPage, mobileOpen = false, onMobileClose }) {
-  const [pinned, setPinned] = useState(false);
-  const [hovered, setHovered] = useState(false);
+function DisabledModule({ module }) {
+  return (
+    <button
+      type="button"
+      role="menuitem"
+      className="left-sidebar-row left-sidebar-row--disabled"
+      aria-disabled="true"
+      aria-label={module.name || module.label}
+      title="Not available in this app"
+    >
+      <module.icon size={18} className="left-sidebar-icon" aria-hidden="true" />
+      <span className="left-sidebar-label">{module.label}</span>
+      {module.chevron && <ChevronDown size={18} className="left-sidebar-chevron" aria-hidden="true" />}
+    </button>
+  );
+}
 
-  const expanded = pinned || hovered || mobileOpen;
+function LeftSidebar({ onNavigate, currentPage, mobileOpen = false, onMobileClose }) {
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const navPage = navPageFor(currentPage);
+  const showSettings = settingsOpen || currentPage === 'model';
 
-  const handleNavClick = (item) => {
-    if (item.href) {
-      window.location.hash = item.href;
-      return;
-    }
-
-    // If the item targets a different page, navigate to it
-    if (item.page && item.page !== 'home') {
-      onNavigate?.(item.page);
-      return;
-    }
-
-    // If the item targets a section on the home page
-    if (item.page === 'home' && item.section) {
-      const scrollToSection = () => {
-        const el = document.getElementById(item.section) || document.querySelector(`.${item.section}`);
-        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      };
-      if (currentPage !== 'home') {
-        onNavigate?.('home');
-        setTimeout(scrollToSection, 150);
-      } else {
-        scrollToSection();
-      }
-    }
+  const go = (page) => {
+    onNavigate?.(page);
+    onMobileClose?.();
   };
 
-  const isActive = (item) => {
-    if (item.page && item.page !== 'home') {
-      return currentPage === item.page;
-    }
-    if (item.page === 'home' && currentPage === 'home') {
-      return item.id === 'home';
-    }
-    return false;
+  const subItem = (page, label) => {
+    const active = navPage === page;
+    return (
+      <button
+        key={page}
+        type="button"
+        role="menuitem"
+        className={`left-sidebar-item ${active ? 'active' : ''}`}
+        aria-current={active ? 'page' : undefined}
+        onClick={() => go(page)}
+      >
+        <span className="left-sidebar-label">{label}</span>
+      </button>
+    );
   };
 
   return (
@@ -77,67 +75,57 @@ function LeftSidebar({ onPinnedChange, onNavigate, currentPage, mobileOpen = fal
         aria-hidden="true"
       />
       <nav
-        className={`left-sidebar ${expanded ? 'expanded' : 'collapsed'} ${pinned ? 'pinned' : ''} ${mobileOpen ? 'mobile-open' : ''}`}
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
+        className={`left-sidebar ${mobileOpen ? 'mobile-open' : ''}`}
         aria-label="Main navigation"
       >
-      <div className="left-sidebar-inner">
-        <div className="left-sidebar-brand">
-          <Cookie size={22} className="left-sidebar-logo" />
-          {expanded && <span className="left-sidebar-brand-text">DataSafeGuard</span>}
+        <div className="left-sidebar-inner">
+          <div className="left-sidebar-brand">
+            <span className="left-sidebar-logo" role="img" aria-label="datasafeguard — Privacy Management">
+              <span className="left-sidebar-logo__word" aria-hidden="true">
+                <span className="left-sidebar-logo__accent">data</span>safeguard
+              </span>
+              <span className="left-sidebar-logo__tag" aria-hidden="true">Privacy Management</span>
+            </span>
+            <ShieldCheck size={24} strokeWidth={1.5} className="left-sidebar-logo-mark" aria-hidden="true" />
+          </div>
+
+          <div className="left-sidebar-nav" role="menu" aria-label="Modules" aria-orientation="vertical">
+            {MODULES_BEFORE.map((m) => <DisabledModule key={m.id} module={m} />)}
+
+            <div className="left-sidebar-module" role="group" aria-labelledby="module-cookies">
+              <div id="module-cookies" className="left-sidebar-row left-sidebar-row--header">
+                <Cookie size={20} className="left-sidebar-icon" aria-hidden="true" />
+                <span className="left-sidebar-label">Cookie Classification</span>
+                <ChevronUp size={18} className="left-sidebar-chevron" aria-hidden="true" />
+              </div>
+              {COOKIE_PAGES.map(({ page, label }) => subItem(page, label))}
+            </div>
+
+            {MODULES_AFTER.map((m) => <DisabledModule key={m.id} module={m} />)}
+
+            <div className="left-sidebar-module" role="group" aria-label="Settings">
+              <button
+                type="button"
+                role="menuitem"
+                className="left-sidebar-row"
+                aria-expanded={showSettings}
+                onClick={() => setSettingsOpen((v) => !v)}
+              >
+                <Settings size={18} className="left-sidebar-icon" aria-hidden="true" />
+                <span className="left-sidebar-label">Settings</span>
+                {showSettings
+                  ? <ChevronUp size={18} className="left-sidebar-chevron" aria-hidden="true" />
+                  : <ChevronDown size={18} className="left-sidebar-chevron" aria-hidden="true" />}
+              </button>
+              {showSettings && subItem('model', 'ML Model')}
+            </div>
+          </div>
+
+          <div className="left-sidebar-footer">
+            <span className="left-sidebar-label">Version {pkg.version}</span>
+            <span className="left-sidebar-label">Powered By CCE®</span>
+          </div>
         </div>
-
-        <ul className="left-sidebar-nav" role="menubar">
-          {navItems.map((item) => {
-            if (item.type === 'divider') {
-              return (
-                <li key={item.id} className="left-sidebar-divider" role="separator">
-                  {expanded && <span className="left-sidebar-divider-line" />}
-                </li>
-              );
-            }
-
-            return (
-              <li key={item.id} role="none">
-                <button
-                  className={`left-sidebar-item ${isActive(item) ? 'active' : ''}`}
-                  onClick={() => { handleNavClick(item); onMobileClose?.(); }}
-                  role="menuitem"
-                  title={!expanded ? item.label : undefined}
-                  aria-current={isActive(item) ? 'page' : undefined}
-                >
-                  <item.icon size={20} className="left-sidebar-icon" />
-                  {expanded && <span className="left-sidebar-label">{item.label}</span>}
-                </button>
-              </li>
-            );
-          })}
-        </ul>
-
-        <div className="left-sidebar-footer">
-          <button
-            className="left-sidebar-item"
-            title={!expanded ? 'Settings' : undefined}
-          >
-            <Settings size={20} className="left-sidebar-icon" />
-            {expanded && <span className="left-sidebar-label">Settings</span>}
-          </button>
-
-          <button
-            className="left-sidebar-toggle"
-            onClick={() => {
-              const next = !pinned;
-              setPinned(next);
-              onPinnedChange?.(next);
-            }}
-            aria-label={pinned ? 'Collapse sidebar' : 'Expand sidebar'}
-            title={pinned ? 'Collapse sidebar' : 'Pin sidebar open'}
-          >
-            {pinned ? <ChevronLeft size={18} /> : <ChevronRight size={18} />}
-          </button>
-        </div>
-      </div>
       </nav>
     </>
   );

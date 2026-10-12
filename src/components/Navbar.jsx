@@ -1,15 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { User, Settings, LogOut, ChevronDown, Shield, Bell, Menu } from 'lucide-react';
+import { breadcrumbFor, moduleTitleFor } from '../lib/routes';
 import './Navbar.css';
 
 const USER = {
-  name: 'Ajit Sahu',
-  email: 'ajit@datasafeguard.io',
+  name: 'Sam Sharma',
+  email: 'sam@faceoff.io',
   role: 'Admin',
-  initials: 'AS',
+  initials: 'SS',
 };
 
-function Navbar({ notifications = [], unreadCount = 0, onNotificationClick, onMarkAllRead, onClearAll, navOpen = false, onMenuToggle }) {
+function Navbar({ currentPage = 'home', notifications = [], unreadCount = 0, onNotificationClick, onMarkAllRead, onClearAll, navOpen = false, onMenuToggle }) {
+  const crumbs = breadcrumbFor(currentPage);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [notifOpen, setNotifOpen] = useState(false);
@@ -32,7 +34,8 @@ function Navbar({ notifications = [], unreadCount = 0, onNotificationClick, onMa
   }, []);
 
   return (
-    <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
+    <>
+    <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar-container">
 
         {/* Mobile nav trigger (hidden on desktop via CSS) */}
@@ -45,14 +48,8 @@ function Navbar({ notifications = [], unreadCount = 0, onNotificationClick, onMa
           <Menu size={22} />
         </button>
 
-        {/* Brand */}
-        <div className="navbar-brand">
-          <img
-            src="https://cdn.prod.website-files.com/646e363f9c29e4860c52c82e/665f4b9f47a7740de833d1c2_Final%20Data%20Safeguard%20Logo.svg"
-            alt="Data Safeguard"
-            className="navbar-logo-img"
-          />
-        </div>
+        {/* Page title: the one <h1> per page (plan decision 17A) */}
+        <h1 className="navbar-title">{moduleTitleFor(currentPage)}</h1>
 
         {/* Right side */}
         <div className="navbar-right">
@@ -141,6 +138,7 @@ function Navbar({ notifications = [], unreadCount = 0, onNotificationClick, onMa
               onClick={() => setMenuOpen(v => !v)}
               aria-expanded={menuOpen}
               aria-haspopup="true"
+              aria-label={`Account menu for ${USER.name}`}
             >
               <span className="navbar-avatar">{USER.initials}</span>
               <div className="navbar-avatar-info">
@@ -179,7 +177,18 @@ function Navbar({ notifications = [], unreadCount = 0, onNotificationClick, onMa
 
         </div>
       </div>
+    </header>
+
+    <nav className="navbar-breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        {crumbs.map((crumb, i) => (
+          <li key={crumb}>
+            {i === crumbs.length - 1 ? <span aria-current="page">{crumb}</span> : crumb}
+          </li>
+        ))}
+      </ol>
     </nav>
+    </>
   );
 }
 

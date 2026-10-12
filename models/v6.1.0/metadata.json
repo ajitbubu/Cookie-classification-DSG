@@ -1,0 +1,318 @@
+{
+  "version": "6.1.0",
+  "model_type": "xgboost_native",
+  "trained_at": "2026-08-04T23:28:20.111514+00:00",
+  "num_features": 52,
+  "features": [
+    "expiry_days",
+    "secure",
+    "http_only",
+    "is_third_party",
+    "cookie_name_len",
+    "is_ga_like",
+    "is_fb_like",
+    "has_prefix_utm",
+    "has_consent_kw",
+    "has_session_kw",
+    "is_session",
+    "is_short_term",
+    "is_medium_term",
+    "is_long_term",
+    "is_persistent",
+    "is_com_domain",
+    "is_net_domain",
+    "is_org_domain",
+    "name_starts_underscore",
+    "name_has_id",
+    "name_has_user",
+    "name_has_track",
+    "same_site_lax",
+    "same_site_strict",
+    "same_site_none",
+    "vendor_first_party",
+    "vendor_advertising",
+    "vendor_analytics",
+    "tracker_first_party",
+    "tracker_advertising",
+    "tracker_analytics",
+    "is_google",
+    "is_facebook",
+    "is_amazon",
+    "is_microsoft",
+    "is_linkedin",
+    "name_prefix_ga",
+    "name_prefix_fb",
+    "name_prefix_utm",
+    "expiry_exactly_365",
+    "expiry_exactly_730",
+    "expiry_exactly_30",
+    "expiry_exactly_7",
+    "vendor_tracker_match",
+    "both_advertising",
+    "both_analytics",
+    "domain_depth",
+    "secure_and_httponly",
+    "secure_and_third_party",
+    "name_has_session",
+    "name_has_analytics",
+    "name_has_consent"
+  ],
+  "categories": [
+    "Analytics_Performance",
+    "Functional",
+    "Marketing_Advertising",
+    "Strictly_Necessary",
+    "Unclassified"
+  ],
+  "training_samples": 46286,
+  "calibration_samples": 13414,
+  "test_samples": 13301,
+  "dataset": {
+    "sources": [
+      {
+        "source": "/app/models/training_data/Training-data-01242026/cookie_training_100k_train_80.csv",
+        "input_rows": 87249,
+        "accepted_rows": 80000,
+        "missing_site_domain": 7249,
+        "missing_cookie_identity": 1866,
+        "unsupported_label": 0,
+        "raw_label_distribution": {
+          "Functional": 19054,
+          "Analytics": 18970,
+          "Strictly Necessary": 17894,
+          "Advertising": 10025,
+          "Social Media Tracking": 7837,
+          "Personalization": 5189,
+          "Unclassified": 4182,
+          "Marketing": 1707,
+          "analytics": 980,
+          "Personalized Advertising": 610,
+          "Analytics and Performance": 287,
+          "Operate the site and core services": 111,
+          "unclassified": 101,
+          "Personalize advertising": 69,
+          "Measure performance": 68,
+          "advertising": 46,
+          "Extend functionality": 36,
+          "essential": 27,
+          "Security": 24,
+          "Necessary": 21,
+          "performance": 9,
+          "social_networking": 2
+        },
+        "sha256": "d7472c07adc056e3c5e8116a4e186c0764454d01e397b73bddd46e1402199446"
+      },
+      {
+        "source": "/app/models/training_data/Training-data-01242026/cookie_training_100k_test_20.csv",
+        "input_rows": 20000,
+        "accepted_rows": 20000,
+        "missing_site_domain": 0,
+        "missing_cookie_identity": 0,
+        "unsupported_label": 0,
+        "raw_label_distribution": {
+          "Analytics": 4555,
+          "Strictly Necessary": 4386,
+          "Functional": 4252,
+          "Advertising": 2506,
+          "Social Media Tracking": 1959,
+          "Personalization": 1296,
+          "Unclassified": 1046
+        },
+        "sha256": "579c4f7cfd1fc4c87a4705f5ee52fc6950a94379965e15da2a334067ca4fce74"
+      }
+    ],
+    "deduplication": {
+      "input_rows": 100000,
+      "duplicate_rows_removed": 26999,
+      "conflicting_observations_removed": 0,
+      "output_rows": 73001
+    },
+    "split": {
+      "seed": 42,
+      "train_sites": [
+        "datasafeguard.ai",
+        "datasafeguard.us",
+        "example.com",
+        "mediaworld.net",
+        "news.example.com",
+        "saasproduct.app",
+        "shop.example.com"
+      ],
+      "calibration_sites": [
+        "bankingapp.com",
+        "travelnow.com"
+      ],
+      "test_sites": [
+        "pharmahealth.io",
+        "retailco.com"
+      ],
+      "rows": {
+        "train": 46286,
+        "calibration": 13414,
+        "test": 13301
+      },
+      "site_domain_overlap": {
+        "train_calibration": 0,
+        "train_test": 0,
+        "calibration_test": 0
+      },
+      "cookie_domain_overlap": {
+        "train_calibration": 25,
+        "train_test": 25,
+        "calibration_test": 25
+      }
+    },
+    "external_holdout": null
+  },
+  "calibration": {
+    "method": "temperature_scaling",
+    "temperature": 0.8165792112547178,
+    "target_auto_precision": 0.97,
+    "per_class_auto_thresholds": {
+      "Analytics_Performance": {
+        "threshold": 0.5,
+        "eligible_predictions": 3082,
+        "estimated_precision": 0.9918883841661259,
+        "enabled": true
+      },
+      "Functional": {
+        "threshold": 0.67,
+        "eligible_predictions": 2876,
+        "estimated_precision": 0.9735744089012517,
+        "enabled": true
+      },
+      "Marketing_Advertising": {
+        "threshold": 0.5,
+        "eligible_predictions": 4035,
+        "estimated_precision": 0.973729863692689,
+        "enabled": true
+      },
+      "Strictly_Necessary": {
+        "threshold": 0.75,
+        "eligible_predictions": 2108,
+        "estimated_precision": 0.9729601518026565,
+        "enabled": true
+      },
+      "Unclassified": {
+        "threshold": 0.8,
+        "eligible_predictions": 223,
+        "estimated_precision": 0.9820627802690582,
+        "enabled": false
+      }
+    }
+  },
+  "metrics": {
+    "internal_site_holdout": {
+      "accuracy": 0.9458687316743102,
+      "macro_f1": 0.902830477397145,
+      "weighted_f1": 0.9448286443497668,
+      "log_loss": 0.10982434416558559,
+      "per_class": {
+        "Analytics_Performance": {
+          "precision": 0.9894366197183099,
+          "recall": 0.964129756706176,
+          "f1-score": 0.9766192733017378,
+          "support": 3206.0
+        },
+        "Functional": {
+          "precision": 0.9374213836477987,
+          "recall": 0.9421618204804045,
+          "f1-score": 0.9397856242118537,
+          "support": 3164.0
+        },
+        "Marketing_Advertising": {
+          "precision": 0.9724260055653934,
+          "recall": 0.9907216494845361,
+          "f1-score": 0.9814885739818716,
+          "support": 3880.0
+        },
+        "Strictly_Necessary": {
+          "precision": 0.8995157384987893,
+          "recall": 0.9432924248836225,
+          "f1-score": 0.9208841148523033,
+          "support": 2363.0
+        },
+        "Unclassified": {
+          "precision": 0.7703180212014135,
+          "recall": 0.6337209302325582,
+          "f1-score": 0.6953748006379585,
+          "support": 688.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          3091,
+          74,
+          22,
+          19,
+          0
+        ],
+        [
+          23,
+          2981,
+          41,
+          51,
+          68
+        ],
+        [
+          0,
+          24,
+          3844,
+          12,
+          0
+        ],
+        [
+          10,
+          16,
+          46,
+          2229,
+          62
+        ],
+        [
+          0,
+          85,
+          0,
+          167,
+          436
+        ]
+      ],
+      "auto_policy": {
+        "eligible_predictions": 12013,
+        "coverage": 0.9031651755507105,
+        "accuracy": 0.9772746191625739
+      }
+    },
+    "external_holdout": null
+  },
+  "acceptance": {
+    "internal_gates": {
+      "macro_f1": true,
+      "marketing_recall": true,
+      "unclassified_precision": true,
+      "auto_precision": true,
+      "site_holdout_is_disjoint": true
+    },
+    "external_holdout_gate": false,
+    "promotion_eligible": false,
+    "auto_classification_enabled": false
+  },
+  "runtime": {
+    "python": "3.12.8",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2",
+    "xgboost": "3.2.0",
+    "scipy": "1.15.3",
+    "joblib": "1.3.2"
+  },
+  "code": {
+    "training_pipeline_sha256": "bee899042951420332bf9004265a3e91bfb384f1d17dd2e9f95d303f326bbbda",
+    "feature_extractor_sha256": "60f58eeb341f22df6d8c161b6d1d8567ae5729c33cc29882fcafa9434e708f79"
+  },
+  "training_parameters": {
+    "seed": 42,
+    "estimators": 350,
+    "learning_rate": 0.05,
+    "max_depth": 6
+  }
+}

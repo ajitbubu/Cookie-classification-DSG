@@ -26,10 +26,11 @@ export const THEMES: ThemeDefinition[] = [
   { id: "sentinel-light", brand: "Sentinel", label: "Sentinel · Light", mode: "light", swatch: "#2563EB" },
   { id: "faceoff-dark", brand: "FaceOff", label: "FaceOff · Dark", mode: "dark", swatch: "#4F7CFF" },
   { id: "faceoff-light", brand: "FaceOff", label: "FaceOff · Light", mode: "light", swatch: "#4F7CFF" },
+  { id: "datasafeguard", brand: "datasafeguard", label: "datasafeguard · Light", mode: "light", swatch: "#3979BD" },
 ];
 
 /** Default theme applied before any user preference is read. */
-export const DEFAULT_THEME_ID = "sentinel-dark";
+export const DEFAULT_THEME_ID = "datasafeguard";
 
 /** localStorage key used to persist the chosen theme. */
 export const THEME_STORAGE_KEY = "sentinel-theme";

@@ -1,0 +1,6 @@
+# Machine-local override (untracked). Postgres host port 5432 conflicts with
+# another local stack (sentinel-platform-db-1), so don't publish it to the host.
+# Cookie-scanner services still reach Postgres internally over scanner-network.
+services:
+  postgres:
+    ports: !reset null

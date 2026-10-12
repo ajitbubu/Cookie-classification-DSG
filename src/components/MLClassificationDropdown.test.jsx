@@ -8,8 +8,7 @@ const VALID_CATEGORIES = [
   'Functional',
   'Analytics',
   'Marketing',
-  'Preferences',
-  'Uncategorized'
+  'Unknown'
 ];
 
 /**
@@ -20,8 +19,8 @@ const VALID_CATEGORIES = [
  * pre-selected with the value of cookie.mlClassification and display all available 
  * cookie categories as selectable options.
  */
-describe('Property 2: ML Classification Dropdown Pre-selection', () => {
-  it('should pre-select ML classification and show all categories for any valid input', () => {
+describe('Property 2: Stored category dropdown', () => {
+  it('should show the stored category and expose all canonical choices', () => {
     fc.assert(
       fc.property(
         // Generate random ML classification data
@@ -50,10 +49,10 @@ describe('Property 2: ML Classification Dropdown Pre-selection', () => {
             />
           );
 
-          // Property 1: The dropdown should display the ML classification
+          // The editable value is the stored category; ML remains a suggestion.
           const trigger = container.querySelector('.ml-dropdown-trigger');
           expect(trigger).toBeTruthy();
-          expect(trigger.textContent).toContain(testData.mlClassification);
+          expect(trigger.textContent).toContain(testData.actualCategory);
 
           // Property 2: When opened, all categories should be available
           fireEvent.click(trigger);
@@ -63,9 +62,10 @@ describe('Property 2: ML Classification Dropdown Pre-selection', () => {
 
           // Verify all categories are present
           VALID_CATEGORIES.forEach(category => {
+            const expectedLabel = category === 'Unknown' ? 'Unclassified' : category;
             const categoryItem = Array.from(
               container.querySelectorAll('.ml-category-item-label')
-            ).find(el => el.textContent === category);
+            ).find(el => el.textContent === expectedLabel);
             expect(categoryItem).toBeTruthy();
           });
 

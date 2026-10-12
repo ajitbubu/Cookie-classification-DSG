@@ -1,0 +1,107 @@
+/* UCM form modal and confirm dialog (project/components/ucm/ucm.css .ucm-modal, .ucm-confirm) */
+.ui-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgb(0 0 0 / 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.ui-modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: calc(100vh - 32px);
+  background: var(--ucm-surface);
+  border-radius: var(--ucm-radius-panel);
+  box-shadow: var(--ucm-shadow-chip);
+}
+.ui-modal--sm { max-width: 400px; }
+.ui-modal--md { max-width: 798px; }
+.ui-modal--lg { max-width: 960px; }
+.ui-modal:focus { outline: none; }
+
+.ui-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 30px;
+  border-bottom: 1px solid var(--ucm-blue-4);
+}
+.ui-modal__title { margin: 0; font: 700 18px/1.2 var(--font-sans); color: var(--ucm-ink-stat); }
+
+.ui-modal__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: var(--ucm-radius-control);
+  background: transparent;
+  color: var(--ucm-navy);
+  cursor: pointer;
+}
+.ui-modal__close:hover { background: var(--ucm-row-hover); }
+.ui-modal__close:focus-visible { outline: 2px solid var(--ucm-brand-accent); outline-offset: 2px; }
+
+.ui-modal__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px 30px;
+  overflow-y: auto;
+  color: var(--ucm-navy);
+  font-size: var(--fs-table);
+}
+
+.ui-modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0 30px 24px;
+}
+
+/* Confirm dialog: 400px, centred icon tile, 24px title, two equal buttons */
+.ui-modal--confirm { max-width: 400px; padding: 24px; gap: 24px; align-items: center; text-align: center; }
+.ui-modal--confirm .ui-modal__header { flex-direction: column; gap: 24px; padding: 0; border: 0; }
+.ui-modal--confirm .ui-modal__title { font: 500 24px/1.15 var(--font-sans); color: var(--ucm-navy); text-wrap: balance; }
+.ui-modal--confirm .ui-modal__close { position: absolute; top: 16px; right: 16px; }
+.ui-modal--confirm .ui-modal__body { padding: 0; opacity: 0.88; }
+.ui-modal--confirm .ui-modal__footer--equal { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; padding: 0; }
+.ui-modal--confirm .ui-modal__footer--equal > * { width: 100%; }
+
+.ui-modal__icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: var(--ucm-brand-accent);
+  color: var(--ucm-surface);
+}
+.ui-modal__icon--success { background: var(--ucm-green-2); }
+
+@media (max-width: 480px) {
+  .ui-modal--confirm .ui-modal__footer--equal { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px), (pointer: coarse) {
+  .ui-modal__close { width: 44px; height: 44px; }
+}
+
+/* Figma scan pop-ups: navy round back arrow before the title */
+.ui-modal__back { display: grid; place-items: center; flex-shrink: 0; width: 24px; height: 24px; margin-right: 12px; padding: 0; border: none; border-radius: 50%; background: var(--ucm-navy); color: var(--ucm-surface); cursor: pointer; }
+.ui-modal__back:focus-visible { outline: 2px solid var(--ucm-brand-accent); outline-offset: 2px; }
+@media (max-width: 768px), (pointer: coarse) {
+  .ui-modal__back { width: 44px; height: 44px; }
+}
+.ui-modal__back + .ui-modal__title { flex: 1; font-weight: 500; color: var(--ucm-navy); }
+.ui-modal__back { margin-right: 0; }

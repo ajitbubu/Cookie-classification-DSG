@@ -1,0 +1,40 @@
+/* Figma table toolbar (12.10.31): 44px search field, 44px icon buttons */
+.ui-toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+
+.ui-toolbar__search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: min(475px, 100%);
+  height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--ucm-blue-4);
+  border-radius: var(--ucm-radius-control);
+  background: var(--ucm-surface);
+  color: var(--color-text-muted);
+}
+.ui-toolbar__search input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: var(--ucm-navy);
+  font: 400 16px/1 var(--font-sans);
+}
+.ui-toolbar__search input::placeholder { color: var(--ucm-navy); }
+.ui-toolbar__search input:focus { outline: none; }
+.ui-toolbar__search:focus-within { outline: 2px solid var(--ucm-brand-accent); outline-offset: 1px; }
+
+.ui-toolbar__buttons { display: flex; gap: 16px; }
+.ui-toolbar .ui-toolbar__icon {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  justify-content: center;
+  border: 1px solid var(--ucm-blue-4);
+  border-radius: var(--ucm-radius-control);
+  background: var(--ucm-surface);
+  color: var(--ucm-navy);
+  box-shadow: 0 4px 8px rgba(145, 158, 171, 0.14);
+}

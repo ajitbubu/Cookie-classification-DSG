@@ -19,9 +19,9 @@ VALID_CATEGORIES = [
     "Functional",
     "Analytics",
     "Marketing",
-    "Preferences",
     "Uncategorized",
-    "Unknown"  # ML classifier returns "Unknown" for uncertain classifications
+    "Unclassified",
+    "Unknown"
 ]
 
 
@@ -32,7 +32,23 @@ def validate_category(category: str) -> str:
             f"Invalid category '{category}'. "
             f"Must be one of: {', '.join(VALID_CATEGORIES)}"
         )
+    if category in {"Uncategorized", "Unclassified"}:
+        return "Unknown"
     return category
+
+
+def validate_scan_id(scan_id: str) -> str:
+    """Validate scan id format.
+
+    The id names the file-fallback JSON file, so it must never contain a path
+    separator. Today's ids are ISO timestamps (e.g. 2026-10-11T20:20:08.737Z),
+    hence `.` and `:` are allowed.
+    """
+    if not re.fullmatch(r'[A-Za-z0-9_.:\-]{1,64}', scan_id or ''):
+        raise ValueError(
+            "Invalid scan_id. Use 1-64 letters, digits, '_', '-', '.' or ':'"
+        )
+    return scan_id
 
 
 def validate_cookie_name(name: str) -> str:
@@ -81,14 +97,18 @@ class CategoryUpdateRequest(BaseModel):
     ml_confidence: Optional[float] = None  # ML confidence score
     user_id: Optional[str] = None
     
+    @validator('scan_id')
+    def validate_scan_id_field(cls, v):
+        return validate_scan_id(v)
+
     @validator('cookie_name')
     def validate_cookie_name_field(cls, v):
         return validate_cookie_name(v)
-    
+
     @validator('cookie_domain')
     def validate_domain_field(cls, v):
         return validate_domain(v)
-    
+
     @validator('old_category', 'new_category')
     def validate_category_field(cls, v):
         return validate_category(v)
@@ -143,7 +163,7 @@ async def update_cookie_category(request: CategoryUpdateRequest):
         manager = get_category_manager()
         
         # Update category with ML confidence
-        success = await manager.update_category(
+        result = await manager.update_category(
             scan_id=request.scan_id,
             cookie_name=request.cookie_name,
             cookie_domain=request.cookie_domain,
@@ -152,26 +172,30 @@ async def update_cookie_category(request: CategoryUpdateRequest):
             ml_confidence=request.ml_confidence,
             user_id=request.user_id
         )
-        
-        if success:
-            # Check if knowledge base was updated
-            kb_updated = manager.db_pool is not None
-            
-            # Check if feedback was recorded (only if categories differ)
-            feedback_recorded = (
-                kb_updated and 
-                request.old_category != request.new_category
-            )
-            
+
+        if result["ok"]:
+            # Report what actually happened. This used to infer knowledge_base_updated
+            # from `manager.db_pool is not None` — the existence of a connection pool,
+            # not the outcome of the write — so a failed write still reported success.
+            kb_updated = result["persisted"]
+            feedback_recorded = result["feedback_recorded"]
+
             logger.info(
                 f"Category updated: {request.cookie_name} "
                 f"from {request.old_category} to {request.new_category} "
                 f"(KB: {kb_updated}, Feedback: {feedback_recorded})"
             )
-            
+
+            message = (
+                "Category updated successfully"
+                if kb_updated
+                else "Category saved locally — database unavailable, change is not yet "
+                     "in the compliance record"
+            )
+
             return CategoryUpdateResponse(
                 success=True,
-                message="Category updated successfully",
+                message=message,
                 cookie_name=request.cookie_name,
                 old_category=request.old_category,
                 new_category=request.new_category,
@@ -180,7 +204,10 @@ async def update_cookie_category(request: CategoryUpdateRequest):
                 feedback_recorded=feedback_recorded
             )
         else:
-            raise HTTPException(status_code=500, detail="Failed to update category")
+            raise HTTPException(
+                status_code=500,
+                detail=result.get("error") or "Failed to update category"
+            )
             
     except Exception as e:
         logger.error(f"Error updating category: {e}")
@@ -241,21 +268,9 @@ async def get_available_categories():
                 "color": "#FF4D4D"
             },
             {
-                "value": "Preferences",
-                "label": "Preferences",
-                "description": "Remember user settings",
-                "color": "#9B59B6"
-            },
-            {
-                "value": "Uncategorized",
-                "label": "Uncategorized",
-                "description": "Not yet classified",
-                "color": "#95A5A6"
-            },
-            {
                 "value": "Unknown",
-                "label": "Unknown",
-                "description": "Unable to classify with confidence",
+                "label": "Unclassified",
+                "description": "Abstained or not yet classified",
                 "color": "#7F8C8D"
             }
         ]
@@ -274,7 +289,7 @@ async def bulk_update_categories(updates: list[CategoryUpdateRequest]):
         results = []
         
         for update in updates:
-            success = await manager.update_category(
+            result = await manager.update_category(
                 scan_id=update.scan_id,
                 cookie_name=update.cookie_name,
                 cookie_domain=update.cookie_domain,
@@ -283,18 +298,25 @@ async def bulk_update_categories(updates: list[CategoryUpdateRequest]):
                 ml_confidence=update.ml_confidence,
                 user_id=update.user_id
             )
-            
+
             results.append({
                 "cookie_name": update.cookie_name,
-                "success": success
+                "success": result["ok"],
+                "persisted": result["persisted"],
+                "file_fallback": result["file_fallback"]
             })
-        
+
         successful = sum(1 for r in results if r["success"])
-        
+        # A bulk run where nothing reached the database is not a clean success —
+        # surface it so callers can distinguish durable writes from local ones.
+        persisted = sum(1 for r in results if r["persisted"])
+
         return {
             "total": len(updates),
             "successful": successful,
             "failed": len(updates) - successful,
+            "persisted": persisted,
+            "file_fallback": successful - persisted,
             "results": results
         }
         

@@ -7,7 +7,7 @@ function calculateCookieRiskScore(cookie) {
   const factors = [];
 
   // 1. Misclassification Risk (30% weight) — based on ML confidence
-  const conf = cookie.mlConfidence || 0.5;
+  const conf = cookie.mlConfidence ?? 0;
   const misclassScore = Math.round((1 - conf) * 100);
   factors.push({
     name: 'Misclassification Risk',
@@ -136,11 +136,10 @@ function getClassificationReasons(cookie) {
 
   // Generic fallbacks
   if (reasons.length === 0) {
-    reasons.push({ text: `ML model pattern analysis assigned ${category} category`, weight: 50 });
-    if (cookie.isThirdParty)
-      reasons.push({ text: 'Third-party origin factored into classification', weight: 20 });
-    if (cookie.expiry_days)
-      reasons.push({ text: `Expiry duration (${cookie.expiry_days || 'session'}) matches ${category} patterns`, weight: 15 });
+    reasons.push({
+      text: `No model explanation was returned. Classification source: ${cookie.classificationSource || 'unknown'}`,
+      weight: 100,
+    });
   }
 
   // Normalize weights to sum to 100
@@ -153,20 +152,10 @@ function getClassificationReasons(cookie) {
 
 // Alternative category probabilities
 function getAlternativeProbabilities(cookie) {
-  const main = cookie.mlClassification || cookie.category;
-  const conf = cookie.mlConfidence || 0.5;
-  const remaining = 1 - conf;
-
-  const categories = ['Strictly Necessary', 'Functional', 'Analytics', 'Marketing'];
-  const others = categories.filter(c => c !== main);
-
-  // Distribute remaining probability
-  const weights = others.map(() => Math.random());
-  const wSum = weights.reduce((s, w) => s + w, 0);
-  return others.map((cat, i) => ({
-    category: cat,
-    probability: Math.round((weights[i] / wSum) * remaining * 100)
-  })).sort((a, b) => b.probability - a.probability);
+  return (cookie.mlAlternativePredictions || []).map((alternative) => ({
+    category: alternative.category,
+    probability: Math.round((alternative.probability ?? 0) * 100),
+  }));
 }
 
 function getRiskColor(score) {
@@ -185,7 +174,7 @@ function CookieDetailModal({ cookie, onClose, onOverride }) {
   const risk = calculateCookieRiskScore(cookie);
   const reasons = getClassificationReasons(cookie);
   const alternatives = getAlternativeProbabilities(cookie);
-  const confidence = Math.round((cookie.mlConfidence || 0.5) * 100);
+  const confidence = Math.round((cookie.mlConfidence ?? 0) * 100);
   const category = cookie.mlClassification || cookie.category || 'Unknown';
 
   const sections = [
@@ -272,15 +261,12 @@ function CookieDetailModal({ cookie, onClose, onOverride }) {
               <div className="cdm-card">
                 <h3 className="cdm-card__title">
                   <Info size={16} />
-                  Why {category}?
+                  Observed signals for {category}
                 </h3>
+                <p className="cdm-card__note">These are factual heuristics, not model feature attributions.</p>
                 <div className="cdm-reasons">
                   {reasons.map((r, i) => (
                     <div key={i} className="cdm-reason">
-                      <div className="cdm-reason__bar">
-                        <div className="cdm-reason__fill" style={{ width: `${r.weight}%` }} />
-                      </div>
-                      <span className="cdm-reason__pct">{r.weight}%</span>
                       <span className="cdm-reason__text">{r.text}</span>
                     </div>
                   ))}
@@ -299,6 +285,9 @@ function CookieDetailModal({ cookie, onClose, onOverride }) {
                       <span className="cdm-alt__pct">{alt.probability}%</span>
                     </div>
                   ))}
+                  {alternatives.length === 0 && (
+                    <span className="cdm-alt__empty">No model alternatives were returned.</span>
+                  )}
                 </div>
               </div>
 

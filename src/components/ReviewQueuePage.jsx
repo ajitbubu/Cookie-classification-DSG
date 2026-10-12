@@ -1,25 +1,17 @@
 import React, { useState, useMemo, useCallback, useRef } from 'react';
-import {
-  ArrowLeft,
-  Shield,
-  AlertTriangle,
-  CheckCircle,
-  XCircle,
-  Cookie,
-  Globe,
-  Filter,
-  Search,
-  ChevronDown,
-  Zap,
-  Eye,
-  ThumbsUp,
-  BarChart3,
-  Clock,
-  AlertCircle,
-} from 'lucide-react';
+import { Shield, CheckCircle, Search, ThumbsUp, Check } from 'lucide-react';
+import Modal from './ui/Modal';
+import Button from './ui/Button';
+import EmptyState from './ui/EmptyState';
+import './ui/DataTable.css';
+import { CategoryTag, Chip } from './ui/Chip';
+import { ruleBasedClassify } from '../lib/classificationPolicy';
+import { manualCheckPrompt, needsManualCheck, recordApproval } from '../lib/reviewQueue';
+import { publishCategory, publishCategories, publishSummary } from '../lib/categoryApi';
+import { useToast } from './Toast';
 import './ReviewQueuePage.css';
 
-const ReviewQueuePage = ({ scanHistory, domainHistory, onNavigate }) => {
+const ReviewQueuePage = ({ scanHistory }) => {
   const [activeTab, setActiveTab] = useState('high'); // 'high', 'quick', 'validation'
   const [selectedDomain, setSelectedDomain] = useState('all');
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -31,6 +23,15 @@ const ReviewQueuePage = ({ scanHistory, domainHistory, onNavigate }) => {
   const [showNotification, setShowNotification] = useState(false);
   const [notificationMessage, setNotificationMessage] = useState('');
   const [bulkApproving, setBulkApproving] = useState(false);
+  const [confirming, setConfirming] = useState(null); // { cookieKey, cookie, category } awaiting 12A confirmation
+  // Per-row publish outcome (E4): { status: 'saving' | 'unpublished' | 'error', category }
+  const [rowState, setRowState] = useState({});
+  const toast = useToast();
+  const setRow = (key, value) => setRowState((prev) => {
+    const next = { ...prev };
+    if (value) next[key] = value; else delete next[key];
+    return next;
+  });
 
   // Extract all cookies from most recent scans per domain
   const allCookies = useMemo(() => {
@@ -140,32 +141,46 @@ const ReviewQueuePage = ({ scanHistory, domainHistory, onNavigate }) => {
     setTimeout(() => setShowNotification(false), 3000);
   };
 
+  const logApproval = (cookieKey, cookie, category) => recordApproval({
+    key: cookieKey,
+    name: cookie?.name,
+    domain: cookie?.domain || cookie?.scanDomain,
+    originalCategory: cookie?.mlClassification || cookie?.category,
+    approvedCategory: category,
+    confidence: getConfidence(cookie || {}),
+  });
+
+  // An approval only counts once it is published (eng R1/R4): the API can save
+  // to its file fallback and still answer success with knowledge_base_updated: false.
+  const approveNow = async (cookieKey, cookie, category) => {
+    setRow(cookieKey, { status: 'saving', category });
+    try {
+      const { published } = await publishCategory({
+        scanId: cookie.scanId, name: cookie.name, domain: cookie.domain, oldCategory: cookie.category, newCategory: category,
+      });
+      if (published) {
+        logApproval(cookieKey, cookie, category);
+        setApprovedCookies((prev) => new Set(prev).add(cookieKey));
+        setRow(cookieKey, null);
+        toast.success(`${cookie.name} approved as ${category}`);
+      } else {
+        setRow(cookieKey, { status: 'unpublished', category });
+        toast.warning('Saved, but not published: the database is unavailable.');
+      }
+    } catch {
+      setRow(cookieKey, { status: 'error', category });
+    }
+  };
+
+  // Decision 12A: a suggestion made without identity evidence needs an explicit confirmation.
   const handleApproveCookie = useCallback(
     (cookieKey, cookie) => {
       const chosenCat = categoryOverrides[cookieKey] || cookie?.mlClassification || cookie?.category || 'Unclassified';
-
-      // Save approval to localStorage for audit trail
-      try {
-        const reviewLog = JSON.parse(localStorage.getItem('reviewQueueApprovals') || '[]');
-        reviewLog.push({
-          cookieKey,
-          name: cookie?.name,
-          domain: cookie?.domain || cookie?.scanDomain,
-          originalCategory: cookie?.mlClassification || cookie?.category,
-          approvedCategory: chosenCat,
-          confidence: getConfidence(cookie || {}),
-          action: 'approved',
-          timestamp: new Date().toISOString(),
-        });
-        localStorage.setItem('reviewQueueApprovals', JSON.stringify(reviewLog));
-      } catch (e) { /* storage full — continue */ }
-
-      const newApproved = new Set(approvedCookies);
-      newApproved.add(cookieKey);
-      setApprovedCookies(newApproved);
-      notify(`Approved as "${chosenCat}"`);
+      if (needsManualCheck(cookie)) setConfirming({ cookieKey, cookie, category: chosenCat });
+      else approveNow(cookieKey, cookie, chosenCat);
     },
-    [approvedCookies, categoryOverrides]
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- approveNow reads current state when called
+    [categoryOverrides]
   );
 
   const handleSkipCookie = useCallback(
@@ -198,19 +213,42 @@ const ReviewQueuePage = ({ scanHistory, domainHistory, onNavigate }) => {
   }, [selectedForBulk]);
 
   const handleBulkApprove = useCallback(() => {
-    const target = selectedForBulk.size > 0 ? selectedForBulk : new Set(filteredCookies.map(c => `${c.scanDomain}:${c.name}`));
-    const count = target.size;
+    const keyOf = (c) => `${c.scanDomain}:${c.name}`;
+    const pool = selectedForBulk.size > 0 ? filteredCookies.filter((c) => selectedForBulk.has(keyOf(c))) : filteredCookies;
+    // Manual-check rows (12A) each need their own confirmation, so bulk skips them.
+    const target = pool.filter((c) => !needsManualCheck(c) && !approvedCookies.has(keyOf(c)));
+    const held = pool.length - pool.filter((c) => !needsManualCheck(c)).length;
+    const count = target.length;
     if (!window.confirm(`Approve ${count} cookie${count !== 1 ? 's' : ''} in this queue?`)) {
       return;
     }
     setBulkApproving(true);
-    const newApproved = new Set(approvedCookies);
-    target.forEach(key => newApproved.add(key));
-    setApprovedCookies(newApproved);
+    const categoryOf = (c) => categoryOverrides[keyOf(c)] || c.mlClassification || c.category || 'Unclassified';
+    publishCategories(target.map((c) => ({
+      scanId: c.scanId, name: c.name, domain: c.domain, oldCategory: c.category, newCategory: categoryOf(c),
+    })))
+      .then(({ total, published, publishedNames }) => {
+        const done = new Set(publishedNames);
+        const newApproved = new Set(approvedCookies);
+        target.forEach((c) => {
+          if (done.has(c.name)) {
+            logApproval(keyOf(c), c, categoryOf(c));
+            newApproved.add(keyOf(c));
+            setRow(keyOf(c), null);
+          } else {
+            setRow(keyOf(c), { status: 'unpublished', category: categoryOf(c) });
+          }
+        });
+        setApprovedCookies(newApproved);
+        const summary = publishSummary({ total, published });
+        toast[summary.tone](summary.text);
+      })
+      .catch(() => target.forEach((c) => setRow(keyOf(c), { status: 'error', category: categoryOf(c) })))
+      .finally(() => setBulkApproving(false));
     setSelectedForBulk(new Set());
-    notify(`${count} cookie${count !== 1 ? 's' : ''} approved`);
-    setBulkApproving(false);
-  }, [filteredCookies, approvedCookies, selectedForBulk]);
+    if (held) notify(`${held} ${held === 1 ? 'needs' : 'need'} a manual check and stayed in the queue`);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- logApproval/notify are stable helpers
+  }, [filteredCookies, approvedCookies, selectedForBulk, categoryOverrides]);
 
   const displayedCookies = filteredCookies.filter(
     (cookie) => {
@@ -229,288 +267,188 @@ const ReviewQueuePage = ({ scanHistory, domainHistory, onNavigate }) => {
     pending: allCookies.length - approvedCookies.size - skippedCookies.size,
   };
 
+  const TABS = [
+    ['high', 'High priority', queueStats.high],
+    ['quick', 'Quick review', queueStats.quick],
+    ['validation', 'Validation', queueStats.validation],
+  ];
+  const allSelected = displayedCookies.length > 0 && displayedCookies.every((c) => selectedForBulk.has(`${c.scanDomain}:${c.name}`));
+
   return (
-    <div className="rq-container">
-      {/* Header */}
-      <div className="rq-header">
-        <button
-          className="rq-back-button"
-          onClick={() => onNavigate('home')}
-          aria-label="Go back to home"
-        >
-          <ArrowLeft size={20} />
-        </button>
-        <div className="rq-header-content">
-          <h1 className="rq-title">Review Queue</h1>
-          <div className="rq-stats-bar">
-            <div className="rq-stat">
-              <span className="rq-stat-label">Total Pending</span>
-              <span className="rq-stat-value">{queueStats.pending}</span>
-            </div>
-            <div className="rq-stat-divider" />
-            <div className="rq-stat">
-              <span className="rq-stat-label">High Priority</span>
-              <span className="rq-stat-value rq-high">{queueStats.high}</span>
-            </div>
-            <div className="rq-stat-divider" />
-            <div className="rq-stat">
-              <span className="rq-stat-label">Quick Review</span>
-              <span className="rq-stat-value rq-quick">{queueStats.quick}</span>
-            </div>
-            <div className="rq-stat-divider" />
-            <div className="rq-stat">
-              <span className="rq-stat-label">Validation</span>
-              <span className="rq-stat-value rq-validation">{queueStats.validation}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Tab Buttons */}
-      <div className="rq-tabs">
-        <button
-          className={`rq-tab ${activeTab === 'high' ? 'active' : ''}`}
-          onClick={() => setActiveTab('high')}
-        >
-          <AlertTriangle size={18} />
-          High Priority
-          {queueStats.high > 0 && (
-            <span className="rq-badge rq-badge-red">{queueStats.high}</span>
-          )}
-        </button>
-        <button
-          className={`rq-tab ${activeTab === 'quick' ? 'active' : ''}`}
-          onClick={() => setActiveTab('quick')}
-        >
-          <Zap size={18} />
-          Quick Review
-          {queueStats.quick > 0 && (
-            <span className="rq-badge rq-badge-amber">{queueStats.quick}</span>
-          )}
-        </button>
-        <button
-          className={`rq-tab ${activeTab === 'validation' ? 'active' : ''}`}
-          onClick={() => setActiveTab('validation')}
-        >
-          <Eye size={18} />
-          Validation
-          {queueStats.validation > 0 && (
-            <span className="rq-badge rq-badge-green">{queueStats.validation}</span>
-          )}
-        </button>
-      </div>
-
-      {/* Filters and Search */}
-      <div className="rq-controls">
-        <div className="rq-search-wrapper">
-          <Search size={18} className="rq-search-icon" />
-          <input
-            type="text"
-            placeholder="Search by cookie name..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="rq-search-input"
-          />
-        </div>
-
-        <select
-          value={selectedDomain}
-          onChange={(e) => setSelectedDomain(e.target.value)}
-          className="rq-filter-select"
-        >
-          <option value="all">All Domains</option>
-          {domains.map((domain) => (
-            <option key={domain} value={domain}>
-              {domain}
-            </option>
-          ))}
-        </select>
-
-        <select
-          value={selectedCategory}
-          onChange={(e) => setSelectedCategory(e.target.value)}
-          className="rq-filter-select"
-        >
-          <option value="all">All Categories</option>
-          {categories.map((cat) => (
-            <option key={cat} value={cat}>
-              {cat}
-            </option>
-          ))}
-        </select>
-
+    <section className="rq-panel" aria-labelledby="rq-title">
+      <div className="rq-panel__head">
+        <h2 id="rq-title" className="rq-title">
+          Pending review queue
+          <Chip tone="count">{`${queueStats.pending} Items`}</Chip>
+        </h2>
         {displayedCookies.length > 0 && (
-          <div className="rq-bulk-actions">
-            <label className="rq-select-all-check">
-              <input
-                type="checkbox"
-                checked={displayedCookies.length > 0 && displayedCookies.every(c => selectedForBulk.has(`${c.scanDomain}:${c.name}`))}
-                onChange={toggleSelectAll}
-              />
-              <span>Select All ({displayedCookies.length})</span>
-            </label>
-            <button className="rq-bulk-approve-btn" onClick={handleBulkApprove} disabled={bulkApproving}>
-              <ThumbsUp size={16} />
-              {bulkApproving ? 'Approving...'
-                : selectedForBulk.size > 0 ? `Approve Selected (${selectedForBulk.size})`
-                : `Approve All (${displayedCookies.length})`}
-            </button>
-          </div>
+          <Button variant="success" icon={ThumbsUp} onClick={handleBulkApprove} disabled={bulkApproving}>
+            {bulkApproving ? 'Approving…'
+              : selectedForBulk.size > 0 ? `Approve Selected (${selectedForBulk.size})`
+              : `Approve All (${displayedCookies.length})`}
+          </Button>
         )}
       </div>
 
-      {/* Notification */}
+      {/* Queues as UCM underline tabs */}
+      <div className="rq-tabs" role="tablist" aria-label="Review queues">
+        {TABS.map(([id, label, count]) => (
+          <button
+            key={id}
+            type="button"
+            role="tab"
+            aria-selected={activeTab === id}
+            className="rq-tab"
+            onClick={() => setActiveTab(id)}
+          >
+            {label}
+            <span className="rq-tab__count">{count}</span>
+          </button>
+        ))}
+      </div>
+
+      <div className="rq-controls">
+        <label className="rq-search">
+          <Search size={18} aria-hidden="true" />
+          <input
+            type="search"
+            aria-label="Search review queue"
+            placeholder="Search by cookie name"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </label>
+        <select aria-label="Domain" value={selectedDomain} onChange={(e) => setSelectedDomain(e.target.value)} className="rq-select">
+          <option value="all">All domains</option>
+          {domains.map((domain) => <option key={domain} value={domain}>{domain}</option>)}
+        </select>
+        <select aria-label="Category" value={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)} className="rq-select">
+          <option value="all">All categories</option>
+          {categories.map((cat) => <option key={cat} value={cat}>{cat}</option>)}
+        </select>
+      </div>
+
       {showNotification && (
-        <div className="rq-notification">
-          <CheckCircle size={18} />
+        <div className="rq-notification" role="status">
+          <CheckCircle size={16} aria-hidden="true" />
           {notificationMessage}
         </div>
       )}
 
-      {/* Cookies List or Empty State */}
-      <div className="rq-content">
-        {displayedCookies.length === 0 ? (
-          <div className="rq-empty-state">
-            <Shield size={64} className="rq-empty-icon" />
-            <h2 className="rq-empty-title">All caught up!</h2>
-            <p className="rq-empty-description">
-              {approvedCookies.size > 0 && (approvedCookies.size + skippedCookies.size) >= allCookies.length
-                ? 'You have reviewed all cookies in this queue.'
-                : 'No cookies to review in this queue.'}
-            </p>
-          </div>
-        ) : (
-          <div className="rq-cards-grid">
-            {displayedCookies.map((cookie) => {
-              const cookieKey = `${cookie.scanDomain}:${cookie.name}`;
-              const isApproved = approvedCookies.has(cookieKey);
-              const conf = getConfidence(cookie);
-              const confidencePercent = Math.round(conf * 100);
-              const confidenceLevel = conf >= 0.85 ? 'high' : conf >= 0.65 ? 'medium' : 'low';
-              const chosenCategory = categoryOverrides[cookieKey] || cookie.mlClassification || cookie.category || '';
+      {displayedCookies.length === 0 ? (
+        <EmptyState
+          icon={Shield}
+          title="Nothing to review"
+          description={approvedCookies.size > 0 && (approvedCookies.size + skippedCookies.size) >= allCookies.length
+            ? 'You have reviewed every cookie in this queue.'
+            : 'Every model suggestion in this queue has been handled.'}
+        />
+      ) : (
+        <div className="ui-table-scroll">
+          <table className="ui-table rq-table">
+            <caption className="ui-table__caption">Cookies awaiting review</caption>
+            <thead>
+              <tr>
+                <th scope="col" className="rq-check">
+                  <input type="checkbox" aria-label="Select all cookies" checked={allSelected} onChange={toggleSelectAll} />
+                </th>
+                <th scope="col">Cookie</th>
+                <th scope="col">Rule engine</th>
+                <th scope="col">Model suggestion</th>
+                <th scope="col" className="ui-table__cell--end">Model confidence</th>
+                <th scope="col">Category</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {displayedCookies.map((cookie) => {
+                const cookieKey = `${cookie.scanDomain}:${cookie.name}`;
+                const isApproved = approvedCookies.has(cookieKey);
+                const confidencePercent = Math.round(getConfidence(cookie) * 100);
+                const chosenCategory = categoryOverrides[cookieKey] || cookie.mlClassification || cookie.category || '';
+                const bullets = getExplanationBullets(cookie);
+                return (
+                  <tr key={cookieKey} data-active={selectedForBulk.has(cookieKey) || undefined}>
+                    <td className="rq-check">
+                      <input type="checkbox" aria-label={`Select ${cookie.name}`} checked={selectedForBulk.has(cookieKey)} onChange={() => toggleBulkSelect(cookieKey)} />
+                    </td>
+                    <th scope="row" className="rq-cookie">
+                      <span className="rq-cookie__name">{cookie.name}</span>
+                      <span className="rq-cookie__domain">{cookie.domain || cookie.scanDomain}</span>
+                      {bullets.length > 0 && (
+                        <details className="rq-why">
+                          <summary>{`Why ${cookie.mlClassification || 'this'}?`}</summary>
+                          <ul>{bullets.map((b) => <li key={b}>{b}</li>)}</ul>
+                        </details>
+                      )}
+                    </th>
+                    <td>{ruleBasedClassify(cookie)}</td>
+                    <td>
+                      <span className="rq-suggestion">
+                        <CategoryTag category={cookie.mlClassification} />
+                        {needsManualCheck(cookie) && <Chip tone="marketing" size="sm">Needs manual check</Chip>}
+                      </span>
+                    </td>
+                    <td className="ui-table__cell--end">{`${confidencePercent}%`}</td>
+                    <td>
+                      <select
+                        className="rq-select rq-select--row"
+                        aria-label={`Category for ${cookie.name}`}
+                        value={chosenCategory}
+                        onChange={(e) => setCategoryOverrides((prev) => ({ ...prev, [cookieKey]: e.target.value }))}
+                      >
+                        {!['Strictly Necessary', 'Functional', 'Analytics', 'Marketing'].includes(chosenCategory) && (
+                          <option value={chosenCategory}>{chosenCategory || 'Unclassified'}</option>
+                        )}
+                        {['Strictly Necessary', 'Functional', 'Analytics', 'Marketing'].map((cat) => <option key={cat} value={cat}>{cat}</option>)}
+                      </select>
+                    </td>
+                    <td>
+                      {rowState[cookieKey]?.status === 'unpublished' && (
+                        <span className="rq-row-state"><Chip tone="marketing" size="sm">Not published</Chip></span>
+                      )}
+                      {rowState[cookieKey]?.status === 'error' && (
+                        <span className="rq-row-state rq-row-state--error">{"Couldn't save. Try again."}</span>
+                      )}
+                      {['unpublished', 'error'].includes(rowState[cookieKey]?.status) ? (
+                        <Button size="sm" onClick={() => approveNow(cookieKey, cookie, rowState[cookieKey].category)}>Retry</Button>
+                      ) : (
+                      <span className="rq-actions">
+                        <Button variant="success" size="sm" icon={Check} onClick={() => handleApproveCookie(cookieKey, cookie)} disabled={isApproved || rowState[cookieKey]?.status === 'saving'}>
+                          {chosenCategory && chosenCategory !== (cookie.mlClassification || cookie.category) ? `Approve as ${chosenCategory}` : 'Approve'}
+                        </Button>
+                        <Button size="sm" onClick={() => handleSkipCookie(cookieKey)}>Skip</Button>
+                      </span>
+                      )}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      )}
 
-              return (
-                <div key={cookieKey} className={`rq-card ${isApproved ? 'approved' : ''} ${selectedForBulk.has(cookieKey) ? 'selected' : ''}`}>
-                  <div className="rq-card-header">
-                    <label className="rq-card-checkbox" onClick={e => e.stopPropagation()}>
-                      <input
-                        type="checkbox"
-                        checked={selectedForBulk.has(cookieKey)}
-                        onChange={() => toggleBulkSelect(cookieKey)}
-                      />
-                    </label>
-                    <div className="rq-cookie-info">
-                      <h3 className="rq-cookie-name">{cookie.name}</h3>
-                      <div className="rq-cookie-domain">
-                        <Globe size={14} />
-                        {cookie.domain || cookie.scanDomain}
-                      </div>
-                    </div>
-                    <span
-                      className={`rq-classification-badge rq-badge-${getCategoryColor(
-                        cookie.mlClassification
-                      )}`}
-                    >
-                      {cookie.mlClassification || 'Unclassified'}
-                    </span>
-                  </div>
-
-                  {/* Confidence Bar */}
-                  <div className="rq-confidence-section">
-                    <div className="rq-confidence-header">
-                      <span className="rq-confidence-label">AI Confidence</span>
-                      <span className="rq-confidence-value">{confidencePercent}%</span>
-                    </div>
-                    <div className="rq-confidence-bar">
-                      <div
-                        className={`rq-confidence-fill rq-confidence-${confidenceLevel}`}
-                        style={{ width: `${confidencePercent}%` }}
-                      />
-                    </div>
-                  </div>
-
-                  {/* Explanation */}
-                  <div className="rq-explanation">
-                    <p className="rq-explanation-title">Why {cookie.mlClassification}?</p>
-                    <ul className="rq-explanation-bullets">
-                      {getExplanationBullets(cookie).map((bullet, idx) => (
-                        <li key={idx}>{bullet}</li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Category Selection */}
-                  <div className="rq-category-selection">
-                    <p className="rq-category-label">Category</p>
-                    <div className="rq-category-options">
-                      {[
-                        'Strictly Necessary',
-                        'Functional',
-                        'Analytics',
-                        'Marketing',
-                      ].map((cat) => (
-                        <label key={cat} className={`rq-category-radio ${chosenCategory === cat ? 'selected' : ''}`}>
-                          <input
-                            type="radio"
-                            name={`category-${cookieKey}`}
-                            value={cat}
-                            checked={chosenCategory === cat}
-                            onChange={() => setCategoryOverrides(prev => ({ ...prev, [cookieKey]: cat }))}
-                          />
-                          <span>{cat}</span>
-                        </label>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Action Buttons */}
-                  <div className="rq-card-actions">
-                    <button
-                      className={`rq-btn rq-btn-approve ${
-                        activeTab === 'quick' ? 'prominent' : ''
-                      }`}
-                      onClick={() => handleApproveCookie(cookieKey, cookie)}
-                      disabled={isApproved}
-                    >
-                      <CheckCircle size={16} />
-                      {chosenCategory && chosenCategory !== (cookie.mlClassification || cookie.category)
-                        ? `Approve as ${chosenCategory}`
-                        : activeTab === 'quick' ? 'Approve AI Suggestion' : 'Approve'}
-                    </button>
-                    <button className="rq-btn rq-btn-skip" onClick={() => handleSkipCookie(cookieKey)}>
-                      <XCircle size={16} />
-                      Skip
-                    </button>
-                  </div>
-
-                  {isApproved && (
-                    <div className="rq-approved-badge">
-                      <CheckCircle size={16} />
-                      Approved
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
+      <Modal
+        open={Boolean(confirming)}
+        title="Approve without evidence?"
+        variant="confirm"
+        onClose={() => setConfirming(null)}
+        footer={(
+          <>
+            <Button variant="outline" size="modal" onClick={() => setConfirming(null)}>Cancel</Button>
+            <Button variant="success" size="modal" onClick={() => { const c = confirming; setConfirming(null); approveNow(c.cookieKey, c.cookie, c.category); }}>
+              {confirming ? `Approve ${confirming.category}` : 'Approve'}
+            </Button>
+          </>
         )}
-      </div>
-    </div>
+      >
+        {confirming && <p className="rq-confirm-text">{manualCheckPrompt(confirming.category)}</p>}
+      </Modal>
+    </section>
   );
 };
 
-// Helper function to get category color class
-function getCategoryColor(category) {
-  const colorMap = {
-    'Strictly Necessary': 'green',
-    'Functional': 'blue',
-    'Analytics': 'amber',
-    'Marketing': 'red',
-  };
-  return colorMap[category] || 'gray';
-}
-
-// Helper function to generate explanation bullets
 function getExplanationBullets(cookie) {
   const bullets = [];
 

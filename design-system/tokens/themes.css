@@ -167,19 +167,76 @@
 
   --color-text:           #0B1020;
   --color-text-secondary: #44506C;
-  --color-text-muted:     #717E9B;
+  /* Text tokens below are tuned for WCAG AA (4.5:1) at 12px, measured against the
+     tightest background each is actually used on:
+       --color-text-muted  -> --color-surface-inset (#F3F6FC), used by .ds-table th
+       --color-*-text      -> the 16% semantic tint over --color-surface
+     Was #717E9B (3.76:1 on inset) / #0B7A60 / #97690A / #0E7490 (all < 4.5:1). */
+  --color-text-muted:     #66718C;
   --color-text-inverse:   #FFFFFF;
 
   --color-primary-text:   #2C4FCB;
-  --color-info-text:      #0E7490;
+  --color-info-text:      #0E728D;
 
   --color-safe:           #0E9F7E;
-  --color-safe-text:      #0B7A60;
+  --color-safe-text:      #0B785E;
   --color-warning:        #B7820A;
-  --color-warning-text:   #97690A;
+  --color-warning-text:   #8B6109;
   --color-critical:       #E0335E;
   --color-critical-text:  #C21E47;
 
   --shadow-card:   0 6px 18px rgba(15, 23, 42, 0.08);
   --shadow-raised: 0 12px 28px rgba(15, 23, 42, 0.14);
+}
+
+/* ============================ DATASAFEGUARD · LIGHT (default) =============== */
+/* Seeds from the UCM Figma file (Bi6sVvyRvY6UaHrwjCXBZh). Components reference
+   only the semantic tokens below; the Figma names live in comments.
+   Contrast fixes per plan decision 19A (docs/plans/ucm-figma-redesign.md):
+     Figma green  #1CC279 (white text 2.32:1) -> --color-safe-solid     #0B7A4B (5.39:1)
+     Figma red    #E94141 (white text 3.96:1) -> --color-critical-solid #C42B2B (5.63:1)
+     Figma yellow #FDBD5B chips carry navy text (9.62:1), never white
+     Tab labels are navy on --color-tab-bar #CBDCF6 (11.52:1)
+     Gray/80 #AFAEAE (2.21:1) is never a text colour. */
+[data-theme="datasafeguard"] {
+  /* Data Safeguard UCM design system (https://claude.ai/artifact/3wguTnHx69YLGQ3usi6Dun,
+     tokens vendored in src/styles/ucm-tokens.css). Values match it exactly,
+     including its documented sub-AA pairs (DESIGN.md "Contrast exceptions"). */
+  color-scheme: light;
+  --brand-primary:        #3979BD; /* --ucm-brand-accent */
+  --brand-primary-hover:  #2F659E;
+  --brand-accent:         #3979BD;
+
+  --color-canvas:         #F0F1F6; /* --ucm-page */
+  --color-canvas-sunken:  #E6E8EF;
+  --color-surface:        #FFFFFF; /* --ucm-surface */
+  --color-surface-raised: #F6F9FD; /* --ucm-row-hover */
+  --color-surface-inset:  #F4F5F7; /* --ucm-surface-neutral */
+
+  --color-border:         #CBDCF6; /* --ucm-blue-4 */
+  --color-border-strong:  #B8CFF0; /* --ucm-input-border */
+  --color-border-subtle:  #CBDCF6; /* --ucm-blue-4 */
+
+  --color-text:           #092339; /* --ucm-navy */
+  --color-text-secondary: #425667; /* navy at 77% (UCM label opacity), flattened on white */
+  --color-text-muted:     #788692; /* navy at 55% (UCM timestamps), flattened on white */
+  --color-text-inverse:   #FFFFFF;
+
+  --color-primary-text:   #3979BD; /* --ucm-brand-accent: links, active tab */
+  --color-info-text:      #3979BD;
+
+  --color-safe:           #1CC279; /* --ucm-green-1: Schedule pill */
+  --color-safe-text:      #148018; /* --ucm-green-2 */
+  --color-safe-solid:     #148018; /* --ucm-green-2: Approve, Publish */
+  --color-warning:        #FDBD5B; /* --ucm-amber */
+  --color-warning-text:   #846534; /* --ucm-amber-ink */
+  --color-critical:       #E94141; /* --ucm-red */
+  --color-critical-text:  #E94141;
+  --color-critical-solid: #E94141;
+
+  --color-nav:            #112437; /* --ucm-sidebar */
+  --color-tab-bar:        #CBDCF6; /* --ucm-blue-4 */
+
+  --shadow-card:   0 4px 11.9px 0 rgb(0 0 0 / 0.06);           /* --ucm-shadow-card */
+  --shadow-raised: 0 4px 16px 0 rgb(145 158 171 / 0.14);       /* --ucm-shadow-stat */
 }

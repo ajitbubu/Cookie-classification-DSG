@@ -1,0 +1,14 @@
+.ui-panel-error {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  padding: 16px;
+  border-radius: var(--radius-md, 10px);
+  background: var(--ucm-optout-bg);
+  color: var(--ucm-red);
+}
+.ui-panel-error__icon { flex-shrink: 0; }
+.ui-panel-error__text { flex: 1; min-width: 160px; }
+
+

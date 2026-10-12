@@ -140,7 +140,7 @@ class CookieClassifier:
             for pattern in patterns:
                 if pattern in name:
                     return category
-        return "Uncategorized"
+        return "Unclassified"
     
     @classmethod
     def _is_third_party(cls, cookie_domain: str, page_domain: str) -> bool:
@@ -178,7 +178,7 @@ class CookieClassifier:
             "Marketing": "Used for advertising and marketing campaigns",
             "Functional": "Remembers user preferences and settings",
             "Social Media": "Enables social media sharing and integration",
-            "Uncategorized": "Purpose not identified"
+            "Unclassified": "Purpose not identified"
         }
         
         return purposes.get(category, "Unknown")
@@ -222,7 +222,7 @@ class CookieClassifier:
 
         for cookie in cookies:
             # Count by category
-            category = cookie.get("category", "Uncategorized")
+            category = cookie.get("category", "Unclassified")
             stats["byCategory"][category] = stats["byCategory"].get(category, 0) + 1
 
             # Count by type
@@ -258,7 +258,7 @@ class CookieClassifier:
             }
 
             for cookie in chunk:
-                category = cookie.get("category", "Uncategorized")
+                category = cookie.get("category", "Unclassified")
                 chunk_stats["byCategory"][category] += 1
 
                 cookie_type = cookie.get("type", "Unknown")

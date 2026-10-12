@@ -137,7 +137,7 @@ class FeatureExtractor:
         features.extend(self._extract_path_features(path))
         
         # Value features
-        features.extend(self._extract_value_features(value_sample))
+        features.extend(self._extract_value_features(value_sample, cookie))
         
         # Vendor features
         features.extend(self._extract_vendor_features(name, domain))
@@ -236,8 +236,25 @@ class FeatureExtractor:
             float(len(path))
         ]
     
-    def _extract_value_features(self, value: Optional[str]) -> List[float]:
-        """Extract features from cookie value."""
+    def _extract_value_features(
+        self,
+        value: Optional[str],
+        cookie: Optional[Dict[str, Any]] = None
+    ) -> List[float]:
+        """Extract features from cookie value.
+
+        Clients derive these three numbers in the browser and send them instead
+        of the raw value, so session tokens never reach this service. Falls back
+        to deriving them from ``value_sample`` for older clients that still send
+        it. The derived path must produce identical values to the fallback path.
+        """
+        if cookie is not None and cookie.get('value_length') is not None:
+            return [
+                float(cookie.get('value_length') or 0),
+                float(bool(cookie.get('value_is_uuid'))),
+                float(bool(cookie.get('value_is_base64')))
+            ]
+
         if value is None:
             value = ''
         return [

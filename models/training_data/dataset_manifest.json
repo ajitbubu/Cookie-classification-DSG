@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "columns": [
+    "observation_id",
+    "observed_at",
+    "site_domain",
+    "cookie_name",
+    "cookie_domain",
+    "path",
+    "expiry_days",
+    "secure",
+    "http_only",
+    "same_site",
+    "host_only",
+    "partitioned",
+    "setter_domain",
+    "label_category",
+    "label_source",
+    "dataset_source"
+  ],
+  "column_count": 16,
+  "dataset_source": "canonical_2026-01-24",
+  "sources": [
+    {
+      "file": "models/training_data/cookie_training_100k_train_80.csv",
+      "sha256": "d7472c07adc056e3c5e8116a4e186c0764454d01e397b73bddd46e1402199446",
+      "input_rows": 87249,
+      "accepted_rows": 80000,
+      "missing_identity": 7249,
+      "unsupported_label": 0
+    },
+    {
+      "file": "models/training_data/cookie_training_100k_test_20.csv",
+      "sha256": "579c4f7cfd1fc4c87a4705f5ee52fc6950a94379965e15da2a334067ca4fce74",
+      "input_rows": 20000,
+      "accepted_rows": 20000,
+      "missing_identity": 0,
+      "unsupported_label": 0
+    }
+  ],
+  "normalization": {
+    "normalized_rows": 100000,
+    "duplicate_rows_removed": 26999,
+    "contradictory_rows_removed": 0,
+    "output_rows": 73001
+  },
+  "label_distribution": {
+    "Analytics_Performance": 17454,
+    "Functional": 17234,
+    "Marketing_Advertising": 21321,
+    "Strictly_Necessary": 13162,
+    "Unclassified": 3830
+  },
+  "non_empty_values_by_column": {
+    "observation_id": 73001,
+    "observed_at": 0,
+    "site_domain": 73001,
+    "cookie_name": 73001,
+    "cookie_domain": 73001,
+    "path": 0,
+    "expiry_days": 73001,
+    "secure": 73001,
+    "http_only": 73001,
+    "same_site": 73001,
+    "host_only": 0,
+    "partitioned": 0,
+    "setter_domain": 0,
+    "label_category": 73001,
+    "label_source": 73001,
+    "dataset_source": 73001
+  },
+  "output": {
+    "file": "models/training_data/cookie_classification_production.csv",
+    "sha256": "c51e92a2669a4ca55457199b44c1dad8d9d9422c94ac1efa6f60cead6d021c53",
+    "bytes": 14605048
+  }
+}

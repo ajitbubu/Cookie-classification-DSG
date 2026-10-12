@@ -1,0 +1,45 @@
+/* Bulk Update Cookie Type drawer (Figma 12.13.08) */
+.bud-intro { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 24px; }
+.bud-intro__icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--ucm-border-neutral);
+  border-radius: 10px;
+  color: var(--ucm-navy);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+}
+.bud-intro__text { margin: 0; font: 400 16px/1.5 var(--font-sans); color: var(--ucm-navy); }
+
+.bud-count { margin: 0 0 8px; font: 500 18px/1.2 var(--font-sans); color: var(--ucm-navy); }
+
+.bud-list { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.bud-row { display: flex; align-items: center; gap: 12px; padding: 8px 0; }
+.bud-avatar {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--ucm-brand-accent);
+  color: var(--ucm-surface);
+}
+.bud-cookie { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
+.bud-name { font: 400 18px/1.2 var(--font-sans); color: var(--ucm-navy); overflow-wrap: anywhere; }
+.bud-domain { font: 400 15px/1.2 var(--font-sans); color: var(--color-text-secondary); }
+
+.bud-select {
+  width: 176px;
+  height: 50px;
+  padding: 0 14px;
+  border: 1px solid var(--ucm-blue-4);
+  border-radius: var(--ucm-radius-control);
+  background: var(--ucm-surface);
+  color: var(--color-text-secondary);
+  font: 400 18px/1 var(--font-sans);
+  box-shadow: 0 4px 8px rgba(145, 158, 171, 0.14);
+}
+.bud-select:focus-visible { outline: 2px solid var(--ucm-brand-accent); outline-offset: 1px; }

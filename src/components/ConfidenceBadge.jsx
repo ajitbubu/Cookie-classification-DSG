@@ -13,6 +13,8 @@ function ConfidenceBadge({
   cookieName,
   mlClassification,
   actualCategory,
+  classificationSource = 'ml_prediction',
+  classificationStatus = 'classified',
   onConfirm,
   onIgnore
 }) {
@@ -23,6 +25,7 @@ function ConfidenceBadge({
   const confidencePercent = Math.round((confidence || 0) * 100);
   const level = (confidenceLevel || 'low').toLowerCase();
   const hasDisagreement = actualCategory && actualCategory !== mlClassification;
+  const isModelResult = classificationSource === 'ml_prediction';
 
   // Trap focus inside modal for accessibility
   useEffect(() => {
@@ -40,12 +43,11 @@ function ConfidenceBadge({
       icon: TrendingUp,
       description: `The ML model is ${confidencePercent}% confident in this classification.`,
       signals: [
-        'Strong pattern match with training data',
-        'Cookie name and properties align with known patterns',
-        'Multiple features support this classification',
-        'Low uncertainty in prediction'
+        'The model returned a score above the high-confidence threshold',
+        'Interpret the score with its model version and classification source',
+        'Production calibration is not yet independently verified'
       ],
-      recommendation: 'This classification is highly reliable and can be trusted.',
+      recommendation: 'Eligible for automatic use only when the caller has explicitly enabled the configured policy.',
       recType: 'positive'
     },
     medium: {
@@ -53,12 +55,11 @@ function ConfidenceBadge({
       icon: AlertTriangle,
       description: `The ML model is ${confidencePercent}% confident in this classification.`,
       signals: [
-        'Moderate pattern match with training data',
-        'Some features support this classification',
-        'Cookie properties partially align with known patterns',
-        'Some uncertainty in prediction'
+        'The score falls in the configured review range',
+        'This result has not met the auto-classification threshold',
+        'Manual review can provide a verified label'
       ],
-      recommendation: 'Review recommended — classification is reasonably reliable but not certain.',
+      recommendation: 'Review recommended — this score is model output, not verified ground truth.',
       recType: 'caution'
     },
     low: {
@@ -66,15 +67,42 @@ function ConfidenceBadge({
       icon: Info,
       description: `The ML model is only ${confidencePercent}% confident in this classification.`,
       signals: [
-        'Weak pattern match with training data',
-        'Cookie name or properties are unusual',
-        'Limited features support this classification',
-        'High uncertainty in prediction'
+        'The score is below the configured classification threshold',
+        'No claim is made about why the model produced this score',
+        'Treat the result as an abstention until reviewed'
       ],
       recommendation: 'Manual review is strongly recommended to verify this classification.',
       recType: 'warning'
     }
   };
+
+  if (!isModelResult) {
+    levelConfig.low = {
+      title: 'Rule fallback',
+      icon: Info,
+      description: 'The ML service was unavailable. Deterministic rules supplied this suggestion with no model confidence.',
+      signals: [
+        `Classification source: ${classificationSource}`,
+        'Confidence is intentionally recorded as 0%',
+        'Manual review is required',
+      ],
+      recommendation: 'Review this rule-based suggestion before publishing it.',
+      recType: 'warning',
+    };
+  } else if (classificationStatus === 'abstained') {
+    levelConfig.low = {
+      title: 'Model abstained',
+      icon: Info,
+      description: `The ${confidencePercent}% score did not meet the configured classification threshold.`,
+      signals: [
+        'No known category was automatically assigned',
+        'The model suggestion is retained only for review',
+        'Manual verification is required',
+      ],
+      recommendation: 'Choose a category only after reviewing the cookie evidence.',
+      recType: 'warning',
+    };
+  }
 
   const config = levelConfig[level] || levelConfig.low;
   const Icon = config.icon;
