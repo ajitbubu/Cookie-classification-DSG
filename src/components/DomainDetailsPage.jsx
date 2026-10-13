@@ -61,7 +61,7 @@ const matches = (q, ...fields) => !q || fields.some((f) => (f || '').toLowerCase
 
 // Domain Details (Figma 12.12.31 overview, 12.12.39 cookies, 12.13.22
 // categories, 12.13.30 pages, 12.13.36 vendors). Versions are the domain's
-// stored scans; Publish is browser-local until the backend stores publishes.
+// stored scans; Publish is saved in the scan store.
 function DomainDetailsPage({
   scan, versions = [], currentVersionId, published, onPublish, onScanNow, onExport, onReview, onBulkUpdate, tableProps = {},
   initialTab = 'overview', onTabChange, onBack,
@@ -250,7 +250,6 @@ function DomainDetailsPage({
               },
             ]}
           />
-          <p className="dd-note">Publishing is saved in this browser until the backend can store it.</p>
         </section>
 
         <section className="dd-risk" aria-labelledby="dd-risk">

@@ -1,120 +1,17 @@
 /**
- * Scan-history persistence helpers.
+ * Browser-local scan state and history limits.
  *
  * Framework-free per the `src/lib/` convention — no React imports.
  *
- * Scan history is kept in localStorage, which has a hard quota. When a write
- * exceeds it we progressively drop the heaviest field (`fullResults`) rather
- * than losing the history entirely. The caller needs to know which tier was
- * reached so it can tell the user: this used to return a bare boolean that
- * nothing checked, so quota loss was invisible outside the console.
- */
-
-/** @typedef {'ok' | 'pruned' | 'failed'} WriteStatus */
-
-/** Strip `fullResults` from entries, keeping the newest when `keepFirst`. */
-function stripFullResults(data, keepFirst) {
-  const strip = (entry, i) =>
-    keepFirst && i === 0 ? entry : { ...entry, fullResults: undefined };
-
-  return Array.isArray(data)
-    ? data.map(strip)
-    : Object.fromEntries(
-        Object.entries(data).map(([domain, scans]) => [domain, scans.map(strip)])
-      );
-}
-
-/**
- * Write to localStorage, shedding detail as needed to fit the quota.
- *
- * @param {string} key
- * @param {unknown} data
- * @returns {WriteStatus} `ok` full write, `pruned` saved without some detail,
- *   `failed` nothing was saved.
- */
-export function writeLocalStorage(key, data) {
-  try {
-    localStorage.setItem(key, JSON.stringify(data));
-    return 'ok';
-  } catch {
-    // Quota exceeded — keep the newest entry whole, strip detail from the rest.
-    try {
-      localStorage.setItem(key, JSON.stringify(stripFullResults(data, true)));
-      return 'pruned';
-    } catch {
-      // Still too big — drop detail from everything.
-      try {
-        localStorage.setItem(key, JSON.stringify(stripFullResults(data, false)));
-        return 'pruned';
-      } catch (e) {
-        console.error(`Cannot save "${key}" even after pruning:`, e);
-        return 'failed';
-      }
-    }
-  }
-}
-
-/*
- * Readers for the browser-stored data the redesigned screens use (plan 7.1,
- * E2). Entries are capped and the capped copy is saved back. Every entry
- * keeps its `fullResults`; detail is only shed by writeLocalStorage when the
- * quota is actually hit. Malformed data resets to empty instead of crashing.
+ * Scans, schedules, publishes and approvals live in the scan store
+ * (lib/scanApi.js). Only the in-progress scan record stays in this browser,
+ * because it describes this tab.
  */
 export const MAX_SCAN_HISTORY = 50;
 export const MAX_SCANS_PER_DOMAIN = 10;
 
 function saveQuietly(key, data) {
-  try { localStorage.setItem(key, JSON.stringify(data)); } catch { /* quota: writeLocalStorage handles real writes */ }
-}
-
-export function readScanHistory() {
-  try {
-    const saved = localStorage.getItem('cookieScanHistory');
-    if (!saved) return [];
-    const parsed = JSON.parse(saved);
-    if (!Array.isArray(parsed)) {
-      localStorage.removeItem('cookieScanHistory');
-      return [];
-    }
-    const pruned = parsed.slice(0, MAX_SCAN_HISTORY);
-    saveQuietly('cookieScanHistory', pruned);
-    return pruned;
-  } catch (e) {
-    console.error('Failed to load scan history:', e);
-    try { localStorage.removeItem('cookieScanHistory'); } catch { /* storage unavailable */ }
-    return [];
-  }
-}
-
-export function readDomainHistory() {
-  try {
-    const saved = localStorage.getItem('domainScanHistory');
-    if (!saved) return {};
-    const parsed = JSON.parse(saved);
-    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return {};
-    const pruned = {};
-    for (const [domain, scans] of Object.entries(parsed)) {
-      if (!Array.isArray(scans)) continue;
-      pruned[domain] = scans.slice(0, MAX_SCANS_PER_DOMAIN);
-    }
-    saveQuietly('domainScanHistory', pruned);
-    return pruned;
-  } catch {
-    return {};
-  }
-}
-
-export function readScheduledJobs() {
-  try {
-    const saved = localStorage.getItem('scheduledJobs');
-    if (!saved) return [];
-    const parsed = JSON.parse(saved);
-    return Array.isArray(parsed)
-      ? parsed.map((j) => ({ ...j, timerId: null, countdownId: null, timeLeft: null }))
-      : [];
-  } catch {
-    return [];
-  }
+  try { localStorage.setItem(key, JSON.stringify(data)); } catch { /* storage unavailable */ }
 }
 
 /*

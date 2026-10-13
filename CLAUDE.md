@@ -26,7 +26,7 @@ compliance. React dashboard on top of a Python scanning/classification backend.
 | Backend API | FastAPI (`backend/main.py`), Uvicorn/Gunicorn |
 | Scanning | Playwright, Firefox workers, `backend/scanner/`, `backend/worker/` |
 | ML classification | scikit-learn / XGBoost / SHAP, `backend/api/ml_classifier/` |
-| Data | PostgreSQL (`backend/db/`, SQL migrations), Redis (cache + Celery queue) |
+| Data | PostgreSQL (`backend/db/`, SQL migrations), MongoDB (scan store: scans, publishes, schedules, approvals — `backend/db/scan_store.py`, `/api/store`), Redis (cache + Celery queue) |
 | Backend tests | pytest + httpx + hypothesis, `tests/backend/` |
 | Infra | Docker Compose (`docker-compose.yml`, `docker/Dockerfile.*`), Nginx |
 
@@ -46,7 +46,7 @@ compliance. React dashboard on top of a Python scanning/classification backend.
 - `backend/db/` — SQLAlchemy/asyncpg access + hand-written SQL migrations
   (`backend/db/migrations/NNN_*.sql`, numbered sequentially, tracked in
   `MIGRATION_STATUS.md`).
-- Services communicate over Postgres + Redis; see `docker-compose.yml` for the full
+- Services communicate over Postgres, MongoDB + Redis; see `docker-compose.yml` for the full
   topology (api-gateway :1001, ml-api :8001→:8000, workers, frontend :5173, nginx).
 
 ## Commands
@@ -66,7 +66,7 @@ pytest tests/backend/ -v
 bash tests/run_api_tests.sh
 
 # Full stack
-docker compose up --build                            # redis, postgres, api-gateway, ml-api,
+docker compose up --build                            # redis, postgres, mongo, api-gateway, ml-api,
                                                        # 3 scanner workers, frontend, nginx
 ```
 

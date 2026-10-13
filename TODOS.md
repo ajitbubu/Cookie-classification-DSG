@@ -19,19 +19,16 @@
 
 ## Backend
 
-### Persist scans, domain versions and schedules (replace the redesign's mock data)
+### Persist scans, domain versions and schedules (mostly done: MongoDB scan store, 2026-10-12)
 
-- **What:** Postgres tables + API for scan history, domain versions (diffs, published-by, Publish), scheduled
-  jobs (cancel / reschedule) and per-domain pages / failed pages; then remove each mock source marked
-  `gstack-shortcut(dec-e124b922)` and its "Sample data" chip.
-- **Why:** Scan data lives only in one browser's localStorage, so teams cannot share results, and the
-  redesign's Version History, Publish, Cancel/Reschedule and Pages panels show sample data (decision 24C).
-- **Pros:** Real multi-user data; Publish and versions become real; every "Sample data" chip goes away.
-- **Cons:** Weeks of backend work plus SQL migrations (human ~3-4 wks / CC ~3-4 days).
-- **Context:** `docs/plans/ucm-figma-redesign.md` sections 7 and 7.1 list every mocked panel and its
-  current source. The backend exposes only `/api/scan` and `/api/scan-stream` for scans today. The
-  2026-08-05 CEO review blocked three items pending the same persistence investigation.
-- **Depends on / blocked by:** Nothing; unblocks removing the 24C mocks.
+- **Done:** Scans (with full results), published versions, scheduled jobs and review approvals live in
+  MongoDB (`mongo` service, `backend/db/scan_store.py`, `/api/store/*` in `backend/api/store_routes.py`).
+  The app loads them at startup (`src/lib/scanApi.js`), imports each browser's old localStorage copy
+  once, and shows "Couldn't load saved scans" with Retry when the store is down. No local copy is kept.
+- **Still open:** "Published By" (needs user accounts), and running scheduled jobs on the server:
+  timers still run in the open tab, so a schedule only fires while someone has the app open.
+- **Watch:** One scan is one Mongo document (16 MB limit); a very large deep scan's `fullResults` could
+  exceed it. The API also answers its first requests slowly (2-10 s) right after a restart.
 
 ## QA (2026-10-12, /qa on feat/ucm-figma-redesign)
 

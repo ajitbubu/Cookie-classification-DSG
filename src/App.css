@@ -2390,6 +2390,9 @@ section h2 {
 section.launch-page { display: flex; flex-direction: column; gap: 24px; margin: 0; padding: 0; border: none; border-radius: 0; background: transparent; }
 .launch-page__title { margin: 0; font: 500 18px/1.2 var(--font-sans); color: var(--ucm-navy); }
 
+/* Saved scans loading from the scan store */
+.store-status { margin: 0; font: 400 14px/1.4 var(--font-sans); color: var(--ucm-navy); }
+
 /* Figma page shell: tab bar and page content share one white panel that
    lines up with the header bar above it. */
 .page-panel {

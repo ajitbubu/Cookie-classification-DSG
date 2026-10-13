@@ -6,17 +6,19 @@
  */
 import { latestPerDomain } from './dashboard';
 import { ruleBasedClassify } from './classificationPolicy';
+import { saveApproval } from './scanApi';
 
 const UNPUBLISHED = new Set(['Unclassified', 'Uncategorized', 'Unknown']);
-const APPROVALS_KEY = 'reviewQueueApprovals';
+
+// The review log lives in the scan store; App loads it at startup.
+let approvals = [];
+
+export function loadApprovals(list) {
+  approvals = Array.isArray(list) ? [...list] : [];
+}
 
 export function readApprovals() {
-  try {
-    const parsed = JSON.parse(localStorage.getItem(APPROVALS_KEY) || '[]');
-    return Array.isArray(parsed) ? parsed : [];
-  } catch {
-    return [];
-  }
+  return approvals;
 }
 
 // Decision 12A: the model abstained for lack of identity evidence.
@@ -28,15 +30,12 @@ export function manualCheckPrompt(category) {
   return `The model had no name or vendor signal for this cookie. Approve ${category}?`;
 }
 
-export function recordApproval({ key, name, domain, originalCategory, approvedCategory, confidence }) {
-  const log = readApprovals();
-  log.push({ cookieKey: key, name, domain, originalCategory, approvedCategory, confidence, action: 'approved', timestamp: new Date().toISOString() });
-  try {
-    localStorage.setItem(APPROVALS_KEY, JSON.stringify(log));
-  } catch {
-    // Storage full or blocked: the approval still applies for this session.
-  }
-  return log;
+/** Save an approval to the store (throws if it can't), then return the updated log. */
+export async function recordApproval({ key, name, domain, originalCategory, approvedCategory, confidence }) {
+  const entry = { cookieKey: key, name, domain, originalCategory, approvedCategory, confidence, action: 'approved', timestamp: new Date().toISOString() };
+  await saveApproval(entry);
+  approvals = [...approvals.filter((a) => a.cookieKey !== key), entry];
+  return approvals;
 }
 
 const confidenceOf = (cookie) => {

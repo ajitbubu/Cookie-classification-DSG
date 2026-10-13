@@ -201,7 +201,7 @@ function DashboardPage({ scanHistory = [], launchControl, running = null, onNavi
         toast.warning('Saved, but not published: the database is unavailable.');
         return;
       }
-      setApprovals(recordApproval({
+      setApprovals(await recordApproval({
         key: item.key, name: item.name, domain: item.domain,
         originalCategory: item.suggestion, approvedCategory: category, confidence: item.confidence,
       }));

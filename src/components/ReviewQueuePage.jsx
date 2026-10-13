@@ -159,7 +159,7 @@ const ReviewQueuePage = ({ scanHistory }) => {
         scanId: cookie.scanId, name: cookie.name, domain: cookie.domain, oldCategory: cookie.category, newCategory: category,
       });
       if (published) {
-        logApproval(cookieKey, cookie, category);
+        await logApproval(cookieKey, cookie, category);
         setApprovedCookies((prev) => new Set(prev).add(cookieKey));
         setRow(cookieKey, null);
         toast.success(`${cookie.name} approved as ${category}`);
@@ -227,18 +227,22 @@ const ReviewQueuePage = ({ scanHistory }) => {
     publishCategories(target.map((c) => ({
       scanId: c.scanId, name: c.name, domain: c.domain, oldCategory: c.category, newCategory: categoryOf(c),
     })))
-      .then(({ total, published, publishedNames }) => {
+      .then(async ({ total, published, publishedNames }) => {
         const done = new Set(publishedNames);
         const newApproved = new Set(approvedCookies);
-        target.forEach((c) => {
-          if (done.has(c.name)) {
-            logApproval(keyOf(c), c, categoryOf(c));
+        await Promise.all(target.map(async (c) => {
+          if (!done.has(c.name)) {
+            setRow(keyOf(c), { status: 'unpublished', category: categoryOf(c) });
+            return;
+          }
+          try {
+            await logApproval(keyOf(c), c, categoryOf(c));
             newApproved.add(keyOf(c));
             setRow(keyOf(c), null);
-          } else {
-            setRow(keyOf(c), { status: 'unpublished', category: categoryOf(c) });
+          } catch {
+            setRow(keyOf(c), { status: 'error', category: categoryOf(c) });
           }
-        });
+        }));
         setApprovedCookies(newApproved);
         const summary = publishSummary({ total, published });
         toast[summary.tone](summary.text);

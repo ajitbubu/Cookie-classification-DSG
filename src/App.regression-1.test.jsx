@@ -29,9 +29,15 @@ const classifications = scanResponse.cookies.map((c) => ({
   confidence: 0.9, confidence_level: 'High', classification_status: 'review', source: 'ml_prediction',
 }));
 
-function routeFetch({ scanStatus = 200 } = {}) {
+function routeFetch({ scanStatus = 200, storeStatus = 200, stored = [] } = {}) {
   return vi.spyOn(globalThis, 'fetch').mockImplementation(async (url) => {
     const u = String(url);
+    if (u.startsWith('/api/store')) {
+      if (storeStatus !== 200) return { ok: false, status: storeStatus, json: async () => ({}) };
+      if (u.startsWith('/api/store/scans?')) return { ok: true, status: 200, json: async () => ({ scans: stored }) };
+      if (u === '/api/store/import') return { ok: true, status: 200, json: async () => ({ scans: 1, published: 0, schedules: 0, approvals: 0 }) };
+      return { ok: true, status: 200, json: async () => ({}) };
+    }
     if (u.includes('/api/scan')) {
       return scanStatus === 200
         ? { ok: true, status: 200, statusText: 'OK', json: async () => scanResponse }
@@ -68,16 +74,50 @@ describe('Quick scan from Launch New Scan (App wiring)', () => {
     expect(window.alert).not.toHaveBeenCalled();
   });
 
-  it('ISSUE-004: saves one history entry per scan, updated with the model results', async () => {
+  it('ISSUE-004: saves one record per scan, updated with the model results', async () => {
     routeFetch();
     renderApp();
     await startQuickScan('https://shop.com');
     await waitFor(() => expect(globalThis.fetch).toHaveBeenCalledWith('/api/v1/ml/classify', expect.anything()));
-    await waitFor(() => expect(JSON.parse(localStorage.getItem('cookieScanHistory') || '[]').length).toBeGreaterThan(0));
-    // let the ML-corrected save land
-    await new Promise((r) => setTimeout(r, 50));
-    const history = JSON.parse(localStorage.getItem('cookieScanHistory'));
-    expect(history).toHaveLength(1);
-    expect(JSON.parse(localStorage.getItem('domainScanHistory'))['shop.com']).toHaveLength(1);
+    const scanSaves = () => globalThis.fetch.mock.calls.filter(([u, init]) => String(u).startsWith('/api/store/scans/') && init?.method === 'PUT');
+    // raw save, then the ML-corrected save of the same scan
+    await waitFor(() => expect(scanSaves().length).toBeGreaterThanOrEqual(2));
+    expect(new Set(scanSaves().map(([u]) => u)).size).toBe(1);
+    expect(localStorage.getItem('cookieScanHistory')).toBeNull(); // the store is the only copy
+  });
+});
+
+describe('Saved scans load from the scan store', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    window.history.pushState({}, '', '/scanning/results');
+  });
+  afterEach(() => vi.restoreAllMocks());
+
+  it('shows stored scans on Scan Result', async () => {
+    routeFetch({ stored: [{ id: 's1', domain: 'stored.com', timestamp: '2026-10-12T09:00:00.000Z', totalCookies: 3, fullResults: { cookies: [] } }] });
+    renderApp();
+    expect(await screen.findByText('stored.com')).toBeInTheDocument();
+  });
+
+  it('says it could not load, with Retry, when the database is unavailable', async () => {
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    const fetchMock = routeFetch({ storeStatus: 503 });
+    renderApp();
+    expect(await screen.findByText(/Couldn't load saved scans/)).toBeInTheDocument();
+    fetchMock.mockRestore();
+    routeFetch({ stored: [{ id: 's1', domain: 'stored.com', timestamp: '2026-10-12T09:00:00.000Z', fullResults: { cookies: [] } }] });
+    await userEvent.click(screen.getByRole('button', { name: 'Retry' }));
+    expect(await screen.findByText('stored.com')).toBeInTheDocument();
+  });
+
+  it("moves this browser's saved scans to the store once, then clears them", async () => {
+    localStorage.setItem('cookieScanHistory', JSON.stringify([{ id: 'old1', domain: 'old.com', timestamp: '2026-10-01T09:00:00.000Z' }]));
+    routeFetch();
+    renderApp();
+    await waitFor(() => expect(globalThis.fetch).toHaveBeenCalledWith('/api/store/import', expect.objectContaining({ method: 'POST' })));
+    const body = JSON.parse(globalThis.fetch.mock.calls.find(([u]) => u === '/api/store/import')[1].body);
+    expect(body.scans.map((s) => s.id)).toEqual(['old1']);
+    await waitFor(() => expect(localStorage.getItem('cookieScanHistory')).toBeNull());
   });
 });

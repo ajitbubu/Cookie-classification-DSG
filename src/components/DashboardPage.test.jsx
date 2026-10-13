@@ -3,7 +3,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { render, screen, within, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import DashboardPage from './DashboardPage';
-import { readApprovals } from '../lib/reviewQueue';
+import { loadApprovals, readApprovals } from '../lib/reviewQueue';
 import { ToastProvider } from './Toast';
 import { LiveRegionProvider } from './ui/LiveRegion';
 
@@ -28,7 +28,7 @@ const mockFetch = (impl) => vi.spyOn(globalThis, 'fetch').mockImplementation(imp
 describe('DashboardPage', () => {
   beforeEach(() => {
     localStorage.removeItem('aiInsightsDismissed');
-    localStorage.removeItem('reviewQueueApprovals');
+    loadApprovals([]);
   });
   afterEach(() => vi.restoreAllMocks());
 

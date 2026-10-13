@@ -5,7 +5,7 @@ import userEvent from '@testing-library/user-event';
 import ReviewQueuePage from './ReviewQueuePage';
 import { ToastProvider } from './Toast';
 import { LiveRegionProvider } from './ui/LiveRegion';
-import { readApprovals } from '../lib/reviewQueue';
+import { loadApprovals, readApprovals } from '../lib/reviewQueue';
 
 const cookie = (name, extra = {}) => ({ name, domain: '.shop.com', category: 'Unclassified', mlClassification: 'Analytics', mlConfidence: 0.4, ...extra });
 const historyWith = (cookies) => [{ id: 's1', domain: 'shop.com', timestamp: '2026-10-11T10:00:00Z', fullResults: { cookies } }];
@@ -35,7 +35,7 @@ const card = (name) => screen.getByRole('rowheader', { name: new RegExp(`^${name
 const toastText = () => [...document.querySelectorAll('.toast__message')].map((t) => t.textContent).join(' | ');
 
 describe('ReviewQueuePage review rows (12A)', () => {
-  beforeEach(() => localStorage.removeItem('reviewQueueApprovals'));
+  beforeEach(() => loadApprovals([]));
   afterEach(() => vi.restoreAllMocks());
 
   it('is a UCM review table: Model confidence and Rule engine columns beside the suggestion', () => {

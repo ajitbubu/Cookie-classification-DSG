@@ -1,5 +1,5 @@
-import { describe, it, expect, beforeEach } from 'vitest';
-import { pendingReviews, readApprovals, recordApproval, needsManualCheck, manualCheckPrompt } from './reviewQueue';
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
+import { pendingReviews, loadApprovals, readApprovals, recordApproval, needsManualCheck, manualCheckPrompt } from './reviewQueue';
 
 const history = [
   { id: 'a2', domain: 'a.com', timestamp: '2026-10-11', fullResults: { cookies: [
@@ -25,13 +25,13 @@ describe('pendingReviews', () => {
 });
 
 describe('readApprovals', () => {
-  beforeEach(() => localStorage.removeItem('reviewQueueApprovals'));
+  beforeEach(() => loadApprovals([]));
 
-  it('reads the review log and tolerates bad data', () => {
+  it('reads the review log loaded from the store and tolerates bad data', () => {
     expect(readApprovals()).toEqual([]);
-    localStorage.setItem('reviewQueueApprovals', '{not json');
+    loadApprovals('{not a list');
     expect(readApprovals()).toEqual([]);
-    localStorage.setItem('reviewQueueApprovals', JSON.stringify([{ cookieKey: 'k' }]));
+    loadApprovals([{ cookieKey: 'k' }]);
     expect(readApprovals()).toEqual([{ cookieKey: 'k' }]);
   });
 });
@@ -53,13 +53,22 @@ describe('manual check (12A)', () => {
 });
 
 describe('recordApproval', () => {
-  beforeEach(() => localStorage.removeItem('reviewQueueApprovals'));
+  beforeEach(() => loadApprovals([]));
+  afterEach(() => vi.restoreAllMocks());
 
-  it('appends to the review log that pendingReviews reads', () => {
-    recordApproval({ key: 'a.com:_ga', name: '_ga', domain: '.a.com', originalCategory: 'Analytics', approvedCategory: 'Analytics', confidence: 0.9 });
+  it('saves to the store, then appends to the review log that pendingReviews reads', async () => {
+    const fetchMock = vi.spyOn(globalThis, 'fetch').mockResolvedValue({ ok: true, status: 200, json: async () => ({}) });
+    await recordApproval({ key: 'a.com:_ga', name: '_ga', domain: '.a.com', originalCategory: 'Analytics', approvedCategory: 'Analytics', confidence: 0.9 });
     const log = readApprovals();
     expect(log).toHaveLength(1);
     expect(log[0]).toMatchObject({ cookieKey: 'a.com:_ga', approvedCategory: 'Analytics', action: 'approved' });
     expect(pendingReviews(history, log).map((i) => i.name)).toEqual(['odd']);
+    expect(fetchMock).toHaveBeenCalledWith('/api/store/approvals', expect.objectContaining({ method: 'POST' }));
+  });
+
+  it('leaves the log unchanged when the store rejects the save', async () => {
+    vi.spyOn(globalThis, 'fetch').mockResolvedValue({ ok: false, status: 503, json: async () => ({}) });
+    await expect(recordApproval({ key: 'a.com:_ga', name: '_ga', approvedCategory: 'Analytics' })).rejects.toThrow('503');
+    expect(readApprovals()).toEqual([]);
   });
 });

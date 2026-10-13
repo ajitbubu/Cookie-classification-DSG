@@ -11,13 +11,16 @@ import {
 } from './lib/classificationPolicy';
 import Navbar from './components/Navbar';
 import CookieTabs from './components/CookieTabs';
+import PanelError from './components/ui/PanelError';
 import ActiveScanPage from './components/ActiveScanPage';
 import ScanResultsPage from './components/ScanResultsPage';
 import DashboardPage from './components/DashboardPage';
 import WebsitesPage from './components/WebsitesPage';
 import DomainDetailsPage from './components/DomainDetailsPage';
 import DomainDetailsMissing from './components/DomainDetailsMissing';
-import { getPublishedVersion, publishVersion } from './lib/publishStore';
+import { getPublishedVersion, loadPublishedVersions, publishVersion } from './lib/publishStore';
+import { loadApprovals } from './lib/reviewQueue';
+import { clearScans, deleteScan as deleteStoredScan, deleteSchedule, historyFromScans, loadStore, saveScan, saveSchedule } from './lib/scanApi';
 import { applyCategoryChanges, resolveDomainScan, versionsForDomain } from './lib/domainDetails';
 import { publishCategories, publishSummary } from './lib/categoryApi';
 import LaunchScan from './components/LaunchScan';
@@ -28,7 +31,7 @@ import LeftSidebar from './components/LeftSidebar';
 import ReviewQueuePage from './components/ReviewQueuePage';
 import { useToast } from './components/Toast';
 import { nextRunTime, startsLater } from './lib/schedule';
-import { writeLocalStorage, readScanHistory, readDomainHistory, readScheduledJobs, readInterruptedScan, clearActiveScan, MAX_SCAN_HISTORY, MAX_SCANS_PER_DOMAIN } from './lib/scanStorage';
+import { readInterruptedScan, clearActiveScan, MAX_SCAN_HISTORY, MAX_SCANS_PER_DOMAIN } from './lib/scanStorage';
 import { useScanGuard } from './hooks/useScanGuard';
 import { deriveValueFeatures } from './lib/cookieValueFeatures';
 import { DOMAIN_TABS, pathForRoute, routeFromPath } from './lib/routes';
@@ -56,7 +59,7 @@ function App() {
   const [interrupted, setInterrupted] = useState(readInterruptedScan);
   const [lastCompleted, setLastCompleted] = useState(null);
   const [reschedulingJob, setReschedulingJob] = useState(null);
-  const [publishTick, setPublishTick] = useState(0); // re-read the browser-local publish store
+  const [publishTick, setPublishTick] = useState(0); // re-read the published version after Publish
 
   // Deep Scan - Industry Grade Configuration
   const [deepScanner] = useState(() => new DeepScanner());
@@ -70,13 +73,17 @@ function App() {
   // Scheduled Scanning
   const [scheduleInterval] = useState(30);
   const [scheduleUnit] = useState('minutes');
-  const [scheduledJobs, setScheduledJobs] = useState(readScheduledJobs);
+  // Scans, schedules, publishes and approvals live in the scan store (MongoDB);
+  // nothing renders until they load, and a failed load offers Retry.
+  const [storeStatus, setStoreStatus] = useState('loading'); // 'loading' | 'ready' | 'error'
+  const [storeAttempt, setStoreAttempt] = useState(0);
+  const [scheduledJobs, setScheduledJobs] = useState([]);
   const jobTimersRef = useRef({});
   const urlInputRef = useRef(null);
-  const [scanHistory, setScanHistory] = useState(readScanHistory);
+  const [scanHistory, setScanHistory] = useState([]);
 
-  // Domain-based scan history (with startup pruning)
-  const [domainHistory, setDomainHistory] = useState(readDomainHistory);
+  // Domain-based scan history (capped per domain)
+  const [domainHistory, setDomainHistory] = useState({});
 
   // Bookmarklet
 
@@ -144,11 +151,14 @@ function App() {
   const loadDomainRouteRef = useRef(loadDomainRoute);
   loadDomainRouteRef.current = loadDomainRoute;
 
+  const deepLinkResolvedRef = useRef(false);
   useEffect(() => {
+    if (storeStatus !== 'ready' || deepLinkResolvedRef.current) return;
+    deepLinkResolvedRef.current = true;
     const route = routeFromPath(window.location.pathname, window.location.search);
     if (route.page === 'results' && route.domain) loadDomainRoute(route);
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- deep link resolves once, on first load
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- deep link resolves once, after stored scans load
+  }, [storeStatus]);
 
   useEffect(() => {
     const handlePopState = () => {
@@ -687,26 +697,14 @@ function App() {
 
   // --- Storage helpers ---
 
-  // Safely write to localStorage with quota fallback.
-  // Returns 'ok' | 'pruned' | 'failed' and tells the user when history was
-  // truncated or dropped. This used to return a bare boolean that nothing
-  // checked, so quota loss was invisible outside the console — a user could
-  // close the tab believing a scan was saved when it was not.
-  const safeLocalStorageSet = (key, data) => {
-    const status = writeLocalStorage(key, data);
-    if (status === 'pruned') {
-      toast.warning(
-        'Storage is nearly full, so detailed results from older scans were dropped. Export anything you need to keep.',
-        { title: 'Scan history trimmed' }
-      );
-    } else if (status === 'failed') {
-      toast.error(
-        'Storage is full — this scan was not saved. Export it before closing the tab.',
-        { title: 'Could not save scan' }
-      );
-    }
-    return status;
-  };
+  // The store is the only copy: say so plainly when a finished scan isn't saved.
+  const persistScan = (entry) => saveScan(entry).catch((e) => {
+    console.error('Failed to save scan:', e);
+    toast.error(
+      `The scan of ${entry.domain} finished but was not saved: the database is unavailable. Export it before closing the tab.`,
+      { title: 'Could not save scan' }
+    );
+  });
 
   const cleanResultsForStorage = (results) => {
     // Create a clean copy without circular references or complex objects
@@ -830,12 +828,9 @@ function App() {
       const domainScans = alreadyExists
         ? existing.map(e => e.id === historyEntry.id ? historyEntry : e)
         : [historyEntry, ...existing].slice(0, MAX_SCANS_PER_DOMAIN);
-      const updated = { ...prev, [domain]: domainScans };
-
-      safeLocalStorageSet('domainScanHistory', updated);
-
-      return updated;
+      return { ...prev, [domain]: domainScans };
     });
+    persistScan(historyEntry);
 
     // Build notification BEFORE state update (scanHistory is current here)
     const previousScan = scanHistory.find(scan => scan.domain === results.domain);
@@ -857,9 +852,7 @@ function App() {
 
     setScanHistory(prev => {
       // A later save of the same scan (ML-corrected) replaces the first (ISSUE-004).
-      const updated = [historyEntry, ...prev.filter(e => e.id !== historyEntry.id)].slice(0, MAX_SCAN_HISTORY);
-      safeLocalStorageSet('cookieScanHistory', updated);
-      return updated;
+      return [historyEntry, ...prev.filter(e => e.id !== historyEntry.id)].slice(0, MAX_SCAN_HISTORY);
     });
   };
 
@@ -877,13 +870,14 @@ function App() {
     return (interval || scheduleInterval) * multipliers[unit || scheduleUnit];
   };
   
-  const persistScheduledJobs = (jobs) => {
-    try {
-      const toSave = jobs.map(({ timerId, countdownId, timeLeft, ...rest }) => rest);
-      localStorage.setItem('scheduledJobs', JSON.stringify(toSave));
-    } catch (e) {
-      console.error('Failed to persist scheduled jobs:', e);
-    }
+  // Save one job to the scan store after a change.
+  const persistScheduledJobs = (jobs, jobId) => {
+    const job = jobs.find(j => j.id === jobId);
+    if (!job) return;
+    saveSchedule(job).catch((e) => {
+      console.error('Failed to save scheduled job:', e);
+      toast.error(`The schedule for ${job.url} was not saved: the database is unavailable.`);
+    });
   };
 
   const runScheduledJob = (job) => {
@@ -920,7 +914,7 @@ function App() {
         const next = getNextRunTime(job);
         setScheduledJobs(prev => {
           const updated = prev.map(j => j.id === job.id ? { ...j, nextRun: next.toISOString() } : j);
-          persistScheduledJobs(updated);
+          persistScheduledJobs(updated, job.id);
           return updated;
         });
       }, intervalMs);
@@ -936,7 +930,7 @@ function App() {
             runScheduledJob(job);
             const next = getNextRunTime(job);
             const updated = prev.map(j => j.id === job.id ? { ...j, nextRun: next.toISOString() } : j);
-            persistScheduledJobs(updated);
+            persistScheduledJobs(updated, job.id);
             return updated;
           }
           return prev;
@@ -980,7 +974,7 @@ function App() {
 
     setScheduledJobs(prev => {
       const updated = [...prev, newJob];
-      persistScheduledJobs(updated);
+      persistScheduledJobs(updated, newJob.id);
       return updated;
     });
 
@@ -988,7 +982,14 @@ function App() {
     setTargetUrl('');
   };
 
-  const deleteScheduledJob = (jobId) => {
+  const deleteScheduledJob = async (jobId) => {
+    try {
+      await deleteSchedule(jobId);
+    } catch (e) {
+      console.error('Failed to delete scheduled job:', e);
+      toast.error('The schedule was not deleted: the database is unavailable.');
+      return;
+    }
     // Clear timers
     const timers = jobTimersRef.current[jobId];
     if (timers) {
@@ -997,11 +998,7 @@ function App() {
       delete jobTimersRef.current[jobId];
     }
 
-    setScheduledJobs(prev => {
-      const updated = prev.filter(j => j.id !== jobId);
-      persistScheduledJobs(updated);
-      return updated;
-    });
+    setScheduledJobs(prev => prev.filter(j => j.id !== jobId));
   };
 
   const togglePauseJob = (jobId) => {
@@ -1025,7 +1022,7 @@ function App() {
           return { ...j, paused: true, timeLeft: null };
         }
       });
-      persistScheduledJobs(updated);
+      persistScheduledJobs(updated, jobId);
       return updated;
     });
   };
@@ -1069,33 +1066,35 @@ function App() {
         }
         return updatedJob;
       });
-      persistScheduledJobs(updated);
+      persistScheduledJobs(updated, jobId);
       return updated;
     });
   };
 
-  const clearHistory = () => {
+  const clearHistory = async () => {
     if (window.confirm('Are you sure you want to clear all scan history?')) {
-      setScanHistory([]);
       try {
-        localStorage.removeItem('cookieScanHistory');
+        await clearScans();
       } catch (e) {
         console.error('Failed to clear scan history:', e);
+        toast.error('Scan history was not cleared: the database is unavailable.');
+        return;
       }
+      setScanHistory([]);
+      setDomainHistory({});
     }
   };
 
-  const deleteScan = (id) => {
-    setScanHistory(prev => {
-      const updated = prev.filter(scan => scan.id !== id);
-      // Persist to localStorage
-      try {
-        localStorage.setItem('cookieScanHistory', JSON.stringify(updated));
-      } catch (e) {
-        console.error('Failed to update scan history:', e);
-      }
-      return updated;
-    });
+  const deleteScan = async (id) => {
+    try {
+      await deleteStoredScan(id);
+    } catch (e) {
+      console.error('Failed to delete scan:', e);
+      toast.error('The scan was not deleted: the database is unavailable.');
+      return;
+    }
+    setScanHistory(prev => prev.filter(scan => scan.id !== id));
+    setDomainHistory(prev => Object.fromEntries(Object.entries(prev).map(([domain, scans]) => [domain, scans.filter(scan => scan.id !== id)])));
   };
 
   const viewScan = (scan) => {
@@ -1241,18 +1240,44 @@ function App() {
   };
 
   useEffect(() => {
-    // Restart timers for persisted scheduled jobs
-    scheduledJobs.forEach(job => {
-      startJobTimers(job);
+    // Load saved data from the scan store (importing this browser's old copy once),
+    // then restart timers for the stored scheduled jobs.
+    let cancelled = false;
+    setStoreStatus('loading');
+    loadStore().then(({ scans, published, schedules, approvals, imported }) => {
+      if (cancelled) return;
+      const history = historyFromScans(scans);
+      setScanHistory(history.scanHistory);
+      setDomainHistory(history.domainHistory);
+      loadPublishedVersions(published);
+      loadApprovals(approvals);
+      const jobs = schedules.map(job => ({ ...job, timerId: null, countdownId: null, timeLeft: null }));
+      setScheduledJobs(jobs);
+      jobs.forEach(job => {
+        startJobTimers(job);
+      });
+      setStoreStatus('ready');
+      if (imported?.failed) {
+        toast.warning("Scans saved in this browser couldn't be moved to the database. They'll be retried next time the app loads.");
+      } else if (imported) {
+        toast.success(`Moved ${imported.scans} saved scan${imported.scans === 1 ? '' : 's'} from this browser to the database.`);
+      }
+    }).catch((e) => {
+      if (cancelled) return;
+      console.error('Failed to load saved scans:', e);
+      setStoreStatus('error');
     });
 
     return () => {
+      cancelled = true;
       Object.values(jobTimersRef.current).forEach(({ timerId, countdownId }) => {
         clearInterval(timerId);
         clearInterval(countdownId);
       });
+      jobTimersRef.current = {};
     };
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- loads once per attempt; Retry bumps storeAttempt
+  }, [storeAttempt]);
 
   // Navigate to results page when scan finishes
   const wasScanningRef = useRef(false);
@@ -1342,6 +1367,18 @@ function App() {
         />
       )}
 
+      {storeStatus !== 'ready' ? (
+        <main className="main-content page-content" aria-busy={storeStatus === 'loading'}>
+          {storeStatus === 'loading' ? (
+            <p className="store-status">Loading saved scans…</p>
+          ) : (
+            <PanelError
+              message="Couldn't load saved scans: the database is unavailable."
+              onRetry={() => setStoreAttempt((n) => n + 1)}
+            />
+          )}
+        </main>
+      ) : (<>
       {/* Scanning > Launch New Scan (Figma 1:189760) */}
       {currentPage === 'launch' && (
         <main className="main-content page-content">
@@ -1538,8 +1575,14 @@ function App() {
               versions={domainVersions}
               currentVersionId={currentVersion?.id}
               published={publishedVersion}
-              onPublish={(version) => {
-                publishVersion(scanResult.domain, version.id);
+              onPublish={async (version) => {
+                try {
+                  await publishVersion(scanResult.domain, version.id);
+                } catch (e) {
+                  console.error('Failed to publish version:', e);
+                  toast.error(`Version ${version.version} was not published: the database is unavailable.`);
+                  return;
+                }
                 setPublishTick((t) => t + 1);
                 toast.success(`Version ${version.version} published.`);
               }}
@@ -1564,6 +1607,7 @@ function App() {
           )}
         </main>
       )}
+      </>)}
 
       {/* Accessibility - aria-live region for category update announcements */}
       <div

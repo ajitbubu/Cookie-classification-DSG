@@ -24,10 +24,8 @@ describe('data-source contract (7.1)', () => {
 
   it('touches localStorage only in the documented stores', () => {
     const allowed = new Set([
-      'src/App.jsx',                      // writes scans / schedules via scanStorage helpers
-      'src/lib/scanStorage.js',           // scan history, domain history, scheduled jobs
-      'src/lib/publishStore.js',          // browser-local publish (TODOS: backend persistence)
-      'src/lib/reviewQueue.js',           // review approvals log
+      'src/lib/scanStorage.js',           // this tab's in-progress scan record only
+      'src/lib/scanApi.js',               // one-time import of pre-store browser data, then removes it
       'src/components/DashboardPage.jsx', // per-viewer "dismiss AI insights" convenience
       'src/components/OverrideModal.jsx', // legacy override audit log
     ]);
@@ -36,11 +34,9 @@ describe('data-source contract (7.1)', () => {
     expect(touching.filter((f) => !allowed.has(f))).toEqual([]);
   });
 
-  it('loads stored scans through the scanStorage readers', () => {
-    for (const reader of ['readScanHistory', 'readDomainHistory', 'readScheduledJobs']) {
-      expect(APP, reader).toMatch(new RegExp(`useState\\(${reader}\\)`));
-    }
-    expect(APP).not.toMatch(/localStorage\.getItem\('(cookieScanHistory|domainScanHistory|scheduledJobs)'\)/);
+  it('loads scans, schedules, publishes and approvals from the scan store (MongoDB), not the browser', () => {
+    expect(APP).toMatch(/loadStore\(\)/);
+    expect(APP).not.toMatch(/localStorage/);
   });
 
   it.each([
