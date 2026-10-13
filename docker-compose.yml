@@ -37,6 +37,21 @@ services:
     networks:
       - scanner-network
 
+  # MongoDB: scans, domain versions/publish, schedules, review approvals
+  mongo:
+    image: mongo:7.0.14
+    container_name: cookie-scanner-mongo
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - scanner-network
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
   # Main API Gateway
   api-gateway:
     build:
@@ -59,10 +74,14 @@ services:
       - DB_NAME=cookie_scanner
       - DB_USER=scanner
       - DB_PASSWORD=${DB_PASSWORD:-scanner_password}
+      - MONGODB_URL=mongodb://mongo:27017
+      - MONGODB_DB=cookie_scanner
     depends_on:
       redis:
         condition: service_healthy
       postgres:
+        condition: service_healthy
+      mongo:
         condition: service_healthy
     volumes:
       - ./backend:/app/backend
@@ -243,6 +262,7 @@ services:
 volumes:
   redis-data:
   postgres-data:
+  mongo_data:
   ml-logs:
 
 networks:

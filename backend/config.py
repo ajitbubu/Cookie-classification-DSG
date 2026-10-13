@@ -21,6 +21,11 @@ class Settings(BaseSettings):
     DB_MIN_POOL_SIZE: int = 5
     DB_MAX_POOL_SIZE: int = 20
     DB_TIMEOUT: int = 5
+
+    # MongoDB: scan results, domain versions/publish, schedules, review approvals
+    MONGODB_URL: str = "mongodb://localhost:27017"
+    MONGODB_DB: str = "cookie_scanner"
+    MONGODB_TIMEOUT_MS: int = 5000
     
     # Scanning configuration - Industry Grade
     MAX_CONCURRENT_PAGES: int = 100  # Increased from 50 for faster scanning

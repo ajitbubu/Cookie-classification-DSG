@@ -9,6 +9,7 @@ from fastapi.responses import StreamingResponse
 
 from backend.api.category_routes import router as category_router
 from backend.api.ml_routes import router as ml_router
+from backend.api.store_routes import router as store_router
 from backend.config import settings
 from backend.models import HealthResponse, ScanRequest
 from backend.scanner.classifier import CookieClassifier
@@ -20,6 +21,7 @@ logger = logging.getLogger(__name__)
 router = APIRouter()
 router.include_router(category_router, prefix="/categories", tags=["categories"])
 router.include_router(ml_router, prefix="/v1/ml", tags=["ml-classification"])
+router.include_router(store_router, prefix="/store", tags=["scan-store"])
 
 
 @router.get("/health", response_model=HealthResponse)

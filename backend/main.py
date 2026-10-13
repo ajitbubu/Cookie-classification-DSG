@@ -87,6 +87,10 @@ async def startup_event():
     logger.info(f"Browser type: {settings.BROWSER_TYPE}")
     logger.info(f"Max concurrent pages: {settings.MAX_CONCURRENT_PAGES}")
     
+    # MongoDB scan store (scans, versions, schedules, approvals)
+    from backend.db.scan_store import initialize_scan_store
+    await initialize_scan_store()
+
     # Initialize database connection
     try:
         from backend.db.database import initialize_database, get_db_manager
@@ -129,6 +133,9 @@ async def shutdown_event():
     """Clean up resources on shutdown"""
     logger.info("Shutting down Cookie Scanner API...")
     
+    from backend.db.scan_store import shutdown_scan_store
+    await shutdown_scan_store()
+
     # Close database connections
     try:
         from backend.db.database import shutdown_database

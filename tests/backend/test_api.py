@@ -424,3 +424,100 @@ async def test_category_fallback_remains_unclassified():
     assert result["category"] == "Unclassified"
     assert result["confidence"] == 0.0
     assert result["source"] == "default"
+
+
+# --------------------------------------------------------------------------
+# Scan store (MongoDB): /api/store
+# Runs against a real MongoDB (MONGODB_URL); the store is reset per test.
+# --------------------------------------------------------------------------
+
+@pytest.fixture
+def store(client):
+    import os
+    if not os.environ.get("MONGODB_URL"):
+        pytest.skip("MONGODB_URL not set: scan store tests need a real MongoDB")
+    for path in ("/api/store/scans",):
+        client.delete(path)
+    from pymongo import MongoClient
+    from backend.config import settings
+    db = MongoClient(settings.MONGODB_URL)[settings.MONGODB_DB]
+    for name in ("scans", "published", "schedules", "approvals"):
+        db[name].delete_many({})
+    return client
+
+
+def _scan(scan_id, domain="shop.com", ts="2026-10-12T10:00:00.000Z", **extra):
+    return {"id": scan_id, "domain": domain, "timestamp": ts, "totalCookies": 2,
+            "fullResults": {"cookies": [{"name": "_ga", "domain": ".shop.com", "category": "Analytics"}]}, **extra}
+
+
+def test_store_saves_and_lists_scans_newest_first(store):
+    assert store.put("/api/store/scans/s1", json=_scan("s1", ts="2026-10-10T10:00:00.000Z")).status_code == 200
+    assert store.put("/api/store/scans/s2", json=_scan("s2", ts="2026-10-12T10:00:00.000Z")).status_code == 200
+    scans = store.get("/api/store/scans").json()["scans"]
+    assert [s["id"] for s in scans] == ["s2", "s1"]
+    assert scans[0]["fullResults"]["cookies"][0]["name"] == "_ga"  # nested results kept
+
+
+def test_store_saving_the_same_scan_again_replaces_it(store):
+    """The ML-corrected save of a scan must not create a second entry (ISSUE-004)."""
+    store.put("/api/store/scans/s1", json=_scan("s1", totalCookies=2))
+    store.put("/api/store/scans/s1", json=_scan("s1", totalCookies=5))
+    scans = store.get("/api/store/scans").json()["scans"]
+    assert len(scans) == 1 and scans[0]["totalCookies"] == 5
+
+
+def test_store_filters_scans_by_domain_and_deletes(store):
+    store.put("/api/store/scans/a", json=_scan("a", domain="a.com"))
+    store.put("/api/store/scans/b", json=_scan("b", domain="b.com"))
+    assert [s["id"] for s in store.get("/api/store/scans?domain=a.com").json()["scans"]] == ["a"]
+    assert store.delete("/api/store/scans/a").json() == {"deleted": True}
+    assert store.delete("/api/store/scans/a").status_code == 404
+    assert store.delete("/api/store/scans").json() == {"deleted": 1}
+    assert store.get("/api/store/scans").json()["scans"] == []
+
+
+def test_store_rejects_bad_ids_and_mismatched_bodies(store):
+    assert store.put("/api/store/scans/s1", json=_scan("other")).status_code == 400
+    assert store.put("/api/store/scans/bad$id", json=_scan("bad$id")).status_code == 422
+    assert store.put("/api/store/scans/s1", json={"id": "s1"}).status_code == 422  # domain/timestamp required
+
+
+def test_store_publishes_one_version_per_domain(store):
+    store.put("/api/store/published/shop.com", json={"id": "s1", "publishedAt": "2026-10-12T00:00:00Z"})
+    store.put("/api/store/published/shop.com", json={"id": "s2", "publishedAt": "2026-10-13T00:00:00Z"})
+    assert store.get("/api/store/published").json()["published"] == {"shop.com": {"id": "s2", "publishedAt": "2026-10-13T00:00:00Z"}}
+
+
+def test_store_keeps_schedules_and_approvals(store):
+    job = {"id": "j1", "url": "https://shop.com", "unit": "weekly", "scheduleTime": "02:00", "startDate": "2030-01-15", "createdAt": "2026-10-12"}
+    assert store.put("/api/store/schedules/j1", json=job).status_code == 200
+    assert store.get("/api/store/schedules").json()["schedules"] == [job]
+    assert store.delete("/api/store/schedules/j1").json() == {"deleted": True}
+    approval = {"cookieKey": "shop.com:_ga", "approvedCategory": "Analytics"}
+    store.post("/api/store/approvals", json=approval)
+    assert store.get("/api/store/approvals").json()["approvals"] == [approval]
+
+
+def test_store_imports_a_browsers_saved_data_once_idempotently(store):
+    payload = {
+        "scans": [_scan("s1"), _scan("s2", ts="2026-10-13T10:00:00.000Z")],
+        "published": {"shop.com": {"id": "s1", "publishedAt": "2026-10-12T00:00:00Z"}},
+        "schedules": [{"id": "j1", "url": "https://shop.com", "unit": "daily"}],
+        "approvals": [{"cookieKey": "shop.com:_ga", "approvedCategory": "Analytics"}],
+    }
+    assert store.post("/api/store/import", json=payload).json() == {"scans": 2, "published": 1, "schedules": 1, "approvals": 1}
+    store.post("/api/store/import", json=payload)  # a repeat import does not duplicate
+    assert len(store.get("/api/store/scans").json()["scans"]) == 2
+
+
+def test_store_answers_503_when_mongodb_is_unreachable(client, monkeypatch):
+    import backend.api.store_routes as routes
+    monkeypatch.setattr(routes, "get_scan_store", lambda: None)
+    async def unreachable():
+        return None
+    monkeypatch.setattr(routes, "initialize_scan_store", unreachable)
+    monkeypatch.setattr(routes, "_last_attempt", 0.0)
+    r = client.get("/api/store/scans")
+    assert r.status_code == 503
+    assert "unavailable" in r.json()["detail"]
