@@ -134,7 +134,7 @@ function VendorDashboard({ scanHistory, domainHistory, onNavigate }) {
             <ArrowLeft size={16} /> Back
           </button>
           <div>
-            <h1 className="vd-title">Vendor Dashboard</h1>
+            <h2 className="vd-title">Vendor Dashboard</h2>
             <p className="vd-subtitle">Track third-party vendors, compliance status, and data processing agreements</p>
           </div>
         </div>

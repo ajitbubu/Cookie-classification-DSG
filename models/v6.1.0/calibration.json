@@ -1,0 +1,37 @@
+{
+  "method": "temperature_scaling",
+  "temperature": 0.8165792112547178,
+  "per_class_auto_thresholds": {
+    "Analytics_Performance": {
+      "threshold": 0.5,
+      "eligible_predictions": 3082,
+      "estimated_precision": 0.9918883841661259,
+      "enabled": true
+    },
+    "Functional": {
+      "threshold": 0.67,
+      "eligible_predictions": 2876,
+      "estimated_precision": 0.9735744089012517,
+      "enabled": true
+    },
+    "Marketing_Advertising": {
+      "threshold": 0.5,
+      "eligible_predictions": 4035,
+      "estimated_precision": 0.973729863692689,
+      "enabled": true
+    },
+    "Strictly_Necessary": {
+      "threshold": 0.75,
+      "eligible_predictions": 2108,
+      "estimated_precision": 0.9729601518026565,
+      "enabled": true
+    },
+    "Unclassified": {
+      "threshold": 0.8,
+      "eligible_predictions": 223,
+      "estimated_precision": 0.9820627802690582,
+      "enabled": false
+    }
+  },
+  "fitted_on": "site-domain-disjoint calibration partition"
+}

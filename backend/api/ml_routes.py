@@ -56,9 +56,9 @@ from backend.api.ml_classifier.explainer import ExplainabilityEngine
 from backend.api.ml_classifier.similarity import SimilarityDetector
 from backend.api.ml_classifier.config import (
     CURRENT_MODEL_VERSION,
-    get_confidence_level,
-    should_auto_classify,
-    requires_review
+    CONFIDENCE_HIGH_THRESHOLD,
+    CONFIDENCE_MEDIUM_THRESHOLD,
+    get_confidence_level
 )
 from backend.api.ml_classifier.auth import (
     check_rate_limit,
@@ -87,10 +87,10 @@ _ab_controller = None
 
 
 def get_feature_extractor() -> FeatureExtractor:
-    """Get or create feature extractor instance."""
+    """Use the extractor validated against the loaded model artifact."""
     global _feature_extractor
     if _feature_extractor is None:
-        _feature_extractor = FeatureExtractor()
+        _feature_extractor = get_classifier().feature_extractor
     return _feature_extractor
 
 
@@ -147,9 +147,16 @@ class CookieInput(BaseModel):
     http_only: bool = False
     secure: bool = False
     same_site: Optional[str] = None
+    # Deprecated: the raw value sample. Cookie values carry session tokens, so
+    # clients now send the derived features below instead and never transmit the
+    # value. Kept for backward compatibility with older clients.
     value_sample: Optional[str] = None
+    value_length: Optional[int] = None
+    value_is_uuid: Optional[bool] = None
+    value_is_base64: Optional[bool] = None
     initiated_by: Optional[str] = None
     scan_id: Optional[str] = None
+    site_domain: Optional[str] = None
     
     class Config:
         json_schema_extra = {
@@ -172,7 +179,7 @@ class ClassificationOptions(BaseModel):
     return_explanation: bool = True
     find_similar: bool = True
     confidence_threshold: float = Field(default=0.75, ge=0.0, le=1.0)
-    auto_classify: bool = True
+    auto_classify: bool = False
 
 
 class ClassificationRequest(BaseModel):
@@ -266,6 +273,9 @@ class Classification(BaseModel):
     classified_at: str
     processing_time_ms: float
     source: str = "ml_prediction"  # Add source field: "knowledge_base", "pattern_match", "ml_prediction"
+    classification_status: str = "suggested"
+    abstain_reason: Optional[str] = None
+    suggested_category: Optional[str] = None
     
     model_config = {
         'json_encoders': {
@@ -475,9 +485,39 @@ async def classify_cookies(request: ClassificationRequest):
                         logger.warning(f"Failed to find similar cookies: {e}")
                         # Continue without similar cookies
                 
-                # 5. Determine auto-classification and review flags
-                auto_classified = should_auto_classify(result.confidence_score)
-                needs_review = requires_review(result.confidence_score)
+                # 5. Separate a model suggestion from a publishable classification.
+                normalized_category = normalize_category(result.predicted_category)
+                result_source = getattr(result, 'source', 'ml_prediction')
+                native_unknown = normalized_category == 'Unclassified'
+                insufficient_evidence = getattr(result, 'insufficient_evidence', False)
+                low_confidence = (
+                    result_source == 'ml_prediction'
+                    and result.confidence_score < request.options.confidence_threshold
+                )
+                abstained = native_unknown or insufficient_evidence or low_confidence
+                auto_classified = (
+                    request.options.auto_classify
+                    and not abstained
+                    and classifier.can_auto_classify(
+                        result.predicted_category,
+                        result.confidence_score,
+                    )
+                )
+                # A reviewed human decision publishes; a model suggestion alone
+                # publishes only when the promoted model auto-classifies it.
+                human_decision = result_source == 'user_override' and not native_unknown
+                classification_status = (
+                    'abstained' if abstained
+                    else 'classified' if auto_classified or human_decision
+                    else 'suggested'
+                )
+                needs_review = not (auto_classified or human_decision)
+                abstain_reason = (
+                    'model_unclassified' if native_unknown
+                    else 'insufficient_evidence' if insufficient_evidence
+                    else 'low_confidence' if low_confidence
+                    else None
+                )
                 
                 # 6. Log metrics
                 cookie_time = (time.time() - cookie_start) * 1000
@@ -485,7 +525,7 @@ async def classify_cookies(request: ClassificationRequest):
                 metrics_collector = get_metrics_collector()
                 metrics_collector.log_classification(
                     cookie_id=cookie_input.id or "unknown",
-                    predicted_category=result.predicted_category,
+                    predicted_category='Unclassified' if abstained else normalized_category,
                     confidence_score=result.confidence_score,
                     confidence_level=result.confidence_level,
                     auto_classified=auto_classified,
@@ -495,9 +535,6 @@ async def classify_cookies(request: ClassificationRequest):
                 )
                 
                 # 7. Build classification result
-                # Normalize category name for frontend compatibility
-                normalized_category = normalize_category(result.predicted_category)
-                
                 # Convert all numpy types to Python types
                 result_dict = {
                     'cookie_id': cookie_input.id,
@@ -519,7 +556,10 @@ async def classify_cookies(request: ClassificationRequest):
                     'model_version': CURRENT_MODEL_VERSION,
                     'classified_at': datetime.now().isoformat(),
                     'processing_time_ms': convert_numpy_types(cookie_time),
-                    'source': getattr(result, 'source', 'ml_prediction')  # Add source field
+                    'source': result_source,
+                    'classification_status': classification_status,
+                    'abstain_reason': abstain_reason,
+                    'suggested_category': normalized_category if not auto_classified else None,
                 }
                 
                 classification = Classification(**result_dict)
@@ -538,23 +578,14 @@ async def classify_cookies(request: ClassificationRequest):
                     f"(confidence: {result.confidence_score:.2f}, time: {cookie_time:.1f}ms)"
                 )
                 
+            except HTTPException:
+                raise
             except Exception as e:
                 logger.error(f"Error classifying cookie {cookie_input.name}: {e}", exc_info=True)
-                # Return error classification
-                classification = Classification(
-                    cookie_id=cookie_input.id,
-                    predicted_category="Unknown",
-                    confidence_score=0.0,
-                    confidence_level="Low",
-                    auto_classified=False,
-                    requires_review=True,
-                    alternative_predictions=[],
-                    model_version=CURRENT_MODEL_VERSION,
-                    classified_at=datetime.now().isoformat(),
-                    processing_time_ms=0.0
-                )
-                classifications.append(classification)
-                requires_review_count += 1
+                raise HTTPException(
+                    status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+                    detail=f"ML inference unavailable for cookie '{cookie_input.name}': {e}"
+                ) from e
         
         # Calculate summary
         total_time = (time.time() - start_time) * 1000
@@ -597,7 +628,10 @@ async def classify_cookies(request: ClassificationRequest):
                     'model_version': c.model_version,
                     'classified_at': c.classified_at,
                     'processing_time_ms': convert_numpy_types(c.processing_time_ms),
-                    'source': c.source  # Include source field
+                    'source': c.source,
+                    'classification_status': c.classification_status,
+                    'abstain_reason': c.abstain_reason,
+                    'suggested_category': c.suggested_category,
                 }
                 for c in classifications
             ],
@@ -612,12 +646,14 @@ async def classify_cookies(request: ClassificationRequest):
         
         return JSONResponse(content=response_data)
         
+    except HTTPException:
+        raise
     except Exception as e:
         logger.error(f"Error in classification endpoint: {e}", exc_info=True)
         raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Classification failed: {str(e)}"
-        )
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail=f"ML classification service unavailable: {str(e)}"
+        ) from e
 
 
 @router.get("/health")
@@ -631,21 +667,24 @@ async def ml_health_check():
         # Check if model is loaded
         classifier = get_classifier()
         model_loaded = classifier.model is not None
+        acceptance = classifier.metadata.get("acceptance", {})
         
         return {
             "status": "healthy" if model_loaded else "degraded",
             "model_loaded": model_loaded,
             "model_version": CURRENT_MODEL_VERSION,
+            "promotion_eligible": bool(acceptance.get("promotion_eligible", False)),
+            "auto_classification_enabled": bool(
+                acceptance.get("auto_classification_enabled", False)
+            ),
             "timestamp": datetime.now().isoformat()
         }
     except Exception as e:
         logger.error(f"ML health check failed: {e}")
-        return {
-            "status": "unhealthy",
-            "model_loaded": False,
-            "error": str(e),
-            "timestamp": datetime.now().isoformat()
-        }
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail=f"ML model unavailable: {e}"
+        ) from e
 
 
 @router.get("/model-info")
@@ -657,30 +696,33 @@ async def get_model_info():
     """
     try:
         classifier = get_classifier()
-        feature_extractor = get_feature_extractor()
-        
+        model_info = classifier.get_model_info()
         return {
-            "model_version": CURRENT_MODEL_VERSION,
-            "model_type": "XGBoost",
-            "feature_count": len(feature_extractor.get_feature_names()),
-            "categories": [
-                "Strictly Necessary",
-                "Analytics",
-                "Marketing",
-                "Functional",
-                "Unknown"
-            ],
+            "model_version": classifier.model_version,
+            "model_type": model_info["model_type"],
+            "feature_count": len(classifier.feature_extractor.get_feature_names()),
+            "categories": [normalize_category(category) for category in model_info["categories"]],
             "confidence_thresholds": {
-                "high": 0.85,
-                "medium": 0.65
-            }
+                "high": CONFIDENCE_HIGH_THRESHOLD,
+                "medium": CONFIDENCE_MEDIUM_THRESHOLD
+            },
+            "serialization_format": model_info["serialization_format"],
+            "calibration": model_info["calibration"],
+            "acceptance": model_info["acceptance"],
+            "trained_at": model_info["trained_at"],
+            "metrics": model_info["metrics"],
+            "samples": {
+                "training": classifier.metadata.get("training_samples"),
+                "calibration": classifier.metadata.get("calibration_samples"),
+                "test": classifier.metadata.get("test_samples"),
+            },
         }
     except Exception as e:
         logger.error(f"Error getting model info: {e}")
         raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Failed to get model info: {str(e)}"
-        )
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail=f"ML model information unavailable: {str(e)}"
+        ) from e
 
 
 # ============================================================================
@@ -1183,6 +1225,8 @@ class MetricsResponse(BaseModel):
     correction_count: int
     correction_rate: float
     confusion_matrix: Optional[List[ConfusionMatrixRow]] = None
+    data_status: str = "available"
+    message: Optional[str] = None
     
     class Config:
         json_schema_extra = {
@@ -1301,27 +1345,22 @@ async def get_metrics(
             f"model: {model_version}"
         )
         
-        # TODO: Query ml_metrics table from database
-        # For now, return mock data structure
-        
-        # Mock data - replace with actual database queries
-        total_predictions = 1000
-        auto_classified = 850
-        requires_review = 150
-        
-        high_count = 850
-        medium_count = 120
-        low_count = 30
-        avg_confidence = 0.87
-        
-        strictly_necessary = 200
-        analytics = 400
-        marketing = 300
-        functional = 80
-        unknown = 20
-        
-        correction_count = 50
-        correction_rate = correction_count / total_predictions if total_predictions > 0 else 0.0
+        # Persistence is not implemented yet. Return an honest empty result rather
+        # than demo numbers that look like production measurements.
+        total_predictions = 0
+        auto_classified = 0
+        requires_review = 0
+        high_count = 0
+        medium_count = 0
+        low_count = 0
+        avg_confidence = 0.0
+        strictly_necessary = 0
+        analytics = 0
+        marketing = 0
+        functional = 0
+        unknown = 0
+        correction_count = 0
+        correction_rate = 0.0
         
         # Build response
         response = MetricsResponse(
@@ -1347,59 +1386,15 @@ async def get_metrics(
                 unknown=unknown
             ),
             performance=PerformanceMetrics(
-                avg_latency_ms=45.2,
-                p95_latency_ms=120.5,
+                avg_latency_ms=None,
+                p95_latency_ms=None,
                 total_predictions=total_predictions
             ),
             correction_count=correction_count,
-            correction_rate=correction_rate
+            correction_rate=correction_rate,
+            data_status="unavailable",
+            message="Metrics persistence is not configured; no production metrics are available."
         )
-        
-        # Add confusion matrix if requested
-        if include_confusion_matrix:
-            # Mock confusion matrix - replace with actual data
-            response.confusion_matrix = [
-                ConfusionMatrixRow(
-                    predicted_category="Strictly Necessary",
-                    strictly_necessary=190,
-                    analytics=5,
-                    marketing=3,
-                    functional=2,
-                    unknown=0
-                ),
-                ConfusionMatrixRow(
-                    predicted_category="Analytics",
-                    strictly_necessary=3,
-                    analytics=385,
-                    marketing=8,
-                    functional=3,
-                    unknown=1
-                ),
-                ConfusionMatrixRow(
-                    predicted_category="Marketing",
-                    strictly_necessary=2,
-                    analytics=5,
-                    marketing=288,
-                    functional=4,
-                    unknown=1
-                ),
-                ConfusionMatrixRow(
-                    predicted_category="Functional",
-                    strictly_necessary=3,
-                    analytics=3,
-                    marketing=1,
-                    functional=72,
-                    unknown=1
-                ),
-                ConfusionMatrixRow(
-                    predicted_category="Unknown",
-                    strictly_necessary=2,
-                    analytics=2,
-                    marketing=0,
-                    functional=1,
-                    unknown=15
-                )
-            ]
         
         processing_time = (time.time() - start_time) * 1000
         
@@ -1446,12 +1441,14 @@ class DriftAlert(BaseModel):
 
 class DriftCheckResponse(BaseModel):
     """Response for drift detection check."""
-    drift_detected: bool = Field(..., description="Whether drift was detected")
+    drift_detected: Optional[bool] = Field(..., description="Whether drift was detected")
     total_alerts: int = Field(..., description="Total number of alerts")
     warning_count: int = Field(..., description="Number of warning alerts")
     critical_count: int = Field(..., description="Number of critical alerts")
     alerts: List[DriftAlert] = Field(..., description="List of drift alerts")
     processing_time_ms: float = Field(..., description="Processing time in milliseconds")
+    data_status: str = "available"
+    message: Optional[str] = None
 
 
 @router.post("/drift/check", response_model=DriftCheckResponse)
@@ -1500,48 +1497,17 @@ async def check_drift(
                 detail="current_date must be after baseline period"
             )
         
-        # Get drift detector
-        drift_detector = get_drift_detector()
-        
-        # TODO: Fetch metrics data from database
-        # For now, return mock response
-        metrics_data = []
-        
-        # Check drift
-        alerts = drift_detector.check_drift_from_metrics(
-            baseline_start,
-            current_date,
-            metrics_data
-        )
-        
-        # Generate report
-        report = drift_detector.generate_drift_report(alerts)
-        
         processing_time = (time.time() - start_time) * 1000
-        
-        logger.info(
-            f"Drift check completed in {processing_time:.1f}ms: "
-            f"{report['total_alerts']} alerts detected"
-        )
-        
+
         return DriftCheckResponse(
-            drift_detected=report['drift_detected'],
-            total_alerts=report['total_alerts'],
-            warning_count=report['warning_count'],
-            critical_count=report['critical_count'],
-            alerts=[
-                DriftAlert(
-                    level=alert['level'],
-                    type=alert['type'],
-                    message=alert['message'],
-                    metric_value=alert['metric_value'],
-                    threshold=alert['threshold'],
-                    detected_at=alert['detected_at'],
-                    details=alert['details']
-                )
-                for alert in report['alerts']
-            ],
-            processing_time_ms=processing_time
+            drift_detected=None,
+            total_alerts=0,
+            warning_count=0,
+            critical_count=0,
+            alerts=[],
+            processing_time_ms=processing_time,
+            data_status="unavailable",
+            message="Drift metrics persistence is not configured."
         )
         
     except HTTPException:
@@ -1575,31 +1541,19 @@ async def get_drift_status(
         baseline_start = current_date - timedelta(days=days * 2)
         baseline_end = current_date - timedelta(days=days)
         
-        drift_detector = get_drift_detector()
-        
-        # TODO: Fetch metrics data from database
-        metrics_data = []
-        
-        # Check drift
-        alerts = drift_detector.check_drift_from_metrics(
-            baseline_start,
-            current_date,
-            metrics_data
-        )
-        
-        report = drift_detector.generate_drift_report(alerts)
-        
         return {
-            "status": "drifting" if report['drift_detected'] else "stable",
+            "status": "unavailable",
+            "data_status": "unavailable",
+            "message": "Drift metrics persistence is not configured.",
             "baseline_period": {
                 "start": baseline_start.isoformat(),
                 "end": baseline_end.isoformat()
             },
             "current_date": current_date.isoformat(),
-            "drift_detected": report['drift_detected'],
-            "total_alerts": report['total_alerts'],
-            "warning_count": report['warning_count'],
-            "critical_count": report['critical_count'],
+            "drift_detected": None,
+            "total_alerts": 0,
+            "warning_count": 0,
+            "critical_count": 0,
             "timestamp": datetime.now().isoformat()
         }
         

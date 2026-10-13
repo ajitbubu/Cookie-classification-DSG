@@ -115,8 +115,9 @@ models/.DS_Store
 !models/**/.gitkeep
 
 # Training data
-training_data/
-models/training_data/
+/training_data/
+# The canonical model datasets are intentionally versioned in one flat folder.
+# Runtime images still exclude them through .dockerignore.
 models/training_scripts/
 
 # Nginx SSL certificates (sensitive)

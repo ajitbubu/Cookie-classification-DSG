@@ -136,12 +136,20 @@ class MetricsCollector:
         low_count = sum(1 for m in metrics if m.confidence_level == "Low")
         
         # Count by category
+        def normalized_category(metric):
+            category = metric.predicted_category
+            if category in {"Unknown", "Unclassified", "Uncategorized"}:
+                return "Unknown"
+            return category.replace("_", " ").replace("Analytics Performance", "Analytics").replace(
+                "Marketing Advertising", "Marketing"
+            )
+
         category_counts = {
-            "strictly_necessary": sum(1 for m in metrics if m.predicted_category == "Strictly Necessary"),
-            "analytics": sum(1 for m in metrics if m.predicted_category == "Analytics"),
-            "marketing": sum(1 for m in metrics if m.predicted_category == "Marketing"),
-            "functional": sum(1 for m in metrics if m.predicted_category == "Functional"),
-            "unknown": sum(1 for m in metrics if m.predicted_category == "Unknown")
+            "strictly_necessary": sum(1 for m in metrics if normalized_category(m) == "Strictly Necessary"),
+            "analytics": sum(1 for m in metrics if normalized_category(m) == "Analytics"),
+            "marketing": sum(1 for m in metrics if normalized_category(m) == "Marketing"),
+            "functional": sum(1 for m in metrics if normalized_category(m) == "Functional"),
+            "unknown": sum(1 for m in metrics if normalized_category(m) == "Unknown")
         }
         
         # Auto-classification counts

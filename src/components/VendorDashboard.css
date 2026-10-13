@@ -38,8 +38,8 @@
 }
 .vd-back-btn:hover { background: var(--gray-100, #D9E2EE); color: var(--gray-900, #05080F); }
 .vd-title {
-  font-size: 22px;
-  font-weight: 800;
+  font-size: var(--fs-h3);
+  font-weight: 700;
   color: var(--gray-900, #05080F);
   margin: 0 0 4px;
 }

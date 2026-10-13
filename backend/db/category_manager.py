@@ -133,9 +133,18 @@ class CategoryManager:
             new_category: New category (user override)
             ml_confidence: Optional ML confidence score
             user_id: Optional user identifier
-            
+
         Returns:
-            bool: True if successful, False otherwise
+            dict: Persistence outcome, so callers can tell a durable write from a
+                file-only fallback. Previously this returned a bare ``True`` even
+                when the database write failed, which made the API report success
+                for changes that never reached Postgres.
+
+                ``ok``                the override was recorded somewhere
+                ``persisted``         the knowledge base (database) write succeeded
+                ``feedback_recorded`` ML feedback row was written
+                ``file_fallback``     the change lives only in local file storage
+                ``error``             exception text when ``ok`` is False
         """
         try:
             # Create override key
@@ -189,24 +198,38 @@ class CategoryManager:
                     feedback_success = False
             
             # Fallback to file storage if database unavailable or failed
+            file_fallback = False
             if not db_success:
                 logger.warning("Database unavailable, using file storage fallback")
                 await self._persist_to_file(
                     scan_id, cookie_name, cookie_domain,
                     old_category, new_category, user_id
                 )
-            
+                file_fallback = True
+
             logger.info(
                 f"Category updated: {cookie_name} @ {cookie_domain} "
                 f"from '{old_category}' to '{new_category}' "
                 f"(db={db_success}, feedback={feedback_success})"
             )
-            
-            return True
-            
+
+            return {
+                "ok": True,
+                "persisted": db_success,
+                "feedback_recorded": feedback_success and old_category != new_category,
+                "file_fallback": file_fallback,
+                "error": None,
+            }
+
         except Exception as e:
             logger.error(f"Error updating category: {e}")
-            return False
+            return {
+                "ok": False,
+                "persisted": False,
+                "feedback_recorded": False,
+                "file_fallback": False,
+                "error": str(e),
+            }
     
     async def _update_knowledge_base(
         self,
@@ -451,7 +474,7 @@ class CategoryManager:
         1. Knowledge base (user overrides and pattern matches)
         2. Pattern matching (if not in knowledge base)
         3. ML prediction (if provided)
-        4. Default category
+        4. Explicit Unclassified result
         
         Args:
             cookie_name: Name of the cookie
@@ -512,12 +535,12 @@ class CategoryManager:
                 "metadata": ml_prediction
             }
         
-        # Step 4: Default category
+        # Step 4: Preserve uncertainty when no evidence exists
         logger.warning(
             f"No category found for {cookie_name}, using default"
         )
         return {
-            "category": "Functional",  # Default category
+            "category": "Unclassified",
             "confidence": 0.0,
             "source": "default",
             "metadata": {}
@@ -662,6 +685,13 @@ class CategoryManager:
                 return False
             return self._domain_matches_pattern(pattern, cookie_domain)
 
+        # Generic "session" substring matching can incorrectly exempt tracking
+        # cookies such as "marketing_session_tracker" from consent.
+        if pattern.lower() == 'session':
+            return (cookie_name or '').lower() in {
+                'session', 'sessionid', 'session_id', 'sessid'
+            }
+
         # Default: name substring match (backwards compatible)
         return pattern.lower() in (cookie_name or '').lower()
 
@@ -781,15 +811,22 @@ class CategoryManager:
         user_id: Optional[str]
     ):
         """Fallback: persist to JSON file"""
+        import os
+
+        # Refuse any scan_id that would resolve outside the overrides folder.
+        # Raised outside the try below so the caller reports the write as failed
+        # instead of claiming a file fallback that never happened.
+        data_dir = "data/category_overrides"
+        base = os.path.realpath(data_dir)
+        file_path = os.path.realpath(os.path.join(data_dir, f"{scan_id}.json"))
+        if os.path.dirname(file_path) != base:
+            raise ValueError(f"scan_id escapes the category override folder: {scan_id!r}")
+
         try:
-            import os
             import aiofiles
-            
+
             # Create data directory if it doesn't exist
-            data_dir = "data/category_overrides"
             os.makedirs(data_dir, exist_ok=True)
-            
-            file_path = f"{data_dir}/{scan_id}.json"
             
             # Load existing data
             data = {}

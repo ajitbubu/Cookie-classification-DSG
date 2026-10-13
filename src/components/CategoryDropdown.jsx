@@ -8,8 +8,7 @@ const CATEGORIES = [
   { value: 'Functional', label: 'Functional', color: '#3D8BFF' },
   { value: 'Analytics', label: 'Analytics', color: '#FFBC32' },
   { value: 'Marketing', label: 'Marketing', color: '#FF4D4D' },
-  { value: 'Preferences', label: 'Preferences', color: '#9B59B6' },
-  { value: 'Uncategorized', label: 'Uncategorized', color: '#95A5A6' }
+  { value: 'Unknown', label: 'Unclassified', color: '#95A5A6' }
 ];
 
 function CategoryDropdown({ 

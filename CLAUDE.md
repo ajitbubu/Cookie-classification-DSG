@@ -7,6 +7,10 @@ Non-Claude agents (OpenAI Codex, Cursor, etc.) don't read this file — they rea
 architecture, commands, and conventions in a tool-agnostic form. Keep the two in sync
 when either changes.
 
+UI work follows design-system/README.md. Take colours, spacing and radii from
+design-system/tokens.json; never hard-code hex values. Check
+design-system/components/<Name>/README.md before building or changing a component.
+
 ## What this is
 
 **Cookie Scanner (DataSafeguard)** — a privacy-compliance platform that scans websites
@@ -22,7 +26,7 @@ compliance. React dashboard on top of a Python scanning/classification backend.
 | Backend API | FastAPI (`backend/main.py`), Uvicorn/Gunicorn |
 | Scanning | Playwright, Firefox workers, `backend/scanner/`, `backend/worker/` |
 | ML classification | scikit-learn / XGBoost / SHAP, `backend/api/ml_classifier/` |
-| Data | PostgreSQL (`backend/db/`, SQL migrations), Redis (cache + Celery queue) |
+| Data | PostgreSQL (`backend/db/`, SQL migrations), MongoDB (scan store: scans, publishes, schedules, approvals — `backend/db/scan_store.py`, `/api/store`), Redis (cache + Celery queue) |
 | Backend tests | pytest + httpx + hypothesis, `tests/backend/` |
 | Infra | Docker Compose (`docker-compose.yml`, `docker/Dockerfile.*`), Nginx |
 
@@ -42,7 +46,7 @@ compliance. React dashboard on top of a Python scanning/classification backend.
 - `backend/db/` — SQLAlchemy/asyncpg access + hand-written SQL migrations
   (`backend/db/migrations/NNN_*.sql`, numbered sequentially, tracked in
   `MIGRATION_STATUS.md`).
-- Services communicate over Postgres + Redis; see `docker-compose.yml` for the full
+- Services communicate over Postgres, MongoDB + Redis; see `docker-compose.yml` for the full
   topology (api-gateway :1001, ml-api :8001→:8000, workers, frontend :5173, nginx).
 
 ## Commands
@@ -62,7 +66,7 @@ pytest tests/backend/ -v
 bash tests/run_api_tests.sh
 
 # Full stack
-docker compose up --build                            # redis, postgres, api-gateway, ml-api,
+docker compose up --build                            # redis, postgres, mongo, api-gateway, ml-api,
                                                        # 3 scanner workers, frontend, nginx
 ```
 
@@ -71,17 +75,20 @@ No project skill launches the app end-to-end yet — see `/run` for ad-hoc launc
 
 ## Conventions
 
-- One component = one `.jsx` + co-located `.css` file in `src/components/`. No CSS-in-JS,
-  no Tailwind — match the existing plain-CSS-per-component pattern.
-- Client-side scanning (`src/lib/`) must stay framework-free (no React imports) — it's
-  reused for the no-backend Quick Scan path.
-- SQL schema changes are additive migrations: `backend/db/migrations/0NN_description.sql`,
-  next number after whatever's already in that directory, entry added to
-  `MIGRATION_STATUS.md`.
-- Pydantic `Settings` (`backend/config.py`) is the single source of config — new env vars
-  get a typed field there, not scattered `os.getenv()` calls.
-- ESLint: `no-unused-vars` is a warning, not an error; `react/prop-types` and
-  `react/react-in-jsx-scope` are intentionally off (see `.eslintrc.json`).
+- UI follows the design system in `design-system/`. For this app (UCM) read
+  `design-system/ucm/README.md` first, then `design-system/README.md` for shared rules.
+  `design-system/components/Ucm*/preview.html` show the target look for each pattern.
+- Use CSS variables from `design-system/tokens.css` (`var(--ucm-brand-accent)`,
+  `var(--ucm-blue-4)`, `var(--ucm-radius-control)` …) in each component's `.css`; never
+  hard-code hex values. `design-system/tokens.json` lists every token with its usage note.
+- UCM screens use `--ucm-brand-accent`, not `--primary`. Text is `--ucm-navy`.
+- `design-system/components/<Name>/README.md` describe the PMP React kit: reference
+  only, not components to import here.
+- Don't import `design-system/components/bundle.css`; it restyles globals. Its
+  `--ucm-font*` variables are the only part this app needs.
 
 See also: `.claude/rules/` (style/testing/API detail), `.claude/commands/` (repeatable
 workflows), `.claude/agents/` (specialized reviewers).
+
+
+

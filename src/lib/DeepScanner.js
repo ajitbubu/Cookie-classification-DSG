@@ -9,6 +9,7 @@ export class DeepScanner {
       maxPages: 20000,  // Industry-grade: 20K pages
       maxDepth: 500,    // Industry-grade: deep crawling
       concurrency: 50,  // High-performance parallel scanning
+      includeSubdomains: false, // Deep Scan "Follow internal + subdomain links"
       backendUrl: '',
       ...options
     };
@@ -40,7 +41,8 @@ export class DeepScanner {
         scanType: 'deep',
         maxPages: this.options.maxPages,
         concurrency: this.options.concurrency,
-        maxDepth: this.options.maxDepth
+        maxDepth: this.options.maxDepth,
+        includeSubdomains: Boolean(this.options.includeSubdomains)
       };
 
       console.log('Starting backend deep scan:', scanRequest);

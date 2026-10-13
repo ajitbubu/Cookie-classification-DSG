@@ -1,0 +1,69 @@
+/* Fields shared by the Deep Scan and Schedule Scan modals */
+.scan-form { display: flex; flex-direction: column; gap: 20px; }
+
+.scan-form__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+
+.scan-form__field { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.scan-form__label { font: 500 16px/1 var(--font-sans); color: var(--ucm-navy); }
+.scan-form__req { margin-left: 2px; color: var(--ucm-red); }
+
+/* Figma 12.08.02 intro: "Configure deep scan" + one-line description */
+.scan-form__intro { display: flex; flex-direction: column; gap: 8px; }
+.scan-form__heading { margin: 0; padding: 0; font: 500 22px/1.2 var(--font-sans); color: var(--ucm-navy); }
+.scan-form__heading--sm { margin-bottom: 4px; font-size: 18px; }
+.scan-form__sub { margin: 0; font: 400 15px/1.4 var(--font-sans); color: var(--ucm-navy); }
+
+.scan-form__input {
+  height: 44px;
+  padding: 0 18px;
+  border: 1px solid var(--ucm-input-border);
+  border-radius: var(--ucm-radius-input);
+  background: var(--ucm-surface);
+  color: var(--ucm-navy);
+  font: 400 14px/1 var(--font-sans);
+}
+.scan-form__input:focus-visible { outline: 2px solid var(--ucm-brand-accent); outline-offset: 1px; }
+select.scan-form__input { height: 44px; border-color: var(--ucm-blue-4); }
+.scan-form__input[aria-invalid='true'] { border-color: var(--ucm-red); }
+
+.scan-form__fieldset { margin: 0; padding: 0; border: none; display: flex; flex-direction: column; gap: 8px; }
+
+.scan-form__error { margin: -8px 0 0; font-size: var(--fs-sm); color: var(--ucm-red); }
+.scan-form__hint { margin: 0; font-size: 14px; color: var(--color-text-secondary); }
+select.scan-form__input:disabled, .scan-form__input:disabled { background: var(--ucm-row-hover); color: var(--color-text-muted); }
+
+.scan-form__grid--4 { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; }
+
+/* Scan Scope radios (Figma: plain radios, not cards) */
+.scan-form__options { display: flex; flex-wrap: wrap; gap: 8px 32px; }
+.scan-form__option { display: inline-flex; align-items: center; gap: 10px; min-height: 28px; font: 500 15px/1 var(--font-sans); color: var(--ucm-navy); cursor: pointer; }
+.scan-form__option input { width: 18px; height: 18px; accent-color: var(--ucm-brand-accent); }
+
+/* Checks cards (Figma 12.08.02): 2x2, checkbox + title + detail */
+.scan-checks__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.scan-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-height: 72px;
+  padding: 14px 16px;
+  border: 1px solid var(--ucm-blue-4);
+  border-radius: var(--ucm-radius-control);
+  background: var(--ucm-surface);
+  box-shadow: 0 4px 8px rgba(145, 158, 171, 0.14);
+}
+.scan-check--on { border-color: var(--ucm-brand-accent); }
+.scan-check--off { opacity: 0.7; }
+.scan-check input { width: 18px; height: 18px; margin-top: 2px; accent-color: var(--ucm-brand-accent); }
+.scan-check__text { display: flex; flex-direction: column; gap: 6px; }
+.scan-check__title { font: 500 16px/1.2 var(--font-sans); color: var(--ucm-navy); }
+.scan-check__detail { font: 400 13px/1.3 var(--font-sans); color: var(--color-text-secondary); }
+.scan-check__soon { font: 500 12px/1 var(--font-sans); color: var(--ucm-amber-ink); }
+
+.scan-form__next { display: flex; flex-wrap: wrap; gap: 12px; margin: 0; font: 400 15px/1.4 var(--font-sans); color: var(--ucm-navy); }
+.scan-form__next-label { font-weight: 500; font-size: 16px; }
+
+@media (max-width: 768px), (pointer: coarse) {
+  .scan-form__input,
+  .scan-form__option { min-height: 44px; }
+}

@@ -1,0 +1,27 @@
+{
+  "version": "6.1.0",
+  "created_at": "2026-08-04T23:28:20.112577+00:00",
+  "promotion_eligible": false,
+  "files": {
+    "model.ubj": {
+      "sha256": "4e7e19af9b759e1e1a375ed7cffe0860142079dff3c83e7ab8343a6e9fafb5d2",
+      "bytes": 3033315
+    },
+    "labels.json": {
+      "sha256": "70f1aae4cff670a8463ed93699df10cb8b93b48502b7c52fc558bfc1156e8d2e",
+      "bytes": 115
+    },
+    "features.json": {
+      "sha256": "d358c7af6f5aaca66854d1bb7ca7856cd59be31f408ea5e982c7a7b17787ac88",
+      "bytes": 1060
+    },
+    "calibration.json": {
+      "sha256": "3d2c9b0833c2d4aa2da0225d5645c8f431d075ff94f68ba5cadd71b7d1a64f00",
+      "bytes": 996
+    },
+    "metadata.json": {
+      "sha256": "0488f864106db8a117d63715b3fee88d761ba112a2379d96bc753fc060b32660",
+      "bytes": 8188
+    }
+  }
+}

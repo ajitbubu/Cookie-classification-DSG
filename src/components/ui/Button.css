@@ -1,0 +1,49 @@
+/* UCM design system buttons (project/components/ucm/ucm.css .ucm-btn, .ucm-approve) */
+.ui-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 40px;
+  padding: 0 24px;
+  border: 1px solid transparent;
+  border-radius: var(--ucm-radius-control);
+  background: var(--ucm-surface);
+  color: var(--ucm-navy);
+  font: 500 16px/1 var(--font-sans);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: filter 0.2s ease-out, background-color 0.2s ease-out;
+}
+.ui-btn svg { flex: none; }
+.ui-btn--icon-lead { padding-left: 12px; }
+
+.ui-btn--primary { background: var(--ucm-btn-primary); color: var(--ucm-surface); box-shadow: var(--ucm-shadow-button); }
+.ui-btn--outline { border-color: var(--ucm-btn-primary); color: var(--ucm-btn-primary); }
+/* Navy action (Figma 12.12.31 "Review") */
+.ui-btn--dark { background: var(--ucm-navy); color: var(--ucm-surface); }
+.ui-btn--success { background: var(--ucm-green-2); color: var(--ucm-surface); box-shadow: var(--ucm-shadow-button); }
+.ui-btn--neutral { border-color: var(--ucm-blue-4); }
+.ui-btn--danger { border-color: var(--ucm-red); color: var(--ucm-red); }
+.ui-btn--link { height: auto; padding: 0; border: 0; background: none; color: var(--ucm-brand-accent); }
+
+.ui-btn--sm { height: 36px; padding: 0 16px; gap: 8px; border-radius: 7px; font-size: 14px; }
+.ui-btn--modal { min-width: 120px; height: 44px; padding: 0 24px; border-radius: var(--ucm-radius-modal-btn); }
+.ui-btn--modal.ui-btn--primary { background: var(--ucm-brand-accent); box-shadow: none; }
+.ui-btn--modal.ui-btn--outline { border-color: var(--ucm-brand-accent); color: var(--ucm-brand-accent); }
+.ui-btn--block { width: 100%; }
+
+.ui-btn:hover:not(:disabled) { filter: brightness(0.95); }
+.ui-btn--neutral:hover:not(:disabled), .ui-btn--outline:hover:not(:disabled) { background: var(--ucm-row-hover); filter: none; }
+.ui-btn:active:not(:disabled) { transform: translateY(1px); }
+.ui-btn:focus-visible { outline: 2px solid var(--ucm-brand-accent); outline-offset: 2px; }
+.ui-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+@media (max-width: 768px), (pointer: coarse) {
+  .ui-btn, .ui-btn--sm { min-height: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ui-btn { transition: none; }
+  .ui-btn:active:not(:disabled) { transform: none; }
+}

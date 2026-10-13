@@ -1,5 +1,8 @@
 # Sentinel Design System
 
+> **Legacy.** This document describes a Next.js + Tailwind + shadcn build that this app does not use.
+> The design system for this app is [`DESIGN.md`](../DESIGN.md) at the repo root.
+
 Calm authority for dense, high-signal privacy & security operations surfaces. This folder
 is the single source of truth for the look of the app: tokens, themes, and the build
 contract. Components that consume it live in `../components/`.

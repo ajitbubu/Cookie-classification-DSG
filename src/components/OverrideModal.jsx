@@ -67,7 +67,7 @@ function OverrideModal({ cookie, allCookies, onClose, onApply }) {
   const currentCategory = cookie.mlClassification || cookie.category || 'Unknown';
   const similar = useMemo(() => findSimilarCookies(cookie, allCookies), [cookie, allCookies]);
   const overrideHistory = useMemo(() => getOverridesForCookie(cookie.name, cookie.domain), [cookie]);
-  const confidence = Math.round((cookie.mlConfidence || 0.5) * 100);
+  const confidence = Math.round((cookie.mlConfidence ?? 0) * 100);
 
   const reason = selectedReason === 'Other (specify below)' ? customReason : selectedReason;
   const canSubmit = newCategory && newCategory !== currentCategory && reason.trim().length > 5;

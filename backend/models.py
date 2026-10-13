@@ -1,4 +1,4 @@
-from pydantic import BaseModel, HttpUrl, field_validator
+from pydantic import BaseModel, ConfigDict, Field, HttpUrl, field_validator
 from typing import List, Optional, Dict, Any
 from datetime import datetime
 
@@ -10,6 +10,7 @@ class ScanRequest(BaseModel):
     maxPages: int = 20000  # Industry-grade: 20K pages
     concurrency: int = 50  # High-performance parallel scanning
     maxDepth: int = 500  # Industry-grade: deep crawling
+    includeSubdomains: bool = False  # Deep Scan "Follow internal + subdomain links"
     
     @field_validator('scanType')
     @classmethod
@@ -50,7 +51,7 @@ class Cookie(BaseModel):
     httpOnly: bool = False
     secure: bool = False
     sameSite: Optional[str] = None
-    category: str = "Uncategorized"
+    category: str = "Unclassified"
     type: str = "Unknown"
     purpose: str = "Unknown"
     requiresConsent: bool = False
@@ -99,3 +100,46 @@ class HealthResponse(BaseModel):
     status: str
     timestamp: str
     version: str = "1.0.0"
+
+
+# ── MongoDB scan store (/api/store) ─────────────────────────────────────────
+# Records keep the frontend's own shape; extra fields (fullResults, counts,
+# schedule settings) are stored as sent. Ids are restricted so they are safe
+# as Mongo _id values and URL path segments.
+STORE_ID_PATTERN = r"^[A-Za-z0-9_.:@|-]{1,200}$"
+
+
+class StoredScan(BaseModel):
+    """One scan as the app saves it (history entry with fullResults)."""
+    model_config = ConfigDict(extra="allow")
+    id: str = Field(pattern=STORE_ID_PATTERN)
+    domain: str = Field(min_length=1, max_length=253)
+    timestamp: str = Field(min_length=1, max_length=40)
+
+
+class PublishedVersion(BaseModel):
+    """Which stored scan is the published version of a domain."""
+    id: str = Field(pattern=STORE_ID_PATTERN)
+    publishedAt: Optional[str] = None
+
+
+class StoredSchedule(BaseModel):
+    """A scheduled scan job."""
+    model_config = ConfigDict(extra="allow")
+    id: str = Field(pattern=STORE_ID_PATTERN)
+    url: str = Field(min_length=1, max_length=2048)
+    unit: str
+
+
+class StoredApproval(BaseModel):
+    """A review-queue approval, keyed by "<domain>:<cookie name>"."""
+    model_config = ConfigDict(extra="allow")
+    cookieKey: str = Field(min_length=1, max_length=600)
+
+
+class StoreImportRequest(BaseModel):
+    """One browser's saved data, uploaded once when the app first uses the store."""
+    scans: List[StoredScan] = []
+    published: Dict[str, PublishedVersion] = {}
+    schedules: List[StoredSchedule] = []
+    approvals: List[StoredApproval] = []

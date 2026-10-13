@@ -1,0 +1,64 @@
+/* UCM design system tags and pills (project/components/ucm/ucm.css:
+   .ucm-tag, .ucm-pill, .ucm-chip-round). Colours come only from --ucm-*. */
+.ui-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  height: 24px;
+  padding: 0 16px;
+  border-radius: var(--ucm-radius-tag);
+  font: 500 12px/18px var(--font-sans);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.ui-chip--sm { padding: 0 8px; }
+
+.ui-chip--necessary { background: var(--ucm-tint-necessary); color: var(--ucm-green-2); }
+.ui-chip--analytics { background: var(--ucm-tint-analytics); color: var(--ucm-brand-accent); }
+.ui-chip--marketing { background: var(--ucm-tint-marketing); color: var(--ucm-amber-ink); }
+.ui-chip--advertising { background: var(--ucm-tint-advertising); color: var(--ucm-indigo); }
+.ui-chip--unclassified { background: var(--ucm-tint-unclassified); color: var(--ucm-red); }
+.ui-chip--neutral { background: var(--ucm-surface-neutral); color: var(--ucm-navy); box-shadow: inset 0 0 0 1px var(--ucm-border-neutral); }
+
+/* Round chips: Published version, change counts ("+4 Added"), on-dark labels */
+.ui-chip--published {
+  border-radius: 100px;
+  background: var(--ucm-published-bg);
+  box-shadow: inset 0 0 0 1px var(--ucm-published-border);
+  color: var(--ucm-published-ink);
+  font-weight: 600;
+}
+.ui-chip--change {
+  border-radius: 100px;
+  background: var(--ucm-change-bg);
+  box-shadow: inset 0 0 0 1px var(--ucm-change-border);
+  color: var(--ucm-navy);
+}
+.ui-chip--count { height: 26px; border-radius: var(--ucm-radius-chip); background: var(--ucm-tint-count); color: var(--ucm-navy); font-size: 14px; }
+
+/* Solid scan-type pills: 32px, 16px radius, icon + label */
+.ui-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  padding: 6px 16px 6px 12px;
+  border-radius: var(--ucm-radius-pill);
+  font: 500 14px/1 var(--font-sans);
+  letter-spacing: -0.02em;
+  color: var(--ucm-surface);
+  white-space: nowrap;
+}
+.ui-pill svg { flex: none; }
+.ui-pill--quick { background: var(--ucm-brand-accent); }
+.ui-pill--deep { background: var(--ucm-navy); }
+.ui-pill--schedule { background: var(--ucm-green-1); }
+
+/* Solid category chips (Figma 12.12.39 Cookies, 12.13.22 Categories, 12.13.36 Vendors) */
+.ui-chip--solid { height: 36px; padding: 0 18px; border-radius: 6px; box-shadow: none; color: var(--ucm-surface); font: 400 16px/1 var(--font-sans); }
+.ui-chip--solid.ui-chip--necessary { background: var(--ucm-green-2); }
+.ui-chip--solid.ui-chip--analytics { background: var(--ucm-solid-analytics); }
+.ui-chip--solid.ui-chip--marketing { background: var(--ucm-amber); }
+.ui-chip--solid.ui-chip--advertising { background: var(--ucm-solid-advertising); }
+.ui-chip--solid.ui-chip--unclassified { background: var(--ucm-red); }
+.ui-chip--solid.ui-chip--neutral { background: var(--color-text-secondary); }

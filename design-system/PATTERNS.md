@@ -1,5 +1,8 @@
 # Sentinel — Screen build patterns (agent contract)
 
+> **Legacy.** This document describes a Next.js + Tailwind + shadcn build that this app does not use.
+> The design system for this app is [`DESIGN.md`](../DESIGN.md) at the repo root.
+
 You are implementing ONE screen (a Next.js App Router `page.tsx`) or ONE data module
 for the Sentinel enterprise privacy platform. Follow this contract exactly so every
 screen is visually consistent and the project compiles.

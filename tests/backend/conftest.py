@@ -10,6 +10,12 @@ from fastapi.testclient import TestClient
 from backend.main import app
 
 
+@pytest.fixture
+def anyio_backend():
+    """The backend uses asyncio; do not parameterize tests over unavailable Trio."""
+    return "asyncio"
+
+
 @pytest.fixture(scope="session")
 def client():
     """A single in-process TestClient for the whole test session."""

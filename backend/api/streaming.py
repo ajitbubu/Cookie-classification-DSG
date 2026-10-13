@@ -43,7 +43,8 @@ async def scan_stream_generator(request: ScanRequest) -> AsyncGenerator[str, Non
                     max_pages=request.maxPages,
                     concurrency=request.concurrency,
                     max_depth=request.maxDepth,
-                    on_progress=progress_callback
+                    on_progress=progress_callback,
+                    include_subdomains=request.includeSubdomains
                 )
             )
         else:

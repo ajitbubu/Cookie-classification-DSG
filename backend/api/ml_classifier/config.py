@@ -11,12 +11,23 @@ from typing import Optional
 # Paths
 BASE_DIR = Path(__file__).parent.parent.parent.parent
 MODELS_DIR = BASE_DIR / "models"
-CURRENT_MODEL_VERSION = os.getenv("ML_MODEL_VERSION", "6.0.0")
+CURRENT_MODEL_VERSION = os.getenv("ML_MODEL_VERSION", "6.1.0")
 MODEL_PATH = MODELS_DIR / f"v{CURRENT_MODEL_VERSION}"
 
 # Classification Thresholds
 CONFIDENCE_HIGH_THRESHOLD = float(os.getenv("ML_CONFIDENCE_HIGH", "0.85"))
 CONFIDENCE_MEDIUM_THRESHOLD = float(os.getenv("ML_CONFIDENCE_MEDIUM", "0.65"))
+
+# Hallucination guard: features that tie a cookie to a known name pattern or
+# vendor domain. With none of them set the model sees only generic attributes
+# (expiry, flags, SameSite), so its confidence is capped below the review bar.
+IDENTITY_EVIDENCE_FEATURES = (
+    "is_ga_like", "is_fb_like", "has_prefix_utm", "has_consent_kw",
+    "has_session_kw", "name_has_track", "name_has_user", "name_has_analytics",
+    "vendor_advertising", "vendor_analytics", "is_google", "is_facebook",
+    "is_amazon", "is_microsoft", "is_linkedin",
+)
+NO_EVIDENCE_CONFIDENCE_CAP = 0.5
 
 # Performance Limits
 MAX_BATCH_SIZE = int(os.getenv("ML_MAX_BATCH_SIZE", "500"))

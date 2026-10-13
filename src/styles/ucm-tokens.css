@@ -1,0 +1,120 @@
+/* Vendored from the Data Safeguard PMP design system, UCM extension:
+   https://claude.ai/artifact/3wguTnHx69YLGQ3usi6Dun  project/tokens/ucm.css
+   (version 1791766183-a23e). Do not edit values here; update from the design
+   system instead. Fonts are loaded in index.html, so the @import is dropped. */
+/* UCM / Cookie Classification tokens.
+   Read from the UCM Figma file (pages COOKIE CLASSIFICATION → "Draft 1",
+   UCM CONFIG) via the Properties panel, 2026-10-11. Figma style names are
+   quoted in the comments so every value traces back to the file.
+   These extend the PMP palette; they do not replace --primary. UCM screens
+   use the softer "Brand accent" blue (#3979BD) where PMP uses #086DE8. */
+:root {
+  /* ---- raw UCM values ---- */
+  --ucm-brand-accent: #3979bd;      /* "Brand accent" / "DSG - brand - blue" — pills, links, active nav, progress */
+  --ucm-navy: #092339;              /* "DSG - bLack" — all body text, Deep scan pill */
+  --ucm-ink-stat: #2a3547;          /* "Light Theme/Gray/Dark Blue Grey" — KPI values */
+  --ucm-blue-4: #cbdcf6;            /* "DSG - blue 4" — card, table row, input borders */
+  --ucm-row-hover: #f6f9fd;         /* table row hover/first-row fill */
+  --ucm-progress-track: #b8cff0;    /* progress bar track */
+  --ucm-page: #f0f1f6;              /* "Gray/70" — app canvas behind cards */
+  --ucm-surface: #ffffff;           /* "DSG - WHite" */
+  --ucm-sidebar: #112437;           /* nav sidebar fill */
+  --ucm-green-1: #1cc279;           /* "green" — Schedule scan pill */
+  --ucm-green-2: #148018;           /* "DSG - green 2" / "DSG - Green 1 - 100" — Approve, Necessary, Low, trend up */
+  --ucm-red: #e94141;               /* "DSG - Red" — Unclassified, Critical */
+  --ucm-red-2: #ff5757;             /* "DSG - Red 2" — trend down */
+  --ucm-amber: #fdbd5b;             /* Marketing / Scheduled tint source */
+  --ucm-amber-ink: #846534;         /* Marketing / Scheduled text */
+  --ucm-indigo: #1b1480;            /* Advertising / Deep tag text + tint source */
+  --ucm-trend-up-bg: #e8f7e0;
+  --ucm-trend-down-bg: #f7e0e0;
+
+  /* ---- tag tints (Figma fill + layer opacity, flattened on white) ---- */
+  --ucm-tint-necessary: #c7e1c8;    /* #148018 @ 24% */
+  --ucm-tint-analytics: #e1ebf5;    /* #3979BD @ 15% */
+  --ucm-tint-marketing: #fff5e6;    /* #FDBD5B @ 15% */
+  --ucm-tint-advertising: #c8c7e1;  /* #1B1480 @ 24% */
+  --ucm-tint-unclassified: #fad1d1; /* #E94141 @ 24% */
+  --ucm-tint-count: #bed3e9;        /* #3979BD @ 33% — "3 in progress" chip */
+
+  /* ---- type ---- */
+  --ucm-font: "Larsseit", var(--font-sans);      /* content, tables, chips */
+  --ucm-font-title: "Inter", var(--font-sans);   /* "H2/Bold" page title */
+  --ucm-font-nav: "Source Sans 3", "Source Sans Pro", var(--font-sans); /* "H5/Regular" sidebar */
+
+  /* ---- shape ---- */
+  --ucm-radius-tag: 4px;
+  --ucm-radius-control: 8px;   /* inputs, nav items, Approve, scan card */
+  --ucm-radius-stat: 10px;
+  --ucm-radius-panel: 12px;
+  --ucm-radius-pill: 16px;     /* scan-type pills (32px tall) */
+  --ucm-radius-chip: 28px;     /* count chips */
+
+  /* ---- elevation ---- */
+  --ucm-shadow-card: 0 4px 11.9px 0 rgb(0 0 0 / 0.06);
+  --ucm-shadow-stat: 0 4px 16px 0 rgb(145 158 171 / 0.14);
+  --ucm-shadow-button: 0 4px 8px 0 rgb(186 186 186 / 0.25);
+  --ucm-shadow-chip: 0 12px 24px -4px rgb(145 158 171 / 0.12), 0 0 2px 0 rgb(145 158 171 / 0.2);
+  /* ================================================================
+     Added 2026-10-11 from the other UCM pages: UCM CONFIG, DOWNSTREAM
+     APPLICATION (webhooks), NOTIFICATION, UCM AUDIT LOG, GPC, DYNAMIC
+     COOKIES and Policy Builder.
+     ================================================================ */
+
+  /* ---- actions ---- */
+  --ucm-btn-primary: #4879b8;       /* "Button40px" fill — Scan Website, New Subscription (a hair off Brand accent) */
+  --ucm-republish: #df7900;         /* Policy Builder "Republish" */
+  --ucm-border-neutral: #dfe1e6;    /* Save Draft / Preview buttons, version chip */
+  --ucm-surface-neutral: #f4f5f7;   /* version chip fill */
+
+  /* ---- form ---- */
+  --ucm-input-border: #b8cff0;      /* "breadcrum color deep" — text inputs in modals */
+  --ucm-input-disabled: #eeeeee;    /* #919191 @ 15% — read-only fields */
+  --ucm-icon-muted: #afaeae;        /* "Gray/80" — header help/settings icons */
+
+  /* ---- status ---- */
+  --ucm-published-bg: #e3fcef;      /* Published chip */
+  --ucm-published-border: #a4e8ce;  /* #10B981 @ 30% */
+  --ucm-published-ink: #006644;
+  --ucm-success-icon: #10b981;      /* toast check */
+  --ucm-archived-bg: #e6e6e6;       /* Archived version chip */
+  --ucm-change-bg: #f8fafc;         /* "12 Removed" change-count chip */
+  --ucm-change-border: #e2e8f0;
+  --ucm-optin-bg: #ecf5ed;          /* #148018 @ 8% — Opt-in pill */
+  --ucm-optout-bg: #fdf0f0;         /* #E94141 @ 8% — Opt-out pill */
+  --ucm-warning-bg: #fffbee;        /* #FFF3CD @ 33% — "editing a live notice" banner */
+  --ucm-warning-border: #ffab00;
+  --ucm-warning-ink: #7a4f00;
+  --ucm-toast-ink: #64748b;         /* toast body text */
+  --ucm-select-pill: #fed393;       /* #FDBD5B @ 66% — cookie-type select pill */
+
+  /* ---- policy builder ---- */
+  --ucm-token-bg: #ebf2f8;          /* #3979BD @ 10% — [System: …] attribute chip */
+  --ucm-token-border: #c4d7eb;      /* #3979BD @ 30% */
+
+  /* ---- charts (Dashboard, Dashboard V1.1) ---- */
+  --ucm-chart-1: #00aefe;
+  --ucm-chart-2: #0088fe;
+  --ucm-chart-3: #ffbb28;
+  --ucm-chart-4: #00c49f;
+  --ucm-chart-5: #3979bd;
+  --ucm-chart-ghost-from: #9fbaff;  /* comparison bars, 40% opacity gradient */
+  --ucm-chart-ghost-to: #7994f6;
+
+  /* ---- end-user consent banner (GPC page, "Cookie/V6") — its own neutral ramp ---- */
+  --ucm-banner-n100: #ffffff;
+  --ucm-banner-n300: #f1f2f9;
+  --ucm-banner-n400: #d9dbe9;
+  --ucm-banner-n700: #514f6e;
+  --ucm-banner-n800: #170f49;
+
+  /* ---- more shape / elevation ---- */
+  --ucm-radius-modal-btn: 4px;      /* 120x44 modal buttons */
+  --ucm-radius-input: 6px;
+  --ucm-radius-banner: 24px;        /* end-user consent modal */
+  --ucm-radius-banner-btn: 10px;
+  --ucm-shadow-menu: 0 1px 21px 0 rgb(14 14 14 / 0.12);
+  --ucm-shadow-popover: 0 4px 8px 0 rgb(186 186 186 / 0.25);
+  --ucm-shadow-toast: 0 4px 20px 0 rgb(186 186 186 / 0.68);
+  --ucm-shadow-banner: 0 3px 12px -2px rgb(170 170 190 / 0.06), 0 4px 32px -4px rgb(111 108 143 / 0.12);
+}

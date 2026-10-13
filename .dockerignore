@@ -52,3 +52,11 @@ logs
 # Build
 build
 dist
+
+# Training inputs and non-serving experiment artifacts must never enter runtime images
+models/training_data/
+models/training_scripts/
+models/**/rf_model.pkl
+models/**/xgb_model.pkl
+models/**/catboost_model.pkl
+models/**/.DS_Store

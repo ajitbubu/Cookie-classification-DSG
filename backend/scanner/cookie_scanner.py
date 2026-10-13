@@ -11,6 +11,27 @@ from backend.config import settings
 logger = logging.getLogger(__name__)
 
 
+def site_root(url: str) -> str:
+    """The host a deep scan belongs to, without a leading "www."."""
+    host = urlparse(url).netloc.lower()
+    return host[4:] if host.startswith("www.") else host
+
+
+def is_link_in_scope(link_host: str, page_host: str, root: str, include_subdomains: bool = False) -> bool:
+    """Whether a deep scan may follow a link (Deep Scan "Crawl Mode").
+
+    Relative links (no host) and links to the page's own host are always in
+    scope. With include_subdomains, any host equal to the site root or under it
+    ("blog.example.com" for root "example.com") is in scope too.
+    """
+    link_host = (link_host or "").lower()
+    if link_host == "" or link_host == page_host.lower():
+        return True
+    if not include_subdomains or not root:
+        return False
+    return link_host == root or link_host.endswith("." + root)
+
+
 class CookieScanner:
     """Core cookie scanning functionality using Playwright"""
     
@@ -70,7 +91,7 @@ class CookieScanner:
             if page:
                 await page.close()
     
-    async def extract_links(self, url: str, max_links: int = 50) -> List[str]:
+    async def extract_links(self, url: str, max_links: int = 50, include_subdomains: bool = False, root: Optional[str] = None) -> List[str]:
         """Extract links from a page for deep scanning"""
         page: Page = None
         
@@ -141,8 +162,8 @@ class CookieScanner:
                 try:
                     parsed_link = urlparse(link)
                     
-                    # Only include same-origin links
-                    if parsed_link.netloc == base_domain or parsed_link.netloc == '':
+                    # Same-origin links, plus the site's subdomains when asked
+                    if is_link_in_scope(parsed_link.netloc, base_domain, root or site_root(url), include_subdomains):
                         # Handle relative URLs
                         if parsed_link.netloc == '':
                             link = urljoin(url, link)

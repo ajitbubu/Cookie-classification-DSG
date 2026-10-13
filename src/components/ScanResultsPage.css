@@ -1,0 +1,22 @@
+.sr-page { display: flex; flex-direction: column; gap: 24px; }
+
+.sr-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; }
+
+.sr-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+/* Figma 1:164148: the results list sits directly in the page panel, unframed */
+section.sr-card { margin: 8px 0 0; padding: 0; border: none; border-radius: 0; background: transparent; }
+
+.sr-card__title { margin: 0; font: 500 18px/1.2 var(--font-sans); color: var(--ucm-navy); }
+
+.sr-site { padding: 0; border: none; background: none; color: var(--ucm-brand-accent); font: 500 16px/1.2 var(--font-sans); cursor: pointer; }
+.sr-site:hover:not(:disabled) { text-decoration: underline; }
+.sr-site:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+.sr-site:disabled { color: var(--color-text); cursor: default; }
+
+.sr-none { margin: 8px; color: var(--color-text-secondary); }
+
