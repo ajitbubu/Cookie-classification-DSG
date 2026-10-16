@@ -1,0 +1,40 @@
+/* Launch New Scan type cards and Quick Scan URL panel (Figma 12.07.06) */
+.scan-type { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+
+.scan-type__card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 44px;
+  padding: 12px;
+  border: 1px solid var(--ucm-blue-4);
+  border-radius: var(--ucm-radius-control);
+  background: var(--ucm-surface);
+  color: var(--ucm-navy);
+  cursor: pointer;
+}
+.scan-type__card--checked { border-color: var(--ucm-brand-accent); }
+.scan-type__card:has(input:focus-visible) { outline: 2px solid var(--ucm-brand-accent); outline-offset: 2px; }
+
+.scan-type__top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 12px; }
+.scan-type__label { font: 500 15px/1.2 var(--font-sans); color: var(--ucm-navy); }
+.scan-type__detail { display: block; font: 400 13px/1.3 var(--font-sans); color: var(--ucm-navy); }
+
+.scan-type__quick {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--ucm-blue-4);
+  border-radius: var(--ucm-radius-control);
+}
+.scan-type__quick-head { display: flex; align-items: center; gap: 12px; color: var(--ucm-navy); }
+.scan-type__quick-head > span { display: flex; flex-direction: column; gap: 4px; }
+.scan-type__quick-row { display: flex; gap: 12px; }
+.scan-type__quick-row .scan-form__input { flex: 1; min-width: 0; }
+.scan-type__error { margin: 0; }
+
+@media (max-width: 640px) {
+  .scan-type { grid-template-columns: 1fr; }
+  .scan-type__quick-row { flex-direction: column; }
+}

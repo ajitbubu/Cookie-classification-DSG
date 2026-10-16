@@ -3,6 +3,7 @@ import { describe, it, expect, vi } from 'vitest';
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import CookieTabs from './CookieTabs';
+import { DASHBOARD_TABS } from '../lib/routes';
 
 // Scanning page tabs (Figma 1:189760): Launch New Scan | Active Scan (n) | Scan Result.
 describe('CookieTabs — Scanning tabs (Figma 1:189760, decision 22A)', () => {
@@ -37,8 +38,17 @@ describe('CookieTabs — Scanning tabs (Figma 1:189760, decision 22A)', () => {
     expect(screen.getByRole('link', { name: 'Active Scan' })).toBeInTheDocument();
   });
 
-  it('has no New Scan button: Launch New Scan is a tab', () => {
-    renderTabs();
-    expect(screen.queryByRole('button', { name: 'New Scan' })).not.toBeInTheDocument();
+  it('has a New Scan button at the right of the tab bar (Figma 12.06.45)', async () => {
+    const onNewScan = vi.fn();
+    renderTabs({ onNewScan });
+    await userEvent.click(screen.getByRole('button', { name: 'New Scan' }));
+    expect(onNewScan).toHaveBeenCalled();
+  });
+
+  it('renders the Dashboard tabs: Dashboard | Active Scan | Scan Result', () => {
+    renderTabs({ tabs: DASHBOARD_TABS, label: 'Cookie Classification', currentPage: 'home' });
+    const nav = screen.getByRole('navigation', { name: 'Cookie Classification' });
+    expect(within(nav).getAllByRole('link').map((l) => l.textContent)).toEqual(['Dashboard', 'Active Scan', 'Scan Result']);
+    expect(screen.getByRole('link', { name: 'Dashboard' })).toHaveAttribute('aria-current', 'page');
   });
 });

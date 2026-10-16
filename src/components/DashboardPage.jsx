@@ -265,10 +265,10 @@ function DashboardPage({ scanHistory = [], launchControl, running = null, onNavi
       <p className="db-kpi-note">Risk Score: 100 minus the share of GDPR, CCPA and DPDP risk flags across each website’s latest scan.</p>
 
       <div className="db-charts">
-        <ChartCard id="db-bars" title="Cookies by category" period={barPeriod} onPeriod={setBarPeriod} onExpand={() => setExpanded('bars')}>
+        <ChartCard id="db-bars" title="Cookie count by category" period={barPeriod} onPeriod={setBarPeriod} onExpand={() => setExpanded('bars')}>
           <BarSeries title="Cookie count by category" valueLabel="cookies" categoryLabel="Category" data={barMix} yLabel="Count" xLabel="Cookies" showValues={false} />
         </ChartCard>
-        <ChartCard id="db-mix" title="Cookies by category" period={donutPeriod} onPeriod={setDonutPeriod} onExpand={() => setExpanded('donut')}>
+        <ChartCard id="db-mix" title="Category share" period={donutPeriod} onPeriod={setDonutPeriod} onExpand={() => setExpanded('donut')}>
           <Donut title="Cookies by category" data={donutMix} layout="stacked" />
         </ChartCard>
       </div>

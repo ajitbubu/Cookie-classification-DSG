@@ -103,6 +103,15 @@
   color: var(--color-text-secondary);
 }
 
+/* The Figma sizes assume a 1700px+ canvas; below that the Party Type and
+   Action columns fall out of view, so step the type and dropdown down. */
+@media (max-width: 1699px) {
+  .cct-table { font-size: 16px; }
+  .cct-table thead th { padding: 18px 10px; }
+  .cct-table tbody td { height: 72px; padding: 0 10px; }
+  .cct .ml-dropdown-trigger { min-width: 164px; height: 40px; padding: 0 12px; font-size: 16px; }
+}
+
 /* Bulk-update selection column (Domain Details) */
 .cct-select { width: 44px; text-align: center; }
 .cct-select input { width: 20px; height: 20px; cursor: pointer; accent-color: var(--ucm-brand-accent); }

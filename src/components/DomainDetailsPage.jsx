@@ -63,7 +63,7 @@ const matches = (q, ...fields) => !q || fields.some((f) => (f || '').toLowerCase
 // categories, 12.13.30 pages, 12.13.36 vendors). Versions are the domain's
 // stored scans; Publish is saved in the scan store.
 function DomainDetailsPage({
-  scan, versions = [], currentVersionId, published, onPublish, onScanNow, onExport, onReview, onBulkUpdate, tableProps = {},
+  scan, versions = [], currentVersionId, published, onPublish, onOpenVersion, onScanNow, onExport, onReview, onBulkUpdate, tableProps = {},
   initialTab = 'overview', onTabChange, onBack,
 }) {
   const [tab, setTabState] = useState(initialTab);
@@ -215,7 +215,9 @@ function DomainDetailsPage({
                 header: 'Version',
                 render: (v) => (
                   <span className="dd-version">
-                    <span className="dd-version__id">{`V ${v.version}`}</span>
+                    <button type="button" className="dd-version__id" aria-label={`Open version ${v.version}`} onClick={() => onOpenVersion?.(v)}>
+                      {`V ${v.version}`}
+                    </button>
                     {published?.id === v.id && <span className="dd-version__tag">(Published)</span>}
                     {v.id === currentVersionId && <span className="dd-version__viewing">Viewing</span>}
                     {(v.failedPages || 0) > 0 && <StatusChip status="partial" failed={v.failedPages} />}

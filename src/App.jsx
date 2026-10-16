@@ -25,6 +25,7 @@ import { applyCategoryChanges, resolveDomainScan, versionsForDomain } from './li
 import { publishCategories, publishSummary } from './lib/categoryApi';
 import LaunchScan from './components/LaunchScan';
 import DeepScanModal from './components/DeepScanModal';
+import ScanTypeModal from './components/ScanTypeModal';
 import ScheduleScanModal from './components/ScheduleScanModal';
 import CookieInventoryPage from './components/CookieInventoryPage';
 import LeftSidebar from './components/LeftSidebar';
@@ -34,7 +35,7 @@ import { nextRunTime, startsLater } from './lib/schedule';
 import { readInterruptedScan, clearActiveScan, MAX_SCAN_HISTORY, MAX_SCANS_PER_DOMAIN } from './lib/scanStorage';
 import { useScanGuard } from './hooks/useScanGuard';
 import { deriveValueFeatures } from './lib/cookieValueFeatures';
-import { DOMAIN_TABS, pathForRoute, routeFromPath } from './lib/routes';
+import { DASHBOARD_TABS, DOMAIN_TABS, SCANNING_TABS, pathForRoute, routeFromPath } from './lib/routes';
 import CookieDetailModal from './components/CookieDetailModal';
 import VendorDashboard from './components/VendorDashboard';
 import OverrideModal from './components/OverrideModal';
@@ -52,7 +53,7 @@ function App() {
 
   // URL Scanning
   const [targetUrl, setTargetUrl] = useState('');
-  const [scanModal, setScanModal] = useState(null); // { type: 'deep' | 'schedule', url }
+  const [scanModal, setScanModal] = useState(null); // { type: 'choose' | 'deep' | 'schedule', url }
   // What the current (or last) scan was, for the Active Scan cards and Retry.
   const [activeScan, setActiveScan] = useState(null); // { url, type, settings }
   // A scan left running when the tab was refreshed or closed (E5, eng R5)
@@ -1097,6 +1098,18 @@ function App() {
     setDomainHistory(prev => Object.fromEntries(Object.entries(prev).map(([domain, scans]) => [domain, scans.filter(scan => scan.id !== id)])));
   };
 
+  // Version History: open that stored scan of the domain on its Cookies tab (Figma 12.12.39).
+  const openVersion = (version) => {
+    setOpenScan({ domain: version.domain, scanId: version.id });
+    if (version.fullResults) {
+      setDomainMissing(null);
+      setScanResult(version.fullResults);
+    } else {
+      setDomainMissing({ status: 'pruned', domain: version.domain, entry: version });
+    }
+    handleNavigate('results', { tab: 'cookies' });
+  };
+
   const viewScan = (scan) => {
     setOpenScan({ domain: scan.domain, scanId: scan.id });
     if (scan.fullResults) {
@@ -1359,11 +1372,14 @@ function App() {
 
       {/* Figma page shell: tabs and page content share one white panel */}
       <div className="page-panel">
-      {['launch', 'active', 'history'].includes(currentPage) && (
+      {['home', 'launch', 'active', 'history'].includes(currentPage) && (
         <CookieTabs
           currentPage={currentPage}
+          tabs={currentPage === 'home' ? DASHBOARD_TABS : SCANNING_TABS}
+          label={currentPage === 'home' ? 'Cookie Classification' : 'Scanning'}
           activeCount={scanning ? 1 : 0}
           onNavigate={handleNavigate}
+          onNewScan={storeStatus === 'ready' ? () => setScanModal({ type: 'choose', url: '' }) : undefined}
         />
       )}
 
@@ -1521,7 +1537,18 @@ function App() {
         </main>
       )}
 
-      {/* Scan pop-ups, opened from the launch control on any page */}
+      {/* Scan pop-ups, opened from the launch control or the New Scan button */}
+      <ScanTypeModal
+        open={scanModal?.type === 'choose'}
+        initialUrl={targetUrl.trim()}
+        onClose={() => setScanModal(null)}
+        onContinue={(type) => setScanModal({ type, url: targetUrl.trim() })}
+        onQuickScan={(url) => {
+          setScanModal(null);
+          handleNavigate('active');
+          handleQuickScanRemote(url);
+        }}
+      />
       <DeepScanModal
         open={scanModal?.type === 'deep'}
         initialUrl={scanModal?.url || ''}
@@ -1586,6 +1613,7 @@ function App() {
                 setPublishTick((t) => t + 1);
                 toast.success(`Version ${version.version} published.`);
               }}
+              onOpenVersion={openVersion}
               onScanNow={() => {
                 const url = scanResult.scannedUrl || `https://${scanResult.domain}`;
                 handleNavigate('active');

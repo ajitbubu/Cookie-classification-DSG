@@ -136,7 +136,9 @@ section.dd-card { margin: 0; }
 .dd-card__more { margin-left: auto; }
 .dd-published { display: inline-flex; align-items: center; gap: 16px; font: 400 18px/1 var(--font-sans); color: var(--color-text-secondary); }
 .dd-version { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 8px 14px; }
-.dd-version__id { color: var(--ucm-brand-accent); font-weight: 500; }
+.dd-version__id { padding: 0; border: 0; background: none; font: inherit; color: var(--ucm-brand-accent); font-weight: 500; cursor: pointer; }
+.dd-version__id:hover { text-decoration: underline; }
+.dd-version__id:focus-visible { outline: 2px solid var(--ucm-brand-accent); outline-offset: 2px; }
 .dd-version__tag { font-weight: 500; }
 .dd-version__viewing { font: 400 12px/1 var(--font-sans); color: var(--color-text-secondary); }
 .dd-updated { display: inline-flex; gap: 10px; }

@@ -80,7 +80,7 @@ function WebsitesPage({ scanHistory = [], domainHistory = {}, loading = false, e
               </button>
             ),
           },
-          { key: 'last', header: 'Last scan', render: (s) => new Date(s.latest.timestamp).toLocaleString() },
+          { key: 'last', header: 'Last scan', render: (s) => <span className="ws-date">{new Date(s.latest.timestamp).toLocaleString()}</span> },
           { key: 'scans', header: 'Scans', align: 'end' },
           { key: 'cookies', header: 'Cookies', align: 'end' },
           { key: 'unclassified', header: 'Unclassified', align: 'end' },

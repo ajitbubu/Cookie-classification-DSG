@@ -1,13 +1,16 @@
+import { ScanLine } from 'lucide-react';
+import Button from './ui/Button';
 import { SCANNING_TABS, pathForRoute } from '../lib/routes';
 import './CookieTabs.css';
 
-// Scanning page tabs (Figma 1:189760, decision 22A). Tabs are real links so
-// they can be opened in a new tab; plain clicks navigate in-app.
-function CookieTabs({ currentPage, activeCount = 0, onNavigate }) {
+// Scanning page tabs (Figma 1:189760) and Dashboard tabs (Figma 12.06.45),
+// with the New Scan button on the right. Tabs are real links so they can be
+// opened in a new tab; plain clicks navigate in-app.
+function CookieTabs({ currentPage, activeCount = 0, onNavigate, onNewScan, tabs = SCANNING_TABS, label = 'Scanning' }) {
   return (
     <div className="cookie-tabs">
-      <nav className="cookie-tabs__nav" aria-label="Scanning">
-        {SCANNING_TABS.map(({ page, label }) => {
+      <nav className="cookie-tabs__nav" aria-label={label}>
+        {tabs.map(({ page, label }) => {
           const current = page === currentPage;
           const count = page === 'active' && activeCount > 0 ? activeCount : null;
           return (
@@ -29,6 +32,9 @@ function CookieTabs({ currentPage, activeCount = 0, onNavigate }) {
           );
         })}
       </nav>
+      {onNewScan && (
+        <Button variant="primary" size="sm" icon={ScanLine} className="cookie-tabs__new" onClick={onNewScan}>New Scan</Button>
+      )}
     </div>
   );
 }

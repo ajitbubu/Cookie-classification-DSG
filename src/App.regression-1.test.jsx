@@ -121,3 +121,33 @@ describe('Saved scans load from the scan store', () => {
     await waitFor(() => expect(localStorage.getItem('cookieScanHistory')).toBeNull());
   });
 });
+
+describe('New Scan from the Dashboard tab bar (Figma 12.06.45 / 12.06.56)', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    window.history.pushState({}, '', '/');
+  });
+  afterEach(() => vi.restoreAllMocks());
+
+  it('opens Choose scan type, then the Deep Scan pop-up', async () => {
+    routeFetch({ stored: [{ id: 's1', domain: 'stored.com', timestamp: '2026-10-12T09:00:00.000Z', fullResults: { cookies: [] } }] });
+    renderApp();
+    const tabs = await screen.findByRole('navigation', { name: 'Cookie Classification' });
+    expect(within(tabs).getByRole('link', { name: 'Dashboard' })).toHaveAttribute('aria-current', 'page');
+    await userEvent.click(await screen.findByRole('button', { name: 'New Scan' }));
+    await userEvent.click(screen.getByRole('radio', { name: /Deep Scan/ }));
+    await userEvent.click(screen.getByRole('button', { name: 'Continue' }));
+    expect(screen.getByRole('dialog', { name: 'Deep Scan' })).toBeInTheDocument();
+  });
+
+  it('runs a Quick Scan straight from the pop-up', async () => {
+    routeFetch();
+    renderApp();
+    await userEvent.click(await screen.findByRole('button', { name: 'New Scan' }));
+    await userEvent.click(screen.getByRole('radio', { name: /Quick Scan/ }));
+    await userEvent.type(screen.getByLabelText('Quick Scan URL'), 'https://shop.com');
+    await userEvent.click(screen.getByRole('button', { name: 'Run Quick Scan' }));
+    await waitFor(() => expect(globalThis.fetch).toHaveBeenCalledWith(expect.stringContaining('/api/scan'), expect.anything()));
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+  });
+});

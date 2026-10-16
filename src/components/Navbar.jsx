@@ -4,10 +4,10 @@ import { breadcrumbFor, moduleTitleFor } from '../lib/routes';
 import './Navbar.css';
 
 const USER = {
-  name: 'Sam Sharma',
-  email: 'sam@faceoff.io',
+  name: 'Ajit Sahu',
+  email: 'asahu@datasafeguard.ai',
   role: 'Admin',
-  initials: 'SS',
+  initials: 'AS',
 };
 
 function Navbar({ currentPage = 'home', notifications = [], unreadCount = 0, onNotificationClick, onMarkAllRead, onClearAll, navOpen = false, onMenuToggle }) {

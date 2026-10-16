@@ -40,7 +40,8 @@
 .chart-bars__axis { display: flex; }
 .chart-bars__tick { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 0; }
 .chart-bars__value { font-size: var(--fs-xs); font-weight: 600; color: var(--color-text); }
-.chart-bars__label { font-size: var(--fs-xs); color: var(--color-text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+/* Wrap (hyphenating long words) rather than cutting category names to "Unclassi…" */
+.chart-bars__label { font-size: var(--fs-xs); line-height: 1.25; color: var(--color-text-secondary); text-align: center; hyphens: auto; overflow-wrap: break-word; max-width: 100%; }
 
 /* Screen-reader data table */
 .chart-sr-table {
