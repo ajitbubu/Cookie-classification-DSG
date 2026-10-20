@@ -147,7 +147,9 @@
 .mp-stat__label { font: 400 16px/1.2 var(--font-sans); color: var(--color-text-secondary); }
 .mp-stat__caption { font-size: var(--fs-xs); color: var(--color-text-muted); }
 
-.mp-table { border: 1px solid var(--ucm-blue-4); border-radius: var(--ucm-radius-control); overflow: hidden; }
+/* Scrolls inside its border on narrow screens instead of crushing columns (21A) */
+.mp-table { border: 1px solid var(--ucm-blue-4); border-radius: var(--ucm-radius-control); overflow-x: auto; }
+.mp-table__header, .mp-table__row { min-width: 560px; column-gap: 16px; }
 .mp-table__header {
   padding: 18px 24px;
   background: var(--ucm-surface);
