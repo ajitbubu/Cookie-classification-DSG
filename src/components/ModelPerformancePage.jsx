@@ -143,7 +143,7 @@ function ModelPerformancePage({ onNavigate }) {
       <div className="mp-card">
         <h3 className="mp-card__title"><Target size={16} /> Performance by Category</h3>
         {holdout?.per_class ? (
-          <div className="mp-table">
+          <div className="mp-table" role="region" aria-label="Performance by category" tabIndex={0}>
             <div className="mp-table__header">
               <span>Category</span>
               <span>Precision</span>

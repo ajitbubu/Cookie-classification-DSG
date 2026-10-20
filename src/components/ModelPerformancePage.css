@@ -150,6 +150,7 @@
 /* Scrolls inside its border on narrow screens instead of crushing columns (21A) */
 .mp-table { border: 1px solid var(--ucm-blue-4); border-radius: var(--ucm-radius-control); overflow-x: auto; }
 .mp-table__header, .mp-table__row { min-width: 560px; column-gap: 16px; }
+.mp-table:focus-visible { outline: 2px solid var(--ucm-brand-accent); outline-offset: 2px; }
 .mp-table__header {
   padding: 18px 24px;
   background: var(--ucm-surface);
