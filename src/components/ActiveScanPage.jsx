@@ -25,8 +25,8 @@ function buildItems({ running, failure, completed, scheduledJobs, interrupted })
 const percentOf = (progress) => (progress && progress.total > 0 ? Math.min(100, Math.round((progress.current / progress.total) * 100)) : null);
 
 // Figma 12.08.43: "Progress" with the percentage, then the bar.
-function Progress({ progress, pending = false }) {
-  const pct = pending ? 0 : percentOf(progress);
+function Progress({ progress }) {
+  const pct = percentOf(progress);
   return (
     <div className="as-progress">
       <div className="as-progress__row">
@@ -124,7 +124,7 @@ function detail(item) {
     );
     default: return (
       <>
-        <Progress pending />
+        {!item.data.paused && <div className="as-progress__row"><span>Next run</span></div>}
         <p className="as-card__stats">
           {!item.data.paused && item.data.nextRun && (
             <span><Calendar size={16} aria-hidden="true" />{new Date(item.data.nextRun).toLocaleString()}</span>
