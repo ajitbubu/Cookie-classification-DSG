@@ -17,6 +17,21 @@
   from frame `1:189760`.
 - **Depends on / blocked by:** Nothing; can run in parallel with implementation.
 
+### Deferred design-review findings (2026-10-20, /design-review on feat/ucm-figma-redesign)
+
+Fixed this round: FINDING-001 to 005 (commits 38ee2c9..d059f19). Still open (Medium, plus copy polish):
+
+- **006 (layout):** remove the search boxes and filter buttons from the 5-row dashboard widgets; "See All" already covers them.
+- **007 (colour):** "Unclassified" uses the same red as Critical risk and failures. Give it a neutral or warning style, and separate the two blues in the donut chart.
+- **008 (hierarchy):** hide the tab-bar "New Scan" button on the Launch tab, where "Start Scan" is already the primary action.
+- **009 (content):** use one date format; three are in use today.
+- **010 (type):** badge and pill text is 11px, below the 12px `--fs-xs` floor.
+- **011 (layout):** the sidebar card stops partway down long pages; make it full height and sticky.
+- **012 (layout):** add pagination to Cookie Inventory (58 rows) and drop the all-"Completed" Source scan column.
+- **Copy:** Chances → Confidence; Cookie Unclassified → Unclassified cookies; Total Scan → Total scans; "+6" → "6 new".
+- **Follow-up to 001:** `/api/store/scans` returns 4.8 MB (`fullResults` on all 200 scans). Return summaries from the list and fetch detail on demand.
+- **Follow-up to 003:** the "N in progress" chip counts scheduled jobs, and schedules show next-run times that have already passed.
+
 ## Backend
 
 ### Persist scans, domain versions and schedules (mostly done: MongoDB scan store, 2026-10-12)
