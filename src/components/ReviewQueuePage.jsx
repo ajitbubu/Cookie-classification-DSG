@@ -418,7 +418,7 @@ const ReviewQueuePage = ({ scanHistory }) => {
                         <Button size="sm" onClick={() => approveNow(cookieKey, cookie, rowState[cookieKey].category)}>Retry</Button>
                       ) : (
                       <span className="rq-actions">
-                        <Button variant="success" size="sm" icon={Check} onClick={() => handleApproveCookie(cookieKey, cookie)} disabled={isApproved || rowState[cookieKey]?.status === 'saving'}>
+                        <Button variant="outline" size="sm" icon={Check} onClick={() => handleApproveCookie(cookieKey, cookie)} disabled={isApproved || rowState[cookieKey]?.status === 'saving'}>
                           {chosenCategory && chosenCategory !== (cookie.mlClassification || cookie.category) ? `Approve as ${chosenCategory}` : 'Approve'}
                         </Button>
                         <Button size="sm" onClick={() => handleSkipCookie(cookieKey)}>Skip</Button>
