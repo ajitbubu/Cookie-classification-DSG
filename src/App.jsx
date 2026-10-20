@@ -12,6 +12,7 @@ import {
 import Navbar from './components/Navbar';
 import CookieTabs from './components/CookieTabs';
 import PanelError from './components/ui/PanelError';
+import { KpiSkeleton, ChartSkeleton } from './components/ui/Skeleton';
 import ActiveScanPage from './components/ActiveScanPage';
 import ScanResultsPage from './components/ScanResultsPage';
 import DashboardPage from './components/DashboardPage';
@@ -1386,7 +1387,11 @@ function App() {
       {storeStatus !== 'ready' ? (
         <main className="main-content page-content" aria-busy={storeStatus === 'loading'}>
           {storeStatus === 'loading' ? (
-            <p className="store-status">Loading saved scans…</p>
+            <div className="store-loading">
+              <p className="store-status">Loading saved scans…</p>
+              <div className="store-loading__kpis">{[0, 1, 2, 3].map((i) => <KpiSkeleton key={i} />)}</div>
+              <div className="store-loading__charts"><ChartSkeleton /><ChartSkeleton /></div>
+            </div>
           ) : (
             <PanelError
               message="Couldn't load saved scans: the database is unavailable."

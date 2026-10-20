@@ -2392,6 +2392,9 @@ section.launch-page { display: flex; flex-direction: column; gap: 24px; margin: 
 
 /* Saved scans loading from the scan store */
 .store-status { margin: 0; font: 400 14px/1.4 var(--font-sans); color: var(--ucm-navy); }
+.store-loading { display: flex; flex-direction: column; gap: 16px; }
+.store-loading__kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.store-loading__charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
 
 /* Figma page shell: tab bar and page content share one white panel that
    lines up with the header bar above it. */
