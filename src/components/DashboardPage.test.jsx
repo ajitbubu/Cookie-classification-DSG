@@ -73,7 +73,9 @@ describe('DashboardPage', () => {
     mockFetch(async () => ({ ok: true, json: async () => MODEL_INFO }));
     const onNavigate = vi.fn();
     setup({ onNavigate });
-    await userEvent.click(screen.getByRole('button', { name: 'View ML model' }));
+    const modelLink = screen.getByRole('link', { name: 'View ML model' });
+    expect(modelLink).toHaveAttribute('href', '/settings/model'); // a real link, so it can open in a new tab
+    await userEvent.click(modelLink);
     expect(onNavigate).toHaveBeenCalledWith('model');
     await userEvent.click(screen.getByRole('button', { name: 'Dismiss AI insights' }));
     expect(screen.queryByRole('region', { name: 'AI insights' })).not.toBeInTheDocument();

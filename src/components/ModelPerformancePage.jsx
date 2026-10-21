@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, Target, Database, Shield, CheckCircle2, XCircle } from 'lucide-react';
 import { getOverrideHistory, getOverrideStats } from './OverrideModal';
+import { pathForRoute } from '../lib/routes';
 import './ModelPerformancePage.css';
 
 // Everything on this page comes from the model the ML API is actually serving,
@@ -65,9 +66,17 @@ function ModelPerformancePage({ onNavigate }) {
   const header = (badge) => (
     <div className="mp-header">
       <div className="mp-header__left">
-        <button className="mp-back-btn" onClick={() => onNavigate('home')}>
-          <ArrowLeft size={16} /> Back
-        </button>
+        <a
+          className="mp-back-btn"
+          href={pathForRoute('home')}
+          onClick={(e) => {
+            if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return; // let new-tab clicks through
+            e.preventDefault();
+            onNavigate('home');
+          }}
+        >
+          <ArrowLeft size={16} aria-hidden="true" /> Back
+        </a>
         <div>
           <h2 className="mp-title">ML Model</h2>
           <p className="mp-subtitle">Offline evaluation of the served model on held-out websites</p>

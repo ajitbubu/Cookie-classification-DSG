@@ -54,7 +54,7 @@
 }
 .ui-table thead .ui-table__sticky { z-index: 2; }
 
-.ui-table .ui-table__cell--end { text-align: right; }
+.ui-table .ui-table__cell--end { text-align: right; font-variant-numeric: tabular-nums; }
 
 .ui-table tbody tr:hover th,
 .ui-table tbody tr:hover td { background: var(--ucm-row-hover); }

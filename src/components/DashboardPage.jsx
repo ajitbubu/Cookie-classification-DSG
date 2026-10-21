@@ -12,6 +12,7 @@ import Modal from './ui/Modal';
 import { useToast } from './Toast';
 import { publishCategory } from '../lib/categoryApi';
 import { formatScanDate } from '../lib/scanResults';
+import { pathForRoute } from '../lib/routes';
 import './DashboardPage.css';
 
 const MODEL_INFO_URL = '/api/v1/ml/model-info';
@@ -72,7 +73,17 @@ function AiInsights({ awaitingReview, unclassified, autoClassified, onNavigate, 
             <span className="ai-stat__value">{unclassified.toLocaleString()}</span>
           </div>
         </div>
-        <button type="button" className="ai-insights__link" onClick={() => onNavigate('model')}>View ML model</button>
+        <a
+          className="ai-insights__link"
+          href={pathForRoute('model')}
+          onClick={(e) => {
+            if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return; // let new-tab clicks through
+            e.preventDefault();
+            onNavigate('model');
+          }}
+        >
+          View ML model
+        </a>
       </div>
       <Bot size={96} strokeWidth={1.25} className="ai-insights__art" aria-hidden="true" />
       <button type="button" className="ai-insights__dismiss" aria-label="Dismiss AI insights" onClick={onDismiss}>

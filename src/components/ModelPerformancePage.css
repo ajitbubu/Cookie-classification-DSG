@@ -184,6 +184,7 @@
   background: var(--ucm-surface);
   color: var(--ucm-navy);
   font: 500 16px/1 var(--font-sans);
+  text-decoration: none;
 }
 .mp-back-btn:hover { background: var(--ucm-row-hover); }
 
