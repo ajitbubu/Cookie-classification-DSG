@@ -48,6 +48,10 @@ describe('ScanResultsPage (5.1 states)', () => {
     render(<ScanResultsPage {...props({ onDeleteScan })} />);
     await userEvent.click(screen.getByRole('button', { name: 'Actions for a.com' }));
     await userEvent.click(screen.getByRole('menuitem', { name: 'Delete scan' }));
+    expect(onDeleteScan).not.toHaveBeenCalled(); // asks first
+    const dialog = screen.getByRole('alertdialog', { name: 'Delete this scan?' });
+    expect(dialog).toHaveTextContent('The a.com scan will be removed.');
+    await userEvent.click(within(dialog).getByRole('button', { name: 'Delete scan' }));
     expect(onDeleteScan).toHaveBeenCalledWith('1');
   });
 
@@ -74,6 +78,8 @@ describe('ScanResultsPage (5.1 states)', () => {
     expect(screen.getAllByRole('row').slice(1)).toHaveLength(1);
     await userEvent.click(screen.getByRole('button', { name: 'Filter' }));
     await userEvent.click(screen.getByRole('menuitem', { name: 'Clear history' }));
+    expect(onClearHistory).not.toHaveBeenCalled(); // asks first
+    await userEvent.click(within(screen.getByRole('alertdialog', { name: 'Clear all scan history?' })).getByRole('button', { name: 'Clear history' }));
     expect(onClearHistory).toHaveBeenCalled();
   });
 

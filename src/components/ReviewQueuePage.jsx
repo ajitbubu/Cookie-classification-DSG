@@ -24,6 +24,7 @@ const ReviewQueuePage = ({ scanHistory }) => {
   const [notificationMessage, setNotificationMessage] = useState('');
   const [bulkApproving, setBulkApproving] = useState(false);
   const [confirming, setConfirming] = useState(null); // { cookieKey, cookie, category } awaiting 12A confirmation
+  const [bulkConfirm, setBulkConfirm] = useState(null); // { target, held } awaiting the bulk modal
   // Per-row publish outcome (E4): { status: 'saving' | 'unpublished' | 'error', category }
   const [rowState, setRowState] = useState({});
   const toast = useToast();
@@ -212,16 +213,18 @@ const ReviewQueuePage = ({ scanHistory }) => {
     }
   }, [selectedForBulk]);
 
+  // Bulk approve asks in the same Modal as single approvals, not a native confirm.
   const handleBulkApprove = useCallback(() => {
     const keyOf = (c) => `${c.scanDomain}:${c.name}`;
     const pool = selectedForBulk.size > 0 ? filteredCookies.filter((c) => selectedForBulk.has(keyOf(c))) : filteredCookies;
     // Manual-check rows (12A) each need their own confirmation, so bulk skips them.
     const target = pool.filter((c) => !needsManualCheck(c) && !approvedCookies.has(keyOf(c)));
     const held = pool.length - pool.filter((c) => !needsManualCheck(c)).length;
-    const count = target.length;
-    if (!window.confirm(`Approve ${count} cookie${count !== 1 ? 's' : ''} in this queue?`)) {
-      return;
-    }
+    setBulkConfirm({ target, held });
+  }, [filteredCookies, approvedCookies, selectedForBulk]);
+
+  const runBulkApprove = useCallback(({ target, held }) => {
+    const keyOf = (c) => `${c.scanDomain}:${c.name}`;
     setBulkApproving(true);
     const categoryOf = (c) => categoryOverrides[keyOf(c)] || c.mlClassification || c.category || 'Unclassified';
     publishCategories(target.map((c) => ({
@@ -252,7 +255,7 @@ const ReviewQueuePage = ({ scanHistory }) => {
     setSelectedForBulk(new Set());
     if (held) notify(`${held} ${held === 1 ? 'needs' : 'need'} a manual check and stayed in the queue`);
     // eslint-disable-next-line react-hooks/exhaustive-deps -- logApproval/notify are stable helpers
-  }, [filteredCookies, approvedCookies, selectedForBulk, categoryOverrides]);
+  }, [approvedCookies, categoryOverrides]);
 
   const displayedCookies = filteredCookies.filter(
     (cookie) => {
@@ -448,6 +451,28 @@ const ReviewQueuePage = ({ scanHistory }) => {
         )}
       >
         {confirming && <p className="rq-confirm-text">{manualCheckPrompt(confirming.category)}</p>}
+      </Modal>
+
+      <Modal
+        open={Boolean(bulkConfirm)}
+        title="Approve these cookies?"
+        variant="confirm"
+        onClose={() => setBulkConfirm(null)}
+        footer={(
+          <>
+            <Button variant="outline" size="modal" onClick={() => setBulkConfirm(null)}>Cancel</Button>
+            <Button variant="success" size="modal" onClick={() => { const b = bulkConfirm; setBulkConfirm(null); runBulkApprove(b); }}>
+              {bulkConfirm ? `Approve ${bulkConfirm.target.length}` : 'Approve'}
+            </Button>
+          </>
+        )}
+      >
+        {bulkConfirm && (
+          <p className="rq-confirm-text">
+            {`${bulkConfirm.target.length} cookie${bulkConfirm.target.length === 1 ? '' : 's'} will be published with their chosen category.`}
+            {bulkConfirm.held > 0 && ` ${bulkConfirm.held} that need a manual check stay in the queue.`}
+          </p>
+        )}
       </Modal>
     </section>
   );

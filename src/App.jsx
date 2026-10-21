@@ -1074,18 +1074,17 @@ function App() {
     });
   };
 
+  // Confirmed in ScanResultsPage's dialog before this runs
   const clearHistory = async () => {
-    if (window.confirm('Are you sure you want to clear all scan history?')) {
-      try {
-        await clearScans();
-      } catch (e) {
-        console.error('Failed to clear scan history:', e);
-        toast.error('Scan history was not cleared: the database is unavailable.');
-        return;
-      }
-      setScanHistory([]);
-      setDomainHistory({});
+    try {
+      await clearScans();
+    } catch (e) {
+      console.error('Failed to clear scan history:', e);
+      toast.error('Scan history was not cleared: the database is unavailable.');
+      return;
     }
+    setScanHistory([]);
+    setDomainHistory({});
   };
 
   const deleteScan = async (id) => {
@@ -1250,7 +1249,7 @@ function App() {
       setTimeout(() => setAriaLiveMessage(''), 3000);
       
       // Show user-facing error message
-      alert('Failed to update category: ' + error.message);
+      toast.error(`Couldn't update ${cookieName}'s category: ${error.message}. Try again.`);
     }
   };
 
@@ -1735,11 +1734,14 @@ function CookieRowEnhanced({ cookie, getRegulationRisk, filterRegulation }) {
           </span>
           {cookie.value.length > 30 && (
             <button
+              type="button"
               onClick={() => setShowFullValue(!showFullValue)}
               className="btn-icon"
               title={showFullValue ? 'Show less' : 'Show more'}
+              aria-label={showFullValue ? 'Show less of the cookie value' : 'Show the full cookie value'}
+              aria-expanded={showFullValue}
             >
-              {showFullValue ? <EyeOff size={16} /> : <Eye size={16} />}
+              {showFullValue ? <EyeOff size={16} aria-hidden="true" /> : <Eye size={16} aria-hidden="true" />}
             </button>
           )}
         </div>

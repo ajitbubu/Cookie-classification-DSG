@@ -5,6 +5,8 @@ import DataTable from './ui/DataTable';
 import EmptyState from './ui/EmptyState';
 import MenuButton from './ui/MenuButton';
 import Pagination from './ui/Pagination';
+import Modal from './ui/Modal';
+import Button from './ui/Button';
 import TableToolbar from './ui/TableToolbar';
 import { KpiSkeleton } from './ui/Skeleton';
 import { StatusChip, ScanTypeChip } from './ui/Chip';
@@ -38,6 +40,7 @@ function ScanResultsPage({ scanHistory = [], loading = false, error = false, onR
   const [sort, setSort] = useState('newest');
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(5);
+  const [pendingDelete, setPendingDelete] = useState(null); // { kind: 'scan', id, domain } | { kind: 'all' }
   const kpis = useMemo(() => scanResultKpis(scanHistory), [scanHistory]);
 
   const rows = useMemo(() => {
@@ -89,7 +92,7 @@ function ScanResultsPage({ scanHistory = [], loading = false, error = false, onR
           label={`Actions for ${s.domain}`}
           items={[
             ...(s.fullResults ? [{ label: 'View results', onSelect: () => onOpenScan(s) }] : []),
-            { label: 'Delete scan', tone: 'critical', onSelect: () => onDeleteScan(s.id) },
+            { label: 'Delete scan', tone: 'critical', onSelect: () => setPendingDelete({ kind: 'scan', id: s.id, domain: s.domain }) },
           ]}
         />
       ),
@@ -129,7 +132,7 @@ function ScanResultsPage({ scanHistory = [], loading = false, error = false, onR
             sorts={SORTS}
             sort={sort}
             onSort={setSort}
-            actions={[{ label: 'Clear history', tone: 'critical', onSelect: onClearHistory }]}
+            actions={[{ label: 'Clear history', tone: 'critical', onSelect: () => setPendingDelete({ kind: 'all' }) }]}
           />
         )}
 
@@ -158,6 +161,39 @@ function ScanResultsPage({ scanHistory = [], loading = false, error = false, onR
           </>
         )}
       </section>
+
+      {/* Destructive actions confirm first; neither can be undone */}
+      <Modal
+        open={Boolean(pendingDelete)}
+        title={pendingDelete?.kind === 'all' ? 'Clear all scan history?' : 'Delete this scan?'}
+        variant="confirm"
+        onClose={() => setPendingDelete(null)}
+        footer={(
+          <>
+            <Button variant="outline" size="modal" onClick={() => setPendingDelete(null)}>Cancel</Button>
+            <Button
+              variant="danger"
+              size="modal"
+              onClick={() => {
+                const target = pendingDelete;
+                setPendingDelete(null);
+                if (target.kind === 'all') onClearHistory();
+                else onDeleteScan(target.id);
+              }}
+            >
+              {pendingDelete?.kind === 'all' ? 'Clear history' : 'Delete scan'}
+            </Button>
+          </>
+        )}
+      >
+        {pendingDelete && (
+          <p className="sr-confirm-text">
+            {pendingDelete.kind === 'all'
+              ? `All ${scanHistory.length} stored scans will be removed. This can't be undone.`
+              : `The ${pendingDelete.domain} scan will be removed. This can't be undone.`}
+          </p>
+        )}
+      </Modal>
     </div>
   );
 }

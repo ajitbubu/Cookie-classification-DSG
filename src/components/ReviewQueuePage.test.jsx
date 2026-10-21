@@ -113,20 +113,20 @@ describe('ReviewQueuePage review rows (12A)', () => {
   });
 
   it('bulk approve leaves manual-check rows in the queue', async () => {
-    vi.spyOn(window, 'confirm').mockReturnValue(true);
     api();
     renderRQ();
     await userEvent.click(screen.getByRole('button', { name: /Approve All/ }));
+    await userEvent.click(within(screen.getByRole('alertdialog', { name: 'Approve these cookies?' })).getByRole('button', { name: /^Approve \d/ }));
     await waitFor(() => expect(readApprovals().map((a) => a.cookieKey)).toEqual(['shop.com:_ga']));
     expect(card('x9q')).toBeInTheDocument();
     expect(screen.getByText(/1 needs a manual check/)).toBeInTheDocument();
   });
 
   it('bulk approve reports "2 of 3 published" and keeps the unpublished row marked (E4)', async () => {
-    vi.spyOn(window, 'confirm').mockReturnValue(true);
     api({ bulkPublished: ['a1', 'a3'] });
     renderRQ(historyWith([cookie('a1'), cookie('a2'), cookie('a3')]));
     await userEvent.click(screen.getByRole('button', { name: /Approve All/ }));
+    await userEvent.click(within(screen.getByRole('alertdialog', { name: 'Approve these cookies?' })).getByRole('button', { name: /^Approve \d/ }));
     await waitFor(() => expect(readApprovals().map((a) => a.cookieKey).sort()).toEqual(['shop.com:a1', 'shop.com:a3']));
     expect(toastText()).toContain('2 of 3 published. 1 saved but not published: the database is unavailable.');
     expect(within(card('a2')).getByText('Not published')).toBeInTheDocument();
