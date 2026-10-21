@@ -171,7 +171,7 @@
   border: 1px solid var(--ds-gray-100, #D9E2EE);
   border-radius: 6px;
   background: transparent;
-  font-size: 11px;
+  font-size: var(--fs-xs);
   font-weight: 500;
   color: var(--ds-gray-500, #4A5568);
   cursor: pointer;
@@ -200,7 +200,7 @@
   font-family: var(--font-display);
 }
 .navbar-notif-flyout__empty span {
-  font-size: 11px;
+  font-size: var(--fs-xs);
   color: var(--ds-gray-300, #A7B2C8);
   font-family: var(--font-display);
 }
@@ -266,13 +266,13 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 4px;
-  font-size: 11px;
+  font-size: var(--fs-xs);
   color: var(--ds-gray-400, #6B7A99);
   font-family: var(--font-display);
 }
 
 .navbar-notif-item__time {
-  font-size: 10px;
+  font-size: var(--fs-xs);
   color: var(--ds-gray-300, #A7B2C8);
   font-family: var(--font-display);
 }
@@ -280,7 +280,7 @@
 .navbar-notif-pill {
   padding: 1px 6px;
   border-radius: 10px;
-  font-size: 10px;
+  font-size: var(--fs-xs);
   font-weight: 600;
   font-family: var(--font-display);
 }
@@ -408,7 +408,7 @@
   font-family: var(--font-display);
 }
 .navbar-dropdown__email {
-  font-size: 11px;
+  font-size: var(--fs-xs);
   color: var(--ds-gray-200, #A7B2C8);
   margin: 0;
   font-family: var(--font-display);
