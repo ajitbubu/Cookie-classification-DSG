@@ -29,7 +29,10 @@
   --ucm-chart-functional: #5282fd;
   --ucm-chart-analytics: #fc9789;
   --ucm-chart-necessary: #3bb78d;
-  --ucm-chart-unclassified: #7aa4fc;
+  /* Unclassified is "not yet known", so neutral slate (DESIGN.md color-text-muted)
+     instead of the sampled #7AA4FC: that blue sat next to Functional #5282FD and
+     was 2.46:1 on white, under the 3:1 graphics minimum (FINDING-007). */
+  --ucm-chart-unclassified: #788692;
 
   --font-inter: 'Inter';
   --font-jetbrains: 'JetBrains Mono';
