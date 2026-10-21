@@ -16,7 +16,7 @@ const props = (over = {}) => ({
 describe('ScanResultsPage (5.1 states)', () => {
   it('success: KPI row then a table with type and status chips', () => {
     render(<ScanResultsPage {...props()} />);
-    expect(screen.getByText('Total Scan').closest('.ui-kpi')).toHaveTextContent('2');
+    expect(screen.getByText('Total scans').closest('.ui-kpi')).toHaveTextContent('2');
     const table = screen.getByRole('table', { name: 'Scan results' });
     const rows = within(table).getAllByRole('row').slice(1);
     expect(rows).toHaveLength(2);
@@ -63,7 +63,7 @@ describe('ScanResultsPage (5.1 states)', () => {
     render(<ScanResultsPage {...props()} />);
     const rows = within(screen.getByRole('table')).getAllByRole('row').slice(1);
     expect(within(rows[0]).getByText('40/78')).toBeInTheDocument();
-    expect(within(rows[0]).getByText('+12')).toBeInTheDocument();
+    expect(within(rows[0]).getByText('12')).toBeInTheDocument();
   });
 
   it('filters to deep scans and clears history from the Filter menu', async () => {

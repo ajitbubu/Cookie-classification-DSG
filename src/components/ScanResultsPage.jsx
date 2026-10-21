@@ -79,7 +79,7 @@ function ScanResultsPage({ scanHistory = [], loading = false, error = false, onR
     { key: 'scanType', header: 'Scan Type', render: (s) => <ScanTypeChip type={s.scanType === 'deep' ? 'deep' : 'quick'} variant="pill" /> },
     { key: 'timestamp', header: 'Date & Time', render: (s) => formatScanDate(s.timestamp) },
     { key: 'pages', header: 'Pages', render: (s) => pagesLabel(s) },
-    { key: 'newCookies', header: 'Cookies found', render: (s) => `+${newCookieCount(s, scanHistory)}` },
+    { key: 'newCookies', header: 'New cookies', align: 'end', render: (s) => newCookieCount(s, scanHistory) },
     { key: 'status', header: 'Status', render: (s) => { const st = scanStatus(s); return <StatusChip status={st.status} failed={st.failed} />; } },
     {
       key: 'actions',
@@ -103,7 +103,7 @@ function ScanResultsPage({ scanHistory = [], loading = false, error = false, onR
           [0, 1, 2, 3].map((i) => <KpiSkeleton key={i} />)
         ) : (
           <>
-            <KpiCard label="Total Scan" value={value(kpis.totalScans.value)} icon={ArrowDownLeft} trend={trendOf(kpis.totalScans.trend)} />
+            <KpiCard label="Total scans" value={value(kpis.totalScans.value)} icon={ArrowDownLeft} trend={trendOf(kpis.totalScans.trend)} />
             <KpiCard label="Avg. Scan Duration" value={value(durationLabel(kpis.avgDurationMs.value))} icon={ArrowUpRight} trend={trendOf(kpis.avgDurationMs.trend)} />
             <KpiCard
               label="Success Rate"

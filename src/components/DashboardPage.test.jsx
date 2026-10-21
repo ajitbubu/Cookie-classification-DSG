@@ -55,7 +55,7 @@ describe('DashboardPage', () => {
     expect(within(banner).getByText('Based on your recent reviews and classifications')).toBeInTheDocument();
     // auto-classification is off, so nothing was auto classified
     expect(within(banner).getByText('Cookies auto classified').closest('.ai-stat')).toHaveTextContent('0');
-    expect(within(banner).getByText('Cookie Unclassified').closest('.ai-stat')).toHaveTextContent('2');
+    expect(within(banner).getByText('Unclassified cookies').closest('.ai-stat')).toHaveTextContent('2');
     // awaiting review = unpublished cookies in the latest scan
     expect(within(banner).getByText('Suggestions awaiting review').closest('.ai-stat')).toHaveTextContent('2');
     expect(globalThis.fetch).toHaveBeenCalledWith('/api/v1/ml/model-info');
@@ -142,7 +142,7 @@ describe('DashboardPage', () => {
     const onNavigate = vi.fn();
     setup({ onNavigate });
     const pending = screen.getByRole('table', { name: 'Pending review' });
-    expect(within(pending).getAllByRole('columnheader').map((h) => h.textContent)).toEqual(['Name', 'Details', 'Chances', 'Action']);
+    expect(within(pending).getAllByRole('columnheader').map((h) => h.textContent)).toEqual(['Name', 'Details', 'Confidence', 'Action']);
     const [ga, odd] = within(pending).getAllByRole('row').slice(1);
     expect(within(ga).queryByText(/^Rule engine:/)).not.toBeInTheDocument(); // rule engine and model agree
     expect(within(odd).getByText(/^Rule engine: /)).toBeInTheDocument(); // they differ, so the rule's answer is noted

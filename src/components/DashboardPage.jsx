@@ -68,7 +68,7 @@ function AiInsights({ awaitingReview, unclassified, autoClassified, onNavigate, 
             <span className="ai-stat__value">{awaitingReview.toLocaleString()}</span>
           </div>
           <div className="ai-stat">
-            <span className="ai-stat__label">Cookie Unclassified</span>
+            <span className="ai-stat__label">Unclassified cookies</span>
             <span className="ai-stat__value">{unclassified.toLocaleString()}</span>
           </div>
         </div>
@@ -321,7 +321,7 @@ function DashboardPage({ scanHistory = [], launchControl, running = null, onNavi
                 </span>
               ),
             },
-            { key: 'confidence', header: 'Chances', render: (r) => (r.confidence == null ? '—' : `${Math.round(r.confidence * 100)}%`) },
+            { key: 'confidence', header: 'Confidence', render: (r) => (r.confidence == null ? '—' : `${Math.round(r.confidence * 100)}%`) },
             {
               key: 'actions',
               header: 'Action',
