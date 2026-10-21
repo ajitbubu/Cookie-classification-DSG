@@ -46,6 +46,9 @@
 /* The identifying column holds long cookie IDs; let only it wrap anywhere so it
    can't widen the table, while dates and short words in other cells stay whole. */
 .ui-table tbody th { overflow-wrap: anywhere; }
+/* Domains in that column are links; "xfinity.c/om" reads as broken, so keep them whole
+   (the table scrolls inside .ui-table-scroll on narrow screens) */
+.ui-table tbody th :is(a, button) { overflow-wrap: normal; white-space: nowrap; }
 
 .ui-table__sticky {
   position: sticky;

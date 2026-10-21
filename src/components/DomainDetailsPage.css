@@ -238,6 +238,9 @@ section.dd-risk { display: flex; flex-direction: column; gap: 24px; margin: 0; p
   .dd-selection { flex-wrap: wrap; gap: 8px 12px; padding: 12px; font-size: 16px; }
   .dd-selection__count { padding-right: 0; border-right: none; }
   .dd-selection__clear { margin-left: 0; }
+  /* The tab strip scrolls with its scrollbar hidden; fade the right edge so the
+     tabs past Cookies read as "more this way" */
+  .dd-tabs { mask-image: linear-gradient(to right, black 80%, transparent); }
 }
 
 @media (max-width: 768px), (pointer: coarse) {

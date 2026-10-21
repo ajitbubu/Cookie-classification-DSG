@@ -45,4 +45,7 @@
 
 @media (max-width: 768px), (pointer: coarse) {
   .ui-pagination__page, .ui-pagination__step { min-width: 44px; height: 44px; }
+  /* Seven 44px targets don't fit a 375px card: tighten and let them wrap */
+  .ui-pagination { padding-inline: 0; }
+  .ui-pagination__pages { flex-wrap: wrap; gap: 4px; }
 }
