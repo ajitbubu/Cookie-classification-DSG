@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, Target, Database, Shield, CheckCircle2, XCircle } from 'lucide-react';
 import { getOverrideHistory, getOverrideStats } from './OverrideModal';
+import { CategoryTag } from './ui/Chip';
 import { pathForRoute } from '../lib/routes';
 import './ModelPerformancePage.css';
 
@@ -8,13 +9,12 @@ import './ModelPerformancePage.css';
 // so the numbers cannot drift from the deployed artifact.
 const MODEL_INFO_URL = '/api/v1/ml/model-info';
 
+// The model's class keys pair two names (Analytics_Performance); the app shows one.
+const MODEL_CLASS_NAMES = { Analytics_Performance: 'Analytics', Marketing_Advertising: 'Marketing' };
+
 // Pretty-print category names
 const formatCategory = (cat) =>
-  cat.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-
-// CSS class-safe category slug
-const categorySlug = (cat) =>
-  cat.toLowerCase().replace(/_/g, '-').replace(/\s+/g, '-');
+  MODEL_CLASS_NAMES[cat] || cat.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 
 const percent = (value) => (value == null ? '—' : `${(value * 100).toFixed(1)}%`);
 
@@ -213,11 +213,7 @@ function ModelPerformancePage({ onNavigate }) {
         <div className="mp-categories-list">
           <h4 className="mp-categories-title">Classification Categories</h4>
           <div className="mp-categories-chips">
-            {categories.map(cat => (
-              <span key={cat} className={`mp-category-chip cat-${categorySlug(cat)}`}>
-                {cat}
-              </span>
-            ))}
+            {categories.map(cat => <CategoryTag key={cat} category={cat} />)}
           </div>
         </div>
       </div>
@@ -240,14 +236,15 @@ function ModelPerformancePage({ onNavigate }) {
           </div>
           <div className="mp-override-stat">
             <div className="mp-override-stat__label">Retraining Recommended</div>
-            <div className={`mp-override-stat__value ${overrideStats.total >= 50 ? 'mp-text-critical' : 'mp-text-safe'}`}>
-              {overrideStats.total >= 50 ? 'Yes — sufficient override data' : 'Not yet — need more override data'}
+            {/* "Not yet" is a neutral state, not a success, so only "Yes" gets a colour */}
+            <div className={`mp-override-stat__value ${overrideStats.total >= 50 ? 'mp-text-critical' : ''}`}>
+              {overrideStats.total >= 50 ? 'Yes: enough override data to retrain' : `Not yet: ${overrideStats.total} of 50 overrides recorded`}
             </div>
           </div>
           <div className="mp-override-stat">
             <div className="mp-override-stat__label">Override-to-Sample Ratio</div>
             <div className="mp-override-stat__value">
-              {totalSamples > 0 ? ((overrideStats.total / totalSamples) * 100).toFixed(4) : 0}%
+              {totalSamples > 0 && overrideStats.total > 0 ? `${((overrideStats.total / totalSamples) * 100).toFixed(2)}%` : '0%'}
             </div>
           </div>
         </div>
