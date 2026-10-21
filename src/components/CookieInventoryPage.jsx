@@ -4,6 +4,7 @@ import DataTable from './ui/DataTable';
 import EmptyState from './ui/EmptyState';
 import { CategoryTag, StatusChip } from './ui/Chip';
 import { buildInventory } from '../lib/cookieInventory';
+import { formatScanDate } from '../lib/scanResults';
 import './CookieInventoryPage.css';
 
 const UNPUBLISHED = new Set(['Unclassified', 'Uncategorized', 'Unknown']);
@@ -71,7 +72,7 @@ function CookieInventoryPage({ scanHistory = [], loading = false, error = false,
           { key: 'domain', header: 'Domain' },
           { key: 'category', header: 'Category', render: (c) => <CategoryTag category={c.category} /> },
           { key: 'sites', header: 'Sites', align: 'end', render: (c) => <span title={c.sites.join(', ')}>{c.sites.length}</span> },
-          { key: 'lastSeen', header: 'Last seen', render: (c) => new Date(c.lastSeen).toLocaleDateString() },
+          { key: 'lastSeen', header: 'Last seen', render: (c) => formatScanDate(c.lastSeen) },
           {
             key: 'source',
             header: 'Source scan',

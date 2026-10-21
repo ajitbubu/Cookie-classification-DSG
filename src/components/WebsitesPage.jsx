@@ -5,6 +5,7 @@ import EmptyState from './ui/EmptyState';
 import MenuButton from './ui/MenuButton';
 import { Chip, StatusChip } from './ui/Chip';
 import { RISK_ORDER, websitesFromHistory } from '../lib/websites';
+import { formatScanDate } from '../lib/scanResults';
 import './WebsitesPage.css';
 
 // UCM tags: Critical/High red, Moderate amber, Low green.
@@ -80,7 +81,7 @@ function WebsitesPage({ scanHistory = [], domainHistory = {}, loading = false, e
               </button>
             ),
           },
-          { key: 'last', header: 'Last scan', render: (s) => <span className="ws-date">{new Date(s.latest.timestamp).toLocaleString()}</span> },
+          { key: 'last', header: 'Last scan', render: (s) => <span className="ws-date">{formatScanDate(s.latest.timestamp)}</span> },
           { key: 'scans', header: 'Scans', align: 'end' },
           { key: 'cookies', header: 'Cookies', align: 'end' },
           { key: 'unclassified', header: 'Unclassified', align: 'end' },

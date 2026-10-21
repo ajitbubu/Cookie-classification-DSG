@@ -245,7 +245,7 @@ function DashboardPage({ scanHistory = [], launchControl, running = null, onNavi
       <div className="db-head">
         {/* Tab, breadcrumb and sidebar already name the page (FINDING-005) */}
         <h2 className="sr-only">Dashboard</h2>
-        {lastUpdated && <span className="db-head__updated">{`Last updated ${new Date(lastUpdated).toLocaleString()}`}</span>}
+        {lastUpdated && <span className="db-head__updated">{`Last updated ${formatScanDate(lastUpdated)}`}</span>}
       </div>
       {insights}
 

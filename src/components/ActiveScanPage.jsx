@@ -5,7 +5,7 @@ import DataTable from './ui/DataTable';
 import EmptyState from './ui/EmptyState';
 import MenuButton from './ui/MenuButton';
 import PanelError from './ui/PanelError';
-import { describeSchedule, scanStatus } from '../lib/scanResults';
+import { describeSchedule, formatScanDate, scanStatus } from '../lib/scanResults';
 import './ActiveScanPage.css';
 
 // Active Scan (Figma 1:163566). One scan runs at a time (eng finding 7), so
@@ -110,7 +110,7 @@ function detail(item) {
     case 'interrupted': return (
       <p className="as-card__meta">
         <span>{`Scan of ${item.data.domain} was interrupted`}</span>
-        {item.data.startedAt && <span>{new Date(item.data.startedAt).toLocaleString()}</span>}
+        {item.data.startedAt && <span>{formatScanDate(item.data.startedAt)}</span>}
       </p>
     );
     case 'failed': return item.data.cancelled
@@ -127,7 +127,7 @@ function detail(item) {
         {!item.data.paused && <div className="as-progress__row"><span>Next run</span></div>}
         <p className="as-card__stats">
           {!item.data.paused && item.data.nextRun && (
-            <span><Calendar size={16} aria-hidden="true" />{new Date(item.data.nextRun).toLocaleString()}</span>
+            <span><Calendar size={16} aria-hidden="true" />{formatScanDate(item.data.nextRun)}</span>
           )}
           <span>{describeSchedule(item.data)}</span>
         </p>
@@ -173,7 +173,7 @@ function ActiveScanPage({
           { key: 'type', header: 'Scan Type', render: (item) => <ScanTypeChip type={item.kind === 'scheduled' ? 'schedule' : item.type === 'deep' ? 'deep' : 'quick'} variant="pill" /> },
           { key: 'progress', header: 'Progress', render: progressText },
           { key: 'cookies', header: 'Cookies Found', render: (item) => (item.kind === 'completed' ? (item.data.totalCookies ?? 0).toLocaleString() : 'NA') },
-          { key: 'scheduled', header: 'Scheduled At', render: (item) => (item.kind === 'scheduled' && item.data.nextRun ? new Date(item.data.nextRun).toLocaleString() : 'NA') },
+          { key: 'scheduled', header: 'Scheduled At', render: (item) => (item.kind === 'scheduled' && item.data.nextRun ? formatScanDate(item.data.nextRun) : 'NA') },
           {
             key: 'actions',
             header: 'Action',

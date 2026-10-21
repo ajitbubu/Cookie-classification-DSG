@@ -16,7 +16,7 @@ import { useAnnounce } from './ui/LiveRegion';
 import CookieClassificationTable from './CookieClassificationTable';
 import BulkUpdateDrawer from './BulkUpdateDrawer';
 import { BULK_CATEGORIES, categoryBreakdown, cookieKey, pagesFromScan, vendorsFromCookies } from '../lib/domainDetails';
-import { scanStatus } from '../lib/scanResults';
+import { formatScanDate, scanStatus } from '../lib/scanResults';
 import { calculateComplianceRisks, getRiskExplanation } from '../lib/riskCalculator';
 import './DomainDetailsPage.css';
 
@@ -28,12 +28,6 @@ const REGULATIONS = [['dpdpRisk', 'dpdp', 'DPDP'], ['ccpaRisk', 'ccpa', 'CCPA / 
 const VERSIONS_SHOWN = 5;
 
 const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
-const pad = (n) => String(n).padStart(2, '0');
-// Figma version dates: 03/14/2026 06:04:59
-const versionDate = (ts) => {
-  const d = new Date(ts);
-  return Number.isNaN(d.getTime()) ? '—' : `${pad(d.getMonth() + 1)}/${pad(d.getDate())}/${d.getFullYear()} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
-};
 // Figma "Time Taken": 8 Min 43 sec
 const timeTaken = (ms) => {
   if (!(ms > 0)) return null;
@@ -239,7 +233,7 @@ function DomainDetailsPage({
                 },
               },
               { key: 'by', header: 'Published By', render: () => '—' },
-              { key: 'date', header: 'Scanned Date', render: (v) => versionDate(v.timestamp) },
+              { key: 'date', header: 'Scanned Date', render: (v) => formatScanDate(v.timestamp) },
               {
                 key: 'action',
                 header: 'Action',

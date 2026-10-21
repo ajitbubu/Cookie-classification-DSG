@@ -37,6 +37,7 @@ import { readInterruptedScan, clearActiveScan, MAX_SCAN_HISTORY, MAX_SCANS_PER_D
 import { useScanGuard } from './hooks/useScanGuard';
 import { deriveValueFeatures } from './lib/cookieValueFeatures';
 import { DASHBOARD_TABS, DOMAIN_TABS, SCANNING_TABS, pathForRoute, routeFromPath } from './lib/routes';
+import { formatScanDate } from './lib/scanResults';
 import CookieDetailModal from './components/CookieDetailModal';
 import VendorDashboard from './components/VendorDashboard';
 import OverrideModal from './components/OverrideModal';
@@ -980,7 +981,7 @@ function App() {
       return updated;
     });
 
-    toast.success(`Scan of ${newJob.url} scheduled. Next run ${nextRun.toLocaleString()}.`);
+    toast.success(`Scan of ${newJob.url} scheduled. Next run ${formatScanDate(nextRun)}.`);
     setTargetUrl('');
   };
 
@@ -1752,7 +1753,7 @@ function HistoryCard({ entry }) {
       <div className="history-header">
         <div>
           <p className="history-domain">{entry.domain}</p>
-          <p className="history-time">{new Date(entry.timestamp).toLocaleString()}</p>
+          <p className="history-time">{formatScanDate(entry.timestamp)}</p>
         </div>
       </div>
       <div className="history-stats">
