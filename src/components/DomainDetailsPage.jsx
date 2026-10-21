@@ -232,7 +232,7 @@ function DomainDetailsPage({
                   );
                 },
               },
-              { key: 'by', header: 'Published By', render: () => '—' },
+              // No publisher is recorded per version yet, so the Figma 'Published By' column is left out until it is
               { key: 'date', header: 'Scanned Date', render: (v) => formatScanDate(v.timestamp) },
               {
                 key: 'action',
