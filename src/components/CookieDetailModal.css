@@ -101,7 +101,7 @@
   cursor: pointer;
   padding: 4px;
   border-radius: 6px;
-  transition: all 0.15s;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s, box-shadow 0.15s, opacity 0.15s, transform 0.15s;
 }
 .cdm-close:hover {
   color: #fff;
@@ -174,7 +174,7 @@
   padding: 10px 16px;
   cursor: pointer;
   border-bottom: 2px solid transparent;
-  transition: all 0.2s;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s, opacity 0.2s, transform 0.2s;
 }
 .cdm-tab:hover { color: rgba(255,255,255,0.7); }
 .cdm-tab.active {
@@ -456,7 +456,7 @@
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s, opacity 0.2s, transform 0.2s;
   border: none;
 }
 .cdm-btn--close {
