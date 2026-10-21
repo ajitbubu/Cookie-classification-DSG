@@ -133,8 +133,8 @@ describe('DashboardPage', () => {
     expect(screen.getByText('2 Items')).toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: 'See all pending reviews' }));
     expect(onNavigate).toHaveBeenCalledWith('review');
-    await userEvent.type(screen.getByRole('searchbox', { name: 'Search recent activity' }), 'zzz');
-    expect(within(activity).getAllByRole('row')).toHaveLength(2); // header + "no match" row
+    // Five-row previews have no search box; See All leads to the full pages (FINDING-006)
+    expect(screen.queryByRole('searchbox')).not.toBeInTheDocument();
   });
 
   it('pending review rows (12A): Figma columns, rule engine noted, manual-check chip, Approve with confirmation, Edit', async () => {

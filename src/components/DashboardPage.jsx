@@ -4,7 +4,6 @@ import { Bot, X, Globe, Cookie, ShieldAlert, Radar, Check, ChevronDown, Maximize
 import KpiCard from './ui/KpiCard';
 import DataTable from './ui/DataTable';
 import { CategoryTag, Chip, ScanTypeChip } from './ui/Chip';
-import TableToolbar from './ui/TableToolbar';
 import Donut from './charts/Donut';
 import BarSeries from './charts/BarSeries';
 import { categoryMix, cookieRisk, dashboardKpis, latestPerDomain, recentActivity, recentCookies } from '../lib/dashboard';
@@ -137,8 +136,9 @@ function ChartCard({ id, title, period, onPeriod, onExpand, children }) {
   );
 }
 
-// Figma table panel: title (+ chip), See All, search box and filter icons, table.
-function TablePanel({ id, title, chip, seeAllLabel, onSeeAll, query, onQuery, searchLabel, filters, filter, onFilter, children }) {
+// Table panel: title (+ chip), See All, table. Five-row previews skip the
+// search and filter toolbar; See All opens the full page that has them (FINDING-006).
+function TablePanel({ id, title, chip, seeAllLabel, onSeeAll, children }) {
   return (
     <section className="db-card db-card--table" aria-labelledby={id}>
       <div className="db-card__head">
@@ -146,23 +146,16 @@ function TablePanel({ id, title, chip, seeAllLabel, onSeeAll, query, onQuery, se
         {chip && <span className="db-items">{chip}</span>}
         <button type="button" className="db-link" aria-label={seeAllLabel} onClick={onSeeAll}>See All</button>
       </div>
-      <TableToolbar label={searchLabel} query={query} onQuery={onQuery} filters={filters} filter={filter} onFilter={onFilter} />
       {children}
     </section>
   );
 }
-
-const lc = (v) => (v || '').toLowerCase();
 
 function DashboardPage({ scanHistory = [], launchControl, running = null, onNavigate, onOpenScan }) {
   const [dismissed, setDismissed] = useState(readDismissed);
   const [barPeriod, setBarPeriod] = useState('7');
   const [donutPeriod, setDonutPeriod] = useState('7');
   const [expanded, setExpanded] = useState(null);
-  const [queries, setQueries] = useState({ cookies: '', activity: '', pending: '' });
-  const [cookieFilter, setCookieFilter] = useState('all');
-  const [activityFilter, setActivityFilter] = useState('all');
-  const setQuery = (key) => (v) => setQueries((q) => ({ ...q, [key]: v }));
   const [approvals, setApprovals] = useState(readApprovals);
   const [confirming, setConfirming] = useState(null); // pending item awaiting 12A confirmation
   const [rowState, setRowState] = useState({}); // key -> 'saving' | 'unpublished' | 'error' (E4)
@@ -174,18 +167,11 @@ function DashboardPage({ scanHistory = [], launchControl, running = null, onNavi
   const chartLabels = (mix) => mix.map((d) => (d.label === 'Strictly Necessary' ? { ...d, label: 'Necessary' } : d));
   const barMix = useMemo(() => chartLabels(categoryMix(scanHistory, { days: daysOf(barPeriod) })), [scanHistory, barPeriod]);
   const donutMix = useMemo(() => chartLabels(categoryMix(scanHistory, { days: daysOf(donutPeriod) })), [scanHistory, donutPeriod]);
-  const cookies = useMemo(() => recentCookies(scanHistory, 50)
-    .filter((c) => (!queries.cookies || lc(c.name).includes(lc(queries.cookies)) || lc(c.website).includes(lc(queries.cookies)))
-      && (cookieFilter === 'all' || cookieRisk(c.category) === cookieFilter))
-    .slice(0, 5), [scanHistory, queries.cookies, cookieFilter]);
-  const activity = useMemo(() => recentActivity(scanHistory, 50)
-    .filter((s) => (!queries.activity || lc(s.domain).includes(lc(queries.activity)))
-      && (activityFilter === 'all' || (activityFilter === 'deep') === (s.scanType === 'deep')))
-    .slice(0, 5), [scanHistory, queries.activity, activityFilter]);
+  const cookies = useMemo(() => recentCookies(scanHistory, 5), [scanHistory]);
+  const activity = useMemo(() => recentActivity(scanHistory, 5), [scanHistory]);
   const autoClassified = useMemo(() => latestPerDomain(scanHistory).reduce((n, scan) => n
     + (scan.fullResults?.cookies || []).filter((c) => c.classificationSource === 'ml_prediction' && c.classificationStatus === 'classified').length, 0), [scanHistory]);
   const pending = useMemo(() => pendingReviews(scanHistory, approvals), [scanHistory, approvals]);
-  const shownPending = pending.filter((r) => !queries.pending || lc(r.name).includes(lc(queries.pending)) || lc(r.website).includes(lc(queries.pending)));
 
   // An approval counts only once it is published (eng R1/R4, E4).
   const approve = async (item) => {
@@ -276,14 +262,12 @@ function DashboardPage({ scanHistory = [], launchControl, running = null, onNavi
 
       <TablePanel
         id="db-recent-cookies" title="Recently Discovered Cookies" seeAllLabel="See all cookies" onSeeAll={() => onNavigate('inventory')}
-        searchLabel="Search recent cookies" query={queries.cookies} onQuery={setQuery('cookies')}
-        filters={[{ value: 'all', label: 'All risks' }, { value: 'Critical', label: 'Critical' }, { value: 'Low', label: 'Low' }]} filter={cookieFilter} onFilter={setCookieFilter}
       >
         <DataTable
           caption="Recently discovered cookies"
           rowKey={(c) => c.key}
           rows={cookies}
-          empty={<p className="db-none">No cookies match.</p>}
+          empty={<p className="db-none">No cookies yet.</p>}
           columns={[
             { key: 'name', header: 'Cookie', render: (c) => <span className="db-cookie">{c.name}</span> },
             { key: 'website', header: 'Site' },
@@ -296,14 +280,12 @@ function DashboardPage({ scanHistory = [], launchControl, running = null, onNavi
 
       <TablePanel
         id="db-activity" title="Recent Activity" seeAllLabel="See all scans" onSeeAll={() => onNavigate('history')}
-        searchLabel="Search recent activity" query={queries.activity} onQuery={setQuery('activity')}
-        filters={[{ value: 'all', label: 'All scans' }, { value: 'quick', label: 'Quick scans' }, { value: 'deep', label: 'Deep scans' }]} filter={activityFilter} onFilter={setActivityFilter}
       >
         <DataTable
           caption="Recent activity"
           rowKey={(s) => s.id}
           rows={activity}
-          empty={<p className="db-none">No scans match.</p>}
+          empty={<p className="db-none">No scans yet.</p>}
           columns={[
             {
               key: 'domain',
@@ -320,12 +302,11 @@ function DashboardPage({ scanHistory = [], launchControl, running = null, onNavi
 
       <TablePanel
         id="db-pending" title="Pending Review Queue" chip={`${pending.length} Items`} seeAllLabel="See all pending reviews" onSeeAll={() => onNavigate('review')}
-        searchLabel="Search pending reviews" query={queries.pending} onQuery={setQuery('pending')}
       >
         <DataTable
           caption="Pending review"
           rowKey={(r) => r.key}
-          rows={shownPending.slice(0, 5)}
+          rows={pending.slice(0, 5)}
           empty={<p className="db-none">Nothing to review. Every model suggestion has been handled.</p>}
           columns={[
             { key: 'name', header: 'Name', render: (r) => <span className="db-cookie db-cookie--plain">{r.name}</span> },
