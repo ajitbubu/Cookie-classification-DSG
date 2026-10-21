@@ -346,7 +346,7 @@ function DashboardPage({ scanHistory = [], launchControl, running = null, onNavi
                   </span>
                 ) : (
                   <span className="db-actions">
-                    <Button variant="success" size="sm" icon={Check} aria-label={`Approve ${r.name}`}
+                    <Button variant="outline" size="sm" icon={Check} aria-label={`Approve ${r.name}`}
                       disabled={(!r.suggestion && r.rule === 'Unclassified') || rowState[r.key] === 'saving'} onClick={() => requestApprove(r)}>
                       Approve
                     </Button>
