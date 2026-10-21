@@ -1381,7 +1381,8 @@ function App() {
           label={currentPage === 'home' ? 'Cookie Classification' : 'Scanning'}
           activeCount={scanning ? 1 : 0}
           onNavigate={handleNavigate}
-          onNewScan={storeStatus === 'ready' ? () => setScanModal({ type: 'choose', url: '' }) : undefined}
+          // Launch New Scan has its own Start Scan, so a second primary there competes (FINDING-008)
+          onNewScan={storeStatus === 'ready' && currentPage !== 'launch' ? () => setScanModal({ type: 'choose', url: '' }) : undefined}
         />
       )}
 
