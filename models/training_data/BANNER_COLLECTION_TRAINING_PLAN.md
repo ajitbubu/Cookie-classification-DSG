@@ -42,6 +42,9 @@ points; confirm each on 5 live sites before building on it.
 Exit criteria: for each CMP, a captured sample JSON + a written field mapping.
 Drop any CMP whose data can't be pulled reliably.
 
+Status (2026-10-21): OneTrust and Cookiebot pass. See `PHASE0_CMP_FINDINGS.md`
+and `phase0_samples/`. Usercentrics, the table-based CMPs and TCF are not verified yet.
+
 ## Phase 1 — Collector (1–2 weeks)
 
 New script `backend/scripts/collect_banner_cookies.py` (one-off script, so sync
