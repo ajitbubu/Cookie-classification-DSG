@@ -55,6 +55,10 @@ class Settings(BaseSettings):
     # Browser configuration
     BROWSER_TYPE: str = "chromium"  # or "firefox"
     HEADLESS: bool = True
+    # Scanning browsers connect only through this proxy (backend/scanner/egress_proxy.py),
+    # which refuses non-public addresses after a single DNS lookup (DNS-rebinding guard).
+    # Empty = no proxy (local runs without Docker); docker-compose sets it.
+    SCAN_EGRESS_PROXY: str = ""
     
     class Config:
         env_file = ".env"
