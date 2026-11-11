@@ -143,7 +143,9 @@ class CookieInput(BaseModel):
     name: str
     domain: str
     path: str = "/"
-    expiry_days: Optional[int] = None
+    # Days until expiry; real lifetimes are fractional (395.83). The feature
+    # extractor truncates to whole days, so floats are accepted here.
+    expiry_days: Optional[float] = None
     http_only: bool = False
     secure: bool = False
     same_site: Optional[str] = None

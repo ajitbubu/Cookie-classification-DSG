@@ -117,6 +117,20 @@ def test_classify_single_cookie(client):
     assert isinstance(body, (dict, list))
 
 
+# Regression: ISSUE-002 — a fractional expiry_days rejected the whole batch with 422
+# Found by /qa on 2026-11-11
+# Report: .gstack/qa-reports/run-20261111T170950Z/qa-report-localhost-2026-11-11.md
+def test_classify_accepts_fractional_expiry_days(client):
+    payload = {"cookies": [
+        {"name": "_ga", "domain": ".example.com", "expiry_days": 395.83},
+        {"name": "sessionid", "domain": "example.com", "expiry_days": 0},
+    ]}
+    r = client.post("/api/v1/ml/classify", json=payload)
+
+    assert r.status_code == 200, r.text
+    assert len(r.json()["classifications"]) == 2
+
+
 def test_classification_threshold_creates_abstention(client):
     payload = {
         "cookies": [{"name": "_ga", "domain": ".example.com"}],
