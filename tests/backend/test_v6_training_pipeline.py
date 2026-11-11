@@ -649,3 +649,10 @@ def test_all_cookies_sets_keep_familiar_names_on_held_out_sites():
     assert (every.cookie_name == "_ga").sum() == len(audit["test_sites"])
     assert set(every.site_domain).isdisjoint(train.site_domain)
 
+
+
+@pytest.mark.parametrize("version", ["5.0.0", "6.5.0", "7.0.0"])
+def test_v5_feature_extractor_serves_v5_through_v7_models(version):
+    from backend.api.ml_classifier.feature_extractor_v5 import FeatureExtractorV5, get_feature_extractor_for_model
+
+    assert isinstance(get_feature_extractor_for_model(version), FeatureExtractorV5)

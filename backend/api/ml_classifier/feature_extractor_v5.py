@@ -214,7 +214,7 @@ def get_feature_extractor_for_model(model_version: str):
     Returns:
         Feature extractor instance
     """
-    if model_version.startswith('5.') or model_version.startswith('6.'):
+    if model_version.startswith(('5.', '6.', '7.')):
         return FeatureExtractorV5()
     elif model_version.startswith('3.'):
         from .feature_extractor_v3 import FeatureExtractorV3
