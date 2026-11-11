@@ -1,0 +1,148 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_li_ss,i.liadm.com,/s,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_ttp,.tiktok.com,/,Third party,390.00 days,89 days,false,true,none,false,Declared & set,tiktok.com,"TikTok is a social media platform owned by ByteDance, known for short-form video sharing. The service is used to create and share videos, and it utilizes cookies for various purposes including advertising and analytics."
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.d.adroll.com,/,Third party,395.00 days,389 days,true,true,none,true,Declared & set,criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.adroll.com,/,Third party,395.00 days,389 days,true,true,none,true,Declared & set,criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Unclassified,none,,builderSessionId,www.chilis.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_fbp,.chilis.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Unclassified,none,,__adroll_fpc,.chilis.com,/,First party,365.25 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Performance,banner,OneTrust,_ga,.chilis.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,chilis.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google&#39;s more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners. For more information about Google&#39;s processing of your personal data, please consult Google&#39;s <a h"
+Targeting Cookies,banner,OneTrust,_gcl_au,.chilis.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,chilis.com,"Used by Google AdSense for experimenting with advertisement efficiency across websites using their services For more information about Google&#39;s processing of your personal data, please consult Google&#39;s <a href=""https://business.safety.google/privacy/"" rel=""nofollow"">Privacy &amp; Terms</a> site."
+Unclassified,none,,pid,.smartadserver.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TestIfCookieP,.smartadserver.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,csync,.smartadserver.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,mako_uid,.eyeota.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,SERVERID,.eyeota.net,/,Third party,0.01 days,0 days,true,true,none,false,Declared & set,eyeota.net,"This domain is owned by Eyeota, a global company specialising in audience data to enable targeting of advertising based on visitor profiling."
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,389 days,true,true,none,true,Declared & set,criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Unclassified,none,,KRTBCOOKIE_10,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tluid,.3lift.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,i,.openx.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pi,.ml314.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,c,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,tuuid,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,CMID,.casalemedia.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMPS,.casalemedia.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMPRO,.casalemedia.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.chilis.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.chilis.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Unclassified,none,,__adroll,.d.adroll.com,/,Third party,395.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__adroll_shared,.adroll.com,/,Third party,395.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,tt_viewer,.teads.tv,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,did,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,didts,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,nnls,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,t_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,t_pt_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,A3,.yahoo.com,/,Third party,365.25 days,,true,true,none,false,Not declared,,
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,KRTBCOOKIE_18,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,demdex,.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,demdex.net,"This cookie helps Adobe Audience Manger perform basic functions such as visitor identification, ID synchronization, segmentation, modeling, reporting, etc."
+Targeting Cookies,banner,OneTrust,rud,.rfihub.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,rfihub.com,This domain is owned by Rocketfuel. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,ruds,.rfihub.com,/,Third party,Session,Session,false,true,none,false,Declared & set,rfihub.com,This domain is owned by Rocketfuel. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,dpm,.dpm.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,dpm.demdex.net,This domain is owned by Adobe Audience Manager. The main business activity is online profiling for targeted marketing.
+Targeting Cookies,banner,OneTrust,everest_g_v2,.everesttech.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,everesttech.net,This domain is owned by Adobe. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,visitor-id,.media.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,media.net,Media.net is a global online advertising technology network.
+Targeting Cookies,banner,OneTrust,data-rk,.media.net,/,Third party,364.00 days,363 days,false,true,none,false,Declared & set,media.net,Media.net is a global online advertising technology network.
+Targeting Cookies,banner,OneTrust,zync-uuid,.rezync.com,/,Third party,390.00 days,179 days,false,true,none,false,Declared & set,rezync.com,Rezync.com appears to be associated with providing online advertising technologies and services.
+Unclassified,none,,lidid,.liadm.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ljt_reader,.lijit.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IDSYNC,.analytics.yahoo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,idmap_cookie_id,pixel.idmap.ai,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,vcnpxid,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxst,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxe,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxsn,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,browser_id,.rqtrk.eu,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,st_cs,.seedtag.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,st_uid,.seedtag.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,euds,.rfihub.com,/,Third party,Session,Session,false,true,none,false,Declared & set,rfihub.com,This domain is owned by Rocketfuel. The main business activity is: Advertising
+Unclassified,none,,adtheorent[cuid],.adentifi.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,cb,.clickagy.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,chs,aorta.clickagy.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,clid,.media6degrees.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,acs,.media6degrees.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IQver,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,intentIQ,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,intentIQCDate,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IQPData,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IQMID,.intentiq.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IQadv,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bito,.bidr.io,/,Third party,394.79 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bitoIsSecure,.bidr.io,/,Third party,394.79 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SEUNCY,.semasio.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ab,.agkn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,to_master_s,.truoptik.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,to_version_s,.truoptik.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,UID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,rmuid,.linksynergy.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Performance,banner,OneTrust,_ga_0000000,.chilis.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,www.chilis.com,NAUsed by Google Analytics to identify and track an individual session with your device.
+Performance,banner,OneTrust,_ga_VLTVRCDCGB,.chilis.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,www.chilis.com,NAUsed by Google Analytics to identify and track an individual session with your device.
+Targeting Cookies,banner,OneTrust,_rdt_uuid,.chilis.com,/,First party,90.00 days,0 days,false,true,strict,false,Declared & set,www.chilis.com,This cookie is set by Reddit and is used for tracking the views of embedded videos and performance of the advertisements.
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.chilis.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.chilis.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Targeting Cookies,banner,OneTrust,_uetsid,.chilis.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,chilis.com,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Performance,banner,OneTrust,_uetvid,.chilis.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,chilis.com,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Unclassified,none,,__ar_v4,.www.chilis.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,ci_rtc,.ipredictive.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,ipredictive.com,"This domain is owned by Adelphic, a USA based company engaged in mobile and cross-device programmatic online advertising."
+Unclassified,none,,u,.ml314.com,/,Third party,0.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,rlas3,.rlcdn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Unclassified,none,,anj,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,st_csd,.seedtag.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Performance,banner,OneTrust,sd-session-id,live.rezync.com,/,Third party,390.00 days,179 days,true,true,none,false,Declared & set,live.rezync.com,"This domain is associated with the Rezync real-time messaging service, which is often used for live chat and customer support functionalities on websites."
+Targeting Cookies,banner,OneTrust,eud,.rfihub.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,rfihub.com,This domain is owned by Rocketfuel. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,pxrc,.rlcdn.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Targeting Cookies,banner,OneTrust,pxrc,.pippio.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,io.narrative.guid.v2,io.narrative.io,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,_ScCbts,chilis.com,,,,6 days,,,,,"Declared, not set",chilis.com,TS
+Strictly Necessary Cookies,banner,OneTrust,utag_main,chilis.com,,,,364 days,,,,,"Declared, not set",chilis.com,This cookie name is associated with the Tealium data platform and is used to enforce consent preferences across 3rd party tags. Within the cookie are several built-in values that keep track of the visitor session.
+Strictly Necessary Cookies,banner,OneTrust,SERVER,www.chilis.com,,,,Session,,,,,"Declared, not set",www.chilis.com,This cookie is typically used for load balancing and session management to ensure that all user requests are routed to the same server in any browsing session.
+Functional Cookies,banner,OneTrust,at_check,chilis.com,,,,Session,,,,,"Declared, not set",chilis.com,Used by Adobe Target to check if cookies are enabled/supported on the browser
+Functional Cookies,banner,OneTrust,mbox,chilis.com,,,,0 days,,,,,"Declared, not set",chilis.com,"Used by Adobe Target to generate dynamic content in a marketing box on the page. Contains the following values:
+PC ID - ID for visitor's browser. Removed when cookie deleted.
+Session ID - A unique ID for a user session.
+Check  - checks if cookies are supported. Set on each page load."
+Performance,banner,OneTrust,sc_at,snapchat.com,,,,389 days,,,,,"Declared, not set",snapchat.com,Cookie associated with embedding content from Snapchat.
+Targeting Cookies,banner,OneTrust,_tt_enable_cookie,com,,,,89 days,,,,,"Declared, not set",com,This cookie name is associated with TikTok which is used to collect data about behavior and purchases on the website and to measure the effect of advertising. It is also used to track website activity to help optimize advertising efforts.
+Targeting Cookies,banner,OneTrust,_ttp,chilis.com,,,,89 days,,,,,"Declared, not set",chilis.com,"This cookie is typically associated with the use of Taptap Digital, a company specializing in digital advertising. It is used for tracking and ad personalization purposes."
+Targeting Cookies,banner,OneTrust,__adroll_consent_params,www.chilis.com,,,,0 days,,,,,"Declared, not set",www.chilis.com,This cookie name is associated with Adroll which is used to help track the user through multiple sessions to serve targeted advertisements.
+Targeting Cookies,banner,OneTrust,_scid,chilis.com,,,,395 days,,,,,"Declared, not set",chilis.com,"Cookie associated with Snapchat. Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates realtime bidding for advertisers."
+Targeting Cookies,banner,OneTrust,_tt_enable_cookie,chilis.com,,,,89 days,,,,,"Declared, not set",chilis.com,This cookie name is associated with TikTok which is used to collect data about behavior and purchases on the website and to measure the effect of advertising. It is also used to track website activity to help optimize advertising efforts.
+Targeting Cookies,banner,OneTrust,MSPTC,bing.com,,,,389 days,,,,,"Declared, not set",bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,X-AB,sc-static.net,,,,0 days,,,,,"Declared, not set",sc-static.net,"This domain is commonly associated with Scorecard Research, a service that provides marketers with analytics and other tracking information."
+Targeting Cookies,banner,OneTrust,uid,turn.com,,,,179 days,,,,,"Declared, not set",turn.com,This domain is owned by Turn. The main business activity is: Marketing and Data Management Platform provider
+Targeting Cookies,banner,OneTrust,cto_bundle,criteo.com,,,,389 days,,,,,"Declared, not set",criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,uid,criteo.com,,,,389 days,,,,,"Declared, not set",criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,at_check,assets.adobedtm.com,,,,0 days,,,,,"Declared, not set",assets.adobedtm.com,If you know anything about this host and its uses please add your contributions here. 
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,ar_debug,doubleclick.net,,,,29 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,AFFICHE_W,weborama.fr,,,,392 days,,,,,"Declared, not set",weborama.fr,"This domain is owned be Weborama, a France based online advertising business."

@@ -1,0 +1,224 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,__cf_ob,www.glassdoor.com,/cdn-cgi/challenge-platform,First party,Session,,false,true,none,true,Not declared,,
+Unclassified,none,,indeedCtk,www.glassdoor.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,gdsid,www.glassdoor.com,/,First party,0.25 days,,true,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,gdId,www.glassdoor.com,/,First party,400.00 days,3650 days,false,true,none,false,Declared & set,Glassdoor,"Used to identify signed out users
+"
+Unclassified,none,,asst,www.glassdoor.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rl_page_init_referrer,.glassdoor.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,rsSessionId,.glassdoor.com,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,rl_anonymous_id,.glassdoor.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,rsReferrerData,.glassdoor.com,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cf_clearance,.glassdoor.com,/,First party,365.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_dd_s,www.glassdoor.com,/,First party,365.00 days,,false,false,strict,false,Not declared,,
+Unclassified,none,,g_state,www.glassdoor.com,/,First party,180.00 days,,false,false,unspecified,false,Not declared,,
+Optional Cookies,banner,OneTrust,ki_r,www.glassdoor.com,/,First party,400.00 days,1826 days,false,false,unspecified,false,Declared & set,Glassdoor,"This cookie is associated with Shopify's analytics suite.
+"
+Optional Cookies,banner,OneTrust,ki_t,www.glassdoor.com,/,First party,400.00 days,1826 days,false,false,unspecified,false,Declared & set,Glassdoor,"This cookie is associated with Shopify's analytics suite.
+"
+Unclassified,none,,ki_s,www.glassdoor.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.glassdoor.com,/,First party,365.00 days,365 days,false,true,none,false,Declared & set,glassdoor.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Unclassified,none,,rl_session,.glassdoor.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.glassdoor.com,/,First party,0.02 days,0 days,true,true,none,true,Declared & set,glassdoor.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+"
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.glassdoor.com,/,First party,365.00 days,365 days,false,true,none,false,Declared & set,glassdoor.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,_optionalConsent,www.glassdoor.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,otGeoUS,.glassdoor.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cdrop,Glassdoor,,,,365 days,,,,,"Declared, not set",Glassdoor,
+Strictly Necessary Cookies,banner,OneTrust,__cfduid,Glassdoor,,,,30 days,,,,,"Declared, not set",Glassdoor,"Cookie associated with sites using CloudFlare, used to speed up page load times. According to CloudFlare it is used to override any security restrictions based on the IP address the visitor is coming from. It does not contain any user identification information."
+Strictly Necessary Cookies,banner,OneTrust,_dc_gtm_UA-,Glassdoor,,,,Session,,,,,"Declared, not set",Glassdoor,"This cookie is associated with sites using Google Tag Manager to load other scripts and code into a page. Where it is used it may be regarded as Strictly Necessary as without it, other scripts may not function correctly. The end of the name is a unique number which is also an identifier for an associated Google Analytics account."
+Strictly Necessary Cookies,banner,OneTrust,_dc_gtm_UA-xxxxxxxx,glassdoor.com,,,,0 days,,,,,"Declared, not set",glassdoor.com,"This cookie is associated with sites using Google Tag Manager to load other scripts and code into a page.  Where it is used it may be regarded as Strictly Necessary as without it, other scripts may not function correctly. The end of the name is a unique number which is also an identifier for an associated Google Analytics account."
+Strictly Necessary Cookies,banner,OneTrust,_ga,Glassdoor,,,,Session,,,,,"Declared, not set",Glassdoor,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports. By default it is set to expire after 2 years, although this is customisable by website owners.
+"
+Strictly Necessary Cookies,banner,OneTrust,_gat,Glassdoor,,,,Session,,,,,"Declared, not set",Glassdoor,"This cookie name is associated with Google Universal Analytics, according to documentation it is used to throttle the request rate - limiting the collection of data on high traffic sites. It expires after 10 minutes.
+"
+Strictly Necessary Cookies,banner,OneTrust,_gat_UA-2595786-1,Glassdoor,,,,Session,,,,,"Declared, not set",Glassdoor,This is a pattern type cookie set by Google Analytics
+Strictly Necessary Cookies,banner,OneTrust,_gid,Glassdoor,,,,1 days,,,,,"Declared, not set",Glassdoor,"This cookie name is asssociated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google. It appears to store and update a unique value for each page visited.
+"
+Strictly Necessary Cookies,banner,OneTrust,_uac,Glassdoor,,,,Session,,,,,"Declared, not set",Glassdoor,Used for Analytics auth state of the user
+Strictly Necessary Cookies,banner,OneTrust,audience,www.glassdoor.com,,,,0 days,,,,,"Declared, not set",www.glassdoor.com,
+Strictly Necessary Cookies,banner,OneTrust,AWSALB,Glassdoor,,,,7 days,,,,,"Declared, not set",Glassdoor,AWS cookie for sticky loadbalancer
+Strictly Necessary Cookies,banner,OneTrust,AWSALBCORS,Glassdoor,,,,7 days,,,,,"Declared, not set",Glassdoor,AWS cookie for sticky loadbalancer
+Strictly Necessary Cookies,banner,OneTrust,BIGipServerabmweb-nginx-app_https,resources.glassdoor.com,,,,Session,,,,,"Declared, not set",resources.glassdoor.com,"This cookie name is associated with the BIG-IP product suite from company F5. Usually associated with managing sessions on load balanced servers, to ensure user requests are routed consistently to the correct server. The common root is BIGipServer most commonly followed by a domain name, usually the one that it is hosted on, but not always."
+Strictly Necessary Cookies,banner,OneTrust,cass,Glassdoor,,,,Session,,,,,"Declared, not set",Glassdoor,Required to maintain a user's session state.
+Strictly Necessary Cookies,banner,OneTrust,G_ENABLED_IDPS,www.glassdoor.com,,,,0 days,,,,,"Declared, not set",www.glassdoor.com,
+Strictly Necessary Cookies,banner,OneTrust,GSESSIONID,Glassdoor,,,,Session,,,,,"Declared, not set",Glassdoor,"Used for cross app shared state
+"
+Strictly Necessary Cookies,banner,OneTrust,ignoreCount,www.glassdoor.com,,,,0 days,,,,,"Declared, not set",www.glassdoor.com,
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID,Glassdoor,,,,1 days,,,,,"Declared, not set",Glassdoor,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server.
+"
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID_JX_APP,Glassdoor,,,,1 days,,,,,"Declared, not set",Glassdoor,"For session stickyness
+"
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID_PC_APP,Glassdoor,,,,1 days,,,,,"Declared, not set",Glassdoor,"For session stickyness
+"
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID_PR_APP,Glassdoor,,,,Session,,,,,"Declared, not set",Glassdoor,"For session stickyness
+"
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID_SEO_APP,Glassdoor,,,,Session,,,,,"Declared, not set",Glassdoor,"For session stickyness
+"
+Strictly Necessary Cookies,banner,OneTrust,PHPSESSID,www.glassdoor.com,,,,Session,,,,,"Declared, not set",www.glassdoor.com,"Cookie generated by applications based on the PHP language.  This is a general purpose identifier used to maintain user session variables. It is normally a random generated number, how it is used can be specific to the site, but a good example is maintaining a logged-in status for a user between pages."
+Strictly Necessary Cookies,banner,OneTrust,trs,www.glassdoor.com,,,,365 days,,,,,"Declared, not set",www.glassdoor.com,
+Strictly Necessary Cookies,banner,OneTrust,uc,Glassdoor,,,,3650 days,,,,,"Declared, not set",Glassdoor,"Universal cookie
+"
+Strictly Necessary Cookies,banner,OneTrust,AWSALBCORS,www.glassdoor.ie,,,,7 days,,,,,"Declared, not set",www.glassdoor.ie,This cookie is managed by AWS and is used for load balancing.
+Strictly Necessary Cookies,banner,OneTrust,G_ENABLED_IDPS,www.glassdoor.ie,,,,0 days,,,,,"Declared, not set",www.glassdoor.ie,This cookie is used to securely log in to the website with a Google account. 
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID,www.glassdoor.ie,,,,0 days,,,,,"Declared, not set",www.glassdoor.ie,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server."
+Strictly Necessary Cookies,banner,OneTrust,__cfduid,glassdoor.ie,,,,758 days,,,,,"Declared, not set",glassdoor.ie,"Cookie associated with sites using CloudFlare, used to speed up page load times. According to CloudFlare it is used to override any security restrictions based on the IP address the visitor is coming from. It does not contain any user identification information.    "
+Strictly Necessary Cookies,banner,OneTrust,_dc_gtm_UA-xxxxxxxx,glassdoor.ie,,,,0 days,,,,,"Declared, not set",glassdoor.ie,"This cookie is associated with sites using Google Tag Manager to load other scripts and code into a page.  Where it is used it may be regarded as Strictly Necessary as without it, other scripts may not function correctly. The end of the name is a unique number which is also an identifier for an associated Google Analytics account."
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,glassdoor.ie,,,,365 days,,,,,"Declared, not set",glassdoor.ie,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,glassdoor.ie,,,,365 days,,,,,"Declared, not set",glassdoor.ie,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Strictly Necessary Cookies,banner,OneTrust,cass,www.glassdoor.com,,,,0 days,,,,,"Declared, not set",www.glassdoor.com,Required to maintain a user's session state.
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,Glassdoor,,,,Session,,,,,"Declared, not set",Glassdoor,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+"
+Strictly Necessary Cookies,banner,OneTrust,__cfduid,onetrust.com,,,,758 days,,,,,"Declared, not set",onetrust.com,"This domain is owned by OneTrust, a privacy management software which helps organizations achieve compliance with global regulations."
+Functional Cookies,banner,OneTrust,ab.storage.sessionId.bbafb5ff-3006-4aaf-bbe3-179521353526,glassdoor.com,,,,7305 days,,,,,"Declared, not set",glassdoor.com,ab.storage.sessionId
+Analytics Cookies,banner,OneTrust,_gat,glassdoor.com,,,,0 days,,,,,"Declared, not set",glassdoor.com,"This cookie name is associated with Google Universal Analytics, according to documentation it is used to throttle the request rate - limiting the collection of data on high traffic sites. It expires after 10 minutes."
+Analytics Cookies,banner,OneTrust,_ga,glassdoor.ie,,,,730 days,,,,,"Declared, not set",glassdoor.ie,_ga
+Analytics Cookies,banner,OneTrust,_gid,glassdoor.ie,,,,1 days,,,,,"Declared, not set",glassdoor.ie,_gid
+Targeting Cookies,banner,OneTrust,__d_mkto,www.glassdoor.com,,,,0 days,,,,,"Declared, not set",www.glassdoor.com,Marketo tracking code. Tracks all individuals who visit and run automated marketing campaigns.
+Targeting Cookies,banner,OneTrust,_cs_,glassdoor.com,,,,Session,,,,,"Declared, not set",glassdoor.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Targeting Cookies,banner,OneTrust,_cs_nnnnnnnnnnnnn,glassdoor.com,,,,Session,,,,,"Declared, not set",glassdoor.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Targeting Cookies,banner,OneTrust,_cs_root-domain,glassdoor.com,,,,Session,,,,,"Declared, not set",glassdoor.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Targeting Cookies,banner,OneTrust,_fbp,com,,,,76 days,,,,,"Declared, not set",com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Targeting Cookies,banner,OneTrust,ab._gdnnnnnnnnnnnnn,glassdoor.com,,,,Session,,,,,"Declared, not set",glassdoor.com,"This cookie is associated with software provided by Braze, is a marketing company that develops customer relationship management and mobile marketing automation software which businesses use to manage their applications. These cookies track session_id, device_id, and external_id. This is a pattern type cookie with a common root of ab._gd followed by a string of numbers."
+Targeting Cookies,banner,OneTrust,bkdc,bluekai.com,,,,166 days,,,,,"Declared, not set",bluekai.com,This domain is owned by Blue Kai. The main business activity is: Advertising/Audience Targeting
+Targeting Cookies,banner,OneTrust,mc,quantserve.com,,,,382 days,,,,,"Declared, not set",quantserve.com,"This domain is owned by Quantcast. The main business activity is: Market and Audience Segmentation, Targeted advertising services"
+Targeting Cookies,banner,OneTrust,bitoIsSecure,bidr.io,,,,381 days,,,,,"Declared, not set",bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Targeting Cookies,banner,OneTrust,__cfduid,appboycdn.com,,,,30 days,,,,,"Declared, not set",appboycdn.com,"This host is owned by Braze, Inc., a mobile marketing company. It develops customer relationship management and mobile marketing automation software that businesses use to manage their mobile applications."
+Optional Cookies,banner,OneTrust,__cdrop,glassdoor.com,,,,365 days,,,,,"Declared, not set",glassdoor.com,
+Optional Cookies,banner,OneTrust,__csess,glassdoor.com,,,,Session,,,,,"Declared, not set",glassdoor.com,
+Optional Cookies,banner,OneTrust,__gads,glassdoor.com,,,,730 days,,,,,"Declared, not set",glassdoor.com,"This cookie is associated with the DoubleClick for Publishers service from Google. Its purpose is to do with the showing of adverts on the site, for which the owner may earn some revenue."
+Optional Cookies,banner,OneTrust,__mp_opt_in_out_1faab7db770246ce2e76cc5a52005587,glassdoor.com,,,,0 days,,,,,"Declared, not set",glassdoor.com,
+Optional Cookies,banner,OneTrust,__qca,glassdoor.com,,,,392 days,,,,,"Declared, not set",glassdoor.com,"This is a cookie usually associated with Quantcast, a digital advertising company.  They provide website rankings, and the data they collect is also used for audience segmentation and targeted advertising."
+Optional Cookies,banner,OneTrust,__ssid,Glassdoor,,,,1461 days,,,,,"Declared, not set",Glassdoor,
+Optional Cookies,banner,OneTrust,__stripe_mid,Glassdoor,,,,365 days,,,,,"Declared, not set",Glassdoor,"Stripe is used to making credit card payments. Stripe uses a cookie to remember who you are and to enable the website to process payments without storing any credit card information on its own servers.
+"
+Optional Cookies,banner,OneTrust,__stripe_sid,Glassdoor,,,,Session,,,,,"Declared, not set",Glassdoor,"Stripe is used to making credit card payments. Stripe uses a cookie to remember who you are and to enable the website to process payments without storing any credit card information on its own servers.
+"
+Optional Cookies,banner,OneTrust,_biz_dfsA,glassdoor.com,,,,0 days,,,,,"Declared, not set",glassdoor.com,
+Optional Cookies,banner,OneTrust,_biz_flagsA,glassdoor.com,,,,365 days,,,,,"Declared, not set",glassdoor.com,
+Optional Cookies,banner,OneTrust,_biz_nA,glassdoor.com,,,,365 days,,,,,"Declared, not set",glassdoor.com,"This cookie is used to record website and server performance with each visit to the site. The data is aggregated and analyzed; therefore, it remains anonymous upon use.
+"
+Optional Cookies,banner,OneTrust,_biz_pendingA,glassdoor.com,,,,365 days,,,,,"Declared, not set",glassdoor.com,"This cookie is used to record website and server performance with each visit to the site. The data is aggregated and analyzed; therefore, it remains anonymous upon use.
+"
+Optional Cookies,banner,OneTrust,_biz_sid,glassdoor.com,,,,1 days,,,,,"Declared, not set",glassdoor.com,"This cookie is used to record website and server performance with each visit to the site. The data is aggregated and analyzed; therefore, it remains anonymous upon use.
+"
+Optional Cookies,banner,OneTrust,_biz_uid,glassdoor.com,,,,365 days,,,,,"Declared, not set",glassdoor.com,"This cookie is used to record website and server performance with each visit to the site. The data is aggregated and analyzed; therefore, it remains anonymous upon use.
+"
+Optional Cookies,banner,OneTrust,_cs_c,glassdoor.com,,,,395 days,,,,,"Declared, not set",glassdoor.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Optional Cookies,banner,OneTrust,_cs_id,glassdoor.com,,,,395 days,,,,,"Declared, not set",glassdoor.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Optional Cookies,banner,OneTrust,_cs_s,glassdoor.com,,,,0 days,,,,,"Declared, not set",glassdoor.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Optional Cookies,banner,OneTrust,_cs_same_site,www.glassdoor.com,,,,Session,,,,,"Declared, not set",www.glassdoor.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Optional Cookies,banner,OneTrust,_fbp,glassdoor.com,,,,90 days,,,,,"Declared, not set",glassdoor.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Optional Cookies,banner,OneTrust,_ga,help.glassdoor.com,,,,730 days,,,,,"Declared, not set",help.glassdoor.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Optional Cookies,banner,OneTrust,_gaexp,glassdoor.com,,,,72 days,,,,,"Declared, not set",glassdoor.com,
+Optional Cookies,banner,OneTrust,_gaexp_rc,glassdoor.com,,,,0 days,,,,,"Declared, not set",glassdoor.com,
+Optional Cookies,banner,OneTrust,_gat_UA-2595786-1,glassdoor.com,,,,0 days,,,,,"Declared, not set",glassdoor.com,"This is a pattern type cookie set by Google Analytics, where the pattern element on the name contains the unique identity number of the account or website it relates to. It appears to be a variation of the _gat cookie which is used to limit the amount of data recorded by Google on high traffic volume websites."
+Optional Cookies,banner,OneTrust,_gat_UA-nnnnnnn-nn,help.glassdoor.com,,,,0 days,,,,,"Declared, not set",help.glassdoor.com,"This is a pattern type cookie set by Google Analytics, where the pattern element on the name contains the unique identity number of the account or website it relates to. It appears to be a variation of the _gat cookie which is used to limit the amount of data recorded by Google on high traffic volume websites."
+Optional Cookies,banner,OneTrust,_gcl,glassdoor.com,,,,90 days,,,,,"Declared, not set",glassdoor.com,
+Optional Cookies,banner,OneTrust,_gclxxxx,glassdoor.com,,,,90 days,,,,,"Declared, not set",glassdoor.com,Google conversion tracking cookie
+Optional Cookies,banner,OneTrust,_gd#############,www.glassdoor.com,,,,730 days,,,,,"Declared, not set",www.glassdoor.com,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Optional Cookies,banner,OneTrust,_gd_session,www.glassdoor.com,,,,0 days,,,,,"Declared, not set",www.glassdoor.com,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Optional Cookies,banner,OneTrust,_gid,glassdoor.com,,,,1 days,,,,,"Declared, not set",glassdoor.com,This cookie name is asssociated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited.
+Optional Cookies,banner,OneTrust,_hjid,glassdoor.com,,,,356 days,,,,,"Declared, not set",glassdoor.com,"Hotjar cookie. This cookie is set when the customer first lands on a page with the Hotjar script. It is used to persist the random user ID, unique to that site on the browser. This ensures that behavior in subsequent visits to the same site will be attributed to the same user ID."
+Optional Cookies,banner,OneTrust,_hjIncludedInSample,www.glassdoor.com,,,,Session,,,,,"Declared, not set",www.glassdoor.com,"This cookie is associated with web analytics functionality and services from Hot Jar, a Malta based company. It uniquely identifies a visitor during a single browser session and indicates they are included in an audience sample."
+Optional Cookies,banner,OneTrust,_mkto_trk,Glassdoor,,,,730 days,,,,,"Declared, not set",Glassdoor,"This cookie is associated with an email marketing service provided by Marketo. This Analytics cookie allows a website to link visitor behaviour to the recipient of an email marketing campaign, to measure campaign effectiveness.
+"
+Optional Cookies,banner,OneTrust,audience,Glassdoor,,,,730 days,,,,,"Declared, not set",Glassdoor,
+Optional Cookies,banner,OneTrust,cf_fb_hash,glassdoor.com,,,,0 days,,,,,"Declared, not set",glassdoor.com,
+Optional Cookies,banner,OneTrust,cf_fb_page_tab,glassdoor.com,,,,0 days,,,,,"Declared, not set",glassdoor.com,
+Optional Cookies,banner,OneTrust,cf_fb_publish_url,glassdoor.com,,,,0 days,,,,,"Declared, not set",glassdoor.com,
+Optional Cookies,banner,OneTrust,cf_liked,glassdoor.com,,,,0 days,,,,,"Declared, not set",glassdoor.com,
+Optional Cookies,banner,OneTrust,cf_ob_info,Glassdoor,,,,Session,,,,,"Declared, not set",Glassdoor,Enables specific CloudFlare features
+Optional Cookies,banner,OneTrust,cf_use_ob,Glassdoor,,,,Session,,,,,"Declared, not set",Glassdoor,Enables specific CloudFlare features
+Optional Cookies,banner,OneTrust,CONSENT,google.ie,,,,6534 days,,,,,"Declared, not set",google.ie,
+Optional Cookies,banner,OneTrust,driftt_aid,www.glassdoor.com,,,,730 days,,,,,"Declared, not set",www.glassdoor.com,
+Optional Cookies,banner,OneTrust,driftt_sid,www.glassdoor.com,,,,0 days,,,,,"Declared, not set",www.glassdoor.com,
+Optional Cookies,banner,OneTrust,G_ENABLED_IDPS,Glassdoor,,,,365 days,,,,,"Declared, not set",Glassdoor,Used to maintain SSO state by google
+Optional Cookies,banner,OneTrust,GoogleAdServingTest,www.glassdoor.com,,,,Session,,,,,"Declared, not set",www.glassdoor.com,This cookie is used to determine what ads have been shown to the website visitor.
+Optional Cookies,banner,OneTrust,ht,www.glassdoor.com,,,,1 days,,,,,"Declared, not set",www.glassdoor.com,
+Optional Cookies,banner,OneTrust,ignoreCount,Glassdoor,,,,Session,,,,,"Declared, not set",Glassdoor,"Used by the header
+"
+Optional Cookies,banner,OneTrust,JSESSIONID_KYWI_APP,www.glassdoor.com,,,,0 days,,,,,"Declared, not set",www.glassdoor.com,
+Optional Cookies,banner,OneTrust,liveagent_oref,help.glassdoor.com,,,,3652 days,,,,,"Declared, not set",help.glassdoor.com,"This cookie name is associated with technology from LiveAgent, which provides online chat and customer support functionality."
+Optional Cookies,banner,OneTrust,liveagent_ptid,help.glassdoor.com,,,,3652 days,,,,,"Declared, not set",help.glassdoor.com,"This cookie name is associated with technology from LiveAgent, which provides online chat and customer support functionality."
+Optional Cookies,banner,OneTrust,liveagent_sid,help.glassdoor.com,,,,Session,,,,,"Declared, not set",help.glassdoor.com,"This cookie name is associated with technology from LiveAgent, which provides online chat and customer support functionality."
+Optional Cookies,banner,OneTrust,liveagent_vc,help.glassdoor.com,,,,3652 days,,,,,"Declared, not set",help.glassdoor.com,"This cookie name is associated with technology from LiveAgent, which provides online chat and customer support functionality."
+Optional Cookies,banner,OneTrust,mp_1faab7db770246ce2e76cc5a52005587_mixpanel,glassdoor.com,,,,365 days,,,,,"Declared, not set",glassdoor.com,
+Optional Cookies,banner,OneTrust,thx_guid,Glassdoor,,,,1800 days,,,,,"Declared, not set",Glassdoor,"Allows unique identification of a device (PC, telephone, etc.) used to place orders on this website for subsequent analysis.
+"
+Optional Cookies,banner,OneTrust,trs,Glassdoor,,,,365 days,,,,,"Declared, not set",Glassdoor,Tracks whether a user is logged in. 
+Optional Cookies,banner,OneTrust,AA003,atdmt.com,,,,90 days,,,,,"Declared, not set",atdmt.com,"This domain is owned by Atlas Solutions which is in turn owned by Facebook. Atlas is an online advertising business, targeting users through tracking their web activity. From September 2014 the company re-launched under the ownership of Facebook, promising the ability to reach known users and target adverts based on profiles generated using Facebook's user data."
+Optional Cookies,banner,OneTrust,ATN,atdmt.com,,,,730 days,,,,,"Declared, not set",atdmt.com,"This domain is owned by Atlas Solutions which is in turn owned by Facebook. Atlas is an online advertising business, targeting users through tracking their web activity. From September 2014 the company re-launched under the ownership of Facebook, promising the ability to reach known users and target adverts based on profiles generated using Facebook's user data."
+Optional Cookies,banner,OneTrust,bkpa,bluekai.com,,,,0 days,,,,,"Declared, not set",bluekai.com,This domain is owned by Blue Kai. The main business activity is: Advertising/Audience Targeting
+Optional Cookies,banner,OneTrust,bku,bluekai.com,,,,180 days,,,,,"Declared, not set",bluekai.com,This domain is owned by Blue Kai. The main business activity is: Advertising/Audience Targeting
+Optional Cookies,banner,OneTrust,__cfduid,rsms.me,,,,30 days,,,,,"Declared, not set",rsms.me,
+Optional Cookies,banner,OneTrust,lissc,linkedin.com,,,,365 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Optional Cookies,banner,OneTrust,cf_fb_hash,d2yeu2mwujl2s5.cloudfront.net,,,,0 days,,,,,"Declared, not set",d2yeu2mwujl2s5.cloudfront.net,
+Optional Cookies,banner,OneTrust,cf_fb_page_tab,d2yeu2mwujl2s5.cloudfront.net,,,,0 days,,,,,"Declared, not set",d2yeu2mwujl2s5.cloudfront.net,
+Optional Cookies,banner,OneTrust,cf_fb_publish_url,d2yeu2mwujl2s5.cloudfront.net,,,,0 days,,,,,"Declared, not set",d2yeu2mwujl2s5.cloudfront.net,
+Optional Cookies,banner,OneTrust,cf_liked,d2yeu2mwujl2s5.cloudfront.net,,,,0 days,,,,,"Declared, not set",d2yeu2mwujl2s5.cloudfront.net,
+Optional Cookies,banner,OneTrust,__cfduid,crazyegg.com,,,,30 days,,,,,"Declared, not set",crazyegg.com,CrazyEgg is a service that is used for website analysis and A/B testing.
+Optional Cookies,banner,OneTrust,mp_1faab7db770246ce2e76cc5a52005587_mixpanel,cdn.mxpnl.com,,,,365 days,,,,,"Declared, not set",cdn.mxpnl.com,
+Optional Cookies,banner,OneTrust,__d_mkto,js.driftt.com,,,,0 days,,,,,"Declared, not set",js.driftt.com,
+Optional Cookies,banner,OneTrust,DFTT_END_USER_PREV_BOOTSTRAPPED,js.driftt.com,,,,730 days,,,,,"Declared, not set",js.driftt.com,
+Optional Cookies,banner,OneTrust,driftt_aid,js.driftt.com,,,,730 days,,,,,"Declared, not set",js.driftt.com,This is the anonymous identifier token. It is used to tie the visitor on your website with the profile within the Drift system. This allows Drift to remember the information that this site visitor has provided through the chat on subsequent site visits.
+Optional Cookies,banner,OneTrust,driftt_sid,js.driftt.com,,,,0 days,,,,,"Declared, not set",js.driftt.com,
+Optional Cookies,banner,OneTrust,liveagent_oref,c.la1-c1cs-ord.salesforceliveagent.com,,,,3652 days,,,,,"Declared, not set",c.la1-c1cs-ord.salesforceliveagent.com,
+Optional Cookies,banner,OneTrust,liveagent_vc,c.la1-c1cs-ord.salesforceliveagent.com,,,,3652 days,,,,,"Declared, not set",c.la1-c1cs-ord.salesforceliveagent.com,
+Optional Cookies,banner,OneTrust,X-Salesforce-CHAT,c.la1-c1cs-ord.salesforceliveagent.com,,,,Session,,,,,"Declared, not set",c.la1-c1cs-ord.salesforceliveagent.com,
+Optional Cookies,banner,OneTrust,liveagent_ptid,d.la1-c1-ph2.salesforceliveagent.com,,,,3652 days,,,,,"Declared, not set",d.la1-c1-ph2.salesforceliveagent.com,
+Optional Cookies,banner,OneTrust,liveagent_sid,d.la1-c1-ph2.salesforceliveagent.com,,,,Session,,,,,"Declared, not set",d.la1-c1-ph2.salesforceliveagent.com,
+Optional Cookies,banner,OneTrust,liveagent_vc,d.la1-c1-ph2.salesforceliveagent.com,,,,3652 days,,,,,"Declared, not set",d.la1-c1-ph2.salesforceliveagent.com,
+Optional Cookies,banner,OneTrust,X-Salesforce-CHAT,d.la1-c1-ph2.salesforceliveagent.com,,,,Session,,,,,"Declared, not set",d.la1-c1-ph2.salesforceliveagent.com,
+Optional Cookies,banner,OneTrust,m,m.stripe.com,,,,3650 days,,,,,"Declared, not set",m.stripe.com,
+Optional Cookies,banner,OneTrust,B,yahoo.com,,,,365 days,,,,,"Declared, not set",yahoo.com,This domain is owned by Yahoo. The main business activity is: Search / Advertising
+Optional Cookies,banner,OneTrust,_ga,infogram.com,,,,730 days,,,,,"Declared, not set",infogram.com,
+Optional Cookies,banner,OneTrust,_gat,infogram.com,,,,0 days,,,,,"Declared, not set",infogram.com,
+Optional Cookies,banner,OneTrust,_gid,infogram.com,,,,1 days,,,,,"Declared, not set",infogram.com,
+Optional Cookies,banner,OneTrust,ARRAffinity,acct.bizible.com,,,,Session,,,,,"Declared, not set",acct.bizible.com,
+Optional Cookies,banner,OneTrust,mp_54cb63f9d70707dc8e6fbaa244b3a124_mixpanel,altrulabs.com,,,,365 days,,,,,"Declared, not set",altrulabs.com,
+Optional Cookies,banner,OneTrust,GPS,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Optional Cookies,banner,OneTrust,__cdrop,b2c-msm.marketo.com,,,,0 days,,,,,"Declared, not set",b2c-msm.marketo.com,
+Optional Cookies,banner,OneTrust,__csess,b2c-msm.marketo.com,,,,0 days,,,,,"Declared, not set",b2c-msm.marketo.com,
+Optional Cookies,banner,OneTrust,cf_token,b2c-msm.marketo.com,,,,0 days,,,,,"Declared, not set",b2c-msm.marketo.com,
+Optional Cookies,banner,OneTrust,_sp_id.381f,simplecast.com,,,,730 days,,,,,"Declared, not set",simplecast.com,simplybusiness.co.uk
+Optional Cookies,banner,OneTrust,_sp_ses.381f,simplecast.com,,,,0 days,,,,,"Declared, not set",simplecast.com,simplybusiness.co.uk
+Optional Cookies,banner,OneTrust,_sp_xxxxxxxxxx,simplecast.com,,,,730 days,,,,,"Declared, not set",simplecast.com,simplybusiness.co.uk
+Optional Cookies,banner,OneTrust,spscreqid,simplecast.com,,,,7015 days,,,,,"Declared, not set",simplecast.com,
+Optional Cookies,banner,OneTrust,tuuid,company-target.com,,,,730 days,,,,,"Declared, not set",company-target.com,"This domain is owned by USA based company Demandbase, which provides technology for B2B marketing."
+Optional Cookies,banner,OneTrust,tuuid_lu,company-target.com,,,,730 days,,,,,"Declared, not set",company-target.com,"This domain is owned by USA based company Demandbase, which provides technology for B2B marketing."
+Optional Cookies,banner,OneTrust,session,glassdooreconomicresearch.shinyapps.io,,,,Session,,,,,"Declared, not set",glassdooreconomicresearch.shinyapps.io,
+Optional Cookies,banner,OneTrust,6suuid,6sc.co,,,,730 days,,,,,"Declared, not set",6sc.co,
+Optional Cookies,banner,OneTrust,bito,bidr.io,,,,394 days,,,,,"Declared, not set",bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Optional Cookies,banner,OneTrust,checkForPermission,bidr.io,,,,0 days,,,,,"Declared, not set",bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Optional Cookies,banner,OneTrust,session,production-kbms.answeriq.com,,,,Session,,,,,"Declared, not set",production-kbms.answeriq.com,
+Optional Cookies,banner,OneTrust,gig3pctest,gigya.com,,,,0 days,,,,,"Declared, not set",gigya.com,"This domain is owned by Gigya.
+The main business activity is: Behavioral profiling and marketing services"
+Optional Cookies,banner,OneTrust,gmid,gigya.com,,,,365 days,,,,,"Declared, not set",gigya.com,"This domain is owned by Gigya.
+The main business activity is: Behavioral profiling and marketing services"
+Optional Cookies,banner,OneTrust,hasGmid,gigya.com,,,,184 days,,,,,"Declared, not set",gigya.com,"This domain is owned by Gigya.
+The main business activity is: Behavioral profiling and marketing services"
+Optional Cookies,banner,OneTrust,ucid,gigya.com,,,,365 days,,,,,"Declared, not set",gigya.com,"This domain is owned by Gigya.
+The main business activity is: Behavioral profiling and marketing services"
+Optional Cookies,banner,OneTrust,_cs_s,t.contentsquare.net,,,,0 days,,,,,"Declared, not set",t.contentsquare.net,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Optional Cookies,banner,OneTrust,_cs_same_site,t.contentsquare.net,,,,Session,,,,,"Declared, not set",t.contentsquare.net,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Optional Cookies,banner,OneTrust,sp,hodes.com,,,,365 days,,,,,"Declared, not set",hodes.com,
+Optional Cookies,banner,OneTrust,_gd_session,j.6sc.co,,,,0 days,,,,,"Declared, not set",j.6sc.co,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Optional Cookies,banner,OneTrust,_gd_svisitor,j.6sc.co,,,,730 days,,,,,"Declared, not set",j.6sc.co,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Optional Cookies,banner,OneTrust,_gd_visitor,j.6sc.co,,,,730 days,,,,,"Declared, not set",j.6sc.co,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Optional Cookies,banner,OneTrust,UID,scorecardresearch.com,,,,720 days,,,,,"Declared, not set",scorecardresearch.com,This domain is owned by ScorecardResearch (comScore). The main business activity is: Advertising. The cookies in this domain have lifespans of 2 years.
+Optional Cookies,banner,OneTrust,UIDR,scorecardresearch.com,,,,720 days,,,,,"Declared, not set",scorecardresearch.com,This domain is owned by ScorecardResearch (comScore). The main business activity is: Advertising. The cookies in this domain have lifespans of 2 years.
+Optional Cookies,banner,OneTrust,CONSENT,google.com,,,,6562 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Optional Cookies,banner,OneTrust,NID,google.com,,,,183 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Optional Cookies,banner,OneTrust,,www.facebook.com,,,,Session,,,,,"Declared, not set",www.facebook.com,"This domain is owned by Facebook, which is the world's largest social networking service.  As a third party host provider, it mostly collects data on the interests of users via widgets such as the 'Like' button found on many websites.  This is used to serve targeted advertising to its users when logged into its services.  In 2014 it also started serving up behaviourally targeted advertising on other websites, similar to most dedicated online marketing companies."
+Optional Cookies,banner,OneTrust,BrowserId,force.com,,,,365 days,,,,,"Declared, not set",force.com,
+Optional Cookies,banner,OneTrust,IDE,doubleclick.net,,,,390 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Optional Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,Session,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Optional Cookies,banner,OneTrust,_BUID,bizibly.com,,,,365 days,,,,,"Declared, not set",bizibly.com,
+Optional Cookies,banner,OneTrust,fr,facebook.com,,,,90 days,,,,,"Declared, not set",facebook.com,"Contains browser and user unique ID combination, used for targeted advertising."
+Optional Cookies,banner,OneTrust,gig_bootstrap_2_Jx5rsFp18pauXYlKGzHQVpbahcR1iJ30bbyfqZsn69A6vbt3dQ7gYFCESWKMM1sP,cnbc.com,,,,365 days,,,,,"Declared, not set",cnbc.com,
+Optional Cookies,banner,OneTrust,region,cnbc.com,,,,90 days,,,,,"Declared, not set",cnbc.com,
+Optional Cookies,banner,OneTrust,GPS,Glassdoor,,,,Session,,,,,"Declared, not set",Glassdoor,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites.
+"
+Optional Cookies,banner,OneTrust,_BUID,bizible.com,,,,365 days,,,,,"Declared, not set",bizible.com,
+Optional Cookies,banner,OneTrust,__cfduid,jifo.co,,,,30 days,,,,,"Declared, not set",jifo.co,

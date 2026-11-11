@@ -1,0 +1,80 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,SOFI_WEB_USER_ID,www.sofi.com,/,First party,400.00 days,,true,true,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,optimizelyEndUserId,.sofi.com,/,First party,180.00 days,179 days,false,false,unspecified,false,Declared & set,sofi.com,Cookie set by the Optimizely website optimisation plaftform. This cookie is a unique user identifier
+Unclassified,none,,_vwo_uuid_v2,.sofi.com,/,First party,366.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,https://www.sofi.com_oeu1794373142604r0.8996778207086162$$14812420277$$session_state,a10819474327.cdn.optimizely.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_vwo_uuid,.sofi.com,/,First party,365.24 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_vwo_ds,.sofi.com,/,First party,30.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_vis_opt_s,.sofi.com,/,First party,100.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_vis_opt_test_cookie,.sofi.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Functional Cookies,banner,OneTrust,SOFI_REFERRER,.sofi.com,/,First party,1.00 days,Session,false,true,unspecified,false,Declared & set,sofi.com,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.sofi.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,sofi.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.sofi.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,sofi.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,optimizelySession,.sofi.com,/,First party,180.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_fbp,.sofi.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_pin_unauth,.sofi.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Unclassified,none,,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_dd_s,www.sofi.com,/,First party,365.00 days,,false,false,strict,false,Not declared,,
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_vwo_sn,.sofi.com,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Functional Cookies,banner,OneTrust,cf_clearance,.cloudflare.com,/,Third party,365.00 days,Session,true,true,none,true,Declared & set,sofi.com,"Used to verify user is not a bot; user/system has solved a challenge successfully
+"
+Functional Cookies,banner,OneTrust,cf_clearance,.sofi.com,/,First party,365.00 days,Session,true,true,none,true,Declared & set,sofi.com,"Used to verify user is not a bot; user/system has solved a challenge successfully
+"
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.sofi.com,/,First party,0.02 days,0 days,true,true,none,true,Declared & set,investors.sofi.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+This is a CloudFoundry cookie"
+Unclassified,none,,cf_chl_rc_ni,www.sofi.com,/,First party,0.04 days,,false,true,none,true,Not declared,,
+Functional Cookies,banner,OneTrust,_tq_id.TV-8181361845-1.a4f0,www.sofi.com,,,,729 days,,,,,"Declared, not set",www.sofi.com,_tq_id.TV
+Functional Cookies,banner,OneTrust,SOFI_AFFILIATE_INFO,sofi.com,,,,Session,,,,,"Declared, not set",sofi.com,
+Functional Cookies,banner,OneTrust,SOFI_AFFILIATE_INFO,www.sofi.com,,,,0 days,,,,,"Declared, not set",www.sofi.com,
+Functional Cookies,banner,OneTrust,SOFI_MP_DEVICE_ID,sofi.com,,,,7 days,,,,,"Declared, not set",sofi.com,
+Functional Cookies,banner,OneTrust,SOFI_PARTNER_OFFER_PREPOP,sofi.com,,,,Session,,,,,"Declared, not set",sofi.com,
+Functional Cookies,banner,OneTrust,_cfuvid,highcharts.com,,,,Session,,,,,"Declared, not set",highcharts.com,"This domain is owned by Highsoft, a company based in Norway. It provides a data visualisation/charting service that can be embedded in a website."
+Strictly Necessary Cookies,banner,OneTrust,__cfduid,sofi.com,,,,30 days,,,,,"Declared, not set",sofi.com,"Cookie associated with sites using CloudFlare, used to speed up page load times. According to CloudFlare it is used to override any security restrictions based on the IP address the visitor is coming from. It does not contain any user identification information.    "
+Strictly Necessary Cookies,banner,OneTrust,__cfruid,support.sofi.com,,,,Session,,,,,"Declared, not set",support.sofi.com,"Cookie associated with sites using CloudFlare, used to identify trusted web traffic."
+Strictly Necessary Cookies,banner,OneTrust,cf_chl_cc_,sofi.com,,,,0 days,,,,,"Declared, not set",sofi.com,cf_chl_cc_
+Strictly Necessary Cookies,banner,OneTrust,cf_chl_cc_,www.sofi.com,,,,Session,,,,,"Declared, not set",www.sofi.com,cf_chl_cc_
+Strictly Necessary Cookies,banner,OneTrust,cf_chl_cc_xxxxxxxxxxxxxxxxxxxxx,sofi.com,,,,Session,,,,,"Declared, not set",sofi.com,cf_chl_cc_
+Strictly Necessary Cookies,banner,OneTrust,cf_chl_cc_xxxxxxxxxxxxxxxxxxxxx,www.sofi.com,,,,Session,,,,,"Declared, not set",www.sofi.com,cf_chl_cc_
+Strictly Necessary Cookies,banner,OneTrust,dd_cookie_test_,sofi.com,,,,0 days,,,,,"Declared, not set",sofi.com,dd_cookie_test
+Strictly Necessary Cookies,banner,OneTrust,dd_cookie_test_,www.sofi.com,,,,0 days,,,,,"Declared, not set",www.sofi.com,dd_cookie_test
+Strictly Necessary Cookies,banner,OneTrust,dd_site_test_,sofi.com,,,,0 days,,,,,"Declared, not set",sofi.com,This cookie is set by the website to monitor errors and performance.
+Strictly Necessary Cookies,banner,OneTrust,SOFI_CSRF_COOKIE,www.sofi.com,,,,Session,,,,,"Declared, not set",www.sofi.com,
+Performance Cookies,banner,OneTrust,_clsk,sofi.com,,,,0 days,,,,,"Declared, not set",sofi.com,Used by Microsoft Clarity to connect multiple page views by a user into a single Clarity session recording.
+Performance Cookies,banner,OneTrust,_ga,sofi.com,,,,729 days,,,,,"Declared, not set",sofi.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Performance Cookies,banner,OneTrust,_gat_UA-,sofi.com,,,,0 days,,,,,"Declared, not set",sofi.com,
+Performance Cookies,banner,OneTrust,_gid,sofi.com,,,,0 days,,,,,"Declared, not set",sofi.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Performance Cookies,banner,OneTrust,optimizelyDomainTestCookie,sofi.com,,,,179 days,,,,,"Declared, not set",sofi.com,These Optimizely cookies allow us to test different versions of website pages to different users at the same time and to track how users navigate around our website. We use this information to test new features and make the website easier to use.
+Performance Cookies,banner,OneTrust,optimizelyDomainTestCookie,www.sofi.com,,,,364 days,,,,,"Declared, not set",www.sofi.com,These Optimizely cookies allow us to test different versions of website pages to different users at the same time and to track how users navigate around our website. We use this information to test new features and make the website easier to use.
+Performance Cookies,banner,OneTrust,_cls_cfgver,report.sofi.glassboxdigital.io,,,,Session,,,,,"Declared, not set",report.sofi.glassboxdigital.io,Glassbox
+Performance Cookies,banner,OneTrust,AWSALBCORS,report.sofi.glassboxdigital.io,,,,6 days,,,,,"Declared, not set",report.sofi.glassboxdigital.io,This cookie is managed by AWS and is used for load balancing.
+Targeting Cookies,banner,OneTrust,_gat_xxxxxxxxxxxxxxxxxxxxxxxxxx,sofi.com,,,,0 days,,,,,"Declared, not set",sofi.com,Google Analytics Cookies
+Targeting Cookies,banner,OneTrust,ab._gdnnnnnnnnnnnnn,sofi.com,,,,Session,,,,,"Declared, not set",sofi.com,"This cookie is associated with software provided by Braze, is a marketing company that develops customer relationship management and mobile marketing automation software which businesses use to manage their applications. These cookies track session_id, device_id, and external_id. This is a pattern type cookie with a common root of ab._gd followed by a string of numbers."
+Targeting Cookies,banner,OneTrust,cf_chl_seq_xxxxxxxxxxxxxxxxxxxxx,sofi.com,,,,Session,,,,,"Declared, not set",sofi.com," These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising. "
+Targeting Cookies,banner,OneTrust,cf_chl_seq_xxxxxxxxxxxxxxxxxxxxx,www.sofi.com,,,,Session,,,,,"Declared, not set",www.sofi.com," These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising. "
+Targeting Cookies,banner,OneTrust,optimizelyOptOut,sofi.com,,,,364 days,,,,,"Declared, not set",sofi.com,n/a
+Targeting Cookies,banner,OneTrust,optimizelyOptOut,www.sofi.com,,,,364 days,,,,,"Declared, not set",www.sofi.com,n/a
+Targeting Cookies,banner,OneTrust,soc_visitor_id,fp.sofi.com,,,,728 days,,,,,"Declared, not set",fp.sofi.com,"This is a cookie pattern that appends a unique identifier for a website visitor, used for tracking purposes. The cookies in this domain have a lifespan of 10 years."
+Targeting Cookies,banner,OneTrust,sp,investors.sofi.com,,,,364 days,,,,,"Declared, not set",investors.sofi.com,This cookie is associated with Eventbrite and is used to deliver content tailored to the end user's interests and improve content creation. This cookie is also used for event-booking purposes.
+Targeting Cookies,banner,OneTrust,thx_guid,st10.sofi.com,,,,1799 days,,,,,"Declared, not set",st10.sofi.com,"Allows unique identification of a device (PC, telephone, etc.) used to place orders on this website for subsequent analysis."
+Targeting Cookies,banner,OneTrust,CONSENT,youtube.com,,,,729 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,mt_misc,mathtag.com,,,,29 days,,,,,"Declared, not set",mathtag.com,This domain is owned by MediaMath Inc. a US based digital advertising business.
+Targeting Cookies,banner,OneTrust,mt_mop,mathtag.com,,,,29 days,,,,,"Declared, not set",mathtag.com,This domain is owned by MediaMath Inc. a US based digital advertising business.
+Targeting Cookies,banner,OneTrust,uuid,mathtag.com,,,,392 days,,,,,"Declared, not set",mathtag.com,This domain is owned by MediaMath Inc. a US based digital advertising business.
+Targeting Cookies,banner,OneTrust,visitor_id,pardot.com,,,,3649 days,,,,,"Declared, not set",pardot.com,"This is a cookie pattern that appends a unique identifier for a website visitor, used for tracking purposes. The cookies in this domain have a lifespan of 10 years."
+Targeting Cookies,banner,OneTrust,visitor_id#####,pardot.com,,,,3649 days,,,,,"Declared, not set",pardot.com,"This is a cookie pattern that appends a unique identifier for a website visitor, used for tracking purposes. The cookies in this domain have a lifespan of 10 years."
+Targeting Cookies,banner,OneTrust,MUID,bing.com,,,,389 days,,,,,"Declared, not set",bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,pardot,pi.pardot.com,,,,0 days,,,,,"Declared, not set",pi.pardot.com,"This domain is owned by Pardot, a marketing automation platform which provides lead generation services to businesses."
+Targeting Cookies,banner,OneTrust,MR,c.bing.com,,,,6 days,,,,,"Declared, not set",c.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,SRM_B,c.bing.com,,,,389 days,,,,,"Declared, not set",c.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Selling/Sharing Personal Information,banner,OneTrust,CCPA Opt Out,sofi.com,,,,365 days,,,,,"Declared, not set",sofi.com,Testing CCPA Opt Out Flag

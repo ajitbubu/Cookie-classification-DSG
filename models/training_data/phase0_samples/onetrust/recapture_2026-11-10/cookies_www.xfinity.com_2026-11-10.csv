@@ -1,0 +1,2 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,xpgn,.xfinity.com,/,First party,30.00 days,,false,true,unspecified,false,Not declared,,
