@@ -473,6 +473,10 @@ passes, internal and external.
    curl -u <user> http://localhost/api/v1/ml/model-info
    ```
 
+   If the nginx reload says `open() "/etc/nginx/nginx.conf" failed (2: No such file or
+   directory)`, git replaced `nginx/nginx.conf` (a branch switch or merge) and the
+   container still holds the old, deleted file: run `docker compose restart nginx`.
+
    If `up` stops with "dependency failed to start ... unhealthy" (a slow Mongo or
    Postgres healthcheck during a long build), the new containers are left in
    `created`; run `docker compose up -d ml-api api-gateway` again once `docker compose ps`
