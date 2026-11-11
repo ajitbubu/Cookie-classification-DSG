@@ -160,6 +160,9 @@ def test_vendor_category_names_map_and_ambiguous_ones_are_dropped():
         "Analytics & Performance": "Analytics_Performance", "Analytic & Performance": "Analytics_Performance",
         "Performance Analytics": "Analytics_Performance",
         "Essential Product Functions & Services": "Strictly_Necessary",
+        "Essential Technologies": "Strictly_Necessary", "Functional Technologies": "Functional",
+        "Social Media, Marketing, and Advertising Technologies": "Marketing_Advertising",
+        "Third Party Analytics": "Analytics_Performance", "Sharing for Targeted Advertising": "Marketing_Advertising",
         # Mixes two of our classes, or isn't a category: never guessed.
         "Analytics & Customization": "", "Performance & Functionality": "", "SaleOfInfo": "", "DiRinProcess": "",
     }

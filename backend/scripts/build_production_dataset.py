@@ -57,6 +57,7 @@ LABEL_ALIASES = {
     "performance analytics": "Analytics_Performance",    # Ketch
     "analytics & performance": "Analytics_Performance",  # Ketch
     "analytic & performance": "Analytics_Performance",   # Ketch
+    "third party analytics": "Analytics_Performance",    # Ketch
     "functional": "Functional",
     "personalization": "Functional",
     "personalisation": "Functional",
@@ -64,6 +65,7 @@ LABEL_ALIASES = {
     "preference": "Functional",
     "extend functionality": "Functional",
     "preferences": "Functional",
+    "functional technologies": "Functional",             # Ketch
     "advertising": "Marketing_Advertising",
     "marketing": "Marketing_Advertising",
     "marketing advertising": "Marketing_Advertising",
@@ -76,6 +78,8 @@ LABEL_ALIASES = {
     "targeted advertising": "Marketing_Advertising",  # Ketch
     "behavioral advertising": "Marketing_Advertising",  # Ketch
     "marketing and advertising": "Marketing_Advertising",  # Ketch
+    "sharing for targeted advertising": "Marketing_Advertising",  # Ketch
+    "social media, marketing, and advertising technologies": "Marketing_Advertising",  # Ketch
     "advertising & targeting": "Marketing_Advertising",
     "advertising and targeting": "Marketing_Advertising",
     "sales, sharing, and targeting": "Marketing_Advertising",
@@ -85,6 +89,7 @@ LABEL_ALIASES = {
     "essential": "Strictly_Necessary",
     "essential services": "Strictly_Necessary",       # Ketch
     "essential product functions & services": "Strictly_Necessary",  # Ketch
+    "essential technologies": "Strictly_Necessary",   # Ketch
     "required": "Strictly_Necessary",
     "security": "Strictly_Necessary",
     "operate the site and core services": "Strictly_Necessary",
