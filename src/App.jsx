@@ -35,7 +35,7 @@ import { useToast } from './components/Toast';
 import { nextRunTime, startsLater } from './lib/schedule';
 import { readInterruptedScan, clearActiveScan, MAX_SCAN_HISTORY, MAX_SCANS_PER_DOMAIN } from './lib/scanStorage';
 import { useScanGuard } from './hooks/useScanGuard';
-import { deriveValueFeatures } from './lib/cookieValueFeatures';
+import { toClassifyCookie } from './lib/cookieClassifyPayload';
 import { DASHBOARD_TABS, DOMAIN_TABS, SCANNING_TABS, pathForRoute, routeFromPath } from './lib/routes';
 import { formatScanDate } from './lib/scanResults';
 import CookieDetailModal from './components/CookieDetailModal';
@@ -313,23 +313,10 @@ function App() {
   };
 
   // ML Classification function
-  const classifyCookiesWithML = async (cookies) => {
+  const classifyCookiesWithML = async (cookies, siteDomain) => {
     try {
       const requestBody = {
-        cookies: cookies.map(cookie => ({
-          id: `${cookie.name}-${cookie.domain}`,
-          name: cookie.name,
-          domain: cookie.domain,
-          path: cookie.path || '/',
-          expiry_days: cookie.expiry_days,
-          http_only: cookie.httpOnly || false,
-          secure: cookie.secure || false,
-          same_site: cookie.sameSite,
-          site_domain: cookie.siteDomain || cookie.site_domain,
-          // Derived features instead of the raw value. Cookie values carry
-          // session tokens; the model only ever needed length/uuid/base64.
-          ...deriveValueFeatures(cookie.value),
-        })),
+        cookies: cookies.map(cookie => toClassifyCookie(cookie, siteDomain)),
         options: {
           return_explanation: false,
           find_similar: false,
@@ -418,7 +405,7 @@ function App() {
 
     // Classify cookies with ML in the background
     if (results.cookies && results.cookies.length > 0) {
-      const mlClassifications = await classifyCookiesWithML(results.cookies);
+      const mlClassifications = await classifyCookiesWithML(results.cookies, enhancedResults.domain);
       
       if (mlClassifications && mlClassifications.length > 0) {
         const updatedCookies = results.cookies.map((cookie, idx) =>
@@ -498,7 +485,7 @@ function App() {
 
       // Classify cookies with ML in the background
       if (results.cookies && results.cookies.length > 0) {
-        const mlClassifications = await classifyCookiesWithML(results.cookies);
+        const mlClassifications = await classifyCookiesWithML(results.cookies, enhancedResults.domain);
         
         if (mlClassifications && mlClassifications.length > 0) {
           const updatedCookies = results.cookies.map((cookie, idx) =>
@@ -600,7 +587,7 @@ function App() {
 
       // Classify cookies with ML in the background
       if (results.cookies && results.cookies.length > 0) {
-        const mlClassifications = await classifyCookiesWithML(results.cookies);
+        const mlClassifications = await classifyCookiesWithML(results.cookies, enhancedResults.domain);
         
         if (mlClassifications) {
           const updatedCookies = results.cookies.map((cookie, idx) =>
