@@ -2,6 +2,7 @@ import { Globe, RefreshCw, History } from 'lucide-react';
 import EmptyState from './ui/EmptyState';
 import Button from './ui/Button';
 import { ScanTypeChip } from './ui/Chip';
+import { formatScanDate } from '../lib/scanResults';
 import './DomainDetailsPage.css';
 
 // Domain Details when the routed scan can't be shown (E3, eng R3):
@@ -17,7 +18,7 @@ function DomainDetailsMissing({ status, domain, entry, onNewScan, onScanNow, onO
           <div className="dd-identity__main">
             <h2 id="dd-missing-domain" className="dd-identity__domain">{entry.domain}</h2>
             <div className="dd-identity__meta">
-              <span>{new Date(entry.timestamp).toLocaleString()}</span>
+              <span>{formatScanDate(entry.timestamp)}</span>
               <ScanTypeChip type={type} variant="pill" />
               <span>{`${(entry.totalCookies ?? 0).toLocaleString()} cookies`}</span>
             </div>

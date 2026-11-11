@@ -1,0 +1,379 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+GAP Category Two,banner,OneTrust,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,0 days,false,true,none,false,Declared & set,sc-static.net,"This domain is commonly associated with Scorecard Research, a service that provides marketers with analytics and other tracking information."
+GAP Category One,banner,OneTrust,AKA_A2,.gap.com,/,First party,0.04 days,0 days,true,true,unspecified,false,Declared & set,gap.com,"This cookie is generally provided by Akamai and is used for the Advanced Acceleration feature, which enables DNS Prefetch and HTTP2 Push."
+Unclassified,none,,ak_bot_analytics,.www.gap.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+GAP Category One,banner,OneTrust,fuiMatchMedia,www.gap.com,/,First party,Session,Session,false,false,lax,false,Declared & set,oldnavy.gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+Unclassified,none,,unknownShopperId,.gap.com,/,First party,400.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+GAP Category One,banner,OneTrust,JSESSIONID,.gap.com,/,First party,Session,Session,true,true,none,false,Declared & set,gap.com,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server.::
+Infosec Cookie, Owner: Personalization
+"
+Unclassified,none,,optimizelyEndUserId,.gap.com,/,First party,180.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Strictly Necessary Technologies,banner,OneTrust,utag_main_v_id,.gap.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,gap.com,Visitor ID - A unique identifier for each visitor
+Strictly Necessary Technologies,banner,OneTrust,utag_main__sn,.gap.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,gap.com,Session Count - The number of sessions for this unique visitor'
+Strictly Necessary Technologies,banner,OneTrust,utag_main_ses_id,.gap.com,/,First party,0.02 days,0 days,false,false,unspecified,false,Declared & set,gap.com,Session ID - A unique identifier for the session
+GAP Category One,banner,OneTrust,entry_brand,.gap.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.:: Privacy Team's Notes:analytics cookie used to report on which brand a user started session on - category 1 :: Infosec Cookie
+Strictly Necessary Technologies,banner,OneTrust,utag_main_vapi_domain,.gap.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,gap.com,Cookie that contains a session identifier used to authenticate the use and deliver different APIs
+Strictly Necessary Technologies,banner,OneTrust,utag_main_tapid_reset,.gap.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,gap.com,
+Unclassified,none,,utag_main_dc_visit,.gap.com,/,First party,365.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,utag_main_dc_event,.gap.com,/,First party,0.02 days,,false,false,unspecified,false,"Declared, conflicting",,
+Strictly Necessary Technologies,banner,OneTrust,utag_main__ss,.gap.com,/,First party,0.02 days,Session,false,false,unspecified,false,Declared & set,www.gap.com,"Is Start of Session - A flag that indicates whether or not a page view is the start of a session (1=yes, 0=no)"
+GAP Category One,banner,OneTrust,previous_page_type,.gap.com,/,First party,Session,Session,false,false,lax,false,Declared & set,gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+GAP Category Two,banner,OneTrust,demdex,.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,demdex.net,"This cookie helps Adobe Audience Manger perform basic functions such as visitor identification, ID synchronization, segmentation, modeling, reporting, etc."
+GAP Category Two,banner,OneTrust,AMCVS_93BE1C8B532956910A490D4D%40AdobeOrg,.gap.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,.gapcanada.ca," Manually added this cookie based on other AMCV cookies. ::
+Tag Title(s) : Adobe Analytics AppMeasurement for JS, Adobe Experience Cloud ID Service
+; UID(s) : 4,28,828
+; Vendor(s): Adobe
+; Tag Container(s):Adobe Analytics AppMeasurement for JS, Adobe Experience Cloud ID Service"
+GAP Category Two,banner,OneTrust,thx_guid,content.gap.com,/,First party,400.00 days,399 days,true,true,none,false,Declared & set,content.gap.com,"Allows unique identification of a device (PC, telephone, etc.) used to place orders on this website for subsequent analysis.::
+Tag Title(s) : Bing - All - US,CA,Factory
+UID(s) : 703,247,354
+Vendor(s): Bing
+Tag Container(s):Bing Ads Universal Event Tracking (UET)
+"
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_pin_unauth,.gap.com,/,First party,365.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Marketing and Advertising Technologies,banner,OneTrust,_ttp,.tiktok.com,/,Third party,390.00 days,89 days,false,true,none,false,Declared & set,tiktok.com,"TikTok is a social media platform owned by ByteDance, known for short-form video sharing. The service is used to create and share videos, and it utilizes cookies for various purposes including advertising and analytics."
+GAP Category Two,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,ConstructorioID_client_id,.gap.com,/,First party,365.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,ConstructorioID_session_id,.gap.com,/,First party,365.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+GAP Category Two,banner,OneTrust,ad-id,.amazon-adsystem.com,/,Third party,232.00 days,262 days,true,true,none,false,Declared & set,amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+GAP Category Two,banner,OneTrust,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,399 days,true,true,none,false,Declared & set,amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Unclassified,none,,_fbp,.gap.com,/,First party,90.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+GAP Category Two,banner,OneTrust,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,bat.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Unclassified,none,,_scid,.gap.com,/,First party,395.00 days,,false,false,lax,false,"Declared, conflicting",,
+Unclassified,none,,ak_bot_analytics,.securemetrics.gap.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+GAP Category Two,banner,OneTrust,TAPID,.tealiumiq.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,tealiumiq.com,This domain is owned by Tealium and is used for its audience streaming service which enables targeting and personalisation of content on a domain.
+Marketing and Advertising Technologies,banner,OneTrust,_twpid,.gap.com,/,First party,390.00 days,Session,false,true,strict,false,Declared & set,www.gap.com,This cookie name is associated with static.ads-twitter.com which is used to manage advertising-related functions.
+Unclassified,none,,s_cc,.gap.com,/,First party,Session,,false,false,unspecified,false,"Declared, conflicting",,
+GAP Category Two,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+GAP Category Two,banner,OneTrust,fr,.facebook.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,facebook.com,"Contains browser and user unique ID combination, used for targeted advertising."
+GAP Category Two,banner,OneTrust,GLOBALID,.bttrack.com,/,Third party,90.00 days,1095 days,false,true,none,false,Declared & set,.bttrack.com,"Manually added this cookie based on bttrack.com host name.
+Tag Title(s) : Bidtellect Conversion - All [US, Factory, CDA],Bidtellect - Analytics - All [US, Factory, CDA],Bidtellect - Retargeting - All [US, Factory, CDA]
+UID(s) : 817,820,824,279,280,286,384,385,390
+Vendor(s): Bidtellect
+Tag Container(s):Tealium Generic Tag,Bidtellect Conversion
+"
+Marketing and Advertising Technologies,banner,OneTrust,_tt_enable_cookie,.gap.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,gap.com,This cookie name is associated with TikTok which is used to collect data about behavior and purchases on the website and to measure the effect of advertising. It is also used to track website activity to help optimize advertising efforts.
+Marketing and Advertising Technologies,banner,OneTrust,_ttp,.gap.com,/,First party,390.00 days,Session,false,false,unspecified,false,Declared & set,www.gap.com,"This cookie is typically associated with the use of Taptap Digital, a company specializing in digital advertising. It is used for tracking and ad personalization purposes."
+Marketing and Advertising Technologies,banner,OneTrust,sessionid,.rkdms.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,rkdms.com,This domain is owned by Merkle Inc. which provides integrated marketing programs and advertising technology services.
+Functional Technologies,banner,OneTrust,__cf_bm,.sierra.chat,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,sierra.chat,This is a CloudFoundry cookie
+GAP Category Two,banner,OneTrust,_svsid,.gap.com,/,First party,365.00 days,0 days,false,false,lax,false,Declared & set,www.gap.com,
+Unclassified,none,,zync-uuid,.rezync.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+GAP Category Two,banner,OneTrust,everest_g_v2,.everesttech.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,everesttech.net,This domain is owned by Adobe. The main business activity is: Advertising
+Marketing and Advertising Technologies,banner,OneTrust,akaalb_Instance-1,apps.rokt.com,/,Third party,Session,Session,false,true,none,false,Declared & set,apps.rokt.com,This domain is owned by Rokt which provides e-commerce marketing services.
+GAP Category Two,banner,OneTrust,personalization_id,.twitter.com,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,twitter.com,"This domain is owned by Twitter. The main business activity is: Social Networking Services.  Where twitter acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+Functional Technologies,banner,OneTrust,__cf_bm,.twitter.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,twitter.com,This is a CloudFoundry cookie
+GAP Category Two,banner,OneTrust,dpm,.dpm.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,dpm.demdex.net,This domain is owned by Adobe Audience Manager. The main business activity is online profiling for targeted marketing.
+GAP Category Two,banner,OneTrust,muc_ads,.t.co,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,t.co,"This domain is owned by Twitter. It is used as a URL shortening service, which allows Twitter to collect data on how links are shared."
+Functional Technologies,banner,OneTrust,__cf_bm,.t.co,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,t.co,This is a CloudFoundry cookie
+Unclassified,none,,bc_invalidateUrlCache_targeting,www.gap.com,/,First party,0.01 days,,false,false,unspecified,false,"Declared, conflicting",,
+GAP Category Two,banner,OneTrust,_svsidss,.gap.com,/,First party,365.00 days,364 days,true,true,lax,false,Declared & set,gap.com,
+Unclassified,none,,__attentive_id,.gap.com,/,First party,390.00 days,,false,true,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,__attentive_session_id,.gap.com,/,First party,0.02 days,,false,true,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,_attn_,.gap.com,/,First party,390.00 days,,false,true,strict,false,"Declared, conflicting",,
+Unclassified,none,,__attentive_cco,.gap.com,/,First party,390.00 days,,false,true,unspecified,false,"Declared, conflicting",,
+GAP Category One,banner,OneTrust,AMCV_93BE1C8B532956910A490D4D%40AdobeOrg,.gap.com,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,gap.com," Manually added this cookie based on other AMCV cookies. ::
+Tag Title(s) : Adobe Analytics AppMeasurement for JS, Adobe Experience Cloud ID Service
+; UID(s) : 6
+; Vendor(s): Adobe
+; Tag Container(s):Adobe Analytics AppMeasurement for JS, Adobe Experience Cloud ID Service"
+Unclassified,none,,bluecoreNV,www.gap.com,/,First party,347.18 days,,false,false,unspecified,false,"Declared, conflicting",,
+Marketing and Advertising Technologies,banner,OneTrust,__tvpab,.tvpage.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,tvpage.com,"This cookie is generated by an integration between the Beacon API and Google Tag Manager (GTM) to enhance data tracking capabilities for web applications. The Beacon API is specifically designed to handle situations where data needs to be sent from the browser to the server when a page session is ending. It ensures that data is sent in a non-blocking and reliable manner, unlike traditional AJAX requests that might not complete if the page is unloading."
+Performance Technologies,banner,OneTrust,RoktRecogniser,www.gap.com,/,First party,365.00 days,364 days,false,true,lax,false,Declared & set,oldnavy.gap.com,This cookie allows you to accurately track consumers to their purchase behavior
+Unclassified,none,,__tvpa,.gap.com,/,First party,7.00 days,,false,true,lax,false,"Declared, conflicting",,
+Unclassified,none,,__attentive_ss_referrer,.gap.com,/,First party,0.02 days,,false,true,unspecified,false,"Declared, conflicting",,
+GAP Category Two,banner,OneTrust,sv_sid,.securedvisit.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,securedvisit.com,"This domain is owned by 4Cite Marketing, a USA based company which provides services to track users across sites and show targeted content/marketing messaging."
+Strictly Necessary Technologies,banner,OneTrust,thx_global_guid,h.online-metrix.net,/,Third party,400.00 days,399 days,true,true,none,false,Declared & set,h.online-metrix.net,"This domain is associated with the risk management firm LexisNexis. It is used for tracking and analytics, typically in the context of preventing fraud and ensuring security."
+Functional Technologies,banner,OneTrust,__cf_bm,.attentivemobile.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,t.co,This is a CloudFoundry cookie
+GAP Category Two,banner,OneTrust,ab,.agkn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,agkn.com,"This domain is owned by Aggregate Knowledge, which has been acquired by Neustar Inc. Aggregate Knowledge provides a data management platform which enables real time targeting and consumer profiling functionality. "
+Unclassified,none,,_bts,.gap.com,/,First party,0.04 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__attentive_dv,.gap.com,/,First party,1.00 days,,false,true,unspecified,false,"Declared, conflicting",,
+GAP Category Two,banner,OneTrust,TapAd_TS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,TS
+GAP Category Two,banner,OneTrust,TapAd_DID,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,This domain is owned by Tapad Inc. a US based company that provides technology to track users across devices to enhance targeting capabilities.
+Performance Technologies,banner,OneTrust,QuantumMetricSessionID,.gap.com,/,First party,0.02 days,Session,false,true,none,false,Declared & set,www.gap.com,This cookie name is associated with Quantum Metric which is used to understand and improve how users use the site.
+Performance Technologies,banner,OneTrust,QuantumMetricUserID,.gap.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,gap.com,This cookie name is associated with Quantum Metric which is used to understand and improve how you use our site.
+GAP Category Two,banner,OneTrust,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,This domain is owned by Tapad Inc. a US based company that provides technology to track users across devices to enhance targeting capabilities.
+GAP Category Two,banner,OneTrust,A3,.yahoo.com,/,Third party,365.25 days,365 days,true,true,none,false,Declared & set,yahoo.com,This domain is owned by Yahoo. The main business activity is: Search / Advertising
+GAP Category One,banner,OneTrust,sc_at,.snapchat.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,snapchat.com,Cookie associated with embedding content from Snapchat.
+Unclassified,none,,_sctr,.gap.com,/,First party,395.00 days,,false,false,lax,false,"Declared, conflicting",,
+Unclassified,none,,OptanonAlertBoxClosed,.gap.com,/,First party,400.00 days,,false,false,lax,false,"Declared, conflicting",,
+Marketing and Advertising Technologies,banner,OneTrust,akaalb_Instance-1,apps.rokt-api.com,/,Third party,Session,Session,false,true,none,false,Declared & set,apps.rokt.com,This domain is owned by Rokt which provides e-commerce marketing services.
+Unclassified,none,,ak_bmsc,.gap.com,/,First party,0.08 days,,true,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,ak_bot_analytics,.api.gap.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Strictly Necessary Technologies,banner,OneTrust,bm_so,.gap.com,/,First party,1.00 days,Session,false,true,unspecified,false,Declared & set,www.gap.com,This cookie name is used to load the site as quickly as possible and to recognize bots using Akamai.
+Unclassified,none,,bm_sz,.gap.com,/,First party,0.17 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,_abck,.gap.com,/,First party,365.00 days,,false,true,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,RT,.gap.com,/,First party,7.00 days,,false,false,lax,false,"Declared, conflicting",,
+GAP Category Two,banner,OneTrust,guest_id_marketing,.twitter.com,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,twitter.com,"This domain is owned by Twitter. The main business activity is: Social Networking Services.  Where twitter acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+GAP Category Two,banner,OneTrust,guest_id_ads,.twitter.com,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,twitter.com,"This domain is owned by Twitter. The main business activity is: Social Networking Services.  Where twitter acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+GAP Category Two,banner,OneTrust,guest_id,.twitter.com,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,twitter.com,Twitter does not currently provide information on the use of specific cookies.
+Strictly Necessary Technologies,banner,OneTrust,bm_lso,.www.gap.com,/,First party,30.00 days,29 days,false,false,unspecified,false,Declared & set,secure-www.gap.com,This cookie name is associated with Akamai which is used to load the site as quickly as possible and to recognize bots.
+Unclassified,none,,optimizelySession,.gap.com,/,First party,180.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,https://www.gap.com_oeu1794365928323r0.6492590386791466$$a6529002483$$session_state,a6529002483.cdn.optimizely.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Technologies,banner,OneTrust,utag_main__pn,.gap.com,/,First party,0.02 days,0 days,false,false,unspecified,false,Declared & set,gap.com,Session Page View Count - The number of pages viewed in the current session
+Unclassified,none,,OptanonConsent,.gap.com,/,First party,400.00 days,,false,false,lax,false,"Declared, conflicting",,
+Strictly Necessary Technologies,banner,OneTrust,bm_s,.gap.com,/,First party,31.00 days,30 days,true,true,unspecified,false,Declared & set,gap.com,This cookie name is used to load the site as quickly as possible and to recognize bots using Akamai.
+Strictly Necessary Technologies,banner,OneTrust,tmxSessionID,.gap.com,/,First party,1.00 days,Session,false,true,none,false,Declared & set,www.gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+Unclassified,none,,ConstructorioID_session,.gap.com,/,First party,365.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,s_tp,.gap.com,/,First party,Session,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,s_ips,.gap.com,/,First party,Session,,false,false,unspecified,false,"Declared, conflicting",,
+Strictly Necessary Technologies,banner,OneTrust,tmx_guid,content.gap.com,/,First party,400.00 days,399 days,true,true,none,false,Declared & set,content.gap.com,"ThreatMetrix, a digital identity and fraud prevention service.  It's used in fraud detection, authentication, and risk scoring for financial services, e-commerce, and other industries."
+Unclassified,none,,s_ppv,.gap.com,/,First party,Session,,false,false,unspecified,false,"Declared, conflicting",,
+GAP Category Two,banner,OneTrust,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,ct.pinterest.com,"This domain is associated with Pinterest, a social media platform that allows users to share images and media content through collections known as pinboards. The domain is likely used for conversion tracking and advertising purposes."
+GAP Category Two,banner,OneTrust,_scid_r,.gap.com,/,First party,395.00 days,0 days,false,false,lax,false,Declared & set,www.gap.com,
+Performance Technologies,banner,OneTrust,mp_gapinc_common_cookie,.gap.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,gap.com,Used to identify individual users. This tool is used to measure site performance and usage patterns
+Unclassified,none,,sd-session-id,live.rezync.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_twsid,.gap.com,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+GAP Category One,banner,OneTrust,s_lpt,.gap.com,/,First party,0.02 days,0 days,false,false,unspecified,false,Declared & set,gap.com,"Changing from Unknown to Category 1 based on internal GAP feedback::
+Tag Title(s) : Adobe Analytics AppMeasurement for JS,Adobe Experience Cloud ID Service
+UID(s) : 4,5,6,28,828
+Vendor(s): Adobe
+Tag Container(s):Adobe Analytics AppMeasurement for JS, Adobe Experience Cloud ID Service"
+GAP Category One,banner,OneTrust,s_gpn,.gap.com,/,First party,0.02 days,0 days,false,false,unspecified,false,Declared & set,gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+Unclassified,none,,_uetsid,.gap.com,/,First party,1.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Performance Technologies,banner,OneTrust,_uetvid,.gap.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,gap.com,"This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.; Tag Title(s) : Bing - All - US,CA,Factory
+; UID(s) : 703
+; Vendor(s): Bing
+; Tag Container(s):Bing Ads Universal Event Tracking (UET)"
+Unclassified,none,,__attentive_pv,.gap.com,/,First party,0.02 days,,false,true,unspecified,false,"Declared, conflicting",,
+Marketing and Advertising Technologies,banner,OneTrust,ttcsid,.gap.com,/,First party,390.00 days,89 days,false,false,unspecified,false,Declared & set,gap.com,
+Marketing and Advertising Technologies,banner,OneTrust,ttcsid_C5499P800UN7QUNF9PSG,.gap.com,/,First party,390.00 days,Session,false,false,unspecified,false,Declared & set,www.gap.com,"This cookie name is associated with TikTok which is used to enable TikTok Ads session tracking by assigning a unique session ID to users who click on TikTok ads, allowing for the attribution of user behavior and conversions within the same session.This cookie is associated with TikTok. It helps track your activity on the platform, including how you interact with their embedded services on other websites."
+Strictly Necessary Technologies,banner,OneTrust,utag_main__se,.gap.com,/,First party,0.02 days,0 days,false,false,unspecified,false,Declared & set,gap.com,Session Event Count - The number of events tracked in the current session
+Strictly Necessary Technologies,banner,OneTrust,utag_main__st,.gap.com,/,First party,0.02 days,0 days,false,false,unspecified,false,Declared & set,gap.com,Timestamp - The Unix/Epoch time stamp in milliseconds
+Strictly Necessary Technologies,banner,OneTrust,badges,.gap.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,gap.com,"Changing from Unknown to Category 1 based on internal GAP feedback.; Privacy Team's Category:tealium cookie - controls tealium audience stream that controls experiences - category 1
+; Privacy Team's Notes:tealium cookie - controls tealium audience stream that controls experiences - category 1
+::
+Infosec Cookie, Owner: DPG/CoE"
+Unclassified,none,,CONSENTMGR,.gap.com,/,First party,90.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Strictly Necessary Technologies,banner,OneTrust,utag_main_time_in_ms,.gap.com,/,First party,0.02 days,0 days,false,false,unspecified,false,Declared & set,gap.com,
+Unclassified,none,,s_depth,.gap.com,/,First party,0.02 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,_gcl_au,.gap.com,/,First party,90.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,_bti,.gap.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+GAP Category One,banner,OneTrust,s_ghn,.gap.com,/,First party,0.02 days,0 days,false,false,unspecified,false,Declared & set,gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+Marketing and Advertising Technologies,banner,OneTrust,styliticsWidgetSession,gap.com,,,,399 days,,,,,"Declared, not set",gap.com,This cookie name is associated with web-assets.stylitics.com which is used to support the customer services web-chat tool.
+Marketing and Advertising Technologies,banner,OneTrust,AMCVS_xxxxxAdobeOrg,www.gap.com,,,,Session,,,,,"Declared, not set",www.gap.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services.This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier."
+Marketing and Advertising Technologies,banner,OneTrust,optimizelyOptOut,secure-oldnavy.gap.com,,,,0 days,,,,,"Declared, not set",secure-oldnavy.gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+Marketing and Advertising Technologies,banner,OneTrust,AMCV_xxxxxAdobeOrg,www.gap.com,,,,Session,,,,,"Declared, not set",www.gap.com,"This cookie is used to identify a unique visitor for tracking purposes by Adobe Experience Cloud.This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Marketing and Advertising Technologies,banner,OneTrust,AMCV_xxxxxAdobeOrg,gap.com,,,,399 days,,,,,"Declared, not set",gap.com,"This cookie is used to identify a unique visitor for tracking purposes by Adobe Experience Cloud.This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Marketing and Advertising Technologies,banner,OneTrust,optimizelyOptOut,secure-www.gap.com,,,,0 days,,,,,"Declared, not set",secure-www.gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+Marketing and Advertising Technologies,banner,OneTrust,PARTNER,gap.com,,,,6 days,,,,,"Declared, not set",gap.com,"Changing from Unknown to Category 1 based on internal GAP feedback. Infosec Cookie, Owner: Personalization"
+Marketing and Advertising Technologies,banner,OneTrust,__ps_r,gap.com,,,,364 days,,,,,"Declared, not set",gap.com,This cookie name is associated with Amazon which is used to capture referral information to attribute traffic sources and optimize marketing campaigns.
+Marketing and Advertising Technologies,banner,OneTrust,RES_TRACKINGID,www.gap.com,,,,Session,,,,,"Declared, not set",www.gap.com,"This cookie name is used to track your interest, provide you with offers or advertisements tailored to your interests, and to provide you with a more personalised experience when using our Website."
+Marketing and Advertising Technologies,banner,OneTrust,_rdt_uuid,athleta.gap.com,,,,89 days,,,,,"Declared, not set",athleta.gap.com,This cookie is set by Reddit and is used for tracking the views of embedded videos and performance of the advertisements.
+Marketing and Advertising Technologies,banner,OneTrust,optimizelyOptOut,secure-bananarepublic.gap.com,,,,0 days,,,,,"Declared, not set",secure-bananarepublic.gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+Marketing and Advertising Technologies,banner,OneTrust,ttcsid_XXXXXXXXXXXXXXXXXXXXCategory,gap.com,,,,89 days,,,,,"Declared, not set",gap.com,"This cookie is associated with TikTok. It helps track your activity on the platform, including how you interact with their embedded services on other websites."
+Marketing and Advertising Technologies,banner,OneTrust,fw_se,www.gap.com,,,,0 days,,,,,"Declared, not set",www.gap.com,
+Marketing and Advertising Technologies,banner,OneTrust,NoCookie,gap.com,,,,0 days,,,,,"Declared, not set",gap.com,"This cookie is set when a user opts out of tracking or indicates that they are under the age of 13 (COPPA requirement). If NoCookie=true on either the client site or Bazaarvoice site, then existing tracking cookies are unset. This value is honored as long as the cookie exists."
+Marketing and Advertising Technologies,banner,OneTrust,fw_uid,www.gap.com,,,,0 days,,,,,"Declared, not set",www.gap.com,
+Marketing and Advertising Technologies,banner,OneTrust,ttcsid_XXXXXXXXXXXXXXXXXXXXCategory,www.gap.com,,,,Session,,,,,"Declared, not set",www.gap.com,"This cookie is associated with TikTok. It helps track your activity on the platform, including how you interact with their embedded services on other websites."
+Marketing and Advertising Technologies,banner,OneTrust,__ps_did,gap.com,,,,364 days,,,,,"Declared, not set",gap.com,"This cookie name __ps_did is associated with services like Saxo Services, Amazon, ICAEW, Microsoft Clarity and Microsoft Advertising which is used for tracking user interactions and advertising purposes."
+Marketing and Advertising Technologies,banner,OneTrust,vampid,videoamp.com,,,,364 days,,,,,"Declared, not set",videoamp.com,VideoAmp is a USA based business providing cross-device and cross-channel audience tracking for targeted marketing purposes.
+Marketing and Advertising Technologies,banner,OneTrust,aa,agkn.com,,,,399 days,,,,,"Declared, not set",agkn.com,"This domain is owned by Aggregate Knowledge, which has been acquired by Neustar Inc. Aggregate Knowledge provides a data management platform which enables real time targeting and consumer profiling functionality. "
+Marketing and Advertising Technologies,banner,OneTrust,KRTBCOOKIE_XXXX,pubmatic.com,,,,89 days,,,,,"Declared, not set",pubmatic.com,This cookie is used to correlate IDs with those of Pubmatic partners (such as demand side platform clients or other advertising technology companies). Pubmatic passes information stored by the partner in this cookie to the partner when it is considering whether to purchase advertisements. This enables the partner to make better decisions about whether to display an advertisement to you.
+Marketing and Advertising Technologies,banner,OneTrust,_attn_,cdn.attn.tv,,,,0 days,,,,,"Declared, not set",cdn.attn.tv,"This domain is associated with the technology provided by Attention Interactive, Inc for hosting video content and tracking video interactions."
+Marketing and Advertising Technologies,banner,OneTrust,data-bt,media.net,,,,363 days,,,,,"Declared, not set",media.net,Media.net is a global online advertising technology network.
+Marketing and Advertising Technologies,banner,OneTrust,1_C_204,sync.aniview.com,,,,9 days,,,,,"Declared, not set",sync.aniview.com,"This domain is associated with Aniview, a company that provides video ad-serving, playing, and analytics solutions. It is likely used for advertising and tracking purposes."
+Marketing and Advertising Technologies,banner,OneTrust,fw_se,asset.fwcdn3.com,,,,0 days,,,,,"Declared, not set",asset.fwcdn3.com,
+Marketing and Advertising Technologies,banner,OneTrust,receive-cookie-deprecation,rubiconproject.com,,,,89 days,,,,,"Declared, not set",rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Marketing and Advertising Technologies,banner,OneTrust,bt-es-*,bttrack.com,,,,0 days,,,,,"Declared, not set",bttrack.com,"This domain appears to be owned by Bidtellect, A USA based adtechnology company specialising in native advertising."
+Marketing and Advertising Technologies,banner,OneTrust,bt-es-15574,bttrack.com,,,,Session,,,,,"Declared, not set",bttrack.com,"This domain appears to be owned by Bidtellect, A USA based adtechnology company specialising in native advertising."
+Marketing and Advertising Technologies,banner,OneTrust,guest_*,twitter.com,,,,399 days,,,,,"Declared, not set",twitter.com,"This domain is owned by X (formerly Twitter). The main business activity is: Social Networking Services.  Where X (formerly Twitter) acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+Marketing and Advertising Technologies,banner,OneTrust,bluecoreNV,api.bluecore.com,,,,347 days,,,,,"Declared, not set",api.bluecore.com,"This domain is associated with Bluecore, a marketing technology company that provides a platform for ecommerce businesses to personalize customer experiences."
+Marketing and Advertising Technologies,banner,OneTrust,bc_invalidateUrlCache_targeting,api.bluecore.com,,,,0 days,,,,,"Declared, not set",api.bluecore.com,"This domain is associated with Bluecore, a marketing technology company that provides a platform for ecommerce businesses to personalize customer experiences."
+Marketing and Advertising Technologies,banner,OneTrust,mp_gapinc_common_cookie,api.bluecore.com,,,,0 days,,,,,"Declared, not set",api.bluecore.com,Used to identify individual users. This tool is used to measure site performance and usage patterns
+Marketing and Advertising Technologies,banner,OneTrust,*_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Marketing and Advertising Technologies,banner,OneTrust,receive-cookie-deprecation,doubleclick.net,,,,179 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Marketing and Advertising Technologies,banner,OneTrust,TapAd_*,tapad.com,,,,59 days,,,,,"Declared, not set",tapad.com,This domain is owned by Tapad Inc. a US based company that provides technology to track users across devices to enhance targeting capabilities.
+GAP Category Two,banner,OneTrust,_dlt,gap.com,,,,0 days,,,,,"Declared, not set",gap.com,This cookie is associated with Google's real time bidding advertising exchange. The main purpose of this cookie is targeting.
+GAP Category Two,banner,OneTrust,TLTSID,paypal.com,,,,365 days,,,,,"Declared, not set",paypal.com,"Manually adding this cookie and categorizing based on source.
+Tag Title(s) : PayPal SDK - Bag - US/Factory,PayPal SDK - Product - US/Factory [not BR/BRFS]
+UID(s) : 1045,1066,371,391,479,496
+Vendor(s): PayPal
+Tag Container(s):Tealium Generic Tag
+"
+GAP Category Two,banner,OneTrust,_schn1,gap.com,,,,0 days,,,,,"Declared, not set",gap.com,"This cookie is associated with Snapchat. It tracks individual sessions on the website, allowing the website to compile statistical data from multiple visits. This data can also be used to create leads for marketing purposes.; Tag Title(s) : SnapChat - All - Social Code - NOT BROL
+; UID(s) : 811
+; Vendor(s): SnapChat
+; Tag Container(s):Tealium Custom Container"
+GAP Category Two,banner,OneTrust,TEST_AMCV_COOKIE_WRITE,gap.com,,,,Session,,,,,"Declared, not set",gap.com,"Tag Title(s) : Adobe Analytics AppMeasurement for JS, Adobe Experience Cloud ID Service
+; UID(s) : 4,28,828
+; Vendor(s): Adobe
+; Tag Container(s):Adobe Analytics AppMeasurement for JS, Adobe Experience Cloud ID Service"""
+GAP Category Two,banner,OneTrust,AEC,google.com,,,,365 days,,,,,"Declared, not set",google.com,"Manually adding this cookie and categorizing based on source.
+Tag Title(s) : Google AdWords - GOL Confirmation,Google AdWords - Confirmation - Core,Google Cookie Matching Service - All,Google - All - PGM (gtag.js),Google - All - AdWords (gtag.js),Google - PHD - ATOL Girl (gtag.js),Google AdWords - BOPIS - All,Google - Loyalty Signup - AdWords (gtag.js) Copy 1,Google Ads - BOPIS - OCP,Google Ads - All - GID Conversion Pixel,Google Ads - Loyalty Signup,Google - All - PHD/DCM  (gtag.js),Google - ONOL Confirmation - unknown owner,Google - All - gtag.js
+UID(s) : 366,368,450,527,565,603,872,1160,119"
+GAP Category Two,banner,OneTrust,c,paypal.com,,,,365 days,,,,,"Declared, not set",paypal.com,"Tag Title(s) : PayPal SDK - Bag - US/Factory,PayPal SDK - Product - US/Factory [not BR/BRFS]
+UID(s) : 1045,1066,371,391,479,496
+Vendor(s): PayPal
+Tag Container(s):Tealium Generic Tag"
+GAP Category Two,banner,OneTrust,__qca,gap.com,,,,391 days,,,,,"Declared, not set",gap.com,"This is a cookie usually associated with Quantcast, a digital advertising company.  They provide website rankings, and the data they collect is also used for audience segmentation and targeted advertising.
+## Adding these details based on host name ""Quantcast""
+Tag Title(s) : Quantcast - All - US, Factory, CA, JP [BR]
+UID(s) : 1130,1131,417,418,522,523
+Vendor(s): Quantcast
+Tag Container(s):Quantcast Easy Tag for Advertise"
+GAP Category Two,banner,OneTrust,_gcl_au,.gapcanada.ca,,,,1095 days,,,,,"Declared, not set",.gapcanada.ca,"Manually added this cookie based on _gcl*** cookies.
+Google conversion tracking cookie; Tag Title(s) : Google AdWords - GOL Confirmation,Google AdWords - Confirmation - Core,Google Cookie Matching Service - All,Google - All - PGM (gtag.js),Google - All - AdWords (gtag.js),Google - PHD - ATOL Girl (gtag.js),Google AdWords - BOPIS - All,Google - Loyalty Signup - AdWords (gtag.js) Copy 1,Google Ads - BOPIS - OCP,Google Ads - All - GID Conversion Pixel,Google Ads - Loyalty Signup,Google - All - PHD/DCM  (gtag.js),Google - ONOL Confirmation - unknown owner,Google - All - gtag.js
+; UID(s) : 366,368,"
+GAP Category Two,banner,OneTrust,_fmSession,gap.com,,,,29 days,,,,,"Declared, not set",gap.com,"Changing from Unknown to Category 2 based on internal GAP feedback.::
+Vendor: FIndMine
+UID: 460 and 461"
+GAP Category Two,banner,OneTrust,tuuid,bidswitch.net,,,,364 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+GAP Category Two,banner,OneTrust,tuuid_lu,bidswitch.net,,,,364 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+GAP Category Two,banner,OneTrust,c,bidswitch.net,,,,364 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+GAP Category Two,banner,OneTrust,SEUNCY,semasio.net,,,,364 days,,,,,"Declared, not set",semasio.net,"This domain is owned by Semasio, a German business specialising in profiling and behavioural targeting of consumers. "
+GAP Category Two,banner,OneTrust,mc,quantserve.com,,,,394 days,,,,,"Declared, not set",quantserve.com,"This domain is owned by Quantcast. The main business activity is: Market and Audience Segmentation, Targeted advertising services"
+GAP Category Two,banner,OneTrust,ayl_visitor,omnitagjs.com,,,,29 days,,,,,"Declared, not set",omnitagjs.com,This host is used by Ads You Like for deep native advertising.
+GAP Category Two,banner,OneTrust,PugT,pubmatic.com,,,,29 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+GAP Category Two,banner,OneTrust,visitor-id,media.net,,,,364 days,,,,,"Declared, not set",media.net,Media.net is a global online advertising technology network.
+GAP Category Two,banner,OneTrust,audit,rubiconproject.com,,,,364 days,,,,,"Declared, not set",rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+GAP Category Two,banner,OneTrust,khaos,rubiconproject.com,,,,364 days,,,,,"Declared, not set",rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+GAP Category Two,banner,OneTrust,khaos_p,rubiconproject.com,,,,364 days,,,,,"Declared, not set",rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+GAP Category Two,banner,OneTrust,audit_p,rubiconproject.com,,,,364 days,,,,,"Declared, not set",rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+GAP Category Two,banner,OneTrust,bt-es-15338,bttrack.com,,,,0 days,,,,,"Declared, not set",bttrack.com,"This domain appears to be owned by Bidtellect, A USA based adtechnology company specialising in native advertising."
+GAP Category Two,banner,OneTrust,bt-es-15341,bttrack.com,,,,Session,,,,,"Declared, not set",bttrack.com,"This domain appears to be owned by Bidtellect, A USA based adtechnology company specialising in native advertising."
+GAP Category Two,banner,OneTrust,bt-es-15344,bttrack.com,,,,0 days,,,,,"Declared, not set",bttrack.com,"This domain appears to be owned by Bidtellect, A USA based adtechnology company specialising in native advertising."
+GAP Category Two,banner,OneTrust,KHcl0EuY7AKSMgfvHl7J5E7hPtK,paypal.com,,,,1095 days,,,,,"Declared, not set",paypal.com,"Manually added this cookie based on hostname (Paypal)::
+Tag Title(s) : PayPal SDK - Bag - US/Factory,PayPal SDK - Product - US/Factory [not BR/BRFS]
+UID(s) : 1045,1066,371,391,479,496
+Vendor(s): PayPal
+Tag Container(s):Tealium Generic Tag
+"
+GAP Category Two,banner,OneTrust,sc_f,paypal.com,,,,1095 days,,,,,"Declared, not set",paypal.com,"Manually added this cookie based on hostname (Paypal)::
+Tag Title(s) : PayPal SDK - Bag - US/Factory,PayPal SDK - Product - US/Factory [not BR/BRFS]
+UID(s) : 1045,1066,371,391,479,496
+Vendor(s): PayPal
+Tag Container(s):Tealium Generic Tag
+"
+GAP Category Two,banner,OneTrust,ar_debug,pinterest.com,,,,364 days,,,,,"Declared, not set",pinterest.com,This domain is owned by Pinterest. The main business activity is: Social Content Sharing platform
+GAP Category Two,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+GAP Category Two,banner,OneTrust,CMPS,casalemedia.com,,,,89 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+GAP Category Two,banner,OneTrust,CMPRO,casalemedia.com,,,,89 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+GAP Category Two,banner,OneTrust,ktcid,kargo.com,,,,364 days,,,,,"Declared, not set",kargo.com,Testing
+GAP Category Two,banner,OneTrust,TDCPM,adsrvr.org,,,,364 days,,,,,"Declared, not set",adsrvr.org,This domain is owned by TheTradeDesk. The main business activity is: Ad Serving Platform
+GAP Category Two,banner,OneTrust,TDID,adsrvr.org,,,,364 days,,,,,"Declared, not set",adsrvr.org,This domain is owned by TheTradeDesk. The main business activity is: Ad Serving Platform
+GAP Category Two,banner,OneTrust,ar_debug,ara.paa-reporting-advertising.amazon,,,,Session,,,,,"Declared, not set",ara.paa-reporting-advertising.amazon,This domain is owned by Amazon which provides advertising and analytics services.
+GAP Category Two,banner,OneTrust,everest_session_v2,everesttech.net,,,,Session,,,,,"Declared, not set",everesttech.net,This domain is owned by Adobe. The main business activity is: Advertising
+Strictly Necessary Technologies,banner,OneTrust,_ScCbts,www.gap.com,,,,Session,,,,,"Declared, not set",www.gap.com,TS
+Strictly Necessary Technologies,banner,OneTrust,_csrf,www.gap.com,,,,Session,,,,,"Declared, not set",www.gap.com,"This cookie is used to prevent Cross-Site Request Forgery (CSRF) attacks, ensuring that each request made to the server is from the user's browser and is intentional."
+Strictly Necessary Technologies,banner,OneTrust,utag_main_dc_region,gap.com,,,,0 days,,,,,"Declared, not set",gap.com,This cookie name is associated with Tealium which is used to store the Tealium ID required to enable visitor information to be analysed and determine the endpoints for data layer enrichment.
+Strictly Necessary Technologies,banner,OneTrust,PF,api.gap.com,,,,Session,,,,,"Declared, not set",api.gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+Strictly Necessary Technologies,banner,OneTrust,__ps_slu,gap.com,,,,0 days,,,,,"Declared, not set",gap.com,This cookie name is used to manage user's opt-out preferences for non-functional cookies and show a pop-up with an explanation about cookies when visiting the website for the first time.
+Strictly Necessary Technologies,banner,OneTrust,utag_main,gap.com,,,,0 days,,,,,"Declared, not set",gap.com,"This cookie name is associated with the Tealium data platform and is used to enforce consent preferences across 3rd party tags. Within the cookie are several built-in values that keep track of the visitor session.::
+Tag Title(s) : Tealium Collect - athleta CDH, Tealium Collect
+UID(s) : 1113,2,25
+Vendor(s): Tealium
+Tag Container(s): Tealium Collect"
+Strictly Necessary Technologies,banner,OneTrust,__ps_fva,gap.com,,,,364 days,,,,,"Declared, not set",gap.com,This cookie name is associated with storing user preferences and consent regarding the use of cookies on the website.
+Strictly Necessary Technologies,banner,OneTrust,_vapiXXXXXXXXXXXXX,gap.com,,,,Session,,,,,"Declared, not set",gap.com,Cookie that contains a session identifier used to authenticate the use and deliver different APIs
+Strictly Necessary Technologies,banner,OneTrust,bm_mi,www.gap.com,,,,Session,,,,,"Declared, not set",www.gap.com,This cookie is associated with Akamai. It is used to analyse traffic to determine if it is automated traffic generated by bots or a human user.
+Strictly Necessary Technologies,banner,OneTrust,__ps_sr,gap.com,,,,0 days,,,,,"Declared, not set",gap.com,This cookie name is used to manage user opt-out preferences for non-functional cookies.
+Strictly Necessary Technologies,banner,OneTrust,bm_ss,gap.com,,,,0 days,,,,,"Declared, not set",gap.com,"This cookie name is associated with British Airways which is used to monitor session activity, track user behavior, assist with site performance and security, manage interaction with online bots, help in fraud prevention, and load the site as quickly as possible."
+Strictly Necessary Technologies,banner,OneTrust,bm_mi,secure-bananarepublic.gap.com,,,,Session,,,,,"Declared, not set",secure-bananarepublic.gap.com,This cookie is associated with Akamai. It is used to analyse traffic to determine if it is automated traffic generated by bots or a human user.
+Strictly Necessary Technologies,banner,OneTrust,_ScCbts,gap.com,,,,6 days,,,,,"Declared, not set",gap.com,TS
+Strictly Necessary Technologies,banner,OneTrust,bm_ss,gapcanada.ca,,,,0 days,,,,,"Declared, not set",gapcanada.ca,"This cookie name is associated with British Airways which is used to monitor session activity, track user behavior, assist with site performance and security, manage interaction with online bots, help in fraud prevention, and load the site as quickly as possible."
+Strictly Necessary Technologies,banner,OneTrust,bm_s,gapcanada.ca,,,,30 days,,,,,"Declared, not set",gapcanada.ca,This cookie name is used to load the site as quickly as possible and to recognize bots using Akamai.
+Strictly Necessary Technologies,banner,OneTrust,bm_so,gapcanada.ca,,,,0 days,,,,,"Declared, not set",gapcanada.ca,This cookie name is used to load the site as quickly as possible and to recognize bots using Akamai.
+Strictly Necessary Technologies,banner,OneTrust,X-Salesforce-CHAT,d.la4-c2-ia6.salesforceliveagent.com,,,,Session,,,,,"Declared, not set",d.la4-c2-ia6.salesforceliveagent.com, Sales Force uses these cookies to be able to provide live chat functionality to the user.
+Strictly Necessary Technologies,banner,OneTrust,LSKey-c$CookieConsentPolicy,service.force.com,,,,364 days,,,,,"Declared, not set",service.force.com,Testing
+Strictly Necessary Technologies,banner,OneTrust,*_guid,h.online-metrix.net,,,,399 days,,,,,"Declared, not set",h.online-metrix.net,"This domain is associated with the risk management firm LexisNexis. It is used for tracking and analytics, typically in the context of preventing fraud and ensuring security."
+Strictly Necessary Technologies,banner,OneTrust,BrowserId,force.com,,,,364 days,,,,,"Declared, not set",force.com,Testing
+Strictly Necessary Technologies,banner,OneTrust,ConstructorioID_session,cnstrc.com,,,,0 days,,,,,"Declared, not set",cnstrc.com,This domain is owned by Constructor.io which provides search as a service and machine learning powered search technologies.
+Strictly Necessary Technologies,banner,OneTrust,ConstructorioID_client_id,cnstrc.com,,,,0 days,,,,,"Declared, not set",cnstrc.com,This domain is owned by Constructor.io which provides search as a service and machine learning powered search technologies.
+Strictly Necessary Technologies,banner,OneTrust,ConstructorioID_session_id,cnstrc.com,,,,0 days,,,,,"Declared, not set",cnstrc.com,This domain is owned by Constructor.io which provides search as a service and machine learning powered search technologies.
+Strictly Necessary Technologies,banner,OneTrust,rlsgeoipdat,stores.oldnavy.gap.com.prod.rioseo.com,,,,Session,,,,,"Declared, not set",stores.oldnavy.gap.com.prod.rioseo.com,This cookie name is associated with stores.worldwidegolfshops.com which is used as a targeting cookie.
+Strictly Necessary Technologies,banner,OneTrust,CookieConsentPolicy,gapinc.my.salesforce-sites.com,,,,364 days,,,,,"Declared, not set",gapinc.my.salesforce-sites.com,Changing from Unknown to Category 1 based on internal GAP feedback. Used to apply end-user cookie consent preferences set by our client-side utility.
+Strictly Necessary Technologies,banner,OneTrust,LSKey-c$CookieConsentPolicy,gapinc.my.salesforce-sites.com,,,,364 days,,,,,"Declared, not set",gapinc.my.salesforce-sites.com,"Custom- Short Duration. Unique ID of an Enquiry- used to validate access to case, and load exisiting data.
+"
+Strictly Necessary Technologies,banner,OneTrust,BrowserId,gapinc.my.salesforce-sites.com,,,,364 days,,,,,"Declared, not set",gapinc.my.salesforce-sites.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+Strictly Necessary Technologies,banner,OneTrust,_cfuvid,www.paypal.com,,,,Session,,,,,"Declared, not set",www.paypal.com,"This domain is owned by PayPal, Inc., which provides online payment solutions. The website is used for secure payments and transferring money for both consumers and businesses."
+Strictly Necessary Technologies,banner,OneTrust,rlsgeoipdat,stores.bananarepublic.gap.com.prod.rioseo.com,,,,Session,,,,,"Declared, not set",stores.bananarepublic.gap.com.prod.rioseo.com,"Security & Compliance: Might help with regional access restrictions or legal compliance (e.g., GDPR, CCPA)."
+Functional Technologies,banner,OneTrust,chartis-canary-ui,www.gap.com,,,,Session,,,,,"Declared, not set",www.gap.com,
+Functional Technologies,banner,OneTrust,optimizelyOptOut,www.gap.com,,,,0 days,,,,,"Declared, not set",www.gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+Functional Technologies,banner,OneTrust,optimizelyDomainTestCookie,www.gap.com,,,,0 days,,,,,"Declared, not set",www.gap.com,These Optimizely cookies allow us to test different versions of website pages to different users at the same time and to track how users navigate around our website. We use this information to test new features and make the website easier to use.
+Functional Technologies,banner,OneTrust,optimizelyDomainTestCookie,oldnavy.gap.com,,,,0 days,,,,,"Declared, not set",oldnavy.gap.com,"These Optimizely cookies allow us to test different versions of website pages to different users at the same time and to track how users navigate around our website. We use this information to test new features and make the website easier to use. ""; Tag Title(s) : Optimizely FullStack SDK
+; UID(s) : 8, 9, 10
+; Vendor(s): Optimizely
+; Tag Container(s):Tealium Custom Container"""
+Functional Technologies,banner,OneTrust,optimizelyDomainTestCookie,athleta.gap.com,,,,0 days,,,,,"Declared, not set",athleta.gap.com,"These Optimizely cookies allow us to test different versions of website pages to different users at the same time and to track how users navigate around our website. We use this information to test new features and make the website easier to use. ""; Tag Title(s) : Optimizely FullStack SDK
+; UID(s) : 8, 9, 10
+; Vendor(s): Optimizely
+; Tag Container(s):Tealium Custom Container"""
+Functional Technologies,banner,OneTrust,optimizelyOptOut,athleta.gap.com,,,,0 days,,,,,"Declared, not set",athleta.gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+Functional Technologies,banner,OneTrust,ABSeg,www.gap.com,,,,Session,,,,,"Declared, not set",www.gap.com,This cookie name is associated with ABSEG which is used to ensure that you get the best experience on our site.
+Functional Technologies,banner,OneTrust,__ps_lu,gap.com,,,,364 days,,,,,"Declared, not set",gap.com,This cookie name is associated with Amazon which is used to record the last user interaction or visit to help tailor marketing messages and improve user experience.
+Functional Technologies,banner,OneTrust,locale,www.gap.com,,,,Session,,,,,"Declared, not set",www.gap.com,"This cookie is commonly used to store the user's preferred language or locale, allowing the website to serve content in the user's preferred language or format."
+Functional Technologies,banner,OneTrust,optimizelyOptOut,oldnavy.gap.com,,,,0 days,,,,,"Declared, not set",oldnavy.gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+Functional Technologies,banner,OneTrust,optimizelyDomainTestCookie,bananarepublic.gap.com,,,,0 days,,,,,"Declared, not set",bananarepublic.gap.com,"These Optimizely cookies allow us to test different versions of website pages to different users at the same time and to track how users navigate around our website. We use this information to test new features and make the website easier to use. ""; Tag Title(s) : Optimizely FullStack SDK
+; UID(s) : 8, 9, 10
+; Vendor(s): Optimizely
+; Tag Container(s):Tealium Custom Container"""
+Functional Technologies,banner,OneTrust,optimizelyOptOut,bananarepublic.gap.com,,,,0 days,,,,,"Declared, not set",bananarepublic.gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+Functional Technologies,banner,OneTrust,mptest,gap.com,,,,0 days,,,,,"Declared, not set",gap.com,"This cookie name is associated with mParticle which is used to manage user data, track behavior, and support personalized experiences across the site. They help unify customer interactions."
+Functional Technologies,banner,OneTrust,__pr.8ofv5x,bananarepublic.gap.com,,,,29 days,,,,,"Declared, not set",bananarepublic.gap.com,Power Reviews cookie
+Functional Technologies,banner,OneTrust,weird_get_top_level_domain,gap.com,,,,0 days,,,,,"Declared, not set",gap.com,This cookie appears to be set by some Javascript code designed to work out what the domain of the site is. Its exact usage and purpose is unclear.weird_get_top_level_domain
+Functional Technologies,banner,OneTrust,_gdxxxxxxxxxxxxx,gap.com,,,,Session,,,,,"Declared, not set",gap.com,"This cookie name is associated with Impact Radius which is used for diagnostic purposes to track signup commissions for an affiliate program.This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Functional Technologies,banner,OneTrust,Functional Cookie Placeholder,https://bananarepublicfactory.gapfactory.ca/,,,,Session,,,,,"Declared, not set",https://bananarepublicfactory.gapfactory.ca/,This is a placeholder cookie to enable showing all categories in the Preference Page.
+Functional Technologies,banner,OneTrust,GCLB,prodregistryv2.org,,,,0 days,,,,,"Declared, not set",prodregistryv2.org,"This domain is owned by Private by Design, LLC which provides domain registration and WHOIS lookup services."
+Functional Technologies,banner,OneTrust,optimizelyRumLB,rum.optimizely.com,,,,Session,,,,,"Declared, not set",rum.optimizely.com,"This domain is associated with Optimizely, a platform providing A/B testing and personalization for websites. The cookies are used to measure the performance and effectiveness of different website designs."
+Functional Technologies,banner,OneTrust,AWSELBCORS,rum.optimizely.com,,,,Session,,,,,"Declared, not set",rum.optimizely.com,"This domain is associated with Optimizely, a platform providing A/B testing and personalization for websites. The cookies are used to measure the performance and effectiveness of different website designs."
+Functional Technologies,banner,OneTrust,optimizely*,rum.optimizely.com,,,,Session,,,,,"Declared, not set",rum.optimizely.com,"This domain is associated with Optimizely, a platform providing A/B testing and personalization for websites. The cookies are used to measure the performance and effectiveness of different website designs."
+Functional Technologies,banner,OneTrust,AWSELB,rum.optimizely.com,,,,Session,,,,,"Declared, not set",rum.optimizely.com,"This domain is associated with Optimizely, a platform providing A/B testing and personalization for websites. The cookies are used to measure the performance and effectiveness of different website designs."
+Performance Technologies,banner,OneTrust,fw_uid,gap.com,,,,364 days,,,,,"Declared, not set",gap.com,"Vendor name: Firework; CAT 2 for US;  UIDs: 1118, 1159"
+Performance Technologies,banner,OneTrust,bv_metrics,www.gap.com,,,,0 days,,,,,"Declared, not set",www.gap.com,This cookie is used for performance diagnostic events for less than 1/1000th of users.
+Performance Technologies,banner,OneTrust,optimizelyDomainTestCookie,secure-oldnavy.gap.com,,,,0 days,,,,,"Declared, not set",secure-oldnavy.gap.com,"These Optimizely cookies allow us to test different versions of website pages to different users at the same time and to track how users navigate around our website. We use this information to test new features and make the website easier to use. ""; Tag Title(s) : Optimizely FullStack SDK
+; UID(s) : 8, 9, 10
+; Vendor(s): Optimizely
+; Tag Container(s):Tealium Custom Container"""
+Performance Technologies,banner,OneTrust,fs_uid,www.gap.com,,,,Session,,,,,"Declared, not set",www.gap.com,"This cookie is associated with FullStory, which is a tool that captures user interactions on a website for analytics and user experience improvement purposes."
+Performance Technologies,banner,OneTrust,Performance Cookie Placeholder,gapfactory.ca,,,,Session,,,,,"Declared, not set",gapfactory.ca,
+Performance Technologies,banner,OneTrust,AMCVS_xxxxxAdobeOrg,gap.com,,,,Session,,,,,"Declared, not set",gap.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services.This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier."
+Performance Technologies,banner,OneTrust,optimizelyDomainTestCookie,secure-www.gap.com,,,,0 days,,,,,"Declared, not set",secure-www.gap.com,These Optimizely cookies allow us to test different versions of website pages to different users at the same time and to track how users navigate around our website. We use this information to test new features and make the website easier to use.
+Performance Technologies,banner,OneTrust,BVBRANDSID,gap.com,,,,0 days,,,,,"Declared, not set",gap.com,This cookie allows internal Bazaarvoice web analytics to be correlated to the same user browsing session for interactions within a particular client domain.
+Performance Technologies,banner,OneTrust,BVBRANDID,gap.com,,,,364 days,,,,,"Declared, not set",gap.com,This cookie allows internal Bazaarvoice web analytics to be correlated to the same user for interactions within a particular client domain.
+Performance Technologies,banner,OneTrust,utag_main_dc_region,www.gap.com,,,,Session,,,,,"Declared, not set",www.gap.com,This cookie name is associated with Tealium which is used to store the Tealium ID required to enable visitor information to be analysed and determine the endpoints for data layer enrichment.
+Performance Technologies,banner,OneTrust,optimizelyDomainTestCookie,secure-bananarepublic.gap.com,,,,0 days,,,,,"Declared, not set",secure-bananarepublic.gap.com,"These Optimizely cookies allow us to test different versions of website pages to different users at the same time and to track how users navigate around our website. We use this information to test new features and make the website easier to use. ""; Tag Title(s) : Optimizely FullStack SDK
+; UID(s) : 8, 9, 10
+; Vendor(s): Optimizely
+; Tag Container(s):Tealium Custom Container"""
+Performance Technologies,banner,OneTrust,s_fid,gap.com,,,,399 days,,,,,"Declared, not set",gap.com,"Manually added this cookie based on other s_ cookies (Adobe)::
+Tag Title(s) : Adobe Analytics AppMeasurement for JS,Adobe Experience Cloud ID Service
+UID(s) : 4,5,6,28,828
+Vendor(s): Adobe
+Tag Container(s):Adobe Analytics AppMeasurement for JS, Adobe Experience Cloud ID Service"
+Performance Technologies,banner,OneTrust,fw_se,gap.com,,,,364 days,,,,,"Declared, not set",gap.com,"could be related to session tracking, security, or feature settings"
+Performance Technologies,banner,OneTrust,https://www.gap.com_*,a6529002483.cdn.optimizely.com,,,,179 days,,,,,"Declared, not set",a6529002483.cdn.optimizely.com,"This domain is owned by Optimizely, Inc. which provides digital experience optimization and A/B testing services."
+Performance Technologies,banner,OneTrust,kampyleInvitePresented,nebula-cdn.kampyle.com,,,,0 days,,,,,"Declared, not set",nebula-cdn.kampyle.com,This domain is owned by Medallia which provides a SaaS platform that captures experience data from customers and employees.
+Performance Technologies,banner,OneTrust,kampyleUserPercentile,nebula-cdn.kampyle.com,,,,0 days,,,,,"Declared, not set",nebula-cdn.kampyle.com,This domain is owned by Medallia which provides a SaaS platform that captures experience data from customers and employees.
+Performance Technologies,banner,OneTrust,md_isSurveySubmittedInSession,nebula-cdn.kampyle.com,,,,0 days,,,,,"Declared, not set",nebula-cdn.kampyle.com,This domain is owned by Medallia which provides a SaaS platform that captures experience data from customers and employees.
+Performance Technologies,banner,OneTrust,mdLogger,nebula-cdn.kampyle.com,,,,0 days,,,,,"Declared, not set",nebula-cdn.kampyle.com,This domain is owned by Medallia which provides a SaaS platform that captures experience data from customers and employees.
+GAP Category One,banner,OneTrust,ABSeg,gap.com,,,,0 days,,,,,"Declared, not set",gap.com,"Changing from Unknown to Category 1 based on internal GAP feedback. Privacy Team's Notes:gaptech sets sessions that controls testing (strictly necessary).::
+Infosec Cookie, Owner: WebApps ToolChain"
+GAP Category One,banner,OneTrust,chartis-canary-ui,gap.com,,,,0 days,,,,,"Declared, not set",gap.com,"Canary Testing: It may control the rollout of new UI features to a subset of users before a full deployment.
+A/B Testing: Might help test different UI versions to improve user experience.
+Session/User Experience Tracking: Could store UI preferences or ensure consistency in how a user sees a feature during a session."
+GAP Category One,banner,OneTrust,s_chan,gap.com,,,,399 days,,,,,"Declared, not set",gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+GAP Category One,banner,OneTrust,prlb,assets-gap.com,,,,Session,,,,,"Declared, not set",assets-gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+GAP Category One,banner,OneTrust,ak_bmsc,assets-gap.com,,,,0 days,,,,,"Declared, not set",assets-gap.com,This cookie is associated with Akamai and is used to differentiate between traffic from humans and bots.
+GAP Category One,banner,OneTrust,s_sq,gap.com,,,,Session,,,,,"Declared, not set",gap.com,"Changing from Unknown to Category 1 based on internal GAP feedback::
+Tag Title(s) : Adobe Analytics AppMeasurement for JS,Adobe Experience Cloud ID Service
+UID(s) : 4,5,6,28,828
+Vendor(s): Adobe
+Tag Container(s):Adobe Analytics AppMeasurement for JS, Adobe Experience Cloud ID Service"
+GAP Category One,banner,OneTrust,locale,gap.com,,,,Session,,,,,"Declared, not set",gap.com,"Changing from Unknown to Category 1 based on internal GAP feedback. Infosec Cookie, Owner: WebApps ToolChain"
+GAP Category One,banner,OneTrust,fs_uid,gap.com,,,,364 days,,,,,"Declared, not set",gap.com,Changing from Unknown to Category 1 based on internal GAP feedback.
+GAP Category One,banner,OneTrust,usprivacy,gapinc-branch-qa.azurewebsites.net,,,,Session,,,,,"Declared, not set",gapinc-branch-qa.azurewebsites.net,"5/19: This cookie's purpose is to save the privacy preferences of the customer while on the website & when applicable, to store California consumer opt-out choices in the local domain."
+GAP Category One,banner,OneTrust,cam,gap.com,,,,0 days,,,,,"Declared, not set",gap.com,
+GAP Category One,banner,OneTrust,RES_TRACKINGID,gap.com,,,,395 days,,,,,"Declared, not set",gap.com,"Changing from Unknown to Category 1 based on internal GAP feedback::
+Tag Title(s) : Certona - US, CDA & Factory - All
+UID(s) : 616,225,329
+Vendor(s): Certona
+Tag Container(s):Certona Hosted Tag"
+GAP Category One,banner,OneTrust,bm_mi,gap.com,,,,0 days,,,,,"Declared, not set",gap.com,This cookie is associated with Akamai. It is used to analyse traffic to determine if it is automated traffic generated by bots or a human user.
+GAP Category One,banner,OneTrust,AKA_A2,gapcanada.ca,,,,0 days,,,,,"Declared, not set",gapcanada.ca,"This cookie is generally provided by Akamai and is used for the Advanced Acceleration feature, which enables DNS Prefetch and HTTP2 Push."
+GAP Category One,banner,OneTrust,ABSeg,gapcanada.ca,,,,0 days,,,,,"Declared, not set",gapcanada.ca,"Changing from Unknown to Category 1 based on internal GAP feedback. Privacy Team's Notes:gaptech sets sessions that controls testing (strictly necessary).::
+Infosec Cookie, Owner: WebApps ToolChain"
+GAP Category One,banner,OneTrust,_abck,gapcanada.ca,,,,364 days,,,,,"Declared, not set",gapcanada.ca,"Changing from Unknown to Category 1 based on internal GAP feedback.::
+Infosec Cookie, Owner: Raj Thomas"
+GAP Category One,banner,OneTrust,ak_bmsc,gapcanada.ca,,,,0 days,,,,,"Declared, not set",gapcanada.ca,This cookie is associated with Akamai and is used to differentiate between traffic from humans and bots.
+GAP Category One,banner,OneTrust,bm_mi,gapcanada.ca,,,,0 days,,,,,"Declared, not set",gapcanada.ca,This cookie is associated with Akamai. It is used to analyse traffic to determine if it is automated traffic generated by bots or a human user.

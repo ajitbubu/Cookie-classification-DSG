@@ -1,0 +1,35 @@
+{
+  "method": "temperature_scaling",
+  "temperature": 1.4345433520255313,
+  "per_class_auto_thresholds": {
+    "Analytics_Performance": {
+      "threshold": 1.01,
+      "eligible_predictions": 0,
+      "estimated_precision": null,
+      "precision_wilson_lower_bound": null,
+      "enabled": false
+    },
+    "Functional": {
+      "threshold": 1.01,
+      "eligible_predictions": 0,
+      "estimated_precision": null,
+      "precision_wilson_lower_bound": null,
+      "enabled": false
+    },
+    "Marketing_Advertising": {
+      "threshold": 1.01,
+      "eligible_predictions": 0,
+      "estimated_precision": null,
+      "precision_wilson_lower_bound": null,
+      "enabled": false
+    },
+    "Strictly_Necessary": {
+      "threshold": 1.01,
+      "eligible_predictions": 0,
+      "estimated_precision": null,
+      "precision_wilson_lower_bound": null,
+      "enabled": false
+    }
+  },
+  "fitted_on": "all cookies on calibration sites (site-domain-disjoint from training and test)"
+}

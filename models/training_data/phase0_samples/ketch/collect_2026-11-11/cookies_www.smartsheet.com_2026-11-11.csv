@@ -1,0 +1,162 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,userId,tracking.intentsify.io,/page-tracking/intentsify-smartsheet,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,chs,aorta.clickagy.com,/channel-sync,Third party,400.00 days,,false,true,none,false,Not declared,,
+Analytics,banner,Ketch,optimizelyEndUserId,.smartsheet.com,/,First party,180.00 days,179 days,false,false,unspecified,false,Declared & set,,Optimizely
+Unclassified,none,,ss_ephemeral_no_track,.smartsheet.com,/,First party,0.33 days,,false,false,lax,false,Not declared,,
+Analytics,banner,Ketch,_biz_uid,.smartsheet.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Essential Product Functions & Services,banner,Ketch,__cf_bm,.capterra.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Analytics,banner,Ketch,YSC,.youtube.com,/,Third party,Session,,true,true,none,true,Declared & set,,Google Youtube
+Targeted Advertising,banner,Ketch,VISITOR_INFO1_LIVE,.youtube.com,/,Third party,180.00 days,179 days,true,true,none,true,Declared & set,,Google Youtube
+Analytics,banner,Ketch,VISITOR_PRIVACY_METADATA,.youtube.com,/,Third party,180.00 days,179 days,true,true,none,true,Declared & set,,Google Youtube
+Analytics,banner,Ketch,_BUID,.bizible.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Adobe Marketo Measure
+Analytics,banner,Ketch,_biz_ABTestA,.smartsheet.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Analytics,banner,Ketch,_ga,.smartsheet.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Essential Product Functions & Services,banner,Ketch,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeted Advertising,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Targeted Advertising,banner,Ketch,li_sugr,.linkedin.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Targeted Advertising,banner,Ketch,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Analytics,banner,Ketch,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn  
+Targeted Advertising,banner,Ketch,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LinkedIn  
+Targeted Advertising,banner,Ketch,bscookie,.www.linkedin.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,LinkedIn  
+Essential Product Functions & Services,banner,Ketch,_cq_duid,.smartsheet.com,/,First party,91.25 days,91 days,false,true,none,false,Declared & set,,Cheq
+Essential Product Functions & Services,banner,Ketch,_cq_suid,.smartsheet.com,/,First party,Session,,false,true,none,false,Declared & set,,Cheq
+Essential Product Functions & Services,banner,Ketch,cg_uuid,core.thepointyspritesclub.com,/,Third party,336.00 days,336 days,true,true,none,false,Declared & set,,Cheq
+Unclassified,none,,cq_ai_intel,www.smartsheet.com,/,First party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,cq_entity_name,www.smartsheet.com,/,First party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,cq_threat_type,www.smartsheet.com,/,First party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,cq_threat_group,www.smartsheet.com,/,First party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,cq_entity_vendor,www.smartsheet.com,/,First party,Session,,false,true,none,false,Not declared,,
+Essential Product Functions & Services,banner,Ketch,gtm_session,www.smartsheet.com,/,First party,0.02 days,,false,false,unspecified,false,Declared & set,,
+Essential Product Functions & Services,banner,Ketch,_swb,.smartsheet.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Targeted Advertising,banner,Ketch,A3,.yahoo.com,/,Third party,365.25 days,365 days,true,true,none,false,Declared & set,,Yahoo! Ads
+Unclassified,none,,AMP_MKTG_708ff590e0,.smartsheet.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Targeted Advertising,banner,Ketch,pt,.ispot.tv,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,iSpot
+Essential Product Functions & Services,banner,Ketch,__cf_bm,.g2crowd.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeted Advertising,banner,Ketch,_uetsid,www.smartsheet.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Targeted Advertising,banner,Ketch,_uetvid,www.smartsheet.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Targeted Advertising,banner,Ketch,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Targeted Advertising,banner,Ketch,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Analytics,banner,Ketch,IR_gbd,.smartsheet.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,Impact
+Essential Product Functions & Services,banner,Ketch,__cf_bm,.g2.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Analytics,banner,Ketch,_gd_visitor,www.smartsheet.com,/,First party,400.00 days,400 days,false,true,none,false,Declared & set,,6sense
+Analytics,banner,Ketch,_gd_session,www.smartsheet.com,/,First party,0.17 days,,false,true,none,false,Declared & set,,6sense
+Unclassified,none,,guid,.mountain.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,_fbp,.smartsheet.com,/,First party,90.00 days,90 days,false,false,unspecified,false,Declared & set,,Facebook Ads
+Unclassified,none,,brwsr,.i215020.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Essential Product Functions & Services,banner,Ketch,tinfo,.smartsheet.com,/,First party,30.00 days,29 days,false,false,lax,false,Declared & set,,
+Analytics,banner,Ketch,optimizelyVisitorId,.smartsheet.com,/,First party,400.00 days,400 days,false,false,lax,false,Declared & set,,Optimizely
+Analytics,banner,Ketch,6suuid,.6sc.co,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,6sense
+Analytics,banner,Ketch,_gd_svisitor,www.smartsheet.com,/,First party,400.00 days,400 days,false,true,none,false,Declared & set,,
+Targeted Advertising,banner,Ketch,_mkto_trk,.smartsheet.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Engage
+Analytics,banner,Ketch,__insp_wid,.smartsheet.com,/,First party,365.00 days,365 days,false,true,none,false,Declared & set,,
+Analytics,banner,Ketch,__insp_nv,.smartsheet.com,/,First party,365.00 days,365 days,false,true,none,false,Declared & set,,
+Analytics,banner,Ketch,__insp_targlpu,.smartsheet.com,/,First party,365.00 days,365 days,false,true,none,false,Declared & set,,
+Analytics,banner,Ketch,__insp_targlpt,.smartsheet.com,/,First party,365.00 days,365 days,false,true,none,false,Declared & set,,
+Unclassified,none,,tt,.px.mountain.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rt,.mountain.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuid,.a.usbrowserspeed.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Analytics,banner,Ketch,__insp_norec_sess,.smartsheet.com,/,First party,365.00 days,365 days,false,true,none,false,Declared & set,,
+Analytics,banner,Ketch,_biz_flagsA,.smartsheet.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Unclassified,none,,__q_state_LBv5nMqntzz3nhxm,.smartsheet.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,ta-vid,.technologyadvice.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,_zitok,.www.smartsheet.com,/,First party,365.00 days,364 days,false,true,strict,false,Declared & set,,ZoomInfo
+Essential Product Functions & Services,banner,Ketch,__cf_bm,.zoominfo.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential Product Functions & Services,banner,Ketch,_cfuvid,.zoominfo.com,/,Third party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Targeted Advertising,banner,Ketch,TDID,.adsrvr.org,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,theTradeDesk
+Targeted Advertising,banner,Ketch,cb,.clickagy.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,ZoomInfo
+Targeted Advertising,banner,Ketch,audit_p,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Magnite
+Targeted Advertising,banner,Ketch,khaos,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Magnite
+Targeted Advertising,banner,Ketch,khaos_p,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Magnite
+Targeted Advertising,banner,Ketch,audit,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Magnite
+Targeted Advertising,banner,Ketch,i,.openx.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,OpenX
+Targeted Advertising,banner,Ketch,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,90 days,false,true,none,true,Declared & set,,Microsoft Ads
+Targeted Advertising,banner,Ketch,uuid2,.adnxs.com,/,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,Microsoft Ads
+Unclassified,none,,chs,aorta.clickagy.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__Secure-YNID,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Analytics,banner,Ketch,__Secure-ROLLOUT_TOKEN,.youtube.com,/,Third party,180.00 days,179 days,true,true,none,true,Declared & set,,Google Youtube
+Analytics,banner,Ketch,_clck,.smartsheet.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Microsoft Clarity
+Targeted Advertising,banner,Ketch,MR,.c.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Unclassified,none,,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Analytics,banner,Ketch,SM,.c.clarity.ms,/,Third party,Session,,false,true,none,false,Declared & set,,Microsoft Clarity
+Targeted Advertising,banner,Ketch,MUID,.clarity.ms,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Targeted Advertising,banner,Ketch,MR,.c.clarity.ms,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Unclassified,none,,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,CMID,.casalemedia.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Index Exchange
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guid,.steelhousemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tt,.px.steelhousemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rt,.steelhousemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_mpxl_guid,.smartsheet.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Analytics,banner,Ketch,_biz_nA,.smartsheet.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Analytics,banner,Ketch,_biz_pendingA,.smartsheet.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Unclassified,none,,_cq_session,.smartsheet.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,_rdt_uuid,.smartsheet.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Analytics,banner,Ketch,IR_PI,.smartsheet.com,/,First party,365.00 days,364 days,false,true,unspecified,false,Declared & set,,Impact
+Unclassified,none,,IR_11203,.smartsheet.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,AWSALBCORS,imp.i215020.net,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Essential Product Functions & Services,banner,Ketch,__cf_bm,.tr.capterra.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,AMP_708ff590e0,.smartsheet.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_cq_s,.smartsheet.com,/,First party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,cq_request_id,www.smartsheet.com,/,First party,Session,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,_gcl_au,.smartsheet.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Analytics,banner,Ketch,_clsk,.smartsheet.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Clarity
+Analytics,banner,Ketch,__insp_slim,.smartsheet.com,/,First party,365.00 days,365 days,false,true,none,false,Declared & set,,
+Unclassified,none,,_ga_ZYH7XNXMZK,.smartsheet.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Analytics,banner,Ketch,optimizelySession,.smartsheet.com,/,First party,180.00 days,179 days,false,false,unspecified,false,Declared & set,,Optimizely
+Targeted Advertising,banner,Ketch,TDCPM,.adsrvr.org,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,theTradeDesk
+Analytics,banner,Ketch,AMP_*,,,,,364 days,,,,,"Declared, not set",,Amplitude
+Analytics,banner,Ketch,AMP_MKTG_*,,,,,364 days,,,,,"Declared, not set",,Amplitude
+Analytics,banner,Ketch,AMP_TEST,,,,,,,,,,"Declared, not set",,Amplitude
+Analytics,banner,Ketch,_biz_dfsA,,,,,,,,,,"Declared, not set",,Adobe Marketo Measure
+Analytics,banner,Ketch,cebs,,,,,,,,,,"Declared, not set",,Crazy Egg
+Analytics,banner,Ketch,cebsp_,,,,,,,,,,"Declared, not set",,Crazy Egg
+Analytics,banner,Ketch,_ce.cch,,,,,,,,,,"Declared, not set",,Crazy Egg
+Analytics,banner,Ketch,_ce.clock_data,,,,,,,,,,"Declared, not set",,Crazy Egg
+Analytics,banner,Ketch,_ce.s,,,,,364 days,,,,,"Declared, not set",,Crazy Egg
+Analytics,banner,Ketch,CLID,,,,,364 days,,,,,"Declared, not set",,Microsoft Clarity
+Analytics,banner,Ketch,coveo_visitorId,,,,,365 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,dd_testcookie,,,,,,,,,,"Declared, not set",,Datadog
+Analytics,banner,Ketch,dpm,,,,,180 days,,,,,"Declared, not set",,Adobe Audience Manager
+Analytics,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,__insp_dct,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,IR_*,,,,,,,,,,"Declared, not set",,Impact
+Analytics,banner,Ketch,_lc2_fpi_js,,,,,,,,,,"Declared, not set",,Warmly
+Analytics,banner,Ketch,nextId,,,,,,,,,,"Declared, not set",,Google Youtube
+Analytics,banner,Ketch,optimizelyDomainTestCookie,,,,,,,,,,"Declared, not set",,Optimizely
+Analytics,banner,Ketch,optimizelyRumLB,,,,,,,,,,"Declared, not set",,Optimizely
+Analytics,banner,Ketch,personalization_id,,,,,400 days,,,,,"Declared, not set",,Twitter Ads
+Analytics,banner,Ketch,remote_sid,,,,,,,,,,"Declared, not set",,Google Youtube
+Analytics,banner,Ketch,__Secure-YEC,,,,,,,,,,"Declared, not set",,Google Youtube
+Analytics,banner,Ketch,ssi,,,,,364 days,,,,,"Declared, not set",,Basis
+Essential Product Functions & Services,banner,Ketch,AWSALB,,,,,6 days,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Essential Product Functions & Services,banner,Ketch,__cfruid,,,,,,,,,,"Declared, not set",,Cloudflare
+Essential Product Functions & Services,banner,Ketch,drift_aid,,,,,400 days,,,,,"Declared, not set",,Salesloft
+Essential Product Functions & Services,banner,Ketch,drift_campaign_refresh,,,,,,,,,,"Declared, not set",,Salesloft
+Essential Product Functions & Services,banner,Ketch,driftt_aid,,,,,400 days,,,,,"Declared, not set",,Salesloft
+Essential Product Functions & Services,banner,Ketch,_ketch_consent_v1_,,,,,399 days,,,,,"Declared, not set",,Ketch
+Essential Product Functions & Services,banner,Ketch,optimizelyOptOut,,,,,,,,,,"Declared, not set",,Optimizely
+Essential Product Functions & Services,banner,Ketch,_swb_consent_,,,,,6 days,,,,,"Declared, not set",,Ketch
+Targeted Advertising,banner,Ketch,ar_debug,,,,,30 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Targeted Advertising,banner,Ketch,_biz_kvpA,,,,,,,,,,"Declared, not set",,Adobe Marketo Measure
+Targeted Advertising,banner,Ketch,demdex,,,,,180 days,,,,,"Declared, not set",,Adobe Audience Manager
+Targeted Advertising,banner,Ketch,drift_aid,,,,,400 days,,,,,"Declared, not set",,Salesloft
+Targeted Advertising,banner,Ketch,KRTBCOOKIE_*,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Targeted Advertising,banner,Ketch,_li_dcdm_c,,,,,,,,,,"Declared, not set",,Live Intent
+Targeted Advertising,banner,Ketch,lidid,,,,,730 days,,,,,"Declared, not set",,Live Intent
+Targeted Advertising,banner,Ketch,_li_ss,,,,,30 days,,,,,"Declared, not set",,Live Intent
+Targeted Advertising,banner,Ketch,MSPTC,,,,,389 days,,,,,"Declared, not set",,Microsoft Ads
+Targeted Advertising,banner,Ketch,muc_ads,,,,,400 days,,,,,"Declared, not set",,Twitter Ads
+Targeted Advertising,banner,Ketch,NID,,,,,182 days,,,,,"Declared, not set",,Google Ads
+Targeted Advertising,banner,Ketch,personalization_id,,,,,400 days,,,,,"Declared, not set",,Twitter Ads
+Targeted Advertising,banner,Ketch,pxrc,,,,,59 days,,,,,"Declared, not set",,LiveRamp
+Targeted Advertising,banner,Ketch,rlas3,,,,,364 days,,,,,"Declared, not set",,LiveRamp
+Targeted Advertising,banner,Ketch,__spdt,,,,,364 days,,,,,"Declared, not set",,Spotify
+Targeted Advertising,banner,Ketch,TESTCOOKIESENABLED,,,,,,,,,,"Declared, not set",,Google Ad Manager
+Targeted Advertising,banner,Ketch,_tq_id.TV-*,,,,,729 days,,,,,"Declared, not set",,Mediaocean
+Targeted Advertising,banner,Ketch,tuuid,,,,,364 days,,,,,"Declared, not set",,Demandbase

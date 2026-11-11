@@ -1,5 +1,6 @@
 from playwright.async_api import async_playwright, Browser, BrowserContext, Playwright
 from backend.config import settings
+from backend.scanner.url_guard import install_request_guard
 import logging
 
 logger = logging.getLogger(__name__)
@@ -73,6 +74,7 @@ class BrowserManager:
             
             # Set default timeout
             context.set_default_timeout(settings.PAGE_TIMEOUT)
+            await install_request_guard(context)
             
             return context
             
@@ -101,6 +103,7 @@ class BrowserManager:
                     }
                 )
                 context.set_default_timeout(settings.PAGE_TIMEOUT)
+                await install_request_guard(context)
                 logger.info("Browser reinitialized successfully")
                 return context
             except Exception as retry_error:

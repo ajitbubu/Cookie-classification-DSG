@@ -1,0 +1,35 @@
+# Non-OneTrust candidates (Ketch, Transcend, Cookiebot, Securiti), one per parent company,
+# from the 336-site CMP detection run. Sister brands of already-collected companies dropped.
+www.datadoghq.com
+www.grammarly.com
+www.foxnews.com
+www.ticketmaster.com
+www.paramountplus.com
+www.costco.com
+consumercare.hasbro.com
+www.pepsico.com
+www.hertz.com
+www.sling.com
+www.everpuredata.com
+www.qualys.com
+1password.com
+www.similarweb.com
+iterable.com
+www.klaviyo.com
+www.constantcontact.com
+www.smartsheet.com
+www.notion.com
+www.airtable.com
+webflow.com
+www.chipotle.com
+www.dunkindonuts.com
+www.irobot.com
+www.vitamix.com
+www.equifax.com
+www.lendingtree.com
+www.biogen.com
+www.siemens-healthineers.com
+www.pbs.org
+www.newsweek.com
+time.com
+www.tasteofhome.com

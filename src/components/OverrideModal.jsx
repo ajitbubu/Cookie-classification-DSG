@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { X, AlertTriangle, CheckCircle, Clock, ChevronDown, ChevronUp } from 'lucide-react';
+import { formatScanDate } from '../lib/scanResults';
 import './OverrideModal.css';
 
 const CATEGORIES = ['Strictly Necessary', 'Functional', 'Analytics', 'Marketing'];
@@ -263,7 +264,7 @@ function OverrideModal({ cookie, allCookies, onClose, onApply }) {
                   {overrideHistory.map((h, i) => (
                     <div key={i} className="ovm-history-item">
                       <div className="ovm-history-date">
-                        {new Date(h.overriddenAt).toLocaleString()}
+                        {formatScanDate(h.overriddenAt)}
                       </div>
                       <div className="ovm-history-change">
                         <span className={`ovm-cat-badge-sm cat-${h.fromCategory.toLowerCase().replace(/\s+/g, '-')}`}>{h.fromCategory}</span>

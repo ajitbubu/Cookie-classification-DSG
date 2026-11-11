@@ -6,7 +6,11 @@
   flex-direction: column;
   gap: 24px;
   min-width: 0;
-  padding: 24px;
+  /* Flush in .page-panel (which supplies the padding); also undoes the legacy
+     global `section` border and margin in App.css. */
+  margin: 0;
+  padding: 0;
+  border: none;
   background: var(--ucm-surface);
   border-radius: var(--ucm-radius-panel);
 }
@@ -86,7 +90,7 @@
 .rq-table .rq-check { width: 44px; text-align: center; }
 .rq-check input { width: 18px; height: 18px; accent-color: var(--ucm-brand-accent); cursor: pointer; }
 
-.rq-cookie { min-width: 200px; }
+.rq-cookie { min-width: 176px; }
 .rq-cookie__name { display: block; color: var(--ucm-brand-accent); font-weight: 500; }
 .rq-cookie__domain { display: block; margin-top: 4px; font-size: 14px; color: var(--color-text-secondary); }
 .rq-why { margin-top: 6px; font-size: 14px; color: var(--color-text-secondary); }
@@ -95,10 +99,12 @@
 
 .rq-suggestion { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 6px; }
 .rq-actions { display: inline-flex; gap: 8px; }
+/* Row Approve: the shared outline blue is 4.47:1 on white and 4.23:1 on row hover;
+   the brand hover blue keeps the label at 5.7:1 or better */
+.rq-actions .ui-btn--outline { border-color: var(--brand-primary-hover); color: var(--brand-primary-hover); }
 .rq-confirm-text { margin: 0; }
 
 @media (max-width: 768px) {
-  .rq-panel { padding: 16px 12px; }
   .rq-search { width: 100%; }
   .rq-tab { padding: 12px 14px; font-size: 16px; }
 }
@@ -109,6 +115,7 @@
 
 /* Seven columns: tighter cells so actions stay visible at desktop widths */
 .rq-table thead th, .rq-table tbody th, .rq-table tbody td { padding-left: 16px; padding-right: 16px; }
+.rq-table thead th { white-space: normal; } /* "Model confidence" wraps instead of widening its column */
 
 /* Publish outcome per row (E4) */
 .rq-row-state { display: block; margin-bottom: 6px; }

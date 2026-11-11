@@ -1,0 +1,188 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pplus_timezone,www.paramountplus.com,/gift-card,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,pplus_timezone,www.paramountplus.com,/browse,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,WcoSMza,www.paramountplus.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,pplus_device_id,www.paramountplus.com,/,First party,400.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,ovvuid,www.paramountplus.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,tn_vw,www.paramountplus.com,/,First party,0.04 days,,false,false,lax,false,Not declared,,
+Essential,banner,Ketch,_swb,.paramountplus.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Essential,banner,Ketch,_ketch_consent_v1_,.paramountplus.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Essential,banner,Ketch,_swb_consent_,.paramountplus.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Essential,banner,Ketch,usprivacy,.paramountplus.com,/,First party,30.00 days,29 days,false,true,none,false,Declared & set,,IAB Tech Lab
+Essential,banner,Ketch,us_privacy,.paramountplus.com,/,First party,30.00 days,29 days,false,true,none,false,Declared & set,,IAB Tech Lab
+Unclassified,none,,app_launch_count,www.paramountplus.com,/,First party,400.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,app_launch_date,www.paramountplus.com,/,First party,400.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,app_launch_session,www.paramountplus.com,/,First party,Session,,true,true,lax,false,Not declared,,
+Analytic & Performance,banner,Ketch,first_page_today,.paramountplus.com,/,First party,0.54 days,,false,false,unspecified,false,Declared & set,,
+Analytic & Performance,banner,Ketch,ET_CID,.paramountplus.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,
+Marketing and Advertising,banner,Ketch,mid,.paramountplus.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,Facebook Ads
+Functional,banner,Ketch,j,.paramountplus.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,
+Analytic & Performance,banner,Ketch,sfmc_sub,.paramountplus.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,Salesforce
+Functional,banner,Ketch,l,.paramountplus.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,
+Marketing and Advertising,banner,Ketch,u,.paramountplus.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,theTradeDesk
+Functional,banner,Ketch,jb,.paramountplus.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,
+Essential,banner,Ketch,optanonConsentValues,www.paramountplus.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,
+Marketing and Advertising,banner,Ketch,demdex,.demdex.net,/,Third party,180.00 days,180 days,false,true,none,false,Declared & set,,Adobe Audience Manager
+Unclassified,none,,AMCVS_10D31225525FF5790A490D4D%40AdobeOrg,.paramountplus.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,AMCV_10D31225525FF5790A490D4D%40AdobeOrg,.paramountplus.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Marketing and Advertising,banner,Ketch,_twpid,.paramountplus.com,/,First party,390.00 days,390 days,false,true,strict,false,Declared & set,,Twitter Ads
+Unclassified,none,,akaalb_Instance-1,apps.rokt.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Analytic & Performance,banner,Ketch,s_cc,.paramountplus.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,Adobe Analytics
+Unclassified,none,,_ttp,.tiktok.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Analytic & Performance,banner,Ketch,IR_gbd,.paramountplus.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,Impact
+Marketing and Advertising,banner,Ketch,A3,.yahoo.com,/,Third party,365.25 days,365 days,true,true,none,false,Declared & set,,Yahoo! Ads
+Unclassified,none,,_scid,.paramountplus.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Marketing and Advertising,banner,Ketch,_fbp,.paramountplus.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Facebook Ads
+Analytic & Performance,banner,Ketch,guest_id_marketing,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Marketing and Advertising,banner,Ketch,guest_id_ads,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Marketing and Advertising,banner,Ketch,personalization_id,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Marketing and Advertising,banner,Ketch,guest_id,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Functional,banner,Ketch,__cf_bm,.twitter.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Marketing and Advertising,banner,Ketch,_pin_unauth,.paramountplus.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Pinterest
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,_gcl_au,.paramountplus.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Marketing and Advertising,banner,Ketch,muc_ads,.t.co,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Functional,banner,Ketch,__cf_bm,.t.co,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Functional,banner,Ketch,brwsr,.qflm.net,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,,Impact
+Unclassified,none,,kndctr_10D31225525FF5790A490D4D_AdobeOrg_identity,.paramountplus.com,/,First party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,kndctr_10D31225525FF5790A490D4D_AdobeOrg_cluster,.paramountplus.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Declared & set,,Facebook Ads
+Marketing and Advertising,banner,Ketch,_scor_uid,.paramountplus.com,/,First party,390.00 days,389 days,false,true,none,false,Declared & set,,Comscore
+Marketing and Advertising,banner,Ketch,rlas3,.rlcdn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LiveRamp
+Unclassified,none,,_tt_enable_cookie,.paramountplus.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ttp,.paramountplus.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Analytic & Performance,banner,Ketch,UID,.scorecardresearch.com,/,Third party,390.00 days,390 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Analytic & Performance,banner,Ketch,XID,.scorecardresearch.com,/,Third party,390.00 days,390 days,false,true,none,true,Declared & set,,ScorecardResearch (by Comscore)
+Marketing and Advertising,banner,Ketch,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Marketing and Advertising,banner,Ketch,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Marketing and Advertising,banner,Ketch,pxrc,.rlcdn.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,LiveRamp
+Unclassified,none,,CBS_DEVICEID,www.paramountplus.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,sc_at,.snapchat.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Analytic & Performance,banner,Ketch,dpm,.dpm.demdex.net,/,Third party,180.00 days,180 days,false,true,none,false,Declared & set,,Adobe Audience Manager
+Essential,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Marketing and Advertising,banner,Ketch,pi,.ml314.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,Pubmatic
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,dextp,.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,,
+Marketing and Advertising,banner,Ketch,IDSYNC,.analytics.yahoo.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Yahoo! Ads
+Unclassified,none,,_sctr,.paramountplus.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Marketing and Advertising,banner,Ketch,_cc_cc,.crwdcntrl.net,/,Third party,Session,,false,true,none,false,Declared & set,,Lotame
+Marketing and Advertising,banner,Ketch,_uid,.fwmrm.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Marketing and Advertising,banner,Ketch,flashtalkingad1,.flashtalking.com,/,Third party,395.42 days,395 days,false,true,none,false,Declared & set,,Flashtalking
+Marketing and Advertising,banner,Ketch,ad-id,.amazon-adsystem.com,/,Third party,232.00 days,236 days,true,true,none,false,Declared & set,,Amazon Ads
+Essential,banner,Ketch,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Amazon Ads
+Functional,banner,Ketch,ab,.agkn.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Neustar
+Unclassified,none,,tvid,.tremorhub.com,/,Third party,365.24 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tv_UIAM,.tremorhub.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,digitalAudience,.target.digitalaudience.io,/,Third party,364.96 days,,true,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,90 days,false,true,none,true,Declared & set,,Microsoft Ads
+Marketing and Advertising,banner,Ketch,uuid2,.adnxs.com,/,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,Microsoft Ads
+Marketing and Advertising,banner,Ketch,tuuid,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,Demandbase
+Marketing and Advertising,banner,Ketch,c,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,tinuiti
+Marketing and Advertising,banner,Ketch,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,Demandbase
+Marketing and Advertising,banner,Ketch,i,.openx.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,OpenX
+Analytic & Performance,banner,Ketch,EE,.exelator.com,/,Third party,120.00 days,120 days,false,true,none,false,Declared & set,,Nielsen
+Analytic & Performance,banner,Ketch,ud,.exelator.com,/,Third party,120.00 days,120 days,false,true,none,false,Declared & set,,Nielsen
+Essential,banner,Ketch,pt,.ispot.tv,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,iSpot
+Marketing and Advertising,banner,Ketch,SEUNCY,.semasio.net,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,
+Marketing and Advertising,banner,Ketch,ndat,.ninthdecimal.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,
+Marketing and Advertising,banner,Ketch,t_gid,.taboola.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Taboola
+Marketing and Advertising,banner,Ketch,t_pt_gid,.taboola.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Taboola
+Marketing and Advertising,banner,Ketch,mics_vid,.mediarithmics.com,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,,mediarithmics
+Marketing and Advertising,banner,Ketch,mics_uaid,.mediarithmics.com,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,,mediarithmics
+Marketing and Advertising,banner,Ketch,mics_lts,.mediarithmics.com,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,,mediarithmics
+Unclassified,none,,CBS_ST,www.paramountplus.com,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,PP_LOCALE,www.paramountplus.com,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,CBS_ADV_VAL,.paramountplus.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,CBS_ADV_SUBSES_VAL,.paramountplus.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,tc,www.paramountplus.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,graph,www.paramountplus.com,/,First party,0.42 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_scid_r,.paramountplus.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,ttcsid_CJAGL9RC77U0073JQUJ0,.paramountplus.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid,.paramountplus.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Analytic & Performance,banner,Ketch,prevPageType,.paramountplus.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,
+Marketing and Advertising,banner,Ketch,utag_main,.paramountplus.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Tealium
+Analytic & Performance,banner,Ketch,IR_PI,.paramountplus.com,/,First party,365.00 days,364 days,false,true,unspecified,false,Declared & set,,Impact
+Unclassified,none,,IR_3065,.paramountplus.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Essential,banner,Ketch,AWSALBCORS,paramountplus.qflm.net,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Amazon Web Service (AWS)
+Analytic & Performance,banner,Ketch,_rdt_uuid,.paramountplus.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Marketing and Advertising,banner,Ketch,_uetsid,.paramountplus.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Marketing and Advertising,banner,Ketch,_uetvid,.paramountplus.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Unclassified,none,,_twsid,.paramountplus.com,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Marketing and Advertising,banner,Ketch,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Pinterest
+Essential,banner,Ketch,_abck,,,,,365 days,,,,,"Declared, not set",,Akamai
+Essential,banner,Ketch,ak_bmsc,,,,,,,,,,"Declared, not set",,Akamai
+Essential,banner,Ketch,AWSALB,,,,,6 days,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Essential,banner,Ketch,bm_sv,,,,,,,,,,"Declared, not set",,Akamai
+Essential,banner,Ketch,bm_sz,,,,,,,,,,"Declared, not set",,Akamai
+Essential,banner,Ketch,BrowserId,,,,,365 days,,,,,"Declared, not set",,
+Essential,banner,Ketch,CookieConsentPolicy,,,,,365 days,,,,,"Declared, not set",,Salesforce Service Cloud
+Essential,banner,Ketch,gtm_session_start,,,,,,,,,,"Declared, not set",,
+Essential,banner,Ketch,gtm_session_threshold,,,,,,,,,,"Declared, not set",,
+Essential,banner,Ketch,IR_*,,,,,,,,,,"Declared, not set",,Impact
+Essential,banner,Ketch,LAST_RESULT_ENTRY_KEY,,,,,,,,,,"Declared, not set",,Google Youtube
+Essential,banner,Ketch,LSKey-c$CookieConsentPolicy,,,,,365 days,,,,,"Declared, not set",,Salesforce Service Cloud
+Essential,banner,Ketch,nextId,,,,,,,,,,"Declared, not set",,Google Youtube
+Essential,banner,Ketch,OptanonConsent,,,,,364 days,,,,,"Declared, not set",,OneTrust
+Essential,banner,Ketch,receive-cookie-deprecation,,,,,180 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Essential,banner,Ketch,renderCtx,,,,,,,,,,"Declared, not set",,
+Essential,banner,Ketch,requests,,,,,,,,,,"Declared, not set",,Google Youtube
+Essential,banner,Ketch,session,,,,,,,,,,"Declared, not set",,
+Essential,banner,Ketch,sfdcConsent,,,,,364 days,,,,,"Declared, not set",,Salesforce
+Essential,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Essential,banner,Ketch,TESTCOOKIESENABLED,,,,,,,,,,"Declared, not set",,Google Ad Manager
+Analytic & Performance,banner,Ketch,AMCV_*AdobeOrg,,,,,400 days,,,,,"Declared, not set",,Adobe Analytics
+Analytic & Performance,banner,Ketch,AMCVS_*AdobeOrg,,,,,,,,,,"Declared, not set",,Adobe Analytics
+Analytic & Performance,banner,Ketch,cvtdt,,,,,3649 days,,,,,"Declared, not set",,
+Analytic & Performance,banner,Ketch,_dp,,,,,,,,,,"Declared, not set",,Adobe Audience Manager
+Analytic & Performance,banner,Ketch,_ga,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytic & Performance,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytic & Performance,banner,Ketch,kndctr_*_AdobeOrg_cluster,,,,,,,,,,"Declared, not set",,Adobe CDP
+Analytic & Performance,banner,Ketch,kv_id,,,,,400 days,,,,,"Declared, not set",,
+Analytic & Performance,banner,Ketch,net_conversationId,,,,,,,,,,"Declared, not set",,
+Analytic & Performance,banner,Ketch,net_createdAt,,,,,,,,,,"Declared, not set",,
+Analytic & Performance,banner,Ketch,net_userId,,,,,400 days,,,,,"Declared, not set",,
+Analytic & Performance,banner,Ketch,optimizelyDomainTestCookie,,,,,,,,,,"Declared, not set",,Optimizely
+Analytic & Performance,banner,Ketch,optimizelyEndUserId,,,,,179 days,,,,,"Declared, not set",,Optimizely
+Analytic & Performance,banner,Ketch,optimizelyOptOut,,,,,,,,,,"Declared, not set",,Optimizely
+Analytic & Performance,banner,Ketch,path,,,,,400 days,,,,,"Declared, not set",,
+Analytic & Performance,banner,Ketch,pctrk,,,,,364 days,,,,,"Declared, not set",,
+Analytic & Performance,banner,Ketch,sa-user-id-v4,,,,,365 days,,,,,"Declared, not set",,StackAdapt
+Analytic & Performance,banner,Ketch,uid,,,,,59 days,,,,,"Declared, not set",,Adform
+Analytic & Performance,banner,Ketch,_vapi*,,,,,,,,,,"Declared, not set",,
+Analytic & Performance,banner,Ketch,webact,,,,,364 days,,,,,"Declared, not set",,
+Analytic & Performance,banner,Ketch,zc,,,,,365 days,,,,,"Declared, not set",,Zeotap
+Functional,banner,Ketch,kndctr_*_AdobeOrg_consent,,,,,,,,,,"Declared, not set",,Adobe CDP
+Functional,banner,Ketch,PicassoLanguage*Published,,,,,,,,,,"Declared, not set",,
+Functional,banner,Ketch,test,,,,,,,,,,"Declared, not set",,
+Functional,banner,Ketch,v0,,,,,,,,,,"Declared, not set",,
+Functional,banner,Ketch,v20,,,,,,,,,,"Declared, not set",,
+Marketing and Advertising,banner,Ketch,ar_debug,,,,,29 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Marketing and Advertising,banner,Ketch,bito,,,,,394 days,,,,,"Declared, not set",,Beeswax (by Freewheel)
+Marketing and Advertising,banner,Ketch,bitoIsSecure,,,,,394 days,,,,,"Declared, not set",,Beeswax (by Freewheel)
+Marketing and Advertising,banner,Ketch,C,,,,,30 days,,,,,"Declared, not set",,Adform
+Marketing and Advertising,banner,Ketch,c22,,,,,,,,,,"Declared, not set",,
+Marketing and Advertising,banner,Ketch,c40,,,,,,,,,,"Declared, not set",,
+Marketing and Advertising,banner,Ketch,_cc_dc,,,,,269 days,,,,,"Declared, not set",,Lotame
+Marketing and Advertising,banner,Ketch,_cc_id,,,,,269 days,,,,,"Declared, not set",,Lotame
+Marketing and Advertising,banner,Ketch,checkForPermission,,,,,,,,,,"Declared, not set",,Beeswax (by Freewheel)
+Marketing and Advertising,banner,Ketch,CMID,,,,,365 days,,,,,"Declared, not set",,Index Exchange
+Marketing and Advertising,banner,Ketch,CMPRO,,,,,90 days,,,,,"Declared, not set",,Index Exchange
+Marketing and Advertising,banner,Ketch,CMPS,,,,,90 days,,,,,"Declared, not set",,Index Exchange
+Marketing and Advertising,banner,Ketch,com.adobe.alloy.getTld,,,,,,,,,,"Declared, not set",,Adobe Commerce
+Marketing and Advertising,banner,Ketch,dsp_*,,,,,59 days,,,,,"Declared, not set",,Freewheel (by Comcast)
+Marketing and Advertising,banner,Ketch,_glc_au,,,,,89 days,,,,,"Declared, not set",,
+Marketing and Advertising,banner,Ketch,id,,,,,400 days,,,,,"Declared, not set",,WPP
+Marketing and Advertising,banner,Ketch,kndctr_*_AdobeOrg_identity,,,,,395 days,,,,,"Declared, not set",,Adobe CDP
+Marketing and Advertising,banner,Ketch,Kochava,,,,,,,,,,"Declared, not set",,
+Marketing and Advertising,banner,Ketch,mdata,,,,,400 days,,,,,"Declared, not set",,WPP
+Marketing and Advertising,banner,Ketch,ov,,,,,400 days,,,,,"Declared, not set",,WPP
+Marketing and Advertising,banner,Ketch,sa-user-id,,,,,365 days,,,,,"Declared, not set",,StackAdapt
+Marketing and Advertising,banner,Ketch,sa-user-id-v2,,,,,365 days,,,,,"Declared, not set",,StackAdapt
+Marketing and Advertising,banner,Ketch,sa-user-id-v3,,,,,365 days,,,,,"Declared, not set",,StackAdapt
+Marketing and Advertising,banner,Ketch,TDCPM,,,,,364 days,,,,,"Declared, not set",,theTradeDesk
+Marketing and Advertising,banner,Ketch,TDID,,,,,364 days,,,,,"Declared, not set",,theTradeDesk

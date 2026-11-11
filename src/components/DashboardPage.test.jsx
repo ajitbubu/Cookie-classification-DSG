@@ -55,7 +55,7 @@ describe('DashboardPage', () => {
     expect(within(banner).getByText('Based on your recent reviews and classifications')).toBeInTheDocument();
     // auto-classification is off, so nothing was auto classified
     expect(within(banner).getByText('Cookies auto classified').closest('.ai-stat')).toHaveTextContent('0');
-    expect(within(banner).getByText('Cookie Unclassified').closest('.ai-stat')).toHaveTextContent('2');
+    expect(within(banner).getByText('Unclassified cookies').closest('.ai-stat')).toHaveTextContent('2');
     // awaiting review = unpublished cookies in the latest scan
     expect(within(banner).getByText('Suggestions awaiting review').closest('.ai-stat')).toHaveTextContent('2');
     expect(globalThis.fetch).toHaveBeenCalledWith('/api/v1/ml/model-info');
@@ -73,7 +73,9 @@ describe('DashboardPage', () => {
     mockFetch(async () => ({ ok: true, json: async () => MODEL_INFO }));
     const onNavigate = vi.fn();
     setup({ onNavigate });
-    await userEvent.click(screen.getByRole('button', { name: 'View ML model' }));
+    const modelLink = screen.getByRole('link', { name: 'View ML model' });
+    expect(modelLink).toHaveAttribute('href', '/settings/model'); // a real link, so it can open in a new tab
+    await userEvent.click(modelLink);
     expect(onNavigate).toHaveBeenCalledWith('model');
     await userEvent.click(screen.getByRole('button', { name: 'Dismiss AI insights' }));
     expect(screen.queryByRole('region', { name: 'AI insights' })).not.toBeInTheDocument();
@@ -133,8 +135,8 @@ describe('DashboardPage', () => {
     expect(screen.getByText('2 Items')).toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: 'See all pending reviews' }));
     expect(onNavigate).toHaveBeenCalledWith('review');
-    await userEvent.type(screen.getByRole('searchbox', { name: 'Search recent activity' }), 'zzz');
-    expect(within(activity).getAllByRole('row')).toHaveLength(2); // header + "no match" row
+    // Five-row previews have no search box; See All leads to the full pages (FINDING-006)
+    expect(screen.queryByRole('searchbox')).not.toBeInTheDocument();
   });
 
   it('pending review rows (12A): Figma columns, rule engine noted, manual-check chip, Approve with confirmation, Edit', async () => {
@@ -142,7 +144,7 @@ describe('DashboardPage', () => {
     const onNavigate = vi.fn();
     setup({ onNavigate });
     const pending = screen.getByRole('table', { name: 'Pending review' });
-    expect(within(pending).getAllByRole('columnheader').map((h) => h.textContent)).toEqual(['Name', 'Details', 'Chances', 'Action']);
+    expect(within(pending).getAllByRole('columnheader').map((h) => h.textContent)).toEqual(['Name', 'Details', 'Confidence', 'Action']);
     const [ga, odd] = within(pending).getAllByRole('row').slice(1);
     expect(within(ga).queryByText(/^Rule engine:/)).not.toBeInTheDocument(); // rule engine and model agree
     expect(within(odd).getByText(/^Rule engine: /)).toBeInTheDocument(); // they differ, so the rule's answer is noted

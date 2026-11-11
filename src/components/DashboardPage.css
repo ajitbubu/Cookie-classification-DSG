@@ -9,31 +9,33 @@
   display: flex;
   gap: 20px;
   padding: 16px 20px 20px;
+  border: 1px solid var(--ucm-blue-4);
   border-radius: var(--ucm-radius-panel);
-  background: var(--ucm-navy);
-  color: var(--color-text-inverse);
+  background: var(--ucm-row-hover);
+  color: var(--ucm-navy);
 }
-.ai-insights__bot { flex-shrink: 0; color: var(--ucm-surface); }
+.ai-insights__bot { flex-shrink: 0; color: var(--ucm-brand-accent); }
 .ai-insights__body { display: flex; flex-direction: column; gap: 12px; min-width: 0; flex: 1; }
 .ai-insights__head { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
-.ai-insights__title { margin: 0; font: 700 18px/1.2 var(--font-display); color: var(--color-text-inverse); }
-/* Chips on navy: white on 14% white over #092339 stays above 12:1 */
-.ai-insights .ui-chip { background: rgba(255, 255, 255, 0.14); color: var(--color-text-inverse); }
-/* Figma: the metrics sit in a white card inside the navy banner */
+.ai-insights__title { margin: 0; font: 700 18px/1.2 var(--font-display); color: var(--ucm-navy); }
+/* Light panel (FINDING-005): keeps the 11A position without outweighing the KPI row */
 .ai-insights__stats {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 16px 40px;
   padding: 16px 14px;
+  border: 1px solid var(--ucm-blue-4);
   border-radius: var(--ucm-radius-control);
   background: var(--ucm-surface);
   color: var(--ucm-navy);
 }
 .ai-insights__note { margin: 0; color: var(--color-text-secondary); }
-.ai-insights__sub { margin: -4px 0 0; font: 400 14px/1.3 var(--font-sans); color: var(--color-text-inverse); }
-.ai-insights__chip { display: inline-flex; align-items: center; height: 24px; padding: 0 12px; border: 1px solid rgba(255, 255, 255, 0.85); border-radius: 999px; color: var(--color-text-inverse); font: 500 12px/1 var(--font-sans); }
+.ai-insights__sub { margin: -4px 0 0; font: 400 14px/1.3 var(--font-sans); color: var(--color-text-secondary); }
+.ai-insights__chip { display: inline-flex; align-items: center; height: 24px; padding: 0 12px; border: 1px solid var(--ucm-brand-accent); border-radius: 999px; color: var(--ucm-navy); font: 500 12px/1 var(--font-sans); }
 /* Faint robot on the right of the banner (Figma 12.06.32) */
-.ai-insights__art { position: absolute; top: 8px; right: 72px; color: rgba(255, 255, 255, 0.12); pointer-events: none; }
+.ai-insights__art { position: absolute; top: 8px; right: 72px; color: var(--ucm-tint-analytics); pointer-events: none; }
 .ai-stat { display: flex; flex-direction: column; gap: 8px; }
 .ai-stat__value { font: 500 20px/1.2 var(--font-sans); color: var(--ucm-navy); font-variant-numeric: tabular-nums; }
 .ai-stat__label { font: 400 14px/1.2 var(--font-sans); color: var(--color-text-secondary); }
@@ -44,13 +46,13 @@
   padding: 0;
   border: none;
   background: none;
-  color: #8EC0F5;
+  color: var(--ucm-navy);
   font: 500 16px/1.2 var(--font-sans);
   text-decoration: underline;
   cursor: pointer;
 }
 .ai-insights__link:focus-visible,
-.ai-insights__dismiss:focus-visible { outline: 2px solid #8EC0F5; outline-offset: 2px; }
+.ai-insights__dismiss:focus-visible { outline: 2px solid var(--ucm-brand-accent); outline-offset: 2px; }
 
 .ai-insights__dismiss {
   position: absolute;
@@ -61,7 +63,7 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  border: none;
+  border: 1px solid var(--ucm-blue-4);
   border-radius: var(--ucm-radius-tag);
   background: var(--ucm-surface);
   color: var(--ucm-navy);
@@ -154,4 +156,6 @@ section.db-running { display: flex; flex-direction: column; gap: 12px; margin: 0
 
 
 .db-actions { align-items: center; }
+/* Row Approve matches the Review Queue: outline in the darker brand blue (5.7:1 on hover) */
+.db-actions .ui-btn--outline { border-color: var(--brand-primary-hover); color: var(--brand-primary-hover); }
 .db-row-error { font: 500 14px/1.3 var(--font-sans); color: var(--ucm-red); }

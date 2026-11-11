@@ -16,7 +16,7 @@ import { useAnnounce } from './ui/LiveRegion';
 import CookieClassificationTable from './CookieClassificationTable';
 import BulkUpdateDrawer from './BulkUpdateDrawer';
 import { BULK_CATEGORIES, categoryBreakdown, cookieKey, pagesFromScan, vendorsFromCookies } from '../lib/domainDetails';
-import { scanStatus } from '../lib/scanResults';
+import { formatScanDate, scanStatus } from '../lib/scanResults';
 import { calculateComplianceRisks, getRiskExplanation } from '../lib/riskCalculator';
 import './DomainDetailsPage.css';
 
@@ -28,12 +28,6 @@ const REGULATIONS = [['dpdpRisk', 'dpdp', 'DPDP'], ['ccpaRisk', 'ccpa', 'CCPA / 
 const VERSIONS_SHOWN = 5;
 
 const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
-const pad = (n) => String(n).padStart(2, '0');
-// Figma version dates: 03/14/2026 06:04:59
-const versionDate = (ts) => {
-  const d = new Date(ts);
-  return Number.isNaN(d.getTime()) ? '—' : `${pad(d.getMonth() + 1)}/${pad(d.getDate())}/${d.getFullYear()} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
-};
 // Figma "Time Taken": 8 Min 43 sec
 const timeTaken = (ms) => {
   if (!(ms > 0)) return null;
@@ -63,7 +57,7 @@ const matches = (q, ...fields) => !q || fields.some((f) => (f || '').toLowerCase
 // categories, 12.13.30 pages, 12.13.36 vendors). Versions are the domain's
 // stored scans; Publish is saved in the scan store.
 function DomainDetailsPage({
-  scan, versions = [], currentVersionId, published, onPublish, onScanNow, onExport, onReview, onBulkUpdate, tableProps = {},
+  scan, versions = [], currentVersionId, published, onPublish, onOpenVersion, onScanNow, onExport, onReview, onBulkUpdate, tableProps = {},
   initialTab = 'overview', onTabChange, onBack,
 }) {
   const [tab, setTabState] = useState(initialTab);
@@ -215,7 +209,9 @@ function DomainDetailsPage({
                 header: 'Version',
                 render: (v) => (
                   <span className="dd-version">
-                    <span className="dd-version__id">{`V ${v.version}`}</span>
+                    <button type="button" className="dd-version__id" aria-label={`Open version ${v.version}`} onClick={() => onOpenVersion?.(v)}>
+                      {`V ${v.version}`}
+                    </button>
                     {published?.id === v.id && <span className="dd-version__tag">(Published)</span>}
                     {v.id === currentVersionId && <span className="dd-version__viewing">Viewing</span>}
                     {(v.failedPages || 0) > 0 && <StatusChip status="partial" failed={v.failedPages} />}
@@ -236,8 +232,8 @@ function DomainDetailsPage({
                   );
                 },
               },
-              { key: 'by', header: 'Published By', render: () => '—' },
-              { key: 'date', header: 'Scanned Date', render: (v) => versionDate(v.timestamp) },
+              // No publisher is recorded per version yet, so the Figma 'Published By' column is left out until it is
+              { key: 'date', header: 'Scanned Date', render: (v) => formatScanDate(v.timestamp) },
               {
                 key: 'action',
                 header: 'Action',

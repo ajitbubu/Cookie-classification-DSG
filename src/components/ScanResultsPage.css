@@ -20,3 +20,4 @@ section.sr-card { margin: 8px 0 0; padding: 0; border: none; border-radius: 0; b
 
 .sr-none { margin: 8px; color: var(--color-text-secondary); }
 
+.sr-confirm-text { margin: 0; }

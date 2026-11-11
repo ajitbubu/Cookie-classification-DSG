@@ -8,6 +8,10 @@ import re
 from typing import Dict, List, Any, Optional
 import numpy as np
 
+# _ga, _ga_<container>, _gat, _gat_<tracker>, _gac_<property>
+_GA_PREFIXED_NAME = re.compile(r'^_ga(t)?(_.+)?$|^_gac_.+$')
+_FB_PREFIXED_NAME = re.compile(r'^_fb[pc]$')
+
 
 class FeatureExtractorV5:
     """Feature extractor for model v5.0.0 / v6.0.0 — produces 52 features."""
@@ -77,14 +81,16 @@ class FeatureExtractorV5:
         features.append(is_third_party)
         features.append(float(len(name)))
 
-        # GA / FB / UTM patterns
+        # GA / FB / UTM patterns. Whole cookie names, not prefixes: "_gamer_tag"
+        # starting with "_ga" is not evidence of Google Analytics.
+        ga_prefixed = bool(_GA_PREFIXED_NAME.match(name_lower))
+        fb_prefixed = bool(_FB_PREFIXED_NAME.match(name_lower))
         is_ga_like = float(
-            name_lower.startswith('_ga') or name_lower.startswith('_gid') or
-            name_lower.startswith('_gat') or name_lower.startswith('__utm') or
+            ga_prefixed or name_lower == '_gid' or name_lower.startswith('__utm') or
             'google-analytics' in domain_lower or 'googletagmanager' in domain_lower
         )
         is_fb_like = float(
-            name_lower.startswith('_fb') or name_lower in ('fr', 'sb', 'datr', 'c_user') or
+            fb_prefixed or name_lower in ('fr', 'sb', 'datr', 'c_user') or
             'facebook' in domain_lower or 'fbcdn' in domain_lower
         )
         has_prefix_utm = float(name_lower.startswith('__utm') or name_lower.startswith('_utm'))
@@ -163,8 +169,8 @@ class FeatureExtractorV5:
         features.append(is_linkedin)
 
         # Name prefix features
-        features.append(float(name_lower.startswith('_ga')))
-        features.append(float(name_lower.startswith('_fb')))
+        features.append(float(ga_prefixed))
+        features.append(float(fb_prefixed))
         features.append(float(name_lower.startswith('_utm') or name_lower.startswith('__utm')))
 
         # Exact expiry values
@@ -208,7 +214,7 @@ def get_feature_extractor_for_model(model_version: str):
     Returns:
         Feature extractor instance
     """
-    if model_version.startswith('5.') or model_version.startswith('6.'):
+    if model_version.startswith(('5.', '6.', '7.')):
         return FeatureExtractorV5()
     elif model_version.startswith('3.'):
         from .feature_extractor_v3 import FeatureExtractorV3

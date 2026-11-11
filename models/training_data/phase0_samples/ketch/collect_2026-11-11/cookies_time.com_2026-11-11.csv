@@ -1,0 +1,1412 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,,true,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,tads_tbla_bidi,ad-cdn.technoratimedia.com,/html,Third party,14.00 days,14 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,tads_wmg_bidi,ad-cdn.technoratimedia.com,/html,Third party,14.00 days,14 days,false,true,none,false,Declared & set,,
+Unclassified,none,,rxs_p_adaptmx,.plusoneads.com,/sync,Third party,1.00 days,,true,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,sync,.3lift.com,/sync,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,TripleLift
+Behavioral Advertising,banner,Ketch,_li_ss,i.liadm.com,/s,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,Live Intent
+Unclassified,none,,st_dt,s.seedtag.com,/c,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.auth.time.com,/,First party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Unclassified,none,,__cf_bm,.c2.time.com,/,First party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Unclassified,none,,UID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,XID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,true,"Declared, conflicting",,
+Unclassified,none,,_swb,.time.com,/,First party,400.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,_pubcid,.time.com,/,First party,270.00 days,359 days,false,false,lax,false,Declared & set,,Prebid.org
+Behavioral Advertising,banner,Ketch,cX_G,.time.com,/,First party,395.00 days,394 days,false,true,unspecified,false,Declared & set,,
+Unclassified,none,,_ketch_consent_v1_,.time.com,/,First party,400.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,_cc_id,.crwdcntrl.net,/,Third party,269.96 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,TimeID,time.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,
+Unclassified,none,,_cc_id,.time.com,/,First party,270.00 days,,false,false,lax,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,panoramaId_expiry,.time.com,/,First party,7.00 days,,false,false,lax,false,Declared & set,,Lotame
+Behavioral Advertising,banner,Ketch,panoramaId,.time.com,/,First party,7.00 days,,false,false,lax,false,Declared & set,,Lotame
+Behavioral Advertising,banner,Ketch,panoramaIdType,.time.com,/,First party,7.00 days,,false,false,lax,false,Declared & set,,Lotame
+Behavioral Advertising,banner,Ketch,_pprv,.time.com,/,First party,395.00 days,394 days,false,true,lax,false,Declared & set,,
+Essential Services,banner,Ketch,_pcid,.time.com,/,First party,395.00 days,394 days,false,true,lax,false,Declared & set,,
+Essential Services,banner,Ketch,_pctx,.time.com,/,First party,395.00 days,394 days,false,true,lax,false,Declared & set,,
+Unclassified,none,,usprivacy,.time.com,/,First party,30.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,us_privacy,.time.com,/,First party,30.00 days,,false,true,none,false,"Declared, conflicting",,
+Analytics,banner,Ketch,compass_uid,.time.com,/,First party,179.96 days,179 days,false,true,unspecified,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,10024_u,.newsroom.bi,/,Third party,180.00 days,184 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,10024_s,.newsroom.bi,/,Third party,Session,,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,10024_lv,.newsroom.bi,/,Third party,30.00 days,34 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,10024_ut,.newsroom.bi,/,Third party,30.00 days,34 days,true,true,none,false,Declared & set,,
+Unclassified,none,,i,.openx.net,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,___nrbi,.time.com,/,First party,179.96 days,179 days,false,true,unspecified,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Behavioral Advertising,banner,Ketch,TDID,.adsrvr.org,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,theTradeDesk
+Behavioral Advertising,banner,Ketch,A3,.yahoo.com,/,Third party,365.25 days,365 days,true,true,none,false,Declared & set,,Yahoo! Ads
+Behavioral Advertising,banner,Ketch,ad-id,.amazon-adsystem.com,/,Third party,232.00 days,237 days,true,true,none,false,Declared & set,,Amazon Ads
+Unclassified,none,,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,,true,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,CMID,.casalemedia.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Index Exchange
+Behavioral Advertising,banner,Ketch,CMPS,.casalemedia.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,Index Exchange
+Behavioral Advertising,banner,Ketch,CMPRO,.casalemedia.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,Index Exchange
+Behavioral Advertising,banner,Ketch,khaos,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Magnite
+Behavioral Advertising,banner,Ketch,khaos_p,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Magnite
+Unclassified,none,,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,,true,true,none,true,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,tluid,.3lift.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,TripleLift
+Behavioral Advertising,banner,Ketch,visitor,.postrelease.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Nativo
+Unclassified,none,,status,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,pid,.smartadserver.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Equativ (Smartadserver)
+Behavioral Advertising,banner,Ketch,vst,.gumgum.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,gumgum
+Behavioral Advertising,banner,Ketch,wrvUserID,.yellowblue.io,/,Third party,30.00 days,30 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,visitor-id,.media.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Media.net
+Unclassified,none,,ver,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,ruds,.rfihub.com,/,Third party,Session,,false,true,none,false,Declared & set,,Zeta Global
+Behavioral Advertising,banner,Ketch,rud,.rfihub.com,/,Third party,390.00 days,400 days,false,true,none,false,Declared & set,,Zeta Global
+Behavioral Advertising,banner,Ketch,CDIUSER,.deepintent.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,deepintent
+Behavioral Advertising,banner,Ketch,b,.blismedia.com,/,Third party,365.05 days,365 days,false,true,none,false,Declared & set,,T-Mobile Ads
+Behavioral Advertising,banner,Ketch,C,.adform.net,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,,Adform
+Unclassified,none,,OTP,.onetag-sys.com,/,Third party,395.68 days,,false,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,__uis,.go.sonobi.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,sonobi
+Behavioral Advertising,banner,Ketch,ljt_reader,.lijit.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Sovrn
+Behavioral Advertising,banner,Ketch,everest_g_v2,.everesttech.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Adobe Advertising
+Unclassified,none,,uid,.adform.net,/,Third party,60.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,sa-user-id,sync.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Behavioral Advertising,banner,Ketch,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Behavioral Advertising,banner,Ketch,sa-user-id-v2,sync.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Behavioral Advertising,banner,Ketch,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Analytics,banner,Ketch,sa-user-id-v4,sync.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Analytics,banner,Ketch,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Unclassified,none,,V,.contextweb.com,/,Third party,360.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,VP,.contextweb.com,/,Third party,360.00 days,360 days,false,true,none,true,Declared & set,,Pulsepoint
+Behavioral Advertising,banner,Ketch,INGRESSCOOKIE,bh.contextweb.com,/,Third party,Session,,true,true,none,false,Declared & set,,Pulsepoint
+Behavioral Advertising,banner,Ketch,tuuid,.360yield.com,/,Third party,90.00 days,365 days,true,true,none,false,Declared & set,,Demandbase
+Unclassified,none,,obuid,.outbrain.com,/,Third party,90.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,tuuid,.bidswitch.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Demandbase
+Behavioral Advertising,banner,Ketch,c,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,tinuiti
+Behavioral Advertising,banner,Ketch,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,Demandbase
+Behavioral Advertising,banner,Ketch,zeta-ssp-user-id,.disqus.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,presage-ssp,.presage.io,/,Third party,183.00 days,183 days,true,true,none,false,Declared & set,,Ogury
+Unclassified,none,,cid_ec6a386eb84247039aeb2fcfa717dd82,.ctnsnet.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,st_uid,.seedtag.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Seedtag
+Behavioral Advertising,banner,Ketch,st_usi,.seedtag.com,/,Third party,Session,,false,true,none,false,Declared & set,,Seedtag
+Behavioral Advertising,banner,Ketch,cu,.ipredictive.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Adelphic (by Viant)
+Behavioral Advertising,banner,Ketch,TEST-COOKIE,.inmobi.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Inmobi
+Behavioral Advertising,banner,Ketch,bitoIsSecure,.bidr.io,/,Third party,394.79 days,394 days,false,true,none,false,Declared & set,,Beeswax (by Freewheel)
+Behavioral Advertising,banner,Ketch,bito,.bidr.io,/,Third party,394.79 days,394 days,false,true,none,false,Declared & set,,Beeswax (by Freewheel)
+Behavioral Advertising,banner,Ketch,c,.mfadsrvr.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,tinuiti
+Behavioral Advertising,banner,Ketch,tuuid_lu,.mfadsrvr.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,Demandbase
+Behavioral Advertising,banner,Ketch,instUid,.ingage.tech,/,Third party,0.09 days,,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,iid,.inmobi.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Inmobi
+Behavioral Advertising,banner,Ketch,visitor-id,.trustedstack.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Media.net
+Unclassified,none,,uid,.criteo.com,/,Third party,390.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,xeadiu,.pmbmonetize.live,/,Third party,7.00 days,7 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,s-249,.pmbmonetize.live,/,Third party,7.00 days,11 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,tuuid,.mfadsrvr.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Demandbase
+Behavioral Advertising,banner,Ketch,_rxuuid,.targeting.unrulymedia.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,Unruly (by Nexxen)
+Unclassified,none,,uid,.turn.com,/,Third party,180.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,_uid,.fwmrm.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,KADUSERCOOKIE,.pubmatic.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,90 days,false,true,none,true,Declared & set,,Microsoft Ads
+Behavioral Advertising,banner,Ketch,uuid2,.adnxs.com,/,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,Microsoft Ads
+Behavioral Advertising,banner,Ketch,yieldmo_id,.yieldmo.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Yieldmo
+Unclassified,none,,viewer_token,.csync.loopme.me,/,Third party,90.00 days,,true,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,ts,.creativecdn.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Taboola
+Behavioral Advertising,banner,Ketch,g,.creativecdn.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Taboola
+Behavioral Advertising,banner,Ketch,data-pbs,.media.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Media.net
+Behavioral Advertising,banner,Ketch,SCM,.smaato.net,/,Third party,21.00 days,21 days,false,true,none,false,Declared & set,,Smaato
+Behavioral Advertising,banner,Ketch,SCMrise,.smaato.net,/,Third party,21.00 days,21 days,false,true,none,false,Declared & set,,Smaato
+Behavioral Advertising,banner,Ketch,zuuid,.sportradarserving.com,/,Third party,364.00 days,363 days,false,true,none,false,Declared & set,,Sportrader
+Behavioral Advertising,banner,Ketch,c,.sportradarserving.com,/,Third party,364.00 days,364 days,false,true,none,false,Declared & set,,tinuiti
+Behavioral Advertising,banner,Ketch,zuuid_lu,.sportradarserving.com,/,Third party,364.00 days,363 days,false,true,none,false,Declared & set,,Sportrader
+Behavioral Advertising,banner,Ketch,admtr,.admanmedia.com,/,Third party,7.00 days,6 days,true,true,none,false,Declared & set,,Adman Media
+Behavioral Advertising,banner,Ketch,zuuid_k,.sportradarserving.com,/,Third party,364.00 days,363 days,false,true,none,false,Declared & set,,Sportrader
+Behavioral Advertising,banner,Ketch,zuuid_k_lu,.sportradarserving.com,/,Third party,364.00 days,363 days,false,true,none,false,Declared & set,,Sportrader
+Behavioral Advertising,banner,Ketch,33x_ps,.33across.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,33across
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_80,.pubmatic.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,cto_bundle,.time.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Criteo
+Behavioral Advertising,banner,Ketch,st_par,.seedtag.com,/,Third party,360.00 days,360 days,false,true,none,false,Declared & set,,Seedtag
+Unclassified,none,,receive-cookie-deprecation,.360yield.com,/,Third party,180.00 days,,true,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,TapAd_TS,.tapad.com,/,Third party,60.00 days,400 days,false,true,none,false,Declared & set,,Tapad (by Experian)
+Behavioral Advertising,banner,Ketch,TapAd_DID,.tapad.com,/,Third party,60.00 days,400 days,false,true,none,false,Declared & set,,Tapad (by Experian)
+Unclassified,none,,uid,syncingbridge.com,/,Third party,25.00 days,,true,true,none,false,"Declared, conflicting",,
+Unclassified,none,,gdpr,syncingbridge.com,/,Third party,0.04 days,,true,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Pubmatic
+Unclassified,none,,ssi,.sitescout.com,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,suid,.simpli.fi,/,Third party,366.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,_sv3_7,.a-mo.net,/,Third party,1.00 days,1 days,true,true,none,false,Declared & set,,Monet Engine Inc (AdaptMX)
+Unclassified,none,,p_sv3_7,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,amuid2,.a-mo.net,/,Third party,365.00 days,,true,true,none,false,"Declared, conflicting",,
+Unclassified,none,,sd_amuid2,.sync.a-mo.net,/,Third party,365.00 days,,true,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,pamuid2,.a-mo.net,/,Third party,365.00 days,365 days,true,true,none,true,Declared & set,,Monet Engine Inc (AdaptMX)
+Behavioral Advertising,banner,Ketch,psd_amuid2,.sync.a-mo.net,/,Third party,365.00 days,365 days,true,true,none,true,Declared & set,,Monet Engine Inc (AdaptMX)
+Behavioral Advertising,banner,Ketch,_li_dcdm_c,.time.com,/,First party,Session,,false,false,lax,false,Declared & set,,Live Intent
+Unclassified,none,,_lc2_fpi,.time.com,/,First party,400.00 days,,false,false,lax,false,"Declared, conflicting",,
+Analytics,banner,Ketch,_lc2_fpi_meta,.time.com,/,First party,400.00 days,400 days,false,false,lax,false,Declared & set,,Live Intent
+Behavioral Advertising,banner,Ketch,sharedID,.time.com,/,First party,30.00 days,29 days,false,false,lax,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,_lr_retry_request,time.com,/,First party,0.04 days,,false,false,unspecified,false,Declared & set,,LiveRamp
+Unclassified,none,,_lr_env_src_ats,time.com,/,First party,30.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,tuuid,.creative-serving.com,/,Third party,360.00 days,365 days,false,true,none,false,Declared & set,,Demandbase
+Behavioral Advertising,banner,Ketch,c,.creative-serving.com,/,Third party,360.00 days,364 days,false,true,none,false,Declared & set,,tinuiti
+Behavioral Advertising,banner,Ketch,tuuid_lu,.creative-serving.com,/,Third party,360.00 days,364 days,false,true,none,false,Declared & set,,Demandbase
+Behavioral Advertising,banner,Ketch,__mguid_,.mediagotechnology.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,mediago
+Behavioral Advertising,banner,Ketch,dsp_64,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,OAU,.opera.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Opera
+Behavioral Advertising,banner,Ketch,csuuid,.primis.tech,/,Third party,25.00 days,25 days,false,true,none,false,Declared & set,,primis.tech
+Behavioral Advertising,banner,Ketch,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LinkedIn  
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_1251,.pubmatic.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_860,.pubmatic.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_148,.pubmatic.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_452,.pubmatic.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,demdex,.demdex.net,/,Third party,180.00 days,180 days,false,true,none,false,Declared & set,,Adobe Audience Manager
+Behavioral Advertising,banner,Ketch,dsp_22,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Analytics,banner,Ketch,dpm,.dpm.demdex.net,/,Third party,180.00 days,180 days,false,true,none,false,Declared & set,,Adobe Audience Manager
+Behavioral Advertising,banner,Ketch,lidid,.liadm.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Live Intent
+Behavioral Advertising,banner,Ketch,intentIQ,.intentiq.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,IntentIQ
+Analytics,banner,Ketch,IQver,.intentiq.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,IntentIQ
+Analytics,banner,Ketch,intentIQCDate,.intentiq.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,IntentIQ
+Behavioral Advertising,banner,Ketch,dsp_4,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Unclassified,none,,IQMID,.intentiq.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,did,.pippio.com,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,didts,.pippio.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LiveRamp
+Behavioral Advertising,banner,Ketch,nnls,.pippio.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,LiveRamp
+Behavioral Advertising,banner,Ketch,pxrc,.pippio.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,LiveRamp
+Behavioral Advertising,banner,Ketch,st_ssp,.seedtag.com,/,Third party,30.00 days,30 days,true,true,none,false,Declared & set,,Seedtag
+Behavioral Advertising,banner,Ketch,dsp_97,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,dsp_20,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,st_cs,.seedtag.com,/,Third party,360.00 days,360 days,false,true,none,false,Declared & set,,Seedtag
+Behavioral Advertising,banner,Ketch,ktcid,.kargo.com,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,,Kargo
+Behavioral Advertising,banner,Ketch,UTID,.undertone.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Undertone
+Behavioral Advertising,banner,Ketch,vdz_sync,.undertone.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Perion
+Behavioral Advertising,banner,Ketch,UTID_ENC,.undertone.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Undertone
+Unclassified,none,,receive-cookie-deprecation,prebid.media.net,/,Third party,180.00 days,,true,true,none,true,"Declared, conflicting",,
+Unclassified,none,,dsp_43,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,dsp_79,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,dsp_55,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,s-248,.pmbmonetize.live,/,Third party,0.25 days,7 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,dsp_71,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,dsp_48,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,sw_marker,.smilewanted.com,/,Third party,365.24 days,365 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,__gads,.time.com,/,First party,390.00 days,389 days,false,true,none,false,Declared & set,,Google Ads
+Analytics,banner,Ketch,__gpi,.time.com,/,First party,390.00 days,389 days,false,true,none,false,Declared & set,,Google Ads
+Unclassified,none,,__eoi,.time.com,/,First party,180.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,copr_key,.copper6.com,/,Third party,14.00 days,13 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,copr_red,.copper6.com,/,Third party,14.00 days,13 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,pi,.ml314.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,uids,.pbs.yahoo.com,/,Third party,182.00 days,181 days,true,true,none,false,Declared & set,,Microsoft Ads
+Unclassified,none,,usp_status,.media.net,/,Third party,185.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,ab,.agkn.com,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,usp_status,.trustedstack.com,/,Third party,185.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_699,.pubmatic.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,adtheorent[cuid],.adentifi.com,/,Third party,400.00 days,,false,true,none,false,Declared & set,,AdTheorent
+Behavioral Advertising,banner,Ketch,t_gid,.taboola.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Taboola
+Behavioral Advertising,banner,Ketch,t_pt_gid,.taboola.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Taboola
+Unclassified,none,,data-mlb,.trustedstack.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,u,.agkn.com,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,vdz_sync,.cootlogix.com,/,Third party,30.00 days,365 days,false,true,none,false,Declared & set,,Perion
+Behavioral Advertising,banner,Ketch,data-cl,.media.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Media.net
+Behavioral Advertising,banner,Ketch,data-ttd,.media.net,/,Third party,14.00 days,14 days,false,true,none,false,Declared & set,,Media.net
+Behavioral Advertising,banner,Ketch,data-ze,.media.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Media.net
+Behavioral Advertising,banner,Ketch,data-g,.media.net,/,Third party,14.00 days,14 days,false,true,none,false,Declared & set,,Media.net
+Behavioral Advertising,banner,Ketch,data-mgt,.trustedstack.com,/,Third party,10.00 days,11 days,false,true,none,false,Declared & set,,Media.net
+Behavioral Advertising,banner,Ketch,iqm.retarget.uid,.pxl.iqm.com,/,Third party,15.00 days,15 days,false,true,none,false,Declared & set,,IQM
+Behavioral Advertising,banner,Ketch,roqad,.pxl.iqm.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,Roq Ad
+Behavioral Advertising,banner,Ketch,liveramp,.pxl.iqm.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LiveRamp
+Behavioral Advertising,banner,Ketch,semcasting,.pxl.iqm.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,IQM
+Behavioral Advertising,banner,Ketch,data-mf,.media.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Media.net
+Behavioral Advertising,banner,Ketch,data-tsm,.trustedstack.com,/,Third party,365.00 days,366 days,false,true,none,false,Declared & set,,TrustedStack
+Behavioral Advertising,banner,Ketch,data-di,.media.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Media.net
+Behavioral Advertising,banner,Ketch,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Tapad (by Experian)
+Behavioral Advertising,banner,Ketch,UID_EXT_46,.undertone.com,/,Third party,365.24 days,365 days,false,true,none,false,Declared & set,,Undertone
+Behavioral Advertising,banner,Ketch,flashtalkingad1,.flashtalking.com,/,Third party,395.42 days,397 days,false,true,none,false,Declared & set,,Flashtalking
+Behavioral Advertising,banner,Ketch,SCM1126,.smaato.net,/,Third party,21.00 days,25 days,false,true,none,false,Declared & set,,Smaato
+Behavioral Advertising,banner,Ketch,SCMill,.smaato.net,/,Third party,21.00 days,21 days,false,true,none,false,Declared & set,,Smaato
+Behavioral Advertising,banner,Ketch,data-mts,.media.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Media.net
+Behavioral Advertising,banner,Ketch,indexch,.pxl.iqm.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,IQM
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_1097,.pubmatic.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,adx,.pxl.iqm.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,IQM
+Behavioral Advertising,banner,Ketch,data-rbh,.media.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Media.net
+Behavioral Advertising,banner,Ketch,data-rk,.media.net,/,Third party,364.00 days,364 days,false,true,none,false,Declared & set,,Media.net
+Unclassified,none,,tvid,.tremorhub.com,/,Third party,365.24 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,tv_UIIQ,.tremorhub.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Magnite
+Behavioral Advertising,banner,Ketch,1_C_212,.aniview.com,/,Third party,10.00 days,9 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,1_C_212,sync.aniview.com,/,Third party,10.00 days,9 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,__191_cid,.bfmio.com,/,Third party,365.00 days,369 days,false,true,none,false,Declared & set,,Seedtag
+Analytics,banner,Ketch,__io_cid,.bfmio.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Seedtag
+Behavioral Advertising,banner,Ketch,data-co,.media.net,/,Third party,364.00 days,364 days,false,true,none,false,Declared & set,,Media.net
+Unclassified,none,,browser_id,.rqtrk.eu,/,Third party,7.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,_nauid,.nrich.ai,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,N.Rich
+Unclassified,none,,mc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,"Declared, conflicting",,
+Analytics,banner,Ketch,sc,.thrtle.com,/,Third party,200.00 days,199 days,false,true,none,false,Declared & set,,Throtle
+Behavioral Advertising,banner,Ketch,pubmatic,.pxl.iqm.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,Pubmatic
+Analytics,banner,Ketch,YSC,.youtube.com,/,Third party,Session,,true,true,none,true,Declared & set,,Google Youtube
+Unclassified,none,,VISITOR_INFO1_LIVE,.youtube.com,/,Third party,180.00 days,,true,true,none,true,"Declared, conflicting",,
+Analytics,banner,Ketch,VISITOR_PRIVACY_METADATA,.youtube.com,/,Third party,180.00 days,179 days,true,true,none,true,Declared & set,,Google Youtube
+Behavioral Advertising,banner,Ketch,telaria,.pxl.iqm.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,IQM
+Behavioral Advertising,banner,Ketch,gckp,.cxense.com,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,_scor_uid,.time.com,/,First party,390.00 days,389 days,false,true,none,false,Declared & set,,Comscore
+Behavioral Advertising,banner,Ketch,__pid,.time.com,/,First party,30.00 days,29 days,false,true,lax,false,Declared & set,,
+Analytics,banner,Ketch,__pat,.time.com,/,First party,30.00 days,29 days,false,false,lax,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,tads_uid,.technoratimedia.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Synacor
+Behavioral Advertising,banner,Ketch,tads_uid_cd,.technoratimedia.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Synacor
+Behavioral Advertising,banner,Ketch,tads_zora,.technoratimedia.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Synacor
+Behavioral Advertising,banner,Ketch,s-175,.pmbmonetize.live,/,Third party,0.25 days,11 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,_sv3_14,.a-mo.net,/,Third party,1.00 days,1 days,true,true,none,false,Declared & set,,Monet Engine Inc (AdaptMX)
+Unclassified,none,,p_sv3_14,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Behavioral Advertising,banner,Ketch,_sv3_6,.a-mo.net,/,Third party,1.00 days,1 days,true,true,none,false,Declared & set,,Monet Engine Inc (AdaptMX)
+Unclassified,none,,p_sv3_6,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Behavioral Advertising,banner,Ketch,tads_uidp_98,.technoratimedia.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Synacor
+Behavioral Advertising,banner,Ketch,tads_uidp_79,.technoratimedia.com,/,Third party,3.00 days,7 days,false,true,none,false,Declared & set,,Synacor
+Behavioral Advertising,banner,Ketch,tads_uidp_64,.technoratimedia.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Synacor
+Behavioral Advertising,banner,Ketch,tads_uidp_82,.technoratimedia.com,/,Third party,3.00 days,7 days,false,true,none,false,Declared & set,,Synacor
+Unclassified,none,,tads_uidp_106,.technoratimedia.com,/,Third party,3.00 days,,false,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,SSPZ,.adkernel.com,/,Third party,Session,,false,true,none,false,Declared & set,,AdKernal
+Behavioral Advertising,banner,Ketch,DSP2F_40,.adkernel.com,/,Third party,Session,,false,true,none,false,Declared & set,,AdKernal
+Unclassified,none,,ADKUID,.adkernel.com,/,Third party,30.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,admRtbUidCkey34334Ssp245,.s3xified.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,tads_uidp_88,.technoratimedia.com,/,Third party,3.00 days,7 days,false,true,none,false,Declared & set,,Synacor
+Unclassified,none,,tads_uidp_77,.technoratimedia.com,/,Third party,3.00 days,,false,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,tads_uidp_7,.technoratimedia.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Synacor
+Behavioral Advertising,banner,Ketch,tads_uidp_50,.technoratimedia.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Synacor
+Behavioral Advertising,banner,Ketch,bcu,.marphezis.com,/,Third party,30.00 days,29 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,tads_uidp_101,.technoratimedia.com,/,Third party,3.00 days,7 days,false,true,none,false,Declared & set,,Synacor
+Unclassified,none,,tads_uidp_109,.technoratimedia.com,/,Third party,3.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mc,.quantserve.com,/,Third party,395.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,wrvUserID,.minutemedia-prebid.com,/,Third party,30.00 days,30 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,tads_uidp_100,.technoratimedia.com,/,Third party,3.00 days,7 days,false,true,none,false,Declared & set,,Synacor
+Analytics,banner,Ketch,sw_user_params_infos,.smilewanted.com,/,Third party,365.24 days,365 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,tads_uidp_103,.technoratimedia.com,/,Third party,3.00 days,7 days,false,true,none,false,Declared & set,,Synacor
+Behavioral Advertising,banner,Ketch,tads_uidp_102,.technoratimedia.com,/,Third party,3.00 days,7 days,false,true,none,false,Declared & set,,Synacor
+Behavioral Advertising,banner,Ketch,tads_uidp_62,.technoratimedia.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Synacor
+Behavioral Advertising,banner,Ketch,tads_uidp_96,.technoratimedia.com,/,Third party,3.00 days,7 days,false,true,none,false,Declared & set,,Synacor
+Behavioral Advertising,banner,Ketch,_sv3_17,.a-mo.net,/,Third party,1.00 days,1 days,true,true,none,false,Declared & set,,Monet Engine Inc (AdaptMX)
+Unclassified,none,,p_sv3_17,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,tads_uidp_105,.technoratimedia.com,/,Third party,3.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,cb,.clickagy.com,/,Third party,400.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,chs,aorta.clickagy.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,ZoomInfo
+Behavioral Advertising,banner,Ketch,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Behavioral Advertising,banner,Ketch,MR,.c.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Unclassified,none,,uid,.tynt.com,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,_sv3_13,.a-mo.net,/,Third party,1.00 days,1 days,true,true,none,false,Declared & set,,Monet Engine Inc (AdaptMX)
+Unclassified,none,,p_sv3_13,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Behavioral Advertising,banner,Ketch,tads_uidp_44,.technoratimedia.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Synacor
+Behavioral Advertising,banner,Ketch,auid,.acuityplatform.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,Acuity Scheduling
+Behavioral Advertising,banner,Ketch,tads_uidp_99,.technoratimedia.com,/,Third party,3.00 days,7 days,false,true,none,false,Declared & set,,Synacor
+Unclassified,none,,uid,.ssp.cadent.com,/,Third party,90.00 days,,true,true,none,false,"Declared, conflicting",,
+Unclassified,none,,new_app,.ssp.cadent.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,cto_bundle,.criteo.com,/,Third party,390.00 days,389 days,false,true,none,true,Declared & set,,Criteo
+Unclassified,none,,amuid2,.a-mx.com,/,Third party,365.00 days,,true,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,amuid2_p,.a-mx.com,/,Third party,365.00 days,365 days,true,true,none,true,Declared & set,,Monet Engine Inc (AdaptMX)
+Behavioral Advertising,banner,Ketch,amdt_t,.a-mx.com,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,,Monet Engine Inc (AdaptMX)
+Behavioral Advertising,banner,Ketch,amdt_t_p,.a-mx.com,/,Third party,365.00 days,365 days,true,true,none,true,Declared & set,,
+Unclassified,none,,sd_amuid2,.prebid.a-mo.net,/,Third party,365.00 days,,true,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,psd_amuid2,.prebid.a-mo.net,/,Third party,365.00 days,365 days,true,true,none,true,Declared & set,,Monet Engine Inc (AdaptMX)
+Behavioral Advertising,banner,Ketch,_sv3_0,.a-mo.net,/,Third party,1.00 days,1 days,true,true,none,false,Declared & set,,Monet Engine Inc (AdaptMX)
+Unclassified,none,,p_sv3_0,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Behavioral Advertising,banner,Ketch,tads_uidp_49,.technoratimedia.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Synacor
+Behavioral Advertising,banner,Ketch,uids,.adnxs.com,/,Third party,90.00 days,181 days,true,true,none,false,Declared & set,,Microsoft Ads
+Behavioral Advertising,banner,Ketch,st_csd,.seedtag.com,/,Third party,360.00 days,360 days,false,true,none,false,Declared & set,,Seedtag
+Behavioral Advertising,banner,Ketch,pids,.tynt.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,33across
+Essential Services,banner,Ketch,new,syncingbridge.com,/,Third party,14.00 days,20 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,ssplink,syncingbridge.com,/,Third party,0.01 days,,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,SCM1124,.smaato.net,/,Third party,21.00 days,24 days,false,true,none,false,Declared & set,,Smaato
+Behavioral Advertising,banner,Ketch,SCMopr,.smaato.net,/,Third party,21.00 days,21 days,false,true,none,false,Declared & set,,Smaato
+Behavioral Advertising,banner,Ketch,SCMinmobi,.smaato.net,/,Third party,21.00 days,21 days,false,true,none,false,Declared & set,,Smaato
+Unclassified,none,,sd_amuid2,.use3-sync.a-mo.net,/,Third party,365.00 days,,true,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,psd_amuid2,.use3-sync.a-mo.net,/,Third party,365.00 days,365 days,true,true,none,true,Declared & set,,Monet Engine Inc (AdaptMX)
+Behavioral Advertising,banner,Ketch,_sv3_4,.a-mo.net,/,Third party,1.00 days,1 days,true,true,none,false,Declared & set,,Monet Engine Inc (AdaptMX)
+Unclassified,none,,p_sv3_4,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Behavioral Advertising,banner,Ketch,xeroid,.rbstsystems.live,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,,
+Unclassified,none,,xeroid_311,.rbstsystems.live,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,_sv3_3,.a-mo.net,/,Third party,1.00 days,1 days,true,true,none,false,Declared & set,,Monet Engine Inc (AdaptMX)
+Unclassified,none,,p_sv3_3,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,tads_uidp_110,.technoratimedia.com,/,Third party,3.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_sv3_11,.a-mo.net,/,Third party,1.00 days,,true,true,none,false,"Declared, conflicting",,
+Unclassified,none,,p_sv3_11,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Behavioral Advertising,banner,Ketch,mako_uid,.eyeota.net,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,Eyeota
+Behavioral Advertising,banner,Ketch,SERVERID,.eyeota.net,/,Third party,0.01 days,,true,true,none,false,Declared & set,,Eyeota
+Behavioral Advertising,banner,Ketch,tads_uidp_61,.technoratimedia.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Synacor
+Behavioral Advertising,banner,Ketch,_sv3_8,.a-mo.net,/,Third party,1.00 days,1 days,true,true,none,false,Declared & set,,Monet Engine Inc (AdaptMX)
+Unclassified,none,,p_sv3_8,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Behavioral Advertising,banner,Ketch,topon_identity,.anyrtb.com,/,Third party,2.00 days,1 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,ym_user_cookie,.ymmobi.com,/,Third party,360.00 days,360 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,lluid,.ortb.net,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,llum,.ortb.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,
+Unclassified,none,,GLOBALID,.bttrack.com,/,Third party,90.00 days,,false,true,none,false,"Declared, conflicting",,
+Analytics,banner,Ketch,pili_key,.pinklion.io,/,Third party,14.00 days,13 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,pili_red,.pinklion.io,/,Third party,14.00 days,13 days,true,true,none,false,Declared & set,,
+Unclassified,none,,xeroid_3111222,.rbstsystems.live,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,IDSYNC,.analytics.yahoo.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Yahoo! Ads
+Analytics,banner,Ketch,pd_key,.playdigo.com,/,Third party,14.00 days,13 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,pd_red,.playdigo.com,/,Third party,14.00 days,13 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,rxid,.plusoneads.com,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,_rxuuid,.1rx.io,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,Unruly (by Nexxen)
+Behavioral Advertising,banner,Ketch,ids,syncingbridge.com,/,Third party,0.01 days,,true,true,none,false,Declared & set,,
+Unclassified,none,,did,syncingbridge.com,/,Third party,14.00 days,,true,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,tads_uidp_95,.technoratimedia.com,/,Third party,3.00 days,7 days,false,true,none,false,Declared & set,,Synacor
+Analytics,banner,Ketch,vid,.hybrid.ai,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,IMRID,.imrworldwide.com,/,Third party,390.00 days,390 days,false,true,none,false,Declared & set,,Nielsen
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ccpa,.contextweb.com,/,Third party,30.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,__eDId,.eskimi.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_218,.pubmatic.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Pubmatic
+Unclassified,none,,data-ont,.trustedstack.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_22,.pubmatic.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_964,.pubmatic.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_279,.pubmatic.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,GRV_openx,.groovinads.com,/,Third party,3.00 days,3 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_32,.pubmatic.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Pubmatic
+Unclassified,none,,_sv3_18,.amx1.net,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,p_sv3_18,.amx1.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,amuid2,.amx1.net,/,Third party,365.00 days,,true,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,pamuid2,.amx1.net,/,Third party,365.00 days,365 days,true,true,none,true,Declared & set,,Monet Engine Inc (AdaptMX)
+Unclassified,none,,cookie,.onaudience.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,done_redirects297,.onaudience.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,ac_r,.admanmedia.com,/,Third party,7.00 days,6 days,true,true,none,false,Declared & set,,Adman Media
+Unclassified,none,,UID,beacon.lynx.cognitivlabs.com,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,__eDSync,.eskimi.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_466,.pubmatic.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_1278,.pubmatic.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_1323,.pubmatic.com,/,Third party,60.00 days,13 days,false,true,none,false,Declared & set,,Pubmatic
+Unclassified,none,,ss,beacon.lynx.cognitivlabs.com,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,SEUNCY,.semasio.net,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,id5,.id5-sync.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,ID5
+Behavioral Advertising,banner,Ketch,tuuid,pool.liftdsp.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Demandbase
+Behavioral Advertising,banner,Ketch,c,pool.liftdsp.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,tinuiti
+Behavioral Advertising,banner,Ketch,tuuid_lu,pool.liftdsp.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,Demandbase
+Behavioral Advertising,banner,Ketch,um,.360yield.com,/,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,Improve Digital
+Behavioral Advertising,banner,Ketch,umeh,.360yield.com,/,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,Improve Digital
+Unclassified,none,,done_redirects271,.onaudience.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,anj,.adnxs.com,/,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,Microsoft Ads
+Unclassified,none,,HAPLB8G,.go.sonobi.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,3pi,.id5-sync.com,/,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,ID5
+Unclassified,none,,cf,.id5-sync.com,/,Third party,0.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,cip,.id5-sync.com,/,Third party,0.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,cnac,.id5-sync.com,/,Third party,0.00 days,,false,true,none,false,Declared & set,,ID5
+Unclassified,none,,car,.id5-sync.com,/,Third party,0.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,gdpr,.id5-sync.com,/,Third party,0.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,ssh,.mfadsrvr.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,IponWeb (by Criteo)
+Behavioral Advertising,banner,Ketch,cnx_userId,.connatix.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,,connatix
+Behavioral Advertising,banner,Ketch,tuuid,.company-target.com,/,Third party,396.00 days,365 days,true,true,none,false,Declared & set,,Demandbase
+Behavioral Advertising,banner,Ketch,tuuid_lu,.company-target.com,/,Third party,396.00 days,364 days,true,true,none,false,Declared & set,,Demandbase
+Unclassified,none,,ayl_visitor,.omnitagjs.com,/,Third party,30.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,ADGRX_UID,.adgrx.com,/,Third party,395.00 days,395 days,true,true,none,false,Declared & set,,Samsung Ads
+Unclassified,none,,ADGRX_CM_RUBICON_BRIDGED,.adgrx.com,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,data-apm,.trustedstack.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,U,.storygize.net,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,storygize
+Behavioral Advertising,banner,Ketch,DotomiTest,.dotomi.com,/,Third party,0.00 days,,false,true,none,false,Declared & set,,Dotomi (by epsilon)
+Behavioral Advertising,banner,Ketch,uids,s2s.t13.io,/,Third party,90.00 days,181 days,false,true,none,false,Declared & set,,Microsoft Ads
+Behavioral Advertising,banner,Ketch,p_uid,.getpublica.com,/,Third party,60.00 days,60 days,false,true,none,false,Declared & set,,Integral Ad Sciences
+Behavioral Advertising,banner,Ketch,nm_syncedBidders,cookies.nextmillmedia.com,/,Third party,7.00 days,7 days,false,true,none,false,Declared & set,,
+Essential Services,banner,Ketch,nm_lastSync,cookies.nextmillmedia.com,/,Third party,Session,,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,nm_rubicon,.nextmillmedia.com,/,Third party,365.00 days,368 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,chkChromeAb67Sec,.pubmatic.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,DPSync4,.pubmatic.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,Pubmatic
+Unclassified,none,,SyncRTB4,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,eud,.rfihub.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Zeta Global
+Unclassified,none,,_ssuma,.sitescout.com,/,Third party,30.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_18,.pubmatic.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,PugT,.pubmatic.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,data-pts,.trustedstack.com,/,Third party,365.00 days,366 days,false,true,none,false,Declared & set,,Media.net
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_188,.pubmatic.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_632,.pubmatic.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,,Pubmatic
+Behavioral Advertising,banner,Ketch,_3ci,.alcmpn.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,sessionid,.rkdms.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,Merkle
+Unclassified,none,,JSESSIONID,get.time.com,/,First party,Session,,true,true,unspecified,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,TS0170a69d,.get.time.com,/,First party,Session,,true,true,unspecified,false,Declared & set,,
+Unclassified,none,,TS0170a69d028,.get.time.com,/,First party,Session,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,TSf72222ab029,get.time.com,/,First party,0.00 days,,false,true,unspecified,false,Not declared,,
+Behavioral Advertising,banner,Ketch,_gcl_au,.time.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Analytics,banner,Ketch,_gid,.time.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Google Analytics
+Unclassified,none,,_gat_gtag_UA_97981691_1,.time.com,/,First party,0.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_uetsid,.time.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_uetvid,.time.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Behavioral Advertising,banner,Ketch,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Analytics,banner,Ketch,_ga,.time.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Unclassified,none,,xyz_cr_1266_et_100,.time.com,/,First party,7.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_swb_consent_,.time.com,/,First party,7.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Declared & set,,Facebook Ads
+Unclassified,none,,refresh-token,payments-api.cloud.buysub.com,/,Third party,0.08 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TSPD_101,get.time.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,TSecefb640027,get.time.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,LANG,.paypal.com,/,Third party,0.37 days,,true,true,none,false,Not declared,,
+Unclassified,none,,l7_az,.paypal.com,/,Third party,0.02 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ts_c,.paypal.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,enforce_policy,.paypal.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,ts,.paypal.com,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,,Taboola
+Unclassified,none,,nsid,www.paypal.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,x-pp-s,.paypal.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,tsrce,.paypal.com,/,Third party,3.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_ga_BYXXHFJF73,.time.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,TSf72222ab077,get.time.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Analytics,banner,Ketch,__pvi,.time.com,/,First party,1.00 days,,false,false,lax,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,___nrbic,.time.com,/,First party,179.96 days,179 days,false,true,unspecified,false,Declared & set,,
+Analytics,banner,Ketch,__tbc,.time.com,/,First party,400.00 days,400 days,false,false,lax,false,Declared & set,,
+Analytics,banner,Ketch,xbc,.time.com,/,First party,400.00 days,400 days,false,false,lax,false,Declared & set,,
+Analytics,banner,Ketch,cX_P,.time.com,/,First party,395.00 days,394 days,false,true,unspecified,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,sharedID_cst,.time.com,/,First party,30.00 days,29 days,false,false,lax,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,_ga_QF1KF20ZL1,.time.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,SPugT,.pubmatic.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,,Pubmatic
+Analytics,banner,Ketch,IQPData,.intentiq.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,IntentIQ
+Behavioral Advertising,banner,Ketch,dsp_94,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,data-lr-r,.media.net,/,Third party,0.00 days,,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,data-iqm-r,.media.net,/,Third party,0.00 days,,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,data-yh-r,.media.net,/,Third party,0.00 days,,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,data-dv-r,.media.net,/,Third party,0.00 days,,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,_knxq_,.brand-display.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,
+Unclassified,none,,pd,.openx.net,/,Third party,15.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,rlas3,.rlcdn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LiveRamp
+Behavioral Advertising,banner,Ketch,mnet,.pxl.iqm.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,IQM
+Behavioral Advertising,banner,Ketch,pxrc,.rlcdn.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,LiveRamp
+Behavioral Advertising,banner,Ketch,SCMo,.smaato.net,/,Third party,21.00 days,21 days,false,true,none,false,Declared & set,,Smaato
+Behavioral Advertising,banner,Ketch,uids,.prebid-server.rubiconproject.com,/,Third party,14.00 days,181 days,false,true,none,false,Declared & set,,Microsoft Ads
+Behavioral Advertising,banner,Ketch,ckbk,.resetdigital.co,/,Third party,90.00 days,91 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,aum,.acuityplatform.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Acuity Scheduling
+Behavioral Advertising,banner,Ketch,smart_usr,.shb-sync.com,/,Third party,104.00 days,9 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,smart_r,.shb-sync.com,/,Third party,104.00 days,9 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,1_C_5,.aniview.com,/,Third party,10.00 days,9 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,1_C_5,sync.aniview.com,/,Third party,10.00 days,9 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,dsp_30,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,uids,.media.net,/,Third party,90.00 days,181 days,false,true,none,false,Declared & set,,Microsoft Ads
+Analytics,banner,Ketch,acs,.media6degrees.com,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,,Dstillery
+Behavioral Advertising,banner,Ketch,ANON_ID,.tribalfusion.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Exponential
+Behavioral Advertising,banner,Ketch,mxpim,.mxptint.net,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Vericast
+Unclassified,none,,__Secure-YNID,.youtube.com,/,Third party,180.00 days,,true,true,none,true,"Declared, conflicting",,
+Unclassified,none,,__Secure-ROLLOUT_TOKEN,.youtube.com,/,Third party,180.00 days,,true,true,none,true,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,TDCPM,.adsrvr.org,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,theTradeDesk
+Unclassified,none,,DotomiUser,.dotomi.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,receive-cookie-deprecation,.dotomi.com,/,Third party,393.00 days,,true,true,none,true,"Declared, conflicting",,
+Unclassified,none,,sp,.quantserve.com,/,Third party,90.00 days,,false,true,none,false,"Declared, conflicting",,
+Behavioral Advertising,banner,Ketch,data-bs,.media.net,/,Third party,364.00 days,364 days,false,true,none,false,Declared & set,,Media.net
+Behavioral Advertising,banner,Ketch,dsp_3,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,uids,.ex.co,/,Third party,30.00 days,181 days,false,true,none,false,Declared & set,,Microsoft Ads
+Unclassified,none,,CONSUMABLEID,.serverbid.com,/,Third party,15.00 days,,false,true,none,false,Not declared,,
+Behavioral Advertising,banner,Ketch,tuuid_lu,.360yield.com,/,Third party,90.00 days,364 days,true,true,none,false,Declared & set,,Demandbase
+Behavioral Advertising,banner,Ketch,dsp_60,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,__ktpct,.adsby.bidtheatre.com,/,Third party,0.01 days,1 days,true,true,none,false,Declared & set,,
+Analytics,banner,Ketch,clid,.media6degrees.com,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,,Dstillery
+Behavioral Advertising,banner,Ketch,dsp_34,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,__kuid,.adsby.bidtheatre.com,/,Third party,7.00 days,8 days,false,true,none,false,Declared & set,,
+Behavioral Advertising,banner,Ketch,pb_rtb_ev,.contextweb.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Pulsepoint
+Analytics,banner,Ketch,pb_rtb_ev_part,.contextweb.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Pulsepoint
+Behavioral Advertising,banner,Ketch,dsp_80,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,audit_p,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Magnite
+Behavioral Advertising,banner,Ketch,audit,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Magnite
+Behavioral Advertising,banner,Ketch,dsp_29,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,dsp_69,.user-sync.fwmrm.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,CDIPARTNERS,.deepintent.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,deepintent
+Unclassified,none,,dsp_70,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Analytics,banner,Ketch,6suuid,,,,,400 days,,,,,"Declared, not set",,6sense
+Analytics,banner,Ketch,__aavt,,,,,400 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,abLdr,,,,,,,,,,"Declared, not set",,Taboola
+Analytics,banner,Ketch,ajs_anonymous_id,,,,,364 days,,,,,"Declared, not set",,Twilio Segment
+Analytics,banner,Ketch,ajs_user_id,,,,,,,,,,"Declared, not set",,Twilio Segment
+Analytics,banner,Ketch,am-uid,,,,,89 days,,,,,"Declared, not set",,AdKernal
+Analytics,banner,Ketch,aniC,,,,,29 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,ANONCHK,,,,,,,,,,"Declared, not set",,Microsoft Ads
+Analytics,banner,Ketch,au_3p_check,,,,,,,,,,"Declared, not set",,Audigent
+Analytics,banner,Ketch,_auid,,,,,365 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,AWSALBCORS,,,,,6 days,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Analytics,banner,Ketch,callback,,,,,,,,,,"Declared, not set",,ID5
+Analytics,banner,Ketch,_cb,,,,,394 days,,,,,"Declared, not set",,Chartbeat
+Analytics,banner,Ketch,_cb_svref,,,,,,,,,,"Declared, not set",,Chartbeat
+Analytics,banner,Ketch,_cbt,,,,,400 days,,,,,"Declared, not set",,Chartbeat
+Analytics,banner,Ketch,_cc_cc,,,,,270 days,,,,,"Declared, not set",,Lotame
+Analytics,banner,Ketch,cf_clearance,,,,,364 days,,,,,"Declared, not set",,Cloudflare
+Analytics,banner,Ketch,__cflb,,,,,,,,,,"Declared, not set",,Cloudflare
+Analytics,banner,Ketch,_cfuvid,,,,,,,,,,"Declared, not set",,Cloudflare
+Analytics,banner,Ketch,_chartbeat2,,,,,394 days,,,,,"Declared, not set",,Chartbeat
+Analytics,banner,Ketch,cid,,,,,364 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,cid_*,,,,,364 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,_clck,,,,,364 days,,,,,"Declared, not set",,Microsoft Clarity
+Analytics,banner,Ketch,CLID,,,,,364 days,,,,,"Declared, not set",,Microsoft Clarity
+Analytics,banner,Ketch,_clsk,,,,,,,,,,"Declared, not set",,Microsoft Clarity
+Analytics,banner,Ketch,co_key,,,,,13 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,cookies.js_dtest,,,,,,,,,,"Declared, not set",,Parse.ly(By WordPress)
+Analytics,banner,Ketch,cookietest,,,,,,,,,,"Declared, not set",,Shopify
+Analytics,banner,Ketch,_cookie_test,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,csrftoken,,,,,399 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,CT,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,cto_bidid,,,,,389 days,,,,,"Declared, not set",,Criteo
+Analytics,banner,Ketch,dd_cookie_test_*,,,,,,,,,,"Declared, not set",,Datadog
+Analytics,banner,Ketch,_dlt,,,,,,,,,,"Declared, not set",,Quantcast
+Analytics,banner,Ketch,E,,,,,400 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,EE,,,,,120 days,,,,,"Declared, not set",,Nielsen
+Analytics,banner,Ketch,FCCDCF,,,,,389 days,,,,,"Declared, not set",,Google Ads
+Analytics,banner,Ketch,FCNEC,,,,,364 days,,,,,"Declared, not set",,Google Ads
+Analytics,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,gdpr_consent,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,_gd*_sharedId,,,,,,,,,,"Declared, not set",,Prebid.org
+Analytics,banner,Ketch,gpcsignal,,,,,29 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,gpp,,,,,365 days,,,,,"Declared, not set",,ID5
+Analytics,banner,Ketch,guest_id_marketing,,,,,400 days,,,,,"Declared, not set",,Twitter Ads
+Analytics,banner,Ketch,ibkukiuno,,,,,364 days,,,,,"Declared, not set",,WPP
+Analytics,banner,Ketch,ipc,,,,,,,,,,"Declared, not set",,Pubmatic
+Analytics,banner,Ketch,KCCH,,,,,,,,,,"Declared, not set",,Pubmatic
+Analytics,banner,Ketch,LAST_RESULT_ENTRY_KEY,,,,,,,,,,"Declared, not set",,Google Youtube
+Analytics,banner,Ketch,_lc2_fpi_js,,,,,,,,,,"Declared, not set",,Live Intent
+Analytics,banner,Ketch,lux_uid,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,muidn,,,,,364 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,oo,,,,,400 days,,,,,"Declared, not set",,Zeta Global
+Analytics,banner,Ketch,OptanonConsent,,,,,,,,,,"Declared, not set",,OneTrust
+Analytics,banner,Ketch,optout,,,,,,,,,,"Declared, not set",,Criteo
+Analytics,banner,Ketch,OTGPPConsent,,,,,364 days,,,,,"Declared, not set",,OneTrust
+Analytics,banner,Ketch,_parsely_session,,,,,,,,,,"Declared, not set",,Parse.ly(By WordPress)
+Analytics,banner,Ketch,parsely_uuid,,,,,,,,,,"Declared, not set",,Parse.ly(By WordPress)
+Analytics,banner,Ketch,_parsely_visitor,,,,,395 days,,,,,"Declared, not set",,Parse.ly(By WordPress)
+Analytics,banner,Ketch,pdid,,,,,30 days,,,,,"Declared, not set",,Rich Audience
+Analytics,banner,Ketch,PMFREQ_ON,,,,,,,,,,"Declared, not set",,Pubmatic
+Analytics,banner,Ketch,psyn,,,,,30 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,RCID2,,,,,364 days,,,,,"Declared, not set",,Resonate Networks
+Analytics,banner,Ketch,Rp,,,,,29 days,,,,,"Declared, not set",,Rakuten Ads
+Analytics,banner,Ketch,sasd,,,,,,,,,,"Declared, not set",,Equativ
+Analytics,banner,Ketch,sasd2,,,,,,,,,,"Declared, not set",,Equativ
+Analytics,banner,Ketch,SCM*,,,,,21 days,,,,,"Declared, not set",,Smaato
+Analytics,banner,Ketch,SCMaps,,,,,21 days,,,,,"Declared, not set",,Smaato
+Analytics,banner,Ketch,SCMinf,,,,,21 days,,,,,"Declared, not set",,Smaato
+Analytics,banner,Ketch,__Secure-YEC,,,,,,,,,,"Declared, not set",,Google Youtube
+Analytics,banner,Ketch,session,,,,,180 days,,,,,"Declared, not set",,Dianomi
+Analytics,banner,Ketch,session_id,,,,,365 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,sglst,,,,,,,,,,"Declared, not set",,Dstillery
+Analytics,banner,Ketch,SM,,,,,,,,,,"Declared, not set",,Microsoft Clarity
+Analytics,banner,Ketch,SSPR_*,,,,,,,,,,"Declared, not set",,AdKernal
+Analytics,banner,Ketch,statid,,,,,400 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,stx_user_id,,,,,30 days,,,,,"Declared, not set",,Sharethrough
+Analytics,banner,Ketch,suid_legacy,,,,,365 days,,,,,"Declared, not set",,Simpli.fi
+Analytics,banner,Ketch,test,,,,,400 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Analytics,banner,Ketch,TESTCOOKIESENABLED,,,,,,,,,,"Declared, not set",,Google Ad Manager
+Analytics,banner,Ketch,TestIfCookieP,,,,,364 days,,,,,"Declared, not set",,Equativ
+Analytics,banner,Ketch,TiPMix,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,__tld__,,,,,,,,,,"Declared, not set",,Clearbit (by Hubspot)
+Analytics,banner,Ketch,tp,,,,,13 days,,,,,"Declared, not set",,Bombora
+Analytics,banner,Ketch,_tracker,,,,,396 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,TS*,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,tt_viewer,,,,,365 days,,,,,"Declared, not set",,Teads
+Analytics,banner,Ketch,tuid,,,,,365 days,,,,,"Declared, not set",,Ookla
+Analytics,banner,Ketch,tvssa,,,,,4 days,,,,,"Declared, not set",,Magnite
+Analytics,banner,Ketch,ud,,,,,120 days,,,,,"Declared, not set",,Nielsen
+Analytics,banner,Ketch,userid_prod,,,,,179 days,,,,,"Declared, not set",,Extreme Reach
+Analytics,banner,Ketch,userid_prod2,,,,,179 days,,,,,"Declared, not set",,Extreme Reach
+Analytics,banner,Ketch,usr,,,,,13 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,UTDP,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,vf,,,,,1 days,,,,,"Declared, not set",,Pulsepoint
+Analytics,banner,Ketch,visit_id,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,vs,,,,,,,,,,"Declared, not set",,Equativ
+Analytics,banner,Ketch,wf,,,,,7 days,,,,,"Declared, not set",,Pulsepoint
+Analytics,banner,Ketch,zc,,,,,368 days,,,,,"Declared, not set",,Zeotap
+Behavioral Advertising,banner,Ketch,__106_cid,,,,,366 days,,,,,"Declared, not set",,Seedtag
+Behavioral Advertising,banner,Ketch,__181_cid,,,,,366 days,,,,,"Declared, not set",,Seedtag
+Behavioral Advertising,banner,Ketch,1_C_*,,,,,9 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,1_C_18,,,,,9 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,1_C_204,,,,,9 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,1_C_24,,,,,9 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,1_C_48,,,,,9 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,1_C_55,,,,,9 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,1_C_72,,,,,9 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,a307080,,,,,92 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,aa,,,,,400 days,,,,,"Declared, not set",,Neustar
+Behavioral Advertising,banner,Ketch,__aasi,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,__aast,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,__aavi,,,,,400 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,__aavt,,,,,400 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,acx,,,,,59 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,ADGRX_CM_CASALE_BRIDGED,,,,,1 days,,,,,"Declared, not set",,Samsung Ads
+Behavioral Advertising,banner,Ketch,ADGRX_CM_PUBMATIC_BRIDGED,,,,,1 days,,,,,"Declared, not set",,Samsung Ads
+Behavioral Advertising,banner,Ketch,ADK_EX_11,,,,,14 days,,,,,"Declared, not set",,AdKernal
+Behavioral Advertising,banner,Ketch,adprime_r,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,__adroll,,,,,395 days,,,,,"Declared, not set",,Adroll
+Behavioral Advertising,banner,Ketch,__adroll_shared,,,,,395 days,,,,,"Declared, not set",,Adroll
+Behavioral Advertising,banner,Ketch,alp_userid,,,,,400 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,__amc,,,,,365 days,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+Behavioral Advertising,banner,Ketch,_Amc_b,,,,,,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+Behavioral Advertising,banner,Ketch,_Amc_s,,,,,,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+Behavioral Advertising,banner,Ketch,_Amc_t,,,,,,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+Behavioral Advertising,banner,Ketch,am-uid,,,,,89 days,,,,,"Declared, not set",,AdKernal
+Behavioral Advertising,banner,Ketch,_amuid2,,,,,180 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_amuts,,,,,1 days,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+Behavioral Advertising,banner,Ketch,anHistory,,,,,30 days,,,,,"Declared, not set",,Datonics
+Behavioral Advertising,banner,Ketch,ANON_ID_old,,,,,89 days,,,,,"Declared, not set",,Exponential
+Behavioral Advertising,banner,Ketch,anProfile,,,,,180 days,,,,,"Declared, not set",,Taboola
+Behavioral Advertising,banner,Ketch,APC,,,,,179 days,,,,,"Declared, not set",,Google Ads
+Behavioral Advertising,banner,Ketch,api_uid,,,,,364 days,,,,,"Declared, not set",,Temu
+Behavioral Advertising,banner,Ketch,apn_id,,,,,93 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,ar_debug,,,,,29 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Behavioral Advertising,banner,Ketch,ASP.NET_SessionId,,,,,,,,,,"Declared, not set",,WPP
+Behavioral Advertising,banner,Ketch,au_id,,,,,368 days,,,,,"Declared, not set",,Audigent
+Behavioral Advertising,banner,Ketch,avcid-adf-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-amx-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-apn-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-ayl-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-bsw-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-bsx-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-crt-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-eps-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-id5-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-imd-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-inm-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-nex-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-opx-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-pmr-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-ris-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-rub-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-sht-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-sma-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-smw-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-sov-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avcid-ttd-uid,,,,,90 days,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,avnguid,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,azk,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,azk-ss,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,AZRTB_USER_ID,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,b30msc,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,bedrockplatform-usersync,,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,bfa_id,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,__bfio_sync,,,,,3 days,,,,,"Declared, not set",,Seedtag
+Behavioral Advertising,banner,Ketch,bob_c_id,,,,,400 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,brwsr,,,,,365 days,,,,,"Declared, not set",,Impact
+Behavioral Advertising,banner,Ketch,bsc,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,bsw_origin_init,,,,,,,,,,"Declared, not set",,BidSwitch
+Behavioral Advertising,banner,Ketch,bt_3pc_test,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,btc,,,,,400 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,bv-*,,,,,400 days,,,,,"Declared, not set",,Illumin
+Behavioral Advertising,banner,Ketch,bx_uid,,,,,400 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,Cas_User_ID,,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_cc_aud,,,,,270 days,,,,,"Declared, not set",,Lotame
+Behavioral Advertising,banner,Ketch,_cc_dc,,,,,270 days,,,,,"Declared, not set",,Lotame
+Behavioral Advertising,banner,Ketch,cf_s2s_seen,,,,,1 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,checkForPermission,,,,,,,,,,"Declared, not set",,Beeswax (by Freewheel)
+Behavioral Advertising,banner,Ketch,chk,,,,,400 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,__*_cid,,,,,365 days,,,,,"Declared, not set",,Seedtag
+Behavioral Advertising,banner,Ketch,CID,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_14b9b11ee3a1448d9fd14d59aa0e1741,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_1e4d569f5eca48e08acfdd090eaf9609,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_352fd33599f84119bc4b2d05425caf04,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_4355ca0de7d147579e46e10a073f7439,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_480f288529e94da4b590fd3f9c884aeb,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_4c02a73f0ba949208fef7a24eb3d0e29,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_4fdae13331e947f3abef7fd158880c1f,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_60a5e11da4ad440780628b33302c3631,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_61c46eed99894591bf454f65f29f2a90,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_7c39238dcb8c464ba54d11714f83d5bb,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_82b848a555164f6c9907dc8c3cf519ec,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_8387f5a1b0084356b5c1852b65678ff4,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_88220cefdd2c46028c62a3cfc4946312,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_9a8bf6be96044a75871d2ecae99108ee,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_9cb13ed3161543e9a67c56a5d04452d3,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_af2474e055984d81a81e59e95133de77,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_af431d4eba5d4e5e951fc511f89abe82,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_b3455b9914d74b62959822dae426f8b1,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_bd4f28fae20d4694813ef22ff19592f7,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_c29a748e2fd34310b890eb4caa57f034,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_c83bfc7a5a724226b52cfc68a9072678,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_cedd981b50f441838dd53b4572908f6a,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_cfd2efdf47414ea19d43c995b7e260e6,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_d23fd0d39a644dc0afa520c481461954,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_d7bcf39b2eb84301bcdc7bd0d55de76a,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_ddf89361f70b418bb29a5d0db4b3b62b,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_e2412ada4bb3473abaa8811f9b057c43,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_e97209b38cfa4c579b34140b8ba803d1,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_ecb27d2d225a4a0991de0601c05b008e,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_f8b03f75199d44c586743aa3939111f0,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_fa7d409bc68647e1b27a0cc797d40c00,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cid_fd2b615406f348beab925c61ea2fa0e1,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,clinch-sid,,,,,29 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cmc,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,co_key,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,connectId,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,co_red,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,country_code,,,,,7 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,cs,,,,,,,,,,"Declared, not set",,gumgum
+Behavioral Advertising,banner,Ketch,csp,,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,csync,,,,,29 days,,,,,"Declared, not set",,Equativ
+Behavioral Advertising,banner,Ketch,cto_pub_test_tld,,,,,,,,,,"Declared, not set",,Criteo
+Behavioral Advertising,banner,Ketch,cto_writeable,,,,,,,,,,"Declared, not set",,Criteo
+Behavioral Advertising,banner,Ketch,cuid,,,,,400 days,,,,,"Declared, not set",,Infolinks
+Behavioral Advertising,banner,Ketch,custom_data,,,,,,,,,,"Declared, not set",,BidSwitch
+Behavioral Advertising,banner,Ketch,data-amd,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-amd-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-axm,,,,,364 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-axm-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-azb,,,,,366 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-azb-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-bs-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-bst,,,,,366 days,,,,,"Declared, not set",,TrustedStack
+Behavioral Advertising,banner,Ketch,data-bst-r,,,,,,,,,,"Declared, not set",,TrustedStack
+Behavioral Advertising,banner,Ketch,data-cl-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-co-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-di-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-doc-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,datadome,,,,,365 days,,,,,"Declared, not set",,Datadome
+Behavioral Advertising,banner,Ketch,data-exp,,,,,2 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-exp-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-g-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-ilm,,,,,365 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-ilm-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-inf,,,,,93 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-iq,,,,,10 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-iqm,,,,,367 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-iq-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-mdp,,,,,369 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-mdp-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-mf-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-mgt-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-mts-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-o,,,,,364 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-o-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-p,,,,,350 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-pbs-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-pfd,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-pfd-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-p-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-pts-r,,,,,,,,,,"Declared, not set",,TrustedStack
+Behavioral Advertising,banner,Ketch,data-rbh-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-ris,,,,,365 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-ris-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-rk-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-rym,,,,,364 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-rym-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-sh,,,,,365 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-sh-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-sy,,,,,365 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-sy-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-t,,,,,364 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-tam,,,,,13 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-tam-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-thr,,,,,8 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-thr-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-tpn-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-t-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-tsm-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-ttd-r,,,,,,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-vrv,,,,,364 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-vrv-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,data-yh,,,,,365 days,,,,,"Declared, not set",,Media.net
+Behavioral Advertising,banner,Ketch,data-ze-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,dc,,,,,365 days,,,,,"Declared, not set",,Between Digital
+Behavioral Advertising,banner,Ketch,de_tp_cookie,,,,,182 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_docereeInit,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,DSID,,,,,,,,,,"Declared, not set",,Google Analytics
+Behavioral Advertising,banner,Ketch,dsp_*,,,,,59 days,,,,,"Declared, not set",,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,dsp_139,,,,,59 days,,,,,"Declared, not set",,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,DSP2F_*,,,,,,,,,,"Declared, not set",,AdKernal
+Behavioral Advertising,banner,Ketch,DSP2F_106,,,,,,,,,,"Declared, not set",,AdKernal
+Behavioral Advertising,banner,Ketch,DSP2F_114,,,,,,,,,,"Declared, not set",,AdKernal
+Behavioral Advertising,banner,Ketch,DSP2F_71,,,,,,,,,,"Declared, not set",,AdKernal
+Behavioral Advertising,banner,Ketch,DSP2F_72,,,,,,,,,,"Declared, not set",,AdKernal
+Behavioral Advertising,banner,Ketch,DSP2F_78,,,,,,,,,,"Declared, not set",,AdKernal
+Behavioral Advertising,banner,Ketch,DSP2F_91,,,,,,,,,,"Declared, not set",,AdKernal
+Behavioral Advertising,banner,Ketch,dsp_7,,,,,59 days,,,,,"Declared, not set",,Freewheel (by Comcast)
+Behavioral Advertising,banner,Ketch,dt,,,,,93 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,dv0qai26lg6v2y6kl7yyc36brex*,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,DW,,,,,364 days,,,,,"Declared, not set",,Kantar
+Behavioral Advertising,banner,Ketch,DW_Time,,,,,364 days,,,,,"Declared, not set",,Kantar
+Behavioral Advertising,banner,Ketch,dxel_key,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,dxel_red,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,ep,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,equativ,,,,,30 days,,,,,"Declared, not set",,Equativ
+Behavioral Advertising,banner,Ketch,EQUser,,,,,90 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,__eSSync,,,,,90 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,et,,,,,392 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,et0,,,,,392 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,etuix,,,,,392 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,euds,,,,,,,,,,"Declared, not set",,Zeta Global
+Behavioral Advertising,banner,Ketch,expires,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_fbp,,,,,89 days,,,,,"Declared, not set",,Facebook Ads
+Behavioral Advertising,banner,Ketch,ffe6aa74-9d99-4685-a7e9-2cc256d40517-osz-v4,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,fly_device,,,,,7 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,fly_zip,,,,,7 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,fpid,,,,,180 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_ftv,,,,,400 days,,,,,"Declared, not set",,Cint
+Behavioral Advertising,banner,Ketch,fu,,,,,29 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,__fxId,,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,g50,,,,,92 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,g737,,,,,92 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,gamera_user_id,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785118093191_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785118093308_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785119309468_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785119309615_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785119347083_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785119347286_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785119392455_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785119392598_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785120464260_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785120464358_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785120500721_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785120500892_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785120540425_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785120540600_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785121640629_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785121640689_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785121680202_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785121680266_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785122889565_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785122889618_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785122950382_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785122950470_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785124253399_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785124253466_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785124332171_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785124332251_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785125506909_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785125506970_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785128269536_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785128269615_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785128357520_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785128357665_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785204688678_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785204688825_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785204724641_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785204724729_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785206140859_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785206140992_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785207424134_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785207424201_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785207460407_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785207460610_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785210171635_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785210171734_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785210206260_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785210206387_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785211382350_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785211382428_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785211414759_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785211414874_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785213868709_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785213868807_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785213900226_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785213900323_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785215063259_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785215063452_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785215098435_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785215098537_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785216400777_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785216400946_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785216436048_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785216436142_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785216471534_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785216471619_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785290581608_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785290581726_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785290617920_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785290618052_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785290657121_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785290657297_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785292116335_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785292116466_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785292154978_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785292155049_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785292192200_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785292192343_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785293468600_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785293468670_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785294767153_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785294767295_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785294804088_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785294804155_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785296074017_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785296074134_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785296110086_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785296110143_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785296145982_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785296146065_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785297378071_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785297378187_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785297418027_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785297418098_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785297463390_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785297463429_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785298647903_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785298647977_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785300081024_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785300081144_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785301406484_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785301406616_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785302870009_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785302870145_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785376967516_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785376967660_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785377013226_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785377013317_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785377057353_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785377057548_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785378475421_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785378475493_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785378555576_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785378555731_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785379825693_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785379825771_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785379866498_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785379866624_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785379901824_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785379901945_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785381017857_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785381017980_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785381058078_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785381058169_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785381101119_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785381101369_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785382354969_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785382355145_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785382384593_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785382384658_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785383581246_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785383581369_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785383621748_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785383621879_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785383655136_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785383655215_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785384715253_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785384715359_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785384750128_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785384750243_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785384796931_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785384797118_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785386078562_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785386078710_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785386160298_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785386160360_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785387312939_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785387313017_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785387349309_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785387349426_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785387385037_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785387385268_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785388479015_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785388479089_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785388520553_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785388520650_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785388559898_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785388560004_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785463248892_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785463248957_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785463285444_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785463285521_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785464921804_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785464921970_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785464961894_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785464962014_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785465002224_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785465002285_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785466331227_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785466331296_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785466371756_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785466371896_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785466415007_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785466415125_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785467632249_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785467632374_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785467669204_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785467669300_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785467715310_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785467715408_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785468776218_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785468776273_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785468811991_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785468812050_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785468845377_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785468845572_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785469948139_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785469948229_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785469983529_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785469983586_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785470020600_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785470020693_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785471048328_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785471048400_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785471081540_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785471081621_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785471123401_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785471123591_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785472251778_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785472251863_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785472284542_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785472284679_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785472316388_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785472316480_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785473557936_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785473558011_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785473596768_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785473596887_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785473634954_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785473635150_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785474807200_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785474807267_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785474843433_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_gd1785474843563_sharedId,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,gob_cookie,,,,,367 days,,,,,"Declared, not set",,Inmobi
+Behavioral Advertising,banner,Ketch,google_push,,,,,,,,,,"Declared, not set",,IponWeb (by Criteo)
+Behavioral Advertising,banner,Ketch,gtm_usr,,,,,364 days,,,,,"Declared, not set",,Colossus SSP
+Behavioral Advertising,banner,Ketch,guest_id,,,,,400 days,,,,,"Declared, not set",,Twitter Ads
+Behavioral Advertising,banner,Ketch,guest_id_ads,,,,,400 days,,,,,"Declared, not set",,Twitter Ads
+Behavioral Advertising,banner,Ketch,guid,,,,,400 days,,,,,"Declared, not set",,MNTN
+Behavioral Advertising,banner,Ketch,HAPLB3G,,,,,,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,hero_key,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,hero_red,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,hsk_*,,,,,120 days,,,,,"Declared, not set",,Nielsen
+Behavioral Advertising,banner,Ketch,hsk_7144,,,,,124 days,,,,,"Declared, not set",,Nielsen
+Behavioral Advertising,banner,Ketch,hsk_7505,,,,,124 days,,,,,"Declared, not set",,Nielsen
+Behavioral Advertising,banner,Ketch,h_zdbb,,,,,179 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,ibkukinet,,,,,364 days,,,,,"Declared, not set",,WPP
+Behavioral Advertising,banner,Ketch,icu,,,,,90 days,,,,,"Declared, not set",,Microsoft Ads
+Behavioral Advertising,banner,Ketch,id,,,,,394 days,,,,,"Declared, not set",,WPP
+Behavioral Advertising,banner,Ketch,ID,,,,,400 days,,,,,"Declared, not set",,Tapad (by Experian)
+Behavioral Advertising,banner,Ketch,idsp_c,,,,,90 days,,,,,"Declared, not set",,Inmobi
+Behavioral Advertising,banner,Ketch,idx,,,,,59 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,IgniteCookieSync,,,,,400 days,,,,,"Declared, not set",,Kantar
+Behavioral Advertising,banner,Ketch,imid,,,,,399 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,imid_created,,,,,399 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,imid_created_secure,,,,,399 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,imid_secure,,,,,399 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_impr,,,,,183 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,instPixels,,,,,1 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,IQPending,,,,,400 days,,,,,"Declared, not set",,IntentIQ
+Behavioral Advertising,banner,Ketch,IXAI85026,,,,,400 days,,,,,"Declared, not set",,Kantar
+Behavioral Advertising,banner,Ketch,IXAI89806,,,,,400 days,,,,,"Declared, not set",,Kantar
+Behavioral Advertising,banner,Ketch,jpmcbankna,,,,,180 days,,,,,"Declared, not set",,Adobe Audience Manager
+Behavioral Advertising,banner,Ketch,krm_r,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,krm_usr,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_*,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_1003,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_1253,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_1466,,,,,13 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_1481,,,,,29 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_1515,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_153,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_1531,,,,,29 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_1540,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_27,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_391,,,,,29 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_469,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_52,,,,,29 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_57,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_740,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_904,,,,,29 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KRTBCOOKIE_945,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,KTPCACOOKIE,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,licd,,,,,,,,,,"Declared, not set",,IponWeb (by Criteo)
+Behavioral Advertising,banner,Ketch,ljtrtbexp,,,,,365 days,,,,,"Declared, not set",,Sovrn
+Behavioral Advertising,banner,Ketch,lmg_r,,,,,364 days,,,,,"Declared, not set",,Google Analytics
+Behavioral Advertising,banner,Ketch,LoudEcho,,,,,90 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,lrswap,,,,,179 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,lux_uid,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,lv,,,,,59 days,,,,,"Declared, not set",,Adstra
+Behavioral Advertising,banner,Ketch,*_lv,,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,MARKETOPS_CM_INDEX_BRIDGED,,,,,1 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,MARKETOPS_UID,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,matchid5,,,,,29 days,,,,,"Declared, not set",,Roku Ads
+Behavioral Advertising,banner,Ketch,matchliveramp,,,,,29 days,,,,,"Declared, not set",,Roku Ads
+Behavioral Advertising,banner,Ketch,matchopenx,,,,,29 days,,,,,"Declared, not set",,OpenX
+Behavioral Advertising,banner,Ketch,matchthrotle,,,,,29 days,,,,,"Declared, not set",,Roku Ads
+Behavioral Advertising,banner,Ketch,max-age,,,,,7 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,Max-Age,,,,,400 days,,,,,"Declared, not set",,ZoomInfo
+Behavioral Advertising,banner,Ketch,mdata,,,,,394 days,,,,,"Declared, not set",,WPP
+Behavioral Advertising,banner,Ketch,mfuid,,,,,14 days,,,,,"Declared, not set",,MobileFuse
+Behavioral Advertising,banner,Ketch,__mggpc__,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,mg_sync,,,,,29 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,mid,,,,,400 days,,,,,"Declared, not set",,Facebook Ads
+Behavioral Advertising,banner,Ketch,mlcwc,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,n360-yieldlab,,,,,90 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_nbmxc_,,,,,1 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_admanmedia,,,,,365 days,,,,,"Declared, not set",,Adman Media
+Behavioral Advertising,banner,Ketch,nm_conversant,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_imds,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_improvedigital,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_madopi,,,,,366 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_medianet,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_openx,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_pubmatic,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_rise,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_robustApps,,,,,366 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_seedtag,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_smartadserver,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_smilewanted,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_sovrn,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_triplelift,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,NMUID,,,,,365 days,,,,,"Declared, not set",,Next Millennium Media
+Behavioral Advertising,banner,Ketch,nm_unruly,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_vdo_display,,,,,367 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_verve1,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_vidazoo,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_yieldmo,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,nm_zeta_global_ssp,,,,,365 days,,,,,"Declared, not set",,global
+Behavioral Advertising,banner,Ketch,novaexp,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,novasig,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,novasyncts,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,novauid,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,OAGEO,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,OAID,,,,,368 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,offerFrequency,,,,,400 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,opt_out,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,*-osz-v4,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,otad_key,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,otad_red,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,ov,,,,,394 days,,,,,"Declared, not set",,WPP
+Behavioral Advertising,banner,Ketch,_OXLIA[314501],,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,ozone_uid,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,p_Amc_b,,,,,,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+Behavioral Advertising,banner,Ketch,p_Amc_s,,,,,,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+Behavioral Advertising,banner,Ketch,p_Amc_t,,,,,,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+Behavioral Advertising,banner,Ketch,partners,,,,,179 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,path,,,,,,,,,,"Declared, not set",,AdTheorent
+Behavioral Advertising,banner,Ketch,pbjs-unifiedid,,,,,59 days,,,,,"Declared, not set",,Prebid.org
+Behavioral Advertising,banner,Ketch,pbjs-unifiedid_cst,,,,,59 days,,,,,"Declared, not set",,Prebid.org
+Behavioral Advertising,banner,Ketch,pbjs-unifiedid_last,,,,,59 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pbw,,,,,364 days,,,,,"Declared, not set",,Equativ
+Behavioral Advertising,banner,Ketch,personalization_id,,,,,400 days,,,,,"Declared, not set",,Twitter Ads
+Behavioral Advertising,banner,Ketch,pgam_key,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pgam_red,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pgam_uid,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_*,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_1021,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_1022,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_304,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_310,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_312,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_316,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_317,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_321,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_323,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_324,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_335,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_344,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_346,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_351,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_352,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_353,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_357,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_379,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_short,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pid_signature,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pontiacId,,,,,90 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,presage-freshness,,,,,7 days,,,,,"Declared, not set",,Ogury
+Behavioral Advertising,banner,Ketch,presage-ssp_lu,,,,,364 days,,,,,"Declared, not set",,Ogury
+Behavioral Advertising,banner,Ketch,prism_dsp_uid,,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pubck_id,,,,,14 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,pubsyncexp,,,,,,,,,,"Declared, not set",,Pubmatic
+Behavioral Advertising,banner,Ketch,__qca,,,,,,,,,,"Declared, not set",,Quantcast
+Behavioral Advertising,banner,Ketch,-r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,raibs,,,,,,,,,,"Declared, not set",,Rich Audience
+Behavioral Advertising,banner,Ketch,_rdc*,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,rdrlst,,,,,,,,,,"Declared, not set",,Dstillery
+Behavioral Advertising,banner,Ketch,rmuid,,,,,364 days,,,,,"Declared, not set",,Rakuten Ads
+Behavioral Advertising,banner,Ketch,_rtagid,,,,,400 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,_rtagid__p,,,,,400 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,ruid,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,*_s,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,s-*,,,,,7 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,s-251,,,,,10 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,s-350,,,,,9 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,s-358,,,,,9 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,s-391,,,,,9 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,s-432,,,,,11 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,s-444,,,,,11 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,s-75,,,,,11 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,s-81,,,,,9 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,SAMUSERCOOKIE,,,,,89 days,,,,,"Declared, not set",,Infolinks
+Behavioral Advertising,banner,Ketch,sap,,,,,180 days,,,,,"Declared, not set",,Adobe Audience Manager
+Behavioral Advertising,banner,Ketch,sa-user-id-v3,,,,,368 days,,,,,"Declared, not set",,StackAdapt
+Behavioral Advertising,banner,Ketch,SCM1062,,,,,25 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCM1065,,,,,25 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCM1069,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCM1127,,,,,25 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCM1139,,,,,24 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCM1211,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCM696,,,,,24 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMco,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMg,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMindex,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMkrush,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMlandocs,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMmedn,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMmf,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMmillennium,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMmw,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMoverwolf,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMp,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMpga,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMrktn,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMroqads,,,,,21 days,,,,,"Declared, not set",,Roq Ad
+Behavioral Advertising,banner,Ketch,SCMs,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMsas,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMsovrn,,,,,22 days,,,,,"Declared, not set",,Sovrn
+Behavioral Advertising,banner,Ketch,SCMt,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMtapad,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMtmu,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMu,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,SCMv,,,,,21 days,,,,,"Declared, not set",,Smaato
+Behavioral Advertising,banner,Ketch,sd-session-id,,,,,389 days,,,,,"Declared, not set",,Zeta Global
+Behavioral Advertising,banner,Ketch,__Secure-BUCKET,,,,,179 days,,,,,"Declared, not set",,Google Youtube
+Behavioral Advertising,banner,Ketch,__Secure-YEC,,,,,,,,,,"Declared, not set",,Google Youtube
+Behavioral Advertising,banner,Ketch,seme_key,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,seme_red,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,server_tracking_bdsp_uid,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,session2,,,,,180 days,,,,,"Declared, not set",,Dianomi
+Behavioral Advertising,banner,Ketch,session_depth,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,SESSION_ID,,,,,6 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,session_id_9j8xgl_impression,,,,,1 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,session_id_n677jt_impression,,,,,1 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,session_id_njufjj_impression,,,,,1 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,siod-m2xvubfy,,,,,90 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,siod-me66cd3m,,,,,90 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,siod-mr84cl7w,,,,,90 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,siod-mzpiak2k,,,,,90 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,siopnc,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,siouid,,,,,90 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,SOC,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,spnx_uid,,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,SRM_B,,,,,389 days,,,,,"Declared, not set",,Microsoft Ads
+Behavioral Advertising,banner,Ketch,sskya,,,,,7 days,,,,,"Declared, not set",,SundaySky
+Behavioral Advertising,banner,Ketch,sskyCreationTime,,,,,400 days,,,,,"Declared, not set",,SundaySky
+Behavioral Advertising,banner,Ketch,sskyu,,,,,400 days,,,,,"Declared, not set",,SundaySky
+Behavioral Advertising,banner,Ketch,sspid,,,,,364 days,,,,,"Declared, not set",,ucfunnel
+Behavioral Advertising,banner,Ketch,SSPR_*,,,,,,,,,,"Declared, not set",,AdKernal
+Behavioral Advertising,banner,Ketch,SSPR_114,,,,,,,,,,"Declared, not set",,AdKernal
+Behavioral Advertising,banner,Ketch,SSPR_40,,,,,,,,,,"Declared, not set",,AdKernal
+Behavioral Advertising,banner,Ketch,SSPR_71,,,,,,,,,,"Declared, not set",,AdKernal
+Behavioral Advertising,banner,Ketch,SSPR_72,,,,,,,,,,"Declared, not set",,AdKernal
+Behavioral Advertising,banner,Ketch,SSPR_78,,,,,,,,,,"Declared, not set",,AdKernal
+Behavioral Advertising,banner,Ketch,stx_user_id,,,,,30 days,,,,,"Declared, not set",,Sharethrough
+Behavioral Advertising,banner,Ketch,_sv3_15,,,,,4 days,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+Behavioral Advertising,banner,Ketch,sv_sid,,,,,364 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,sync1,,,,,31 days,,,,,"Declared, not set",,TripleLift
+Behavioral Advertising,banner,Ketch,syncdata_DBC,,,,,9 days,,,,,"Declared, not set",,WPP
+Behavioral Advertising,banner,Ketch,syncdata_TAB,,,,,9 days,,,,,"Declared, not set",,WPP
+Behavioral Advertising,banner,Ketch,syncdata_TTD,,,,,9 days,,,,,"Declared, not set",,WPP
+Behavioral Advertising,banner,Ketch,sync_index,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,taboola_session_id,,,,,,,,,,"Declared, not set",,Taboola
+Behavioral Advertising,banner,Ketch,taboola_vmp,,,,,365 days,,,,,"Declared, not set",,Taboola
+Behavioral Advertising,banner,Ketch,tads_uidp_*,,,,,400 days,,,,,"Declared, not set",,Synacor
+Behavioral Advertising,banner,Ketch,tads_uidp_104,,,,,7 days,,,,,"Declared, not set",,Synacor
+Behavioral Advertising,banner,Ketch,tads_uidp_37,,,,,400 days,,,,,"Declared, not set",,Synacor
+Behavioral Advertising,banner,Ketch,tads_uidp_94,,,,,7 days,,,,,"Declared, not set",,Synacor
+Behavioral Advertising,banner,Ketch,_td_global,,,,,400 days,,,,,"Declared, not set",,Treasure Data
+Behavioral Advertising,banner,Ketch,TestIfCookie,,,,,,,,,,"Declared, not set",,Equativ
+Behavioral Advertising,banner,Ketch,TID,,,,,400 days,,,,,"Declared, not set",,Kantar
+Behavioral Advertising,banner,Ketch,to_master_s,,,,,365 days,,,,,"Declared, not set",,TruAudience (by Transunion)
+Behavioral Advertising,banner,Ketch,to_version_s,,,,,365 days,,,,,"Declared, not set",,TruAudience (by Transunion)
+Behavioral Advertising,banner,Ketch,_tpauid,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,TS1fa3475b027,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,tv_UIBW,,,,,400 days,,,,,"Declared, not set",,Magnite
+Behavioral Advertising,banner,Ketch,tv_UIDF,,,,,400 days,,,,,"Declared, not set",,Magnite
+Behavioral Advertising,banner,Ketch,tv_UIQC,,,,,400 days,,,,,"Declared, not set",,Magnite
+Behavioral Advertising,banner,Ketch,*_u,,,,,180 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,ud,,,,,120 days,,,,,"Declared, not set",,Nielsen
+Behavioral Advertising,banner,Ketch,UID_EXT_*,,,,,365 days,,,,,"Declared, not set",,Undertone
+Behavioral Advertising,banner,Ketch,uids2,,,,,,,,,,"Declared, not set",,Magnite
+Behavioral Advertising,banner,Ketch,__uin_bs,,,,,364 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uin_bw,,,,,364 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uin_cx,,,,,32 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uin_if,,,,,364 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uin_kr,,,,,364 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uin_st,,,,,364 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uin_td,,,,,364 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uin_tp,,,,,,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uin_zt,,,,,364 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uir_bs,,,,,32 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uir_bw,,,,,89 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uir_cx,,,,,12 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uir_if,,,,,32 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uir_kr,,,,,32 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uir_st,,,,,32 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uir_td,,,,,89 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uir_tp,,,,,,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,__uir_zt,,,,,32 days,,,,,"Declared, not set",,sonobi
+Behavioral Advertising,banner,Ketch,UserID1,,,,,90 days,,,,,"Declared, not set",,Virtual Minds
+Behavioral Advertising,banner,Ketch,ut,,,,,365 days,,,,,"Declared, not set",,Between Digital
+Behavioral Advertising,banner,Ketch,*_ut,,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,uuid,,,,,392 days,,,,,"Declared, not set",,MediaMath
+Behavioral Advertising,banner,Ketch,vampid,,,,,364 days,,,,,"Declared, not set",,VideoAmp
+Behavioral Advertising,banner,Ketch,vdo_sync,,,,,2 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,vdo_uid,,,,,366 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,vdz*_*,,,,,,,,,,"Declared, not set",,Perion
+Behavioral Advertising,banner,Ketch,vdz_r,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,vidazoo,,,,,30 days,,,,,"Declared, not set",,IQM
+Behavioral Advertising,banner,Ketch,vidoomy-uids,,,,,364 days,,,,,"Declared, not set",,Vidoomy
+Behavioral Advertising,banner,Ketch,visitor_id,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,vmuid,,,,,92 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,v_red,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,v_usr,,,,,13 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,wfivefivec,,,,,394 days,,,,,"Declared, not set",,Roku Ads
+Behavioral Advertising,banner,Ketch,x,,,,,365 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,xeadth,,,,,7 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,xeariu,,,,,8 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,xedpxl,,,,,8 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,xeiqid,,,,,7 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,xeluid,,,,,8 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,xeroid_*,,,,,1 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,xeroid_207,,,,,3 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,xeroid_207214,,,,,3 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,x-ms-routing-name,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,zc,,,,,368 days,,,,,"Declared, not set",,Zeotap
+Behavioral Advertising,banner,Ketch,zd_core_lialready,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,zd_cs_aam,,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,zd_cs_ady,,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,zd_cs_di,,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,zd_cs_eo,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,zd_cs_go,,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,zd_cs_None,,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,zd_cs_ns,,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,zd_cs_pm,,,,,30 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,zd_cs_ru,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,zd_cs_td,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,zdoo,,,,,,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,zd_session_id,,,,,400 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,zpack,,,,,400 days,,,,,"Declared, not set",,
+Behavioral Advertising,banner,Ketch,zync-uuid,,,,,389 days,,,,,"Declared, not set",,Zeta Global
+Essential Services,banner,Ketch,aniC,,,,,29 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,ANONCHK,,,,,,,,,,"Declared, not set",,Microsoft Ads
+Essential Services,banner,Ketch,AWSALB,,,,,6 days,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Essential Services,banner,Ketch,AWSALBCORS,,,,,6 days,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Essential Services,banner,Ketch,callback,,,,,,,,,,"Declared, not set",,ID5
+Essential Services,banner,Ketch,_cbt,,,,,400 days,,,,,"Declared, not set",,Chartbeat
+Essential Services,banner,Ketch,_cc_cc,,,,,270 days,,,,,"Declared, not set",,Lotame
+Essential Services,banner,Ketch,cf_clearance,,,,,364 days,,,,,"Declared, not set",,Cloudflare
+Essential Services,banner,Ketch,__cflb,,,,,,,,,,"Declared, not set",,Cloudflare
+Essential Services,banner,Ketch,_cfuvid,,,,,,,,,,"Declared, not set",,Cloudflare
+Essential Services,banner,Ketch,cid,,,,,364 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,cid_*,,,,,364 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,co_key,,,,,13 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,cookies.js_dtest,,,,,,,,,,"Declared, not set",,Parse.ly(By WordPress)
+Essential Services,banner,Ketch,_cookie_test,,,,,,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,csrftoken,,,,,399 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,CT,,,,,,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,dd_cookie_test_*,,,,,,,,,,"Declared, not set",,Datadog
+Essential Services,banner,Ketch,E,,,,,400 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,FCCDCF,,,,,389 days,,,,,"Declared, not set",,Google Ads
+Essential Services,banner,Ketch,gdpr_consent,,,,,,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,gpcsignal,,,,,29 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,gpp,,,,,365 days,,,,,"Declared, not set",,ID5
+Essential Services,banner,Ketch,hsk_*,,,,,120 days,,,,,"Declared, not set",,Nielsen
+Essential Services,banner,Ketch,LAST_RESULT_ENTRY_KEY,,,,,,,,,,"Declared, not set",,Google Youtube
+Essential Services,banner,Ketch,mrf_cookie,,,,,,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,mtuid,,,,,179 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,nm_33across,,,,,365 days,,,,,"Declared, not set",,33across
+Essential Services,banner,Ketch,nm_adkernel,,,,,365 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,nm_adnxs,,,,,365 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,nm_insticator,,,,,365 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,OptanonConsent,,,,,,,,,,"Declared, not set",,OneTrust
+Essential Services,banner,Ketch,OTGPPConsent,,,,,364 days,,,,,"Declared, not set",,OneTrust
+Essential Services,banner,Ketch,pdid,,,,,30 days,,,,,"Declared, not set",,Rich Audience
+Essential Services,banner,Ketch,psyn,,,,,30 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,RCID2,,,,,364 days,,,,,"Declared, not set",,Resonate Networks
+Essential Services,banner,Ketch,Rp,,,,,29 days,,,,,"Declared, not set",,Rakuten Ads
+Essential Services,banner,Ketch,SCM*,,,,,21 days,,,,,"Declared, not set",,Smaato
+Essential Services,banner,Ketch,SCMaps,,,,,21 days,,,,,"Declared, not set",,Smaato
+Essential Services,banner,Ketch,SCMinf,,,,,21 days,,,,,"Declared, not set",,Smaato
+Essential Services,banner,Ketch,__Secure-YEC,,,,,,,,,,"Declared, not set",,Google Youtube
+Essential Services,banner,Ketch,session,,,,,180 days,,,,,"Declared, not set",,Dianomi
+Essential Services,banner,Ketch,sglst,,,,,,,,,,"Declared, not set",,Dstillery
+Essential Services,banner,Ketch,SM,,,,,,,,,,"Declared, not set",,Microsoft Clarity
+Essential Services,banner,Ketch,state_code,,,,,7 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,suid_legacy,,,,,365 days,,,,,"Declared, not set",,Simpli.fi
+Essential Services,banner,Ketch,t,,,,,364 days,,,,,"Declared, not set",,LinkedIn  
+Essential Services,banner,Ketch,test,,,,,400 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Essential Services,banner,Ketch,TESTCOOKIESENABLED,,,,,,,,,,"Declared, not set",,Google Ad Manager
+Essential Services,banner,Ketch,TestIfCookieP,,,,,364 days,,,,,"Declared, not set",,Equativ
+Essential Services,banner,Ketch,TiPMix,,,,,,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,__tld__,,,,,,,,,,"Declared, not set",,Clearbit (by Hubspot)
+Essential Services,banner,Ketch,tp,,,,,13 days,,,,,"Declared, not set",,Bombora
+Essential Services,banner,Ketch,TS*,,,,,,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,tvssa,,,,,4 days,,,,,"Declared, not set",,Magnite
+Essential Services,banner,Ketch,userid_prod,,,,,179 days,,,,,"Declared, not set",,Extreme Reach
+Essential Services,banner,Ketch,userid_prod2,,,,,179 days,,,,,"Declared, not set",,Extreme Reach
+Essential Services,banner,Ketch,usr,,,,,13 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,vf,,,,,1 days,,,,,"Declared, not set",,Pulsepoint
+Essential Services,banner,Ketch,vs,,,,,,,,,,"Declared, not set",,Equativ
+Essential Services,banner,Ketch,wf,,,,,7 days,,,,,"Declared, not set",,Pulsepoint

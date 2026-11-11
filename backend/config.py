@@ -10,7 +10,10 @@ class Settings(BaseSettings):
     BACKEND_PORT: int = 1001
     
     # CORS
-    ALLOWED_ORIGINS: str = "http://localhost:5173,http://localhost:3000,http://localhost:3001,http://localhost:1001,http://cookie-scanner-frontend:5173,*"
+    # The UI calls /api same-origin (nginx, or Vite's dev proxy), so this only
+    # matters for tools on another origin. Never "*": with allow_credentials it
+    # lets any website read the API through a visitor's browser.
+    ALLOWED_ORIGINS: str = "http://localhost:5173,http://localhost:3000,http://localhost:3001,http://localhost:1001,http://cookie-scanner-frontend:5173"
     
     # Database configuration
     DB_HOST: str = "localhost"
@@ -26,7 +29,11 @@ class Settings(BaseSettings):
     MONGODB_URL: str = "mongodb://localhost:27017"
     MONGODB_DB: str = "cookie_scanner"
     MONGODB_TIMEOUT_MS: int = 5000
-    
+
+    # ML API JWT signing key. Empty means a random per-process key (no token
+    # issued elsewhere will verify); set it to share tokens across processes.
+    ML_SECRET_KEY: str = ""
+
     # Scanning configuration - Industry Grade
     MAX_CONCURRENT_PAGES: int = 100  # Increased from 50 for faster scanning
     MIN_CONCURRENT_PAGES: int = 10   # Increased from 5

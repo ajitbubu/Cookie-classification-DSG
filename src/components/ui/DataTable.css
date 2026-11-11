@@ -43,6 +43,12 @@
   text-align: left;
   vertical-align: middle;
 }
+/* The identifying column holds long cookie IDs; let only it wrap anywhere so it
+   can't widen the table, while dates and short words in other cells stay whole. */
+.ui-table tbody th { overflow-wrap: anywhere; }
+/* Domains in that column are links; "xfinity.c/om" reads as broken, so keep them whole
+   (the table scrolls inside .ui-table-scroll on narrow screens) */
+.ui-table tbody th :is(a, button) { overflow-wrap: normal; white-space: nowrap; }
 
 .ui-table__sticky {
   position: sticky;
@@ -51,13 +57,21 @@
 }
 .ui-table thead .ui-table__sticky { z-index: 2; }
 
-.ui-table .ui-table__cell--end { text-align: right; }
+.ui-table .ui-table__cell--end { text-align: right; font-variant-numeric: tabular-nums; }
 
 .ui-table tbody tr:hover th,
 .ui-table tbody tr:hover td { background: var(--ucm-row-hover); }
 .ui-table__row--clickable { cursor: pointer; }
 
 .ui-table tbody .ui-table__state { padding: 8px; background: var(--ucm-surface); }
+
+/* The 28px Figma gutter assumes a 1600px+ canvas; below that it pushes the
+   last columns (row actions) out of view, so tighten the gutter. */
+@media (max-width: 1599px) {
+  .ui-table thead th,
+  .ui-table tbody th,
+  .ui-table tbody td { padding-left: 16px; padding-right: 16px; }
+}
 
 @media (max-width: 768px) {
   .ui-table thead th { padding: 14px 16px; }

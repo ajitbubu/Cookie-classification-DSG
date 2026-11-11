@@ -1,0 +1,4 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,FPID,.bankofamerica.com,/,First party,400.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,FPID_CLIENT,.bankofamerica.com,/,First party,400.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,akacd_BAC_eComm_www_Splash_PROD,www.bankofamerica.com,/,First party,Session,,false,true,none,false,Not declared,,

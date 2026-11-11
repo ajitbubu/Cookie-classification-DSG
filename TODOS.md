@@ -17,6 +17,24 @@
   from frame `1:189760`.
 - **Depends on / blocked by:** Nothing; can run in parallel with implementation.
 
+### Design-review findings (2026-10-20, /design-review on feat/ucm-figma-redesign)
+
+All 12 audit findings and the Web Interface Guidelines review are resolved on this branch
+(commits 38ee2c9..f7cfac2), except:
+
+- **007, partly kept as designed:** the red "Unclassified" tag is a design-system pair listed in
+  DESIGN.md "Contrast exceptions" (user decision 2026-10-12), so only the chart series changed.
+- **011, no change needed:** the sidebar was already full-height (position: fixed); full-page
+  screenshots made it look short.
+- **Open decision:** 72e1095 changed the Schedule scan pill to navy text, but DESIGN.md lists white on
+  #1CC279 as a deliberate exception. Either record the new pair in DESIGN.md or revert the pill text.
+- **Follow-up to 001:** `/api/store/scans` returns 4.8 MB (`fullResults` on all 200 scans). Return
+  summaries from the list and fetch detail on demand.
+- **Follow-up to 003:** the "N in progress" chip counts scheduled jobs, and schedules show next-run
+  times that have already passed.
+- **Domain Details Version History:** the Figma "Published By" column returns once publishes record who
+  published them.
+
 ## Backend
 
 ### Persist scans, domain versions and schedules (mostly done: MongoDB scan store, 2026-10-12)
@@ -29,6 +47,70 @@
   timers still run in the open tab, so a schedule only fires while someone has the app open.
 - **Watch:** One scan is one Mongo document (16 MB limit); a very large deep scan's `fullResults` could
   exceed it. The API also answers its first requests slowly (2-10 s) right after a restart.
+
+## ML Training
+
+### Usercentrics and TCF readers for the banner collector
+
+- **What:** Add Usercentrics (settings JSON per `settingsId`) and IAB TCF vendor-disclosure readers to
+  `backend/scripts/collect_banner_cookies.py`.
+- **Why:** v7 is trained on OneTrust + Cookiebot sites only (eng review 2026-11-09, D2), so the data is
+  skewed to two CMP vendors.
+- **Pros:** Wider site mix; TCF disclosures add purpose data for ad-tech cookies.
+- **Cons:** Endpoints unverified; each needs its own Phase 0 spike (about a week of work).
+- **Context:** The collector records other CMPs as `detected_but_skipped`; count those first to size the
+  gain. Field-mapping approach: `models/training_data/PHASE0_CMP_FINDINGS.md`.
+- **Depends on / blocked by:** v7 per-CMP macro-F1 results.
+
+### Review Queue UI for disputed banner labels
+
+- **What:** Show `review_queue.csv` disputes in the app's Review Queue with decisions stored and audited.
+- **Why:** Disputed labels are reviewed in a CSV for now (eng review 2026-11-09, D3/D10). No audit trail.
+- **Pros:** Reviewers work in the app, with history; reusable for later collection rounds.
+- **Cons:** New API and UI work.
+- **Context:** The builder writes `review_queue.csv`; families on ≥3 train sites with no label at ≥80% land there.
+- **Depends on / blocked by:** A second collection round that needs review.
+
+### Human-labeled sample of all observed holdout cookies
+
+- **What:** Have a reviewer label a random sample (~300) of every cookie observed on holdout sites,
+  including undeclared and disputed ones, and score v7 on it.
+- **Why:** The external holdout only has banner-declared cookies, so it hides the undeclared tail and has
+  almost no Unclassified examples (Codex outside review, 2026-11-09).
+- **Pros:** Promotion evidence that matches what real scans see.
+- **Cons:** About 2-3 days of reviewer time.
+- **Context:** Holdout sites come from the `split` column in `models/training_data/collection_sites.csv`.
+- **Depends on / blocked by:** Naming a reviewer.
+
+### Read each site's CMP declaration during customer scans
+
+- **What:** Reuse the collector's OneTrust/Cookiebot readers in `backend/scanner/` so scan results carry the
+  site's own declared category (`websiteProvided`, evidence URL) and only undeclared cookies go to the model.
+- **Why:** Customers get exact, sourced labels on CMP sites instead of ML guesses (CEO review 2026-11-09, E1).
+- **Pros:** Biggest direct accuracy win; every scan can also feed training.
+- **Cons:** Changes the production scanner and API; needs the async rules in `.claude/rules/code-style.md`.
+- **Context:** `src/App.jsx` sets `websiteProvided: false` today. Readers are built and tested first in
+  `backend/scripts/collect_banner_cookies.py` (v7 plan).
+- **Depends on / blocked by:** Collector readers proven on the v7 crawl.
+
+### Reviewer approvals as training labels
+
+- **What:** Export Review Queue approvals (MongoDB `approvals`, keyed `<domain>:<cookie name>`) joined to stored
+  scan attributes as a builder input with `label_source=human_review`.
+- **Why:** Human-checked labels on real customer sites (CEO review 2026-11-09, E2).
+- **Pros:** Model mistakes corrected by reviewers flow back into training.
+- **Cons:** Uses customer scan data. Customer sites must stay out of the external holdout.
+- **Context:** `backend/db/scan_store.py`; never export cookie values.
+- **Depends on / blocked by:** A data-use decision for customer scan data (terms, retention, GDPR/DPDP).
+
+### Scheduled holdout re-crawl and drift report
+
+- **What:** Re-crawl the holdout sites monthly, score the served model, report label-share and accuracy drift.
+- **Why:** Sites change cookies and banners; accuracy decay should show up before customers notice (CEO review 2026-11-09, E3).
+- **Pros:** Reuses the collector, holdout list and `backend/api/ml_classifier/drift_detector.py`.
+- **Cons:** A recurring crawl job to run and watch.
+- **Context:** Holdout sites are the `split=holdout` rows of `models/training_data/collection_sites.csv`.
+- **Depends on / blocked by:** v7 promotion.
 
 ## QA (2026-10-12, /qa on feat/ucm-figma-redesign)
 

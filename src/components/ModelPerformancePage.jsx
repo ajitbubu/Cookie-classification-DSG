@@ -1,19 +1,20 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, Target, Database, Shield, CheckCircle2, XCircle } from 'lucide-react';
 import { getOverrideHistory, getOverrideStats } from './OverrideModal';
+import { CategoryTag } from './ui/Chip';
+import { pathForRoute } from '../lib/routes';
 import './ModelPerformancePage.css';
 
 // Everything on this page comes from the model the ML API is actually serving,
 // so the numbers cannot drift from the deployed artifact.
 const MODEL_INFO_URL = '/api/v1/ml/model-info';
 
+// The model's class keys pair two names (Analytics_Performance); the app shows one.
+const MODEL_CLASS_NAMES = { Analytics_Performance: 'Analytics', Marketing_Advertising: 'Marketing' };
+
 // Pretty-print category names
 const formatCategory = (cat) =>
-  cat.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-
-// CSS class-safe category slug
-const categorySlug = (cat) =>
-  cat.toLowerCase().replace(/_/g, '-').replace(/\s+/g, '-');
+  MODEL_CLASS_NAMES[cat] || cat.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 
 const percent = (value) => (value == null ? '—' : `${(value * 100).toFixed(1)}%`);
 
@@ -21,7 +22,8 @@ const GATE_LABELS = {
   macro_f1: 'Macro F1 meets the minimum',
   marketing_recall: 'Marketing recall meets the minimum',
   unclassified_precision: 'Unclassified precision meets the minimum',
-  auto_precision: 'Auto-classification precision meets the target',
+  auto_precision: 'Auto-classification precision meets the target (new cookie names)',
+  auto_precision_all_cookies: 'Auto-classification precision meets the target (all cookies on test websites)',
   site_holdout_is_disjoint: 'Test websites never seen in training',
   name_holdout_is_disjoint: 'Test cookie names never seen in training',
 };
@@ -65,9 +67,17 @@ function ModelPerformancePage({ onNavigate }) {
   const header = (badge) => (
     <div className="mp-header">
       <div className="mp-header__left">
-        <button className="mp-back-btn" onClick={() => onNavigate('home')}>
-          <ArrowLeft size={16} /> Back
-        </button>
+        <a
+          className="mp-back-btn"
+          href={pathForRoute('home')}
+          onClick={(e) => {
+            if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return; // let new-tab clicks through
+            e.preventDefault();
+            onNavigate('home');
+          }}
+        >
+          <ArrowLeft size={16} aria-hidden="true" /> Back
+        </a>
         <div>
           <h2 className="mp-title">ML Model</h2>
           <p className="mp-subtitle">Offline evaluation of the served model on held-out websites</p>
@@ -143,7 +153,7 @@ function ModelPerformancePage({ onNavigate }) {
       <div className="mp-card">
         <h3 className="mp-card__title"><Target size={16} /> Performance by Category</h3>
         {holdout?.per_class ? (
-          <div className="mp-table">
+          <div className="mp-table" role="region" aria-label="Performance by category" tabIndex={0}>
             <div className="mp-table__header">
               <span>Category</span>
               <span>Precision</span>
@@ -204,11 +214,7 @@ function ModelPerformancePage({ onNavigate }) {
         <div className="mp-categories-list">
           <h4 className="mp-categories-title">Classification Categories</h4>
           <div className="mp-categories-chips">
-            {categories.map(cat => (
-              <span key={cat} className={`mp-category-chip cat-${categorySlug(cat)}`}>
-                {cat}
-              </span>
-            ))}
+            {categories.map(cat => <CategoryTag key={cat} category={cat} />)}
           </div>
         </div>
       </div>
@@ -231,14 +237,15 @@ function ModelPerformancePage({ onNavigate }) {
           </div>
           <div className="mp-override-stat">
             <div className="mp-override-stat__label">Retraining Recommended</div>
-            <div className={`mp-override-stat__value ${overrideStats.total >= 50 ? 'mp-text-critical' : 'mp-text-safe'}`}>
-              {overrideStats.total >= 50 ? 'Yes — sufficient override data' : 'Not yet — need more override data'}
+            {/* "Not yet" is a neutral state, not a success, so only "Yes" gets a colour */}
+            <div className={`mp-override-stat__value ${overrideStats.total >= 50 ? 'mp-text-critical' : ''}`}>
+              {overrideStats.total >= 50 ? 'Yes: enough override data to retrain' : `Not yet: ${overrideStats.total} of 50 overrides recorded`}
             </div>
           </div>
           <div className="mp-override-stat">
             <div className="mp-override-stat__label">Override-to-Sample Ratio</div>
             <div className="mp-override-stat__value">
-              {totalSamples > 0 ? ((overrideStats.total / totalSamples) * 100).toFixed(4) : 0}%
+              {totalSamples > 0 && overrideStats.total > 0 ? `${((overrideStats.total / totalSamples) * 100).toFixed(2)}%` : '0%'}
             </div>
           </div>
         </div>

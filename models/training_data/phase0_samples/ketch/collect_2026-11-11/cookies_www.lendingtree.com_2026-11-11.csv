@@ -1,0 +1,241 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Analytics,banner,Ketch,_cls_cfgver,report.lendingtree.gbqofs.io,/reporting/ad886dbd-ba8d-4f45-8ef0-a61a3535ccba,Third party,Session,,true,true,none,false,Declared & set,,Glassbox
+Analytics,banner,Ketch,_cls_v,report.lendingtree.gbqofs.io,/reporting/ad886dbd-ba8d-4f45-8ef0-a61a3535ccba,Third party,Session,400 days,true,true,none,false,Declared & set,,Glassbox
+Analytics,banner,Ketch,_cls_s,report.lendingtree.gbqofs.io,/reporting/ad886dbd-ba8d-4f45-8ef0-a61a3535ccba,Third party,Session,,true,true,none,false,Declared & set,,Glassbox
+Analytics,banner,Ketch,rto,report.lendingtree.gbqofs.io,/reporting/ad886dbd-ba8d-4f45-8ef0-a61a3535ccba,Third party,Session,,true,true,none,false,Declared & set,,Glassbox
+Targeted Advertising,banner,Ketch,_bs,.lendingtree.com,/form/grove-light/personal-loans,First party,0.79 days,364 days,false,false,strict,false,Declared & set,,
+Targeted Advertising,banner,Ketch,_bs,.lendingtree.com,/form/grove-light/autos,First party,0.79 days,364 days,false,false,strict,false,Declared & set,,
+Targeted Advertising,banner,Ketch,_bs,.lendingtree.com,/form/grove-light/he,First party,0.79 days,364 days,false,false,strict,false,Declared & set,,
+Targeted Advertising,banner,Ketch,_bs,.lendingtree.com,/form/ltdd/mortgage,First party,0.79 days,364 days,false,false,strict,false,Declared & set,,
+Targeted Advertising,banner,Ketch,_li_ss,i.liadm.com,/s,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,Live Intent
+Essential Services,banner,Ketch,__cf_bm,.lendingtree.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,optimizelyEndUserId,.lendingtree.com,/,First party,180.00 days,,false,false,unspecified,false,Not declared,,
+Essential Services,banner,Ketch,ClickSessionId,.lendingtree.com,/,First party,Session,,false,true,none,false,Declared & set,,
+Unclassified,none,,MKT_TRACK,.lendingtree.com,/,First party,Session,,false,true,none,false,"Declared, conflicting",,
+Analytics,banner,Ketch,UserOriginationData,.lendingtree.com,/,First party,400.00 days,400 days,false,true,none,false,Declared & set,,
+Unclassified,none,,LT_MKT_TRACK,.lendingtree.com,/,First party,14.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,crto_fpid,.lendingtree.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Analytics,banner,Ketch,lt-gb-random-percent,.lendingtree.com,/,First party,Session,,false,true,none,false,Declared & set,,
+Unclassified,none,,_fs_sample_user,www.lendingtree.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Essential Services,banner,Ketch,_swb,.lendingtree.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Unclassified,none,,uid,.criteo.com,/,Third party,390.00 days,,false,true,none,false,"Declared, conflicting",,
+Analytics,banner,Ketch,_ga,.lendingtree.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Analytics,banner,Ketch,mc,.quantserve.com,/,Third party,395.00 days,395 days,false,true,none,false,Declared & set,,Quantcast
+Unclassified,none,,__qca,.lendingtree.com,/,First party,392.00 days,,false,false,unspecified,false,Not declared,,
+Analytics,banner,Ketch,FPID,.lendingtree.com,/,First party,400.00 days,400 days,true,true,unspecified,false,Declared & set,,Google Analytics
+Targeted Advertising,banner,Ketch,FPAU,.lendingtree.com,/,First party,90.00 days,90 days,false,true,unspecified,false,Declared & set,,Google Ads
+Analytics,banner,Ketch,FPLC,.lendingtree.com,/,First party,0.83 days,1 days,false,true,unspecified,false,Declared & set,,Google Analytics
+Unclassified,none,,FPGSID,.lendingtree.com,/,First party,0.02 days,,false,true,strict,false,Not declared,,
+Essential Services,banner,Ketch,_ketch_consent_v1_,.lendingtree.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Analytics,banner,Ketch,_cls_v,.lendingtree.com,/,First party,400.00 days,400 days,false,true,none,false,Declared & set,,Glassbox
+Analytics,banner,Ketch,_cls_s,.lendingtree.com,/,First party,Session,,false,true,none,false,Declared & set,,Glassbox
+Targeted Advertising,banner,Ketch,_fbp,.lendingtree.com,/,First party,90.00 days,90 days,false,true,lax,false,Declared & set,,Facebook Ads
+Unclassified,none,,_gtmeec,.lendingtree.com,/,First party,90.00 days,,true,true,strict,false,Not declared,,
+Analytics,banner,Ketch,rto,.lendingtree.com,/,First party,Session,,false,true,none,false,Declared & set,,Glassbox
+Essential Services,banner,Ketch,_swb_consent_,.lendingtree.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Unclassified,none,,usprivacy,.lendingtree.com,/,First party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,us_privacy,.lendingtree.com,/,First party,30.00 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,KADUSERCOOKIE,.pubmatic.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Pubmatic
+Unclassified,none,,tt_viewer,.teads.tv,/,Third party,364.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,tvid,.tremorhub.com,/,Third party,365.24 days,,false,true,none,false,"Declared, conflicting",,
+Targeted Advertising,banner,Ketch,tv_UICR,.tremorhub.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,,Magnite
+Targeted Advertising,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Analytics,banner,Ketch,demdex,.demdex.net,/,Third party,180.00 days,180 days,false,true,none,false,Declared & set,,Adobe Audience Manager
+Targeted Advertising,banner,Ketch,TapAd_TS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Tapad (by Experian)
+Targeted Advertising,banner,Ketch,TapAd_DID,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Tapad (by Experian)
+Targeted Advertising,banner,Ketch,tuuid,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,Demandbase
+Targeted Advertising,banner,Ketch,c,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,tinuiti
+Targeted Advertising,banner,Ketch,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,Demandbase
+Analytics,banner,Ketch,dpm,.dpm.demdex.net,/,Third party,180.00 days,180 days,false,true,none,false,Declared & set,,Adobe Audience Manager
+Targeted Advertising,banner,Ketch,mCookie,.mediawallahscript.com,/,Third party,400.00 days,729 days,false,true,none,false,Declared & set,,MediaWallah
+Unclassified,none,,mUserCookie,.mediawallahscript.com,/,Third party,400.00 days,,false,true,none,false,"Declared, conflicting",,
+Targeted Advertising,banner,Ketch,tluid,.3lift.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,TripleLift
+Targeted Advertising,banner,Ketch,tuuid,.360yield.com,/,Third party,90.00 days,364 days,true,true,none,false,Declared & set,,Demandbase
+Targeted Advertising,banner,Ketch,CMID,.casalemedia.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Index Exchange
+Targeted Advertising,banner,Ketch,CMPS,.casalemedia.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,Index Exchange
+Targeted Advertising,banner,Ketch,CMPRO,.casalemedia.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,Index Exchange
+Targeted Advertising,banner,Ketch,criteo,exchange.mediavine.com,/,Third party,14.00 days,30 days,false,true,none,false,Declared & set,,The Predictive Marketing Network
+Targeted Advertising,banner,Ketch,am_tokens,exchange.mediavine.com,/,Third party,14.00 days,13 days,false,true,none,false,Declared & set,,Mediavine
+Unclassified,none,,am_tokens_invalidate-verizon-pushes,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,ab,.agkn.com,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Targeted Advertising,banner,Ketch,_rxuuid,.1rx.io,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,Unruly (by Nexxen)
+Targeted Advertising,banner,Ketch,lidid,.liadm.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Live Intent
+Targeted Advertising,banner,Ketch,criteo,.tpmn.co.kr,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,The Predictive Marketing Network
+Targeted Advertising,banner,Ketch,visitor,.postrelease.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,Nativo
+Unclassified,none,,status,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Targeted Advertising,banner,Ketch,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,90 days,false,true,none,true,Declared & set,,Microsoft Ads
+Targeted Advertising,banner,Ketch,uuid2,.adnxs.com,/,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,Microsoft Ads
+Analytics,banner,Ketch,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Analytics,banner,Ketch,MR,.c.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Targeted Advertising,banner,Ketch,_rxuuid,.targeting.unrulymedia.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,Unruly (by Nexxen)
+Targeted Advertising,banner,Ketch,visitor-id,.media.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Media.net
+Targeted Advertising,banner,Ketch,data-c,.media.net,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,,Media.net
+Unclassified,none,,v1_151,.revcontent.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,v2_151,.revcontent.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,khaos,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Magnite
+Targeted Advertising,banner,Ketch,khaos_p,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Magnite
+Unclassified,none,,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,,true,true,none,true,Not declared,,
+Targeted Advertising,banner,Ketch,t_gid,.taboola.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Taboola
+Targeted Advertising,banner,Ketch,t_pt_gid,.taboola.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Taboola
+Targeted Advertising,banner,Ketch,_cc_dc,.crwdcntrl.net,/,Third party,269.96 days,269 days,false,true,none,false,Declared & set,,Lotame
+Unclassified,none,,_cc_id,.crwdcntrl.net,/,Third party,269.96 days,,false,true,none,false,"Declared, conflicting",,
+Targeted Advertising,banner,Ketch,criteo,.tpmn.io,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,The Predictive Marketing Network
+Targeted Advertising,banner,Ketch,TDID,.adsrvr.org,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,theTradeDesk
+Targeted Advertising,banner,Ketch,sa-user-id,sync.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Targeted Advertising,banner,Ketch,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Targeted Advertising,banner,Ketch,sa-user-id-v2,sync.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Targeted Advertising,banner,Ketch,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Unclassified,none,,sa-user-id-v4,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,A3,.yahoo.com,/,Third party,365.25 days,365 days,true,true,none,false,Declared & set,,Yahoo! Ads
+Targeted Advertising,banner,Ketch,ljt_reader,.lijit.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Sovrn
+Targeted Advertising,banner,Ketch,IDSYNC,.analytics.yahoo.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Yahoo! Ads
+Targeted Advertising,banner,Ketch,uuid,.mathtag.com,/,Third party,393.00 days,400 days,false,true,none,false,Declared & set,,MediaMath
+Targeted Advertising,banner,Ketch,_bs,.lendingtree.com,/,First party,365.00 days,364 days,false,true,strict,false,Declared & set,,
+Unclassified,none,,https://www.lendingtree.com_oeu1794412712697r0.7361935708249557$$6207300250632192$$session_state,a6207300250632192.cdn.optimizely.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ver,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Targeted Advertising,banner,Ketch,bito,.bidr.io,/,Third party,394.79 days,394 days,false,true,none,false,Declared & set,,Beeswax (by Freewheel)
+Targeted Advertising,banner,Ketch,bitoIsSecure,.bidr.io,/,Third party,394.79 days,394 days,false,true,none,false,Declared & set,,Beeswax (by Freewheel)
+Unclassified,none,,catch-all-pl,splitter.lendingtree.com,/,First party,14.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ltphoenix,www.lendingtree.com,/,First party,3.00 days,,true,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,_gcl_au,.lendingtree.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Essential Services,banner,Ketch,__cf_bm,.pvdpix.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,_pvd_uid,.lendingtree.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Analytics,banner,Ketch,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Unclassified,none,,io_token_7c6a6574-f011-4c9a-abdd-9894a102ccef,mpsnare.iesnare.com,/,Third party,365.00 days,,true,true,none,true,Not declared,,
+Essential Services,banner,Ketch,__cf_bm,.iesnare.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,GCLB,www.lendingtree.com,/,First party,0.04 days,,true,false,unspecified,false,Not declared,,
+Unclassified,none,,fp_token_7c6a6574-f011-4c9a-abdd-9894a102ccef,www.lendingtree.com,/,First party,365.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,trx,.lendingtree.com,/,First party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__obref,.lendingtree.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,ts_did,www.lendingtree.com,/,First party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,id5,.id5-sync.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,intentIQCDate,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IQver,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,intentIQ,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IQMID,.intentiq.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IQadv,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,home-equity,splitter.lendingtree.com,/,First party,14.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_li_dcdm_c,.lendingtree.com,/,First party,Session,,false,false,lax,false,Not declared,,
+Unclassified,none,,_lc2_fpi,.lendingtree.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_lc2_fpi_js,.lendingtree.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,zync-uuid,.rezync.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__nbpix_uid,.lendingtree.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_rdt_uuid,.lendingtree.com,/,First party,90.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_bts,.lendingtree.com,/,First party,0.04 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ruds,.rfihub.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,rud,.rfihub.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_18,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,PugT,.pubmatic.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,,Pubmatic
+Unclassified,none,,_bti,.lendingtree.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,everest_g_v2,.everesttech.net,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,browser_id,.rqtrk.eu,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tv_UIRF,.tremorhub.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sd-session-id,live.rezync.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,i,.openx.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_nbu,.newsbreak.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,eud,.rfihub.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,euds,.rfihub.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,data-rk,.media.net,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mako_uid,.eyeota.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,SERVERID,.eyeota.net,/,Third party,0.01 days,,true,true,none,false,Not declared,,
+Unclassified,none,,did,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,didts,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,nnls,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,_li_ss,.lendingtree.com,/,First party,400.00 days,30 days,false,false,lax,false,Declared & set,,Live Intent
+Unclassified,none,,IQPData,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uid,.turn.com,/,Third party,180.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Essential Services,banner,Ketch,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Analytics,banner,Ketch,mc,.thrtle.com,/,Third party,200.00 days,395 days,false,true,none,false,Declared & set,,Quantcast
+Targeted Advertising,banner,Ketch,sc,.thrtle.com,/,Third party,200.00 days,199 days,false,true,none,false,Declared & set,,Throtle
+Unclassified,none,,adtheorent[cuid],.adentifi.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,idmap_cookie_id,pixel.idmap.ai,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,vcnpxid,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxst,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxe,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxsn,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,refi2purchase,splitter.lendingtree.com,/,First party,14.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,catch-all-auto,splitter.lendingtree.com,/,First party,14.00 days,,false,false,unspecified,false,Not declared,,
+Targeted Advertising,banner,Ketch,_uetsid,.lendingtree.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Targeted Advertising,banner,Ketch,cto_bundle,.lendingtree.com,/,First party,395.42 days,389 days,false,false,unspecified,false,Declared & set,,Criteo
+Targeted Advertising,banner,Ketch,_uetvid,.lendingtree.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Unclassified,none,,_ga_PVXTW3FZ93,.lendingtree.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Targeted Advertising,banner,Ketch,tuuid_lu,.360yield.com,/,Third party,90.00 days,364 days,true,true,none,false,Declared & set,,Demandbase
+Targeted Advertising,banner,Ketch,audit_p,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Magnite
+Targeted Advertising,banner,Ketch,audit,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Magnite
+Unclassified,none,,SPugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,data-c-ts,.media.net,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,,Media.net
+Targeted Advertising,banner,Ketch,anj,.adnxs.com,/,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,Microsoft Ads
+Targeted Advertising,banner,Ketch,cto_bundle,.criteo.com,/,Third party,390.00 days,389 days,false,true,none,true,Declared & set,,Criteo
+Targeted Advertising,banner,Ketch,TDCPM,.adsrvr.org,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,theTradeDesk
+Unclassified,none,,pxrc,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rlas3,.rlcdn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.rlcdn.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mRemnantVisitedCookie_d41d8cd98f00b204e9800998ecf8427e_11_2026,.mediawallahscript.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Essential Services,banner,Ketch,AWSELB,,,,,,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Essential Services,banner,Ketch,AWSELBCORS,,,,,,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Essential Services,banner,Ketch,cto_tld_test,,,,,,,,,,"Declared, not set",,Adform
+Essential Services,banner,Ketch,mv_tokens_invalidate-verizon-pushes,,,,,13 days,,,,,"Declared, not set",,Mediavine
+Essential Services,banner,Ketch,SCM*,,,,,21 days,,,,,"Declared, not set",,Smaato
+Analytics,banner,Ketch,ayl_visitor,,,,,30 days,,,,,"Declared, not set",,OpenWeb
+Analytics,banner,Ketch,_cc_cc,,,,,,,,,,"Declared, not set",,Lotame
+Analytics,banner,Ketch,_CEFT,,,,,364 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,criteo_write_test,,,,,,,,,,"Declared, not set",,Criteo
+Analytics,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,_gat,,,,,,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,_gid,,,,,,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,optimizelyOptOut,,,,,,,,,,"Declared, not set",,Optimizely
+Analytics,banner,Ketch,optout,,,,,,,,,,"Declared, not set",,Criteo
+Analytics,banner,Ketch,ROUTEID,,,,,,,,,,"Declared, not set",,Glassbox
+Analytics,banner,Ketch,s_evar11,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,s_evar12,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,ssi,,,,,365 days,,,,,"Declared, not set",,Basis
+Analytics,banner,Ketch,_ssuma,,,,,30 days,,,,,"Declared, not set",,Basis
+Analytics,banner,Ketch,stx_user_id,,,,,30 days,,,,,"Declared, not set",,Sharethrough
+Analytics,banner,Ketch,TestIfCookieP,,,,,394 days,,,,,"Declared, not set",,Equativ
+Analytics,banner,Ketch,_tt_enable_cookie,,,,,389 days,,,,,"Declared, not set",,Tiktok Ads
+Analytics,banner,Ketch,UID,,,,,29 days,,,,,"Declared, not set",,Freewheel (by Comcast)
+Analytics,banner,Ketch,YSC,,,,,,,,,,"Declared, not set",,Google Youtube
+Targeted Advertising,banner,Ketch,ANON_ID,,,,,89 days,,,,,"Declared, not set",,Exponential
+Targeted Advertising,banner,Ketch,ar_debug,,,,,30 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Targeted Advertising,banner,Ketch,ayl_visitor,,,,,30 days,,,,,"Declared, not set",,OpenWeb
+Targeted Advertising,banner,Ketch,_cc_cc,,,,,,,,,,"Declared, not set",,Lotame
+Targeted Advertising,banner,Ketch,checkForPermission,,,,,,,,,,"Declared, not set",,Beeswax (by Freewheel)
+Targeted Advertising,banner,Ketch,criteo_write_test,,,,,,,,,,"Declared, not set",,Criteo
+Targeted Advertising,banner,Ketch,csync,,,,,89 days,,,,,"Declared, not set",,Equativ
+Targeted Advertising,banner,Ketch,cto_tld_test,,,,,,,,,,"Declared, not set",,Adform
+Targeted Advertising,banner,Ketch,data-thr,,,,,7 days,,,,,"Declared, not set",,Media.net
+Targeted Advertising,banner,Ketch,IMRID,,,,,390 days,,,,,"Declared, not set",,Nielsen
+Targeted Advertising,banner,Ketch,KRTBCOOKIE_*,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Targeted Advertising,banner,Ketch,mv_tokens,,,,,13 days,,,,,"Declared, not set",,Mediavine
+Targeted Advertising,banner,Ketch,mv_tokens_invalidate-verizon-pushes,,,,,13 days,,,,,"Declared, not set",,Mediavine
+Targeted Advertising,banner,Ketch,_nccapi_url,,,,,,,,,,"Declared, not set",,Pinterest
+Targeted Advertising,banner,Ketch,NID,,,,,182 days,,,,,"Declared, not set",,Google Ads
+Targeted Advertising,banner,Ketch,obuid,,,,,90 days,,,,,"Declared, not set",,Outbrain
+Targeted Advertising,banner,Ketch,optout,,,,,,,,,,"Declared, not set",,Criteo
+Targeted Advertising,banner,Ketch,pid,,,,,89 days,,,,,"Declared, not set",,Equativ (Smartadserver)
+Targeted Advertising,banner,Ketch,_pinterest_ct_ua,,,,,364 days,,,,,"Declared, not set",,Pinterest
+Targeted Advertising,banner,Ketch,_pin_unauth,,,,,364 days,,,,,"Declared, not set",,Pinterest
+Targeted Advertising,banner,Ketch,ptrcriteo,,,,,365 days,,,,,"Declared, not set",,Yieldmo
+Targeted Advertising,banner,Ketch,sa-user-id-v3,,,,,365 days,,,,,"Declared, not set",,StackAdapt
+Targeted Advertising,banner,Ketch,SCM,,,,,21 days,,,,,"Declared, not set",,Smaato
+Targeted Advertising,banner,Ketch,SCM*,,,,,21 days,,,,,"Declared, not set",,Smaato
+Targeted Advertising,banner,Ketch,ssi,,,,,365 days,,,,,"Declared, not set",,Basis
+Targeted Advertising,banner,Ketch,sspid,,,,,364 days,,,,,"Declared, not set",,ucfunnel
+Targeted Advertising,banner,Ketch,_ssuma,,,,,30 days,,,,,"Declared, not set",,Basis
+Targeted Advertising,banner,Ketch,stx_user_id,,,,,30 days,,,,,"Declared, not set",,Sharethrough
+Targeted Advertising,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Targeted Advertising,banner,Ketch,TestIfCookieP,,,,,394 days,,,,,"Declared, not set",,Equativ
+Targeted Advertising,banner,Ketch,tluidp,,,,,90 days,,,,,"Declared, not set",,TripleLift
+Targeted Advertising,banner,Ketch,_tt_enable_cookie,,,,,389 days,,,,,"Declared, not set",,Tiktok Ads
+Targeted Advertising,banner,Ketch,_ttp,,,,,389 days,,,,,"Declared, not set",,Tiktok Ads
+Targeted Advertising,banner,Ketch,UID,,,,,29 days,,,,,"Declared, not set",,Freewheel (by Comcast)
+Targeted Advertising,banner,Ketch,uid-bp-*,,,,,59 days,,,,,"Declared, not set",,Freewheel (by Comcast)
+Targeted Advertising,banner,Ketch,um,,,,,89 days,,,,,"Declared, not set",,Improve Digital
+Targeted Advertising,banner,Ketch,umeh,,,,,89 days,,,,,"Declared, not set",,Improve Digital
+Targeted Advertising,banner,Ketch,yieldmo_id,,,,,365 days,,,,,"Declared, not set",,Yieldmo
+Targeted Advertising,banner,Ketch,YSC,,,,,,,,,,"Declared, not set",,Google Youtube

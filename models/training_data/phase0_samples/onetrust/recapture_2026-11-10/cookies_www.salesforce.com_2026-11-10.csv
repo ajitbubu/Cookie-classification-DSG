@@ -1,0 +1,6 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,ak_loc,www.salesforce.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,AKA_A2,.salesforce.com,/,First party,0.04 days,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,sfdc_agent_cohort,www.salesforce.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,prorigin,www.salesforce.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,akacd_homepage_split_prod_prospect_1,www.salesforce.com,/,First party,365.00 days,,false,true,none,false,Not declared,,

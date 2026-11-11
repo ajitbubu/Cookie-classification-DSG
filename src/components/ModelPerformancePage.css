@@ -87,14 +87,6 @@
 .mp-categories-list { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--gray-100, #D9E2EE); }
 .mp-categories-title { font-size: var(--fs-xs); font-weight: 700; color: var(--color-text-secondary); margin: 0 0 8px; }
 .mp-categories-chips { display: flex; flex-wrap: wrap; gap: 6px; }
-.mp-category-chip {
-  font-size: var(--fs-xs); font-weight: 600; padding: 4px 10px; border-radius: 6px;
-}
-.mp-category-chip.cat-analytics { background: #dbeafe; color: #1e40af; }
-.mp-category-chip.cat-functional { background: #fef9c3; color: #854d0e; }
-.mp-category-chip.cat-marketing { background: #f3e8ff; color: #6d28d9; }
-.mp-category-chip.cat-strictly-necessary { background: #dcfce7; color: #166534; }
-.mp-category-chip.cat-unclassified { background: var(--gray-100, #D9E2EE); color: var(--color-text-secondary); }
 
 /* Override Impact */
 .mp-override-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
@@ -147,7 +139,10 @@
 .mp-stat__label { font: 400 16px/1.2 var(--font-sans); color: var(--color-text-secondary); }
 .mp-stat__caption { font-size: var(--fs-xs); color: var(--color-text-muted); }
 
-.mp-table { border: 1px solid var(--ucm-blue-4); border-radius: var(--ucm-radius-control); overflow: hidden; }
+/* Scrolls inside its border on narrow screens instead of crushing columns (21A) */
+.mp-table { border: 1px solid var(--ucm-blue-4); border-radius: var(--ucm-radius-control); overflow-x: auto; }
+.mp-table__header, .mp-table__row { min-width: 560px; column-gap: 16px; }
+.mp-table:focus-visible { outline: 2px solid var(--ucm-brand-accent); outline-offset: 2px; }
 .mp-table__header {
   padding: 18px 24px;
   background: var(--ucm-surface);
@@ -181,6 +176,7 @@
   background: var(--ucm-surface);
   color: var(--ucm-navy);
   font: 500 16px/1 var(--font-sans);
+  text-decoration: none;
 }
 .mp-back-btn:hover { background: var(--ucm-row-hover); }
 
@@ -189,15 +185,6 @@
 .mp-gate--pass svg, .mp-gate--pass .mp-gate__status { color: var(--ucm-green-2); }
 .mp-gate--fail svg, .mp-gate--fail .mp-gate__status { color: var(--ucm-red); }
 
-.mp-category-chip {
-  height: 24px;
-  padding: 0 16px;
-  border-radius: var(--ucm-radius-tag);
-  background: var(--ucm-tint-analytics);
-  color: var(--ucm-brand-accent);
-  font: 500 12px/24px var(--font-sans);
-  letter-spacing: 0.02em;
-}
 .mp-text-critical { color: var(--ucm-red); }
 .mp-text-safe { color: var(--ucm-green-2); }
 .mp-training-stat, .mp-override-stat { border: 1px solid var(--ucm-blue-4); border-radius: var(--ucm-radius-stat); background: var(--ucm-surface); }

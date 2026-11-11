@@ -43,6 +43,13 @@ export const SCANNING_TABS = [
   { page: 'history', label: 'Scan Result' },
 ];
 
+// Dashboard page tabs (Figma 12.06.45).
+export const DASHBOARD_TABS = [
+  { page: 'home', label: 'Dashboard' },
+  { page: 'active', label: 'Active Scan' },
+  { page: 'history', label: 'Scan Result' },
+];
+
 const SCANNING_PAGES = new Set(['launch', 'active', 'history', 'results']);
 
 /** The sidebar entry that is current for a page: scanning screens, Domain Details included, sit under Scanning. */

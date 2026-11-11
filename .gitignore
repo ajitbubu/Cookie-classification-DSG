@@ -116,12 +116,15 @@ models/.DS_Store
 
 # Training data
 /training_data/
+# Third-party datasets (e.g. CookieBlock): downloaded locally, never committed.
+models/training_data/external/
 # The canonical model datasets are intentionally versioned in one flat folder.
 # Runtime images still exclude them through .dockerignore.
 models/training_scripts/
 
 # Nginx SSL certificates (sensitive)
 nginx/ssl/
+nginx/htpasswd
 
 # Vite temp files
 node_modules/.vite/

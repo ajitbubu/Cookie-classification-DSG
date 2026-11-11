@@ -1,0 +1,43 @@
+﻿category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Likely Strictly Necessary,guess,,_cfuvid,.www.coherehealth.com,/,First party,Session,,true,true,no_restriction,false,Not declared,Cloudflare,Rate limiting
+Likely Marketing,guess,,_gcl_au,.coherehealth.com,/,First party,3 months,,false,false,unspecified,false,Not declared,Google Ads,Conversion linker
+Likely Analytics,guess,,_ga,.coherehealth.com,/,First party,13 months,,false,false,unspecified,false,Not declared,Google Analytics,Distinguishes users
+Unclassified,none,,_zitok,.www.coherehealth.com,/,First party,12 months,,false,true,strict,false,Not declared,,
+Likely Strictly Necessary,guess,,_cfuvid,.coherehealth.com,/,First party,Session,,true,true,no_restriction,false,Not declared,Cloudflare,Rate limiting
+Likely Analytics,guess,,_ga_S52DZJZKQR,.coherehealth.com,/,First party,13 months,,false,false,unspecified,false,Not declared,Google Analytics 4,Persists session state
+Likely Marketing,guess,,MUID,.clarity.ms,/,Third party,13 months,,false,true,no_restriction,false,Not declared,Microsoft,User ID
+Likely Analytics,guess,,CLID,www.clarity.ms,/,Third party,12 months,,true,true,no_restriction,false,Not declared,Microsoft Clarity,User ID
+Unclassified,none,,ADS_VISITOR_ID,.google.com,/,Third party,6 days,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,SEARCH_SAMESITE,.google.com,/,Third party,4 months,,false,false,strict,false,Not declared,,
+Unclassified,none,,HSID,.google.com,/,Third party,12 months,,true,false,unspecified,false,Not declared,,
+Unclassified,none,,SSID,.google.com,/,Third party,12 months,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,APISID,.google.com,/,Third party,12 months,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,SAPISID,.google.com,/,Third party,12 months,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,__Secure-1PAPISID,.google.com,/,Third party,12 months,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,__Secure-3PAPISID,.google.com,/,Third party,12 months,,false,true,no_restriction,false,Not declared,,
+Unclassified,none,,SID,.google.com,/,Third party,12 months,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__Secure-1PSID,.google.com,/,Third party,12 months,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,__Secure-3PSID,.google.com,/,Third party,12 months,,true,true,no_restriction,false,Not declared,,
+Likely Strictly Necessary,guess,,AEC,.google.com,/,Third party,4 months,,true,true,lax,false,Not declared,Google,Abuse prevention
+Likely Marketing,guess,,NID,.google.com,/,Third party,6 months,,true,true,no_restriction,false,Not declared,Google,Preferences / ads
+Unclassified,none,,DV,www.google.com,/,Third party,1 hours,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__Secure-STRP,.google.com,/,Third party,1 hours,,false,true,strict,false,Not declared,,
+Unclassified,none,,__Secure-1PSIDTS,.google.com,/,Third party,12 months,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,__Secure-3PSIDTS,.google.com,/,Third party,12 months,,true,true,no_restriction,false,Not declared,,
+Unclassified,none,,SIDCC,.google.com,/,Third party,12 months,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__Secure-1PSIDCC,.google.com,/,Third party,12 months,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,__Secure-3PSIDCC,.google.com,/,Third party,12 months,,true,true,no_restriction,false,Not declared,,
+Likely Marketing,guess,,IDE,.doubleclick.net,/,Third party,13 months,,true,true,no_restriction,false,Not declared,Google DoubleClick,Ad targeting
+Likely Strictly Necessary,guess,,_cfuvid,.zoominfo.com,/,Third party,Session,,true,true,no_restriction,false,Not declared,Cloudflare,Rate limiting
+Likely Analytics,guess,,_ga,.analytics.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,Google Analytics,Distinguishes users
+Likely Marketing,guess,,_gcl_au,.analytics.google.com,/,Third party,3 months,,false,false,unspecified,false,Not declared,Google Ads,Conversion linker
+Likely Analytics,guess,,_ga_X6LMX9VR0Y,.analytics.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,Google Analytics 4,Persists session state
+Unclassified,none,,S,analytics.google.com,/,Third party,Session,,false,false,unspecified,false,Not declared,,
+Likely Analytics,guess,,_ga_E21ZQ9L9QC,.analytics.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,Google Analytics 4,Persists session state
+Likely Analytics,guess,,_ga_P2MRLK93YK,.analytics.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,Google Analytics 4,Persists session state
+Likely Analytics,guess,,_ga_B8SKQ9HHPZ,.analytics.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,Google Analytics 4,Persists session state
+Likely Analytics,guess,,_ga_JL3RR3JH55,.analytics.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,Google Analytics 4,Persists session state
+Likely Analytics,guess,,_ga_4BXXKZJZTZ,.analytics.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,Google Analytics 4,Persists session state
+Likely Strictly Necessary,guess,,__cf_bm,.hsforms.net,/,Third party,1 hours,,true,true,no_restriction,true,Not declared,Cloudflare,Bot management
+Likely Strictly Necessary,guess,,__cf_bm,.hs-scripts.com,/,Third party,1 hours,,true,true,no_restriction,true,Not declared,Cloudflare,Bot management
+Likely Strictly Necessary,guess,,__cf_bm,.hsadspixel.net,/,Third party,1 hours,,true,true,no_restriction,true,Not declared,Cloudflare,Bot management

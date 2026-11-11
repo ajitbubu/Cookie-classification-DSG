@@ -1,0 +1,35 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,visid_incap_1956139,.hasbro.com,/,First party,364.62 days,,true,false,unspecified,false,Not declared,,
+Unclassified,none,,incap_ses_180_1956139,.hasbro.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Essential Services,banner,Ketch,__cf_bm,.fonts.net,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,nlbi_1956139,.hasbro.com,/,First party,Session,,true,false,unspecified,false,Not declared,,
+Essential Services,banner,Ketch,_swb,.hasbro.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Analytics,banner,Ketch,_ga,.hasbro.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Unclassified,none,,hasggrd_consumercare,consumercare.hasbro.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_ZN60TSEJ41,.hasbro.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Advertising,banner,Ketch,bcookie,,,,,364 days,,,,,"Declared, not set",,LinkedIn  
+Advertising,banner,Ketch,__Secure-YEC,,,,,,,,,,"Declared, not set",,Google Youtube
+Advertising,banner,Ketch,__Secure-YNID,,,,,179 days,,,,,"Declared, not set",,Google Youtube
+Advertising,banner,Ketch,VISITOR_INFO1_LIVE,,,,,179 days,,,,,"Declared, not set",,Google Youtube
+Analytics,banner,Ketch,_dd_s,,,,,364 days,,,,,"Declared, not set",,Datadog
+Analytics,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,VISITOR_PRIVACY_METADATA,,,,,179 days,,,,,"Declared, not set",,Google Youtube
+Analytics,banner,Ketch,YSC,,,,,,,,,,"Declared, not set",,Google Youtube
+Essential Services,banner,Ketch,ak_bmsc,,,,,,,,,,"Declared, not set",,Akamai
+Essential Services,banner,Ketch,bm_mi,,,,,,,,,,"Declared, not set",,Akamai
+Essential Services,banner,Ketch,bm_sv,,,,,,,,,,"Declared, not set",,Akamai
+Essential Services,banner,Ketch,bscookie,,,,,400 days,,,,,"Declared, not set",,LinkedIn  
+Essential Services,banner,Ketch,dd_cookie_test_*,,,,,,,,,,"Declared, not set",,Datadog
+Essential Services,banner,Ketch,f5avraaaaaaaaaaaaaaaa_session_,,,,,400 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,__Host-next-auth.csrf-token,,,,,,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,incap_ses_*,,,,,,,,,,"Declared, not set",,Imperva
+Essential Services,banner,Ketch,JSESSIONID,,,,,,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,nlbi_*,,,,,,,,,,"Declared, not set",,Imperva
+Essential Services,banner,Ketch,__Secure-next-auth.callback-url,,,,,,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,visid_incap_*,,,,,364 days,,,,,"Declared, not set",,Imperva
+Functional,banner,Ketch,lang,,,,,400 days,,,,,"Declared, not set",,LinkedIn Ads
+Functional,banner,Ketch,LAST_RESULT_ENTRY_KEY,,,,,,,,,,"Declared, not set",,Google Youtube
+Functional,banner,Ketch,lidc,,,,,,,,,,"Declared, not set",,LinkedIn  
+Functional,banner,Ketch,__Secure-ROLLOUT_TOKEN,,,,,179 days,,,,,"Declared, not set",,Google Youtube
+Functional,banner,Ketch,TESTCOOKIESENABLED,,,,,,,,,,"Declared, not set",,Google Ad Manager
+Functional,banner,Ketch,___utmvc,,,,,,,,,,"Declared, not set",,Google Analytics

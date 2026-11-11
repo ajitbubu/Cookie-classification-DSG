@@ -52,7 +52,7 @@
 .ui-pill svg { flex: none; }
 .ui-pill--quick { background: var(--ucm-brand-accent); }
 .ui-pill--deep { background: var(--ucm-navy); }
-.ui-pill--schedule { background: var(--ucm-green-1); }
+.ui-pill--schedule { background: var(--ucm-green-1); color: var(--ucm-navy); }
 
 /* Solid category chips (Figma 12.12.39 Cookies, 12.13.22 Categories, 12.13.36 Vendors) */
 .ui-chip--solid { height: 36px; padding: 0 18px; border-radius: 6px; box-shadow: none; color: var(--ucm-surface); font: 400 16px/1 var(--font-sans); }

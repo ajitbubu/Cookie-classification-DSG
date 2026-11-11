@@ -92,7 +92,7 @@
   margin: 0 0 10px;
 }
 .ovm-required {
-  font-size: 10px;
+  font-size: var(--fs-xs);
   font-weight: 500;
   color: #f87171;
 }
@@ -113,12 +113,12 @@
 
 /* Category badges */
 .ovm-cat-badge, .ovm-cat-badge-sm {
-  font-size: 11px;
+  font-size: var(--fs-xs);
   font-weight: 600;
   padding: 2px 8px;
   border-radius: 6px;
 }
-.ovm-cat-badge-sm { font-size: 10px; padding: 1px 6px; }
+.ovm-cat-badge-sm { font-size: var(--fs-xs); padding: 1px 6px; }
 .cat-analytics { background: rgba(59,130,246,0.15); color: #60a5fa; }
 .cat-marketing { background: rgba(168,85,247,0.15); color: #c084fc; }
 .cat-strictly-necessary { background: rgba(16,185,129,0.15); color: #34d399; }
@@ -138,7 +138,7 @@
   border-radius: 8px;
   border: 1px solid rgba(255,255,255,0.06);
   cursor: pointer;
-  transition: all 0.15s;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s, box-shadow 0.15s, opacity 0.15s, transform 0.15s;
 }
 .ovm-cat-option:hover { background: rgba(255,255,255,0.03); }
 .ovm-cat-option.selected {
@@ -159,7 +159,7 @@
 .ovm-cat-dot.cat-functional { background: #f59e0b; }
 .ovm-cat-label { font-size: 13px; font-weight: 600; color: #e2e8f0; flex: 1; }
 .ovm-cat-current-tag {
-  font-size: 9px;
+  font-size: var(--fs-xs);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -245,7 +245,7 @@
   border-radius: 6px;
   cursor: pointer;
   border: 1px solid rgba(255,255,255,0.04);
-  transition: all 0.15s;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s, box-shadow 0.15s, opacity 0.15s, transform 0.15s;
 }
 .ovm-similar-item:hover { background: rgba(255,255,255,0.02); }
 .ovm-similar-item.checked {
@@ -259,7 +259,7 @@
   color: rgba(255,255,255,0.6);
   flex: 1;
 }
-.ovm-similar-cat { font-size: 10px; font-weight: 600; padding: 2px 6px; border-radius: 4px; }
+.ovm-similar-cat { font-size: var(--fs-xs); font-weight: 600; padding: 2px 6px; border-radius: 4px; }
 
 /* History */
 .ovm-history-toggle {
@@ -290,7 +290,7 @@
   background: rgba(0,0,0,0.15);
 }
 .ovm-history-date {
-  font-size: 10px;
+  font-size: var(--fs-xs);
   color: rgba(255,255,255,0.3);
   margin-bottom: 4px;
 }
@@ -302,7 +302,7 @@
 }
 .ovm-history-arrow { color: rgba(255,255,255,0.3); font-size: 12px; }
 .ovm-history-reason {
-  font-size: 11px;
+  font-size: var(--fs-xs);
   color: rgba(255,255,255,0.4);
   font-style: italic;
 }
@@ -321,7 +321,7 @@
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s, opacity 0.2s, transform 0.2s;
   border: none;
   display: flex;
   align-items: center;

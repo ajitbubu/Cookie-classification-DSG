@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0.0",
+  "columns": [
+    "observation_id",
+    "observed_at",
+    "site_domain",
+    "cookie_name",
+    "cookie_domain",
+    "path",
+    "expiry_days",
+    "secure",
+    "http_only",
+    "same_site",
+    "host_only",
+    "partitioned",
+    "setter_domain",
+    "label_category",
+    "label_source",
+    "dataset_source"
+  ],
+  "column_count": 16,
+  "dataset_source": "banner_recapture_2026-11-10",
+  "sources": [
+    {
+      "file": "models/training_data/phase0_samples/onetrust/recapture_2026-11-10/cookies_www.ikea.com_2026-11-10.csv",
+      "sha256": "8068e4b900c6e82721fb26eb0a1277de2489740616e7988b5c7538958c87ff68",
+      "input_rows": 108,
+      "accepted_rows": 44,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 20,
+      "declared_not_set": 44,
+      "missing_attributes": 0
+    },
+    {
+      "file": "models/training_data/phase0_samples/onetrust/recapture_2026-11-10/cookies_www.okta.com_2026-11-10.csv",
+      "sha256": "20c1d9a4b6c3191711ac8d90725bd2931ffa5f2f12fd3d34ef69cb401640b87a",
+      "input_rows": 330,
+      "accepted_rows": 95,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 37,
+      "declared_not_set": 198,
+      "missing_attributes": 0
+    },
+    {
+      "file": "models/training_data/phase0_samples/onetrust/recapture_2026-11-10/cookies_www.t-mobile.com_2026-11-10.csv",
+      "sha256": "15f3af3109290153367ba01f1210ae5b76b2a7447c26f8bd33b1eeb9c18be8f8",
+      "input_rows": 663,
+      "accepted_rows": 69,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 58,
+      "declared_not_set": 536,
+      "missing_attributes": 0
+    },
+    {
+      "file": "models/training_data/phase0_samples/onetrust/recapture_2026-11-10/cookies_www.zoom.com_2026-11-10.csv",
+      "sha256": "2920b7d4b9ba46fb522f66c46f26ed43d0b4dcd8f4937fead027912572e28907",
+      "input_rows": 205,
+      "accepted_rows": 66,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 50,
+      "declared_not_set": 89,
+      "missing_attributes": 0
+    },
+    {
+      "file": "models/training_data/phase0_samples/onetrust/cookies_open.spotify.com_2026-11-10.csv",
+      "sha256": "217c68192f3eba7b6cb84aa1b06c7e63df813f576ba4a73ede2913cd7c82daff",
+      "input_rows": 344,
+      "accepted_rows": 12,
+      "missing_identity": 0,
+      "unsupported_label": 1,
+      "format": "banner_export",
+      "not_banner_declared": 12,
+      "declared_not_set": 319,
+      "missing_attributes": 0
+    },
+    {
+      "file": "models/training_data/phase0_samples/onetrust/cookies_www.bankofamerica.com_2026-11-02.csv",
+      "sha256": "d3c642f151e9c3eb7799c095dc3ef25345d75a113f9b51866ed80f7a507b5408",
+      "input_rows": 194,
+      "accepted_rows": 47,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 8,
+      "declared_not_set": 139,
+      "missing_attributes": 0
+    },
+    {
+      "file": "models/training_data/phase0_samples/onetrust/cookies_www.novonordisk-us.com_2026-11-10.csv",
+      "sha256": "caf048f1912a06515d78879d8daa4f3f7b827f55300ceed73888598979fac84a",
+      "input_rows": 211,
+      "accepted_rows": 71,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 18,
+      "declared_not_set": 122,
+      "missing_attributes": 0
+    },
+    {
+      "file": "models/training_data/phase0_samples/onetrust/cookies_www.salesforce.com_2026-11-10.csv",
+      "sha256": "7884fa1b8fd454f6a0dc1ca09b65bffb647ffe306e9ce2bf3ce5fe017377d18f",
+      "input_rows": 550,
+      "accepted_rows": 33,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 15,
+      "declared_not_set": 502,
+      "missing_attributes": 0
+    },
+    {
+      "file": "models/training_data/phase0_samples/onetrust/cookies_www.xfinity.com_2026-11-10.csv",
+      "sha256": "ff4c9cdb0af2b90dfc916d6494c01237ad05dc9eb155bec98197ce4f0a598b77",
+      "input_rows": 1256,
+      "accepted_rows": 82,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 31,
+      "declared_not_set": 1143,
+      "missing_attributes": 0
+    }
+  ],
+  "normalization": {
+    "normalized_rows": 519,
+    "duplicate_rows_removed": 0,
+    "contradictory_rows_removed": 0,
+    "output_rows": 519
+  },
+  "label_distribution": {
+    "Analytics_Performance": 99,
+    "Functional": 51,
+    "Marketing_Advertising": 276,
+    "Strictly_Necessary": 93
+  },
+  "non_empty_values_by_column": {
+    "observation_id": 519,
+    "observed_at": 519,
+    "site_domain": 519,
+    "cookie_name": 519,
+    "cookie_domain": 519,
+    "path": 519,
+    "expiry_days": 519,
+    "secure": 519,
+    "http_only": 519,
+    "same_site": 519,
+    "host_only": 519,
+    "partitioned": 519,
+    "setter_domain": 0,
+    "label_category": 519,
+    "label_source": 519,
+    "dataset_source": 519
+  },
+  "output": {
+    "file": "models/training_data/banner/banner_recapture_2026-11-10.csv",
+    "sha256": "ba7c50a0f1b8d3877e1d64b1bbddc3f9f44701341d4ae92b65d06067a411e5db",
+    "bytes": 119301
+  }
+}

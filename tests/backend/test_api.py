@@ -234,7 +234,7 @@ def test_model_info_reports_served_model_metrics(client):
 
     assert r.status_code == 200
     body = r.json()
-    assert body["model_version"] == "6.1.0"
+    assert body["model_version"] == "7.0.0"
     assert body["trained_at"]
     assert body["samples"]["training"] > 0
     assert body["samples"]["test"] > 0
@@ -354,6 +354,7 @@ def test_scan_failure_does_not_return_fabricated_cookies(client, monkeypatch):
         raise RuntimeError("browser unavailable")
 
     monkeypatch.setattr(browser_manager, "start", fail_to_start)
+    _resolve_to(monkeypatch, "93.184.215.14")
     r = client.post("/api/scan", json={"url": "https://example.com", "scanType": "quick"})
 
     assert r.status_code == 503
@@ -413,6 +414,34 @@ def test_generic_session_pattern_does_not_exempt_tracking_cookie():
     )
 
 
+@pytest.mark.parametrize("pattern,cookie_name,matches", [
+    # Vendor cookie names match exactly or with an ID suffix.
+    ("_ga", "_ga", True),
+    ("_ga", "_ga_S4EX53B760", True),
+    ("_gat", "_gat_UA-12345-1", True),
+    ("IDE", "ide", True),
+    # ...but not as fragments of unrelated names (these used to match at 0.99).
+    ("_ga", "_gamer_tag", False),
+    ("_ga", "cart_gauge", False),
+    ("_ga", "__gads", False),
+    ("_gid", "t_gid", False),
+    ("IDE", "ide_theme", False),
+    ("IDE", "guide_seen", False),
+    ("NID", "liveRampSesssionID", False),
+    ("NID", "ASP.NET_SessionId", False),
+    # Keyword patterns still match anywhere in the name.
+    ("csrf", "csrftoken", True),
+    ("csrf", "CRAFT_CSRF_TOKEN", True),
+    ("CONSENT", "CookieConsent", True),
+    ("CONSENT", "cookiebot-consent--necessary", True),
+])
+def test_name_patterns_do_not_match_unrelated_fragments(pattern, cookie_name, matches):
+    from backend.db.category_manager import CategoryManager
+
+    rule = {"pattern": pattern, "match_type": "name"}
+    assert CategoryManager()._pattern_matches(rule, cookie_name, "example.com") is matches
+
+
 @pytest.mark.anyio
 async def test_category_fallback_remains_unclassified():
     from backend.db.category_manager import CategoryManager
@@ -424,6 +453,26 @@ async def test_category_fallback_remains_unclassified():
     assert result["category"] == "Unclassified"
     assert result["confidence"] == 0.0
     assert result["source"] == "default"
+
+
+@pytest.mark.anyio
+async def test_stale_stored_pattern_match_is_rechecked_against_current_patterns():
+    from backend.db.category_manager import CategoryManager
+
+    manager = CategoryManager()
+    manager.patterns_loaded = True
+    manager.patterns_cache = [{"pattern": "_ga", "match_type": "name", "category": "Analytics",
+                               "confidence": 0.99, "vendor": "Google", "priority": 100}]
+
+    async def stale_row(name, domain):  # stored by the old substring matcher
+        return {"category": "Analytics", "confidence": 0.99, "source": "pattern_match", "metadata": {}}
+
+    manager.query_knowledge_base = stale_row
+    result = await manager.get_category_with_fallback(
+        "cart_gauge", "shop.example", ml_prediction={"category": "Functional", "confidence": 0.4}
+    )
+
+    assert result["source"] == "ml_prediction" and result["category"] == "Functional"
 
 
 # --------------------------------------------------------------------------
@@ -521,3 +570,95 @@ def test_store_answers_503_when_mongodb_is_unreachable(client, monkeypatch):
     r = client.get("/api/store/scans")
     assert r.status_code == 503
     assert "unavailable" in r.json()["detail"]
+
+
+# --------------------------------------------------------------------------
+# Security: SSRF guard on scan targets, SPA path containment, ML JWT key
+# --------------------------------------------------------------------------
+
+def _resolve_to(monkeypatch, *addresses):
+    """Stub DNS for the scan-target guard so tests never touch the network."""
+    from backend.scanner import url_guard
+
+    async def resolve(_host):
+        return list(addresses)
+
+    monkeypatch.setattr(url_guard, "_resolve", resolve)
+
+
+@pytest.mark.parametrize("endpoint", ["/api/scan", "/api/scan-stream"])
+@pytest.mark.parametrize("url", [
+    "file:///etc/passwd",
+    "http://169.254.169.254/latest/meta-data/",
+    "http://127.0.0.1:6379/",
+    "http://[::1]/",
+])
+def test_scan_rejects_non_public_url_literals(client, endpoint, url):
+    r = client.post(endpoint, json={"url": url, "scanType": "quick"})
+    assert r.status_code == 422
+
+
+@pytest.mark.parametrize("endpoint", ["/api/scan", "/api/scan-stream"])
+def test_scan_rejects_hostname_resolving_to_internal_address(client, monkeypatch, endpoint):
+    from backend.scanner.browser import browser_manager
+
+    async def must_not_start():
+        raise AssertionError("browser started for a blocked target")
+
+    monkeypatch.setattr(browser_manager, "start", must_not_start)
+    _resolve_to(monkeypatch, "10.0.0.7")
+    r = client.post(endpoint, json={"url": "http://postgres:5432/", "scanType": "quick"})
+    assert r.status_code == 400
+    assert "not allowed" in r.json()["detail"]
+
+
+def test_spa_fallback_does_not_serve_files_outside_static_dir(tmp_path, monkeypatch):
+    import importlib
+
+    from fastapi.testclient import TestClient
+
+    import backend.main
+
+    static = tmp_path / "build"
+    (static / "assets").mkdir(parents=True)
+    (static / "index.html").write_text("<html>spa</html>")
+    secret = tmp_path / "secret.txt"
+    secret.write_text("do-not-serve")
+
+    monkeypatch.setenv("STATIC_DIR", str(static))
+    try:
+        app = importlib.reload(backend.main).app
+        spa = TestClient(app)  # no context manager: skip startup hooks
+        for path in (f"/%2F{str(secret).lstrip('/').replace('/', '%2F')}", "/..%2Fsecret.txt"):
+            r = spa.get(path)
+            assert r.status_code == 200
+            assert "do-not-serve" not in r.text
+            assert "spa" in r.text
+        assert spa.get("/index.html").text == "<html>spa</html>"
+    finally:
+        monkeypatch.delenv("STATIC_DIR")
+        importlib.reload(backend.main)
+
+
+def test_ml_jwt_key_is_not_the_old_hardcoded_value():
+    import jwt
+    from fastapi import HTTPException
+    from fastapi.security import HTTPAuthorizationCredentials
+
+    from backend.api.ml_classifier import auth
+
+    assert auth.SECRET_KEY != "your-secret-key-here"
+    forged = jwt.encode({"sub": "attacker"}, "your-secret-key-here", algorithm="HS256")
+    with pytest.raises(HTTPException) as exc:
+        auth.verify_token(HTTPAuthorizationCredentials(scheme="Bearer", credentials=forged))
+    assert exc.value.status_code == 401
+    assert "Could not validate credentials" in exc.value.detail
+
+
+def test_cors_does_not_trust_arbitrary_origins(client):
+    """A random website must not be able to read the API through a visitor's browser."""
+    evil = client.get("/api/health", headers={"Origin": "https://evil.example"})
+    assert "access-control-allow-origin" not in evil.headers
+
+    dev = client.get("/api/health", headers={"Origin": "http://localhost:5173"})
+    assert dev.headers["access-control-allow-origin"] == "http://localhost:5173"

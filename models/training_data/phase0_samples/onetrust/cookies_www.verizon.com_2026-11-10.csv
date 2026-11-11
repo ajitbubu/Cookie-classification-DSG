@@ -1,0 +1,99 @@
+﻿category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Likely Analytics,guess,,s_fid,.verizon.com,/,First party,12 months,,false,false,unspecified,false,Not declared,Adobe Analytics,Fallback visitor ID
+Likely Analytics,guess,,s_vi,.verizon.com,/,First party,12 months,,false,false,unspecified,false,Not declared,Adobe Analytics,Visitor ID
+Unclassified,none,,GLOBALID,.verizon.com,/,First party,40 days,,false,true,unspecified,false,Not declared,,
+Likely Analytics,guess,,AMCV_777B575E55828EBB7F000101%40AdobeOrg,.verizon.com,/,First party,12 months,,false,true,no_restriction,false,Not declared,Adobe Experience Cloud,Visitor ID
+Unclassified,none,,taggingUUID_s,.www.verizon.com,/,First party,12 months,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,taggingUUID,.verizon.com,/,First party,12 months,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,s_ecid,.verizon.com,/,First party,12 months,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,tcm-3e1db8d7e927e65ebdea683143ab1db4511e86f8dfad7916b7808217b30683af,.verizon.com,/,First party,13 months,,false,false,unspecified,false,Not declared,,
+Likely Analytics,guess,,ajs_anonymous_id,.verizon.com,/,First party,12 months,,false,false,lax,false,Not declared,Segment,Anonymous ID
+Unclassified,none,,QuantumMetricUserID,.verizon.com,/,First party,12 months,,false,true,no_restriction,false,Not declared,,
+Likely Marketing,guess,,_gcl_au,.verizon.com,/,First party,2 months,,false,false,unspecified,false,Not declared,Google Ads,Conversion linker
+Likely Analytics,guess,,_ga,.verizon.com,/,First party,13 months,,false,false,unspecified,false,Not declared,Google Analytics,Distinguishes users
+Unclassified,none,,LPVID,.verizon.com,/,First party,11 months,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,s_pers,.verizon.com,/,First party,10 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,pdpVisited,www.verizon.com,/,First party,11 months,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cdlThrottleList,www.verizon.com,/,First party,10 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,vzwSandBox,www.verizon.com,/,First party,10 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,BVBRANDID,.verizon.com,/,First party,11 months,,false,true,lax,false,Not declared,,
+Likely Analytics,guess,,_ga_Y3C9M08MKS,.verizon.com,/,First party,12 months,,false,false,unspecified,false,Not declared,Google Analytics 4,Persists session state
+Likely Strictly Necessary,guess,,ak_bmsc,.verizon.com,/,First party,2 hours,,true,false,unspecified,false,Not declared,Akamai,Bot management
+Unclassified,none,,bm_so,.verizon.com,/,First party,24 hours,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,kndctr_777B575E55828EBB7F000101_AdobeOrg_cluster,.verizon.com,/,First party,1 hours,,false,true,no_restriction,false,Not declared,,
+Unclassified,none,,GeoCountry,www.verizon.com,/,First party,Session,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,geoC,.verizon.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,s_vnc365,.verizon.com,/,First party,12 months,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,s_ivc,.verizon.com,/,First party,1 hours,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,s_tslv,.verizon.com,/,First party,13 months,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,s_inv,.verizon.com,/,First party,1 hours,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,omni_prevPageName,.verizon.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,taggingVisitStart,.verizon.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,s_nr30,.verizon.com,/,First party,30 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,taggingPageCount,.verizon.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_meta_metarouter_timezone_offset,.verizon.com,/,First party,30 days,,false,true,no_restriction,false,Not declared,,
+Unclassified,none,,_meta_metarouter_sessionID,.verizon.com,/,First party,13 months,,false,true,no_restriction,false,Not declared,,
+Unclassified,none,,soedc_sales,.verizon.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,numberFormatFFlag,www.verizon.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,SOE-XSRF-TOKEN-SALES,www.verizon.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,bioCustomerSessionId,.verizon.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,digital_ig_session,.verizon.com,/,First party,Session,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,igAmSessionId,.verizon.com,/,First party,Session,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,bm_lso,.www.verizon.com,/,First party,30 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,mboxEdgeCluster,.verizon.com,/,First party,1 hours,,false,true,no_restriction,false,Not declared,,
+Unclassified,none,,kndctr_777B575E55828EBB7F000101_AdobeOrg_identity,.verizon.com,/,First party,13 months,,false,true,no_restriction,false,Not declared,,
+Unclassified,none,,QuantumMetricSessionID,.verizon.com,/,First party,1 hours,,false,true,no_restriction,false,Not declared,,
+Unclassified,none,,mbox,.verizon.com,/,First party,13 months,,false,true,no_restriction,false,Not declared,,
+Likely Analytics,guess,,_ga_12R1DX1LX7,.verizon.com,/,First party,13 months,,false,false,unspecified,false,Not declared,Google Analytics 4,Persists session state
+Unclassified,none,,Q_id,.verizon.com,/,First party,1 hours,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,Q_Platform,.verizon.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,uniqPageVisitDtl_q,.verizon.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,uniqPageVisits_q,.verizon.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,allPageVisitDtl_q,.verizon.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,allPageVisits_q,.verizon.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,qSession,.verizon.com,/,First party,1 hours,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,vzgptsb,www.verizon.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,vzgptScopedHistoryKey,www.verizon.com,/,First party,Session,,false,true,no_restriction,false,Not declared,,
+Unclassified,none,,s_ig,.verizon.com,/,First party,4 hours,,false,true,unspecified,false,Not declared,,
+Likely Strictly Necessary,guess,,AWSALB,www.verizon.com,/,First party,7 days,,false,false,unspecified,false,Not declared,AWS,Load balancing
+Likely Strictly Necessary,guess,,AWSALBCORS,www.verizon.com,/,First party,7 days,,false,true,no_restriction,false,Not declared,AWS,Load balancing
+Unclassified,none,,soedc_chat,.verizon.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Likely Strictly Necessary,guess,,bm_sv,.verizon.com,/,First party,2 hours,,false,true,unspecified,false,Not declared,Akamai,Bot management
+Unclassified,none,,omniSession,.verizon.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Likely Strictly Necessary,guess,,bm_sz,.verizon.com,/,First party,4 hours,,false,false,unspecified,false,Not declared,Akamai,Bot management
+Likely Strictly Necessary,guess,,_abck,.verizon.com,/,First party,12 months,,false,true,unspecified,false,Not declared,Akamai,Bot management
+Unclassified,none,,bm_s,.verizon.com,/,First party,31 days,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,NSC_mphjo_txt_mcwt,secure.verizon.com,/,First party,Session,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,NSC_mphjo_443_hwt,secure.verizon.com,/,First party,Session,,true,true,unspecified,false,Not declared,,
+Likely Analytics,guess,,_ga,.analytics.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,Google Analytics,Distinguishes users
+Unclassified,none,,SEARCH_SAMESITE,.google.com,/,Third party,5 months,,false,false,strict,false,Not declared,,
+Unclassified,none,,SID,.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__Secure-1PSID,.google.com,/,Third party,13 months,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,__Secure-3PSID,.google.com,/,Third party,13 months,,true,true,no_restriction,false,Not declared,,
+Unclassified,none,,HSID,.google.com,/,Third party,13 months,,true,false,unspecified,false,Not declared,,
+Unclassified,none,,SSID,.google.com,/,Third party,13 months,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,APISID,.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,SAPISID,.google.com,/,Third party,13 months,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,__Secure-1PAPISID,.google.com,/,Third party,13 months,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,__Secure-3PAPISID,.google.com,/,Third party,13 months,,false,true,no_restriction,false,Not declared,,
+Likely Strictly Necessary,guess,,AEC,.google.com,/,Third party,5 months,,true,true,lax,false,Not declared,Google,Abuse prevention
+Likely Marketing,guess,,_gcl_au,.analytics.google.com,/,Third party,57 days,,false,false,unspecified,false,Not declared,Google Ads,Conversion linker
+Unclassified,none,,S,analytics.google.com,/,Third party,Session,,false,false,unspecified,false,Not declared,,
+Likely Analytics,guess,,_ga_X6LMX9VR0Y,.analytics.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,Google Analytics 4,Persists session state
+Likely Analytics,guess,,_ga_B8SKQ9HHPZ,.analytics.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,Google Analytics 4,Persists session state
+Likely Analytics,guess,,_ga_JL3RR3JH55,.analytics.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,Google Analytics 4,Persists session state
+Likely Analytics,guess,,_ga_P2MRLK93YK,.analytics.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,Google Analytics 4,Persists session state
+Likely Analytics,guess,,_ga_E21ZQ9L9QC,.analytics.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,Google Analytics 4,Persists session state
+Likely Analytics,guess,,_ga_4BXXKZJZTZ,.analytics.google.com,/,Third party,13 months,,false,false,unspecified,false,Not declared,Google Analytics 4,Persists session state
+Likely Marketing,guess,,NID,.google.com,/,Third party,6 months,,true,true,no_restriction,false,Not declared,Google,Preferences / ads
+Unclassified,none,,__Secure-1PSIDTS,.google.com,/,Third party,12 months,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,__Secure-3PSIDTS,.google.com,/,Third party,12 months,,true,true,no_restriction,false,Not declared,,
+Unclassified,none,,__Secure-STRP,.google.com,/,Third party,1 hours,,false,true,strict,false,Not declared,,
+Unclassified,none,,SIDCC,.google.com,/,Third party,12 months,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__Secure-1PSIDCC,.google.com,/,Third party,12 months,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,__Secure-3PSIDCC,.google.com,/,Third party,12 months,,true,true,no_restriction,false,Not declared,,
+Likely Strictly Necessary,guess,,AWSALB,chatbot-exp.verizon.com,/,First party,7 days,,false,false,unspecified,false,Not declared,AWS,Load balancing
+Likely Strictly Necessary,guess,,AWSALBCORS,chatbot-exp.verizon.com,/,First party,7 days,,false,true,no_restriction,false,Not declared,AWS,Load balancing
+Unclassified,none,,numberFormatFFlag,chatbot-exp.verizon.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Likely Strictly Necessary,guess,,XSRF-TOKEN,chatbot-exp.verizon.com,/,First party,Session,,false,true,no_restriction,false,Not declared,Framework,CSRF protection
+Likely Marketing,guess,,IDE,.doubleclick.net,/,Third party,9 months,,true,true,no_restriction,false,Not declared,Google DoubleClick,Ad targeting

@@ -1,0 +1,92 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,riv-detected-location,rivian.com,/,First party,0.04 days,,false,true,strict,false,"Declared, conflicting",,
+Unclassified,none,,riv-ld-context-v3,rivian.com,/,First party,365.00 days,,false,true,strict,false,Not declared,,
+Strictly Necessary,banner,Ketch,_swb,.rivian.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Unclassified,none,,_sp_ses.7c05,.rivian.com,/,First party,0.02 days,,false,true,lax,false,Not declared,,
+Functional,banner,Ketch,__cf_bm,.sierra.chat,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,sp,rivian.com,/,First party,365.00 days,,true,true,lax,false,"Declared, conflicting",,
+Unclassified,none,,spCookieExtensionService,rivian.com,/,First party,400.00 days,,false,true,lax,false,Not declared,,
+Strictly Necessary,banner,Ketch,_ketch_consent_v1_,.rivian.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Analytics,banner,Ketch,_ga,.rivian.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Sharing for Targeted Advertising,banner,Ketch,_uetmsdns,.rivian.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,,Microsoft Ads
+Unclassified,none,,sa-user-id,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,rivian.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,rivian.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,sa-user-id-v3,rivian.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,rivian.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Sharing for Targeted Advertising,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_pin_unauth,.rivian.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,IR_gbd,.rivian.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Strictly Necessary,banner,Ketch,_swb_consent_,.rivian.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Sharing for Targeted Advertising,banner,Ketch,ad-id,.amazon-adsystem.com,/,Third party,232.00 days,236 days,true,true,none,false,Declared & set,,Amazon Ads
+Unclassified,none,,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Functional,banner,Ketch,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,brwsr,.pxf.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,irtps,.pxf.io,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_fbp,.rivian.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,brwsr,.ojrq.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,global-chat-state,.rivian.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,riv-selected-postal-code,rivian.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,riv-detected-locale,rivian.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,m,m.stripe.com,/,Third party,400.00 days,,true,true,none,false,"Declared, conflicting",,
+Functional,banner,Ketch,__stripe_mid,.rivian.com,/,First party,365.00 days,364 days,false,true,strict,false,Declared & set,,Stripe
+Functional,banner,Ketch,__stripe_sid,.rivian.com,/,First party,0.02 days,,false,true,strict,false,Declared & set,,Stripe
+Unclassified,none,,a-sess,rivian.com,/,First party,1.00 days,,true,true,unspecified,false,Not declared,,
+Analytics,banner,Ketch,_dd_s,rivian.com,/,First party,365.00 days,364 days,false,false,strict,false,Declared & set,,Datadog
+Sharing for Targeted Advertising,banner,Ketch,_rdt_uuid,.rivian.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Unclassified,none,,_tq_id.TV-5418458154-1.7c05,rivian.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,IR_PI,.rivian.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,IR_31552,.rivian.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,fs_lua,.rivian.com,/,First party,0.02 days,,false,true,strict,false,"Declared, conflicting",,
+Analytics,banner,Ketch,fs_uid,.rivian.com,/,First party,365.00 days,365 days,false,true,strict,false,Declared & set,,FullStory
+Sharing for Targeted Advertising,banner,Ketch,_gcl_au,.rivian.com,/,First party,90.00 days,90 days,false,false,unspecified,false,Declared & set,,Google Ads
+Unclassified,none,,_uetsid,.rivian.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_uetvid,.rivian.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_ga_ZK75JEL9E3,.rivian.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_sp_id.7c05,.rivian.com,/,First party,400.00 days,,false,true,lax,false,Not declared,,
+Strictly Necessary,banner,Ketch,__cflb,,,,,,,,,,"Declared, not set",,Cloudflare
+Strictly Necessary,banner,Ketch,cookietest,,,,,,,,,,"Declared, not set",,Shopify
+Strictly Necessary,banner,Ketch,csrf,,,,,7 days,,,,,"Declared, not set",,
+Strictly Necessary,banner,Ketch,_csrfSecret,,,,,,,,,,"Declared, not set",,
+Strictly Necessary,banner,Ketch,dd_cookie_test_*,,,,,,,,,,"Declared, not set",,Datadog
+Strictly Necessary,banner,Ketch,i18n,,,,,,,,,,"Declared, not set",,
+Strictly Necessary,banner,Ketch,path,,,,,400 days,,,,,"Declared, not set",,
+Functional,banner,Ketch,hmt_id,,,,,29 days,,,,,"Declared, not set",,
+Functional,banner,Ketch,i18n,,,,,,,,,,"Declared, not set",,
+Functional,banner,Ketch,_jibe_sticky_params,,,,,,,,,,"Declared, not set",,
+Functional,banner,Ketch,path,,,,,400 days,,,,,"Declared, not set",,
+Functional,banner,Ketch,searchSource,,,,,29 days,,,,,"Declared, not set",,iCIMS
+Functional,banner,Ketch,_sp_root_domain_test_*,,,,,,,,,,"Declared, not set",,snowplow
+Functional,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Functional,banner,Ketch,TESTCOOKIESENABLED,,,,,,,,,,"Declared, not set",,Google Ad Manager
+Functional,banner,Ketch,timezone,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,_janalytics_id.0edf,,,,,400 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,_janalytics_ses.0edf,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,_jibe_sticky_params,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,_sp_id.*,,,,,400 days,,,,,"Declared, not set",,snowplow
+Analytics,banner,Ketch,spid.*,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,_sp_ses.*,,,,,,,,,,"Declared, not set",,snowplow
+Analytics,banner,Ketch,spses.*,,,,,,,,,,"Declared, not set",,
+Sharing for Targeted Advertising,banner,Ketch,_ftv,,,,,730 days,,,,,"Declared, not set",,Cint
+Sharing for Targeted Advertising,banner,Ketch,NID,,,,,182 days,,,,,"Declared, not set",,Google Ads
+Sharing for Targeted Advertising,banner,Ketch,TESTCOOKIESENABLED,,,,,,,,,,"Declared, not set",,Google Ad Manager
+Sharing for Targeted Advertising,banner,Ketch,_tq_id.TV-*,,,,,400 days,,,,,"Declared, not set",,Mediaocean

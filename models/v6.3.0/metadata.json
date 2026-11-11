@@ -1,0 +1,440 @@
+{
+  "version": "6.3.0",
+  "model_type": "xgboost_native",
+  "trained_at": "2026-11-10T23:10:09.566042+00:00",
+  "num_features": 52,
+  "features": [
+    "expiry_days",
+    "secure",
+    "http_only",
+    "is_third_party",
+    "cookie_name_len",
+    "is_ga_like",
+    "is_fb_like",
+    "has_prefix_utm",
+    "has_consent_kw",
+    "has_session_kw",
+    "is_session",
+    "is_short_term",
+    "is_medium_term",
+    "is_long_term",
+    "is_persistent",
+    "is_com_domain",
+    "is_net_domain",
+    "is_org_domain",
+    "name_starts_underscore",
+    "name_has_id",
+    "name_has_user",
+    "name_has_track",
+    "same_site_lax",
+    "same_site_strict",
+    "same_site_none",
+    "vendor_first_party",
+    "vendor_advertising",
+    "vendor_analytics",
+    "tracker_first_party",
+    "tracker_advertising",
+    "tracker_analytics",
+    "is_google",
+    "is_facebook",
+    "is_amazon",
+    "is_microsoft",
+    "is_linkedin",
+    "name_prefix_ga",
+    "name_prefix_fb",
+    "name_prefix_utm",
+    "expiry_exactly_365",
+    "expiry_exactly_730",
+    "expiry_exactly_30",
+    "expiry_exactly_7",
+    "vendor_tracker_match",
+    "both_advertising",
+    "both_analytics",
+    "domain_depth",
+    "secure_and_httponly",
+    "secure_and_third_party",
+    "name_has_session",
+    "name_has_analytics",
+    "name_has_consent"
+  ],
+  "categories": [
+    "Analytics_Performance",
+    "Functional",
+    "Marketing_Advertising",
+    "Strictly_Necessary"
+  ],
+  "abstain_category": "Unclassified",
+  "training_samples": 295533,
+  "calibration_samples": 751,
+  "test_samples": 1389,
+  "dataset": {
+    "sources": [
+      {
+        "source": "/Users/ajit/Code-base/Cookie-classification-DSG/models/training_data/cookie_classification_production.csv",
+        "input_rows": 73001,
+        "accepted_rows": 69171,
+        "missing_site_domain": 0,
+        "missing_cookie_identity": 0,
+        "unsupported_label": 0,
+        "missing_attributes": 0,
+        "unclassified_label_dropped": 3830,
+        "raw_label_distribution": {
+          "Marketing_Advertising": 21321,
+          "Analytics_Performance": 17454,
+          "Functional": 17234,
+          "Strictly_Necessary": 13162,
+          "Unclassified": 3830
+        },
+        "sha256": "c51e92a2669a4ca55457199b44c1dad8d9d9422c94ac1efa6f60cead6d021c53"
+      },
+      {
+        "source": "/Users/ajit/Code-base/Cookie-classification-DSG/models/training_data/banner/banner_recapture_2026-11-10.csv",
+        "input_rows": 519,
+        "accepted_rows": 519,
+        "missing_site_domain": 0,
+        "missing_cookie_identity": 0,
+        "unsupported_label": 0,
+        "missing_attributes": 0,
+        "unclassified_label_dropped": 0,
+        "raw_label_distribution": {
+          "Marketing_Advertising": 276,
+          "Analytics_Performance": 99,
+          "Strictly_Necessary": 93,
+          "Functional": 51
+        },
+        "sha256": "ba7c50a0f1b8d3877e1d64b1bbddc3f9f44701341d4ae92b65d06067a411e5db"
+      }
+    ],
+    "deduplication": {
+      "input_rows": 69690,
+      "duplicate_rows_removed": 0,
+      "conflicting_observations_removed": 0,
+      "output_rows": 69690
+    },
+    "split": {
+      "seed": 42,
+      "train_sites": [
+        "bankingapp.com",
+        "datasafeguard.ai",
+        "datasafeguard.us",
+        "example.com",
+        "mediaworld.net",
+        "news.example.com",
+        "retailco.com",
+        "travelnow.com",
+        "www.ikea.com",
+        "www.salesforce.com",
+        "www.t-mobile.com",
+        "www.xfinity.com"
+      ],
+      "calibration_sites": [
+        "open.spotify.com",
+        "shop.example.com",
+        "www.bankofamerica.com",
+        "www.zoom.com"
+      ],
+      "test_sites": [
+        "pharmahealth.io",
+        "saasproduct.app",
+        "www.novonordisk-us.com",
+        "www.okta.com"
+      ],
+      "rows": {
+        "train": 50421,
+        "calibration": 751,
+        "test": 1389
+      },
+      "site_domain_overlap": {
+        "train_calibration": 0,
+        "train_test": 0,
+        "calibration_test": 0
+      },
+      "cookie_domain_overlap": {
+        "train_calibration": 25,
+        "train_test": 28,
+        "calibration_test": 25
+      },
+      "cookie_name_family_overlap": {
+        "train_calibration": 0,
+        "train_test": 0,
+        "calibration_test": 0
+      },
+      "rows_removed_for_name_overlap": {
+        "calibration": 5795,
+        "test": 11334
+      }
+    },
+    "train_only": {
+      "sources": [
+        {
+          "source": "/Users/ajit/Code-base/Cookie-classification-DSG/models/training_data/external/cookieblock/cookieblock_train_2021-05-10.csv",
+          "input_rows": 248268,
+          "accepted_rows": 248268,
+          "missing_site_domain": 0,
+          "missing_cookie_identity": 0,
+          "unsupported_label": 0,
+          "missing_attributes": 0,
+          "unclassified_label_dropped": 0,
+          "raw_label_distribution": {
+            "Marketing_Advertising": 94813,
+            "Analytics_Performance": 73629,
+            "Strictly_Necessary": 73142,
+            "Functional": 6684
+          },
+          "sha256": "fc3247fd1995374d4ed0216af4ef86ab670c19661369fc58c9ad9c0aa9f3fa71",
+          "deduplication": {
+            "input_rows": 248268,
+            "duplicate_rows_removed": 3156,
+            "conflicting_observations_removed": 0,
+            "output_rows": 245112
+          }
+        }
+      ],
+      "input_rows": 245112,
+      "rows_dropped_on_held_out_sites": 0,
+      "rows_added_to_train": 245112,
+      "train_rows_from_split": 50421,
+      "test_rows_unseen_by_all_sources": 1353
+    },
+    "external_holdout": null
+  },
+  "calibration": {
+    "method": "temperature_scaling",
+    "temperature": 0.8280347998909211,
+    "target_auto_precision": 0.95,
+    "threshold_rule": "lowest threshold with >= minimum predictions and Wilson lower bound >= target",
+    "evidence_guard": "applied before thresholds and metrics; guarded rows never auto-classify",
+    "per_class_auto_thresholds": {
+      "Analytics_Performance": {
+        "threshold": 0.5,
+        "eligible_predictions": 142,
+        "estimated_precision": 0.9929577464788732,
+        "precision_wilson_lower_bound": 0.9611897670033634,
+        "enabled": true
+      },
+      "Functional": {
+        "threshold": 1.01,
+        "eligible_predictions": 0,
+        "estimated_precision": null,
+        "precision_wilson_lower_bound": null,
+        "enabled": false
+      },
+      "Marketing_Advertising": {
+        "threshold": 1.01,
+        "eligible_predictions": 0,
+        "estimated_precision": null,
+        "precision_wilson_lower_bound": null,
+        "enabled": false
+      },
+      "Strictly_Necessary": {
+        "threshold": 1.01,
+        "eligible_predictions": 0,
+        "estimated_precision": null,
+        "precision_wilson_lower_bound": null,
+        "enabled": false
+      }
+    }
+  },
+  "metrics": {
+    "internal_site_holdout": {
+      "accuracy": 0.9380849532037437,
+      "macro_f1": 0.938240149090721,
+      "weighted_f1": 0.9379826944205133,
+      "log_loss": 0.44784183101110325,
+      "per_class": {
+        "Analytics_Performance": {
+          "precision": 0.9588235294117647,
+          "recall": 0.8956043956043956,
+          "f1-score": 0.9261363636363636,
+          "support": 364.0
+        },
+        "Functional": {
+          "precision": 0.9198966408268734,
+          "recall": 0.9518716577540107,
+          "f1-score": 0.9356110381077529,
+          "support": 374.0
+        },
+        "Marketing_Advertising": {
+          "precision": 0.9504373177842566,
+          "recall": 0.9560117302052786,
+          "f1-score": 0.9532163742690059,
+          "support": 341.0
+        },
+        "Strictly_Necessary": {
+          "precision": 0.9247648902821317,
+          "recall": 0.9516129032258065,
+          "f1-score": 0.9379968203497615,
+          "support": 310.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          326,
+          20,
+          5,
+          13
+        ],
+        [
+          3,
+          356,
+          5,
+          10
+        ],
+        [
+          3,
+          11,
+          326,
+          1
+        ],
+        [
+          8,
+          0,
+          7,
+          295
+        ]
+      ],
+      "rows_lacking_evidence": 792,
+      "auto_policy": {
+        "coverage": 0.1857451403887689,
+        "eligible_predictions": 258,
+        "distinct_sites": 3,
+        "accuracy": 1.0,
+        "wilson_lower_bound": 0.9853285345033028,
+        "site_bootstrap_lower_bound": 1.0,
+        "requirements": {
+          "target_precision": 0.95,
+          "minimum_predictions": 100,
+          "minimum_sites": 20,
+          "bootstrap_samples": 1000
+        },
+        "passed": false
+      }
+    },
+    "internal_site_holdout_unseen_by_all_sources": {
+      "accuracy": 0.9438285291943829,
+      "macro_f1": 0.9441374561883821,
+      "weighted_f1": 0.943755184895632,
+      "log_loss": 0.4376172524054305,
+      "per_class": {
+        "Analytics_Performance": {
+          "precision": 0.9697885196374623,
+          "recall": 0.901685393258427,
+          "f1-score": 0.9344978165938864,
+          "support": 356.0
+        },
+        "Functional": {
+          "precision": 0.9198966408268734,
+          "recall": 0.9621621621621622,
+          "f1-score": 0.940554821664465,
+          "support": 370.0
+        },
+        "Marketing_Advertising": {
+          "precision": 0.956386292834891,
+          "recall": 0.9623824451410659,
+          "f1-score": 0.959375,
+          "support": 319.0
+        },
+        "Strictly_Necessary": {
+          "precision": 0.9331210191082803,
+          "recall": 0.9512987012987013,
+          "f1-score": 0.9421221864951769,
+          "support": 308.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          321,
+          20,
+          5,
+          10
+        ],
+        [
+          2,
+          356,
+          2,
+          10
+        ],
+        [
+          0,
+          11,
+          307,
+          1
+        ],
+        [
+          8,
+          0,
+          7,
+          293
+        ]
+      ],
+      "rows_lacking_evidence": 770,
+      "auto_policy": {
+        "coverage": 0.19068736141906872,
+        "eligible_predictions": 258,
+        "distinct_sites": 3,
+        "accuracy": 1.0,
+        "wilson_lower_bound": 0.9853285345033028,
+        "site_bootstrap_lower_bound": 1.0,
+        "requirements": {
+          "target_precision": 0.95,
+          "minimum_predictions": 100,
+          "minimum_sites": 20,
+          "bootstrap_samples": 1000
+        },
+        "passed": false
+      }
+    },
+    "internal_site_holdout_per_cmp": {
+      "overall_macro_f1": 0.938240149090721,
+      "requirements": {
+        "minimum_rows": 300,
+        "minimum_sites": 20,
+        "maximum_gap": 0.05
+      },
+      "rows_without_cmp": 1322,
+      "per_cmp": {
+        "onetrust": {
+          "rows": 67,
+          "sites": 2,
+          "passed": null
+        }
+      },
+      "cmps_judged": 0,
+      "passed": true
+    },
+    "external_holdout": null
+  },
+  "acceptance": {
+    "internal_gates": {
+      "macro_f1": true,
+      "marketing_recall": true,
+      "auto_precision": false,
+      "per_cmp_macro_f1": true,
+      "site_holdout_is_disjoint": true,
+      "name_holdout_is_disjoint": true
+    },
+    "external_holdout_gate": false,
+    "promotion_eligible": false,
+    "auto_classification_enabled": false
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scikit_learn": "1.8.0",
+    "xgboost": "3.4.1",
+    "scipy": "1.18.1",
+    "joblib": "1.3.2"
+  },
+  "code": {
+    "training_pipeline_sha256": "8c755c9433d0c396e1d1e74bd90b8cfbd91bc00d0a06610983a514246d1a2195",
+    "feature_extractor_sha256": "60f58eeb341f22df6d8c161b6d1d8567ae5729c33cc29882fcafa9434e708f79"
+  },
+  "training_parameters": {
+    "seed": 42,
+    "split_seed": 42,
+    "estimators": 350,
+    "learning_rate": 0.05,
+    "max_depth": 6
+  }
+}

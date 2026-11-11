@@ -1,0 +1,16 @@
+# Second non-OneTrust batch, 2026-11-11: 10 sites, one per parent company.
+# From 319 new candidates checked with find_banner_sites (candidates_vendors_2026-11-11b_verified.csv):
+# 81 usable, 68 of them OneTrust (not collected here). Dropped: www.hasbro.com (redirects to
+# consumercare.hasbro.com, already collected), www.jimmyjohns.com (Inspire Brands; Dunkin' collected),
+# www.costco.ca (Costco collected).
+# Columns: host vendor-folder
+launchdarkly.com cookiebot
+www.betterment.com ketch
+quizlet.com ketch
+rivian.com ketch
+cava.com securiti
+www.brex.com transcend
+www.fashionnova.com transcend
+www.patreon.com transcend
+www.postman.com transcend
+www.rippling.com transcend

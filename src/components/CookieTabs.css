@@ -48,8 +48,10 @@
   font: 500 14px/1 var(--font-sans);
 }
 
+.cookie-tabs__new { flex-shrink: 0; }
 
 @media (max-width: 768px) {
-  .cookie-tabs { min-height: 0; padding: 0; }
+  .cookie-tabs { min-height: 0; padding: 0; flex-wrap: wrap; }
+  .cookie-tabs__new { margin: 8px 16px; min-height: 44px; }
   .cookie-tabs__tab { width: auto; min-height: 44px; padding: 12px 14px; font-size: 16px; }
 }

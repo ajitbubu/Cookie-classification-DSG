@@ -15,6 +15,7 @@ from backend.models import HealthResponse, ScanRequest
 from backend.scanner.classifier import CookieClassifier
 from backend.scanner.cookie_scanner import CookieScanner
 from backend.scanner.parallel import deep_scan_parallel
+from backend.scanner.url_guard import BlockedTarget, check_url, install_request_guard
 
 logger = logging.getLogger(__name__)
 
@@ -49,10 +50,21 @@ def _quick_scan_result(request: ScanRequest, page_result: dict) -> dict:
     }
 
 
+async def _reject_blocked_target(url: str) -> None:
+    """400 for a scan target that resolves to a non-public address (SSRF guard)."""
+    try:
+        await check_url(url)
+    except BlockedTarget as exc:
+        logger.warning("Rejected scan target %s: %s", url, exc)
+        raise HTTPException(status_code=400, detail=f"Scan target not allowed: {exc}") from exc
+
+
 @router.post("/scan-stream")
 async def scan_website_stream(request: ScanRequest):
     """Stream real browser scan progress. Browser failures are explicit errors."""
     from playwright.async_api import async_playwright
+
+    await _reject_blocked_target(request.url)
 
     # Fail before opening an SSE response so clients receive a useful HTTP status.
     try:
@@ -87,6 +99,7 @@ async def scan_website_stream(request: ScanRequest):
                 timezone_id="America/New_York",
             )
             context.set_default_timeout(settings.PAGE_TIMEOUT)
+            await install_request_guard(context)
             progress_queue = asyncio.Queue()
 
             async def progress_callback(progress_data):
@@ -162,6 +175,7 @@ async def scan_website(request: ScanRequest):
     """Run a real browser scan. Never substitute fabricated cookie data."""
     from backend.scanner.browser import browser_manager
 
+    await _reject_blocked_target(request.url)
     context = None
     try:
         await browser_manager.start()

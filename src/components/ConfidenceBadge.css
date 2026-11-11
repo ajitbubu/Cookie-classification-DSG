@@ -13,11 +13,11 @@
   border: none;
   border-radius: 10px;
   font-family: var(--font-display);
-  font-size: 11px;
+  font-size: var(--fs-xs);
   font-weight: 600;
   letter-spacing: 0.3px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   white-space: nowrap;
   height: 28px;
@@ -127,7 +127,7 @@
   cursor: pointer;
   padding: 6px;
   border-radius: var(--radius-sm, 6px);
-  transition: all 0.15s ease;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease, transform 0.15s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,7 +203,7 @@
 
 .cb-ring__unit {
   font-family: var(--font-display);
-  font-size: 11px;
+  font-size: var(--fs-xs);
   font-weight: 600;
   color: var(--gray-400, #bdbdbd);
   margin-top: 4px;
@@ -294,7 +294,7 @@
 
 .cb-meta__val--mono {
   font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 11px;
+  font-size: var(--fs-xs);
   background: rgba(26, 109, 255, 0.06);
   padding: 3px 8px;
   border-radius: var(--radius-sm, 6px);
@@ -306,7 +306,7 @@
 
 .cb-meta__tag {
   font-family: var(--font-display);
-  font-size: 11px;
+  font-size: var(--fs-xs);
   font-weight: 600;
   padding: 3px 10px;
   border-radius: 20px;
@@ -336,7 +336,7 @@
   padding: 8px 10px;
   background: rgba(255, 188, 50, 0.08);
   border-radius: var(--radius-sm, 6px);
-  font-size: 11px;
+  font-size: var(--fs-xs);
   font-weight: 500;
   color: #a67200;
 }
@@ -354,7 +354,7 @@
 
 .cb-section-title {
   font-family: var(--font-display);
-  font-size: 11px;
+  font-size: var(--fs-xs);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.6px;
@@ -468,7 +468,7 @@
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
 }
 .cb-btn:focus-visible {
   outline: 2px solid var(--primary, #1A6DFF);

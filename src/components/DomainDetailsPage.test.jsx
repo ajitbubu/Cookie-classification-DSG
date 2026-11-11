@@ -25,7 +25,7 @@ const selectionBar = () => document.querySelector('.dd-selection');
 const setup = (over = {}) => {
   const props = {
     scan, versions, currentVersionId: 'v2', published: { id: 'v1', publishedAt: '2026-10-02T00:00:00Z' },
-    onPublish: vi.fn(), onScanNow: vi.fn(), onExport: vi.fn(), onReview: vi.fn(), onBulkUpdate: vi.fn(),
+    onPublish: vi.fn(), onOpenVersion: vi.fn(), onScanNow: vi.fn(), onExport: vi.fn(), onReview: vi.fn(), onBulkUpdate: vi.fn(),
     tableProps: { scanId: 's1', onCategoryUpdate: vi.fn() }, ...over,
   };
   render(<LiveRegionProvider><DomainDetailsPage {...props} /></LiveRegionProvider>);
@@ -95,6 +95,12 @@ describe('DomainDetailsPage', () => {
     expect(within(v2).getByText('+1')).toBeInTheDocument(); // 2 added, 1 removed
     expect(within(v1).getByText('(Published)')).toBeInTheDocument();
     expect(screen.getByText('Published Version:').nextSibling).toHaveTextContent('V 1');
+  });
+
+  it('opens a version from Version History (Figma 12.12.31 -> 12.12.39)', async () => {
+    const p = setup();
+    await userEvent.click(screen.getByRole('button', { name: 'Open version 1' }));
+    expect(p.onOpenVersion).toHaveBeenCalledWith(versions[1]);
   });
 
   it('publishing a partial version asks to confirm first (9A)', async () => {

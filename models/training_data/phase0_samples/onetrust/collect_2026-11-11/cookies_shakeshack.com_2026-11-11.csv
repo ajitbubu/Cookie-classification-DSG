@@ -1,0 +1,183 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Targeting Cookies,banner,OneTrust,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,0 days,false,true,none,false,Declared & set,sc-static.net,"This domain is commonly associated with Scorecard Research, a service that provides marketers with analytics and other tracking information."
+Targeting Cookies,banner,OneTrust,_s,.app.link,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,app.link,"This cookie is associated with Shopify's analytics suite.
+"
+Targeting Cookies,banner,OneTrust,has_visited,shakeshack.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,dev.shakeshack.com,
+Targeting Cookies,banner,OneTrust,first_time_visitor,shakeshack.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,dev.shakeshack.com,
+Unclassified,none,,optly_device_id,shakeshack.com,/,First party,Session,,false,true,lax,false,Not declared,,
+Functional Cookies,banner,OneTrust,cf_clearance,.shakeshack.com,/,First party,365.00 days,364 days,true,true,none,true,Declared & set,shakeshack.com,"Used to verify user is not a bot; user/system has solved a challenge successfully
+"
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.shakeshack.com,/,First party,0.02 days,0 days,true,true,none,true,Declared & set,investor.shakeshack.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+This is a CloudFoundry cookie"
+Unclassified,none,,_gcl_au,.shakeshack.com,/,First party,90.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,akaalb_Instance-1,apps.rokt-api.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,RoktRecogniser,shakeshack.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,akaalb_Instance-1,apps.rokt.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_rdt_uuid,.shakeshack.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,shakeshack.com,
+Targeting Cookies,banner,OneTrust,_scid,.shakeshack.com,/,First party,395.00 days,395 days,false,false,lax,false,Declared & set,shakeshack.com,"Cookie associated with Snapchat. Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates realtime bidding for advertisers."
+Targeting Cookies,banner,OneTrust,_scid_r,.shakeshack.com,/,First party,395.00 days,395 days,false,false,lax,false,Declared & set,shakeshack.com,
+Unclassified,none,,_ttp,.tiktok.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga,.shakeshack.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,shakeshack.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Unclassified,none,,__spdt,shakeshack.com,/,First party,365.00 days,,false,false,strict,false,Not declared,,
+Unclassified,none,,A3,.yahoo.com,/,Third party,365.25 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,mc,.quantserve.com,/,Third party,395.00 days,395 days,false,true,none,false,Declared & set,quantserve.com,"This domain is owned by Quantcast. The main business activity is: Market and Audience Segmentation, Targeted advertising services"
+Targeting Cookies,banner,OneTrust,_fbp,.shakeshack.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,shakeshack.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Targeting Cookies,banner,OneTrust,__qca,.shakeshack.com,/,First party,392.00 days,391 days,false,false,unspecified,false,Declared & set,shakeshack.com,"This is a cookie usually associated with Quantcast, a digital advertising company.  They provide website rankings, and the data they collect is also used for audience segmentation and targeted advertising."
+Performance Cookies,banner,OneTrust,sc_at,.snapchat.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,snapchat.com,Cookie associated with embedding content from Snapchat.
+Unclassified,none,,_tt_enable_cookie,.shakeshack.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ttp,.shakeshack.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,receive-cookie-deprecation,.d.adroll.com,/,Third party,395.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,receive-cookie-deprecation,.adroll.com,/,Third party,395.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,__adroll_fpc,.shakeshack.com,/,First party,365.25 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_sctr,.shakeshack.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,__adroll,.d.adroll.com,/,Third party,395.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__adroll_shared,.adroll.com,/,Third party,395.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,u,.ml314.com,/,Third party,0.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pi,.ml314.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,tluid,.3lift.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,KRTBCOOKIE_10,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mako_uid,.eyeota.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,SERVERID,.eyeota.net,/,Third party,0.01 days,,true,true,none,false,Not declared,,
+Unclassified,none,,pid,.smartadserver.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TestIfCookieP,.smartadserver.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,csync,.smartadserver.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,c,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,i,.openx.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,t_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,t_pt_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,anj,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,did,.pippio.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,login.q4inc.com,
+Unclassified,none,,didts,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,nnls,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bito,.bidr.io,/,Third party,394.79 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bitoIsSecure,.bidr.io,/,Third party,394.79 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,QuantumMetricSessionID,.shakeshack.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,QuantumMetricUserID,.shakeshack.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.shakeshack.com,/,First party,400.00 days,364 days,false,false,lax,false,Declared & set,shakeshack.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust. It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down. It enables the website not to show the message more than once to a user. The cookie has a normal lifespan of one year and contains no personal information.
+Unclassified,none,,_tq_id.TV-4554900927-1.1c80,shakeshack.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.shakeshack.com,/,First party,400.00 days,364 days,false,false,lax,false,Declared & set,shakeshack.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,__ar_v4,.shakeshack.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_uetsid,.shakeshack.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,shakeshack.com,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Performance Cookies,banner,OneTrust,_uetvid,.shakeshack.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,shakeshack.com,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Unclassified,none,,rlas3,.rlcdn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.rlcdn.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ttcsid,.shakeshack.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_CVCT32BC77U30UV9AUF0,.shakeshack.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga_H82F0FHZ5N,.shakeshack.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,shakeshack.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Functional Cookies,banner,OneTrust,_sp_id.xxxx,dev.shakeshack.com,,,,729 days,,,,,"Declared, not set",dev.shakeshack.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,localization,shackstore.shakeshack.com,,,,364 days,,,,,"Declared, not set",shackstore.shakeshack.com,"These cookies are set on pages with the Flickr widget.
+"
+Functional Cookies,banner,OneTrust,locale_bar_accepted,shackstore.shakeshack.com,,,,Session,,,,,"Declared, not set",shackstore.shakeshack.com,N/A
+Functional Cookies,banner,OneTrust,_sp_ses.xxxx,dev.shakeshack.com,,,,0 days,,,,,"Declared, not set",dev.shakeshack.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,_sp_id.xxxx,shakeshack.com,,,,729 days,,,,,"Declared, not set",shakeshack.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,ab.storage.sessionId.xxx,shakeshack.com,,,,364 days,,,,,"Declared, not set",shakeshack.com,ab.storage.sessionId
+Functional Cookies,banner,OneTrust,__atuvs,shop.shakeshack.com,,,,0 days,,,,,"Declared, not set",shop.shakeshack.com,This cookie is associated with the AddThis social sharing widget which is commonly embedded in websites to enable visitors to share content with a range of networking and sharing platforms.
+Functional Cookies,banner,OneTrust,__atuvc,shop.shakeshack.com,,,,396 days,,,,,"Declared, not set",shop.shakeshack.com,This cookie is associated with the AddThis social sharing site. It allows the user to see an updated count if they share a page and return to it before our share count cache is updated.
+Functional Cookies,banner,OneTrust,_sp_ses.xxxx,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,AWSALB,uat-www.egiftlabs.com,,,,6 days,,,,,"Declared, not set",uat-www.egiftlabs.com,AWS ELB application load balancer
+Functional Cookies,banner,OneTrust,AWSALBCORS,uat-www.egiftlabs.com,,,,6 days,,,,,"Declared, not set",uat-www.egiftlabs.com,This cookie is managed by AWS and is used for load balancing.
+Functional Cookies,banner,OneTrust,AWSALBCORS,www.buyatab.com,,,,6 days,,,,,"Declared, not set",www.buyatab.com,This cookie is managed by AWS and is used for load balancing.
+Functional Cookies,banner,OneTrust,AWSALB,www.buyatab.com,,,,6 days,,,,,"Declared, not set",www.buyatab.com,AWS ELB application load balancer
+Functional Cookies,banner,OneTrust,sp_landing,spotify.com,,,,0 days,,,,,"Declared, not set",spotify.com,"This domain is owned by Spotify, a USA based music streaming service.  Spotify provides a number of tools to embed into websites, which enable the tracking of users and non-users across domains."
+Functional Cookies,banner,OneTrust,sp_t,spotify.com,,,,364 days,,,,,"Declared, not set",spotify.com,"This domain is owned by Spotify, a USA based music streaming service.  Spotify provides a number of tools to embed into websites, which enable the tracking of users and non-users across domains."
+Strictly Necessary Cookies,banner,OneTrust,secure_customer_sig,shackstore.shakeshack.com,,,,364 days,,,,,"Declared, not set",shackstore.shakeshack.com,"This cookie is generally provided by Shopify and is used in connection with a customer login.
+"
+Strictly Necessary Cookies,banner,OneTrust,cf_use_ob,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,This cookie is associated with sites using CloudFlare.  It is used to improve page load times and to override any security restrictions based on the visitors IP address.  It does not contain any user identification information. 
+Strictly Necessary Cookies,banner,OneTrust,PHPSESSID,shop.shakeshack.com,,,,Session,,,,,"Declared, not set",shop.shakeshack.com,"PHP session cookie associated with embedded content from this domain.
+"
+Strictly Necessary Cookies,banner,OneTrust,user_track_id,shop.shakeshack.com,,,,364 days,,,,,"Declared, not set",shop.shakeshack.com,user
+Strictly Necessary Cookies,banner,OneTrust,_dc_gtm_UA-xxxxxxxx,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,"This cookie is associated with sites using Google Tag Manager to load other scripts and code into a page.  Where it is used it may be regarded as Strictly Necessary as without it, other scripts may not function correctly. The end of the name is a unique number which is also an identifier for an associated Google Analytics account."
+Strictly Necessary Cookies,banner,OneTrust,_orig_referrer,shakeshack.com,,,,13 days,,,,,"Declared, not set",shakeshack.com,"This cookie is generally provided by Shopify and is used in connection with a shopping part.
+"
+Strictly Necessary Cookies,banner,OneTrust,G_ENABLED_IDPS,dev.shakeshack.com,,,,2913394 days,,,,,"Declared, not set",dev.shakeshack.com,This cookie is used to securely log in to the website with a Google account. 
+Strictly Necessary Cookies,banner,OneTrust,G_ENABLED_IDPS,shakeshack.com,,,,2913451 days,,,,,"Declared, not set",shakeshack.com,This cookie is used to securely log in to the website with a Google account. 
+Strictly Necessary Cookies,banner,OneTrust,cf_chl_cc_xxxxxxxxxxxxxxxxxxxxx,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,cf_chl_cc_
+Performance Cookies,banner,OneTrust,_shopify_s,shakeshack.com,,,,Session,,,,,"Declared, not set",shakeshack.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_gat,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,"This cookie name is associated with Google Universal Analytics, according to documentation it is used to throttle the request rate - limiting the collection of data on high traffic sites. It expires after 10 minutes."
+Performance Cookies,banner,OneTrust,_hjTLDTest,shakeshack.com,,,,Session,,,,,"Declared, not set",shakeshack.com,"When the Hotjar script executes we try to determine the most generic cookie path we should use, instead of the page hostname. This is done so that cookies can be shared across subdomains (where applicable). To determine this, we try to store the _hjTLDTest cookie for different URL substring alternatives until it fails. After this check, the cookie is removed."
+Performance Cookies,banner,OneTrust,_landing_page,shakeshack.com,,,,13 days,,,,,"Declared, not set",shakeshack.com,"This cookie is used to track, report, and analyze on landing pages.
+"
+Performance Cookies,banner,OneTrust,_hjSessionUser_xxxxxx,shakeshack.com,,,,364 days,,,,,"Declared, not set",shakeshack.com,"Hotjar cookie that is set when a user first lands on a page with the Hotjar script. It is used to persist the Hotjar User ID, unique to that site on the browser. This ensures that behavior in subsequent visits to the same site will be attributed to the same user ID."
+Performance Cookies,banner,OneTrust,_shopify_sa_t,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_gid,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Performance Cookies,banner,OneTrust,_shopify_sa_p,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_hjSession_xxxxxx,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,A cookie that holds the current session data. This ensues that subsequent requests within the session window will be attributed to the same Hotjar session.
+Performance Cookies,banner,OneTrust,_shopify_y,shakeshack.com,,,,364 days,,,,,"Declared, not set",shakeshack.com,"This cookie is associated with Shopify's analytics suite.
+"
+Targeting Cookies,banner,OneTrust,cf_chl_3,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,"These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising."
+Targeting Cookies,banner,OneTrust,_schn1,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,
+Targeting Cookies,banner,OneTrust,mptest,shakeshack.com,,,,Session,,,,,"Declared, not set",shakeshack.com,
+Targeting Cookies,banner,OneTrust,__uxq412__ses.0cc1,investor.shakeshack.com,,,,0 days,,,,,"Declared, not set",investor.shakeshack.com,
+Targeting Cookies,banner,OneTrust,_gat_xxxxxxxxxxxxxxxxxxxxxxxxxx,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,Google Analytics Cookies
+Targeting Cookies,banner,OneTrust,_schn,shakeshack.com,,,,Session,,,,,"Declared, not set",shakeshack.com,"This cookie is associated with Snapchat. It tracks individual sessions on the website, allowing the website to compile statistical data from multiple visits. This data can also be used to create leads for marketing purposes."
+Targeting Cookies,banner,OneTrust,cf_chl_2,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,"These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising."
+Targeting Cookies,banner,OneTrust,ab._gd#############,shakeshack.com,,,,Session,,,,,"Declared, not set",shakeshack.com,"This cookie is associated with software provided by Braze, is a marketing company that develops customer relationship management and mobile marketing automation software which businesses use to manage their applications. These cookies track session_id, device_id, and external_id. This is a pattern type cookie with a common root of ab._gd followed by a string of numbers."
+Targeting Cookies,banner,OneTrust,contrast,investor.shakeshack.com,,,,Session,,,,,"Declared, not set",investor.shakeshack.com,
+Targeting Cookies,banner,OneTrust,_gat_UA-,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,Google Analytics Cookies
+Targeting Cookies,banner,OneTrust,ab.storage.deviceId.,shakeshack.com,,,,399 days,,,,,"Declared, not set",shakeshack.com,"Out-of-the-box randomly generated string used by Braze to identify anonymous users, and to differentiate users’ devices and enables device-based messaging"
+Targeting Cookies,banner,OneTrust,sp,investor.shakeshack.com,,,,364 days,,,,,"Declared, not set",investor.shakeshack.com,This cookie is associated with Eventbrite and is used to deliver content tailored to the end user's interests and improve content creation. This cookie is also used for event-booking purposes.
+Targeting Cookies,banner,OneTrust,_gat_UA-XXXXXX-X,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,Google Analytics Cookies
+Targeting Cookies,banner,OneTrust,__uxq412__id.0cc1,investor.shakeshack.com,,,,729 days,,,,,"Declared, not set",investor.shakeshack.com,
+Targeting Cookies,banner,OneTrust,_dlt,shakeshack.com,,,,0 days,,,,,"Declared, not set",shakeshack.com,This cookie is associated with Google's real time bidding advertising exchange. The main purpose of this cookie is targeting.
+Targeting Cookies,banner,OneTrust,__kla_id,shackstore.shakeshack.com,,,,729 days,,,,,"Declared, not set",shackstore.shakeshack.com,NA
+Targeting Cookies,banner,OneTrust,d,quantserve.com,,,,89 days,,,,,"Declared, not set",quantserve.com,"This domain is owned by Quantcast. The main business activity is: Market and Audience Segmentation, Targeted advertising services"
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,TESTCOOKIESENABLED,www.youtube.com,,,,0 days,,,,,"Declared, not set",www.youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,xtc,addthis.com,,,,396 days,,,,,"Declared, not set",addthis.com,This domain is owned by AddThis. AddThis provides web widgets that site owners embed into their pages or other content to enable visitors to create and share links to the content across social networks. They also make use of the data collected to provide advertisers and marketers with profile information for targeted behavioral advertising. 
+Targeting Cookies,banner,OneTrust,loc,addthis.com,,,,396 days,,,,,"Declared, not set",addthis.com,Stores the visitors geolocation to record location of sharer
+Targeting Cookies,banner,OneTrust,uvc,addthis.com,,,,396 days,,,,,"Declared, not set",addthis.com,Tracks how often a user interacts with AddThis
+Targeting Cookies,banner,OneTrust,f5avraaaaaaaaaaaaaaaa_session_,cts.businesswire.com,,,,Session,,,,,"Declared, not set",cts.businesswire.com,This cookie is associated with F5's BIG-IP product set and is an integral part of load balancing. It is used to store the user's session in order to identify it in the application's traffic.   
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,CONSENT,youtube.com,,,,729 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_PRIVACY_METADATA,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,KP_UIDz-ssn,wbiprod.storedvalue.com,,,,0 days,,,,,"Declared, not set",wbiprod.storedvalue.com,
+Targeting Cookies,banner,OneTrust,KP_UIDz,wbiprod.storedvalue.com,,,,0 days,,,,,"Declared, not set",wbiprod.storedvalue.com,
+Targeting Cookies,banner,OneTrust,_sp_id.xxxx,cdn.gladly.com,,,,729 days,,,,,"Declared, not set",cdn.gladly.com,simplybusiness.co.uk
+Targeting Cookies,banner,OneTrust,_sp_ses.xxxx,cdn.gladly.com,,,,0 days,,,,,"Declared, not set",cdn.gladly.com,simplybusiness.co.uk
+Targeting Cookies,banner,OneTrust,MSPTC,bing.com,,,,389 days,,,,,"Declared, not set",bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,did_compat,login.q4inc.com,,,,365 days,,,,,"Declared, not set",login.q4inc.com,
+Targeting Cookies,banner,OneTrust,_sp_ses.xxxx,cdnjs.cloudflare.com,,,,0 days,,,,,"Declared, not set",cdnjs.cloudflare.com,simplybusiness.co.uk
+Targeting Cookies,banner,OneTrust,_sp_id.xxxx,cdnjs.cloudflare.com,,,,729 days,,,,,"Declared, not set",cdnjs.cloudflare.com,simplybusiness.co.uk
+Targeting Cookies,banner,OneTrust,,www.facebook.com,,,,Session,,,,,"Declared, not set",www.facebook.com,"This domain is owned by Facebook, which is the world's largest social networking service. As a third party host provider, it mostly collects data on the interests of users via widgets such as the 'Like' button found on many websites. This is used to serve targeted advertising to its users when logged into its services. In 2014 it also started serving up behaviourally targeted advertising on other websites, similar to most dedicated online marketing companies."
+Targeting Cookies,banner,OneTrust,__atuvs,s7.addthis.com,,,,0 days,,,,,"Declared, not set",s7.addthis.com,"This domain is owned by Addthis. The main business activity is: AddThis provides web widgets that site owners embed into their pages or other content, to enable visitors to create and share links to the content across social networks. They also make use of the data collected to provide advertisers and marketers with profile information for targeted, behavioural advertising."
+Targeting Cookies,banner,OneTrust,__atuvc,s7.addthis.com,,,,396 days,,,,,"Declared, not set",s7.addthis.com,"This domain is owned by Addthis. The main business activity is: AddThis provides web widgets that site owners embed into their pages or other content, to enable visitors to create and share links to the content across social networks. They also make use of the data collected to provide advertisers and marketers with profile information for targeted, behavioural advertising."
+Targeting Cookies,banner,OneTrust,__atrfs,s7.addthis.com,,,,0 days,,,,,"Declared, not set",s7.addthis.com,"This domain is owned by Addthis. The main business activity is: AddThis provides web widgets that site owners embed into their pages or other content, to enable visitors to create and share links to the content across social networks. They also make use of the data collected to provide advertisers and marketers with profile information for targeted, behavioural advertising."
+Targeting Cookies,banner,OneTrust,sp,analytics.gladly.com,,,,364 days,,,,,"Declared, not set",analytics.gladly.com,This cookie is associated with Eventbrite and is used to deliver content tailored to the end user's interests and improve content creation. This cookie is also used for event-booking purposes.
+Targeting Cookies,banner,OneTrust,_careerarc_session,careerarc.com,,,,Session,,,,,"Declared, not set",careerarc.com,
+Targeting Cookies,banner,OneTrust,ca_trk_uuid,www.careerarc.com,,,,89 days,,,,,"Declared, not set",www.careerarc.com,
+Targeting Cookies,banner,OneTrust,visitor_type,www.careerarc.com,,,,Session,,,,,"Declared, not set",www.careerarc.com,
+Targeting Cookies,banner,OneTrust,ca_trk_request_id,www.careerarc.com,,,,89 days,,,,,"Declared, not set",www.careerarc.com,
+Targeting Cookies,banner,OneTrust,NID,google.com,,,,182 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Targeting Cookies,banner,OneTrust,_GRECAPTCHA,www.google.com,,,,179 days,,,,,"Declared, not set",www.google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "

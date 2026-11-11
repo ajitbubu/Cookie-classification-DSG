@@ -12,6 +12,7 @@ import {
 import Navbar from './components/Navbar';
 import CookieTabs from './components/CookieTabs';
 import PanelError from './components/ui/PanelError';
+import { KpiSkeleton, ChartSkeleton } from './components/ui/Skeleton';
 import ActiveScanPage from './components/ActiveScanPage';
 import ScanResultsPage from './components/ScanResultsPage';
 import DashboardPage from './components/DashboardPage';
@@ -25,6 +26,7 @@ import { applyCategoryChanges, resolveDomainScan, versionsForDomain } from './li
 import { publishCategories, publishSummary } from './lib/categoryApi';
 import LaunchScan from './components/LaunchScan';
 import DeepScanModal from './components/DeepScanModal';
+import ScanTypeModal from './components/ScanTypeModal';
 import ScheduleScanModal from './components/ScheduleScanModal';
 import CookieInventoryPage from './components/CookieInventoryPage';
 import LeftSidebar from './components/LeftSidebar';
@@ -34,7 +36,8 @@ import { nextRunTime, startsLater } from './lib/schedule';
 import { readInterruptedScan, clearActiveScan, MAX_SCAN_HISTORY, MAX_SCANS_PER_DOMAIN } from './lib/scanStorage';
 import { useScanGuard } from './hooks/useScanGuard';
 import { deriveValueFeatures } from './lib/cookieValueFeatures';
-import { DOMAIN_TABS, pathForRoute, routeFromPath } from './lib/routes';
+import { DASHBOARD_TABS, DOMAIN_TABS, SCANNING_TABS, pathForRoute, routeFromPath } from './lib/routes';
+import { formatScanDate } from './lib/scanResults';
 import CookieDetailModal from './components/CookieDetailModal';
 import VendorDashboard from './components/VendorDashboard';
 import OverrideModal from './components/OverrideModal';
@@ -52,7 +55,7 @@ function App() {
 
   // URL Scanning
   const [targetUrl, setTargetUrl] = useState('');
-  const [scanModal, setScanModal] = useState(null); // { type: 'deep' | 'schedule', url }
+  const [scanModal, setScanModal] = useState(null); // { type: 'choose' | 'deep' | 'schedule', url }
   // What the current (or last) scan was, for the Active Scan cards and Retry.
   const [activeScan, setActiveScan] = useState(null); // { url, type, settings }
   // A scan left running when the tab was refreshed or closed (E5, eng R5)
@@ -978,7 +981,7 @@ function App() {
       return updated;
     });
 
-    toast.success(`Scan of ${newJob.url} scheduled. Next run ${nextRun.toLocaleString()}.`);
+    toast.success(`Scan of ${newJob.url} scheduled. Next run ${formatScanDate(nextRun)}.`);
     setTargetUrl('');
   };
 
@@ -1071,18 +1074,17 @@ function App() {
     });
   };
 
+  // Confirmed in ScanResultsPage's dialog before this runs
   const clearHistory = async () => {
-    if (window.confirm('Are you sure you want to clear all scan history?')) {
-      try {
-        await clearScans();
-      } catch (e) {
-        console.error('Failed to clear scan history:', e);
-        toast.error('Scan history was not cleared: the database is unavailable.');
-        return;
-      }
-      setScanHistory([]);
-      setDomainHistory({});
+    try {
+      await clearScans();
+    } catch (e) {
+      console.error('Failed to clear scan history:', e);
+      toast.error('Scan history was not cleared: the database is unavailable.');
+      return;
     }
+    setScanHistory([]);
+    setDomainHistory({});
   };
 
   const deleteScan = async (id) => {
@@ -1095,6 +1097,18 @@ function App() {
     }
     setScanHistory(prev => prev.filter(scan => scan.id !== id));
     setDomainHistory(prev => Object.fromEntries(Object.entries(prev).map(([domain, scans]) => [domain, scans.filter(scan => scan.id !== id)])));
+  };
+
+  // Version History: open that stored scan of the domain on its Cookies tab (Figma 12.12.39).
+  const openVersion = (version) => {
+    setOpenScan({ domain: version.domain, scanId: version.id });
+    if (version.fullResults) {
+      setDomainMissing(null);
+      setScanResult(version.fullResults);
+    } else {
+      setDomainMissing({ status: 'pruned', domain: version.domain, entry: version });
+    }
+    handleNavigate('results', { tab: 'cookies' });
   };
 
   const viewScan = (scan) => {
@@ -1235,7 +1249,7 @@ function App() {
       setTimeout(() => setAriaLiveMessage(''), 3000);
       
       // Show user-facing error message
-      alert('Failed to update category: ' + error.message);
+      toast.error(`Couldn't update ${cookieName}'s category: ${error.message}. Try again.`);
     }
   };
 
@@ -1359,18 +1373,26 @@ function App() {
 
       {/* Figma page shell: tabs and page content share one white panel */}
       <div className="page-panel">
-      {['launch', 'active', 'history'].includes(currentPage) && (
+      {['home', 'launch', 'active', 'history'].includes(currentPage) && (
         <CookieTabs
           currentPage={currentPage}
+          tabs={currentPage === 'home' ? DASHBOARD_TABS : SCANNING_TABS}
+          label={currentPage === 'home' ? 'Cookie Classification' : 'Scanning'}
           activeCount={scanning ? 1 : 0}
           onNavigate={handleNavigate}
+          // Launch New Scan has its own Start Scan, so a second primary there competes (FINDING-008)
+          onNewScan={storeStatus === 'ready' && currentPage !== 'launch' ? () => setScanModal({ type: 'choose', url: '' }) : undefined}
         />
       )}
 
       {storeStatus !== 'ready' ? (
         <main className="main-content page-content" aria-busy={storeStatus === 'loading'}>
           {storeStatus === 'loading' ? (
-            <p className="store-status">Loading saved scans…</p>
+            <div className="store-loading">
+              <p className="store-status">Loading saved scans…</p>
+              <div className="store-loading__kpis">{[0, 1, 2, 3].map((i) => <KpiSkeleton key={i} />)}</div>
+              <div className="store-loading__charts"><ChartSkeleton /><ChartSkeleton /></div>
+            </div>
           ) : (
             <PanelError
               message="Couldn't load saved scans: the database is unavailable."
@@ -1521,7 +1543,18 @@ function App() {
         </main>
       )}
 
-      {/* Scan pop-ups, opened from the launch control on any page */}
+      {/* Scan pop-ups, opened from the launch control or the New Scan button */}
+      <ScanTypeModal
+        open={scanModal?.type === 'choose'}
+        initialUrl={targetUrl.trim()}
+        onClose={() => setScanModal(null)}
+        onContinue={(type) => setScanModal({ type, url: targetUrl.trim() })}
+        onQuickScan={(url) => {
+          setScanModal(null);
+          handleNavigate('active');
+          handleQuickScanRemote(url);
+        }}
+      />
       <DeepScanModal
         open={scanModal?.type === 'deep'}
         initialUrl={scanModal?.url || ''}
@@ -1586,6 +1619,7 @@ function App() {
                 setPublishTick((t) => t + 1);
                 toast.success(`Version ${version.version} published.`);
               }}
+              onOpenVersion={openVersion}
               onScanNow={() => {
                 const url = scanResult.scannedUrl || `https://${scanResult.domain}`;
                 handleNavigate('active');
@@ -1700,11 +1734,14 @@ function CookieRowEnhanced({ cookie, getRegulationRisk, filterRegulation }) {
           </span>
           {cookie.value.length > 30 && (
             <button
+              type="button"
               onClick={() => setShowFullValue(!showFullValue)}
               className="btn-icon"
               title={showFullValue ? 'Show less' : 'Show more'}
+              aria-label={showFullValue ? 'Show less of the cookie value' : 'Show the full cookie value'}
+              aria-expanded={showFullValue}
             >
-              {showFullValue ? <EyeOff size={16} /> : <Eye size={16} />}
+              {showFullValue ? <EyeOff size={16} aria-hidden="true" /> : <Eye size={16} aria-hidden="true" />}
             </button>
           )}
         </div>
@@ -1719,7 +1756,7 @@ function HistoryCard({ entry }) {
       <div className="history-header">
         <div>
           <p className="history-domain">{entry.domain}</p>
-          <p className="history-time">{new Date(entry.timestamp).toLocaleString()}</p>
+          <p className="history-time">{formatScanDate(entry.timestamp)}</p>
         </div>
       </div>
       <div className="history-stats">

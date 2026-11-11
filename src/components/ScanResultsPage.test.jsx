@@ -16,7 +16,7 @@ const props = (over = {}) => ({
 describe('ScanResultsPage (5.1 states)', () => {
   it('success: KPI row then a table with type and status chips', () => {
     render(<ScanResultsPage {...props()} />);
-    expect(screen.getByText('Total Scan').closest('.ui-kpi')).toHaveTextContent('2');
+    expect(screen.getByText('Total scans').closest('.ui-kpi')).toHaveTextContent('2');
     const table = screen.getByRole('table', { name: 'Scan results' });
     const rows = within(table).getAllByRole('row').slice(1);
     expect(rows).toHaveLength(2);
@@ -48,6 +48,10 @@ describe('ScanResultsPage (5.1 states)', () => {
     render(<ScanResultsPage {...props({ onDeleteScan })} />);
     await userEvent.click(screen.getByRole('button', { name: 'Actions for a.com' }));
     await userEvent.click(screen.getByRole('menuitem', { name: 'Delete scan' }));
+    expect(onDeleteScan).not.toHaveBeenCalled(); // asks first
+    const dialog = screen.getByRole('alertdialog', { name: 'Delete this scan?' });
+    expect(dialog).toHaveTextContent('The a.com scan will be removed.');
+    await userEvent.click(within(dialog).getByRole('button', { name: 'Delete scan' }));
     expect(onDeleteScan).toHaveBeenCalledWith('1');
   });
 
@@ -63,7 +67,7 @@ describe('ScanResultsPage (5.1 states)', () => {
     render(<ScanResultsPage {...props()} />);
     const rows = within(screen.getByRole('table')).getAllByRole('row').slice(1);
     expect(within(rows[0]).getByText('40/78')).toBeInTheDocument();
-    expect(within(rows[0]).getByText('+12')).toBeInTheDocument();
+    expect(within(rows[0]).getByText('12')).toBeInTheDocument();
   });
 
   it('filters to deep scans and clears history from the Filter menu', async () => {
@@ -74,6 +78,8 @@ describe('ScanResultsPage (5.1 states)', () => {
     expect(screen.getAllByRole('row').slice(1)).toHaveLength(1);
     await userEvent.click(screen.getByRole('button', { name: 'Filter' }));
     await userEvent.click(screen.getByRole('menuitem', { name: 'Clear history' }));
+    expect(onClearHistory).not.toHaveBeenCalled(); // asks first
+    await userEvent.click(within(screen.getByRole('alertdialog', { name: 'Clear all scan history?' })).getByRole('button', { name: 'Clear history' }));
     expect(onClearHistory).toHaveBeenCalled();
   });
 
