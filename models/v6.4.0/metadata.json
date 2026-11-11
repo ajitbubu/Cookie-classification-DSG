@@ -1,0 +1,610 @@
+{
+  "version": "6.4.0",
+  "model_type": "xgboost_native",
+  "trained_at": "2026-11-11T03:56:59.375117+00:00",
+  "num_features": 52,
+  "features": [
+    "expiry_days",
+    "secure",
+    "http_only",
+    "is_third_party",
+    "cookie_name_len",
+    "is_ga_like",
+    "is_fb_like",
+    "has_prefix_utm",
+    "has_consent_kw",
+    "has_session_kw",
+    "is_session",
+    "is_short_term",
+    "is_medium_term",
+    "is_long_term",
+    "is_persistent",
+    "is_com_domain",
+    "is_net_domain",
+    "is_org_domain",
+    "name_starts_underscore",
+    "name_has_id",
+    "name_has_user",
+    "name_has_track",
+    "same_site_lax",
+    "same_site_strict",
+    "same_site_none",
+    "vendor_first_party",
+    "vendor_advertising",
+    "vendor_analytics",
+    "tracker_first_party",
+    "tracker_advertising",
+    "tracker_analytics",
+    "is_google",
+    "is_facebook",
+    "is_amazon",
+    "is_microsoft",
+    "is_linkedin",
+    "name_prefix_ga",
+    "name_prefix_fb",
+    "name_prefix_utm",
+    "expiry_exactly_365",
+    "expiry_exactly_730",
+    "expiry_exactly_30",
+    "expiry_exactly_7",
+    "vendor_tracker_match",
+    "both_advertising",
+    "both_analytics",
+    "domain_depth",
+    "secure_and_httponly",
+    "secure_and_third_party",
+    "name_has_session",
+    "name_has_analytics",
+    "name_has_consent"
+  ],
+  "categories": [
+    "Analytics_Performance",
+    "Functional",
+    "Marketing_Advertising",
+    "Strictly_Necessary"
+  ],
+  "abstain_category": "Unclassified",
+  "training_samples": 317249,
+  "calibration_samples": 1019,
+  "test_samples": 195,
+  "test_samples_all_cookies": 1182,
+  "dataset": {
+    "sources": [
+      {
+        "source": "/Users/ajit/Code-base/Cookie-classification-DSG/models/training_data/banner/banner_collect_2026-11-10.csv",
+        "input_rows": 5593,
+        "accepted_rows": 5593,
+        "missing_site_domain": 0,
+        "missing_cookie_identity": 0,
+        "unsupported_label": 0,
+        "missing_attributes": 0,
+        "unclassified_label_dropped": 0,
+        "raw_label_distribution": {
+          "Marketing_Advertising": 3630,
+          "Strictly_Necessary": 870,
+          "Analytics_Performance": 702,
+          "Functional": 391
+        },
+        "sha256": "20488b9eddd03f81f793071c0dabc64f46c6a8cd66b1949bceeb72591e28df85"
+      }
+    ],
+    "deduplication": {
+      "input_rows": 5593,
+      "duplicate_rows_removed": 0,
+      "conflicting_observations_removed": 0,
+      "output_rows": 5593
+    },
+    "split": {
+      "seed": 42,
+      "train_sites": [
+        "calendly.com",
+        "epson.com",
+        "global.fujifilm.com",
+        "investor.vanguard.com",
+        "open.spotify.com",
+        "people.com",
+        "scjohnson.com",
+        "soundcloud.com",
+        "us.pg.com",
+        "us.puma.com",
+        "www.ab-inbev.com",
+        "www.abbvie.com",
+        "www.aetna.com",
+        "www.allstate.com",
+        "www.avis.com",
+        "www.bankofamerica.com",
+        "www.blizzard.com",
+        "www.boeing.com",
+        "www.clinique.com",
+        "www.clorox.com",
+        "www.cloudflare.com",
+        "www.cnn.com",
+        "www.cosmopolitan.com",
+        "www.cox.com",
+        "www.crowdstrike.com",
+        "www.diageo.com",
+        "www.docusign.com",
+        "www.dove.com",
+        "www.espn.com",
+        "www.geico.com",
+        "www.generalmills.com",
+        "www.heineken.com",
+        "www.hersheyland.com",
+        "www.hp.com",
+        "www.hyundaiusa.com",
+        "www.ikea.com",
+        "www.jnj.com",
+        "www.kimberly-clark.com",
+        "www.lyft.com",
+        "www.mars.com",
+        "www.medtronic.com",
+        "www.merck.com",
+        "www.mheducation.com",
+        "www.mongodb.com",
+        "www.nestle.com",
+        "www.nintendo.com",
+        "www.novartis.com",
+        "www.nvidia.com",
+        "www.paloaltonetworks.com",
+        "www.pcmag.com",
+        "www.pearson.com",
+        "www.pfizer.com",
+        "www.playstation.com",
+        "www.prudential.com",
+        "www.ricoh.com",
+        "www.sanofi.com",
+        "www.se.com",
+        "www.siriusxm.com",
+        "www.sonos.com",
+        "www.southwest.com",
+        "www.t-mobile.com",
+        "www.ubisoft.com",
+        "www.unitedhealthgroup.com",
+        "www.usa.philips.com",
+        "www.vmware.com",
+        "www.vodafone.com",
+        "www.webmd.com",
+        "www.wellsfargo.com",
+        "www.xfinity.com",
+        "www.zendesk.com"
+      ],
+      "calibration_sites": [
+        "global.canon",
+        "miro.com",
+        "www.barnesandnoble.com",
+        "www.bt.com",
+        "www.buzzfeed.com",
+        "www.deere.com",
+        "www.glassdoor.com",
+        "www.goodyear.com",
+        "www.mazdausa.com",
+        "www.npr.org",
+        "www.okta.com",
+        "www.optimum.com",
+        "www.salesforce.com",
+        "www.subaru.com",
+        "www.ulta.com",
+        "www.vox.com"
+      ],
+      "test_sites": [
+        "asana.com",
+        "corp.oup.com",
+        "www.atlassian.com",
+        "www.bose.com",
+        "www.carvana.com",
+        "www.chevron.com",
+        "www.coca-cola.com",
+        "www.dell.com",
+        "www.iheart.com",
+        "www.logitech.com",
+        "www.loreal.com",
+        "www.mondelezinternational.com",
+        "www.novonordisk-us.com",
+        "www.petsmart.com",
+        "www.qualcomm.com",
+        "www.reckitt.com",
+        "www.roche.com",
+        "www.rottentomatoes.com",
+        "www.scholastic.com",
+        "www.walgreens.com",
+        "www.zoom.com"
+      ],
+      "rows": {
+        "train": 3392,
+        "calibration": 142,
+        "test": 195,
+        "calibration_all_cookies": 1019
+      },
+      "site_domain_overlap": {
+        "train_calibration": 0,
+        "train_test": 0,
+        "calibration_test": 0
+      },
+      "cookie_domain_overlap": {
+        "train_calibration": 8,
+        "train_test": 3,
+        "calibration_test": 0
+      },
+      "cookie_name_family_overlap": {
+        "train_calibration": 0,
+        "train_test": 0,
+        "calibration_test": 0
+      },
+      "rows_removed_for_name_overlap": {
+        "calibration": 877,
+        "test": 987
+      }
+    },
+    "train_only": {
+      "sources": [
+        {
+          "source": "/Users/ajit/Code-base/Cookie-classification-DSG/models/training_data/cookie_classification_production.csv",
+          "input_rows": 73001,
+          "accepted_rows": 69171,
+          "missing_site_domain": 0,
+          "missing_cookie_identity": 0,
+          "unsupported_label": 0,
+          "missing_attributes": 0,
+          "unclassified_label_dropped": 3830,
+          "raw_label_distribution": {
+            "Marketing_Advertising": 21321,
+            "Analytics_Performance": 17454,
+            "Functional": 17234,
+            "Strictly_Necessary": 13162,
+            "Unclassified": 3830
+          },
+          "sha256": "c51e92a2669a4ca55457199b44c1dad8d9d9422c94ac1efa6f60cead6d021c53",
+          "deduplication": {
+            "input_rows": 69171,
+            "duplicate_rows_removed": 0,
+            "conflicting_observations_removed": 0,
+            "output_rows": 69171
+          }
+        },
+        {
+          "source": "/Users/ajit/Code-base/Cookie-classification-DSG/models/training_data/external/cookieblock/cookieblock_train_2021-05-10.csv",
+          "input_rows": 247828,
+          "accepted_rows": 247828,
+          "missing_site_domain": 0,
+          "missing_cookie_identity": 0,
+          "unsupported_label": 0,
+          "missing_attributes": 0,
+          "unclassified_label_dropped": 0,
+          "raw_label_distribution": {
+            "Marketing_Advertising": 94593,
+            "Analytics_Performance": 73555,
+            "Strictly_Necessary": 73028,
+            "Functional": 6652
+          },
+          "sha256": "51444d17d8e9e2583cb834486d4fd0585c6d51af2b5ac5eb3b3698c06b29f088",
+          "deduplication": {
+            "input_rows": 247828,
+            "duplicate_rows_removed": 3142,
+            "conflicting_observations_removed": 0,
+            "output_rows": 244686
+          }
+        }
+      ],
+      "input_rows": 313857,
+      "rows_dropped_on_held_out_sites": 0,
+      "rows_added_to_train": 313857,
+      "train_rows_from_split": 3392,
+      "test_rows_unseen_by_all_sources": 160
+    },
+    "external_holdout": null
+  },
+  "calibration": {
+    "method": "temperature_scaling",
+    "temperature": 1.4345433520255313,
+    "target_auto_precision": 0.95,
+    "threshold_rule": "lowest threshold with >= minimum predictions and Wilson lower bound >= target",
+    "evidence_guard": "applied before thresholds and metrics; guarded rows never auto-classify",
+    "per_class_auto_thresholds": {
+      "Analytics_Performance": {
+        "threshold": 1.01,
+        "eligible_predictions": 0,
+        "estimated_precision": null,
+        "precision_wilson_lower_bound": null,
+        "enabled": false
+      },
+      "Functional": {
+        "threshold": 1.01,
+        "eligible_predictions": 0,
+        "estimated_precision": null,
+        "precision_wilson_lower_bound": null,
+        "enabled": false
+      },
+      "Marketing_Advertising": {
+        "threshold": 1.01,
+        "eligible_predictions": 0,
+        "estimated_precision": null,
+        "precision_wilson_lower_bound": null,
+        "enabled": false
+      },
+      "Strictly_Necessary": {
+        "threshold": 1.01,
+        "eligible_predictions": 0,
+        "estimated_precision": null,
+        "precision_wilson_lower_bound": null,
+        "enabled": false
+      }
+    }
+  },
+  "metrics": {
+    "internal_site_holdout": {
+      "accuracy": 0.4205128205128205,
+      "macro_f1": 0.35452297593384147,
+      "weighted_f1": 0.41811759922131275,
+      "log_loss": 1.2750928183702224,
+      "per_class": {
+        "Analytics_Performance": {
+          "precision": 0.2926829268292683,
+          "recall": 0.32432432432432434,
+          "f1-score": 0.3076923076923077,
+          "support": 37.0
+        },
+        "Functional": {
+          "precision": 0.12,
+          "recall": 0.13636363636363635,
+          "f1-score": 0.1276595744680851,
+          "support": 22.0
+        },
+        "Marketing_Advertising": {
+          "precision": 0.5641025641025641,
+          "recall": 0.34375,
+          "f1-score": 0.42718446601941745,
+          "support": 64.0
+        },
+        "Strictly_Necessary": {
+          "precision": 0.5,
+          "recall": 0.625,
+          "f1-score": 0.5555555555555556,
+          "support": 72.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          12,
+          4,
+          8,
+          13
+        ],
+        [
+          5,
+          3,
+          2,
+          12
+        ],
+        [
+          15,
+          7,
+          22,
+          20
+        ],
+        [
+          9,
+          11,
+          7,
+          45
+        ]
+      ],
+      "rows_lacking_evidence": 168,
+      "auto_policy": {
+        "coverage": 0.0,
+        "eligible_predictions": 0,
+        "distinct_sites": 0,
+        "accuracy": null,
+        "wilson_lower_bound": null,
+        "site_bootstrap_lower_bound": null,
+        "requirements": {
+          "target_precision": 0.95,
+          "minimum_predictions": 100,
+          "minimum_sites": 20,
+          "bootstrap_samples": 1000
+        },
+        "passed": false
+      }
+    },
+    "internal_site_holdout_unseen_by_all_sources": {
+      "accuracy": 0.4125,
+      "macro_f1": 0.3296427859360441,
+      "weighted_f1": 0.41363900383703,
+      "log_loss": 1.2969537226069565,
+      "per_class": {
+        "Analytics_Performance": {
+          "precision": 0.1935483870967742,
+          "recall": 0.2608695652173913,
+          "f1-score": 0.2222222222222222,
+          "support": 23.0
+        },
+        "Functional": {
+          "precision": 0.09090909090909091,
+          "recall": 0.1,
+          "f1-score": 0.09523809523809523,
+          "support": 20.0
+        },
+        "Marketing_Advertising": {
+          "precision": 0.6206896551724138,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.43373493975903615,
+          "support": 54.0
+        },
+        "Strictly_Necessary": {
+          "precision": 0.5128205128205128,
+          "recall": 0.6349206349206349,
+          "f1-score": 0.5673758865248227,
+          "support": 63.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          4,
+          3,
+          10
+        ],
+        [
+          4,
+          2,
+          2,
+          12
+        ],
+        [
+          14,
+          6,
+          18,
+          16
+        ],
+        [
+          7,
+          10,
+          6,
+          40
+        ]
+      ],
+      "rows_lacking_evidence": 136,
+      "auto_policy": {
+        "coverage": 0.0,
+        "eligible_predictions": 0,
+        "distinct_sites": 0,
+        "accuracy": null,
+        "wilson_lower_bound": null,
+        "site_bootstrap_lower_bound": null,
+        "requirements": {
+          "target_precision": 0.95,
+          "minimum_predictions": 100,
+          "minimum_sites": 20,
+          "bootstrap_samples": 1000
+        },
+        "passed": false
+      }
+    },
+    "internal_site_holdout_all_cookies": {
+      "accuracy": 0.7402707275803723,
+      "macro_f1": 0.5634774241915685,
+      "weighted_f1": 0.7433478914373646,
+      "log_loss": 0.8367924407260416,
+      "per_class": {
+        "Analytics_Performance": {
+          "precision": 0.5139664804469274,
+          "recall": 0.5287356321839081,
+          "f1-score": 0.5212464589235127,
+          "support": 174.0
+        },
+        "Functional": {
+          "precision": 0.25925925925925924,
+          "recall": 0.2222222222222222,
+          "f1-score": 0.23931623931623933,
+          "support": 63.0
+        },
+        "Marketing_Advertising": {
+          "precision": 0.8918539325842697,
+          "recall": 0.8410596026490066,
+          "f1-score": 0.8657123381049762,
+          "support": 755.0
+        },
+        "Strictly_Necessary": {
+          "precision": 0.5654008438818565,
+          "recall": 0.7052631578947368,
+          "f1-score": 0.6276346604215457,
+          "support": 190.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          92,
+          7,
+          43,
+          32
+        ],
+        [
+          9,
+          14,
+          15,
+          25
+        ],
+        [
+          61,
+          13,
+          635,
+          46
+        ],
+        [
+          17,
+          20,
+          19,
+          134
+        ]
+      ],
+      "rows_lacking_evidence": 853,
+      "auto_policy": {
+        "coverage": 0.0,
+        "eligible_predictions": 0,
+        "distinct_sites": 0,
+        "accuracy": null,
+        "wilson_lower_bound": null,
+        "site_bootstrap_lower_bound": null,
+        "requirements": {
+          "target_precision": 0.95,
+          "minimum_predictions": 100,
+          "minimum_sites": 20,
+          "bootstrap_samples": 1000
+        },
+        "passed": false
+      }
+    },
+    "internal_site_holdout_per_cmp": {
+      "overall_macro_f1": 0.35452297593384147,
+      "requirements": {
+        "minimum_rows": 300,
+        "minimum_sites": 20,
+        "maximum_gap": 0.05
+      },
+      "rows_without_cmp": 0,
+      "per_cmp": {
+        "onetrust": {
+          "rows": 195,
+          "sites": 19,
+          "passed": null
+        }
+      },
+      "cmps_judged": 0,
+      "passed": true
+    },
+    "external_holdout": null
+  },
+  "acceptance": {
+    "internal_gates": {
+      "macro_f1": false,
+      "marketing_recall": false,
+      "auto_precision": false,
+      "auto_precision_all_cookies": false,
+      "per_cmp_macro_f1": true,
+      "site_holdout_is_disjoint": true,
+      "name_holdout_is_disjoint": true
+    },
+    "external_holdout_gate": false,
+    "promotion_eligible": false,
+    "auto_classification_enabled": false
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scikit_learn": "1.8.0",
+    "xgboost": "3.4.1",
+    "scipy": "1.18.1",
+    "joblib": "1.3.2"
+  },
+  "code": {
+    "training_pipeline_sha256": "f63fc8106e21900703f6137d4e07f8324f8808c5a5e0b5f29e10be991da42106",
+    "feature_extractor_sha256": "7b113ab657bb3819ebd2de14512ba5d3fa23ce2c91da599b0e5c7819282a253f"
+  },
+  "training_parameters": {
+    "seed": 42,
+    "split_seed": 42,
+    "estimators": 350,
+    "learning_rate": 0.05,
+    "max_depth": 6
+  }
+}
