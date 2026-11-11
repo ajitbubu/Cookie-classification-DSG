@@ -414,6 +414,34 @@ def test_generic_session_pattern_does_not_exempt_tracking_cookie():
     )
 
 
+@pytest.mark.parametrize("pattern,cookie_name,matches", [
+    # Vendor cookie names match exactly or with an ID suffix.
+    ("_ga", "_ga", True),
+    ("_ga", "_ga_S4EX53B760", True),
+    ("_gat", "_gat_UA-12345-1", True),
+    ("IDE", "ide", True),
+    # ...but not as fragments of unrelated names (these used to match at 0.99).
+    ("_ga", "_gamer_tag", False),
+    ("_ga", "cart_gauge", False),
+    ("_ga", "__gads", False),
+    ("_gid", "t_gid", False),
+    ("IDE", "ide_theme", False),
+    ("IDE", "guide_seen", False),
+    ("NID", "liveRampSesssionID", False),
+    ("NID", "ASP.NET_SessionId", False),
+    # Keyword patterns still match anywhere in the name.
+    ("csrf", "csrftoken", True),
+    ("csrf", "CRAFT_CSRF_TOKEN", True),
+    ("CONSENT", "CookieConsent", True),
+    ("CONSENT", "cookiebot-consent--necessary", True),
+])
+def test_name_patterns_do_not_match_unrelated_fragments(pattern, cookie_name, matches):
+    from backend.db.category_manager import CategoryManager
+
+    rule = {"pattern": pattern, "match_type": "name"}
+    assert CategoryManager()._pattern_matches(rule, cookie_name, "example.com") is matches
+
+
 @pytest.mark.anyio
 async def test_category_fallback_remains_unclassified():
     from backend.db.category_manager import CategoryManager
@@ -425,6 +453,26 @@ async def test_category_fallback_remains_unclassified():
     assert result["category"] == "Unclassified"
     assert result["confidence"] == 0.0
     assert result["source"] == "default"
+
+
+@pytest.mark.anyio
+async def test_stale_stored_pattern_match_is_rechecked_against_current_patterns():
+    from backend.db.category_manager import CategoryManager
+
+    manager = CategoryManager()
+    manager.patterns_loaded = True
+    manager.patterns_cache = [{"pattern": "_ga", "match_type": "name", "category": "Analytics",
+                               "confidence": 0.99, "vendor": "Google", "priority": 100}]
+
+    async def stale_row(name, domain):  # stored by the old substring matcher
+        return {"category": "Analytics", "confidence": 0.99, "source": "pattern_match", "metadata": {}}
+
+    manager.query_knowledge_base = stale_row
+    result = await manager.get_category_with_fallback(
+        "cart_gauge", "shop.example", ml_prediction={"category": "Functional", "confidence": 0.4}
+    )
+
+    assert result["source"] == "ml_prediction" and result["category"] == "Functional"
 
 
 # --------------------------------------------------------------------------

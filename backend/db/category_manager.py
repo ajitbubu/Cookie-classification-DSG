@@ -471,7 +471,7 @@ class CategoryManager:
     ) -> Dict[str, Any]:
         """
         Get category with fallback chain:
-        1. Knowledge base (user overrides and pattern matches)
+        1. Knowledge base (user overrides)
         2. Pattern matching (if not in knowledge base)
         3. ML prediction (if provided)
         4. Explicit Unclassified result
@@ -493,8 +493,9 @@ class CategoryManager:
         # Step 1: Check knowledge base
         kb_result = await self.query_knowledge_base(cookie_name, cookie_domain)
         if kb_result:
-            # Prioritize user_override and pattern_match sources
-            if kb_result['source'] in ['user_override', 'pattern_match']:
+            # Reviewer overrides win. Stored pattern_match rows are only a cache of
+            # Step 2, so they are re-checked against the current patterns below.
+            if kb_result['source'] == 'user_override':
                 logger.info(
                     f"Using knowledge base: {cookie_name} -> {kb_result['category']} "
                     f"(source: {kb_result['source']})"
@@ -610,7 +611,8 @@ class CategoryManager:
         Check if cookie name matches any active patterns.
         
         Returns the first match (highest priority pattern).
-        Uses simple string matching (pattern in cookie_name).
+        Name patterns match the whole name or the name plus an ID suffix;
+        see _pattern_matches.
         
         Args:
             cookie_name: Name of the cookie to match
@@ -692,8 +694,21 @@ class CategoryManager:
                 'session', 'sessionid', 'session_id', 'sessid'
             }
 
-        # Default: name substring match (backwards compatible)
-        return pattern.lower() in (cookie_name or '').lower()
+        pattern, name = pattern.lower(), (cookie_name or '').lower()
+
+        # Keywords whose meaning holds anywhere in a name (csrftoken,
+        # CookieConsent, cookiebot-consent--necessary).
+        if pattern in ('csrf', 'consent'):
+            return pattern in name
+
+        # Vendor cookie names match exactly or with an ID suffix (_ga_S4EX53B760,
+        # _gat_UA-123), never as a fragment: substring matching labelled
+        # "cart_gauge" as Google Analytics and "ide_theme" as DoubleClick.
+        if name == pattern:
+            return True
+        suffix = name[len(pattern):]
+        return (name.startswith(pattern) and suffix[:1] in ('_', '-', '.')
+                and any(ch.isdigit() for ch in suffix))
 
     def _domain_matches_pattern(self, pattern: str, domain: str) -> bool:
         """Match domain with optional glob support."""
