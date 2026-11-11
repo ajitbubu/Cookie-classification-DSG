@@ -234,7 +234,7 @@ def test_model_info_reports_served_model_metrics(client):
 
     assert r.status_code == 200
     body = r.json()
-    assert body["model_version"] == "6.5.0"
+    assert body["model_version"] == "7.0.0"
     assert body["trained_at"]
     assert body["samples"]["training"] > 0
     assert body["samples"]["test"] > 0
