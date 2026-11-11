@@ -22,6 +22,18 @@
   "dataset_source": "banner_vendors_2026-11-11",
   "sources": [
     {
+      "file": "models/training_data/phase0_samples/cookiebot/collect_2026-11-11/cookies_launchdarkly.com_2026-11-11.csv",
+      "sha256": "007fcbc46d8e384d4b3644b8b1f10c84529edaf1ecfc0ad4b39560ff4f9d7c83",
+      "input_rows": 121,
+      "accepted_rows": 50,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 6,
+      "declared_not_set": 65,
+      "missing_attributes": 0
+    },
+    {
       "file": "models/training_data/phase0_samples/cookiebot/collect_2026-11-11/cookies_www.biogen.com_2026-11-11.csv",
       "sha256": "842b488c834d5dcb195faa99f3a813dd33cf58114a11be9f0499a8896f440759",
       "input_rows": 33,
@@ -106,6 +118,30 @@
       "missing_attributes": 0
     },
     {
+      "file": "models/training_data/phase0_samples/ketch/collect_2026-11-11/cookies_quizlet.com_2026-11-11.csv",
+      "sha256": "54136392714ef62fc8ff4586a9736226ca6aff3ab4ccd94a93cc460826d3a047",
+      "input_rows": 292,
+      "accepted_rows": 39,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 24,
+      "declared_not_set": 229,
+      "missing_attributes": 0
+    },
+    {
+      "file": "models/training_data/phase0_samples/ketch/collect_2026-11-11/cookies_rivian.com_2026-11-11.csv",
+      "sha256": "ef3bc68df4da8057f0d235b4389db17fe66070bc21c297ae690ef7d4e5c9f1e8",
+      "input_rows": 91,
+      "accepted_rows": 15,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 48,
+      "declared_not_set": 28,
+      "missing_attributes": 0
+    },
+    {
       "file": "models/training_data/phase0_samples/ketch/collect_2026-11-11/cookies_time.com_2026-11-11.csv",
       "sha256": "39177d2201bdb005f7f490efa29e7dbe3e63cc60f1c7732becd0241edbefaaad",
       "input_rows": 1411,
@@ -115,6 +151,18 @@
       "format": "banner_export",
       "not_banner_declared": 130,
       "declared_not_set": 921,
+      "missing_attributes": 0
+    },
+    {
+      "file": "models/training_data/phase0_samples/ketch/collect_2026-11-11/cookies_www.betterment.com_2026-11-11.csv",
+      "sha256": "f3c034b5eadbfadea3517b4d57c2d8ab75a92fb4bf98b87dfaf04312d5f84d78",
+      "input_rows": 220,
+      "accepted_rows": 124,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 27,
+      "declared_not_set": 69,
       "missing_attributes": 0
     },
     {
@@ -214,6 +262,18 @@
       "missing_attributes": 0
     },
     {
+      "file": "models/training_data/phase0_samples/securiti/collect_2026-11-11/cookies_cava.com_2026-11-11.csv",
+      "sha256": "9f3dc28a96f992bcf28a58888c58b217f614cb83ab5e9ff9766966cb7de85a2d",
+      "input_rows": 45,
+      "accepted_rows": 15,
+      "missing_identity": 0,
+      "unsupported_label": 3,
+      "format": "banner_export",
+      "not_banner_declared": 8,
+      "declared_not_set": 19,
+      "missing_attributes": 0
+    },
+    {
       "file": "models/training_data/phase0_samples/securiti/collect_2026-11-11/cookies_www.everpuredata.com_2026-11-11.csv",
       "sha256": "0a33477c33164e83faec3b7c0e997bd96a6178475635443fc4fb79e405c37ceb",
       "input_rows": 168,
@@ -274,6 +334,18 @@
       "missing_attributes": 0
     },
     {
+      "file": "models/training_data/phase0_samples/transcend/collect_2026-11-11/cookies_www.brex.com_2026-11-11.csv",
+      "sha256": "2a4d2ae0c262db2103be4e90d85ebe114b8474768a2a8e9df49c84e58c50e543",
+      "input_rows": 175,
+      "accepted_rows": 12,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 60,
+      "declared_not_set": 103,
+      "missing_attributes": 0
+    },
+    {
       "file": "models/training_data/phase0_samples/transcend/collect_2026-11-11/cookies_www.constantcontact.com_2026-11-11.csv",
       "sha256": "c8ff7e84e74003680b57899b64c26f22b579f9983a211b912c00520e6609cc54",
       "input_rows": 241,
@@ -307,6 +379,18 @@
       "format": "banner_export",
       "not_banner_declared": 95,
       "declared_not_set": 47,
+      "missing_attributes": 0
+    },
+    {
+      "file": "models/training_data/phase0_samples/transcend/collect_2026-11-11/cookies_www.fashionnova.com_2026-11-11.csv",
+      "sha256": "cc14cc6e85e0840c019ceebbe90dc61dc18516cfbe95e5e13a3e70ffeec8f495",
+      "input_rows": 314,
+      "accepted_rows": 15,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 77,
+      "declared_not_set": 222,
       "missing_attributes": 0
     },
     {
@@ -356,42 +440,78 @@
       "not_banner_declared": 27,
       "declared_not_set": 75,
       "missing_attributes": 0
+    },
+    {
+      "file": "models/training_data/phase0_samples/transcend/collect_2026-11-11/cookies_www.patreon.com_2026-11-11.csv",
+      "sha256": "431f7356ede9506e20cd7760ae9edcbd95079e5146df08b4f8dde603f64cbda4",
+      "input_rows": 63,
+      "accepted_rows": 10,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 3,
+      "declared_not_set": 50,
+      "missing_attributes": 0
+    },
+    {
+      "file": "models/training_data/phase0_samples/transcend/collect_2026-11-11/cookies_www.postman.com_2026-11-11.csv",
+      "sha256": "a8fcd5a85633a33b2396b68fdc9e6b945e6dc05a048d0d30cf3c1d07dc79bc30",
+      "input_rows": 75,
+      "accepted_rows": 9,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 2,
+      "declared_not_set": 64,
+      "missing_attributes": 0
+    },
+    {
+      "file": "models/training_data/phase0_samples/transcend/collect_2026-11-11/cookies_www.rippling.com_2026-11-11.csv",
+      "sha256": "7054a256bdd158febea1e881dbec90077d4bba1aab3e592ebbb3e18ebcaff4eb",
+      "input_rows": 254,
+      "accepted_rows": 27,
+      "missing_identity": 0,
+      "unsupported_label": 0,
+      "format": "banner_export",
+      "not_banner_declared": 72,
+      "declared_not_set": 155,
+      "missing_attributes": 0
     }
   ],
   "normalization": {
-    "normalized_rows": 1633,
+    "normalized_rows": 1949,
     "duplicate_rows_removed": 18,
     "contradictory_rows_removed": 0,
-    "output_rows": 1615
+    "output_rows": 1931
   },
   "label_distribution": {
-    "Analytics_Performance": 238,
-    "Functional": 46,
-    "Marketing_Advertising": 995,
-    "Strictly_Necessary": 312,
-    "Unclassified": 24
+    "Analytics_Performance": 295,
+    "Functional": 65,
+    "Marketing_Advertising": 1134,
+    "Strictly_Necessary": 406,
+    "Unclassified": 31
   },
   "non_empty_values_by_column": {
-    "observation_id": 1615,
-    "observed_at": 1615,
-    "site_domain": 1615,
-    "cookie_name": 1615,
-    "cookie_domain": 1615,
-    "path": 1615,
-    "expiry_days": 1615,
-    "secure": 1615,
-    "http_only": 1615,
-    "same_site": 1615,
-    "host_only": 1615,
-    "partitioned": 1615,
+    "observation_id": 1931,
+    "observed_at": 1931,
+    "site_domain": 1931,
+    "cookie_name": 1931,
+    "cookie_domain": 1931,
+    "path": 1931,
+    "expiry_days": 1931,
+    "secure": 1931,
+    "http_only": 1931,
+    "same_site": 1931,
+    "host_only": 1931,
+    "partitioned": 1931,
     "setter_domain": 0,
-    "label_category": 1615,
-    "label_source": 1615,
-    "dataset_source": 1615
+    "label_category": 1931,
+    "label_source": 1931,
+    "dataset_source": 1931
   },
   "output": {
     "file": "models/training_data/banner/banner_vendors_2026-11-11.csv",
-    "sha256": "e450f3f970167129998b8d1f16b9acf340594ec90edbb82dd325f16ad286798f",
-    "bytes": 365265
+    "sha256": "4d46e5453e96de9ce64a24e0d1b71715c53d97a4be1a0e4cca92c76bf85f6220",
+    "bytes": 436905
   }
 }

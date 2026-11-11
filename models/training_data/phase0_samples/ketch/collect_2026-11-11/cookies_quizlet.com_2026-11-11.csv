@@ -1,0 +1,293 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,,false,true,none,false,Not declared,,
+Essential Technologies,banner,Ketch,qi5,quizlet.com,/,First party,400.00 days,400 days,true,true,unspecified,false,Declared & set,,
+Essential Technologies,banner,Ketch,qtkn,quizlet.com,/,First party,Session,,false,true,unspecified,false,Declared & set,,
+Functional Technologies,banner,Ketch,fs,quizlet.com,/,First party,400.00 days,400 days,true,true,unspecified,false,Declared & set,,
+Essential Technologies,banner,Ketch,app_session_id,quizlet.com,/,First party,0.02 days,,false,true,unspecified,false,Declared & set,,
+Essential Technologies,banner,Ketch,_cfuvid,.quizlet.com,/,First party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Unclassified,none,,_sp_ses.424b,.quizlet.com,/,First party,0.02 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,__rtbh.ssgtm.aid,.quizlet.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_gcl_au,.quizlet.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Functional Technologies,banner,Ketch,sp,.quizlet.com,/,First party,365.00 days,364 days,true,true,lax,false,Declared & set,,Google Ad Manager
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_ttp,.tiktok.com,/,Third party,390.00 days,390 days,false,true,none,false,Declared & set,,Tiktok Ads
+Essential Technologies,banner,Ketch,session_landing_page,quizlet.com,/,First party,Session,,false,true,unspecified,false,Declared & set,,
+Unclassified,none,,g_state,quizlet.com,/,First party,180.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_gid,.quizlet.com,/,First party,1.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,_gat_UA-1203987-1,.quizlet.com,/,First party,0.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__rtbh.lid,quizlet.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Essential Technologies,banner,Ketch,cf_clearance,.quizlet.com,/,First party,365.00 days,364 days,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_ga,.quizlet.com,/,First party,400.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,g,.creativecdn.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Taboola
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,c,.creativecdn.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,tinuiti
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,ts,.creativecdn.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Taboola
+Unclassified,none,,__spdt,quizlet.com,/,First party,365.00 days,,false,false,strict,false,Not declared,,
+Unclassified,none,,__rtbh.uid,quizlet.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__rtbh.aid,quizlet.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_scid,.quizlet.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_scid_r,.quizlet.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Essential Technologies,banner,Ketch,_swb,.quizlet.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Functional Technologies,banner,Ketch,_pxvid,.quizlet.com,/,First party,365.00 days,365 days,false,true,lax,false,Declared & set,,Human Security
+Functional Technologies,banner,Ketch,_tt_enable_cookie,.quizlet.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Tiktok Ads
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_ttp,.quizlet.com,/,First party,390.00 days,390 days,false,false,unspecified,false,Declared & set,,Tiktok Ads
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_fbp,.quizlet.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Facebook Ads
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,90 days,false,true,none,true,Declared & set,,Microsoft Ads
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,uuid2,.adnxs.com,/,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,Microsoft Ads
+Essential Technologies,banner,Ketch,_ketch_consent_v1_,.quizlet.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,anj,.adnxs.com,/,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,Microsoft Ads
+Functional Technologies,banner,Ketch,af_id,.appsflyersdk.com,/,Third party,395.00 days,394 days,false,true,none,false,Declared & set,,
+Functional Technologies,banner,Ketch,afUserId,.quizlet.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,
+Unclassified,none,,ttcsid,.quizlet.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_C3E8DRI7V1C28HV6V6D0,.quizlet.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,TapAd_TS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Tapad (by Experian)
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,TapAd_DID,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Tapad (by Experian)
+Unclassified,none,,_sp_id.424b,.quizlet.com,/,First party,400.00 days,,false,true,lax,false,Not declared,,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Tapad (by Experian)
+Essential Technologies,banner,Ketch,_swb_consent_,.quizlet.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Functional Technologies,banner,Ketch,af_id,.onelink.me,/,Third party,395.00 days,394 days,false,true,none,false,Declared & set,,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,sc_at,.snapchat.com,/,Third party,390.00 days,390 days,false,true,none,false,Declared & set,,Snap
+Functional Technologies,banner,Ketch,AF_SYNC,.quizlet.com,/,First party,7.00 days,6 days,false,false,unspecified,false,Declared & set,,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_sctr,.quizlet.com,/,First party,395.00 days,394 days,false,false,lax,false,Declared & set,,Snap
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,udmts,.udmserve.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,dt,.udmserve.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,
+Unclassified,none,,rtbh,.udmserve.net,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_scor_uid,.quizlet.com,/,First party,390.00 days,389 days,false,true,none,false,Declared & set,,Comscore
+Unclassified,none,,UID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,false,"Declared, conflicting",,
+Functional Technologies,banner,Ketch,XID,.scorecardresearch.com,/,Third party,390.00 days,390 days,false,true,none,true,Declared & set,,ScorecardResearch (by Comscore)
+Essential Technologies,banner,Ketch,_px3,.quizlet.com,/,First party,0.00 days,,false,true,lax,false,Declared & set,,Human Security
+Essential Technologies,banner,Ketch,pxcts,.quizlet.com,/,First party,Session,,false,true,lax,false,Declared & set,,Human Security
+Unclassified,none,,_pxde,.quizlet.com,/,First party,0.00 days,,false,true,lax,false,"Declared, conflicting",,
+Unclassified,none,,_ga_VG8TWT63ZN,.quizlet.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_BGGDEZ0S21,.quizlet.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__cf_bm,.quizlet.com,/,First party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Essential Technologies,banner,Ketch,active_class_session_code,,,,,,,,,,"Declared, not set",,
+Essential Technologies,banner,Ketch,ccpa,,,,,,,,,,"Declared, not set",,
+Essential Technologies,banner,Ketch,date_of_birth_full,,,,,,,,,,"Declared, not set",,
+Essential Technologies,banner,Ketch,hide-fb-button,,,,,,,,,,"Declared, not set",,
+Essential Technologies,banner,Ketch,i,,,,,,,,,,"Declared, not set",,OpenX
+Essential Technologies,banner,Ketch,OptanonConsent,,,,,,,,,,"Declared, not set",,OneTrust
+Essential Technologies,banner,Ketch,OTGPPConsent,,,,,,,,,,"Declared, not set",,OneTrust
+Essential Technologies,banner,Ketch,_pxhd,,,,,,,,,,"Declared, not set",,Human Security
+Essential Technologies,banner,Ketch,qmeasure__persistence,,,,,,,,,,"Declared, not set",,
+Essential Technologies,banner,Ketch,receive-cookie-deprecation,,,,,90 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Essential Technologies,banner,Ketch,SCM*,,,,,,,,,,"Declared, not set",,Smaato
+Essential Technologies,banner,Ketch,_sp_id.*,,,,,400 days,,,,,"Declared, not set",,snowplow
+Essential Technologies,banner,Ketch,_sp_ses.*,,,,,,,,,,"Declared, not set",,snowplow
+Essential Technologies,banner,Ketch,status,,,,,,,,,,"Declared, not set",,
+Essential Technologies,banner,Ketch,suid,,,,,,,,,,"Declared, not set",,Simpli.fi
+Essential Technologies,banner,Ketch,usprivacy,,,,,,,,,,"Declared, not set",,IAB Tech Lab
+Essential Technologies,banner,Ketch,usp_status,,,,,,,,,,"Declared, not set",,Media.net
+Functional Technologies,banner,Ketch,amuid2,,,,,,,,,,"Declared, not set",,
+Functional Technologies,banner,Ketch,_au_1d,,,,,,,,,,"Declared, not set",,Audigent
+Functional Technologies,banner,Ketch,au_3p_check,,,,,,,,,,"Declared, not set",,
+Functional Technologies,banner,Ketch,ayl_visitor,,,,,,,,,,"Declared, not set",,
+Functional Technologies,banner,Ketch,callback,,,,,,,,,,"Declared, not set",,ID5
+Functional Technologies,banner,Ketch,car,,,,,,,,,,"Declared, not set",,ID5
+Functional Technologies,banner,Ketch,_cc_id,,,,,,,,,,"Declared, not set",,Lotame
+Functional Technologies,banner,Ketch,cf,,,,,,,,,,"Declared, not set",,ID5
+Functional Technologies,banner,Ketch,cf_chl_rc_m,,,,,,,,,,"Declared, not set",,Cloudflare
+Functional Technologies,banner,Ketch,cip,,,,,,,,,,"Declared, not set",,ID5
+Functional Technologies,banner,Ketch,CT,,,,,,,,,,"Declared, not set",,
+Functional Technologies,banner,Ketch,cto_bundle,,,,,,,,,,"Declared, not set",,Criteo
+Functional Technologies,banner,Ketch,__eoi,,,,,,,,,,"Declared, not set",,Google Ads
+Functional Technologies,banner,Ketch,FPID,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Functional Technologies,banner,Ketch,FPLC,,,,,1 days,,,,,"Declared, not set",,Google Analytics
+Functional Technologies,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Functional Technologies,banner,Ketch,_gat_UA-*,,,,,,,,,,"Declared, not set",,Google Analytics
+Functional Technologies,banner,Ketch,gdpr,,,,,,,,,,"Declared, not set",,ID5
+Functional Technologies,banner,Ketch,__gpi,,,,,,,,,,"Declared, not set",,Google Ads
+Functional Technologies,banner,Ketch,gpp,,,,,,,,,,"Declared, not set",,ID5
+Functional Technologies,banner,Ketch,ipc,,,,,,,,,,"Declared, not set",,Pubmatic
+Functional Technologies,banner,Ketch,_lc2_fpi,,,,,,,,,,"Declared, not set",,Live Intent
+Functional Technologies,banner,Ketch,_lc2_fpi_meta,,,,,,,,,,"Declared, not set",,Live Intent
+Functional Technologies,banner,Ketch,lidc,,,,,,,,,,"Declared, not set",,LinkedIn  
+Functional Technologies,banner,Ketch,_lr_env_src_ats,,,,,,,,,,"Declared, not set",,LiveRamp
+Functional Technologies,banner,Ketch,_lr_geo_location_state,,,,,,,,,,"Declared, not set",,
+Functional Technologies,banner,Ketch,_lr_sampling_rate,,,,,,,,,,"Declared, not set",,
+Functional Technologies,banner,Ketch,obuid,,,,,,,,,,"Declared, not set",,Outbrain
+Functional Technologies,banner,Ketch,OptanonAlertBoxClosed,,,,,,,,,,"Declared, not set",,OneTrust
+Functional Technologies,banner,Ketch,optout,,,,,,,,,,"Declared, not set",,Criteo
+Functional Technologies,banner,Ketch,OTP,,,,,,,,,,"Declared, not set",,
+Functional Technologies,banner,Ketch,pb_rtb_ev_part,,,,,,,,,,"Declared, not set",,Pulsepoint
+Functional Technologies,banner,Ketch,pdid,,,,,,,,,,"Declared, not set",,Rich Audience
+Functional Technologies,banner,Ketch,_pxhd,,,,,,,,,,"Declared, not set",,Human Security
+Functional Technologies,banner,Ketch,_pxttld,,,,,,,,,,"Declared, not set",,Human Security
+Functional Technologies,banner,Ketch,_rdt_uuid,,,,,,,,,,"Declared, not set",,Reddit
+Functional Technologies,banner,Ketch,sasd,,,,,,,,,,"Declared, not set",,Equativ
+Functional Technologies,banner,Ketch,sasd2,,,,,,,,,,"Declared, not set",,Equativ
+Functional Technologies,banner,Ketch,sd_amuid2,,,,,,,,,,"Declared, not set",,
+Functional Technologies,banner,Ketch,__Secure-ROLLOUT_TOKEN,,,,,,,,,,"Declared, not set",,Google Youtube
+Functional Technologies,banner,Ketch,_sharedID,,,,,,,,,,"Declared, not set",,Prebid.org
+Functional Technologies,banner,Ketch,_sharedID_cst,,,,,,,,,,"Declared, not set",,Prebid.org
+Functional Technologies,banner,Ketch,_sp_id.*,,,,,400 days,,,,,"Declared, not set",,snowplow
+Functional Technologies,banner,Ketch,_sp_root_domain_test_*,,,,,,,,,,"Declared, not set",,snowplow
+Functional Technologies,banner,Ketch,_sp_ses.*,,,,,,,,,,"Declared, not set",,snowplow
+Functional Technologies,banner,Ketch,ss,,,,,,,,,,"Declared, not set",,
+Functional Technologies,banner,Ketch,ssi,,,,,,,,,,"Declared, not set",,
+Functional Technologies,banner,Ketch,stx_user_id,,,,,,,,,,"Declared, not set",,Sharethrough
+Functional Technologies,banner,Ketch,suid_legacy,,,,,,,,,,"Declared, not set",,Simpli.fi
+Functional Technologies,banner,Ketch,sw_user_params_infos,,,,,,,,,,"Declared, not set",,
+Functional Technologies,banner,Ketch,SyncRTB4,,,,,,,,,,"Declared, not set",,Pubmatic
+Functional Technologies,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Functional Technologies,banner,Ketch,TestIfCookieP,,,,,,,,,,"Declared, not set",,Equativ
+Functional Technologies,banner,Ketch,tt_viewer,,,,,364 days,,,,,"Declared, not set",,Teads
+Functional Technologies,banner,Ketch,uid,,,,,,,,,,"Declared, not set",,Adform
+Functional Technologies,banner,Ketch,V,,,,,,,,,,"Declared, not set",,
+Functional Technologies,banner,Ketch,viewer_token,,,,,,,,,,"Declared, not set",,LoopMe
+Functional Technologies,banner,Ketch,VISITOR_INFO1_LIVE,,,,,,,,,,"Declared, not set",,Google Youtube
+Functional Technologies,banner,Ketch,VISITOR_PRIVACY_METADATA,,,,,,,,,,"Declared, not set",,Google Youtube
+Functional Technologies,banner,Ketch,vs,,,,,,,,,,"Declared, not set",,Equativ
+Functional Technologies,banner,Ketch,YSC,,,,,,,,,,"Declared, not set",,Google Youtube
+Analytics Technologies,banner,Ketch,amuid2,,,,,,,,,,"Declared, not set",,
+Analytics Technologies,banner,Ketch,au_3p_check,,,,,,,,,,"Declared, not set",,
+Analytics Technologies,banner,Ketch,cto_bundle,,,,,,,,,,"Declared, not set",,Criteo
+Analytics Technologies,banner,Ketch,FPID,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics Technologies,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics Technologies,banner,Ketch,_gat_UA-*,,,,,,,,,,"Declared, not set",,Google Analytics
+Analytics Technologies,banner,Ketch,__gpi,,,,,,,,,,"Declared, not set",,Google Ads
+Analytics Technologies,banner,Ketch,ipc,,,,,,,,,,"Declared, not set",,Pubmatic
+Analytics Technologies,banner,Ketch,_lc2_fpi_meta,,,,,,,,,,"Declared, not set",,Live Intent
+Analytics Technologies,banner,Ketch,_lr_sampling_rate,,,,,,,,,,"Declared, not set",,
+Analytics Technologies,banner,Ketch,pb_rtb_ev_part,,,,,,,,,,"Declared, not set",,Pulsepoint
+Analytics Technologies,banner,Ketch,_rdt_uuid,,,,,,,,,,"Declared, not set",,Reddit
+Analytics Technologies,banner,Ketch,sasd,,,,,,,,,,"Declared, not set",,Equativ
+Analytics Technologies,banner,Ketch,sasd2,,,,,,,,,,"Declared, not set",,Equativ
+Analytics Technologies,banner,Ketch,_sharedID,,,,,,,,,,"Declared, not set",,Prebid.org
+Analytics Technologies,banner,Ketch,_sharedID_cst,,,,,,,,,,"Declared, not set",,Prebid.org
+Analytics Technologies,banner,Ketch,_sp_id.*,,,,,400 days,,,,,"Declared, not set",,snowplow
+Analytics Technologies,banner,Ketch,_sp_ses.*,,,,,,,,,,"Declared, not set",,snowplow
+Analytics Technologies,banner,Ketch,ssi,,,,,,,,,,"Declared, not set",,
+Analytics Technologies,banner,Ketch,stx_user_id,,,,,,,,,,"Declared, not set",,Sharethrough
+Analytics Technologies,banner,Ketch,sw_user_params_infos,,,,,,,,,,"Declared, not set",,
+Analytics Technologies,banner,Ketch,tt_viewer,,,,,364 days,,,,,"Declared, not set",,Teads
+Analytics Technologies,banner,Ketch,uid,,,,,,,,,,"Declared, not set",,Adform
+Analytics Technologies,banner,Ketch,VISITOR_PRIVACY_METADATA,,,,,,,,,,"Declared, not set",,Google Youtube
+Analytics Technologies,banner,Ketch,YSC,,,,,,,,,,"Declared, not set",,Google Youtube
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,33x_ps,,,,,,,,,,"Declared, not set",,33across
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,3pi,,,,,,,,,,"Declared, not set",,ID5
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,A3,,,,,,,,,,"Declared, not set",,Yahoo! Ads
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,ac_r,,,,,,,,,,"Declared, not set",,Adman Media
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,ad-id,,,,,,,,,,"Declared, not set",,Amazon Ads
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,ADKUID,,,,,,,,,,"Declared, not set",,AdKernal
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,admtr,,,,,,,,,,"Declared, not set",,Adman Media
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_Amc_b,,,,,,,,,,"Declared, not set",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_Amc_s,,,,,,,,,,"Declared, not set",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_Amc_t,,,,,,,,,,"Declared, not set",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,amdt_t,,,,,,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,ar_debug,,,,,364 days,,,,,"Declared, not set",,Google Privacy Sandbox
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,audit,,,,,365 days,,,,,"Declared, not set",,Magnite
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,audit_p,,,,,365 days,,,,,"Declared, not set",,Magnite
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,au_id,,,,,,,,,,"Declared, not set",,Audigent
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,ax_cx,,,,,,,,,,"Declared, not set",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,bcookie,,,,,,,,,,"Declared, not set",,LinkedIn  
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,C,,,,,,,,,,"Declared, not set",,Adform
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_cc_dc,,,,,,,,,,"Declared, not set",,Lotame
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,checkForPermission,,,,,,,,,,"Declared, not set",,Beeswax (by Freewheel)
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,chkChromeAb67Sec,,,,,,,,,,"Declared, not set",,Pubmatic
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,CMID,,,,,,,,,,"Declared, not set",,Index Exchange
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,CMPRO,,,,,,,,,,"Declared, not set",,Index Exchange
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,CMPS,,,,,,,,,,"Declared, not set",,Index Exchange
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,cnac,,,,,,,,,,"Declared, not set",,ID5
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,cnx_userId,,,,,,,,,,"Declared, not set",,connatix
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,connectId,,,,,,,,,,"Declared, not set",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,csync,,,,,,,,,,"Declared, not set",,Equativ
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,cu,,,,,,,,,,"Declared, not set",,Adelphic (by Viant)
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,data-pbs,,,,,,,,,,"Declared, not set",,Media.net
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,data-ris,,,,,,,,,,"Declared, not set",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,dc,,,,,,,,,,"Declared, not set",,Between Digital
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,demdex,,,,,,,,,,"Declared, not set",,Adobe Audience Manager
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,did,,,,,,,,,,"Declared, not set",,LiveRamp
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,didts,,,,,,,,,,"Declared, not set",,LiveRamp
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,DotomiTest,,,,,,,,,,"Declared, not set",,Dotomi (by epsilon)
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,DSP2F_*,,,,,,,,,,"Declared, not set",,AdKernal
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,DW,,,,,,,,,,"Declared, not set",,Kantar
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,DW_Time,,,,,,,,,,"Declared, not set",,Kantar
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,__gads,,,,,,,,,,"Declared, not set",,Google Ads
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,HAPLB3G,,,,,,,,,,"Declared, not set",,sonobi
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,HAPLB8G,,,,,,,,,,"Declared, not set",,snoobi
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,icu,,,,,,,,,,"Declared, not set",,Microsoft Ads
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,id,,,,,,,,,,"Declared, not set",,WPP
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,id5,,,,,,,,,,"Declared, not set",,ID5
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,IMRID,,,,,,,,,,"Declared, not set",,Nielsen
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,INGRESSCOOKIE,,,,,,,,,,"Declared, not set",,Pulsepoint
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,KADUSERCOOKIE,,,,,,,,,,"Declared, not set",,Pubmatic
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,khaos,,,,,365 days,,,,,"Declared, not set",,Magnite
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,khaos_p,,,,,365 days,,,,,"Declared, not set",,Magnite
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,KTPCACOOKIE,,,,,,,,,,"Declared, not set",,Pubmatic
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_li_dcdm_c,,,,,,,,,,"Declared, not set",,Live Intent
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,lidid,,,,,,,,,,"Declared, not set",,Live Intent
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_li_ss,,,,,,,,,,"Declared, not set",,Live Intent
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,ljt_reader,,,,,,,,,,"Declared, not set",,Sovrn
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_lr_geo_location,,,,,,,,,,"Declared, not set",,LiveRamp
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_lr_retry_request,,,,,,,,,,"Declared, not set",,LiveRamp
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,MR,,,,,,,,,,"Declared, not set",,Microsoft Clarity
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,MUID,,,,,,,,,,"Declared, not set",,Microsoft Clarity
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,NID,,,,,,,,,,"Declared, not set",,Google Ads
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,nnls,,,,,,,,,,"Declared, not set",,LiveRamp
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,pamuid2,,,,,,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,panoramaId,,,,,,,,,,"Declared, not set",,Lotame
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,panoramaId_expiry,,,,,,,,,,"Declared, not set",,Lotame
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,panoramaIdType,,,,,,,,,,"Declared, not set",,Lotame
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,pbjs-unifiedid,,,,,,,,,,"Declared, not set",,Prebid.org
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,pbjs-unifiedid_cst,,,,,,,,,,"Declared, not set",,Prebid.org
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,pb_rtb_ev,,,,,,,,,,"Declared, not set",,Pulsepoint
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,pbw,,,,,,,,,,"Declared, not set",,Equativ
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,permutive-id,,,,,,,,,,"Declared, not set",,Permutive
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,pgam_uid,,,,,,,,,,"Declared, not set",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,pi,,,,,,,,,,"Declared, not set",,Pubmatic
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,pid,,,,,,,,,,"Declared, not set",,Equativ (Smartadserver)
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,pids,,,,,,,,,,"Declared, not set",,33across
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,psd_amuid2,,,,,,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_pubcid,,,,,,,,,,"Declared, not set",,Prebid.org
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_pubcid_cst,,,,,,,,,,"Declared, not set",,Prebid.org
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,pxrc,,,,,,,,,,"Declared, not set",,LiveRamp
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_rdt_em,,,,,,,,,,"Declared, not set",,Reddit
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_rdt_pn,,,,,,,,,,"Declared, not set",,Reddit
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,rlas3,,,,,,,,,,"Declared, not set",,LiveRamp
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_rxuuid,,,,,,,,,,"Declared, not set",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,sa-user-id,,,,,,,,,,"Declared, not set",,StackAdapt
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,sa-user-id-v2,,,,,,,,,,"Declared, not set",,StackAdapt
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,sa-user-id-v3,,,,,,,,,,"Declared, not set",,StackAdapt
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_sc_cspv,,,,,394 days,,,,,"Declared, not set",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_schn2,,,,,,,,,,"Declared, not set",,Snap
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,SCM,,,,,,,,,,"Declared, not set",,Smaato
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,SCMo,,,,,,,,,,"Declared, not set",,Smaato
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,SCMs,,,,,,,,,,"Declared, not set",,Smaato
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,SCMsas,,,,,,,,,,"Declared, not set",,Smaato
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,SSPZ,,,,,,,,,,"Declared, not set",,AdKernal
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_sv3_0,,,,,,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_sv3_13,,,,,,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_sv3_14,,,,,,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_sv3_15,,,,,,,,,,"Declared, not set",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_sv3_3,,,,,,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_sv3_7,,,,,,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,_sv3_8,,,,,,,,,,"Declared, not set",,Monet Engine Inc (AdaptMX)
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,TDCPM,,,,,,,,,,"Declared, not set",,theTradeDesk
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,TDID,,,,,,,,,,"Declared, not set",,theTradeDesk
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,TEST-COOKIE,,,,,,,,,,"Declared, not set",,Inmobi
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,TestIfCookie,,,,,,,,,,"Declared, not set",,Equativ
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,TID,,,,,,,,,,"Declared, not set",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,tluid,,,,,,,,,,"Declared, not set",,TripleLift
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,tluidp,,,,,,,,,,"Declared, not set",,TripleLift
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,ttcsid.*,,,,,389 days,,,,,"Declared, not set",,Tiktok Ads
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,tuuid,,,,,,,,,,"Declared, not set",,Demandbase
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,tuuid_lu,,,,,,,,,,"Declared, not set",,Demandbase
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,uids,,,,,,,,,,"Declared, not set",,Microsoft Ads
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,__uih,,,,,,,,,,"Declared, not set",,sonobi
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,__uin_cx,,,,,,,,,,"Declared, not set",,sonobi
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,__uir_cx,,,,,,,,,,"Declared, not set",,sonobi
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,__uis,,,,,,,,,,"Declared, not set",,sonobi
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,ut,,,,,,,,,,"Declared, not set",,Between Digital
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,uuid,,,,,,,,,,"Declared, not set",,MediaMath
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,vdz*_*,,,,,,,,,,"Declared, not set",,Perion
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,vdz_sync,,,,,,,,,,"Declared, not set",,Perion
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,visitor,,,,,,,,,,"Declared, not set",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,visitor-id,,,,,,,,,,"Declared, not set",,Media.net
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,VP,,,,,,,,,,"Declared, not set",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,wfivefivec,,,,,,,,,,"Declared, not set",,Roku Ads
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,wrvUserID,,,,,,,,,,"Declared, not set",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,yieldmo_id,,,,,,,,,,"Declared, not set",,Yieldmo
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,zeta-ssp-user-id,,,,,,,,,,"Declared, not set",,
+"Social Media, Marketing, and Advertising Technologies",banner,Ketch,zuid,,,,,,,,,,"Declared, not set",,
