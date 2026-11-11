@@ -12,7 +12,6 @@ import argparse
 import hashlib
 import json
 import platform
-import re
 import tarfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -22,7 +21,9 @@ from urllib.parse import urlparse
 import numpy as np
 import pandas as pd
 
+from backend.api.ml_classifier.evidence_guard import apply_evidence_guard, evidence_indices
 from backend.api.ml_classifier.feature_extractor_v5 import FeatureExtractorV5
+from backend.scripts.build_production_dataset import cookie_name_family, normalize_label as _normalize_label_text
 
 
 CANONICAL_LABELS = [
@@ -32,38 +33,12 @@ CANONICAL_LABELS = [
     "Strictly_Necessary",
     "Unclassified",
 ]
-
-_LABEL_ALIASES = {
-    "analytics": "Analytics_Performance",
-    "analytics performance": "Analytics_Performance",
-    "analytics and performance": "Analytics_Performance",
-    "measure performance": "Analytics_Performance",
-    "performance": "Analytics_Performance",
-    "statistical": "Analytics_Performance",
-    "functional": "Functional",
-    "personalization": "Functional",
-    "personalisation": "Functional",
-    "extend functionality": "Functional",
-    "preferences": "Functional",
-    "advertising": "Marketing_Advertising",
-    "marketing": "Marketing_Advertising",
-    "marketing advertising": "Marketing_Advertising",
-    "personalized advertising": "Marketing_Advertising",
-    "personalised advertising": "Marketing_Advertising",
-    "personalize advertising": "Marketing_Advertising",
-    "social media tracking": "Marketing_Advertising",
-    "social networking": "Marketing_Advertising",
-    "social_networking": "Marketing_Advertising",
-    "strictly necessary": "Strictly_Necessary",
-    "strictly_neccessary": "Strictly_Necessary",
-    "necessary": "Strictly_Necessary",
-    "essential": "Strictly_Necessary",
-    "security": "Strictly_Necessary",
-    "operate the site and core services": "Strictly_Necessary",
-    "unclassified": "Unclassified",
-    "unknown": "Unclassified",
-    "uncategorized": "Unclassified",
-}
+# Unclassified is not learned: it is what the API returns when the model
+# abstains (evidence guard or low confidence). No real source declares cookies
+# as Unclassified, so rows with that label are dropped and counted, and the
+# model is trained on the four purpose classes only.
+ABSTAIN_LABEL = "Unclassified"
+TRAINED_LABELS = [label for label in CANONICAL_LABELS if label != ABSTAIN_LABEL]
 
 OBSERVATION_COLUMNS = [
     "site_domain",
@@ -80,9 +55,7 @@ def normalize_label(value: Any) -> str | None:
     """Map historical labels to the five-category v6 taxonomy."""
     if value is None or pd.isna(value):
         return None
-    normalized = str(value).strip().replace("_", " ").replace("-", " ")
-    normalized = " ".join(normalized.lower().split())
-    return _LABEL_ALIASES.get(normalized)
+    return _normalize_label_text(str(value)) or None
 
 
 def _domain(value: Any) -> str:
@@ -109,12 +82,26 @@ def _series(frame: pd.DataFrame, *names: str, default: Any = None) -> pd.Series:
     return pd.Series([default] * len(frame), index=frame.index)
 
 
+def _blank(values: pd.Series) -> pd.Series:
+    return values.isna() | values.astype(str).str.strip().eq("")
+
+
 def normalize_training_frame(
     frame: pd.DataFrame,
     *,
     source: str,
 ) -> tuple[pd.DataFrame, dict[str, Any]]:
-    """Normalize raw input while rejecting rows without label/group provenance."""
+    """Normalize raw input while rejecting rows without label/group provenance.
+
+    Rows whose expiry, secure or httpOnly value was never observed are dropped
+    (decision D5) instead of being imputed as 0/False, which would teach the
+    model attribute values the cookie never had.
+    """
+    missing_attributes = (
+        _blank(_series(frame, "expiry_days"))
+        | _blank(_series(frame, "secure"))
+        | _blank(_series(frame, "http_only", "httpOnly"))
+    )
     normalized = pd.DataFrame(index=frame.index)
     normalized["site_domain"] = _series(frame, "site_domain", "website_domain").map(_domain)
     normalized["cookie_name"] = _series(frame, "cookie_name", "name", default="").fillna("").astype(str).str.strip()
@@ -130,11 +117,13 @@ def normalize_training_frame(
     raw_labels = _series(frame, "label_category", "label", "category")
     normalized["label"] = raw_labels.map(normalize_label)
     normalized["source"] = source
+    normalized["observation_id"] = _series(frame, "observation_id", default="").fillna("").astype(str)
 
     missing_site = normalized["site_domain"].eq("")
     missing_cookie = normalized["cookie_name"].eq("") | normalized["cookie_domain"].eq("")
     unsupported_label = normalized["label"].isna()
-    accepted = ~(missing_site | missing_cookie | unsupported_label)
+    abstain_label = normalized["label"].eq(ABSTAIN_LABEL)
+    accepted = ~(missing_site | missing_cookie | unsupported_label | missing_attributes | abstain_label)
 
     audit = {
         "source": source,
@@ -143,6 +132,8 @@ def normalize_training_frame(
         "missing_site_domain": int(missing_site.sum()),
         "missing_cookie_identity": int(missing_cookie.sum()),
         "unsupported_label": int(unsupported_label.sum()),
+        "missing_attributes": int(missing_attributes.sum()),
+        "unclassified_label_dropped": int(abstain_label.sum()),
         "raw_label_distribution": {
             str(key): int(value)
             for key, value in raw_labels.fillna("<missing>").value_counts().items()
@@ -167,24 +158,6 @@ def deduplicate_observations(frame: pd.DataFrame) -> tuple[pd.DataFrame, dict[st
         "conflicting_observations_removed": conflicting_observations_removed,
         "output_rows": int(len(cleaned)),
     }
-
-
-_IDENTIFIER_SUFFIX = re.compile(r"[_-][^_-]*\d[^_-]*$")
-
-
-def cookie_name_family(name: str) -> str:
-    """Group cookie names that differ only by per-site identifier suffixes.
-
-    Trailing ``_``/``-`` segments containing a digit are identifiers
-    (``_ga_ABC123``, ``_hjSessionUser_123``, ``AWSALB_e0xu``), so they are
-    stripped until the remaining tail is a plain word.
-    """
-    family = str(name).strip().lower()
-    while True:
-        stripped = _IDENTIFIER_SUFFIX.sub("", family)
-        if stripped == family or not stripped:
-            return family
-        family = stripped
 
 
 def split_by_site_domain(
@@ -264,6 +237,65 @@ def split_by_site_domain(
     return train, calibration, test, audit
 
 
+def all_rows_on_sites(frame: pd.DataFrame, sites: Iterable[str]) -> pd.DataFrame:
+    """Every row on the given held-out sites, including familiar cookie names.
+
+    The split's calibration and test partitions keep only cookie names training
+    never saw. A scan of a new website mostly meets familiar names such as _ga,
+    so confidence is calibrated on all cookies of the calibration sites, and
+    auto-classification has to be precise on all cookies of the test sites as
+    well as on the unseen names.
+    """
+    return frame[frame["site_domain"].isin(set(sites))].reset_index(drop=True)
+
+
+def require_every_class(train: pd.DataFrame) -> None:
+    """Refuse to train when a taxonomy class has no training rows.
+
+    The model would output fewer classes than labels.json lists, so scoring
+    and the production classifier would both break.
+    """
+    missing = sorted(set(TRAINED_LABELS) - set(train["label"]))
+    if missing:
+        raise ValueError(f"No training rows for {missing}; add a source that labels them")
+
+
+def _site_key(domain: str) -> str:
+    return domain[4:] if domain.startswith("www.") else domain
+
+
+def add_train_only_rows(
+    train: pd.DataFrame,
+    calibration: pd.DataFrame,
+    test: pd.DataFrame,
+    train_only: pd.DataFrame,
+) -> tuple[pd.DataFrame, pd.Series, dict[str, Any]]:
+    """Append train-only rows (e.g. CookieBlock, legacy) to the train partition.
+
+    The split, calibration and test rows are decided before this runs and are
+    never changed by it (decision D27): train-only rows take no part in the
+    site split or the name-family overlap filter. Train-only rows from a site
+    that is in calibration or test are dropped, so those sites stay unseen.
+    Returns the combined train frame, a mask over the test rows whose cookie
+    family no training source has seen (decision D31), and an audit.
+    """
+    held_out_sites = {_site_key(site) for site in set(calibration["site_domain"]) | set(test["site_domain"])}
+    on_held_out_site = train_only["site_domain"].map(_site_key).isin(held_out_sites)
+    kept = train_only.loc[~on_held_out_site]
+    combined = pd.concat([train, kept], ignore_index=True)
+
+    train_only_families = set(kept["cookie_name"].map(cookie_name_family))
+    unseen_test = ~test["cookie_name"].map(cookie_name_family).isin(train_only_families)
+    audit = {
+        "input_rows": int(len(train_only)),
+        "rows_dropped_on_held_out_sites": int(on_held_out_site.sum()),
+        "rows_added_to_train": int(len(kept)),
+        "train_rows_from_split": int(len(train)),
+        "test_rows_unseen_by_all_sources": int(unseen_test.sum()),
+    }
+    return combined, unseen_test.reset_index(drop=True), audit
+
+
 def build_feature_matrix(frame: pd.DataFrame) -> np.ndarray:
     """Generate features exclusively through the production extractor."""
     extractor = FeatureExtractorV5()
@@ -305,6 +337,20 @@ def fit_temperature(probabilities: np.ndarray, encoded_labels: np.ndarray) -> fl
     return float(result.x)
 
 
+WILSON_Z = 1.96  # one-sided 97.5% lower bound
+
+
+def wilson_lower_bound(successes: int, trials: int, z: float = WILSON_Z) -> float:
+    """Wilson score lower bound of a binomial proportion; 0 when there are no trials."""
+    if trials <= 0:
+        return 0.0
+    phat = successes / trials
+    denominator = 1 + z * z / trials
+    centre = phat + z * z / (2 * trials)
+    margin = z * np.sqrt(phat * (1 - phat) / trials + z * z / (4 * trials * trials))
+    return float((centre - margin) / denominator)
+
+
 def choose_class_thresholds(
     probabilities: np.ndarray,
     encoded_labels: np.ndarray,
@@ -312,32 +358,158 @@ def choose_class_thresholds(
     *,
     target_precision: float,
     minimum_predictions: int,
+    eligible: np.ndarray | None = None,
 ) -> dict[str, dict[str, Any]]:
+    """Pick, per class, the lowest confidence threshold whose precision is proven.
+
+    A threshold is accepted only when at least ``minimum_predictions`` eligible
+    calibration rows clear it and the Wilson lower bound of their precision is
+    at least ``target_precision``: a point estimate on a small sample is not
+    enough. Rows the evidence guard flags are not eligible, as in production.
+    """
     predictions = probabilities.argmax(axis=1)
     confidence = probabilities.max(axis=1)
+    if eligible is None:
+        eligible = np.ones(len(predictions), dtype=bool)
     thresholds: dict[str, dict[str, Any]] = {}
     for class_index, category in enumerate(classes):
         selected_threshold = 1.01
         selected_count = 0
         selected_precision = None
+        selected_lower_bound = None
         for threshold in np.arange(0.50, 1.001, 0.01):
-            mask = (predictions == class_index) & (confidence >= threshold)
+            mask = eligible & (predictions == class_index) & (confidence >= threshold)
             count = int(mask.sum())
             if count < minimum_predictions:
                 continue
-            precision = float((encoded_labels[mask] == class_index).mean())
-            if precision >= target_precision:
+            correct = int((encoded_labels[mask] == class_index).sum())
+            lower_bound = wilson_lower_bound(correct, count)
+            if lower_bound >= target_precision:
                 selected_threshold = round(float(threshold), 2)
                 selected_count = count
-                selected_precision = precision
+                selected_precision = correct / count
+                selected_lower_bound = lower_bound
                 break
         thresholds[category] = {
             "threshold": selected_threshold,
             "eligible_predictions": selected_count,
             "estimated_precision": selected_precision,
-            "enabled": selected_threshold <= 1.0 and category != "Unclassified",
+            "precision_wilson_lower_bound": selected_lower_bound,
+            "enabled": selected_threshold <= 1.0,
         }
     return thresholds
+
+
+def auto_policy_mask(
+    probabilities: np.ndarray,
+    classes: Sequence[str],
+    thresholds: dict[str, dict[str, Any]],
+    eligible: np.ndarray,
+) -> np.ndarray:
+    """Rows the production policy would auto-classify (mirrors CookieClassifier.can_auto_classify)."""
+    predictions = probabilities.argmax(axis=1)
+    confidence = probabilities.max(axis=1)
+    mask = np.zeros(len(predictions), dtype=bool)
+    for index, category in enumerate(classes):
+        policy = thresholds[category]
+        if policy["enabled"]:
+            mask |= (predictions == index) & (confidence >= policy["threshold"])
+    return mask & eligible
+
+
+def auto_policy_gate(
+    correct: np.ndarray,
+    sites: np.ndarray,
+    *,
+    target_precision: float,
+    minimum_predictions: int,
+    minimum_sites: int,
+    bootstrap_samples: int,
+    seed: int,
+) -> dict[str, Any]:
+    """Decide whether auto-classified predictions are proven precise (decisions D13, C10).
+
+    ``correct`` and ``sites`` describe only the auto-classified rows. All must
+    hold: enough predictions, enough distinct sites, a Wilson lower bound and a
+    site-clustered bootstrap lower bound (sites resampled with replacement, so
+    one large site cannot carry the estimate) both at or above the target.
+    """
+    count = int(len(correct))
+    correct_count = int(np.sum(correct))
+    site_values, site_index = np.unique(sites, return_inverse=True)
+    bootstrap_lower_bound = None
+    if len(site_values):
+        per_site_total = np.bincount(site_index, minlength=len(site_values))
+        per_site_correct = np.bincount(site_index, weights=correct.astype(float), minlength=len(site_values))
+        rng = np.random.default_rng(seed)
+        draws = rng.integers(0, len(site_values), size=(bootstrap_samples, len(site_values)))
+        accuracy = per_site_correct[draws].sum(axis=1) / per_site_total[draws].sum(axis=1)
+        bootstrap_lower_bound = float(np.quantile(accuracy, 0.025))
+    wilson = wilson_lower_bound(correct_count, count)
+    return {
+        "eligible_predictions": count,
+        "distinct_sites": int(len(site_values)),
+        "accuracy": correct_count / count if count else None,
+        "wilson_lower_bound": wilson if count else None,
+        "site_bootstrap_lower_bound": bootstrap_lower_bound,
+        "requirements": {
+            "target_precision": target_precision,
+            "minimum_predictions": minimum_predictions,
+            "minimum_sites": minimum_sites,
+            "bootstrap_samples": bootstrap_samples,
+        },
+        "passed": bool(
+            count >= minimum_predictions
+            and len(site_values) >= minimum_sites
+            and wilson >= target_precision
+            and bootstrap_lower_bound is not None
+            and bootstrap_lower_bound >= target_precision
+        ),
+    }
+
+
+def per_cmp_gate(
+    encoded_labels: np.ndarray,
+    predictions: np.ndarray,
+    cmps: np.ndarray,
+    sites: np.ndarray,
+    *,
+    minimum_rows: int,
+    minimum_sites: int,
+    maximum_gap: float,
+) -> dict[str, Any]:
+    """Require every well-sampled CMP's macro-F1 to sit within ``maximum_gap`` of overall (C4).
+
+    Macro-F1 is taken over the classes present in the overall truth, for the
+    overall figure and each CMP alike. CMPs below ``minimum_rows`` rows or
+    ``minimum_sites`` sites are reported but not judged; rows with no known
+    CMP are not grouped. With no CMP judged the gate passes and says so.
+    """
+    from sklearn.metrics import f1_score
+
+    labels = sorted(set(encoded_labels.tolist()))
+    overall = float(f1_score(encoded_labels, predictions, labels=labels, average="macro", zero_division=0))
+    per_cmp: dict[str, Any] = {}
+    for cmp in sorted(set(cmps.tolist()) - {""}):
+        mask = cmps == cmp
+        rows, site_count = int(mask.sum()), int(len(set(sites[mask].tolist())))
+        entry: dict[str, Any] = {"rows": rows, "sites": site_count}
+        if rows >= minimum_rows and site_count >= minimum_sites:
+            macro_f1 = float(f1_score(encoded_labels[mask], predictions[mask], labels=labels,
+                                      average="macro", zero_division=0))
+            entry.update(macro_f1=macro_f1, gap=overall - macro_f1, passed=overall - macro_f1 <= maximum_gap)
+        else:
+            entry["passed"] = None
+        per_cmp[cmp] = entry
+    judged = [entry for entry in per_cmp.values() if entry["passed"] is not None]
+    return {
+        "overall_macro_f1": overall,
+        "requirements": {"minimum_rows": minimum_rows, "minimum_sites": minimum_sites, "maximum_gap": maximum_gap},
+        "rows_without_cmp": int((cmps == "").sum()),
+        "per_cmp": per_cmp,
+        "cmps_judged": len(judged),
+        "passed": all(entry["passed"] for entry in judged),
+    }
 
 
 def _json_safe(value: Any) -> Any:
@@ -367,6 +539,10 @@ def _evaluate(
     encoded_labels: np.ndarray,
     classes: Sequence[str],
     thresholds: dict[str, dict[str, Any]],
+    *,
+    eligible: np.ndarray,
+    sites: np.ndarray,
+    gate: dict[str, Any],
 ) -> dict[str, Any]:
     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, log_loss
 
@@ -379,16 +555,10 @@ def _evaluate(
         output_dict=True,
         zero_division=0,
     )
-    confidence = probabilities.max(axis=1)
-    auto_mask = np.zeros(len(predictions), dtype=bool)
-    for index, category in enumerate(classes):
-        policy = thresholds[category]
-        if policy["enabled"]:
-            auto_mask |= (predictions == index) & (confidence >= policy["threshold"])
+    auto_mask = auto_policy_mask(probabilities, classes, thresholds, eligible)
     auto_count = int(auto_mask.sum())
-    auto_accuracy = (
-        float((predictions[auto_mask] == encoded_labels[auto_mask]).mean())
-        if auto_count else None
+    auto_gate = auto_policy_gate(
+        predictions[auto_mask] == encoded_labels[auto_mask], sites[auto_mask], **gate
     )
     return _json_safe({
         "accuracy": accuracy_score(encoded_labels, predictions),
@@ -399,19 +569,42 @@ def _evaluate(
         "confusion_matrix": confusion_matrix(
             encoded_labels, predictions, labels=list(range(len(classes)))
         ),
+        "rows_lacking_evidence": int((~eligible).sum()),
         "auto_policy": {
-            "eligible_predictions": auto_count,
             "coverage": auto_count / len(predictions) if len(predictions) else 0.0,
-            "accuracy": auto_accuracy,
+            **auto_gate,
         },
     })
+
+
+def _load_evidence_sidecars(paths: Iterable[Path]) -> dict[str, str]:
+    """Map observation_id -> CMP from evidence sidecars (never a model feature)."""
+    cmp_by_observation: dict[str, str] = {}
+    for path in paths:
+        sidecar = pd.read_csv(path, dtype=str, keep_default_na=False, usecols=["observation_id", "cmp"])
+        cmp_by_observation.update(zip(sidecar.observation_id, sidecar.cmp.str.strip().str.lower()))
+    return cmp_by_observation
+
+
+def _load_train_only_inputs(paths: Iterable[Path]) -> tuple[pd.DataFrame, list[dict[str, Any]]]:
+    """Load each train-only CSV, deduplicated and conflict-dropped within its own source."""
+    frames, audits = [], []
+    for path in paths:
+        frame, (source_audit,) = _load_inputs([path])
+        frame, dedup_audit = deduplicate_observations(frame)
+        frames.append(frame)
+        audits.append({**source_audit, "deduplication": dedup_audit})
+    if not frames:
+        return pd.DataFrame(columns=OBSERVATION_COLUMNS + ["label", "source"]), audits
+    return pd.concat(frames, ignore_index=True), audits
 
 
 def _load_inputs(paths: Iterable[Path]) -> tuple[pd.DataFrame, list[dict[str, Any]]]:
     normalized_frames = []
     audits = []
     for path in paths:
-        frame = pd.read_csv(path, low_memory=False)
+        # keep_default_na=False: pandas would read SameSite "None" as NaN. Blanks stay "".
+        frame = pd.read_csv(path, low_memory=False, keep_default_na=False)
         normalized, audit = normalize_training_frame(frame, source=str(path))
         normalized_frames.append(normalized)
         audit["sha256"] = _sha256(path)
@@ -437,13 +630,25 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
         cleaned,
         test_fraction=args.test_fraction,
         calibration_fraction=args.calibration_fraction,
-        seed=args.seed,
+        seed=args.split_seed,
     )
     if calibration_frame.empty or test_frame.empty:
         raise ValueError(
             "No unseen cookie name families left in the calibration or test "
             f"partition after removing overlap: {split_audit['rows_removed_for_name_overlap']}"
         )
+
+    # Calibrate on the cookie mix a real scan meets, not only on unseen names.
+    calibration_frame = all_rows_on_sites(cleaned, split_audit["calibration_sites"])
+    split_audit["rows"]["calibration_all_cookies"] = len(calibration_frame)
+
+    train_only_paths = [Path(path).resolve() for path in args.train_only_input or []]
+    train_only_frame, train_only_source_audits = _load_train_only_inputs(train_only_paths)
+    train_frame, unseen_test_mask, train_only_audit = add_train_only_rows(
+        train_frame, calibration_frame, test_frame, train_only_frame
+    )
+
+    require_every_class(train_frame)
 
     external_frame = None
     external_audit = None
@@ -461,7 +666,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
             "provenance": args.external_provenance,
         }
 
-    encoder = LabelEncoder().fit(CANONICAL_LABELS)
+    encoder = LabelEncoder().fit(TRAINED_LABELS)
     classes = [str(value) for value in encoder.classes_]
     x_train = build_feature_matrix(train_frame)
     x_calibration = build_feature_matrix(calibration_frame)
@@ -488,34 +693,72 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
     )
     model.fit(x_train, y_train, eval_set=[(x_calibration, y_calibration)], verbose=False)
 
-    calibration_probabilities = model.predict_proba(x_calibration)
-    temperature = fit_temperature(calibration_probabilities, y_calibration)
-    calibrated_calibration = apply_temperature(calibration_probabilities, temperature)
+    guard_indices = evidence_indices(FeatureExtractorV5().get_feature_names())
+
+    def guarded_probabilities(features: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+        """Calibrated, evidence-guarded probabilities and the auto-eligible mask, as in production."""
+        calibrated = apply_temperature(model.predict_proba(features), temperature)
+        guarded, lacks_evidence = apply_evidence_guard(features, calibrated, guard_indices)
+        return guarded, ~lacks_evidence
+
+    temperature = fit_temperature(model.predict_proba(x_calibration), y_calibration)
+    calibrated_calibration, calibration_eligible = guarded_probabilities(x_calibration)
     thresholds = choose_class_thresholds(
         calibrated_calibration,
         y_calibration,
         classes,
         target_precision=args.target_auto_precision,
         minimum_predictions=args.minimum_threshold_predictions,
+        eligible=calibration_eligible,
     )
-    test_probabilities = apply_temperature(model.predict_proba(x_test), temperature)
-    test_metrics = _evaluate(test_probabilities, y_test, classes, thresholds)
+    gate = {
+        "target_precision": args.target_auto_precision,
+        "minimum_predictions": args.minimum_auto_predictions,
+        "minimum_sites": args.minimum_auto_sites,
+        "bootstrap_samples": args.bootstrap_samples,
+        "seed": args.split_seed,
+    }
+    test_probabilities, test_eligible = guarded_probabilities(x_test)
+    test_sites = test_frame.site_domain.to_numpy()
+    test_metrics = _evaluate(test_probabilities, y_test, classes, thresholds,
+                             eligible=test_eligible, sites=test_sites, gate=gate)
+    unseen_mask = unseen_test_mask.to_numpy()
+    unseen_test_metrics = (
+        _evaluate(test_probabilities[unseen_mask], y_test[unseen_mask], classes, thresholds,
+                  eligible=test_eligible[unseen_mask], sites=test_sites[unseen_mask], gate=gate)
+        if train_only_paths and unseen_mask.any() else None
+    )
+    all_test_frame = all_rows_on_sites(cleaned, split_audit["test_sites"])
+    all_test_probabilities, all_test_eligible = guarded_probabilities(build_feature_matrix(all_test_frame))
+    all_test_metrics = _evaluate(all_test_probabilities, encoder.transform(all_test_frame.label), classes,
+                                 thresholds, eligible=all_test_eligible,
+                                 sites=all_test_frame.site_domain.to_numpy(), gate=gate)
+    cmp_by_observation = _load_evidence_sidecars(Path(path).resolve() for path in args.evidence_sidecar or [])
+    cmp_gate = per_cmp_gate(
+        y_test,
+        test_probabilities.argmax(axis=1),
+        test_frame.observation_id.map(cmp_by_observation).fillna("").to_numpy(),
+        test_sites,
+        minimum_rows=args.minimum_cmp_rows,
+        minimum_sites=args.minimum_cmp_sites,
+        maximum_gap=args.maximum_cmp_macro_f1_gap,
+    )
 
     external_metrics = None
     if external_frame is not None and len(external_frame):
         x_external = build_feature_matrix(external_frame)
         y_external = encoder.transform(external_frame.label)
-        external_probabilities = apply_temperature(model.predict_proba(x_external), temperature)
-        external_metrics = _evaluate(external_probabilities, y_external, classes, thresholds)
+        external_probabilities, external_eligible = guarded_probabilities(x_external)
+        external_metrics = _evaluate(external_probabilities, y_external, classes, thresholds,
+                                     eligible=external_eligible,
+                                     sites=external_frame.site_domain.to_numpy(), gate=gate)
 
     internal_gates = {
         "macro_f1": test_metrics["macro_f1"] >= args.minimum_macro_f1,
         "marketing_recall": test_metrics["per_class"]["Marketing_Advertising"]["recall"] >= args.minimum_marketing_recall,
-        "unclassified_precision": test_metrics["per_class"]["Unclassified"]["precision"] >= args.minimum_unclassified_precision,
-        "auto_precision": (
-            test_metrics["auto_policy"]["accuracy"] is not None
-            and test_metrics["auto_policy"]["accuracy"] >= args.target_auto_precision
-        ),
+        "auto_precision": test_metrics["auto_policy"]["passed"],
+        "auto_precision_all_cookies": all_test_metrics["auto_policy"]["passed"],
+        "per_cmp_macro_f1": cmp_gate["passed"],
         "site_holdout_is_disjoint": all(value == 0 for value in split_audit["site_domain_overlap"].values()),
         "name_holdout_is_disjoint": all(value == 0 for value in split_audit["cookie_name_family_overlap"].values()),
     }
@@ -524,8 +767,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
         and external_is_disjoint
         and args.external_provenance
         and external_metrics["macro_f1"] >= args.minimum_macro_f1
-        and external_metrics["auto_policy"]["accuracy"] is not None
-        and external_metrics["auto_policy"]["accuracy"] >= args.target_auto_precision
+        and external_metrics["auto_policy"]["passed"]
     )
     promotion_eligible = all(internal_gates.values()) and external_gate
     auto_classification_enabled = bool(
@@ -546,7 +788,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
         "method": "temperature_scaling",
         "temperature": temperature,
         "per_class_auto_thresholds": thresholds,
-        "fitted_on": "site-domain- and cookie-name-family-disjoint calibration partition",
+        "fitted_on": "all cookies on calibration sites (site-domain-disjoint from training and test)",
     }, indent=2) + "\n")
 
     metadata = {
@@ -556,23 +798,31 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
         "num_features": len(feature_names),
         "features": feature_names,
         "categories": classes,
+        "abstain_category": ABSTAIN_LABEL,
         "training_samples": len(train_frame),
         "calibration_samples": len(calibration_frame),
         "test_samples": len(test_frame),
+        "test_samples_all_cookies": len(all_test_frame),
         "dataset": {
             "sources": source_audits,
             "deduplication": dedup_audit,
             "split": split_audit,
+            "train_only": {"sources": train_only_source_audits, **train_only_audit},
             "external_holdout": external_audit,
         },
         "calibration": {
             "method": "temperature_scaling",
             "temperature": temperature,
             "target_auto_precision": args.target_auto_precision,
+            "threshold_rule": "lowest threshold with >= minimum predictions and Wilson lower bound >= target",
+            "evidence_guard": "applied before thresholds and metrics; guarded rows never auto-classify",
             "per_class_auto_thresholds": thresholds,
         },
         "metrics": {
             "internal_site_holdout": test_metrics,
+            "internal_site_holdout_unseen_by_all_sources": unseen_test_metrics,
+            "internal_site_holdout_all_cookies": all_test_metrics,
+            "internal_site_holdout_per_cmp": cmp_gate,
             "external_holdout": external_metrics,
         },
         "acceptance": {
@@ -599,6 +849,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
         },
         "training_parameters": {
             "seed": args.seed,
+            "split_seed": args.split_seed,
             "estimators": args.estimators,
             "learning_rate": args.learning_rate,
             "max_depth": args.max_depth,
@@ -653,23 +904,49 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", action="append", required=True, help="Training CSV; repeatable")
+    parser.add_argument(
+        "--train-only-input",
+        action="append",
+        help="CSV whose rows only ever join the train partition (e.g. CookieBlock, legacy); repeatable",
+    )
     parser.add_argument("--external-holdout", help="Independent externally sourced labeled CSV")
     parser.add_argument("--external-provenance", help="Human-readable source/version for external holdout")
     parser.add_argument("--version", default="6.1.0")
     parser.add_argument("--output-dir", default="models/v6.1.0")
     parser.add_argument("--package-dir", default="model_artifacts")
-    parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--seed", type=int, default=42, help="Model seed")
+    parser.add_argument(
+        "--split-seed",
+        type=int,
+        default=42,
+        help="Site split seed; keep fixed across ablation arms so every arm is scored on the same test rows",
+    )
     parser.add_argument("--test-fraction", type=float, default=0.20)
     parser.add_argument("--calibration-fraction", type=float, default=0.18)
     parser.add_argument("--estimators", type=int, default=350)
     parser.add_argument("--learning-rate", type=float, default=0.05)
     parser.add_argument("--max-depth", type=int, default=6)
     parser.add_argument("--jobs", type=int, default=4)
-    parser.add_argument("--target-auto-precision", type=float, default=0.97)
+    parser.add_argument(
+        "--evidence-sidecar",
+        action="append",
+        help="CSV with observation_id,cmp for the per-CMP gate (never a model feature); repeatable",
+    )
+    parser.add_argument(
+        "--target-auto-precision",
+        type=float,
+        default=0.95,
+        help="Wilson and site-bootstrap lower bound the auto policy must reach",
+    )
     parser.add_argument("--minimum-threshold-predictions", type=int, default=50)
+    parser.add_argument("--minimum-auto-predictions", type=int, default=100)
+    parser.add_argument("--minimum-auto-sites", type=int, default=20)
+    parser.add_argument("--bootstrap-samples", type=int, default=1000)
+    parser.add_argument("--minimum-cmp-rows", type=int, default=300)
+    parser.add_argument("--minimum-cmp-sites", type=int, default=20)
+    parser.add_argument("--maximum-cmp-macro-f1-gap", type=float, default=0.05)
     parser.add_argument("--minimum-macro-f1", type=float, default=0.75)
     parser.add_argument("--minimum-marketing-recall", type=float, default=0.70)
-    parser.add_argument("--minimum-unclassified-precision", type=float, default=0.60)
     parser.add_argument("--overwrite", action="store_true")
     parser.add_argument(
         "--enable-auto-classification",

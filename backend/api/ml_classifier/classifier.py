@@ -21,9 +21,8 @@ from .config import (
     get_confidence_level,
     CATEGORIES,
     CURRENT_MODEL_VERSION,
-    IDENTITY_EVIDENCE_FEATURES,
-    NO_EVIDENCE_CONFIDENCE_CAP,
 )
+from .evidence_guard import apply_evidence_guard, evidence_indices
 
 
 @dataclass
@@ -72,11 +71,7 @@ class CookieClassifier:
         # Initialize feature extractor based on model version
         self.feature_extractor = get_feature_extractor_for_model(self.model_version)
         feature_names = self.feature_extractor.get_feature_names()
-        self._evidence_indices = [
-            feature_names.index(name)
-            for name in IDENTITY_EVIDENCE_FEATURES
-            if name in feature_names
-        ]
+        self._evidence_indices = evidence_indices(feature_names)
         self._validate_artifacts()
         print(f"✅ Using feature extractor for model v{self.model_version}")
         print(f"   Feature count: {len(self.feature_extractor.get_feature_names())}")
@@ -415,24 +410,8 @@ class CookieClassifier:
     def _apply_evidence_guard(
         self, features: np.ndarray, probabilities: np.ndarray
     ) -> Tuple[np.ndarray, np.ndarray]:
-        """Cap confidence for cookies with no name-pattern or vendor signal.
-
-        Such rows are shrunk toward the uniform distribution until the top
-        probability equals NO_EVIDENCE_CONFIDENCE_CAP, so the ranking and the
-        probability sum are preserved while the confidence stops overstating
-        what the attributes alone can support.
-        """
-        if not self._evidence_indices:
-            return probabilities, np.zeros(len(probabilities), dtype=bool)
-        lacks_evidence = ~np.any(features[:, self._evidence_indices] != 0, axis=1)
-        guarded = probabilities.copy()
-        uniform = 1.0 / probabilities.shape[1]
-        for row in np.flatnonzero(lacks_evidence):
-            top = guarded[row].max()
-            if top > NO_EVIDENCE_CONFIDENCE_CAP:
-                weight = (NO_EVIDENCE_CONFIDENCE_CAP - uniform) / (top - uniform)
-                guarded[row] = weight * guarded[row] + (1.0 - weight) * uniform
-        return guarded, lacks_evidence
+        """Cap confidence for cookies with no name-pattern or vendor signal (see evidence_guard)."""
+        return apply_evidence_guard(features, probabilities, self._evidence_indices)
 
     def can_auto_classify(self, category: str, confidence_score: float) -> bool:
         """Honor artifact acceptance gates and calibrated per-class thresholds."""

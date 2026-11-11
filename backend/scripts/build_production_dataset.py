@@ -5,6 +5,12 @@ The builder uses only raw observable cookie fields, normalizes labels to the
 v6 taxonomy, removes duplicate observations, and discards contradictory or
 identity-incomplete rows. Unknown provenance fields remain empty rather than
 being inferred.
+
+Inputs are either legacy CSVs (one row per labeled cookie) or banner exports
+named ``cookies_<site>_<YYYY-MM-DD>.csv`` (detected by their header). From a
+banner export only cookies the site's banner declared *and* the browser set are
+kept, labeled ``website_banner_explicit``; guessed or undeclared rows are not
+labels and are counted, never trained on.
 """
 
 from __future__ import annotations
@@ -13,6 +19,7 @@ import argparse
 import csv
 import hashlib
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 from typing import Iterable, Sequence
@@ -45,9 +52,13 @@ LABEL_ALIASES = {
     "measure performance": "Analytics_Performance",
     "performance": "Analytics_Performance",
     "statistical": "Analytics_Performance",
+    "statistics": "Analytics_Performance",            # Cookiebot
+    "performance & analytics": "Analytics_Performance",  # Ketch
     "functional": "Functional",
     "personalization": "Functional",
     "personalisation": "Functional",
+    "functionality": "Functional",
+    "preference": "Functional",
     "extend functionality": "Functional",
     "preferences": "Functional",
     "advertising": "Marketing_Advertising",
@@ -58,16 +69,33 @@ LABEL_ALIASES = {
     "personalize advertising": "Marketing_Advertising",
     "social media tracking": "Marketing_Advertising",
     "social networking": "Marketing_Advertising",
+    "targeting": "Marketing_Advertising",
+    "targeted advertising": "Marketing_Advertising",  # Ketch
+    "advertising & targeting": "Marketing_Advertising",
+    "advertising and targeting": "Marketing_Advertising",
+    "sales, sharing, and targeting": "Marketing_Advertising",
     "strictly necessary": "Strictly_Necessary",
     "strictly neccessary": "Strictly_Necessary",
     "necessary": "Strictly_Necessary",
     "essential": "Strictly_Necessary",
+    "essential services": "Strictly_Necessary",       # Ketch
+    "required": "Strictly_Necessary",
     "security": "Strictly_Necessary",
     "operate the site and core services": "Strictly_Necessary",
     "unclassified": "Unclassified",
     "unknown": "Unclassified",
     "uncategorized": "Unclassified",
 }
+
+BANNER_EXPORT_COLUMNS = {
+    "category", "categorySource", "cmp", "name", "domain", "path", "expires",
+    "httpOnly", "secure", "sameSite", "partitioned", "status",
+}
+BANNER_EXPORT_NAME = re.compile(r"^cookies_(?P<site>.+)_(?P<date>\d{4}-\d{2}-\d{2})\.csv$")
+BANNER_LABEL_SOURCE = "website_banner_explicit"
+SIDECAR_FIELDS = ["observation_id", "cmp", "raw_label", "provider", "description"]
+_EXPORT_DURATION = re.compile(r"^(?P<count>\d+(?:\.\d+)?)\s*(?P<unit>minute|hour|day|week|month|year)s?$")
+_DAYS_PER_UNIT = {"minute": 1 / 1440, "hour": 1 / 24, "day": 1, "week": 7, "month": 30.44, "year": 365.25}
 
 OBSERVATION_FIELDS = [
     "site_domain",
@@ -78,6 +106,24 @@ OBSERVATION_FIELDS = [
     "http_only",
     "same_site",
 ]
+
+
+_IDENTIFIER_SUFFIX = re.compile(r"[_-][^_-]*\d[^_-]*$")
+
+
+def cookie_name_family(name: str) -> str:
+    """Group cookie names that differ only by per-site identifier suffixes.
+
+    Trailing ``_``/``-`` segments containing a digit are identifiers
+    (``_ga_ABC123``, ``_hjSessionUser_123``, ``AWSALB_e0xu``), so they are
+    stripped until the remaining tail is a plain word.
+    """
+    family = str(name).strip().lower()
+    while True:
+        stripped = _IDENTIFIER_SUFFIX.sub("", family)
+        if stripped == family or not stripped:
+            return family
+        family = stripped
 
 
 def sha256(path: Path) -> str:
@@ -116,12 +162,34 @@ def normalize_expiry(value: str | None) -> str:
 
 def normalize_same_site(value: str | None) -> str:
     text = (value or "").strip().lower()
-    return {"lax": "Lax", "strict": "Strict", "none": "None"}.get(text, "Unknown")
+    return {"lax": "Lax", "strict": "Strict", "none": "None", "no_restriction": "None"}.get(text, "Unknown")
+
+
+def parse_export_expiry(value: str | None) -> str:
+    """Turn an export's observed lifetime ("Session", "13 months", "1 hours") into days.
+
+    A persistent cookie never becomes 0 (the session value): sub-day lifetimes
+    round up to 1. Anything unrecognised is blank, so the row counts as unobserved.
+    """
+    text = (value or "").strip().lower()
+    if text == "session":
+        return "0"
+    match = _EXPORT_DURATION.match(text)
+    if not match:
+        return ""
+    days = float(match["count"]) * _DAYS_PER_UNIT[match["unit"]]
+    return str(max(1, round(days)))
 
 
 def normalize_label(value: str | None) -> str:
+    """Map a category name to the taxonomy; banner names like "First Party Targeting Cookies" reduce to "targeting"."""
     text = (value or "").strip().replace("_", " ").replace("-", " ")
-    return LABEL_ALIASES.get(" ".join(text.lower().split()), "")
+    text = " ".join(text.lower().split())
+    if text.startswith("first party "):
+        text = text[len("first party "):]
+    if text.endswith(" cookies"):
+        text = text[: -len(" cookies")]
+    return LABEL_ALIASES.get(text, "")
 
 
 def normalize_row(row: dict[str, str], dataset_source: str) -> dict[str, str]:
@@ -147,11 +215,43 @@ def normalize_row(row: dict[str, str], dataset_source: str) -> dict[str, str]:
     }
 
 
+def normalize_banner_export_row(
+    row: dict[str, str], site_domain: str, observed_at: str, dataset_source: str
+) -> dict[str, str]:
+    domain = (row.get("domain") or "").strip()
+    normalized = {
+        "observation_id": "",
+        "observed_at": observed_at,
+        "site_domain": normalize_domain(site_domain),
+        "cookie_name": (row.get("name") or "").strip(),
+        "cookie_domain": normalize_domain(domain),
+        "path": (row.get("path") or "").strip(),
+        "expiry_days": parse_export_expiry(row.get("expires")),
+        "secure": normalize_boolean(row.get("secure")),
+        "http_only": normalize_boolean(row.get("httpOnly")),
+        "same_site": normalize_same_site(row.get("sameSite")),
+        "host_only": ("false" if domain.startswith(".") else "true") if domain else "",
+        "partitioned": normalize_boolean(row.get("partitioned")),
+        "setter_domain": "",
+        "label_category": normalize_label(row.get("category")),
+        "label_source": BANNER_LABEL_SOURCE,
+        "dataset_source": dataset_source,
+    }
+    normalized["_evidence"] = {
+        "cmp": (row.get("cmp") or "").strip().lower(),
+        "raw_label": (row.get("category") or "").strip(),
+        "provider": (row.get("provider") or "").strip(),
+        "description": (row.get("description") or "").strip(),
+    }
+    return normalized
+
+
 def build_dataset(
     inputs: Iterable[Path],
     output: Path,
     manifest_path: Path,
     dataset_source: str,
+    sidecar_path: Path | None = None,
 ) -> dict[str, object]:
     input_paths = list(inputs)
     normalized_rows: list[dict[str, str]] = []
@@ -167,14 +267,40 @@ def build_dataset(
             "unsupported_label": 0,
         }
         with path.open(newline="", encoding="utf-8-sig") as handle:
-            for raw_row in csv.DictReader(handle):
+            reader = csv.DictReader(handle)
+            banner_export = BANNER_EXPORT_COLUMNS <= set(reader.fieldnames or [])
+            if banner_export:
+                name = BANNER_EXPORT_NAME.match(path.name)
+                if not name:
+                    raise ValueError(
+                        f"{path.name}: banner exports must be named cookies_<site>_<YYYY-MM-DD>.csv"
+                    )
+                stats.update(format="banner_export", not_banner_declared=0, declared_not_set=0,
+                             missing_attributes=0)
+            for raw_row in reader:
                 stats["input_rows"] += 1
-                row = normalize_row(raw_row, dataset_source)
+                if banner_export:
+                    if (raw_row.get("categorySource") or "").strip() != "banner":
+                        stats["not_banner_declared"] += 1
+                        continue
+                    if (raw_row.get("status") or "").strip() != "Declared & set":
+                        stats["declared_not_set"] += 1
+                        continue
+                    row = normalize_banner_export_row(
+                        raw_row, name["site"], name["date"], dataset_source
+                    )
+                else:
+                    row = normalize_row(raw_row, dataset_source)
                 if not row["site_domain"] or not row["cookie_name"] or not row["cookie_domain"]:
                     stats["missing_identity"] += 1
                     continue
                 if not row["label_category"]:
                     stats["unsupported_label"] += 1
+                    continue
+                if banner_export and not all(
+                    row[field] for field in ("expiry_days", "secure", "http_only")
+                ):
+                    stats["missing_attributes"] += 1
                     continue
                 normalized_rows.append(row)
                 stats["accepted_rows"] += 1
@@ -206,9 +332,20 @@ def build_dataset(
     )
     output.parent.mkdir(parents=True, exist_ok=True)
     with output.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=SCHEMA, lineterminator="\n")
+        writer = csv.DictWriter(handle, fieldnames=SCHEMA, lineterminator="\n", extrasaction="ignore")
         writer.writeheader()
         writer.writerows(clean_rows)
+
+    if sidecar_path is not None:
+        sidecar_path.parent.mkdir(parents=True, exist_ok=True)
+        with sidecar_path.open("w", newline="", encoding="utf-8") as handle:
+            writer = csv.DictWriter(handle, fieldnames=SIDECAR_FIELDS, lineterminator="\n")
+            writer.writeheader()
+            writer.writerows(
+                {"observation_id": row["observation_id"], **row["_evidence"]}
+                for row in clean_rows
+                if "_evidence" in row
+            )
 
     completeness = {
         field: sum(bool(row[field]) for row in clean_rows)
@@ -249,6 +386,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--manifest", required=True, type=Path)
     parser.add_argument("--dataset-source", required=True)
+    parser.add_argument("--sidecar", type=Path, help="Evidence CSV for banner-export rows (never a model feature)")
     return parser.parse_args(argv)
 
 
@@ -259,6 +397,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         args.output,
         args.manifest,
         args.dataset_source,
+        args.sidecar,
     )
     print(json.dumps(manifest["normalization"], indent=2))
     return 0

@@ -1,0 +1,112 @@
+{
+  "source": "CookieBlock artifact, Zenodo record 5838646 (doi:10.5281/zenodo.5838646), v1.0, published 2022-01-11",
+  "authors": "Dino Bollinger, Karel Kubicek, Carlos Cotrini, David Basin (ETH Zurich)",
+  "license": "CC BY 4.0 (attribution required); user confirmed license reading 2026-11-09",
+  "download": {
+    "url": "https://zenodo.org/records/5838646/files/datasets.zip",
+    "md5": "9aece7e28a54a7cfc2250f5c2861ca20",
+    "sha256": "9d884d38ee38ffb449e9ec37b3f72a4d897e0261e394c4b911b75cf5f59658c3",
+    "downloaded": "2026-11-09"
+  },
+  "member": "06_Training_Data/tranco_05May_20210510_201615.json",
+  "member_sha256_before_stripping": "71364f0f8484daa950267aebe774a84cc64e8aecca00b562c48d4607dceb3168",
+  "stripped_copy": {
+    "path": "models/training_data/external/cookieblock/stripped/cookieblock_training_2021-05-10.novalues.json",
+    "sha256": "935ad9c2361d65add9b17db4e8321e06afd47bb43ab2923f2d6e4d2b8614c064",
+    "bytes": 270038186,
+    "cookie_values_removed": true
+  },
+  "raw_files_deleted": true,
+  "crawl_date": "2021-05-10",
+  "profile": {
+    "rows": 304422,
+    "distinct_sites": 28082,
+    "distinct_registrable_domains_approx": 27883,
+    "raw_label_counts": {
+      "0 (necessary)": 85713,
+      "1 (functional)": 18783,
+      "2 (analytics)": 88312,
+      "3 (advertising)": 111614
+    },
+    "cmp_counts": {
+      "cookiebot": 150695,
+      "onetrust": 151307,
+      "termly": 2420
+    },
+    "rows_with_cookie_values_in_source": 304422,
+    "rows_with_complete_attributes": 304422,
+    "updates_per_cookie": {
+      "mean": 6.26,
+      "max": 2199
+    },
+    "expiry_days_first_observation": {
+      "session_share": 0.18,
+      "median": 90.0,
+      "p90": 730.0
+    },
+    "same_site": {
+      "lax": 198395,
+      "no_restriction": 104814,
+      "strict": 1213
+    },
+    "mapped_5class_after_D5_D24": {
+      "Strictly_Necessary": 85713,
+      "Functional": 18783,
+      "Analytics_Performance": 88312,
+      "Marketing_Advertising": 111614
+    },
+    "mapped_by_cmp": {
+      "cookiebot": {
+        "Strictly_Necessary": 38562,
+        "Functional": 6138,
+        "Analytics_Performance": 46598,
+        "Marketing_Advertising": 59397
+      },
+      "onetrust": {
+        "Strictly_Necessary": 46972,
+        "Analytics_Performance": 40670,
+        "Marketing_Advertising": 51219,
+        "Functional": 12446
+      },
+      "termly": {
+        "Marketing_Advertising": 998,
+        "Analytics_Performance": 1044,
+        "Functional": 199,
+        "Strictly_Necessary": 179
+      }
+    },
+    "D10_review_families": 968,
+    "D10_review_rows": 48991,
+    "rows_after_D10": 255431,
+    "largest_sites_share": [
+      [
+        "pgatour.com",
+        292,
+        0.001
+      ],
+      [
+        "presidentscup.com",
+        160,
+        0.0005
+      ],
+      [
+        "cookinglight.com",
+        148,
+        0.0005
+      ],
+      [
+        "southernliving.com",
+        140,
+        0.0005
+      ],
+      [
+        "shape.com",
+        135,
+        0.0004
+      ]
+    ],
+    "distinct_cookie_names": 13630,
+    "names_also_in_legacy_csv": 46,
+    "stripped_copy_has_values": false
+  }
+}

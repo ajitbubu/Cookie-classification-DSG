@@ -22,7 +22,8 @@ const GATE_LABELS = {
   macro_f1: 'Macro F1 meets the minimum',
   marketing_recall: 'Marketing recall meets the minimum',
   unclassified_precision: 'Unclassified precision meets the minimum',
-  auto_precision: 'Auto-classification precision meets the target',
+  auto_precision: 'Auto-classification precision meets the target (new cookie names)',
+  auto_precision_all_cookies: 'Auto-classification precision meets the target (all cookies on test websites)',
   site_holdout_is_disjoint: 'Test websites never seen in training',
   name_holdout_is_disjoint: 'Test cookie names never seen in training',
 };
