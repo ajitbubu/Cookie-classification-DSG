@@ -156,6 +156,10 @@ def test_vendor_category_names_map_and_ambiguous_ones_are_dropped():
         "Essential Services": "Strictly_Necessary", "Performance & Analytics": "Analytics_Performance",
         "Targeted Advertising": "Marketing_Advertising", "Advertising Cookies": "Marketing_Advertising",
         "Functionality Cookies": "Functional", "Performance Cookies": "Analytics_Performance",
+        "Behavioral Advertising": "Marketing_Advertising", "Marketing and Advertising": "Marketing_Advertising",
+        "Analytics & Performance": "Analytics_Performance", "Analytic & Performance": "Analytics_Performance",
+        "Performance Analytics": "Analytics_Performance",
+        "Essential Product Functions & Services": "Strictly_Necessary",
         # Mixes two of our classes, or isn't a category: never guessed.
         "Analytics & Customization": "", "Performance & Functionality": "", "SaleOfInfo": "", "DiRinProcess": "",
     }

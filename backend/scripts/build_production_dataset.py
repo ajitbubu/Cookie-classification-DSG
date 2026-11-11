@@ -54,6 +54,9 @@ LABEL_ALIASES = {
     "statistical": "Analytics_Performance",
     "statistics": "Analytics_Performance",            # Cookiebot
     "performance & analytics": "Analytics_Performance",  # Ketch
+    "performance analytics": "Analytics_Performance",    # Ketch
+    "analytics & performance": "Analytics_Performance",  # Ketch
+    "analytic & performance": "Analytics_Performance",   # Ketch
     "functional": "Functional",
     "personalization": "Functional",
     "personalisation": "Functional",
@@ -71,6 +74,8 @@ LABEL_ALIASES = {
     "social networking": "Marketing_Advertising",
     "targeting": "Marketing_Advertising",
     "targeted advertising": "Marketing_Advertising",  # Ketch
+    "behavioral advertising": "Marketing_Advertising",  # Ketch
+    "marketing and advertising": "Marketing_Advertising",  # Ketch
     "advertising & targeting": "Marketing_Advertising",
     "advertising and targeting": "Marketing_Advertising",
     "sales, sharing, and targeting": "Marketing_Advertising",
@@ -79,6 +84,7 @@ LABEL_ALIASES = {
     "necessary": "Strictly_Necessary",
     "essential": "Strictly_Necessary",
     "essential services": "Strictly_Necessary",       # Ketch
+    "essential product functions & services": "Strictly_Necessary",  # Ketch
     "required": "Strictly_Necessary",
     "security": "Strictly_Necessary",
     "operate the site and core services": "Strictly_Necessary",
