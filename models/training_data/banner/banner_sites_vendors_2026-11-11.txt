@@ -1,0 +1,33 @@
+# Non-OneTrust batch approved 2026-11-11: 28 sites, one per parent company.
+# Checked with find_banner_sites (robots.txt allows /, readable Ketch/Transcend/Cookiebot/Securiti declaration);
+# see candidates_vendors_2026-11-11_verified.csv. Dropped: foxnews, pepsico, sling, pbs, newsweek (no readable
+# declaration); sfchronicle, dallasnews (Hearst), history.com, fubo (Disney), other Paramount/Fox/Inspire/Live Nation/DISH brands.
+# Columns: host vendor-folder
+www.biogen.com cookiebot
+www.qualys.com cookiebot
+www.siemens-healthineers.com cookiebot
+www.similarweb.com cookiebot
+www.vitamix.com cookiebot
+consumercare.hasbro.com ketch
+iterable.com ketch
+time.com ketch
+www.chipotle.com ketch
+www.dunkindonuts.com ketch
+www.equifax.com ketch
+www.lendingtree.com ketch
+www.paramountplus.com ketch
+www.smartsheet.com ketch
+www.tasteofhome.com ketch
+www.ticketmaster.com ketch
+www.everpuredata.com securiti
+www.hertz.com securiti
+1password.com transcend
+webflow.com transcend
+www.airtable.com transcend
+www.constantcontact.com transcend
+www.costco.com transcend
+www.datadoghq.com transcend
+www.grammarly.com transcend
+www.irobot.com transcend
+www.klaviyo.com transcend
+www.notion.com transcend

@@ -1,0 +1,34 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Necessary,banner,Cookiebot,renderid,www.biogen.com,/,First party,Session,Session,false,true,unspecified,false,Declared & set,www.biogen.com,This cookie is used to assign the visitor to a specific server - this function is necessary for the functionality of the website.
+Marketing,banner,Cookiebot,_cq_duid,.biogen.com,/,First party,91.25 days,,false,true,none,false,Declared & set,biogen.com,Used by the website to protect against fraud in relation to its referral system.
+Necessary,banner,Cookiebot,_cq_suid,.biogen.com,/,First party,Session,Session,false,true,none,false,Declared & set,biogen.com,This cookie is used to distinguish between humans and bots. 
+Necessary,banner,Cookiebot,cg_uuid,obs.seaskypro.com,/,Third party,336.00 days,,true,true,none,false,Declared & set,obs.seaskypro.com,Necessary for the website security.
+Necessary,banner,Cookiebot,CookieConsent,www.biogen.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,www.biogen.com,Stores the user's cookie consent state for the current domain
+Statistics,banner,Cookiebot,_ga,.biogen.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,biogen.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,linkedin.com,Used in order to detect spam and improve the website's security. 
+Preferences,banner,Cookiebot,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,linkedin.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,linkedin.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Marketing,banner,Cookiebot,_fbp,.biogen.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,biogen.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,banner,Cookiebot,global-international_us_privacy-preferences,www.biogen.com,/,First party,89.79 days,,false,false,unspecified,false,Declared & set,www.biogen.com,Pending
+Unclassified,banner,Cookiebot,_cq_session,.biogen.com,/,First party,400.00 days,,false,true,none,false,Declared & set,biogen.com,Pending
+Necessary,banner,Cookiebot,AWSALB,www.biogen.com,/,First party,7.00 days,,false,false,unspecified,false,Declared & set,www.biogen.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,AWSALBCORS,www.biogen.com,/,First party,7.00 days,,false,true,none,false,Declared & set,www.biogen.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Unclassified,banner,Cookiebot,_cq_s,.biogen.com,/,First party,7.00 days,,false,true,none,false,Declared & set,biogen.com,Pending
+Statistics,banner,Cookiebot,_ga_H8RV9T4FXN,.biogen.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,biogen.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,__Secure-YNID,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,YSC,.youtube.com,/,Third party,Session,Session,true,true,none,true,Declared & set,youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Unclassified,none,,VISITOR_PRIVACY_METADATA,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Used to track user’s interaction with embedded content.
+Necessary,banner,Cookiebot,li_gc,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,httpOnly,www.biogen.com,,,,Session,,,,,"Declared, not set",www.biogen.com,Ensures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.   
+Necessary,banner,Cookiebot,queryString_cookie,www.biogen.com,,,,Session,,,,,"Declared, not set",www.biogen.com,Necessary in order to optimize the website's search-bar function. The cookie ensures accurate and fast search results.
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,www.youtube-nocookie.com,,,,Session,,,,,"Declared, not set",www.youtube-nocookie.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,www.youtube-nocookie.com,,,,,,,,,"Declared, not set",www.youtube-nocookie.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-BUCKET,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Pending
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video

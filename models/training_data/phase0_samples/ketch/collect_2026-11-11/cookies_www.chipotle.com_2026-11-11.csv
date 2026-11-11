@@ -1,0 +1,25 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,_swb,.chipotle.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_gcl_au,.chipotle.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,kndctr_4E7F56EC5BE2CCCF0A495CE8_AdobeOrg_cluster,.chipotle.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,kndctr_4E7F56EC5BE2CCCF0A495CE8_AdobeOrg_identity,.chipotle.com,/,First party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,kndctr_4E7F56EC5BE2CCCF0A495CE8_AdobeOrg_consent,.chipotle.com,/,First party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_ketch_consent_v1_,.chipotle.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_s,.app.link,/,Third party,182.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_swb_consent_,.chipotle.com,/,First party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_fs_dwell_passed,.chipotle.com,/,First party,Session,,false,true,strict,false,Not declared,,
+Unclassified,none,,_dd_s,catering.chipotle.com,/,First party,0.01 days,,false,false,strict,false,Not declared,,
+Unclassified,none,,affinity,www.chipotle.com,/,First party,Session,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,_uetsid,.chipotle.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_uetvid,.chipotle.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,fs_lua,.chipotle.com,/,First party,0.02 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,fs_uid,.chipotle.com,/,First party,365.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_dd_s,www.chipotle.com,/,First party,0.01 days,,false,false,strict,false,Not declared,,
+Unclassified,none,,KP_UIDz-ssn,services.chipotle.com,/,First party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,KP_UIDz,services.chipotle.com,/,First party,1.00 days,,true,false,unspecified,false,Not declared,,
+Essential Cookies,banner,Ketch,cf_clearance,,,,,364 days,,,,,"Declared, not set",,Cloudflare
+Essential Cookies,banner,Ketch,_cfuvid,,,,,,,,,,"Declared, not set",,Cloudflare
+"Non Essential Targeting, Social Media, Analytics, & Functional Cookies",banner,Ketch,_twpid,,,,,390 days,,,,,"Declared, not set",,Twitter Ads

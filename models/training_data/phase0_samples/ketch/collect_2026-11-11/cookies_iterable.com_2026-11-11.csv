@@ -1,0 +1,122 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Essential Services,banner,Ketch,__cf_bm,.go.iterable.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeted Advertising,banner,Ketch,_gcl_au,.iterable.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Essential Services,banner,Ketch,BIGipServerDc8ZwktSWl7Z8wiNCZkqgg,go.iterable.com,/,First party,Session,,true,true,unspecified,false,Declared & set,,Iterable
+Targeted Advertising,banner,Ketch,_twpid,.iterable.com,/,First party,390.00 days,390 days,false,true,strict,false,Declared & set,,Twitter Ads
+Targeted Advertising,banner,Ketch,sa-user-id,tags.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Targeted Advertising,banner,Ketch,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Targeted Advertising,banner,Ketch,sa-user-id-v2,tags.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Targeted Advertising,banner,Ketch,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Analytics,banner,Ketch,sa-user-id-v4,tags.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Analytics,banner,Ketch,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Essential Services,banner,Ketch,__cf_bm,.g2crowd.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeted Advertising,banner,Ketch,sa-user-id,iterable.com,/,First party,365.00 days,365 days,false,true,unspecified,false,Declared & set,,StackAdapt
+Targeted Advertising,banner,Ketch,sa-user-id-v2,iterable.com,/,First party,365.00 days,365 days,false,true,unspecified,false,Declared & set,,StackAdapt
+Targeted Advertising,banner,Ketch,sa-user-id-v3,iterable.com,/,First party,365.00 days,364 days,false,true,unspecified,false,Declared & set,,StackAdapt
+Analytics,banner,Ketch,sa-user-id-v4,iterable.com,/,First party,365.00 days,365 days,false,true,unspecified,false,Declared & set,,StackAdapt
+Analytics,banner,Ketch,_ga,.iterable.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Essential Services,banner,Ketch,_swb,.iterable.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Targeted Advertising,banner,Ketch,_mkto_trk,.iterable.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Engage
+Targeted Advertising,banner,Ketch,muc_ads,.t.co,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Essential Services,banner,Ketch,__cf_bm,.t.co,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Analytics,banner,Ketch,6suuid,.6sc.co,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,6sense
+Targeted Advertising,banner,Ketch,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Targeted Advertising,banner,Ketch,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Targeted Advertising,banner,Ketch,personalization_id,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Essential Services,banner,Ketch,__cf_bm,.twitter.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential Services,banner,Ketch,__cf_bm,.g2.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeted Advertising,banner,Ketch,li_sugr,.linkedin.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Targeted Advertising,banner,Ketch,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LinkedIn  
+Functionality,banner,Ketch,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,,LinkedIn  
+Essential Services,banner,Ketch,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Analytics,banner,Ketch,_gd_svisitor,iterable.com,/,First party,400.00 days,400 days,false,true,none,false,Declared & set,,
+Targeted Advertising,banner,Ketch,_an_uid,iterable.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,6sense
+Analytics,banner,Ketch,_gd_visitor,iterable.com,/,First party,400.00 days,400 days,false,true,none,false,Declared & set,,6sense
+Unclassified,none,,_gd_session,iterable.com,/,First party,0.17 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,_hp2_ses_props.2412021684,.iterable.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,_fbp,.iterable.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Facebook Ads
+Essential Services,banner,Ketch,_ketch_consent_v1_,.iterable.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Targeted Advertising,banner,Ketch,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Analytics,banner,Ketch,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn  
+Targeted Advertising,banner,Ketch,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Declared & set,,Facebook Ads
+Functionality,banner,Ketch,bscookie,.www.linkedin.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,LinkedIn  
+Essential Services,banner,Ketch,_swb_consent_,.iterable.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Analytics,banner,Ketch,tuid,.a.usbrowserspeed.com,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,,Ookla
+Analytics,banner,Ketch,ajs_anonymous_id,.iterable.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,,Twilio Segment
+Unclassified,none,,ajs_group_id,.iterable.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Functionality,banner,Ketch,guid,.mountain.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,MNTN
+Analytics,banner,Ketch,tt,.px.mountain.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,MNTN
+Functionality,banner,Ketch,rt,.mountain.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Akamai
+Analytics,banner,Ketch,_mpxl_guid,.iterable.com,/,First party,365.00 days,365 days,false,true,lax,false,Declared & set,,
+Functionality,banner,Ketch,_zitok,.iterable.com,/,First party,365.00 days,364 days,false,true,strict,false,Declared & set,,ZoomInfo
+Essential Services,banner,Ketch,__cf_bm,.zoominfo.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential Services,banner,Ketch,_cfuvid,.zoominfo.com,/,Third party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Unclassified,none,,__q_state_z3YAMzVKcPdiZrRp,.iterable.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,guest_id_marketing,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id_ads,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,729 days,true,true,none,false,Declared & set,,Google Ads
+Essential Services,banner,Ketch,__cf_bm,.vimeo.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,_hp2_id.2412021684,.iterable.com,/,First party,394.42 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,_uetsid,.iterable.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Targeted Advertising,banner,Ketch,_uetvid,.iterable.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Targeted Advertising,banner,Ketch,_twsid,.iterable.com,/,First party,390.00 days,390 days,false,true,strict,false,Declared & set,,
+Unclassified,none,,_ga_W6HCP0EEWW,.iterable.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Analytics,banner,Ketch,ajs_user_id,,,,,,,,,,"Declared, not set",,Twilio Segment
+Analytics,banner,Ketch,amplitude_test*,,,,,364 days,,,,,"Declared, not set",,Amplitude
+Analytics,banner,Ketch,c99_user_id,,,,,400 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,FPID,,,,,730 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,_hp2_hld*,,,,,,,,,,"Declared, not set",,Heap
+Analytics,banner,Ketch,_hp2_id.*,,,,,394 days,,,,,"Declared, not set",,Heap
+Analytics,banner,Ketch,_hp2_ses_props.*,,,,,,,,,,"Declared, not set",,Heap
+Analytics,banner,Ketch,nextId,,,,,,,,,,"Declared, not set",,Google Youtube
+Analytics,banner,Ketch,_sp_id.*,,,,,400 days,,,,,"Declared, not set",,snowplow
+Analytics,banner,Ketch,_sp_ses.*,,,,,,,,,,"Declared, not set",,snowplow
+Analytics,banner,Ketch,spz_1002_demo_handoff,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,__tld__,,,,,,,,,,"Declared, not set",,Clearbit (by Hubspot)
+Analytics,banner,Ketch,_tldtest_*,,,,,,,,,,"Declared, not set",,Amplitude
+Analytics,banner,Ketch,VISITOR_PRIVACY_METADATA,,,,,179 days,,,,,"Declared, not set",,Google Youtube
+Analytics,banner,Ketch,vuid,,,,,400 days,,,,,"Declared, not set",,Vimeo
+Analytics,banner,Ketch,YSC,,,,,,,,,,"Declared, not set",,Google Youtube
+Essential Services,banner,Ketch,BIGipServermlm-core-web-*-prod_*,,,,,400 days,,,,,"Declared, not set",,Iterable
+Essential Services,banner,Ketch,BIGipServer~VS65000-*,,,,,,,,,,"Declared, not set",,Iterable
+Essential Services,banner,Ketch,__cflb,,,,,,,,,,"Declared, not set",,Cloudflare
+Essential Services,banner,Ketch,cookietest,,,,,,,,,,"Declared, not set",,Shopify
+Essential Services,banner,Ketch,dd_cookie_test_*,,,,,,,,,,"Declared, not set",,Datadog
+Essential Services,banner,Ketch,JSESSIONID,,,,,,,,,,"Declared, not set",,New Relic
+Essential Services,banner,Ketch,receive-cookie-deprecation,,,,,3640 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Functionality,banner,Ketch,amp_cookie_test*,,,,,,,,,,"Declared, not set",,Amplitude
+Functionality,banner,Ketch,ExperimentName,,,,,,,,,,"Declared, not set",,
+Functionality,banner,Ketch,ExperimentValue,,,,,,,,,,"Declared, not set",,
+Functionality,banner,Ketch,FPLC,,,,,,,,,,"Declared, not set",,Google Analytics
+Functionality,banner,Ketch,LAST_RESULT_ENTRY_KEY,,,,,,,,,,"Declared, not set",,Google Youtube
+Functionality,banner,Ketch,__q_domainTest,,,,,,,,,,"Declared, not set",,Qualified
+Functionality,banner,Ketch,__q_state_*,,,,,400 days,,,,,"Declared, not set",,Qualified
+Functionality,banner,Ketch,remote_sid,,,,,,,,,,"Declared, not set",,Google Youtube
+Functionality,banner,Ketch,requests,,,,,,,,,,"Declared, not set",,Google Youtube
+Functionality,banner,Ketch,__Secure-ROLLOUT_TOKEN,,,,,179 days,,,,,"Declared, not set",,Google Youtube
+Functionality,banner,Ketch,__Secure-YEC,,,,,,,,,,"Declared, not set",,Google Youtube
+Functionality,banner,Ketch,__Secure-YNID,,,,,179 days,,,,,"Declared, not set",,Google Youtube
+Functionality,banner,Ketch,sp,,,,,364 days,,,,,"Declared, not set",,Google Ad Manager
+Functionality,banner,Ketch,_sp_root_domain_test_*,,,,,,,,,,"Declared, not set",,snowplow
+Functionality,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Functionality,banner,Ketch,TESTCOOKIESENABLED,,,,,,,,,,"Declared, not set",,Google Ad Manager
+Functionality,banner,Ketch,VISITOR_INFO1_LIVE,,,,,179 days,,,,,"Declared, not set",,Google Youtube
+Functionality,banner,Ketch,_vis_opt_exp_*_combi,,,,,99 days,,,,,"Declared, not set",,VWO 
+Functionality,banner,Ketch,_vis_opt_exp_*_combi_choose,,,,,,,,,,"Declared, not set",,VWO 
+Functionality,banner,Ketch,_vis_opt_exp_*_exclude,,,,,99 days,,,,,"Declared, not set",,
+Functionality,banner,Ketch,_vis_opt_s,,,,,99 days,,,,,"Declared, not set",,VWO 
+Functionality,banner,Ketch,_vis_opt_test_cookie,,,,,,,,,,"Declared, not set",,VWO 
+Functionality,banner,Ketch,_vwo_consent,,,,,365 days,,,,,"Declared, not set",,VWO 
+Functionality,banner,Ketch,_vwo_ds,,,,,61 days,,,,,"Declared, not set",,VWO 
+Functionality,banner,Ketch,_vwo_referrer,,,,,,,,,,"Declared, not set",,VWO 
+Functionality,banner,Ketch,_vwo_sn,,,,,,,,,,"Declared, not set",,VWO 
+Functionality,banner,Ketch,_vwo_uuid,,,,,365 days,,,,,"Declared, not set",,VWO 
+Functionality,banner,Ketch,_vwo_uuid_v2,,,,,365 days,,,,,"Declared, not set",,VWO 
+Targeted Advertising,banner,Ketch,ar_debug,,,,,30 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Targeted Advertising,banner,Ketch,FPAU,,,,,89 days,,,,,"Declared, not set",,Google Ads
+Targeted Advertising,banner,Ketch,MSPTC,,,,,389 days,,,,,"Declared, not set",,Microsoft Ads
+Targeted Advertising,banner,Ketch,NID,,,,,182 days,,,,,"Declared, not set",,Google Ads
+Targeted Advertising,banner,Ketch,__Secure-YEC,,,,,,,,,,"Declared, not set",,Google Youtube
+Targeted Advertising,banner,Ketch,__Secure-YNID,,,,,179 days,,,,,"Declared, not set",,Google Youtube
