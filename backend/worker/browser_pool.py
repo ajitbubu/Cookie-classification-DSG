@@ -9,6 +9,8 @@ from playwright.async_api import Browser, BrowserContext, async_playwright
 from dataclasses import dataclass
 from datetime import datetime
 
+from backend.scanner.url_guard import install_request_guard
+
 logger = logging.getLogger(__name__)
 
 
@@ -122,6 +124,7 @@ class BrowserPool:
                 ignore_https_errors=True,
                 java_script_enabled=True
             )
+            await install_request_guard(context)
             
             instance.contexts.append(context)
             instance.last_used = datetime.now()

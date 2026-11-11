@@ -73,8 +73,10 @@ if os.path.isdir(_static_dir):
     @app.get("/{full_path:path}")
     async def serve_spa(full_path: str):
         """Serve the SPA index.html for all non-API routes"""
-        file_path = os.path.join(_static_dir, full_path)
-        if os.path.isfile(file_path):
+        # Resolve and contain: an absolute or "../" path must not escape the build dir.
+        static_root = os.path.realpath(_static_dir)
+        file_path = os.path.realpath(os.path.join(static_root, full_path))
+        if os.path.commonpath([static_root, file_path]) == static_root and os.path.isfile(file_path):
             return FileResponse(file_path)
         return FileResponse(os.path.join(_static_dir, "index.html"))
 

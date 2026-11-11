@@ -2,6 +2,8 @@ from pydantic import BaseModel, ConfigDict, Field, HttpUrl, field_validator
 from typing import List, Optional, Dict, Any
 from datetime import datetime
 
+from backend.scanner.url_guard import BlockedTarget, check_url_syntax
+
 
 class ScanRequest(BaseModel):
     """Request model for cookie scanning"""
@@ -11,7 +13,17 @@ class ScanRequest(BaseModel):
     concurrency: int = 50  # High-performance parallel scanning
     maxDepth: int = 500  # Industry-grade: deep crawling
     includeSubdomains: bool = False  # Deep Scan "Follow internal + subdomain links"
-    
+
+    @field_validator('url')
+    @classmethod
+    def validate_url(cls, v):
+        # Scheme, host and IP-literal checks only; DNS is checked before the scan starts.
+        try:
+            check_url_syntax(v)
+        except BlockedTarget as exc:
+            raise ValueError(str(exc)) from exc
+        return v
+
     @field_validator('scanType')
     @classmethod
     def validate_scan_type(cls, v):

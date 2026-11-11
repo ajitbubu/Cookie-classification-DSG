@@ -13,11 +13,17 @@ import time
 import logging
 from collections import defaultdict
 from threading import Lock
+import secrets
+
+from backend.config import settings
 
 logger = logging.getLogger(__name__)
 
 # Security configuration
-SECRET_KEY = "your-secret-key-here"  # TODO: Move to environment variable
+SECRET_KEY = settings.ML_SECRET_KEY
+if not SECRET_KEY:
+    SECRET_KEY = secrets.token_urlsafe(32)
+    logger.warning("ML_SECRET_KEY is not set; using a random per-process JWT key")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
@@ -91,7 +97,7 @@ def verify_token(credentials: HTTPAuthorizationCredentials = Security(security))
             detail="Token has expired",
             headers={"WWW-Authenticate": "Bearer"},
         )
-    except jwt.JWTError as e:
+    except jwt.InvalidTokenError as e:  # PyJWT has no JWTError; that name raised AttributeError
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail=f"Could not validate credentials: {str(e)}",

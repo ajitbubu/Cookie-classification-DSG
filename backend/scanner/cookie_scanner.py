@@ -7,6 +7,7 @@ import asyncio
 
 from backend.scanner.classifier import CookieClassifier
 from backend.config import settings
+from backend.scanner.url_guard import check_url
 
 logger = logging.getLogger(__name__)
 
@@ -49,6 +50,8 @@ class CookieScanner:
             
             # Navigate to URL with faster loading strategy
             await page.goto(url, wait_until="domcontentloaded", timeout=settings.PAGE_TIMEOUT)
+            # Redirect hops bypass the context's request guard; refuse internal landings.
+            await check_url(page.url)
             
             # Reduced wait time for cookies to be set
             await asyncio.sleep(settings.COOKIE_WAIT_TIME)
@@ -109,6 +112,8 @@ class CookieScanner:
                 except Exception as e2:
                     logger.warning(f"Load timeout for {url}, trying domcontentloaded: {e2}")
                     await page.goto(url, wait_until="domcontentloaded", timeout=settings.PAGE_TIMEOUT)
+            # Redirect hops bypass the context's request guard; refuse internal landings.
+            await check_url(page.url)
             
             # Wait longer for dynamic content and JavaScript to render links
             await asyncio.sleep(3.0)  # Increased wait time for JS-heavy sites
@@ -250,6 +255,7 @@ class CookieScanner:
                 for sitemap_url in sitemap_urls:
                     try:
                         response = await page.goto(sitemap_url, wait_until="domcontentloaded", timeout=10000)
+                        await check_url(page.url)
                         if response and response.status == 200:
                             content = await page.content()
                             

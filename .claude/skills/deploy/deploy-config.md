@@ -6,7 +6,7 @@ Environment variables read by `docker-compose.yml`. All have dev-safe defaults s
 | Variable | Used by | Default | Notes |
 |---|---|---|---|
 | `DB_PASSWORD` | postgres, api-gateway, ml-api | `scanner_password` | Also composed into `DATABASE_URL` for api-gateway/workers |
-| `ML_SECRET_KEY` | ml-api | `change-this-secret-key-in-production` | Signs/validates ML API auth (`backend/api/ml_classifier/auth.py`) |
+| `ML_SECRET_KEY` | ml-api | unset → random key per process | Signs/validates ML API auth (`backend/api/ml_classifier/auth.py`); set it so tokens verify across workers |
 
 Fixed (not overridable via env today — edit `docker-compose.yml` directly if needed):
 
