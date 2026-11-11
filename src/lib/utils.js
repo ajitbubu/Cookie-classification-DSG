@@ -20,7 +20,7 @@ analyzed.forEach(function(c){var badgeClass=c.category==='Necessary'?'badge-gree
 html+='</tbody></table></div><div class="actions"><button onclick="window.print()">🖨️ Print</button><button onclick="exportCSV()">📥 CSV</button></div></div><script>function exportCSV(){var csv="Name,Domain,Category,GDPR Risk,CCPA Risk,Value\\n";';
 html+='analyzed.forEach(function(c){csv+="\\""+c.name+"\\",\\""+c.domain+"\\",\\""+c.category+"\\",\\""+c.gdprRisk+"\\",\\""+c.ccpaRisk+"\\",\\""+c.value+"\\"\\n"});';
 html+='var blob=new Blob([csv],{type:"text/csv"});var url=URL.createObjectURL(blob);var a=document.createElement("a");a.href=url;a.download="cookies_"+location.hostname+"_"+Date.now()+".csv";a.click();URL.revokeObjectURL(url)}';
-html+='var analyzed='+JSON.stringify(analyzed)+';<\/script></body></html>';
+html+='var analyzed='+JSON.stringify(analyzed)+';</script></body></html>';
 var win=window.open('','Cookie Scanner','width=1000,height=700');
 win.document.write(html);
 win.document.close();

@@ -68,6 +68,7 @@ export class DeepScanner {
       let buffer = '';
       let finalResult = null;
 
+      // eslint-disable-next-line no-constant-condition -- read until the stream reports done
       while (true) {
         if (this.cancelled) {
           clearTimeout(timeoutId);
