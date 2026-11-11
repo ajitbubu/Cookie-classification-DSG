@@ -1,0 +1,44 @@
+name: CI
+
+# Same checks as the local pre-push hook (.githooks/pre-push). Branch protection
+# on main requires both jobs to pass before a PR can merge.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  frontend:
+    name: Frontend (lint, test, build)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+
+  backend:
+    name: Backend (pytest)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    # Same base image as docker/Dockerfile.api, so tests run on the production Python.
+    container: mcr.microsoft.com/playwright/python:v1.60.0-jammy
+    env:
+      ML_MODEL_VERSION: "7.0.0"
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q -r requirements.txt -r requirements-test.txt
+      - run: python -m pytest tests/backend -q
