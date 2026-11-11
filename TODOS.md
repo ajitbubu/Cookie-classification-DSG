@@ -135,3 +135,27 @@ All 12 audit findings and the Web Interface Guidelines review are resolved on th
 
 - **What:** Breadcrumb says "Websites" while the sidebar says "Website"; the Cookie Inventory page heading
   reads "Cookie inventory".
+
+## QA (2026-11-11, /qa on main)
+
+Report: `.gstack/qa-reports/run-20261111T170950Z/qa-report-localhost-2026-11-11.md`. Fixed: ISSUE-001 (classify
+payload missing lifetime and site, critical) and ISSUE-002 (fractional `expiry_days` rejected).
+
+### nginx config mount goes stale after a git checkout (ISSUE-006, Medium, infrastructure)
+
+- **Repro:** switch branches or merge so git rewrites `nginx/nginx.conf`, recreate api-gateway, then
+  `docker exec cookie-scanner-nginx nginx -s reload` → `open() "/etc/nginx/nginx.conf" failed`.
+- **Workaround:** `docker compose restart nginx` (in the runbook). **Fix option:** mount the `nginx/` directory
+  instead of single files.
+
+### ML Model page wording (ISSUE-003, ISSUE-004, Low, content)
+
+- The gate `per_cmp_macro_f1` shows as "Per Cmp Macro F1" (missing from `GATE_LABELS` in
+  `src/components/ModelPerformancePage.jsx`).
+- The headline "Accuracy — Held-out test websites" (and the dashboard's "Classification accuracy") is the strict
+  unseen-cookie-name score (60.8% for v7.0.0); the all-cookies score (85.3%) isn't shown. Label it or show both.
+
+### Review Queue Action column off-screen at 1280 px (ISSUE-005, Low, UX)
+
+- **Repro:** open `/review` at 1280 px wide: the table (1057 px) scrolls inside a 904 px container, so Approve/Edit
+  need a horizontal scroll.
