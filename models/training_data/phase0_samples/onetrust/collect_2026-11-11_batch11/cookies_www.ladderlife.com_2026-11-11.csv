@@ -1,0 +1,92 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Strictly Necessary Cookies,banner,OneTrust,auth,www.ladderlife.com,/,First party,Session,Session,true,true,lax,false,Declared & set,www.ladderlife.com,
+Strictly Necessary Cookies,banner,OneTrust,canary,www.ladderlife.com,/,First party,Session,Session,false,true,lax,false,Declared & set,www.ladderlife.com,
+Strictly Necessary Cookies,banner,OneTrust,analytics-data,www.ladderlife.com,/,First party,Session,Session,true,true,none,false,Declared & set,www.ladderlife.com,
+Strictly Necessary Cookies,banner,OneTrust,session,www.ladderlife.com,/,First party,Session,Session,true,true,none,false,Declared & set,www.ladderlife.com,
+Strictly Necessary Cookies,banner,OneTrust,device,www.ladderlife.com,/,First party,400.00 days,36499 days,true,true,none,false,Declared & set,www.ladderlife.com,
+Strictly Necessary Cookies,banner,OneTrust,analytics-permanent-data,www.ladderlife.com,/,First party,400.00 days,36499 days,true,true,none,false,Declared & set,www.ladderlife.com,
+Strictly Necessary Cookies,banner,OneTrust,rdt_uuid,www.ladderlife.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,www.ladderlife.com,
+Functional Cookies,banner,OneTrust,ajs_anonymous_id,.ladderlife.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,ladderlife.com,These cookies are generally used for Analytics and help count how many people visit a certain site by tracking if you have visited before. This cookie has a lifespan of 1 year.
+Functional Cookies,banner,OneTrust,ajs_user_id,.ladderlife.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,ladderlife.com,"This cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability. Cookies in this domain have lifespan of 1 year."
+Targeting Cookies,banner,OneTrust,wfivefivec,.w55c.net,/,Third party,395.42 days,395 days,false,true,none,false,Declared & set,w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Unclassified,none,,__cf_bm,.bzrcdn.openai.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_cfuvid,.bzrcdn.openai.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,__obref,.ladderlife.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,matchgoogle,.w55c.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,barometric[cuid],.trkn.us,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,trkn.us,
+Performance Cookies,banner,OneTrust,_gcl_au,.ladderlife.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,ladderlife.com,Google conversion tracking cookie
+Unclassified,none,,_twpid,.ladderlife.com,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Performance Cookies,banner,OneTrust,_gid,.ladderlife.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,ladderlife.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Performance Cookies,banner,OneTrust,_gat,.ladderlife.com,/,First party,0.00 days,729 days,false,false,unspecified,false,Declared & set,ladderlife.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Targeting Cookies,banner,OneTrust,guest_id_marketing,.twitter.com,/,Third party,400.00 days,729 days,false,true,none,false,Declared & set,twitter.com,"This domain is owned by Twitter. The main business activity is: Social Networking Services.  Where twitter acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+Targeting Cookies,banner,OneTrust,guest_id_ads,.twitter.com,/,Third party,400.00 days,729 days,false,true,none,false,Declared & set,twitter.com,"This domain is owned by Twitter. The main business activity is: Social Networking Services.  Where twitter acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+Targeting Cookies,banner,OneTrust,personalization_id,.twitter.com,/,Third party,400.00 days,729 days,false,true,none,false,Declared & set,twitter.com,"This domain is owned by Twitter. The main business activity is: Social Networking Services.  Where twitter acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+Targeting Cookies,banner,OneTrust,guest_id,.twitter.com,/,Third party,400.00 days,729 days,false,true,none,false,Declared & set,twitter.com,Twitter does not currently provide information on the use of specific cookies.
+Unclassified,none,,__cf_bm,.twitter.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,muc_ads,.t.co,/,Third party,400.00 days,729 days,false,true,none,false,Declared & set,t.co,
+Unclassified,none,,__cf_bm,.t.co,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,ndp_session_id,.ladderlife.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,_fbp,.ladderlife.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,ladderlife.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.bzr.openai.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_cfuvid,.bzr.openai.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.www.ladderlife.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.www.ladderlife.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Unclassified,none,,matchbluekai,.w55c.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,matchcasale,.w55c.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,matchliveramp,.w55c.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rlas3,.rlcdn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.rlcdn.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,did,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,didts,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,nnls,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,matchrubicon,.w55c.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga,.ladderlife.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,ladderlife.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.www.ladderlife.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.www.ladderlife.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,,true,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,_uetsid,.ladderlife.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,ladderlife.com,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Strictly Necessary Cookies,banner,OneTrust,elevated-auth,www.ladderlife.com,/,First party,Session,Session,true,true,lax,false,Declared & set,www.ladderlife.com,
+Performance Cookies,banner,OneTrust,_uetvid,.ladderlife.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,ladderlife.com,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Unclassified,none,,_dd_s,www.ladderlife.com,/,First party,365.00 days,,false,false,strict,false,Not declared,,
+Unclassified,none,,__cf_bm,.support.ladderlife.com,/,First party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_cfuvid,.support.ladderlife.com,/,First party,Session,,true,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga_PPLFYGD8NM,.ladderlife.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,ladderlife.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Unclassified,none,,_twsid,.ladderlife.com,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__zlcstore,ladderlife.com,,,,0 days,,,,,"Declared, not set",ladderlife.com,
+Strictly Necessary Cookies,banner,OneTrust,AWSALB,widget-mediator.zopim.com,,,,6 days,,,,,"Declared, not set",widget-mediator.zopim.com,AWS ELB application load balancer
+Strictly Necessary Cookies,banner,OneTrust,fs_uid,ladderlife.com,,,,364 days,,,,,"Declared, not set",ladderlife.com,
+Strictly Necessary Cookies,banner,OneTrust,test,www.ladderlife.com,,,,Session,,,,,"Declared, not set",www.ladderlife.com,This cookie is associated with Adobe Analytics. It checks to see if cookies are enabled.
+Strictly Necessary Cookies,banner,OneTrust,rdt_uuid,ddw3p1oh0ex89.cloudfront.net,,,,89 days,,,,,"Declared, not set",ddw3p1oh0ex89.cloudfront.net,
+Strictly Necessary Cookies,banner,OneTrust,test,ddw3p1oh0ex89.cloudfront.net,,,,Session,,,,,"Declared, not set",ddw3p1oh0ex89.cloudfront.net,This cookie is associated with Adobe Analytics. It checks to see if cookies are enabled.
+Strictly Necessary Cookies,banner,OneTrust,AWSALBCORS,widget-mediator.zopim.com,,,,6 days,,,,,"Declared, not set",widget-mediator.zopim.com,This cookie is managed by AWS and is used for load balancing.
+Performance Cookies,banner,OneTrust,zte2095,ladderlife.com,,,,Session,,,,,"Declared, not set",ladderlife.com,"This cookie is generally set to enhance the performance and functionality of the website. However, it is nonessential to its use.
+"
+Functional Cookies,banner,OneTrust,__tld__,ladderlife.com,,,,Session,,,,,"Declared, not set",ladderlife.com,From Segment Analytics.js library; this cookie helps to figure out a top-level domain for a user.__tld__
+Functional Cookies,banner,OneTrust,__zlcmid,ladderlife.com,,,,364 days,,,,,"Declared, not set",ladderlife.com,Live chat widget sets the cookies to store the Zopim Live Chat ID used to identify a device across visits.
+Functional Cookies,banner,OneTrust,_tq_id.TV,www.ladderlife.com,,,,729 days,,,,,"Declared, not set",www.ladderlife.com,_tq_id.TV
+Functional Cookies,banner,OneTrust,ajs%3Acookies,ladderlife.com,,,,364 days,,,,,"Declared, not set",ladderlife.com,"This cookie supports use, service performance, and functionality of websites. Cookies in this domain have lifespan of 1 year."
+Functional Cookies,banner,OneTrust,ajs%3Atest,ladderlife.com,,,,364 days,,,,,"Declared, not set",ladderlife.com,This performance cookie counts visits and tracks other website traffic-related metrics. Cookies in this domain have lifespan of 1 year.
+Functional Cookies,banner,OneTrust,ajs_group_id,ladderlife.com,,,,0 days,,,,,"Declared, not set",ladderlife.com,These cookies track visitor usage and events within the website. Cookies in this domain have lifespan of 1 year.
+Functional Cookies,banner,OneTrust,__zlcid,static.zdassets.com,,,,0 days,,,,,"Declared, not set",static.zdassets.com,This domain is owned by Zendesk. This particular domain for the company ensures that all Zendesk features and functionality are added to the site correctly.
+Social Media Cookies,banner,OneTrust,Facebook pixel,Facebook,,,,Session,,,,,"Declared, not set",Facebook,
+Targeting Cookies,banner,OneTrust,_tq_id.TV,collector-9169.us.tvsquared.com,,,,729 days,,,,,"Declared, not set",collector-9169.us.tvsquared.com,_tq_id.TV
+Targeting Cookies,banner,OneTrust,barometric[idfa],trkn.us,,,,0 days,,,,,"Declared, not set",trkn.us,
+Targeting Cookies,banner,OneTrust,ally.demdex.net/event=?,Adobe Audience Manager,,,,Session,,,,,"Declared, not set",Adobe Audience Manager,
+Targeting Cookies,banner,OneTrust,Floodlight Conversion,Google,,,,Session,,,,,"Declared, not set",Google,
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,CM 360,google-events conversion,,,,Session,,,,,"Declared, not set",google-events conversion,

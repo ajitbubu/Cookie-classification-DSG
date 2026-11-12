@@ -1,0 +1,98 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,,true,true,none,false,Not declared,,
+Analytics,banner,Ketch,YSC,.youtube.com,/,Third party,Session,,true,true,none,true,Declared & set,,Google Youtube
+Essential functionality,banner,Ketch,VISITOR_INFO1_LIVE,.youtube.com,/,Third party,180.00 days,179 days,true,true,none,true,Declared & set,,Google Youtube
+Analytics,banner,Ketch,VISITOR_PRIVACY_METADATA,.youtube.com,/,Third party,180.00 days,179 days,true,true,none,true,Declared & set,,Google Youtube
+Targeted advertising,banner,Ketch,demdex,.demdex.net,/,Third party,180.00 days,180 days,false,true,none,false,Declared & set,,Adobe Audience Manager
+Unclassified,none,,kndctr_35B46472540D9EE20A4C98A6_AdobeOrg_identity,.sydney.edu.au,/,First party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,kndctr_35B46472540D9EE20A4C98A6_AdobeOrg_cluster,.sydney.edu.au,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AMCV_35B46472540D9EE20A4C98A6%40AdobeOrg,.sydney.edu.au,/,First party,390.00 days,,false,true,none,false,Not declared,,
+Essential functionality,banner,Ketch,_swb,.sydney.edu.au,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Essential functionality,banner,Ketch,_ketch_consent_v1_,.sydney.edu.au,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Essential functionality,banner,Ketch,_swb_consent_,.sydney.edu.au,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Targeted advertising,banner,Ketch,__Secure-YNID,.youtube.com,/,Third party,180.00 days,179 days,true,true,none,true,Declared & set,,Google Youtube
+Essential functionality,banner,Ketch,__Secure-ROLLOUT_TOKEN,.youtube.com,/,Third party,180.00 days,179 days,true,true,none,true,Declared & set,,Google Youtube
+Unclassified,none,,_cs_id,.sydney.edu.au,/,First party,395.42 days,,false,true,lax,false,Not declared,,
+Essential functionality,banner,Ketch,AWSALB,www.sydney.edu.au,/,First party,7.00 days,6 days,false,false,unspecified,false,Declared & set,,Amazon Web Service (AWS)
+Essential functionality,banner,Ketch,AWSALBCORS,www.sydney.edu.au,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Amazon Web Service (AWS)
+Essential functionality,banner,Ketch,ar_debug,,,,,30 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Essential functionality,banner,Ketch,at_check,,,,,,,,,,"Declared, not set",,
+Essential functionality,banner,Ketch,__cf_bm,,,,,,,,,,"Declared, not set",,Cloudflare
+Essential functionality,banner,Ketch,cookietest,,,,,,,,,,"Declared, not set",,Shopify
+Essential functionality,banner,Ketch,LAST_RESULT_ENTRY_KEY,,,,,,,,,,"Declared, not set",,Google Youtube
+Essential functionality,banner,Ketch,max-age,,,,,,,,,,"Declared, not set",,
+Essential functionality,banner,Ketch,QSI_HistorySession,,,,,,,,,,"Declared, not set",,Qualtrics
+Essential functionality,banner,Ketch,QSI_SI_*_intercept,,,,,,,,,,"Declared, not set",,Qualtrics
+Essential functionality,banner,Ketch,receive-cookie-deprecation,,,,,90 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Essential functionality,banner,Ketch,remote_sid,,,,,,,,,,"Declared, not set",,Google Youtube
+Essential functionality,banner,Ketch,__Secure-BUCKET,,,,,179 days,,,,,"Declared, not set",,Google Youtube
+Essential functionality,banner,Ketch,user_language,,,,,59 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,AMCV_*AdobeOrg,,,,,400 days,,,,,"Declared, not set",,Adobe Analytics
+Analytics,banner,Ketch,AMCVS_*AdobeOrg,,,,,,,,,,"Declared, not set",,Adobe Analytics
+Analytics,banner,Ketch,_dp,,,,,,,,,,"Declared, not set",,Adobe Audience Manager
+Analytics,banner,Ketch,dpm,,,,,180 days,,,,,"Declared, not set",,Adobe Audience Manager
+Analytics,banner,Ketch,_ga,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,gpv_Page,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,_hjHasCachedUserAttributes,,,,,,,,,,"Declared, not set",,Hotjar
+Analytics,banner,Ketch,_hjSession_*,,,,,,,,,,"Declared, not set",,Hotjar
+Analytics,banner,Ketch,_hjSessionUser_*,,,,,364 days,,,,,"Declared, not set",,Hotjar
+Analytics,banner,Ketch,_hjTLDTest,,,,,,,,,,"Declared, not set",,Hotjar
+Analytics,banner,Ketch,HMACCOUNT,,,,,,,,,,"Declared, not set",,Baidu
+Analytics,banner,Ketch,HMACCOUNT_BFESS,,,,,400 days,,,,,"Declared, not set",,Baidu
+Analytics,banner,Ketch,Hm_ck_*,,,,,,,,,,"Declared, not set",,Baidu
+Analytics,banner,Ketch,Hm_lpvt_*,,,,,,,,,,"Declared, not set",,Baidu
+Analytics,banner,Ketch,Hm_lvt_*,,,,,364 days,,,,,"Declared, not set",,Baidu
+Analytics,banner,Ketch,mbox,,,,,400 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,s_cc,,,,,,,,,,"Declared, not set",,Adobe Analytics
+Analytics,banner,Ketch,s_ecid,,,,,400 days,,,,,"Declared, not set",,Adobe Analytics
+Analytics,banner,Ketch,s_ips,,,,,,,,,,"Declared, not set",,Adobe Analytics
+Analytics,banner,Ketch,s_ppv,,,,,,,,,,"Declared, not set",,Adobe Analytics
+Analytics,banner,Ketch,s_tp,,,,,,,,,,"Declared, not set",,Adobe Analytics
+Analytics,banner,Ketch,TEST_AMCV_COOKIE_WRITE,,,,,,,,,,"Declared, not set",,Adobe Analytics
+Targeted advertising,banner,Ketch,AnalyticsSyncHistory,,,,,30 days,,,,,"Declared, not set",,LinkedIn  
+Targeted advertising,banner,Ketch,anj,,,,,90 days,,,,,"Declared, not set",,Microsoft Ads
+Targeted advertising,banner,Ketch,audit,,,,,365 days,,,,,"Declared, not set",,Magnite
+Targeted advertising,banner,Ketch,audit_p,,,,,365 days,,,,,"Declared, not set",,Magnite
+Targeted advertising,banner,Ketch,bcookie,,,,,364 days,,,,,"Declared, not set",,LinkedIn  
+Targeted advertising,banner,Ketch,bscookie,,,,,364 days,,,,,"Declared, not set",,LinkedIn  
+Targeted advertising,banner,Ketch,CMID,,,,,365 days,,,,,"Declared, not set",,Index Exchange
+Targeted advertising,banner,Ketch,CMPRO,,,,,90 days,,,,,"Declared, not set",,Index Exchange
+Targeted advertising,banner,Ketch,CMPS,,,,,90 days,,,,,"Declared, not set",,Index Exchange
+Targeted advertising,banner,Ketch,coveo_visitorId,,,,,365 days,,,,,"Declared, not set",,Coveo
+Targeted advertising,banner,Ketch,dextp,,,,,179 days,,,,,"Declared, not set",,
+Targeted advertising,banner,Ketch,everest_g_v2,,,,,365 days,,,,,"Declared, not set",,Adobe Advertising
+Targeted advertising,banner,Ketch,everest_session_v2,,,,,,,,,,"Declared, not set",,Adobe Advertising
+Targeted advertising,banner,Ketch,_fbp,,,,,89 days,,,,,"Declared, not set",,Facebook Ads
+Targeted advertising,banner,Ketch,fr,,,,,,,,,,"Declared, not set",,Facebook Ads
+Targeted advertising,banner,Ketch,_gcl_au,,,,,89 days,,,,,"Declared, not set",,Google Ads
+Targeted advertising,banner,Ketch,i,,,,,365 days,,,,,"Declared, not set",,OpenX
+Targeted advertising,banner,Ketch,IDE,,,,,400 days,,,,,"Declared, not set",,Google Ads
+Targeted advertising,banner,Ketch,khaos,,,,,365 days,,,,,"Declared, not set",,Magnite
+Targeted advertising,banner,Ketch,khaos_p,,,,,365 days,,,,,"Declared, not set",,Magnite
+Targeted advertising,banner,Ketch,KRTBCOOKIE_*,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Targeted advertising,banner,Ketch,lidc,,,,,,,,,,"Declared, not set",,LinkedIn  
+Targeted advertising,banner,Ketch,li_sugr,,,,,90 days,,,,,"Declared, not set",,LinkedIn Ads
+Targeted advertising,banner,Ketch,PugT,,,,,29 days,,,,,"Declared, not set",,Pubmatic
+Targeted advertising,banner,Ketch,_rdt_uuid,,,,,89 days,,,,,"Declared, not set",,Reddit
+Targeted advertising,banner,Ketch,sc_at,,,,,390 days,,,,,"Declared, not set",,Snap
+Targeted advertising,banner,Ketch,_ScCbts,,,,,6 days,,,,,"Declared, not set",,Snap
+Targeted advertising,banner,Ketch,_schn1,,,,,,,,,,"Declared, not set",,Snap
+Targeted advertising,banner,Ketch,_schn2,,,,,,,,,,"Declared, not set",,Snap
+Targeted advertising,banner,Ketch,_scid,,,,,394 days,,,,,"Declared, not set",,Snap
+Targeted advertising,banner,Ketch,_scid_r,,,,,394 days,,,,,"Declared, not set",,Snap
+Targeted advertising,banner,Ketch,_screload,,,,,,,,,,"Declared, not set",,Snap
+Targeted advertising,banner,Ketch,_sctr,,,,,394 days,,,,,"Declared, not set",,Snap
+Targeted advertising,banner,Ketch,__Secure-YEC,,,,,,,,,,"Declared, not set",,Google Youtube
+Targeted advertising,banner,Ketch,TapAd_3WAY_SYNCS,,,,,59 days,,,,,"Declared, not set",,Tapad (by Experian)
+Targeted advertising,banner,Ketch,TapAd_DID,,,,,59 days,,,,,"Declared, not set",,Tapad (by Experian)
+Targeted advertising,banner,Ketch,TapAd_TS,,,,,59 days,,,,,"Declared, not set",,Tapad (by Experian)
+Targeted advertising,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Targeted advertising,banner,Ketch,TESTCOOKIESENABLED,,,,,,,,,,"Declared, not set",,Google Ad Manager
+Targeted advertising,banner,Ketch,ttcsid.*,,,,,389 days,,,,,"Declared, not set",,Tiktok Ads
+Targeted advertising,banner,Ketch,_tt_enable_cookie,,,,,389 days,,,,,"Declared, not set",,Tiktok Ads
+Targeted advertising,banner,Ketch,_ttp,,,,,390 days,,,,,"Declared, not set",,Tiktok Ads
+Targeted advertising,banner,Ketch,UserMatchHistory,,,,,30 days,,,,,"Declared, not set",,LinkedIn Ads
+Targeted advertising,banner,Ketch,uuid2,,,,,90 days,,,,,"Declared, not set",,Microsoft Ads
+Targeted advertising,banner,Ketch,X-AB,,,,,1 days,,,,,"Declared, not set",,Snap
+Targeted advertising,banner,Ketch,XANDR_PANID,,,,,90 days,,,,,"Declared, not set",,Microsoft Ads

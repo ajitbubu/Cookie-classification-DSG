@@ -1,0 +1,169 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Strictly Necessary Cookies,banner,OneTrust,affinity,www.cloudera.com,/,First party,Session,Session,true,true,unspecified,false,Declared & set,es.cloudera.com,"This cookie is used to maintain user sessions by setting an affinity cookie with a hash value containing the session details, ensuring subsequent requests with the affinity cookie are routed to the same backend server for maintaining stickiness."
+Unclassified,none,,kndctr_97C7898555F6819F7F000101_AdobeOrg_identity,.cloudera.com,/,First party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,kndctr_97C7898555F6819F7F000101_AdobeOrg_cluster,.cloudera.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mboxEdgeCluster,.cloudera.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AMCV_97C7898555F6819F7F000101%40AdobeOrg,.cloudera.com,/,First party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ECID,www.cloudera.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,ajs_anonymous_id,.cloudera.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,cloudera.com,These cookies are generally used for Analytics and help count how many people visit a certain site by tracking if you have visited before. This cookie has a lifespan of 1 year.
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.cloudera.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.cloudera.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Performance Cookies,banner,OneTrust,_mkto_trk,.cloudera.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,cloudera.com,"This cookie is associated with an email marketing service provided by Marketo. This tracking cookie allows a website to link visitor behaviour to the recipient of an email marketing campaign, to measure campaign effectiveness."
+Unclassified,none,,_gcl_au,.cloudera.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_autid__p,.o11.tech,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,_autid,.o11.tech,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,drift_campaign_refresh,www.cloudera.com,/,First party,0.02 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,__tld,.cloudera.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,canPersist,.cloudera.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,dmdbase_cdc,.cloudera.com,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_twpid,.cloudera.com,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,userId,.inpwrd.net,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,inpwrdUserId,.cloudera.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,tuuid,.company-target.com,/,Third party,396.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,muc_ads,.t.co,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,t.co,"This domain is owned by X (formerly Twitter). It is used as a URL shortening service, which allows X (formerly Twitter) to collect data on how links are shared."
+Targeting Cookies,banner,OneTrust,__cf_bm,.t.co,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,t.co,This is a CloudFoundry cookie
+Unclassified,none,,personalization_id,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.twitter.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Unclassified,none,,pi,.ml314.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,tvid,.tremorhub.com,/,Third party,365.24 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tv_UIDM,.tremorhub.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,KRTBCOOKIE_1571,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mako_uid,.eyeota.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,SERVERID,.eyeota.net,/,Third party,0.01 days,,true,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sv_sid,.securedvisit.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,demdex,.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,demdex.net,"This cookie helps Adobe Audience Manger perform basic functions such as visitor identification, ID synchronization, segmentation, modeling, reporting, etc."
+Targeting Cookies,banner,OneTrust,_fbp,.cloudera.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,cloudera.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Unclassified,none,,tuid,.a.usbrowserspeed.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,dpm,.dpm.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,dpm.demdex.net,This domain is owned by Adobe Audience Manager. The main business activity is online profiling for targeted marketing.
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,drift_aid,www.cloudera.com,/,First party,400.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,driftt_aid,www.cloudera.com,/,First party,400.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id_marketing,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id_ads,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,www.cloudera.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,www.cloudera.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,sa-user-id-v3,www.cloudera.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,www.cloudera.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,visitorId,.ws.zoominfo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.zoominfo.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Unclassified,none,,_cfuvid,.zoominfo.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,cobiSessionId,.cloudera.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Unclassified,none,,tp,.ml314.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.rlcdn.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,previous_url,.cloudera.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,previous_pagename,.cloudera.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.cloudera.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.cloudera.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,_rdt_uuid,.cloudera.com,/,First party,90.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_ce.s,.cloudera.com,/,First party,365.00 days,,false,false,strict,false,Not declared,,
+Unclassified,none,,c076Page_default_c076,analytics.o11.tech,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,_twsid,.cloudera.com,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,cobiConversionExperienceId,.cloudera.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,u,.ml314.com,/,Third party,0.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rlas3,.rlcdn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,c076BcnLcy,analytics.o11.tech,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,experienceId,.inpwrd.net,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,experienceId,.cloudera.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,tuuid_lu,.company-target.com,/,Third party,396.00 days,,true,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,number_of_segment_beacons,www.cloudera.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,assets.adobedtm.com,If you know anything about this host and its uses please add your contributions here. 
+Strictly Necessary Cookies,banner,OneTrust,mbox,.cloudera.com,/,First party,400.00 days,731 days,false,true,none,false,Declared & set,cloudera.com,"Used by Adobe Target to generate dynamic content in a marketing box on the page. Contains the following values:
+PC ID - ID for visitor's browser. Removed when cookie deleted.
+Session ID - A unique ID for a user session.
+Check  - checks if cookies are supported. Set on each page load."
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,_gdxxxxxxxxxxxxx,cloudera.com,,,,Session,,,,,"Declared, not set",cloudera.com,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Strictly Necessary Cookies,banner,OneTrust,notice_behavior,jp.cloudera.com,,,,0 days,,,,,"Declared, not set",jp.cloudera.com,This cookie name is associated with TrustArc which is used to store visitor's cookie preference.
+Strictly Necessary Cookies,banner,OneTrust,AMCVS_xxxxxAdobeOrg,cloudera.com,,,,Session,,,,,"Declared, not set",cloudera.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services.This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier."
+Strictly Necessary Cookies,banner,OneTrust,AMCV_xxxxxAdobeOrg,docs.cloudera.com,,,,399 days,,,,,"Declared, not set",docs.cloudera.com,"This cookie is used to identify a unique visitor for tracking purposes by Adobe Experience Cloud.This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Strictly Necessary Cookies,banner,OneTrust,test,cloudera.com,,,,Session,,,,,"Declared, not set",cloudera.com,This cookie is associated with Adobe Analytics. It checks to see if cookies are enabled.
+Strictly Necessary Cookies,banner,OneTrust,s_campaign,cloudera.com,,,,Session,,,,,"Declared, not set",cloudera.com,This cookie named s_campaign is used by Adobe Marketing Cloud to determine whether a particular campaign led to a user's activity on the site and stores the number of visits from a visitor to the site.
+Strictly Necessary Cookies,banner,OneTrust,s_pltp,cloudera.com,,,,Session,,,,,"Declared, not set",cloudera.com,"This cookie is typically associated with Adobe Analytics (formerly SiteCatalyst). It is used to identify the previous link clicked within the site, which helps in analyzing site usage patterns."
+Strictly Necessary Cookies,banner,OneTrust,assetPathCheck,www.cloudera.com,,,,Session,,,,,"Declared, not set",www.cloudera.com,
+Strictly Necessary Cookies,banner,OneTrust,_tldtest_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx,cloudera.com,,,,Session,,,,,"Declared, not set",cloudera.com,"This cookie name is used for multiple purposes including functionality enhancement, maintaining session state, and performance analytics.Amplitude"
+Strictly Necessary Cookies,banner,OneTrust,accHandler,cloudera.com,,,,0 days,,,,,"Declared, not set",cloudera.com,
+Strictly Necessary Cookies,banner,OneTrust,s_ev18,cloudera.com,,,,Session,,,,,"Declared, not set",cloudera.com,
+Strictly Necessary Cookies,banner,OneTrust,LithiumUserSecure,community.cloudera.com,,,,0 days,,,,,"Declared, not set",community.cloudera.com,"The user will not be able to view secure pages and will be redirected to the login page
+"
+Strictly Necessary Cookies,banner,OneTrust,BT_articleIMG,blog.cloudera.com,,,,364 days,,,,,"Declared, not set",blog.cloudera.com,
+Strictly Necessary Cookies,banner,OneTrust,LithiumUserInfo,community.cloudera.com,,,,0 days,,,,,"Declared, not set",community.cloudera.com,The user will not be able to view secure pages and will be redirected to the login page
+Strictly Necessary Cookies,banner,OneTrust,gpv_pn2,cloudera.com,,,,0 days,,,,,"Declared, not set",cloudera.com,
+Strictly Necessary Cookies,banner,OneTrust,s_cc,cloudera.com,,,,Session,,,,,"Declared, not set",cloudera.com,This cookie is associated with the Adobe Site Catalyst. It determines whether cookies are enabled in the web browser.
+Strictly Necessary Cookies,banner,OneTrust,at_check,cloudera.com,,,,Session,,,,,"Declared, not set",cloudera.com,Used by Adobe Target to check if cookies are enabled/supported on the browser
+Strictly Necessary Cookies,banner,OneTrust,s_fid,cloudera.com,,,,399 days,,,,,"Declared, not set",cloudera.com,"This cookie name is associated with the analytics service provided by Adobe's Site Catalyst product suite. It is a new cookie introduced in 2013 as a 'fallback' visitor identifier where the s_vi cookie normally used for this purpose is blocked. It contains a randomly generated, unique id."
+Strictly Necessary Cookies,banner,OneTrust,segment_id,cloudera.com,,,,0 days,,,,,"Declared, not set",cloudera.com,
+Strictly Necessary Cookies,banner,OneTrust,refresh-token,my.cloudera.com,,,,0 days,,,,,"Declared, not set",my.cloudera.com,
+Strictly Necessary Cookies,banner,OneTrust,userScopes,my.cloudera.com,,,,0 days,,,,,"Declared, not set",my.cloudera.com,Used to track usage of the embedded video player.
+Strictly Necessary Cookies,banner,OneTrust,saml_request_path,cloudera.com,,,,0 days,,,,,"Declared, not set",cloudera.com,This cookie is used to store the page to which the user will be redirected to after logging in.
+Strictly Necessary Cookies,banner,OneTrust,UserInfoHandler,cloudera.com,,,,0 days,,,,,"Declared, not set",cloudera.com,Used to track usage of the embedded video player.
+Strictly Necessary Cookies,banner,OneTrust,TAsessionID,cloudera.com,,,,0 days,,,,,"Declared, not set",cloudera.com,
+Strictly Necessary Cookies,banner,OneTrust,dd_cookie_test_,my.cloudera.com,,,,0 days,,,,,"Declared, not set",my.cloudera.com,This cookie name is used by DataDog to determine if cookies are supported on the website.dd_cookie_test
+Strictly Necessary Cookies,banner,OneTrust,userInfoHandler.userID,cloudera.com,,,,0 days,,,,,"Declared, not set",cloudera.com,Used to track usage of the embedded video player.
+Strictly Necessary Cookies,banner,OneTrust,userInfoHandler.accountID,cloudera.com,,,,0 days,,,,,"Declared, not set",cloudera.com,Used to track usage of the embedded video player.
+Strictly Necessary Cookies,banner,OneTrust,TEST_AMCV_COOKIE_WRITE,cloudera.com,,,,Session,,,,,"Declared, not set",cloudera.com,This cookie is used to test whether cookies are enabled in the browser. It is a temporary cookie used to determine if the browser accepts cookies.
+Strictly Necessary Cookies,banner,OneTrust,s_ecid,cloudera.com,,,,729 days,,,,,"Declared, not set",cloudera.com,Adobe Analytics cookie containing the the Adobe Experience Cloud 1st party visitor id if the Analytics AMCV visitor id is not found.
+Strictly Necessary Cookies,banner,OneTrust,__tld__,cloudera.com,,,,Session,,,,,"Declared, not set",cloudera.com,From Segment Analytics.js library; this cookie helps to figure out a top-level domain for a user.__tld__
+Strictly Necessary Cookies,banner,OneTrust,userProfile,my.cloudera.com,,,,0 days,,,,,"Declared, not set",my.cloudera.com,Used to track usage of the embedded video player.
+Strictly Necessary Cookies,banner,OneTrust,gpv_pn,cloudera.com,,,,0 days,,,,,"Declared, not set",cloudera.com,This cookie is typically associated with the use of Adobe Analytics software and is used to measure the performance of page views on the website.
+Strictly Necessary Cookies,banner,OneTrust,s_plt,cloudera.com,,,,Session,,,,,"Declared, not set",cloudera.com,"This cookie is used to measure the time taken for pages to load, allowing website owners to identify slow loading pages and improve user experience."
+Strictly Necessary Cookies,banner,OneTrust,ajs_user_id,cloudera.com,,,,0 days,,,,,"Declared, not set",cloudera.com,"This cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability. Cookies in this domain have lifespan of 1 year."
+Strictly Necessary Cookies,banner,OneTrust,cloudera_entry_page,cloudera.com,,,,399 days,,,,,"Declared, not set",cloudera.com,
+Strictly Necessary Cookies,banner,OneTrust,nmstat,cloudera.com,,,,999 days,,,,,"Declared, not set",cloudera.com,This cookie name is associated with the website analytics service provided by SiteImprove.  It enables site owners to gather usage statistics about their websites.
+Strictly Necessary Cookies,banner,OneTrust,s_ev45,cloudera.com,,,,Session,,,,,"Declared, not set",cloudera.com,
+Strictly Necessary Cookies,banner,OneTrust,login-token,my.cloudera.com,,,,0 days,,,,,"Declared, not set",my.cloudera.com,The 'login-token' cookie is used to maintain user's login status as they navigate across multiple pages on the website.
+Strictly Necessary Cookies,banner,OneTrust,LiSESSIONID,community.cloudera.com,,,,Session,,,,,"Declared, not set",community.cloudera.com,Session management cookie to enable users to login.
+Strictly Necessary Cookies,banner,OneTrust,LithiumVisitor,community.cloudera.com,,,,182 days,,,,,"Declared, not set",community.cloudera.com,"This cookie collects and stores data on a per browser basis (with a unique ID per browser), but the data is used only in the aggregate to compile statistcs about different types of site / page visits. These statistics are then used to provide a unique visitor report to Lithium customers to track their usage of their community, and for Lithium to track usage for purposes of enforcing usage limits/ charging fees for excess usage."
+Strictly Necessary Cookies,banner,OneTrust,RT,cloudera.com,,,,6 days,,,,,"Declared, not set",cloudera.com,"The roundtrip (RT) Boomerang 
+cookie is used by Akamai to measure page load time and/or other timers associated with the page."
+Strictly Necessary Cookies,banner,OneTrust,amp_cookie_test,community.cloudera.com,,,,364 days,,,,,"Declared, not set",community.cloudera.com,This cookie name is used for session tracking for analytics purposes and registers statistical data about the behavior of visitors to the website. Used by the webmaster for internal analysis.These cookies are used by Amplitude for session tracking for analytics purposes.
+Strictly Necessary Cookies,banner,OneTrust,s_ac,cloudera.com,,,,Session,,,,,"Declared, not set",cloudera.com,
+Strictly Necessary Cookies,banner,OneTrust,gpv_url,cloudera.com,,,,0 days,,,,,"Declared, not set",cloudera.com,This cookie gpv_url is associated with Adobe Analytics which is used to store the quantity of page URLs a user views when visiting a website and identifies the URL of the previous page.
+Strictly Necessary Cookies,banner,OneTrust,at_check,assets.adobedtm.com,,,,0 days,,,,,"Declared, not set",assets.adobedtm.com,If you know anything about this host and its uses please add your contributions here. 
+Strictly Necessary Cookies,banner,OneTrust,BT_articleIMG,assets.adobedtm.com,,,,Session,,,,,"Declared, not set",assets.adobedtm.com,If you know anything about this host and its uses please add your contributions here. 
+Strictly Necessary Cookies,banner,OneTrust,xids,cloudera-production.okta.com,,,,0 days,,,,,"Declared, not set",cloudera-production.okta.com,
+Strictly Necessary Cookies,banner,OneTrust,t,cloudera-production.okta.com,,,,0 days,,,,,"Declared, not set",cloudera-production.okta.com,This cookie name is used for network security and to maintain user's login status as they navigate across multiple pages on the website.
+Strictly Necessary Cookies,banner,OneTrust,DT,cloudera-production.okta.com,,,,729 days,,,,,"Declared, not set",cloudera-production.okta.com,This cookie is set by AddThis to allow website visitors to share content on various social networks.
+Strictly Necessary Cookies,banner,OneTrust,autolaunch_triggered,cloudera-production.okta.com,,,,0 days,,,,,"Declared, not set",cloudera-production.okta.com,
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID,cloudera-production.okta.com,,,,Session,,,,,"Declared, not set",cloudera-production.okta.com,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server."
+Strictly Necessary Cookies,banner,OneTrust,sid,cloudera-production.okta.com,,,,0 days,,,,,"Declared, not set",cloudera-production.okta.com,This is a very common cookie name but where it is found as a session cookie it is likely to be used as for session state management.
+Strictly Necessary Cookies,banner,OneTrust,activate_ca_modal_triggered,cloudera-production.okta.com,,,,0 days,,,,,"Declared, not set",cloudera-production.okta.com,
+Strictly Necessary Cookies,banner,OneTrust,cloudera_entry_page,cvent.com,,,,0 days,,,,,"Declared, not set",cvent.com,This domain is owned by Cvent Inc. which provides event management and venue sourcing services.
+Targeting Cookies,banner,OneTrust,_gat_gtag_xxxxxxxxxxxxxxxxxxxxxxxxxxx,cloudera.com,,,,0 days,,,,,"Declared, not set",cloudera.com,This cookie is part of Google Analytics and is used to limit requests (throttle request rate).Google Analytics
+Targeting Cookies,banner,OneTrust,AWSALBCORS,community.cloudera.com,,,,6 days,,,,,"Declared, not set",community.cloudera.com,This cookie is managed by AWS and is used for load balancing.Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Targeting Cookies,banner,OneTrust,AWSALB,community.cloudera.com,,,,6 days,,,,,"Declared, not set",community.cloudera.com,AWS ELB application load balancerUsed to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Targeting Cookies,banner,OneTrust,dextp,demdex.net,,,,179 days,,,,,"Declared, not set",demdex.net,"This domain is owned by Adobe - Audience Manager.
+The main business activity is: Online profiling for targeted marketing"
+Performance Cookies,banner,OneTrust,amplitude_testcloudera.com,cloudera.com,,,,364 days,,,,,"Declared, not set",cloudera.com,
+Performance Cookies,banner,OneTrust,_dd_s,my.cloudera.com,,,,0 days,,,,,"Declared, not set",my.cloudera.com,"Datadog Cookie used to group all events generated from a unique user session across multiple pages. It contains the current session ID, whether the session is excluded due to sampling, and the expiration date of the session. The cookie is extended for an extra 15 minutes every time the user interacts with the website, up to the maximum user session duration (4 hours)."
+Performance Cookies,banner,OneTrust,_ga_xxxxxxxxxx,cloudera.com,,,,0 days,,,,,"Declared, not set",cloudera.com,NAUsed by Google Analytics to identify and track an individual session with your device.
+Performance Cookies,banner,OneTrust,amp_cookie_test,cloudera.com,,,,364 days,,,,,"Declared, not set",cloudera.com,This cookie name is used for session tracking for analytics purposes and registers statistical data about the behavior of visitors to the website. Used by the webmaster for internal analysis.These cookies are used by Amplitude for session tracking for analytics purposes.
+Performance Cookies,banner,OneTrust,VISITOR_BEACON,community.cloudera.com,,,,182 days,,,,,"Declared, not set",community.cloudera.com,"This cookie collects and stores data on a per browser basis (with a unique ID per browser), but the data is used only in the aggregate to compile statistcs about different types of site / page visits. These statistics are then used to provide a unique visitor report to Lithium customers to track their usage of their community, and for Lithium to track usage for purposes of enforcing usage limits/ charging fees for excess usage."
+Performance Cookies,banner,OneTrust,_gid,cloudera.com,,,,0 days,,,,,"Declared, not set",cloudera.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Performance Cookies,banner,OneTrust,amp_xxxxx,cloudera.com,,,,364 days,,,,,"Declared, not set",cloudera.com,Supports Amplitude product analytics.
+Performance Cookies,banner,OneTrust,_ga,cloudera.com,,,,729 days,,,,,"Declared, not set",cloudera.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."

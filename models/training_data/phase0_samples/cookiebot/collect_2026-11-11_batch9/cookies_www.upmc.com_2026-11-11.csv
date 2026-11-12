@@ -1,0 +1,46 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,,true,true,none,false,Not declared,,
+Preferences,banner,Cookiebot,shell#lang,www.upmc.com,/,First party,Session,Session,false,true,none,false,Declared & set,www.upmc.com,"This cookie is used to determine the preferred language of the visitor and sets the language accordingly on the website, if possible."
+Necessary,banner,Cookiebot,f5avraaaaaaaaaaaaaaaa_session_,www.upmc.com,/,First party,Session,Session,true,true,unspecified,false,Declared & set,captcha.upmc.com,Registers the website's speed and performance. This function can be used in context with statistics and load-balancing.
+Necessary,banner,Cookiebot,TS01f2c89f,www.upmc.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,upmcecechat.upmc.com,Used to ensure website security and fraud detection.
+Unclassified,none,,_evga_ea53,.upmc.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_sfid_adc9,.upmc.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Marketing,banner,Cookiebot,stg_traffic_source_priority,www.upmc.com,/,First party,0.02 days,,false,false,strict,false,Declared & set,secure.upmc.com,Determines how the user accessed the website. This information is used by the website operator in order to measure the efficiency of their marketing.
+Statistics,banner,Cookiebot,consumer_tracking_token,www.upmc.com,/,First party,1.00 days,,false,true,none,false,Declared & set,www.upmc.com,Pending
+Statistics,banner,Cookiebot,consumer_user_token,www.upmc.com,/,First party,400.00 days,,false,true,none,false,Declared & set,www.upmc.com,Pending
+Statistics,banner,Cookiebot,_pk_id.cc3123f6-8c02-4b7e-bdc4-37975443cf0a.5219,www.upmc.com,/,First party,393.00 days,,false,false,lax,false,Declared & set,secure.upmc.com,"Collects statistics on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Statistics,banner,Cookiebot,_pk_ses.cc3123f6-8c02-4b7e-bdc4-37975443cf0a.5219,www.upmc.com,/,First party,0.02 days,,false,false,lax,false,Declared & set,secure.upmc.com,Used by Piwik Analytics Platform to track page requests from the visitor during the session.
+Necessary,banner,Cookiebot,CookieConsent,www.upmc.com,/,First party,30.00 days,,false,true,unspecified,false,Declared & set,captcha.upmc.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,ASP.NET_SessionId,www.upmc.com,/,First party,Session,Session,true,true,none,false,Declared & set,secure.upmc.com,Preserves the visitor's session state across page requests.
+Necessary,banner,Cookiebot,__RequestVerificationToken,www.upmc.com,/,First party,Session,Session,true,true,none,false,Declared & set,www.upmc.com,Helps prevent Cross-Site Request Forgery (CSRF) attacks.
+Statistics,banner,Cookiebot,ADRUM_BTa,www.upmc.com,/,First party,0.00 days,,false,true,none,false,Declared & set,www.upmc.com,This cookie is used to detect errors on the website - this information is sent to the website's support staff in order to optimize the visitor's experience on the website.
+Statistics,banner,Cookiebot,ADRUM_BT1,www.upmc.com,/,First party,0.00 days,,false,true,none,false,Declared & set,www.upmc.com,This cookie is used to detect errors on the website - this information is sent to the website's support staff in order to optimize the visitor's experience on the website.
+Unclassified,banner,Cookiebot,ADRUM_BTg,www.upmc.com,/,First party,0.00 days,Session,false,true,none,false,Declared & set,upmc.com,Pending
+Unclassified,banner,Cookiebot,ADRUM_BTn,www.upmc.com,/,First party,0.00 days,Session,false,true,none,false,Declared & set,upmc.com,Pending
+Necessary,banner,Cookiebot,f5_cookie,www.upmc.com,/,First party,Session,Session,true,true,unspecified,false,Declared & set,www.upmc.com,Pending
+Necessary,banner,Cookiebot,TSeb996257027,www.upmc.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,upmcecechat.upmc.com,Used to ensure website security and fraud detection.
+Statistics,banner,Cookiebot,stg_last_interaction,www.upmc.com,/,First party,365.00 days,,false,false,strict,false,Declared & set,secure.upmc.com,Sets a timestamp for when the visitor entered the website. This is used for analytical purposes on the website.
+Statistics,banner,Cookiebot,stg_returning_visitor,www.upmc.com,/,First party,365.00 days,,false,false,strict,false,Declared & set,secure.upmc.com,Unique user ID that recognizes the user on returning visits
+Necessary,banner,Cookiebot,AWSALBTGCORS,upmc.us-1.evergage.com,/,Third party,7.00 days,,false,true,none,false,Declared & set,upmc.us-1.evergage.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,__cf_bm,hcaptcha.com,,,,,,,,,"Declared, not set",hcaptcha.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,stg_debug,secure.upmc.com,,,,Session,,,,,"Declared, not set",secure.upmc.com,Checks whether a technical debugger-cookie is present. 
+Necessary,banner,Cookiebot,.upmc.com,upmc.com,,,,,,,,,"Declared, not set",upmc.com,Pending
+Necessary,banner,Cookiebot,_evga_01ef,upmc.com,,,,,,,,,"Declared, not set",upmc.com,Pending
+Necessary,banner,Cookiebot,_sfid_01ef,upmc.com,,,,,,,,,"Declared, not set",upmc.com,Pending
+Necessary,banner,Cookiebot,AWSALBTG,upmc.us-1.evergage.com,,,,,,,,,"Declared, not set",upmc.us-1.evergage.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,upmcecechat_upmc_com_f5,upmcecechat.upmc.com,,,,Session,,,,,"Declared, not set",upmcecechat.upmc.com,Pending
+Necessary,banner,Cookiebot,myupmc_fixed,www.upmc.com,,,,Session,,,,,"Declared, not set",www.upmc.com,Pending
+Necessary,banner,Cookiebot,upmc_utm_source,www.upmc.com,,,,Session,,,,,"Declared, not set",www.upmc.com,Pending
+Necessary,banner,Cookiebot,upmc_utm_term,www.upmc.com,,,,Session,,,,,"Declared, not set",www.upmc.com,Pending
+Statistics,banner,Cookiebot,invoca_session,secure.upmc.com,,,,Session,,,,,"Declared, not set",secure.upmc.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,coveo_visitorId,upmc.com,,,,,,,,,"Declared, not set",upmc.com,"Saves information of actions that have been carried out by the user during the current visit to the website, including searches with keywords included."
+Statistics,banner,Cookiebot,ADRUM_BTs,www.upmc.com,,,,,,,,,"Declared, not set",www.upmc.com,This cookie is used to detect errors on the website - this information is sent to the website's support staff in order to optimize the visitor's experience on the website.
+Marketing,banner,Cookiebot,stg_externalReferrer,secure.upmc.com,,,,Session,,,,,"Declared, not set",secure.upmc.com,Registers how the user has reached the website to enable pay-out of referral commission fees to partners.
+Marketing,banner,Cookiebot,invoca_revision,upmc.com,,,,Session,,,,,"Declared, not set",upmc.com,Pending
+Marketing,banner,Cookiebot,stg_utm_campaign,www.upmc.com,,,,Session,,,,,"Declared, not set",www.upmc.com,Determines how the user accessed the website. This information is used by the website operator in order to measure the efficiency of their marketing.
+Marketing,banner,Cookiebot,upmc_utm_adgroup,www.upmc.com,,,,Session,,,,,"Declared, not set",www.upmc.com,Pending
+Marketing,banner,Cookiebot,upmc_utm_advertiserid,www.upmc.com,,,,Session,,,,,"Declared, not set",www.upmc.com,Pending
+Marketing,banner,Cookiebot,upmc_utm_campaign,www.upmc.com,,,,Session,,,,,"Declared, not set",www.upmc.com,Pending
+Marketing,banner,Cookiebot,upmc_utm_content,www.upmc.com,,,,Session,,,,,"Declared, not set",www.upmc.com,Pending
+Marketing,banner,Cookiebot,upmc_utm_kxconfid,www.upmc.com,,,,Session,,,,,"Declared, not set",www.upmc.com,Pending
+Marketing,banner,Cookiebot,upmc_utm_medium,www.upmc.com,,,,Session,,,,,"Declared, not set",www.upmc.com,Pending

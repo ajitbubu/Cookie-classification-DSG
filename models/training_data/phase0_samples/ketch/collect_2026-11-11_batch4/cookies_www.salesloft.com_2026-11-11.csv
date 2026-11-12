@@ -1,0 +1,78 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Targeting Cookies,banner,Ketch,_gcl_au,.salesloft.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Targeting Cookies,banner,Ketch,utm_source,www.salesloft.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,
+Targeting Cookies,banner,Ketch,utm_medium,www.salesloft.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,
+Unclassified,none,,ajs_anonymous_id,.salesloft.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,userled_consent,.salesloft.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Strictly Necessary,banner,Ketch,__cf_bm,.pages.salesloft.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Strictly Necessary,banner,Ketch,__cf_bm,.g2crowd.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Performance Cookies,banner,Ketch,_ga,.salesloft.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Unclassified,none,,d-a8e6,www.salesloft.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,s-9da4,www.salesloft.com,/,First party,0.01 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary,banner,Ketch,_swb,.salesloft.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Targeting Cookies,banner,Ketch,slireg,www.salesloft.com,/,First party,7.00 days,6 days,false,false,unspecified,false,Declared & set,,Salesloft
+Targeting Cookies,banner,Ketch,site_identity,scout.salesloft.com,/,First party,365.00 days,365 days,true,false,unspecified,false,Declared & set,,Salesloft
+Targeting Cookies,banner,Ketch,sliguid,www.salesloft.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Salesloft
+Targeting Cookies,banner,Ketch,slirequested,www.salesloft.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Salesloft
+Targeting Cookies,banner,Ketch,TDID,.adsrvr.org,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,theTradeDesk
+Targeting Cookies,banner,Ketch,li_sugr,.linkedin.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Targeting Cookies,banner,Ketch,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LinkedIn  
+Targeting Cookies,banner,Ketch,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,,LinkedIn  
+Strictly Necessary,banner,Ketch,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Strictly Necessary,banner,Ketch,_ketch_consent_v1_,.salesloft.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Targeting Cookies,banner,Ketch,_mkto_trk,.salesloft.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Engage
+Targeting Cookies,banner,Ketch,TDCPM,.adsrvr.org,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,theTradeDesk
+Unclassified,none,,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary,banner,Ketch,__cf_bm,.g2.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeting Cookies,banner,Ketch,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Targeting Cookies,banner,Ketch,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn  
+Targeting Cookies,banner,Ketch,_an_uid,www.salesloft.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,6sense
+Targeting Cookies,banner,Ketch,_gd_visitor,www.salesloft.com,/,First party,400.00 days,400 days,false,true,none,false,Declared & set,,6sense
+Targeting Cookies,banner,Ketch,_gd_session,www.salesloft.com,/,First party,0.17 days,,false,true,none,false,Declared & set,,6sense
+Unclassified,none,,om_user_token,www.salesloft.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,guid,.mountain.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,6suuid,.6sc.co,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_gd_svisitor,www.salesloft.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,Ketch,bscookie,.www.linkedin.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,LinkedIn  
+Unclassified,none,,tt,.px.mountain.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rt,.mountain.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,userled_user_id,.salesloft.com,/,First party,400.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,_mpxl_guid,.salesloft.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,ajs_group_id,.salesloft.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SM,.c.clarity.ms,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,MUID,.clarity.ms,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.c.clarity.ms,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_zitok,.www.salesloft.com,/,First party,365.00 days,,false,true,strict,false,Not declared,,
+Strictly Necessary,banner,Ketch,__cf_bm,.zoominfo.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeting Cookies,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,729 days,true,true,none,false,Declared & set,,Google Ads
+Strictly Necessary,banner,Ketch,_swb_consent_,.salesloft.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Unclassified,none,,trwv.uid,.salesloft.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,trwsa.sid,.salesloft.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_ga_LMC89T5J25,.salesloft.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_uetsid,.salesloft.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_uetvid,.salesloft.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_VTR0CV8DME,.salesloft.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,userled_session_id,.salesloft.com,/,First party,0.00 days,,false,true,lax,false,Not declared,,
+Performance Cookies,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Performance Cookies,banner,Ketch,_gac_UA-24941518-7,,,,,89 days,,,,,"Declared, not set",,Google Analytics
+Performance Cookies,banner,Ketch,_gat_UA-*,,,,,,,,,,"Declared, not set",,Google Analytics
+Performance Cookies,banner,Ketch,_gcl_aw,,,,,90 days,,,,,"Declared, not set",,Google Ads
+Performance Cookies,banner,Ketch,_gcl_gs,,,,,89 days,,,,,"Declared, not set",,Google Ads
+Performance Cookies,banner,Ketch,_gid,,,,,,,,,,"Declared, not set",,Google Analytics
+Strictly Necessary,banner,Ketch,BIGipServer*https,,,,,,,,,,"Declared, not set",,
+Strictly Necessary,banner,Ketch,OptanonConsent,,,,,29 days,,,,,"Declared, not set",,OneTrust
+Targeting Cookies,banner,Ketch,ar_debug,,,,,30 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Targeting Cookies,banner,Ketch,drift_campaign_refresh,,,,,,,,,,"Declared, not set",,Drift
+Targeting Cookies,banner,Ketch,driftt_aid,,,,,729 days,,,,,"Declared, not set",,Drift
+Targeting Cookies,banner,Ketch,_fbp,,,,,89 days,,,,,"Declared, not set",,Facebook Ads
+Targeting Cookies,banner,Ketch,fr,,,,,89 days,,,,,"Declared, not set",,Facebook Ads
+Targeting Cookies,banner,Ketch,gclid,,,,,6 days,,,,,"Declared, not set",,
+Targeting Cookies,banner,Ketch,_ie_cpn,,,,,,,,,,"Declared, not set",,
+Targeting Cookies,banner,Ketch,receive-cookie-deprecation,,,,,3640 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Targeting Cookies,banner,Ketch,utm_campaign,,,,,,,,,,"Declared, not set",,
+Targeting Cookies,banner,Ketch,utm_term,,,,,,,,,,"Declared, not set",,

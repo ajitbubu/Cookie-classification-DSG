@@ -1,0 +1,301 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Targeting Cookies,banner,OneTrust,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,180 days,true,true,none,false,Declared & set,google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Unclassified,none,,country-code-session,.ui.com,/,First party,Session,,false,true,lax,false,Not declared,,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_hjSessionUser_2411088,.ui.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_hjSession_2411088,.ui.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rdt_uuid,.ui.com,/,First party,90.00 days,,false,true,strict,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,AWSALB,megaphone.svc.ui.com,/,First party,7.00 days,7 days,false,false,unspecified,false,Declared & set,ir.ui.com,AWS ELB application load balancer
+Strictly Necessary Cookies,banner,OneTrust,AWSALBCORS,megaphone.svc.ui.com,/,First party,7.00 days,7 days,false,true,none,false,Declared & set,demo.ui.com,This cookie is managed by AWS and is used for load balancing.
+Strictly Necessary Cookies,banner,OneTrust,csrftoken,www.ui.com,/,First party,364.00 days,364 days,false,true,unspecified,false,Declared & set,www.ui.com,This cookie is associated with the Django web development platform for Python. It is designed to help protect a site against at particular type of software attack on web forms.
+Performance Cookies,banner,OneTrust,_ga_V01X6F3X1P,.ui.com,/,First party,400.00 days,730 days,false,false,unspecified,false,Declared & set,ui.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Strictly Necessary Cookies,banner,OneTrust,AWSALB,www.ui.com,/,First party,7.00 days,7 days,false,false,unspecified,false,Declared & set,ir.ui.com,AWS ELB application load balancer
+Strictly Necessary Cookies,banner,OneTrust,AWSALBCORS,www.ui.com,/,First party,7.00 days,7 days,false,true,none,false,Declared & set,demo.ui.com,This cookie is managed by AWS and is used for load balancing.
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.ui.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,store.ui.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.ui.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,store.ui.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Performance Cookies,banner,OneTrust,_ga,.ui.com,/,First party,400.00 days,730 days,false,false,unspecified,false,Declared & set,unifi.ui.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Performance Cookies,banner,OneTrust,_gid,.ui.com,/,First party,1.00 days,1 days,false,false,unspecified,false,Declared & set,unifi.ui.com,This cookie name is asssociated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited.
+Performance Cookies,banner,OneTrust,_gat,.ui.com,/,First party,0.00 days,0 days,false,false,unspecified,false,Declared & set,ui.com,"This cookie name is associated with Google Universal Analytics, according to documentation it is used to throttle the request rate - limiting the collection of data on high traffic sites. It expires after 10 minutes."
+Performance Cookies,banner,OneTrust,_ga_3LK227XK4J,.ui.com,/,First party,400.00 days,730 days,false,false,unspecified,false,Declared & set,ui.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Functional Cookies,banner,OneTrust,cookietest,store.ui.com,,,,Session,,,,,"Declared, not set",store.ui.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Functional Cookies,banner,OneTrust,cookietest,mx.store.ui.com,,,,Session,,,,,"Declared, not set",mx.store.ui.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Functional Cookies,banner,OneTrust,cookietest,help.ui.com,,,,Session,,,,,"Declared, not set",help.ui.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Functional Cookies,banner,OneTrust,ajs%3Atest,ui.com,,,,365 days,,,,,"Declared, not set",ui.com,This performance cookie counts visits and tracks other website traffic-related metrics. Cookies in this domain have lifespan of 1 year.
+Functional Cookies,banner,OneTrust,_zendesk_shared_session,help.ui.com,,,,Session,,,,,"Declared, not set",help.ui.com,This cookie holds session information for sharing across Zendesk applications.
+Functional Cookies,banner,OneTrust,_zendesk_authenticated,help.ui.com,,,,0 days,,,,,"Declared, not set",help.ui.com,This cookie is used to store a binary variable determining whether a user has been authenticated.
+Functional Cookies,banner,OneTrust,_zendesk_session,help.ui.com,,,,Session,,,,,"Declared, not set",help.ui.com,This cookie holds session information for root access applications.
+Functional Cookies,banner,OneTrust,_help_center_session,help.ui.com,,,,Session,,,,,"Declared, not set",help.ui.com,This cookie aids in session for the Zendesk guide.
+Functional Cookies,banner,OneTrust,ajs_anonymous_id,ui.com,,,,365 days,,,,,"Declared, not set",ui.com,These cookies are generally used for Analytics and help count how many people visit a certain site by tracking if you have visited before. This cookie has a lifespan of 1 year.
+Functional Cookies,banner,OneTrust,__zlcmid,ui.com,,,,365 days,,,,,"Declared, not set",ui.com,Live chat widget sets the cookies to store the Zopim Live Chat ID used to identify a device across visits.
+Functional Cookies,banner,OneTrust,pll_language,blog.ui.com,,,,365 days,,,,,"Declared, not set",blog.ui.com,"This cookie name is associated with the Polylang plug-in for WordPress powered websites. it stores a language preference for the visitor to support multi-lingual websites. When set as a persistent cookie, or with the default lifespan of 1 year, it has to e considered Functional rather than strictly necessary."
+Functional Cookies,banner,OneTrust,ajs%3Acookies,ui.com,,,,365 days,,,,,"Declared, not set",ui.com,"This cookie supports use, service performance, and functionality of websites. Cookies in this domain have lifespan of 1 year."
+Functional Cookies,banner,OneTrust,vuid,.vimeo.com,,,,730 days,,,,,"Declared, not set",.vimeo.com,This domain is owned by Vimeo. The main business activity is: Video Hosting/Sharing
+Functional Cookies,banner,OneTrust,__zlcid,static.zdassets.com,,,,0 days,,,,,"Declared, not set",static.zdassets.com,This domain is owned by Zendesk. This particular domain for the company ensures that all Zendesk features and functionality are added to the site correctly.
+Functional Cookies,banner,OneTrust,vuid,vimeo.com,,,,730 days,,,,,"Declared, not set",vimeo.com,This domain is owned by Vimeo. The main business activity is: Video Hosting/Sharing
+Performance Cookies,banner,OneTrust,_hjIncludedInSessionSample,store.ui.com,,,,0 days,,,,,"Declared, not set",store.ui.com,This cookie is set to let Hotjar know whether that visitor is included in the data sampling defined by your site's daily session limit.
+Performance Cookies,banner,OneTrust,_shopify_sa_p,com,,,,0 days,,,,,"Declared, not set",com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_s,com,,,,0 days,,,,,"Declared, not set",com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_fs,com,,,,720 days,,,,,"Declared, not set",com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_y,ui.com,,,,365 days,,,,,"Declared, not set",ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_hjFirstSeen,ui.com,,,,0 days,,,,,"Declared, not set",ui.com,"Identifies a new user's first session on a website, indicating whether or not Hotjar's seeing this user for the first time."
+Performance Cookies,banner,OneTrust,_ga_0T84SY8KD9,ui.com,,,,730 days,,,,,"Declared, not set",ui.com,"Used to distinguish users by Google Analytics – third-party analytics cookies: google analytics for statistical purposes. Type of data processed: IP addresses. To maximize the privacy of users / visitors, we use the “masking IP” feature, which imposes on the system the darkening of the last 8 digits of the IP address of the user / visitor before any type of processing is performed, making in fact the analyzed Purpose: to collect information, in aggregate form, on the number of users and on how they visit our site, to process statistics."
+Performance Cookies,banner,OneTrust,_shopify_y,mx.store.ui.com,,,,720 days,,,,,"Declared, not set",mx.store.ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_s,com,,,,0 days,,,,,"Declared, not set",com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_y,jp.store.ui.com,,,,720 days,,,,,"Declared, not set",jp.store.ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_s,jp.store.ui.com,,,,0 days,,,,,"Declared, not set",jp.store.ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_y,ui.com,,,,365 days,,,,,"Declared, not set",ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_y,ca.store.ui.com,,,,720 days,,,,,"Declared, not set",ca.store.ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_sa_p,jp.store.ui.com,,,,0 days,,,,,"Declared, not set",jp.store.ui.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_hjIncludedInPageviewSample,design.ui.com,,,,0 days,,,,,"Declared, not set",design.ui.com,This cookie is set to let Hotjar know whether that visitor is included in the data sampling defined by your site's pageview limit.
+Performance Cookies,banner,OneTrust,_shopify_sa_p,mx.store.ui.com,,,,0 days,,,,,"Declared, not set",mx.store.ui.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_shopify_sa_t,ui.com,,,,0 days,,,,,"Declared, not set",ui.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_gat_UA-,ui.com,,,,0 days,,,,,"Declared, not set",ui.com,"This is a pattern type cookie set by Google Analytics, where the pattern element on the name contains the unique identity number of the account or website it relates to. It appears to be a variation of the _gat cookie which is used to limit the amount of data recorded by Google on high traffic volume websites."
+Performance Cookies,banner,OneTrust,_shopify_s,tw.store.ui.com,,,,0 days,,,,,"Declared, not set",tw.store.ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_fs,jp.store.ui.com,,,,720 days,,,,,"Declared, not set",jp.store.ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_s,ui.com,,,,0 days,,,,,"Declared, not set",ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_s,eu.store.ui.com,,,,0 days,,,,,"Declared, not set",eu.store.ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_sa_p,ca.store.ui.com,,,,0 days,,,,,"Declared, not set",ca.store.ui.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_hjid,ui.com,,,,365 days,,,,,"Declared, not set",ui.com,"Hotjar cookie. This cookie is set when the customer first lands on a page with the Hotjar script. It is used to persist the random user ID, unique to that site on the browser. This ensures that behavior in subsequent visits to the same site will be attributed to the same user ID."
+Performance Cookies,banner,OneTrust,_landing_page,jp.store.ui.com,,,,14 days,,,,,"Declared, not set",jp.store.ui.com,"This cookie is used to track, report, and analyze on landing pages.
+"
+Performance Cookies,banner,OneTrust,_hjIncludedInSessionSample,eu.store.ui.com,,,,0 days,,,,,"Declared, not set",eu.store.ui.com,This cookie is set to let Hotjar know whether that visitor is included in the data sampling defined by your site's daily session limit.
+Performance Cookies,banner,OneTrust,_shopify_y,eu.store.ui.com,,,,731 days,,,,,"Declared, not set",eu.store.ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_sa_p,ui.com,,,,0 days,,,,,"Declared, not set",ui.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,zte2095,ui.com,,,,Session,,,,,"Declared, not set",ui.com,"This cookie is generally set to enhance the performance and functionality of the website. However, it is nonessential to its use.
+"
+Performance Cookies,banner,OneTrust,_shopify_y,com,,,,720 days,,,,,"Declared, not set",com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_hjTLDTest,ui.com,,,,Session,,,,,"Declared, not set",ui.com,"When the Hotjar script executes we try to determine the most generic cookie path we should use, instead of the page hostname. This is done so that cookies can be shared across subdomains (where applicable). To determine this, we try to store the _hjTLDTest cookie for different URL substring alternatives until it fails. After this check, the cookie is removed."
+Performance Cookies,banner,OneTrust,_hjIncludedInSessionSample,help.ui.com,,,,0 days,,,,,"Declared, not set",help.ui.com,This cookie is set to let Hotjar know whether that visitor is included in the data sampling defined by your site's daily session limit.
+Performance Cookies,banner,OneTrust,_hjIncludedInPageviewSample,store.ui.com,,,,0 days,,,,,"Declared, not set",store.ui.com,This cookie is set to let Hotjar know whether that visitor is included in the data sampling defined by your site's pageview limit.
+Performance Cookies,banner,OneTrust,_landing_page,ui.com,,,,14 days,,,,,"Declared, not set",ui.com,"This cookie is used to track, report, and analyze on landing pages.
+"
+Performance Cookies,banner,OneTrust,_landing_page,mx.store.ui.com,,,,3656 days,,,,,"Declared, not set",mx.store.ui.com,"This cookie is used to track, report, and analyze on landing pages.
+"
+Performance Cookies,banner,OneTrust,_shopify_y,jp.store.ui.com,,,,720 days,,,,,"Declared, not set",jp.store.ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_fs,ui.com,,,,720 days,,,,,"Declared, not set",ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_s,jp.store.ui.com,,,,0 days,,,,,"Declared, not set",jp.store.ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_hjAbsoluteSessionInProgress,ui.com,,,,0 days,,,,,"Declared, not set",ui.com,This cookie is used by HotJar to detect the first pageview session of a user. This is a True/False flag set by the cookie.
+Performance Cookies,banner,OneTrust,_landing_page,eu.store.ui.com,,,,14 days,,,,,"Declared, not set",eu.store.ui.com,"This cookie is used to track, report, and analyze on landing pages.
+"
+Performance Cookies,banner,OneTrust,_shopify_s,ui.com,,,,0 days,,,,,"Declared, not set",ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_sa_t,com,,,,0 days,,,,,"Declared, not set",com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_hjIncludedInPageviewSample,eu.store.ui.com,,,,0 days,,,,,"Declared, not set",eu.store.ui.com,This cookie is set to let Hotjar know whether that visitor is included in the data sampling defined by your site's pageview limit.
+Performance Cookies,banner,OneTrust,_shopify_sa_p,eu.store.ui.com,,,,0 days,,,,,"Declared, not set",eu.store.ui.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_shopify_y,tw.store.ui.com,,,,730 days,,,,,"Declared, not set",tw.store.ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_y,com,,,,720 days,,,,,"Declared, not set",com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_s,store.ui.com,,,,0 days,,,,,"Declared, not set",store.ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_landing_page,store.ui.com,,,,14 days,,,,,"Declared, not set",store.ui.com,"This cookie is used to track, report, and analyze on landing pages.
+"
+Performance Cookies,banner,OneTrust,_hjIncludedInPageviewSample,www.ui.com,,,,0 days,,,,,"Declared, not set",www.ui.com,This cookie is set to let Hotjar know whether that visitor is included in the data sampling defined by your site's pageview limit.
+Performance Cookies,banner,OneTrust,_shopify_y,store.ui.com,,,,720 days,,,,,"Declared, not set",store.ui.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_sa_p,store.ui.com,,,,0 days,,,,,"Declared, not set",store.ui.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_mkto_trk,ui.com,,,,730 days,,,,,"Declared, not set",ui.com,"This cookie is associated with an email marketing service provided by Marketo. This tracking cookie allows a website to link visitor behaviour to the recipient of an email marketing campaign, to measure campaign effectiveness."
+Performance Cookies,banner,OneTrust,_landing_page,ca.store.ui.com,,,,3656 days,,,,,"Declared, not set",ca.store.ui.com,"This cookie is used to track, report, and analyze on landing pages.
+"
+Performance Cookies,banner,OneTrust,_hjIncludedInPageviewSample,help.ui.com,,,,0 days,,,,,"Declared, not set",help.ui.com,This cookie is set to let Hotjar know whether that visitor is included in the data sampling defined by your site's pageview limit.
+Performance Cookies,banner,OneTrust,_gat_UA-nnnnnnn-nn,ui.com,,,,0 days,,,,,"Declared, not set",ui.com,"This is a pattern type cookie set by Google Analytics, where the pattern element on the name contains the unique identity number of the account or website it relates to. It appears to be a variation of the _gat cookie which is used to limit the amount of data recorded by Google on high traffic volume websites."
+Performance Cookies,banner,OneTrust,JSESSIONID,nr-data.net,,,,Session,,,,,"Declared, not set",nr-data.net,"This domain is controlled by New Relic, which provides a platform for monitoring the performance of web and mobile applications."
+Performance Cookies,banner,OneTrust,JSESSIONID,.nr-data.net,,,,Session,,,,,"Declared, not set",.nr-data.net,"This domain is controlled by New Relic, which provides a platform for monitoring the performance of web and mobile applications."
+Targeting Cookies,banner,OneTrust,BVxxxxxxxxxxxxxxxxxxxxxxxxx,demo.ui.com,,,,7 days,,,,,"Declared, not set",demo.ui.com,BazaarVoice
+Targeting Cookies,banner,OneTrust,__adroll_fpc,www.ui.com,,,,365 days,,,,,"Declared, not set",www.ui.com,This cookie is used to identify the visitor across visits and devices. It is used by real-time bidding for advertisers to present relevant advertisement.
+Targeting Cookies,banner,OneTrust,BVxxxxxxxxxxxxxxxxxxxxxxxxx,ir.ui.com,,,,7 days,,,,,"Declared, not set",ir.ui.com,BazaarVoice
+Targeting Cookies,banner,OneTrust,_gat_gtag_xxxxxxxxxxxxxxxxxxxxxxxxxxx,.ui.com,,,,0 days,,,,,"Declared, not set",.ui.com,Google Analytics
+Targeting Cookies,banner,OneTrust,ajs_user_id,ui.com,,,,0 days,,,,,"Declared, not set",ui.com,"This cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability. Cookies in this domain have lifespan of 1 year."
+Targeting Cookies,banner,OneTrust,BVxxxxxxxxxxxxxxxxxxxxxxxxx,unms-demo.ui.com,,,,7 days,,,,,"Declared, not set",unms-demo.ui.com,BazaarVoice
+Targeting Cookies,banner,OneTrust,awxxxx,.ui.com,,,,730 days,,,,,"Declared, not set",.ui.com,"Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+"
+Targeting Cookies,banner,OneTrust,_fbp,.ui.com,,,,90 days,,,,,"Declared, not set",.ui.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Targeting Cookies,banner,OneTrust,_gat_xxxxxxxxxxxxxxxxxxxxxxxxxx,unifi.ui.com,,,,0 days,,,,,"Declared, not set",unifi.ui.com,Google Analytics Cookies
+Targeting Cookies,banner,OneTrust,awxxxx,blog.ui.com,,,,365 days,,,,,"Declared, not set",blog.ui.com,"Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+"
+Targeting Cookies,banner,OneTrust,ajs_group_id,ui.com,,,,0 days,,,,,"Declared, not set",ui.com,These cookies track visitor usage and events within the website. Cookies in this domain have lifespan of 1 year.
+Targeting Cookies,banner,OneTrust,_fbp,ui.com,,,,90 days,,,,,"Declared, not set",ui.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Targeting Cookies,banner,OneTrust,_fbp,com,,,,90 days,,,,,"Declared, not set",com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Targeting Cookies,banner,OneTrust,__ar_v4,www.ui.com,,,,365 days,,,,,"Declared, not set",www.ui.com,This cookie is associated with the DoubleClick advertising service from Google. Helps with tracking conversion rates for ads.
+Targeting Cookies,banner,OneTrust,_gat_gtag_xxxxxxxxxxxxxxxxxxxxxxxxxxx,ui.com,,,,0 days,,,,,"Declared, not set",ui.com,Google Analytics
+Targeting Cookies,banner,OneTrust,_gat_xxxxxxxxxxxxxxxxxxxxxxxxxx,.ui.com,,,,0 days,,,,,"Declared, not set",.ui.com,Google Analytics Cookies
+Targeting Cookies,banner,OneTrust,_te_,www.ui.com,,,,Session,,,,,"Declared, not set",www.ui.com,"This cookie name is associated with the re-marketing services from Adroll.  It is generally set as a first party cookie.  Re-marketing is the practise of displaying online advertising targeted to users who have already visited the advertisers site, to encourage them to return."
+Targeting Cookies,banner,OneTrust,IDSYNC,analytics.yahoo.com,,,,366 days,,,,,"Declared, not set",analytics.yahoo.com,"This domain is owned by Yahoo Inc. whose main business model is online advertising.  Although this domain is associated with Yahoo's web analytics service, because these are third party cookies they can allow Yahoo, in combination with other cookies set, to collect data for targeted advertising purposes."
+Targeting Cookies,banner,OneTrust,YSC,.youtube.com,,,,Session,,,,,"Declared, not set",.youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,GPS,.youtube.com,,,,0 days,,,,,"Declared, not set",.youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,PREF,.youtube.com,,,,1279 days,,,,,"Declared, not set",.youtube.com,"This is a common Google cookie, used across several of their services. Stores user preference, can be used to personalise ads on google searches"
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,.youtube.com,,,,180 days,,,,,"Declared, not set",.youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,HMACCOUNT,hm.baidu.com,,,,6056 days,,,,,"Declared, not set",hm.baidu.com,"This domain is owned by Baidu.
+The main business activity is: Chinese search engine"
+Targeting Cookies,banner,OneTrust,ATN,atdmt.com,,,,730 days,,,,,"Declared, not set",atdmt.com,"This domain is owned by Atlas Solutions which is in turn owned by Facebook. Atlas is an online advertising business, targeting users through tracking their web activity. From September 2014 the company re-launched under the ownership of Facebook, promising the ability to reach known users and target adverts based on profiles generated using Facebook's user data."
+Targeting Cookies,banner,OneTrust,UserMatchHistory,linkedin.com,,,,30 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,bcookie,linkedin.com,,,,731 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,lang,linkedin.com,,,,Session,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,lissc,linkedin.com,,,,365 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,lidc,linkedin.com,,,,1 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,li_gc,linkedin.com,,,,727 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,AnalyticsSyncHistory,linkedin.com,,,,30 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,__adroll,d.adroll.com,,,,395 days,,,,,"Declared, not set",d.adroll.com,This domain is owned by Adroll. The main business activity is:  Retargeting Advertising Platform
+Targeting Cookies,banner,OneTrust,awxxxx,d.adroll.com,,,,395 days,,,,,"Declared, not set",d.adroll.com,"Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+"
+Targeting Cookies,banner,OneTrust,lang,ads.linkedin.com,,,,Session,,,,,"Declared, not set",ads.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. This sub-domain is connected with LinkedIn's marketing services that enable website owners to gain insight into types of users on their site based on LinkedIn profile data, to improve targetng."
+Targeting Cookies,banner,OneTrust,t_gid,taboola.com,,,,365 days,,,,,"Declared, not set",taboola.com,"This domain is owned by Taboola Inc, a USA based company with multi-national presence.  It provides tageted native advertising services."
+Targeting Cookies,banner,OneTrust,NID,google.com,,,,183 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Targeting Cookies,banner,OneTrust,PUBMDCID,pubmatic.com,,,,90 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Targeting Cookies,banner,OneTrust,PugT,pubmatic.com,,,,0 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Targeting Cookies,banner,OneTrust,KRTBCOOKIE_xxxx,pubmatic.com,,,,400 days,,,,,"Declared, not set",pubmatic.com,This cookie is used to correlate IDs with those of Pubmatic partners (such as demand side platform clients or other advertising technology companies). Pubmatic passes information stored by the partner in this cookie to the partner when it is considering whether to purchase advertisements. This enables the partner to make better decisions about whether to display an advertisement to you.
+Targeting Cookies,banner,OneTrust,IDE,doubleclick.net,,,,390 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,tuuid,bidswitch.net,,,,365 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,c,bidswitch.net,,,,365 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,tuuid_lu,bidswitch.net,,,,365 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,NID,.google.com,,,,182 days,,,,,"Declared, not set",.google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Targeting Cookies,banner,OneTrust,,www.facebook.com,,,,Session,,,,,"Declared, not set",www.facebook.com,"This domain is owned by Facebook, which is the world's largest social networking service.  As a third party host provider, it mostly collects data on the interests of users via widgets such as the 'Like' button found on many websites.  This is used to serve targeted advertising to its users when logged into its services.  In 2014 it also started serving up behaviourally targeted advertising on other websites, similar to most dedicated online marketing companies."
+Targeting Cookies,banner,OneTrust,i,openx.net,,,,365 days,,,,,"Declared, not set",openx.net,This domain is owned by OpenX. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,APID,advertising.com,,,,366 days,,,,,"Declared, not set",advertising.com,This domain is owned by Advertising.com (AOL). The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,ad-id,amazon-adsystem.com,,,,199 days,,,,,"Declared, not set",amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Targeting Cookies,banner,OneTrust,ad-privacy,amazon-adsystem.com,,,,1842 days,,,,,"Declared, not set",amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Targeting Cookies,banner,OneTrust,__adroll_shared,adroll.com,,,,395 days,,,,,"Declared, not set",adroll.com,This domain is owned by Adroll. The main business activity is:  Retargeting Advertising Platform
+Targeting Cookies,banner,OneTrust,awxxxx,adroll.com,,,,0 days,,,,,"Declared, not set",adroll.com,"Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+"
+Targeting Cookies,banner,OneTrust,fr,facebook.com,,,,90 days,,,,,"Declared, not set",facebook.com,"Contains browser and user unique ID combination, used for targeted advertising."
+Targeting Cookies,banner,OneTrust,personalization_id,twitter.com,,,,730 days,,,,,"Declared, not set",twitter.com,"This domain is owned by Twitter. The main business activity is: Social Networking Services.  Where twitter acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+Targeting Cookies,banner,OneTrust,awxxxx,.adroll.com,,,,395 days,,,,,"Declared, not set",.adroll.com,"Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+"
+Targeting Cookies,banner,OneTrust,CMPRO,casalemedia.com,,,,0 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMST,casalemedia.com,,,,0 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMRUM3,casalemedia.com,,,,0 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMID,casalemedia.com,,,,0 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMPS,casalemedia.com,,,,0 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,APIDTS,yahoo.com,,,,1 days,,,,,"Declared, not set",yahoo.com,This domain is owned by Yahoo. The main business activity is: Search / Advertising
+Targeting Cookies,banner,OneTrust,APID,yahoo.com,,,,290 days,,,,,"Declared, not set",yahoo.com,This domain is owned by Yahoo. The main business activity is: Search / Advertising
+Targeting Cookies,banner,OneTrust,A3,yahoo.com,,,,365 days,,,,,"Declared, not set",yahoo.com,This domain is owned by Yahoo. The main business activity is: Search / Advertising
+Targeting Cookies,banner,OneTrust,B,yahoo.com,,,,365 days,,,,,"Declared, not set",yahoo.com,This domain is owned by Yahoo. The main business activity is: Search / Advertising
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,,,,390 days,,,,,"Declared, not set",.doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,tluid,3lift.com,,,,90 days,,,,,"Declared, not set",3lift.com,"This domain is owned by TripleLift, a USA based business providing programmatic native advertising services."
+Targeting Cookies,banner,OneTrust,CONSENT,youtube.com,,,,6142 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,GPS,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,180 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,bscookie,www.linkedin.com,,,,731 days,,,,,"Declared, not set",www.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,obuid,outbrain.com,,,,90 days,,,,,"Declared, not set",outbrain.com,"This domain is owned by Outbrain, which describes itself as a content discovery platform.  It provides technology to help distribute content targeted to individuals interests."
+Targeting Cookies,banner,OneTrust,adrl,outbrain.com,,,,30 days,,,,,"Declared, not set",outbrain.com,"This domain is owned by Outbrain, which describes itself as a content discovery platform.  It provides technology to help distribute content targeted to individuals interests."
+Strictly Necessary Cookies,banner,OneTrust,cookietest,br.store.ui.com,,,,Session,,,,,"Declared, not set",br.store.ui.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies.Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Strictly Necessary Cookies,banner,OneTrust,cookietest,ca.store.ui.com,,,,Session,,,,,"Declared, not set",ca.store.ui.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies.Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Strictly Necessary Cookies,banner,OneTrust,Hm_lpvt_,unifi-hd.tw.ui.com,,,,Session,,,,,"Declared, not set",unifi-hd.tw.ui.com,Hm_lpvt_
+Strictly Necessary Cookies,banner,OneTrust,cart_sig,ca.store.ui.com,,,,14 days,,,,,"Declared, not set",ca.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with checkout.
+"
+Strictly Necessary Cookies,banner,OneTrust,cart_ts,jp.store.ui.com,,,,14 days,,,,,"Declared, not set",jp.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with checkout.
+"
+Strictly Necessary Cookies,banner,OneTrust,cart_sig,eu.store.ui.com,,,,14 days,,,,,"Declared, not set",eu.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with checkout.
+"
+Strictly Necessary Cookies,banner,OneTrust,_secure_session_id,ca.store.ui.com,,,,1 days,,,,,"Declared, not set",ca.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with navigation through a storefront.
+"
+Strictly Necessary Cookies,banner,OneTrust,cart_sig,jp.store.ui.com,,,,14 days,,,,,"Declared, not set",jp.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with checkout.
+"
+Strictly Necessary Cookies,banner,OneTrust,_orig_referrer,ui.com,,,,14 days,,,,,"Declared, not set",ui.com,"This cookie is generally provided by Shopify and is used in connection with a shopping part.
+"
+Strictly Necessary Cookies,banner,OneTrust,eupubconsent,ui.com,,,,365 days,,,,,"Declared, not set",ui.com,This cookie is used by the IAB Europe Transparency & Consent Framework to store the user's consent to the data collection Purposes. The cookie holds an encrypted consent string that vendors participating in the framework can read and determine the user's consent. 
+Strictly Necessary Cookies,banner,OneTrust,__cfduid,.jp.store.ui.com,,,,30 days,,,,,"Declared, not set",.jp.store.ui.com,"Cookie assoiated with sites using CloudFlare, used to speed up page load times. According to CloudFlare it is used to override any security restrictions based on the IP address the visitor is coming from. It does not contain any user identification information. "
+Strictly Necessary Cookies,banner,OneTrust,_orig_referrer,eu.store.ui.com,,,,14 days,,,,,"Declared, not set",eu.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with a shopping part.
+"
+Strictly Necessary Cookies,banner,OneTrust,cart_ts,eu.store.ui.com,,,,14 days,,,,,"Declared, not set",eu.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with checkout.
+"
+Strictly Necessary Cookies,banner,OneTrust,cart_sig,store.ui.com,,,,14 days,,,,,"Declared, not set",store.ui.com,"This cookie is generally provided by Shopify and is used in connection with checkout.
+"
+Strictly Necessary Cookies,banner,OneTrust,secure_customer_sig,tw.store.ui.com,,,,7305 days,,,,,"Declared, not set",tw.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with a customer login.
+"
+Strictly Necessary Cookies,banner,OneTrust,cart_sig,br.store.ui.com,,,,14 days,,,,,"Declared, not set",br.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with checkout.
+"
+Strictly Necessary Cookies,banner,OneTrust,cart_ts,store.ui.com,,,,14 days,,,,,"Declared, not set",store.ui.com,"This cookie is generally provided by Shopify and is used in connection with checkout.
+"
+Strictly Necessary Cookies,banner,OneTrust,__cfduid,eu.store.ui.com,,,,30 days,,,,,"Declared, not set",eu.store.ui.com,"Cookie associated with sites using CloudFlare, used to speed up page load times. According to CloudFlare it is used to override any security restrictions based on the IP address the visitor is coming from. It does not contain any user identification information.    "
+Strictly Necessary Cookies,banner,OneTrust,__cfduid,store.ui.com,,,,30 days,,,,,"Declared, not set",store.ui.com,"Cookie associated with sites using CloudFlare, used to speed up page load times. According to CloudFlare it is used to override any security restrictions based on the IP address the visitor is coming from. It does not contain any user identification information.    "
+Strictly Necessary Cookies,banner,OneTrust,secure_customer_sig,store.ui.com,,,,7305 days,,,,,"Declared, not set",store.ui.com,"This cookie is generally provided by Shopify and is used in connection with a customer login.
+"
+Strictly Necessary Cookies,banner,OneTrust,cart_ts,br.store.ui.com,,,,14 days,,,,,"Declared, not set",br.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with checkout.
+"
+Strictly Necessary Cookies,banner,OneTrust,secure_customer_sig,mx.store.ui.com,,,,7305 days,,,,,"Declared, not set",mx.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with a customer login.
+"
+Strictly Necessary Cookies,banner,OneTrust,eupubconsent,store.ui.com,,,,2914201 days,,,,,"Declared, not set",store.ui.com,This cookie is used by the IAB Europe Transparency & Consent Framework to store the user's consent to the data collection Purposes. The cookie holds an encrypted consent string that vendors participating in the framework can read and determine the user's consent. 
+Strictly Necessary Cookies,banner,OneTrust,_secure_session_id,eu.store.ui.com,,,,1 days,,,,,"Declared, not set",eu.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with navigation through a storefront.
+"
+Strictly Necessary Cookies,banner,OneTrust,_orig_referrer,store.ui.com,,,,14 days,,,,,"Declared, not set",store.ui.com,"This cookie is generally provided by Shopify and is used in connection with a shopping part.
+"
+Strictly Necessary Cookies,banner,OneTrust,_secure_session_id,tw.store.ui.com,,,,1 days,,,,,"Declared, not set",tw.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with navigation through a storefront.
+"
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,help.ui.com,,,,0 days,,,,,"Declared, not set",help.ui.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+"
+Strictly Necessary Cookies,banner,OneTrust,secure_customer_sig,br.store.ui.com,,,,365 days,,,,,"Declared, not set",br.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with a customer login.
+"
+Strictly Necessary Cookies,banner,OneTrust,_orig_referrer,ca.store.ui.com,,,,14 days,,,,,"Declared, not set",ca.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with a shopping part.
+"
+Strictly Necessary Cookies,banner,OneTrust,__cfduid,help.ui.com,,,,30 days,,,,,"Declared, not set",help.ui.com,"Cookie associated with sites using CloudFlare, used to speed up page load times. According to CloudFlare it is used to override any security restrictions based on the IP address the visitor is coming from. It does not contain any user identification information.    "
+Strictly Necessary Cookies,banner,OneTrust,__cfduid,jp.store.ui.com,,,,30 days,,,,,"Declared, not set",jp.store.ui.com,"Cookie associated with sites using CloudFlare, used to speed up page load times. According to CloudFlare it is used to override any security restrictions based on the IP address the visitor is coming from. It does not contain any user identification information.    "
+Strictly Necessary Cookies,banner,OneTrust,_orig_referrer,mx.store.ui.com,,,,3656 days,,,,,"Declared, not set",mx.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with a shopping part.
+"
+Strictly Necessary Cookies,banner,OneTrust,_secure_session_id,store.ui.com,,,,1 days,,,,,"Declared, not set",store.ui.com,"This cookie is generally provided by Shopify and is used in connection with navigation through a storefront.
+"
+Strictly Necessary Cookies,banner,OneTrust,__cfduid,tw.store.ui.com,,,,30 days,,,,,"Declared, not set",tw.store.ui.com,"Cookie associated with sites using CloudFlare, used to speed up page load times. According to CloudFlare it is used to override any security restrictions based on the IP address the visitor is coming from. It does not contain any user identification information.    "
+Strictly Necessary Cookies,banner,OneTrust,__cfruid,help.ui.com,,,,Session,,,,,"Declared, not set",help.ui.com,"Cookie associated with sites using CloudFlare, used to identify trusted web traffic."
+Strictly Necessary Cookies,banner,OneTrust,__cfduid,mx.store.ui.com,,,,30 days,,,,,"Declared, not set",mx.store.ui.com,"Cookie associated with sites using CloudFlare, used to speed up page load times. According to CloudFlare it is used to override any security restrictions based on the IP address the visitor is coming from. It does not contain any user identification information.    "
+Strictly Necessary Cookies,banner,OneTrust,cart_ts,mx.store.ui.com,,,,14 days,,,,,"Declared, not set",mx.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with checkout.
+"
+Strictly Necessary Cookies,banner,OneTrust,cart_sig,tw.store.ui.com,,,,14 days,,,,,"Declared, not set",tw.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with checkout.
+"
+Strictly Necessary Cookies,banner,OneTrust,csrf_token,demo.ui.com,,,,Session,,,,,"Declared, not set",demo.ui.com,"This cookie is used by Cloudflare to identify trusted web traffic.
+"
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID,warranty.svc.ui.com,,,,Session,,,,,"Declared, not set",warranty.svc.ui.com,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server."
+Strictly Necessary Cookies,banner,OneTrust,_secure_session_id,mx.store.ui.com,,,,1 days,,,,,"Declared, not set",mx.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with navigation through a storefront.
+"
+Strictly Necessary Cookies,banner,OneTrust,_secure_session_id,br.store.ui.com,,,,1 days,,,,,"Declared, not set",br.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with navigation through a storefront.
+"
+Strictly Necessary Cookies,banner,OneTrust,_secure_session_id,jp.store.ui.com,,,,1 days,,,,,"Declared, not set",jp.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with navigation through a storefront.
+"
+Strictly Necessary Cookies,banner,OneTrust,cart_sig,mx.store.ui.com,,,,14 days,,,,,"Declared, not set",mx.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with checkout.
+"
+Strictly Necessary Cookies,banner,OneTrust,cart_ts,ca.store.ui.com,,,,14 days,,,,,"Declared, not set",ca.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with checkout.
+"
+Strictly Necessary Cookies,banner,OneTrust,secure_customer_sig,jp.store.ui.com,,,,7305 days,,,,,"Declared, not set",jp.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with a customer login.
+"
+Strictly Necessary Cookies,banner,OneTrust,cart_ts,tw.store.ui.com,,,,14 days,,,,,"Declared, not set",tw.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with checkout.
+"
+Strictly Necessary Cookies,banner,OneTrust,secure_customer_sig,eu.store.ui.com,,,,7305 days,,,,,"Declared, not set",eu.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with a customer login.
+"
+Strictly Necessary Cookies,banner,OneTrust,_orig_referrer,jp.store.ui.com,,,,14 days,,,,,"Declared, not set",jp.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with a shopping part.
+"
+Strictly Necessary Cookies,banner,OneTrust,secure_customer_sig,ca.store.ui.com,,,,7305 days,,,,,"Declared, not set",ca.store.ui.com,"This cookie is generally provided by Shopify and is used in connection with a customer login.
+"
+Strictly Necessary Cookies,banner,OneTrust,__cfduid,cookielaw.org,,,,30 days,,,,,"Declared, not set",cookielaw.org,This host is used by OneTrust for hosting the Cookie Consent tool script. It is used to manage cookies on websites.
+Strictly Necessary Cookies,banner,OneTrust,ASP.NET_SessionId,otp.investis.com,,,,Session,,,,,"Declared, not set",otp.investis.com,"This domain is owned by Investis, a UK based business. It is used for embedding investor information into a client website."
+Strictly Necessary Cookies,banner,OneTrust,AWSALBTG,otp.investis.com,,,,7 days,,,,,"Declared, not set",otp.investis.com,"This domain is owned by Investis, a UK based business. It is used for embedding investor information into a client website."
+Strictly Necessary Cookies,banner,OneTrust,AWSALBTGCORS,otp.investis.com,,,,7 days,,,,,"Declared, not set",otp.investis.com,"This domain is owned by Investis, a UK based business. It is used for embedding investor information into a client website."
+Strictly Necessary Cookies,banner,OneTrust,BVxxxxxxxxxxxxxxxxxxxxxxxxx,otp.investis.com,,,,7 days,,,,,"Declared, not set",otp.investis.com,BazaarVoice
+Strictly Necessary Cookies,banner,OneTrust,__cfduid,onetrust.com,,,,30 days,,,,,"Declared, not set",onetrust.com,"This domain is owned by OneTrust, a privacy management software which helps organizations achieve compliance with global regulations."

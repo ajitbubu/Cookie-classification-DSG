@@ -1,0 +1,83 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,,www.armani.com,/api/getCLGuestToken,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,,www.armani.com,/api/giorgio-armani,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,,www.armani.com,/api/emporio-armani,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,,www.armani.com,/api/global,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,,www.armani.com,/api/_auth,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,,www.armani.com,/api/cms,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,,www.armani.com,/api/ea7,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,,www.armani.com,/api,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,nuxt-session,www.armani.com,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Functionality cookies,banner,OneTrust,i18n_redirected,.armani.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,www.armani.com,This cookie name is used by the nuxt-i18n package which attempts to redirect users to their preferred language by detecting their browser's language.
+Unclassified,none,,riskified-cookie,www.armani.com,/,First party,13.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,rskxRunCookie,.armani.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,rCookie,.armani.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,xgen_user_id,www.armani.com,/,First party,395.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,xgen_session_id,www.armani.com,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga,.armani.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,OTGPPConsent,.www.armani.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_ALGOLIA,www.armani.com,/,First party,180.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,xgen_meta_data,www.armani.com,/,First party,0.50 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,FPID,.armani.com,/,First party,400.00 days,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,FPAU,.armani.com,/,First party,90.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,FPLC,.armani.com,/,First party,0.83 days,,false,true,unspecified,false,Not declared,,
+Analytical cookies,banner,OneTrust,_cs_c,.armani.com,/,First party,395.42 days,Session,false,false,lax,false,Declared & set,t.contentsquare.net,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Unclassified,none,,_dcid,.armani.com,/,First party,400.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,_fbp,.armani.com,/,First party,90.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,OptanonAlertBoxClosed,.www.armani.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Profiling cookies,banner,OneTrust,external_id,www.armani.com,/,First party,365.00 days,364 days,false,true,lax,false,Declared & set,www.armani.com,"This cookie name is associated with Facebook Pixel and PixelYourSite plugin which is used to assign external_id to users, improving API events performance and matching user data across browser and server side for advertising and analytics purposes."
+Unclassified,none,,_ttp,.tiktok.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Profiling cookies,banner,OneTrust,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,bat.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Unclassified,none,,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_tt_enable_cookie,.armani.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ttp,.armani.com,/,First party,395.72 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,_pin_unauth,.armani.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_gtmeec,.armani.com,/,First party,90.00 days,,true,true,strict,false,Not declared,,
+Profiling cookies,banner,OneTrust,TapAd_TS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,TS
+Profiling cookies,banner,OneTrust,TapAd_DID,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,This domain is owned by Tapad Inc. a US based company that provides technology to track users across devices to enhance targeting capabilities.
+Profiling cookies,banner,OneTrust,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,This domain is owned by Tapad Inc. a US based company that provides technology to track users across devices to enhance targeting capabilities.
+Unclassified,none,,sc_at,.snapchat.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Profiling cookies,banner,OneTrust,_sctr,.armani.com,/,First party,395.00 days,394 days,false,false,lax,false,Declared & set,armani.com,This cookie name is associated with Snap which is used to determine whether a third party tag will be called in Snap Ads Pixel and stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category.
+Unclassified,none,,__attentive_id,.armani.com,/,First party,390.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,__attentive_session_id,.armani.com,/,First party,0.02 days,,false,true,unspecified,false,Not declared,,
+Technical cookies,banner,OneTrust,_attn_,.armani.com,/,First party,390.00 days,389 days,false,true,strict,false,Declared & set,armani.com,Questo cookie è generalmente fornito da PayPal supporta i servizi di pagamento nel sito web.Ts
+Unclassified,none,,__attentive_cco,.armani.com,/,First party,390.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,fingerprint-uuid,www.armani.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,gleen-faq-fingerprint-uuid,www.armani.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__attentive_ss_referrer,.armani.com,/,First party,0.02 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,__attentive_dv,.armani.com,/,First party,1.00 days,,false,true,unspecified,false,Not declared,,
+Technical cookies,banner,OneTrust,__cf_bm,.attentivemobile.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,adyen.com,
+Unclassified,none,,__attentive_vf,.armani.com,/,First party,1.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,OptanonConsent,.www.armani.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Analytical cookies,banner,OneTrust,_cs_id,.armani.com,/,First party,395.42 days,Session,false,false,lax,false,Declared & set,t.contentsquare.net,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Analytical cookies,banner,OneTrust,_cs_s,.armani.com,/,First party,0.02 days,Session,false,false,lax,false,Declared & set,t.contentsquare.net,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Unclassified,none,,lastRskxRun,.armani.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_P16DLZRS7L,.armani.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_scid_r,.armani.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_uetsid,.armani.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_uetvid,.armani.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ABTastySession,.armani.com,/,First party,0.02 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,inside-eu8,.armani.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__attentive_pv,.armani.com,/,First party,0.02 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,_scid,.armani.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,ttcsid_C56T73NB3D4MMMSLP7OG,.armani.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,xgen_ab_info,www.armani.com,/,First party,395.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid,.armani.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_dd_s_v2,www.armani.com,/,First party,365.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,ABTasty,.armani.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Functionality cookies,banner,OneTrust,recent-searches,www.armani.com,,,,0 days,,,,,"Declared, not set",www.armani.com,
+Technical cookies,banner,OneTrust,giorgio-armani-grid-layout-cookies,www.armani.com,,,,6 days,,,,,"Declared, not set",www.armani.com,
+Technical cookies,banner,OneTrust,federatedCookieCartLineItemsCount_US,www.armani.com,,,,Session,,,,,"Declared, not set",www.armani.com,
+Technical cookies,banner,OneTrust,GIORGIO ARMANI-recently-viewed,www.armani.com,,,,149 days,,,,,"Declared, not set",www.armani.com,
+Technical cookies,banner,OneTrust,dd_cookie_test_,www.armani.com,,,,0 days,,,,,"Declared, not set",www.armani.com,This cookie name is used by DataDog to determine if cookies are supported on the website.dd_cookie_test
+Technical cookies,banner,OneTrust,YEXTVISIT,armani.com,,,,Session,,,,,"Declared, not set",armani.com,"Memorizza l'URL della pagina visitata prima del login o della registrazione, per reindirizzare l'utente alla pagina corretta dopo l'autenticazione. Dominio: .armani.com."
+Technical cookies,banner,OneTrust,_cfuvid,adyen.com,,,,Session,,,,,"Declared, not set",adyen.com,
+Technical cookies,banner,OneTrust,_rp_uid,checkoutshopper-live.adyen.com,,,,399 days,,,,,"Declared, not set",checkoutshopper-live.adyen.com,
+Technical cookies,banner,OneTrust,_session_id,commercelayer.io,,,,Session,,,,,"Declared, not set",commercelayer.io,"This cookie creates an interim session ID used as an in-session user ID.
+"
+Profiling cookies,banner,OneTrust,NID,google.com,,,,182 days,,,,,"Declared, not set",google.com,
+Analytical cookies,banner,OneTrust,RT,armani.com,,,,Session,,,,,"Declared, not set",armani.com,Il cookie FPLC è il cookie di collegamento cross-domain.

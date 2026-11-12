@@ -1,0 +1,63 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,cf_clearance,.carrefour.com,/,First party,365.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,__cf_bm,.carrefour.com,/,First party,0.02 days,,true,true,none,true,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.www.carrefour.com,/,First party,180.00 days,365 days,false,false,lax,false,Declared & set,.www.carrefour.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Google Analytics,banner,OneTrust,_ga,.carrefour.com,/,First party,390.00 days,390 days,false,false,unspecified,false,Declared & set,carrefour.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Google Analytics,banner,OneTrust,_gid,.carrefour.com,/,First party,1.00 days,1 days,false,false,unspecified,false,Declared & set,carrefour.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited.
+Google Analytics,banner,OneTrust,_gat,.carrefour.com,/,First party,0.00 days,390 days,false,false,unspecified,false,Declared & set,carrefour.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Unclassified,none,,__Secure-YNID,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,YSC,.youtube.com,/,Third party,Session,Session,true,true,none,true,Declared & set,youtube.com,This cookie is set by the YouTube video service on pages with embedded YouTube video
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,.youtube.com,/,Third party,180.00 days,240 days,true,true,none,true,Declared & set,youtube.com,A cookie that YouTube sets that measures your bandwidth to determine whether you get the new player interface or the old.
+Unclassified,none,,VISITOR_PRIVACY_METADATA,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,__Secure-ROLLOUT_TOKEN,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,tc_cj_v2,.carrefour.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,carrefour.com,
+Strictly Necessary Cookies,banner,OneTrust,pageCounterCarrefourCom,.carrefour.com,/,First party,Session,Session,false,false,lax,false,Declared & set,carrefour.com,
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.www.carrefour.com,/,First party,180.00 days,365 days,false,false,lax,false,Declared & set,.www.carrefour.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Strictly Necessary Cookies,banner,OneTrust,tc_page_counter,.carrefour.com,/,First party,Session,Session,false,false,lax,false,Declared & set,carrefour.com,
+Google Analytics,banner,OneTrust,_ga_DXPCS7N8WH,.carrefour.com,/,First party,395.37 days,390 days,false,false,unspecified,false,Declared & set,carrefour.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Google Analytics,banner,OneTrust,_ga_RS13475690,.carrefour.com,/,First party,390.00 days,390 days,false,false,unspecified,false,Declared & set,carrefour.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Strictly Necessary Cookies,banner,OneTrust,incap_ses_1185_559036,carrefour.com,,,,Session,,,,,"Declared, not set",carrefour.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Strictly Necessary Cookies,banner,OneTrust,incap_ses_1364_559036,carrefour.com,,,,Session,,,,,"Declared, not set",carrefour.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Strictly Necessary Cookies,banner,OneTrust,incap_ses_873_559036,carrefour.com,,,,Session,,,,,"Declared, not set",carrefour.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Strictly Necessary Cookies,banner,OneTrust,incap_ses_340_559036,carrefour.com,,,,Session,,,,,"Declared, not set",carrefour.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Strictly Necessary Cookies,banner,OneTrust,visid_incap_559036,carrefour.com,,,,364 days,,,,,"Declared, not set",carrefour.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking certain sessions to a specific visitor (visitor representing a specific computer). In order to identify clients that have already visited Incapsula. The only cookie that is persistent for the duration of 12 months."
+Strictly Necessary Cookies,banner,OneTrust,incap_ses_1319_559036,carrefour.com,,,,Session,,,,,"Declared, not set",carrefour.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Strictly Necessary Cookies,banner,OneTrust,incap_ses_8218_559036,carrefour.com,,,,Session,,,,,"Declared, not set",carrefour.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Strictly Necessary Cookies,banner,OneTrust,incap_ses_375_559036,carrefour.com,,,,Session,,,,,"Declared, not set",carrefour.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Strictly Necessary Cookies,banner,OneTrust,incap_ses_9196_559036,carrefour.com,,,,Session,,,,,"Declared, not set",carrefour.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Strictly Necessary Cookies,banner,OneTrust,TCPID,carrefour.com,,,,393 days,,,,,"Declared, not set",carrefour.com,
+Strictly Necessary Cookies,banner,OneTrust,TCSESSION,.carrefour.com,,,,Session,,,,,"Declared, not set",.carrefour.com,
+Strictly Necessary Cookies,banner,OneTrust,ADRUM_BT,www.carrefour.com,,,,0 days,,,,,"Declared, not set",www.carrefour.com,
+Strictly Necessary Cookies,banner,OneTrust,TCID,.carrefour.com,,,,365 days,,,,,"Declared, not set",.carrefour.com,
+Strictly Necessary Cookies,banner,OneTrust,___utmvxxxxxxxxxxxxxx,www.carrefour.com,,,,0 days,,,,,"Declared, not set",www.carrefour.com,___utmv
+Strictly Necessary Cookies,banner,OneTrust,nlbi_559036,carrefour.com,,,,Session,,,,,"Declared, not set",carrefour.com,
+Strictly Necessary Cookies,banner,OneTrust,FDLBCTLY,manager.tagcommander.com,,,,Session,,,,,"Declared, not set",manager.tagcommander.com,Ce cookie est utilisé par CommandersAct pour gérer la répartition des charges.
+Google Ads,banner,OneTrust,test_cookie,doubleclick.net,,,,396 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Youtube,banner,OneTrust,GPS,youtube.com,,,,396 days,,,,,"Declared, not set",youtube.com,"YouTube est une plate-forme appartenant à Google pour l'hébergement et le partage de vidéos. YouTube collecte des données utilisateur via des vidéos intégrées dans des sites Web, qui sont agrégées avec des données de profil d'autres services Google afin d'afficher des publicités ciblées aux visiteurs Web sur un large éventail de leurs propres sites Web et d'autres."
+MetrixLab,banner,OneTrust,MetrixLabp24183,www.carrefour.com,,,,180 days,,,,,"Declared, not set",www.carrefour.com,
+MetrixLab,banner,OneTrust,MetrixLabp24183,invitation.opinionbar.com,,,,180 days,,,,,"Declared, not set",invitation.opinionbar.com,

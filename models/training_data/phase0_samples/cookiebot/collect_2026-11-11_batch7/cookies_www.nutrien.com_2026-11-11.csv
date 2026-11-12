@@ -1,0 +1,102 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Necessary,banner,Cookiebot,visid_incap_2529162,.nutrien.com,/,First party,364.19 days,,true,true,none,false,Declared & set,nutrien.com,Preserves users states across page requests.
+Necessary,banner,Cookiebot,nlbi_2529162,.nutrien.com,/,First party,Session,Session,true,true,none,false,Declared & set,nutrien.com,Used to ensure website security and fraud detection.
+Necessary,banner,Cookiebot,incap_ses_270_2529162,.nutrien.com,/,First party,Session,Session,false,true,none,false,Declared & set,nutrien.com,Preserves users states across page requests.
+Necessary,banner,Cookiebot,CookieConsent,www.nutrien.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,www.nutrien.com,Stores the user's cookie consent state for the current domain
+Marketing,banner,Cookiebot,_gcl_au,.nutrien.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,nutrien.com,"Used to measure the efficiency of the website’s advertisement efforts, by collecting data on the conversion rate of the website’s ads across multiple websites."
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,linkedin.com,"Used by the social networking service, LinkedIn, for tracking the use of embedded services."
+Preferences,banner,Cookiebot,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,linkedin.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,linkedin.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,banner,Cookiebot,_twpid,.nutrien.com,/,First party,390.00 days,Session,false,true,strict,false,Declared & set,nutrien.com,Pending
+Marketing,banner,Cookiebot,muc_ads,.t.co,/,Third party,400.00 days,,false,true,none,false,Declared & set,t.co,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Necessary,banner,Cookiebot,__cf_bm,.t.co,/,Third party,0.02 days,,true,true,none,true,Declared & set,linkedin.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Statistics,banner,Cookiebot,personalization_id,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Declared & set,twitter.com,This cookie is set by Twitter - The cookie allows the visitor to share content from the website onto their Twitter profile. 
+Necessary,banner,Cookiebot,__cf_bm,.twitter.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,linkedin.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,none,,ssi,.sitescout.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,EE,.exelator.com,/,Third party,120.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_cc_dc,.crwdcntrl.net,/,Third party,270.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_cc_id,.crwdcntrl.net,/,Third party,270.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_cc_cc,.crwdcntrl.net,/,Third party,270.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_cc_aud,.crwdcntrl.net,/,Third party,270.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ud,.exelator.com,/,Third party,120.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id_marketing,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id_ads,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,_ga,.nutrien.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,nutrien.com,Registers a unique ID that is used to generate statistical data on how the visitor uses the website.
+Marketing,banner,Cookiebot,_fbp,.nutrien.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,nutrien.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Unclassified,none,,KRTBCOOKIE_188,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ljt_reader,.lijit.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,anj,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,i,.openx.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,anProfile,.pro-market.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tluid,.3lift.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,V,.contextweb.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,VP,.contextweb.com,/,Third party,360.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,pb_rtb_ev,.contextweb.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pb_rtb_ev_part,.contextweb.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,INGRESSCOOKIE,bh.contextweb.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,mako_uid,.eyeota.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,SERVERID,.eyeota.net,/,Third party,0.01 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,YSC,.youtube.com,/,Third party,Session,Session,true,true,none,true,Declared & set,youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Unclassified,none,,VISITOR_PRIVACY_METADATA,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Marketing,banner,Cookiebot,__Secure-YNID,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Used to track user’s interaction with embedded content.
+Unclassified,none,,UID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,clid,.media6degrees.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,acs,.media6degrees.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__stid,.sharethis.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__stidv,.sharethis.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids,s2s.t13.io,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_uid,.fwmrm.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tt_viewer,.teads.tv,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,_ga_ZK9WV27F9D,.nutrien.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,nutrien.com,Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit. 
+Unclassified,banner,Cookiebot,_twsid,.nutrien.com,/,First party,390.00 days,Session,false,true,strict,false,Declared & set,nutrien.com,Pending
+Unclassified,none,,_ssuma,.sitescout.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.1rx.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,visitor,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,status,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,centro,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,am_tokens,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,am_tokens_invalidate-verizon-pushes,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,ak_bmsc,businesswire.com,,,,,,,,,"Declared, not set",businesswire.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.
+Necessary,banner,Cookiebot,li_gc,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,ASP.NET_SessionId,nutrien2019tf.s4.q4web.com,,,,Session,,,,,"Declared, not set",nutrien2019tf.s4.q4web.com,Preserves the visitor's session state across page requests.
+Necessary,banner,Cookiebot,cf_clearance,vimeo.com,,,,,,,,,"Declared, not set",vimeo.com,This cookie is used to distinguish between humans and bots. 
+Necessary,banner,Cookiebot,f5avraaaaaaaaaaaaaaaa_session_,www.businesswire.com,,,,Session,,,,,"Declared, not set",www.businesswire.com,Registers the website's speed and performance. This function can be used in context with statistics and load-balancing.
+Necessary,banner,Cookiebot,JSESSIONID,www.businesswire.com,,,,Session,,,,,"Declared, not set",www.businesswire.com,Preserves users states across page requests.
+Necessary,banner,Cookiebot,_GRECAPTCHA,www.recaptcha.net,,,,,,,,,"Declared, not set",www.recaptcha.net,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Statistics,banner,Cookiebot,sp,nutrien2019tf.q4web.com,,,,,,,,,"Declared, not set",nutrien2019tf.q4web.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Marketing,banner,Cookiebot,_gid,nutrien2019tf.q4web.com,,,,,,,,,"Declared, not set",nutrien2019tf.q4web.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,suid,simpli.fi,,,,,,,,,"Declared, not set",simpli.fi,Collects information on user preferences and/or interaction with web-campaign content - This is used on CRM-campaign-platform used by website owners for promoting events or products.
+Marketing,banner,Cookiebot,suid_legacy,simpli.fi,,,,,,,,,"Declared, not set",simpli.fi,Collects information on user preferences and/or interaction with web-campaign content - This is used on CRM-campaign-platform used by website owners for promoting events or products.
+Marketing,banner,Cookiebot,__cf_ob,vimeo.com,,,,Session,,,,,"Declared, not set",vimeo.com,Pending
+Marketing,banner,Cookiebot,___utmvc,www.nutrien.com,,,,,,,,,"Declared, not set",www.nutrien.com,Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Unclassified,banner,Cookiebot,__uxq412__id.a536,nutrien2019tf.q4web.com,,,,,,,,,"Declared, not set",nutrien2019tf.q4web.com,Pending
+Unclassified,banner,Cookiebot,__uxq412__ses.a536,nutrien2019tf.q4web.com,,,,,,,,,"Declared, not set",nutrien2019tf.q4web.com,Pending

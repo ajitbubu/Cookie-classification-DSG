@@ -1,0 +1,181 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,__apex_test__,.amorepacific.com,/collections,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__apex_test__,.amorepacific.com,/products,First party,Session,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,localization,us.amorepacific.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,us.amorepacific.com,"These cookies are set on pages with the Flickr widget.
+"
+Unclassified,none,,cart_currency,us.amorepacific.com,/,First party,14.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_shopify_essential,us.amorepacific.com,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,_shopify_analytics,us.amorepacific.com,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,_shopify_marketing,us.amorepacific.com,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,__eventn_id,.us.amorepacific.com,/,First party,400.00 days,,false,true,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,_gcl_au,.amorepacific.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,amorepacific.com,Google conversion tracking cookie
+Unclassified,none,,__attn_eat_id,.amorepacific.com,/,First party,390.00 days,,false,true,lax,true,Not declared,,
+Unclassified,none,,_shop_app_essential,.shop.app,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga,.amorepacific.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,amorepacific.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Unclassified,none,,__attentive_id,.amorepacific.com,/,First party,390.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,__attentive_session_id,.amorepacific.com,/,First party,0.02 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,__attentive_cco,.amorepacific.com,/,First party,390.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,storefront_url,us.amorepacific.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,yotpo_pixel,.amorepacific.com,/,First party,1.04 days,0 days,false,true,unspecified,false,Declared & set,us.amorepacific.com,
+Unclassified,none,,_ama,us.amorepacific.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__attn_shp_cid,us.amorepacific.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,swym-session-id,.us.amorepacific.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,swym-pid,.us.amorepacific.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,shd_s,.amorepacific.com,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_shd_y,.amorepacific.com,/,First party,360.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_attn_bopd_,.amorepacific.com,/,First party,390.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,__attentive_ss_referrer,.amorepacific.com,/,First party,0.02 days,,false,true,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,__kla_id,us.amorepacific.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,us.amorepacific.com,NA
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,_hjSession_2924151,.amorepacific.com,/,First party,0.02 days,0 days,false,true,none,false,Declared & set,amorepacific.com,A cookie that holds the current session data. This ensues that subsequent requests within the session window will be attributed to the same Hotjar session.
+Unclassified,none,,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,_sp_ses.1fc3,.amorepacific.com,/,First party,0.02 days,0 days,false,true,unspecified,false,Declared & set,us.amorepacific.com,simplybusiness.co.uk
+Unclassified,none,,anonymousId,shdid.me,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.shdid.me,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,us.amorepacific.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+This is a CloudFoundry cookie"
+Unclassified,none,,__attentive_dv,.amorepacific.com,/,First party,1.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_fbp,.amorepacific.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,amorepacific.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Unclassified,none,,swym-v-ckd,.us.amorepacific.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,swym-swymRegid,.us.amorepacific.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,swym-email,.us.amorepacific.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_clck,.amorepacific.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__attentive_vf,.amorepacific.com,/,First party,1.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,__mmapiwsid,d-ipv6.mmapiws.com,/,Third party,400.00 days,730 days,true,true,none,false,Declared & set,amorepacific.com,
+Functional Cookies,banner,OneTrust,__mmapiwsid,.amorepacific.com,/,First party,400.00 days,730 days,false,true,none,false,Declared & set,amorepacific.com,
+Unclassified,none,,SM,.c.clarity.ms,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,MUID,.clarity.ms,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.c.clarity.ms,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Not declared,,
+Unclassified,none,,cart,us.amorepacific.com,/,First party,91.00 days,,false,false,lax,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.us.amorepacific.com,/,First party,0.02 days,0 days,true,true,none,true,Declared & set,us.amorepacific.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+This is a CloudFoundry cookie"
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.us.amorepacific.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.us.amorepacific.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Performance Cookies,banner,OneTrust,_hjSessionUser_2924151,.amorepacific.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,amorepacific.com,"Hotjar cookie that is set when a user first lands on a page with the Hotjar script. It is used to persist the Hotjar User ID, unique to that site on the browser. This ensures that behavior in subsequent visits to the same site will be attributed to the same user ID."
+Unclassified,none,,__apex_test__,.amorepacific.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,swym-o_s,.us.amorepacific.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,first_pla_call,us.amorepacific.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,_shopify_cmp,.amorepacific.com,/,First party,365.25 days,,false,true,lax,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.us.amorepacific.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.us.amorepacific.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Performance Cookies,banner,OneTrust,_ga_EC8XMCWCEJ,.amorepacific.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,amorepacific.com,_ga
+Unclassified,none,,_uetsid,.amorepacific.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_uetvid,.amorepacific.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_shdfp,.amorepacific.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_attn_,.amorepacific.com,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,__attentive_pv,.amorepacific.com,/,First party,0.02 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,ometria,.us.amorepacific.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Functional Cookies,banner,OneTrust,_sp_id.1fc3,.amorepacific.com,/,First party,400.00 days,729 days,false,true,unspecified,false,Declared & set,us.amorepacific.com,simplybusiness.co.uk
+Unclassified,none,,_clsk,.amorepacific.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.afterpay.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,afterpay.com,This is a CloudFoundry cookie
+Performance Cookies,banner,OneTrust,_ga_HH1FQQPSH5,.amorepacific.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,amorepacific.com,_ga
+Performance Cookies,banner,OneTrust,_ga_825Q30M1ZL,.amorepacific.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,amorepacific.com,_ga
+Unclassified,none,,apt_pixel,.us.amorepacific.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,amp_e133e6,.amorepacific.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,amp_e133e6_amorepacific.com,.amorepacific.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.afterpay-beta.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,us.amorepacific.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+This is a CloudFoundry cookie"
+Strictly Necessary Cookies,banner,OneTrust,_cmp_a,amorepacific.com,,,,0 days,,,,,"Declared, not set",amorepacific.com,
+Strictly Necessary Cookies,banner,OneTrust,cookietest,us.amorepacific.com,,,,Session,,,,,"Declared, not set",us.amorepacific.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies.Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Strictly Necessary Cookies,banner,OneTrust,_shopify_y,amorepacific.com,,,,364 days,,,,,"Declared, not set",amorepacific.com,"This cookie is associated with Shopify's analytics suite.
+"
+Strictly Necessary Cookies,banner,OneTrust,wpm-domain-test,amorepacific.com,,,,Session,,,,,"Declared, not set",amorepacific.com,
+Strictly Necessary Cookies,banner,OneTrust,_secure_session_id,us.amorepacific.com,,,,0 days,,,,,"Declared, not set",us.amorepacific.com,"This cookie is generally provided by Shopify and is used in connection with navigation through a storefront.
+"
+Strictly Necessary Cookies,banner,OneTrust,wpm-domain-test,us.amorepacific.com,,,,Session,,,,,"Declared, not set",us.amorepacific.com,
+Strictly Necessary Cookies,banner,OneTrust,keep_alive,us.amorepacific.com,,,,0 days,,,,,"Declared, not set",us.amorepacific.com,
+Strictly Necessary Cookies,banner,OneTrust,secure_customer_sig,us.amorepacific.com,,,,365 days,,,,,"Declared, not set",us.amorepacific.com,"This cookie is generally provided by Shopify and is used in connection with a customer login.
+"
+Strictly Necessary Cookies,banner,OneTrust,_dc_gtm_UA-xxxxxxxx,amorepacific.com,,,,0 days,,,,,"Declared, not set",amorepacific.com,"This cookie is associated with sites using Google Tag Manager to load other scripts and code into a page.  Where it is used it may be regarded as Strictly Necessary as without it, other scripts may not function correctly. The end of the name is a unique number which is also an identifier for an associated Google Analytics account."
+Strictly Necessary Cookies,banner,OneTrust,_orig_referrer,amorepacific.com,,,,13 days,,,,,"Declared, not set",amorepacific.com,"This cookie is generally provided by Shopify and is used in connection with a shopping part.
+"
+Strictly Necessary Cookies,banner,OneTrust,AWSALB,match.sharethrough.com,,,,6 days,,,,,"Declared, not set",match.sharethrough.com,AWS ELB application load balancer
+Strictly Necessary Cookies,banner,OneTrust,AWSALBCORS,match.sharethrough.com,,,,6 days,,,,,"Declared, not set",match.sharethrough.com,This cookie is managed by AWS and is used for load balancing.
+Strictly Necessary Cookies,banner,OneTrust,icts,linksynergy.com,,,,364 days,,,,,"Declared, not set",linksynergy.com,
+Strictly Necessary Cookies,banner,OneTrust,io_token_7c6a6574-f011-4c9a-abdd-9894a102ccef,mpsnare.iesnare.com,,,,364 days,,,,,"Declared, not set",mpsnare.iesnare.com,
+Strictly Necessary Cookies,banner,OneTrust,nf5619_customer_code,nofraud.com,,,,0 days,,,,,"Declared, not set",nofraud.com,
+Performance Cookies,banner,OneTrust,_y,amorepacific.com,,,,364 days,,,,,"Declared, not set",amorepacific.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_landing_page,amorepacific.com,,,,13 days,,,,,"Declared, not set",amorepacific.com,"This cookie is used to track, report, and analyze on landing pages.
+"
+Performance Cookies,banner,OneTrust,_shopify_s,amorepacific.com,,,,0 days,,,,,"Declared, not set",amorepacific.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_s,amorepacific.com,,,,0 days,,,,,"Declared, not set",amorepacific.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_hjTLDTest,amorepacific.com,,,,Session,,,,,"Declared, not set",amorepacific.com,"When the Hotjar script executes we try to determine the most generic cookie path we should use, instead of the page hostname. This is done so that cookies can be shared across subdomains (where applicable). To determine this, we try to store the _hjTLDTest cookie for different URL substring alternatives until it fails. After this check, the cookie is removed."
+Performance Cookies,banner,OneTrust,_hjFirstSeen,amorepacific.com,,,,0 days,,,,,"Declared, not set",amorepacific.com,"Identifies a new user's first session on a website, indicating whether or not Hotjar's seeing this user for the first time."
+Performance Cookies,banner,OneTrust,_shopify_sa_p,amorepacific.com,,,,0 days,,,,,"Declared, not set",amorepacific.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_shopify_sa_t,amorepacific.com,,,,0 days,,,,,"Declared, not set",amorepacific.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_gid,amorepacific.com,,,,0 days,,,,,"Declared, not set",amorepacific.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Performance Cookies,banner,OneTrust,_hjAbsoluteSessionInProgress,amorepacific.com,,,,0 days,,,,,"Declared, not set",amorepacific.com,This cookie is used by HotJar to detect the first pageview session of a user. This is a True/False flag set by the cookie.
+Performance Cookies,banner,OneTrust,rmStore,amorepacific.com,,,,0 days,,,,,"Declared, not set",amorepacific.com,
+Performance Cookies,banner,OneTrust,pixel,yotpo.com,,,,364 days,,,,,"Declared, not set",yotpo.com,"This domain is owned by Yotpo which provides solutions that power the whole customer journey, including loyalty and referrals, email and SMS marketing, subscriptions, reviews, and visual user-generated content."
+Performance Cookies,banner,OneTrust,session,static.rechargecdn.com,,,,30 days,,,,,"Declared, not set",static.rechargecdn.com,
+Functional Cookies,banner,OneTrust,_shopify_d,amorepacific.com,,,,Session,,,,,"Declared, not set",amorepacific.com,
+Functional Cookies,banner,OneTrust,_hjIncludedInSessionSample_xxx,amorepacific.com,,,,0 days,,,,,"Declared, not set",amorepacific.com,
+Functional Cookies,banner,OneTrust,rmuid,linksynergy.com,,,,364 days,,,,,"Declared, not set",linksynergy.com,"This domain is associated with Rakuten LinkShare, a company specializing in affiliate marketing services. The cookies are used for tracking the effectiveness of advertising campaigns and personalizing content."
+Functional Cookies,banner,OneTrust,current_shopper,friendbuy.com,,,,364 days,,,,,"Declared, not set",friendbuy.com,
+Functional Cookies,banner,OneTrust,_sp_ses.xxxx,staticw2.yotpo.com,,,,0 days,,,,,"Declared, not set",staticw2.yotpo.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,_sp_id.xxxx,staticw2.yotpo.com,,,,729 days,,,,,"Declared, not set",staticw2.yotpo.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,optout,criteo.com,,,,365 days,,,,,"Declared, not set",criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Functional Cookies,banner,OneTrust,_sp_ses.xxxx,cdn-widgetsrepository.yotpo.com,,,,0 days,,,,,"Declared, not set",cdn-widgetsrepository.yotpo.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,_sp_id.xxxx,cdn-widgetsrepository.yotpo.com,,,,729 days,,,,,"Declared, not set",cdn-widgetsrepository.yotpo.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,_sp_ses.xxxx,cdn-widget-assets.yotpo.com,,,,0 days,,,,,"Declared, not set",cdn-widget-assets.yotpo.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,_sp_id.xxxx,cdn-widget-assets.yotpo.com,,,,729 days,,,,,"Declared, not set",cdn-widget-assets.yotpo.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,cookietest,cdn.shopify.com,,,,Session,,,,,"Declared, not set",cdn.shopify.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Targeting Cookies,banner,OneTrust,cto_tld_test,amorepacific.com,,,,0 days,,,,,"Declared, not set",amorepacific.com,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,cto_tld_test,us.amorepacific.com,,,,0 days,,,,,"Declared, not set",us.amorepacific.com,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,_pin_unauth,us.amorepacific.com,,,,364 days,,,,,"Declared, not set",us.amorepacific.com,"This cookie is assocate with pinterest.  It is used to track the usage of services.
+"
+Targeting Cookies,banner,OneTrust,cto_bundle,amorepacific.com,,,,395 days,,,,,"Declared, not set",amorepacific.com,
+Targeting Cookies,banner,OneTrust,criteo_write_test,us.amorepacific.com,,,,0 days,,,,,"Declared, not set",us.amorepacific.com,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,PugT,pubmatic.com,,,,29 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Targeting Cookies,banner,OneTrust,KRTBCOOKIE_xxxx,pubmatic.com,,,,29 days,,,,,"Declared, not set",pubmatic.com,This cookie is used to correlate IDs with those of Pubmatic partners (such as demand side platform clients or other advertising technology companies). Pubmatic passes information stored by the partner in this cookie to the partner when it is considering whether to purchase advertisements. This enables the partner to make better decisions about whether to display an advertisement to you.
+Targeting Cookies,banner,OneTrust,data-c-ts,media.net,,,,29 days,,,,,"Declared, not set",media.net,Media.net is a global online advertising technology network.
+Targeting Cookies,banner,OneTrust,data-c,media.net,,,,29 days,,,,,"Declared, not set",media.net,Media.net is a global online advertising technology network.
+Targeting Cookies,banner,OneTrust,visitor-id,media.net,,,,364 days,,,,,"Declared, not set",media.net,Media.net is a global online advertising technology network.
+Targeting Cookies,banner,OneTrust,rlas3,rlcdn.com,,,,364 days,,,,,"Declared, not set",rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Targeting Cookies,banner,OneTrust,pxrc,rlcdn.com,,,,59 days,,,,,"Declared, not set",rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Targeting Cookies,banner,OneTrust,c,bidswitch.net,,,,364 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,tuuid,bidswitch.net,,,,364 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,tuuid_lu,bidswitch.net,,,,364 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,browser_data,dnacdn.net,,,,389 days,,,,,"Declared, not set",dnacdn.net,
+Targeting Cookies,banner,OneTrust,CMPRO,casalemedia.com,,,,89 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMPS,casalemedia.com,,,,89 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMID,casalemedia.com,,,,364 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,uid,criteo.com,,,,389 days,,,,,"Declared, not set",criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,demdex,demdex.net,,,,179 days,,,,,"Declared, not set",demdex.net,"This cookie helps Adobe Audience Manger perform basic functions such as visitor identification, ID synchronization, segmentation, modeling, reporting, etc."
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,dpm,dpm.demdex.net,,,,179 days,,,,,"Declared, not set",dpm.demdex.net,This domain is owned by Adobe Audience Manager. The main business activity is online profiling for targeted marketing.
+Targeting Cookies,banner,OneTrust,tvid,tremorhub.com,,,,365 days,,,,,"Declared, not set",tremorhub.com,This domain is owned by Tremor Video which provides a marketplace for online video based cross-device advertising.
+Targeting Cookies,banner,OneTrust,tv_UICR,tremorhub.com,,,,29 days,,,,,"Declared, not set",tremorhub.com,This domain is owned by Tremor Video which provides a marketplace for online video based cross-device advertising.
+Targeting Cookies,banner,OneTrust,criteo_write_test,static.criteo.net,,,,0 days,,,,,"Declared, not set",static.criteo.net,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,_pinterest_ct_ua,ct.pinterest.com,,,,364 days,,,,,"Declared, not set",ct.pinterest.com,"This domain is associated with Pinterest, a social media platform that allows users to share images and media content through collections known as pinboards. The domain is likely used for conversion tracking and advertising purposes."
+Targeting Cookies,banner,OneTrust,criteo,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,am_tokens_eu-v1,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,
+Targeting Cookies,banner,OneTrust,mv_tokens,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,
+Targeting Cookies,banner,OneTrust,am_tokens,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,
+Targeting Cookies,banner,OneTrust,mv_tokens_eu-v1,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,CONSENT,youtube.com,,,,729 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,cnac,id5-sync.com,,,,0 days,,,,,"Declared, not set",id5-sync.com,
+Targeting Cookies,banner,OneTrust,car,id5-sync.com,,,,0 days,,,,,"Declared, not set",id5-sync.com,
+Targeting Cookies,banner,OneTrust,gdpr,id5-sync.com,,,,0 days,,,,,"Declared, not set",id5-sync.com,
+Targeting Cookies,banner,OneTrust,cf,id5-sync.com,,,,0 days,,,,,"Declared, not set",id5-sync.com,
+Targeting Cookies,banner,OneTrust,cip,id5-sync.com,,,,0 days,,,,,"Declared, not set",id5-sync.com,
+Targeting Cookies,banner,OneTrust,callback,id5-sync.com,,,,0 days,,,,,"Declared, not set",id5-sync.com,
+Targeting Cookies,banner,OneTrust,,www.facebook.com,,,,Session,,,,,"Declared, not set",www.facebook.com,"This domain is owned by Facebook, which is the world's largest social networking service. As a third party host provider, it mostly collects data on the interests of users via widgets such as the 'Like' button found on many websites. This is used to serve targeted advertising to its users when logged into its services. In 2014 it also started serving up behaviourally targeted advertising on other websites, similar to most dedicated online marketing companies."
+Targeting Cookies,banner,OneTrust,_kuid_,krxd.net,,,,179 days,,,,,"Declared, not set",krxd.net,Cookie used by NetworkAd.net for purpose of targeting.
+Targeting Cookies,banner,OneTrust,uuid2,adnxs.com,,,,89 days,,,,,"Declared, not set",adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Targeting Cookies,banner,OneTrust,anj,adnxs.com,,,,89 days,,,,,"Declared, not set",adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Targeting Cookies,banner,OneTrust,__kla_id,cdn.shopify.com,,,,729 days,,,,,"Declared, not set",cdn.shopify.com,NA
+Targeting Cookies,banner,OneTrust,tuuid,360yield.com,,,,89 days,,,,,"Declared, not set",360yield.com,"This domain is owned by Improve Digital, a company based in the Netherlands with offices in various EU locations. Improve Digital is itself majority owned by Swiss-based PubliGroupe. The company provides a technology platform to enable website owners to manage online third party advertising through their websites."
+Targeting Cookies,banner,OneTrust,umeh,360yield.com,,,,89 days,,,,,"Declared, not set",360yield.com,"This domain is owned by Improve Digital, a company based in the Netherlands with offices in various EU locations. Improve Digital is itself majority owned by Swiss-based PubliGroupe. The company provides a technology platform to enable website owners to manage online third party advertising through their websites."
+Targeting Cookies,banner,OneTrust,tuuid_lu,360yield.com,,,,89 days,,,,,"Declared, not set",360yield.com,"This domain is owned by Improve Digital, a company based in the Netherlands with offices in various EU locations. Improve Digital is itself majority owned by Swiss-based PubliGroupe. The company provides a technology platform to enable website owners to manage online third party advertising through their websites."
+Targeting Cookies,banner,OneTrust,um,360yield.com,,,,89 days,,,,,"Declared, not set",360yield.com,"This domain is owned by Improve Digital, a company based in the Netherlands with offices in various EU locations. Improve Digital is itself majority owned by Swiss-based PubliGroupe. The company provides a technology platform to enable website owners to manage online third party advertising through their websites."

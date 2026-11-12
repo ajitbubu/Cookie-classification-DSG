@@ -1,0 +1,151 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Necessary,banner,Cookiebot,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,,true,true,none,false,Declared & set,google.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,shure,.store.shure.com,/,First party,400.00 days,,true,true,none,false,Declared & set,store.shure.com,Pending
+Unclassified,none,,sessid,.store.shure.com,/,First party,400.00 days,,true,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,__cf_bm,.store.shure.com,/,First party,0.02 days,,true,true,none,true,Declared & set,affirm.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,__cflb,store.shure.com,/,First party,0.07 days,,true,true,none,false,Declared & set,captur3d.io,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,__cf_bm,.shure.com,/,First party,0.02 days,,true,true,none,true,Declared & set,affirm.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Marketing,banner,Cookiebot,YSC,.youtube.com,/,Third party,Session,Session,true,true,none,true,Declared & set,youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Unclassified,none,,VISITOR_PRIVACY_METADATA,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Necessary,banner,Cookiebot,__Host-next-auth.csrf-token,www.shure.com,/,First party,Session,Session,true,true,lax,false,Declared & set,www.shure.com,Ensures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.   
+Necessary,banner,Cookiebot,__Secure-next-auth.callback-url,www.shure.com,/,First party,Session,Session,true,true,lax,false,Declared & set,www.shure.com,Used in order to detect spam and improve the website's security. 
+Statistics,banner,Cookiebot,__wid,.shure.com,/,First party,0.00 days,,false,false,unspecified,false,Declared & set,com,Pending
+Statistics,banner,Cookiebot,sc_cid,.shure.com,/,First party,400.00 days,Session,false,true,none,false,Declared & set,redesign.prod.shureweb.eu,Pending
+Necessary,banner,Cookiebot,CookieConsent,www.shure.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,p.shure.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,__pr.1p5x,.shure.com,/,First party,30.00 days,,false,true,strict,false,Declared & set,shure.com,"used primarily for fraud prevention, authenticity, and to prevent duplicate product review submissions"
+Statistics,banner,Cookiebot,_ga,.shure.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,captur3d.io,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,_fbp,.shure.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,captur3d.io,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Marketing,banner,Cookiebot,__Secure-YNID,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Used to track user’s interaction with embedded content.
+Necessary,banner,Cookiebot,gtmSessionStart,www.shure.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,p.shure.com,Pending
+Necessary,banner,Cookiebot,gtmNamespaceDeclared,.shure.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,shure.com,Pending
+Marketing,banner,Cookiebot,_ttp,.tiktok.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,p.shure.com,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Marketing,banner,Cookiebot,sa-user-id,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,p.shure.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,p.shure.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,sa-user-id-v2,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,p.shure.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,p.shure.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Statistics,banner,Cookiebot,sa-user-id-v4,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,p.shure.com,Pending
+Statistics,banner,Cookiebot,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,p.shure.com,Pending
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,sa-user-id,www.shure.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,p.shure.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,sa-user-id-v2,www.shure.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,p.shure.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,sa-user-id-v3,www.shure.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,p.shure.com,Collects data on the user across websites - This data is used to make advertisement more relevant.
+Statistics,banner,Cookiebot,sa-user-id-v4,www.shure.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,p.shure.com,Pending
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,_tt_enable_cookie,.shure.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,p.shure.com,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Marketing,banner,Cookiebot,_ttp,.shure.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,p.shure.com,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Statistics,banner,Cookiebot,_clck,.shure.com,/,First party,365.00 days,,false,false,unspecified,false,Declared & set,shure.com,Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,linkedin.com,Used in order to detect spam and improve the website's security. 
+Preferences,banner,Cookiebot,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,linkedin.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,affirm.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Declared & set,doubleclick.net,Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,_sourcesStoreSession,.shure.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,shure.com,Pending
+Marketing,banner,Cookiebot,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Marketing,banner,Cookiebot,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Tracks the user’s interaction with the website’s search-bar-function. This data can be used to present the user with relevant products or services.     
+Statistics,banner,Cookiebot,_sourcesStoreFirst,.shure.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,shureweb.eu,Pending
+Statistics,banner,Cookiebot,_sourcesStoreLast,.shure.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,shureweb.eu,Pending
+Statistics,banner,Cookiebot,_sourcesStoreLastND,.shure.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,shureweb.eu,Pending
+Marketing,banner,Cookiebot,SM,.c.clarity.ms,/,Third party,Session,Session,false,true,none,false,Declared & set,c.clarity.ms,Registers a unique ID that identifies the user's device during return visits across websites that use the same ad network. The ID is used to allow targeted ads.
+Marketing,banner,Cookiebot,MUID,.clarity.ms,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Marketing,banner,Cookiebot,MR,.c.clarity.ms,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Declared & set,c.clarity.ms,Registers data on visitors from multiple visits and on multiple websites. This information is used to measure the efficiency of advertisement on websites.  
+Necessary,banner,Cookiebot,cf_clearance,.locally.com,/,Third party,365.00 days,,true,true,none,true,Declared & set,captur3d.io,This cookie is used to distinguish between humans and bots. 
+Unclassified,none,,smcx_435708074_last_shown_at,www.shure.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Necessary,banner,Cookiebot,lg_session_v1,.locally.com,/,Third party,0.08 days,,true,true,none,false,Declared & set,locally.com,Pending
+Marketing,banner,Cookiebot,_rdt_uuid,.shure.com,/,First party,90.00 days,,false,true,strict,false,Declared & set,p.shure.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Statistics,banner,Cookiebot,_clsk,.shure.com,/,First party,1.00 days,Session,false,false,unspecified,false,Declared & set,p.shure.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Marketing,banner,Cookiebot,ttcsid,.shure.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,p.shure.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,ttcsid_CNOT2QBC77UE2ERGCVH0,.shure.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,p.shure.com,Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. 
+Statistics,banner,Cookiebot,_ga_DB3CR9SF0C,.shure.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,captur3d.io,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,_gcl_au,.shure.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,captur3d.io,"Used to measure the efficiency of the website’s advertisement efforts, by collecting data on the conversion rate of the website’s ads across multiple websites."
+Necessary,banner,Cookiebot,forterToken,.shure.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,com,Used to ensure website security and fraud detection.
+Necessary,banner,Cookiebot,_cfuvid,affirm.com,,,,Session,,,,,"Declared, not set",affirm.com,"This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators. "
+Necessary,banner,Cookiebot,checkout_continuity_service,affirm.com,,,,,,,,,"Declared, not set",affirm.com,Pending
+Necessary,banner,Cookiebot,t_v2_s,affirm.com,,,,,,,,,"Declared, not set",affirm.com,Necessary for the website’s payment-plan-function upon checking out.
+Necessary,banner,Cookiebot,AWSALB,api-sync-redesign.prod.shureweb.eu,,,,,,,,,"Declared, not set",api-sync-redesign.prod.shureweb.eu,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,AWSALBCORS,api-sync-redesign.prod.shureweb.eu,,,,,,,,,"Declared, not set",api-sync-redesign.prod.shureweb.eu,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,_bugherd_session5,bugherd.com,,,,,,,,,"Declared, not set",bugherd.com,Pending
+Necessary,banner,Cookiebot,captur3d_webapp_session,captur3d.io,,,,Session,,,,,"Declared, not set",captur3d.io,Pending
+Necessary,banner,Cookiebot,forterSId,cb0d19097525.cdn4.forter.com,,,,,,,,,"Declared, not set",cb0d19097525.cdn4.forter.com,Pending
+Necessary,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.
+Necessary,banner,Cookiebot,GCLB,features.affirm.com,,,,Session,,,,,"Declared, not set",features.affirm.com,"This cookie is used in context with load balancing - This optimizes the response rate between the visitor and the site, by distributing the traffic load on multiple network links or servers.  "
+Necessary,banner,Cookiebot,PHPSESSID,formstack.com,,,,Session,,,,,"Declared, not set",formstack.com,Preserves user session state across page requests.
+Necessary,banner,Cookiebot,io_token_#,iesnare.com,,,,,,,,,"Declared, not set",iesnare.com,Used by the website to detect any fraud and ensure brand safety management on the website.  
+Necessary,banner,Cookiebot,li_gc,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,pi_opt_in#,p.shure.com,,,,,,,,,"Declared, not set",p.shure.com,"Identifies if the visitor has deselected any cookies, trackers or other audience targeting tools."
+Necessary,banner,Cookiebot,cookietest,redesign.prod.shureweb.eu,,,,Session,,,,,"Declared, not set",redesign.prod.shureweb.eu,This cookie is used to determine if the visitor has accepted the cookie consent box.
+Necessary,banner,Cookiebot,__pr.w2rgof,shure.com,,,,,,,,,"Declared, not set",shure.com,"The pr.w2r cookie is used by Piwik PRO as part of its analytics/consent management suite. It is specifically related to managing user consent, often acting as a tracker to record whether a user has accepted or rejected specific cookie categories (functional, analytics, marketing)."
+Necessary,banner,Cookiebot,didomi_token,shure.com,,,,,,,,,"Declared, not set",shure.com,"This opt-out cookie identifies if the visitor has deselected any cookies, trackers or other audience targeting tools."
+Necessary,banner,Cookiebot,euconsent-v2,shure.com,,,,Session,,,,,"Declared, not set",shure.com,Determines whether the visitor has accepted the cookie consent box. This ensures that the cookie consent box will not be presented again upon re-entry.  
+Necessary,banner,Cookiebot,datadome,soundcloud.com,,,,Session,,,,,"Declared, not set",soundcloud.com,"Used in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website."
+Necessary,banner,Cookiebot,sc_anonymous_id,soundcloud.com,,,,,,,,,"Declared, not set",soundcloud.com,Used in context with the 3D-view-function on the website.
+Necessary,banner,Cookiebot,SESS#,store.shure.com,,,,,,,,,"Declared, not set",store.shure.com,Preserves users states across page requests.
+Necessary,banner,Cookiebot,axp-override,www.affirm.com,,,,Session,,,,,"Declared, not set",www.affirm.com,Pending
+Necessary,banner,Cookiebot,_ShureWebsite_cart_de-DE,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,Pending
+Necessary,banner,Cookiebot,_ShureWebsite_cart_en-EU,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,used by Shure's website to remember items in your online shopping cart
+Necessary,banner,Cookiebot,_ShureWebsite_cart_en-GB,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,Pending
+Necessary,banner,Cookiebot,_ShureWebsite_cart_en-IN,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,Pending
+Necessary,banner,Cookiebot,_ShureWebsite_cart_en-US,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,used by Shure's website to remember items in your online shopping cart
+Necessary,banner,Cookiebot,_ShureWebsite_cart_es-ES,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,Pending
+Necessary,banner,Cookiebot,_ShureWebsite_cart_es-MX,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,used by Shure's website to remember items in your online shopping cart
+Necessary,banner,Cookiebot,_ShureWebsite_cart_fr-BE,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,used by Shure's website to remember items in your online shopping cart
+Necessary,banner,Cookiebot,_ShureWebsite_cart_fr-CH,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,used by Shure's website to remember items in your online shopping cart
+Necessary,banner,Cookiebot,_ShureWebsite_cart_fr-FR,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,used by Shure's website to remember items in your online shopping cart
+Necessary,banner,Cookiebot,_ShureWebsite_cart_it-IT,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,used by Shure's website to remember items in your online shopping cart
+Necessary,banner,Cookiebot,_ShureWebsite_cart_ja-JP,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,used by Shure's website to remember items in your online shopping cart
+Necessary,banner,Cookiebot,_ShureWebsite_cart_nl-BE,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,used by Shure's website to remember items in your online shopping cart
+Necessary,banner,Cookiebot,_ShureWebsite_cart_nl-NL,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,used by Shure's website to remember items in your online shopping cart
+Necessary,banner,Cookiebot,_ShureWebsite_cart_pl-PL,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,used by Shure's website to remember items in your online shopping cart
+Necessary,banner,Cookiebot,_ShureWebsite_cart_pt-BR,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,used by Shure's website to remember items in your online shopping cart
+Preferences,banner,Cookiebot,_ShureWebsite_cart_en-xa,shure.com,,,,Session,,,,,"Declared, not set",shure.com,Pending
+Preferences,banner,Cookiebot,_ShureWebsite_cart_en-xm,shure.com,,,,Session,,,,,"Declared, not set",shure.com,Pending
+Preferences,banner,Cookiebot,_ShureWebsite_cart_es-xl,shure.com,,,,Session,,,,,"Declared, not set",shure.com,Pending
+Preferences,banner,Cookiebot,_ShureWebsite_cart_de-CH,www.shure.com,,,,,,,,,"Declared, not set",www.shure.com,Pending
+Statistics,banner,Cookiebot,3060738.3440491,affirm.com,,,,,,,,,"Declared, not set",affirm.com,Necessary for the website’s payment-plan-function upon checking out.
+Statistics,banner,Cookiebot,BAIDUID_BFESS,baidu.com,,,,,,,,,"Declared, not set",baidu.com,Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+Statistics,banner,Cookiebot,dd_cookie_test_#,formstack.com,,,,,,,,,"Declared, not set",formstack.com,Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization. 
+Statistics,banner,Cookiebot,_yjsu_yjad,shure.com,,,,,,,,,"Declared, not set",shure.com,Pending
+Statistics,banner,Cookiebot,FPID,shure.com,,,,,,,,,"Declared, not set",shure.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,FPLC,shure.com,,,,,,,,,"Declared, not set",shure.com,Registers a unique ID that is used to generate statistical data on how the visitor uses the website.
+Statistics,banner,Cookiebot,vercel-experiment-uuid,vercel.live,,,,Session,,,,,"Declared, not set",vercel.live,Pending
+Statistics,banner,Cookiebot,xlly_s,youku.com,,,,,,,,,"Declared, not set",youku.com,Collects data on visitor interaction with the website's video-content. This data is used to make the website's video-content more relevant towards the visitor.  
+Marketing,banner,Cookiebot,ad-id,amazon-adsystem.com,,,,,,,,,"Declared, not set",amazon-adsystem.com,Used by Amazon Advertising to register user actions and target content on the website based on ad clicks on a different website.
+Marketing,banner,Cookiebot,ad-privacy,amazon-adsystem.com,,,,,,,,,"Declared, not set",amazon-adsystem.com,Used by Amazon Advertising to register user actions and target content on the website based on ad clicks on a different website.
+Marketing,banner,Cookiebot,ab_sr,baidu.com,,,,Session,,,,,"Declared, not set",baidu.com,Pending
+Marketing,banner,Cookiebot,BAIDUID,baidu.com,,,,,,,,,"Declared, not set",baidu.com,This cookie is used in context with the Baidu -Map integration on the website. The cookie is necessary for some map-features.
+Marketing,banner,Cookiebot,ab_bid,miao.baidu.com,,,,Session,,,,,"Declared, not set",miao.baidu.com,Pending
+Marketing,banner,Cookiebot,ab_jid,miao.baidu.com,,,,Session,,,,,"Declared, not set",miao.baidu.com,Pending
+Marketing,banner,Cookiebot,ab_jid_BFESS,miao.baidu.com,,,,Session,,,,,"Declared, not set",miao.baidu.com,Pending
+Marketing,banner,Cookiebot,atpsida,mmstat.com,,,,Session,,,,,"Declared, not set",mmstat.com,Registers a unique ID that identifies the user's device during return visits. Used for conversion tracking and to measure the efficacy of online ads.
+Marketing,banner,Cookiebot,cna,mmstat.com,,,,,,,,,"Declared, not set",mmstat.com,"Presents the user with relevant content and advertisement. The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Marketing,banner,Cookiebot,sca,mmstat.com,,,,Session,,,,,"Declared, not set",mmstat.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,pardot,p.shure.com,,,,Session,,,,,"Declared, not set",p.shure.com,"Used in context with Account-Based-Marketing (ABM). The cookie registers data such as IP-addresses, time spent on the website and page requests for the visit. This is used for retargeting of multiple users rooting from the same IP-addresses. ABM usually facilitates B2B marketing purposes."
+Marketing,banner,Cookiebot,sa-r-date,p.shure.com,,,,,,,,,"Declared, not set",p.shure.com,Pending
+Marketing,banner,Cookiebot,sa-r-source,p.shure.com,,,,,,,,,"Declared, not set",p.shure.com,Pending
+Marketing,banner,Cookiebot,visitor_id#,p.shure.com,,,,,,,,,"Declared, not set",p.shure.com,"Used in context with Account-Based-Marketing (ABM). The cookie registers data such as IP-addresses, time spent on the website and page requests for the visit. This is used for retargeting of multiple users rooting from the same IP-addresses. ABM usually facilitates B2B marketing purposes."
+Marketing,banner,Cookiebot,__arpvid,player.youku.com,,,,Session,,,,,"Declared, not set",player.youku.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__ayft,player.youku.com,,,,Session,,,,,"Declared, not set",player.youku.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__aypstp,player.youku.com,,,,Session,,,,,"Declared, not set",player.youku.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__ayscnt,player.youku.com,,,,Session,,,,,"Declared, not set",player.youku.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__aysid,player.youku.com,,,,,,,,,"Declared, not set",player.youku.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__ayspstp,player.youku.com,,,,,,,,,"Declared, not set",player.youku.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__ysuid,player.youku.com,,,,,,,,,"Declared, not set",player.youku.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,smcx_#_last_shown_at,redesign.prod.shureweb.eu,,,,Session,,,,,"Declared, not set",redesign.prod.shureweb.eu,Pending
+Marketing,banner,Cookiebot,__pr.1qhe,shure.com,,,,,,,,,"Declared, not set",shure.com,Pending
+Marketing,banner,Cookiebot,sc_cid_personalize,shure-redesign.vercel.app,,,,,,,,,"Declared, not set",shure-redesign.vercel.app,Pending
+Marketing,banner,Cookiebot,dd_testcookie,soundcloud.com,,,,Session,,,,,"Declared, not set",soundcloud.com,Pending
+Marketing,banner,Cookiebot,parent_click_id,store.shure.com,,,,,,,,,"Declared, not set",store.shure.com,Pending
+Marketing,banner,Cookiebot,__cf_ob,vimeo.com,,,,Session,,,,,"Declared, not set",vimeo.com,Pending
+Marketing,banner,Cookiebot,isg,youku.com,,,,,,,,,"Declared, not set",youku.com,"Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates real-time bidding for advertisers."
+Marketing,banner,Cookiebot,tfstk,youku.com,,,,,,,,,"Declared, not set",youku.com,Necessary for the implementation of video-content on the website.
+Marketing,banner,Cookiebot,__Secure-BUCKET,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Pending
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.

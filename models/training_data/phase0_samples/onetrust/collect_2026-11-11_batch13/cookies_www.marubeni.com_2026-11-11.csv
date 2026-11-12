@@ -1,0 +1,13 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,AKA_A2,.marubeni.com,/,First party,0.04 days,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,_gid,.marubeni.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_gat_UA-40706437-1,.marubeni.com,/,First party,0.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_gcl_au,.marubeni.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__cflb,privacyportal-au.onetrust.com,/,Third party,0.02 days,,true,true,none,false,Not declared,,
+Unclassified,none,,AWSALB,www.marubeni.com,/,First party,7.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,AWSALBCORS,www.marubeni.com,/,First party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,RT,.marubeni.com,/,First party,7.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_B6Y793ZF43,.marubeni.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga,.marubeni.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,OptanonConsent,.marubeni.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_ga_Q4HYZ0M3X5,.marubeni.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,

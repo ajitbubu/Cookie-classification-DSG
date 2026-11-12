@@ -1,0 +1,281 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,amzn-checkout-session,www.lovesac.com,/quotes/guest,First party,Session,,false,true,lax,false,Not declared,,
+Unclassified,none,,mage-banners-cache-storage,www.lovesac.com,/quotes/guest,First party,Session,,false,true,lax,false,Not declared,,
+Performance & Functionality,banner,Securiti,BCSessionID,j730.lovesac.com,/DG/DEFAULT,First party,400.00 days,Session,false,true,none,false,Declared & set,www.lovesac.com,Unique identifier for the BlueConic profile.
+Performance & Functionality,banner,Securiti,BCSessionID,lovesac.blueconic.net,/DG/DEFAULT,Third party,400.00 days,Session,true,true,none,false,Declared & set,lovesac.blueconic.net,Unique identifier for the BlueConic profile.
+Unclassified,none,,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_li_ss,i.liadm.com,/s,Third party,30.00 days,,false,true,none,false,Not declared,,
+Essential,banner,Securiti,xtl_bid,.share.lovesac.com,/,First party,365.00 days,Session,true,true,none,false,Declared & set,share.lovesac.com,Browser Identifier used for Fraud Prevention.
+Advertising,banner,Securiti,extole_token,.share.lovesac.com,/,First party,365.00 days,Session,true,true,none,false,Declared & set,share.lovesac.com,This cookie is unique identifiers that reference user session data stored on the server.
+Advertising,banner,Securiti,_ttp,.tiktok.com,/,Third party,390.00 days,Session,false,true,none,false,Declared & set,tiktok.com,This cookie is used to measure and improve the performance of your advertising campaigns and to personalize the user's experience on site.
+Essential,banner,Securiti,__cf_bm,.lightboxcdn.com,/,Third party,0.02 days,Session,true,true,none,true,Declared & set,lightboxcdn.com,This cookie is used as on-end user devices that access customer sites that are protected by bot management or bot fight mode.
+Unclassified,none,,_sfid_8192,.www.lovesac.com,/,First party,400.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Advertising,banner,Securiti,MUID,.bing.com,/,Third party,390.00 days,Session,false,true,none,false,Declared & set,bing.com,Bing MSN Yahoo Advertising
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Advertising,banner,Securiti,_tt_enable_cookie,.lovesac.com,/,First party,390.00 days,Session,false,false,unspecified,false,Declared & set,lovesac.com,This cookie is used to measure and improve the performance of the advertising campaigns and to personalize the user's experience (including ads).
+Advertising,banner,Securiti,_ttp,.lovesac.com,/,First party,390.00 days,Session,false,false,unspecified,false,Declared & set,lovesac.com,This cookie is used to measure and improve the performance of your advertising campaigns and to personalize the user's experience on site.
+Advertising,banner,Securiti,uid,.criteo.com,/,Third party,390.00 days,Session,false,true,none,false,Declared & set,criteo.com,AddThis is used to give visitors the possibility to recommend OUshop content in social networks such as Facebook and Twitter.
+Essential,banner,Securiti,cjConsent,.lovesac.com,/,First party,395.00 days,Session,false,true,unspecified,false,Declared & set,lovesac.com,This cookie is used to manage user consent for tracking and cookie banner display settings.
+Performance & Functionality,banner,Securiti,cjUser,.lovesac.com,/,First party,395.00 days,Session,false,true,unspecified,false,Declared & set,lovesac.com,"This cookie stores the unique identifier of this customer, which will be used for the allocation."
+Advertising,banner,Securiti,_fbp,.lovesac.com,/,First party,90.00 days,Session,false,false,unspecified,false,Declared & set,lovesac.com,Advertising cookie set to display targeted promotions/advertisements based on your interests and interactions with our website and other websites across the web.
+Advertising,banner,Securiti,zync-uuid,.rezync.com,/,Third party,390.00 days,Session,false,true,none,false,Declared & set,rezync.com,The purpose of the cookie is to serve visitors with relevant advertisement.
+Essential,banner,Securiti,__privaci_cookie_consent_uuid,www.lovesac.com,/,First party,365.00 days,365.0 days,false,true,none,false,Declared & set,lovesac.com,SECURITI.ai cookies are required to support core functionality of the SECURITI.ai consent solution. The cookies help maintain and honor consent preferences submitted by the user.
+Essential,banner,Securiti,__privaci_cookie_consent_generated,www.lovesac.com,/,First party,365.00 days,365.0 days,false,true,none,false,Declared & set,lovesac.com,SECURITI.ai cookies are required to support core functionality of the SECURITI.ai consent solution. The cookies help maintain and honor consent preferences submitted by the user.
+Advertising,banner,Securiti,smartDash,.lovesac.com,/,First party,60.00 days,Session,false,true,lax,false,Declared & set,lovesac.com,This cookie used by those companies to build a profile of your interests and show you relevant adverts on other sites.
+Advertising,banner,Securiti,fr,.facebook.com,/,Third party,90.00 days,Session,true,true,none,false,Declared & set,facebook.com,Ads targeting cookie for Facebook
+Essential,banner,Securiti,BVBRANDID,.lovesac.com,/,First party,365.00 days,Session,false,true,lax,false,Declared & set,lovesac.com,This cookie allows internal web analytics to be correlated to the same user for interactions within a particular client domain.
+Essential,banner,Securiti,BVBRANDSID,.lovesac.com,/,First party,0.02 days,Session,false,true,lax,false,Declared & set,lovesac.com,This cookie allows internal web analytics to be correlated to the same user browsing session for interactions within a particular client domain.
+Performance & Functionality,banner,Securiti,kampyle_userid,www.lovesac.com,/,First party,365.00 days,Session,false,true,none,false,Declared & set,resources.digital-cloud-west.medallia.com,This cookie stores UUID for identifying a user.
+Advertising,banner,Securiti,__attentive_id,.lovesac.com,/,First party,390.00 days,Session,false,true,unspecified,false,Declared & set,www.lovesac.com,"These cookies are used for targeting, optimization, reporting and attribution of text message marketing"
+Performance & Functionality,banner,Securiti,__attentive_session_id,.lovesac.com,/,First party,0.02 days,Session,false,true,unspecified,false,Declared & set,lovesac.com,"This cookie is used to serve as a session identification cookie for SMS and email marketing, maintaining continuity during a user’s visit."
+Advertising,banner,Securiti,_attn_,.lovesac.com,/,First party,390.00 days,Session,false,true,strict,false,Declared & set,lovesac.com,This cookie is used to track campaign engagement and order/offer conversions and values.
+Advertising,banner,Securiti,__attentive_cco,.lovesac.com,/,First party,390.00 days,Session,false,true,unspecified,false,Declared & set,lovesac.com,This cookie is used to track campaign engagement and order/offer conversions and values.
+Advertising,banner,Securiti,TDID,.adsrvr.org,/,Third party,365.00 days,Session,false,true,none,false,Declared & set,adsrvr.org,"connects advertisers, marketers and agencies to our exclusive properties"
+Essential,banner,Securiti,QuantumMetricSessionID,.lovesac.com,/,First party,0.02 days,Session,false,true,none,false,Declared & set,lovesac.com,This cookie is used to store user details to ensure that the user is logged in.
+Performance & Functionality,banner,Securiti,QuantumMetricUserID,.lovesac.com,/,First party,365.00 days,Session,false,true,none,false,Declared & set,lovesac.com,This cookie is used to identify the user's account across requests and browsing sessions.
+Advertising,banner,Securiti,_bts,.lovesac.com,/,First party,0.04 days,Session,false,false,unspecified,false,Declared & set,lovesac.com,Cookies that track content for Newsletters and personalization
+Advertising,banner,Securiti,_li_dcdm_c,.lovesac.com,/,First party,Session,Session,false,false,lax,false,Declared & set,lovesac.com,The domain name where the cookie was stored.
+Advertising,banner,Securiti,_lc2_fpi,.lovesac.com,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,lovesac.com,"Registers user behaviour and navigation on the website, and any interaction with active campaigns. This is used for optimizing advertisement and for efficient retargeting."
+Advertising,banner,Securiti,_lc2_fpi_js,.lovesac.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,lovesac.com,"A random, unique, device identifier, stored as a 1st party cookie, to enable targeted advertising"
+Advertising,banner,Securiti,__attentive_ss_referrer,.lovesac.com,/,First party,0.02 days,Session,false,true,unspecified,false,Declared & set,www.lovesac.com,"These cookies are used for targeting, optimization, reporting and attribution of text message marketing"
+Advertising,banner,Securiti,_svsid,.lovesac.com,/,First party,365.00 days,Session,false,false,lax,false,Declared & set,lovesac.com,These cookies are used for marketing purposes to send you relevant mail for our products.
+Advertising,banner,Securiti,tfpsi,.lovesac.com,/,First party,0.02 days,Session,false,true,none,false,Declared & set,lovesac.com,This cookie may be set through our site by our advertising partners. This may be used by those companies to build a profile of your interests and show you relevant adverts on other sites
+Essential,banner,Securiti,__cf_bm,.attentivemobile.com,/,Third party,0.02 days,Session,true,true,none,true,Declared & set,affirm.com,This cookie is used as on-end user devices that access customer sites that are protected by bot management or bot fight mode.
+Advertising,banner,Securiti,__attentive_dv,.lovesac.com,/,First party,1.00 days,Session,false,true,unspecified,false,Declared & set,www.lovesac.com,"These cookies are used for targeting, optimization, reporting and attribution of text message marketing"
+Unclassified,none,,KADUSERCOOKIE,.pubmatic.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Essential,banner,Securiti,__privaci_latest_published_version,www.lovesac.com,/,First party,365.00 days,Session,false,true,none,false,Declared & set,lovesac.com,SECURITI.ai cookies are required to support core functionality of the SECURITI.ai consent solution. The cookies help maintain and honor consent preferences submitted by the user.
+Unclassified,none,,demdex,.demdex.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tt_viewer,.teads.tv,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Advertising,banner,Securiti,lidid,.liadm.com,/,Third party,400.00 days,Session,false,true,none,false,Declared & set,liadm.com,Collects data on visitors' behaviour and interaction - This is used to make advertisement on the website more relevant. The cookie also allows the website to detect any referrals from other websites.
+Unclassified,none,,tuuid,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,c,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,mCookie,.mediawallahscript.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mUserCookie,.mediawallahscript.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Advertising,banner,Securiti,_bti,.lovesac.com,/,First party,365.00 days,Session,false,false,unspecified,false,Declared & set,lovesac.com,Cookies that track content for Newsletters and personalization
+Unclassified,none,,dpm,.dpm.demdex.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tvid,.tremorhub.com,/,Third party,365.24 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tv_UICR,.tremorhub.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Analytics & Customization,banner,Securiti,_ga,.lovesac.com,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,lovesac.com,It is used for analytics tracking
+Essential,banner,Securiti,__privaci_cookie_consents,www.lovesac.com,/,First party,365.00 days,365.0 days,false,true,none,false,Declared & set,lovesac.com,SECURITI.ai cookies are required to support core functionality of the SECURITI.ai consent solution. The cookies help maintain and honor consent preferences submitted by the user.
+Unclassified,none,,tluid,.3lift.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,criteo,.tpmn.co.kr,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid,.360yield.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,criteo,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,am_tokens,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,am_tokens_invalidate-verizon-pushes,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.1rx.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Advertising,banner,Securiti,ab,.agkn.com,/,Third party,365.00 days,Session,false,true,none,false,Declared & set,agkn.com,"Collects data on user visits to the website, such as what pages have been accessed. The registered data is used to categorise the user interest and demographic profiles in terms of resales for targeted marketing."
+Unclassified,none,,visitor,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,status,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,criteo,.tpmn.io,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_rxuuid,.targeting.unrulymedia.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,visitor-id,.media.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,data-c,.media.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,v1_151,.revcontent.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,v2_151,.revcontent.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Advertising,banner,Securiti,id5,.id5-sync.com,/,Third party,90.00 days,69519.2 days,false,true,none,false,Declared & set,id5-sync.com,This cookie may be set through our site by our advertising partners. This may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.
+Unclassified,none,,addshoppers,app.shop.pe,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,addshoppers.com,app.shop.pe,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,addshoppers.com,www.lovesac.com,/,First party,400.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,ljt_reader,.lijit.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Essential,banner,Securiti,TiPMix,.api.lightboxcdn.com,/,Third party,0.04 days,Session,true,true,none,false,Declared & set,api.lightboxcdn.com,Used in Azure during deployments to pin a user session to a deployment slot.
+Essential,banner,Securiti,x-ms-routing-name,.api.lightboxcdn.com,/,Third party,0.04 days,Session,true,true,none,false,Declared & set,api.lightboxcdn.com,This cookie is used in Azure during deployments to route to deployment slots.
+Unclassified,none,,sa-user-id,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pid,.smartadserver.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TestIfCookieP,.smartadserver.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,csync,.smartadserver.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Advertising,banner,Securiti,mg,.adobedc.net,/,Third party,365.00 days,Session,false,true,none,false,Declared & set,adobedc.net,This tracker is to track user behaviour and personalize their experiences accordingly and gather information from you on your device to display advertisements to you based on relevant topics that interest you.
+Advertising,banner,Securiti,_svsidss,.lovesac.com,/,First party,365.00 days,Session,true,true,lax,false,Declared & set,lovesac.com,This cookie is used for marketing purposes to send you relevant mail for our products.
+Unclassified,none,,uuid,.mathtag.com,/,Third party,393.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,A3,.yahoo.com,/,Third party,365.25 days,,true,true,none,false,Not declared,,
+Performance & Functionality,banner,Securiti,BCSessionID,www.lovesac.com,/,First party,Session,Session,false,true,unspecified,false,Declared & set,www.lovesac.com,Unique identifier for the BlueConic profile.
+Unclassified,none,,IDSYNC,.analytics.yahoo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bito,.bidr.io,/,Third party,394.79 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bitoIsSecure,.bidr.io,/,Third party,394.79 days,,false,true,none,false,Not declared,,
+Unclassified,none,,t_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,t_pt_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,vcnpxid,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxst,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Advertising,banner,Securiti,_pin_unauth,.lovesac.com,/,First party,365.00 days,Session,false,false,unspecified,false,Declared & set,lovesac.com,"This is a marketing cookie from Entrepreneur.com. Entrepreneur Magazine is a national business publication based in Irvine, California."
+Unclassified,none,,ver,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_3ci,.alcmpn.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Performance & Functionality,banner,Securiti,ABTastySession,.lovesac.com,/,First party,0.02 days,Session,false,false,lax,false,Declared & set,lovesac.com,Contains landing page URL. Also used to determine if new session.
+Performance & Functionality,banner,Securiti,extole_access_token,.www.lovesac.com,/,First party,365.00 days,Session,false,true,strict,false,Declared & set,www.lovesac.com,The cookie tracks referrals made through the site.
+Performance & Functionality,banner,Securiti,ABTasty,.lovesac.com,/,First party,395.00 days,Session,false,false,lax,false,Declared & set,lovesac.com,"Contains all the experiments data: visitor ID, campaignHistory, timestamp and account settings."
+Essential,banner,Securiti,AWSALBCORS,lovesac.blueconic.net,/,Third party,7.00 days,Session,false,true,none,false,Declared & set,lovesac.blueconic.net,This is an application load balance generator cookie with cross-origin resource sharing (CORS) requests.
+Essential,banner,Securiti,AWSALB,j730.lovesac.com,/,First party,7.00 days,Session,false,false,unspecified,false,Declared & set,j730.lovesac.com,This is an application load balance generator cookie.
+Essential,banner,Securiti,AWSALBCORS,j730.lovesac.com,/,First party,7.00 days,Session,false,true,none,false,Declared & set,j730.lovesac.com,This is an application load balance generator cookie with cross-origin resource sharing (CORS) requests.
+Advertising,banner,Securiti,form_key,www.lovesac.com,/,First party,1.00 days,Session,false,true,lax,false,Declared & set,www.lovesac.com,This is an advertising cookie from Magento Commerce. Magento is a modern cloud commerce platform with an open-source ecosystem.
+Unclassified,none,,mage-cache-storage,.www.lovesac.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,mage-cache-storage-section-invalidation,.www.lovesac.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Performance & Functionality,banner,Securiti,mage-cache-sessid,.www.lovesac.com,/,First party,30.00 days,Session,false,true,lax,false,Declared & set,www.lovesac.com,This cookie is necessary for the cache function.
+Unclassified,none,,recently_viewed_product,.www.lovesac.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,recently_viewed_product_previous,.www.lovesac.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,recently_compared_product,.www.lovesac.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,recently_compared_product_previous,.www.lovesac.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,product_data_storage,.www.lovesac.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Performance & Functionality,banner,Securiti,mage-messages,www.lovesac.com,/,First party,30.00 days,Session,false,true,strict,false,Declared & set,www.lovesac.com,This cookie is necessary for the cache function.
+Performance & Functionality,banner,Securiti,requestId,www.lovesac.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,www.lovesac.com,"This cookie is used to unique identify a specific user request, ensuring reliable communication between the client and server."
+Advertising,banner,Securiti,PHPSESSID,.www.lovesac.com,/,First party,30.00 days,Session,true,true,lax,false,Declared & set,www.lovesac.com,These cookies are set by Bing Ads to make advertising more engaging to users.
+Advertising,banner,Securiti,form_key,.www.lovesac.com,/,First party,30.00 days,Session,false,true,lax,false,Declared & set,www.lovesac.com,This is an advertising cookie from Magento Commerce. Magento is a modern cloud commerce platform with an open-source ecosystem.
+Analytics & Customization,banner,Securiti,wp_ga4_customerGroup,.www.lovesac.com,/,First party,365.00 days,Session,false,true,lax,false,Declared & set,www.lovesac.com,"This cookie allows us to count visits and traffic sources, so we can measure and improve the performance of our site."
+Unclassified,none,,_ga_EE9DYJBNV5,.lovesac.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Advertising,banner,Securiti,_gcl_au,.lovesac.com,/,First party,90.00 days,Session,false,false,unspecified,false,Declared & set,lovesac.com,These cookies may be set through our site by our advertising and other partners to personalize the content you see
+Advertising,banner,Securiti,sd-session-id,live.rezync.com,/,Third party,390.00 days,Session,true,true,none,false,Declared & set,live.rezync.com,It is used to limit the number of times you see an advertisement as well as help measure the effectiveness of the advertising campaigns.
+Advertising,banner,Securiti,_rdt_uuid,.lovesac.com,/,First party,90.00 days,Session,false,true,strict,false,Declared & set,www.lovesac.com,"This cookie collects data on the user's visits to the website, such as what pages have been loaded. The registered data is used for targeted ads."
+Advertising,banner,Securiti,_uetsid,.lovesac.com,/,First party,1.00 days,Session,false,false,unspecified,false,Declared & set,lovesac.com,"Collects data on visitor behavior from multiple websites, in order to present more relevant advertisement – This also allows the website to limit the number of times that they are shown the same advertisement."
+Advertising,banner,Securiti,_uetvid,.lovesac.com,/,First party,390.00 days,Session,false,false,unspecified,false,Declared & set,lovesac.com,"Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement."
+Advertising,banner,Securiti,cto_bundle,.lovesac.com,/,First party,395.42 days,Session,false,false,unspecified,false,Declared & set,lovesac.com,"Presents the user with relevant content and advertisement. The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Unclassified,none,,kampyleUserSession,www.lovesac.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,kampyleUserSessionsCount,www.lovesac.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,kampyleUserPercentile,www.lovesac.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,kampyleSessionPageCounter,www.lovesac.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Advertising,banner,Securiti,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,Session,false,true,none,false,Declared & set,ct.pinterest.com,This is an advertising cookie from Pinterest. Pinterest is a visual bookmarking tool for saving and discovering creative ideas.
+Unclassified,none,,SPugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid_lu,.360yield.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,data-c-ts,.media.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Advertising,banner,Securiti,__attentive_pv,.lovesac.com,/,First party,0.02 days,Session,false,true,unspecified,false,Declared & set,www.lovesac.com,"These cookies are used for targeting, optimization, reporting and attribution of text message marketing"
+Unclassified,none,,_cc_dc,.crwdcntrl.net,/,Third party,269.99 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_cc_id,.crwdcntrl.net,/,Third party,269.99 days,,false,true,none,false,Not declared,,
+Advertising,banner,Securiti,cto_bundle,.criteo.com,/,Third party,390.00 days,Session,false,true,none,true,Declared & set,criteo.com,"Presents the user with relevant content and advertisement. The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,anj,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Advertising,banner,Securiti,ttcsid,.lovesac.com,/,First party,390.00 days,Session,false,false,unspecified,false,Declared & set,lovesac.com,"Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant."
+Unclassified,none,,ttcsid_CBALQTJC77U73BSUO3QG,.lovesac.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,mRemnantVisitedCookie_d41d8cd98f00b204e9800998ecf8427e_11_2026,.mediawallahscript.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Analytics & Customization,banner,Securiti,pixlee_analytics_cookie_legacy,.lovesac.com,/,First party,30.00 days,Session,false,false,unspecified,false,Declared & set,lovesac.com,This cookie is used by the Pixlee analytics platform to track user interactions and analytics.
+Advertising,banner,Securiti,_rdt_pn,.lovesac.com,/,First party,90.00 days,Session,false,true,strict,false,Declared & set,lovesac.com,"This cookie is used for ad performance measurement, retargeting, and optimizing ad delivery across Reddit-supported ad networks."
+Essential,banner,Securiti,__lbxevents,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,
+Essential,banner,Securiti,__lbxcid,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,
+Essential,banner,Securiti,__bxprev,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,
+Essential,banner,Securiti,__bxcurr,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,
+Essential,banner,Securiti,__bxevents,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,
+Essential,banner,Securiti,JSESSIONID,nr-data.net,,,,Session,,,,,"Declared, not set",nr-data.net,JSESSIONID is a cookie in J2EE web application which is used in session tracking.
+Essential,banner,Securiti,t_v2_s,affirm.com,,,,Session,,,,,"Declared, not set",affirm.com,Necessary for the website’s payment-plan-function upon checking out.
+Essential,banner,Securiti,bv_metrics,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,Performance diagnostic events for less than 1/1000th of users.
+Essential,banner,Securiti,__privaci_cookie_no_action,lovesac.com,,,,1.0 days,,,,,"Declared, not set",lovesac.com,SECURITI.ai cookies are required to support core functionality of the SECURITI.ai consent solution. The cookies help maintain and honor consent preferences submitted by the user.
+Essential,banner,Securiti,PHPSESSID,lovesac.formstack.com,,,,Session,,,,,"Declared, not set",lovesac.formstack.com,"The PHPSESSID cookie is used to establish a user website session and to pass status data via a temporary cookie, which is commonly referred to as a session cookie."
+Essential,banner,Securiti,jebbit_session_id,jebbit.com,,,,Session,,,,,"Declared, not set",jebbit.com,"The session ID is a unique number a server assigns to requesting clients and track user activity, such as when user logged into website and close the website, the cookie ensures that the session won't get lost."
+Essential,banner,Securiti,_vapi*,syfpayments.com,,,,Session,,,,,"Declared, not set",syfpayments.com,This cookie contains a session identifier used to authenticate the user and deliver different APIs.
+Essential,banner,Securiti,GCLB,affirm.com,,,,Session,,,,,"Declared, not set",affirm.com,This cookie ensures that your subsequent requests with the same cookie will be directed to the same server.
+Essential,banner,Securiti,_xsrf,app.securiti.ai,,,,Session,,,,,"Declared, not set",app.securiti.ai,This cookie helps to prevent Cross-Site Request Forgery (CSRF) attacks.
+Essential,banner,Securiti,JSESSIONID,widgets.syfpayments.com,,,,Session,,,,,"Declared, not set",widgets.syfpayments.com,This cookie is to store a session identifier so that site can monitor session counts for an application.
+Essential,banner,Securiti,JSESSIONID,syfpayments.com,,,,Session,,,,,"Declared, not set",syfpayments.com,This cookie is to store a session identifier so that site can monitor session counts for an application.
+Essential,banner,Securiti,_abck,syfpayments.com,,,,Session,,,,,"Declared, not set",syfpayments.com,This cookie is used for security purpose.
+Essential,banner,Securiti,bm_sz,syfpayments.com,,,,Session,,,,,"Declared, not set",syfpayments.com,"This cookie is used in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website."
+Essential,banner,Securiti,bm_mi,syfpayments.com,,,,Session,,,,,"Declared, not set",syfpayments.com,This cookie is used to analyse traffic to determine if it is automated traffic generated by IT systems or a human user.
+Essential,banner,Securiti,jebbit_auth_token,jebbit.com,,,,Session,,,,,"Declared, not set",jebbit.com,This cookie is used to store and validate authentication tokens for secure access.
+Essential,banner,Securiti,_cfuvid,affirm.com,,,,Session,,,,,"Declared, not set",affirm.com,This is a Rate Limiting Rule cookie. This cookie is used to distinguish individual users who share the same IP address.
+Essential,banner,Securiti,AWSALB,lovesac.blueconic.net,,,,Session,,,,,"Declared, not set",lovesac.blueconic.net,This is an application load balance generator cookie.
+Analytics & Customization,banner,Securiti,wp_ga4_user_id,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization.
+Analytics & Customization,banner,Securiti,TEST_AMCV_COOKIE,tags.syf.com,,,,Session,,,,,"Declared, not set",tags.syf.com,Registers statistical data on users' behaviours on the website. Used for internal analytics by the website operator.
+Analytics & Customization,banner,Securiti,pixlee_analytics_cookie,lovesac.comsamesite=none,,,,Session,,,,,"Declared, not set",lovesac.comsamesite=none,This cookie is used by the Pixlee analytics platform to track user interactions and analytics.
+Analytics & Customization,banner,Securiti,_gd*,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,This cookie is used to distinguish users.
+Analytics & Customization,banner,Securiti,s_sess,widgets.syfpayments.com,,,,Session,,,,,"Declared, not set",widgets.syfpayments.com,This cookie is used to store temporary analytic information.
+Analytics & Customization,banner,Securiti,_ga,wufoo.com,,,,Session,,,,,"Declared, not set",wufoo.com,Used to distinguish users.
+Analytics & Customization,banner,Securiti,_ga,lovesacform.wufoo.com,,,,Session,,,,,"Declared, not set",lovesacform.wufoo.com,Used to distinguish users.
+Analytics & Customization,banner,Securiti,_sp_root_domain_test_*,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,Used to help monitor and improve site performance.
+Analytics & Customization,banner,Securiti,_ga_*,lovesac.com,,,,400.05 days,,,,,"Declared, not set",lovesac.com,Used to persist session state.
+Analytics & Customization,banner,Securiti,FPID,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,Used to write ads click IDs.
+Analytics & Customization,banner,Securiti,FPLC,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,Used to write ads click IDs.
+Advertising,banner,Securiti,MR*,bat.bing.com,,,,7.05 days,,,,,"Declared, not set",bat.bing.com,Analytics cookie that's used to pass user action information to the Bing advertising network.
+Advertising,banner,Securiti,com.adobe.alloy.getTld,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,"It allows for recording events into Adobe Experience Platform, syncing identities, personalizing content, and more."
+Advertising,banner,Securiti,NoCookie,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,Set when a user opts out of tracking or indicates that they are under the age of 13 (COPPA requirement).
+Advertising,banner,Securiti,criteo_write_test,dynamic.criteo.com,,,,Session,,,,,"Declared, not set",dynamic.criteo.com,"Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement."
+Advertising,banner,Securiti,ttcsid_*,lovesac.com,,,,390.11 days,,,,,"Declared, not set",lovesac.com,"Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant."
+Advertising,banner,Securiti,_li_dcdm_c,d-code.liadm.com,,,,Session,,,,,"Declared, not set",d-code.liadm.com,The domain name where the cookie was stored.
+Advertising,banner,Securiti,__lbxcid,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,This cookie can be set through our website by our advertising partners.
+Advertising,banner,Securiti,__bxevents,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,This cookie can be set through our website by our advertising partners.
+Advertising,banner,Securiti,__lbxevents,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,This cookie can be set through our website by our advertising partners.
+Advertising,banner,Securiti,__bxprev,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,This cookie can be set through our website by our advertising partners.
+Advertising,banner,Securiti,__bxcurr,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,This cookie can be set through our website by our advertising partners.
+Advertising,banner,Securiti,_fbp,connect.facebook.net,,,,Session,,,,,"Declared, not set",connect.facebook.net,This cookie identifies browsers for the purposes of providing advertising and site analytics services.
+Advertising,banner,Securiti,_rdt_em,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,This cookie is set by the Reddit Pixel to store event match information. It helps Reddit attribute website actions to advertising campaigns and optimize ad delivery.
+Advertising,banner,Securiti,wp_customerHash,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,This cookie is used to help target specific customer segments without exposing their personal information.
+Advertising,banner,Securiti,extole_domain_access_token,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,This cookie is used to manage referral and reward tracking for Extole marketing programs.
+Advertising,banner,Securiti,extole_domain_access_token,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,This cookie is used to manage referral and reward tracking for Extole marketing programs.
+Advertising,banner,Securiti,_tt_enable_cookie,analytics.tiktok.com,,,,Session,,,,,"Declared, not set",analytics.tiktok.com,This cookie is used to measure and improve the performance of the advertising campaigns and to personalize the user's experience (including ads).
+Advertising,banner,Securiti,_attn_,cdn.attn.tv,,,,Session,,,,,"Declared, not set",cdn.attn.tv,This cookie is used to track campaign engagement and order/offer conversions and values.
+Advertising,banner,Securiti,__attentive_id,cdn.attn.tv,,,,Session,,,,,"Declared, not set",cdn.attn.tv,This cookie is used to track campaign engagement and order/offer conversions and values.
+Advertising,banner,Securiti,__attentive_cco,cdn.attn.tv,,,,Session,,,,,"Declared, not set",cdn.attn.tv,This cookie is used to track campaign engagement and order/offer conversions and values.
+Advertising,banner,Securiti,cto_tld_test,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,This cookie may be set through our site by our advertising partners. It may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.
+Advertising,banner,Securiti,cto_tld_test,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,This cookie may be set through our site by our advertising partners. It may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.
+Advertising,banner,Securiti,smartDashLRX,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,This cookie used by those companies to build a profile of your interests and show you relevant adverts on other sites.
+Advertising,banner,Securiti,ep*,wufoo.com,,,,90.05 days,,,,,"Declared, not set",wufoo.com,"This is a lead generation cookie from Infinity Box, Wufoo. Infinity Box offers Wufoo, a web app that helps users create online forms."
+Advertising,banner,Securiti,__bxtest,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,This is a marketing cookie from Campaign Monitor. Campaign Monitor is an email marketing platform that allows marketers to take control of their email program.
+Advertising,banner,Securiti,__bxtest,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,This is a marketing cookie from Campaign Monitor. Campaign Monitor is an email marketing platform that allows marketers to take control of their email program.
+Advertising,banner,Securiti,xdibx,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,"This is an advertising cookie from Adweek. Adweek is the leading source of news for marketing, media and advertising professionals."
+Advertising,banner,Securiti,xdibx,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,"This is an advertising cookie from Adweek. Adweek is the leading source of news for marketing, media and advertising professionals."
+Advertising,banner,Securiti,private_content_version,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,This is an advertising cookie from Apollo Pharmacy. Apollo Pharmacy is an e-commerce company for pharmaceutical products.
+Advertising,banner,Securiti,signifyd-M2aHR0cHM6Ly93d3cubG92ZXNhYy5jb20v21159549,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,"This is an advertising cookie from Lovesac. Lovesac is the maker of Sactionals, the world's most adaptable couch."
+Advertising,banner,Securiti,wp_customerEmail,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,"This is an advertising cookie from Lovesac. Lovesac is the maker of Sactionals, the world's most adaptable couch."
+Advertising,banner,Securiti,dataservices_cart_id,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,"This is an advertising cookie from Lovesac. Lovesac is the maker of Sactionals, the world's most adaptable couch."
+Advertising,banner,Securiti,dataservices_customer_group,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,"This is an advertising cookie from Lovesac. Lovesac is the maker of Sactionals, the world's most adaptable couch."
+Advertising,banner,Securiti,dataservices_customer_id,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,"This is an advertising cookie from Lovesac. Lovesac is the maker of Sactionals, the world's most adaptable couch."
+Advertising,banner,Securiti,EmptyDataArr,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,"This is an advertising cookie from Lovesac. Lovesac is the maker of Sactionals, the world's most adaptable couch."
+Advertising,banner,Securiti,__VCAP_ID__,widgets.syfpayments.com,,,,Session,,,,,"Declared, not set",widgets.syfpayments.com,"This is an advertising tracker from Dillons. Dillons is a grocery supermarket chain based in Hutchinson, Kansas."
+Advertising,banner,Securiti,__bxcid,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,"This is an advertising tracker from Lovesac. Lovesac is the maker of Sactionals, the world's most adaptable couch."
+Advertising,banner,Securiti,__bxcid,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,"This is an advertising tracker from Lovesac. Lovesac is the maker of Sactionals, the world's most adaptable couch."
+Advertising,banner,Securiti,_ga_*,wufoo.com,,,,730.05 days,,,,,"Declared, not set",wufoo.com,This is an advertising tracker from Wufoo. Wufoo is an online form builder that helps users create and design online forms and process simple payments.
+Advertising,banner,Securiti,test_cookie,doubleclick.net,,,,Session,,,,,"Declared, not set",doubleclick.net,To measure the visitor's actions after they click through from an advert.
+Advertising,banner,Securiti,tfpvi,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,Used in context with video advertisement. The cookie limits the number of times a visitor is shown the same advertisement content.
+Advertising,banner,Securiti,cto_tld_test,dynamic.criteo.com,,,,Session,,,,,"Declared, not set",dynamic.criteo.com,Used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement
+Performance & Functionality,banner,Securiti,__lbxprev,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,
+Performance & Functionality,banner,Securiti,__lbxcurr,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,
+Performance & Functionality,banner,Securiti,__lbxcurr,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,
+Performance & Functionality,banner,Securiti,__lbxprev,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,
+Performance & Functionality,banner,Securiti,TEST_AMCV_COOKIE_WRITE,syfpayments.com,,,,Session,,,,,"Declared, not set",syfpayments.com,Determines whether the user has accepted the cookie consent box.
+Performance & Functionality,banner,Securiti,TEST_AMCV_COOKIE_WRITE,widgets.syfpayments.com,,,,Session,,,,,"Declared, not set",widgets.syfpayments.com,Determines whether the user has accepted the cookie consent box.
+Performance & Functionality,banner,Securiti,kampyleInvitePresented,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,Flag indicating whether an intercept was presented in the session.
+Performance & Functionality,banner,Securiti,_sp_id*,www.lovesac.com,,,,400.17 days,,,,,"Declared, not set",www.lovesac.com,Is used to track a user's interaction with your content. This cookie will have a UUID that is unique to your domain.
+Performance & Functionality,banner,Securiti,_sp_ses*,www.lovesac.com,,,,0.19 days,,,,,"Declared, not set",www.lovesac.com,Is used to track the session of the visitor
+Performance & Functionality,banner,Securiti,sp,analytics.gladly.com,,,,Session,,,,,"Declared, not set",analytics.gladly.com,Stores a server-side collector generated unique identifier for a user that is sent with all subsequent tracking event events. Can be used as a first party cookie is the collector is on the same domain as the site.
+Performance & Functionality,banner,Securiti,section_data_ids,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,"Stores customer-specific information related to shopper-initiated actions such as display wish list, checkout information, etc."
+Performance & Functionality,banner,Securiti,persistent_shopping_cart,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,Stores the key (ID) of persistent cart to make it possible to restore the cart for an anonymous shopper.
+Performance & Functionality,banner,Securiti,dd_cookie_test_*,www.datadoghq-browser-agent.com,,,,Session,,,,,"Declared, not set",www.datadoghq-browser-agent.com,Temporary cookie used to test for cookie support.
+Performance & Functionality,banner,Securiti,BCTempID,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,Temporary unique identifier for the BlueConic profile; removed after BCSessionID is created.
+Performance & Functionality,banner,Securiti,qm-rc,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,This cookie allows us to understand and improve how you use the site.
+Performance & Functionality,banner,Securiti,md_isSurveySubmittedInSession,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,This cookie checks true if any survey was submitted in session.
+Performance & Functionality,banner,Securiti,checkout_continuity_service,affirm.com,,,,Session,,,,,"Declared, not set",affirm.com,"This cookie helps in tracking whether a user has initiated the checkout process, abandoned their cart, or requires reminders for completing their purchase."
+Performance & Functionality,banner,Securiti,checkout_continuity_service,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,"This cookie helps in tracking whether a user has initiated the checkout process, abandoned their cart, or requires reminders for completing their purchase."
+Performance & Functionality,banner,Securiti,checkout_continuity_service,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,"This cookie helps in tracking whether a user has initiated the checkout process, abandoned their cart, or requires reminders for completing their purchase."
+Performance & Functionality,banner,Securiti,mdLogger,resources.digital-cloud-west.medallia.com,,,,Session,,,,,"Declared, not set",resources.digital-cloud-west.medallia.com,This cookie instructs the site code to add debug logs to the browser’s console.
+Performance & Functionality,banner,Securiti,cookietest,cdn1.affirm.com,,,,Session,,,,,"Declared, not set",cdn1.affirm.com,This cookie is used for testing purposes to evaluate cookie functionality and behavior on the website.
+Performance & Functionality,banner,Securiti,max-age,widgets.syfpayments.com,,,,Session,,,,,"Declared, not set",widgets.syfpayments.com,This cookie is used to manage expiration-related behaviours for other cookies or session components.
+Performance & Functionality,banner,Securiti,ak_bmsc,syfpayments.com,,,,Session,,,,,"Declared, not set",syfpayments.com,This cookie is used to optimize performance and to improve the user experience.
+Performance & Functionality,banner,Securiti,session,www.affirm.com,,,,Session,,,,,"Declared, not set",www.affirm.com,This cookie is used to preserve users states across page requests.
+Performance & Functionality,banner,Securiti,__attentive_session_id,cdn.attn.tv,,,,Session,,,,,"Declared, not set",cdn.attn.tv,"This cookie is used to serve as a session identification cookie for SMS and email marketing, maintaining continuity during a user’s visit."
+Performance & Functionality,banner,Securiti,utag_main,syfpayments.com,,,,Session,,,,,"Declared, not set",syfpayments.com,This cookie keeps track of the visitor session.
+Performance & Functionality,banner,Securiti,axp-override,affirm.com,,,,Session,,,,,"Declared, not set",affirm.com,This cookie stores override settings or data.
+Performance & Functionality,banner,Securiti,cjUser,mczbf.com,,,,Session,,,,,"Declared, not set",mczbf.com,"This cookie stores the unique identifier of this customer, which will be used for the allocation."
+Performance & Functionality,banner,Securiti,3060738.3440491,affirm.com,,,,Session,,,,,"Declared, not set",affirm.com,This cookie tracks when Affirm is loaded on the page / interactions.
+Performance & Functionality,banner,Securiti,checkout_continuity_service,cdn1.affirm.com,,,,Session,,,,,"Declared, not set",cdn1.affirm.com,This is a performance & functionality tracker from Affirm. Affirm is a financial technology services company that offers installment loans to consumers at the point of sale.
+Performance & Functionality,banner,Securiti,email,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,"This is a performance & functionality tracker from Lovesac. Lovesac is a company specializing in furniture products, particularly modular and customizable seating solutions. Lovesac is well-known for its flagship product, the Sactional, which is a modular sectional sofa that can be rearranged and customized to suit different living spaces and preferences."
+Performance & Functionality,banner,Securiti,_pin_aem,lovesac.com,,,,Session,,,,,"Declared, not set",lovesac.com,"This is a performance & functionality tracker from Lovesac. Lovesac is a company specializing in furniture products, particularly modular and customizable seating solutions. Lovesac is well-known for its flagship product, the Sactional, which is a modular sectional sofa that can be rearranged and customized to suit different living spaces and preferences."
+Performance & Functionality,banner,Securiti,X-Magento-Vary,www.lovesac.com,,,,Session,,,,,"Declared, not set",www.lovesac.com,X-Magento-Vary cookie is used to transfer context on the HTTP layer. HTTP proxies can be configured to calculate a unique identifier for cache based on the cookie and URL.

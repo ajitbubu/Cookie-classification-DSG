@@ -1,0 +1,116 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,JSESSIONID,www.american.edu,/,First party,Session,,true,true,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,CSRFTOKEN,www.american.edu,/,First party,Session,Session,false,true,none,false,Declared & set,www.american.edu,This cookie is associated with the Django web development platform for Python. It is designed to help protect a site against at particular type of software attack on web forms.
+Unclassified,none,,__cflb,www.american.edu,/,First party,0.02 days,,true,true,none,false,Not declared,,
+Unclassified,none,,cf_clearance,.american.edu,/,First party,365.00 days,,true,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,_gcl_au,.american.edu,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,american.edu,"Used by Google AdSense for experimenting with advertisement efficiency across websites using their services For more information about Google&#39;s processing of your personal data, please consult Google&#39;s <a href=""https://business.safety.google/privacy/"" rel=""nofollow"">Privacy &amp; Terms</a> site."
+Unclassified,none,,__Secure-YNID,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,YSC,.youtube.com,/,Third party,Session,,true,true,none,true,Not declared,,
+Unclassified,none,,__Secure-ROLLOUT_TOKEN,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,VISITOR_INFO1_LIVE,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,VISITOR_PRIVACY_METADATA,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,_scid,.american.edu,/,First party,395.00 days,395 days,false,false,lax,false,Declared & set,american.edu,"Cookie associated with Snapchat. Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates realtime bidding for advertisers."
+Functional Cookies,banner,OneTrust,_scid_r,.american.edu,/,First party,395.00 days,0 days,false,false,lax,false,Declared & set,american.edu,
+Performance Cookies,banner,OneTrust,nmstat,.american.edu,/,First party,400.00 days,399 days,false,false,lax,false,Declared & set,american.edu,This cookie name is associated with the website analytics service provided by SiteImprove.  It enables site owners to gather usage statistics about their websites.
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,sa-user-id,tags.srv.stackadapt.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,www.american.edu,"This cookie is typically associated with SnackTools, which is a suite of web applications for creating and sharing multimedia content. It is used to identify a user across sessions and track user activities."
+Functional Cookies,banner,OneTrust,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,www.american.edu,"This cookie is typically associated with SnackTools, which is a suite of web applications for creating and sharing multimedia content. It is used to identify a user across sessions and track user activities."
+Performance Cookies,banner,OneTrust,sa-user-id-v2,tags.srv.stackadapt.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,www.american.edu,This cookie is used to identify the user's session on the website and is often associated with analytics or personalization.
+Performance Cookies,banner,OneTrust,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,www.american.edu,This cookie is used to identify the user's session on the website and is often associated with analytics or personalization.
+Unclassified,none,,sa-user-id-v4,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_ttp,.tiktok.com,/,Third party,390.00 days,89 days,false,true,none,false,Declared & set,american.edu,"This cookie is typically associated with the use of Taptap Digital, a company specializing in digital advertising. It is used for tracking and ad personalization purposes."
+Unclassified,none,,yvrequiregdrp19,.youvisit.com,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,yvrequiregdrp19,.youvisit.com,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,yv_gpc,.youvisit.com,/,Third party,1.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,yv_gpc,.youvisit.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,PHPSESSID,.youvisit.com,/,Third party,Session,Session,true,true,none,false,Declared & set,catalog.american.edu,"PHP session cookie associated with embedded content from this domain.
+"
+Unclassified,none,,embed,.youvisit.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,embed,.youvisit.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ab,.agkn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,u,.agkn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,sc_at,.snapchat.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ad-id,.amazon-adsystem.com,/,Third party,231.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,barometric[cuid],.trkn.us,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_sctr,.american.edu,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga,.american.edu,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,american.edu,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google&#39;s more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners. For more information about Google&#39;s processing of your personal data, please consult Google&#39;s <a h"
+Functional Cookies,banner,OneTrust,sa-user-id,www.american.edu,/,First party,365.00 days,364 days,false,true,unspecified,false,Declared & set,www.american.edu,"This cookie is typically associated with SnackTools, which is a suite of web applications for creating and sharing multimedia content. It is used to identify a user across sessions and track user activities."
+Performance Cookies,banner,OneTrust,sa-user-id-v2,www.american.edu,/,First party,365.00 days,364 days,false,true,unspecified,false,Declared & set,www.american.edu,This cookie is used to identify the user's session on the website and is often associated with analytics or personalization.
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,www.american.edu,/,First party,365.00 days,364 days,false,true,unspecified,false,Declared & set,american.edu,This cookie is likely used to track user identity by assigning a unique user ID when the user engages with the website. It is commonly used for analytics and personalization of content.
+Unclassified,none,,sa-user-id-v4,www.american.edu,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,__spdt,www.american.edu,/,First party,365.00 days,,false,false,strict,false,Not declared,,
+Unclassified,none,,_tq_id.TV-4536726354-1.8458,www.american.edu,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_tt_enable_cookie,.american.edu,/,First party,390.00 days,89 days,false,false,unspecified,false,Declared & set,edu,This cookie name is associated with TikTok which is used to collect data about behavior and purchases on the website and to measure the effect of advertising. It is also used to track website activity to help optimize advertising efforts.
+Targeting Cookies,banner,OneTrust,_ttp,.american.edu,/,First party,390.00 days,89 days,false,false,unspecified,false,Declared & set,american.edu,"This cookie is typically associated with the use of Taptap Digital, a company specializing in digital advertising. It is used for tracking and ad personalization purposes."
+Unclassified,none,,_uetsid,.american.edu,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_clck,.american.edu,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SM,.c.clarity.ms,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,MUID,.clarity.ms,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.c.clarity.ms,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Not declared,,
+Unclassified,none,,OptanonAlertBoxClosed,.american.edu,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,OptanonConsent,.american.edu,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_uetvid,.american.edu,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_C0S1HH6F998V43B95V60,.american.edu,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_D2E9VD3C77U3NVKIUARG,.american.edu,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_fbp,.american.edu,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,american.edu,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Unclassified,none,,_clsk,.american.edu,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,mautic_device_id,start.chooseamericanu.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mtc_id,start.chooseamericanu.org,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,mtc_sid,start.chooseamericanu.org,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,mtc_id,www.american.edu,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,mtc_sid,www.american.edu,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,mautic_device_id,www.american.edu,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ssi,.sitescout.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_ssuma,.sitescout.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_cc_cc,.crwdcntrl.net,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,EE,.exelator.com,/,Third party,120.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ud,.exelator.com,/,Third party,120.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ttcsid,.american.edu,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga_0BGJ59EP8R,.american.edu,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,www.american.edu,NAUsed by Google Analytics to identify and track an individual session with your device.
+Performance Cookies,banner,OneTrust,_ga_L2B0YN4S81,.american.edu,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,www.american.edu,NAUsed by Google Analytics to identify and track an individual session with your device.
+Performance Cookies,banner,OneTrust,_ga_1R60WKC4PF,.american.edu,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,www.american.edu,NAUsed by Google Analytics to identify and track an individual session with your device.
+Strictly Necessary Cookies,banner,OneTrust,_dc_gtm_UA-xxxxxxxx,american.edu,,,,0 days,,,,,"Declared, not set",american.edu,"This cookie is associated with sites using Google Tag Manager to load other scripts and code into a page. Where it is used it may be regarded as Strictly Necessary as without it, other scripts may not function correctly. The end of the name is a unique number which is also an identifier for an associated Google Analytics account.This cookie is associated with sites using Google Tag Manager to load other scripts and code into a page.  Where it is used it may be regarded as Strictly Necessary as without it, other scripts may not function correctly. The end of the name is a unique number which is"
+Strictly Necessary Cookies,banner,OneTrust,ASLBSA,www.american.edu,,,,Session,,,,,"Declared, not set",www.american.edu,The ASLBSA cookie is a Microsoft Front Door Affinity Cookie that directs a browser to the appropriate server for a user's location.
+Strictly Necessary Cookies,banner,OneTrust,CFTOKEN,www.american.edu,,,,Session,,,,,"Declared, not set",www.american.edu,Cookie set by Adobe ColdFusion applications. Used in conjunction with CFID this cookie helps to uniquely identify a client device (browser) to enable the site to maintain user session variables.  How those are used are specific to the site. CFTOKEN contains a random number to identify the client.
+Strictly Necessary Cookies,banner,OneTrust,_ScCbts,american.edu,,,,6 days,,,,,"Declared, not set",american.edu,TS
+Strictly Necessary Cookies,banner,OneTrust,ASLBSACORS,www.american.edu,,,,Session,,,,,"Declared, not set",www.american.edu,The ASLBSACORS cookie is a Microsoft Front Door Affinity Cookie that helps route requests to the correct web app instance.
+Strictly Necessary Cookies,banner,OneTrust,CFID,www.american.edu,,,,Session,,,,,"Declared, not set",www.american.edu,Cookie set by Adobe ColdFusion applications. Used in conjunction with CFTOKEN this cookie helps to uniquely identify a client device (browser) to enable the site to maintain user session variables.  How those are used are specific to the site. CFID contains a sequential number to identify the client.
+Functional Cookies,banner,OneTrust,SPOTLIGHTSSEEN,www.american.edu,,,,29 days,,,,,"Declared, not set",www.american.edu,
+Functional Cookies,banner,OneTrust,AWSALBCORS,api-v2.alive5.com,,,,6 days,,,,,"Declared, not set",api-v2.alive5.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Functional Cookies,banner,OneTrust,AWSALB,api-v2.alive5.com,,,,6 days,,,,,"Declared, not set",api-v2.alive5.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Performance Cookies,banner,OneTrust,_gid,american.edu,,,,0 days,,,,,"Declared, not set",american.edu,"This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited. For more information about Google&#39;s processing of your personal data, please consult Google&#39;s <a href=""https://business.safety.google/privacy/"" rel=""nofollow"">Privacy &amp; Terms</a> site._gid"
+Performance Cookies,banner,OneTrust,_schn1,american.edu,,,,0 days,,,,,"Declared, not set",american.edu,
+Performance Cookies,banner,OneTrust,ADRUM_xxxx,catalog.american.edu,,,,0 days,,,,,"Declared, not set",catalog.american.edu,
+Performance Cookies,banner,OneTrust,_gat,american.edu,,,,0 days,,,,,"Declared, not set",american.edu,"This cookie name is associated with Google Universal Analytics, according to documentation it is used to throttle the request rate - limiting the collection of data on high traffic sites. It expires after 10 minutes."
+Targeting Cookies,banner,OneTrust,_gat_UA-,american.edu,,,,0 days,,,,,"Declared, not set",american.edu,This cookie name is associated with Google Analytics which is used to throttle the request rate to the Google Analytics service.Google Analytics Cookies

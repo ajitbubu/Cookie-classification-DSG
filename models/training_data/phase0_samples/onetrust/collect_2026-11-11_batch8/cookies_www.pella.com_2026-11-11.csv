@@ -1,0 +1,422 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Targeting Cookies,banner,OneTrust,_li_ss,i.liadm.com,/s,Third party,30.00 days,29 days,false,true,none,false,Declared & set,i.liadm.com,
+Strictly Necessary Cookies,banner,OneTrust,visid_incap_3249911,.pella.com,/,First party,364.15 days,365 days,true,false,unspecified,false,Declared & set,pella.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking certain sessions to a specific visitor (visitor representing a specific computer). In order to identify clients that have already visited Incapsula. The only cookie that is persistent for the duration of 12 months."
+Strictly Necessary Cookies,banner,OneTrust,incap_ses_159_3249911,.pella.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,www.pella.com,"This cookie name is associated with maintaining user's session state across page requests.Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Targeting Cookies,banner,OneTrust,cs-personalize-user-uid,www.pella.com,/,First party,365.00 days,364 days,false,true,lax,false,Declared & set,www.pella.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Strictly Necessary Cookies,banner,OneTrust,nlbi_3249911,.pella.com,/,First party,Session,Session,true,false,unspecified,false,Declared & set,pella.com,This cookie is used for load balancing to ensure that visitor page requests are routed to the same server in any browsing session.N/A
+Performance Cookies,banner,OneTrust,lux_uid,www.pella.com,/,First party,0.02 days,0 days,false,false,lax,false,Declared & set,www.pella.com,Speedcurve is a performance monitoring service
+Functional Cookies,banner,OneTrust,showTooltip,www.pella.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,www.pella.com,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.bzrcdn.openai.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,bzrcdn.openai.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots."
+Strictly Necessary Cookies,banner,OneTrust,_cfuvid,.bzrcdn.openai.com,/,Third party,Session,Session,true,true,none,false,Declared & set,bzrcdn.openai.com,"This domain is owned by OpenAI, Inc. which provides AI-powered services and APIs, including content delivery for AI applications."
+Strictly Necessary Cookies,banner,OneTrust,PELLAPRODUCT,.api.pella.com,/,First party,14.00 days,13 days,true,true,lax,false,Declared & set,api.pella.com,
+Strictly Necessary Cookies,banner,OneTrust,visid_incap_3283842,.pella.com,/,First party,364.15 days,365 days,true,false,unspecified,false,Declared & set,pella.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking certain sessions to a specific visitor (visitor representing a specific computer). In order to identify clients that have already visited Incapsula. The only cookie that is persistent for the duration of 12 months."
+Strictly Necessary Cookies,banner,OneTrust,incap_ses_159_3283842,.pella.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,www.pella.com,"This cookie name is associated with maintaining user's session state across page requests.Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Targeting Cookies,banner,OneTrust,seerses,.www.pella.com,/,First party,0.02 days,0 days,false,false,unspecified,false,Declared & set,www.pella.com,This cookie name is associated with Lytics which is used for identifying user.
+Targeting Cookies,banner,OneTrust,seerid,.www.pella.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,www.pella.com,"This cookie is typically associated with Quantcast, a digital advertising company. It is used for collecting anonymized data to analyze log data from different websites to create reports that enables the website owners and advertisers provide ads for the appropriate audience segments."
+Unclassified,none,,__obref,.pella.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,TDID,.adsrvr.org,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,adsrvr.org,This domain is owned by TheTradeDesk. The main business activity is: Ad Serving Platform
+Unclassified,none,,_switch_session_id,.pella.com,/,First party,7.00 days,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_ttp,.tiktok.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,tiktok.com,
+Unclassified,none,,barometric[cuid],.trkn.us,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,seerid,.lytics.io,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,lytics.io,Lytics is a customer data platform (CDP) that integrates data from various sources to create personalized marketing campaigns and customer interactions.
+Functional Cookies,banner,OneTrust,ajs_anonymous_id,.pella.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,www.pella.com,These cookies are generally used for Analytics and help count how many people visit a certain site by tracking if you have visited before. This cookie has a lifespan of 1 year.
+Strictly Necessary Cookies,banner,OneTrust,smartDash,.pella.com,/,First party,60.00 days,Session,false,true,lax,false,Declared & set,www.pella.com,"This cookie name is associated with GoPixel Solutions Australia which is used for technical purposes and, with user consent, for other purposes as specified in the cookie policy."
+Unclassified,none,,rstr_d,.pella.com,/,First party,29.79 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,DW,.insightexpressai.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,insightexpressai.com,"This domain is owned by Insight Express. The main business activity is: Market Research, Data Analytics, Advertising Effectiveness Measurement"
+Targeting Cookies,banner,OneTrust,DW_Time,.insightexpressai.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,insightexpressai.com,"This domain is owned by Insight Express. The main business activity is: Market Research, Data Analytics, Advertising Effectiveness Measurement"
+Targeting Cookies,banner,OneTrust,demdex,.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,demdex.net,"This cookie helps Adobe Audience Manger perform basic functions such as visitor identification, ID synchronization, segmentation, modeling, reporting, etc."
+Targeting Cookies,banner,OneTrust,li_sugr,.linkedin.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,linkedin.com,
+Unclassified,none,,arc_id,.mgln.ai,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,lidc,.linkedin.com,/,Third party,1.00 days,0 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,__cf_bm,.linkedin.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,linkedin.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots."
+Targeting Cookies,banner,OneTrust,uid,.turn.com,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,turn.com,This domain is owned by Turn. The main business activity is: Marketing and Data Management Platform provider
+Unclassified,none,,__adcloudiq,www.pella.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ndp_session_id,.pella.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,dpm,.dpm.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,dpm.demdex.net,This domain is owned by Adobe Audience Manager. The main business activity is online profiling for targeted marketing.
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__attentive_id,.pella.com,/,First party,390.00 days,,false,true,unspecified,false,"Declared, conflicting",,
+Strictly Necessary Cookies,banner,OneTrust,__attentive_session_id,.pella.com,/,First party,0.02 days,0 days,false,true,unspecified,false,Declared & set,pella.com,This cookie name is associated with cdn.attn.tv which is used to maintain session state across pages.
+Unclassified,none,,_attn_,.pella.com,/,First party,390.00 days,,false,true,strict,false,"Declared, conflicting",,
+Unclassified,none,,__attentive_cco,.pella.com,/,First party,390.00 days,,false,true,unspecified,false,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,399 days,true,true,none,false,Declared & set,amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Targeting Cookies,banner,OneTrust,RCID2,.reson8.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,reson8.com,"This domain is owned be Resonate Networks, a behavioural profiling company providing insights to marketers into consumers' values, attitudes and beliefs."
+Functional Cookies,banner,OneTrust,_pin_unauth,.pella.com,/,First party,365.00 days,Session,false,false,unspecified,false,Declared & set,www.pella.com,"This cookie is assocate with pinterest.  It is used to track the usage of services.
+"
+Targeting Cookies,banner,OneTrust,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,ad-id,.amazon-adsystem.com,/,Third party,231.00 days,217 days,true,true,none,false,Declared & set,amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Targeting Cookies,banner,OneTrust,_li_dcdm_c,.pella.com,/,First party,Session,Session,false,false,lax,false,Declared & set,www.pella.com,"This cookie is used by LinkedIn for targeting and advertising purposes, to deliver relevant ads to the user and to track the effectiveness of ad campaigns."
+Targeting Cookies,banner,OneTrust,_lc2_fpi,.pella.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,www.pella.com,"This cookie name is associated with LiveIntent which is used to enable targeted advertising by storing a random, unique, device identifier as a 1st party cookie."
+Targeting Cookies,banner,OneTrust,_lc2_fpi_js,.pella.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,www.pella.com,"This cookie name is associated with LiveIntent which is used to enable targeted advertising by storing a random, unique, device identifier as a 1st party cookie."
+Targeting Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,bat.bing.com,
+Targeting Cookies,banner,OneTrust,_svsid,.pella.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,pella.com,This cookie name is associated with merkle.com which is used for targeting purposes.
+Targeting Cookies,banner,OneTrust,cu,.ipredictive.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,ipredictive.com,"This domain is owned by Adelphic, a USA based company engaged in mobile and cross-device programmatic online advertising."
+Targeting Cookies,banner,OneTrust,__adroll,.d.adroll.com,/,Third party,395.00 days,394 days,true,true,none,false,Declared & set,d.adroll.com,This domain is owned by Adroll. The main business activity is:  Retargeting Advertising Platform
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.d.adroll.com,/,Third party,395.00 days,394 days,true,true,none,true,Declared & set,d.adroll.com,This domain is owned by Adroll. The main business activity is:  Retargeting Advertising Platform
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.adroll.com,/,Third party,395.00 days,394 days,true,true,none,true,Declared & set,d.adroll.com,This domain is owned by Adroll. The main business activity is:  Retargeting Advertising Platform
+Targeting Cookies,banner,OneTrust,__adroll_shared,.adroll.com,/,Third party,395.00 days,394 days,true,true,none,false,Declared & set,adroll.com,This domain is owned by Adroll. The main business activity is:  Retargeting Advertising Platform
+Unclassified,none,,_tt_enable_cookie,.pella.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_ttp,.pella.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,tiktok.com,
+Unclassified,none,,__attentive_ss_referrer,.pella.com,/,First party,0.02 days,,false,true,unspecified,false,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,__adroll_fpc,.pella.com,/,First party,365.25 days,365 days,false,false,lax,false,Declared & set,pella.com,This cookie is used to identify the visitor across visits and devices. It is used by real-time bidding for advertisers to present relevant advertisement.
+Targeting Cookies,banner,OneTrust,rlas3,.rlcdn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,rlcdn.com,
+Targeting Cookies,banner,OneTrust,audit_p,.rubiconproject.com,/,Third party,365.00 days,364 days,false,true,none,true,Declared & set,rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,khaos,.rubiconproject.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,khaos_p,.rubiconproject.com,/,Third party,365.00 days,364 days,false,true,none,true,Declared & set,rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,audit,.rubiconproject.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,lidid,.liadm.com,/,Third party,400.00 days,729 days,false,true,none,false,Declared & set,liadm.com,
+Functional Cookies,banner,OneTrust,CLID,www.clarity.ms,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,www.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics service that provides insights into user behavior on websites."
+Targeting Cookies,banner,OneTrust,bscookie,.www.linkedin.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,www.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,pxrc,.rlcdn.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,rlcdn.com,
+Unclassified,none,,__cf_bm,.attentivemobile.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,TapAd_TS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,
+Targeting Cookies,banner,OneTrust,TapAd_DID,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,
+Unclassified,none,,__attentive_dv,.pella.com,/,First party,1.00 days,,false,true,unspecified,false,"Declared, conflicting",,
+Performance Cookies,banner,OneTrust,_ga,.pella.com,/,First party,365.00 days,364 days,false,true,lax,false,Declared & set,pella.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,uuid2,.adnxs.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,adnxs.com,
+Targeting Cookies,banner,OneTrust,mako_uid,.eyeota.net,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,eyeota.net,
+Targeting Cookies,banner,OneTrust,SERVERID,.eyeota.net,/,Third party,0.01 days,0 days,true,true,none,false,Declared & set,eyeota.net,
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,399 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,pi,.ml314.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,ml314.com,
+Performance Cookies,banner,OneTrust,_clck,.pella.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,pella.com,"This cookie is related to Microsoft Clarity analytics service. It is used to collect information about how visitors interact with the website, which helps in creating reports and improving the site."
+Targeting Cookies,banner,OneTrust,anj,.adnxs.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,adnxs.com,
+Targeting Cookies,banner,OneTrust,pid,.smartadserver.com,/,Third party,90.00 days,393 days,false,true,none,false,Declared & set,smartadserver.com,
+Targeting Cookies,banner,OneTrust,TestIfCookieP,.smartadserver.com,/,Third party,395.00 days,393 days,false,true,none,false,Declared & set,smartadserver.com,
+Targeting Cookies,banner,OneTrust,csync,.smartadserver.com,/,Third party,30.00 days,365 days,false,true,none,false,Declared & set,smartadserver.com,
+Functional Cookies,banner,OneTrust,FPID,.pella.com,/,First party,400.00 days,729 days,true,true,unspecified,false,Declared & set,pella.com,
+Functional Cookies,banner,OneTrust,FPLC,.pella.com,/,First party,0.83 days,0 days,false,true,unspecified,false,Declared & set,pella.com,
+Unclassified,none,,FPAU,.pella.com,/,First party,90.00 days,,false,true,unspecified,false,Not declared,,
+Functional Cookies,banner,OneTrust,FPGSID,.pella.com,/,First party,0.02 days,0 days,false,true,strict,false,Declared & set,pella.com,
+Functional Cookies,banner,OneTrust,LocationLoaded,www.pella.com,/,First party,0.00 days,Session,false,false,unspecified,false,Declared & set,www.pella.com,
+Unclassified,none,,__cf_bm,.bzr.openai.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Unclassified,none,,_cfuvid,.bzr.openai.com,/,Third party,Session,,true,true,none,false,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,guid,.mountain.com,/,Third party,365.00 days,730 days,false,true,none,false,Declared & set,mountain.com,
+Targeting Cookies,banner,OneTrust,tt,.px.mountain.com,/,Third party,365.00 days,730 days,false,true,none,false,Declared & set,px.mountain.com,
+Targeting Cookies,banner,OneTrust,CMID,.casalemedia.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMPS,.casalemedia.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMPRO,.casalemedia.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,pubmatic.com,
+Targeting Cookies,banner,OneTrust,ab,.agkn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,agkn.com,
+Targeting Cookies,banner,OneTrust,acs,.media6degrees.com,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,media6degrees.com,
+Functional Cookies,banner,OneTrust,mt.v,.pella.com,/,First party,400.00 days,3649 days,false,false,lax,false,Declared & set,pella.com,
+Targeting Cookies,banner,OneTrust,IMRID,.imrworldwide.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,imrworldwide.com,
+Targeting Cookies,banner,OneTrust,tuuid,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,bidswitch.net,
+Targeting Cookies,banner,OneTrust,c,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,bidswitch.net,
+Targeting Cookies,banner,OneTrust,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,bidswitch.net,
+Targeting Cookies,banner,OneTrust,u,.agkn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,agkn.com,
+Targeting Cookies,banner,OneTrust,MR,.c.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,c.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,SRM_B,.c.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,c.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Functional Cookies,banner,OneTrust,ELOQUA,.pella.com,/,First party,395.00 days,395 days,false,true,unspecified,false,Declared & set,pella.com,"Eloqua Business Marketing platform - this cookie collects and transfers contact info from webforms to internal databases.
+"
+Functional Cookies,banner,OneTrust,SM,.c.clarity.ms,/,Third party,Session,Session,false,true,none,false,Declared & set,c.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics product that provides insights on user behavior and website performance."
+Functional Cookies,banner,OneTrust,MUID,.clarity.ms,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics service that provides insights into user behavior on websites."
+Functional Cookies,banner,OneTrust,MR,.c.clarity.ms,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,c.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics product that provides insights on user behavior and website performance."
+Functional Cookies,banner,OneTrust,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,0 days,false,true,none,false,Declared & set,c.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics product that provides insights on user behavior and website performance."
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.pella.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,pella.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust. It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down. It enables the website not to show the message more than once to a user. The cookie has a normal lifespan of one year and contains no personal information.
+Targeting Cookies,banner,OneTrust,_cq_duid,.pella.com,/,First party,91.25 days,91 days,false,true,none,false,Declared & set,pella.com,
+Strictly Necessary Cookies,banner,OneTrust,_cq_suid,.pella.com,/,First party,Session,Session,false,true,none,false,Declared & set,pella.com,
+Unclassified,none,,_cq_session,.pella.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,clid,.media6degrees.com,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,media6degrees.com,
+Targeting Cookies,banner,OneTrust,cs-lytics-audiences,www.pella.com,/,First party,7.00 days,6 days,false,false,unspecified,false,Declared & set,www.pella.com,"This cookie name is associated with Lytics which is used to synchronize a user's audience membership data and flow information to Contentstack's edge network for real-time, personalized web experiences."
+Targeting Cookies,banner,OneTrust,cs-lytics-flows,www.pella.com,/,First party,7.00 days,6 days,false,false,unspecified,false,Declared & set,www.pella.com,"This cookie name is associated with Lytics and Contentstack which is used to synchronize user flow membership data from Lytics to Contentstack, collect and transmit customer data for personalization and targeted marketing."
+Targeting Cookies,banner,OneTrust,SEUNCY,.semasio.net,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,semasio.net,
+Targeting Cookies,banner,OneTrust,_fbp,.pella.com,/,First party,90.00 days,364 days,false,false,unspecified,false,Declared & set,pella.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Unclassified,none,,cs-personalize-manifest,www.pella.com,/,First party,Session,,false,true,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,PugT,.pubmatic.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,pubmatic.com,
+Targeting Cookies,banner,OneTrust,EE,.exelator.com,/,Third party,120.00 days,119 days,false,true,none,false,Declared & set,exelator.com,
+Targeting Cookies,banner,OneTrust,ud,.exelator.com,/,Third party,120.00 days,119 days,false,true,none,false,Declared & set,exelator.com,
+Targeting Cookies,banner,OneTrust,rmuid,.linksynergy.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,linksynergy.com,
+Targeting Cookies,banner,OneTrust,sessionid,.rkdms.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,rkdms.com,
+Targeting Cookies,banner,OneTrust,tluid,.3lift.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,3lift.com,
+Targeting Cookies,banner,OneTrust,sc,.rkdms.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,rkdms.com,
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.dotomi.com,/,Third party,393.00 days,89 days,true,true,none,true,Declared & set,rubiconproject.com,
+Targeting Cookies,banner,OneTrust,to_master_s,.truoptik.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,truoptik.com,
+Targeting Cookies,banner,OneTrust,to_version_s,.truoptik.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,truoptik.com,
+Targeting Cookies,banner,OneTrust,io.narrative.guid.v2,io.narrative.io,/,Third party,400.00 days,547 days,false,true,none,false,Declared & set,io.narrative.io,
+Targeting Cookies,banner,OneTrust,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,
+Targeting Cookies,banner,OneTrust,UID,.scorecardresearch.com,/,Third party,390.00 days,719 days,false,true,none,false,Declared & set,scorecardresearch.com,
+Targeting Cookies,banner,OneTrust,XID,.scorecardresearch.com,/,Third party,390.00 days,389 days,false,true,none,true,Declared & set,scorecardresearch.com,This domain is owned by ScorecardResearch (comScore). The main business activity is: Advertising. The cookies in this domain have lifespans of 2 years.
+Unclassified,none,,DotomiUser,.dotomi.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,UP,.dotomi.com,/,Third party,393.00 days,,true,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,u,.ml314.com,/,Third party,0.00 days,0 days,false,true,none,false,Declared & set,ml314.com,
+Functional Cookies,banner,OneTrust,elfsight_viewed_recently,core.service.elfsight.com,/,Third party,0.00 days,0 days,true,true,none,false,Declared & set,core.service.elfsight.com,This domain is owned by Elfsight which provides website widgets for enhancing website functionality.
+Functional Cookies,banner,OneTrust,_cfuvid,.elfsight.com,/,Third party,Session,Session,true,true,none,false,Declared & set,elfsight.com,Elfsight provides customizable website widgets that enhance website functionality and user engagement.
+Targeting Cookies,banner,OneTrust,TID,.insightexpressai.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,insightexpressai.com,"This domain is owned by Insight Express. The main business activity is: Market Research, Data Analytics, Advertising Effectiveness Measurement"
+Performance Cookies,banner,OneTrust,_ga_8VM25ZX46N,.pella.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,pella.com,
+Performance Cookies,banner,OneTrust,_ga_GF4LFYGKJ1,.pella.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,pella.com,
+Targeting Cookies,banner,OneTrust,_rdt_uuid,.pella.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,www.pella.com,This cookie is set by Reddit and is used for tracking the views of embedded videos and performance of the advertisements.
+Functional Cookies,banner,OneTrust,_tq_id.TV-5454721836-1.ce45,www.pella.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,www.pella.com,_tq_id.TV
+Targeting Cookies,banner,OneTrust,TDCPM,.adsrvr.org,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,adsrvr.org,This domain is owned by TheTradeDesk. The main business activity is: Ad Serving Platform
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.pella.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,pella.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Functional Cookies,banner,OneTrust,_td,.pella.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,com,NA
+Targeting Cookies,banner,OneTrust,_uetsid,.pella.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,pella.com,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Performance Cookies,banner,OneTrust,_uetvid,.pella.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,www.pella.com,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Performance Cookies,banner,OneTrust,fs_lua,.pella.com,/,First party,0.02 days,Session,false,true,strict,false,Declared & set,www.pella.com,"This cookie name is associated with FullStory which is used to capture the timestamp of the last user action, assist with the FullStory session lifecycle, collect data on the user's navigation and behavior on the website, and compile statistical reports and heatmaps for the website owner."
+Performance Cookies,banner,OneTrust,fs_uid,.pella.com,/,First party,365.00 days,364 days,false,true,strict,false,Declared & set,pella.com,"This cookie is associated with FullStory, which is a tool that captures user interactions on a website for analytics and user experience improvement purposes."
+Unclassified,none,,__attentive_pv,.pella.com,/,First party,0.02 days,,false,true,unspecified,false,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,__ar_v4,.www.pella.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.pella.com,This cookie is associated with the DoubleClick advertising service from Google. Helps with tracking conversion rates for ads.
+Targeting Cookies,banner,OneTrust,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,ct.pinterest.com,
+Strictly Necessary Cookies,banner,OneTrust,amzn_consent,www.pella.com,/,First party,28.00 days,27 days,false,true,strict,false,Declared & set,www.pella.com,This cookie name is associated with Amazon which is used to store the user's consent preferences regarding the use of cookies and plug-ins as selected in the cookie consent pop-up.
+Performance Cookies,banner,OneTrust,_clsk,.pella.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,pella.com,Used by Microsoft Clarity to connect multiple page views by a user into a single Clarity session recording.
+Unclassified,none,,ttcsid,.pella.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_DACSL7BC77UC8FLJK3P0,.pella.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,PPSESSION,pressroom.pella.com,,,,Session,,,,,"Declared, not set",pressroom.pella.com,"This cookie name is associated with Presspage which is used to anonymously track visitors and generate CSRF tokens for Form modules, and is described as absolutely necessary for security protection when forms are embedded."
+Strictly Necessary Cookies,banner,OneTrust,smartDashLRX,pella.com,,,,29 days,,,,,"Declared, not set",pella.com,This cookie name is associated with smartDashLRX which is used as a 'Nødvendig' (necessary) cookie.
+Strictly Necessary Cookies,banner,OneTrust,__attentive_utm_param_campaign,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,This cookie name is associated with Attentive Mobile Inc. which is used to track campaign parameters for attentive.com and cdn.attn.tv.
+Strictly Necessary Cookies,banner,OneTrust,PHPSESSID,ceu.pella.com,,,,Session,,,,,"Declared, not set",ceu.pella.com,"PHP session cookie associated with embedded content from this domain.
+"
+Strictly Necessary Cookies,banner,OneTrust,_ALGOLIA,www.pella.com,,,,179 days,,,,,"Declared, not set",www.pella.com,
+Strictly Necessary Cookies,banner,OneTrust,_dc_gtm_UA-xxxxxxxx,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,"This cookie is associated with sites using Google Tag Manager to load other scripts and code into a page.  Where it is used it may be regarded as Strictly Necessary as without it, other scripts may not function correctly. The end of the name is a unique number which is also an identifier for an associated Google Analytics account."
+Strictly Necessary Cookies,banner,OneTrust,smartDashLRX,www.pella.com,,,,Session,,,,,"Declared, not set",www.pella.com,This cookie name is associated with smartDashLRX which is used as a 'Nødvendig' (necessary) cookie.
+Strictly Necessary Cookies,banner,OneTrust,tsrce,paypal.com,,,,2 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,LANG,paypal.com,,,,0 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,enforce_policy,paypal.com,,,,364 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,ts,paypal.com,,,,1095 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,ts_c,paypal.com,,,,1095 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,x-pp-s,paypal.com,,,,Session,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,l7_az,paypal.com,,,,0 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,paypal-offers--cust,paypalobjects.com,,,,0 days,,,,,"Declared, not set",paypalobjects.com,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,hover.to,,,,Session,,,,,"Declared, not set",hover.to,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust. It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down. It enables the website not to show the message more than once to a user. The cookie has a normal lifespan of one year and contains no personal information.
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,hover.to,,,,Session,,,,,"Declared, not set",hover.to,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Functional Cookies,banner,OneTrust,tpc_a,www.pella.com,,,,729 days,,,,,"Declared, not set",www.pella.com,Attentive cookie
+Functional Cookies,banner,OneTrust,mt.pevt,www.pella.com,,,,Session,,,,,"Declared, not set",www.pella.com,This cookie name is used to track user behavior and personalize content on the website.
+Functional Cookies,banner,OneTrust,mt.sac_2,pella.com,,,,29 days,,,,,"Declared, not set",pella.com,
+Functional Cookies,banner,OneTrust,ajs%3Atest,pella.com,,,,364 days,,,,,"Declared, not set",pella.com,This performance cookie counts visits and tracks other website traffic-related metrics. Cookies in this domain have lifespan of 1 year.
+Functional Cookies,banner,OneTrust,___utmvxxxxxxxxxxxxxx,www.pella.com,,,,0 days,,,,,"Declared, not set",www.pella.com,This cookie is used to store custom variable data at the visitor level in Google Analytics. It is used for segmenting visitors by custom dimensions.___utmv
+Functional Cookies,banner,OneTrust,ajs%3Acookies,pella.com,,,,364 days,,,,,"Declared, not set",pella.com,"This cookie supports use, service performance, and functionality of websites. Cookies in this domain have lifespan of 1 year."
+Functional Cookies,banner,OneTrust,__tld__,pella.com,,,,Session,,,,,"Declared, not set",pella.com,From Segment Analytics.js library; this cookie helps to figure out a top-level domain for a user.__tld__
+Functional Cookies,banner,OneTrust,_tq_id.TV-6354548118-1.ce45,www.pella.com,,,,399 days,,,,,"Declared, not set",www.pella.com,_tq_id.TV
+Functional Cookies,banner,OneTrust,rl_visitor_history,www.pella.com,,,,Session,,,,,"Declared, not set",www.pella.com,This cookie name is associated with www.thekraftgroup.com which is used to store various function names and user identifiers.
+Functional Cookies,banner,OneTrust,mt.sc,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,
+Functional Cookies,banner,OneTrust,3c1c7d854b3877e7d4a1f6eaedd9ee16,yield-op-idsync.live.streamtheworld.com,,,,Session,,,,,"Declared, not set",yield-op-idsync.live.streamtheworld.com,This domain is owned by Triton Digital which provides digital audio streaming technology and services.
+Functional Cookies,banner,OneTrust,__attentive_pv,cdn.attn.tv,,,,0 days,,,,,"Declared, not set",cdn.attn.tv,Attentive cookie
+Functional Cookies,banner,OneTrust,__attentive_dv,cdn.attn.tv,,,,0 days,,,,,"Declared, not set",cdn.attn.tv,Attentive cookie
+Functional Cookies,banner,OneTrust,_attn_,cdn.attn.tv,,,,3649 days,,,,,"Declared, not set",cdn.attn.tv,Attentive cookie
+Functional Cookies,banner,OneTrust,__attentive_cco,cdn.attn.tv,,,,21899 days,,,,,"Declared, not set",cdn.attn.tv,Attentive cookie
+Functional Cookies,banner,OneTrust,__attentive_id,cdn.attn.tv,,,,21899 days,,,,,"Declared, not set",cdn.attn.tv,Attentive cookie
+Functional Cookies,banner,OneTrust,tpc_a,cdn.attn.tv,,,,729 days,,,,,"Declared, not set",cdn.attn.tv,Attentive cookie
+Functional Cookies,banner,OneTrust,__attentive_ss_referrer,cdn.attn.tv,,,,0 days,,,,,"Declared, not set",cdn.attn.tv,Attentive cookie
+Functional Cookies,banner,OneTrust,nsid,www.paypal.com,,,,Session,,,,,"Declared, not set",www.paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Functional Cookies,banner,OneTrust,tpc_b_JhD,attentivemobile.com,,,,729 days,,,,,"Declared, not set",attentivemobile.com,Attentive Cookie
+Functional Cookies,banner,OneTrust,tpc_c_JhD,attentivemobile.com,,,,729 days,,,,,"Declared, not set",attentivemobile.com,Attentive cookie
+Functional Cookies,banner,OneTrust,vuid,vimeo.com,,,,399 days,,,,,"Declared, not set",vimeo.com,This domain is owned by Vimeo. The main business activity is: Video Hosting/Sharing
+Functional Cookies,banner,OneTrust,rl_cookie_test,cdn.rlets.com,,,,Session,,,,,"Declared, not set",cdn.rlets.com,"This domain is associated with Realtime Technologies, which provides services including content delivery networking."
+Functional Cookies,banner,OneTrust,JSESSIONID,events.attentivemobile.com,,,,Session,,,,,"Declared, not set",events.attentivemobile.com,Attentive cookie
+Functional Cookies,banner,OneTrust,_td_global,in.treasuredata.com,,,,399 days,,,,,"Declared, not set",in.treasuredata.com,"This domain is owned by Slemma, Inc. which provides business intelligence tools and customer data platform services including analytics, reporting, and data processing."
+Performance Cookies,banner,OneTrust,_utmv#########,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,
+Performance Cookies,banner,OneTrust,__utmc,pella.com,,,,Session,,,,,"Declared, not set",pella.com,"This is one of the four main cookies set by the Google Analytics service which enables website owners to track visitor behaviour and measure site performance. It is not used in most sites but is set to enable interoperability with the older version of Google Analytics code known as Urchin.  In this older versions this was used in combination with the __utmb cookie to identify new sessions/visits for returning visitors.
+When used by Google Analytics this is always a Session cookie which is destroyed when the user closes their browser. Where it is seen as a Persistent cookie it is therefore like"
+Performance Cookies,banner,OneTrust,_gat_UA-XXXXXX-X,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,
+Performance Cookies,banner,OneTrust,_ga_11111111,pella.com,,,,729 days,,,,,"Declared, not set",pella.com,
+Performance Cookies,banner,OneTrust,__utmb,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,"This is one of the four main cookies set by the Google Analytics service which enables website owners to track visitor behaviour and measure site performance. This cookie determines new sessions and visits and expires after 30 minutes. The cookie is updated every time data is sent to Google Analytics. Any activity by a user within the 30 minute life span will count as a single visit, even if the user leaves and then returns to the site. A return after 30 minutes will count as a new visit, but a returning visitor."
+Performance Cookies,banner,OneTrust,__utma,pella.com,,,,729 days,,,,,"Declared, not set",pella.com,This is one of the four main cookies set by the Google Analytics service which enables website owners to track visitor behaviour and measure site performance. This cookie lasts for 2 years by default and distinguishes between users and sessions. It it used to calculate new and returning visitor statistics. The cookie is updated every time data is sent to Google Analytics. The lifespan of the cookie can be customised by website owners.
+Performance Cookies,banner,OneTrust,__utmz,pella.com,,,,182 days,,,,,"Declared, not set",pella.com,This is one of the four main cookies set by the Google Analytics service which enables website owners to track visitor behaviour measure of site performance. This cookie identifies the source of traffic to the site - so Google Analytics can tell site owners where visitors came from when arriving on the site. The cookie has a life span of 6 months and is updated every time data is sent to Google Analytics.
+Performance Cookies,banner,OneTrust,_gcl_au,pella.com,,,,89 days,,,,,"Declared, not set",pella.com,
+Performance Cookies,banner,OneTrust,__utmt_UA-nnnnnnnn,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,"This is a pattern type cookie set by Google Analytics, where the pattern element on the name contains the unique identity number of the account or website it relates to. It appears to be a variation of the __utmt cookie which is used to limit the amount of data recorded by Google on high traffic volume websites."
+Performance Cookies,banner,OneTrust,_gid,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Performance Cookies,banner,OneTrust,_gat_UA-,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,"This is a pattern type cookie set by Google Analytics, where the pattern element on the name contains the unique identity number of the account or website it relates to. It appears to be a variation of the _gat cookie which is used to limit the amount of data recorded by Google on high traffic volume websites."
+Performance Cookies,banner,OneTrust,_cs_nnnnnnnnnnnnn,pella.com,,,,Session,,,,,"Declared, not set",pella.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Performance Cookies,banner,OneTrust,_gclxxxx,pella.com,,,,89 days,,,,,"Declared, not set",pella.com,Google conversion tracking cookie
+Performance Cookies,banner,OneTrust,_cs_nnnnnnnnnnnnn,t.contentsquare.net,,,,Session,,,,,"Declared, not set",t.contentsquare.net,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Performance Cookies,banner,OneTrust,tuid,a.usbrowserspeed.com,,,,364 days,,,,,"Declared, not set",a.usbrowserspeed.com,This domain is owned by Ookla which provides internet speed testing services through its Speedtest application.
+Performance Cookies,banner,OneTrust,__utmli,www.google-analytics.com,,,,0 days,,,,,"Declared, not set",www.google-analytics.com,"Set by the Google Analytics service to track visitor behaviour to enable measurement of site performance. This optional additional cookie supports an Enhanced Link Attribution feature, which allows webmasters to see the performance of two or more links on a page that have the same destination."
+Performance Cookies,banner,OneTrust,__oauth_redirect_detector,accounts.livechatinc.com,,,,0 days,,,,,"Declared, not set",accounts.livechatinc.com,"This domain is associated with LiveChat, which is an online customer service software with online chat, help desk software, and web analytics capabilities."
+Performance Cookies,banner,OneTrust,__lc_cst,accounts.livechatinc.com,,,,399 days,,,,,"Declared, not set",accounts.livechatinc.com,"This domain is associated with LiveChat, which is an online customer service software with online chat, help desk software, and web analytics capabilities."
+Performance Cookies,banner,OneTrust,__lc_cid,accounts.livechatinc.com,,,,399 days,,,,,"Declared, not set",accounts.livechatinc.com,"This domain is associated with LiveChat, which is an online customer service software with online chat, help desk software, and web analytics capabilities."
+Performance Cookies,banner,OneTrust,lux_uid,cdn.speedcurve.com,,,,0 days,,,,,"Declared, not set",cdn.speedcurve.com,Speedcurve is a performance monitoring service
+Targeting Cookies,banner,OneTrust,ajs_user_id,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,"This cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability. Cookies in this domain have lifespan of 1 year."
+Targeting Cookies,banner,OneTrust,__attentive_utm_param_medium,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,This cookie name is associated with tracking UTM parameters which is used to track the effectiveness of advertising campaigns by identifying the medium through which the user has reached the website.
+Targeting Cookies,banner,OneTrust,brandcdn_uid,www.pella.com,,,,364 days,,,,,"Declared, not set",www.pella.com,This cookie name is associated with BrandCDN which is used to track individual users and browser for purposes of retargeting.
+Targeting Cookies,banner,OneTrust,_gat_UA-nnnnnnn-nn,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,"This is a pattern type cookie set by Google Analytics, where the pattern element on the name contains the unique identity number of the account or website it relates to. It appears to be a variation of the _gat cookie which is used to limit the amount of data recorded by Google on high traffic volume websites.Google Analytics Cookies"
+Targeting Cookies,banner,OneTrust,sa-user-id,www.pella.com,,,,364 days,,,,,"Declared, not set",www.pella.com,
+Targeting Cookies,banner,OneTrust,btIdentify,pella.com,,,,364 days,,,,,"Declared, not set",pella.com,
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,www.pella.com,,,,364 days,,,,,"Declared, not set",www.pella.com,
+Targeting Cookies,banner,OneTrust,sa-user-id-v2,www.pella.com,,,,364 days,,,,,"Declared, not set",www.pella.com,
+Targeting Cookies,banner,OneTrust,_cs_nnnnnnnnnnnnn,www.pella.com,,,,Session,,,,,"Declared, not set",www.pella.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Targeting Cookies,banner,OneTrust,_cq_check,www.pella.com,,,,Session,,,,,"Declared, not set",www.pella.com,
+Targeting Cookies,banner,OneTrust,ajs_group_id,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,These cookies track visitor usage and events within the website. Cookies in this domain have lifespan of 1 year.
+Targeting Cookies,banner,OneTrust,cg_uuid,obs.sd6544.pella.com,,,,335 days,,,,,"Declared, not set",obs.sd6544.pella.com,
+Targeting Cookies,banner,OneTrust,_tq_id.TV-5490542781-1.ce45,www.pella.com,,,,729 days,,,,,"Declared, not set",www.pella.com,
+Targeting Cookies,banner,OneTrust,_bts,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,
+Targeting Cookies,banner,OneTrust,lbDebug,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,Cookie used by Google Analytics.
+Targeting Cookies,banner,OneTrust,__adroll_consent_params,www.pella.com,,,,0 days,,,,,"Declared, not set",www.pella.com,This cookie name is associated with Adroll which is used to help track the user through multiple sessions to serve targeted advertisements.
+Targeting Cookies,banner,OneTrust,__attentive_utm_param_source,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,This cookie name is associated with targeting cookies which is used to track user interactions and behavior for targeted advertising.
+Targeting Cookies,banner,OneTrust,_gat_gtag_UA_1355048_23,pella.com,,,,0 days,,,,,"Declared, not set",pella.com,Google Analytics
+Targeting Cookies,banner,OneTrust,_te_,www.pella.com,,,,Session,,,,,"Declared, not set",www.pella.com,"This cookie name is associated with the re-marketing services from Adroll.  It is generally set as a first party cookie.  Re-marketing is the practise of displaying online advertising targeted to users who have already visited the advertisers site, to encourage them to return."
+Targeting Cookies,banner,OneTrust,_bti,pella.com,,,,364 days,,,,,"Declared, not set",pella.com,
+Targeting Cookies,banner,OneTrust,sd-session-id,live.rezync.com,,,,389 days,,,,,"Declared, not set",live.rezync.com,
+Targeting Cookies,banner,OneTrust,_cc_aud,crwdcntrl.net,,,,269 days,,,,,"Declared, not set",crwdcntrl.net,
+Targeting Cookies,banner,OneTrust,_cc_cc,crwdcntrl.net,,,,Session,,,,,"Declared, not set",crwdcntrl.net,
+Targeting Cookies,banner,OneTrust,_cc_id,crwdcntrl.net,,,,269 days,,,,,"Declared, not set",crwdcntrl.net,
+Targeting Cookies,banner,OneTrust,_cc_dc,crwdcntrl.net,,,,269 days,,,,,"Declared, not set",crwdcntrl.net,
+Targeting Cookies,banner,OneTrust,icts,linksynergy.com,,,,364 days,,,,,"Declared, not set",linksynergy.com,
+Targeting Cookies,banner,OneTrust,ar_debug,ara.paa-reporting-advertising.amazon,,,,Session,,,,,"Declared, not set",ara.paa-reporting-advertising.amazon,This domain is owned by Amazon which provides advertising and analytics services.
+Targeting Cookies,banner,OneTrust,__qca,issuu.com,,,,391 days,,,,,"Declared, not set",issuu.com,
+Targeting Cookies,banner,OneTrust,iutk,issuu.com,,,,179 days,,,,,"Declared, not set",issuu.com,
+Targeting Cookies,banner,OneTrust,_dlt,issuu.com,,,,0 days,,,,,"Declared, not set",issuu.com,
+Targeting Cookies,banner,OneTrust,_uid,fwmrm.net,,,,179 days,,,,,"Declared, not set",fwmrm.net,
+Targeting Cookies,banner,OneTrust,eId,www.rnengage.com,,,,6 days,,,,,"Declared, not set",www.rnengage.com,
+Targeting Cookies,banner,OneTrust,MSPTC,bing.com,,,,389 days,,,,,"Declared, not set",bing.com,
+Targeting Cookies,banner,OneTrust,llum,rtb-pinklion.io,,,,364 days,,,,,"Declared, not set",rtb-pinklion.io,"This domain is owned by PinkLion LTD which provides digital advertising services including multi-channel monetization, data-driven insights for strategic targeting, and management tools for campaign optimization."
+Targeting Cookies,banner,OneTrust,lluid,rtb-pinklion.io,,,,29 days,,,,,"Declared, not set",rtb-pinklion.io,"This domain is owned by PinkLion LTD which provides digital advertising services including multi-channel monetization, data-driven insights for strategic targeting, and management tools for campaign optimization."
+Targeting Cookies,banner,OneTrust,TESTCOOKIESENABLED,www.youtube.com,,,,0 days,,,,,"Declared, not set",www.youtube.com,
+Targeting Cookies,banner,OneTrust,li_gc,linkedin.com,,,,179 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,visitor,postrelease.com,,,,364 days,,,,,"Declared, not set",postrelease.com,
+Targeting Cookies,banner,OneTrust,ver,postrelease.com,,,,364 days,,,,,"Declared, not set",postrelease.com,"This domain is owned by Nativo. The company provides a range of marketing and advertising services.
+"
+Targeting Cookies,banner,OneTrust,status,postrelease.com,,,,364 days,,,,,"Declared, not set",postrelease.com,
+Targeting Cookies,banner,OneTrust,AWSELB,app.jazz.co,,,,0 days,,,,,"Declared, not set",app.jazz.co,
+Targeting Cookies,banner,OneTrust,external_referrer_url,app.jazz.co,,,,0 days,,,,,"Declared, not set",app.jazz.co,
+Targeting Cookies,banner,OneTrust,AWSELBCORS,app.jazz.co,,,,0 days,,,,,"Declared, not set",app.jazz.co,
+Targeting Cookies,banner,OneTrust,SF_PHPSESSID,app.jazz.co,,,,Session,,,,,"Declared, not set",app.jazz.co,
+Targeting Cookies,banner,OneTrust,internal_navigation_count,app.jazz.co,,,,0 days,,,,,"Declared, not set",app.jazz.co,
+Targeting Cookies,banner,OneTrust,hsk_911,exelator.com,,,,119 days,,,,,"Declared, not set",exelator.com,
+Targeting Cookies,banner,OneTrust,sa-user-id,qvdt3feo.com,,,,364 days,,,,,"Declared, not set",qvdt3feo.com,
+Targeting Cookies,banner,OneTrust,sa-user-id-v2,qvdt3feo.com,,,,364 days,,,,,"Declared, not set",qvdt3feo.com,
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,qvdt3feo.com,,,,364 days,,,,,"Declared, not set",qvdt3feo.com,
+Targeting Cookies,banner,OneTrust,_rxuuid,targeting.unrulymedia.com,,,,364 days,,,,,"Declared, not set",targeting.unrulymedia.com,
+Targeting Cookies,banner,OneTrust,,www.facebook.com,,,,Session,,,,,"Declared, not set",www.facebook.com,"This domain is owned by Facebook, which is the world's largest social networking service. As a third party host provider, it mostly collects data on the interests of users via widgets such as the 'Like' button found on many websites. This is used to serve targeted advertising to its users when logged into its services. In 2014 it also started serving up behaviourally targeted advertising on other websites, similar to most dedicated online marketing companies."
+Targeting Cookies,banner,OneTrust,bkpa,bluekai.com,,,,183 days,,,,,"Declared, not set",bluekai.com,
+Targeting Cookies,banner,OneTrust,bku,bluekai.com,,,,183 days,,,,,"Declared, not set",bluekai.com,
+Targeting Cookies,banner,OneTrust,ASDT,intentiq.com,,,,729 days,,,,,"Declared, not set",intentiq.com,
+Targeting Cookies,banner,OneTrust,CSDT,intentiq.com,,,,729 days,,,,,"Declared, not set",intentiq.com,
+Targeting Cookies,banner,OneTrust,IQPData,intentiq.com,,,,729 days,,,,,"Declared, not set",intentiq.com,
+Targeting Cookies,banner,OneTrust,intentIQ,intentiq.com,,,,729 days,,,,,"Declared, not set",intentiq.com,
+Targeting Cookies,banner,OneTrust,uid_,intentiq.com,,,,364 days,,,,,"Declared, not set",intentiq.com,Cookie used by NetworkAd.net for purpose of targeting.
+Targeting Cookies,banner,OneTrust,intentIQCDate,intentiq.com,,,,729 days,,,,,"Declared, not set",intentiq.com,
+Targeting Cookies,banner,OneTrust,IQver,intentiq.com,,,,729 days,,,,,"Declared, not set",intentiq.com,
+Targeting Cookies,banner,OneTrust,stx_user_id,sharethrough.com,,,,29 days,,,,,"Declared, not set",sharethrough.com,
+Targeting Cookies,banner,OneTrust,IDSYNC,analytics.yahoo.com,,,,364 days,,,,,"Declared, not set",analytics.yahoo.com,
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,everest_g_v2,everesttech.net,,,,364 days,,,,,"Declared, not set",everesttech.net,
+Targeting Cookies,banner,OneTrust,ssi,sitescout.com,,,,364 days,,,,,"Declared, not set",sitescout.com,
+Targeting Cookies,banner,OneTrust,_ssuma,sitescout.com,,,,29 days,,,,,"Declared, not set",sitescout.com,
+Targeting Cookies,banner,OneTrust,anProfile,pro-market.net,,,,179 days,,,,,"Declared, not set",pro-market.net,
+Targeting Cookies,banner,OneTrust,anHistory,pro-market.net,,,,29 days,,,,,"Declared, not set",pro-market.net,
+Targeting Cookies,banner,OneTrust,tluidp,3lift.com,,,,89 days,,,,,"Declared, not set",3lift.com,
+Targeting Cookies,banner,OneTrust,uid,adform.net,,,,59 days,,,,,"Declared, not set",adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Targeting Cookies,banner,OneTrust,C,adform.net,,,,30 days,,,,,"Declared, not set",adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Targeting Cookies,banner,OneTrust,ar_debug,px.ads.linkedin.com,,,,30 days,,,,,"Declared, not set",px.ads.linkedin.com,This domain is associated with LinkedIn's marketing services that provide retargeting for advertisers to reach audiences on LinkedIn.
+Targeting Cookies,banner,OneTrust,checkForPermission,bidr.io,,,,0 days,,,,,"Declared, not set",bidr.io,
+Targeting Cookies,banner,OneTrust,bitoIsSecure,bidr.io,,,,394 days,,,,,"Declared, not set",bidr.io,
+Targeting Cookies,banner,OneTrust,bito,bidr.io,,,,394 days,,,,,"Declared, not set",bidr.io,
+Targeting Cookies,banner,OneTrust,__attentive_session_id,cdn.attn.tv,,,,0 days,,,,,"Declared, not set",cdn.attn.tv,"This domain is associated with the technology provided by Attention Interactive, Inc for hosting video content and tracking video interactions."
+Targeting Cookies,banner,OneTrust,__141_exp,bfmio.com,,,,6 days,,,,,"Declared, not set",bfmio.com,"This domain is associated with Bombora, a company that provides B2B intent data for marketing and sales."
+Targeting Cookies,banner,OneTrust,__ioxxxxxxxxxxxxxx,bfmio.com,,,,364 days,,,,,"Declared, not set",bfmio.com,
+Targeting Cookies,banner,OneTrust,__181_cid,bfmio.com,,,,364 days,,,,,"Declared, not set",bfmio.com,
+Targeting Cookies,banner,OneTrust,__141_cid,bfmio.com,,,,364 days,,,,,"Declared, not set",bfmio.com,
+Targeting Cookies,banner,OneTrust,bsw_origin_init,bidswitch.net,,,,0 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,licd,bidswitch.net,,,,0 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,A3,yahoo.com,,,,365 days,,,,,"Declared, not set",yahoo.com,
+Targeting Cookies,banner,OneTrust,1_C_48,sync.aniview.com,,,,9 days,,,,,"Declared, not set",sync.aniview.com,"This domain is associated with Aniview, a company that provides video ad-serving, playing, and analytics solutions. It is likely used for advertising and tracking purposes."
+Targeting Cookies,banner,OneTrust,_ljtrtb_16,lijit.com,,,,364 days,,,,,"Declared, not set",lijit.com,
+Targeting Cookies,banner,OneTrust,ljtrtb,lijit.com,,,,364 days,,,,,"Declared, not set",lijit.com,
+Targeting Cookies,banner,OneTrust,_ljtrtb_2,lijit.com,,,,364 days,,,,,"Declared, not set",lijit.com,
+Targeting Cookies,banner,OneTrust,ljt_reader,lijit.com,,,,364 days,,,,,"Declared, not set",lijit.com,
+Targeting Cookies,banner,OneTrust,uid-bp-45,ads.stickyadstv.com,,,,59 days,,,,,"Declared, not set",ads.stickyadstv.com,
+Targeting Cookies,banner,OneTrust,MRM_UID,ads.stickyadstv.com,,,,59 days,,,,,"Declared, not set",ads.stickyadstv.com,
+Targeting Cookies,banner,OneTrust,uid-bp-xxxxx,ads.stickyadstv.com,,,,0 days,,,,,"Declared, not set",ads.stickyadstv.com,
+Targeting Cookies,banner,OneTrust,UID,ads.stickyadstv.com,,,,29 days,,,,,"Declared, not set",ads.stickyadstv.com,
+Targeting Cookies,banner,OneTrust,uid-bp-xxx,ads.stickyadstv.com,,,,29 days,,,,,"Declared, not set",ads.stickyadstv.com,
+Targeting Cookies,banner,OneTrust,idsync-bsw-uid,live.streamtheworld.com,,,,6 days,,,,,"Declared, not set",live.streamtheworld.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Targeting Cookies,banner,OneTrust,idsync-bsw-uid-s,live.streamtheworld.com,,,,6 days,,,,,"Declared, not set",live.streamtheworld.com,"The domain is owned by Triton Digital. The company provides a range of marketing and advertising services.
+"
+Targeting Cookies,banner,OneTrust,vampid,videoamp.com,,,,364 days,,,,,"Declared, not set",videoamp.com,VideoAmp is a USA based business providing cross-device and cross-channel audience tracking for targeted marketing purposes.
+Targeting Cookies,banner,OneTrust,zync-uuid,rezync.com,,,,389 days,,,,,"Declared, not set",rezync.com,
+Targeting Cookies,banner,OneTrust,euds,rfihub.com,,,,Session,,,,,"Declared, not set",rfihub.com,
+Targeting Cookies,banner,OneTrust,rud,rfihub.com,,,,389 days,,,,,"Declared, not set",rfihub.com,
+Targeting Cookies,banner,OneTrust,ruds,rfihub.com,,,,Session,,,,,"Declared, not set",rfihub.com,
+Targeting Cookies,banner,OneTrust,eud,rfihub.com,,,,389 days,,,,,"Declared, not set",rfihub.com,
+Targeting Cookies,banner,OneTrust,lmg_r,colossusssp.com,,,,364 days,,,,,"Declared, not set",colossusssp.com,
+Targeting Cookies,banner,OneTrust,gtm_usr,colossusssp.com,,,,364 days,,,,,"Declared, not set",colossusssp.com,
+Targeting Cookies,banner,OneTrust,cookies.js,tags-cdn.clarivoy.com,,,,Session,,,,,"Declared, not set",tags-cdn.clarivoy.com,This domain is owned by Clarivoy which provides attribution reporting and ad retargeting services for auto dealers.
+Targeting Cookies,banner,OneTrust,ar_debug,pinterest.com,,,,364 days,,,,,"Declared, not set",pinterest.com,
+Targeting Cookies,banner,OneTrust,sa-user-id-v2,srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",srv.stackadapt.com,
+Targeting Cookies,banner,OneTrust,sa-user-id,srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",srv.stackadapt.com,
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",srv.stackadapt.com,
+Targeting Cookies,banner,OneTrust,pb_rtb_ev,contextweb.com,,,,364 days,,,,,"Declared, not set",contextweb.com,
+Targeting Cookies,banner,OneTrust,VP,contextweb.com,,,,359 days,,,,,"Declared, not set",contextweb.com,
+Targeting Cookies,banner,OneTrust,pb_rtb_ev_part,contextweb.com,,,,364 days,,,,,"Declared, not set",contextweb.com,
+Targeting Cookies,banner,OneTrust,V,contextweb.com,,,,359 days,,,,,"Declared, not set",contextweb.com,
+Targeting Cookies,banner,OneTrust,data-rk,media.net,,,,363 days,,,,,"Declared, not set",media.net,
+Targeting Cookies,banner,OneTrust,visitor-id,media.net,,,,364 days,,,,,"Declared, not set",media.net,
+Targeting Cookies,banner,OneTrust,data-rk-r,media.net,,,,0 days,,,,,"Declared, not set",media.net,Media.net is a global online advertising technology network.
+Targeting Cookies,banner,OneTrust,usp_status,media.net,,,,184 days,,,,,"Declared, not set",media.net,Media.net is a global online advertising technology network.
+Targeting Cookies,banner,OneTrust,browser_id,rqtrk.eu,,,,6 days,,,,,"Declared, not set",rqtrk.eu,This domain is likely associated with a tracking service that focuses on retargeting and advertising.
+Targeting Cookies,banner,OneTrust,INGRESSCOOKIE,bh.contextweb.com,,,,Session,,,,,"Declared, not set",bh.contextweb.com,
+Targeting Cookies,banner,OneTrust,i,openx.net,,,,364 days,,,,,"Declared, not set",openx.net,
+Targeting Cookies,banner,OneTrust,AWSALB,adservices.brandcdn.com,,,,6 days,,,,,"Declared, not set",adservices.brandcdn.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Targeting Cookies,banner,OneTrust,AWSALBCORS,adservices.brandcdn.com,,,,6 days,,,,,"Declared, not set",adservices.brandcdn.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Targeting Cookies,banner,OneTrust,csrftoken,instagram.com,,,,399 days,,,,,"Declared, not set",instagram.com,"Instagram is a social networking service owned by Facebook, Inc. It's designed for sharing photos and videos from a smartphone. The service also uses cookies for various purposes, including analytics, personalization, and advertising."
+Targeting Cookies,banner,OneTrust,mid,instagram.com,,,,399 days,,,,,"Declared, not set",instagram.com,"Instagram is a social networking service owned by Facebook, Inc. It's designed for sharing photos and videos from a smartphone. The service also uses cookies for various purposes, including analytics, personalization, and advertising."
+Targeting Cookies,banner,OneTrust,pxrc,pippio.com,,,,59 days,,,,,"Declared, not set",pippio.com,
+Targeting Cookies,banner,OneTrust,nnls,pippio.com,,,,59 days,,,,,"Declared, not set",pippio.com,
+Targeting Cookies,banner,OneTrust,didts,pippio.com,,,,364 days,,,,,"Declared, not set",pippio.com,
+Targeting Cookies,banner,OneTrust,did,pippio.com,,,,364 days,,,,,"Declared, not set",pippio.com,
+Targeting Cookies,banner,OneTrust,sp,quantserve.com,,,,89 days,,,,,"Declared, not set",quantserve.com,"This domain is owned by Quantcast. The main business activity is: Market and Audience Segmentation, Targeted advertising services"
+Targeting Cookies,banner,OneTrust,mc,quantserve.com,,,,395 days,,,,,"Declared, not set",quantserve.com,
+Targeting Cookies,banner,OneTrust,lang,ads.linkedin.com,,,,Session,,,,,"Declared, not set",ads.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. This sub-domain is connected with LinkedIn's marketing services that enable website owners to gain insight into types of users on their site based on LinkedIn profile data, to improve targetng."
+Targeting Cookies,banner,OneTrust,syncdata_DBC,mookie1.com,,,,9 days,,,,,"Declared, not set",mookie1.com,
+Targeting Cookies,banner,OneTrust,id,mookie1.com,,,,394 days,,,,,"Declared, not set",mookie1.com,"This domain is owned by Media Innovation Group, as US based digital marketing business. The main business focus is providing targeted online marketing services."
+Targeting Cookies,banner,OneTrust,mdata,mookie1.com,,,,394 days,,,,,"Declared, not set",mookie1.com,"This domain is owned by Media Innovation Group, as US based digital marketing business. The main business focus is providing targeted online marketing services."
+Targeting Cookies,banner,OneTrust,syncdata_TTD,mookie1.com,,,,9 days,,,,,"Declared, not set",mookie1.com,
+Targeting Cookies,banner,OneTrust,ov,mookie1.com,,,,394 days,,,,,"Declared, not set",mookie1.com,"This domain is owned by Media Innovation Group, as US based digital marketing business. The main business focus is providing targeted online marketing services."
+Targeting Cookies,banner,OneTrust,obuid,outbrain.com,,,,89 days,,,,,"Declared, not set",outbrain.com,
+Targeting Cookies,banner,OneTrust,aa,agkn.com,,,,399 days,,,,,"Declared, not set",agkn.com,"This domain is owned by Aggregate Knowledge, which has been acquired by Neustar Inc. Aggregate Knowledge provides a data management platform which enables real time targeting and consumer profiling functionality. "
+Targeting Cookies,banner,OneTrust,CDIUSER,deepintent.com,,,,399 days,,,,,"Declared, not set",deepintent.com,Used to track usage of the embedded video player.
+Targeting Cookies,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,__Secure-YEC,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,__Secure-ROLLOUT_TOKEN,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,CONSENT,youtube.com,,,,729 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,__Secure-BUCKET,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,__Secure-YNID,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_PRIVACY_METADATA,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,SCMv,smaato.net,,,,20 days,,,,,"Declared, not set",smaato.net,
+Targeting Cookies,banner,OneTrust,SCM675,smaato.net,,,,20 days,,,,,"Declared, not set",smaato.net,"This domain belongs to Smaato, a German company providing a real time ad technology platform for publishers and mobile app developers."
+Targeting Cookies,banner,OneTrust,SCMill,smaato.net,,,,20 days,,,,,"Declared, not set",smaato.net,"This domain belongs to Smaato, a German company providing a real time ad technology platform for publishers and mobile app developers."
+Targeting Cookies,banner,OneTrust,SCMoverwolf,smaato.net,,,,20 days,,,,,"Declared, not set",smaato.net,"This domain belongs to Smaato, a German company providing a real time ad technology platform for publishers and mobile app developers."
+Targeting Cookies,banner,OneTrust,SCM1001136,smaato.net,,,,20 days,,,,,"Declared, not set",smaato.net,
+Targeting Cookies,banner,OneTrust,SCM,smaato.net,,,,20 days,,,,,"Declared, not set",smaato.net,
+Targeting Cookies,banner,OneTrust,uid_,simpli.fi,,,,6 days,,,,,"Declared, not set",simpli.fi,
+Targeting Cookies,banner,OneTrust,suid,simpli.fi,,,,365 days,,,,,"Declared, not set",simpli.fi,
+Targeting Cookies,banner,OneTrust,suid_legacy,simpli.fi,,,,365 days,,,,,"Declared, not set",simpli.fi,
+Targeting Cookies,banner,OneTrust,CLID,media6degrees.com,,,,179 days,,,,,"Declared, not set",media6degrees.com,This domain is owned by Media6degrees. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,sglst,media6degrees.com,,,,0 days,,,,,"Declared, not set",media6degrees.com,
+Targeting Cookies,banner,OneTrust,rdrlst,media6degrees.com,,,,0 days,,,,,"Declared, not set",media6degrees.com,
+Targeting Cookies,banner,OneTrust,admtr,admanmedia.com,,,,6 days,,,,,"Declared, not set",admanmedia.com,"This domain is associated with AdMan, a web-based ad serving platform used by publishers to manage the display of advertising content to their site visitors."
+Targeting Cookies,banner,OneTrust,ac_r,admanmedia.com,,,,6 days,,,,,"Declared, not set",admanmedia.com,"This domain is associated with AdMan, a web-based ad serving platform used by publishers to manage the display of advertising content to their site visitors."
+Targeting Cookies,banner,OneTrust,DotomiTest,dotomi.com,,,,0 days,,,,,"Declared, not set",dotomi.com,This domain is owned by Dotomi. The main business activity is:  Profiling and Personalised Display Advertising
+Targeting Cookies,banner,OneTrust,sa-user-id-v4,tags.srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",tags.srv.stackadapt.com,"This domain is associated with StackAdapt, a platform for programmatic advertising, which suggests that it is used for targeting and advertising purposes."
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,tags.srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",tags.srv.stackadapt.com,
+Targeting Cookies,banner,OneTrust,sa-user-id,tags.srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",tags.srv.stackadapt.com,"This domain is associated with StackAdapt, a platform for programmatic advertising, which suggests that it is used for targeting and advertising purposes."
+Targeting Cookies,banner,OneTrust,sa-user-id-v2,tags.srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",tags.srv.stackadapt.com,"This domain is associated with StackAdapt, a platform for programmatic advertising, which suggests that it is used for targeting and advertising purposes."
+Targeting Cookies,banner,OneTrust,sa-user-id-v4,sync.srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",sync.srv.stackadapt.com,"This domain is associated with StackAdapt, a platform for programmatic advertising, which uses cookies for targeting and advertising purposes."
+Targeting Cookies,banner,OneTrust,sa-user-id-v2,sync.srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",sync.srv.stackadapt.com,"This domain is associated with StackAdapt, a platform for programmatic advertising, which uses cookies for targeting and advertising purposes."
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,sync.srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",sync.srv.stackadapt.com,"This domain is associated with StackAdapt, a platform for programmatic advertising, which uses cookies for targeting and advertising purposes."
+Targeting Cookies,banner,OneTrust,sa-user-id,sync.srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",sync.srv.stackadapt.com,"This domain is associated with StackAdapt, a platform for programmatic advertising, which uses cookies for targeting and advertising purposes."
+Targeting Cookies,banner,OneTrust,OAID,adswizz.com,,,,29 days,,,,,"Declared, not set",adswizz.com,
+Targeting Cookies,banner,OneTrust,cto_bundle,criteo.com,,,,389 days,,,,,"Declared, not set",criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,uid,criteo.com,,,,389 days,,,,,"Declared, not set",criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,mc,thrtle.com,,,,199 days,,,,,"Declared, not set",thrtle.com,
+Targeting Cookies,banner,OneTrust,sc,thrtle.com,,,,199 days,,,,,"Declared, not set",thrtle.com,"Thrtle.com is associated with technology used for advertising purposes, including tracking and ad personalization."
+Targeting Cookies,banner,OneTrust,um,addthis.com,,,,389 days,,,,,"Declared, not set",addthis.com,
+Targeting Cookies,banner,OneTrust,mus,addthis.com,,,,389 days,,,,,"Declared, not set",addthis.com,
+Targeting Cookies,banner,OneTrust,ouid,addthis.com,,,,389 days,,,,,"Declared, not set",addthis.com,
+Targeting Cookies,banner,OneTrust,na_id,addthis.com,,,,389 days,,,,,"Declared, not set",addthis.com,
+Targeting Cookies,banner,OneTrust,uid,addthis.com,,,,389 days,,,,,"Declared, not set",addthis.com,
+Targeting Cookies,banner,OneTrust,t_pt_gid,taboola.com,,,,364 days,,,,,"Declared, not set",taboola.com,
+Targeting Cookies,banner,OneTrust,t_gid,taboola.com,,,,364 days,,,,,"Declared, not set",taboola.com,

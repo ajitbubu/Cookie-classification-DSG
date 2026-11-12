@@ -1,0 +1,239 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Marketing,banner,Cookiebot,cee,.eks.smb.bluemediagroup.cn,/events/51fe8ed42c81b5df46580e642c0fb423660c04214cf5e30a4ebcaa5987bd6074,Third party,90.00 days,,true,true,none,false,Declared & set,eks.smb.bluemediagroup.cn,Registers a unique ID that identifies the user's device during return visits. Used for conversion tracking and to measure the efficacy of online ads.
+Necessary,banner,Cookiebot,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,,true,true,none,false,Declared & set,google.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,none,,_li_ss,i.liadm.com,/s,Third party,30.00 days,,false,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,acw_tc,www.ecovacs.com,/,First party,0.04 days,,true,false,unspecified,false,Declared & set,site-static.ecovacs.com,Used by the website to detect any fraud and ensure brand safety management on the website.  
+Unclassified,banner,Cookiebot,cdn_sec_tc,www.ecovacs.com,/,First party,0.04 days,,true,false,unspecified,false,Declared & set,site-static.ecovacs.com,Pending
+Necessary,banner,Cookiebot,ECOUSSSID,.ecovacs.com,/,First party,14.00 days,,true,true,lax,false,Declared & set,ecovacs.com,Pending
+Necessary,banner,Cookiebot,acw_tc,site-static.ecovacs.com,/,First party,0.04 days,,true,false,unspecified,false,Declared & set,site-static.ecovacs.com,Used by the website to detect any fraud and ensure brand safety management on the website.  
+Unclassified,banner,Cookiebot,cdn_sec_tc,site-static.ecovacs.com,/,First party,0.04 days,,true,false,unspecified,false,Declared & set,site-static.ecovacs.com,Pending
+Necessary,banner,Cookiebot,CookieConsent,www.ecovacs.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,www.ecovacs.com,Stores the user's cookie consent state for the current domain
+Unclassified,banner,Cookiebot,ECOUID,www.ecovacs.com,/,First party,Session,Session,false,true,lax,false,Declared & set,www.ecovacs.com,Pending
+Unclassified,banner,Cookiebot,fw_se,.ecovacs.com,/,First party,365.00 days,,false,false,unspecified,false,Declared & set,ecovacs.com,Pending
+Unclassified,banner,Cookiebot,__ps_r,.ecovacs.com,/,First party,365.00 days,,false,true,none,false,Declared & set,ecovacs.com,Pending
+Unclassified,banner,Cookiebot,__ps_sr,.ecovacs.com,/,First party,0.02 days,,false,true,none,false,Declared & set,ecovacs.com,Pending
+Unclassified,banner,Cookiebot,__ps_lu,.ecovacs.com,/,First party,365.00 days,,false,true,none,false,Declared & set,ecovacs.com,Pending
+Unclassified,banner,Cookiebot,__ps_slu,.ecovacs.com,/,First party,0.02 days,,false,true,none,false,Declared & set,ecovacs.com,Pending
+Unclassified,banner,Cookiebot,__ps_did,.ecovacs.com,/,First party,365.00 days,,false,true,none,false,Declared & set,ecovacs.com,Pending
+Unclassified,banner,Cookiebot,__ps_fva,.ecovacs.com,/,First party,365.00 days,,false,true,none,false,Declared & set,ecovacs.com,Pending
+Necessary,banner,Cookiebot,__cf_bm,.omnisnippet1.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,forms.soundestlink.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,io_token_7c6a6574-f011-4c9a-abdd-9894a102ccef,mpsnare.iesnare.com,/,Third party,365.00 days,,true,true,none,true,Declared & set,iesnare.com,Used by the website to detect any fraud and ensure brand safety management on the website.  
+Necessary,banner,Cookiebot,__cf_bm,.iesnare.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,forms.soundestlink.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,__cf_bm,.bzrcdn.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,forms.soundestlink.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,none,,_cfuvid,.bzrcdn.openai.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Declared & set,adsrvr.org,Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.
+Statistics,banner,Cookiebot,_ga,.ecovacs.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,ecovacs.com,Registers a unique ID that is used to generate statistical data on how the visitor uses the website.
+Unclassified,none,,__obref,.ecovacs.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,omnisendSessionID,.ecovacs.com,/,First party,0.02 days,,false,false,unspecified,false,Declared & set,ecovacs.com,Sets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.
+Marketing,banner,Cookiebot,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Statistics,banner,Cookiebot,_hjSession_2991144,.ecovacs.com,/,First party,0.02 days,,false,true,none,false,Declared & set,ecovacs.com,"Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Unclassified,none,,demdex,.demdex.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,banner,Cookiebot,_mlcp,.ecovacs.com,/,First party,400.00 days,,false,false,lax,false,Declared & set,ecovacs.com,Pending
+Unclassified,banner,Cookiebot,_mlcs,.ecovacs.com,/,First party,400.00 days,,false,false,lax,false,Declared & set,ecovacs.com,Pending
+Unclassified,none,,dpm,.dpm.demdex.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,_fbp,.ecovacs.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,ecovacs.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Unclassified,none,,_ju_v,www.ecovacs.com,/,First party,0.02 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,_ju_dm,.ecovacs.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ju_dn,.ecovacs.com,/,First party,30.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,casalemedia.com,"Collects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads."
+Marketing,banner,Cookiebot,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Declared & set,casalemedia.com,"Collects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads."
+Marketing,banner,Cookiebot,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Declared & set,casalemedia.com,"Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement. "
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,KRTBCOOKIE_1208,.pubmatic.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,_clck,.ecovacs.com,/,First party,365.00 days,,false,false,unspecified,false,Declared & set,ecovacs.com,Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+Marketing,banner,Cookiebot,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Declared & set,doubleclick.net,Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.
+Unclassified,banner,Cookiebot,mlcwc,.moloco.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,moloco.com,Pending
+Necessary,banner,Cookiebot,__cf_bm,.bzr.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,forms.soundestlink.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,none,,_cfuvid,.bzr.openai.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Declared & set,adnxs.com,This cookie registers data on the visitor. The information is used to optimize advertisement relevance. 
+Marketing,banner,Cookiebot,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Declared & set,adnxs.com,Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.
+Unclassified,none,,t_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,t_pt_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,banner,Cookiebot,DSPR,.ds.kakao.com,/,Third party,90.00 days,,false,true,none,false,Declared & set,ad.daum.net,Pending
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cflb,aly.jst.ai,/,Third party,0.02 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_cfuvid,.aly.jst.ai,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,_ju_dc,.ecovacs.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mmuid,www.ecovacs.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Statistics,banner,Cookiebot,_hjSessionUser_2991144,.ecovacs.com,/,First party,365.00 days,,false,true,none,false,Declared & set,ecovacs.com,"Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Unclassified,none,,IMRID,.imrworldwide.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,_pin_unauth,.ecovacs.com,/,First party,365.00 days,,false,false,unspecified,false,Declared & set,ecovacs.com,Used by Pinterest to track the usage of services.
+Unclassified,none,,__cflb,my.jst.ai,/,Third party,0.03 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_li_dcdm_c,.ecovacs.com,/,First party,Session,,false,false,lax,false,Not declared,,
+Unclassified,none,,_lc2_fpi,.ecovacs.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_lc2_fpi_js,.ecovacs.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,lidid,.liadm.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_li_ss,.ecovacs.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Necessary,banner,Cookiebot,__cf_bm,.soundestlink.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,forms.soundestlink.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Statistics,banner,Cookiebot,_ga_GH5MN67G56,.ecovacs.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,ecovacs.com,Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit. 
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,clid,.media6degrees.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,acs,.media6degrees.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ab,.agkn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,banner,Cookiebot,sajssdk_2015_new_user_www_ecovacs_com,www.ecovacs.com,/,First party,0.04 days,,false,false,unspecified,false,Declared & set,www.ecovacs.com,Pending
+Unclassified,banner,Cookiebot,sa_jssdk_2015_www_ecovacs_com,www.ecovacs.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,www.ecovacs.com,Pending
+Unclassified,none,,u,.agkn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,_gcl_au,.ecovacs.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,ecovacs.com,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.   
+Statistics,banner,Cookiebot,_ga_ZG69FYS75J,.ecovacs.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,ecovacs.com,Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit. 
+Unclassified,banner,Cookiebot,fw_uid,.ecovacs.com,/,First party,365.00 days,,false,false,unspecified,false,Declared & set,ecovacs.com,Pending
+Marketing,banner,Cookiebot,_uetsid,.ecovacs.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,ecovacs.com,"Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement. "
+Marketing,banner,Cookiebot,_uetvid,.ecovacs.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,ecovacs.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Statistics,banner,Cookiebot,_ga_TN4FMJ0HCN,.ecovacs.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,ecovacs.com,Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit. 
+Unclassified,banner,Cookiebot,_mlss,.ecovacs.com,/,First party,400.00 days,,false,false,lax,false,Declared & set,ecovacs.com,Pending
+Unclassified,none,,_ju_pn,.ecovacs.com,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Statistics,banner,Cookiebot,_ga_8LLR36GFZ8,.ecovacs.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,ecovacs.com,Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit. 
+Marketing,banner,Cookiebot,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,pinterest.com,Used by Pinterest to track the usage of services.
+Statistics,banner,Cookiebot,page-views,.ecovacs.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,ecovacs.com,"Used to assess user's visits to the website, such as which pages have been visited or the frequency of visits."
+Statistics,banner,Cookiebot,_clsk,.ecovacs.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,ecovacs.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Necessary,banner,Cookiebot,__cf_bm,.forms.soundestlink.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,forms.soundestlink.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Marketing,banner,Cookiebot,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Declared & set,adsrvr.org,Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.
+Necessary,banner,Cookiebot,c,creativecdn.com,,,,,,,,,"Declared, not set",creativecdn.com,Used in order to detect spam and improve the website's security. 
+Necessary,banner,Cookiebot,ts,creativecdn.com,,,,,,,,,"Declared, not set",creativecdn.com,This cookie is necessary for the PayPal login-function on the website.
+Necessary,banner,Cookiebot,SERVERID,e.echatsoft.com,,,,Session,,,,,"Declared, not set",e.echatsoft.com,This cookie is used to assign the visitor to a specific server - this function is necessary for the functionality of the website.
+Necessary,banner,Cookiebot,PHPSESSID,ecovacs.cn,,,,,,,,,"Declared, not set",ecovacs.cn,Preserves user session state across page requests.
+Necessary,banner,Cookiebot,__mp_opt_in_out_#,ecovacs.com,,,,Session,,,,,"Declared, not set",ecovacs.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,aws-waf-token,ecovacs.com,,,,Session,,,,,"Declared, not set",ecovacs.com,Used to encrypt and contain visitor data. This is necessary for the security of the user data. 
+Necessary,banner,Cookiebot,ECOATSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Necessary,banner,Cookiebot,ECOAUSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Necessary,banner,Cookiebot,ECOCASSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Necessary,banner,Cookiebot,ECODESSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Necessary,banner,Cookiebot,ECOFRSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Necessary,banner,Cookiebot,ECOITSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Necessary,banner,Cookiebot,ECOJPSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Necessary,banner,Cookiebot,ECONLSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Necessary,banner,Cookiebot,ECOUKSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Preferences,banner,Cookiebot,g,creativecdn.com,,,,,,,,,"Declared, not set",creativecdn.com,Used in context with the language setting on the website. Facilitates the translation into the preferred language of the visitor.
+Statistics,banner,Cookiebot,_hjTLDTest,ecovacs.com,,,,Session,,,,,"Declared, not set",ecovacs.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,_tt_enable_cookie,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Statistics,banner,Cookiebot,sajssdk_2015_cross_new_user,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,"Collects statistics on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Statistics,banner,Cookiebot,sensorsdata2015jssdkcross,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,"Collects statistics on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Statistics,banner,Cookiebot,route,fr.echatsoft.com,,,,Session,,,,,"Declared, not set",fr.echatsoft.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,personalization_id,twitter.com,,,,,,,,,"Declared, not set",twitter.com,This cookie is set by Twitter - The cookie allows the visitor to share content from the website onto their Twitter profile. 
+Marketing,banner,Cookiebot,anj,adnxs.com,,,,,,,,,"Declared, not set",adnxs.com,Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.
+Marketing,banner,Cookiebot,ad-id,amazon-adsystem.com,,,,,,,,,"Declared, not set",amazon-adsystem.com,Used by Amazon Advertising to register user actions and target content on the website based on ad clicks on a different website.
+Marketing,banner,Cookiebot,ad-privacy,amazon-adsystem.com,,,,,,,,,"Declared, not set",amazon-adsystem.com,Used by Amazon Advertising to register user actions and target content on the website based on ad clicks on a different website.
+Marketing,banner,Cookiebot,SRM_B,bing.com,,,,,,,,,"Declared, not set",bing.com,Tracks the user’s interaction with the website’s search-bar-function. This data can be used to present the user with relevant products or services.     
+Marketing,banner,Cookiebot,ANONCHK,c.clarity.ms,,,,,,,,,"Declared, not set",c.clarity.ms,Registers data on visitors from multiple visits and on multiple websites. This information is used to measure the efficiency of advertisement on websites.  
+Marketing,banner,Cookiebot,SM,c.clarity.ms,,,,Session,,,,,"Declared, not set",c.clarity.ms,Registers a unique ID that identifies the user's device during return visits across websites that use the same ad network. The ID is used to allow targeted ads.
+Marketing,banner,Cookiebot,cto_bundle,criteo.com,,,,,,,,,"Declared, not set",criteo.com,"Presents the user with relevant content and advertisement. The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Marketing,banner,Cookiebot,uid,criteo.com,,,,,,,,,"Declared, not set",criteo.com,"Collects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads."
+Marketing,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.
+Marketing,banner,Cookiebot,_ttp,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Marketing,banner,Cookiebot,cto_tld_test,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,"Used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third party advertisement hubs, which facilitate real-time bidding for advertisers. "
+Marketing,banner,Cookiebot,mp_#_mixpanel,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Marketing,banner,Cookiebot,ttcsid,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,ttcsid_#,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. 
+Marketing,banner,Cookiebot,NID,google.com,,,,,,,,,"Declared, not set",google.com,Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.
+Marketing,banner,Cookiebot,HMACCOUNT,hm.baidu.com,,,,,,,,,"Declared, not set",hm.baidu.com,Used to send data to Baidu about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,HMACCOUNT_BFESS,hm.baidu.com,,,,,,,,,"Declared, not set",hm.baidu.com,Used to send data to Baidu about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,_ldbrbid,line.me,,,,,,,,,"Declared, not set",line.me,"Presents the user with relevant content and advertisement. The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,news.google.com,,,,,,,,,"Declared, not set",news.google.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,muc_ads,t.co,,,,,,,,,"Declared, not set",t.co,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Marketing,banner,Cookiebot,dt,udmserve.net,,,,,,,,,"Declared, not set",udmserve.net,Enables the visitor to share content from the website onto social media platforms or websites. 
+Marketing,banner,Cookiebot,rtbh,udmserve.net,,,,,,,,,"Declared, not set",udmserve.net,Registers a unique ID that identifies the user's device during return visits. Used for conversion tracking and to measure the efficacy of online ads.
+Marketing,banner,Cookiebot,udmts,udmserve.net,,,,,,,,,"Declared, not set",udmserve.net,"Used to measure the efficiency of the website’s advertisement efforts, by collecting data on the conversion rate of the website’s ads across multiple websites."
+Marketing,banner,Cookiebot,__lt__cid,www.ecovacs.com,,,,,,,,,"Declared, not set",www.ecovacs.com,"Collects data about the user's visit to the site, such as the number of returning visits and which pages are read. The purpose is to deliver targeted ads."
+Marketing,banner,Cookiebot,__lt__sid,www.ecovacs.com,,,,,,,,,"Declared, not set",www.ecovacs.com,"Collects data about the user's visit to the site, such as the number of returning visits and which pages are read. The purpose is to deliver targeted ads."
+Marketing,banner,Cookiebot,__rtbh.lid,www.ecovacs.com,,,,,,,,,"Declared, not set",www.ecovacs.com,Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+Marketing,banner,Cookiebot,criteo_write_test,www.ecovacs.com,,,,,,,,,"Declared, not set",www.ecovacs.com,"Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates real-time bidding for advertisers."
+Marketing,banner,Cookiebot,Hm_ck_#,www.ecovacs.com,,,,Session,,,,,"Declared, not set",www.ecovacs.com,Used to send data to Baidu about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,Hm_lpvt_#,www.ecovacs.com,,,,Session,,,,,"Declared, not set",www.ecovacs.com,Used to send data to Baidu about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,Hm_lvt_#,www.ecovacs.com,,,,,,,,,"Declared, not set",www.ecovacs.com,Used to send data to Baidu about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,www.youtube-nocookie.com,,,,Session,,,,,"Declared, not set",www.youtube-nocookie.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video
+Marketing,banner,Cookiebot,__Secure-YNID,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Marketing,banner,Cookiebot,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Unclassified,banner,Cookiebot,evcn,echatsoft.com,,,,,,,,,"Declared, not set",echatsoft.com,Pending
+Unclassified,banner,Cookiebot,frr,echatsoft.com,,,,,,,,,"Declared, not set",echatsoft.com,Pending
+Unclassified,banner,Cookiebot,searchKeywords,ecovacs.cn,,,,Session,,,,,"Declared, not set",ecovacs.cn,Pending
+Unclassified,banner,Cookiebot,__sn_test__,ecovacs.com,,,,Session,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,_aliyunwaf_test_cookie,ecovacs.com,,,,Session,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,_mlup_v2,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,_twpid,ecovacs.com,,,,Session,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,_twsid,ecovacs.com,,,,Session,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,_yjsu_yjad,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,AwinChannelCookie,ecovacs.com,,,,Session,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOAESSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOBESSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOCHSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOCZSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECODKSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECODZSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOEESSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOEGSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOESSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOFISSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOGLOBALSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOHKSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOHRSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOHUSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOIDSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOINSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOIQSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOKRSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOLISSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOLTSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOLUSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOLVSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOLYSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOMASSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOMYSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECONOSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECONZSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOPHSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOPLSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOPTSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOROSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECORUSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOSASSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOSESSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOSGSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOSISSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOSKSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOTHSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOTNSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOTRSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOTWSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOUASSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOVNSSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ECOZASSID,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,frs.echatsoft.com_531586_chatVisitorId,ecovacs.com,,,,Session,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,frs.echatsoft.com_531586_encryptVID,ecovacs.com,,,,Session,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,fw_abt,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,fw_bid,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,fw_chid,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,fw_utm,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,lantern,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,sensorsdata_domain_test,ecovacs.com,,,,Session,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,snexid_r,ecovacs.com,,,,Session,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ssxmod_itna,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,ssxmod_itna2,ecovacs.com,,,,,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,www.echatsoft.com_12545_chatVisitorId,ecovacs.com,,,,Session,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,www.echatsoft.com_12545_encryptVID,ecovacs.com,,,,Session,,,,,"Declared, not set",ecovacs.com,Pending
+Unclassified,banner,Cookiebot,#_lantern,roeye.com,,,,,,,,,"Declared, not set",roeye.com,Pending
+Unclassified,banner,Cookiebot,HWWAFSESID,shop-api.ecovacs.cn,,,,Session,,,,,"Declared, not set",shop-api.ecovacs.cn,Pending
+Unclassified,banner,Cookiebot,HWWAFSESTIME,shop-api.ecovacs.cn,,,,Session,,,,,"Declared, not set",shop-api.ecovacs.cn,Pending
+Unclassified,banner,Cookiebot,ECHAT_#_web#_miniHide,www.ecovacs.com,,,,Session,,,,,"Declared, not set",www.ecovacs.com,Pending
+Unclassified,banner,Cookiebot,echat_firsttitle,www.ecovacs.com,,,,Session,,,,,"Declared, not set",www.ecovacs.com,Pending
+Unclassified,banner,Cookiebot,echat_firsturl,www.ecovacs.com,,,,Session,,,,,"Declared, not set",www.ecovacs.com,Pending
+Unclassified,banner,Cookiebot,echat_referrer,www.ecovacs.com,,,,Session,,,,,"Declared, not set",www.ecovacs.com,Pending
+Unclassified,banner,Cookiebot,echat_referrer_pre,www.ecovacs.com,,,,Session,,,,,"Declared, not set",www.ecovacs.com,Pending
+Unclassified,banner,Cookiebot,echat_referrer_timer,www.ecovacs.com,,,,,,,,,"Declared, not set",www.ecovacs.com,Pending
+Unclassified,banner,Cookiebot,echt_test_cookie,www.ecovacs.com,,,,Session,,,,,"Declared, not set",www.ecovacs.com,Pending
+Unclassified,banner,Cookiebot,isWebp,www.ecovacs.com,,,,,,,,,"Declared, not set",www.ecovacs.com,Pending
+Unclassified,banner,Cookiebot,sajssdk_2015_cookie_access_test,www.ecovacs.com,,,,Session,,,,,"Declared, not set",www.ecovacs.com,Pending
+Unclassified,banner,Cookiebot,SERVERCORSID,www.ecovacs.com,,,,Session,,,,,"Declared, not set",www.ecovacs.com,Pending
+Unclassified,banner,Cookiebot,snexid,www.ecovacs.com,,,,Session,,,,,"Declared, not set",www.ecovacs.com,Pending

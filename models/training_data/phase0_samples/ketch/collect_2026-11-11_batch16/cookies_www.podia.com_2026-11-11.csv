@@ -1,0 +1,44 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,gb-user-id,www.podia.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Retargeting/Advertising,banner,Ketch,_gcl_au,.podia.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Analytics,banner,Ketch,_ga,.podia.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Retargeting/Advertising,banner,Ketch,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Retargeting/Advertising,banner,Ketch,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Unclassified,none,,__cf_bm,.bzrcdn.openai.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_cfuvid,.bzrcdn.openai.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,__obref,.podia.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Retargeting/Advertising,banner,Ketch,_fbp,.podia.com,/,First party,90.00 days,90 days,false,false,unspecified,false,Declared & set,,Facebook Ads
+Retargeting/Advertising,banner,Ketch,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Declared & set,,Facebook Ads
+Unclassified,none,,_swb,.podia.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_ketch_consent_v1_,.podia.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SNS,www.podia.com,/,First party,Session,,false,false,lax,false,Not declared,,
+Unclassified,none,,_sn_m,www.podia.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_sn_n,www.podia.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_swb_consent_,.podia.com,/,First party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.bzr.openai.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_cfuvid,.bzr.openai.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,ga_client_id,.podia.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,ga_session_id,.podia.com,/,First party,0.02 days,,false,false,lax,false,Not declared,,
+Analytics,banner,Ketch,rl_anonymous_id,.podia.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,,Rudderstack
+Analytics,banner,Ketch,rl_page_init_referrer,.podia.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,,Rudderstack
+Unclassified,none,,intercom-id-urmmlnxv,.podia.com,/,First party,270.02 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,intercom-session-urmmlnxv,.podia.com,/,First party,7.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,intercom-device-id-urmmlnxv,.podia.com,/,First party,270.02 days,,false,false,lax,false,Not declared,,
+Retargeting/Advertising,banner,Ketch,_uetsid,.podia.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Retargeting/Advertising,banner,Ketch,_uetvid,.podia.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Unclassified,none,,_sn_a,www.podia.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_ga_0C86GME7G5,.podia.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Analytics,banner,Ketch,rl_session,.podia.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,,Rudderstack
+Analytics,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,rl_auth_token,,,,,,,,,,"Declared, not set",,Rudderstack
+Analytics,banner,Ketch,rl_group_id,,,,,,,,,,"Declared, not set",,Rudderstack
+Analytics,banner,Ketch,rl_group_trait,,,,,,,,,,"Declared, not set",,Rudderstack
+Analytics,banner,Ketch,rl_page_init_referring_domain,,,,,,,,,,"Declared, not set",,Rudderstack
+Analytics,banner,Ketch,rl_trait,,,,,,,,,,"Declared, not set",,Rudderstack
+Analytics,banner,Ketch,rl_user_id,,,,,,,,,,"Declared, not set",,Rudderstack
+Functional,banner,Ketch,intercom-device-id-*,,,,,270 days,,,,,"Declared, not set",,Intercom
+Functional,banner,Ketch,intercom-id-*,,,,,270 days,,,,,"Declared, not set",,Intercom
+Functional,banner,Ketch,intercom-session-*,,,,,6 days,,,,,"Declared, not set",,Intercom
+Retargeting/Advertising,banner,Ketch,intercom-device-id-*,,,,,270 days,,,,,"Declared, not set",,Intercom
+Retargeting/Advertising,banner,Ketch,intercom-id-*,,,,,270 days,,,,,"Declared, not set",,Intercom
+Retargeting/Advertising,banner,Ketch,intercom-session-*,,,,,6 days,,,,,"Declared, not set",,Intercom

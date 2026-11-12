@@ -1,0 +1,19 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Necessary,banner,Cookiebot,CookieConsent,www.equinor.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,www.equinor.com,Stores the user's cookie consent state for the current domain
+Preferences,banner,Cookiebot,NEXT_LOCALE,www.equinor.com,/,First party,Session,Session,false,false,lax,false,Declared & set,www.equinor.com,"This cookie is used to determine the preferred language of the visitor and sets the language accordingly on the website, if possible."
+Necessary,banner,Cookiebot,PHPSESSID,embed.plaii.no,,,,Session,,,,,"Declared, not set",embed.plaii.no,Preserves user session state across page requests.
+Necessary,banner,Cookiebot,__cf_bm,vimeo.com,,,,,,,,,"Declared, not set",vimeo.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,cf_clearance,vimeo.com,,,,,,,,,"Declared, not set",vimeo.com,This cookie is used to distinguish between humans and bots. 
+Statistics,banner,Cookiebot,nmstat,equinor.com,,,,,,,,,"Declared, not set",equinor.com,This cookie contains an ID string on the current session. This contains non-personal information on what subpages the visitor enters – this information is used to optimize the visitor's experience.
+Statistics,banner,Cookiebot,dd_cookie_test_#,vimeo.com,,,,,,,,,"Declared, not set",vimeo.com,Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization. 
+Statistics,banner,Cookiebot,vuid,vimeo.com,,,,,,,,,"Declared, not set",vimeo.com,"Collects data on the user's visits to the website, such as which pages have been read."
+Marketing,banner,Cookiebot,__cf_ob,vimeo.com,,,,Session,,,,,"Declared, not set",vimeo.com,Pending
+Marketing,banner,Cookiebot,_dd_s_v2,vimeo.com,,,,,,,,,"Declared, not set",vimeo.com,Pending
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video
+Marketing,banner,Cookiebot,__Secure-YNID,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Marketing,banner,Cookiebot,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Unclassified,banner,Cookiebot,HCLBSTICKY,chat.plaii.no,,,,Session,,,,,"Declared, not set",chat.plaii.no,Pending

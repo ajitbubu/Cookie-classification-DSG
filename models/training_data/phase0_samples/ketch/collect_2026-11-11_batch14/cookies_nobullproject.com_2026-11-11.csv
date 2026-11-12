@@ -1,0 +1,213 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,taboola_session_id,.taboola.com,/nobull-sccnx/,Third party,Session,,false,true,none,false,Declared & set,,Taboola
+Unclassified,none,,GlobalE_Analytics,nobullproject.com,/collections,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,GlobalE_Analytics,nobullproject.com,/products,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_li_ss,i.liadm.com,/s,Third party,30.00 days,,false,true,none,false,Not declared,,
+Essential Services,banner,Ketch,localization,nobullproject.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,,Shopify
+Essential Services,banner,Ketch,cart_currency,nobullproject.com,/,First party,14.00 days,91 days,false,true,none,false,Declared & set,,Shopify
+Essential Services,banner,Ketch,_shopify_essential,nobullproject.com,/,First party,365.00 days,365 days,true,true,none,false,Declared & set,,Shopify
+Analytics,banner,Ketch,_shopify_analytics,nobullproject.com,/,First party,365.00 days,365 days,true,true,none,false,Declared & set,,
+Unclassified,none,,_shopify_marketing,nobullproject.com,/,First party,365.00 days,,true,true,none,false,"Declared, conflicting",,
+Unclassified,none,,__eventn_id,.nobullproject.com,/,First party,400.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,_cfuvid,.nobullproject.com,/,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,__attn_eat_id,.nobullproject.com,/,First party,390.00 days,,false,true,lax,true,Not declared,,
+Essential Services,banner,Ketch,_shop_app_essential,.shop.app,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,,Shopify
+Unclassified,none,,fueledUserToken,.nobullproject.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,fueledUserTokenSource,.nobullproject.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__anon_id,.nobullproject.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,fueled_session_id,.nobullproject.com,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,fueled_timestamp_session_id,.nobullproject.com,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__mmapiwsid,d-ipv6.mmapiws.com,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__mmapiwsid,.nobullproject.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,cart,nobullproject.com,/,First party,91.00 days,,false,true,none,false,Not declared,,
+Essential Services,banner,Ketch,__cf_bm,.nobullproject.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,shd_s,.nobullproject.com,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_shd_y,.nobullproject.com,/,First party,360.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__obref,nobullproject.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,_axwrt,.nobullproject.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_vb,nobullproject.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,fueled_shopify_client_id,.nobullproject.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,storefront_url,nobullproject.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Analytics,banner,Ketch,2c.cId,.nobullproject.com,/,First party,400.00 days,400 days,false,false,lax,false,Declared & set,,
+Analytics,banner,Ketch,shopify_client_id,nobullproject.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Shopify
+Unclassified,none,,fueled_country_code,.nobullproject.com,/,First party,0.04 days,,false,false,unspecified,false,Not declared,,
+Essential Services,banner,Ketch,__cf_bm,.bzrcdn.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,_cfuvid,.bzrcdn.openai.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,__obref,.nobullproject.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Essential Services,banner,Ketch,__cf_bm,.bzr.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,_cfuvid,.bzr.openai.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,_twpid,.nobullproject.com,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_nb_sp_ses.4209,nobullproject.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_SIG2,.nobullproject.com,/,First party,0.04 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_SIG3,.nobullproject.com,/,First party,0.04 days,,false,true,none,false,Not declared,,
+Unclassified,none,,axcrt,.applovin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,guest_id_marketing,.twitter.com,/,Third party,400.00 days,,false,true,none,false,"Declared, conflicting",,
+Targeted Advertising,banner,Ketch,guest_id_ads,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Targeted Advertising,banner,Ketch,personalization_id,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Targeted Advertising,banner,Ketch,guest_id,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Essential Services,banner,Ketch,__cf_bm,.twitter.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,_scid,.nobullproject.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Targeted Advertising,banner,Ketch,muc_ads,.t.co,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Essential Services,banner,Ketch,__cf_bm,.t.co,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential Services,banner,Ketch,_swb,.nobullproject.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Unclassified,none,,uid,.criteo.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,anonymousId,brwskit.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Essential Services,banner,Ketch,__cf_bm,.brwskit.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeted Advertising,banner,Ketch,_pin_unauth,nobullproject.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Pinterest
+Essential Services,banner,Ketch,_ketch_consent_v1_,.nobullproject.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Unclassified,none,,_nb_sp_cookie,i.nobullproject.com,/,First party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,addshoppers,app.shop.pe,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,addshoppers.com,app.shop.pe,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,addshoppers.com,nobullproject.com,/,First party,400.00 days,,false,true,unspecified,false,Not declared,,
+Essential Services,banner,Ketch,_swb_consent_,.nobullproject.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Unclassified,none,,test,nobullproject.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,,nobullproject.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,discount_code,nobullproject.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__kla_id,nobullproject.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Targeted Advertising,banner,Ketch,__attentive_id,.nobullproject.com,/,First party,390.00 days,389 days,false,true,unspecified,false,Declared & set,,attentive
+Unclassified,none,,__attentive_session_id,.nobullproject.com,/,First party,0.02 days,,false,true,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,__attentive_cco,.nobullproject.com,/,First party,390.00 days,,false,true,unspecified,false,"Declared, conflicting",,
+Targeted Advertising,banner,Ketch,_attn_bopd_,.nobullproject.com,/,First party,390.00 days,389 days,false,true,unspecified,false,Declared & set,,attentive
+Unclassified,none,,__attn_shp_cid,nobullproject.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Essential Services,banner,Ketch,FPC,nobullproject.com,/,First party,7.00 days,6 days,false,false,unspecified,false,Declared & set,,
+Targeted Advertising,banner,Ketch,__attentive_dv,.nobullproject.com,/,First party,1.00 days,,false,true,unspecified,false,Declared & set,,attentive
+Essential Services,banner,Ketch,cf_clearance,.nobullproject.com,/,First party,365.00 days,364 days,true,true,none,true,Declared & set,,Cloudflare
+Essential Services,banner,Ketch,__cf_bm,.nobullproject.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,__attentive_ss_referrer,.nobullproject.com,/,First party,0.02 days,,false,true,unspecified,false,"Declared, conflicting",,
+Analytics,banner,Ketch,_ga,.nobullproject.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Unclassified,none,,smartDash,.nobullproject.com,/,First party,60.00 days,,false,true,lax,false,"Declared, conflicting",,
+Targeted Advertising,banner,Ketch,_ttp,.tiktok.com,/,Third party,390.00 days,390 days,false,true,none,false,Declared & set,,Tiktok Ads
+Unclassified,none,,__attentive_vf,.nobullproject.com,/,First party,1.00 days,,false,true,unspecified,false,Not declared,,
+Targeted Advertising,banner,Ketch,c,.pointmediatracker.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,tinuiti
+Unclassified,none,,barometric[cuid],.trkn.us,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,_fbp,.nobullproject.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Facebook Ads
+Unclassified,none,,_nb_sp_ses.949c,nobullproject.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Analytics,banner,Ketch,sessionid,.rkdms.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,Merkle
+Targeted Advertising,banner,Ketch,_svsid,.nobullproject.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,,
+Analytics,banner,Ketch,_tt_enable_cookie,.nobullproject.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Tiktok Ads
+Targeted Advertising,banner,Ketch,_ttp,.nobullproject.com,/,First party,390.00 days,390 days,false,false,unspecified,false,Declared & set,,Tiktok Ads
+Targeted Advertising,banner,Ketch,_li_dcdm_c,.nobullproject.com,/,First party,Session,,false,false,lax,false,Declared & set,,Live Intent
+Targeted Advertising,banner,Ketch,_lc2_fpi,.nobullproject.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Live Intent
+Unclassified,none,,_lc2_fpi_js,.nobullproject.com,/,First party,Session,,false,false,unspecified,false,"Declared, conflicting",,
+Targeted Advertising,banner,Ketch,lidid,.liadm.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Live Intent
+Unclassified,none,,GlobalE_Analytics,nobullproject.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Analytics,banner,Ketch,first_pla_call,nobullproject.com,/,First party,30.00 days,,false,true,lax,false,Declared & set,,
+Unclassified,none,,_svsidss,.nobullproject.com,/,First party,365.00 days,,true,true,lax,false,"Declared, conflicting",,
+Targeted Advertising,banner,Ketch,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Declared & set,,Facebook Ads
+Targeted Advertising,banner,Ketch,TDID,.adsrvr.org,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,theTradeDesk
+Essential Services,banner,Ketch,__cf_bm,.rise-ai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential Services,banner,Ketch,__cf_bm,.global-e.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,_gegeo,.nobullproject.com,/,First party,1.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_geuid,.nobullproject.com,/,First party,360.00 days,,false,true,strict,false,"Declared, conflicting",,
+Targeted Advertising,banner,Ketch,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,90 days,false,true,none,true,Declared & set,,Microsoft Ads
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,"Declared, conflicting",,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sv_sid,.securedvisit.com,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Essential Services,banner,Ketch,GlobalE_Consent,.nobullproject.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,
+Unclassified,none,,uuid,.alocdn.com,/,Third party,365.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,tuid,.a.usbrowserspeed.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,t_gid,.taboola.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Taboola
+Targeted Advertising,banner,Ketch,t_pt_gid,.taboola.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Taboola
+Unclassified,none,,_geffran,.nobullproject.com,/,First party,1.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_geran,.nobullproject.com,/,First party,2.00 days,,false,true,strict,false,"Declared, conflicting",,
+Unclassified,none,,_getdran,.nobullproject.com,/,First party,2.00 days,,false,true,strict,false,"Declared, conflicting",,
+Unclassified,none,,_geff,.nobullproject.com,/,First party,7.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,c,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,tinuiti
+Unclassified,none,,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_geli,.nobullproject.com,/,First party,7.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_gelisha,.nobullproject.com,/,First party,7.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_gers,.nobullproject.com,/,First party,2.00 days,,false,true,strict,false,"Declared, conflicting",,
+Unclassified,none,,_geps,.nobullproject.com,/,First party,180.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_gepe,.nobullproject.com,/,First party,0.00 days,,false,true,strict,false,Not declared,,
+Targeted Advertising,banner,Ketch,_gecntaos,.nobullproject.com,/,First party,365.00 days,365 days,false,true,strict,false,Declared & set,,
+Unclassified,none,,_geaos,.nobullproject.com,/,First party,0.02 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_shopify_cmp,.nobullproject.com,/,First party,365.25 days,,false,true,lax,false,Not declared,,
+Analytics,banner,Ketch,fs_lua,.nobullproject.com,/,First party,0.02 days,,false,true,strict,false,Declared & set,,FullStory
+Analytics,banner,Ketch,fs_uid,.nobullproject.com,/,First party,365.00 days,364 days,false,true,strict,false,Declared & set,,FullStory
+Unclassified,none,,_ga_G1LV2BD36R,.nobullproject.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_scsrid_r,.nobullproject.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_scid_r,.nobullproject.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_scida,.nobullproject.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Targeted Advertising,banner,Ketch,_gcl_au,.nobullproject.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Unclassified,none,,_ga_7Q50WW1K1S,.nobullproject.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_JSG7B0KTL3,.nobullproject.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,_attn_,.nobullproject.com,/,First party,390.00 days,389 days,false,true,strict,false,Declared & set,,attentive
+Unclassified,none,,_shdfp,.nobullproject.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_gepix,.nobullproject.com,/,First party,1.00 days,,false,true,strict,false,Not declared,,
+Targeted Advertising,banner,Ketch,_geppv,.nobullproject.com,/,First party,0.04 days,,false,true,strict,false,Declared & set,,
+Unclassified,none,,_twsid,.nobullproject.com,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,__attentive_pv,.nobullproject.com,/,First party,0.02 days,,false,true,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,_nb_sp_id.4209,nobullproject.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,trackingConsent,.nobullproject.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,mp_d5cd5d5ed446ad4c9f0993ea31b7e23f_mixpanel,.nobullproject.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_nb_sp_id.949c,nobullproject.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,cto_bundle,.criteo.com,/,Third party,390.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,cto_bundle,.nobullproject.com,/,First party,395.42 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_CFN5OQRC77U71MMHBO6G,.nobullproject.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_reidsn,.nobullproject.com,/,First party,1.00 days,,false,true,strict,false,"Declared, conflicting",,
+Unclassified,none,,_gemark,.nobullproject.com,/,First party,1.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_geffresponse,.nobullproject.com,/,First party,7.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_ga_XYB86PYC7C,.nobullproject.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid,.nobullproject.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,GLBE_SESS_ID,.nobullproject.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_ax_session_data,.nobullproject.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ax_visitor,.nobullproject.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ax_last_event,.nobullproject.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Analytics,banner,Ketch,ajs_anonymous_id,,,,,364 days,,,,,"Declared, not set",,Twilio Segment
+Analytics,banner,Ketch,ajs_user_id,,,,,,,,,,"Declared, not set",,Twilio Segment
+Analytics,banner,Ketch,clid,,,,,179 days,,,,,"Declared, not set",,Dstillery
+Analytics,banner,Ketch,dd_cookie_test_*,,,,,,,,,,"Declared, not set",,Datadog
+Analytics,banner,Ketch,forterToken,,,,,399 days,,,,,"Declared, not set",,Forter
+Analytics,banner,Ketch,ftr_ncd,,,,,399 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,GCLB,,,,,,,,,,"Declared, not set",,Impact
+Analytics,banner,Ketch,__itest__2,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,mp_*_mixpanel,,,,,364 days,,,,,"Declared, not set",,Mixpanel
+Analytics,banner,Ketch,__mp_opt_in_out_*,,,,,,,,,,"Declared, not set",,Mixpanel
+Analytics,banner,Ketch,_shopify_s,,,,,,,,,,"Declared, not set",,Shopify
+Analytics,banner,Ketch,_shopify_y,,,,,365 days,,,,,"Declared, not set",,Shopify
+Analytics,banner,Ketch,smartDashLRX,,,,,29 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,_sp_id.*,,,,,400 days,,,,,"Declared, not set",,snowplow
+Analytics,banner,Ketch,_sp_root_domain_test_*,,,,,,,,,,"Declared, not set",,snowplow
+Analytics,banner,Ketch,_sp_ses.*,,,,,,,,,,"Declared, not set",,snowplow
+Analytics,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Analytics,banner,Ketch,t-ip,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,__tld__,,,,,,,,,,"Declared, not set",,Clearbit (by Hubspot)
+Analytics,banner,Ketch,__utest__2,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,YSC,,,,,,,,,,"Declared, not set",,Google Youtube
+Essential Services,banner,Ketch,keep_alive,,,,,,,,,,"Declared, not set",,Shopify
+Essential Services,banner,Ketch,_shopify_s,,,,,,,,,,"Declared, not set",,Shopify
+Essential Services,banner,Ketch,_shopify_test,,,,,,,,,,"Declared, not set",,Shopify
+Essential Services,banner,Ketch,_shopify_y,,,,,365 days,,,,,"Declared, not set",,Shopify
+Targeted Advertising,banner,Ketch,ab,,,,,365 days,,,,,"Declared, not set",,Neustar
+Targeted Advertising,banner,Ketch,bito,,,,,394 days,,,,,"Declared, not set",,Beeswax (by Freewheel)
+Targeted Advertising,banner,Ketch,cdv,,,,,365 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,checkForPermission,,,,,,,,,,"Declared, not set",,Beeswax (by Freewheel)
+Targeted Advertising,banner,Ketch,clid,,,,,179 days,,,,,"Declared, not set",,Dstillery
+Targeted Advertising,banner,Ketch,forterToken,,,,,399 days,,,,,"Declared, not set",,Forter
+Targeted Advertising,banner,Ketch,__itest__2,,,,,,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,scarab.profile,,,,,,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,scarab.visitor,,,,,,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,smartDashLRX,,,,,29 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,sp,,,,,364 days,,,,,"Declared, not set",,Google Ad Manager
+Targeted Advertising,banner,Ketch,tatari-cookie-test,,,,,3559 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,tatari-session-cookie,,,,,3559 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,testTLD,,,,,,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,t-ip,,,,,,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,__tld__,,,,,,,,,,"Declared, not set",,Clearbit (by Hubspot)
+Targeted Advertising,banner,Ketch,ttcsid.*,,,,,389 days,,,,,"Declared, not set",,Tiktok Ads
+Targeted Advertising,banner,Ketch,__utest__2,,,,,,,,,,"Declared, not set",,

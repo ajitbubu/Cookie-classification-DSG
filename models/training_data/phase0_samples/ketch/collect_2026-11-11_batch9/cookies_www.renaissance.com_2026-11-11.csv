@@ -1,0 +1,43 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Essential Cookies,banner,Ketch,__cf_bm,.www.renaissance.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential Cookies,banner,Ketch,__cf_bm,.237-rbj-385.mktoweb.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Analytic and Performance Cookies ,banner,Ketch,_vwo_uuid_v2,.renaissance.com,/,First party,366.00 days,365 days,false,false,unspecified,false,Declared & set,,VWO 
+Marketing and Targeted Advertising Cookies ,banner,Ketch,_gcl_au,.renaissance.com,/,First party,90.00 days,90 days,false,false,unspecified,false,Declared & set,,Google Ads
+Analytic and Performance Cookies ,banner,Ketch,_biz_uid,.renaissance.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Analytic and Performance Cookies ,banner,Ketch,_ga,.renaissance.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Analytic and Performance Cookies ,banner,Ketch,_BUID,.bizible.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Adobe Marketo Measure
+Marketing and Targeted Advertising Cookies ,banner,Ketch,_mkto_trk,.renaissance.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Engage
+Marketing and Targeted Advertising Cookies ,banner,Ketch,_fbp,.renaissance.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Facebook Ads
+Marketing and Targeted Advertising Cookies ,banner,Ketch,li_sugr,.linkedin.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Marketing and Targeted Advertising Cookies ,banner,Ketch,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LinkedIn  
+Essential Cookies,banner,Ketch,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,,LinkedIn  
+Essential Cookies,banner,Ketch,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Marketing and Targeted Advertising Cookies ,banner,Ketch,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Declared & set,,Facebook Ads
+Marketing and Targeted Advertising Cookies ,banner,Ketch,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Analytic and Performance Cookies ,banner,Ketch,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn  
+Essential Cookies,banner,Ketch,_swb,.renaissance.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Essential Cookies,banner,Ketch,bscookie,.www.linkedin.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,LinkedIn  
+Essential Cookies,banner,Ketch,_ketch_consent_v1_,.renaissance.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Essential Cookies,banner,Ketch,_swb_consent_,.renaissance.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Analytic and Performance Cookies ,banner,Ketch,_biz_flagsA,.renaissance.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Marketing and Targeted Advertising Cookies ,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Declared & set,,Google Ads
+Analytic and Performance Cookies ,banner,Ketch,_biz_nA,.renaissance.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Analytic and Performance Cookies ,banner,Ketch,_biz_pendingA,.renaissance.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Unclassified,none,,_ga_9XGC5T3G0H,.renaissance.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Analytic and Performance Cookies ,banner,Ketch,_rdt_uuid,.renaissance.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Unclassified,none,,trwv.uid,.renaissance.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,trwsa.sid,.renaissance.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Essential Cookies,banner,Ketch,BIGipServer*https,,,,,,,,,,"Declared, not set",,
+Essential Cookies,banner,Ketch,_uetmsdns,,,,,364 days,,,,,"Declared, not set",,Microsoft Ads
+Essential Cookies,banner,Ketch,_vis_opt_test_cookie,,,,,,,,,,"Declared, not set",,VWO 
+Analytic and Performance Cookies ,banner,Ketch,_biz_dfsA,,,,,,,,,,"Declared, not set",,Adobe Marketo Measure
+Analytic and Performance Cookies ,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytic and Performance Cookies ,banner,Ketch,_vis_opt_s,,,,,99 days,,,,,"Declared, not set",,VWO 
+Analytic and Performance Cookies ,banner,Ketch,_vwo_ds,,,,,29 days,,,,,"Declared, not set",,VWO 
+Analytic and Performance Cookies ,banner,Ketch,_vwo_referrer,,,,,,,,,,"Declared, not set",,VWO 
+Analytic and Performance Cookies ,banner,Ketch,_vwo_sn,,,,,,,,,,"Declared, not set",,VWO 
+Analytic and Performance Cookies ,banner,Ketch,_vwo_uuid,,,,,365 days,,,,,"Declared, not set",,VWO 
+Marketing and Targeted Advertising Cookies ,banner,Ketch,ar_debug,,,,,30 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Marketing and Targeted Advertising Cookies ,banner,Ketch,_biz_kvpA,,,,,,,,,,"Declared, not set",,Adobe Marketo Measure
+Marketing and Targeted Advertising Cookies ,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads

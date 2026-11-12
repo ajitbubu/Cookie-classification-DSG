@@ -1,0 +1,58 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,__apex_test__,.revlon.com,/collections,First party,Session,,false,false,unspecified,false,Not declared,,
+Functional Cookies,banner,OneTrust,localization,www.revlon.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.revlon.com,"These cookies are set on pages with the Flickr widget.
+"
+Functional Cookies,banner,OneTrust,cart_currency,www.revlon.com,/,First party,14.00 days,13 days,false,false,lax,false,Declared & set,www.revlon.com,This cookie is used to store the currency preference of a user on an e-commerce platform to facilitate transactions in the user's chosen currency.
+Unclassified,none,,_shopify_essential,www.revlon.com,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,_shop_app_essential,.shop.app,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,__cf_bm,.www.revlon.com,/,First party,0.02 days,0 days,true,true,none,true,Declared & set,vimeo.com,This is a CloudFoundry cookie
+Functional Cookies,banner,OneTrust,__kla_id,www.revlon.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,www.revlon.com,NA
+Unclassified,none,,OptanonAlertBoxClosed,.revlon.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_gcl_au,.revlon.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_shopify_analytics,www.revlon.com,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,_shopify_marketing,www.revlon.com,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga,.revlon.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,revlon.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Unclassified,none,,shopify_client_id,www.revlon.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__apex_test__,.revlon.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_shopify_cmp,.revlon.com,/,First party,365.25 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,OptanonConsent,.revlon.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga_FSLS87FM3F,.revlon.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,www.revlon.com,NAUsed by Google Analytics to identify and track an individual session with your device.
+Unclassified,none,,_rdt_uuid,.revlon.com,/,First party,90.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_uetsid,.revlon.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_uetvid,.revlon.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,_tracking_consent,revlon.com,,,,365 days,,,,,"Declared, not set",revlon.com,This cookie _tracking_consent is used to store a user's preferences if a merchant has set up privacy rules in the visitor's region.
+Strictly Necessary Cookies,banner,OneTrust,wpm-test-cookie,com,,,,Session,,,,,"Declared, not set",com,
+Strictly Necessary Cookies,banner,OneTrust,_orig_referrer,revlon.com,,,,13 days,,,,,"Declared, not set",revlon.com,"This cookie is generally provided by Shopify and is used in connection with a shopping part.
+"
+Strictly Necessary Cookies,banner,OneTrust,secure_customer_sig,www.revlon.com,,,,364 days,,,,,"Declared, not set",www.revlon.com,"This cookie is generally provided by Shopify and is used in connection with a customer login.
+"
+Strictly Necessary Cookies,banner,OneTrust,og_session_id,www.revlon.com,,,,399 days,,,,,"Declared, not set",www.revlon.com,The og_session_id cookie is used to uniquely identify the customer for subscription cart tracking and to track a hidden subscription cart as the customer moves through the checkout process. It is also required to enable A/B testing.
+Strictly Necessary Cookies,banner,OneTrust,wpm-test-cookie,www.revlon.com,,,,Session,,,,,"Declared, not set",www.revlon.com,
+Strictly Necessary Cookies,banner,OneTrust,wpm-test-cookie,revlon.com,,,,Session,,,,,"Declared, not set",revlon.com,
+Strictly Necessary Cookies,banner,OneTrust,og_session_id,static.ordergroove.com,,,,0 days,,,,,"Declared, not set",static.ordergroove.com,The og_session_id cookie is used to uniquely identify the customer for subscription cart tracking and to track a hidden subscription cart as the customer moves through the checkout process. It is also required to enable A/B testing.
+Performance Cookies,banner,OneTrust,_shopify_s,com,,,,Session,,,,,"Declared, not set",com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,BVBRANDSID,revlon.com,,,,0 days,,,,,"Declared, not set",revlon.com,This cookie allows internal Bazaarvoice web analytics to be correlated to the same user browsing session for interactions within a particular client domain.
+Performance Cookies,banner,OneTrust,_shopify_y,revlon.com,,,,365 days,,,,,"Declared, not set",revlon.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,NoCookie,revlon.com,,,,0 days,,,,,"Declared, not set",revlon.com,"This cookie is set when a user opts out of tracking or indicates that they are under the age of 13 (COPPA requirement). If NoCookie=true on either the client site or Bazaarvoice site, then existing tracking cookies are unset. This value is honored as long as the cookie exists."
+Performance Cookies,banner,OneTrust,BVBRANDID,revlon.com,,,,364 days,,,,,"Declared, not set",revlon.com,This cookie allows internal Bazaarvoice web analytics to be correlated to the same user for interactions within a particular client domain.
+Performance Cookies,banner,OneTrust,_shopify_s,revlon.com,,,,0 days,,,,,"Declared, not set",revlon.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_landing_page,revlon.com,,,,13 days,,,,,"Declared, not set",revlon.com,"This cookie is used to track, report, and analyze on landing pages.
+"
+Performance Cookies,banner,OneTrust,_shopify_sa_t,revlon.com,,,,0 days,,,,,"Declared, not set",revlon.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,bv_metrics,www.revlon.com,,,,0 days,,,,,"Declared, not set",www.revlon.com,This cookie is used for performance diagnostic events for less than 1/1000th of users.
+Performance Cookies,banner,OneTrust,_shopify_sa_p,revlon.com,,,,0 days,,,,,"Declared, not set",revlon.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_gdxxxxxxxxxxxxx,revlon.com,,,,Session,,,,,"Declared, not set",revlon.com,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Performance Cookies,banner,OneTrust,__kla_id,static-tracking.klaviyo.com,,,,729 days,,,,,"Declared, not set",static-tracking.klaviyo.com,NA
+Targeting Cookies,banner,OneTrust,NoCookie,www.revlon.com,,,,0 days,,,,,"Declared, not set",www.revlon.com,"This cookie is set when a user opts out of tracking or indicates that they are under the age of 13 (COPPA requirement). If NoCookie=true on either the client site or Bazaarvoice site, then existing tracking cookies are unset. This value is honored as long as the cookie exists."
+Targeting Cookies,banner,OneTrust,mid,instagram.com,,,,399 days,,,,,"Declared, not set",instagram.com,"Instagram is a social networking service owned by Facebook, Inc. It's designed for sharing photos and videos from a smartphone. The service also uses cookies for various purposes, including analytics, personalization, and advertising."
+Functional Cookies,banner,OneTrust,_gdxxxxxxxxxxxxx,www.revlon.com,,,,Session,,,,,"Declared, not set",www.revlon.com,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Functional Cookies,banner,OneTrust,_cfuvid,vimeo.com,,,,Session,,,,,"Declared, not set",vimeo.com,This domain is owned by Vimeo. The main business activity is: Video Hosting/Sharing
+Functional Cookies,banner,OneTrust,og_auth,static.ordergroove.com,,,,0 days,,,,,"Declared, not set",static.ordergroove.com,Used to enable Ordergroove Subscription functionality in Shopify

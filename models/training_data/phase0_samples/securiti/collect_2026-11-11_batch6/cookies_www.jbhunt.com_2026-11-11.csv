@@ -1,0 +1,60 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Essential,banner,Securiti,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,Session,true,true,none,false,Declared & set,www.google.com,This cookie is used to protect our site against spam inquiries on contact forms.
+Essential,banner,Securiti,ApplicationGatewayAffinityCORS,www.jbhunt.com,/,First party,Session,Session,false,true,none,false,Declared & set,www.jbhunt.com,This cookie is used for load balancing to make sure visitors page requests are routed to the same server in any browsing session
+Essential,banner,Securiti,ApplicationGatewayAffinity,www.jbhunt.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,drivers.jbhunt.com,This cookie is used for load balancing to make sure visitors page requests are routed to the same server in any browsing session
+Unclassified,none,,TS014aa900,www.jbhunt.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Essential,banner,Securiti,__privaci_cookie_consent_uuid,www.jbhunt.com,/,First party,365.00 days,365.0 days,false,true,none,false,Declared & set,jbhunt.com,SECURITI.ai cookies are required to support core functionality of the SECURITI.ai consent solution. The cookies help maintain and honor consent preferences submitted by the user.
+Essential,banner,Securiti,__privaci_cookie_consent_generated,www.jbhunt.com,/,First party,365.00 days,365.0 days,false,true,none,false,Declared & set,jbhunt.com,SECURITI.ai cookies are required to support core functionality of the SECURITI.ai consent solution. The cookies help maintain and honor consent preferences submitted by the user.
+Essential,banner,Securiti,_gcl_au,.jbhunt.com,/,First party,90.00 days,Session,false,false,unspecified,false,Declared & set,.jbhunt.com,This cookie is used by advertisers to measure user activity and the performance of their ad campaigns.
+Essential,banner,Securiti,__privaci_cookie_consents,www.jbhunt.com,/,First party,365.00 days,365.0 days,false,true,none,false,Declared & set,jbhunt.com,SECURITI.ai cookies are required to support core functionality of the SECURITI.ai consent solution. The cookies help maintain and honor consent preferences submitted by the user.
+Essential,banner,Securiti,__privaci_latest_published_version,www.jbhunt.com,/,First party,365.00 days,365.0 days,false,true,none,false,Declared & set,jbhunt.com,SECURITI.ai cookies are required to support core functionality of the SECURITI.ai consent solution. The cookies help maintain and honor consent preferences submitted by the user.
+Unclassified,none,,sa-user-id,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,www.jbhunt.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,www.jbhunt.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,sa-user-id-v3,www.jbhunt.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,www.jbhunt.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_mkto_trk,.jbhunt.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Analytics & Customization,banner,Securiti,_ga,.jbhunt.com,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,.jbhunt.com,Used to distinguish users.
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_clck,.jbhunt.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,slireg,www.jbhunt.com,/,First party,7.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,sliguid,www.jbhunt.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,slirequested,www.jbhunt.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SM,.c.clarity.ms,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,MUID,.clarity.ms,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.c.clarity.ms,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_zitok,.www.jbhunt.com,/,First party,365.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Analytics & Customization,banner,Securiti,_bc_uuid,.brightcove.com,/,Third party,400.00 days,Session,true,true,none,false,Declared & set,.brightcove.com,"This cookie enables you to track users over different visits (on your first-party domain), so that they can deliver relevant advertising to you."
+Unclassified,none,,__cf_bm,.zoominfo.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_cfuvid,.zoominfo.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Essential,banner,Securiti,gaqId,.jbhunt.com,/,First party,365.00 days,Session,false,false,unspecified,false,Declared & set,.jbhunt.com,This is a performance & functionality tracker from J.B. Hunt Transport. J.B. hunt transport is a logistics management services and integrated transportation solutions to major corporations.
+Unclassified,none,,_clsk,.jbhunt.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_0FK9VDSC2L,.jbhunt.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Advertising,banner,Securiti,_fbp,.jbhunt.com,,,,Session,,,,,"Declared, not set",.jbhunt.com,This cookie identifies browsers for the purposes of providing advertising and site analytics services.
+Essential,banner,Securiti,JSESSIONID,scm.jbhunt.com,,,,Session,,,,,"Declared, not set",scm.jbhunt.com,This cookie is to store a session identifier so that site can monitor session counts for an application.
+Essential,banner,Securiti,TS*,.jbhunt.com,,,,Session,,,,,"Declared, not set",.jbhunt.com,This cookie is used in the context of transactions on the website. This cookie is required for secure transactions.
+Essential,banner,Securiti,dtCookie,.jbhunt.com,,,,Session,,,,,"Declared, not set",.jbhunt.com,This cookie is used to track a visit across multiple requests.
+Essential,banner,Securiti,BIGipServer*,scm.jbhunt.com,,,,Session,,,,,"Declared, not set",scm.jbhunt.com,Used to distribute traffic to the website on several servers in order to optimise response times.
+Analytics & Customization,banner,Securiti,fpestid,.jbhunt.com,,,,Session,,,,,"Declared, not set",.jbhunt.com,FpestID is a ShareThis cookie ID set in the domain of the website operator.
+Analytics & Customization,banner,Securiti,__stidv,sharethis.com,,,,Session,,,,,"Declared, not set",sharethis.com,"This cookie collects data about internet users and how they interact with content, websites and adverts which enables us to facilitate the delivery of relevant, targeted advertising."
+Analytics & Customization,banner,Securiti,st_samesite,www.jbhunt.com,,,,Session,,,,,"Declared, not set",www.jbhunt.com,This cookie gathers information regarding the browsing and sharing activities of internet users that utilize the sharethis social media sharing functionality on this site.
+Analytics & Customization,banner,Securiti,_ga_*,.jbhunt.com,,,,Session,,,,,"Declared, not set",.jbhunt.com,This cookie is used to persist session state.
+Analytics & Customization,banner,Securiti,__stid,sharethis.com,,,,Session,,,,,"Declared, not set",sharethis.com,This cookie is used to provide the service that allows you to share certain articles on the site with friends/colleagues via various social networks.
+Analytics & Customization,banner,Securiti,__sharethis_cookie_test__,www.jbhunt.com,,,,Session,,,,,"Declared, not set",www.jbhunt.com,"This cookie monitors click-stream activity, e.g. web pages viewed and navigated, and time spent on pages."

@@ -1,0 +1,64 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Preferences,banner,Cookiebot,.ASPXANONYMOUS,www.sram.com,/,First party,69.44 days,,true,true,unspecified,false,Declared & set,www.sram.com,Used to deliver user data when authorising applications on the website.
+Necessary,banner,Cookiebot,ASP.NET_SessionId,www.sram.com,/,First party,Session,Session,true,true,lax,false,Declared & set,www.sram.com,Preserves the visitor's session state across page requests.
+Unclassified,banner,Cookiebot,ui_cltr,www.sram.com,/,First party,Session,Session,true,true,unspecified,false,Declared & set,www.sram.com,Pending
+Statistics,banner,Cookiebot,ai_user,www.sram.com,/,First party,365.00 days,,false,true,none,false,Declared & set,bikefinder.sram.com,Used by Microsoft Application Insights software to collect statistical usage and telemetry information. The cookie stores a unique identifier to recognize users on returning visits over time.
+Marketing,banner,Cookiebot,YSC,.youtube.com,/,Third party,Session,Session,true,true,none,true,Declared & set,youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Unclassified,none,,VISITOR_PRIVACY_METADATA,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Preferences,banner,Cookiebot,thx_guid,imgs.signifyd.com,/,Third party,390.00 days,,true,true,none,false,Declared & set,imgs.signifyd.com,Registers a unique ID that identifies the user's device for return visits.
+Necessary,banner,Cookiebot,CookieConsent,www.sram.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,axs.sram.com,Stores the user's cookie consent state for the current domain
+Marketing,banner,Cookiebot,__Secure-YNID,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,_gcl_au,.sram.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,sram.com,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.   
+Unclassified,banner,Cookiebot,tmx_guid,imgs.signifyd.com,/,Third party,390.00 days,,true,true,none,false,Declared & set,imgs.signifyd.com,Pending
+Marketing,banner,Cookiebot,wooTracker,.sram.com,/,First party,400.00 days,,false,true,unspecified,false,Declared & set,sram.com,"Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates real-time bidding for advertisers."
+Marketing,banner,Cookiebot,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,linkedin.com,"Used by the social networking service, LinkedIn, for tracking the use of embedded services."
+Marketing,banner,Cookiebot,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,linkedin.com,"Used by the social networking service, LinkedIn, for tracking the use of embedded services."
+Necessary,banner,Cookiebot,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,hcaptcha.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,ai_session,www.sram.com,/,First party,0.02 days,,false,true,none,false,Declared & set,bikefinder.sram.com,Preserves users states across page requests.
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,__cflb,api.hcaptcha.com,,,,,,,,,"Declared, not set",api.hcaptcha.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,hmt_id,api.hcaptcha.com,,,,,,,,,"Declared, not set",api.hcaptcha.com,This cookie is used to distinguish between humans and bots. 
+Necessary,banner,Cookiebot,_shopify_test,com,,,,Session,,,,,"Declared, not set",com,This cookie determines whether the browser accepts cookies.
+Necessary,banner,Cookiebot,__stripe_mid,donorbox.org,,,,,,,,,"Declared, not set",donorbox.org,This cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.
+Necessary,banner,Cookiebot,__stripe_sid,donorbox.org,,,,,,,,,"Declared, not set",donorbox.org,This cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.
+Necessary,banner,Cookiebot,_cfuvid,donorbox.org,,,,Session,,,,,"Declared, not set",donorbox.org,"This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators. "
+Necessary,banner,Cookiebot,cf_clearance,donorbox.org,,,,,,,,,"Declared, not set",donorbox.org,This cookie is used to distinguish between humans and bots. 
+Necessary,banner,Cookiebot,li_gc,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,m,m.stripe.com,,,,,,,,,"Declared, not set",m.stripe.com,Determines the device used to access the website. This allows the website to be formatted accordingly. 
+Necessary,banner,Cookiebot,JSESSIONID,nr-data.net,,,,Session,,,,,"Declared, not set",nr-data.net,Preserves users states across page requests.
+Necessary,banner,Cookiebot,_shop_app_essential,shop.app,,,,,,,,,"Declared, not set",shop.app,Necessary for the shopping cart functionality on the website.
+Necessary,banner,Cookiebot,_shopify_essential,shop.sram.com,,,,,,,,,"Declared, not set",shop.sram.com,Necessary for the checkout function on the website. 
+Necessary,banner,Cookiebot,cart_currency,shop.sram.com,,,,,,,,,"Declared, not set",shop.sram.com,The cookie is necessary for the secure checkout and payment function on the website. This function is provided by shopify.com.
+Necessary,banner,Cookiebot,datadome,soundcloud.com,,,,Session,,,,,"Declared, not set",soundcloud.com,"Used in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website."
+Necessary,banner,Cookiebot,sc_anonymous_id,soundcloud.com,,,,,,,,,"Declared, not set",soundcloud.com,Used in context with the 3D-view-function on the website.
+Necessary,banner,Cookiebot,__mp_opt_in_out_#,sramconnect.com,,,,Session,,,,,"Declared, not set",sramconnect.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,auth0,sramid-auth.sram.com,,,,,,,,,"Declared, not set",sramid-auth.sram.com,This cookie is necessary for the login function on the website. 
+Necessary,banner,Cookiebot,auth0_compat,sramid-auth.sram.com,,,,,,,,,"Declared, not set",sramid-auth.sram.com,This cookie is necessary for the login function on the website. 
+Necessary,banner,Cookiebot,did,sramid-auth.sram.com,,,,,,,,,"Declared, not set",sramid-auth.sram.com,Unique id that identifies the user's session.
+Necessary,banner,Cookiebot,did_compat,sramid-auth.sram.com,,,,,,,,,"Declared, not set",sramid-auth.sram.com,Ensures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.   
+Necessary,banner,Cookiebot,_GRECAPTCHA,www.recaptcha.net,,,,,,,,,"Declared, not set",www.recaptcha.net,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,__RequestVerificationToken,www.sram.com,,,,Session,,,,,"Declared, not set",www.sram.com,Helps prevent Cross-Site Request Forgery (CSRF) attacks.
+Necessary,banner,Cookiebot,OpenIdConnect.nonce.#,www.sram.com,,,,,,,,,"Declared, not set",www.sram.com,Pending
+Preferences,banner,Cookiebot,localization,shop.sram.com,,,,,,,,,"Declared, not set",shop.sram.com,Holds the users timezone.
+Statistics,banner,Cookiebot,_hjSession_#,sram.com,,,,,,,,,"Declared, not set",sram.com,"Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Statistics,banner,Cookiebot,_hjSessionUser_#,sram.com,,,,,,,,,"Declared, not set",sram.com,"Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Statistics,banner,Cookiebot,_hjTLDTest,sram.com,,,,Session,,,,,"Declared, not set",sram.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,ajs_anonymous_id,sramconnect.com,,,,,,,,,"Declared, not set",sramconnect.com,This cookie is used to identify a specific visitor - this information is used to identify the number of specific visitors on a website.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,calendar.google.com,,,,,,,,,"Declared, not set",calendar.google.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.
+Marketing,banner,Cookiebot,NID,google.com,,,,,,,,,"Declared, not set",google.com,Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.
+Marketing,banner,Cookiebot,dd_testcookie,soundcloud.com,,,,Session,,,,,"Declared, not set",soundcloud.com,Pending
+Marketing,banner,Cookiebot,sp_landing,spotify.com,,,,,,,,,"Declared, not set",spotify.com,Used to implement audio-content from Spotify on the website. Can also be used to register user interaction and preferences in context with audio-content - This can serve statistics and marketing purposes.  
+Marketing,banner,Cookiebot,sp_t,spotify.com,,,,,,,,,"Declared, not set",spotify.com,Used to implement audio-content from Spotify on the website. Can also be used to register user interaction and preferences in context with audio-content - This can serve statistics and marketing purposes.  
+Marketing,banner,Cookiebot,_fbp,sram.com,,,,,,,,,"Declared, not set",sram.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Marketing,banner,Cookiebot,_ga,sram.com,,,,,,,,,"Declared, not set",sram.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,_ga_#,sram.com,,,,,,,,,"Declared, not set",sram.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,__tld__,sramconnect.com,,,,Session,,,,,"Declared, not set",sramconnect.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,ajs_user_id,sramconnect.com,,,,Session,,,,,"Declared, not set",sramconnect.com,"This cookie is used to collect data on the visitor's behavior on the website - this information can be used to assign the visitor to a visitor segment, based on common preferences."
+Marketing,banner,Cookiebot,mp_#_mixpanel,sramconnect.com,,,,,,,,,"Declared, not set",sramconnect.com,Pending
+Marketing,banner,Cookiebot,__Secure-BUCKET,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Pending
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Unclassified,banner,Cookiebot,__pr.1q9h,sram.com,,,,,,,,,"Declared, not set",sram.com,Pending

@@ -1,0 +1,88 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,SSSC_2215,.whitestuff.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Functional cookies,banner,OneTrust,ConstructorioID_client_id,.whitestuff.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,whitestuff.com,
+Functional cookies,banner,OneTrust,ConstructorioID_session_id,.whitestuff.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,whitestuff.com,
+Strictly necessary cookies,banner,OneTrust,mt.v,.whitestuff.com,/,First party,400.00 days,399 days,false,false,lax,false,Declared & set,whitestuff.com,
+Strictly necessary cookies,banner,OneTrust,vsf-locale,www.whitestuff.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.whitestuff.com,
+Strictly necessary cookies,banner,OneTrust,vsf-currency,www.whitestuff.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.whitestuff.com,
+Strictly necessary cookies,banner,OneTrust,vsf-country,www.whitestuff.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.whitestuff.com,
+Unclassified,none,,cf_clearance,.whitestuff.com,/,First party,365.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,ws_active_channel,www.whitestuff.com,/,First party,7.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,SSRT_2215,.whitestuff.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,tfExperimentId,.truefitcorp.com,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,tfExperimentId,.whitestuff.com,/,First party,400.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,tf-version,.whitestuff.com,/,First party,365.00 days,,false,true,strict,false,Not declared,,
+Strictly necessary cookies,banner,OneTrust,OptanonAlertBoxClosed,.whitestuff.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,whitestuff.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Strictly necessary cookies,banner,OneTrust,cart_id/1406818/GBP,www.whitestuff.com,/,First party,7.00 days,6 days,false,false,unspecified,false,Declared & set,www.whitestuff.com,
+Unclassified,none,,_gcl_au,.whitestuff.com,/,First party,90.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Performance cookies,banner,OneTrust,_gid,.whitestuff.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,whitestuff.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Performance cookies,banner,OneTrust,_gat_UA-2450643-5,.whitestuff.com,/,First party,0.00 days,0 days,false,false,unspecified,false,Declared & set,whitestuff.com,"This is a pattern type cookie set by Google Analytics, where the pattern element on the name contains the unique identity number of the account or website it relates to. It appears to be a variation of the _gat cookie which is used to limit the amount of data recorded by Google on high traffic volume websites."
+Targeting cookies,banner,OneTrust,_ttp,.tiktok.com,/,Third party,390.00 days,89 days,false,true,none,false,Declared & set,tiktok.com,
+Unclassified,none,,__ps_r,.whitestuff.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__ps_sr,.whitestuff.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__ps_lu,.whitestuff.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__ps_slu,.whitestuff.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__ps_did,.whitestuff.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__ps_fva,.whitestuff.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Performance cookies,banner,OneTrust,_cs_c,.whitestuff.com,/,First party,395.42 days,395 days,false,false,lax,false,Declared & set,whitestuff.com,This cookie name is associated with ContentSquare which is used to store cookie consent preferences.This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_tt_enable_cookie,.whitestuff.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Targeting cookies,banner,OneTrust,_ttp,.whitestuff.com,/,First party,390.00 days,89 days,false,false,unspecified,false,Declared & set,tiktok.com,
+Targeting cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Mircosoft - it is the site for the search engine Bing.
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_pin_unauth,.whitestuff.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__adal_ses,.whitestuff.com,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__adal_ca,.whitestuff.com,/,First party,180.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__adal_cw,.whitestuff.com,/,First party,7.00 days,,false,false,unspecified,false,Not declared,,
+Targeting cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,_hjSession_285034,.whitestuff.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Targeting cookies,banner,OneTrust,_fbp,.whitestuff.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,whitestuff.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Strictly necessary cookies,banner,OneTrust,xnpe_7015b3d8-ae7f-11eb-92ce-e65cf20795a6,analytics-api.whitestuff.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,analytics-api.whitestuff.com,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Strictly necessary cookies,banner,OneTrust,__exponea_etc__,.whitestuff.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,whitestuff.com,
+Functional cookies,banner,OneTrust,lantern,.whitestuff.com,/,First party,30.00 days,29 days,false,false,unspecified,false,Declared & set,whitestuff.com,
+Performance cookies,banner,OneTrust,FPID,.whitestuff.com,/,First party,400.00 days,399 days,true,true,unspecified,false,Declared & set,whitestuff.com,
+Performance cookies,banner,OneTrust,FPLC,.whitestuff.com,/,First party,0.83 days,0 days,false,true,unspecified,false,Declared & set,whitestuff.com,
+Strictly necessary cookies,banner,OneTrust,__exponea_time2__,.whitestuff.com,/,First party,0.04 days,0 days,false,true,none,false,Declared & set,whitestuff.com,
+Functional cookies,banner,OneTrust,31742_lantern,.roeye.com,/,Third party,182.00 days,181 days,false,true,none,false,Declared & set,roeye.com,
+Unclassified,none,,ws_segment,www.whitestuff.com,/,First party,0.04 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,_hjSessionUser_285034,.whitestuff.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,BVBRANDID,.whitestuff.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,BVBRANDSID,.whitestuff.com,/,First party,0.02 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,SSID_2215,.whitestuff.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Functional cookies,banner,OneTrust,ConstructorioID_session,.whitestuff.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,whitestuff.com,
+Strictly necessary cookies,banner,OneTrust,OptanonConsent,.whitestuff.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,whitestuff.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,_dd_s_v2,.whitestuff.com,/,First party,365.00 days,,false,true,strict,false,Not declared,,
+Strictly necessary cookies,banner,OneTrust,trkPV,www.whitestuff.com,/,First party,364.79 days,364 days,false,false,unspecified,false,Declared & set,www.whitestuff.com,
+Performance cookies,banner,OneTrust,_ga_FMQ41JDJKR,.whitestuff.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,whitestuff.com,To generate statistical data on how the visitor uses the Service
+Performance cookies,banner,OneTrust,_cs_id,.whitestuff.com,/,First party,395.42 days,395 days,false,false,lax,false,Declared & set,whitestuff.com,This cookie is typically associated with ContentSquare and is used for analytics and personalization to improve user experience by tracking visitor behavior on the website.This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Performance cookies,banner,OneTrust,_cs_s,.whitestuff.com,/,First party,0.02 days,0 days,false,false,lax,false,Declared & set,whitestuff.com,This cookie is typically associated with ContentSquare and is used for analytics and personalization. It stores information on how visitors use a website and helps in creating an analytics report of how the website is doing.This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Performance cookies,banner,OneTrust,_cs_s_ctx,.whitestuff.com,/,First party,0.02 days,0 days,false,false,lax,false,Declared & set,whitestuff.com,This cookie is typically associated with ContentSquare and is used for analytics and personalization. It stores information on how visitors use a website and helps in creating an analytics report of how the website is doing.This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Unclassified,none,,__adal_id,.whitestuff.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Performance cookies,banner,OneTrust,_ga_12345,.whitestuff.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,whitestuff.com,To generate statistical data on how the visitor uses the Service
+Performance cookies,banner,OneTrust,_ga,.whitestuff.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,whitestuff.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Targeting cookies,banner,OneTrust,_uetsid,.whitestuff.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,whitestuff.com,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Social media cookies,banner,OneTrust,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,ct.pinterest.com,
+Performance cookies,banner,OneTrust,_uetvid,.whitestuff.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,whitestuff.com,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Unclassified,none,,ttcsid,.whitestuff.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_CK5BS8JC77U25LTFU2KG,.whitestuff.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Strictly necessary cookies,banner,OneTrust,bv_metrics,www.whitestuff.com,,,,0 days,,,,,"Declared, not set",www.whitestuff.com,This cookie is used for performance diagnostic events for less than 1/1000th of users.
+Strictly necessary cookies,banner,OneTrust,cart_id/1407345/EUR,www.whitestuff.com,,,,6 days,,,,,"Declared, not set",www.whitestuff.com,
+Strictly necessary cookies,banner,OneTrust,mt.gender,www.whitestuff.com,,,,Session,,,,,"Declared, not set",www.whitestuff.com,
+Strictly necessary cookies,banner,OneTrust,NoCookie,whitestuff.com,,,,0 days,,,,,"Declared, not set",whitestuff.com,"This cookie is set when a user opts out of tracking or indicates that they are under the age of 13 (COPPA requirement). If NoCookie=true on either the client site or Bazaarvoice site, then existing tracking cookies are unset. This value is honored as long as the cookie exists."
+Strictly necessary cookies,banner,OneTrust,tfc-l,whitestuff.com,,,,399 days,,,,,"Declared, not set",whitestuff.com,
+Strictly necessary cookies,banner,OneTrust,__cf_bm,whitestuff.com,,,,0 days,,,,,"Declared, not set",whitestuff.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+This is a CloudFoundry cookie"
+Strictly necessary cookies,banner,OneTrust,_gd#############,whitestuff.com,,,,Session,,,,,"Declared, not set",whitestuff.com,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Strictly necessary cookies,banner,OneTrust,__cf_bm,stylitics.com,,,,0 days,,,,,"Declared, not set",stylitics.com,This is a CloudFoundry cookie
+Strictly necessary cookies,banner,OneTrust,tfcuser,truefitcorp.com,,,,399 days,,,,,"Declared, not set",truefitcorp.com,Used to track usage of the embedded video player.
+Strictly necessary cookies,banner,OneTrust,prod1-tf-prod-86479863pn,truefitcorp.com,,,,Session,,,,,"Declared, not set",truefitcorp.com,
+Functional cookies,banner,OneTrust,styliticsWidgetSession,whitestuff.com,,,,399 days,,,,,"Declared, not set",whitestuff.com,This cookie name is associated with web-assets.stylitics.com which is used to support the customer services web-chat tool.
+Functional cookies,banner,OneTrust,_cfuvid,geoip-js.com,,,,Session,,,,,"Declared, not set",geoip-js.com,"This domain is owned by MaxMind, Inc. which provides geolocation services through the GeoIP2 JavaScript Client API."
+Functional cookies,banner,OneTrust,dtCookie,talkdeskapp.eu,,,,Session,,,,,"Declared, not set",talkdeskapp.eu,"This cookie name is associated with, software from Dynatrace, an application performance management (APM) software company.
+Their software manages the availability and performance of software applications and the impact on user experience in the form of deep transaction tracing, synthetic monitoring, real user monitoring, and network monitoring.
+"
+Targeting cookies,banner,OneTrust,ar_debug,pinterest.com,,,,364 days,,,,,"Declared, not set",pinterest.com,This domain is owned by Pinterest. The main business activity is: Social Content Sharing platform
+Targeting cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Performance cookies,banner,OneTrust,_cs_root-domain,whitestuff.com,,,,Session,,,,,"Declared, not set",whitestuff.com,This cookie name is used as a test cookie to get the root domain name excluding subdomains for cookie setting and is immediately removed after it is set.This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Performance cookies,banner,OneTrust,_cs_same_site,t.contentsquare.net,,,,Session,,,,,"Declared, not set",t.contentsquare.net,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.

@@ -1,0 +1,93 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Necessary,banner,Cookiebot,__cf_bm,.www.chuckecheese.com,/,First party,0.02 days,,true,true,none,true,Declared & set,backend.chatbase.co,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,CookieConsent,www.chuckecheese.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,feedback.chuckecheese.com,Stores the user's cookie consent state for the current domain
+Marketing,banner,Cookiebot,_gcl_au,.chuckecheese.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,chuckecheese.com,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.  
+Necessary,banner,Cookiebot,cec_consent,.chuckecheese.com,/,First party,365.00 days,Session,false,true,lax,false,Declared & set,chuckecheese.com,Used to track consent status across domains and subdomains.
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,_ttp,.tiktok.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,chuckecheese.com,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Statistics,banner,Cookiebot,_ga,.chuckecheese.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,chuckecheese.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Preferences,banner,Cookiebot,chatbase_anon_id,.www.chuckecheese.com,/,First party,Session,Session,false,true,lax,false,Declared & set,www.chuckecheese.com,"The chatbase_anon_id cookie is associated with Chatbase, a tool used to facilitate the chatbot on the website. This cookie assigns an anonymous identifier to users, enabling conversations to be managed between the user and the server. Personally identifiable information is not collected or stored."
+Statistics,banner,Cookiebot,_clck,.chuckecheese.com,/,First party,365.00 days,,false,false,unspecified,false,Declared & set,chuckecheese.com,Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+Unclassified,none,,DotomiConsent,.dotomi.com,/,Third party,400.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,DotomiSession_83511,.dotomi.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,receive-cookie-deprecation,.dotomi.com,/,Third party,395.00 days,,true,true,none,true,Not declared,,
+Marketing,banner,Cookiebot,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Marketing,banner,Cookiebot,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Tracks the user’s interaction with the website’s search-bar-function. This data can be used to present the user with relevant products or services.     
+Marketing,banner,Cookiebot,SM,.c.clarity.ms,/,Third party,Session,Session,false,true,none,false,Declared & set,c.clarity.ms,Registers a unique ID that identifies the user's device during return visits across websites that use the same ad network. The ID is used to allow targeted ads.
+Marketing,banner,Cookiebot,MUID,.clarity.ms,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Marketing,banner,Cookiebot,MR,.c.clarity.ms,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Declared & set,c.clarity.ms,Registers data on visitors from multiple visits and on multiple websites. This information is used to measure the efficiency of advertisement on websites.  
+Necessary,banner,Cookiebot,__cf_bm,.backend.chatbase.co,/,Third party,0.02 days,,true,true,none,true,Declared & set,backend.chatbase.co,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Marketing,banner,Cookiebot,_tt_enable_cookie,.chuckecheese.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,chuckecheese.com,"Used by TikTok to enable the TikTok pixel for advertising and conversion tracking. Activates TikTok's tracking functionality to measure the effectiveness of ad campaigns and support audience targeting and retargeting across TikTok's advertising network.
+
+"
+Marketing,banner,Cookiebot,_ttp,.chuckecheese.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,chuckecheese.com,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Unclassified,none,,dtm_token,.chuckecheese.com,/,First party,395.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,dtm_consent,.chuckecheese.com,/,First party,395.00 days,,false,true,lax,false,Not declared,,
+Marketing,banner,Cookiebot,_fbp,.chuckecheese.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,chuckecheese.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Unclassified,none,,KRTBCOOKIE_32,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,tluid,.3lift.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.1rx.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,A3,.yahoo.com,/,Third party,365.25 days,,true,true,none,false,Not declared,,
+Unclassified,none,,i,.openx.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IDSYNC,.analytics.yahoo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TEST-COOKIE,.inmobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Declared & set,doubleclick.net,Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.
+Unclassified,none,,iid,.inmobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.targeting.unrulymedia.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,mc,.quantserve.com,/,Third party,395.00 days,,false,true,none,false,Declared & set,quantserve.com,"Collects data on the user's visits to the website, such as what pages have been loaded. The registered data is used for targeted ads."
+Unclassified,none,,acs,.media6degrees.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,sglst,.media6degrees.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mako_uid,.eyeota.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,SERVERID,.eyeota.net,/,Third party,0.01 days,,true,true,none,false,Not declared,,
+Unclassified,none,,V,.contextweb.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,VP,.contextweb.com,/,Third party,360.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,pb_rtb_ev,.contextweb.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pb_rtb_ev_part,.contextweb.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,INGRESSCOOKIE,bh.contextweb.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,pid,.smartadserver.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TestIfCookieP,.smartadserver.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,csync,.smartadserver.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,st_cs,.seedtag.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,st_csd,.seedtag.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,st_uid,.seedtag.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,visitor-id,.media.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,data-co,.media.net,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,c,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,clid,.media6degrees.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,DotomiSync,.dotomi.com,/,Third party,10.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,DotomiUser,.dotomi.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dtm_token_sc,.www.chuckecheese.com,/,First party,395.00 days,,false,true,lax,false,Not declared,,
+Statistics,banner,Cookiebot,_ga_M3BPF4BBV1,.chuckecheese.com,/,First party,400.00 days,,false,true,none,false,Declared & set,chuckecheese.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,ttcsid_CL7AHEJC77UFPNDA5NU0,.chuckecheese.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,chuckecheese.com,Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. 
+Marketing,banner,Cookiebot,ttcsid,.chuckecheese.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,chuckecheese.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Statistics,banner,Cookiebot,_clsk,.chuckecheese.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,chuckecheese.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,_ga_2RJSD92MEE,.chuckecheese.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,chuckecheese.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Necessary,banner,Cookiebot,cecLocation,chuckecheese.com,,,,,,,,,"Declared, not set",chuckecheese.com,Pending
+Necessary,banner,Cookiebot,ASLBSA,feedback.chuckecheese.com,,,,Session,,,,,"Declared, not set",feedback.chuckecheese.com,"This cookie is used in context with load balancing - This optimizes the response rate between the visitor and the site, by distributing the traffic load on multiple network links or servers.  "
+Necessary,banner,Cookiebot,ASLBSACORS,feedback.chuckecheese.com,,,,Session,,,,,"Declared, not set",feedback.chuckecheese.com,Preserves users states across page requests.
+Necessary,banner,Cookiebot,_GRECAPTCHA,google.com,,,,,,,,,"Declared, not set",google.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,AWSALBTG,klear.com,,,,,,,,,"Declared, not set",klear.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,AWSALBTGCORS,klear.com,,,,,,,,,"Declared, not set",klear.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,_cfuvid,www.chuckecheese.com,,,,Session,,,,,"Declared, not set",www.chuckecheese.com,"This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators. "
+Marketing,banner,Cookiebot,JSESSIONID,action.media6degrees.com,,,,Session,,,,,"Declared, not set",action.media6degrees.com,Preserves users states across page requests.
+Marketing,banner,Cookiebot,__qca,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,"Collects data on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded with the purpose of generating reports for optimising the website content."
+Marketing,banner,Cookiebot,_dlt,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Sets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.
+Marketing,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.

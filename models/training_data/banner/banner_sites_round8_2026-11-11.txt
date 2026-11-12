@@ -1,0 +1,69 @@
+# Round 8 batch, 2026-11-11: manufacturing, food brands, home goods, consumer finance, media.
+# From 234 new candidates checked with find_banner_sites (candidates_round8_2026-11-11_verified.csv):
+# 87 usable. Site = final_host. ferrero.com and all-clad.com listed twice. Dropped as sister brands:
+#   Mars (collected): mars.com, mms.com, snickers.com, skittles.com; hersheyland.com (collected);
+#   Lindt (lindtusa.com): ghirardelli.com, russellstover.com; Masco (deltafaucet.com kept):
+#   behr.com, masco.com; Campbell's: goldfishsmiles.com; J.M. Smucker (jmsmucker.com kept):
+#   smuckers.com, jif.com; General Mills: yoplait.com; Mondelez: oreo.com, snackworks.com;
+#   Ferrero: nutella.com; FTD: proflowers.com; Unilever (dove.com): liquid-iv.com; La-Z-Boy:
+#   joybird.com; Sallie Mae: sallie.com; BuzzFeed: tasty.co; Dotdash Meredith (people.com):
+#   simplyrecipes.com, myrecipes.com, eatingwell.com, thespruce.com; Hearst (cosmopolitan.com):
+#   housebeautiful.com, elledecor.com; Trusted Media (tasteofhome.com): familyhandyman.com;
+#   Ziff Davis (pcmag.com): eurogamer.net
+# Columns: host vendor-folder
+www.emerson.com onetrust
+www.carrier.com onetrust
+www.lennox.com onetrust
+www.otis.com onetrust
+www.xylem.com onetrust
+www.snapon.com onetrust
+www.moen.com ketch
+www.deltafaucet.com securiti
+www.americanstandard-us.com onetrust
+www.rustoleum.com onetrust
+www.trex.com onetrust
+www.pella.com onetrust
+www.mohawkflooring.com onetrust
+shawfloors.com onetrust
+www.armstrongflooring.com cookiebot
+www.lyondellbasell.com onetrust
+www.airproducts.com onetrust
+www.linde.com onetrust
+www.sealedair.com onetrust
+www.campbells.com onetrust
+www.conagrabrands.com onetrust
+www.smithfieldfoods.com onetrust
+www.jmsmucker.com onetrust
+www.mccormick.com onetrust
+www.redbull.com onetrust
+www.celsius.com onetrust
+www.welchs.com onetrust
+www.bluediamond.com cookiebot
+www.wonderfulpistachios.com onetrust
+www.chobani.com onetrust
+www.organicvalley.coop onetrust
+www.tillamook.com onetrust
+www.icecream.com cookiebot
+www.ferrero.com onetrust
+www.ediblearrangements.com onetrust
+www.ftd.com onetrust
+www.teleflora.com onetrust
+www.naturemade.com onetrust
+www.centrum.com onetrust
+drinkag1.com ketch
+www.lecreuset.com onetrust
+www.all-clad.com onetrust
+hexclad.com onetrust
+www.campchef.com onetrust
+www.lovesac.com securiti
+www.la-z-boy.com onetrust
+www.bassettfurniture.com onetrust
+www.roomstogo.com onetrust
+www.salliemae.com onetrust
+www.prosper.com onetrust
+www.onemainfinancial.com onetrust
+www.moneylion.com securiti
+www.greenfi.com onetrust
+step.com cookiebot
+tastytrade.com onetrust
+www.thisoldhouse.com onetrust
