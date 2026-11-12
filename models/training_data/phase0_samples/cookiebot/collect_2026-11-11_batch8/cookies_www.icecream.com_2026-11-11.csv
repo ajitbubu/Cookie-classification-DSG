@@ -1,0 +1,73 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Necessary,banner,Cookiebot,affinity,www.icecream.com,/,First party,Session,Session,true,true,unspecified,false,Declared & set,www.icecream.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Marketing,banner,Cookiebot,_gcl_au,.icecream.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,icecream.com,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.  
+Necessary,banner,Cookiebot,BVBRANDID,.icecream.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,icecream.com,Sets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.
+Necessary,banner,Cookiebot,BVBRANDSID,.icecream.com,/,First party,0.02 days,,false,true,unspecified,false,Declared & set,icecream.com,Sets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,_clck,.icecream.com,/,First party,365.00 days,,false,false,unspecified,false,Declared & set,icecream.com,Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+Marketing,banner,Cookiebot,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Marketing,banner,Cookiebot,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Tracks the user’s interaction with the website’s search-bar-function. This data can be used to present the user with relevant products or services.     
+Marketing,banner,Cookiebot,SM,.c.clarity.ms,/,Third party,Session,Session,false,true,none,false,Declared & set,c.clarity.ms,Registers a unique ID that identifies the user's device during return visits across websites that use the same ad network. The ID is used to allow targeted ads.
+Marketing,banner,Cookiebot,MUID,.clarity.ms,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Marketing,banner,Cookiebot,MR,.c.clarity.ms,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Declared & set,c.clarity.ms,Registers data on visitors from multiple visits and on multiple websites. This information is used to measure the efficiency of advertisement on websites.  
+Necessary,banner,Cookiebot,CookieConsent,www.icecream.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,www.icecream.com,Stores the user's cookie consent state for the current domain
+Unclassified,banner,Cookiebot,_mid,.icecream.com,/,First party,365.00 days,Session,false,true,lax,false,Declared & set,icecream.com,Pending
+Necessary,banner,Cookiebot,at_check,.icecream.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,icecream.com,This cookie determines whether the browser accepts cookies.
+Statistics,banner,Cookiebot,demdex,.demdex.net,/,Third party,180.00 days,,false,true,none,false,Declared & set,demdex.net,"Via a unique ID that is used for semantic content analysis, the user's navigation on the website is registered and linked to offline data from surveys and similar registrations to display targeted ads."
+Unclassified,none,,AMCVS_B99D56E25FC744D70A495C11%40AdobeOrg,.icecream.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Statistics,banner,Cookiebot,s_inv,.icecream.com,/,First party,0.02 days,,false,false,unspecified,false,Declared & set,icecream.com,Pending
+Statistics,banner,Cookiebot,s_cc,.icecream.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,icecream.com,Used to check if the user's browser supports cookies.
+Statistics,banner,Cookiebot,everest_g_v2,.everesttech.net,/,Third party,365.00 days,,false,true,none,false,Declared & set,everesttech.net,Used for targeted ads and to document efficacy of each individual ad.
+Statistics,banner,Cookiebot,dpm,.dpm.demdex.net,/,Third party,180.00 days,,false,true,none,false,Declared & set,demdex.net,"Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates real-time bidding for advertisers."
+Statistics,banner,Cookiebot,AMCV_B99D56E25FC744D70A495C11%40AdobeOrg,.icecream.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,icecream.com,Unique user ID that recognizes the user on returning visits
+Statistics,banner,Cookiebot,_gid,.icecream.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,icecream.com,Registers a unique ID that is used to generate statistical data on how the visitor uses the website.
+Statistics,banner,Cookiebot,_gat_gtag_UA_10799150_3,.icecream.com,/,First party,0.00 days,,false,false,unspecified,false,Declared & set,icecream.com,Used by Google Analytics to throttle request rate
+Marketing,banner,Cookiebot,__Secure-YNID,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,YSC,.youtube.com,/,Third party,Session,Session,true,true,none,true,Declared & set,youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Unclassified,none,,VISITOR_PRIVACY_METADATA,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Used to track user’s interaction with embedded content.
+Statistics,banner,Cookiebot,_ga_Z9E35GQ3H4,.icecream.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,icecream.com,Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit. 
+Unclassified,banner,Cookiebot,brandName,www.icecream.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,www.icecream.com,Pending
+Statistics,banner,Cookiebot,mbox,.icecream.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,icecream.com,"This cookie is used to collect non-personal information on the visitor's behavior and non-personal visitor statistics, which can be used by a third-party ad-targeting agency."
+Statistics,banner,Cookiebot,s_nr30,.icecream.com,/,First party,30.00 days,,false,false,unspecified,false,Declared & set,icecream.com,Registers a unique ID that identifies the user's device for return visits.
+Statistics,banner,Cookiebot,s_tslv,.icecream.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,icecream.com,Used to determine the number of days since the user last visited the website.
+Statistics,banner,Cookiebot,_clsk,.icecream.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,icecream.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,_ga_KX2HXK6BGW,.icecream.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,icecream.com,Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit. 
+Statistics,banner,Cookiebot,_ga,.icecream.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,icecream.com,Registers a unique ID that is used to generate statistical data on how the visitor uses the website.
+Necessary,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.
+Necessary,banner,Cookiebot,__cf_bm,gleam.io,,,,,,,,,"Declared, not set",gleam.io,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,_gd#,icecream.com,,,,Session,,,,,"Declared, not set",icecream.com,Pending
+Necessary,banner,Cookiebot,NoCookie,icecream.com,,,,Session,,,,,"Declared, not set",icecream.com,"Identifies if the visitor has deselected any cookies, trackers or other audience targeting tools."
+Necessary,banner,Cookiebot,test,icecream.com,,,,Session,,,,,"Declared, not set",icecream.com,Used to detect if the visitor has accepted the marketing category in the cookie banner. This cookie is necessary for GDPR-compliance of the website.  
+Necessary,banner,Cookiebot,bcookie,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,Used in order to detect spam and improve the website's security. 
+Necessary,banner,Cookiebot,li_gc,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,JSESSIONID,nr-data.net,,,,Session,,,,,"Declared, not set",nr-data.net,Preserves users states across page requests.
+Necessary,banner,Cookiebot,cf_clearance,smartlabel.org,,,,,,,,,"Declared, not set",smartlabel.org,This cookie is used to distinguish between humans and bots. 
+Necessary,banner,Cookiebot,CookieConsentPolicy,telerxdgic.my.salesforce-sites.com,,,,,,,,,"Declared, not set",telerxdgic.my.salesforce-sites.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,LSKey-c$CookieConsentPolicy,telerxdgic.my.salesforce-sites.com,,,,,,,,,"Declared, not set",telerxdgic.my.salesforce-sites.com,Determines whether the user has accepted the cookie consent box. 
+Necessary,banner,Cookiebot,BVImpldisney,www.icecream.com,,,,Session,,,,,"Declared, not set",www.icecream.com,Pending
+Necessary,banner,Cookiebot,BVImpldrumstick,www.icecream.com,,,,Session,,,,,"Declared, not set",www.icecream.com,Pending
+Necessary,banner,Cookiebot,BVImpledys,www.icecream.com,,,,Session,,,,,"Declared, not set",www.icecream.com,Pending
+Necessary,banner,Cookiebot,BVImplfrostypaws,www.icecream.com,,,,Session,,,,,"Declared, not set",www.icecream.com,Pending
+Necessary,banner,Cookiebot,BVImplhaagen_dazs,www.icecream.com,,,,Session,,,,,"Declared, not set",www.icecream.com,Pending
+Necessary,banner,Cookiebot,BVImplkitkat,www.icecream.com,,,,Session,,,,,"Declared, not set",www.icecream.com,Pending
+Necessary,banner,Cookiebot,BVImploreos,www.icecream.com,,,,Session,,,,,"Declared, not set",www.icecream.com,Pending
+Necessary,banner,Cookiebot,BVImploutshine,www.icecream.com,,,,Session,,,,,"Declared, not set",www.icecream.com,Pending
+Necessary,banner,Cookiebot,BVImplskinny_cow,www.icecream.com,,,,Session,,,,,"Declared, not set",www.icecream.com,Pending
+Necessary,banner,Cookiebot,BVImpltollhouse,www.icecream.com,,,,Session,,,,,"Declared, not set",www.icecream.com,Pending
+Preferences,banner,Cookiebot,lidc,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Statistics,banner,Cookiebot,AMCVS_#AdobeOrg,icecream.com,,,,Session,,,,,"Declared, not set",icecream.com,Pending
+Statistics,banner,Cookiebot,BrowserId,telerxdgic.my.salesforce-sites.com,,,,,,,,,"Declared, not set",telerxdgic.my.salesforce-sites.com,Registers a unique ID that identifies the user's device for return visits.
+Statistics,banner,Cookiebot,bv_metrics,www.icecream.com,,,,,,,,,"Declared, not set",www.icecream.com,Registers the website's speed and performance. This function can be used in context with statistics and load-balancing.
+Statistics,banner,Cookiebot,BVImplmain_site,www.icecream.com,,,,Session,,,,,"Declared, not set",www.icecream.com,This cookie is used by the website’s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site. 
+Marketing,banner,Cookiebot,_dp,demdex.net,,,,Session,,,,,"Declared, not set",demdex.net,This cookie is set by the audience manager of a website in order to determine if any additional third-party cookies can be set in the visitor’s browser – third-party cookies are used to gather information or track visitor behavior on multiple websites. Third-party cookies are set by a third-party website or company.
+Marketing,banner,Cookiebot,everest_session_v2,everesttech.net,,,,Session,,,,,"Declared, not set",everesttech.net,Used for targeted ads and to document efficacy of each individual ad.
+Marketing,banner,Cookiebot,_fbp,icecream.com,,,,,,,,,"Declared, not set",icecream.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Unclassified,banner,Cookiebot,BVImplcrunch,www.icecream.com,,,,Session,,,,,"Declared, not set",www.icecream.com,Pending
+Unclassified,banner,Cookiebot,BVImplnestle_treats,www.icecream.com,,,,Session,,,,,"Declared, not set",www.icecream.com,Pending

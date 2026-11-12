@@ -1,0 +1,96 @@
+# All-vendor batch 5, 2026-11-11: European brands, SaaS, US retail/restaurants.
+# From 302 new candidates checked with find_banner_sites (candidates_allvendors_2026-11-11_verified.csv):
+# 107 usable (OneTrust 84, Cookiebot 12, Ketch 6, Transcend 5). Site = final_host. 22 dropped:
+#   redirect to a collected site: ikea.dk, spotify.se, sage.co.uk, deliveroo.com, heineken.nl,
+#   loreal.fr, novartis.ch, roche.ch, logitech.ch, gitlab.io, 1password.ca, cyberark.com
+#   (-> paloaltonetworks.com), webflow.io
+#   sister brands: nestle.ch (Nestle), swiss.com (Lufthansa Group), allianz.de (Allianz),
+#   baskinrobbins.com (Inspire Brands; Dunkin'), carlsjr.com (CKE; hardees.com kept),
+#   tempurpedic.com (Somnigroup; mattressfirm.com kept), santander.com (santander.co.uk),
+#   dyson.co.uk (dyson.com), coda.io (Grammarly)
+# Columns: host vendor-folder
+netcompany.com cookiebot
+www.equinor.com cookiebot
+www.hydro.com cookiebot
+www.kongsberg.com onetrust
+www.scania.com onetrust
+www.home.sandvik onetrust
+www.atlascopco.com onetrust
+seb.se onetrust
+www.telia.se onetrust
+www.essity.com onetrust
+www.assaabloy.com onetrust
+www.alfalaval.com onetrust
+www.kone.com onetrust
+www.wartsila.com onetrust
+www.fortum.com onetrust
+www.storaenso.com onetrust
+www.neste.com onetrust
+supercell.com onetrust
+www.basf.com onetrust
+www.asml.com onetrust
+www.randstad.com onetrust
+www.akzonobel.com onetrust
+www.kering.com onetrust
+www.lindtusa.com onetrust
+www.swisscom.ch onetrust
+www.sbb.ch onetrust
+www.migros.ch onetrust
+www.sika.com onetrust
+www.givaudan.com onetrust
+www.morrisons.com onetrust
+www.britishgas.co.uk onetrust
+www.rightmove.co.uk onetrust
+www.nationwide.co.uk onetrust
+www.metrobankonline.co.uk onetrust
+www.legalandgeneral.com onetrust
+www.gymshark.com onetrust
+www.inditex.com onetrust
+www.bbva.com onetrust
+www.repsol.com onetrust
+amadeus.com onetrust
+www.eni.com onetrust
+www.ferrari.com onetrust
+www.armani.com onetrust
+www.barilla.com onetrust
+bitwarden.com ketch
+www.onelogin.com onetrust
+www.sailpoint.com onetrust
+www.wiz.io onetrust
+www.netskope.com cookiebot
+arcticwolf.com onetrust
+www.darktrace.com onetrust
+www.extremenetworks.com onetrust
+www.ui.com onetrust
+www.hibob.com onetrust
+www.deel.com cookiebot
+www.papayaglobal.com cookiebot
+www.oysterhr.com ketch
+www.trinet.com onetrust
+www.mentimeter.com cookiebot
+kahoot.com onetrust
+doodle.com onetrust
+www.getharvest.com onetrust
+toggl.com cookiebot
+www.pendo.io onetrust
+wingify.com onetrust
+customer.io cookiebot
+www.helpscout.com transcend
+front.com onetrust
+www.qualified.com onetrust
+www.demandbase.com ketch
+www.apollo.io transcend
+www.lusha.com onetrust
+www.highspot.com cookiebot
+www.seismic.com onetrust
+kinsta.com ketch
+www.siteground.com cookiebot
+www.mattressfirm.com onetrust
+purple.com ketch
+www.nikonusa.com onetrust
+www.geappliances.com onetrust
+www.in-n-out.com onetrust
+www.hardees.com onetrust
+www.noodles.com onetrust
+www.einsteinbros.com onetrust
+www.coldstonecreamery.com cookiebot

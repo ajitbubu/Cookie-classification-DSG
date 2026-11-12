@@ -1,0 +1,37 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Necessary,banner,Cookiebot,CookieConsent,step.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,step.com,Stores the user's cookie consent state for the current domain
+Marketing,banner,Cookiebot,_fbp,step.com,/,First party,90.00 days,,false,false,lax,false,Declared & set,step.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Marketing,banner,Cookiebot,_gcl_au,.step.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,step.com,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.  
+Statistics,banner,Cookiebot,_ga,.step.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,step.com,Registers a unique ID that is used to generate statistical data on how the visitor uses the website.
+Statistics,banner,Cookiebot,af_id,.appsflyersdk.com,/,Third party,395.00 days,,false,true,none,false,Declared & set,appsflyersdk.com,Sets a unique ID that allows the website to obtain data on visitor behaviour on the website and the app for statistical purposes.
+Marketing,banner,Cookiebot,afUserId,.step.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,step.com,Stores the AppsFlyer user ID used to attribute installs and in-app events to marketing campaigns.
+Statistics,banner,Cookiebot,af_id,.onelink.me,/,Third party,395.00 days,,false,true,none,false,Declared & set,appsflyersdk.com,Sets a unique ID that allows the website to obtain data on visitor behaviour on the website and the app for statistical purposes.
+Marketing,banner,Cookiebot,AF_SYNC,.step.com,/,First party,7.00 days,,false,false,unspecified,false,Declared & set,step.com,Used by AppsFlyer to sync attribution data and device identifiers for mobile app marketing.
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,arc_id,.mgln.ai,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SM,.c.clarity.ms,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,MUID,.clarity.ms,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.c.clarity.ms,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_clck,.step.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mp_1520a7c686b3f9e3b1ee87c48272d21a_mixpanel,.step.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Statistics,banner,Cookiebot,_ga_QCP7BKQ7WJ,.step.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,step.com,Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit. 
+Unclassified,none,,_clsk,.step.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Necessary,banner,Cookiebot,io_token_#,iesnare.com,,,,,,,,,"Declared, not set",iesnare.com,"Set by iovation on its own domain to recognize the device during sign-up, so fraudulent sign-ups can be detected."
+Necessary,banner,Cookiebot,MYGREENHOUSE-XSRF-TOKEN,my.greenhouse.io,,,,,,,,,"Declared, not set",my.greenhouse.io,Security token used by Greenhouse to prevent cross-site request forgery on the careers/job application portal.
+Necessary,banner,Cookiebot,__mp_opt_in_out_#,step.com,,,,Session,,,,,"Declared, not set",step.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,_step_ft,step.com,,,,Session,,,,,"Declared, not set",step.com,"Remembers the offer and landing page from the link that brought the visitor to Step, so the offer still applies if they tap Sign up before the page has finished loading. With cookie consent, it also records the campaign that referred them."
+Necessary,banner,Cookiebot,fp_token_7c6a6574-f011-4c9a-abdd-9894a102ccef,step.com,,,,,,,,,"Declared, not set",step.com,"Set by iovation (TransUnion TruValidate), our fraud-prevention provider, when the sign-up page loads. Holds a device identifier used to detect fraudulent sign-ups and protect accounts."
+Necessary,banner,Cookiebot,AWSALBTG,typeform.com,,,,,,,,,"Declared, not set",typeform.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,AWSALBTGCORS,typeform.com,,,,,,,,,"Declared, not set",typeform.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Statistics,banner,Cookiebot,_sp_root_domain_test_#,greenhouse.io,,,,Session,,,,,"Declared, not set",greenhouse.io,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,_session_id,my.greenhouse.io,,,,,,,,,"Declared, not set",my.greenhouse.io,"Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Marketing,banner,Cookiebot,mp_#_mixpanel,step.com,,,,,,,,,"Declared, not set",step.com,Mixpanel tracking cookie used to collect data on user behavior and interactions.
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,www.youtube-nocookie.com,,,,Session,,,,,"Declared, not set",www.youtube-nocookie.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,www.youtube-nocookie.com,,,,,,,,,"Declared, not set",www.youtube-nocookie.com,Used to track user’s interaction with embedded content.

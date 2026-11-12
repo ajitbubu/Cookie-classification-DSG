@@ -1,0 +1,65 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,cf_clearance,.pepejeans.com,/,First party,365.00 days,,true,true,none,true,Not declared,,
+Necessary,banner,Cookiebot,CookieConsent,www.pepejeans.com,/,First party,181.00 days,,false,true,unspecified,false,Declared & set,serverside.pepejeans.com,Stores the user's cookie consent state for the current domain
+Statistics,banner,Cookiebot,_cs_mk_ga,.pepejeans.com,/,First party,0.02 days,,false,true,none,false,Declared & set,pepejeans.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Marketing,banner,Cookiebot,_ttp,.tiktok.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,pepejeans.com,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Necessary,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.
+Necessary,banner,Cookiebot,ts,paypal,,,,,,,,,"Declared, not set",paypal,Pending
+Necessary,banner,Cookiebot,_cs_c,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Determines whether the visitor has accepted the cookie consent box. This ensures that the cookie consent box will not be presented again upon re-entry.  
+Necessary,banner,Cookiebot,__cf_bm,vimeo.com,,,,,,,,,"Declared, not set",vimeo.com,This cookie is used to distinguish between humans and bots. This is beneficial for the website in order to make valid reports on the usage of their website.
+Necessary,banner,Cookiebot,siteRedirectCountryCode,www.pepejeans.com,,,,,,,,,"Declared, not set",www.pepejeans.com,Pending
+Statistics,banner,Cookiebot,_cs_id,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,_cs_root-domain,pepejeans.com,,,,Session,,,,,"Declared, not set",pepejeans.com,Registers how the user has reached the website to enable pay-out of referral commission fees to partners.
+Statistics,banner,Cookiebot,_cs_s,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,This cookie is used to identify the frequency of visits and how long the visitor is on the website. The cookie is also used to determine how many and which subpages the visitor visits on a website – this information can be used by the website to optimize the domain and its subpages.
+Statistics,banner,Cookiebot,_cs_tld#,pepejeans.com,,,,Session,,,,,"Declared, not set",pepejeans.com,Cookies generated for Google Analytics and Adobe Analytics integrations that help determine the top-level domain where integration cookies should be set.
+Statistics,banner,Cookiebot,_dlt,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Sets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.
+Statistics,banner,Cookiebot,_ga,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,_ga_#,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,_tt_enable_cookie,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Statistics,banner,Cookiebot,FPID,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,FPLC,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Registers a unique ID that is used to generate statistical data on how the visitor uses the website.
+Statistics,banner,Cookiebot,mt.v,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,"""This cookie is set by Monetate Platform to tests and adapt the website to offer an improved customer experience. It stores an anonymous ID with other information regarding your current session.   This information is used to improve the online customer experience."""
+Statistics,banner,Cookiebot,__qca,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,"Collects data on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded with the purpose of generating reports for optimising the website content."
+Statistics,banner,Cookiebot,_cs_same_site,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization. 
+Marketing,banner,Cookiebot,uuid,cquotient.com,,,,,,,,,"Declared, not set",cquotient.com,This cookie is used to optimize ad relevance by collecting visitor data from multiple websites – this exchange of visitor data is normally provided by a third-party data-center or ad-exchange.
+Marketing,banner,Cookiebot,IDE,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.
+Marketing,banner,Cookiebot,_fbp,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Marketing,banner,Cookiebot,_gcl_au,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.  
+Marketing,banner,Cookiebot,_pin_unauth,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Used by Pinterest to track the usage of services.
+Marketing,banner,Cookiebot,ttcsid,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,ttcsid_#,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. 
+Marketing,banner,Cookiebot,_pinterest_ct_ua,pinterest.com,,,,,,,,,"Declared, not set",pinterest.com,Used by Pinterest to track the usage of services.
+Marketing,banner,Cookiebot,dw_dnt,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Collects information on user preferences and/or interaction with web-campaign content - This is used on CRM-campaign-platform used by website owners for promoting events or products.
+Unclassified,banner,Cookiebot,aaaaaaaaa5e82e626f093437dab151584609c34f5,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Pending
+Unclassified,banner,Cookiebot,aaaaaaaaa5e82e626f093437dab151584609c34f5_cs,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Pending
+Unclassified,banner,Cookiebot,aaaaaaaaa5e82e626f093437dab151584609c34f5_v,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Pending
+Unclassified,banner,Cookiebot,beyable-MustBeDisplayed,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Pending
+Unclassified,banner,Cookiebot,beyable-rgr,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Pending
+Unclassified,banner,Cookiebot,beyable-TrackingId,pepejeans.com,,,,,,,,,"Declared, not set",pepejeans.com,Pending
+Unclassified,banner,Cookiebot,mt.pevt,pepejeans.com,,,,Session,,,,,"Declared, not set",pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-at_PJG-BE,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-at_PJG-DE,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-at_PJG-ES,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-at_PJG-FR,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-at_PJG-NL,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-at_PJG-UK,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-nx_PJG-BE,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-nx_PJG-DE,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-nx_PJG-ES,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-nx_PJG-FR,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-nx_PJG-NL,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-nx_PJG-UK,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-nx-g_PJG-BE,www.pepejeans.com,,,,,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-nx-g_PJG-DE,www.pepejeans.com,,,,,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-nx-g_PJG-ES,www.pepejeans.com,,,,,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-nx-g_PJG-FR,www.pepejeans.com,,,,,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-nx-g_PJG-NL,www.pepejeans.com,,,,,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,cc-nx-g_PJG-UK,www.pepejeans.com,,,,,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,contentPageType,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,ppjClpPreference,www.pepejeans.com,,,,Session,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,usid_PJG-BE,www.pepejeans.com,,,,,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,usid_PJG-DE,www.pepejeans.com,,,,,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,usid_PJG-ES,www.pepejeans.com,,,,,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,usid_PJG-FR,www.pepejeans.com,,,,,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,usid_PJG-NL,www.pepejeans.com,,,,,,,,,"Declared, not set",www.pepejeans.com,Pending
+Unclassified,banner,Cookiebot,usid_PJG-UK,www.pepejeans.com,,,,,,,,,"Declared, not set",www.pepejeans.com,Pending

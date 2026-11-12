@@ -1,0 +1,628 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,_GRECAPTCHA,www.recaptcha.net,/recaptcha,Third party,180.00 days,,true,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.rosettastone.com,/,First party,0.02 days,0 days,true,true,none,true,Declared & set,rosettastone.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+This is a CloudFoundry cookie"
+Targeting Cookies,banner,OneTrust,_gcl_au,.rosettastone.com,/,First party,90.00 days,90 days,false,false,unspecified,false,Declared & set,rosettastone.com,Google conversion tracking cookie
+Targeting Cookies,banner,OneTrust,_ttp,.tiktok.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,tiktok.com,"TikTok is a social media platform owned by ByteDance, known for short-form video sharing. The service is used to create and share videos, and it utilizes cookies for various purposes including advertising and analytics."
+Performance Cookies,banner,OneTrust,_ga,.rosettastone.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,rosettastone.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Targeting Cookies,banner,OneTrust,ad-id,.amazon-adsystem.com,/,Third party,231.00 days,195 days,true,true,none,false,Declared & set,amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Targeting Cookies,banner,OneTrust,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,1838 days,true,true,none,false,Declared & set,amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Targeting Cookies,banner,OneTrust,li_sugr,.linkedin.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,lidc,.linkedin.com,/,Third party,1.00 days,0 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Unclassified,none,,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,390 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Mircosoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,bat.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Performance Cookies,banner,OneTrust,ab,.agkn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,agkn.com,"This domain is owned by Aggregate Knowledge, which has been acquired by Neustar Inc. Aggregate Knowledge provides a data management platform which enables real time targeting and consumer profiling functionality. "
+Targeting Cookies,banner,OneTrust,_fbp,.rosettastone.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Targeting Cookies,banner,OneTrust,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Functional Cookies,banner,OneTrust,_tt_enable_cookie,.rosettastone.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,rosettastone.com,
+Targeting Cookies,banner,OneTrust,_ttp,.rosettastone.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,rosettastone.com,"This cookie is typically associated with the use of Taptap Digital, a company specializing in digital advertising. It is used for tracking and ad personalization purposes."
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Functional Cookies,banner,OneTrust,brwsr,.rosettastone.com,/,First party,365.00 days,719 days,true,true,none,false,Declared & set,rosettastone.com,
+Targeting Cookies,banner,OneTrust,irtps,.rosettastone.com,/,First party,1.00 days,0 days,true,true,none,false,Declared & set,rosettastone.com,
+Unclassified,none,,arc_id,.mgln.ai,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,fr,.facebook.com,/,Third party,90.00 days,88 days,true,true,none,false,Declared & set,facebook.com,"Contains browser and user unique ID combination, used for targeted advertising."
+Targeting Cookies,banner,OneTrust,bscookie,.www.linkedin.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,www.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Functional Cookies,banner,OneTrust,brwsr,.ojrq.net,/,Third party,365.00 days,719 days,true,true,none,false,Declared & set,rosettastone.com,
+Targeting Cookies,banner,OneTrust,addshoppers,app.shop.pe,/,Third party,400.00 days,999 days,false,true,none,false,Declared & set,shop.pe,
+Unclassified,none,,addshoppers.com,app.shop.pe,/,Third party,400.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,addshoppers.com,www.rosettastone.com,/,First party,400.00 days,,false,true,unspecified,false,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,TapAd_TS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,TS
+Targeting Cookies,banner,OneTrust,TapAd_DID,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,This domain is owned by Tapad Inc. a US based company that provides technology to track users across devices to enhance targeting capabilities.
+Targeting Cookies,banner,OneTrust,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,This domain is owned by Tapad Inc. a US based company that provides technology to track users across devices to enhance targeting capabilities.
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.rosettastone.com,/,First party,365.00 days,389 days,false,false,lax,false,Declared & set,eu.rosettastone.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust. It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down. It enables the website not to show the message more than once to a user. The cookie has a normal lifespan of one year and contains no personal information.
+Unclassified,none,,rsln_anon,.rosettastone.com,/,First party,1.00 days,,true,true,lax,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga_12XMH78ZYZ,.rosettastone.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,rosettastone.com,To generate statistical data on how the visitor uses the Service
+Performance Cookies,banner,OneTrust,_tq_id.TV-7209182772-1.512f,www.rosettastone.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,www.rosettastone.com,_tq_id.TV
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.rosettastone.com,/,First party,365.00 days,389 days,false,false,lax,false,Declared & set,es.rosettastone.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Targeting Cookies,banner,OneTrust,_uetsid,.rosettastone.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,rosettastone.com,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Performance Cookies,banner,OneTrust,_uetvid,.rosettastone.com,/,First party,390.00 days,0 days,false,false,unspecified,false,Declared & set,rosettastone.com,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Targeting Cookies,banner,OneTrust,IR_18979,.rosettastone.com,/,First party,Session,0 days,false,true,unspecified,false,Declared & set,rosettastone.com,
+Targeting Cookies,banner,OneTrust,IR_PI,.rosettastone.com,/,First party,365.00 days,719 days,false,true,unspecified,false,Declared & set,rosettastone.com,
+Targeting Cookies,banner,OneTrust,irld,aff.rosettastone.com,/,First party,180.00 days,179 days,true,true,none,false,Declared & set,aff.rosettastone.com,
+Unclassified,none,,ttcsid,.rosettastone.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_CCQCPDJC77U4JVV1C8Q0,.rosettastone.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_dd_s,www.rosettastone.com,/,First party,365.00 days,,false,false,strict,false,"Declared, conflicting",,
+Functional Cookies,banner,OneTrust,__t1618798326263,rosettastone.com,,,,2914160 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__rmc__,www.rosettastone.com,,,,3648 days,,,,,"Declared, not set",www.rosettastone.com,
+Functional Cookies,banner,OneTrust,_pin_unauth,eu.rosettastone.com,,,,364 days,,,,,"Declared, not set",eu.rosettastone.com,"This cookie is assocate with pinterest.  It is used to track the usage of services.
+"
+Functional Cookies,banner,OneTrust,onetrustGeolocationData,business.rosettastone.com,,,,730 days,,,,,"Declared, not set",business.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611066374995,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,mage-cache-storage,securecdn.rosettastone.com,,,,Session,,,,,"Declared, not set",securecdn.rosettastone.com,"This cookie is used to facilitate content caching on the browser to make pages load faster.
+"
+Functional Cookies,banner,OneTrust,__zlcmid,rosettastone.com,,,,363 days,,,,,"Declared, not set",rosettastone.com,Live chat widget sets the cookies to store the Zopim Live Chat ID used to identify a device across visits.
+Functional Cookies,banner,OneTrust,s-9da4,secure.rosettastone.com,,,,0 days,,,,,"Declared, not set",secure.rosettastone.com,
+Functional Cookies,banner,OneTrust,mage-cache-sessid,securecdn.rosettastone.com,,,,Session,,,,,"Declared, not set",securecdn.rosettastone.com,
+Functional Cookies,banner,OneTrust,s_ttc17,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,s_ttc3,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1618800832412,rosettastone.com,,,,2914160 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,_dpm_ses.ff23,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,drift_campaign_refresh,educationblog.rosettastone.com,,,,0 days,,,,,"Declared, not set",educationblog.rosettastone.com,
+Functional Cookies,banner,OneTrust,driftt_aid,espanol.rosettastone.com,,,,730 days,,,,,"Declared, not set",espanol.rosettastone.com,
+Functional Cookies,banner,OneTrust,recently_viewed_product,securecdn.rosettastone.com,,,,Session,,,,,"Declared, not set",securecdn.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611030731347,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,i18n_redirected,pt.rosettastone.com,,,,365 days,,,,,"Declared, not set",pt.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611037984398,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611036070665,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,brandSelected,rosettastone.com,,,,30 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,d-a8e6,secure.rosettastone.com,,,,28 days,,,,,"Declared, not set",secure.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611027005690,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,drift_aid,business.rosettastone.com,,,,730 days,,,,,"Declared, not set",business.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1604655323852,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,ELOQUA,edu.espanol.rosettastone.com,,,,396 days,,,,,"Declared, not set",edu.espanol.rosettastone.com,"Eloqua Business Marketing platform - this cookie collects and transfers contact info from webforms to internal databases.
+"
+Functional Cookies,banner,OneTrust,recently_compared_product_previous,secure.rosettastone.com,,,,Session,,,,,"Declared, not set",secure.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611080509517,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,s_xxxx,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,_clck,rosettastone.com,,,,364 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611070759302,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,gdpr_cookie_consent,enterpriseblog.rosettastone.com,,,,30 days,,,,,"Declared, not set",enterpriseblog.rosettastone.com,
+Functional Cookies,banner,OneTrust,ab.storage.sessionId.c60008bd-a2fe-439c-a56f-e1dc03c2d78a,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,ab.storage.sessionId
+Functional Cookies,banner,OneTrust,visitor_id919943-hash,pt.rosettastone.com,,,,3650 days,,,,,"Declared, not set",pt.rosettastone.com,
+Functional Cookies,banner,OneTrust,_community_session_id,language.rosettastone.com,,,,Session,,,,,"Declared, not set",language.rosettastone.com,
+Functional Cookies,banner,OneTrust,mage-cache-storage-section-invalidation,secure.rosettastone.com,,,,Session,,,,,"Declared, not set",secure.rosettastone.com,"This cookie is used to facilitate content caching on the browser to make pages load faster.
+"
+Functional Cookies,banner,OneTrust,promo_eVar2,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,s_v17,rosettastone.com,,,,1826 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,form_key,secure.rosettastone.com,,,,60 days,,,,,"Declared, not set",secure.rosettastone.com,"This cookie is used to facilitate content caching on the browser to make pages load faster.
+"
+Functional Cookies,banner,OneTrust,recently_viewed_product_previous,securecdn.rosettastone.com,,,,Session,,,,,"Declared, not set",securecdn.rosettastone.com,
+Functional Cookies,banner,OneTrust,_dlt,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,check,espanol.rosettastone.com,,,,0 days,,,,,"Declared, not set",espanol.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611047169786,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,trctestcookie,www.rosettastone.com,,,,Session,,,,,"Declared, not set",www.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611030815167,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,locale,rosettastone.com,,,,364 days,,,,,"Declared, not set",rosettastone.com,"This cookie is commonly used to store the user's preferred language or locale, allowing the website to serve content in the user's preferred language or format."
+Functional Cookies,banner,OneTrust,_sp_root_domain_test_xxxxxxxxxxxxx,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,PicassoLanguageda0c5ee7-720b-434d-804c-ddcc75062624Published,support.rosettastone.com,,,,0 days,,,,,"Declared, not set",support.rosettastone.com,
+Functional Cookies,banner,OneTrust,alohaEpt,support.rosettastone.com,,,,0 days,,,,,"Declared, not set",support.rosettastone.com,
+Functional Cookies,banner,OneTrust,cerosdomaintracking,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,t-ip,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,DrupalVisitorMobile,investors.rosettastone.com,,,,Session,,,,,"Declared, not set",investors.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1618809582831,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,product_data_storage,securecdn.rosettastone.com,,,,Session,,,,,"Declared, not set",securecdn.rosettastone.com,
+Functional Cookies,banner,OneTrust,driftt_sid,enterpriseblog.rosettastone.com,,,,0 days,,,,,"Declared, not set",enterpriseblog.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1604653113410,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1618809692967,rosettastone.com,,,,2914160 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,at_check,secure.rosettastone.com,,,,0 days,,,,,"Declared, not set",secure.rosettastone.com,
+Functional Cookies,banner,OneTrust,cto_bundle,rosettastone.com,,,,393 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,fbsr_1091422140883673,espanol.rosettastone.com,,,,2914160 days,,,,,"Declared, not set",espanol.rosettastone.com,
+Functional Cookies,banner,OneTrust,s_ev11,rosettastone.com,,,,1826 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611029832940,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611031709866,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,s_ttc2,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611037867623,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,apex__currentLanguageCookie,support.rosettastone.com,,,,1 days,,,,,"Declared, not set",support.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611032834317,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,_gd,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Functional Cookies,banner,OneTrust,citrix_ns_id_secure.rosettastone.com_%2F_wat,secure.rosettastone.com,,,,Session,,,,,"Declared, not set",secure.rosettastone.com,
+Functional Cookies,banner,OneTrust,_test,language.rosettastone.com,,,,Session,,,,,"Declared, not set",language.rosettastone.com,
+Functional Cookies,banner,OneTrust,visitor_id#####,enterprise.rosettastone.com,,,,3650 days,,,,,"Declared, not set",enterprise.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1604651807880,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,section_data_ids,securecdn.rosettastone.com,,,,Session,,,,,"Declared, not set",securecdn.rosettastone.com,"This cookie is used to facilitate content caching on the browser to make pages load faster.
+"
+Functional Cookies,banner,OneTrust,__t1604653019147,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,btpdb.1PR3l09.dGZjLjc1MjMwMjI,secure.rosettastone.com,,,,Session,,,,,"Declared, not set",secure.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611080541414,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,sfdc-stream,support.rosettastone.com,,,,0 days,,,,,"Declared, not set",support.rosettastone.com,
+Functional Cookies,banner,OneTrust,mage-messages,secure.rosettastone.com,,,,Session,,,,,"Declared, not set",secure.rosettastone.com,
+Functional Cookies,banner,OneTrust,_tq_id.TV-7209182772-1.66a5,espanol.rosettastone.com,,,,729 days,,,,,"Declared, not set",espanol.rosettastone.com,_tq_id.TV
+Functional Cookies,banner,OneTrust,__t1618792291733,rosettastone.com,,,,2914160 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,_biz_dfsA,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611037414375,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,-test-amp-cookie-tmp,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,testcookie,experience.rosettastone.com,,,,Session,,,,,"Declared, not set",experience.rosettastone.com,
+Functional Cookies,banner,OneTrust,__qca,rosettastone.com,,,,392 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,_tq_id.TV-7209182772-1.ff23,pt.rosettastone.com,,,,729 days,,,,,"Declared, not set",pt.rosettastone.com,_tq_id.TV
+Functional Cookies,banner,OneTrust,_lab,rosettastone.com,,,,364 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1618799088637,rosettastone.com,,,,2914160 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611024233657,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,redirect2mobile,rosettastone.com,,,,28 days,,,,,"Declared, not set",rosettastone.com,rXXXXXXXXXX
+Functional Cookies,banner,OneTrust,COOKIE_SUPPORT,espanol.rosettastone.com,,,,365 days,,,,,"Declared, not set",espanol.rosettastone.com,
+Functional Cookies,banner,OneTrust,_biz_flagsA,rosettastone.com,,,,363 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611028123880,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,cookieSettingVerified,support.rosettastone.com,,,,Session,,,,,"Declared, not set",support.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611059688014,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1604655532139,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__ar_v4,espanol.rosettastone.com,,,,365 days,,,,,"Declared, not set",espanol.rosettastone.com,
+Functional Cookies,banner,OneTrust,_te_,www.rosettastone.com,,,,Session,,,,,"Declared, not set",www.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611029542403,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611041461349,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1604655375633,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,citrix_ns_id_secure.rosettastone.com_%2F_wlf,secure.rosettastone.com,,,,5 days,,,,,"Declared, not set",secure.rosettastone.com,
+Functional Cookies,banner,OneTrust,force-stream,support.rosettastone.com,,,,0 days,,,,,"Declared, not set",support.rosettastone.com,
+Functional Cookies,banner,OneTrust,sm_uuid,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,ln_or,pt.rosettastone.com,,,,0 days,,,,,"Declared, not set",pt.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1603241215820,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,_sp_xxxxxxxxxx,education.rosettastone.com,,,,730 days,,,,,"Declared, not set",education.rosettastone.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,recently_compared_product,securecdn.rosettastone.com,,,,Session,,,,,"Declared, not set",securecdn.rosettastone.com,
+Functional Cookies,banner,OneTrust,_gdxxxxxxxxxxxxx,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Functional Cookies,banner,OneTrust,gdpr_country_code_api_failed,rosettastone.com,,,,30 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,apex__verticalCookie,support.rosettastone.com,,,,3652 days,,,,,"Declared, not set",support.rosettastone.com,
+Functional Cookies,banner,OneTrust,gvo_cid,rosettastone.com,,,,90 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611030569885,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,s_cpm,rosettastone.com,,,,1826 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1618806930349,rosettastone.com,,,,2914160 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,ubrs,education.rosettastone.com,,,,Session,,,,,"Declared, not set",education.rosettastone.com,
+Functional Cookies,banner,OneTrust,taxitag_main,rosettastone.com,,,,364 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__cvo_skip_doc,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,mrcamp,rosettastone.com,,,,30 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__atuvc,blog.rosettastone.com,,,,395 days,,,,,"Declared, not set",blog.rosettastone.com,This cookie  is associated with the AddThis social sharing widget which is commonly embedded in websites to enable visitors to share content with a range of networking and sharing platforms. It stores an updated page share count.
+Functional Cookies,banner,OneTrust,__zlcstore,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,mboxEdgeCluster,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,gpv_p5,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,dc,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611027180084,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,langSelected,rosettastone.com,,,,30 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,RSID,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,_biz_kvpA,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,DFTT_END_USER_PREV_BOOTSTRAPPED,enterpriseblog.rosettastone.com,,,,730 days,,,,,"Declared, not set",enterpriseblog.rosettastone.com,
+Functional Cookies,banner,OneTrust,afUserId,rosettastone.com,,,,730 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,g_conf,totale.rosettastone.com,,,,Session,,,,,"Declared, not set",totale.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611028975624,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611052387843,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,_tq_id.TV-7209182772-1.2456,eu.rosettastone.com,,,,399 days,,,,,"Declared, not set",eu.rosettastone.com,_tq_id.TV
+Functional Cookies,banner,OneTrust,testTLD,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,_gd#############,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Functional Cookies,banner,OneTrust,__tld__,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,__tld__
+Functional Cookies,banner,OneTrust,__t1611031275211,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,cerosexperiencetracking,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611035690779,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,_tq_id.TV-7209182772-1.3b5f,blog.rosettastone.com,,,,729 days,,,,,"Declared, not set",blog.rosettastone.com,_tq_id.TV
+Functional Cookies,banner,OneTrust,__t1611031336148,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,_dpm_id.ff23,rosettastone.com,,,,364 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611073641910,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,citrix_ns_id_.rosettastone.com_%2F_wlf,rosettastone.com,,,,7 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,_tq_id.TV-7209182772-1.7cfd,pt.rosettastone.com,,,,729 days,,,,,"Declared, not set",pt.rosettastone.com,_tq_id.TV
+Functional Cookies,banner,OneTrust,apex__languageCookie,support.rosettastone.com,,,,3652 days,,,,,"Declared, not set",support.rosettastone.com,
+Functional Cookies,banner,OneTrust,__atuvs,blog.rosettastone.com,,,,0 days,,,,,"Declared, not set",blog.rosettastone.com,"This cookie is associated with the AddThis social sharing widget which is commonly embedded in websites to enable visitors to share content with a range of networking and sharing platforms. This is believed to be a new cookie from AddThis which is not yet documented, but has been categorised on the assumption it serves a similar purpose to other cookies set by the service."
+Functional Cookies,banner,OneTrust,guest_uuid_essential_0DM0W0000010yEe,support.rosettastone.com,,,,365 days,,,,,"Declared, not set",support.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611035311785,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,GUEST_LANGUAGE_ID,www.rosettastone.com,,,,17026 days,,,,,"Declared, not set",www.rosettastone.com,"This cookie remembers the user's language preferences.
+"
+Functional Cookies,banner,OneTrust,citrix_ns_id,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,cto_tld_test,pt.rosettastone.com,,,,0 days,,,,,"Declared, not set",pt.rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1618807356309,rosettastone.com,,,,2914160 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611036612399,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611044049906,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,s_scOpen,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611035661561,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,_clsk,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,auraBrokenDefGraph,support.rosettastone.com,,,,364 days,,,,,"Declared, not set",support.rosettastone.com,
+Functional Cookies,banner,OneTrust,signup_query_string,rosettastone.com,,,,30 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,ab.storage.sessionId.xxx,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,ab.storage.sessionId
+Functional Cookies,banner,OneTrust,__t1603241234147,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611036886806,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611052157667,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,__t1611028080945,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,s_nr2,rosettastone.com,,,,30 days,,,,,"Declared, not set",rosettastone.com,"This cookie stores information on how visitors use a website.
+"
+Functional Cookies,banner,OneTrust,__t1611036020245,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Functional Cookies,banner,OneTrust,onetrustGeolocationData,geolocation.onetrust.com,,,,730 days,,,,,"Declared, not set",geolocation.onetrust.com,
+Functional Cookies,banner,OneTrust,pa_crosswise_ts,prfct.co,,,,730 days,,,,,"Declared, not set",prfct.co,
+Functional Cookies,banner,OneTrust,mobile-help-overlay,assets-s3-us-east-1.ceros.com,,,,0 days,,,,,"Declared, not set",assets-s3-us-east-1.ceros.com,
+Functional Cookies,banner,OneTrust,_clsk,rosettastone.eu,,,,0 days,,,,,"Declared, not set",rosettastone.eu,
+Functional Cookies,banner,OneTrust,_clck,rosettastone.eu,,,,364 days,,,,,"Declared, not set",rosettastone.eu,
+Functional Cookies,banner,OneTrust,_dpm_ses.5a1f,servedby.flashtalking.com,,,,0 days,,,,,"Declared, not set",servedby.flashtalking.com,
+Functional Cookies,banner,OneTrust,_dpm_id.5a1f,servedby.flashtalking.com,,,,364 days,,,,,"Declared, not set",servedby.flashtalking.com,
+Functional Cookies,banner,OneTrust,_gh_sess,github.com,,,,Session,,,,,"Declared, not set",github.com,This domain is owned by Github. The main business activity is: Source code repository and collaboration platform
+Functional Cookies,banner,OneTrust,_octo,github.com,,,,365 days,,,,,"Declared, not set",github.com,This domain is owned by Github. The main business activity is: Source code repository and collaboration platform
+Functional Cookies,banner,OneTrust,logged_in,github.com,,,,365 days,,,,,"Declared, not set",github.com,This domain is owned by Github. The main business activity is: Source code repository and collaboration platform
+Functional Cookies,banner,OneTrust,dd_cookie_test_,www.datadoghq-browser-agent.com,,,,0 days,,,,,"Declared, not set",www.datadoghq-browser-agent.com,dd_cookie_test
+Functional Cookies,banner,OneTrust,_dd_s,www.datadoghq-browser-agent.com,,,,0 days,,,,,"Declared, not set",www.datadoghq-browser-agent.com,
+Functional Cookies,banner,OneTrust,X-Salesforce-CHAT,d.la3-c2-dfw.salesforceliveagent.com,,,,Session,,,,,"Declared, not set",d.la3-c2-dfw.salesforceliveagent.com, Sales Force uses these cookies to be able to provide live chat functionality to the user.
+Functional Cookies,banner,OneTrust,ARRAffinitySameSite,acct.bizible.com,,,,Session,,,,,"Declared, not set",acct.bizible.com,
+Functional Cookies,banner,OneTrust,ARRAffinity,acct.bizible.com,,,,Session,,,,,"Declared, not set",acct.bizible.com,
+Functional Cookies,banner,OneTrust,s_vi,thomsonreuterscorporategroupweb.d2.sc.omtrdc.net,,,,730 days,,,,,"Declared, not set",thomsonreuterscorporategroupweb.d2.sc.omtrdc.net,
+Functional Cookies,banner,OneTrust,DFTT_END_USER_PREV_BOOTSTRAPPED,js.driftt.com,,,,729 days,,,,,"Declared, not set",js.driftt.com,
+Functional Cookies,banner,OneTrust,driftt_sid,js.driftt.com,,,,0 days,,,,,"Declared, not set",js.driftt.com,
+Functional Cookies,banner,OneTrust,drift_aid,js.driftt.com,,,,730 days,,,,,"Declared, not set",js.driftt.com,This is the anonymous identifier token. It is used to tie the visitor on your website with the profile within the Drift system. This allows Drift to remember the information that this site visitor has provided through the chat on subsequent site visits.
+Functional Cookies,banner,OneTrust,driftt_aid,js.driftt.com,,,,729 days,,,,,"Declared, not set",js.driftt.com,This is the anonymous identifier token. It is used to tie the visitor on your website with the profile within the Drift system. This allows Drift to remember the information that this site visitor has provided through the chat on subsequent site visits.
+Functional Cookies,banner,OneTrust,drift_campaign_refresh,js.driftt.com,,,,0 days,,,,,"Declared, not set",js.driftt.com,"This is the session identifier token. It is used to tie the visitor on your website with a current website session within the Drift system. This is enables session-specific features, such as popping up a messaging only once during a 30 minute session as to prevent a disruptive experience."
+Functional Cookies,banner,OneTrust,X-Salesforce-CHAT,d.la4-c2-ia5.salesforceliveagent.com,,,,Session,,,,,"Declared, not set",d.la4-c2-ia5.salesforceliveagent.com, Sales Force uses these cookies to be able to provide live chat functionality to the user.
+Functional Cookies,banner,OneTrust,AWSALB,app.tombot.ai,,,,7 days,,,,,"Declared, not set",app.tombot.ai,
+Functional Cookies,banner,OneTrust,__zlcid,app.tombot.ai,,,,0 days,,,,,"Declared, not set",app.tombot.ai,
+Functional Cookies,banner,OneTrust,AWSALBCORS,app.tombot.ai,,,,7 days,,,,,"Declared, not set",app.tombot.ai,
+Functional Cookies,banner,OneTrust,testcookie,view.ceros.com,,,,Session,,,,,"Declared, not set",view.ceros.com,
+Functional Cookies,banner,OneTrust,vuid,vimeo.com,,,,730 days,,,,,"Declared, not set",vimeo.com,This domain is owned by Vimeo. The main business activity is: Video Hosting/Sharing
+Functional Cookies,banner,OneTrust,testcookie,ajax.googleapis.com,,,,Session,,,,,"Declared, not set",ajax.googleapis.com,
+Functional Cookies,banner,OneTrust,apex__currentLanguageCookie,ajax.googleapis.com,,,,1 days,,,,,"Declared, not set",ajax.googleapis.com,
+Functional Cookies,banner,OneTrust,_sp_xxxxxxxxxx,d34qb8suadcc4g.cloudfront.net,,,,730 days,,,,,"Declared, not set",d34qb8suadcc4g.cloudfront.net,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,vcnpxsn,nytrng.com,,,,364 days,,,,,"Declared, not set",nytrng.com,
+Functional Cookies,banner,OneTrust,vcnpxst,nytrng.com,,,,364 days,,,,,"Declared, not set",nytrng.com,
+Functional Cookies,banner,OneTrust,vcnxxxxxxxxxxxxx,nytrng.com,,,,Session,,,,,"Declared, not set",nytrng.com,
+Strictly Necessary Cookies,banner,OneTrust,dd_cookie_test_,au.rosettastone.com,,,,0 days,,,,,"Declared, not set",au.rosettastone.com,dd_cookie_test
+Strictly Necessary Cookies,banner,OneTrust,gdpr_cookie_consent,rosettastone.com,,,,28 days,,,,,"Declared, not set",rosettastone.com,
+Strictly Necessary Cookies,banner,OneTrust,wp-settings-,blog.rosettastone.com,,,,0 days,,,,,"Declared, not set",blog.rosettastone.com,"WordPress also sets a few wp-settings-{time}-[UID] cookies. The number on the end is your individual user ID from the users database table. This is used to customize your view of admin interface, and possibly also the main site interface."
+Strictly Necessary Cookies,banner,OneTrust,LSKey-c$CookieConsentPolicy,support.rosettastone.com,,,,365 days,,,,,"Declared, not set",support.rosettastone.com,Used to apply end-user cookie consent preferences set by our client-side utility.
+Strictly Necessary Cookies,banner,OneTrust,wordpresspass_XXXXXXXXXXXXXXXXXXXXXXXXXXXX,blog.rosettastone.com,,,,0 days,,,,,"Declared, not set",blog.rosettastone.com,WordPress login authentication cookie
+Strictly Necessary Cookies,banner,OneTrust,gdpr_country_code,rosettastone.com,,,,28 days,,,,,"Declared, not set",rosettastone.com,
+Strictly Necessary Cookies,banner,OneTrust,wordpress_test_cookie,blog.rosettastone.com,,,,Session,,,,,"Declared, not set",blog.rosettastone.com,"Used on sites built with Wordpress.  Tests whether or not the browser has cookies enabledOn login, WordPress uses the wordpress_[hash] cookie to store your authentication details. Its use is limited to the Administration Screen area, /wp-admin/"
+Strictly Necessary Cookies,banner,OneTrust,wp-settings-time-X,blog.rosettastone.com,,,,0 days,,,,,"Declared, not set",blog.rosettastone.com,"WordPress also sets a few wp-settings-{time}-[UID] cookies. The number on the end is your individual user ID from the users database table. This is used to customize your view of admin interface, and possibly also the main site interface."
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID,www.rosettastone.com,,,,Session,,,,,"Declared, not set",www.rosettastone.com,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server."
+Strictly Necessary Cookies,banner,OneTrust,CookieConsentPolicy,support.rosettastone.com,,,,365 days,,,,,"Declared, not set",support.rosettastone.com,Used to apply end-user cookie consent preferences set by our client-side utility.
+Strictly Necessary Cookies,banner,OneTrust,wordpress_sec_,blog.rosettastone.com,,,,0 days,,,,,"Declared, not set",blog.rosettastone.com,"WP Admin logged in cookie which is created dynamically.
+"
+Strictly Necessary Cookies,banner,OneTrust,ak_bmsc,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,This cookie is associated with Akamai and is used to differentiate between traffic from humans and bots.
+Strictly Necessary Cookies,banner,OneTrust,gdpr_adobe_analytics_already_ran,rosettastone.com,,,,28 days,,,,,"Declared, not set",rosettastone.com,
+Strictly Necessary Cookies,banner,OneTrust,wordpress_XXXXXXXXXXXXXXXXXXXXXXXXXXXX,blog.rosettastone.com,,,,0 days,,,,,"Declared, not set",blog.rosettastone.com,"On login, WordPress uses the wordpress_[hash] cookie to store your authentication details. Its use is limited to the Administration Screen area, /wp-admin/"
+Strictly Necessary Cookies,banner,OneTrust,PHPSESSID,enterpriseblog.rosettastone.com,,,,Session,,,,,"Declared, not set",enterpriseblog.rosettastone.com,"PHP session cookie associated with embedded content from this domain.
+"
+Strictly Necessary Cookies,banner,OneTrust,eupubconsent,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,This cookie is used by the IAB Europe Transparency & Consent Framework to store the user's consent to the data collection Purposes. The cookie holds an encrypted consent string that vendors participating in the framework can read and determine the user's consent. 
+Strictly Necessary Cookies,banner,OneTrust,wp-postpass_XXXXXXXXXXXXXXXXXXXXXXXXXXXX,blog.rosettastone.com,,,,0 days,,,,,"Declared, not set",blog.rosettastone.com,Used to maintain session in WordPress if a post is password protected
+Strictly Necessary Cookies,banner,OneTrust,wordpressuser_XXXXXXXXXXXXXXXXXXXXXXXXXXXXX,blog.rosettastone.com,,,,0 days,,,,,"Declared, not set",blog.rosettastone.com,WordPress login authentication cookie
+Strictly Necessary Cookies,banner,OneTrust,pctrk,support.rosettastone.com,,,,364 days,,,,,"Declared, not set",support.rosettastone.com,Used to count page views by unauthenticated users against license usage.
+Strictly Necessary Cookies,banner,OneTrust,sfdc-stream,support.rosettastone.com,,,,0 days,,,,,"Declared, not set",support.rosettastone.com,Common Salesforce Cookie
+Strictly Necessary Cookies,banner,OneTrust,bm_mi,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,This cookie is associated with Akamai. It is used to analyse traffic to determine if it is automated traffic generated by bots or a human user.
+Strictly Necessary Cookies,banner,OneTrust,renderCtx,support.rosettastone.com,,,,Session,,,,,"Declared, not set",support.rosettastone.com,Used to store site parameters in the session for reuse across requests by a single client for functionality and performance reasons.
+Strictly Necessary Cookies,banner,OneTrust,wordpress_logged_in_XXXXXXXXXXXXXXXXXXXXXXXXXXX,blog.rosettastone.com,,,,0 days,,,,,"Declared, not set",blog.rosettastone.com,"On login, WordPress uses the wordpress_[hash] cookie to store your authentication details. Its use is limited to the Administration Screen area, /wp-admin/"
+Strictly Necessary Cookies,banner,OneTrust,__cfduid,onetrust.com,,,,30 days,,,,,"Declared, not set",onetrust.com,"This domain is owned by OneTrust, a privacy management software which helps organizations achieve compliance with global regulations."
+Strictly Necessary Cookies,banner,OneTrust,__cfduid,cookielaw.org,,,,30 days,,,,,"Declared, not set",cookielaw.org,This host is used by OneTrust for hosting the Cookie Consent tool script. It is used to manage cookies on websites.
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,rosettastone.eu,,,,365 days,,,,,"Declared, not set",rosettastone.eu,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Strictly Necessary Cookies,banner,OneTrust,eupubconsent,rosettastone.eu,,,,365 days,,,,,"Declared, not set",rosettastone.eu,This cookie is used by the IAB Europe Transparency & Consent Framework to store the user's consent to the data collection Purposes. The cookie holds an encrypted consent string that vendors participating in the framework can read and determine the user's consent. 
+Strictly Necessary Cookies,banner,OneTrust,paypal-offers--country,paypalobjects.com,,,,3 days,,,,,"Declared, not set",paypalobjects.com,
+Strictly Necessary Cookies,banner,OneTrust,c,stats.paypal.com,,,,7300 days,,,,,"Declared, not set",stats.paypal.com,
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID,www.rosettastone.de,,,,Session,,,,,"Declared, not set",www.rosettastone.de,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server."
+Strictly Necessary Cookies,banner,OneTrust,paypal-offers--cust,www.paypalobjects.com,,,,1 days,,,,,"Declared, not set",www.paypalobjects.com,
+Strictly Necessary Cookies,banner,OneTrust,x-pp-s,paypal.com,,,,Session,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,_abck,paypal.com,,,,365 days,,,,,"Declared, not set",paypal.com,
+Strictly Necessary Cookies,banner,OneTrust,ts_c,paypal.com,,,,1095 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,l7_az,paypal.com,,,,0 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,enforce_policy,paypal.com,,,,365 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,LANG,paypal.com,,,,0 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,tsrce,paypal.com,,,,3 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,bm_sz,paypal.com,,,,0 days,,,,,"Declared, not set",paypal.com,
+Strictly Necessary Cookies,banner,OneTrust,x-cdn,paypal.com,,,,Session,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,ts,paypal.com,,,,1095 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,mobile-help-overlay,ajax.googleapis.com,,,,0 days,,,,,"Declared, not set",ajax.googleapis.com,"This domain is used by Google to provide web hosting and content delivery network services, which include loading common libraries and frameworks to help load web pages faster."
+Strictly Necessary Cookies,banner,OneTrust,akavpau_ppsd,www.paypal.com,,,,Session,,,,,"Declared, not set",www.paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,_cookiecheck,www.paypal.com,,,,Session,,,,,"Declared, not set",www.paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,nsid,www.paypal.com,,,,Session,,,,,"Declared, not set",www.paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Targeting Cookies,banner,OneTrust,affiliate,secure.rosettastone.com,,,,0 days,,,,,"Declared, not set",secure.rosettastone.com,
+Targeting Cookies,banner,OneTrust,criteo_write_test,blog.rosettastone.com,,,,0 days,,,,,"Declared, not set",blog.rosettastone.com,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,_gat_UA-XXXXXX-X,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,Google Analytics Cookies
+Targeting Cookies,banner,OneTrust,tatari-cookie-test,education.rosettastone.com,,,,3560 days,,,,,"Declared, not set",education.rosettastone.com,
+Targeting Cookies,banner,OneTrust,outbrain_cid_fetch,espanol.rosettastone.com,,,,0 days,,,,,"Declared, not set",espanol.rosettastone.com,
+Targeting Cookies,banner,OneTrust,ab._gdxxxxxxxxxx,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,"This cookie is associated with software provided by Braze, is a marketing company that develops customer relationship management and mobile marketing automation software which businesses use to manage their applications. These cookies track session_id, device_id, and external_id. This is a pattern type cookie with a common root of ab._gd followed by a string of numbers."
+Targeting Cookies,banner,OneTrust,tatari-session-cookie,rosettastone.com,,,,3560 days,,,,,"Declared, not set",rosettastone.com,
+Targeting Cookies,banner,OneTrust,__adroll_consent_params,www.rosettastone.com,,,,0 days,,,,,"Declared, not set",www.rosettastone.com,
+Targeting Cookies,banner,OneTrust,_scid,rosettastone.com,,,,395 days,,,,,"Declared, not set",rosettastone.com,"Cookie associated with Snapchat. Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates realtime bidding for advertisers."
+Targeting Cookies,banner,OneTrust,cto_tld_test,business.rosettastone.com,,,,0 days,,,,,"Declared, not set",business.rosettastone.com,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,__adroll_fpc,educationblog.rosettastone.com,,,,365 days,,,,,"Declared, not set",educationblog.rosettastone.com,
+Targeting Cookies,banner,OneTrust,AMCV_,rosettastone.com,,,,730 days,,,,,"Declared, not set",rosettastone.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Targeting Cookies,banner,OneTrust,AMCVS_98CF678254E93B1B0A4C98A5%40AdobeOrg,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier."
+Targeting Cookies,banner,OneTrust,AMCV_98CF678254E93B1B0A4C98A5%40AdobeOrg,rosettastone.com,,,,730 days,,,,,"Declared, not set",rosettastone.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Targeting Cookies,banner,OneTrust,ab._gdnnnnnnnnnnnnn,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,"This cookie is associated with software provided by Braze, is a marketing company that develops customer relationship management and mobile marketing automation software which businesses use to manage their applications. These cookies track session_id, device_id, and external_id. This is a pattern type cookie with a common root of ab._gd followed by a string of numbers."
+Targeting Cookies,banner,OneTrust,_gat_gtag_xxxxxxxxxxxxxxxxxxxxxxxxxxx,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,Google Analytics
+Targeting Cookies,banner,OneTrust,ln_or,www.rosettastone.com,,,,0 days,,,,,"Declared, not set",www.rosettastone.com,This is a LinkedIn cookie used to determine if Oribi analytics can be carried out on a specific domain
+Targeting Cookies,banner,OneTrust,IR_gbd,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,This cookie is used for targeting and advertising purposes. It is associated with the company Impact Radius to track the effectiveness of marketing campaigns by understanding user actions.
+Targeting Cookies,banner,OneTrust,AMCV_5E38123F5245B2D20A490D45%40AdobeOrg,rosettastone.com,,,,729 days,,,,,"Declared, not set",rosettastone.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Targeting Cookies,banner,OneTrust,pardot,enterprise.rosettastone.com,,,,0 days,,,,,"Declared, not set",enterprise.rosettastone.com,
+Targeting Cookies,banner,OneTrust,_gcl_aw,rosettastone.com,,,,89 days,,,,,"Declared, not set",rosettastone.com,Used by Google AdWords for experimenting with advertisement efficiency across websites using their servicesUsed to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Targeting Cookies,banner,OneTrust,AMCVS_,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier."
+Targeting Cookies,banner,OneTrust,AMCVS_5E38123F5245B2D20A490D45%40AdobeOrg,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier."
+Targeting Cookies,banner,OneTrust,s_ecid,rosettastone.com,,,,730 days,,,,,"Declared, not set",rosettastone.com,"This cookie is associated with the Adobe Audience Manager ID (DMP). This cookie sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisements. This pairing service is provided by third party advertisement hubs, which allows real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,__ar_v4,educationblog.rosettastone.com,,,,365 days,,,,,"Declared, not set",educationblog.rosettastone.com,This cookie is associated with the DoubleClick advertising service from Google. Helps with tracking conversion rates for ads.
+Targeting Cookies,banner,OneTrust,adrl,outbrain.com,,,,28 days,,,,,"Declared, not set",outbrain.com,"This domain is owned by Outbrain, which describes itself as a content discovery platform.  It provides technology to help distribute content targeted to individuals interests."
+Targeting Cookies,banner,OneTrust,obuid,outbrain.com,,,,88 days,,,,,"Declared, not set",outbrain.com,"This domain is owned by Outbrain, which describes itself as a content discovery platform.  It provides technology to help distribute content targeted to individuals interests."
+Targeting Cookies,banner,OneTrust,cookieJartestCookie,sync.outbrain.com,,,,0 days,,,,,"Declared, not set",sync.outbrain.com,
+Targeting Cookies,banner,OneTrust,terminustb,terminus.services,,,,0 days,,,,,"Declared, not set",terminus.services,
+Targeting Cookies,banner,OneTrust,af_id,appsflyer.com,,,,730 days,,,,,"Declared, not set",appsflyer.com,
+Targeting Cookies,banner,OneTrust,pa_uid,prfct.co,,,,728 days,,,,,"Declared, not set",prfct.co,"This domain appears to be owned by Marin Software, as US based company. The services linked to the domain are audience targeting for online advertising."
+Targeting Cookies,banner,OneTrust,pa_google_ts,prfct.co,,,,728 days,,,,,"Declared, not set",prfct.co,"This domain appears to be owned by Marin Software, as US based company. The services linked to the domain are audience targeting for online advertising."
+Targeting Cookies,banner,OneTrust,pa_rubicon_ts,prfct.co,,,,728 days,,,,,"Declared, not set",prfct.co,"This domain appears to be owned by Marin Software, as US based company. The services linked to the domain are audience targeting for online advertising."
+Targeting Cookies,banner,OneTrust,pa_openx_ts,prfct.co,,,,728 days,,,,,"Declared, not set",prfct.co,"This domain appears to be owned by Marin Software, as US based company. The services linked to the domain are audience targeting for online advertising."
+Targeting Cookies,banner,OneTrust,pa_twitter_ts,prfct.co,,,,728 days,,,,,"Declared, not set",prfct.co,"This domain appears to be owned by Marin Software, as US based company. The services linked to the domain are audience targeting for online advertising."
+Targeting Cookies,banner,OneTrust,pa_yahoo_ts,prfct.co,,,,728 days,,,,,"Declared, not set",prfct.co,"This domain appears to be owned by Marin Software, as US based company. The services linked to the domain are audience targeting for online advertising."
+Targeting Cookies,banner,OneTrust,outbrain_cid_fetch,tr.outbrain.com,,,,0 days,,,,,"Declared, not set",tr.outbrain.com,
+Targeting Cookies,banner,OneTrust,NID,google.com,,,,182 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Targeting Cookies,banner,OneTrust,SRM_B,c.bing.com,,,,389 days,,,,,"Declared, not set",c.bing.com,This domain is owned by Mircosoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,gid,sojern.com,,,,Session,,,,,"Declared, not set",sojern.com,
+Targeting Cookies,banner,OneTrust,cid,sojern.com,,,,Session,,,,,"Declared, not set",sojern.com,"This cookie is used to improve advertising for website visitors. It can redirect more relevant advertisements to the visitor, and helps improve reports on campaign performance
+"
+Targeting Cookies,banner,OneTrust,ttdid,sojern.com,,,,Session,,,,,"Declared, not set",sojern.com,
+Targeting Cookies,banner,OneTrust,apnid,sojern.com,,,,88 days,,,,,"Declared, not set",sojern.com,"This cookie is used to improve advertising for website visitors. It can redirect more relevant advertisements to the visitor, and helps improve reports on campaign performance."
+Targeting Cookies,banner,OneTrust,gdpid,geistm.com,,,,1823 days,,,,,"Declared, not set",geistm.com,
+Targeting Cookies,banner,OneTrust,_D9J,flashtalking.com,,,,364 days,,,,,"Declared, not set",flashtalking.com,This domain is owned by Flashtalking. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,pxrc,rlcdn.com,,,,59 days,,,,,"Declared, not set",rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Targeting Cookies,banner,OneTrust,rlas3,rlcdn.com,,,,364 days,,,,,"Declared, not set",rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Targeting Cookies,banner,OneTrust,demdex,demdex.net,,,,178 days,,,,,"Declared, not set",demdex.net,"This cookie helps Adobe Audience Manger perform basic functions such as visitor identification, ID synchronization, segmentation, modeling, reporting, etc."
+Targeting Cookies,banner,OneTrust,__bterr_1PR3l09,s.btstatic.com,,,,364 days,,,,,"Declared, not set",s.btstatic.com,
+Targeting Cookies,banner,OneTrust,__bterr,s.btstatic.com,,,,2913980 days,,,,,"Declared, not set",s.btstatic.com,
+Targeting Cookies,banner,OneTrust,browser_data,dnacdn.net,,,,388 days,,,,,"Declared, not set",dnacdn.net,
+Targeting Cookies,banner,OneTrust,_cc_id,crwdcntrl.net,,,,270 days,,,,,"Declared, not set",crwdcntrl.net,This domain is owned by Lotame. The main business activity is: Data Management Platform - Targeting /Advertising
+Targeting Cookies,banner,OneTrust,_cc_cc,crwdcntrl.net,,,,Session,,,,,"Declared, not set",crwdcntrl.net,This domain is owned by Lotame. The main business activity is: Data Management Platform - Targeting /Advertising
+Targeting Cookies,banner,OneTrust,_cc_dc,crwdcntrl.net,,,,269 days,,,,,"Declared, not set",crwdcntrl.net,This domain is owned by Lotame. The main business activity is: Data Management Platform - Targeting /Advertising
+Targeting Cookies,banner,OneTrust,u,agkn.com,,,,364 days,,,,,"Declared, not set",agkn.com,"This domain is owned by Aggregate Knowledge, which has been acquired by Neustar Inc. Aggregate Knowledge provides a data management platform which enables real time targeting and consumer profiling functionality. "
+Targeting Cookies,banner,OneTrust,tuuid_lu,bidswitch.net,,,,363 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,tuuid,bidswitch.net,,,,363 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,c,bidswitch.net,,,,365 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,matchgoogle,w55c.net,,,,29 days,,,,,"Declared, not set",w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,matchbluekai,w55c.net,,,,29 days,,,,,"Declared, not set",w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,demdex,w55c.net,,,,29 days,,,,,"Declared, not set",w55c.net,"This cookie helps Adobe Audience Manger perform basic functions such as visitor identification, ID synchronization, segmentation, modeling, reporting, etc."
+Targeting Cookies,banner,OneTrust,matchliveramp,w55c.net,,,,29 days,,,,,"Declared, not set",w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,matchtapad,w55c.net,,,,4 days,,,,,"Declared, not set",w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,matchrubicon,w55c.net,,,,29 days,,,,,"Declared, not set",w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,matchcasale,w55c.net,,,,29 days,,,,,"Declared, not set",w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,wfivefivec,w55c.net,,,,395 days,,,,,"Declared, not set",w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,__cfduid,addtoany.com,,,,30 days,,,,,"Declared, not set",addtoany.com,This domain is owned by AddToAny. The main business activity is: Social Sharing Services and Tracking
+Targeting Cookies,banner,OneTrust,d-a8e6,vidassets.terminus.services,,,,28 days,,,,,"Declared, not set",vidassets.terminus.services,
+Targeting Cookies,banner,OneTrust,s-9da4,vidassets.terminus.services,,,,0 days,,,,,"Declared, not set",vidassets.terminus.services,
+Targeting Cookies,banner,OneTrust,d,quantserve.com,,,,90 days,,,,,"Declared, not set",quantserve.com,
+Targeting Cookies,banner,OneTrust,mc,quantserve.com,,,,396 days,,,,,"Declared, not set",quantserve.com,"This domain is owned by Quantcast. The main business activity is: Market and Audience Segmentation, Targeted advertising services"
+Targeting Cookies,banner,OneTrust,i,openx.net,,,,363 days,,,,,"Declared, not set",openx.net,This domain is owned by OpenX. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,sessionId,api.traversedlp.com,,,,Session,,,,,"Declared, not set",api.traversedlp.com,"This is a very generic cookie name that may have different purposes on different sites, but generally it will be some kind of anonymous session identifier."
+Targeting Cookies,banner,OneTrust,dpm,dpm.demdex.net,,,,178 days,,,,,"Declared, not set",dpm.demdex.net,This domain is owned by Adobe Audience Manager. The main business activity is online profiling for targeted marketing.
+Targeting Cookies,banner,OneTrust,ATN,atdmt.com,,,,728 days,,,,,"Declared, not set",atdmt.com,"This domain is owned by Atlas Solutions which is in turn owned by Facebook. Atlas is an online advertising business, targeting users through tracking their web activity. From September 2014 the company re-launched under the ownership of Facebook, promising the ability to reach known users and target adverts based on profiles generated using Facebook's user data."
+Targeting Cookies,banner,OneTrust,ln_or,snap.licdn.com,,,,0 days,,,,,"Declared, not set",snap.licdn.com,This is a LinkedIn cookie used to determine if Oribi analytics can be carried out on a specific domain
+Targeting Cookies,banner,OneTrust,t_gid,taboola.com,,,,363 days,,,,,"Declared, not set",taboola.com,_gid
+Targeting Cookies,banner,OneTrust,taboola_session_id,taboola.com,,,,Session,,,,,"Declared, not set",taboola.com,"This domain is owned by Taboola Inc, a USA based company with multi-national presence.  It provides tageted native advertising services."
+Targeting Cookies,banner,OneTrust,__cfduid,watchaware.com,,,,30 days,,,,,"Declared, not set",watchaware.com,
+Targeting Cookies,banner,OneTrust,ar_debug,pinterest.com,,,,364 days,,,,,"Declared, not set",pinterest.com,This domain is owned by Pinterest. The main business activity is: Social Content Sharing platform
+Targeting Cookies,banner,OneTrust,eyeblaster,serving-sys.com,,,,0 days,,,,,"Declared, not set",serving-sys.com,This domain is owned by Sizmek (formerly DG MediaMind). They provide multi-platform targeted advertising services.
+Targeting Cookies,banner,OneTrust,OT2,serving-sys.com,,,,89 days,,,,,"Declared, not set",serving-sys.com,This domain is owned by Sizmek (formerly DG MediaMind). They provide multi-platform targeted advertising services.
+Targeting Cookies,banner,OneTrust,u2,serving-sys.com,,,,89 days,,,,,"Declared, not set",serving-sys.com,This domain is owned by Sizmek (formerly DG MediaMind). They provide multi-platform targeted advertising services.
+Targeting Cookies,banner,OneTrust,SEUNCY,semasio.net,,,,364 days,,,,,"Declared, not set",semasio.net,"This domain is owned by Semasio, a German business specialising in profiling and behavioural targeting of consumers. "
+Targeting Cookies,banner,OneTrust,loc,addthis.com,,,,396 days,,,,,"Declared, not set",addthis.com,Stores the visitors geolocation to record location of sharer
+Targeting Cookies,banner,OneTrust,uvc,addthis.com,,,,396 days,,,,,"Declared, not set",addthis.com,Tracks how often a user interacts with AddThis
+Targeting Cookies,banner,OneTrust,xtc,addthis.com,,,,396 days,,,,,"Declared, not set",addthis.com,This domain is owned by AddThis. AddThis provides web widgets that site owners embed into their pages or other content to enable visitors to create and share links to the content across social networks. They also make use of the data collected to provide advertisers and marketers with profile information for targeted behavioral advertising. 
+Targeting Cookies,banner,OneTrust,atp_aser,atp.io,,,,363 days,,,,,"Declared, not set",atp.io,rXXXXXXXXXX
+Targeting Cookies,banner,OneTrust,atp_aser-dc,atp.io,,,,12 days,,,,,"Declared, not set",atp.io,
+Targeting Cookies,banner,OneTrust,atp_aser-avocet,atp.io,,,,12 days,,,,,"Declared, not set",atp.io,
+Targeting Cookies,banner,OneTrust,atp_aser-mm,atp.io,,,,12 days,,,,,"Declared, not set",atp.io,
+Targeting Cookies,banner,OneTrust,msToken,tiktokw.us,,,,9 days,,,,,"Declared, not set",tiktokw.us,
+Targeting Cookies,banner,OneTrust,syncdata_TTD,mookie1.com,,,,9 days,,,,,"Declared, not set",mookie1.com,"This domain is owned by Media Innovation Group, as US based digital marketing business. The main business focus is providing targeted online marketing services."
+Targeting Cookies,banner,OneTrust,syncdata_DBC,mookie1.com,,,,9 days,,,,,"Declared, not set",mookie1.com,"This domain is owned by Media Innovation Group, as US based digital marketing business. The main business focus is providing targeted online marketing services."
+Targeting Cookies,banner,OneTrust,ov,mookie1.com,,,,394 days,,,,,"Declared, not set",mookie1.com,"This domain is owned by Media Innovation Group, as US based digital marketing business. The main business focus is providing targeted online marketing services."
+Targeting Cookies,banner,OneTrust,mdata,mookie1.com,,,,394 days,,,,,"Declared, not set",mookie1.com,"This domain is owned by Media Innovation Group, as US based digital marketing business. The main business focus is providing targeted online marketing services."
+Targeting Cookies,banner,OneTrust,id,mookie1.com,,,,394 days,,,,,"Declared, not set",mookie1.com,"This domain is owned by Media Innovation Group, as US based digital marketing business. The main business focus is providing targeted online marketing services."
+Targeting Cookies,banner,OneTrust,nlbi_#######,globenewswire.com,,,,Session,,,,,"Declared, not set",globenewswire.com,
+Targeting Cookies,banner,OneTrust,visid_incap_,globenewswire.com,,,,364 days,,,,,"Declared, not set",globenewswire.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking certain sessions to a specific visitor (visitor representing a specific computer). In order to identify clients that have already visited Incapsula. The only cookie that is persistent for the duration of 12 months."
+Targeting Cookies,banner,OneTrust,incap_ses_8218_1816097,globenewswire.com,,,,Session,,,,,"Declared, not set",globenewswire.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Targeting Cookies,banner,OneTrust,visid_incap_XXXXXX,globenewswire.com,,,,364 days,,,,,"Declared, not set",globenewswire.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking certain sessions to a specific visitor (visitor representing a specific computer). In order to identify clients that have already visited Incapsula. The only cookie that is persistent for the duration of 12 months."
+Targeting Cookies,banner,OneTrust,incap_ses_,globenewswire.com,,,,Session,,,,,"Declared, not set",globenewswire.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Targeting Cookies,banner,OneTrust,nlbi_XXXXXXX,globenewswire.com,,,,Session,,,,,"Declared, not set",globenewswire.com,N/A
+Targeting Cookies,banner,OneTrust,incap_ses_*,globenewswire.com,,,,Session,,,,,"Declared, not set",globenewswire.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Targeting Cookies,banner,OneTrust,stx_user_id,sharethrough.com,,,,29 days,,,,,"Declared, not set",sharethrough.com,"This domain is owned by Sharethrough, a USA based company providing an online native advertising technology platform and services."
+Targeting Cookies,banner,OneTrust,,www.facebook.com,,,,Session,,,,,"Declared, not set",www.facebook.com,"This domain is owned by Facebook, which is the world's largest social networking service.  As a third party host provider, it mostly collects data on the interests of users via widgets such as the 'Like' button found on many websites.  This is used to serve targeted advertising to its users when logged into its services.  In 2014 it also started serving up behaviourally targeted advertising on other websites, similar to most dedicated online marketing companies."
+Targeting Cookies,banner,OneTrust,uuid,ads.avct.cloud,,,,365 days,,,,,"Declared, not set",ads.avct.cloud,"This cookie is used to optimize ad relevance by collecting visitor data from multiple websites – this exchange of visitor data is normally provided by a third-party data-center or ad-exchange.
+"
+Targeting Cookies,banner,OneTrust,akaalb_Instance-1,apps.rokt.com,,,,Session,,,,,"Declared, not set",apps.rokt.com,
+Targeting Cookies,banner,OneTrust,KRTBCOOKIE_xxxx,pubmatic.com,,,,398 days,,,,,"Declared, not set",pubmatic.com,This cookie is used to correlate IDs with those of Pubmatic partners (such as demand side platform clients or other advertising technology companies). Pubmatic passes information stored by the partner in this cookie to the partner when it is considering whether to purchase advertisements. This enables the partner to make better decisions about whether to display an advertisement to you.
+Targeting Cookies,banner,OneTrust,PUBMDCID,pubmatic.com,,,,88 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Targeting Cookies,banner,OneTrust,PugT,pubmatic.com,,,,28 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Targeting Cookies,banner,OneTrust,AWSALB,widget-mediator.zopim.com,,,,5 days,,,,,"Declared, not set",widget-mediator.zopim.com,
+Targeting Cookies,banner,OneTrust,AWSALBCORS,widget-mediator.zopim.com,,,,7 days,,,,,"Declared, not set",widget-mediator.zopim.com,"This domain is associated with Zendesk, which provides a range of customer service and engagement products, including live chat features."
+Targeting Cookies,banner,OneTrust,af_id,onelink.me,,,,730 days,,,,,"Declared, not set",onelink.me,
+Targeting Cookies,banner,OneTrust,TAPID,tealiumiq.com,,,,364 days,,,,,"Declared, not set",tealiumiq.com,This domain is owned by Tealium and is used for its audience streaming service which enables targeting and personalisation of content on a domain.
+Targeting Cookies,banner,OneTrust,__adroll,d.adroll.com,,,,393 days,,,,,"Declared, not set",d.adroll.com,This domain is owned by Adroll. The main business activity is:  Retargeting Advertising Platform
+Targeting Cookies,banner,OneTrust,APID,yahoo.com,,,,342 days,,,,,"Declared, not set",yahoo.com,This domain is owned by Yahoo. The main business activity is: Search / Advertising
+Targeting Cookies,banner,OneTrust,APIDTS,yahoo.com,,,,0 days,,,,,"Declared, not set",yahoo.com,TS
+Targeting Cookies,banner,OneTrust,B,yahoo.com,,,,365 days,,,,,"Declared, not set",yahoo.com,This domain is owned by Yahoo. The main business activity is: Search / Advertising
+Targeting Cookies,banner,OneTrust,A3,yahoo.com,,,,365 days,,,,,"Declared, not set",yahoo.com,This domain is owned by Yahoo. The main business activity is: Search / Advertising
+Targeting Cookies,banner,OneTrust,AWSALBCORS,app.sagetalk.io,,,,7 days,,,,,"Declared, not set",app.sagetalk.io,
+Targeting Cookies,banner,OneTrust,AWSALB,app.sagetalk.io,,,,7 days,,,,,"Declared, not set",app.sagetalk.io,
+Targeting Cookies,banner,OneTrust,IDSYNC,analytics.yahoo.com,,,,364 days,,,,,"Declared, not set",analytics.yahoo.com,"This domain is owned by Yahoo Inc. whose main business model is online advertising.  Although this domain is associated with Yahoo's web analytics service, because these are third party cookies they can allow Yahoo, in combination with other cookies set, to collect data for targeted advertising purposes."
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,ARRAffinity,acct.bizible.com,,,,Session,,,,,"Declared, not set",acct.bizible.com,
+Targeting Cookies,banner,OneTrust,v1.syncTimestamp,traversedlp.com,,,,364 days,,,,,"Declared, not set",traversedlp.com,
+Targeting Cookies,banner,OneTrust,v1.cookieId,traversedlp.com,,,,364 days,,,,,"Declared, not set",traversedlp.com,
+Targeting Cookies,banner,OneTrust,__bterr_1PR3l09,s.thebrighttag.com,,,,2913980 days,,,,,"Declared, not set",s.thebrighttag.com,This domain is owned by Signal Inc. a US based marketing technology company.
+Targeting Cookies,banner,OneTrust,btpdb.1PR3l09.dGZjLjc1MjMwMjI,s.thebrighttag.com,,,,Session,,,,,"Declared, not set",s.thebrighttag.com,This domain is owned by Signal Inc. a US based marketing technology company.
+Targeting Cookies,banner,OneTrust,uid,adform.net,,,,59 days,,,,,"Declared, not set",adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Targeting Cookies,banner,OneTrust,C,adform.net,,,,31 days,,,,,"Declared, not set",adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Targeting Cookies,banner,OneTrust,browser_id,rqtrk.eu,,,,364 days,,,,,"Declared, not set",rqtrk.eu,This domain is likely associated with a tracking service that focuses on retargeting and advertising.
+Targeting Cookies,banner,OneTrust,lang,ads.linkedin.com,,,,Session,,,,,"Declared, not set",ads.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. This sub-domain is connected with LinkedIn's marketing services that enable website owners to gain insight into types of users on their site based on LinkedIn profile data, to improve targetng."
+Targeting Cookies,banner,OneTrust,MSPTC,bing.com,,,,389 days,,,,,"Declared, not set",bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,UD.TID,myunidays.com,,,,3652 days,,,,,"Declared, not set",myunidays.com,
+Targeting Cookies,banner,OneTrust,temp,myunidays.com,,,,Session,,,,,"Declared, not set",myunidays.com,
+Targeting Cookies,banner,OneTrust,_fbp,myunidays.com,,,,90 days,,,,,"Declared, not set",myunidays.com,
+Targeting Cookies,banner,OneTrust,_gid,myunidays.com,,,,1 days,,,,,"Declared, not set",myunidays.com,
+Targeting Cookies,banner,OneTrust,_ga_HGQ1WY9CN3,myunidays.com,,,,730 days,,,,,"Declared, not set",myunidays.com,
+Targeting Cookies,banner,OneTrust,_gat_xxxxxxxxxxxxxxxxxxxxxxxxxx,myunidays.com,,,,0 days,,,,,"Declared, not set",myunidays.com,Google Analytics Cookies
+Targeting Cookies,banner,OneTrust,_ga,myunidays.com,,,,730 days,,,,,"Declared, not set",myunidays.com,
+Targeting Cookies,banner,OneTrust,__tld__,myunidays.com,,,,Session,,,,,"Declared, not set",myunidays.com,__tld__
+Targeting Cookies,banner,OneTrust,VISITOR_PRIVACY_METADATA,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,178 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,CONSENT,youtube.com,,,,6141 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,DEVICE_INFO,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,GPS,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,_routing_id,www.pinterest.com,,,,0 days,,,,,"Declared, not set",www.pinterest.com,This domain is owned by Pinterest. The main business activity is: Social Content Sharing platform
+Targeting Cookies,banner,OneTrust,ELOQUA,eloqua.com,,,,395 days,,,,,"Declared, not set",eloqua.com,This domain is owned by Oracle for the delivery of online marketing services that were previously branded under the Eloqua name.
+Targeting Cookies,banner,OneTrust,ELQSTATUS,eloqua.com,,,,395 days,,,,,"Declared, not set",eloqua.com,This domain is owned by Oracle for the delivery of online marketing services that were previously branded under the Eloqua name.
+Targeting Cookies,banner,OneTrust,lidid,liadm.com,,,,729 days,,,,,"Declared, not set",liadm.com,This domain is owned by liadm.com. The company provides a range of marketing and advertising services.
+Targeting Cookies,banner,OneTrust,_li_ss,i.liadm.com,,,,29 days,,,,,"Declared, not set",i.liadm.com,"This domain is owned by liadm.com. The company provides a range of marketing and advertising services.
+"
+Targeting Cookies,banner,OneTrust,sc_anonymous_id,soundcloud.com,,,,3650 days,,,,,"Declared, not set",soundcloud.com,"This domain is owned by Soundcloud, a German company providing social sharing services centred around soundclips. The data that is collected through its services can be used for profiling and targeted advertising."
+Targeting Cookies,banner,OneTrust,fbsr_1091422140883673,connect.facebook.net,,,,365 days,,,,,"Declared, not set",connect.facebook.net,This domain is owned by Facebook. The main business activity is: Social Media
+Targeting Cookies,banner,OneTrust,bku,bluekai.com,,,,183 days,,,,,"Declared, not set",bluekai.com,This domain is owned by Blue Kai. The main business activity is: Advertising/Audience Targeting
+Targeting Cookies,banner,OneTrust,bkpa,bluekai.com,,,,183 days,,,,,"Declared, not set",bluekai.com,This domain is owned by Blue Kai. The main business activity is: Advertising/Audience Targeting
+Targeting Cookies,banner,OneTrust,tluid,3lift.com,,,,88 days,,,,,"Declared, not set",3lift.com,"This domain is owned by TripleLift, a USA based business providing programmatic native advertising services."
+Targeting Cookies,banner,OneTrust,tluidp,3lift.com,,,,89 days,,,,,"Declared, not set",3lift.com,"This domain is owned by TripleLift, a USA based business providing programmatic native advertising services."
+Targeting Cookies,banner,OneTrust,uid,videohub.tv,,,,364 days,,,,,"Declared, not set",videohub.tv,"This domain is owned by Tremor Media, a USA based video advertising business."
+Targeting Cookies,banner,OneTrust,uuid,mathtag.com,,,,391 days,,,,,"Declared, not set",mathtag.com,This domain is owned by MediaMath Inc. a US based digital advertising business.
+Targeting Cookies,banner,OneTrust,cf_use_ob,ws.zoominfo.com,,,,0 days,,,,,"Declared, not set",ws.zoominfo.com,This cookie is associated with sites using CloudFlare.  It is used to improve page load times and to override any security restrictions based on the visitors IP address.  It does not contain any user identification information. 
+Targeting Cookies,banner,OneTrust,_pxhd,ws.zoominfo.com,,,,Session,,,,,"Declared, not set",ws.zoominfo.com,
+Targeting Cookies,banner,OneTrust,visitorId,ws.zoominfo.com,,,,364 days,,,,,"Declared, not set",ws.zoominfo.com,Testing
+Targeting Cookies,banner,OneTrust,X-AB,sc-static.net,,,,1 days,,,,,"Declared, not set",sc-static.net,"This domain is commonly associated with Scorecard Research, a service that provides marketers with analytics and other tracking information."
+Targeting Cookies,banner,OneTrust,anj,adnxs.com,,,,90 days,,,,,"Declared, not set",adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Targeting Cookies,banner,OneTrust,uuid2,adnxs.com,,,,90 days,,,,,"Declared, not set",adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Targeting Cookies,banner,OneTrust,__adroll_shared,adroll.com,,,,393 days,,,,,"Declared, not set",adroll.com,This domain is owned by Adroll. The main business activity is:  Retargeting Advertising Platform
+Targeting Cookies,banner,OneTrust,personalization_id,twitter.com,,,,728 days,,,,,"Declared, not set",twitter.com,"This domain is owned by Twitter. The main business activity is: Social Networking Services.  Where twitter acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+Targeting Cookies,banner,OneTrust,mUserCookie,mediawallahscript.com,,,,729 days,,,,,"Declared, not set",mediawallahscript.com,"This domain is associated with MediaWallah, which provides identity management services to enable cross-platform ad targeting and audience insights."
+Targeting Cookies,banner,OneTrust,mRemnantVisitedCookie_d41d8cd98f00b204e9800998ecf8427e_07_2024,mediawallahscript.com,,,,0 days,,,,,"Declared, not set",mediawallahscript.com,"This domain is associated with MediaWallah, which provides identity management services to enable cross-platform ad targeting and audience insights."
+Targeting Cookies,banner,OneTrust,mCookie,mediawallahscript.com,,,,729 days,,,,,"Declared, not set",mediawallahscript.com,"This domain is associated with MediaWallah, which provides identity management services to enable cross-platform ad targeting and audience insights."
+Targeting Cookies,banner,OneTrust,GCL_AW_P,googleadservices.com,,,,89 days,,,,,"Declared, not set",googleadservices.com,"This domain is owned by Google.
+The main business activity is: Online Advertising"
+Targeting Cookies,banner,OneTrust,__pdst,cdn.pdst.fm,,,,3648 days,,,,,"Declared, not set",cdn.pdst.fm,Podsights cookie used to track Hubspots podcast advertising results.
+Targeting Cookies,banner,OneTrust,everest_session_v2,everesttech.net,,,,Session,,,,,"Declared, not set",everesttech.net,This domain is owned by Adobe. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,ev_sync_dd,everesttech.net,,,,31 days,,,,,"Declared, not set",everesttech.net,This domain is owned by Adobe. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,everest_g_v2,everesttech.net,,,,728 days,,,,,"Declared, not set",everesttech.net,This domain is owned by Adobe. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,visitor_id#####,pardot.com,,,,3650 days,,,,,"Declared, not set",pardot.com,
+Targeting Cookies,banner,OneTrust,visitor_id919943-hash,pardot.com,,,,3650 days,,,,,"Declared, not set",pardot.com,
+Targeting Cookies,banner,OneTrust,_auth,www.pinterest.ie,,,,359 days,,,,,"Declared, not set",www.pinterest.ie,
+Targeting Cookies,banner,OneTrust,_pinterest_sess,www.pinterest.ie,,,,359 days,,,,,"Declared, not set",www.pinterest.ie,"These cookies allow users to share pictures via Pinterest / the ""Pin It"" button, and Pinterest can collect statistical information about usage of their service.
+"
+Targeting Cookies,banner,OneTrust,_routing_id,www.pinterest.ie,,,,0 days,,,,,"Declared, not set",www.pinterest.ie,
+Targeting Cookies,banner,OneTrust,_pinterest_referrer,www.pinterest.ie,,,,0 days,,,,,"Declared, not set",www.pinterest.ie,"These cookies allow users to share pictures via Pinterest / the ""Pin It"" button, and Pinterest can collect statistical information about usage of their service.
+"
+Targeting Cookies,banner,OneTrust,csrftoken,www.pinterest.ie,,,,364 days,,,,,"Declared, not set",www.pinterest.ie,This cookie is associated with the Django web development platform for Python. It is designed to help protect a site against at particular type of software attack on web forms.
+Targeting Cookies,banner,OneTrust,OT_1073747527,bs.serving-sys.com,,,,Session,,,,,"Declared, not set",bs.serving-sys.com,This domain is owned by Sizmek (formerly DG MediaMind). They provide multi-platform targeted advertising services.
+Targeting Cookies,banner,OneTrust,TDCPM,adsrvr.org,,,,365 days,,,,,"Declared, not set",adsrvr.org,This domain is owned by TheTradeDesk. The main business activity is: Ad Serving Platform
+Targeting Cookies,banner,OneTrust,TDID,adsrvr.org,,,,364 days,,,,,"Declared, not set",adsrvr.org,This domain is owned by TheTradeDesk. The main business activity is: Ad Serving Platform
+Targeting Cookies,banner,OneTrust,tatari-cookie-test,d2hrivdxn8ekm8.cloudfront.net,,,,3560 days,,,,,"Declared, not set",d2hrivdxn8ekm8.cloudfront.net,
+Targeting Cookies,banner,OneTrust,tatari-session-cookie,d2hrivdxn8ekm8.cloudfront.net,,,,0 days,,,,,"Declared, not set",d2hrivdxn8ekm8.cloudfront.net,
+Targeting Cookies,banner,OneTrust,IMRID,imrworldwide.com,,,,389 days,,,,,"Declared, not set",imrworldwide.com,"This domain is owned by Nielsen.
+The main business activity is: Consumer Profiling for Online Advertising"
+Targeting Cookies,banner,OneTrust,___utmvxxxxxxxxxxxxxx,ml.globenewswire.com,,,,0 days,,,,,"Declared, not set",ml.globenewswire.com,___utmv
+Targeting Cookies,banner,OneTrust,TBMCookie_331718653375599340,ml.globenewswire.com,,,,Session,,,,,"Declared, not set",ml.globenewswire.com,
+Targeting Cookies,banner,OneTrust,GNWTracker,ml.globenewswire.com,,,,365 days,,,,,"Declared, not set",ml.globenewswire.com,
+Targeting Cookies,banner,OneTrust,criteo_write_test,static.criteo.net,,,,0 days,,,,,"Declared, not set",static.criteo.net,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,CMID,casalemedia.com,,,,363 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMPRO,casalemedia.com,,,,89 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMST,casalemedia.com,,,,0 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMPS,casalemedia.com,,,,89 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMRUM3,casalemedia.com,,,,363 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,trctestcookie,cdn.taboola.com,,,,Session,,,,,"Declared, not set",cdn.taboola.com,
+Targeting Cookies,banner,OneTrust,audit,rubiconproject.com,,,,364 days,,,,,"Declared, not set",rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,audit_p,rubiconproject.com,,,,364 days,,,,,"Declared, not set",rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,khaos_p,rubiconproject.com,,,,364 days,,,,,"Declared, not set",rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,khaos,rubiconproject.com,,,,364 days,,,,,"Declared, not set",rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,rubiconproject.com,,,,89 days,,,,,"Declared, not set",rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,__atuvc,s7.addthis.com,,,,396 days,,,,,"Declared, not set",s7.addthis.com,"This domain is owned by Addthis. The main business activity is: AddThis provides web widgets that site owners embed into their pages or other content, to enable visitors to create and share links to the content across social networks. They also make use of the data collected to provide advertisers and marketers with profile information for targeted, behavioural advertising."
+Targeting Cookies,banner,OneTrust,__atuvs,s7.addthis.com,,,,0 days,,,,,"Declared, not set",s7.addthis.com,"This domain is owned by Addthis. The main business activity is: AddThis provides web widgets that site owners embed into their pages or other content, to enable visitors to create and share links to the content across social networks. They also make use of the data collected to provide advertisers and marketers with profile information for targeted, behavioural advertising."
+Targeting Cookies,banner,OneTrust,__atrfs,s7.addthis.com,,,,0 days,,,,,"Declared, not set",s7.addthis.com,"This domain is owned by Addthis. The main business activity is: AddThis provides web widgets that site owners embed into their pages or other content, to enable visitors to create and share links to the content across social networks. They also make use of the data collected to provide advertisers and marketers with profile information for targeted, behavioural advertising."
+Targeting Cookies,banner,OneTrust,_BUID,bizible.com,,,,363 days,,,,,"Declared, not set",bizible.com,
+Targeting Cookies,banner,OneTrust,lrsync,clickagy.com,,,,29 days,,,,,"Declared, not set",clickagy.com,Clickagy is a USA based audience analytics and targeted advertising company.
+Targeting Cookies,banner,OneTrust,outbrain_cid_fetch,amplify.outbrain.com,,,,0 days,,,,,"Declared, not set",amplify.outbrain.com,
+Targeting Cookies,banner,OneTrust,checkForPermission,bidr.io,,,,0 days,,,,,"Declared, not set",bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Targeting Cookies,banner,OneTrust,bito,bidr.io,,,,0 days,,,,,"Declared, not set",bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Targeting Cookies,banner,OneTrust,bitoIsSecure,bidr.io,,,,0 days,,,,,"Declared, not set",bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Targeting Cookies,banner,OneTrust,__cfduid,zoominfo.com,,,,30 days,,,,,"Declared, not set",zoominfo.com,
+Targeting Cookies,banner,OneTrust,_cfuvid,zoominfo.com,,,,Session,,,,,"Declared, not set",zoominfo.com,Testing
+Targeting Cookies,banner,OneTrust,guid,steelhousemedia.com,,,,1095 days,,,,,"Declared, not set",steelhousemedia.com,
+Targeting Cookies,banner,OneTrust,rt,steelhousemedia.com,,,,1095 days,,,,,"Declared, not set",steelhousemedia.com,
+Targeting Cookies,banner,OneTrust,check,assets.adobedtm.com,,,,0 days,,,,,"Declared, not set",assets.adobedtm.com,If you know anything about this host and its uses please add your contributions here. 
+Targeting Cookies,banner,OneTrust,_sdsat_UAAutoDetect,assets.adobedtm.com,,,,728 days,,,,,"Declared, not set",assets.adobedtm.com,If you know anything about this host and its uses please add your contributions here. 
+Targeting Cookies,banner,OneTrust,visitor_id#####,pi.pardot.com,,,,3650 days,,,,,"Declared, not set",pi.pardot.com,
+Targeting Cookies,banner,OneTrust,visitor_id919943-hash,pi.pardot.com,,,,3650 days,,,,,"Declared, not set",pi.pardot.com,
+Targeting Cookies,banner,OneTrust,pardot,pi.pardot.com,,,,0 days,,,,,"Declared, not set",pi.pardot.com,
+Targeting Cookies,banner,OneTrust,lpv919943,pi.pardot.com,,,,0 days,,,,,"Declared, not set",pi.pardot.com,
+Targeting Cookies,banner,OneTrust,lang,linkedin.com,,,,Session,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,lissc,linkedin.com,,,,365 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,li_gc,linkedin.com,,,,179 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,ttwid,tiktok.com,,,,359 days,,,,,"Declared, not set",tiktok.com,"This domain is owned by TikTok Inc. It is used for hosting the website of the TikTok platform, which is a social media service where users can share short videos. The service uses cookies for various purposes including functionality, performance, and targeting/advertising."
+Targeting Cookies,banner,OneTrust,__rmc__,tag.measured.com,,,,3648 days,,,,,"Declared, not set",tag.measured.com,
+Targeting Cookies,banner,OneTrust,barometric[idfa],trkn.us,,,,0 days,,,,,"Declared, not set",trkn.us,Testing
+Targeting Cookies,banner,OneTrust,barometric[cuid],trkn.us,,,,364 days,,,,,"Declared, not set",trkn.us,Testing
+Targeting Cookies,banner,OneTrust,TESTCOOKIESENABLED,www.youtube.com,,,,0 days,,,,,"Declared, not set",www.youtube.com,Testing
+Targeting Cookies,banner,OneTrust,nextId,www.youtube.com,,,,0 days,,,,,"Declared, not set",www.youtube.com,Testing
+Targeting Cookies,banner,OneTrust,_pinterest_ct_ua,ct.pinterest.com,,,,364 days,,,,,"Declared, not set",ct.pinterest.com,"This domain is associated with Pinterest, a social media platform that allows users to share images and media content through collections known as pinboards. The domain is likely used for conversion tracking and advertising purposes."
+Targeting Cookies,banner,OneTrust,APID,advertising.com,,,,364 days,,,,,"Declared, not set",advertising.com,This domain is owned by Advertising.com (AOL). The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,ssi,sitescout.com,,,,364 days,,,,,"Declared, not set",sitescout.com,"This domain is owned by Sitescout.
+The main business activity is: Real time advertising platform"
+Targeting Cookies,banner,OneTrust,msToken,www.tiktok.com,,,,89 days,,,,,"Declared, not set",www.tiktok.com,"This domain is owned by TikTok Inc. It is used for hosting the website of the TikTok platform, which is a social media service where users can share short videos. The service uses cookies for various purposes including functionality, performance, and targeting/advertising."
+Targeting Cookies,banner,OneTrust,tt,px.steelhousemedia.com,,,,1093 days,,,,,"Declared, not set",px.steelhousemedia.com,
+Performance Cookies,banner,OneTrust,amplitude_cookie_test,pt.rosettastone.com,,,,Session,,,,,"Declared, not set",pt.rosettastone.com,
+Performance Cookies,banner,OneTrust,UAAutoDetect,www.rosettastone.com,,,,730 days,,,,,"Declared, not set",www.rosettastone.com,
+Performance Cookies,banner,OneTrust,__pdst,www.rosettastone.com,,,,3648 days,,,,,"Declared, not set",www.rosettastone.com,Podsights cookie used to track Hubspots podcast advertising results.
+Performance Cookies,banner,OneTrust,s_ppv,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,Adobe Site Catalyst cookie.
+Performance Cookies,banner,OneTrust,_biz_pendingA,rosettastone.com,,,,363 days,,,,,"Declared, not set",rosettastone.com,"This cookie is used to record website and server performance with each visit to the site. The data is aggregated and analyzed; therefore, it remains anonymous upon use.
+"
+Performance Cookies,banner,OneTrust,s_nr,rosettastone.com,,,,30 days,,,,,"Declared, not set",rosettastone.com,"Adobe Site Catalyst cookie, stores date of visit and if visitor is new or returning"
+Performance Cookies,banner,OneTrust,s_cc,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,"Adobe Site Catalyst cookie, determines whether cookies are enabled in the browser"
+Performance Cookies,banner,OneTrust,s_fid,rosettastone.com,,,,730 days,,,,,"Declared, not set",rosettastone.com,"This cookie name is associated with the analytics service provided by Adobe's Site Catalyst product suite. It is a new cookie introduced in 2013 as a 'fallback' visitor identifier where the s_vi cookie normally used for this purpose is blocked. It contains a randomly generated, unique id."
+Performance Cookies,banner,OneTrust,gdpr_adobe_analytics_already_ran,enterpriseblog.rosettastone.com,,,,30 days,,,,,"Declared, not set",enterpriseblog.rosettastone.com,
+Performance Cookies,banner,OneTrust,_biz_nA,rosettastone.com,,,,363 days,,,,,"Declared, not set",rosettastone.com,"This cookie is used to record website and server performance with each visit to the site. The data is aggregated and analyzed; therefore, it remains anonymous upon use.
+"
+Performance Cookies,banner,OneTrust,ubvs,education.rosettastone.com,,,,180 days,,,,,"Declared, not set",education.rosettastone.com,"This cookie name is associated with software from Canadian company Unbounce. The service allows site owners to test the effectiveness of different versions of web pages, and ensure that visitors consistently see the expected version of a page."
+Performance Cookies,banner,OneTrust,_biz_sid,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,"This cookie is used to record website and server performance with each visit to the site. The data is aggregated and analyzed; therefore, it remains anonymous upon use.
+"
+Performance Cookies,banner,OneTrust,s_dfa,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,This cookie name is associated with the analytics service provided by Adobe's Site Catalyst product suite. Its more precise use is not known at this time.
+Performance Cookies,banner,OneTrust,_schn,com,,,,Session,,,,,"Declared, not set",com,Adobe Analytics site tracking
+Performance Cookies,banner,OneTrust,s_ppvl,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,This cookie is set by Adobe Analytics to store information on the percentage of the page displayed to the end user.
+Performance Cookies,banner,OneTrust,ubpv,business.rosettastone.com,,,,184 days,,,,,"Declared, not set",business.rosettastone.com,"This cookie name is associated with software from Canadian company Unbounce. The service allows site owners to test the effectiveness of different versions of web pages, and ensure that visitors consistently see the expected version of a page."
+Performance Cookies,banner,OneTrust,s_ria,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,"Cookie set by Adobe SiteCatalyst, which reportedly detects whether a browser supports rich media like Flash or Silverlight."
+Performance Cookies,banner,OneTrust,_sdsat_UAAutoDetect,enterpriseblog.rosettastone.com,,,,730 days,,,,,"Declared, not set",enterpriseblog.rosettastone.com,
+Performance Cookies,banner,OneTrust,_biz_uid,rosettastone.com,,,,363 days,,,,,"Declared, not set",rosettastone.com,"This cookie is used to record website and server performance with each visit to the site. The data is aggregated and analyzed; therefore, it remains anonymous upon use.
+"
+Performance Cookies,banner,OneTrust,s_vi,rosettastone.com,,,,730 days,,,,,"Declared, not set",rosettastone.com,"Adobe Site Catalyst cookie, used to identify unique visitors, with an ID and timestamp"
+Performance Cookies,banner,OneTrust,s_sq,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,"Adobe Site Catalyst cookie, stores information about the previous link clicked within the site"
+Performance Cookies,banner,OneTrust,s_pv,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,This cookie is associated with Adobe Analytics site tracking.  It is used to save the user's settings and provide enhanced functionality and personalisation.
+Performance Cookies,banner,OneTrust,amplitude_id_ecbcbc42f8533abf8b32e0804af0c362rosettastone.com,rosettastone.com,,,,3648 days,,,,,"Declared, not set",rosettastone.com,
+Performance Cookies,banner,OneTrust,adobe_amp_id,rosettastone.com,,,,365 days,,,,,"Declared, not set",rosettastone.com,
+Performance Cookies,banner,OneTrust,_gid,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited.
+Performance Cookies,banner,OneTrust,_gat_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,Google Analytics Cookies
+Performance Cookies,banner,OneTrust,_tq_id.TV-7209182772-1.ff23,www.rosettastone.com,,,,729 days,,,,,"Declared, not set",www.rosettastone.com,_tq_id.TV
+Performance Cookies,banner,OneTrust,ubvt,rosettastone.com,,,,3 days,,,,,"Declared, not set",rosettastone.com,"This cookie name is associated with software from Canadian company Unbounce. The service allows site owners to test the effectiveness of different versions of web pages, and ensure that visitors consistently see the expected version of a page."
+Performance Cookies,banner,OneTrust,_gac_UA-65171904-1,rosettastone.com,,,,90 days,,,,,"Declared, not set",rosettastone.com,
+Performance Cookies,banner,OneTrust,test,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,Adobe Analytics site tracking.
+Performance Cookies,banner,OneTrust,amplitude_testrosettastone.com,rosettastone.com,,,,3648 days,,,,,"Declared, not set",rosettastone.com,
+Performance Cookies,banner,OneTrust,mbox,rosettastone.com,,,,730 days,,,,,"Declared, not set",rosettastone.com,Cookie set by Adobe SiteCatalyst analytics software - used for measuring the performance of page content using A/B split testing
+Performance Cookies,banner,OneTrust,_gat,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,"This cookie name is associated with Google Universal Analytics, according to documentation it is used to throttle the request rate - limiting the collection of data on high traffic sites. It expires after 10 minutes."
+Performance Cookies,banner,OneTrust,_gac_UA-175305143-1,rosettastone.com,,,,90 days,,,,,"Declared, not set",rosettastone.com,
+Performance Cookies,banner,OneTrust,zte2095,rosettastone.com,,,,Session,,,,,"Declared, not set",rosettastone.com,"This cookie is generally set to enhance the performance and functionality of the website. However, it is nonessential to its use.
+"
+Performance Cookies,banner,OneTrust,_gat_UA-,rosettastone.com,,,,0 days,,,,,"Declared, not set",rosettastone.com,"This is a pattern type cookie set by Google Analytics, where the pattern element on the name contains the unique identity number of the account or website it relates to. It appears to be a variation of the _gat cookie which is used to limit the amount of data recorded by Google on high traffic volume websites."
+Performance Cookies,banner,OneTrust,CookieConsentPolicy,na169.salesforce.com,,,,365 days,,,,,"Declared, not set",na169.salesforce.com,
+Performance Cookies,banner,OneTrust,LSKey-c$CookieConsentPolicy,na169.salesforce.com,,,,365 days,,,,,"Declared, not set",na169.salesforce.com,
+Performance Cookies,banner,OneTrust,_uetsid,adobedtm.com,,,,0 days,,,,,"Declared, not set",adobedtm.com,
+Performance Cookies,banner,OneTrust,_uetvid,adobedtm.com,,,,16 days,,,,,"Declared, not set",adobedtm.com,
+Performance Cookies,banner,OneTrust,_fbp,adobedtm.com,,,,88 days,,,,,"Declared, not set",adobedtm.com,
+Performance Cookies,banner,OneTrust,_gat_UA-,rosettastone.eu,,,,0 days,,,,,"Declared, not set",rosettastone.eu,"This is a pattern type cookie set by Google Analytics, where the pattern element on the name contains the unique identity number of the account or website it relates to. It appears to be a variation of the _gat cookie which is used to limit the amount of data recorded by Google on high traffic volume websites."
+Performance Cookies,banner,OneTrust,_gid,rosettastone.eu,,,,1 days,,,,,"Declared, not set",rosettastone.eu,_gid
+Performance Cookies,banner,OneTrust,_ga,rosettastone.eu,,,,730 days,,,,,"Declared, not set",rosettastone.eu,_ga
+Performance Cookies,banner,OneTrust,_lab,leadsrx.com,,,,364 days,,,,,"Declared, not set",leadsrx.com,
+Performance Cookies,banner,OneTrust,_lab_lastTouch,leadsrx.com,,,,364 days,,,,,"Declared, not set",leadsrx.com,
+Performance Cookies,banner,OneTrust,BrowserId,force.com,,,,365 days,,,,,"Declared, not set",force.com,Testing
+Performance Cookies,banner,OneTrust,sc_at,snapchat.com,,,,390 days,,,,,"Declared, not set",snapchat.com,Cookie associated with embedding content from Snapchat.
+Performance Cookies,banner,OneTrust,_BUID,bizibly.com,,,,365 days,,,,,"Declared, not set",bizibly.com,
+Performance Cookies,banner,OneTrust,sp,tvpixel.com,,,,364 days,,,,,"Declared, not set",tvpixel.com,This cookie is associated with Eventbrite and is used to deliver content tailored to the end user's interests and improve content creation. This cookie is also used for event-booking purposes.
+Performance Cookies,banner,OneTrust,_ga,developer.android.com,,,,729 days,,,,,"Declared, not set",developer.android.com,_ga
+Performance Cookies,banner,OneTrust,_ga_devsite,developer.android.com,,,,730 days,,,,,"Declared, not set",developer.android.com,
+Performance Cookies,banner,OneTrust,X-Salesforce-CHAT,d.la4-c2-ia4.salesforceliveagent.com,,,,Session,,,,,"Declared, not set",d.la4-c2-ia4.salesforceliveagent.com,Testing
+Performance Cookies,banner,OneTrust,amplitude_cookie_test,cdn.amplitude.com,,,,Session,,,,,"Declared, not set",cdn.amplitude.com,
+Performance Cookies,banner,OneTrust,JSESSIONID,nr-data.net,,,,Session,,,,,"Declared, not set",nr-data.net,"This domain is controlled by New Relic, which provides a platform for monitoring the performance of web and mobile applications."
+Performance Cookies,banner,OneTrust,_tq_id.TV-7209182772-1.512f,collector-29872.us.tvsquared.com,,,,729 days,,,,,"Declared, not set",collector-29872.us.tvsquared.com,_tq_id.TV
+Performance Cookies,banner,OneTrust,_tq_id.TV-7209182772-1.ff23,collector-29872.us.tvsquared.com,,,,729 days,,,,,"Declared, not set",collector-29872.us.tvsquared.com,_tq_id.TV
+Performance Cookies,banner,OneTrust,_tq_id.TV-7209182772-1.66a5,collector-29872.us.tvsquared.com,,,,729 days,,,,,"Declared, not set",collector-29872.us.tvsquared.com,_tq_id.TV
+Performance Cookies,banner,OneTrust,_tq_id.TV-7209182772-1.7cfd,collector-29872.us.tvsquared.com,,,,729 days,,,,,"Declared, not set",collector-29872.us.tvsquared.com,_tq_id.TV
+Performance Cookies,banner,OneTrust,CookieConsentPolicy,service.force.com,,,,365 days,,,,,"Declared, not set",service.force.com,Used to apply end-user cookie consent preferences set by Salesforce Experience Cloud.
+Performance Cookies,banner,OneTrust,LSKey-c$CookieConsentPolicy,service.force.com,,,,364 days,,,,,"Declared, not set",service.force.com,Used to apply end-user cookie consent preferences set by our client-side utility.
+Social Media Cookies,banner,OneTrust,mid,instagram.com,,,,729 days,,,,,"Declared, not set",instagram.com,"This is an Instagram cookie that enables social media functionality within the site.
+"

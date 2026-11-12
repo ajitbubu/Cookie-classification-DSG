@@ -1,0 +1,5 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Necessary,banner,Cookiebot,CookieConsent,int.osmo.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,en.osmo.de,Stores the user's cookie consent state for the current domain
+Statistics,banner,Cookiebot,_ga,.osmo.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,osmo.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,_ga_X8HVESLJFM,.osmo.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,osmo.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Necessary,banner,Cookiebot,fe_typo_user,www.osmo.de,,,,Session,,,,,"Declared, not set",www.osmo.de,Preserves users states across page requests.

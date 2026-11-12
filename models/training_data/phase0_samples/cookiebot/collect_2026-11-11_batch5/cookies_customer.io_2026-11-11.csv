@@ -1,0 +1,110 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,chs,aorta.clickagy.com,/channel-sync,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,banner,Cookiebot,_vb,customer.io,/platform,First party,30.00 days,Session,false,true,unspecified,false,Declared & set,customer.io,Pending
+Necessary,banner,Cookiebot,cio_u_id,.customer.io,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,customer.io,Pending
+Statistics,banner,Cookiebot,ajs_anonymous_id,.customer.io,/,First party,365.00 days,,false,false,lax,false,Declared & set,customer.io,This cookie is used to identify a specific visitor - this information is used to identify the number of specific visitors on a website.
+Necessary,banner,Cookiebot,CookieConsent,customer.io,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,customer.io,Stores the user's cookie consent state for the current domain
+Marketing,banner,Cookiebot,_gcl_au,.customer.io,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,customer.io,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.  
+Statistics,banner,Cookiebot,_ga,.customer.io,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,app.livestorm.co,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Unclassified,banner,Cookiebot,_consent_sig,.customer.io,/,First party,400.00 days,Session,false,true,lax,false,Declared & set,customer.io,Pending
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,__cf_bm,.g2crowd.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,g2.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Marketing,banner,Cookiebot,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Preferences,banner,Cookiebot,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,linkedin.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,g2.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,__cf_bm,.g2.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,g2.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Statistics,banner,Cookiebot,_zitok,.customer.io,/,First party,365.00 days,,false,true,strict,false,Declared & set,www.try.customer.io,Pending
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,linkedin.com,Used in order to detect spam and improve the website's security. 
+Statistics,banner,Cookiebot,_clck,.customer.io,/,First party,365.00 days,,false,false,unspecified,false,Declared & set,customer.io,Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+Necessary,banner,Cookiebot,__cf_bm,.zoominfo.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,g2.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Tracks the user’s interaction with the website’s search-bar-function. This data can be used to present the user with relevant products or services.     
+Marketing,banner,Cookiebot,SM,.c.clarity.ms,/,Third party,Session,Session,false,true,none,false,Declared & set,c.clarity.ms,Registers a unique ID that identifies the user's device during return visits across websites that use the same ad network. The ID is used to allow targeted ads.
+Marketing,banner,Cookiebot,MUID,.clarity.ms,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Marketing,banner,Cookiebot,MR,.c.clarity.ms,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Declared & set,c.clarity.ms,Registers data on visitors from multiple visits and on multiple websites. This information is used to measure the efficiency of advertisement on websites.  
+Necessary,banner,Cookiebot,_cfuvid,.zoominfo.com,/,Third party,Session,Session,true,true,none,false,Declared & set,zoominfo.com,"This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators. "
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,cb,.clickagy.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,i,.openx.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,chs,aorta.clickagy.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,tuid,.a.usbrowserspeed.com,/,Third party,365.00 days,,true,true,none,false,Declared & set,a.usbrowserspeed.com,Pending
+Unclassified,banner,Cookiebot,__pixelId,.sitelytics.tech,/,Third party,400.00 days,,true,true,none,false,Declared & set,sitelytics.tech,Pending
+Unclassified,banner,Cookiebot,__pixelIdP,.sitelytics.tech,/,Third party,400.00 days,,true,true,none,true,Declared & set,sitelytics.tech,Pending
+Unclassified,none,,ljt_reader,.lijit.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lijitAcc3PC,.lijit.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,banner,Cookiebot,_vb,customer.io,/,First party,30.00 days,Session,false,true,unspecified,false,Declared & set,customer.io,Pending
+Unclassified,banner,Cookiebot,embed_url,customer.io,/,First party,30.00 days,,false,false,unspecified,false,Declared & set,customer.io,Pending
+Unclassified,banner,Cookiebot,anonymous_id,customer.io,/,First party,30.00 days,,false,false,unspecified,false,Declared & set,customer.io,Pending
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,c,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,_cio_marketing_analytics,customer.io,/,First party,400.00 days,,false,true,strict,false,Declared & set,www.try.customer.io,Pending
+Marketing,banner,Cookiebot,_ga_L97TR1N1TG,.customer.io,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,customer.io,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,_ga_MB57P3GWZD,.customer.io,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,customer.io,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,_rdt_uuid,.customer.io,/,First party,90.00 days,,false,true,strict,false,Declared & set,customer.io,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,_uetsid,.customer.io,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,customer.io,"Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement. "
+Marketing,banner,Cookiebot,_uetvid,.customer.io,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,customer.io,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Statistics,banner,Cookiebot,_clsk,.customer.io,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,customer.io,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Unclassified,none,,lijitPage_default_c026_append,.pxdrop.lijit.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lijitBcnLcy,.pxdrop.lijit.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,AWSALB,admin.partnerpage.io,,,,,,,,,"Declared, not set",admin.partnerpage.io,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,AWSALBCORS,admin.partnerpage.io,,,,,,,,,"Declared, not set",admin.partnerpage.io,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,__mp_opt_in_out_#,customer.io,,,,Session,,,,,"Declared, not set",customer.io,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,__rh_campaign_session,customer.schedulehero.io,,,,Session,,,,,"Declared, not set",customer.schedulehero.io,Pending
+Necessary,banner,Cookiebot,__rh_state,customer.schedulehero.io,,,,Session,,,,,"Declared, not set",customer.schedulehero.io,Pending
+Necessary,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.
+Necessary,banner,Cookiebot,__stripe_mid,fly.customer.io,,,,,,,,,"Declared, not set",fly.customer.io,This cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.
+Necessary,banner,Cookiebot,__stripe_sid,fly.customer.io,,,,,,,,,"Declared, not set",fly.customer.io,This cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.
+Necessary,banner,Cookiebot,li_gc,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,ak_bmsc,livechatinc.com,,,,,,,,,"Declared, not set",livechatinc.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,__awc_tld_test__,loom.com,,,,Session,,,,,"Declared, not set",loom.com,Necessary for the general functionality of the website. 
+Necessary,banner,Cookiebot,m,m.stripe.com,,,,,,,,,"Declared, not set",m.stripe.com,Determines the device used to access the website. This allows the website to be formatted accordingly. 
+Necessary,banner,Cookiebot,csrftoken,proxy.getambassador.com,,,,,,,,,"Declared, not set",proxy.getambassador.com,Helps prevent Cross-Site Request Forgery (CSRF) attacks.
+Necessary,banner,Cookiebot,_GRECAPTCHA,www.recaptcha.net,,,,,,,,,"Declared, not set",www.recaptcha.net,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,GCLB,xp.atlassian.com,,,,Session,,,,,"Declared, not set",xp.atlassian.com,"This cookie is used in context with load balancing - This optimizes the response rate between the visitor and the site, by distributing the traffic load on multiple network links or servers.  "
+Preferences,banner,Cookiebot,__lc_cid,accounts.livechatinc.com,,,,,,,,,"Declared, not set",accounts.livechatinc.com,Necessary for the functionality of the website's chat-box function. 
+Preferences,banner,Cookiebot,__lc_cst,accounts.livechatinc.com,,,,,,,,,"Declared, not set",accounts.livechatinc.com,Necessary for the functionality of the website's chat-box function. 
+Preferences,banner,Cookiebot,__oauth_redirect_detector,accounts.livechatinc.com,,,,,,,,,"Declared, not set",accounts.livechatinc.com,"Allows the website to recoqnise the visitor, in order to optimize the chat-box functionality. "
+Preferences,banner,Cookiebot,loom_anon_comment,loom.com,,,,,,,,,"Declared, not set",loom.com,This cookie stores information for the widget settings on the website.
+Statistics,banner,Cookiebot,_gid,app.livestorm.co,,,,,,,,,"Declared, not set",app.livestorm.co,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,guest,jotform.com,,,,,,,,,"Declared, not set",jotform.com,Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization. 
+Statistics,banner,Cookiebot,__Host-psifi.analyticsTrace,www.loom.com,,,,,,,,,"Declared, not set",www.loom.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,__Host-psifi.analyticsTraceV2,www.loom.com,,,,,,,,,"Declared, not set",www.loom.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,dd_cookie_test_#,www.loom.com,,,,,,,,,"Declared, not set",www.loom.com,Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization. 
+Marketing,banner,Cookiebot,__tld__,arcade.software,,,,Session,,,,,"Declared, not set",arcade.software,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,ajs_user_id,customer.io,,,,Session,,,,,"Declared, not set",customer.io,"This cookie is used to collect data on the visitor's behavior on the website - this information can be used to assign the visitor to a visitor segment, based on common preferences."
+Marketing,banner,Cookiebot,mp_#_mixpanel,customer.io,,,,Session,,,,,"Declared, not set",customer.io,Pending
+Marketing,banner,Cookiebot,userReferer,jotform.com,,,,,,,,,"Declared, not set",jotform.com,Determines how the user accessed the website. This information is used by the website operator in order to measure the efficiency of their marketing.    
+Marketing,banner,Cookiebot,__Secure-BUCKET,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Pending
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video
+Marketing,banner,Cookiebot,__Secure-YNID,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Marketing,banner,Cookiebot,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Unclassified,banner,Cookiebot,WMF-Uniq,upload.wikimedia.org,,,,,,,,,"Declared, not set",upload.wikimedia.org,Pending
+Unclassified,banner,Cookiebot,xing_csrf_checksum,www.xing.com,,,,Session,,,,,"Declared, not set",www.xing.com,Pending
+Unclassified,banner,Cookiebot,xing_csrf_token,www.xing.com,,,,Session,,,,,"Declared, not set",www.xing.com,Pending
+Unclassified,banner,Cookiebot,c_,xing.com,,,,,,,,,"Declared, not set",xing.com,Pending

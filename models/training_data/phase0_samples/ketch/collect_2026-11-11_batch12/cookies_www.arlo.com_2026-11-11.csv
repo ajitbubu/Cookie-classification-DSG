@@ -1,0 +1,162 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,,true,true,none,false,Not declared,,
+Essential Services,banner,Ketch,OptanonConsent,.arlo.com,/en_eu,First party,365.00 days,364 days,false,false,lax,false,Declared & set,,OneTrust
+Essential Services,banner,Ketch,OptanonConsent,.arlo.com,/fr_fr,First party,365.00 days,364 days,false,false,lax,false,Declared & set,,OneTrust
+Essential Services,banner,Ketch,OptanonConsent,.arlo.com,/de_de,First party,365.00 days,364 days,false,false,lax,false,Declared & set,,OneTrust
+Analytics,banner,Ketch,__cf_bm,.shop-us.arlo.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeted Advertising,banner,Ketch,_gcl_au,.arlo.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Analytics,banner,Ketch,_ga,.arlo.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Essential Services,banner,Ketch,_swb,.arlo.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Essential Services,banner,Ketch,_ketch_consent_v1_,.arlo.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Essential Services,banner,Ketch,_vwo_consent,.arlo.com,/,First party,365.00 days,365 days,false,false,unspecified,false,Declared & set,,
+Analytics,banner,Ketch,_vwo_uuid_v2,.arlo.com,/,First party,366.00 days,365 days,false,false,unspecified,false,Declared & set,,VWO 
+Analytics,banner,Ketch,_vwo_uuid,.arlo.com,/,First party,365.24 days,365 days,false,false,unspecified,false,Declared & set,,VWO 
+Analytics,banner,Ketch,_vis_opt_s,.arlo.com,/,First party,100.00 days,99 days,false,false,unspecified,false,Declared & set,,VWO 
+Essential Services,banner,Ketch,_vis_opt_test_cookie,.arlo.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,VWO 
+Analytics,banner,Ketch,_vwo_ds,.arlo.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,VWO 
+Essential Services,banner,Ketch,_swb_consent_,.arlo.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Targeted Advertising,banner,Ketch,aggcrosscookie_aoosmkm6f5b7b5rs,.arlo.com,/,First party,Session,,false,true,unspecified,false,Declared & set,,
+Targeted Advertising,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Analytics,banner,Ketch,_vwo_sn,.arlo.com,/,First party,0.02 days,,false,false,unspecified,false,Declared & set,,VWO 
+Unclassified,none,,affinity,www.arlo.com,/,First party,Session,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,_ga_9JDZRFG0NF,.arlo.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_HKNC1ZPXLW,.arlo.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_978Z3T1YVW,.arlo.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_Y55ZPK6P6Y,.arlo.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_K6SY0RQT1V,.arlo.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Analytics,banner,Ketch,YSC,.youtube.com,/,Third party,Session,,true,true,none,true,Declared & set,,Google Youtube
+Analytics,banner,Ketch,VISITOR_INFO1_LIVE,.youtube.com,/,Third party,180.00 days,179 days,true,true,none,true,Declared & set,,Google Youtube
+Analytics,banner,Ketch,VISITOR_PRIVACY_METADATA,.youtube.com,/,Third party,180.00 days,179 days,true,true,none,true,Declared & set,,Google Youtube
+Targeted Advertising,banner,Ketch,__Secure-YNID,.youtube.com,/,Third party,180.00 days,179 days,true,true,none,true,Declared & set,,Google Youtube
+Analytics,banner,Ketch,__Secure-ROLLOUT_TOKEN,.youtube.com,/,Third party,180.00 days,179 days,true,true,none,true,Declared & set,,Google Youtube
+Unclassified,none,,amzn_consent,www.arlo.com,/,First party,28.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,__cflb,privacyportal-de.onetrust.com,/,Third party,0.02 days,,true,true,none,false,Not declared,,
+Analytics,banner,Ketch,__cf_bm,.www.arlo.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Analytics,banner,Ketch,ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,_alby_user,,,,,29 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,azfy_cart_id,,,,,30 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,azfy_market,,,,,30 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,azfy_shop,,,,,30 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,cart_currency,,,,,91 days,,,,,"Declared, not set",,Shopify
+Analytics,banner,Ketch,_cc_cc,,,,,400 days,,,,,"Declared, not set",,Lotame
+Analytics,banner,Ketch,_cc_id,,,,,400 days,,,,,"Declared, not set",,Lotame
+Analytics,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,guid,,,,,365 days,,,,,"Declared, not set",,MNTN
+Analytics,banner,Ketch,LAST_RESULT_ENTRY_KEY,,,,,,,,,,"Declared, not set",,Google Youtube
+Analytics,banner,Ketch,localization,,,,,364 days,,,,,"Declared, not set",,Shopify
+Analytics,banner,Ketch,mc,,,,,199 days,,,,,"Declared, not set",,Quantcast
+Analytics,banner,Ketch,OptanonAlertBoxClosed,,,,,364 days,,,,,"Declared, not set",,OneTrust
+Analytics,banner,Ketch,pb_rtb_ev_part,,,,,365 days,,,,,"Declared, not set",,Pulsepoint
+Analytics,banner,Ketch,_rdt_uuid,,,,,89 days,,,,,"Declared, not set",,Reddit
+Analytics,banner,Ketch,_shop_app_essential,,,,,365 days,,,,,"Declared, not set",,Shopify
+Analytics,banner,Ketch,_shopify_analytics,,,,,365 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,shopify_client_id,,,,,364 days,,,,,"Declared, not set",,Shopify
+Analytics,banner,Ketch,_shopify_marketing,,,,,365 days,,,,,"Declared, not set",,Shopify
+Analytics,banner,Ketch,_shopify_s,,,,,,,,,,"Declared, not set",,Shopify
+Analytics,banner,Ketch,_shopify_test,,,,,,,,,,"Declared, not set",,Shopify
+Analytics,banner,Ketch,_shopify_y,,,,,365 days,,,,,"Declared, not set",,Shopify
+Analytics,banner,Ketch,test,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Analytics,banner,Ketch,TESTCOOKIESENABLED,,,,,,,,,,"Declared, not set",,Google Ad Manager
+Analytics,banner,Ketch,TestIfCookieP,,,,,395 days,,,,,"Declared, not set",,Equativ
+Analytics,banner,Ketch,thx_guid,,,,,390 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,tt,,,,,365 days,,,,,"Declared, not set",,MNTN
+Analytics,banner,Ketch,V,,,,,360 days,,,,,"Declared, not set",,Pulsepoint
+Analytics,banner,Ketch,viewer_token,,,,,90 days,,,,,"Declared, not set",,LoopMe
+Analytics,banner,Ketch,wm_cv,,,,,364 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,wm_frt,,,,,364 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,wm_test,,,,,,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,3060738.3440491,,,,,400 days,,,,,"Declared, not set",,Affirm
+Essential Services,banner,Ketch,ad-privacy,,,,,400 days,,,,,"Declared, not set",,Amazon Ads
+Essential Services,banner,Ketch,_alby_session,,,,,,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,axp-override,,,,,,,,,,"Declared, not set",,Affirm
+Essential Services,banner,Ketch,cart,,,,,91 days,,,,,"Declared, not set",,Shopify
+Essential Services,banner,Ketch,cee,,,,,90 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,cf_clearance,,,,,364 days,,,,,"Declared, not set",,Cloudflare
+Essential Services,banner,Ketch,_cfuvid,,,,,,,,,,"Declared, not set",,Cloudflare
+Essential Services,banner,Ketch,checkout_continuity_service,,,,,400 days,,,,,"Declared, not set",,Affirm
+Essential Services,banner,Ketch,cookietest,,,,,,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,domain,,,,,,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,Domain,,,,,394 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,DotomiConsent,,,,,400 days,,,,,"Declared, not set",,Conversant (by Epsilon)
+Essential Services,banner,Ketch,dtm_consent,,,,,394 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,dtm_token,,,,,394 days,,,,,"Declared, not set",,Dotomi (by epsilon)
+Essential Services,banner,Ketch,GCLB,,,,,,,,,,"Declared, not set",,Affirm
+Essential Services,banner,Ketch,i,,,,,365 days,,,,,"Declared, not set",,OpenX
+Essential Services,banner,Ketch,__kla_off,,,,,,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,path,,,,,30 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,receive-cookie-deprecation,,,,,394 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Essential Services,banner,Ketch,session,,,,,400 days,,,,,"Declared, not set",,Affirm
+Essential Services,banner,Ketch,_shopify_essential,,,,,365 days,,,,,"Declared, not set",,Shopify
+Essential Services,banner,Ketch,tmx_guid,,,,,390 days,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,try_request_location,,,,,,,,,,"Declared, not set",,
+Essential Services,banner,Ketch,t_v2_s,,,,,400 days,,,,,"Declared, not set",,Affirm
+Targeted Advertising,banner,Ketch,__3idcontext,,,,,395 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,A3,,,,,365 days,,,,,"Declared, not set",,Yahoo! Ads
+Targeted Advertising,banner,Ketch,ad-id,,,,,245 days,,,,,"Declared, not set",,Amazon Ads
+Targeted Advertising,banner,Ketch,alphanumeric_*,,,,,400 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,anj,,,,,90 days,,,,,"Declared, not set",,Microsoft Ads
+Targeted Advertising,banner,Ketch,audit,,,,,365 days,,,,,"Declared, not set",,Magnite
+Targeted Advertising,banner,Ketch,audit_p,,,,,365 days,,,,,"Declared, not set",,Magnite
+Targeted Advertising,banner,Ketch,azfy_b2b,,,,,30 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,azfy_market,,,,,30 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,azfy_utm_history,,,,,30 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,azfy_utm_history_atr,,,,,30 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,bounceClientVisit7413,,,,,,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,bounceClientVisit7413c,,,,,,,,,,"Declared, not set",,Wunderkind
+Targeted Advertising,banner,Ketch,_cc_dc,,,,,269 days,,,,,"Declared, not set",,Lotame
+Targeted Advertising,banner,Ketch,cjConsent,,,,,394 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,cjUser,,,,,394 days,,,,,"Declared, not set",,Conversant (by Epsilon)
+Targeted Advertising,banner,Ketch,CMID,,,,,365 days,,,,,"Declared, not set",,Index Exchange
+Targeted Advertising,banner,Ketch,CMPRO,,,,,90 days,,,,,"Declared, not set",,Index Exchange
+Targeted Advertising,banner,Ketch,CMPS,,,,,90 days,,,,,"Declared, not set",,Index Exchange
+Targeted Advertising,banner,Ketch,csync,,,,,29 days,,,,,"Declared, not set",,Equativ
+Targeted Advertising,banner,Ketch,data-co,,,,,363 days,,,,,"Declared, not set",,Media.net
+Targeted Advertising,banner,Ketch,data-co-r,,,,,,,,,,"Declared, not set",,Media.net
+Targeted Advertising,banner,Ketch,dax_listenerid,,,,,359 days,,,,,"Declared, not set",,global
+Targeted Advertising,banner,Ketch,DotomiSession_*,,,,,400 days,,,,,"Declared, not set",,Conversant (by Epsilon)
+Targeted Advertising,banner,Ketch,DotomiSync,,,,,9 days,,,,,"Declared, not set",,Conversant (by Epsilon)
+Targeted Advertising,banner,Ketch,DotomiUser,,,,,394 days,,,,,"Declared, not set",,Dotomi (by epsilon)
+Targeted Advertising,banner,Ketch,dtm_token_sc,,,,,394 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,_fbp,,,,,89 days,,,,,"Declared, not set",,Facebook Ads
+Targeted Advertising,banner,Ketch,fr,,,,,,,,,,"Declared, not set",,Facebook Ads
+Targeted Advertising,banner,Ketch,__idcontext,,,,,394 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,IDSYNC,,,,,365 days,,,,,"Declared, not set",,Yahoo! Ads
+Targeted Advertising,banner,Ketch,idsync-eps-uid,,,,,7 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,idsync-eps-uid-s,,,,,7 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,iid,,,,,365 days,,,,,"Declared, not set",,Inmobi
+Targeted Advertising,banner,Ketch,INGRESSCOOKIE,,,,,400 days,,,,,"Declared, not set",,Pulsepoint
+Targeted Advertising,banner,Ketch,khaos,,,,,365 days,,,,,"Declared, not set",,Magnite
+Targeted Advertising,banner,Ketch,khaos_p,,,,,365 days,,,,,"Declared, not set",,Magnite
+Targeted Advertising,banner,Ketch,__kla_id,,,,,400 days,,,,,"Declared, not set",,Klaviyo
+Targeted Advertising,banner,Ketch,KRTBCOOKIE_*,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Targeted Advertising,banner,Ketch,ktcid,,,,,365 days,,,,,"Declared, not set",,Kargo
+Targeted Advertising,banner,Ketch,mako_uid,,,,,364 days,,,,,"Declared, not set",,Eyeota
+Targeted Advertising,banner,Ketch,MR,,,,,400 days,,,,,"Declared, not set",,Microsoft Clarity
+Targeted Advertising,banner,Ketch,MUID,,,,,389 days,,,,,"Declared, not set",,Microsoft Clarity
+Targeted Advertising,banner,Ketch,OAID,,,,,29 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,pb_rtb_ev,,,,,365 days,,,,,"Declared, not set",,Pulsepoint
+Targeted Advertising,banner,Ketch,pid,,,,,89 days,,,,,"Declared, not set",,Equativ (Smartadserver)
+Targeted Advertising,banner,Ketch,_pinterest_ct_ua,,,,,365 days,,,,,"Declared, not set",,Pinterest
+Targeted Advertising,banner,Ketch,_pin_unauth,,,,,364 days,,,,,"Declared, not set",,Pinterest
+Targeted Advertising,banner,Ketch,PugT,,,,,400 days,,,,,"Declared, not set",,Pubmatic
+Targeted Advertising,banner,Ketch,pxrc,,,,,59 days,,,,,"Declared, not set",,LiveRamp
+Targeted Advertising,banner,Ketch,rlas3,,,,,364 days,,,,,"Declared, not set",,LiveRamp
+Targeted Advertising,banner,Ketch,__Secure-BUCKET,,,,,179 days,,,,,"Declared, not set",,Google Youtube
+Targeted Advertising,banner,Ketch,__Secure-YEC,,,,,,,,,,"Declared, not set",,Google Youtube
+Targeted Advertising,banner,Ketch,SERVERID,,,,,,,,,,"Declared, not set",,Eyeota
+Targeted Advertising,banner,Ketch,_shopify_marketing,,,,,365 days,,,,,"Declared, not set",,Shopify
+Targeted Advertising,banner,Ketch,st_cs,,,,,360 days,,,,,"Declared, not set",,Seedtag
+Targeted Advertising,banner,Ketch,st_csd,,,,,360 days,,,,,"Declared, not set",,Seedtag
+Targeted Advertising,banner,Ketch,st_uid,,,,,360 days,,,,,"Declared, not set",,Seedtag
+Targeted Advertising,banner,Ketch,TEST-COOKIE,,,,,365 days,,,,,"Declared, not set",,Inmobi
+Targeted Advertising,banner,Ketch,tluid,,,,,90 days,,,,,"Declared, not set",,TripleLift
+Targeted Advertising,banner,Ketch,ttcsid.*,,,,,389 days,,,,,"Declared, not set",,Tiktok Ads
+Targeted Advertising,banner,Ketch,_ttp,,,,,389 days,,,,,"Declared, not set",,Tiktok Ads
+Targeted Advertising,banner,Ketch,_uetsid,,,,,,,,,,"Declared, not set",,Microsoft Ads
+Targeted Advertising,banner,Ketch,_uetvid,,,,,389 days,,,,,"Declared, not set",,Microsoft Ads
+Targeted Advertising,banner,Ketch,uuid2,,,,,90 days,,,,,"Declared, not set",,Microsoft Ads
+Targeted Advertising,banner,Ketch,visitor-id,,,,,364 days,,,,,"Declared, not set",,Media.net
+Targeted Advertising,banner,Ketch,VP,,,,,360 days,,,,,"Declared, not set",,Pulsepoint
+Targeted Advertising,banner,Ketch,__wknd_7413e,,,,,364 days,,,,,"Declared, not set",,
+Targeted Advertising,banner,Ketch,XANDR_PANID,,,,,90 days,,,,,"Declared, not set",,Microsoft Ads

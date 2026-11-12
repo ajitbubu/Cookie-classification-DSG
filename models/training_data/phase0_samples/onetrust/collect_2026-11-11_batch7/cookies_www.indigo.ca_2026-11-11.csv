@@ -1,0 +1,224 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__apex_test__,.indigo.ca,/collections,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__apex_test__,.indigo.ca,/pages,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,localization,www.indigo.ca,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,cart_currency,www.indigo.ca,/,First party,14.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_shopify_essential,www.indigo.ca,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,_shopify_analytics,www.indigo.ca,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,_shopify_marketing,www.indigo.ca,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.lightboxcdn.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,report-uri.com,This is a CloudFoundry cookie
+Strictly Necessary Cookies,banner,OneTrust,ConstructorioID_client_id,.indigo.ca,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,indigo.ca,
+Strictly Necessary Cookies,banner,OneTrust,ConstructorioID_session_id,.indigo.ca,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,indigo.ca,
+Unclassified,none,,TiPMix,.api.lightboxcdn.com,/,Third party,0.04 days,,true,true,none,false,Not declared,,
+Unclassified,none,,x-ms-routing-name,.api.lightboxcdn.com,/,Third party,0.04 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_shop_app_essential,.shop.app,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,cio_client_id,www.indigo.ca,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cio_session_id,www.indigo.ca,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cio_section,www.indigo.ca,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cio_base_url,www.indigo.ca,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cio_index_key,www.indigo.ca,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cio_variation_id_field,www.indigo.ca,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cio_item_id_field,www.indigo.ca,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cio_variation_id_property,www.indigo.ca,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cio_item_id_property,www.indigo.ca,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cio_conversion_factor_property,www.indigo.ca,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cio_variation_id_transform,www.indigo.ca,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cio_item_id_transform,www.indigo.ca,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,cjConsent,.indigo.ca,/,First party,395.00 days,394 days,false,true,unspecified,false,Declared & set,indigo.ca,
+Targeting Cookies,banner,OneTrust,cjUser,.indigo.ca,/,First party,395.00 days,394 days,false,true,unspecified,false,Declared & set,indigo.ca,
+Performance Cookies,banner,OneTrust,CLID,www.clarity.ms,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,www.clarity.ms,"This cookie is installed by Microsoft Clarity and stores information about how visitors use the website. The cookie contributes to the creation of an analysis report. The data collection includes numbers of visitors, where they visit the website from and pages visited on the website."
+Targeting Cookies,banner,OneTrust,_ttp,.tiktok.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,tiktok.com,
+Unclassified,none,,cart,www.indigo.ca,/,First party,91.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,__spdt,www.indigo.ca,/,First party,365.00 days,,false,false,strict,false,Not declared,,
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_pin_unauth,.indigo.ca,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,indigo.ca,"This cookie is assocate with pinterest.  It is used to track the usage of services.
+"
+Unclassified,none,,_fbp,.indigo.ca,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,_clck,.indigo.ca,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,indigo.ca,"This cookie is installed by Microsoft Clarity to store information of how visitors use a website and help in creating an analytics report of how the website is doing. The data collected includes the number of visitors, the source where they have come from, and the pages visited in an anonymous form."
+Unclassified,none,,_twpid,.indigo.ca,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Functional Cookies,banner,OneTrust,ajs_anonymous_id,.indigo.ca,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,indigo.ca,These cookies are generally used for Analytics and help count how many people visit a certain site by tracking if you have visited before. This cookie has a lifespan of 1 year.
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,729 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,_gcl_au,.indigo.ca,/,First party,90.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Performance Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,365 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Performance Cookies,banner,OneTrust,MR,.c.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,c.clarity.ms,This cookie is used by Microsoft as a unique identifier. The cookie is set by embedded Microsoft scripts. The purpose of this cookie is to synchronise the ID across many different Microsoft domains to enable user tracking.
+Unclassified,none,,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id_marketing,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id_ads,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,personalization_id,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.twitter.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,report-uri.com,This is a CloudFoundry cookie
+Unclassified,none,,muc_ads,.t.co,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.t.co,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,report-uri.com,This is a CloudFoundry cookie
+Unclassified,none,,_scid,.indigo.ca,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Performance Cookies,banner,OneTrust,SM,.c.clarity.ms,/,Third party,Session,Session,false,true,none,false,Declared & set,c.clarity.ms,This cookie is used by Microsoft's Clarity analytics service to synchronise the MUID across Microsoft domains
+Performance Cookies,banner,OneTrust,MUID,.clarity.ms,/,Third party,390.00 days,365 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Performance Cookies,banner,OneTrust,MR,.c.clarity.ms,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,c.clarity.ms,This cookie is used by Microsoft as a unique identifier. The cookie is set by embedded Microsoft scripts. The purpose of this cookie is to synchronise the ID across many different Microsoft domains to enable user tracking.
+Performance Cookies,banner,OneTrust,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,Session,false,true,none,false,Declared & set,c.clarity.ms,This cookie is used by Microsoft for storing the session ID for a user. This cookie ensures that clicks from advertisement on the Bing search engine are verified and it is used for reporting purposes and for personalisation.
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.linkedin.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,report-uri.com,This is a CloudFoundry cookie
+Targeting Cookies,banner,OneTrust,_tt_enable_cookie,.indigo.ca,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,indigo.ca,
+Targeting Cookies,banner,OneTrust,_ttp,.indigo.ca,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,indigo.ca,
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga,.indigo.ca,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,indigo.ca,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sc_at,.snapchat.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_sctr,.indigo.ca,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,fr,.facebook.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,facebook.com,"Contains browser and user unique ID combination, used for targeted advertising."
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.indigo.ca,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.indigo.ca,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Strictly Necessary Cookies,banner,OneTrust,ConstructorioID_client_id,www.indigo.ca,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,indigo.ca,
+Unclassified,none,,__apex_test__,.indigo.ca,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.www.indigo.ca,/,First party,0.02 days,0 days,true,true,none,true,Declared & set,report-uri.com,This is a CloudFoundry cookie
+Unclassified,none,,_shopify_cmp,.indigo.ca,/,First party,365.25 days,,false,true,lax,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,ConstructorioID_session,.indigo.ca,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,indigo.ca,
+Unclassified,none,,_scid_r,.indigo.ca,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_rdt_uuid,.indigo.ca,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,indigo.ca,
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.indigo.ca,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.indigo.ca,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Strictly Necessary Cookies,banner,OneTrust,forterToken,www.indigo.ca,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,indigo.ca,
+Performance Cookies,banner,OneTrust,_clsk,.indigo.ca,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,indigo.ca,This cookie is installed by Microsoft Clarity to store information of how visitors use a website and helps in creating an analytics report of how the website is doing.
+Performance Cookies,banner,OneTrust,_ga_07HTRD6YB4,.indigo.ca,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,indigo.ca,
+Unclassified,none,,ttcsid_C4TPMGH6H18A0MH1Q0E0,.indigo.ca,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,ct.pinterest.com,
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_twsid,.indigo.ca,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,swym-session-id,.www.indigo.ca,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ttcsid,.indigo.ca,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,IndigoSiteLanguageId,indigo.ca,,,,365 days,,,,,"Declared, not set",indigo.ca,
+Strictly Necessary Cookies,banner,OneTrust,selectedStore,www.indigo.ca,,,,364 days,,,,,"Declared, not set",www.indigo.ca,
+Strictly Necessary Cookies,banner,OneTrust,ftr_ncd,indigo.ca,,,,399 days,,,,,"Declared, not set",indigo.ca,Forter fraud detection
+Strictly Necessary Cookies,banner,OneTrust,__cqact,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,Holds the queue of browser activities until they are sent (Einstein).
+Strictly Necessary Cookies,banner,OneTrust,_csrf,auth.indigo.ca,,,,9 days,,,,,"Declared, not set",auth.indigo.ca,
+Strictly Necessary Cookies,banner,OneTrust,weird_get_top_level_domain,indigo.ca,,,,Session,,,,,"Declared, not set",indigo.ca,This cookie appears to be set by some Javascript code designed to work out what the domain of the site is. Its exact usage and purpose is unclear.weird_get_top_level_domain
+Strictly Necessary Cookies,banner,OneTrust,bm_mi,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,This cookie is associated with Akamai. It is used to analyse traffic to determine if it is automated traffic generated by bots or a human user.
+Strictly Necessary Cookies,banner,OneTrust,AccountCentreSession,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,AC and Auth0 Session cookie
+Strictly Necessary Cookies,banner,OneTrust,MembershipSession,indigo.ca,,,,Session,,,,,"Declared, not set",indigo.ca,AC communbication with External Api (Forms Authentication)
+Strictly Necessary Cookies,banner,OneTrust,profileID,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,Mobile App cookie used by iOS App.  Profile ID for a customer. Also used by AC but likely deprecated.
+Strictly Necessary Cookies,banner,OneTrust,purchaseComplete,www.indigo.ca,,,,0 days,,,,,"Declared, not set",www.indigo.ca,This cookie is used by Adobe Launch to prevent purchase events from firing multiple times if a user returns to or reloads the Order Confirmation page. (Custom)
+Strictly Necessary Cookies,banner,OneTrust,Indigo_User_GuestID,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,Mobile App cookie for iOS - temporary ID of user if not logged into the app.
+Strictly Necessary Cookies,banner,OneTrust,sid,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,
+Strictly Necessary Cookies,banner,OneTrust,app_tracking_opt_in,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,Mobile App cookie - iOS app tracking value received from the Ad Tracking Transparency prompt.
+Strictly Necessary Cookies,banner,OneTrust,MembershipFormsSession,indigo.ca,,,,Session,,,,,"Declared, not set",indigo.ca,AC communbication with External Api (Forms Authentication)
+Strictly Necessary Cookies,banner,OneTrust,cquid,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,"This cookie name is associated with Predictive Intelligence activity tracking software used on sites built on the Demandware ecommerce platform. It enables tracking of anonymous or logged in users to measure and improve performance, and also supports personalisation of site content. This cookie contains a user id for a logged in, known user."
+Strictly Necessary Cookies,banner,OneTrust,AKA_A2,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,"This cookie is generally provided by Akamai and is used for the Advanced Acceleration feature, which enables DNS Prefetch and HTTP2 Push."
+Strictly Necessary Cookies,banner,OneTrust,dwanonymous_xxxxxxxx,www.indigo.ca,,,,179 days,,,,,"Declared, not set",www.indigo.ca,"This is a pattern type cookie associated with the Demandware eCommerce platform.  Its stated purpose is anonymised user tracking, therefore it is presumed involved in targeting or personalisation in some way"
+Strictly Necessary Cookies,banner,OneTrust,auth0,auth.indigo.ca,,,,2 days,,,,,"Declared, not set",auth.indigo.ca,
+Strictly Necessary Cookies,banner,OneTrust,__RequestVerification,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,
+Strictly Necessary Cookies,banner,OneTrust,auth0_compat,auth.indigo.ca,,,,2 days,,,,,"Declared, not set",auth.indigo.ca,
+Strictly Necessary Cookies,banner,OneTrust,__cq_dnt,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,Cookie associated with embedding content from billabong.com. Indicates that the browser has opted out of CC Einstein tracking for this site. Commerce Cloud sets it with each page response based on the value of the corresponding session
+Strictly Necessary Cookies,banner,OneTrust,viewed_email_verified_modal,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,
+Strictly Necessary Cookies,banner,OneTrust,did,auth.indigo.ca,,,,365 days,,,,,"Declared, not set",auth.indigo.ca,
+Strictly Necessary Cookies,banner,OneTrust,basket-item-count,indigo.ca,,,,Session,,,,,"Declared, not set",indigo.ca,Used to relay the current basket count from SFCC to the mobile apps for rendering in the app's UI.
+Strictly Necessary Cookies,banner,OneTrust,dw_dnt,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,"This cookies checks whether a browser accepts first party cookies. This cookie is also used to determine when a session should not be tracked.
+"
+Strictly Necessary Cookies,banner,OneTrust,akacd_PIM-prd_ah_rollout,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,
+Strictly Necessary Cookies,banner,OneTrust,bm_sv,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,This cookie is associated with Akamai and is used to differentiate between traffic from humans and bots.
+Strictly Necessary Cookies,banner,OneTrust,ak_bmsc,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,This cookie is associated with Akamai and is used to differentiate between traffic from humans and bots.
+Strictly Necessary Cookies,banner,OneTrust,com.auth0.auth._xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,www.indigo.ca,,,,0 days,,,,,"Declared, not set",www.indigo.ca,This cookie is related to the CM login solution.It is security cookie that generates a unique random key.
+Strictly Necessary Cookies,banner,OneTrust,sfccseg,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,Mobile App cookie for iOS - SFCC opt in cookie used during web launch in webview.
+Strictly Necessary Cookies,banner,OneTrust,OpenIdConnect.nonce.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,www.indigo.ca,,,,0 days,,,,,"Declared, not set",www.indigo.ca,OpenIdConnect.nonce.
+Strictly Necessary Cookies,banner,OneTrust,com.auth0.auth,www.indigo.ca,,,,0 days,,,,,"Declared, not set",www.indigo.ca,This cookie is related to the CM login solution.It is security cookie that generates a unique random key.
+Strictly Necessary Cookies,banner,OneTrust,PIM-SESSION-ID,indigo.ca,,,,Session,,,,,"Declared, not set",indigo.ca,
+Strictly Necessary Cookies,banner,OneTrust,cqcid,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,"This cookie name is associated with Predictive Intelligence activity tracking software used on sites built on the Demandware ecommerce platform. It enables tracking of anonymous or logged in users to measure and improve performance, and also supports personalisation of site content. This cookie contains a hashed user ID."
+Strictly Necessary Cookies,banner,OneTrust,dwsid,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,System session management cookie associated with the Demandware eCommerce platform.
+Strictly Necessary Cookies,banner,OneTrust,did_compat,auth.indigo.ca,,,,365 days,,,,,"Declared, not set",auth.indigo.ca,
+Strictly Necessary Cookies,banner,OneTrust,_GRECAPTCHA,www.google.com,,,,0 days,,,,,"Declared, not set",www.google.com,Google Recaptcha spam protection
+Strictly Necessary Cookies,banner,OneTrust,dtCookie,www3.moneris.com,,,,Session,,,,,"Declared, not set",www3.moneris.com,Moneris
+Strictly Necessary Cookies,banner,OneTrust,l7_az,www.paypal.com,,,,0 days,,,,,"Declared, not set",www.paypal.com,This cookie is necessary for the PayPal login-function on the website.
+Strictly Necessary Cookies,banner,OneTrust,ts_c,www.paypal.com,,,,0 days,,,,,"Declared, not set",www.paypal.com,PayPal sets this cookie to make safe payments through PayPal.
+Strictly Necessary Cookies,banner,OneTrust,ts,www.paypal.com,,,,0 days,,,,,"Declared, not set",www.paypal.com,PayPal sets this cookie to enable secure transactions through PayPal.
+Strictly Necessary Cookies,banner,OneTrust,tsrce,www.paypal.com,,,,0 days,,,,,"Declared, not set",www.paypal.com,PayPal sets this cookie to enable the PayPal payment service in the website.
+Strictly Necessary Cookies,banner,OneTrust,rm-ss,api.bazaarvoice.com,,,,Session,,,,,"Declared, not set",api.bazaarvoice.com,Bazaarvoice review submission
+Targeting Cookies,banner,OneTrust,criteo_write_test,auth.indigo.ca,,,,0 days,,,,,"Declared, not set",auth.indigo.ca,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,TEST_AMCV_COOKIE_WRITE,indigo.ca,,,,Session,,,,,"Declared, not set",indigo.ca,
+Targeting Cookies,banner,OneTrust,ajs_group_properties,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,
+Targeting Cookies,banner,OneTrust,ajs_group_id,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,"This cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability. "
+Targeting Cookies,banner,OneTrust,_gat_gtag_xxxxxxxxxxxxxxxxxxxxxxxxxxx,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,Google Analytics
+Targeting Cookies,banner,OneTrust,cj-omniture,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,Mobile app cookie -  cjUUID received from a deep link
+Targeting Cookies,banner,OneTrust,cto_bundle,indigo.ca,,,,395 days,,,,,"Declared, not set",indigo.ca,
+Targeting Cookies,banner,OneTrust,ajs_user_id,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,"This cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability. Cookies in this domain have lifespan of 1 year."
+Targeting Cookies,banner,OneTrust,cto_tld_test,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,criteo_write_test,www.indigo.ca,,,,0 days,,,,,"Declared, not set",www.indigo.ca,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,ajs_user_traits,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,
+Targeting Cookies,banner,OneTrust,ajs_user,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,
+Targeting Cookies,banner,OneTrust,demdex,dpm.demdex.net,,,,0 days,,,,,"Declared, not set",dpm.demdex.net,This cookie is set by Adobe Audience Manager to help identify a unique visitor across domains.
+Targeting Cookies,banner,OneTrust,A3,yahoo.com,,,,365 days,,,,,"Declared, not set",yahoo.com,This domain is owned by Yahoo. The main business activity is: Search / Advertising
+Targeting Cookies,banner,OneTrust,ps_n,facebook.com,,,,0 days,,,,,"Declared, not set",facebook.com,"Used to provide you with experiences and marketing messages based on your likely interests. The information generated by the cookies about your use of the Website (including your IP address) will be transmitted to and stored by Facebook. Facebook may also transfer this information to third parties where required to do so by law, or where such third parties process the information on Facebook’s behalf. Facebook will not associate your IP address with any other data held by Facebook."
+Targeting Cookies,banner,OneTrust,c,c212.net,,,,184 days,,,,,"Declared, not set",c212.net,
+Targeting Cookies,banner,OneTrust,browser_data,dnacdn.net,,,,389 days,,,,,"Declared, not set",dnacdn.net,Criteo
+Targeting Cookies,banner,OneTrust,_routing_id,pinterest.com,,,,0 days,,,,,"Declared, not set",pinterest.com,This cookie is set by Pinterest that collects statistical details to track the use of its services.
+Targeting Cookies,banner,OneTrust,ar_debug,pinterest.com,,,,364 days,,,,,"Declared, not set",pinterest.com,This domain is owned by Pinterest. The main business activity is: Social Content Sharing platform
+Targeting Cookies,banner,OneTrust,CJSession,cj.dotomi.com,,,,Session,,,,,"Declared, not set",cj.dotomi.com,Used by Dotomi and Commission Junction to record visitors behaviours
+Targeting Cookies,banner,OneTrust,DotomiUser,cj.dotomi.com,,,,0 days,,,,,"Declared, not set",cj.dotomi.com,Used by Dotomi and Commission Junction to record visitors behaviours
+Targeting Cookies,banner,OneTrust,cjae,cj.dotomi.com,,,,0 days,,,,,"Declared, not set",cj.dotomi.com,Used by Dotomi and Commission Junction to record visitors behaviours
+Targeting Cookies,banner,OneTrust,criteo_write_test,dynamic.criteo.com,,,,0 days,,,,,"Declared, not set",dynamic.criteo.com,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,BVID,network.bazaarvoice.com,,,,0 days,,,,,"Declared, not set",network.bazaarvoice.com,Enables correlation of internal Bazaarvoice web analytics with the same user browsing session for interactions across the Bazaarvoice network.
+Targeting Cookies,banner,OneTrust,BVSID,network.bazaarvoice.com,,,,0 days,,,,,"Declared, not set",network.bazaarvoice.com,Enables correlation of internal Bazaarvoice web analytics with the same user browsing session for interactions across the Bazaarvoice network.
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,optout,criteo.com,,,,365 days,,,,,"Declared, not set",criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,_ir,api.pinterest.com,,,,0 days,,,,,"Declared, not set",api.pinterest.com,
+Targeting Cookies,banner,OneTrust,cj-data,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,Mobile App cookie for adobe analytics.
+Functional Cookies,banner,OneTrust,__cq_seg,indigo.ca,,,,29 days,,,,,"Declared, not set",indigo.ca,
+Functional Cookies,banner,OneTrust,dwac_XXXXX,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,"Stores the following data for analytics purposes: Session ID, report suite name, shopper’s customer ID, source code group ID (encoded), currency mnemonic, and time zone. "
+Functional Cookies,banner,OneTrust,cp_session,help.indigo.ca,,,,Session,,,,,"Declared, not set",help.indigo.ca,This cookie is used for Help systems found in the website.
+Functional Cookies,banner,OneTrust,cp_session,aide.indigo.ca,,,,Session,,,,,"Declared, not set",aide.indigo.ca,This cookie is used for Help systems found in the website.
+Functional Cookies,banner,OneTrust,__tld__,indigo.ca,,,,Session,,,,,"Declared, not set",indigo.ca,From Segment Analytics.js library; this cookie helps to figure out a top-level domain for a user.__tld__
+Functional Cookies,banner,OneTrust,_gdxxxxxxxxxxxxx,indigo.ca,,,,Session,,,,,"Declared, not set",indigo.ca,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Functional Cookies,banner,OneTrust,__cq_bc,indigo.ca,,,,29 days,,,,,"Declared, not set",indigo.ca,"This cookie name is associated with Predictive Intelligence activity tracking software used on sites built on the Demandware ecommerce platform. It enables tracking of anonymous or logged in users to measure and improve performance, and also supports personalisation of site content. This cookie stores an activity history such as products viewed by the user."
+Functional Cookies,banner,OneTrust,vcsdsrv_id,en.feedback.indigo.ca,,,,Session,,,,,"Declared, not set",en.feedback.indigo.ca,Alida - Helps maintain a session through Load Balancer.
+Functional Cookies,banner,OneTrust,__cq_bc,cquotient.com,,,,0 days,,,,,"Declared, not set",cquotient.com,"First-party version of the bc Einstein cookie. Contains activity history, such as the last 10 products viewed by the shopper."
+Functional Cookies,banner,OneTrust,.CPMASPXAUTH,en.feedback.indigo.ca,,,,Session,,,,,"Declared, not set",en.feedback.indigo.ca,"Alida - ""Forms the authentication ticket for community admin users."""
+Functional Cookies,banner,OneTrust,icmsrv_id,en.feedback.indigo.ca,,,,Session,,,,,"Declared, not set",en.feedback.indigo.ca,Alida - Helps maintain a 1hr session.
+Functional Cookies,banner,OneTrust,_pinterest_sess,pinterest.com,,,,Session,,,,,"Declared, not set",pinterest.com,"Cookie for logging in to Pinterest. It contains user IDs, authentication tokens, and timestamps. When users log out, the authentication tokens are deleted, but the cookies remain. We use the logged out user IDs to optimize usage and measurability."
+Functional Cookies,banner,OneTrust,_auth,pinterest.com,,,,Session,,,,,"Declared, not set",pinterest.com,This cookie is set by Pinterest that collects statistical details to track the use of its services
+Performance Cookies,banner,OneTrust,s_ppo,indigo.ca,,,,Session,,,,,"Declared, not set",indigo.ca,Adobe Analytics. Mobile screen orientation.
+Performance Cookies,banner,OneTrust,RT,indigo.ca,,,,6 days,,,,,"Declared, not set",indigo.ca,"The roundtrip (RT) Boomerang 
+cookie is used by Akamai to measure page load time and/or other timers associated with the page."
+Performance Cookies,banner,OneTrust,AMCV_,indigo.ca,,,,729 days,,,,,"Declared, not set",indigo.ca,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Performance Cookies,banner,OneTrust,s_cc,indigo.ca,,,,Session,,,,,"Declared, not set",indigo.ca,This cookie is associated with the Adobe Site Catalyst. It determines whether cookies are enabled in the web browser.
+Performance Cookies,banner,OneTrust,__cq_uuid,indigo.ca,,,,394 days,,,,,"Declared, not set",indigo.ca,"This cookie name is associated with Predictive Intelligence activity tracking software used on sites built on the Demandware ecommerce platform. It enables tracking of anonymous or logged in users to measure and improve performance, and also supports personalisation of site content. This cookie stores a random unique user identifier."
+Performance Cookies,banner,OneTrust,s_tp,indigo.ca,,,,Session,,,,,"Declared, not set",indigo.ca,This cookie is associated with Adobe Analytics. The cookie is used for measuring a visitor’s scroll activity to see how much of a page they view before moving on to another page.
+Performance Cookies,banner,OneTrust,searchSession,www.indigo.ca,,,,0 days,,,,,"Declared, not set",www.indigo.ca,This cookie is used by Adobe Launch to track product IDs clicked starting from a new user-initiated search until another user-initiated search clears this cookie or a purchase is made or cookie expires. (Custom)
+Performance Cookies,banner,OneTrust,BVImplsfcc_main_site,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,
+Performance Cookies,banner,OneTrust,Default_PerformanceCookie_SFCC,indigo.ca,,,,365 days,,,,,"Declared, not set",indigo.ca,
+Performance Cookies,banner,OneTrust,s_vnc365,indigo.ca,,,,365 days,,,,,"Declared, not set",indigo.ca,This cookie is associated with Adobe Analytics and is used to track website behaviour.
+Performance Cookies,banner,OneTrust,searchClicks,www.indigo.ca,,,,0 days,,,,,"Declared, not set",www.indigo.ca,This cookie is used by Adobe Launch to track product IDs clicked starting from the first search until a purchase is made or cookie expires. (Custom)
+Performance Cookies,banner,OneTrust,s_ips,indigo.ca,,,,Session,,,,,"Declared, not set",indigo.ca,This cookie is associated with Adobe Analytics. The cookie is used for measuring a visitor’s scroll activity to see how much of a page they view before moving on to another page.
+Performance Cookies,banner,OneTrust,s_ppv,indigo.ca,,,,Session,,,,,"Declared, not set",indigo.ca,This cookie is associated with Adobe Analytics site tracking and is used to measure a user's scroll activity to see how much of a page they view before moving to another page.
+Performance Cookies,banner,OneTrust,BVBRANDID,indigo.ca,,,,364 days,,,,,"Declared, not set",indigo.ca,This cookie allows internal Bazaarvoice web analytics to be correlated to the same user for interactions within a particular client domain.
+Performance Cookies,banner,OneTrust,s_ptc,indigo.ca,,,,Session,,,,,"Declared, not set",indigo.ca,Adobe Analytics. This first party cookie is used to track how quickly website pages are loading.
+Performance Cookies,banner,OneTrust,bv_metrics,www.indigo.ca,,,,0 days,,,,,"Declared, not set",www.indigo.ca,This cookie is used for performance diagnostic events for less than 1/1000th of users.
+Performance Cookies,banner,OneTrust,_gid,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Performance Cookies,banner,OneTrust,s_ivc,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,This cookie is associated with Adobe Analytics site tracking. 
+Performance Cookies,banner,OneTrust,s_vi,indigo.ca,,,,729 days,,,,,"Declared, not set",indigo.ca,"Adobe Site Catalyst cookie, used to identify unique visitors, with an ID and timestamp"
+Performance Cookies,banner,OneTrust,s_sq,www.indigo.ca,,,,Session,,,,,"Declared, not set",www.indigo.ca,Adobe Analytics. This cookie is set and read by the JavaScript code when the ClickMap functionality or the Activity Map functionality are enabled; it contains information about the previous link that was selected on by the user
+Performance Cookies,banner,OneTrust,NoCookie,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,"This cookie is set when a user opts out of tracking or indicates that they are under the age of 13 (COPPA requirement). If NoCookie=true on either the client site or Bazaarvoice site, then existing tracking cookies are unset. This value is honored as long as the cookie exists."
+Performance Cookies,banner,OneTrust,s_fid,indigo.ca,,,,730 days,,,,,"Declared, not set",indigo.ca,"This cookie name is associated with the analytics service provided by Adobe's Site Catalyst product suite. It is a new cookie introduced in 2013 as a 'fallback' visitor identifier where the s_vi cookie normally used for this purpose is blocked. It contains a randomly generated, unique id."
+Performance Cookies,banner,OneTrust,searchInteractions,www.indigo.ca,,,,0 days,,,,,"Declared, not set",www.indigo.ca,This cookie is used by Adobe Launch to track product IDs added to the wishlist starting from the first search until a purchase is made or cookie expires. (Custom)
+Performance Cookies,banner,OneTrust,AMCVS_,indigo.ca,,,,Session,,,,,"Declared, not set",indigo.ca,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier."
+Performance Cookies,banner,OneTrust,searchUserInitiate,www.indigo.ca,,,,0 days,,,,,"Declared, not set",www.indigo.ca,This cookie is used by Adobe Launch to track if a user initiated a new search session. (Custom)
+Performance Cookies,banner,OneTrust,Default_PerformanceCookie_AC,indigo.ca,,,,365 days,,,,,"Declared, not set",indigo.ca,
+Performance Cookies,banner,OneTrust,s_ppn,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,
+Performance Cookies,banner,OneTrust,BVBRANDSID,indigo.ca,,,,0 days,,,,,"Declared, not set",indigo.ca,This cookie allows internal Bazaarvoice web analytics to be correlated to the same user browsing session for interactions within a particular client domain.
+Performance Cookies,banner,OneTrust,uuid,cquotient.com,,,,394 days,,,,,"Declared, not set",cquotient.com,"This domain is owned by Demandware Inc, a USA based ecommerce platform provider. It is associated with the Predictive Intelligence activity tracking software used on Demandware sites. It enables tracking of users to measure and improve performance of the platform, and also supports personalisation of site content."
+Performance Cookies,banner,OneTrust,s_ecid,metrics.chapters.indigo.ca,,,,0 days,,,,,"Declared, not set",metrics.chapters.indigo.ca,Adobe Analytics. This cookie is set by the customer's domain after the AMCV cookie is set by the client. The purpose of this cookie is to allow persistent ID tracking in the 1st-party state and is used as a reference ID if the AMCV cookie has expired. Check AMCV cookie here for more details.
+Performance Cookies,banner,OneTrust,JSESSIONID,c212.net,,,,Session,,,,,"Declared, not set",c212.net,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server."
+Performance Cookies,banner,OneTrust,JSESSIONID,nr-data.net,,,,Session,,,,,"Declared, not set",nr-data.net,"This domain is controlled by New Relic, which provides a platform for monitoring the performance of web and mobile applications."

@@ -1,0 +1,45 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,banner,Cookiebot,sa_shop-pxl,us.kef.com,/collections,First party,Session,Session,false,false,unspecified,false,Declared & set,us.kef.com,Pending
+Unclassified,banner,Cookiebot,sa_shop-pxl,us.kef.com,/products,First party,Session,Session,false,false,unspecified,false,Declared & set,us.kef.com,Pending
+Unclassified,banner,Cookiebot,sa_shop-pxl,us.kef.com,/pages,First party,Session,Session,false,false,unspecified,false,Declared & set,us.kef.com,Pending
+Preferences,banner,Cookiebot,localization,us.kef.com,/,First party,365.00 days,,false,false,lax,false,Declared & set,us.kef.com,Holds the users timezone.
+Necessary,banner,Cookiebot,cart_currency,us.kef.com,/,First party,14.00 days,,false,false,lax,false,Declared & set,us.kef.com,The cookie is necessary for the secure checkout and payment function on the website. This function is provided by shopify.com.
+Necessary,banner,Cookiebot,_shopify_essential,us.kef.com,/,First party,365.00 days,,true,true,lax,false,Declared & set,us.kef.com,Necessary for the checkout function on the website. 
+Necessary,banner,Cookiebot,CookieConsent,us.kef.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,us.kef.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,FORMASSEMBLY,gpgm.tfaforms.net,/,Third party,Session,Session,true,true,none,false,Declared & set,gpgm.tfaforms.net,Used to implement and maintain form settings on the website. 
+Necessary,banner,Cookiebot,_shop_app_essential,.shop.app,/,Third party,365.00 days,,true,true,none,false,Declared & set,shop.app,Necessary for the shopping cart functionality on the website.
+Necessary,banner,Cookiebot,__cf_bm,.us.kef.com,/,First party,0.02 days,,true,true,none,true,Declared & set,vimeo.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,banner,Cookiebot,sa_shop-pxl,us.kef.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,us.kef.com,Pending
+Unclassified,none,,_rdt_uuid,.kef.com,/,First party,90.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_ga,.kef.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Necessary,banner,Cookiebot,guid,.mountain.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,mountain.com,Preserves users states across page requests.
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__mmapiwsid,d-ipv6.mmapiws.com,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__mmapiwsid,.kef.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_fbp,.kef.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Necessary,banner,Cookiebot,tt,.px.mountain.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,px.mountain.com,Registers the website's speed and performance. This function can be used in context with statistics and load-balancing.
+Necessary,banner,Cookiebot,rt,.mountain.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,mountain.com,This cookie is used to identify the visitor through an application. This allows the visitor to login to a website through their LinkedIn application for example.
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,banner,Cookiebot,_mpxl_guid,.kef.com,/,First party,365.00 days,Session,false,true,lax,false,Declared & set,kef.com,Pending
+Marketing,banner,Cookiebot,__Secure-YNID,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,YSC,.youtube.com,/,Third party,Session,Session,true,true,none,true,Declared & set,youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Declared & set,youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Unclassified,none,,VISITOR_PRIVACY_METADATA,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Necessary,banner,Cookiebot,AWSALBTGCORS,tfaforms.com,/,Third party,7.00 days,,false,true,none,false,Declared & set,tfaforms.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,AWSALBCORS,tfaforms.com,/,Third party,7.00 days,,false,true,none,false,Declared & set,tfaforms.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Unclassified,none,,_gcl_au,.kef.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_LW6LS5HJ0T,.kef.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_shopify_cmp,.kef.com,/,First party,365.25 days,,false,true,lax,false,Not declared,,
+Statistics,banner,Cookiebot,_shopify_analytics,us.kef.com,/,First party,365.00 days,,true,true,lax,false,Declared & set,us.kef.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Marketing,banner,Cookiebot,_shopify_marketing,us.kef.com,/,First party,365.00 days,,true,true,lax,false,Declared & set,us.kef.com,Contains data on the content of the shopping cart. This data is used for marketing purposes by promoting related products or for retargeting purposes. 
+Necessary,banner,Cookiebot,_shopify_test,com,,,,Session,,,,,"Declared, not set",com,This cookie determines whether the browser accepts cookies.
+Necessary,banner,Cookiebot,AWSALB,tfaforms.com,,,,,,,,,"Declared, not set",tfaforms.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,AWSALBTG,tfaforms.com,,,,,,,,,"Declared, not set",tfaforms.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,cf_clearance,vimeo.com,,,,,,,,,"Declared, not set",vimeo.com,This cookie is used to distinguish between humans and bots. 
+Statistics,banner,Cookiebot,dd_cookie_test_#,embed.tidal.com,,,,,,,,,"Declared, not set",embed.tidal.com,Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization. 
+Marketing,banner,Cookiebot,__cf_ob,vimeo.com,,,,Session,,,,,"Declared, not set",vimeo.com,Pending
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,www.youtube-nocookie.com,,,,Session,,,,,"Declared, not set",www.youtube-nocookie.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,www.youtube-nocookie.com,,,,,,,,,"Declared, not set",www.youtube-nocookie.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video

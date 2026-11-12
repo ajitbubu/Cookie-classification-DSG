@@ -1,0 +1,118 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,_li_ss,i.liadm.com,/s,Third party,30.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,_shopify_essential,www.naturemade.com,/,First party,365.00 days,364 days,true,true,lax,false,Declared & set,www.naturemade.com,This cookie name is associated with Shopify which is used to contain essential information for the correct functionality of a store such as session and checkout information and anti-tampering data.
+Strictly Necessary Cookies,banner,OneTrust,localization,www.naturemade.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.naturemade.com,"This cookie is used by Shopify to operate the website.
+"
+Functional Cookies,banner,OneTrust,cart_currency,www.naturemade.com,/,First party,14.00 days,13 days,false,false,lax,false,Declared & set,www.naturemade.com,This cookie is used to store the currency preference of a user on an e-commerce platform to facilitate transactions in the user's chosen currency.
+Functional Cookies,banner,OneTrust,_ALGOLIA,www.naturemade.com,/,First party,180.00 days,179 days,false,false,unspecified,false,Declared & set,www.naturemade.com,"This cookie name is associated with the site's search feature which is used to track products selected and identify users across sessions with a persistent, anonymous user token."
+Unclassified,none,,innovations-carousel-last-tab-selected,www.naturemade.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_vwo_uuid,.naturemade.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,_vis_opt_s,.naturemade.com,/,First party,100.00 days,99 days,false,false,unspecified,false,Declared & set,naturemade.com,"This cookie name is associated with the product Visual Website Optimiser, by USA based Wingify. The tool helps site owners measure the performance of different versions of web pages. This cookie distinguishes between new and returning visitors."
+Performance Cookies,banner,OneTrust,_vis_opt_test_cookie,.naturemade.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,naturemade.com,"This cookie name is associated with the product Visual Website Optimiser, by USA based Wingify. The tool helps site owners measure the performance of different versions of web pages. This cookie tests if the browser is set to allow cookies."
+Performance Cookies,banner,OneTrust,_vwo_uuid_v2,.naturemade.com,/,First party,366.00 days,365 days,false,false,unspecified,false,Declared & set,naturemade.com,"This cookie name is associated with the product Visual Website Optimiser, by USA based Wingify. The tool helps site owners measure the performance of different versions of web pages. This cookie ensures a visitor always sees the same version of a page and is used to track behaviour to measure the performance of different page versions."
+Functional Cookies,banner,OneTrust,__cf_bm,.www.naturemade.com,/,First party,0.02 days,0 days,true,true,none,true,Declared & set,zoom.us,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots."
+Unclassified,none,,ot_disclose,www.naturemade.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,usi_return_visitor,.naturemade.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.naturemade.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.naturemade.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust. It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down. It enables the website not to show the message more than once to a user. The cookie has a normal lifespan of one year and contains no personal information.
+Unclassified,none,,_gcl_au,.naturemade.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,BVBRANDID,.naturemade.com,/,First party,365.00 days,Session,false,true,lax,false,Declared & set,www.naturemade.com,This cookie allows internal Bazaarvoice web analytics to be correlated to the same user for interactions within a particular client domain.
+Performance Cookies,banner,OneTrust,BVBRANDSID,.naturemade.com,/,First party,0.02 days,0 days,false,true,lax,false,Declared & set,naturemade.com,This cookie allows internal Bazaarvoice web analytics to be correlated to the same user browsing session for interactions within a particular client domain.
+Unclassified,none,,_shopify_analytics,www.naturemade.com,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,_shopify_marketing,www.naturemade.com,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__kla_off,www.naturemade.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,www.naturemade.com,This cookie name is associated with Klaviyo which is used to disable Klaviyo's tracking functionality if a customer opts out of Marketing cookies.
+Unclassified,none,,__kla_id,www.naturemade.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_pmedia_opt-out,.pmsrv.co,/,Third party,91.25 days,,false,true,none,false,Not declared,,
+Unclassified,none,,shopify_client_id,www.naturemade.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_pin_unauth,www.naturemade.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_clck,.naturemade.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_ttp,.www.naturemade.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cjConsent,.naturemade.com,/,First party,395.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,cjUser,.naturemade.com,/,First party,395.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ad-id,.amazon-adsystem.com,/,Third party,231.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_fbp,.naturemade.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,SM,.c.clarity.ms,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,MUID,.clarity.ms,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.c.clarity.ms,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_ga,.naturemade.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,demdex,.demdex.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dpm,.dpm.demdex.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,tuuid,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,c,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ab,.agkn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IMRID,.imrworldwide.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,u,.agkn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tluid,.3lift.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,clid,.media6degrees.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,acs,.media6degrees.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pi,.ml314.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,UID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,io.narrative.guid.v2,io.narrative.io,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,__cf_bm,.linkedin.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,zoom.us,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots."
+Strictly Necessary Cookies,banner,OneTrust,_shopify_essential,my.naturemade.com,/,First party,365.00 days,364 days,true,true,lax,false,Declared & set,www.naturemade.com,This cookie name is associated with Shopify which is used to contain essential information for the correct functionality of a store such as session and checkout information and anti-tampering data.
+Functional Cookies,banner,OneTrust,__cf_bm,.my.naturemade.com,/,First party,0.02 days,0 days,true,true,none,true,Declared & set,zoom.us,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots."
+Functional Cookies,banner,OneTrust,_shop_app_essential,.shop.app,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,shop.app,"This domain is associated with Shopify's Shop app, which provides a shopping assistant experience for users, including personalized recommendations and order tracking."
+Unclassified,none,,_shopify_cmp,.naturemade.com,/,First party,365.25 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,_ga_LNP4YEK4F8,.naturemade.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_008Z3D0BCH,.naturemade.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_CLPKTPJC77U0IGCB9CT0,.www.naturemade.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid,.www.naturemade.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_vwo_ds,.naturemade.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_vwo_sn,.naturemade.com,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.naturemade.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.naturemade.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,__gtm_collections,.naturemade.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,__gtm_pagetypes,.naturemade.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,__gtm_sections,.naturemade.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,_rdt_uuid,.naturemade.com,/,First party,90.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,lidid,.liadm.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,to_master_s,.truoptik.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,to_version_s,.truoptik.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_uetsid,.naturemade.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_uetvid,.naturemade.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SEUNCY,.semasio.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_clsk,.naturemade.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Consent to Disclosure,banner,OneTrust,override_consent_to_disclosure,naturemade.com,,,,365000 days,,,,,"Declared, not set",naturemade.com,"Override to ensure ""Consent to Disclosure"" appears on subdomains using the naturemade.com script. Note: Otsuka has locked down the ability for affiliates to modify purposes, so we are not able to use the option to force it to display on the Purposes admin."
+Strictly Necessary Cookies,banner,OneTrust,_shopify_test,com,,,,Session,,,,,"Declared, not set",com,This cookie name is associated with Shopify which is used to manage sessions on various Shopify websites.
+Strictly Necessary Cookies,banner,OneTrust,nm_fired_nav_events,www.naturemade.com,,,,0 days,,,,,"Declared, not set",www.naturemade.com,TS
+Strictly Necessary Cookies,banner,OneTrust,override_strictly_necessary,naturemade.com,,,,365000 days,,,,,"Declared, not set",naturemade.com,"Override to ensure ""Strictly Necessary"" appears on subdomains using the naturemade.com script. Note: Otsuka has locked down the ability for affiliates to modify purposes, so we are not able to use the option to force it to display on the Purposes admin."
+Performance Cookies,banner,OneTrust,override_performance,naturemade.com,,,,365000 days,,,,,"Declared, not set",naturemade.com,"Override to ensure ""Performance"" appears on subdomains using the naturemade.com script. Note: Otsuka has locked down the ability for affiliates to modify purposes, so we are not able to use the option to force it to display on the Purposes admin."
+Functional Cookies,banner,OneTrust,NoCookie,naturemade.com,,,,0 days,,,,,"Declared, not set",naturemade.com,"This cookie is set when a user opts out of tracking or indicates that they are under the age of 13 (COPPA requirement). If NoCookie=true on either the client site or Bazaarvoice site, then existing tracking cookies are unset. This value is honored as long as the cookie exists."
+Functional Cookies,banner,OneTrust,override_functional,naturemade.com,,,,365000 days,,,,,"Declared, not set",naturemade.com,"Override to ensure ""Functional"" appears on subdomains using the naturemade.com script. Note: Otsuka has locked down the ability for affiliates to modify purposes, so we are not able to use the option to force it to display on the Purposes admin."
+Functional Cookies,banner,OneTrust,_gdxxxxxxxxxxxxx,naturemade.com,,,,Session,,,,,"Declared, not set",naturemade.com,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Functional Cookies,banner,OneTrust,_zm_ctaid,zoom.us,,,,0 days,,,,,"Declared, not set",zoom.us,"This domain is owned by Zoom Video Communications, Inc. which provides a cloud-based solution for video and audio conferencing, mobile collaboration, and online meetings and Webinars."
+Functional Cookies,banner,OneTrust,_zm_chtaid,zoom.us,,,,0 days,,,,,"Declared, not set",zoom.us,"This domain is owned by Zoom Video Communications, Inc. which provides a cloud-based solution for video and audio conferencing, mobile collaboration, and online meetings and Webinars."
+Functional Cookies,banner,OneTrust,_zm_mtk_guid,zoom.us,,,,399 days,,,,,"Declared, not set",zoom.us,"This domain is owned by Zoom Video Communications, Inc. which provides a cloud-based solution for video and audio conferencing, mobile collaboration, and online meetings and Webinars."
+Targeting Cookies,banner,OneTrust,override_targeting,naturemade.com,,,,365000 days,,,,,"Declared, not set",naturemade.com,"Override to ensure ""Targeting"" appears on subdomains using the naturemade.com script. Note: Otsuka has locked down the ability for affiliates to modify purposes, so we are not able to use the option to force it to display on the Purposes admin."
+Social Media Cookies,banner,OneTrust,override_social_media,naturemade.com,,,,365000 days,,,,,"Declared, not set",naturemade.com,"Override to ensure ""Social Media"" appears on subdomains using the naturemade.com script. Note: Otsuka has locked down the ability for affiliates to modify purposes, so we are not able to use the option to force it to display on the Purposes admin."

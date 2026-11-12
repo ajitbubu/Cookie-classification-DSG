@@ -1,0 +1,173 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,frontend.exp066,www.deel.com,/,First party,45.00 days,,false,true,lax,false,Not declared,,
+Necessary,banner,Cookiebot,__cf_bm,.deel.com,/,First party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,__cf_bm,.hs-scripts.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,CookieConsent,www.deel.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,app.deel.com,Stores the user's cookie consent state for the current domain
+Marketing,banner,Cookiebot,_gcl_au,.deel.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,akai.run,"Used to measure the efficiency of the website’s advertisement efforts, by collecting data on the conversion rate of the website’s ads across multiple websites."
+Unclassified,banner,Cookiebot,elbDeviceId,www.deel.com,/,First party,30.00 days,Session,false,true,lax,false,Declared & set,emet.deel.com,Pending
+Necessary,banner,Cookiebot,__cf_bm,.hs-analytics.net,/,Third party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,__cf_bm,.hs-banner.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Marketing,banner,Cookiebot,sa-user-id,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,stackadapt.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,stackadapt.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,sa-user-id-v2,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,stackadapt.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,stackadapt.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Statistics,banner,Cookiebot,sa-user-id-v4,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,stackadapt.com,"Collects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads."
+Statistics,banner,Cookiebot,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,stackadapt.com,"Collects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads."
+Statistics,banner,Cookiebot,_ga,.deel.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,amplifyapp.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Necessary,banner,Cookiebot,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,linkedin.com,Used in order to detect spam and improve the website's security. 
+Preferences,banner,Cookiebot,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,linkedin.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,__cf_bm,.g2crowd.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,__cf_bm,.bzrcdn.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,_cfuvid,.bzrcdn.openai.com,/,Third party,Session,Session,true,true,none,false,Declared & set,bzr.openai.com,"This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators. "
+Marketing,banner,Cookiebot,sa-user-id,www.deel.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,stackadapt.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,sa-user-id-v2,www.deel.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,stackadapt.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,sa-user-id-v3,www.deel.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,www.deel.com,Collects data on the user across websites - This data is used to make advertisement more relevant.
+Statistics,banner,Cookiebot,sa-user-id-v4,www.deel.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,stackadapt.com,"Collects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads."
+Unclassified,banner,Cookiebot,_bhp,.deel.com,/,First party,365.00 days,Session,false,true,strict,false,Declared & set,deel.com,Pending
+Unclassified,banner,Cookiebot,__spdt,www.deel.com,/,First party,365.00 days,,false,false,strict,false,Declared & set,www.deel.com,Pending
+Necessary,banner,Cookiebot,__cf_bm,.capterra.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Marketing,banner,Cookiebot,__obref,.deel.com,/,First party,365.00 days,Session,false,true,none,false,Declared & set,deel.com,Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. 
+Necessary,banner,Cookiebot,__cf_bm,.pvdpix.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Marketing,banner,Cookiebot,_pvd_uid,.deel.com,/,First party,400.00 days,,false,false,lax,false,Declared & set,deel.com,Pending
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,__cf_bm,.hsforms.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,__cf_bm,.stape.io,/,Third party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Marketing,banner,Cookiebot,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,demandbase_company_id,.deel.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,deel.com,Pending
+Statistics,banner,Cookiebot,AMP_MKTG_e57fd919b4,.deel.com,/,First party,365.00 days,,false,false,lax,false,Declared & set,deel.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Marketing,banner,Cookiebot,tuuid,.company-target.com,/,Third party,396.00 days,,true,true,none,false,Declared & set,company-target.com,"Collects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads."
+Necessary,banner,Cookiebot,__cf_bm,.hubspot.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,banner,Cookiebot,arc_id,.mgln.ai,/,Third party,60.00 days,,false,true,none,false,Declared & set,mgln.ai,Pending
+Unclassified,none,,pxrc,.rlcdn.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,__cf_bm,.g2.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,KRTBCOOKIE_1571,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,banner,Cookiebot,_zitok,.www.deel.com,/,First party,365.00 days,,false,true,strict,false,Declared & set,www.deel.com,Pending
+Marketing,banner,Cookiebot,tvid,.tremorhub.com,/,Third party,365.24 days,,false,true,none,false,Declared & set,tremorhub.com,"Presents the user with relevant content and advertisement. The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Marketing,banner,Cookiebot,tv_UIDM,.tremorhub.com,/,Third party,400.00 days,,false,true,none,false,Declared & set,tremorhub.com,Pending
+Marketing,banner,Cookiebot,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Declared & set,tapad.com,"Used to determine what type of devices (smartphones, tablets, computers, TVs etc.) is used by a user."
+Marketing,banner,Cookiebot,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Declared & set,tapad.com,"Used to determine what type of devices (smartphones, tablets, computers, TVs etc.) is used by a user."
+Marketing,banner,Cookiebot,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,casalemedia.com,"Collects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads."
+Marketing,banner,Cookiebot,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Declared & set,casalemedia.com,"Collects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads."
+Marketing,banner,Cookiebot,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Declared & set,casalemedia.com,"Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement. "
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Declared & set,tapad.com,Used for data-synchronization with advertisement networks.
+Necessary,banner,Cookiebot,__cf_bm,.zoominfo.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Marketing,banner,Cookiebot,_fbp,.deel.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,akai.run,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Necessary,banner,Cookiebot,guid,.mountain.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,mountain.com,Preserves users states across page requests.
+Necessary,banner,Cookiebot,_cfuvid,.zoominfo.com,/,Third party,Session,Session,true,true,none,false,Declared & set,bzr.openai.com,"This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators. "
+Necessary,banner,Cookiebot,tt,.px.mountain.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,px.mountain.com,Registers the website's speed and performance. This function can be used in context with statistics and load-balancing.
+Necessary,banner,Cookiebot,rt,.mountain.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,mountain.com,This cookie is used to identify the visitor through an application. This allows the visitor to login to a website through their LinkedIn application for example.
+Unclassified,banner,Cookiebot,_mpxl_guid,.deel.com,/,First party,365.00 days,Session,false,true,lax,false,Declared & set,deel.com,Pending
+Unclassified,banner,Cookiebot,ta-vid,.technologyadvice.com,/,Third party,365.00 days,,true,true,none,false,Declared & set,technologyadvice.com,Pending
+Necessary,banner,Cookiebot,__cf_bm,.bzr.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,_cfuvid,.bzr.openai.com,/,Third party,Session,Session,true,true,none,false,Declared & set,bzr.openai.com,"This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators. "
+Unclassified,banner,Cookiebot,_ab_uid,www.deel.com,/,First party,45.00 days,,false,true,lax,false,Declared & set,www.deel.com,Pending
+Marketing,banner,Cookiebot,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Declared & set,doubleclick.net,Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.
+Unclassified,none,,barometric[cuid],.trkn.us,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ALT_UC748,.siprocalads.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,frontend.exp065,www.deel.com,/,First party,45.00 days,,false,true,lax,false,Not declared,,
+Unclassified,banner,Cookiebot,_ab_x,www.deel.com,/,First party,45.00 days,,false,true,lax,false,Declared & set,www.deel.com,Pending
+Unclassified,none,,ph_phc_BfqWhCmAkykHmEon3xMNfEVUpt4LeP2-fLLl7z_1HSw_posthog,.deel.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Marketing,banner,Cookiebot,_rdt_uuid,.deel.com,/,First party,90.00 days,,false,true,strict,false,Declared & set,deel.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Statistics,banner,Cookiebot,_ga_5DZXYDY43N,.deel.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,amplifyapp.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,tuuid_lu,.company-target.com,/,Third party,396.00 days,,true,true,none,false,Declared & set,company-target.com,"Contains a unique visitor ID, which allows Bidswitch.com to track the visitor across multiple websites. This allows Bidswitch to optimize advertisement relevance and ensure that the visitor does not see the same ads multiple times.  "
+Unclassified,none,,rlas3,.rlcdn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,_uetsid,.deel.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,deel.com,"Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement. "
+Statistics,banner,Cookiebot,AMP_e57fd919b4,.deel.com,/,First party,365.00 days,,false,false,lax,false,Declared & set,akai.run,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Necessary,banner,Cookiebot,__cf_bm,.tr.capterra.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,akai.run,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Statistics,banner,Cookiebot,__hstc,.deel.com,/,First party,180.00 days,,false,false,lax,false,Declared & set,akai.run,Sets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.
+Statistics,banner,Cookiebot,hubspotutk,.deel.com,/,First party,180.00 days,,false,false,lax,false,Declared & set,akai.run,Sets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.
+Statistics,banner,Cookiebot,__hssrc,.deel.com,/,First party,Session,Session,false,false,lax,false,Declared & set,akai.run,Used to recognise the visitor's browser upon reentry on the website.
+Statistics,banner,Cookiebot,__hssc,.deel.com,/,First party,0.02 days,,false,false,lax,false,Declared & set,akai.run,Identifies if the cookie data needs to be updated in the visitor's browser.
+Marketing,banner,Cookiebot,_uetvid,.deel.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,deel.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Necessary,banner,Cookiebot,cookietest,api.eu.sardine.ai,,,,Session,,,,,"Declared, not set",api.eu.sardine.ai,This cookie is used to determine if the visitor has accepted the cookie consent box.
+Necessary,banner,Cookiebot,__stripe_mid,app.demo.deel.com,,,,,,,,,"Declared, not set",app.demo.deel.com,This cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.
+Necessary,banner,Cookiebot,__stripe_sid,app.demo.deel.com,,,,,,,,,"Declared, not set",app.demo.deel.com,This cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.
+Necessary,banner,Cookiebot,_cq_check,app.demo.deel.com,,,,Session,,,,,"Declared, not set",app.demo.deel.com,Determines whether the user has accepted the cookie consent box. 
+Necessary,banner,Cookiebot,_cq_suid,deel.com,,,,Session,,,,,"Declared, not set",deel.com,This cookie is used to distinguish between humans and bots. 
+Necessary,banner,Cookiebot,dmn_chk_#,deel.com,,,,Session,,,,,"Declared, not set",deel.com,"Used to maintain the overall functionality of the website: Assigns the user to a server and detects potential errors on specific servers, allowing the website to reassign the users to another server.  "
+Necessary,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.
+Necessary,banner,Cookiebot,cf_clearance,g2.com,,,,,,,,,"Declared, not set",g2.com,This cookie is used to distinguish between humans and bots. 
+Necessary,banner,Cookiebot,_GRECAPTCHA,google.com,,,,,,,,,"Declared, not set",google.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,_help_center_session,help.letsdeel.com,,,,Session,,,,,"Declared, not set",help.letsdeel.com,Preserves users states across page requests.
+Necessary,banner,Cookiebot,_zendesk_authenticated,help.letsdeel.com,,,,Session,,,,,"Declared, not set",help.letsdeel.com,"Registers whether the user is logged in. This allows the website owner to make parts of the website inaccessible, based on the user's log-in status.  "
+Necessary,banner,Cookiebot,_zendesk_session,help.letsdeel.com,,,,Session,,,,,"Declared, not set",help.letsdeel.com,Preserves users states across page requests.
+Necessary,banner,Cookiebot,SESS#,lead.akai.run,,,,Session,,,,,"Declared, not set",lead.akai.run,Preserves users states across page requests.
+Necessary,banner,Cookiebot,li_gc,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,__awc_tld_test__,loom.com,,,,Session,,,,,"Declared, not set",loom.com,Necessary for the general functionality of the website. 
+Necessary,banner,Cookiebot,m,m.stripe.com,,,,,,,,,"Declared, not set",m.stripe.com,Determines the device used to access the website. This allows the website to be formatted accordingly. 
+Necessary,banner,Cookiebot,cg_uuid,obs.withflowersea.com,,,,,,,,,"Declared, not set",obs.withflowersea.com,Necessary for the website security.
+Necessary,banner,Cookiebot,sa-u-date,www.deel.com,,,,,,,,,"Declared, not set",www.deel.com,Pending
+Necessary,banner,Cookiebot,sa-u-source,www.deel.com,,,,,,,,,"Declared, not set",www.deel.com,Pending
+Necessary,banner,Cookiebot,GCLB,xp.atlassian.com,,,,Session,,,,,"Declared, not set",xp.atlassian.com,"This cookie is used in context with load balancing - This optimizes the response rate between the visitor and the site, by distributing the traffic load on multiple network links or servers.  "
+Preferences,banner,Cookiebot,loom_anon_comment,loom.com,,,,,,,,,"Declared, not set",loom.com,This cookie stores information for the widget settings on the website.
+Statistics,banner,Cookiebot,AMP_TLDTEST,akai.run,,,,Session,,,,,"Declared, not set",akai.run,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,AMP_TEST,app.deel.com,,,,Session,,,,,"Declared, not set",app.deel.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,_hjSession_#,deel.com,,,,,,,,,"Declared, not set",deel.com,"Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Statistics,banner,Cookiebot,_hjSessionUser_#,deel.com,,,,,,,,,"Declared, not set",deel.com,"Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Statistics,banner,Cookiebot,_hjTLDTest,deel.com,,,,Session,,,,,"Declared, not set",deel.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,optimizelyEndUserId,deel.com,,,,,,,,,"Declared, not set",deel.com,"Used to measure how selected users react to targeted changes to the website's content and functionality, in order to determine what variation is most efficacious in terms of converting users to customers."
+Statistics,banner,Cookiebot,ph_#_posthog,deel.com,,,,,,,,,"Declared, not set",deel.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,nv_visitor_consent,deel.navattic.com,,,,,,,,,"Declared, not set",deel.navattic.com,Pending
+Statistics,banner,Cookiebot,optimizelyOptOut,lab.deel.com,,,,Session,,,,,"Declared, not set",lab.deel.com,"Collects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads."
+Statistics,banner,Cookiebot,ajs_anonymous_id,loom.com,,,,,,,,,"Declared, not set",loom.com,This cookie is used to identify a specific visitor - this information is used to identify the number of specific visitors on a website.
+Statistics,banner,Cookiebot,domainName_oeu[#]$$session_state$,optimizely.com,,,,Session,,,,,"Declared, not set",optimizely.com,Pending
+Statistics,banner,Cookiebot,rs16880,surveys.segmanta.com,,,,,,,,,"Declared, not set",surveys.segmanta.com,Pending
+Statistics,banner,Cookiebot,rs16880.sig,surveys.segmanta.com,,,,,,,,,"Declared, not set",surveys.segmanta.com,Pending
+Statistics,banner,Cookiebot,seg-uid,surveys.segmanta.com,,,,,,,,,"Declared, not set",surveys.segmanta.com,Pending
+Statistics,banner,Cookiebot,seg-uid.sig,surveys.segmanta.com,,,,,,,,,"Declared, not set",surveys.segmanta.com,Pending
+Statistics,banner,Cookiebot,personalization_id,twitter.com,,,,,,,,,"Declared, not set",twitter.com,This cookie is set by Twitter - The cookie allows the visitor to share content from the website onto their Twitter profile. 
+Statistics,banner,Cookiebot,product_of_interests,www.deel.com,,,,,,,,,"Declared, not set",www.deel.com,Pending
+Statistics,banner,Cookiebot,resource_link,www.deel.com,,,,Session,,,,,"Declared, not set",www.deel.com,Pending
+Statistics,banner,Cookiebot,resource_type,www.deel.com,,,,Session,,,,,"Declared, not set",www.deel.com,Pending
+Statistics,banner,Cookiebot,__Host-psifi.analyticsTrace,www.loom.com,,,,,,,,,"Declared, not set",www.loom.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,__Host-psifi.analyticsTraceV2,www.loom.com,,,,,,,,,"Declared, not set",www.loom.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,dd_cookie_test_#,www.loom.com,,,,,,,,,"Declared, not set",www.loom.com,Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization. 
+Marketing,banner,Cookiebot,__oaiq_domain_probe,deel.com,,,,Session,,,,,"Declared, not set",deel.com,Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. 
+Marketing,banner,Cookiebot,_cq_duid,deel.com,,,,,,,,,"Declared, not set",deel.com,Used by the website to protect against fraud in relation to its referral system.
+Marketing,banner,Cookiebot,optimizelyDomainTestCookie,deel.com,,,,,,,,,"Declared, not set",deel.com,Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. 
+Marketing,banner,Cookiebot,ssr_id,deel.com,,,,,,,,,"Declared, not set",deel.com,Used to measure marketing performance from affiliates
+Marketing,banner,Cookiebot,_g2_session_id,g2.com,,,,Session,,,,,"Declared, not set",g2.com,Used to embed customer reviews onto the site from third-party review sites.
+Marketing,banner,Cookiebot,datadome,g2.com,,,,Session,,,,,"Declared, not set",g2.com,"Used in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website."
+Marketing,banner,Cookiebot,muc_ads,t.co,,,,,,,,,"Declared, not set",t.co,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Marketing,banner,Cookiebot,guest_id,twitter.com,,,,,,,,,"Declared, not set",twitter.com,"Collects data related to the user's visits to the website, such as the number of visits, average time spent on the website and which pages have been loaded, with the purpose of personalising and improving the Twitter service."
+Marketing,banner,Cookiebot,guest_id_ads,twitter.com,,,,,,,,,"Declared, not set",twitter.com,Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+Marketing,banner,Cookiebot,guest_id_marketing,twitter.com,,,,,,,,,"Declared, not set",twitter.com,Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+Marketing,banner,Cookiebot,dd_testcookie,www.g2.com,,,,Session,,,,,"Declared, not set",www.g2.com,Pending
+Marketing,banner,Cookiebot,events_distinct_id,www.g2.com,,,,Session,,,,,"Declared, not set",www.g2.com,Used to embed customer reviews onto the site from third-party review sites.
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,www.youtube-nocookie.com,,,,Session,,,,,"Declared, not set",www.youtube-nocookie.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,www.youtube-nocookie.com,,,,,,,,,"Declared, not set",www.youtube-nocookie.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,ycl_cookie,yahoo.co.jp,,,,,,,,,"Declared, not set",yahoo.co.jp,"Used by Yahoo Japan for attribution tracking, in order to match the ad clicks with website conversions."
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video
+Marketing,banner,Cookiebot,__Secure-YNID,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Marketing,banner,Cookiebot,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Unclassified,banner,Cookiebot,_twpid,akai.run,,,,Session,,,,,"Declared, not set",akai.run,Pending
+Unclassified,banner,Cookiebot,_twsid,akai.run,,,,Session,,,,,"Declared, not set",akai.run,Pending
+Unclassified,banner,Cookiebot,_immortal|deviceToken,api.eu.sardine.ai,,,,,,,,,"Declared, not set",api.eu.sardine.ai,Pending
+Unclassified,banner,Cookiebot,i18n_rollout,app.deel.com,,,,Session,,,,,"Declared, not set",app.deel.com,Pending
+Unclassified,banner,Cookiebot,sardine-session,app.deel.com,,,,,,,,,"Declared, not set",app.deel.com,Pending
+Unclassified,banner,Cookiebot,_cq_s,deel.com,,,,,,,,,"Declared, not set",deel.com,Pending
+Unclassified,banner,Cookiebot,_cq_session,deel.com,,,,,,,,,"Declared, not set",deel.com,Pending
+Unclassified,banner,Cookiebot,amp_session_id,deel.com,,,,Session,,,,,"Declared, not set",deel.com,Pending
+Unclassified,banner,Cookiebot,deel_user,deel.com,,,,,,,,,"Declared, not set",deel.com,Pending
+Unclassified,banner,Cookiebot,pscd,deel.com,,,,,,,,,"Declared, not set",deel.com,Pending
+Unclassified,banner,Cookiebot,deelProductInterest,lab.deel.com,,,,,,,,,"Declared, not set",lab.deel.com,Pending
+Unclassified,banner,Cookiebot,_gdmConsent,www.deel.com,,,,,,,,,"Declared, not set",www.deel.com,Pending
+Unclassified,banner,Cookiebot,deel_user_country,www.deel.com,,,,,,,,,"Declared, not set",www.deel.com,Pending
+Unclassified,banner,Cookiebot,frontend.exp053,www.deel.com,,,,,,,,,"Declared, not set",www.deel.com,Pending
+Unclassified,banner,Cookiebot,frontend.exp054,www.deel.com,,,,,,,,,"Declared, not set",www.deel.com,Pending
+Unclassified,banner,Cookiebot,frontend.exp055,www.deel.com,,,,,,,,,"Declared, not set",www.deel.com,Pending

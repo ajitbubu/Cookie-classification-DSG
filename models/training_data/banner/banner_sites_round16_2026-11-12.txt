@@ -1,0 +1,51 @@
+# Round 16 batch, 2026-11-12: small-business/creator SaaS, education, Irish brands, airports.
+# From 176 new candidates checked with find_banner_sites (candidates_round16_2026-11-12_verified.csv):
+# 52 usable. Site = final_host. brevo.com listed twice (sendinblue.com redirects there). Dropped:
+#   already collected: ikea.com (via ikea.co.uk), taskrabbit.com (IKEA), weebly.com (Block;
+#   squareup.com), sevenrooms.com (DoorDash; deliveroo.co.uk), wyzant.com (IXL; rosettastone.com),
+#   irishlife.ie (Great-West Lifeco; canadalife.com), bordgaisenergy.ie (Centrica; britishgas.co.uk)
+#   sister brands: handy.com (Angi; homeadvisor.com kept), stanstedairport.com (MAG;
+#   manchesterairport.co.uk kept)
+# Columns: host vendor-folder
+www.servicetitan.com onetrust
+www.lightspeedhq.com onetrust
+www.clover.com onetrust
+www.touchbistro.com cookiebot
+www.olo.com onetrust
+www.homeadvisor.com onetrust
+www.care.com onetrust
+www.sittercity.com onetrust
+kaplan.com onetrust
+www.collegeboard.org onetrust
+www.act.org onetrust
+www.ets.org onetrust
+www.collegeave.com onetrust
+www.mailerlite.com cookiebot
+www.brevo.com onetrust
+www.getresponse.com onetrust
+www.omnisend.com cookiebot
+unbounce.com onetrust
+www.thinkific.com onetrust
+www.podia.com ketch
+www.mightynetworks.com onetrust
+www.brandwatch.com onetrust
+www.dunnesstores.com onetrust
+supervalu.ie onetrust
+www.elverys.ie cookiebot
+www.irishtimes.com onetrust
+www.rte.ie onetrust
+www.bankofireland.com onetrust
+www.anpost.com onetrust
+www.electricireland.ie onetrust
+www.sseairtricity.com onetrust
+www.flogas.ie onetrust
+www.energia.ie onetrust
+www1.vhi.ie onetrust
+www.zurich.ie onetrust
+www.dublinairport.com onetrust
+www.gatwickairport.com onetrust
+www.manchesterairport.co.uk onetrust
+www.schiphol.nl cookiebot
+www.flughafen-zuerich.ch cookiebot
+viennaairport.com cookiebot
+www.dfwairport.com cookiebot

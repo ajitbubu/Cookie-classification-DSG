@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Train a reproducible cookie classifier with leakage-resistant evaluation.
 
-This pipeline intentionally uses the production FeatureExtractorV5 for both
+This pipeline intentionally uses the production feature extractor (V7: V5's
+52 features plus name-pattern and cookie-domain lookups learned here) for both
 training and evaluation. It never consumes vendor_type, tracker_category, or
 other precomputed columns that may encode the target label.
 """
@@ -23,6 +24,13 @@ import pandas as pd
 
 from backend.api.ml_classifier.evidence_guard import apply_evidence_guard, evidence_indices
 from backend.api.ml_classifier.feature_extractor_v5 import FeatureExtractorV5
+from backend.api.ml_classifier.feature_extractor_v7 import (
+    LOOKUP_FILE,
+    FeatureExtractorV7,
+    normalize_cookie_name,
+    registrable_domain,
+)
+from backend.api.ml_classifier.site_disagreement import DISAGREEMENT_FILE
 from backend.scripts.build_production_dataset import cookie_name_family, normalize_label as _normalize_label_text
 
 
@@ -296,9 +304,9 @@ def add_train_only_rows(
     return combined, unseen_test.reset_index(drop=True), audit
 
 
-def build_feature_matrix(frame: pd.DataFrame) -> np.ndarray:
-    """Generate features exclusively through the production extractor."""
-    extractor = FeatureExtractorV5()
+def build_feature_matrix(frame: pd.DataFrame, extractor: Any = None) -> np.ndarray:
+    """Generate features exclusively through a production extractor (V5 by default)."""
+    extractor = extractor or FeatureExtractorV5()
     rows = []
     for row in frame.itertuples(index=False):
         rows.append(extractor.extract_features({
@@ -313,6 +321,71 @@ def build_feature_matrix(frame: pd.DataFrame) -> np.ndarray:
     if not rows:
         return np.empty((0, len(extractor.get_feature_names())), dtype=np.float32)
     return np.vstack(rows).astype(np.float32, copy=False)
+
+
+NAME_NGRAM_RANGE = (2, 5)
+DOMAIN_SMOOTHING = 3.0
+LOOKUP_FOLDS = 5
+
+
+def fit_feature_lookups(frame: pd.DataFrame, classes: Sequence[str]) -> dict[str, Any]:
+    """Learn FeatureExtractorV7's lookups from labelled rows.
+
+    Name patterns: TF-IDF over character n-grams of the normalized cookie name
+    and a class-balanced logistic regression. Cookie domains: per registrable
+    domain, the number of distinct sites that gave its cookies each label.
+    """
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.linear_model import LogisticRegression
+
+    index = {label: position for position, label in enumerate(classes)}
+    labels = frame["label"].map(index).to_numpy()
+    vectorizer = TfidfVectorizer(analyzer="char_wb", ngram_range=NAME_NGRAM_RANGE, min_df=2,
+                                 sublinear_tf=True, lowercase=False)
+    names = vectorizer.fit_transform(frame["cookie_name"].map(normalize_cookie_name))
+    regression = LogisticRegression(C=2.0, max_iter=2000, class_weight="balanced").fit(names, labels)
+
+    triples = pd.DataFrame({
+        "domain": frame["cookie_domain"].map(registrable_domain),
+        "site": frame["site_domain"],
+        "label": labels,
+    }).drop_duplicates()
+    triples = triples[triples["domain"] != ""]
+    counts = pd.crosstab(triples["domain"], triples["label"]).reindex(columns=range(len(classes)), fill_value=0)
+    return {
+        "classes": list(classes),
+        "name_patterns": {
+            "ngram_range": list(NAME_NGRAM_RANGE),
+            "ngrams": vectorizer.get_feature_names_out().tolist(),
+            "idf": vectorizer.idf_.tolist(),
+            "coef": regression.coef_.T.tolist(),
+            "intercept": regression.intercept_.tolist(),
+        },
+        "cookie_domains": {
+            "alpha": DOMAIN_SMOOTHING,
+            "prior": (np.bincount(labels, minlength=len(classes)) / len(labels)).tolist(),
+            "counts": {domain: [int(v) for v in row] for domain, row in zip(counts.index, counts.to_numpy())},
+        },
+    }
+
+
+def out_of_fold_feature_matrix(train: pd.DataFrame, classes: Sequence[str],
+                               folds: int = LOOKUP_FOLDS) -> np.ndarray:
+    """Training features whose learned columns come from lookups fitted without the row's site.
+
+    Otherwise a row's own label would leak into its name-pattern and domain
+    features and the model would learn to trust them more than it should.
+    """
+    from sklearn.model_selection import GroupKFold
+
+    matrix = None
+    for fit_rows, apply_rows in GroupKFold(folds).split(train, groups=train["site_domain"]):
+        extractor = FeatureExtractorV7(fit_feature_lookups(train.iloc[fit_rows], classes))
+        part = build_feature_matrix(train.iloc[apply_rows], extractor)
+        if matrix is None:
+            matrix = np.empty((len(train), part.shape[1]), dtype=np.float32)
+        matrix[apply_rows] = part
+    return matrix
 
 
 def apply_temperature(probabilities: np.ndarray, temperature: float) -> np.ndarray:
@@ -534,6 +607,137 @@ def _sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+CONSENSUS_MIN_SITES = 3
+CONSENSUS_MIN_SHARE = 0.30
+
+
+def acceptable_label_matrix(reference: pd.DataFrame, rows: pd.DataFrame, classes: Sequence[str]) -> np.ndarray:
+    """Which labels count as correct for each row, given how all sites label that cookie.
+
+    Websites disagree about the same cookie (``__stripe_mid`` is Strictly
+    Necessary on some banners, Functional on others), so a single site's label
+    is not the only defensible answer. A label is acceptable for a row when the
+    row's own site gave it, or when its cookie name family is declared on at
+    least CONSENSUS_MIN_SITES sites and at least CONSENSUS_MIN_SHARE of them
+    gave that label. ``reference`` is every labelled row; this decides only how
+    predictions are scored, never what the model sees.
+    """
+    index = {label: position for position, label in enumerate(classes)}
+    declared = pd.DataFrame({
+        "family": reference["cookie_name"].map(cookie_name_family),
+        "site": reference["site_domain"],
+        "label": reference["label"],
+    }).drop_duplicates()
+    site_counts = declared.groupby("family")["site"].nunique()
+    shares = declared.groupby(["family", "label"])["site"].nunique().div(site_counts, level="family")
+    agreed = shares[(shares >= CONSENSUS_MIN_SHARE)
+                    & (site_counts.reindex(shares.index.get_level_values("family")).to_numpy() >= CONSENSUS_MIN_SITES)]
+    agreed_by_family: dict[str, list[int]] = {}
+    for family, label in agreed.index:
+        agreed_by_family.setdefault(family, []).append(index[label])
+
+    matrix = np.zeros((len(rows), len(classes)), dtype=bool)
+    matrix[np.arange(len(rows)), rows["label"].map(index).to_numpy()] = True
+    for position, family in enumerate(rows["cookie_name"].map(cookie_name_family)):
+        matrix[position, agreed_by_family.get(family, [])] = True
+    return matrix
+
+
+def site_label_disagreement(frame: pd.DataFrame) -> dict[str, Any]:
+    """Cookie name families that sites label differently, for the Review Queue.
+
+    Same rule as consensus scoring: declared on at least CONSENSUS_MIN_SITES
+    sites, with at least two labels each given by CONSENSUS_MIN_SHARE of them.
+    Values are site counts per label (every label seen, not only the large ones).
+    """
+    declared = pd.DataFrame({
+        "family": frame["cookie_name"].map(cookie_name_family),
+        "site": frame["site_domain"],
+        "label": frame["label"],
+    }).drop_duplicates()
+    sites_per_label = declared.groupby(["family", "label"])["site"].nunique()
+    site_counts = declared.groupby("family")["site"].nunique()
+    families = {}
+    for family, counts in sites_per_label.groupby(level="family"):
+        total = site_counts[family]
+        if total >= CONSENSUS_MIN_SITES and (counts / total >= CONSENSUS_MIN_SHARE).sum() >= 2:
+            families[family] = {label: int(count) for (_, label), count in counts.items()}
+    return {"rule": {"minimum_sites": CONSENSUS_MIN_SITES, "minimum_share": CONSENSUS_MIN_SHARE},
+            "families": dict(sorted(families.items()))}
+
+
+def _consensus_scores(predictions: np.ndarray, encoded_labels: np.ndarray, acceptable: np.ndarray,
+                      classes: Sequence[str]) -> dict[str, Any]:
+    """Macro F1 where a prediction any acceptable label allows counts as correct."""
+    from sklearn.metrics import accuracy_score, classification_report
+
+    targets = np.where(acceptable[np.arange(len(predictions)), predictions], predictions, encoded_labels)
+    report = classification_report(targets, predictions, labels=list(range(len(classes))),
+                                   target_names=list(classes), output_dict=True, zero_division=0)
+    return {
+        "accuracy": accuracy_score(targets, predictions),
+        "macro_f1": report["macro avg"]["f1-score"],
+        "per_class": {category: report[category] for category in classes},
+        "rows_with_several_acceptable_labels": int((acceptable.sum(axis=1) > 1).sum()),
+        "rule": {"minimum_sites": CONSENSUS_MIN_SITES, "minimum_share": CONSENSUS_MIN_SHARE},
+    }
+
+
+# Codes reviewers type in a labelling sheet's reviewed_label column; "?" = can't tell.
+REVIEW_CODES = {
+    "SN": "Strictly_Necessary",
+    "F": "Functional",
+    "A": "Analytics_Performance",
+    "M": "Marketing_Advertising",
+    "?": None,
+}
+
+
+def load_reviewed_labels(paths: Iterable[Path]) -> dict[str, str | None]:
+    """Map observation_id -> human-reviewed label (None = reviewer couldn't tell).
+
+    Rows with a blank reviewed_label are not reviewed yet and are skipped; any
+    other value outside REVIEW_CODES is an error, so a typo never becomes a label.
+    """
+    reviewed: dict[str, str | None] = {}
+    for path in paths:
+        sheet = pd.read_csv(path, dtype=str, keep_default_na=False)
+        for line, (observation_id, raw) in enumerate(zip(sheet.observation_id, sheet.reviewed_label), start=2):
+            code = raw.strip().upper()
+            if not code:
+                continue
+            if code not in REVIEW_CODES:
+                raise ValueError(f"{path} line {line}: reviewed_label {raw!r} is not one of {', '.join(REVIEW_CODES)}")
+            reviewed[observation_id] = REVIEW_CODES[code]
+    return reviewed
+
+
+def _reviewed_scores(predictions: np.ndarray, rows: pd.DataFrame, classes: Sequence[str],
+                     reviewed: dict[str, str | None]) -> dict[str, Any] | None:
+    """Score predictions against human-reviewed labels instead of the website's own."""
+    from sklearn.metrics import accuracy_score, classification_report
+
+    labels = rows.observation_id.map(reviewed)
+    in_sheet = rows.observation_id.isin(reviewed).to_numpy()
+    scored = labels.notna().to_numpy()
+    if not scored.any():
+        return None
+    index = {label: position for position, label in enumerate(classes)}
+    targets = labels[scored].map(index).to_numpy()
+    report = classification_report(targets, predictions[scored], labels=list(range(len(classes))),
+                                   target_names=list(classes), output_dict=True, zero_division=0)
+    return _json_safe({
+        "rows_reviewed": int(in_sheet.sum()),
+        "rows_unsure": int((in_sheet & ~scored).sum()),
+        "rows_scored": int(scored.sum()),
+        "sites": int(rows.site_domain[scored].nunique()),
+        "website_label_agreement": float((rows.label[scored] == labels[scored]).mean()),
+        "accuracy": accuracy_score(targets, predictions[scored]),
+        "macro_f1": report["macro avg"]["f1-score"],
+        "per_class": {category: report[category] for category in classes},
+    })
+
+
 def _evaluate(
     probabilities: np.ndarray,
     encoded_labels: np.ndarray,
@@ -543,6 +747,7 @@ def _evaluate(
     eligible: np.ndarray,
     sites: np.ndarray,
     gate: dict[str, Any],
+    acceptable: np.ndarray | None = None,
 ) -> dict[str, Any]:
     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, log_loss
 
@@ -570,6 +775,8 @@ def _evaluate(
             encoded_labels, predictions, labels=list(range(len(classes)))
         ),
         "rows_lacking_evidence": int((~eligible).sum()),
+        "consensus": (_consensus_scores(predictions, encoded_labels, acceptable, classes)
+                      if acceptable is not None else None),
         "auto_policy": {
             "coverage": auto_count / len(predictions) if len(predictions) else 0.0,
             **auto_gate,
@@ -668,9 +875,11 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
 
     encoder = LabelEncoder().fit(TRAINED_LABELS)
     classes = [str(value) for value in encoder.classes_]
-    x_train = build_feature_matrix(train_frame)
-    x_calibration = build_feature_matrix(calibration_frame)
-    x_test = build_feature_matrix(test_frame)
+    lookups = fit_feature_lookups(train_frame, classes)
+    extractor = FeatureExtractorV7(lookups)
+    x_train = out_of_fold_feature_matrix(train_frame, classes)
+    x_calibration = build_feature_matrix(calibration_frame, extractor)
+    x_test = build_feature_matrix(test_frame, extractor)
     y_train = encoder.transform(train_frame.label)
     y_calibration = encoder.transform(calibration_frame.label)
     y_test = encoder.transform(test_frame.label)
@@ -693,7 +902,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
     )
     model.fit(x_train, y_train, eval_set=[(x_calibration, y_calibration)], verbose=False)
 
-    guard_indices = evidence_indices(FeatureExtractorV5().get_feature_names())
+    guard_indices = evidence_indices(extractor.get_feature_names())
 
     def guarded_probabilities(features: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
         """Calibrated, evidence-guarded probabilities and the auto-eligible mask, as in production."""
@@ -720,19 +929,27 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
     }
     test_probabilities, test_eligible = guarded_probabilities(x_test)
     test_sites = test_frame.site_domain.to_numpy()
+    test_acceptable = acceptable_label_matrix(cleaned, test_frame, classes)
     test_metrics = _evaluate(test_probabilities, y_test, classes, thresholds,
-                             eligible=test_eligible, sites=test_sites, gate=gate)
+                             eligible=test_eligible, sites=test_sites, gate=gate, acceptable=test_acceptable)
     unseen_mask = unseen_test_mask.to_numpy()
     unseen_test_metrics = (
         _evaluate(test_probabilities[unseen_mask], y_test[unseen_mask], classes, thresholds,
-                  eligible=test_eligible[unseen_mask], sites=test_sites[unseen_mask], gate=gate)
+                  eligible=test_eligible[unseen_mask], sites=test_sites[unseen_mask], gate=gate,
+                  acceptable=test_acceptable[unseen_mask])
         if train_only_paths and unseen_mask.any() else None
     )
     all_test_frame = all_rows_on_sites(cleaned, split_audit["test_sites"])
-    all_test_probabilities, all_test_eligible = guarded_probabilities(build_feature_matrix(all_test_frame))
+    all_test_probabilities, all_test_eligible = guarded_probabilities(build_feature_matrix(all_test_frame, extractor))
     all_test_metrics = _evaluate(all_test_probabilities, encoder.transform(all_test_frame.label), classes,
                                  thresholds, eligible=all_test_eligible,
-                                 sites=all_test_frame.site_domain.to_numpy(), gate=gate)
+                                 sites=all_test_frame.site_domain.to_numpy(), gate=gate,
+                                 acceptable=acceptable_label_matrix(cleaned, all_test_frame, classes))
+    reviewed_paths = [Path(path).resolve() for path in args.reviewed_labels or []]
+    reviewed = load_reviewed_labels(reviewed_paths)
+    test_metrics["reviewed"] = _reviewed_scores(test_probabilities.argmax(axis=1), test_frame, classes, reviewed)
+    all_test_metrics["reviewed"] = _reviewed_scores(all_test_probabilities.argmax(axis=1), all_test_frame,
+                                                    classes, reviewed)
     cmp_by_observation = _load_evidence_sidecars(Path(path).resolve() for path in args.evidence_sidecar or [])
     cmp_gate = per_cmp_gate(
         y_test,
@@ -746,7 +963,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
 
     external_metrics = None
     if external_frame is not None and len(external_frame):
-        x_external = build_feature_matrix(external_frame)
+        x_external = build_feature_matrix(external_frame, extractor)
         y_external = encoder.transform(external_frame.label)
         external_probabilities, external_eligible = guarded_probabilities(x_external)
         external_metrics = _evaluate(external_probabilities, y_external, classes, thresholds,
@@ -754,7 +971,8 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
                                      sites=external_frame.site_domain.to_numpy(), gate=gate)
 
     internal_gates = {
-        "macro_f1": test_metrics["macro_f1"] >= args.minimum_macro_f1,
+        # Consensus scoring: sites disagree about many cookies (see acceptable_label_matrix).
+        "macro_f1": test_metrics["consensus"]["macro_f1"] >= args.minimum_macro_f1,
         "marketing_recall": test_metrics["per_class"]["Marketing_Advertising"]["recall"] >= args.minimum_marketing_recall,
         "auto_precision": test_metrics["auto_policy"]["passed"],
         "auto_precision_all_cookies": all_test_metrics["auto_policy"]["passed"],
@@ -782,7 +1000,9 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
     model_path = output_dir / "model.ubj"
     model.save_model(model_path)
     (output_dir / "labels.json").write_text(json.dumps(classes, indent=2) + "\n")
-    feature_names = FeatureExtractorV5().get_feature_names()
+    feature_names = extractor.get_feature_names()
+    (output_dir / LOOKUP_FILE).write_text(json.dumps(lookups) + "\n")
+    (output_dir / DISAGREEMENT_FILE).write_text(json.dumps(site_label_disagreement(train_frame), indent=1) + "\n")
     (output_dir / "features.json").write_text(json.dumps(feature_names, indent=2) + "\n")
     (output_dir / "calibration.json").write_text(json.dumps({
         "method": "temperature_scaling",
@@ -809,6 +1029,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
             "split": split_audit,
             "train_only": {"sources": train_only_source_audits, **train_only_audit},
             "external_holdout": external_audit,
+            "reviewed_labels": [{"source": str(path), "sha256": _sha256(path)} for path in reviewed_paths],
         },
         "calibration": {
             "method": "temperature_scaling",
@@ -846,6 +1067,10 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
                 Path(__file__).resolve().parents[1]
                 / "api" / "ml_classifier" / "feature_extractor_v5.py"
             ),
+            "feature_extractor_v7_sha256": _sha256(
+                Path(__file__).resolve().parents[1]
+                / "api" / "ml_classifier" / "feature_extractor_v7.py"
+            ),
         },
         "training_parameters": {
             "seed": args.seed,
@@ -862,6 +1087,8 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
         model_path,
         output_dir / "labels.json",
         output_dir / "features.json",
+        output_dir / LOOKUP_FILE,
+        output_dir / DISAGREEMENT_FILE,
         output_dir / "calibration.json",
         metadata_path,
     ]
@@ -911,6 +1138,11 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     )
     parser.add_argument("--external-holdout", help="Independent externally sourced labeled CSV")
     parser.add_argument("--external-provenance", help="Human-readable source/version for external holdout")
+    parser.add_argument(
+        "--reviewed-labels",
+        action="append",
+        help="Filled-in labelling sheet (build_review_sheet.py); scored separately, never trained on. Repeatable",
+    )
     parser.add_argument("--version", default="6.1.0")
     parser.add_argument("--output-dir", default="models/v6.1.0")
     parser.add_argument("--package-dir", default="model_artifacts")

@@ -1,0 +1,219 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Targeting or Marketing Cookies,banner,Ketch,cee,.xu-09276e15336d4e8a84ba8249edcf1fca.ecs.ap-south-1.on.aws,/events/2f4ce39b489414b3c7100e27dba1286972b26bdad27b47b3276813704cfade33,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,
+Unclassified,none,,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,,true,true,none,false,Not declared,,
+Functionality Cookies ,banner,Ketch,uvi_vuid,www.sandals.com,/,First party,365.00 days,364 days,true,true,unspecified,false,Declared & set,,
+Unclassified,none,,USER_LANGUAGE,.sandals.com,/,First party,182.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,USER_REGION,.sandals.com,/,First party,7.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,website_version,.sandals.com,/,First party,400.00 days,,false,true,unspecified,false,Not declared,,
+Functionality Cookies ,banner,Ketch,DISPLAYWARNING,www.sandals.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,
+Functionality Cookies ,banner,Ketch,tkbl_session,www.sandals.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,
+Strictly Necessary Cookies,banner,Ketch,TLTDID,.sandals.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,,
+Performance Cookies,banner,Ketch,TLTSID,.sandals.com,/,First party,Session,,false,false,strict,false,Declared & set,,
+Targeting or Marketing Cookies,banner,Ketch,_gcl_au,.sandals.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Targeting or Marketing Cookies,banner,Ketch,_ttp,.tiktok.com,/,Third party,390.00 days,390 days,false,true,none,false,Declared & set,,Tiktok Ads
+Performance Cookies,banner,Ketch,_mibhv,.sandals.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,,Movable Ink
+Targeting or Marketing Cookies,banner,Ketch,_ga,.sandals.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Targeting or Marketing Cookies,banner,Ketch,DotomiConsent,.dotomi.com,/,Third party,400.00 days,400 days,false,true,none,true,Declared & set,,Conversant (by Epsilon)
+Strictly Necessary Cookies,banner,Ketch,receive-cookie-deprecation,.dotomi.com,/,Third party,395.00 days,394 days,true,true,none,true,Declared & set,,Google Privacy Sandbox
+Targeting or Marketing Cookies,banner,Ketch,_tt_enable_cookie,.sandals.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Tiktok Ads
+Targeting or Marketing Cookies,banner,Ketch,_ttp,.sandals.com,/,First party,390.00 days,390 days,false,false,unspecified,false,Declared & set,,Tiktok Ads
+Performance Cookies,banner,Ketch,FPID,.sandals.com,/,First party,400.00 days,400 days,true,true,unspecified,false,Declared & set,,Google Analytics
+Performance Cookies,banner,Ketch,FPLC,.sandals.com,/,First party,0.83 days,,false,true,unspecified,false,Declared & set,,Google Analytics
+Unclassified,none,,_hjSession_1618482,.sandals.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Functionality Cookies ,banner,Ketch,dtm_token,.sandals.com,/,First party,395.00 days,394 days,false,true,lax,false,Declared & set,,Dotomi (by epsilon)
+Functionality Cookies ,banner,Ketch,dtm_consent,.sandals.com,/,First party,395.00 days,394 days,false,true,lax,false,Declared & set,,
+Targeting or Marketing Cookies,banner,Ketch,tst,.pinterest.com,/,Third party,2.00 days,2 days,true,true,none,false,Declared & set,,Pinterest
+Unclassified,none,,KRTBCOOKIE_32,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Targeting or Marketing Cookies,banner,Ketch,PugT,.pubmatic.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,,Pubmatic
+Targeting or Marketing Cookies,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Targeting or Marketing Cookies,banner,Ketch,i,.openx.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,OpenX
+Targeting or Marketing Cookies,banner,Ketch,_cs_c,.sandals.com,/,First party,395.42 days,395 days,false,false,lax,false,Declared & set,,Contentsquare
+Targeting or Marketing Cookies,banner,Ketch,CMID,.casalemedia.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Index Exchange
+Targeting or Marketing Cookies,banner,Ketch,CMPS,.casalemedia.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,Index Exchange
+Targeting or Marketing Cookies,banner,Ketch,CMPRO,.casalemedia.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,Index Exchange
+Targeting or Marketing Cookies,banner,Ketch,V,.contextweb.com,/,Third party,360.00 days,360 days,false,true,none,false,Declared & set,,Pulsepoint
+Targeting or Marketing Cookies,banner,Ketch,VP,.contextweb.com,/,Third party,360.00 days,360 days,false,true,none,true,Declared & set,,Pulsepoint
+Targeting or Marketing Cookies,banner,Ketch,pb_rtb_ev,.contextweb.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Pulsepoint
+Targeting or Marketing Cookies,banner,Ketch,pb_rtb_ev_part,.contextweb.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Pulsepoint
+Strictly Necessary Cookies,banner,Ketch,INGRESSCOOKIE,bh.contextweb.com,/,Third party,Session,,true,true,none,false,Declared & set,,Pulsepoint
+Strictly Necessary Cookies,banner,Ketch,_swb,.sandals.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Targeting or Marketing Cookies,banner,Ketch,_rxuuid,.1rx.io,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,Unruly (by Nexxen)
+Targeting or Marketing Cookies,banner,Ketch,_twpid,.sandals.com,/,First party,390.00 days,390 days,false,true,strict,false,Declared & set,,Twitter Ads
+Targeting or Marketing Cookies,banner,Ketch,dax_listenerid,.thisisdax.com,/,Third party,360.00 days,359 days,false,true,none,false,Declared & set,,global
+Strictly Necessary Cookies,banner,Ketch,_ketch_consent_v1_,.sandals.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Targeting or Marketing Cookies,banner,Ketch,TEST-COOKIE,.inmobi.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Inmobi
+Targeting or Marketing Cookies,banner,Ketch,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Declared & set,,Facebook Ads
+Targeting or Marketing Cookies,banner,Ketch,iid,.inmobi.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Inmobi
+Targeting or Marketing Cookies,banner,Ketch,personalization_id,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Strictly Necessary Cookies,banner,Ketch,__cf_bm,.twitter.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeting or Marketing Cookies,banner,Ketch,muc_ads,.t.co,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Strictly Necessary Cookies,banner,Ketch,__cf_bm,.t.co,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeting or Marketing Cookies,banner,Ketch,_fbp,.sandals.com,/,First party,90.00 days,89 days,false,true,lax,false,Declared & set,,Facebook Ads
+Targeting or Marketing Cookies,banner,Ketch,_rxuuid,.targeting.unrulymedia.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,Unruly (by Nexxen)
+Unclassified,none,,_hp5_event_props.3211838517,.sandals.com,/,First party,394.42 days,,false,true,none,false,Not declared,,
+Targeting or Marketing Cookies,banner,Ketch,_uetmsdns,.sandals.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,,Microsoft Ads
+Targeting or Marketing Cookies,banner,Ketch,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Targeting or Marketing Cookies,banner,Ketch,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Targeting or Marketing Cookies,banner,Ketch,com.silverpop.iMAWebCookie,.sandals.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,
+Targeting or Marketing Cookies,banner,Ketch,com.silverpop.iMA.session,.sandals.com,/,First party,0.01 days,,false,false,unspecified,false,Declared & set,,
+Strictly Necessary Cookies,banner,Ketch,_swb_consent_,.sandals.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Performance Cookies,banner,Ketch,kampyle_userid,www.sandals.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,,
+Performance Cookies,banner,Ketch,kampylePageLoadedTimestamp,www.sandals.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,,
+Targeting or Marketing Cookies,banner,Ketch,_pin_unauth,.sandals.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Pinterest
+Unclassified,none,,_hjSessionUser_1618482,.sandals.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Targeting or Marketing Cookies,banner,Ketch,DotomiSync,.dotomi.com,/,Third party,10.00 days,9 days,false,true,none,false,Declared & set,,Conversant (by Epsilon)
+Targeting or Marketing Cookies,banner,Ketch,mako_uid,.eyeota.net,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,Eyeota
+Strictly Necessary Cookies,banner,Ketch,SERVERID,.eyeota.net,/,Third party,0.01 days,,true,true,none,false,Declared & set,,Eyeota
+Targeting or Marketing Cookies,banner,Ketch,st_cs,.seedtag.com,/,Third party,360.00 days,360 days,false,true,none,false,Declared & set,,Seedtag
+Targeting or Marketing Cookies,banner,Ketch,st_csd,.seedtag.com,/,Third party,360.00 days,360 days,false,true,none,false,Declared & set,,Seedtag
+Targeting or Marketing Cookies,banner,Ketch,st_uid,.seedtag.com,/,Third party,360.00 days,360 days,false,true,none,false,Declared & set,,Seedtag
+Targeting or Marketing Cookies,banner,Ketch,A3,.yahoo.com,/,Third party,365.25 days,366 days,true,true,none,false,Declared & set,,Yahoo! Ads
+Targeting or Marketing Cookies,banner,Ketch,IDSYNC,.analytics.yahoo.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Yahoo! Ads
+Strictly Necessary Cookies,banner,Ketch,bm_sz,.sandals.com,/,First party,0.17 days,,false,false,unspecified,false,Declared & set,,Akamai
+Unclassified,none,,_ga_0CMD79YGE3,.sandals.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Targeting or Marketing Cookies,banner,Ketch,_rdt_uuid,.sandals.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Targeting or Marketing Cookies,banner,Ketch,_rdt_pn,.sandals.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Unclassified,none,,_hp5_let.3211838517,.sandals.com,/,First party,394.42 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_hp5_meta.3211838517,.sandals.com,/,First party,394.42 days,,false,true,none,false,Not declared,,
+Targeting or Marketing Cookies,banner,Ketch,_cs_id,.sandals.com,/,First party,395.42 days,395 days,false,false,lax,false,Declared & set,,Contentsquare
+Targeting or Marketing Cookies,banner,Ketch,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Pinterest
+Unclassified,none,,ttcsid_D3VVBH3C77U53GC02I8G,.sandals.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,Ketch,_abck,.sandals.com,/,First party,365.00 days,365 days,false,true,unspecified,false,Declared & set,,Akamai
+Targeting or Marketing Cookies,banner,Ketch,_cs_s,.sandals.com,/,First party,0.02 days,,false,false,lax,false,Declared & set,,Contentsquare
+Targeting or Marketing Cookies,banner,Ketch,_uetsid,.sandals.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Targeting or Marketing Cookies,banner,Ketch,_uetvid,.sandals.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Unclassified,none,,ttcsid,.sandals.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Targeting or Marketing Cookies,banner,Ketch,ABTastySession,.sandals.com,/,First party,0.02 days,,false,false,lax,false,Declared & set,,AB Tasty
+Targeting or Marketing Cookies,banner,Ketch,ABTasty,.sandals.com,/,First party,395.00 days,394 days,false,false,lax,false,Declared & set,,AB Tasty
+Targeting or Marketing Cookies,banner,Ketch,_twsid,.sandals.com,/,First party,390.00 days,390 days,false,true,strict,false,Declared & set,,
+Performance Cookies,banner,Ketch,SRI_visitsCount,.sandals.com,/,First party,30.00 days,29 days,true,true,unspecified,false,Declared & set,,
+Targeting or Marketing Cookies,banner,Ketch,_dd_s,www.sandals.com,/,First party,0.01 days,364 days,false,false,strict,false,Declared & set,,Datadog
+Performance Cookies,banner,Ketch,dtm_token_sc,.sandals.com,/,First party,395.00 days,394 days,false,true,lax,false,Declared & set,,
+Unclassified,none,,DotomiSession_85082,.dotomi.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Targeting or Marketing Cookies,banner,Ketch,DotomiUser,.dotomi.com,/,Third party,395.00 days,394 days,false,true,none,false,Declared & set,,Dotomi (by epsilon)
+Targeting or Marketing Cookies,banner,Ketch,com.silverpop.iMA.page_visit,.sandals.com,/,First party,0.01 days,,false,false,unspecified,false,Declared & set,,
+Unclassified,none,,_ga_GD2K1C7KZT,.sandals.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,Ketch,kampyleUserSession,www.sandals.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,,
+Performance Cookies,banner,Ketch,kampyleUserSessionsCount,www.sandals.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,,
+Performance Cookies,banner,Ketch,kampyleUserPercentile,www.sandals.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,,
+Performance Cookies,banner,Ketch,kampyleSessionPageCounter,www.sandals.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,,
+Functionality Cookies ,banner,Ketch,checkout_version,,,,,60 days,,,,,"Declared, not set",,
+Functionality Cookies ,banner,Ketch,_hjTLDTest,,,,,,,,,,"Declared, not set",,Hotjar
+Functionality Cookies ,banner,Ketch,salesConversionCalled,,,,,,,,,,"Declared, not set",,
+Functionality Cookies ,banner,Ketch,TestIfCookieP,,,,,394 days,,,,,"Declared, not set",,Equativ
+Performance Cookies,banner,Ketch,data-co-r,,,,,,,,,,"Declared, not set",,Media.net
+Performance Cookies,banner,Ketch,kampyleInvitePresented,,,,,,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,md_isSurveySubmittedInSession,,,,,,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,mdLogger,,,,,,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_102638129398,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_109402162818,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_174612296339,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_186625813592,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_213743767495,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_221587134909,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_230977257754,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_248900638200,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_273398659076,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_284707823954,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_318851820664,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_32617486410,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_346200912222,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_37733260754,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_381263353147,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_419800227634,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_452608377861,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_501656780541,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_5080762882,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_514546789670,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_52171105396,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_523717263047,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_552606825049,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_566724726092,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_567464562328,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_569568505343,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_586284592086,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_630451744768,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_635240280360,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_676863194367,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_70926154942,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_738029600771,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_765256159140,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_786971863120,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_894970569647,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_902057415099,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_908117292714,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,ONSITE_SESSION_TAB_939724273089,,,,,364 days,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,akaalb_obe_sandals,,,,,,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,AKAMAI_ALB,,,,,400 days,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,AKAMAI_ALB_NG,,,,,29 days,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,AKAM_ALB,,,,,400 days,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,AKAM_ALB_NG,,,,,400 days,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,ak_bmsc,,,,,,,,,,"Declared, not set",,Akamai
+Strictly Necessary Cookies,banner,Ketch,AWSALB,,,,,6 days,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Strictly Necessary Cookies,banner,Ketch,AWSALBCORS,,,,,6 days,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Strictly Necessary Cookies,banner,Ketch,AWSELB,,,,,,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Strictly Necessary Cookies,banner,Ketch,AWSELBCORS,,,,,,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Strictly Necessary Cookies,banner,Ketch,bm_mi,,,,,,,,,,"Declared, not set",,Akamai
+Strictly Necessary Cookies,banner,Ketch,bm_sv,,,,,,,,,,"Declared, not set",,Akamai
+Strictly Necessary Cookies,banner,Ketch,_cc_cc,,,,,,,,,,"Declared, not set",,Lotame
+Strictly Necessary Cookies,banner,Ketch,dd_cookie_test_*,,,,,,,,,,"Declared, not set",,Datadog
+Strictly Necessary Cookies,banner,Ketch,expires,,,,,364 days,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,NI_AP_SESSION,,,,,400 days,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,obeSessionId,,,,,,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,OEE_ROUTE,,,,,,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,oee_session,,,,,,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,optimizelyDomainTestCookie,,,,,,,,,,"Declared, not set",,Optimizely
+Strictly Necessary Cookies,banner,Ketch,optimizelyOptOut,,,,,,,,,,"Declared, not set",,Optimizely
+Strictly Necessary Cookies,banner,Ketch,optimizelyRumLB,,,,,,,,,,"Declared, not set",,Optimizely
+Strictly Necessary Cookies,banner,Ketch,PIM-SESSION-ID,,,,,,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,wg-search-form,,,,,,,,,,"Declared, not set",,
+Targeting or Marketing Cookies,banner,Ketch,alphanumeric_*,,,,,,,,,,"Declared, not set",,
+Targeting or Marketing Cookies,banner,Ketch,anj,,,,,90 days,,,,,"Declared, not set",,Microsoft Ads
+Targeting or Marketing Cookies,banner,Ketch,ar_debug,,,,,364 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Targeting or Marketing Cookies,banner,Ketch,audit,,,,,365 days,,,,,"Declared, not set",,Magnite
+Targeting or Marketing Cookies,banner,Ketch,audit_p,,,,,365 days,,,,,"Declared, not set",,Magnite
+Targeting or Marketing Cookies,banner,Ketch,CBSESSIONID,,,,,400 days,,,,,"Declared, not set",,
+Targeting or Marketing Cookies,banner,Ketch,_cc_dc,,,,,269 days,,,,,"Declared, not set",,Lotame
+Targeting or Marketing Cookies,banner,Ketch,_cc_id,,,,,269 days,,,,,"Declared, not set",,Lotame
+Targeting or Marketing Cookies,banner,Ketch,_cs_root-domain,,,,,,,,,,"Declared, not set",,Contentsquare
+Targeting or Marketing Cookies,banner,Ketch,_cs_same_site,,,,,,,,,,"Declared, not set",,Contentsquare
+Targeting or Marketing Cookies,banner,Ketch,csync,,,,,29 days,,,,,"Declared, not set",,Equativ
+Targeting or Marketing Cookies,banner,Ketch,data-co,,,,,364 days,,,,,"Declared, not set",,Media.net
+Targeting or Marketing Cookies,banner,Ketch,_dc_gtm_UA-*,,,,,,,,,,"Declared, not set",,Google Analytics
+Targeting or Marketing Cookies,banner,Ketch,DotomiSession_*,,,,,,,,,,"Declared, not set",,Conversant (by Epsilon)
+Targeting or Marketing Cookies,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Targeting or Marketing Cookies,banner,Ketch,_gid,,,,,,,,,,"Declared, not set",,Google Analytics
+Targeting or Marketing Cookies,banner,Ketch,_hjHasCachedUserAttributes,,,,,,,,,,"Declared, not set",,Hotjar
+Targeting or Marketing Cookies,banner,Ketch,_hjSession_*,,,,,,,,,,"Declared, not set",,Hotjar
+Targeting or Marketing Cookies,banner,Ketch,_hjSessionUser_*,,,,,364 days,,,,,"Declared, not set",,Hotjar
+Targeting or Marketing Cookies,banner,Ketch,_hjUserAttributesHash,,,,,,,,,,"Declared, not set",,
+Targeting or Marketing Cookies,banner,Ketch,_hp2_hld*,,,,,,,,,,"Declared, not set",,Heap
+Targeting or Marketing Cookies,banner,Ketch,_hp2_id.*,,,,,,,,,,"Declared, not set",,Heap
+Targeting or Marketing Cookies,banner,Ketch,_hp2_props.*,,,,,,,,,,"Declared, not set",,Heap
+Targeting or Marketing Cookies,banner,Ketch,_hp2_ses_props.*,,,,,,,,,,"Declared, not set",,Heap
+Targeting or Marketing Cookies,banner,Ketch,_hp5_event_props.*,,,,,394 days,,,,,"Declared, not set",,
+Targeting or Marketing Cookies,banner,Ketch,_hp5_let.*,,,,,394 days,,,,,"Declared, not set",,
+Targeting or Marketing Cookies,banner,Ketch,_hp5_meta.*,,,,,394 days,,,,,"Declared, not set",,
+Targeting or Marketing Cookies,banner,Ketch,idsync-eps-uid,,,,,7 days,,,,,"Declared, not set",,
+Targeting or Marketing Cookies,banner,Ketch,idsync-eps-uid-s,,,,,7 days,,,,,"Declared, not set",,
+Targeting or Marketing Cookies,banner,Ketch,khaos,,,,,365 days,,,,,"Declared, not set",,Magnite
+Targeting or Marketing Cookies,banner,Ketch,khaos_p,,,,,365 days,,,,,"Declared, not set",,Magnite
+Targeting or Marketing Cookies,banner,Ketch,KRTBCOOKIE_*,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Targeting or Marketing Cookies,banner,Ketch,ktcid,,,,,365 days,,,,,"Declared, not set",,Kargo
+Targeting or Marketing Cookies,banner,Ketch,mc,,,,,199 days,,,,,"Declared, not set",,Quantcast
+Targeting or Marketing Cookies,banner,Ketch,OAID,,,,,30 days,,,,,"Declared, not set",,
+Targeting or Marketing Cookies,banner,Ketch,optimizelyEndUserId,,,,,179 days,,,,,"Declared, not set",,Optimizely
+Targeting or Marketing Cookies,banner,Ketch,pid,,,,,89 days,,,,,"Declared, not set",,Equativ (Smartadserver)
+Targeting or Marketing Cookies,banner,Ketch,pxrc,,,,,59 days,,,,,"Declared, not set",,LiveRamp
+Targeting or Marketing Cookies,banner,Ketch,rlas3,,,,,364 days,,,,,"Declared, not set",,LiveRamp
+Targeting or Marketing Cookies,banner,Ketch,SCM,,,,,21 days,,,,,"Declared, not set",,Smaato
+Targeting or Marketing Cookies,banner,Ketch,SCM*,,,,,21 days,,,,,"Declared, not set",,Smaato
+Targeting or Marketing Cookies,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Targeting or Marketing Cookies,banner,Ketch,tluid,,,,,90 days,,,,,"Declared, not set",,TripleLift
+Targeting or Marketing Cookies,banner,Ketch,ttcsid.*,,,,,389 days,,,,,"Declared, not set",,Tiktok Ads
+Targeting or Marketing Cookies,banner,Ketch,usp_status,,,,,185 days,,,,,"Declared, not set",,Media.net
+Targeting or Marketing Cookies,banner,Ketch,uuid2,,,,,90 days,,,,,"Declared, not set",,Microsoft Ads
+Targeting or Marketing Cookies,banner,Ketch,viewer_token,,,,,90 days,,,,,"Declared, not set",,LoopMe
+Targeting or Marketing Cookies,banner,Ketch,visitor-id,,,,,365 days,,,,,"Declared, not set",,Media.net
+Targeting or Marketing Cookies,banner,Ketch,XANDR_PANID,,,,,90 days,,,,,"Declared, not set",,Microsoft Ads

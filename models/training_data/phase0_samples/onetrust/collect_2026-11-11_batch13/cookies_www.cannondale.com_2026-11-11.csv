@@ -1,0 +1,11 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,SessionLanguageChecked,www.cannondale.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cannondale#lang,www.cannondale.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cannondaleUser,www.cannondale.com,/,First party,3.00 days,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,shell#lang,www.cannondale.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_gcl_au,.cannondale.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga,.cannondale.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__RequestVerificationToken,www.cannondale.com,/,First party,Session,,true,false,unspecified,false,Not declared,,
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_ga_CP5WTF61ET,.cannondale.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,OptanonConsent,.cannondale.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,

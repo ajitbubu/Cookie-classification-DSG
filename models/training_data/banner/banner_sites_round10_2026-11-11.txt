@@ -1,0 +1,124 @@
+# Round 10 batch, 2026-11-11: pharma/medtech, lab tools, industrial/semis, enterprise software,
+# sports, audio. From 360 new candidates checked with find_banner_sites
+# (candidates_round10_2026-11-11_verified.csv): 138 usable. Site = final_host. veradigm.com and vwr.com
+# listed twice. Dropped:
+#   already collected: pfizer.com (via seagen.com), amgen.com (via horizontherapeutics.com), sage.com
+#   sister brands: acuvue.com (J&J), Haleon (advil.com kept): sensodyne.com, flonase.com,
+#   nicorette.com, nexium24hr.com; mucinex.com (Reckitt), vicks.com + prilosecotc.com (P&G),
+#   idtdna.com (Danaher), WebMD (webmd.com): vitals.com, webmdhealthservices.com, rxlist.com;
+#   medicalnewstoday.com (Healthline Media), toyotaforklift.com (Toyota), ansys.synopsys.com
+#   (synopsys.com kept), redbullracing.com (redbull.com), rugbyworldcup.com (world.rugby kept),
+#   espn.co.uk (espn.com), Sound United (denon.com kept): bowerswilkins.com, polkaudio.com, marantz.com
+# Columns: host vendor-folder
+www.alnylam.com onetrust
+www.biomarin.com onetrust
+incyte.com onetrust
+www.biontech.com onetrust
+www.novavax.com onetrust
+www.jazzpharma.com onetrust
+www.neurocrine.com onetrust
+www.ultragenyx.com onetrust
+www.sarepta.com cookiebot
+www.genetixbiotx.com cookiebot
+www.ipsen.com onetrust
+www.grifols.com onetrust
+www.zimmerbiomet.com onetrust
+www.smith-nephew.com cookiebot
+www.insulet.com onetrust
+www.dexcom.com onetrust
+www.tandemdiabetes.com onetrust
+www.edwards.com onetrust
+www.intuitive.com onetrust
+www.mckesson.com onetrust
+www.steris.com onetrust
+coopervision.com onetrust
+www.alcon.com onetrust
+smileset.com onetrust
+www.dentsplysirona.com onetrust
+www.envistaco.com onetrust
+www.perrigo.com onetrust
+www.kenvue.com onetrust
+www.advil.com onetrust
+www.perkinelmer.com onetrust
+www.bruker.com onetrust
+www.vwr.com onetrust
+www.neb.com onetrust
+www.pacb.com onetrust
+nanoporetech.com onetrust
+www.catalent.com onetrust
+www.iqvia.com onetrust
+www.parexel.com onetrust
+www.syneoshealth.com onetrust
+www.veeva.com onetrust
+www.nextgen.com onetrust
+www.eclinicalworks.com onetrust
+veradigm.com cookiebot
+www.inovalon.com onetrust
+www.healthgrades.com onetrust
+fortive.com onetrust
+www.vontier.com securiti
+www.onsemi.com onetrust
+www.skyworksinc.com onetrust
+gf.com cookiebot
+www.sanmina.com onetrust
+www.vishay.com onetrust
+wilo.com onetrust
+www.sulzer.com onetrust
+www.voith.com cookiebot
+www.gea.com onetrust
+www.jungheinrich.com cookiebot
+www.hyster.com onetrust
+www.crown.com onetrust
+www.synopsys.com onetrust
+www.cadence.com onetrust
+www.bentley.com onetrust
+www.trimble.com onetrust
+www.esri.com onetrust
+www.nemetschek.com cookiebot
+www.infor.com onetrust
+www.epicor.com onetrust
+www.acumatica.com onetrust
+www.ivalua.com cookiebot
+www.zycus.com onetrust
+www.gep.com cookiebot
+www.avalara.com onetrust
+www.vertexinc.com cookiebot
+www.blackline.com onetrust
+www.anaplan.com onetrust
+planful.com onetrust
+www.onestream.com cookiebot
+www.lexisnexis.com onetrust
+www.clio.com securiti
+www.everlaw.com onetrust
+www.relativity.com onetrust
+ironcladapp.com onetrust
+www.spotdraft.com ketch
+www.icertis.com onetrust
+conga.com onetrust
+www.mlssoccer.com onetrust
+www.premierleague.com onetrust
+www.laliga.com onetrust
+www.bundesliga.com onetrust
+ausopen.com onetrust
+www.atptour.com onetrust
+www.wtatennis.com onetrust
+www.pgatour.com onetrust
+www.indycar.com ketch
+www.motogp.com onetrust
+www.wrc.com onetrust
+www.mercedesamgf1.com onetrust
+www.mclaren.com onetrust
+www.williamsf1.com onetrust
+www.ecb.co.uk onetrust
+www.world.rugby onetrust
+www.sixnationsrugby.com onetrust
+www.ncaa.com onetrust
+www.dazn.com onetrust
+www.dolby.com onetrust
+us.sennheiser-hearing.com onetrust
+www.shure.com cookiebot
+www.audio-technica.com cookiebot
+www.denon.com onetrust
+www.roland.com onetrust
+www.gibson.com onetrust
+www.daddario.com onetrust

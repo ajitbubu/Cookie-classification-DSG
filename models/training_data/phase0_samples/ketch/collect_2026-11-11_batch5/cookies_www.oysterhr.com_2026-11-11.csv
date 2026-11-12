@@ -1,0 +1,99 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Strictly Necessary,banner,Ketch,_cfuvid,.www.oysterhr.com,/,First party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Personalization,banner,Ketch,__cf_bm,.hsforms.net,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Marketing,banner,Ketch,_gcl_au,.oysterhr.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Performance Analytics,banner,Ketch,_ga,.oysterhr.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Personalization,banner,Ketch,__cf_bm,.hsforms.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Strictly Necessary,banner,Ketch,_swb,.oysterhr.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Personalization,banner,Ketch,__cf_bm,.hs-scripts.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,_bhp,.oysterhr.com,/,First party,365.00 days,,false,true,strict,false,Not declared,,
+Personalization,banner,Ketch,__cf_bm,.capterra.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Performance Analytics,banner,Ketch,slireg,www.oysterhr.com,/,First party,7.00 days,6 days,false,false,unspecified,false,Declared & set,,Salesloft
+Strictly Necessary,banner,Ketch,_ketch_consent_v1_,.oysterhr.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Marketing,banner,Ketch,li_sugr,.linkedin.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Marketing,banner,Ketch,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LinkedIn  
+Personalization,banner,Ketch,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,,LinkedIn  
+Personalization,banner,Ketch,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Performance Analytics,banner,Ketch,sliguid,www.oysterhr.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Salesloft
+Performance Analytics,banner,Ketch,slirequested,www.oysterhr.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Salesloft
+Marketing,banner,Ketch,sa-user-id,tags.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Marketing,banner,Ketch,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Marketing,banner,Ketch,sa-user-id-v2,tags.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Marketing,banner,Ketch,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Performance Analytics,banner,Ketch,sa-user-id-v4,tags.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Performance Analytics,banner,Ketch,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,StackAdapt
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Personalization,banner,Ketch,__cf_bm,.hs-banner.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Marketing,banner,Ketch,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Marketing,banner,Ketch,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Performance Analytics,banner,Ketch,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn  
+Marketing,banner,Ketch,sa-user-id,www.oysterhr.com,/,First party,365.00 days,365 days,false,true,unspecified,false,Declared & set,,StackAdapt
+Marketing,banner,Ketch,sa-user-id-v2,www.oysterhr.com,/,First party,365.00 days,365 days,false,true,unspecified,false,Declared & set,,StackAdapt
+Marketing,banner,Ketch,sa-user-id-v3,www.oysterhr.com,/,First party,365.00 days,364 days,false,true,unspecified,false,Declared & set,,StackAdapt
+Performance Analytics,banner,Ketch,sa-user-id-v4,www.oysterhr.com,/,First party,365.00 days,365 days,false,true,unspecified,false,Declared & set,,StackAdapt
+Marketing,banner,Ketch,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Personalization,banner,Ketch,__cf_bm,.hsadspixel.net,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Marketing,banner,Ketch,bscookie,.www.linkedin.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,LinkedIn  
+Personalization,banner,Ketch,__cf_bm,.hs-analytics.net,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Marketing,banner,Ketch,_fbp,.oysterhr.com,/,First party,90.00 days,90 days,false,false,unspecified,false,Declared & set,,Facebook Ads
+Personalization,banner,Ketch,__cf_bm,.g2crowd.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Performance Analytics,banner,Ketch,__hstc,.oysterhr.com,/,First party,180.00 days,179 days,false,false,lax,false,Declared & set,,HubSpot
+Performance Analytics,banner,Ketch,hubspotutk,.oysterhr.com,/,First party,180.00 days,179 days,false,false,lax,false,Declared & set,,HubSpot
+Performance Analytics,banner,Ketch,visitorId,.ws.zoominfo.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,ZoomInfo
+Personalization,banner,Ketch,__cf_bm,.zoominfo.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Strictly Necessary,banner,Ketch,_cfuvid,.zoominfo.com,/,Third party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Performance Analytics,banner,Ketch,__hssrc,.oysterhr.com,/,First party,Session,,false,false,lax,false,Declared & set,,HubSpot
+Marketing,banner,Ketch,_twpid,.oysterhr.com,/,First party,390.00 days,390 days,false,true,strict,false,Declared & set,,
+Marketing,banner,Ketch,guest_id_marketing,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Marketing,banner,Ketch,guest_id_ads,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Marketing,banner,Ketch,personalization_id,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Marketing,banner,Ketch,guest_id,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Personalization,banner,Ketch,__cf_bm,.twitter.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Marketing,banner,Ketch,muc_ads,.t.co,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Personalization,banner,Ketch,__cf_bm,.t.co,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Personalization,banner,Ketch,__cf_bm,.hubspot.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Performance Analytics,banner,Ketch,cb_user_id,.oysterhr.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Clearbit (by Hubspot)
+Performance Analytics,banner,Ketch,cb_group_id,.oysterhr.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Clearbit (by Hubspot)
+Performance Analytics,banner,Ketch,cb_anonymous_id,.oysterhr.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Clearbit (by Hubspot)
+Marketing,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Performance Analytics,banner,Ketch,ajs_anonymous_id,.oysterhr.com,/,First party,365.00 days,364 days,false,true,lax,false,Declared & set,,Twilio Segment
+Personalization,banner,Ketch,__cf_bm,.g2.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Strictly Necessary,banner,Ketch,_swb_consent_,.oysterhr.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Unclassified,none,,__q_state_SdHXQ6g7jKn23UD7,.oysterhr.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Performance Analytics,banner,Ketch,muxData,www.oysterhr.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,
+Marketing,banner,Ketch,_rdt_uuid,.oysterhr.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Performance Analytics,banner,Ketch,__hssc,.oysterhr.com,/,First party,0.02 days,,false,false,lax,false,Declared & set,,HubSpot
+Marketing,banner,Ketch,_uetsid,.oysterhr.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Marketing,banner,Ketch,_uetvid,.oysterhr.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Unclassified,none,,_twsid,.oysterhr.com,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_ga_2MXKL8327Z,.oysterhr.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Personalization,banner,Ketch,__cf_bm,.tr.capterra.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Marketing,banner,Ketch,ar_debug,,,,,30 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Marketing,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Performance Analytics,banner,Ketch,ajs_user_id,,,,,,,,,,"Declared, not set",,Twilio Segment
+Performance Analytics,banner,Ketch,amp_*,,,,,364 days,,,,,"Declared, not set",,Amplitude
+Performance Analytics,banner,Ketch,amp_cookie_test*,,,,,,,,,,"Declared, not set",,Amplitude
+Performance Analytics,banner,Ketch,amplitude_test*,,,,,,,,,,"Declared, not set",,Amplitude
+Performance Analytics,banner,Ketch,cb%3Atest,,,,,364 days,,,,,"Declared, not set",,Clearbit (by Hubspot)
+Performance Analytics,banner,Ketch,_dd_s,,,,,364 days,,,,,"Declared, not set",,Datadog
+Performance Analytics,banner,Ketch,dmn_chk_*,,,,,,,,,,"Declared, not set",,Posthog
+Performance Analytics,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Performance Analytics,banner,Ketch,_gat_gtag_UA_*,,,,,,,,,,"Declared, not set",,Google Analytics
+Performance Analytics,banner,Ketch,_gid,,,,,,,,,,"Declared, not set",,Google Analytics
+Performance Analytics,banner,Ketch,pfjs%3Acookies,,,,,364 days,,,,,"Declared, not set",,Clearbit (by Hubspot)
+Performance Analytics,banner,Ketch,ph_phc_*_posthog,,,,,364 days,,,,,"Declared, not set",,Posthog
+Performance Analytics,banner,Ketch,site_identity,,,,,365 days,,,,,"Declared, not set",,Salesloft
+Performance Analytics,banner,Ketch,__tld__,,,,,,,,,,"Declared, not set",,Clearbit (by Hubspot)
+Performance Analytics,banner,Ketch,_tldtest_*,,,,,,,,,,"Declared, not set",,Amplitude
+Personalization,banner,Ketch,m,,,,,400 days,,,,,"Declared, not set",,Stripe
+Personalization,banner,Ketch,__q_domainTest,,,,,,,,,,"Declared, not set",,Qualified
+Personalization,banner,Ketch,__q_state_*,,,,,400 days,,,,,"Declared, not set",,Qualified
+Personalization,banner,Ketch,__stripe_mid,,,,,364 days,,,,,"Declared, not set",,Stripe
+Personalization,banner,Ketch,__stripe_sid,,,,,,,,,,"Declared, not set",,Stripe
+Personalization,banner,Ketch,XSRF-TOKEN,,,,,,,,,,"Declared, not set",,
+Strictly Necessary,banner,Ketch,cf_clearance,,,,,364 days,,,,,"Declared, not set",,Cloudflare
+Strictly Necessary,banner,Ketch,__cflb,,,,,,,,,,"Declared, not set",,Cloudflare
+Strictly Necessary,banner,Ketch,cookietest,,,,,,,,,,"Declared, not set",,
+Strictly Necessary,banner,Ketch,dd_cookie_test_*,,,,,,,,,,"Declared, not set",,Datadog
+Strictly Necessary,banner,Ketch,_GRECAPTCHA,,,,,179 days,,,,,"Declared, not set",,Google Recaptcha

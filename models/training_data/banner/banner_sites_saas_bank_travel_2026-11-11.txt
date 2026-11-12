@@ -1,0 +1,29 @@
+# SaaS / banking / travel batch, 2026-11-11 (aimed at Functional and Analytics cookies).
+# From 71 new candidates checked with find_banner_sites (candidates_saas_bank_travel_2026-11-11_verified.csv):
+# 26 usable. Dropped: www.loom.com (Atlassian; atlassian.com collected). Site = final_host.
+# Columns: host vendor-folder
+www.sumologic.com onetrust
+www.sonarsource.com onetrust
+www.cockroachlabs.com onetrust
+www.imperva.com onetrust
+www.docker.com onetrust
+www.zoominfo.com onetrust
+www.gong.io onetrust
+www.pipedrive.com onetrust
+www.sage.com onetrust
+www.xero.com onetrust
+www.bill.com onetrust
+www.paycom.com onetrust
+www.greenhouse.com onetrust
+www.natwest.com onetrust
+www.santander.co.uk onetrust
+www.adyen.com onetrust
+www.chubb.com onetrust
+www.aviva.co.uk onetrust
+www.vikingcruises.com onetrust
+www.thetrainline.com onetrust
+www.alteryx.com cookiebot
+www.salesloft.com ketch
+www.expensify.com ketch
+www.mtb.com ketch
+www.upwork.com transcend

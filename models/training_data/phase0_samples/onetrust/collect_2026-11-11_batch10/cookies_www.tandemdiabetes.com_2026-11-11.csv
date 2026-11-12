@@ -1,0 +1,75 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,suggestedLocaleChecked,www.tandemdiabetes.com,/,First party,1.00 days,,false,false,lax,false,Not declared,,
+Essential Cookies,banner,OneTrust,ASLBSA,www.tandemdiabetes.com,/,First party,Session,Session,true,true,unspecified,false,Declared & set,www.tandemdiabetes.com,The ASLBSA cookie is a Microsoft Front Door Affinity Cookie that directs a browser to the appropriate server for a user's location.
+Essential Cookies,banner,OneTrust,ASLBSACORS,www.tandemdiabetes.com,/,First party,Session,Session,true,true,none,false,Declared & set,www.tandemdiabetes.com,The ASLBSACORS cookie is a Microsoft Front Door Affinity Cookie that helps route requests to the correct web app instance.
+Targeting Cookies,banner,OneTrust,_gcl_au,.tandemdiabetes.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,tandemdiabetes.com,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services
+Unclassified,none,,fp_impression_device_id,freshpaint-impression.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ssi,.sitescout.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,EE,.exelator.com,/,Third party,120.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ud,.exelator.com,/,Third party,120.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_cc_dc,.crwdcntrl.net,/,Third party,269.96 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_cc_id,.crwdcntrl.net,/,Third party,269.96 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_cc_cc,.crwdcntrl.net,/,Third party,270.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_cc_aud,.crwdcntrl.net,/,Third party,270.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Essential Cookies,banner,OneTrust,OptanonAlertBoxClosed,.tandemdiabetes.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,tandemdiabetes.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,399 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,ljt_reader,.lijit.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_188,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,i,.openx.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,anj,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,anProfile,.pro-market.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pid,.smartadserver.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TestIfCookieP,.smartadserver.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,csync,.smartadserver.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tluid,.3lift.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mako_uid,.eyeota.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,SERVERID,.eyeota.net,/,Third party,0.01 days,,true,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,V,.contextweb.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,VP,.contextweb.com,/,Third party,360.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,pb_rtb_ev,.contextweb.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pb_rtb_ev_part,.contextweb.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,INGRESSCOOKIE,bh.contextweb.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,clid,.media6degrees.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,acs,.media6degrees.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,UID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,__stid,.sharethis.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__stidv,.sharethis.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tt_viewer,.teads.tv,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,uids,s2s.t13.io,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_uid,.fwmrm.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Essential Cookies,banner,OneTrust,OptanonConsent,.tandemdiabetes.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,tandemdiabetes.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,_ssuma,.sitescout.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,visitor,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,status,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.1rx.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,centro,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,am_tokens,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,am_tokens_invalidate-verizon-pushes,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.targeting.unrulymedia.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,mp_d1935506-24cb-4516-8a49-caba6bcca6c5_perfalytics,www.tandemdiabetes.com,/,First party,365.00 days,364 days,false,true,lax,false,Declared & set,www.tandemdiabetes.com,Used to identify individual users. This tool is used to measure site performance and usage patterns
+Performance Cookies,banner,OneTrust,mp_eventQueue,tandemdiabetes.com,,,,0 days,,,,,"Declared, not set",tandemdiabetes.com,Used to identify individual users. This tool is used to measure site performance and usage patterns
+Performance Cookies,banner,OneTrust,*_id,tandemdiabetes.com,,,,0 days,,,,,"Declared, not set",tandemdiabetes.com,
+Performance Cookies,banner,OneTrust,JSESSIONID,nr-data.net,,,,Session,,,,,"Declared, not set",nr-data.net,"This domain is controlled by New Relic, which provides a platform for monitoring the performance of web and mobile applications."
+Performance Cookies,banner,OneTrust,*_id,freshpaint-impression.com,,,,364 days,,,,,"Declared, not set",freshpaint-impression.com,"This domain is owned by Freshpaint, a company that provides customer data platform and analytics services to help businesses collect, unify, and activate customer data for analytics and marketing purposes."
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Functional Cookies,banner,OneTrust,suggestedLocale,www.tandemdiabetes.com,,,,6 days,,,,,"Declared, not set",www.tandemdiabetes.com,
+Functional Cookies,banner,OneTrust,NEXT_LOCALE,www.tandemdiabetes.com,,,,Session,,,,,"Declared, not set",www.tandemdiabetes.com,"This cookie name is associated with Next.js which is used to set and remember the user's preferred language setting for the website, allowing the site to redirect to the correct locale based on the user's choice."
+Essential Cookies,banner,OneTrust,__mp_opt_in_out_d1935506-24cb-4516-8a49-caba6bcca6c5,tandemdiabetes.com,,,,0 days,,,,,"Declared, not set",tandemdiabetes.com,
+Essential Cookies,banner,OneTrust,AWSALB,freshpaint-hipaa-videos-proxy.com,,,,6 days,,,,,"Declared, not set",freshpaint-hipaa-videos-proxy.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Essential Cookies,banner,OneTrust,AWSALBCORS,freshpaint-hipaa-videos-proxy.com,,,,6 days,,,,,"Declared, not set",freshpaint-hipaa-videos-proxy.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.

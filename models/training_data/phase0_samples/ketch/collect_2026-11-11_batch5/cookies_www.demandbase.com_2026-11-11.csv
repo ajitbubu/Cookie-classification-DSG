@@ -1,0 +1,91 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Strictly Necessary Cookies,banner,Ketch,__cf_bm,.www.demandbase.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeting Cookies,banner,Ketch,_gcl_au,.demandbase.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Targeting Cookies,banner,Ketch,c99_user_id,.demandbase.com,/,First party,400.00 days,400 days,false,true,none,false,Declared & set,,
+Strictly Necessary Cookies,banner,Ketch,__cf_bm,.g2crowd.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeting Cookies,banner,Ketch,li_sugr,.linkedin.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Targeting Cookies,banner,Ketch,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LinkedIn  
+Targeting Cookies,banner,Ketch,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,,LinkedIn  
+Strictly Necessary Cookies,banner,Ketch,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeting Cookies,banner,Ketch,tuuid,.company-target.com,/,Third party,396.00 days,396 days,true,true,none,false,Declared & set,,Demandbase
+Targeting Cookies,banner,Ketch,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Performance Cookies,banner,Ketch,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn  
+Unclassified,none,,_fbp,.demandbase.com,/,First party,90.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,Ketch,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Targeting Cookies,banner,Ketch,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Targeting Cookies,banner,Ketch,pxrc,.rlcdn.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,LiveRamp
+Strictly Necessary Cookies,banner,Ketch,__cf_bm,.g2.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Performance Cookies,banner,Ketch,_mkto_trk,.demandbase.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Engage
+Targeting Cookies,banner,Ketch,audit_p,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Magnite
+Targeting Cookies,banner,Ketch,khaos,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Magnite
+Targeting Cookies,banner,Ketch,khaos_p,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Magnite
+Targeting Cookies,banner,Ketch,audit,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Magnite
+Strictly Necessary Cookies,banner,Ketch,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,90 days,true,true,none,true,Declared & set,,Google Privacy Sandbox
+Unclassified,none,,KRTBCOOKIE_1571,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,Ketch,_swb,.demandbase.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Performance Cookies,banner,Ketch,_biz_uid,.demandbase.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,"Declared, conflicting",,
+Targeting Cookies,banner,Ketch,tvid,.tremorhub.com,/,Third party,365.24 days,365 days,false,true,none,false,Declared & set,,Magnite
+Targeting Cookies,banner,Ketch,tv_UIDM,.tremorhub.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Magnite
+Targeting Cookies,banner,Ketch,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Declared & set,,Facebook Ads
+Performance Cookies,banner,Ketch,_ga,.demandbase.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Performance Cookies,banner,Ketch,_BUID,.bizible.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Adobe Marketo Measure
+Targeting Cookies,banner,Ketch,CMID,.casalemedia.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Index Exchange
+Targeting Cookies,banner,Ketch,CMPS,.casalemedia.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,Index Exchange
+Targeting Cookies,banner,Ketch,CMPRO,.casalemedia.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,Index Exchange
+Performance Cookies,banner,Ketch,_biz_flagsA,.demandbase.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Strictly Necessary Cookies,banner,Ketch,_ketch_consent_v1_,.demandbase.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Performance Cookies,banner,Ketch,_vwo_uuid_v2,.demandbase.com,/,First party,366.00 days,365 days,false,false,unspecified,false,Declared & set,,VWO 
+Unclassified,none,,__q_state_GwuNXqzCHQqByzwF,.demandbase.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Performance Cookies,banner,Ketch,_vwo_uuid,.demandbase.com,/,First party,365.24 days,365 days,false,false,unspecified,false,Declared & set,,VWO 
+Performance Cookies,banner,Ketch,_vis_opt_s,.demandbase.com,/,First party,100.00 days,99 days,false,false,unspecified,false,Declared & set,,VWO 
+Performance Cookies,banner,Ketch,_vis_opt_test_cookie,.demandbase.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,VWO 
+Functional Cookies,banner,Ketch,_swb_consent_,.demandbase.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Performance Cookies,banner,Ketch,_vwo_ds,.demandbase.com,/,First party,62.00 days,61 days,false,false,unspecified,false,Declared & set,,VWO 
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Performance Cookies,banner,Ketch,elfsight_viewed_recently,core.service.elfsight.com,/,Third party,0.00 days,,true,true,none,false,Declared & set,,Elfsight
+Strictly Necessary Cookies,banner,Ketch,_cfuvid,.elfsight.com,/,Third party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Unclassified,none,,tuuid_lu,.company-target.com,/,Third party,396.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,Ketch,_rdt_uuid,.demandbase.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Targeting Cookies,banner,Ketch,rlas3,.rlcdn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LiveRamp
+Performance Cookies,banner,Ketch,_vwo_sn,.demandbase.com,/,First party,0.02 days,,false,false,unspecified,false,Declared & set,,VWO 
+Targeting Cookies,banner,Ketch,_uetsid,.demandbase.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Targeting Cookies,banner,Ketch,_uetvid,.demandbase.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Unclassified,none,,_ga_0YYKBD83GD,.demandbase.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,Ketch,_biz_nA,.demandbase.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Performance Cookies,banner,Ketch,_biz_pendingA,.demandbase.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Unclassified,none,,_rdt_pn,.demandbase.com,/,First party,90.00 days,,false,true,strict,false,"Declared, conflicting",,
+Functional Cookies,banner,Ketch,ao,,,,,,,,,,"Declared, not set",,
+Functional Cookies,banner,Ketch,ar_debug,,,,,30 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Functional Cookies,banner,Ketch,autolaunch_triggered,,,,,,,,,,"Declared, not set",,Demandbase
+Functional Cookies,banner,Ketch,__q_domainTest,,,,,,,,,,"Declared, not set",,Qualified
+Functional Cookies,banner,Ketch,__q_state_*,,,,,400 days,,,,,"Declared, not set",,Qualified
+Functional Cookies,banner,Ketch,sj_sessionid,,,,,14 days,,,,,"Declared, not set",,
+Functional Cookies,banner,Ketch,sp,,,,,364 days,,,,,"Declared, not set",,Google Ad Manager
+Functional Cookies,banner,Ketch,user_identifier,,,,,59 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,_biz_ABTestA,,,,,364 days,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,_biz_dfsA,,,,,,,,,,"Declared, not set",,Adobe Marketo Measure
+Performance Cookies,banner,Ketch,_biz_kvpA,,,,,,,,,,"Declared, not set",,Adobe Marketo Measure
+Performance Cookies,banner,Ketch,cookietest,,,,,,,,,,"Declared, not set",,Shopify
+Performance Cookies,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Performance Cookies,banner,Ketch,_gat_skilljarTracker,,,,,,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,_gid,,,,,,,,,,"Declared, not set",,Google Analytics
+Performance Cookies,banner,Ketch,sid,,,,,,,,,,"Declared, not set",,Okta
+Performance Cookies,banner,Ketch,vid,,,,,,,,,,"Declared, not set",,
+Performance Cookies,banner,Ketch,xids,,,,,,,,,,"Declared, not set",,Demandbase
+Social Media Cookies,banner,Ketch,BIGipServer*https,,,,,,,,,,"Declared, not set",,Adobe Marketo Engage
+Social Media Cookies,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Strictly Necessary Cookies,banner,Ketch,activate_ca_modal_triggered,,,,,,,,,,"Declared, not set",,Demandbase
+Strictly Necessary Cookies,banner,Ketch,autolaunch_triggered,,,,,,,,,,"Declared, not set",,Demandbase
+Strictly Necessary Cookies,banner,Ketch,__cflb,,,,,,,,,,"Declared, not set",,Cloudflare
+Strictly Necessary Cookies,banner,Ketch,DT,,,,,400 days,,,,,"Declared, not set",,Demandbase
+Strictly Necessary Cookies,banner,Ketch,_help_center_session,,,,,,,,,,"Declared, not set",,Demandbase
+Strictly Necessary Cookies,banner,Ketch,JSESSIONID,,,,,,,,,,"Declared, not set",,Demandbase
+Strictly Necessary Cookies,banner,Ketch,oktaStateToken,,,,,,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,xids,,,,,,,,,,"Declared, not set",,Demandbase
+Strictly Necessary Cookies,banner,Ketch,XSRF-TOKEN,,,,,400 days,,,,,"Declared, not set",,Path Factory
+Targeting Cookies,banner,Ketch,BIGipServer*https,,,,,,,,,,"Declared, not set",,Adobe Marketo Engage
+Targeting Cookies,banner,Ketch,_session_id,,,,,,,,,,"Declared, not set",,Shopify
+Targeting Cookies,banner,Ketch,t,,,,,,,,,,"Declared, not set",,LinkedIn  

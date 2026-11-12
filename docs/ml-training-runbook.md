@@ -40,11 +40,16 @@ must come from a real source, never a guess:
 | `banner/onetrust_sites_*.txt`, `banner/banner_sites_*.txt` (+ `_verification*.csv`) | site lists | not yet | Which sites were collected and why (see §2) |
 | `collection_sites.csv` | 387 sites | not yet | Every site we hold or checked; CookieBlock drops these (see §2) |
 
-The live model is `models/v7.0.0` (trained 2026-11-11 on 243 real banner sites: 217 OneTrust,
-26 Ketch/Transcend/Cookiebot/Securiti; banner data only, no CookieBlock; review-only). Its
-`metadata.json` records `promotion_eligible: false`: auto-classification is off. Roll back to
-`v6.5.0` if needed. CookieBlock was tested as extra training data for v7 and lowered held-out
-accuracy (81.6% → 77.3%), so it is no longer used.
+The live model is `models/v7.1.0` (trained 2026-11-12 on `banner/banner_all_2026-11-11b.csv`:
+1,008 real banner sites, 44,838 cookies, split 80/10/10 by site; review-only). It uses
+`FeatureExtractorV7`: V5's 52 features plus name-pattern and cookie-domain features learned in
+training and shipped as `feature_lookups.json`. On the 78 test sites v7.0.0 never trained on it
+scores macro F1 0.731 on all cookies (v7.0.0: 0.667) and 0.461 on unseen names (0.353). Its
+`metadata.json` records `promotion_eligible: false`: auto-classification is off. Known miss in
+`test_ml_classifier_regression.py`: `__stripe_mid` comes out Functional (sites label it 8
+Strictly Necessary / 7 Functional); v7.0.0 missed 3 of that suite. Roll back to `v7.0.0` by
+setting `ML_MODEL_VERSION=7.0.0`. CookieBlock was tested as extra training data for v7 and
+lowered held-out accuracy (81.6% → 77.3%), so it is no longer used.
 
 ## 1. How cookies are pulled from a website
 
@@ -374,7 +379,7 @@ What the trainer does (`backend/scripts/train_cookie_model.py`):
   **site**, so no site is in two parts. With 107 real sites that was 70 / 16 / 21.
 - `--train-only-input` rows only ever join training. Rows from a calibration or
   test site are dropped from them, so held-out sites stay unseen.
-- Uses the production feature extractor (`FeatureExtractorV5`), so training and serving see identical features.
+- Uses the production feature extractor (`FeatureExtractorV7`), so training and serving see identical features. Its learned name-pattern and cookie-domain lookups are fitted on the training sites only (training rows get them out-of-fold by site) and ship as `feature_lookups.json`.
 - Drops `Unclassified` rows and learns **four** classes. `Unclassified` is what the API returns
   when the model abstains (low confidence, or the evidence guard sees no known name/vendor signal).
 - **Calibrates on all cookies of the calibration sites**, the mix a real scan

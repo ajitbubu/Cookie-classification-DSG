@@ -1,0 +1,59 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Necessary,banner,Cookiebot,cf_clearance,.cambridgeaudio.com,/,First party,365.00 days,,true,true,none,true,Declared & set,vimeo.com,This cookie is used to distinguish between humans and bots. 
+Necessary,banner,Cookiebot,CookieConsent,www.cambridgeaudio.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,www.cambridgeaudio.com,Stores the user's cookie consent state for the current domain
+Marketing,banner,Cookiebot,_gcl_au,.cambridgeaudio.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,cambridgeaudio.com,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.  
+Marketing,banner,Cookiebot,_ga,.cambridgeaudio.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,cambridgeaudio.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,_ga_Y62ESQPK8J,.cambridgeaudio.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,cambridgeaudio.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,_ga_TPWRD0GK4Y,.cambridgeaudio.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,cambridgeaudio.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Necessary,banner,Cookiebot,BACKENDID3,bandcamp.com,,,,Session,,,,,"Declared, not set",bandcamp.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.
+Necessary,banner,Cookiebot,__cf_bm,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,bcookie,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,Used in order to detect spam and improve the website's security. 
+Necessary,banner,Cookiebot,li_gc,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,datadome,soundcloud.com,,,,Session,,,,,"Declared, not set",soundcloud.com,"Used in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website."
+Necessary,banner,Cookiebot,sc_anonymous_id,soundcloud.com,,,,,,,,,"Declared, not set",soundcloud.com,Used in context with the 3D-view-function on the website.
+Necessary,banner,Cookiebot,SSESS#,www.cambridgeaudio.com,,,,,,,,,"Declared, not set",www.cambridgeaudio.com,Pending
+Preferences,banner,Cookiebot,lidc,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Statistics,banner,Cookiebot,_clck,cambridgeaudio.com,,,,,,,,,"Declared, not set",cambridgeaudio.com,Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+Statistics,banner,Cookiebot,_clsk,cambridgeaudio.com,,,,,,,,,"Declared, not set",cambridgeaudio.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,_sp_id.#,cambridgeaudio.com,,,,,,,,,"Declared, not set",cambridgeaudio.com,"Collects data on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded with the purpose of generating reports for optimising the website content."
+Statistics,banner,Cookiebot,_sp_ses.#,cambridgeaudio.com,,,,,,,,,"Declared, not set",cambridgeaudio.com,Used by Snowplow Analytics to track how users are browsing and engaging with a website.
+Statistics,banner,Cookiebot,personalization_id,twitter.com,,,,,,,,,"Declared, not set",twitter.com,This cookie is set by Twitter - The cookie allows the visitor to share content from the website onto their Twitter profile. 
+Statistics,banner,Cookiebot,__kla_id,www.cambridgeaudio.com,,,,,,,,,"Declared, not set",www.cambridgeaudio.com,This cookie is used to collect information on the visitor's behavior. This information will be stored for internal use on the website – internal analytics is used to optimize the websites or to register if the visitor has subscribed to a newsletter.
+Statistics,banner,Cookiebot,yotpo_pixel,www.cambridgeaudio.com,,,,,,,,,"Declared, not set",www.cambridgeaudio.com,Contains data on the latest products viewed by the visitor. Used for internal statistics by the website operator.
+Marketing,banner,Cookiebot,ad-id,amazon-adsystem.com,,,,,,,,,"Declared, not set",amazon-adsystem.com,Used by Amazon Advertising to register user actions and target content on the website based on ad clicks on a different website.
+Marketing,banner,Cookiebot,ad-privacy,amazon-adsystem.com,,,,,,,,,"Declared, not set",amazon-adsystem.com,Used by Amazon Advertising to register user actions and target content on the website based on ad clicks on a different website.
+Marketing,banner,Cookiebot,MR,bing.com,,,,,,,,,"Declared, not set",bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,MUID,bing.com,,,,,,,,,"Declared, not set",bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Marketing,banner,Cookiebot,SRM_B,bing.com,,,,,,,,,"Declared, not set",bing.com,Tracks the user’s interaction with the website’s search-bar-function. This data can be used to present the user with relevant products or services.     
+Marketing,banner,Cookiebot,ANONCHK,c.clarity.ms,,,,,,,,,"Declared, not set",c.clarity.ms,Registers data on visitors from multiple visits and on multiple websites. This information is used to measure the efficiency of advertisement on websites.  
+Marketing,banner,Cookiebot,SM,c.clarity.ms,,,,Session,,,,,"Declared, not set",c.clarity.ms,Registers a unique ID that identifies the user's device during return visits across websites that use the same ad network. The ID is used to allow targeted ads.
+Marketing,banner,Cookiebot,_fbp,cambridgeaudio.com,,,,,,,,,"Declared, not set",cambridgeaudio.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Marketing,banner,Cookiebot,_uetsid,cambridgeaudio.com,,,,,,,,,"Declared, not set",cambridgeaudio.com,"Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement. "
+Marketing,banner,Cookiebot,_uetvid,cambridgeaudio.com,,,,,,,,,"Declared, not set",cambridgeaudio.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,_s,myshopify.com,,,,,,,,,"Declared, not set",myshopify.com,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Marketing,banner,Cookiebot,_shopify_s,myshopify.com,,,,,,,,,"Declared, not set",myshopify.com,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Marketing,banner,Cookiebot,_shopify_y,myshopify.com,,,,,,,,,"Declared, not set",myshopify.com,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Marketing,banner,Cookiebot,_y,myshopify.com,,,,,,,,,"Declared, not set",myshopify.com,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Marketing,banner,Cookiebot,dd_testcookie,soundcloud.com,,,,Session,,,,,"Declared, not set",soundcloud.com,Pending
+Marketing,banner,Cookiebot,sp_landing,spotify.com,,,,,,,,,"Declared, not set",spotify.com,Used to implement audio-content from Spotify on the website. Can also be used to register user interaction and preferences in context with audio-content - This can serve statistics and marketing purposes.  
+Marketing,banner,Cookiebot,sp_t,spotify.com,,,,,,,,,"Declared, not set",spotify.com,Used to implement audio-content from Spotify on the website. Can also be used to register user interaction and preferences in context with audio-content - This can serve statistics and marketing purposes.  
+Marketing,banner,Cookiebot,muc_ads,t.co,,,,,,,,,"Declared, not set",t.co,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Marketing,banner,Cookiebot,__cf_ob,vimeo.com,,,,Session,,,,,"Declared, not set",vimeo.com,Pending
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,www.youtube-nocookie.com,,,,Session,,,,,"Declared, not set",www.youtube-nocookie.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,www.youtube-nocookie.com,,,,,,,,,"Declared, not set",www.youtube-nocookie.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,pixel,yotpo.com,,,,,,,,,"Declared, not set",yotpo.com,"Determines which products the user has viewed, allowing the website to promote related products. "
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video
+Marketing,banner,Cookiebot,__Secure-YNID,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Marketing,banner,Cookiebot,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Unclassified,banner,Cookiebot,cart_client_id,bandcamp.com,,,,,,,,,"Declared, not set",bandcamp.com,Pending
+Unclassified,banner,Cookiebot,__apex_test__,cambridgeaudio.com,,,,Session,,,,,"Declared, not set",cambridgeaudio.com,Pending
+Unclassified,banner,Cookiebot,_twpid,cambridgeaudio.com,,,,Session,,,,,"Declared, not set",cambridgeaudio.com,Pending
+Unclassified,banner,Cookiebot,_twsid,cambridgeaudio.com,,,,Session,,,,,"Declared, not set",cambridgeaudio.com,Pending
+Unclassified,banner,Cookiebot,lantern,cambridgeaudio.com,,,,,,,,,"Declared, not set",cambridgeaudio.com,Pending
+Unclassified,banner,Cookiebot,vis,gettyimages.com,,,,,,,,,"Declared, not set",gettyimages.com,Pending
+Unclassified,banner,Cookiebot,#_lantern,roeye.com,,,,,,,,,"Declared, not set",roeye.com,Pending
+Unclassified,banner,Cookiebot,AwinChannelCookie,www.cambridgeaudio.com,,,,Session,,,,,"Declared, not set",www.cambridgeaudio.com,Pending
+Unclassified,banner,Cookiebot,ca_loc_product_safety_yoyo_m,www.cambridgeaudio.com,,,,,,,,,"Declared, not set",www.cambridgeaudio.com,Pending

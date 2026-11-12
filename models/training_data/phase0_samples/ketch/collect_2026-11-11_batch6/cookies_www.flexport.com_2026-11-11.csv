@@ -1,0 +1,52 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,__cf_ob,www.flexport.com,/cdn-cgi/challenge-platform,First party,Session,,false,true,none,true,Not declared,,
+Advertising,banner,Ketch,gbuuid,www.flexport.com,/,First party,180.00 days,181 days,true,true,lax,false,Declared & set,,
+Essential,banner,Ketch,_swb,.flexport.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Essential,banner,Ketch,_ketch_consent_v1_,.flexport.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Essential,banner,Ketch,_swb_consent_,.flexport.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Advertising,banner,Ketch,_gcl_au,.flexport.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Performance,banner,Ketch,_ga,.flexport.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Unclassified,none,,sp__anon_id,.flexport.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Advertising,banner,Ketch,li_sugr,.linkedin.com,/,Third party,90.00 days,91 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Preferences,banner,Ketch,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,,LinkedIn  
+Preferences,banner,Ketch,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,visitor_id925323,.pardot.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,visitor_id925323-hash,.pardot.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,visitor_id925323,www.flexport.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,visitor_id925323-hash,www.flexport.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Advertising,banner,Ketch,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,31 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Performance,banner,Ketch,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,31 days,false,true,none,false,Declared & set,,LinkedIn  
+Advertising,banner,Ketch,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LinkedIn  
+Advertising,banner,Ketch,bscookie,.www.linkedin.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,LinkedIn  
+Unclassified,none,,visitor_id925323,tech.flexport.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,visitor_id925323-hash,tech.flexport.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Advertising,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Unclassified,none,,_ga_JH3R1R4FWB,.flexport.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cf_clearance,.flexport.com,/,First party,365.00 days,,true,true,none,true,Not declared,,
+Preferences,banner,Ketch,__cf_bm,.flexport.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Performance,banner,Ketch,_rdt_uuid,.flexport.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Unclassified,none,,_uetsid,.flexport.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_uetvid,.flexport.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,lpv925323,pi.pardot.com,/,Third party,0.02 days,,false,true,none,false,Not declared,,
+Advertising,banner,Ketch,ar_debug,,,,,30 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Advertising,banner,Ketch,lpv*,,,,,1 days,,,,,"Declared, not set",,Salesforce Pardot
+Advertising,banner,Ketch,pardot,,,,,,,,,,"Declared, not set",,Salesforce Pardot
+Advertising,banner,Ketch,visitor_id*,,,,,400 days,,,,,"Declared, not set",,Salesforce Pardot
+Advertising,banner,Ketch,visitor_id*-hash,,,,,400 days,,,,,"Declared, not set",,Salesforce Pardot
+Advertising,banner,Ketch,_zitok,,,,,364 days,,,,,"Declared, not set",,ZoomInfo
+Essential,banner,Ketch,_cfuvid,,,,,,,,,,"Declared, not set",,Cloudflare
+Essential,banner,Ketch,dd_cookie_test_*,,,,,,,,,,"Declared, not set",,Datadog
+Essential,banner,Ketch,_dd_s,,,,,364 days,,,,,"Declared, not set",,Datadog
+Essential,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Performance,banner,Ketch,amp_*,,,,,364 days,,,,,"Declared, not set",,Amplitude
+Performance,banner,Ketch,amplitude_test*,,,,,,,,,,"Declared, not set",,Amplitude
+Performance,banner,Ketch,_dd_s,,,,,364 days,,,,,"Declared, not set",,Datadog
+Performance,banner,Ketch,dd_site_test_*,,,,,,,,,,"Declared, not set",,Datadog
+Performance,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Performance,banner,Ketch,_tldtest_*,,,,,,,,,,"Declared, not set",,Amplitude
+Preferences,banner,Ketch,amp_cookie_test*,,,,,,,,,,"Declared, not set",,Amplitude
+Preferences,banner,Ketch,cookiecookie,,,,,,,,,,"Declared, not set",,
+Preferences,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads

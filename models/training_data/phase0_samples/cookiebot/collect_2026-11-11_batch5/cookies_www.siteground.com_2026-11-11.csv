@@ -1,0 +1,124 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Necessary,banner,Cookiebot,PHPSESSID,.siteground.com,/,First party,Session,,true,true,unspecified,false,Declared & set,careers.siteground.com,Preserves user session state across page requests.
+Necessary,banner,Cookiebot,crrcy,.siteground.com,/,First party,Session,Session,true,true,unspecified,false,Declared & set,siteground,Pending
+Necessary,banner,Cookiebot,http_referrer,.siteground.com,/,First party,400.00 days,Session,true,true,unspecified,false,Declared & set,siteground,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Necessary,banner,Cookiebot,first_visit,.siteground.com,/,First party,400.00 days,Session,true,true,unspecified,false,Declared & set,siteground,Pending
+Necessary,banner,Cookiebot,shrprm,.siteground.com,/,First party,Session,Session,true,true,unspecified,false,Declared & set,siteground,Pending
+Necessary,banner,Cookiebot,lxcprm,.siteground.com,/,First party,Session,Session,true,true,unspecified,false,Declared & set,siteground,Pending
+Necessary,banner,Cookiebot,emprm,.siteground.com,/,First party,Session,Session,true,true,unspecified,false,Declared & set,siteground.com,Pending
+Necessary,banner,Cookiebot,CookieConsent,www.siteground.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,analytics.siteground.com,Stores the user's cookie consent state for the current domain
+Marketing,banner,Cookiebot,_gcl_au,.siteground.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,co.uk,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.  
+Necessary,banner,Cookiebot,__cf_bm,.bzrcdn.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,bzr.openai.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,_cfuvid,.bzrcdn.openai.com,/,Third party,Session,Session,true,true,none,false,Declared & set,bzr.openai.com,"This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators. "
+Marketing,banner,Cookiebot,__obref,.siteground.com,/,First party,365.00 days,Session,false,true,none,false,Declared & set,siteground.co.uk,Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. 
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Statistics,banner,Cookiebot,_ga,.siteground.com,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,google.com,Pending
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Preferences,banner,Cookiebot,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,linkedin.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,linkedin.com,Used in order to detect spam and improve the website's security. 
+Necessary,banner,Cookiebot,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,bzr.openai.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Marketing,banner,Cookiebot,_twpid,.siteground.com,/,First party,390.00 days,Session,false,true,strict,false,Declared & set,siteground.com,Pending
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,FPID,.siteground.com,/,First party,400.00 days,Session,true,true,unspecified,false,Declared & set,siteground.co.uk,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,FPLC,.siteground.com,/,First party,0.83 days,Session,false,true,unspecified,false,Declared & set,siteground.co.uk,Registers a unique ID that is used to generate statistical data on how the visitor uses the website.
+Marketing,banner,Cookiebot,_gtmeec,.siteground.com,/,First party,90.00 days,,true,true,strict,false,Declared & set,siteground.com,Used to temporarily store and process ecommerce-related interaction data in order to ensure reliable analytics event tracking across page loads.
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,guest_id_marketing,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Declared & set,twitter.com,Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+Marketing,banner,Cookiebot,guest_id_ads,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Declared & set,twitter.com,Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+Statistics,banner,Cookiebot,personalization_id,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Declared & set,twitter.com,This cookie is set by Twitter - The cookie allows the visitor to share content from the website onto their Twitter profile. 
+Marketing,banner,Cookiebot,guest_id,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Declared & set,twitter.com,"Collects data related to the user's visits to the website, such as the number of visits, average time spent on the website and which pages have been loaded, with the purpose of personalising and improving the Twitter service."
+Necessary,banner,Cookiebot,__cf_bm,.twitter.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,bzr.openai.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Marketing,banner,Cookiebot,muc_ads,.t.co,/,Third party,400.00 days,,false,true,none,false,Declared & set,t.co,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Necessary,banner,Cookiebot,__cf_bm,.t.co,/,Third party,0.02 days,,true,true,none,true,Declared & set,bzr.openai.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,none,,guid,.mountain.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,_fbp,.siteground.com,/,First party,90.00 days,,false,true,lax,false,Declared & set,co.uk,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Unclassified,none,,tt,.px.mountain.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rt,.mountain.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_mpxl_guid,.siteground.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,_pin_unauth,.siteground.com,/,First party,365.00 days,,false,false,unspecified,false,Declared & set,au.siteground.com,Used by Pinterest to track the usage of services.
+Necessary,banner,Cookiebot,__cf_bm,.bzr.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,bzr.openai.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,_cfuvid,.bzr.openai.com,/,Third party,Session,Session,true,true,none,false,Declared & set,bzr.openai.com,"This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators. "
+Marketing,banner,Cookiebot,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Declared & set,doubleclick.net,Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.
+Statistics,banner,Cookiebot,_ga_SHQ31EXQMG,.siteground.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,siteground.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,_ga_Y1ZYXRN2F1,.siteground.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,siteground.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,_ga_80RTS10GP4,.siteground.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,siteground.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,_rdt_uuid,.siteground.com,/,First party,90.00 days,Session,false,true,strict,false,Declared & set,au.siteground.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,_uetsid,.siteground.com,/,First party,1.00 days,Session,false,false,unspecified,false,Declared & set,bing.com,Pending
+Marketing,banner,Cookiebot,_twsid,.siteground.com,/,First party,390.00 days,Session,false,true,strict,false,Declared & set,siteground.com,Pending
+Statistics,banner,Cookiebot,_ce.s,.siteground.com,/,First party,365.00 days,,false,false,strict,false,Declared & set,siteground.com,Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+Marketing,banner,Cookiebot,_uetvid,.siteground.com,/,First party,390.00 days,Session,false,false,unspecified,false,Declared & set,co.uk,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,pinterest.com,Used by Pinterest to track the usage of services.
+Necessary,banner,Cookiebot,__cflb,api.hcaptcha.com,,,,,,,,,"Declared, not set",api.hcaptcha.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,hmt_id,api.hcaptcha.com,,,,,,,,,"Declared, not set",api.hcaptcha.com,This cookie is used to distinguish between humans and bots. 
+Necessary,banner,Cookiebot,__stripe_mid,au.siteground.com,,,,,,,,,"Declared, not set",au.siteground.com,This cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.
+Necessary,banner,Cookiebot,__stripe_sid,au.siteground.com,,,,,,,,,"Declared, not set",au.siteground.com,This cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.
+Necessary,banner,Cookiebot,_pxttld,b.stripecdn.com,,,,Session,,,,,"Declared, not set",b.stripecdn.com,Pending
+Necessary,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.
+Necessary,banner,Cookiebot,li_gc,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,m,m.stripe.com,,,,,,,,,"Declared, not set",m.stripe.com,Determines the device used to access the website. This allows the website to be formatted accordingly. 
+Necessary,banner,Cookiebot,TESTCOOKIESENABLED,pay.google.com,,,,,,,,,"Declared, not set",pay.google.com,Used to track user’s interaction with embedded content.
+Necessary,banner,Cookiebot,order_mkt_info,siteground.com,,,,,,,,,"Declared, not set",siteground.com,Pending
+Necessary,banner,Cookiebot,_px3,stripecdn.com,,,,,,,,,"Declared, not set",stripecdn.com,"Used in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website."
+Necessary,banner,Cookiebot,_pxde,stripecdn.com,,,,,,,,,"Declared, not set",stripecdn.com,Pending
+Necessary,banner,Cookiebot,_pxvid,stripecdn.com,,,,,,,,,"Declared, not set",stripecdn.com,This cookie is used to distinguish between humans and bots. 
+Necessary,banner,Cookiebot,pxcts,stripecdn.com,,,,Session,,,,,"Declared, not set",stripecdn.com,This cookie is used to distinguish between humans and bots. 
+Necessary,banner,Cookiebot,AWSALBTG,typeform.com,,,,,,,,,"Declared, not set",typeform.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,AWSALBTGCORS,typeform.com,,,,,,,,,"Declared, not set",typeform.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,cf_clearance,vimeo.com,,,,,,,,,"Declared, not set",vimeo.com,This cookie is used to distinguish between humans and bots. 
+Necessary,banner,Cookiebot,_GRECAPTCHA,www.recaptcha.net,,,,,,,,,"Declared, not set",www.recaptcha.net,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,testcookie,www.slideshare.net,,,,Session,,,,,"Declared, not set",www.slideshare.net,This cookie determines whether the browser accepts cookies.
+Preferences,banner,Cookiebot,userSeenBanners,login-banners.siteground.com,,,,Session,,,,,"Declared, not set",login-banners.siteground.com,Pending
+Preferences,banner,Cookiebot,tf_respondent_cc,typeform.com,,,,,,,,,"Declared, not set",typeform.com,Used to implement forms on the website.
+Statistics,banner,Cookiebot,PugT,pubmatic.com,,,,Session,,,,,"Declared, not set",pubmatic.com,Pending
+Statistics,banner,Cookiebot,searchstring,siteground.co.uk,,,,Session,,,,,"Declared, not set",siteground.co.uk,Pending
+Statistics,banner,Cookiebot,_ce.clock_data,siteground.com,,,,,,,,,"Declared, not set",siteground.com,Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+Statistics,banner,Cookiebot,_CEFT,siteground.com,,,,,,,,,"Declared, not set",siteground.com,This cookie is used by the website’s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.
+Statistics,banner,Cookiebot,cebs,siteground.com,,,,Session,,,,,"Declared, not set",siteground.com,"Tracks the individual sessions on the website, allowing the website to compile statistical data from multiple visits. This data can also be used to create leads for marketing purposes."
+Statistics,banner,Cookiebot,cebsp_,siteground.com,,,,Session,,,,,"Declared, not set",siteground.com,Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+Statistics,banner,Cookiebot,browser_id,slideshare.net,,,,,,,,,"Declared, not set",slideshare.net,Used to recognise the visitor's browser upon reentry on the website.
+Statistics,banner,Cookiebot,dd_cookie_test_#,typeform.com,,,,,,,,,"Declared, not set",typeform.com,Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization. 
+Statistics,banner,Cookiebot,tracking_session_id,typeform.com,,,,,,,,,"Declared, not set",typeform.com,"Determines when the visitor last visited the different subpages on the website, as well as sets a timestamp for when the session started."
+Statistics,banner,Cookiebot,vuid,vimeo.com,,,,,,,,,"Declared, not set",vimeo.com,"Collects data on the user's visits to the website, such as which pages have been read."
+Marketing,banner,Cookiebot,xuid,3lift.com,,,,Session,,,,,"Declared, not set",3lift.com,Pending
+Marketing,banner,Cookiebot,bounce,adnxs.com,,,,Session,,,,,"Declared, not set",adnxs.com,Pending
+Marketing,banner,Cookiebot,uuid2,adnxs.com,,,,Session,,,,,"Declared, not set",adnxs.com,Pending
+Marketing,banner,Cookiebot,XANDR_PANID,adnxs.com,,,,Session,,,,,"Declared, not set",adnxs.com,Pending
+Marketing,banner,Cookiebot,__adroll_fpc,adroll,,,,Session,,,,,"Declared, not set",adroll,"Used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third party advertisement hubs, which facilitate real-time bidding for advertisers. "
+Marketing,banner,Cookiebot,__adroll_shared,adroll.com,,,,Session,,,,,"Declared, not set",adroll.com,Pending
+Marketing,banner,Cookiebot,_pin_aem,au.siteground.com,,,,,,,,,"Declared, not set",au.siteground.com,Pending
+Marketing,banner,Cookiebot,sync,bidswitch.net,,,,Session,,,,,"Declared, not set",bidswitch.net,Pending
+Marketing,banner,Cookiebot,CMID,casalemedia.com,,,,Session,,,,,"Declared, not set",casalemedia.com,Pending
+Marketing,banner,Cookiebot,CMPRO,casalemedia.com,,,,Session,,,,,"Declared, not set",casalemedia.com,Pending
+Marketing,banner,Cookiebot,CMPS,casalemedia.com,,,,Session,,,,,"Declared, not set",casalemedia.com,Pending
+Marketing,banner,Cookiebot,rum,casalemedia.com,,,,Session,,,,,"Declared, not set",casalemedia.com,Pending
+Marketing,banner,Cookiebot,__oaiq_domain_probe,co.uk,,,,Session,,,,,"Declared, not set",co.uk,Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. 
+Marketing,banner,Cookiebot,NID,google.com,,,,,,,,,"Declared, not set",google.com,Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.
+Marketing,banner,Cookiebot,unifiedPixel,outbrain.com,,,,Session,,,,,"Declared, not set",outbrain.com,Pending
+Marketing,banner,Cookiebot,gclid,siteground.es,,,,,,,,,"Declared, not set",siteground.es,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,__tld__,typeform.com,,,,Session,,,,,"Declared, not set",typeform.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,attribution_user_id,typeform.com,,,,,,,,,"Declared, not set",typeform.com,Used in context with the website’s pop-up questionnaires and messengering. The data is used for statistical or marketing purposes.
+Marketing,banner,Cookiebot,rudder_cookies,typeform.com,,,,,,,,,"Declared, not set",typeform.com,Pending
+Marketing,banner,Cookiebot,test_rudder,typeform.com,,,,,,,,,"Declared, not set",typeform.com,Pending
+Marketing,banner,Cookiebot,__cf_ob,vimeo.com,,,,Session,,,,,"Declared, not set",vimeo.com,Pending
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,www.youtube-nocookie.com,,,,Session,,,,,"Declared, not set",www.youtube-nocookie.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-BUCKET,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Pending
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video
+Marketing,banner,Cookiebot,__Secure-YNID,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,requests,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Pending
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Marketing,banner,Cookiebot,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Unclassified,banner,Cookiebot,sg_attr_history_id,siteground.co.uk,,,,,,,,,"Declared, not set",siteground.co.uk,Pending
+Unclassified,banner,Cookiebot,sg_attr_utm_source,siteground.co.uk,,,,,,,,,"Declared, not set",siteground.co.uk,Pending
+Unclassified,banner,Cookiebot,sg_landing_url,siteground.co.uk,,,,,,,,,"Declared, not set",siteground.co.uk,Pending
+Unclassified,banner,Cookiebot,sg_attr_mktafcode,siteground.com,,,,,,,,,"Declared, not set",siteground.com,Pending
+Unclassified,banner,Cookiebot,sg_attr_utm_campaign,siteground.com,,,,,,,,,"Declared, not set",siteground.com,Pending
+Unclassified,banner,Cookiebot,sg_attr_utm_content,siteground.com,,,,,,,,,"Declared, not set",siteground.com,Pending
+Unclassified,banner,Cookiebot,sg_attr_utm_medium,siteground.com,,,,,,,,,"Declared, not set",siteground.com,Pending
+Unclassified,banner,Cookiebot,sg_marketing_consent,siteground.com,,,,,,,,,"Declared, not set",siteground.com,Pending
+Unclassified,banner,Cookiebot,_fs_ch_st_FSBmUei20MqUiJb9,www.slideshare.net,,,,Session,,,,,"Declared, not set",www.slideshare.net,Pending

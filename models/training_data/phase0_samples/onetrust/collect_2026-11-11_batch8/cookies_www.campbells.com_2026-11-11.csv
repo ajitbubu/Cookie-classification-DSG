@@ -1,0 +1,280 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-recipe-collections-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-product-line-hero-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-recipe-collections-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-azure-active-directory/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/cmpbl-custom-data-layers-cta-events/public/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-product-line-hero-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-product-line-hero-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-content-callout-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-related-content-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/cmpbl-custom-data-layers-cta-events/public/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-content-carousel-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-azure-active-directory/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-azure-active-directory/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/cmpbl-custom-data-layers-cta-events/public/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-product-line-hero-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-related-content-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-related-content-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-content-callout-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/cmpbl-custom-data-layers-cta-events/public/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-azure-active-directory/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-content-carousel-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-product-line-hero-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-content-cards-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-hero-carousel-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-product-lines-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/themes/prego-child-theme/assets/css/frontend/custom,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-related-content-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/cmpbl-custom-data-layers-cta-events/public/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-product-line-hero-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-product-list-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-hero-carousel-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-product-lines-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-hero-carousel-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-content-cards-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-product-lines-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-related-content-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-content-callout-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/cmpbl-custom-data-layers-cta-events/public/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-content-carousel-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-product-list-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-product-list-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-product-lines-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-hero-carousel-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-related-content-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-product-list-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-hero-carousel-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-content-cards-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-product-lines-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-content/themes/swanson-child-theme/assets/js/frontend,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-product-list-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-hero-carousel-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-product-lines-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-accordion-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-product-list-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-accordion-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-content/themes/campbellsoupco-parent-theme/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/themes/prego-child-theme/assets/css/frontend,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/themes/campbellsoupco-parent-theme/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/themes/prego-child-theme/assets/js/frontend,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-accordion-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-content/plugins/campbellsoupco-faq-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-contact-us/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/themes/campbellsoupco-parent-theme/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/themes/pace-child-theme/assets/css/frontend,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/themes/campbellsoupco-parent-theme/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-faq-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/sassy-social-share-pro/public/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-contact-us/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-contact-us/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/themes/pace-child-theme/assets/js/frontend,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/themes/campbellsoupco-parent-theme/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-sprinklr/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-faq-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/sassy-social-share-pro/public/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/sassy-social-share-pro/public/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-faq-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-contact-us/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/themes/campbellsoupco-parent-theme/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/campbellsoupco-sprinklr/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-sprinklr/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-faq-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/sassy-social-share-pro/public/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-contact-us/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-hero-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/themes/campbellsoupco-parent-theme/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/campbellsoupco-sprinklr/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-faq-block/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/themes/v8-child-theme/assets/css/frontend,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/sassy-social-share-pro/public/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-contact-us/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/stop-user-enumeration/frontend/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-sprinklr/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-faq-block/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/themes/v8-child-theme/assets/js/frontend,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/sassy-social-share-pro/public/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/themes/prego-child-theme/dist/images,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/plugins/campbellsoupco-sprinklr/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/themes/prego-child-theme/dist/fonts,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/themes/pace-child-theme/dist/images,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/themes/prego-child-theme/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/themes/pace-child-theme/assets/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/themes/prego-child-theme/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/themes/pace-child-theme/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-content/plugins/wp-gen-ai/public/img,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/themes/pace-child-theme/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/themes/v8-child-theme/dist/images,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/plugins/siteimprove/admin/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/themes/v8-child-theme/assets/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/themes/v8-child-theme/assets/svg,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/plugins/siteimprove/admin/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/themes/v8-child-theme/dist/css,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/themes/v8-child-theme/dist/js,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-includes/css/dist/block-library,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-includes/css/dist/block-library,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-includes/css/dist/block-library,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-content/uploads/2021/07,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-content/uploads/2024/12,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-includes/js/dist/vendor,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-content/uploads/2025/07,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-content/uploads/2023/09,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-content/uploads/2024/01,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-content/uploads/2022/10,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-content/uploads/2026/02,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-content/uploads/2026/10,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-content/uploads/2025/06,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/uploads/2021/07,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/uploads/2024/12,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/uploads/2022/12,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/uploads/2022/03,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-includes/js/dist/vendor,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/uploads/2020/11,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/uploads/2026/10,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/uploads/2020/10,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-content/uploads/2025/03,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/uploads/2021/07,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/uploads/2022/12,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/uploads/2023/01,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/uploads/2022/03,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/uploads/2026/05,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/uploads/2026/04,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-includes/js/dist/vendor,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/uploads/2020/09,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/uploads/2026/03,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/uploads/2025/05,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/uploads/2024/11,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/uploads/2024/08,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-content/uploads/2021/01,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/uploads/2021/07,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/uploads/2022/12,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/uploads/2023/01,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/uploads/2024/12,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-includes/js/dist/vendor,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/uploads/2025/06,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/uploads/2026/08,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/uploads/2026/03,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/uploads/2022/04,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/uploads/2022/03,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-content/uploads/2020/01,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-includes/js/dist,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-includes/js/jquery,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-includes/js/jquery,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/prego/wp-includes/js/dist,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace/wp-includes/js/dist,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-includes/js/jquery,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8/wp-includes/js/dist,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/swanson/wp-admin,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,_GRECAPTCHA,google.com,/recaptcha,Third party,180.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/pace,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/v8,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,Path,www.campbells.com,/,First party,Session,,true,true,none,false,Not declared,,
+Strictly Necessary,banner,OneTrust,__cf_bm,.www.campbells.com,/,First party,0.02 days,0 days,true,true,none,true,Declared & set,www.campbells.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+This is a CloudFoundry cookie"
+Strictly Necessary,banner,OneTrust,__cf_bm,.sitescdn.net,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,sitescdn.net,This is a CloudFoundry cookie
+Strictly Necessary,banner,OneTrust,__cf_bm,.hsforms.net,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,www.campbells.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+This is a CloudFoundry cookie"
+Strictly Necessary,banner,OneTrust,__cf_bm,.hsforms.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,www.campbells.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+This is a CloudFoundry cookie"
+Strictly Necessary,banner,OneTrust,__cf_bm,.hs-scripts.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,www.campbells.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+This is a CloudFoundry cookie"
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Strictly Necessary,banner,OneTrust,__cf_bm,.hs-analytics.net,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,www.campbells.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+This is a CloudFoundry cookie"
+Strictly Necessary,banner,OneTrust,__cf_bm,.hs-banner.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,www.campbells.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+This is a CloudFoundry cookie"
+Advertising and Social Media,banner,OneTrust,receive-cookie-deprecation,.dotomi.com,/,Third party,395.00 days,89 days,true,true,none,true,Declared & set,rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Advertising and Social Media,banner,OneTrust,fr,.facebook.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,facebook.com,"Contains browser and user unique ID combination, used for targeted advertising."
+Advertising and Social Media,banner,OneTrust,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,ct.pinterest.com,"This domain is associated with Pinterest, a social media platform that allows users to share images and media content through collections known as pinboards. The domain is likely used for conversion tracking and advertising purposes."
+Strictly Necessary,banner,OneTrust,__cf_bm,.hubspot.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,www.campbells.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+This is a CloudFoundry cookie"
+Strictly Necessary,banner,OneTrust,__cf_bm,.fonts.net,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,fonts.net,This is a CloudFoundry cookie
+Strictly Necessary,banner,OneTrust,OptanonConsent,.www.campbells.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.www.campbells.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,_gcl_au,.campbells.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Analytics and Performance,banner,OneTrust,_ga_KE0RNSTLW4,.campbells.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,campbells.com,Used by Google Analytics to identify and track an individual session with your device.
+Analytics and Performance,banner,OneTrust,_ga,.campbells.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,campbells.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Unclassified,none,,dtm_token_sc,.campbells.com,/,First party,395.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,DotomiUser,.dotomi.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary,banner,OneTrust,_dd_s,www.campbells.com,,,,0 days,,,,,"Declared, not set",www.campbells.com,"Datadog Cookie used to group all events generated from a unique user session across multiple pages. It contains the current session ID, whether the session is excluded due to sampling, and the expiration date of the session. The cookie is extended for an extra 15 minutes every time the user interacts with the website, up to the maximum user session duration (4 hours)."
+Strictly Necessary,banner,OneTrust,dd_cookie_test_,www.campbells.com,,,,0 days,,,,,"Declared, not set",www.campbells.com,This is a short lived cookie to test browser's cookie functionality. It is not user-specific and is removed immediately.
+Strictly Necessary,banner,OneTrust,OptanonAlertBoxClosed,.www.campbells.com,,,,365 days,,,,,"Declared, not set",.www.campbells.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Strictly Necessary,banner,OneTrust,OptanonAlertBoxClosed,www.campbells.com,,,,364 days,,,,,"Declared, not set",www.campbells.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust. It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down. It enables the website not to show the message more than once to a user. The cookie has a normal lifespan of one year and contains no personal information.
+Strictly Necessary,banner,OneTrust,utag_main__ss,campbells.com,,,,0 days,,,,,"Declared, not set",campbells.com,"Is Start of Session - A flag that indicates whether or not a page view is the start of a session (1=yes, 0=no)"
+Strictly Necessary,banner,OneTrust,utag_main,campbells.com,,,,0 days,,,,,"Declared, not set",campbells.com,This cookie name is associated with the Tealium data platform and is used to enforce consent preferences across 3rd party tags. Within the cookie are several built-in values that keep track of the visitor session.
+Strictly Necessary,banner,OneTrust,utag_main_ses_id,campbells.com,,,,0 days,,,,,"Declared, not set",campbells.com,Session ID - A unique identifier for the session
+Strictly Necessary,banner,OneTrust,user_type,campbells.com,,,,399 days,,,,,"Declared, not set",campbells.com,user
+Strictly Necessary,banner,OneTrust,destini-shopping-cart,www.campbells.com,,,,Session,,,,,"Declared, not set",www.campbells.com,
+Strictly Necessary,banner,OneTrust,utag_main__st,campbells.com,,,,0 days,,,,,"Declared, not set",campbells.com,Timestamp - The Unix/Epoch time stamp in milliseconds
+Strictly Necessary,banner,OneTrust,utag_main_v_id,campbells.com,,,,364 days,,,,,"Declared, not set",campbells.com,Visitor ID - A unique identifier for each visitor
+Strictly Necessary,banner,OneTrust,_cfuvid,campbellscare.zendesk.com,,,,Session,,,,,"Declared, not set",campbellscare.zendesk.com,The _cfuvid cookie is used by Cloudflare to distinguish individual users who share the same IP address for the purpose of enforcing rate limiting rules.
+Strictly Necessary,banner,OneTrust,__cfruid,campbellscare.zendesk.com,,,,Session,,,,,"Declared, not set",campbellscare.zendesk.com,"Cookie associated with sites using CloudFlare, used to identify trusted web traffic."
+Analytics and Performance,banner,OneTrust,utag_main__se,campbells.com,,,,0 days,,,,,"Declared, not set",campbells.com,Session Event Count - The number of events tracked in the current session
+Analytics and Performance,banner,OneTrust,utag_main__sn,campbells.com,,,,364 days,,,,,"Declared, not set",campbells.com,Session Count - The number of sessions for this unique visitor'
+Analytics and Performance,banner,OneTrust,utag_main__pn,campbells.com,,,,0 days,,,,,"Declared, not set",campbells.com,Session Page View Count - The number of pages viewed in the current session
+Analytics and Performance,banner,OneTrust,_gdxxxxxxxxxxxxx,campbells.com,,,,Session,,,,,"Declared, not set",campbells.com,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Analytics and Performance,banner,OneTrust,bito,bidr.io,,,,394 days,,,,,"Declared, not set",bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Analytics and Performance,banner,OneTrust,bitoIsSecure,bidr.io,,,,394 days,,,,,"Declared, not set",bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Analytics and Performance,banner,OneTrust,checkForPermission,bidr.io,,,,0 days,,,,,"Declared, not set",bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Analytics and Performance,banner,OneTrust,TAPID,tealiumiq.com,,,,364 days,,,,,"Declared, not set",tealiumiq.com,This domain is owned by Tealium and is used for its audience streaming service which enables targeting and personalisation of content on a domain.
+Advertising and Social Media,banner,OneTrust,NoCookie,campbells.com,,,,399 days,,,,,"Declared, not set",campbells.com,"This cookie is set when a user opts out of tracking or indicates that they are under the age of 13 (COPPA requirement). If NoCookie=true on either the client site or Bazaarvoice site, then existing tracking cookies are unset. This value is honored as long as the cookie exists."
+Advertising and Social Media,banner,OneTrust,__qca,campbells.com,,,,391 days,,,,,"Declared, not set",campbells.com,"This is a cookie usually associated with Quantcast, a digital advertising company.  They provide website rankings, and the data they collect is also used for audience segmentation and targeted advertising."
+Advertising and Social Media,banner,OneTrust,_tt_enable_cookie,campbells.com,,,,389 days,,,,,"Declared, not set",campbells.com,This cookie name is associated with TikTok which is used to collect data about behavior and purchases on the website and to measure the effect of advertising. It is also used to track website activity to help optimize advertising efforts.
+Advertising and Social Media,banner,OneTrust,_pin_unauth,campbells.com,,,,364 days,,,,,"Declared, not set",campbells.com,"This cookie is assocate with pinterest.  It is used to track the usage of services.
+"
+Advertising and Social Media,banner,OneTrust,_fbp,campbells.com,,,,89 days,,,,,"Declared, not set",campbells.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Advertising and Social Media,banner,OneTrust,_dlt,campbells.com,,,,0 days,,,,,"Declared, not set",campbells.com,This cookie is associated with Google's real time bidding advertising exchange. The main purpose of this cookie is targeting.
+Advertising and Social Media,banner,OneTrust,_ttp,campbells.com,,,,389 days,,,,,"Declared, not set",campbells.com,"This cookie is typically associated with the use of Taptap Digital, a company specializing in digital advertising. It is used for tracking and ad personalization purposes."
+Advertising and Social Media,banner,OneTrust,_rxuuid,targeting.unrulymedia.com,,,,364 days,,,,,"Declared, not set",targeting.unrulymedia.com,This cookie carries out information about how the end user uses the website and any advertising that the end user may have seen before visiting the said website.
+Advertising and Social Media,banner,OneTrust,_tt_enable_cookie,com,,,,389 days,,,,,"Declared, not set",com,This cookie name is associated with TikTok which is used to collect data about behavior and purchases on the website and to measure the effect of advertising. It is also used to track website activity to help optimize advertising efforts.
+Advertising and Social Media,banner,OneTrust,g_state,pinterest.com,,,,0 days,,,,,"Declared, not set",pinterest.com,"Pinterest is a social media web and mobile application company that operates a software system designed to enable saving and discovery of information on the internet using images and, on a smaller scale, GIFs and videos."
+Advertising and Social Media,banner,OneTrust,_pinterest_sess,pinterest.com,,,,359 days,,,,,"Declared, not set",pinterest.com,"Pinterest is a social media web and mobile application company that operates a software system designed to enable saving and discovery of information on the internet using images and, on a smaller scale, GIFs and videos."
+Advertising and Social Media,banner,OneTrust,_auth,pinterest.com,,,,359 days,,,,,"Declared, not set",pinterest.com,"Pinterest is a social media web and mobile application company that operates a software system designed to enable saving and discovery of information on the internet using images and, on a smaller scale, GIFs and videos."
+Advertising and Social Media,banner,OneTrust,g_state,www.pinterest.com,,,,0 days,,,,,"Declared, not set",www.pinterest.com,"Pinterest is a social media web and mobile application company that operates a software system designed to enable saving and discovery of information on the internet using images and, on a smaller scale, GIFs and videos."
+Advertising and Social Media,banner,OneTrust,khaos,rubiconproject.com,,,,364 days,,,,,"Declared, not set",rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Advertising and Social Media,banner,OneTrust,audit,rubiconproject.com,,,,364 days,,,,,"Declared, not set",rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Advertising and Social Media,banner,OneTrust,audit_p,rubiconproject.com,,,,364 days,,,,,"Declared, not set",rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Advertising and Social Media,banner,OneTrust,khaos_p,rubiconproject.com,,,,364 days,,,,,"Declared, not set",rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Advertising and Social Media,banner,OneTrust,ad-id,amazon-adsystem.com,,,,249 days,,,,,"Declared, not set",amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Advertising and Social Media,banner,OneTrust,ad-privacy,amazon-adsystem.com,,,,399 days,,,,,"Declared, not set",amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Advertising and Social Media,banner,OneTrust,__Secure-xxxxxxx,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Advertising and Social Media,banner,OneTrust,VISITOR_PRIVACY_METADATA,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,Testing
+Advertising and Social Media,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Advertising and Social Media,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Testing
+Advertising and Social Media,banner,OneTrust,rlas3,rlcdn.com,,,,364 days,,,,,"Declared, not set",rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Advertising and Social Media,banner,OneTrust,pxrc,rlcdn.com,,,,59 days,,,,,"Declared, not set",rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Advertising and Social Media,banner,OneTrust,msToken,tiktok.com,,,,9 days,,,,,"Declared, not set",tiktok.com,"TikTok is a social media platform owned by ByteDance, known for short-form video sharing. The service is used to create and share videos, and it utilizes cookies for various purposes including advertising and analytics."
+Advertising and Social Media,banner,OneTrust,_ttp,tiktok.com,,,,389 days,,,,,"Declared, not set",tiktok.com,"TikTok is a social media platform owned by ByteDance, known for short-form video sharing. The service is used to create and share videos, and it utilizes cookies for various purposes including advertising and analytics."
+Advertising and Social Media,banner,OneTrust,ak_bmsc,tiktok.com,,,,0 days,,,,,"Declared, not set",tiktok.com,"TikTok is a social media platform owned by ByteDance, known for short-form video sharing. The service is used to create and share videos, and it utilizes cookies for various purposes including advertising and analytics."
+Advertising and Social Media,banner,OneTrust,ttwid,tiktok.com,,,,359 days,,,,,"Declared, not set",tiktok.com,"TikTok is a social media platform owned by ByteDance, known for short-form video sharing. The service is used to create and share videos, and it utilizes cookies for various purposes including advertising and analytics."
+Advertising and Social Media,banner,OneTrust,KRTBCOOKIE_XXXX,pubmatic.com,,,,89 days,,,,,"Declared, not set",pubmatic.com,This cookie is used to correlate IDs with those of Pubmatic partners (such as demand side platform clients or other advertising technology companies). Pubmatic passes information stored by the partner in this cookie to the partner when it is considering whether to purchase advertisements. This enables the partner to make better decisions about whether to display an advertisement to you.
+Advertising and Social Media,banner,OneTrust,KTPCACOOKIE,pubmatic.com,,,,0 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Advertising and Social Media,banner,OneTrust,pi,pubmatic.com,,,,0 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Advertising and Social Media,banner,OneTrust,SPugT,pubmatic.com,,,,29 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Advertising and Social Media,banner,OneTrust,KADUSERCOOKIE,pubmatic.com,,,,364 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Advertising and Social Media,banner,OneTrust,ipc,pubmatic.com,,,,0 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Advertising and Social Media,banner,OneTrust,PugT,pubmatic.com,,,,29 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Advertising and Social Media,banner,OneTrust,chkChromeAb67Sec,pubmatic.com,,,,89 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Advertising and Social Media,banner,OneTrust,SyncRTB4,pubmatic.com,,,,89 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Advertising and Social Media,banner,OneTrust,i,openx.net,,,,364 days,,,,,"Declared, not set",openx.net,This domain is owned by OpenX. The main business activity is: Advertising
+Advertising and Social Media,banner,OneTrust,DUTV,destinilocators.com,,,,0 days,,,,,"Declared, not set",destinilocators.com,This cookie is installed by Destini to differentiate total searches from unique searches.
+Advertising and Social Media,banner,OneTrust,AWSALBTG,destinilocators.com,,,,6 days,,,,,"Declared, not set",destinilocators.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Advertising and Social Media,banner,OneTrust,AWSALBCORS,destinilocators.com,,,,6 days,,,,,"Declared, not set",destinilocators.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Advertising and Social Media,banner,OneTrust,AWSALBTGCORS,destinilocators.com,,,,6 days,,,,,"Declared, not set",destinilocators.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Advertising and Social Media,banner,OneTrust,AWSALB,destinilocators.com,,,,6 days,,,,,"Declared, not set",destinilocators.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Advertising and Social Media,banner,OneTrust,IDSYNC,analytics.yahoo.com,,,,364 days,,,,,"Declared, not set",analytics.yahoo.com,"This domain is owned by Yahoo Inc. whose main business model is online advertising.  Although this domain is associated with Yahoo's web analytics service, because these are third party cookies they can allow Yahoo, in combination with other cookies set, to collect data for targeted advertising purposes."
+Advertising and Social Media,banner,OneTrust,CMPRO,casalemedia.com,,,,89 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Advertising and Social Media,banner,OneTrust,CMID,casalemedia.com,,,,364 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Advertising and Social Media,banner,OneTrust,CMPS,casalemedia.com,,,,89 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Advertising and Social Media,banner,OneTrust,csrftoken,instagram.com,,,,399 days,,,,,"Declared, not set",instagram.com,"Instagram is a social networking service owned by Facebook, Inc. It's designed for sharing photos and videos from a smartphone. The service also uses cookies for various purposes, including analytics, personalization, and advertising."
+Advertising and Social Media,banner,OneTrust,mid,instagram.com,,,,399 days,,,,,"Declared, not set",instagram.com,"Instagram is a social networking service owned by Facebook, Inc. It's designed for sharing photos and videos from a smartphone. The service also uses cookies for various purposes, including analytics, personalization, and advertising."
+Advertising and Social Media,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Advertising and Social Media,banner,OneTrust,csrftoken,ct.pinterest.com,,,,364 days,,,,,"Declared, not set",ct.pinterest.com,"This domain is associated with Pinterest, a social media platform that allows users to share images and media content through collections known as pinboards. The domain is likely used for conversion tracking and advertising purposes."
+Advertising and Social Media,banner,OneTrust,_routing_id,ct.pinterest.com,,,,0 days,,,,,"Declared, not set",ct.pinterest.com,"This domain is associated with Pinterest, a social media platform that allows users to share images and media content through collections known as pinboards. The domain is likely used for conversion tracking and advertising purposes."
+Advertising and Social Media,banner,OneTrust,mc,quantserve.com,,,,395 days,,,,,"Declared, not set",quantserve.com,"This domain is owned by Quantcast. The main business activity is: Market and Audience Segmentation, Targeted advertising services"
+Advertising and Social Media,banner,OneTrust,TDID,adsrvr.org,,,,364 days,,,,,"Declared, not set",adsrvr.org,This domain is owned by TheTradeDesk. The main business activity is: Ad Serving Platform
+Advertising and Social Media,banner,OneTrust,TDCPM,adsrvr.org,,,,364 days,,,,,"Declared, not set",adsrvr.org,This domain is owned by TheTradeDesk. The main business activity is: Ad Serving Platform
+Advertising and Social Media,banner,OneTrust,AMCVS_xxxxxAdobeOrg,go.com,,,,Session,,,,,"Declared, not set",go.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier."
+Advertising and Social Media,banner,OneTrust,s_ecid,go.com,,,,729 days,,,,,"Declared, not set",go.com,This domain is owned by The Walt Disney company. This is used as a landing page to access Disney products and services.
+Advertising and Social Media,banner,OneTrust,AMCV_xxxxxAdobeOrg,go.com,,,,399 days,,,,,"Declared, not set",go.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Advertising and Social Media,banner,OneTrust,TEST_AMCV_COOKIE_WRITE,go.com,,,,Session,,,,,"Declared, not set",go.com,This domain is owned by The Walt Disney company. This is used as a landing page to access Disney products and services.
+Advertising and Social Media,banner,OneTrust,A3,yahoo.com,,,,365 days,,,,,"Declared, not set",yahoo.com,This domain is owned by Yahoo. The main business activity is: Search / Advertising

@@ -1,0 +1,203 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,taboola_session_id,.taboola.com,/laughlinconstablechi-aspca-sc/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,_li_ss,i.liadm.com,/s,Third party,30.00 days,,false,true,none,false,Not declared,,
+Functional,banner,OneTrust,SSESS7687de9a1ff6a8be0463a7df0b1eec93,.www.aspca.org,/,First party,Session,Session,true,true,unspecified,false,Declared & set,www.aspca.org,"This cookie is likely to be a session cookie used to maintain an anonymized user session by the server in a secure environment, often seen in sites built with the Drupal content management system."
+Analytics & Performance Cookies,banner,OneTrust,optimizelyEndUserId,.aspca.org,/,First party,180.00 days,179 days,false,false,unspecified,false,Declared & set,aspca.org,Cookie set by the Optimizely website optimisation plaftform. This cookie is a unique user identifier
+Unclassified,none,,daysExpiry,www.aspca.org,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Functional,banner,OneTrust,market_source__initial_referrer,.aspca.org,/,First party,Session,Session,false,false,unspecified,false,Declared & set,aspca.org,
+Analytics & Performance Cookies,banner,OneTrust,_ga,.www.aspca.org,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,aspca.org,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Functional,banner,OneTrust,_pin_unauth,.aspca.org,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,aspca.org,"This cookie is assocate with pinterest.  It is used to track the usage of services.
+"
+Targeting Cookies,banner,OneTrust,_ttp,.tiktok.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,tiktok.com,"TikTok is a social media platform owned by ByteDance, known for short-form video sharing. The service is used to create and share videos, and it utilizes cookies for various purposes including advertising and analytics."
+Unclassified,none,,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,t_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,t_pt_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,uid,.criteo.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Unclassified,none,,_li_dcdm_c,.aspca.org,/,First party,Session,,false,false,lax,false,"Declared, conflicting",,
+Functional,banner,OneTrust,_lc2_fpi,.aspca.org,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,aspca.org,"This cookie name is associated with LiveIntent which is used to enable targeted advertising by storing a random, unique, device identifier as a 1st party cookie."
+Unclassified,none,,_lc2_fpi_js,.aspca.org,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Functional,banner,OneTrust,smartDash,.aspca.org,/,First party,60.00 days,59 days,false,true,lax,false,Declared & set,aspca.org,
+Unclassified,none,,arc_id,.mgln.ai,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,A3,.yahoo.com,/,Third party,365.25 days,365 days,true,true,none,false,Declared & set,yahoo.com,This domain is owned by Yahoo. The main business activity is: Search / Advertising
+Unclassified,none,,ad-id,.amazon-adsystem.com,/,Third party,231.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_fbp,.aspca.org,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,org,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Targeting Cookies,banner,OneTrust,li_sugr,.linkedin.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,linkedin.com,This domain is owned by LinkedIn Corporation. LinkedIn is a business- and employment-oriented online service that operates via websites and mobile apps.
+Targeting Cookies,banner,OneTrust,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,linkedin.com,This domain is owned by LinkedIn Corporation. LinkedIn is a business- and employment-oriented online service that operates via websites and mobile apps.
+Targeting Cookies,banner,OneTrust,lidc,.linkedin.com,/,Third party,1.00 days,0 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,__cf_bm,.linkedin.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,linkedin.com,This is a CloudFoundry cookie
+Unclassified,none,,_tt_enable_cookie,.aspca.org,/,First party,390.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,_ttp,.aspca.org,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,aspca.org,"This cookie is typically associated with the use of Taptap Digital, a company specializing in digital advertising. It is used for tracking and ad personalization purposes."
+Unclassified,none,,_twpid,.aspca.org,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_svsid,.aspca.org,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,linkedin.com,Used to track usage of the embedded video player.
+Targeting Cookies,banner,OneTrust,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,linkedin.com,This domain is owned by LinkedIn Corporation. LinkedIn is a business- and employment-oriented online service that operates via websites and mobile apps.
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,729 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,guest_id_marketing,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id_ads,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,personalization_id,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,__cf_bm,.twitter.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,linkedin.com,This is a CloudFoundry cookie
+Targeting Cookies,banner,OneTrust,lidid,.liadm.com,/,Third party,400.00 days,729 days,false,true,none,false,Declared & set,liadm.com,This domain is owned by liadm.com. The company provides a range of marketing and advertising services.
+Unclassified,none,,muc_ads,.t.co,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,__cf_bm,.t.co,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,linkedin.com,This is a CloudFoundry cookie
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,fr,.facebook.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,facebook.com,"Contains browser and user unique ID combination, used for targeted advertising."
+Unclassified,none,,id5,.id5-sync.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,market_source__referrer,.aspca.org,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,cookies_enabled,secure.aspca.org,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Analytics & Performance Cookies,banner,OneTrust,_ga,.aspca.org,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,aspca.org,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Unclassified,none,,Springboard,secure.aspca.org,/,First party,400.00 days,,true,true,unspecified,false,Not declared,,
+Functional,banner,OneTrust,_pin_unauth,.secure.aspca.org,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,aspca.org,"This cookie is assocate with pinterest.  It is used to track the usage of services.
+"
+Targeting Cookies,banner,OneTrust,__cf_bm,.thankful.tech,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,linkedin.com,This is a CloudFoundry cookie
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tt_viewer,.teads.tv,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KADUSERCOOKIE,.pubmatic.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,c,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tluid,.3lift.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,tvid,.tremorhub.com,/,Third party,365.24 days,365 days,false,true,none,false,Declared & set,tremorhub.com,This domain is owned by Tremor Video which provides a marketplace for online video based cross-device advertising.
+Targeting Cookies,banner,OneTrust,tv_UICR,.tremorhub.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,tremorhub.com,This domain is owned by Tremor Video which provides a marketplace for online video based cross-device advertising.
+Targeting Cookies,banner,OneTrust,demdex,.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,demdex.net,"This cookie helps Adobe Audience Manger perform basic functions such as visitor identification, ID synchronization, segmentation, modeling, reporting, etc."
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mCookie,.mediawallahscript.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mUserCookie,.mediawallahscript.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,dpm,.dpm.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,dpm.demdex.net,This domain is owned by Adobe Audience Manager. The main business activity is online profiling for targeted marketing.
+Targeting Cookies,banner,OneTrust,CMID,.casalemedia.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMPS,.casalemedia.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMPRO,.casalemedia.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Unclassified,none,,tuuid,.360yield.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Functional,banner,OneTrust,criteo,exchange.mediavine.com,/,Third party,14.00 days,13 days,false,true,none,false,Declared & set,exchange.mediavine.com,"This domain is associated with Mediavine, Inc. which provides website monetization services, including advertising optimization for publishers."
+Unclassified,none,,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,ab,.agkn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,agkn.com,"This domain is owned by Aggregate Knowledge, which has been acquired by Neustar Inc. Aggregate Knowledge provides a data management platform which enables real time targeting and consumer profiling functionality. "
+Targeting Cookies,banner,OneTrust,status,.postrelease.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,postrelease.com,"This domain is owned by Nativo. The company provides a range of marketing and advertising services.
+"
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,389 days,true,true,none,true,Declared & set,criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Functional,banner,OneTrust,am_tokens,exchange.mediavine.com,/,Third party,14.00 days,13 days,false,true,none,false,Declared & set,exchange.mediavine.com,"This domain is associated with Mediavine, Inc. which provides website monetization services, including advertising optimization for publishers."
+Targeting Cookies,banner,OneTrust,am_tokens_invalidate-verizon-pushes,exchange.mediavine.com,/,Third party,14.00 days,13 days,false,true,none,false,Declared & set,exchange.mediavine.com,"This domain is associated with Mediavine, Inc. which provides website monetization services, including advertising optimization for publishers."
+Functional,banner,OneTrust,criteo,.tpmn.co.kr,/,Third party,30.00 days,13 days,false,true,none,false,Declared & set,exchange.mediavine.com,"This domain is associated with Mediavine, Inc. which provides website monetization services, including advertising optimization for publishers."
+Targeting Cookies,banner,OneTrust,visitor,.postrelease.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,postrelease.com,"This domain is owned by Nativo. The company provides a range of marketing and advertising services.
+"
+Unclassified,none,,_cc_cc,.crwdcntrl.net,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,ljt_reader,.lijit.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.1rx.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,v1_151,.revcontent.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,v2_151,.revcontent.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TestIfCookieP,.smartadserver.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,csync,.smartadserver.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,data-c,.media.net,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,media.net,Media.net is a global online advertising technology network.
+Unclassified,none,,pid,.smartadserver.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,visitor-id,.media.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,media.net,Media.net is a global online advertising technology network.
+Unclassified,none,,IMRID,.imrworldwide.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.targeting.unrulymedia.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Functional,banner,OneTrust,criteo,.tpmn.io,/,Third party,30.00 days,13 days,false,true,none,false,Declared & set,exchange.mediavine.com,"This domain is associated with Mediavine, Inc. which provides website monetization services, including advertising optimization for publishers."
+Unclassified,none,,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uuid,.mathtag.com,/,Third party,393.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bitoIsSecure,.bidr.io,/,Third party,394.79 days,,false,true,none,false,Not declared,,
+Unclassified,none,,m,m.stripe.com,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__stripe_mid,.secure.aspca.org,/,First party,365.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,__stripe_sid,.secure.aspca.org,/,First party,0.02 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,bito,.bidr.io,/,Third party,394.79 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.aspca.org,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.aspca.org,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust. It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down. It enables the website not to show the message more than once to a user. The cookie has a normal lifespan of one year and contains no personal information.
+Targeting Cookies,banner,OneTrust,ver,.postrelease.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,postrelease.com,"This domain is owned by Nativo. The company provides a range of marketing and advertising services.
+"
+Targeting Cookies,banner,OneTrust,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,29 days,false,true,none,false,Declared & set,pubmatic.com,This cookie is used to correlate IDs with those of Pubmatic partners (such as demand side platform clients or other advertising technology companies). Pubmatic passes information stored by the partner in this cookie to the partner when it is considering whether to purchase advertisements. This enables the partner to make better decisions about whether to display an advertisement to you.
+Targeting Cookies,banner,OneTrust,PugT,.pubmatic.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Targeting Cookies,banner,OneTrust,u,.agkn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,agkn.com,"This domain is owned by Aggregate Knowledge, which has been acquired by Neustar Inc. Aggregate Knowledge provides a data management platform which enables real time targeting and consumer profiling functionality. "
+Unclassified,none,,IDSYNC,.analytics.yahoo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,acs,.media6degrees.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,adtheorent[cuid],.adentifi.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,clid,.media6degrees.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Functional,banner,OneTrust,_ga_9ZS1C232K9,.aspca.org,/,First party,400.00 days,0 days,false,false,unspecified,false,Declared & set,www.aspca.org,NAUsed by Google Analytics to identify and track an individual session with your device.
+Unclassified,none,,pi,.ml314.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,DotomiUser,.dotomi.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.dotomi.com,/,Third party,393.00 days,389 days,true,true,none,true,Declared & set,criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Unclassified,none,,SEUNCY,.semasio.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,idmap_cookie_id,pixel.idmap.ai,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,vcnpxid,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxst,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxe,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,UID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,io.narrative.guid.v2,io.narrative.io,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,cb,.clickagy.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,chs,aorta.clickagy.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sessionid,.rkdms.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,EE,.exelator.com,/,Third party,120.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rmuid,.linksynergy.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ud,.exelator.com,/,Third party,120.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sc,.rkdms.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,to_master_s,.truoptik.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,to_version_s,.truoptik.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,did,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,didts,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,nnls,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,optimizelySession,.aspca.org,/,First party,180.00 days,,false,false,unspecified,false,Not declared,,
+Functional,banner,OneTrust,_ga_9REHV65J70,.www.aspca.org,/,First party,400.00 days,0 days,false,false,unspecified,false,Declared & set,www.aspca.org,NAUsed by Google Analytics to identify and track an individual session with your device.
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.aspca.org,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.aspca.org,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Targeting Cookies,banner,OneTrust,_gcl_au,.aspca.org,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,aspca.org,"Used by Google AdSense for experimenting with advertisement efficiency across websites using their services For more information about Google&#39;s processing of your personal data, please consult Google&#39;s <a href=""https://business.safety.google/privacy/"" rel=""nofollow"">Privacy &amp; Terms</a> site."
+Targeting Cookies,banner,OneTrust,_uetsid,.aspca.org,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,www.aspca.org,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Analytics & Performance Cookies,banner,OneTrust,_uetvid,.aspca.org,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,www.aspca.org,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Unclassified,none,,cto_bundle,.aspca.org,/,First party,395.42 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,_twsid,.aspca.org,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Functional,banner,OneTrust,_ga_9ZS1C232K9,.www.aspca.org,/,First party,400.00 days,0 days,false,false,unspecified,false,Declared & set,www.aspca.org,NAUsed by Google Analytics to identify and track an individual session with your device.
+Unclassified,none,,SPugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid_lu,.360yield.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,data-c-ts,.media.net,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,media.net,Media.net is a global online advertising technology network.
+Unclassified,none,,anj,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,cto_bundle,.criteo.com,/,Third party,390.00 days,389 days,false,true,none,true,Declared & set,criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Unclassified,none,,pxrc,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ttcsid,.aspca.org,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_CQUBPN3C77U2R2HQ3VJG,.aspca.org,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_C7O7V2LMP02CMKLT2SAG,.aspca.org,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,rlas3,.rlcdn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.rlcdn.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mRemnantVisitedCookie_d41d8cd98f00b204e9800998ecf8427e_11_2026,.mediawallahscript.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Functional,banner,OneTrust,ajs_anonymous_id,aspca.org,,,,364 days,,,,,"Declared, not set",aspca.org,These cookies are generally used for Analytics and help count how many people visit a certain site by tracking if you have visited before. This cookie has a lifespan of 1 year.
+Functional,banner,OneTrust,__tld__,aspca.org,,,,Session,,,,,"Declared, not set",aspca.org,From Segment Analytics.js library; this cookie helps to figure out a top-level domain for a user.__tld__
+Functional,banner,OneTrust,ajs%3Acookies,aspca.org,,,,364 days,,,,,"Declared, not set",aspca.org,"This cookie supports use, service performance, and functionality of websites. Cookies in this domain have lifespan of 1 year."
+Functional,banner,OneTrust,smartDashLRX,aspca.org,,,,29 days,,,,,"Declared, not set",aspca.org,
+Functional,banner,OneTrust,ajs%3Atest,aspca.org,,,,364 days,,,,,"Declared, not set",aspca.org,This performance cookie counts visits and tracks other website traffic-related metrics. Cookies in this domain have lifespan of 1 year.
+Functional,banner,OneTrust,mv_tokens,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,"This domain is associated with Mediavine, Inc. which provides website monetization services, including advertising optimization for publishers."
+Functional,banner,OneTrust,criteo_write_test,static.criteo.net,,,,0 days,,,,,"Declared, not set",static.criteo.net,"This domain is associated with Criteo, a digital advertising company that provides targeted advertising services across the web."
+Functional,banner,OneTrust,AWSELB,rum.optimizely.com,,,,Session,,,,,"Declared, not set",rum.optimizely.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Targeting Cookies,banner,OneTrust,_gat_gtag_xxxxxxxxxxxxxxxxxxxxxxxxxxx,www.aspca.org,,,,0 days,,,,,"Declared, not set",www.aspca.org,Google Analytics
+Targeting Cookies,banner,OneTrust,cto_tld_test,org,,,,0 days,,,,,"Declared, not set",org,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,ajs_group_id,aspca.org,,,,0 days,,,,,"Declared, not set",aspca.org,These cookies track visitor usage and events within the website. Cookies in this domain have lifespan of 1 year.
+Targeting Cookies,banner,OneTrust,ajs_user_id,aspca.org,,,,0 days,,,,,"Declared, not set",aspca.org,"This cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability. Cookies in this domain have lifespan of 1 year."
+Targeting Cookies,banner,OneTrust,optimizelyOptOut,www.aspca.org,,,,0 days,,,,,"Declared, not set",www.aspca.org,n/a
+Targeting Cookies,banner,OneTrust,mid,instagram.com,,,,399 days,,,,,"Declared, not set",instagram.com,"Instagram is a social networking service owned by Facebook, Inc. It's designed for sharing photos and videos from a smartphone. The service also uses cookies for various purposes, including analytics, personalization, and advertising."
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,NID,google.com,,,,182 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Targeting Cookies,banner,OneTrust,mv_tokens_invalidate-verizon-pushes,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,"This domain is associated with Mediavine, Inc. which provides website monetization services, including advertising optimization for publishers."
+Targeting Cookies,banner,OneTrust,ar_debug,pinterest.com,,,,364 days,,,,,"Declared, not set",pinterest.com,This domain is owned by Pinterest. The main business activity is: Social Content Sharing platform
+Targeting Cookies,banner,OneTrust,__Secure-xxxxxxx,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_PRIVACY_METADATA,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,data-thr,media.net,,,,6 days,,,,,"Declared, not set",media.net,Media.net is a global online advertising technology network.
+Strictly Necessary Cookies,banner,OneTrust,_dc_gtm_UA-xxxxxxxx,aspca.org,,,,0 days,,,,,"Declared, not set",aspca.org,"This cookie is associated with sites using Google Tag Manager to load other scripts and code into a page.  Where it is used it may be regarded as Strictly Necessary as without it, other scripts may not function correctly. The end of the name is a unique number which is also an identifier for an associated Google Analytics account."
+Analytics & Performance Cookies,banner,OneTrust,optimizelyDomainTestCookie,www.aspca.org,,,,0 days,,,,,"Declared, not set",www.aspca.org,These Optimizely cookies allow us to test different versions of website pages to different users at the same time and to track how users navigate around our website. We use this information to test new features and make the website easier to use.
+Analytics & Performance Cookies,banner,OneTrust,_gid,www.aspca.org,,,,0 days,,,,,"Declared, not set",www.aspca.org,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Analytics & Performance Cookies,banner,OneTrust,optimizelyRumLB,rum.optimizely.com,,,,Session,,,,,"Declared, not set",rum.optimizely.com,"Controls the AWSELB cookie`s attributes (for example, SameSite and Secure)."
+Analytics & Performance Cookies,banner,OneTrust,AWSELBCORS,rum.optimizely.com,,,,Session,,,,,"Declared, not set",rum.optimizely.com,AWS Classic Load Balancer Cookie.Load Balancing Cookie: Used to map the session to the instance. Same value as AWSELBUsed to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.

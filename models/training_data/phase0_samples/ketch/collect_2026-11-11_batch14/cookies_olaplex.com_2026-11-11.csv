@@ -1,0 +1,115 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Analytics Cookies,banner,Ketch,utm_post,olaplex.com,/products,First party,Session,,false,false,unspecified,false,Declared & set,,
+Unclassified,none,,wpRmStore,olaplex.com,/products,First party,Session,,false,false,unspecified,false,"Declared, conflicting",,
+Strictly Necessary Cookies,banner,Ketch,localization,olaplex.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Shopify
+Strictly Necessary Cookies,banner,Ketch,cart_currency,olaplex.com,/,First party,14.00 days,13 days,false,false,unspecified,false,Declared & set,,Shopify
+Strictly Necessary Cookies,banner,Ketch,_shopify_essential,olaplex.com,/,First party,365.00 days,365 days,true,true,none,false,Declared & set,,Shopify
+Analytics Cookies,banner,Ketch,_shopify_analytics,olaplex.com,/,First party,365.00 days,365 days,true,true,none,false,Declared & set,,
+Unclassified,none,,_shopify_marketing,olaplex.com,/,First party,365.00 days,,true,true,none,false,"Declared, conflicting",,
+Strictly Necessary Cookies,banner,Ketch,_shop_app_essential,.shop.app,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,,Shopify
+Analytics Cookies,banner,Ketch,_cs_c,.olaplex.com,/,First party,395.42 days,395 days,false,false,lax,false,Declared & set,,Contentsquare
+Strictly Necessary Cookies,banner,Ketch,_swb,.olaplex.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Strictly Necessary Cookies,banner,Ketch,_ketch_consent_v1_,.olaplex.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Strictly Necessary Cookies,banner,Ketch,_uetmsdns,.olaplex.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,,Microsoft Ads
+Analytics Cookies,banner,Ketch,_ga,.olaplex.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Unclassified,none,,shopify_client_id,olaplex.com,/,First party,365.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Analytics Cookies,banner,Ketch,utm_post,olaplex.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,
+Strictly Necessary Cookies,banner,Ketch,_swb_consent_,.olaplex.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Strictly Necessary Cookies,banner,Ketch,cart,olaplex.com,/,First party,91.00 days,90 days,false,true,none,false,Declared & set,,Shopify
+Targeting and Advertising Cookies,banner,Ketch,_ttp,.olaplex.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Tiktok Ads
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Targeting and Advertising Cookies,banner,Ketch,_pin_unauth,.olaplex.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Pinterest
+Unclassified,none,,_shopify_cmp,.olaplex.com,/,First party,365.25 days,,false,true,lax,false,Not declared,,
+Targeting and Advertising Cookies,banner,Ketch,_gcl_au,.olaplex.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Unclassified,none,,_ga_DP8Y6EZ7H4,.olaplex.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Targeting and Advertising Cookies,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Targeting and Advertising Cookies,banner,Ketch,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Pinterest
+Unclassified,none,,ttcsid_C3FHQ1EPKKNB3CA84UMG,.olaplex.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid,.olaplex.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Targeting and Advertising Cookies,banner,Ketch,_rdt_uuid,.olaplex.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Analytics Cookies,banner,Ketch,_cs_id,.olaplex.com,/,First party,395.42 days,395 days,false,false,lax,false,Declared & set,,Contentsquare
+Analytics Cookies,banner,Ketch,_cs_s,.olaplex.com,/,First party,0.02 days,,false,false,lax,false,Declared & set,,Contentsquare
+Analytics Cookies,banner,Ketch,BVBRANDID,.olaplex.com,/,First party,365.00 days,364 days,false,true,lax,false,Declared & set,,Bazaarvoice
+Analytics Cookies,banner,Ketch,BVBRANDSID,.olaplex.com,/,First party,0.02 days,,false,true,lax,false,Declared & set,,Bazaarvoice
+Strictly Necessary Cookies,banner,Ketch,forterToken,.olaplex.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,,Forter
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Targeting and Advertising Cookies,banner,Ketch,_rdt_pn,.olaplex.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Analytics Cookies,banner,Ketch,bv_metrics,,,,,,,,,,"Declared, not set",,
+Analytics Cookies,banner,Ketch,_cs_root-domain,,,,,,,,,,"Declared, not set",,Contentsquare
+Analytics Cookies,banner,Ketch,_cs_same_site,,,,,,,,,,"Declared, not set",,Contentsquare
+Analytics Cookies,banner,Ketch,fw_se,,,,,364 days,,,,,"Declared, not set",,
+Analytics Cookies,banner,Ketch,fw_uid,,,,,364 days,,,,,"Declared, not set",,
+Analytics Cookies,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics Cookies,banner,Ketch,_gd*,,,,,,,,,,"Declared, not set",,Google Analytics
+Analytics Cookies,banner,Ketch,MUID,,,,,389 days,,,,,"Declared, not set",,Microsoft Clarity
+Analytics Cookies,banner,Ketch,optimizelyDomainTestCookie,,,,,,,,,,"Declared, not set",,Optimizely
+Analytics Cookies,banner,Ketch,optimizelyEndUserId,,,,,179 days,,,,,"Declared, not set",,Optimizely
+Analytics Cookies,banner,Ketch,optimizelySession,,,,,179 days,,,,,"Declared, not set",,Optimizely
+Analytics Cookies,banner,Ketch,rmStore,,,,,,,,,,"Declared, not set",,Rakuten Ads
+Analytics Cookies,banner,Ketch,_shopify_s,,,,,,,,,,"Declared, not set",,Shopify
+Analytics Cookies,banner,Ketch,_shopify_sa_p,,,,,,,,,,"Declared, not set",,Shopify
+Analytics Cookies,banner,Ketch,_shopify_sa_t,,,,,,,,,,"Declared, not set",,Shopify
+Analytics Cookies,banner,Ketch,_shopify_y,,,,,365 days,,,,,"Declared, not set",,Shopify
+Analytics Cookies,banner,Ketch,sp,,,,,364 days,,,,,"Declared, not set",,snowplow
+Analytics Cookies,banner,Ketch,_sp_id.*,,,,,400 days,,,,,"Declared, not set",,snowplow
+Analytics Cookies,banner,Ketch,_sp_ses.*,,,,,,,,,,"Declared, not set",,snowplow
+Analytics Cookies,banner,Ketch,ss_enduser_cookie|ac27aed7e5,,,,,,,,,,"Declared, not set",,
+Functional Cookies,banner,Ketch,cookie_check,,,,,,,,,,"Declared, not set",,
+Functional Cookies,banner,Ketch,data-timeout,,,,,6 days,,,,,"Declared, not set",,
+Functional Cookies,banner,Ketch,i18next,,,,,,,,,,"Declared, not set",,
+Functional Cookies,banner,Ketch,LANG,,,,,,,,,,"Declared, not set",,PayPal
+Functional Cookies,banner,Ketch,optimizelyRumLB,,,,,,,,,,"Declared, not set",,Optimizely
+Functional Cookies,banner,Ketch,rapid_test-*,,,,,,,,,,"Declared, not set",,Yottaa
+Functional Cookies,banner,Ketch,swym-email,,,,,364 days,,,,,"Declared, not set",,Swym
+Functional Cookies,banner,Ketch,swym-o_s,,,,,,,,,,"Declared, not set",,Swym
+Functional Cookies,banner,Ketch,swym-pid,,,,,364 days,,,,,"Declared, not set",,Swym
+Functional Cookies,banner,Ketch,swym-session-id,,,,,,,,,,"Declared, not set",,Swym
+Functional Cookies,banner,Ketch,swym-swymRegid,,,,,364 days,,,,,"Declared, not set",,Swym
+Functional Cookies,banner,Ketch,swym-v-ckd,,,,,,,,,,"Declared, not set",,Swym
+Functional Cookies,banner,Ketch,test,,,,,,,,,,"Declared, not set",,
+Functional Cookies,banner,Ketch,wpm-test-cookie,,,,,,,,,,"Declared, not set",,Shopify
+Strictly Necessary Cookies,banner,Ketch,ad-privacy,,,,,400 days,,,,,"Declared, not set",,Amazon Ads
+Strictly Necessary Cookies,banner,Ketch,ak_bmsc,,,,,,,,,,"Declared, not set",,Akamai
+Strictly Necessary Cookies,banner,Ketch,AWSELB,,,,,,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Strictly Necessary Cookies,banner,Ketch,AWSELBCORS,,,,,,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Strictly Necessary Cookies,banner,Ketch,__cf_bm,,,,,,,,,,"Declared, not set",,Cloudflare
+Strictly Necessary Cookies,banner,Ketch,cf_clearance,,,,,364 days,,,,,"Declared, not set",,Cloudflare
+Strictly Necessary Cookies,banner,Ketch,dd_cookie_test_*,,,,,,,,,,"Declared, not set",,Datadog
+Strictly Necessary Cookies,banner,Ketch,domain,,,,,364 days,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,enforce_policy,,,,,365 days,,,,,"Declared, not set",,PayPal
+Strictly Necessary Cookies,banner,Ketch,__kla_off,,,,,,,,,,"Declared, not set",,Klaviyo
+Strictly Necessary Cookies,banner,Ketch,l7_az,,,,,,,,,,"Declared, not set",,PayPal
+Strictly Necessary Cookies,banner,Ketch,NoCookie,,,,,400 days,,,,,"Declared, not set",,Bazaarvoice
+Strictly Necessary Cookies,banner,Ketch,nsid,,,,,400 days,,,,,"Declared, not set",,PayPal
+Strictly Necessary Cookies,banner,Ketch,optimizelyOptOut,,,,,,,,,,"Declared, not set",,Optimizely
+Strictly Necessary Cookies,banner,Ketch,_pay_session,,,,,,,,,,"Declared, not set",,Shopify
+Strictly Necessary Cookies,banner,Ketch,secure_customer_sig,,,,,364 days,,,,,"Declared, not set",,Shopify
+Strictly Necessary Cookies,banner,Ketch,_shopify_test,,,,,,,,,,"Declared, not set",,Shopify
+Strictly Necessary Cookies,banner,Ketch,Shoplift_Essential,,,,,364 days,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,ts_c,,,,,364 days,,,,,"Declared, not set",,PayPal
+Strictly Necessary Cookies,banner,Ketch,tsrce,,,,,2 days,,,,,"Declared, not set",,PayPal
+Strictly Necessary Cookies,banner,Ketch,__verify,,,,,,,,,,"Declared, not set",,
+Strictly Necessary Cookies,banner,Ketch,x-pp-s,,,,,400 days,,,,,"Declared, not set",,PayPal
+Targeting and Advertising Cookies,banner,Ketch,ad-id,,,,,232 days,,,,,"Declared, not set",,Amazon Ads
+Targeting and Advertising Cookies,banner,Ketch,ar_debug,,,,,364 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Targeting and Advertising Cookies,banner,Ketch,criteo_write_test,,,,,,,,,,"Declared, not set",,Criteo
+Targeting and Advertising Cookies,banner,Ketch,cto_bundle,,,,,395 days,,,,,"Declared, not set",,Criteo
+Targeting and Advertising Cookies,banner,Ketch,cto_tld_test,,,,,,,,,,"Declared, not set",,Criteo
+Targeting and Advertising Cookies,banner,Ketch,_fbp,,,,,89 days,,,,,"Declared, not set",,Facebook Ads
+Targeting and Advertising Cookies,banner,Ketch,fr,,,,,,,,,,"Declared, not set",,Facebook Ads
+Targeting and Advertising Cookies,banner,Ketch,__kla_id,,,,,400 days,,,,,"Declared, not set",,Klaviyo
+Targeting and Advertising Cookies,banner,Ketch,MR,,,,,6 days,,,,,"Declared, not set",,Microsoft Clarity
+Targeting and Advertising Cookies,banner,Ketch,MSPTC,,,,,389 days,,,,,"Declared, not set",,Microsoft Ads
+Targeting and Advertising Cookies,banner,Ketch,MUID,,,,,389 days,,,,,"Declared, not set",,Microsoft Clarity
+Targeting and Advertising Cookies,banner,Ketch,_pin_aem,,,,,364 days,,,,,"Declared, not set",,Pinterest
+Targeting and Advertising Cookies,banner,Ketch,_rdt_em,,,,,,,,,,"Declared, not set",,Reddit
+Targeting and Advertising Cookies,banner,Ketch,rmStore,,,,,,,,,,"Declared, not set",,Rakuten Ads
+Targeting and Advertising Cookies,banner,Ketch,sa-user-id,,,,,365 days,,,,,"Declared, not set",,StackAdapt
+Targeting and Advertising Cookies,banner,Ketch,sa-user-id-v2,,,,,364 days,,,,,"Declared, not set",,StackAdapt
+Targeting and Advertising Cookies,banner,Ketch,sa-user-id-v3,,,,,364 days,,,,,"Declared, not set",,StackAdapt
+Targeting and Advertising Cookies,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Targeting and Advertising Cookies,banner,Ketch,ts,,,,,364 days,,,,,"Declared, not set",,Taboola
+Targeting and Advertising Cookies,banner,Ketch,ttcsid.*,,,,,389 days,,,,,"Declared, not set",,Tiktok Ads
+Targeting and Advertising Cookies,banner,Ketch,_uetsid,,,,,,,,,,"Declared, not set",,Microsoft Ads
+Targeting and Advertising Cookies,banner,Ketch,_uetvid,,,,,389 days,,,,,"Declared, not set",,Microsoft Ads
+Targeting and Advertising Cookies,banner,Ketch,uid,,,,,389 days,,,,,"Declared, not set",,Adform

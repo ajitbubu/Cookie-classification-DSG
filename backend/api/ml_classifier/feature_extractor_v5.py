@@ -5,6 +5,7 @@ Extracts 52 features as expected by the v5/v6 model.
 """
 
 import re
+from pathlib import Path
 from typing import Dict, List, Any, Optional
 import numpy as np
 
@@ -204,16 +205,22 @@ class FeatureExtractorV5:
         return np.array(features, dtype=np.float32)
 
 
-def get_feature_extractor_for_model(model_version: str):
+def get_feature_extractor_for_model(model_version: str, model_path=None):
     """
     Get the appropriate feature extractor for a model version.
 
     Args:
         model_version: Model version string (e.g., "5.0.0", "6.0.0")
+        model_path: Model directory; one holding feature_lookups.json (v7.1.0+)
+            gets the V7 extractor built from it
 
     Returns:
         Feature extractor instance
     """
+    from .feature_extractor_v7 import LOOKUP_FILE, FeatureExtractorV7
+
+    if model_path is not None and (Path(model_path) / LOOKUP_FILE).exists():
+        return FeatureExtractorV7.load(model_path)
     if model_version.startswith(('5.', '6.', '7.')):
         return FeatureExtractorV5()
     elif model_version.startswith('3.'):

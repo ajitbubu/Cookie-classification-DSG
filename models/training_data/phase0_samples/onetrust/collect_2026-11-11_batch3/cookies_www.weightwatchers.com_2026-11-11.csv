@@ -1,0 +1,275 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Targeting Cookies,banner,OneTrust,taboola_session_id,.taboola.com,/weightwatchers-us-video/,Third party,Session,Session,false,true,none,false,Declared & set,taboola.com,"This domain is owned by Taboola Inc, a USA based company with multi-national presence.  It provides tageted native advertising services."
+Targeting Cookies,banner,OneTrust,taboola_session_id,.taboola.com,/weightwatchers-us-sc/,Third party,Session,Session,false,true,none,false,Declared & set,taboola.com,"This domain is owned by Taboola Inc, a USA based company with multi-national presence.  It provides tageted native advertising services."
+Unclassified,none,,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,taboola_session_id,.taboola.com,/geistm-ww-sc/,Third party,Session,Session,false,true,none,false,Declared & set,taboola.com,"This domain is owned by Taboola Inc, a USA based company with multi-national presence.  It provides tageted native advertising services."
+Unclassified,none,,connection_info,www.weightwatchers.com,/us/en,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,connection_info,www.weightwatchers.com,/us,First party,Session,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.weightwatchers.com,/us,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.weightwatchers.com/us,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.weightwatchers.com,/us,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.weightwatchers.com/us,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Targeting Cookies,banner,OneTrust,_li_ss,i.liadm.com,/s,Third party,30.00 days,30 days,false,true,none,false,Declared & set,i.liadm.com,"This domain is owned by liadm.com. The company provides a range of marketing and advertising services.
+"
+Performance Cookies,banner,OneTrust,_ga,.weightwatchers.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,weightwatchers.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Unclassified,none,,ww_browser_id,.weightwatchers.com,/,First party,400.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,connection_info,www.weightwatchers.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ww_privacy_settings,.weightwatchers.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,wwLI,.weightwatchers.com,/,First party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AMP_MKTG_d0f466b6ce,.weightwatchers.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,ajs_anonymous_id,.weightwatchers.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,akaalb_Instance-1,apps.rokt.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,ww_amp_session_id,.weightwatchers.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,EXP_d0f466b6ce_identity,.weightwatchers.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,_ttp,.tiktok.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,bat.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Unclassified,none,,_tt_enable_cookie,.weightwatchers.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ttp,.weightwatchers.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_scid,.weightwatchers.com,/,First party,395.00 days,395 days,false,false,lax,false,Declared & set,weightwatchers.com,"Cookie associated with Snapchat. Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates realtime bidding for advertisers."
+Performance Cookies,banner,OneTrust,__pdst,www.weightwatchers.com,/,First party,365.00 days,364 days,false,false,strict,false,Declared & set,www.weightwatchers.com,Podsights cookie used to track Hubspots podcast advertising results.
+Targeting Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Mircosoft - it is the site for the search engine Bing.
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,blis_ctid,www.weightwatchers.com,/,First party,30.00 days,,false,false,strict,false,Not declared,,
+Unclassified,none,,_dpm_ses.3388,.weightwatchers.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,brwsr,.pxf.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,irtps,.pxf.io,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,__cf_bm,.bzrcdn.openai.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,hubspot.com,This is a CloudFoundry cookie
+Targeting Cookies,banner,OneTrust,_cfuvid,.bzrcdn.openai.com,/,Third party,Session,Session,true,true,none,false,Declared & set,hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Unclassified,none,,__ps_r,.weightwatchers.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__ps_sr,.weightwatchers.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__ps_lu,.weightwatchers.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__ps_slu,.weightwatchers.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__ps_did,.weightwatchers.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__ps_fva,.weightwatchers.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__obref,.weightwatchers.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_aid,.weightwatchers.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_axwrt_ts,.weightwatchers.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_axwrt,.weightwatchers.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,TDID,.adsrvr.org,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,adsrvr.org,This domain is owned by TheTradeDesk. The main business activity is: Ad Serving Platform
+Unclassified,none,,uid,.criteo.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,zync-uuid,.rezync.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,visitor,.postrelease.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,postrelease.com,"This domain is owned by Nativo. The company provides a range of marketing and advertising services.
+"
+Targeting Cookies,banner,OneTrust,status,.postrelease.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,postrelease.com,"This domain is owned by Nativo. The company provides a range of marketing and advertising services.
+"
+Targeting Cookies,banner,OneTrust,demdex,.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,demdex.net,"This cookie helps Adobe Audience Manger perform basic functions such as visitor identification, ID synchronization, segmentation, modeling, reporting, etc."
+Targeting Cookies,banner,OneTrust,_fbp,.weightwatchers.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,weightwatchers.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Unclassified,none,,barometric[cuid],.trkn.us,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,sc_at,.snapchat.com,/,Third party,390.00 days,390 days,false,true,none,false,Declared & set,snapchat.com,Cookie associated with embedding content from Snapchat.
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,uuid2,.adnxs.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Targeting Cookies,banner,OneTrust,khaos,.rubiconproject.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,dpm,.dpm.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,dpm.demdex.net,This domain is owned by Adobe Audience Manager. The main business activity is online profiling for targeted marketing.
+Unclassified,none,,sp,.tvpixel.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_aa4,.weightwatchers.com,/,First party,0.04 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_aa6,.weightwatchers.com,/,First party,0.04 days,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,t_gid,.taboola.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,taboola.com,"This domain is owned by Taboola Inc, a USA based company with multi-national presence.  It provides tageted native advertising services."
+Targeting Cookies,banner,OneTrust,t_pt_gid,.taboola.com,/,Third party,365.00 days,364 days,false,true,none,true,Declared & set,taboola.com,_gid
+Targeting Cookies,banner,OneTrust,TapAd_TS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,TS
+Targeting Cookies,banner,OneTrust,TapAd_DID,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,This domain is owned by Tapad Inc. a US based company that provides technology to track users across devices to enhance targeting capabilities.
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,auid,.acuityplatform.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,acuityplatform.com,This domain is owned by Acuity Platform. The company provides a range of cookie-tracking solutions and marketing and advertising services.
+Targeting Cookies,banner,OneTrust,A3,.yahoo.com,/,Third party,365.25 days,365 days,true,true,none,false,Declared & set,yahoo.com,This domain is owned by Yahoo. The main business activity is: Search / Advertising
+Unclassified,none,,_sctr,.weightwatchers.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,bito,.bidr.io,/,Third party,394.79 days,394 days,false,true,none,false,Declared & set,bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Targeting Cookies,banner,OneTrust,bitoIsSecure,.bidr.io,/,Third party,394.79 days,394 days,false,true,none,false,Declared & set,bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Unclassified,none,,brwsr,.ojrq.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,kwsu,gwmtracking.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,ver,.postrelease.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,postrelease.com,"This domain is owned by Nativo. The company provides a range of marketing and advertising services.
+"
+Unclassified,none,,axcrt,.applovin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_clck,.weightwatchers.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,lidid,.liadm.com,/,Third party,400.00 days,730 days,false,true,none,false,Declared & set,liadm.com,This domain is owned by liadm.com. The company provides a range of marketing and advertising services.
+Targeting Cookies,banner,OneTrust,tuuid,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,c,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Unclassified,none,,KADUSERCOOKIE,.pubmatic.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,acs,.media6degrees.com,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,media6degrees.com,This domain is owned by Media6degrees. The main business activity is: Advertising
+Unclassified,none,,mCookie,.mediawallahscript.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mUserCookie,.mediawallahscript.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tt_viewer,.teads.tv,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tvid,.tremorhub.com,/,Third party,365.24 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tv_UICR,.tremorhub.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,ab,.agkn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,agkn.com,"This domain is owned by Aggregate Knowledge, which has been acquired by Neustar Inc. Aggregate Knowledge provides a data management platform which enables real time targeting and consumer profiling functionality. "
+Targeting Cookies,banner,OneTrust,tluid,.3lift.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,3lift.com,"This domain is owned by TripleLift, a USA based business providing programmatic native advertising services."
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,CMPRO,.casalemedia.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,tuuid,.360yield.com,/,Third party,90.00 days,364 days,true,true,none,false,Declared & set,bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Unclassified,none,,criteo,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,am_tokens,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,am_tokens_invalidate-verizon-pushes,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_cc_cc,.crwdcntrl.net,/,Third party,Session,Session,false,true,none,false,Declared & set,crwdcntrl.net,This domain is owned by Lotame. The main business activity is: Data Management Platform - Targeting /Advertising
+Unclassified,none,,_rxuuid,.1rx.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,visitor-id,.media.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,data-c,.media.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,MR,.c.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,bat.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Unclassified,none,,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,89 days,true,true,none,true,Declared & set,rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Unclassified,none,,criteo,.tpmn.co.kr,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,v1_151,.revcontent.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,v2_151,.revcontent.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SM,.c.clarity.ms,/,Third party,Session,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,MUID,.clarity.ms,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Mircosoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,MR,.c.clarity.ms,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,bat.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Unclassified,none,,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.targeting.unrulymedia.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,pid,.smartadserver.com,/,Third party,90.00 days,396 days,false,true,none,false,Declared & set,smartadserver.com,This domain is owned by Smart Ad Server. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,TestIfCookieP,.smartadserver.com,/,Third party,395.00 days,396 days,false,true,none,false,Declared & set,smartadserver.com,This domain is owned by Smart Ad Server. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,csync,.smartadserver.com,/,Third party,30.00 days,396 days,false,true,none,false,Declared & set,smartadserver.com,This domain is owned by Smart Ad Server. The main business activity is: Advertising
+Unclassified,none,,sa-user-id,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,addshoppers,app.shop.pe,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,addshoppers.com,app.shop.pe,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,addshoppers.com,www.weightwatchers.com,/,First party,400.00 days,,false,true,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,ljt_reader,.lijit.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,lijit.com,This domain is owned by Federated Media Publishing. The main business activity is: Advertising
+Unclassified,none,,criteo,.tpmn.io,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uuid,.mathtag.com,/,Third party,392.99 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,__cf_bm,.bzr.openai.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,hubspot.com,This is a CloudFoundry cookie
+Targeting Cookies,banner,OneTrust,_cfuvid,.bzr.openai.com,/,Third party,Session,Session,true,true,none,false,Declared & set,hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Unclassified,none,,vcnpxid,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,yieldmo_id,.yieldmo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,akaalb_Instance-1,apps.rokt-api.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,wfivefivec,.w55c.net,/,Third party,395.42 days,395 days,false,true,none,false,Declared & set,w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,matchgoogle,.w55c.net,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Unclassified,none,,ww-trfc,.weightwatchers.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_dpm_id.3388,.weightwatchers.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,matchbluekai,.w55c.net,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Unclassified,none,,IR_PI,.weightwatchers.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,IR_16605,.weightwatchers.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,_rdt_uuid,.weightwatchers.com,/,First party,90.00 days,,false,true,strict,false,Not declared,,
+Functional Cookies,banner,OneTrust,_tq_id.TV-7290726354-1.a9c4,www.weightwatchers.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,www.weightwatchers.com,_tq_id.TV
+Unclassified,none,,sd-session-id,live.rezync.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_scid_r,.weightwatchers.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,pt,.ispot.tv,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,_gcl_au,.weightwatchers.com,/,First party,90.00 days,90 days,false,false,unspecified,false,Declared & set,weightwatchers.com,Google conversion tracking cookie
+Targeting Cookies,banner,OneTrust,_uetsid,.weightwatchers.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,weightwatchers.com,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Performance Cookies,banner,OneTrust,_uetvid,.weightwatchers.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,weightwatchers.com,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Unclassified,none,,tatari-cookie-test,www.weightwatchers.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,tatari-session-cookie,.weightwatchers.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cto_bundle,.weightwatchers.com,/,First party,395.42 days,,false,false,unspecified,false,Not declared,,
+Functional Cookies,banner,OneTrust,_pin_unauth,.weightwatchers.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,weightwatchers.com,"This cookie is assocate with pinterest.  It is used to track the usage of services.
+"
+Social Media Cookies,banner,OneTrust,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,ct.pinterest.com,"This domain is associated with Pinterest, a social media platform that allows users to share images and media content through collections known as pinboards. The domain is likely used for conversion tracking and advertising purposes."
+Unclassified,none,,_li_dcdm_c,.weightwatchers.com,/,First party,Session,,false,false,lax,false,Not declared,,
+Unclassified,none,,_lc2_fpi,.weightwatchers.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_lc2_fpi_js,.weightwatchers.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,ANON_ID,.tribalfusion.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,tribalfusion.com,This domain is owned by TribalFusion. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,60 days,false,true,none,false,Declared & set,tapad.com,This domain is owned by Tapad Inc. a US based company that provides technology to track users across devices to enhance targeting capabilities.
+Targeting Cookies,banner,OneTrust,aum,.acuityplatform.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,acuityplatform.com,This domain is owned by Acuity Platform. The company provides a range of cookie-tracking solutions and marketing and advertising services.
+Unclassified,none,,_clsk,.weightwatchers.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,IDSYNC,.analytics.yahoo.com,/,Third party,365.00 days,366 days,false,true,none,false,Declared & set,analytics.yahoo.com,"This domain is owned by Yahoo Inc. whose main business model is online advertising.  Although this domain is associated with Yahoo's web analytics service, because these are third party cookies they can allow Yahoo, in combination with other cookies set, to collect data for targeted advertising purposes."
+Targeting Cookies,banner,OneTrust,sglst,.media6degrees.com,/,Third party,180.00 days,0 days,false,true,none,false,Declared & set,media6degrees.com,This domain is owned by Media6degrees. The main business activity is: Advertising
+Unclassified,none,,ssi,.sitescout.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uid,.turn.com,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,i,.openx.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,openx.net,This domain is owned by OpenX. The main business activity is: Advertising
+Unclassified,none,,_ssuma,.sitescout.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,clid,.media6degrees.com,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,media6degrees.com,This domain is owned by Media6degrees. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,did,.pippio.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,pippio.com,"This domain appears to be owned by Arbor Technologies, a USA based company providing user tracking and data services for online advertising."
+Targeting Cookies,banner,OneTrust,didts,.pippio.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,pippio.com,"This domain appears to be owned by Arbor Technologies, a USA based company providing user tracking and data services for online advertising."
+Targeting Cookies,banner,OneTrust,nnls,.pippio.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,pippio.com,"This domain appears to be owned by Arbor Technologies, a USA based company providing user tracking and data services for online advertising."
+Targeting Cookies,banner,OneTrust,rdrlst,.media6degrees.com,/,Third party,180.00 days,0 days,false,true,none,false,Declared & set,media6degrees.com,This domain is owned by Media6degrees. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,_li_ss,.weightwatchers.com,/,First party,400.00 days,30 days,false,false,lax,false,Declared & set,i.liadm.com,"This domain is owned by liadm.com. The company provides a range of marketing and advertising services.
+"
+Targeting Cookies,banner,OneTrust,li_sugr,.linkedin.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,lidc,.linkedin.com,/,Third party,1.00 days,0 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,__cf_bm,.linkedin.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,hubspot.com,This is a CloudFoundry cookie
+Unclassified,none,,mc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,adtheorent[cuid],.adentifi.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,cb,.clickagy.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,chs,aorta.clickagy.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,idmap_cookie_id,pixel.idmap.ai,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,vcnpxst,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxsn,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxe,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,rlas3,.rlcdn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Targeting Cookies,banner,OneTrust,pxrc,.rlcdn.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,audit,.rubiconproject.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Unclassified,none,,SPugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,tuuid_lu,.360yield.com,/,Third party,90.00 days,364 days,true,true,none,false,Declared & set,bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Unclassified,none,,data-c-ts,.media.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,30 days,false,true,none,false,Declared & set,pubmatic.com,This cookie is used to correlate IDs with those of Pubmatic partners (such as demand side platform clients or other advertising technology companies). Pubmatic passes information stored by the partner in this cookie to the partner when it is considering whether to purchase advertisements. This enables the partner to make better decisions about whether to display an advertisement to you.
+Targeting Cookies,banner,OneTrust,PugT,.pubmatic.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Targeting Cookies,banner,OneTrust,anj,.adnxs.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Targeting Cookies,banner,OneTrust,pxrc,.pippio.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,pippio.com,"This domain appears to be owned by Arbor Technologies, a USA based company providing user tracking and data services for online advertising."
+Unclassified,none,,cto_bundle,.criteo.com,/,Third party,390.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,ad-id,.amazon-adsystem.com,/,Third party,231.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,tv_UIAM,.tremorhub.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,TDCPM,.adsrvr.org,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,adsrvr.org,This domain is owned by TheTradeDesk. The main business activity is: Ad Serving Platform
+Unclassified,none,,digitalAudience,.target.digitalaudience.io,/,Third party,364.98 days,,true,true,none,false,Not declared,,
+Unclassified,none,,UID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,DotomiUser,.dotomi.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.dotomi.com,/,Third party,395.00 days,89 days,true,true,none,true,Declared & set,rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,EE,.exelator.com,/,Third party,120.00 days,0 days,false,true,none,false,Declared & set,exelator.com,This domain is owned by Exelate. The main business activity is: Advertising Data Aggregation
+Targeting Cookies,banner,OneTrust,ud,.exelator.com,/,Third party,120.00 days,0 days,false,true,none,false,Declared & set,exelator.com,This domain is owned by Exelate. The main business activity is: Advertising Data Aggregation
+Unclassified,none,,ndat,.ninthdecimal.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SEUNCY,.semasio.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_uid,.fwmrm.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mRemnantVisitedCookie_d41d8cd98f00b204e9800998ecf8427e_11_2026,.mediawallahscript.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ax_visitor,.weightwatchers.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_C4RNQMH6H18A0MH13VH0,.weightwatchers.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid,.weightwatchers.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,JSESSIONID,.nr-data.net,/,Third party,Session,Session,false,true,none,false,Declared & set,nr-data.net,"This domain is controlled by New Relic, which provides a platform for monitoring the performance of web and mobile applications."
+Targeting Cookies,banner,OneTrust,ab.storage.deviceId.7d1ca02a-077b-4570-a425-2968aaed9e87,.weightwatchers.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,weightwatchers.com,"Out-of-the-box randomly generated string used by Braze to identify anonymous users, and to differentiate users’ devices and enables device-based messaging"
+Unclassified,none,,AMP_d0f466b6ce,.weightwatchers.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Functional Cookies,banner,OneTrust,ab.storage.sessionId.7d1ca02a-077b-4570-a425-2968aaed9e87,.weightwatchers.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,weightwatchers.com,ab.storage.sessionId
+Targeting Cookies,banner,OneTrust,optimizelyOptOut,weightwatchers.com,,,,0 days,,,,,"Declared, not set",weightwatchers.com,n/a
+Targeting Cookies,banner,OneTrust,GoogleAdServingTest,www.weightwatchers.com,,,,Session,,,,,"Declared, not set",www.weightwatchers.com,This cookie is used to determine what ads have been shown to the website visitor.
+Targeting Cookies,banner,OneTrust,__gads,weightwatchers.com,,,,389 days,,,,,"Declared, not set",weightwatchers.com,"This cookie is associated with the DoubleClick for Publishers service from Google. Its purpose is to do with the showing of adverts on the site, for which the owner may earn some revenue."
+Targeting Cookies,banner,OneTrust,optimizelyOptOut,www.weightwatchers.com,,,,0 days,,,,,"Declared, not set",www.weightwatchers.com,n/a
+Targeting Cookies,banner,OneTrust,__gpi,weightwatchers.com,,,,389 days,,,,,"Declared, not set",weightwatchers.com,Display of personalized advertisements in the Google advertising network based on your pseudonymized surfing behavior collected via Google. Measuring and optimizing the success of our Google Ads advertising campaigns.
+Targeting Cookies,banner,OneTrust,ab._gdnnnnnnnnnnnnn,weightwatchers.com,,,,Session,,,,,"Declared, not set",weightwatchers.com,"This cookie is associated with software provided by Braze, is a marketing company that develops customer relationship management and mobile marketing automation software which businesses use to manage their applications. These cookies track session_id, device_id, and external_id. This is a pattern type cookie with a common root of ab._gd followed by a string of numbers."
+Targeting Cookies,banner,OneTrust,,www.facebook.com,,,,Session,,,,,"Declared, not set",www.facebook.com,"This domain is owned by Facebook, which is the world's largest social networking service.  As a third party host provider, it mostly collects data on the interests of users via widgets such as the 'Like' button found on many websites.  This is used to serve targeted advertising to its users when logged into its services.  In 2014 it also started serving up behaviourally targeted advertising on other websites, similar to most dedicated online marketing companies."
+Targeting Cookies,banner,OneTrust,INGRESSCOOKIE,bh.contextweb.com,,,,Session,,,,,"Declared, not set",bh.contextweb.com,"This domain is owned by Pulsepoint (formerly Contextweb). The main business activity is: Digital marketing, real time ad bidding exchange and audience profiling"
+Targeting Cookies,banner,OneTrust,V,contextweb.com,,,,359 days,,,,,"Declared, not set",contextweb.com,"This domain is owned by Pulsepoint (formerly Contextweb). The main business activity is: Digital marketing, real time ad bidding exchange and audience profiling"
+Targeting Cookies,banner,OneTrust,pb_rtb_ev,contextweb.com,,,,364 days,,,,,"Declared, not set",contextweb.com,"This domain is owned by Pulsepoint (formerly Contextweb). The main business activity is: Digital marketing, real time ad bidding exchange and audience profiling"
+Targeting Cookies,banner,OneTrust,checkForPermission,bidr.io,,,,0 days,,,,,"Declared, not set",bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Targeting Cookies,banner,OneTrust,bku,bluekai.com,,,,180 days,,,,,"Declared, not set",bluekai.com,This domain is owned by Blue Kai. The main business activity is: Advertising/Audience Targeting
+Targeting Cookies,banner,OneTrust,bkpa,bluekai.com,,,,180 days,,,,,"Declared, not set",bluekai.com,This domain is owned by Blue Kai. The main business activity is: Advertising/Audience Targeting
+Targeting Cookies,banner,OneTrust,stx_user_id,sharethrough.com,,,,365 days,,,,,"Declared, not set",sharethrough.com,"This domain is owned by Sharethrough, a USA based company providing an online native advertising technology platform and services."
+Targeting Cookies,banner,OneTrust,__uis,go.sonobi.com,,,,29 days,,,,,"Declared, not set",go.sonobi.com,"This domains is owned by Sonobi, an automated audience buying and selling platform for online advertising."
+Targeting Cookies,banner,OneTrust,__uin_bw,go.sonobi.com,,,,364 days,,,,,"Declared, not set",go.sonobi.com,"This domains is owned by Sonobi, an automated audience buying and selling platform for online advertising."
+Targeting Cookies,banner,OneTrust,__uir_bw,go.sonobi.com,,,,89 days,,,,,"Declared, not set",go.sonobi.com,"This domains is owned by Sonobi, an automated audience buying and selling platform for online advertising."
+Targeting Cookies,banner,OneTrust,HAPLB8G,go.sonobi.com,,,,Session,,,,,"Declared, not set",go.sonobi.com,"This domains is owned by Sonobi, an automated audience buying and selling platform for online advertising."
+Targeting Cookies,banner,OneTrust,_kuid_,krxd.net,,,,180 days,,,,,"Declared, not set",krxd.net,"This domain is owned by Krux Digital, a US company providing a data management platform which enables real time profiling of visitor interests."
+Targeting Cookies,banner,OneTrust,IMRID,imrworldwide.com,,,,389 days,,,,,"Declared, not set",imrworldwide.com,"This domain is owned by Nielsen.
+The main business activity is: Consumer Profiling for Online Advertising"
+Targeting Cookies,banner,OneTrust,cs,gumgum.com,,,,364 days,,,,,"Declared, not set",gumgum.com,"This domain is owned by GumGum, a USA based as technology company."
+Targeting Cookies,banner,OneTrust,ANON_ID_old,tribalfusion.com,,,,89 days,,,,,"Declared, not set",tribalfusion.com,This domain is owned by TribalFusion. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,A3,advertising.com,,,,365 days,,,,,"Declared, not set",advertising.com,This domain is owned by Advertising.com (AOL). The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,mako_uid,eyeota.net,,,,365 days,,,,,"Declared, not set",eyeota.net,"This domain is owned by Eyeota, a global company specialising in audience data to enable targeting of advertising based on visitor profiling."
+Targeting Cookies,banner,OneTrust,SERVERID,eyeota.net,,,,0 days,,,,,"Declared, not set",eyeota.net,"This domain is owned by Eyeota, a global company specialising in audience data to enable targeting of advertising based on visitor profiling."
+Targeting Cookies,banner,OneTrust,_cc_id,crwdcntrl.net,,,,270 days,,,,,"Declared, not set",crwdcntrl.net,This domain is owned by Lotame. The main business activity is: Data Management Platform - Targeting /Advertising
+Targeting Cookies,banner,OneTrust,_cc_dc,crwdcntrl.net,,,,270 days,,,,,"Declared, not set",crwdcntrl.net,This domain is owned by Lotame. The main business activity is: Data Management Platform - Targeting /Advertising
+Targeting Cookies,banner,OneTrust,AnalyticsSyncHistory,linkedin.com,,,,29 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,UserMatchHistory,linkedin.com,,,,29 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,ar_debug,pinterest.com,,,,364 days,,,,,"Declared, not set",pinterest.com,This domain is owned by Pinterest. The main business activity is: Social Content Sharing platform
+Targeting Cookies,banner,OneTrust,anHistory,pro-market.net,,,,29 days,,,,,"Declared, not set",pro-market.net,"This domain is owned by Datonics, a USA based data broker selling data for online advertising segmentation."
+Targeting Cookies,banner,OneTrust,anProfile,pro-market.net,,,,179 days,,,,,"Declared, not set",pro-market.net,"This domain is owned by Datonics, a USA based data broker selling data for online advertising segmentation."
+Targeting Cookies,banner,OneTrust,obuid,outbrain.com,,,,90 days,,,,,"Declared, not set",outbrain.com,"This domain is owned by Outbrain, which describes itself as a content discovery platform.  It provides technology to help distribute content targeted to individuals interests."
+Targeting Cookies,banner,OneTrust,bscookie,www.linkedin.com,,,,364 days,,,,,"Declared, not set",www.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,u,agkn.com,,,,365 days,,,,,"Declared, not set",agkn.com,"This domain is owned by Aggregate Knowledge, which has been acquired by Neustar Inc. Aggregate Knowledge provides a data management platform which enables real time targeting and consumer profiling functionality. "
+Targeting Cookies,banner,OneTrust,MSPTC,bing.com,,,,389 days,,,,,"Declared, not set",bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,_ljtrtb_66,lijit.com,,,,364 days,,,,,"Declared, not set",lijit.com,This domain is owned by Federated Media Publishing. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Performance Cookies,banner,OneTrust,__hstc,weightwatchers.com,,,,179 days,,,,,"Declared, not set",weightwatchers.com,This cookie name is associated with websites built on the HubSpot platform. It is reported by them as being used for website analytics.
+Performance Cookies,banner,OneTrust,_gid,weightwatchers.com,,,,0 days,,,,,"Declared, not set",weightwatchers.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited.
+Performance Cookies,banner,OneTrust,__hssc,weightwatchers.com,,,,0 days,,,,,"Declared, not set",weightwatchers.com,This cookie name is associated with websites built on the HubSpot platform.  It is reported by them as being used for website analytics.
+Performance Cookies,banner,OneTrust,optimizelyDomainTestCookie,weightwatchers.com,,,,179 days,,,,,"Declared, not set",weightwatchers.com,These Optimizely cookies allow us to test different versions of website pages to different users at the same time and to track how users navigate around our website. We use this information to test new features and make the website easier to use.
+Performance Cookies,banner,OneTrust,_ga_xxxxxxxxxx,weightwatchers.com,,,,729 days,,,,,"Declared, not set",weightwatchers.com,To generate statistical data on how the visitor uses the Service
+Performance Cookies,banner,OneTrust,optimizelyEndUserId,weightwatchers.com,,,,179 days,,,,,"Declared, not set",weightwatchers.com,Cookie set by the Optimizely website optimisation plaftform. This cookie is a unique user identifier
+Performance Cookies,banner,OneTrust,__hssrc,weightwatchers.com,,,,Session,,,,,"Declared, not set",weightwatchers.com,This cookie name is associated with websites built on the HubSpot platform. It is reported by them as being used for website analytics.
+Functional Cookies,banner,OneTrust,_sp_root_domain_test_xxxxxxxxxxxxx,weightwatchers.com,,,,Session,,,,,"Declared, not set",weightwatchers.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,hubspotutk,weightwatchers.com,,,,179 days,,,,,"Declared, not set",weightwatchers.com,This cookie name is associated with websites built on the HubSpot platform.  HubSpot report that its purpose is user authentication. As a persistent rather than a session cookie it cannot be classified as Strictly Necessary.
+Functional Cookies,banner,OneTrust,_bc_uuid,brightcove.com,,,,399 days,,,,,"Declared, not set",brightcove.com,This domain is owned by Bright Cove. The main business activity is: Video Hosting Service
+Strictly Necessary Cookies,banner,OneTrust,_dc_gtm_UA-xxxxxxxx,weightwatchers.com,,,,0 days,,,,,"Declared, not set",weightwatchers.com,"This cookie is associated with sites using Google Tag Manager to load other scripts and code into a page.  Where it is used it may be regarded as Strictly Necessary as without it, other scripts may not function correctly. The end of the name is a unique number which is also an identifier for an associated Google Analytics account."

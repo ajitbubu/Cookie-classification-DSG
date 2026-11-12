@@ -1,0 +1,240 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Marketing and Advertising,banner,Ketch,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,2 days,false,true,none,false,Declared & set,,Snap
+Unclassified,none,,_li_ss,i.liadm.com,/s,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,website_redesign,purple.com,/,First party,69.84 days,,false,true,unspecified,false,Not declared,,
+Essential,banner,Ketch,utag_main__sn,.purple.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Tealium
+Functionality,banner,Ketch,utag_main_ses_id,.purple.com,/,First party,0.02 days,,false,false,unspecified,false,Declared & set,,Tealium
+Essential,banner,Ketch,utag_main__ga,.purple.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Tealium
+Marketing and Advertising,banner,Ketch,_fbp,.purple.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Facebook Ads
+Marketing and Advertising,banner,Ketch,utag_main_v_id,.purple.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Tealium
+Essential,banner,Ketch,utag_main_dc_visit,.purple.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Tealium
+Essential,banner,Ketch,__cf_bm,.affirm.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Marketing and Advertising,banner,Ketch,_ttp,.tiktok.com,/,Third party,390.00 days,391 days,false,true,none,false,Declared & set,,Tiktok Ads
+Essential,banner,Ketch,cf_clearance,.purple.com,/,First party,365.00 days,364 days,true,true,none,true,Declared & set,,Cloudflare
+Functionality,banner,Ketch,_ga,.purple.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Essential,banner,Ketch,utag_main__ss,.purple.com,/,First party,0.02 days,,false,false,unspecified,false,Declared & set,,Tealium
+Marketing and Advertising,banner,Ketch,_scid,.purple.com,/,First party,395.00 days,394 days,false,false,lax,false,Declared & set,,Snap
+Unclassified,none,,tkbl_session,purple.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Essential,banner,Ketch,__pdst,purple.com,/,First party,365.00 days,364 days,false,false,strict,false,Declared & set,,Spotify
+Marketing and Advertising,banner,Ketch,__attn_eat_id,.purple.com,/,First party,390.00 days,389 days,false,true,lax,true,Declared & set,,attentive
+Essential,banner,Ketch,_swb,.purple.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Marketing and Advertising,banner,Ketch,sa-user-id,tags.srv.stackadapt.com,/,Third party,365.00 days,366 days,false,true,none,false,Declared & set,,StackAdapt
+Marketing and Advertising,banner,Ketch,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,366 days,false,true,none,false,Declared & set,,StackAdapt
+Marketing and Advertising,banner,Ketch,sa-user-id-v2,tags.srv.stackadapt.com,/,Third party,365.00 days,366 days,false,true,none,false,Declared & set,,StackAdapt
+Marketing and Advertising,banner,Ketch,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,366 days,false,true,none,false,Declared & set,,StackAdapt
+Functionality,banner,Ketch,sa-user-id-v4,tags.srv.stackadapt.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,
+Functionality,banner,Ketch,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,
+Marketing and Advertising,banner,Ketch,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Essential,banner,Ketch,checkout_continuity_service,.affirm.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Affirm
+Marketing and Advertising,banner,Ketch,t_v2_s,.affirm.com,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Affirm
+Marketing and Advertising,banner,Ketch,3060738.3440491,.affirm.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Affirm
+Essential,banner,Ketch,session,www.affirm.com,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Affirm
+Essential,banner,Ketch,_cfuvid,.affirm.com,/,Third party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Essential,banner,Ketch,__cf_bm,.bzrcdn.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential,banner,Ketch,_cfuvid,.bzrcdn.openai.com,/,Third party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Essential,banner,Ketch,t,build.1pdata.app,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,LinkedIn  
+Marketing and Advertising,banner,Ketch,__attentive_id,.purple.com,/,First party,390.00 days,389 days,false,true,unspecified,false,Declared & set,,attentive
+Functionality,banner,Ketch,__attentive_session_id,.purple.com,/,First party,0.02 days,,false,true,unspecified,false,Declared & set,,attentive
+Functionality,banner,Ketch,__attentive_cco,.purple.com,/,First party,390.00 days,389 days,false,true,unspecified,false,Declared & set,,attentive
+Marketing and Advertising,banner,Ketch,_pin_unauth,.purple.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Pinterest
+Essential,banner,Ketch,checkout_continuity_service,purple.com,/,First party,400.00 days,400 days,false,false,lax,false,Declared & set,,Affirm
+Unclassified,none,,pt,.ispot.tv,/,Third party,400.00 days,,false,true,none,false,"Declared, conflicting",,
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,pontiacId,.pontiac.media,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,sa-user-id,purple.com,/,First party,365.00 days,366 days,false,true,unspecified,false,Declared & set,,StackAdapt
+Marketing and Advertising,banner,Ketch,sa-user-id-v2,purple.com,/,First party,365.00 days,366 days,false,true,unspecified,false,Declared & set,,StackAdapt
+Marketing and Advertising,banner,Ketch,sa-user-id-v3,purple.com,/,First party,365.00 days,364 days,false,true,unspecified,false,Declared & set,,StackAdapt
+Functionality,banner,Ketch,sa-user-id-v4,purple.com,/,First party,365.00 days,364 days,false,true,unspecified,false,Declared & set,,
+Essential,banner,Ketch,_ketch_consent_v1_,.purple.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Marketing and Advertising,banner,Ketch,sc_at,.snapchat.com,/,Third party,390.00 days,391 days,false,true,none,false,Declared & set,,Snap
+Marketing and Advertising,banner,Ketch,uuid,.getrockerbox.com,/,Third party,30.00 days,31 days,false,true,none,false,Declared & set,,MediaMath
+Marketing and Advertising,banner,Ketch,_attn_bopd_,.purple.com,/,First party,390.00 days,389 days,false,true,unspecified,false,Declared & set,,attentive
+Marketing and Advertising,banner,Ketch,demdex,.demdex.net,/,Third party,180.00 days,181 days,false,true,none,false,Declared & set,,Adobe Audience Manager
+Unclassified,none,,kndctr_421D22286838D8D30A495E91_AdobeOrg_cluster,.purple.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,kndctr_421D22286838D8D30A495E91_AdobeOrg_identity,.purple.com,/,First party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AMCV_421D22286838D8D30A495E91%40AdobeOrg,.purple.com,/,First party,390.00 days,,false,true,none,false,Not declared,,
+Essential,banner,Ketch,_tt_enable_cookie,.purple.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Tiktok Ads
+Marketing and Advertising,banner,Ketch,_ttp,.purple.com,/,First party,390.00 days,391 days,false,false,unspecified,false,Declared & set,,Tiktok Ads
+Unclassified,none,,__oaiq_consent,.purple.com,/,First party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__obref,.purple.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Functionality,banner,Ketch,fullthrottlelims_t2,purple.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,
+Functionality,banner,Ketch,r,purple.com,/,First party,0.08 days,,false,false,unspecified,false,Declared & set,,
+Essential,banner,Ketch,__attentive_dv,.purple.com,/,First party,1.00 days,,false,true,unspecified,false,Declared & set,,attentive
+Functionality,banner,Ketch,__attentive_ss_referrer,.purple.com,/,First party,0.02 days,,false,true,unspecified,false,Declared & set,,attentive
+Marketing and Advertising,banner,Ketch,TapAd_TS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Tapad (by Experian)
+Marketing and Advertising,banner,Ketch,TapAd_DID,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Tapad (by Experian)
+Essential,banner,Ketch,rbuid,.purple.com,/,First party,30.00 days,31 days,false,true,none,false,Declared & set,,
+Marketing and Advertising,banner,Ketch,bito,.bidr.io,/,Third party,394.79 days,394 days,false,true,none,false,Declared & set,,Beeswax (by Freewheel)
+Marketing and Advertising,banner,Ketch,bitoIsSecure,.bidr.io,/,Third party,394.79 days,394 days,false,true,none,false,Declared & set,,Beeswax (by Freewheel)
+Marketing and Advertising,banner,Ketch,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Declared & set,,Facebook Ads
+Marketing and Advertising,banner,Ketch,checkForPermission,.bidr.io,/,Third party,0.01 days,,false,true,none,false,Declared & set,,Beeswax (by Freewheel)
+Unclassified,none,,kndctr_421D22286838D8D30A495E91_AdobeOrg_consent,.purple.com,/,First party,180.00 days,,false,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,_sctr,.purple.com,/,First party,395.00 days,394 days,false,false,lax,false,Declared & set,,Snap
+Unclassified,none,,visitor-id,.media.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,data-max,.media.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vvv,.tupsrv.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,91 days,false,true,none,true,Declared & set,,Microsoft Ads
+Marketing and Advertising,banner,Ketch,uuid2,.adnxs.com,/,Third party,90.00 days,91 days,true,true,none,false,Declared & set,,Microsoft Ads
+Essential,banner,Ketch,ab,.agkn.com,/,Third party,365.00 days,366 days,false,true,none,false,Declared & set,,Neustar
+Marketing and Advertising,banner,Ketch,audit_p,.rubiconproject.com,/,Third party,365.00 days,366 days,false,true,none,true,Declared & set,,Magnite
+Marketing and Advertising,banner,Ketch,khaos,.rubiconproject.com,/,Third party,365.00 days,366 days,false,true,none,false,Declared & set,,Magnite
+Marketing and Advertising,banner,Ketch,khaos_p,.rubiconproject.com,/,Third party,365.00 days,366 days,false,true,none,true,Declared & set,,Magnite
+Marketing and Advertising,banner,Ketch,audit,.rubiconproject.com,/,Third party,365.00 days,366 days,false,true,none,false,Declared & set,,Magnite
+Essential,banner,Ketch,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,91 days,true,true,none,true,Declared & set,,Google Privacy Sandbox
+Unclassified,none,,KRTBCOOKIE_699,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,PugT,.pubmatic.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,,Pubmatic
+Marketing and Advertising,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Marketing and Advertising,banner,Ketch,anj,.adnxs.com,/,Third party,90.00 days,91 days,true,true,none,false,Declared & set,,Microsoft Ads
+Functionality,banner,Ketch,EE,.exelator.com,/,Third party,120.00 days,121 days,false,true,none,false,Declared & set,,Nielsen
+Functionality,banner,Ketch,dpm,.dpm.demdex.net,/,Third party,180.00 days,181 days,false,true,none,false,Declared & set,,Adobe Audience Manager
+Marketing and Advertising,banner,Ketch,TDID,.adsrvr.org,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,theTradeDesk
+Marketing and Advertising,banner,Ketch,_uid,.fwmrm.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,,Freewheel (by Comcast)
+Marketing and Advertising,banner,Ketch,CMID,.casalemedia.com,/,Third party,365.00 days,366 days,false,true,none,false,Declared & set,,Index Exchange
+Marketing and Advertising,banner,Ketch,CMPS,.casalemedia.com,/,Third party,90.00 days,91 days,false,true,none,false,Declared & set,,Index Exchange
+Marketing and Advertising,banner,Ketch,CMPRO,.casalemedia.com,/,Third party,90.00 days,91 days,false,true,none,false,Declared & set,,Index Exchange
+Functionality,banner,Ketch,ud,.exelator.com,/,Third party,120.00 days,121 days,false,true,none,false,Declared & set,,Nielsen
+Marketing and Advertising,banner,Ketch,TDCPM,.adsrvr.org,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,theTradeDesk
+Marketing and Advertising,banner,Ketch,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,Tapad (by Experian)
+Unclassified,none,,tkbl_session,share.purple.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Essential,banner,Ketch,tkbl_cvuuid,share.purple.com,/,First party,400.00 days,400 days,false,true,none,false,Declared & set,,
+Essential,banner,Ketch,_swb_consent_,.purple.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Essential,banner,Ketch,m,m.stripe.com,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Stripe
+Essential,banner,Ketch,__stripe_mid,.purple.com,/,First party,365.00 days,364 days,false,true,strict,false,Declared & set,,Stripe
+Essential,banner,Ketch,__stripe_sid,.purple.com,/,First party,0.02 days,,false,true,strict,false,Declared & set,,Stripe
+Essential,banner,Ketch,__cf_bm,.bzr.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential,banner,Ketch,_cfuvid,.bzr.openai.com,/,Third party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Essential,banner,Ketch,i,.openx.net,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,OpenX
+Marketing and Advertising,banner,Ketch,pid,.smartadserver.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Equativ (Smartadserver)
+Essential,banner,Ketch,TestIfCookieP,.smartadserver.com,/,Third party,395.00 days,394 days,false,true,none,false,Declared & set,,Equativ
+Marketing and Advertising,banner,Ketch,csync,.smartadserver.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,,Equativ
+Unclassified,none,,bob_c_id,bob.dmpxs.com,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,bx_uid,bob.dmpxs.com,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,tuuid,.360yield.com,/,Third party,90.00 days,364 days,true,true,none,false,Declared & set,,Demandbase
+Marketing and Advertising,banner,Ketch,tuuid_lu,.360yield.com,/,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,Demandbase
+Marketing and Advertising,banner,Ketch,um,.360yield.com,/,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,Improve Digital
+Marketing and Advertising,banner,Ketch,umeh,.360yield.com,/,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,Improve Digital
+Unclassified,none,,TEST-COOKIE,.inmobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,iid,.inmobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,ad-id,.amazon-adsystem.com,/,Third party,231.00 days,242 days,true,true,none,false,Declared & set,,Amazon Ads
+Unclassified,none,,tkbl_session,www.talkable.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Essential,banner,Ketch,tkbl_cvuuid,www.talkable.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,
+Unclassified,none,,_ga_W09BCLHP4N,.purple.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_S3XHDV0445,.purple.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Essential,banner,Ketch,utag_main__pn,.purple.com,/,First party,0.02 days,,false,false,unspecified,false,Declared & set,,Tealium
+Unclassified,none,,drupalHeaderFooter,purple.com,/,First party,0.04 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ljt_reader,.lijit.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Essential,banner,Ketch,__cf_bm,.aidemsrv.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,cnx_userId,.connatix.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,SCM,.smaato.net,/,Third party,21.00 days,21 days,false,true,none,false,Declared & set,,Smaato
+Unclassified,none,,SCM1082,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SCMpga,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Essential,banner,Ketch,V,.contextweb.com,/,Third party,360.00 days,360 days,false,true,none,false,Declared & set,,Pulsepoint
+Marketing and Advertising,banner,Ketch,VP,.contextweb.com,/,Third party,360.00 days,360 days,false,true,none,true,Declared & set,,Pulsepoint
+Marketing and Advertising,banner,Ketch,pb_rtb_ev,.contextweb.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Pulsepoint
+Functionality,banner,Ketch,pb_rtb_ev_part,.contextweb.com,/,Third party,365.00 days,365 days,false,true,none,true,Declared & set,,Pulsepoint
+Marketing and Advertising,banner,Ketch,INGRESSCOOKIE,bh.contextweb.com,/,Third party,Session,,true,true,none,false,Declared & set,,Pulsepoint
+Essential,banner,Ketch,usr,.adprime.com,/,Third party,14.00 days,13 days,true,true,none,false,Declared & set,,
+Marketing and Advertising,banner,Ketch,adprime_r,.adprime.com,/,Third party,14.00 days,13 days,true,true,none,false,Declared & set,,
+Unclassified,none,,st_cs,.seedtag.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,st_csd,.seedtag.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,st_uid,.seedtag.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,rlas3,.rlcdn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LiveRamp
+Marketing and Advertising,banner,Ketch,pxrc,.rlcdn.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,,LiveRamp
+Unclassified,none,,lidid,.liadm.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,avcid-bsx-uid,.richaudience.com,/,Third party,90.00 days,90 days,true,true,none,false,Declared & set,,Rich Audience
+Unclassified,none,,pgam_key,.pgammedia.com,/,Third party,14.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,tuid,.a.usbrowserspeed.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,admtr,.admanmedia.com,/,Third party,6.96 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ac_r,.admanmedia.com,/,Third party,6.96 days,,true,true,none,false,Not declared,,
+Unclassified,none,,pgam_red,.pgammedia.com,/,Third party,14.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_3ci,.alcmpn.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,pdid,.richaudience.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,idsync-bee-uid-s,.live.streamtheworld.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,98ef4fb143edeb370e6413f21de2650a,idsync.live.streamtheworld.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,alp_userid,.alphonso.tv,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,
+Unclassified,none,,yieldmo_id,.yieldmo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,intentIQ,.intentiq.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,IntentIQ
+Functionality,banner,Ketch,intentIQCDate,.intentiq.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,IntentIQ
+Functionality,banner,Ketch,IQver,.intentiq.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,IntentIQ
+Unclassified,none,,to_master_s,.truoptik.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,to_version_s,.truoptik.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Functionality,banner,Ketch,IQPData,.intentiq.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,IntentIQ
+Unclassified,none,,IQMID,.intentiq.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_cc_dc,.crwdcntrl.net,/,Third party,269.97 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_cc_id,.crwdcntrl.net,/,Third party,269.97 days,,false,true,none,false,Not declared,,
+Marketing and Advertising,banner,Ketch,CxtId,.connextra.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,
+Marketing and Advertising,banner,Ketch,_gcl_au,.purple.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Marketing and Advertising,banner,Ketch,_scid_r,.purple.com,/,First party,395.00 days,394 days,false,false,lax,false,Declared & set,,Snap
+Functionality,banner,Ketch,_rdt_uuid,.purple.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Marketing and Advertising,banner,Ketch,_uetsid,.purple.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Essential,banner,Ketch,utag_main__se,.purple.com,/,First party,0.02 days,,false,false,unspecified,false,Declared & set,,Tealium
+Essential,banner,Ketch,utag_main__st,.purple.com,/,First party,0.02 days,,false,false,unspecified,false,Declared & set,,Tealium
+Unclassified,none,,_ga_Y064VTE2Z2,.purple.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Essential,banner,Ketch,utag_main_dc_event,.purple.com,/,First party,0.02 days,,false,false,unspecified,false,Declared & set,,Tealium
+Essential,banner,Ketch,_attn_,.purple.com,/,First party,390.00 days,389 days,false,true,strict,false,Declared & set,,attentive
+Functionality,banner,Ketch,__attentive_pv,.purple.com,/,First party,0.02 days,,false,true,unspecified,false,Declared & set,,attentive
+Unclassified,none,,_lr_tabs_-zkdmb2%2Fpurple,purple.com,/,First party,1.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_lr_hb_-zkdmb2%2Fpurple,purple.com,/,First party,1.00 days,,false,false,lax,false,Not declared,,
+Marketing and Advertising,banner,Ketch,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,366 days,false,true,none,false,Declared & set,,Pinterest
+Marketing and Advertising,banner,Ketch,tluid,.3lift.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,TripleLift
+Unclassified,none,,ttcsid_C2A551FMU8Q03RAIII50,.purple.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Marketing and Advertising,banner,Ketch,_uetvid,.purple.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Marketing and Advertising,banner,Ketch,uids,.the-ozone-project.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,,Microsoft Ads
+Unclassified,none,,ttcsid,.purple.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Essential,banner,Ketch,accessory_nav_test,,,,,400 days,,,,,"Declared, not set",,
+Essential,banner,Ketch,axp-override,,,,,,,,,,"Declared, not set",,Affirm
+Essential,banner,Ketch,BVBRANDID,,,,,364 days,,,,,"Declared, not set",,Bazaarvoice
+Essential,banner,Ketch,BVBRANDSID,,,,,,,,,,"Declared, not set",,Bazaarvoice
+Essential,banner,Ketch,__cflb,,,,,,,,,,"Declared, not set",,Cloudflare
+Essential,banner,Ketch,cookietest,,,,,,,,,,"Declared, not set",,Shopify
+Essential,banner,Ketch,dd_cookie_test_*,,,,,,,,,,"Declared, not set",,Datadog
+Essential,banner,Ketch,feature_toggle,,,,,,,,,,"Declared, not set",,
+Essential,banner,Ketch,GCLB,,,,,1 days,,,,,"Declared, not set",,Affirm
+Essential,banner,Ketch,hmt_id,,,,,29 days,,,,,"Declared, not set",,
+Essential,banner,Ketch,hsk_*,,,,,120 days,,,,,"Declared, not set",,Nielsen
+Essential,banner,Ketch,kndctr_*_AdobeOrg_consent,,,,,179 days,,,,,"Declared, not set",,Adobe CDP
+Essential,banner,Ketch,mattress_quiz_test,,,,,,,,,,"Declared, not set",,
+Essential,banner,Ketch,NoCookie,,,,,,,,,,"Declared, not set",,
+Essential,banner,Ketch,QSI_SI_*_intercept,,,,,,,,,,"Declared, not set",,Qualtrics
+Essential,banner,Ketch,__rbtld__,,,,,,,,,,"Declared, not set",,
+Essential,banner,Ketch,recently_viewed,,,,,364 days,,,,,"Declared, not set",,
+Essential,banner,Ketch,SCM*,,,,,21 days,,,,,"Declared, not set",,Smaato
+Essential,banner,Ketch,_ssuma,,,,,30 days,,,,,"Declared, not set",,Basis
+Essential,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Essential,banner,Ketch,utag_main,,,,,,,,,,"Declared, not set",,Tealium
+Essential,banner,Ketch,viewer_token,,,,,90 days,,,,,"Declared, not set",,LoopMe
+Functionality,banner,Ketch,accessory_nav_test,,,,,400 days,,,,,"Declared, not set",,
+Functionality,banner,Ketch,AMCV_*AdobeOrg,,,,,389 days,,,,,"Declared, not set",,Adobe Analytics
+Functionality,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Functionality,banner,Ketch,_gd*,,,,,,,,,,"Declared, not set",,Google Analytics
+Functionality,banner,Ketch,homepage_hero_test,,,,,,,,,,"Declared, not set",,
+Functionality,banner,Ketch,kndctr_*_AdobeOrg_cluster,,,,,,,,,,"Declared, not set",,Adobe CDP
+Functionality,banner,Ketch,ssi,,,,,365 days,,,,,"Declared, not set",,Basis
+Functionality,banner,Ketch,stx_user_id,,,,,30 days,,,,,"Declared, not set",,Sharethrough
+Functionality,banner,Ketch,uid,,,,,59 days,,,,,"Declared, not set",,Adform
+Functionality,banner,Ketch,utag_main,,,,,,,,,,"Declared, not set",,Tealium
+Functionality,banner,Ketch,wse_preview,,,,,,,,,,"Declared, not set",,
+Marketing and Advertising,banner,Ketch,A3,,,,,365 days,,,,,"Declared, not set",,Yahoo! Ads
+Marketing and Advertising,banner,Ketch,ar_debug,,,,,364 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Marketing and Advertising,banner,Ketch,auid,,,,,364 days,,,,,"Declared, not set",,Stagwell
+Marketing and Advertising,banner,Ketch,c,,,,,364 days,,,,,"Declared, not set",,tinuiti
+Marketing and Advertising,banner,Ketch,C,,,,,30 days,,,,,"Declared, not set",,Adform
+Marketing and Advertising,banner,Ketch,com.adobe.alloy.getTld,,,,,,,,,,"Declared, not set",,Adobe Commerce
+Marketing and Advertising,banner,Ketch,dsp_*,,,,,59 days,,,,,"Declared, not set",,Freewheel (by Comcast)
+Marketing and Advertising,banner,Ketch,gtm_usr,,,,,364 days,,,,,"Declared, not set",,Colossus SSP
+Marketing and Advertising,banner,Ketch,IDSYNC,,,,,365 days,,,,,"Declared, not set",,Yahoo! Ads
+Marketing and Advertising,banner,Ketch,kndctr_*_AdobeOrg_identity,,,,,394 days,,,,,"Declared, not set",,Adobe CDP
+Marketing and Advertising,banner,Ketch,KRTBCOOKIE_*,,,,,89 days,,,,,"Declared, not set",,Pubmatic
+Marketing and Advertising,banner,Ketch,ktcid,,,,,365 days,,,,,"Declared, not set",,Kargo
+Marketing and Advertising,banner,Ketch,lmg_r,,,,,364 days,,,,,"Declared, not set",,Google Analytics
+Marketing and Advertising,banner,Ketch,mfuid,,,,,14 days,,,,,"Declared, not set",,MobileFuse
+Marketing and Advertising,banner,Ketch,_sc_cspv,,,,,394 days,,,,,"Declared, not set",,
+Marketing and Advertising,banner,Ketch,_schn1,,,,,,,,,,"Declared, not set",,Snap
+Marketing and Advertising,banner,Ketch,_schn2,,,,,,,,,,"Declared, not set",,Snap
+Marketing and Advertising,banner,Ketch,SCMmf,,,,,21 days,,,,,"Declared, not set",,Smaato
+Marketing and Advertising,banner,Ketch,_screload,,,,,,,,,,"Declared, not set",,Snap
+Marketing and Advertising,banner,Ketch,server_tracking_bdsp_uid,,,,,364 days,,,,,"Declared, not set",,
+Marketing and Advertising,banner,Ketch,ttcsid.*,,,,,389 days,,,,,"Declared, not set",,Tiktok Ads

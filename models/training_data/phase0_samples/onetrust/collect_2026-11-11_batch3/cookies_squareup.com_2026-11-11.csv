@@ -1,0 +1,413 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Strictly necessary technology,banner,OneTrust,squareGeo,.squareup.com,/,First party,28.00 days,0 days,false,true,strict,false,Declared & set,api.squareup.com,This cookie is used to store the user's geographic region information. This allows the website to offer website content and OneTrust cookie consent in the user's language
+Performance and analytical technology,banner,OneTrust,_savt,.squareup.com,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,app.squareup.com,"This is used to identify anonymous visitors across browsing sessions, enabling Square to track individual journeys for purposes such as analytics, experimentation, and bot mitigation."
+Performance and analytical technology,banner,OneTrust,__cf_bm,.squareup.com,/,First party,0.02 days,0 days,true,true,none,true,Declared & set,app.squareup.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots."
+Unclassified,none,,exp_var_dg_tofs_us_en_campaigns_square_terminal_pos_v1,.squareup.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Performance and analytical technology,banner,OneTrust,exp_var_pw_signup_pricing_plan_subnav_and_cta_ctr_us_en_pricing_experiment,.squareup.com,/,First party,365.00 days,Session,false,false,unspecified,false,Declared & set,squareup,"s a combined Square Public Web A/B experiment cookie — it's a single cookie that bundles two experiments we've already discussed separately.
+
+What it does:
+
+• Stores the visitor's assigned variant for a combined experiment that… AttributeValueDomain.squareup.com (first-party)TypeFirst-partyPurposeCombined A/B test — pricing sub-nav + CTA optimizationVendorSquare (internal) via LaunchDarklyValuesLikely control / treatment (or multi-arm variants)OneTrust categoryC0002 (Performance) or C0003 (Functional)Why combined:
+
+• Running related experiments together avoids conflicting results
+• Ensures the"
+Unclassified,none,,exp_var_pw_signup_homepage_hero,.squareup.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,exp_var_dg_signups_us_en_campaigns_cross_product_center_v1,.squareup.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,exp_var_dg_tofs_us_en_campaigns_take_payments_card_reader_v1,.squareup.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,exp_var_pw_add_scroll_indicator,.squareup.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,exp_var_dg_mqls_multi_2p_v1,.squareup.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,exp_var_pw_k1a_kiosk_rename_v1,.squareup.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,exp_var_dg_tofs_us_en_campaigns_tap_to_pay_iphone_v1,.squareup.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,exp_var_pw_invoices_cta_price_us_en,.squareup.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Performance and analytical technology,banner,OneTrust,exp_var_pw_nav_signups_v1,.squareup.com,/,First party,365.00 days,90 days,false,false,unspecified,false,Declared & set,squareup,"s a Square Public Web A/B experiment cookie.
+
+What it does:
+
+• Stores the user's assigned variant (control or treatment) for an experiment on squareup.com's navigation sign-up flow
+• pw = Public Web, nav = navigation, signups = sign-up CTA/flow, v1 = version 1
+• Managed via LaunchDarkly feature flags — the experiment assigns visitors to either the control or treatment group and persists the assignment in this cookie
+
+
+
+Key details:AttributeValueDomain.squareup.com (first-party)TypeFirst-partyPurposeA/B testing / experimentation (navigation sign-up flow)VendorSquare (internal) via LaunchDarklyV"
+Unclassified,none,,exp_var_pw_nav_contact_sales_v1,.squareup.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,exp_var_pw_salesbot_guided_qualification_experiment,.squareup.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,exp_var_pw_salesbot_entry_point_placement_experiment,.squareup.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,exp_var_pwr_sales_contact_page_v3,.squareup.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,exp_var_pwr_hardware_kiosk_page,.squareup.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Performance and analytical technology,banner,OneTrust,_gid,.squareup.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,squareup.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited.
+Performance and analytical technology,banner,OneTrust,cdpCookiesEnabled,.squareup.com,/,First party,400.00 days,364 days,false,false,unspecified,false,Declared & set,squareup.com,This cookie is used by Square's Customer Data Platform to identify whether other cdp cookies are enabled.
+Performance and analytical technology,banner,OneTrust,cdpUserEntityType_41ec1b68-21b1-4687-853a-f968e54134db,.squareup.com,/,First party,400.00 days,365 days,false,false,unspecified,false,Declared & set,squareup.com,"This cookie stores the information on the type of web visitor, for example, merchant, anonymous visitor, etc. This helps Square label a web visitor and understand their web interactions. An example of its use is in A/B testing."
+Retargeting or advertising technology,banner,OneTrust,da_js_user_type,.squareup.com,/,First party,400.00 days,364 days,false,false,unspecified,false,Declared & set,squareup.com,"This cookie stores information about whether the current user is an ""anonymous_visitor"" or a recognized entity such as a ""merchant"" (for logged-in users). This allows Square to build accurate customer profiles and deliver targeted web experiences through different services. It's a legacy cookie set for compatibility with the older Square library."
+Performance and analytical technology,banner,OneTrust,dajs_anonymous_id,.squareup.com,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,community.squareup.com,This cookie is used by Square's Customer Data Platform to store the unique identifier associated with a site visitor or user entity (not logged in).
+Performance and analytical technology,banner,OneTrust,cdpUserEntityId_41ec1b68-21b1-4687-853a-f968e54134db,.squareup.com,/,First party,400.00 days,364 days,false,false,unspecified,false,Declared & set,squareup.com,This cookie is used by Square to store a site visitor's unique identifier. This helps Square label a web visitor and understand their web interactions. An example is A/B testing.
+Performance and analytical technology,banner,OneTrust,dajs_user_id,.squareup.com,/,First party,400.00 days,364 days,false,false,unspecified,false,Declared & set,squareup.com,This cookie is used by Square's Customer Data Platform to store the unique identifier associated with a site visitor or user entity. A legacy cookie set for compatibility with the older Square library.
+Strictly necessary technology,banner,OneTrust,_sqweb_session,.squareup.com,/,First party,365.00 days,365 days,true,true,lax,false,Declared & set,squareup.com,This cookie is set for session token to authenticate and maintain a consistent session for user across all Square services.
+Strictly necessary technology,banner,OneTrust,_js_csrf,.squareup.com,/,First party,365.00 days,365 days,false,true,lax,false,Declared & set,squareup.com,"This cookie is to store the visitor's Cross-Site Request Forgery (CSRF) protection token, which is used to prevent unauthorized cross-origin requests and ensure that sensitive actions (like login, form submission, or account changes) are initiated only by authenticated users with a valid session."
+Performance and analytical technology,banner,OneTrust,dajs_user_id_optimizely,squareup.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,squareup.com,This is our analytics cookie. We use it to understand how our customers engage with Square webpages and products.
+Performance and analytical technology,banner,OneTrust,optimizelyEndUserId,.squareup.com,/,First party,180.00 days,180 days,false,false,unspecified,false,Declared & set,squareup.com,Cookie set by the Optimizely website optimisation plaftform. This cookie is a unique user identifier
+Unclassified,none,,_gat_trackerUA951704046,.squareup.com,/,First party,0.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,_solidshop_guest_token,.squareup.com,/,First party,400.00 days,,false,true,lax,false,Not declared,,
+Retargeting or advertising technology,banner,OneTrust,_mkto_trk,.squareup.com,/,First party,400.00 days,364 days,false,false,unspecified,false,Declared & set,squareup.com,This cookie is associated with an email marketing service provided by Marketo. This tracking cookie allows a website to link visitor behavior to the recipient of an email marketing campaign to measure campaign effectiveness.
+Unclassified,none,,__ps_r,.squareup.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Strictly necessary technology,banner,OneTrust,__ps_sr,.squareup.com,/,First party,0.02 days,0 days,false,true,none,false,Declared & set,cash.app,This cookie name is used to manage user opt-out preferences for non-functional cookies.
+Functionality technology,banner,OneTrust,__ps_lu,.squareup.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,cash.app,This cookie name is associated with Amazon which is used to record the last user interaction or visit to help tailor marketing messages and improve user experience.
+Unclassified,none,,__ps_slu,.squareup.com,/,First party,0.02 days,,false,true,none,false,"Declared, conflicting",,
+Retargeting or advertising technology,banner,OneTrust,__ps_fva,.squareup.com,/,First party,365.00 days,365 days,false,true,none,false,Declared & set,bombora,"ds another Bombora B2B intent data cookie on squareup.com — a companion to _ps_slu.
+
+What it does:
+
+• ps = page/publisher signal, fva = likely ""first visit attribution"" or ""first visitor activity""
+• Stores data about the visitor's first interaction with squareup.com for Bombora's intent tracking… AttributeValueDomain.squareup.com (first-party)TypeFirst-partyPurposeB2B intent data — first visit/attribution trackingVendorBombora (Company Surge®)LifespanTypically 1 yearOneTrust categoryC0004 (Targeting/Advertising)*Bombora cookie family on squareup.com:*CookieLikely purpose_ps_sluSignal lookup — "
+Unclassified,none,,kn_cs_visitor_id,.squareup.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Retargeting or advertising technology,banner,OneTrust,barometric[cuid],.trkn.us,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,Narrative,"Josephine Loh
+5d
+barometric[cuid] is a Barometric (now Narrative) cross-device identity cookie.
+
+What it does:
+
+• Stores a unique user identifier (cuid = ""cross-device user ID"") for Barometric's cross-device tracking platform
+• Enables linking a user's activity across multiple devices (desktop, mobile, tablet) to build a…
+
+
+
+
+
+Domain.squareup.com (first-party) or Barometric's domain (third-party)TypeDepends on implementationPurposeCross-device identity resolution / ad targetingVendorBarometric (now Narrative)Lifespan1–2 years (typical for identity cookies)OneTrust categoryC0004 (Targeting/Adve"
+Retargeting or advertising technology,banner,OneTrust,uid,.turn.com,/,Third party,180.00 days,150 days,false,true,none,false,Declared & set,turn.com,This domain is owned by Turn. The main business activity is: Marketing and Data Management Platform provider
+Retargeting or advertising technology,banner,OneTrust,ad-id,.amazon-adsystem.com,/,Third party,231.00 days,210 days,true,true,none,false,Declared & set,amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Retargeting or advertising technology,banner,OneTrust,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,364 days,true,true,none,false,Declared & set,amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Retargeting or advertising technology,banner,OneTrust,c,.pointmediatracker.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,pointmediatracker,"The c cookie from PointMedia Tracker is a PointMedia/Adnimation ad tracking cookie.
+
+What it does:
+
+• Stores a unique visitor identifier for PointMedia's ad serving and tracking platform
+• PointMedia (also associated with Adnimation) is a programmatic advertising network that serves display/video ads and tracks impressions, clicks, and conversions
+• Used for ad frequency capping, targeting, and campaign performance measurement
+
+
+
+Key details:AttributeValueDomainLikely a PointMedia tracker domain (third-party)TypeThird-partyPurposeProgrammatic ad tracking / impression countingVendorPointMedia /"
+Retargeting or advertising technology,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,365 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,visitor_id,.knotch.it,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,optout,.knotch.it,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Performance and analytical technology,banner,OneTrust,__cf_bm,.linkedin.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,app.squareup.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots."
+Retargeting or advertising technology,banner,OneTrust,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,Linkedin,This cookie is used to track visitors so that more relevant ads can be presented based on the visitor's preferences.
+Retargeting or advertising technology,banner,OneTrust,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,Linkedin,"AnalyticsSyncHistory is a LinkedIn analytics synchronization cookie.
+
+What it does:
+
+• Stores information about the sync of LinkedIn's analytics tracking with the user's LinkedIn account
+• Records which LinkedIn analytics partner IDs have been synced and when, enabling LinkedIn to match ad impressions/clicks on partner sites (like afterpay.com) back to LinkedIn user profiles for conversion tracking and ad reporting
+
+
+
+*Why it appears on afterpay.com:*
+
+• Set by the LinkedIn Insight Tag (LinkedIn's advertising/analytics pixel) embedded on afterpay.com
+• When the Insight Tag fires, it communicat"
+Unclassified,none,,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Retargeting or advertising technology,banner,OneTrust,_fbp,.squareup.com,/,First party,90.00 days,Session,false,false,unspecified,false,Declared & set,developer.squareup.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Retargeting or advertising technology,banner,OneTrust,bscookie,.www.linkedin.com,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Unclassified,none,,_tt_enable_cookie,.squareup.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Retargeting or advertising technology,banner,OneTrust,_ttp,.squareup.com,/,First party,390.00 days,60 days,false,false,unspecified,false,Declared & set,tiktok.com,TikTok cookie used to measure and improve the performance of advertising campaigns and to personalize the customer experience (including ads) on TikTok.
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Retargeting or advertising technology,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Retargeting or advertising technology,banner,OneTrust,__adroll,.d.adroll.com,/,Third party,395.00 days,365 days,true,true,none,false,Declared & set,Squareup (d.addroll.com) ,This cookie is used to identify the visitor across visits and devices. It is used by real-time bidding for advertisers to present relevant advertisement.
+Retargeting or advertising technology,banner,OneTrust,receive-cookie-deprecation,.d.adroll.com,/,Third party,395.00 days,150 days,true,true,none,true,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Retargeting or advertising technology,banner,OneTrust,receive-cookie-deprecation,.adroll.com,/,Third party,395.00 days,150 days,true,true,none,true,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,__adroll_shared,.adroll.com,/,Third party,395.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__adroll_fpc,.squareup.com,/,First party,365.25 days,,false,false,lax,false,Not declared,,
+Retargeting or advertising technology,banner,OneTrust,__qca,.squareup.com,/,First party,392.00 days,Session,false,false,unspecified,false,Declared & set,weebly.com,"This is a cookie usually associated with Quantcast, a digital advertising company.  They provide website rankings, and the data they collect is also used for audience segmentation and targeted advertising."
+Retargeting or advertising technology,banner,OneTrust,mc,.quantserve.com,/,Third party,395.00 days,365 days,false,true,none,false,Declared & set,quantcast,This cookie is usually provided by Quantserve to track anonymous information about how website visitors use the site.
+Strictly necessary technology,banner,OneTrust,OptanonAlertBoxClosed,.squareup.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,squareup.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a normal lifespan of one year and contains no personal information.
+Performance and analytical technology,banner,OneTrust,optimizelySession,.squareup.com,/,First party,180.00 days,150 days,false,false,unspecified,false,Declared & set,squareup.com,This cookie name is associated with Optimizely which is used to evaluate the new/returning session functionality and determine whether cross-domain syncing is possible.
+Retargeting or advertising technology,banner,OneTrust,qsvFired,.squareup.com,/,First party,30.00 days,365 days,false,false,unspecified,false,Declared & set,squareup.com,This cookie is set by Square for Marketing.The main business activity is: Real time bidding for display advertising to targeted audiences.
+Retargeting or advertising technology,banner,OneTrust,_gcl_au,.squareup.com,/,First party,90.00 days,60 days,false,false,unspecified,false,Declared & set,squareup.com,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Performance and analytical technology,banner,OneTrust,audit_p,.rubiconproject.com,/,Third party,365.00 days,Session,false,true,none,true,Declared & set,squareup,"audit_p is a Square internal analytics/audit cookie used on squareup.com.
+
+What it does:
+
+• Tracks user interactions and session behavior on Square's web properties for internal analytics, service quality monitoring, and security auditing
+• Likely used to recognize signed-in users, analyze service usage… AttributeValueDomain.squareup.comTypeFirst-partyPurposeInternal analytics / session auditing / securitySet bySquare's own codeOneTrust categoryLikely C0002 (Performance/Analytics) or C0001 (Strictly Necessary) dependinI wasn't able to find the exact implementation in Square's codebase (the cod"
+Performance and analytical technology,banner,OneTrust,khaos,.rubiconproject.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,squareup,This cookie carries out information about how the end user uses the website and any advertising that the end user may have seen before visiting the said website.
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Strictly necessary technology,banner,OneTrust,audit,.rubiconproject.com,/,Third party,365.00 days,Session,false,true,none,false,Declared & set,squareup,"Square internal session audit/tracking cookie on squareup.com.
+
+What it does:
+
+• Tracks visitor session activity for Square's internal analytics and security auditing purposes
+• Likely a companion to audit_p (which we discussed earlier) — together they form Square's internal audit cookie pair
+• Used for monitoring user interactions, detecting anomalous behavior, and service quality analysis
+
+
+
+Key details:AttributeValueDomain.squareup.com (first-party)TypeFirst-partyPurposeInternal analytics / session auditing / securityVendorSquare (internal)OneTrust categoryC0001 (Strictly Necessary) or C000"
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Retargeting or advertising technology,banner,OneTrust,CMID,.casalemedia.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Retargeting or advertising technology,banner,OneTrust,CMPS,.casalemedia.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Retargeting or advertising technology,banner,OneTrust,CMPRO,.casalemedia.com,/,Third party,90.00 days,60 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Retargeting or advertising technology,banner,OneTrust,__Secure-YNID,.youtube.com,/,Third party,180.00 days,179 days,true,true,none,true,Declared & set,youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Retargeting or advertising technology,banner,OneTrust,YSC,.youtube.com,/,Third party,Session,Session,true,true,none,true,Declared & set,youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Retargeting or advertising technology,banner,OneTrust,__Secure-ROLLOUT_TOKEN,.youtube.com,/,Third party,180.00 days,179 days,true,true,none,true,Declared & set,youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Retargeting or advertising technology,banner,OneTrust,VISITOR_INFO1_LIVE,.youtube.com,/,Third party,180.00 days,150 days,true,true,none,true,Declared & set,youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Retargeting or advertising technology,banner,OneTrust,VISITOR_PRIVACY_METADATA,.youtube.com,/,Third party,180.00 days,150 days,true,true,none,true,Declared & set,youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Strictly necessary technology,banner,OneTrust,OptanonConsent,.squareup.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,squareup.com,"This cookie is set by the cookie consent solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Performance and analytical technology,banner,OneTrust,_ga_65K13HQ4KD,.squareup.com,/,First party,400.00 days,365 days,false,false,unspecified,false,Declared & set,squareup.com,Used by Google Analytics to identify and track an individual session with your device.
+Performance and analytical technology,banner,OneTrust,_ga,.squareup.com,/,First party,400.00 days,365 days,false,false,unspecified,false,Declared & set,squareup.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customizable by website owners."
+Unclassified,none,,_rdt_uuid,.squareup.com,/,First party,90.00 days,,false,true,strict,false,Not declared,,
+Retargeting or advertising technology,banner,OneTrust,_uetsid,.squareup.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,squareup.com,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site.
+Retargeting or advertising technology,banner,OneTrust,__ar_v4,.squareup.com,/,First party,365.00 days,Session,false,false,lax,false,Declared & set,weebly.com,This cookie is associated with the DoubleClick advertising service from Google. Helps with tracking conversion rates for ads.
+Performance and analytical technology,banner,OneTrust,_uetvid,.squareup.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,squareup.com,This is a cookie utilized by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user who has previously visited our website.
+Retargeting or advertising technology,banner,OneTrust,ttcsid,.squareup.com,/,First party,390.00 days,Session,false,false,unspecified,false,Declared & set,tik tok,"(without the pixel ID suffix) is the base TikTok Click Session ID cookie — same as ttcsid_CRLK8CJC77U1NH778MRG that we discussed earlier, just in its generic/unsuffixed form.
+
+What it does:
+
+• Stores a session identifier linking the current browser session to a TikTok ad click
+• Some TikTok Pixel implementations use the suffixed version (ttcsid_[pixel_id]), others use the plain ttcsid — depends on the pixel configuration and SDK version
+
+
+
+Key details:AttributeValueDomain.squareup.com (first-party)TypeFirst-partyPurposeTikTok ad click session attributionVendorTikTok (ByteDance)LifespanSession "
+Retargeting or advertising technology,banner,OneTrust,ttcsid_CRLK8CJC77U1NH778MRG,.squareup.com,/,First party,390.00 days,Session,false,false,unspecified,false,Declared & set,tik tok,"s a TikTok Click Session ID cookie on squareup.com.
+
+What it does:
+
+• Stores a session identifier for TikTok's advertising pixel (TikTok Pixel / Events API)
+• ttcsid = TikTok Click Session ID
+• CRLK8CJC77U1NH778MRG = Square's TikTok Pixel ID (unique to Square's TikTok Ads acco… AttributeValueDomain.squareup.com (first-party)TypeFirst-partyPurposeTikTok ad click session tracking / conversion attributionVendorTikTok (ByteDance)LifespanSession (expires when browser closes)OneTrust categoryC0004 (Targeting/Advertising)*How TikTok cookies work together on squareup.com:*CookiePurposeLifespanttcsid_["
+Performance and analytical technology,banner,OneTrust,_dd_s,squareup.com,/,First party,0.01 days,0 days,false,false,strict,false,Declared & set,app.squareup.com,"Datadog Cookie used to group all events generated from a unique user session across multiple pages. It contains the current session ID, whether the session is excluded due to sampling, and the expiration date of the session. The cookie is extended for an extra 15 minutes every time the user interacts with the website, up to the maximum user session duration (4 hours)."
+Strictly necessary technology,banner,OneTrust,cee,capi.squareup.com,,,,89 days,,,,,"Declared, not set",capi.squareup.com,"This cookie name is associated with Cost Effective Equipment, LLC which is used to enhance the experience on our site, ensure essential website and services operate correctly, and personalize user experience including for advertising and analytics purposes."
+Strictly necessary technology,banner,OneTrust,_strictly_necessary,squareup.com,,,,Session,,,,,"Declared, not set",squareup.com,Non-existent cookie for ensuring this category always appears to inform users about Square's cookie policy
+Strictly necessary technology,banner,OneTrust,_solidshop_au_guest_token,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,This cookie is used to remember the items you have added to your shopping cart and to facilitate the online checkout process.
+Strictly necessary technology,banner,OneTrust,__q_state_9ArWk8T9jXZqFySR,squareup (quantcast),,,,395 days,,,,,"Declared, not set",squareup (quantcast),"__q_state_9ArWk8T9jXZqFySR is a Quantcast Choice consent state cookie on squareup.com (UK).
+
+What it does:
+
+• Stores the user's consent preferences as managed by Quantcast Choice (Quantcast's CMP / consent management platform)
+• __q_state_ = Quantcast state cookie prefix
+• 9ArWk8T9jXZqFySR = Square's Quan… AttributeValueDomain.squareup.com (first-party)TypeFirst-partyPurposeConsent state storage (CMP)VendorQuantcast ChoiceLifespan13 months (standard for consent cookies)OneTrust categoryC0001 (Strictly Necessary)Typical valueJSON object with consent purposes and vendor permissionsHow it relates"
+Strictly necessary technology,banner,OneTrust,_solidshop_jp_guest_token,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,This cookie is used to remember the items you have added to your shopping cart and to facilitate the online checkout process.
+Strictly necessary technology,banner,OneTrust,_solidshop_ie_guest_token,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,This cookie is used to remember the items you have added to your shopping cart and to facilitate the online checkout process.
+Strictly necessary technology,banner,OneTrust,_solidshop_gb_guest_token,squareup.com,,,,364 days,,,,,"Declared, not set",squareup.com,This cookie is used to remember the items you have added to your shopping cart and to facilitate the online checkout process.
+Strictly necessary technology,banner,OneTrust,dd_cookie_test_,app.squareup.com,,,,0 days,,,,,"Declared, not set",app.squareup.com,dd_cookie_test
+Strictly necessary technology,banner,OneTrust,_solidshop_fr_guest_token,squareup.com,,,,364 days,,,,,"Declared, not set",squareup.com,This cookie is used to remember the items you have added to your shopping cart and to facilitate the online checkout process.
+Strictly necessary technology,banner,OneTrust,_solidshop_es_guest_token,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,This cookie is used to remember the items you have added to your shopping cart and to facilitate the online checkout process.
+Strictly necessary technology,banner,OneTrust,sto-id-editor,weebly.com,,,,Session,,,,,"Declared, not set",weebly.com,"Used by our load balancers to ""pin"" session to a specific server - ensure that all requests that user sends are going to the same server, so that nothing breaks and that the code is always consistently updated, including updates preventing fraud or security problems."
+Strictly necessary technology,banner,OneTrust,sto-id-checkout,weebly.com,,,,Session,,,,,"Declared, not set",weebly.com,"Weebly is a web hosting service that offers a drag-and-drop website builder, allowing users to create and host websites. It is designed to provide functionality for website creation and management."
+Strictly necessary technology,banner,OneTrust,sto-id-web-prod-website-k8s,weebly.com,,,,Session,,,,,"Declared, not set",weebly.com,"Weebly is a web hosting service that offers a drag-and-drop website builder, allowing users to create and host websites. It is designed to provide functionality for website creation and management."
+Strictly necessary technology,banner,OneTrust,sto-id-billing,weebly.com,,,,Session,,,,,"Declared, not set",weebly.com,"Weebly is a web hosting service that offers a drag-and-drop website builder, allowing users to create and host websites. It is designed to provide functionality for website creation and management."
+Strictly necessary technology,banner,OneTrust,OptanonConsent,weebly.com,,,,364 days,,,,,"Declared, not set",weebly.com,"This domain is owned by Square, Inc. which provides services for building professional, mobile-optimized websites and online stores with integrated marketing and advanced analytics, as well as domain name registration."
+Strictly necessary technology,banner,OneTrust,sto-id-web-prod-chamber-k8s,weebly.com,,,,Session,,,,,"Declared, not set",weebly.com,"Weebly is a web hosting service that offers a drag-and-drop website builder, allowing users to create and host websites. It is designed to provide functionality for website creation and management."
+Strictly necessary technology,banner,OneTrust,sto-id-web.prod-front-door-k8s,weebly.com,,,,Session,,,,,"Declared, not set",weebly.com,"Weebly is a web hosting service that offers a drag-and-drop website builder, allowing users to create and host websites. It is designed to provide functionality for website creation and management."
+Strictly necessary technology,banner,OneTrust,websitespring-xsrf,draft.sandbox.weebly.com,,,,13 days,,,,,"Declared, not set",draft.sandbox.weebly.com,This is a cross site request forgery prevention cookie for weebly.com and related sites.
+Strictly necessary technology,banner,OneTrust,XSRF-TOKEN,draft.sandbox.weebly.com,,,,0 days,,,,,"Declared, not set",draft.sandbox.weebly.com,This cookie helps with site security in preventing Cross-Site Request Forgery attacks.
+Strictly necessary technology,banner,OneTrust,publishedsite-xsrf,draft.sandbox.weebly.com,,,,0 days,,,,,"Declared, not set",draft.sandbox.weebly.com,This is a cross site request forgery cookie for customer websites published via Weebly
+Strictly necessary technology,banner,OneTrust,language,www.weebly.com,,,,13 days,,,,,"Declared, not set",www.weebly.com,Cookie used to store language preferences to serve up content in the preferred language.
+Strictly necessary technology,banner,OneTrust,publishedsite-xsrf,www.weebly.com,,,,0 days,,,,,"Declared, not set",www.weebly.com,"Weebly is a web hosting service that offers a drag-and-drop website builder, allowing users to create and host websites. It is designed to provide functionality for website creation and management."
+Strictly necessary technology,banner,OneTrust,XSRF-TOKEN,www.weebly.com,,,,0 days,,,,,"Declared, not set",www.weebly.com,This cookie helps with site security in preventing Cross-Site Request Forgery attacks.
+Strictly necessary technology,banner,OneTrust,XSRF-TOKEN,drafts.editmysite.com,,,,0 days,,,,,"Declared, not set",drafts.editmysite.com,This cookie helps with site security in preventing Cross-Site Request Forgery attacks.
+Strictly necessary technology,banner,OneTrust,publishedsite-xsrf,drafts.editmysite.com,,,,0 days,,,,,"Declared, not set",drafts.editmysite.com,This is a cross site request forgery cookie for customer websites published via Weebly.
+Performance and analytical technology,banner,OneTrust,_gat_gtag_xxxxxxxxxxxxxxxxxxxxxxxxxxx,squareup.com,,,,0 days,,,,,"Declared, not set",squareup.com,Google Analytics
+Performance and analytical technology,banner,OneTrust,__utmc,app.squareup.com,,,,Session,,,,,"Declared, not set",app.squareup.com,"This is one of the four main cookies set by the Google Analytics service which enables website owners to track visitor behavior and measure site performance. It is not used in most sites but is set to enable interoperability with the older version of Google Analytics code known as Urchin.  In this older versions this was used in combination with the __utmb cookie to identify new sessions/visits for returning visitors.
+When used by Google Analytics this is always a Session cookie which is destroyed when the user closes their browser. Where it is seen as a Persistent cookie it is therefore likel"
+Performance and analytical technology,banner,OneTrust,__tld__,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,From Segment Analytics.js library; this cookie helps to figure out a top-level domain for a user.__tld__
+Performance and analytical technology,banner,OneTrust,vs_vfs,squareup.com,,,,Session,,,,,"Declared, not set",squareup.com,Cookie associated with MarketLink used by the MarketLinc platform to track and analyze user behavior and interactions with AI features on websites.
+Performance and analytical technology,banner,OneTrust,cdpUserEntityId,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,This cookie is used by Square to store a site visitor's unique identifier. This helps Square label a web visitor and understand their web interactions. An example is A/B testing.
+Performance and analytical technology,banner,OneTrust,_utmv#########,app.squareup.com,,,,0 days,,,,,"Declared, not set",app.squareup.com,This cookie is used to store custom variable data at the visitor level in Google Analytics. It is used for segmenting visitors into custom segments for more accurate analysis.
+Performance and analytical technology,banner,OneTrust,exp_var_pw_form,squareup,,,,90 days,,,,,"Declared, not set",squareup,n
+Performance and analytical technology,banner,OneTrust,vs_vid,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,Cookie associated with MarketLink used by the MarketLinc platform to track and analyze user behavior and interactions with AI features on websites.
+Performance and analytical technology,banner,OneTrust,ajs%3Atest,squareup.com,,,,364 days,,,,,"Declared, not set",squareup.com,This performance cookie counts visits and tracks other website traffic-related metrics. Cookies in this domain have lifespan of 1 year.
+Performance and analytical technology,banner,OneTrust,_sqtraits,squareup.com,,,,0 days,,,,,"Declared, not set",squareup.com,TS
+Performance and analytical technology,banner,OneTrust,vs_lift_ai,squareup.com,,,,Session,,,,,"Declared, not set",squareup.com,Cookie associated with MarketLink used by the MarketLinc platform to track and analyze user behavior and interactions with AI features on websites.
+Performance and analytical technology,banner,OneTrust,__utmb,app.squareup.com,,,,0 days,,,,,"Declared, not set",app.squareup.com,"This is one of the four main cookies set by the Google Analytics service, which enables website owners to track visitor behavior and measure site performance. This cookie determines new sessions and visits and expires after 30 minutes. The cookie is updated every time data is sent to Google Analytics. Any activity by a user within the 30 minute life span will count as a single visit, even if the user leaves and then returns to the site. A return after 30 minutes will count as a new but returning visitor."
+Performance and analytical technology,banner,OneTrust,__utmz,app.squareup.com,,,,180 days,,,,,"Declared, not set",app.squareup.com,This is one of the four main cookies set by the Google Analytics service which enables website owners to track visitor behavior measure of site performance. This cookie identifies the source of traffic to the site - so Google Analytics can tell site owners where visitors come from when arriving on the site. The cookie has a life span of 6 months and is updated every time data is sent to Google Analytics.
+Performance and analytical technology,banner,OneTrust,dajs%3Acookies,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,"This is a Square Analytics cookie. Its purpose is to test whether cookies are supported and enabled in the browser. If cookie storage isn't available, the code indicates it will fallback to using local storage."
+Performance and analytical technology,banner,OneTrust,_ga,weebly.com,,,,364 days,,,,,"Declared, not set",weebly.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customizable by website owners."
+Performance and analytical technology,banner,OneTrust,exp_var_pw_signup_pricing_plan_subnav_,squareup,,,,90 days,,,,,"Declared, not set",squareup,"is another Square Public Web A/B experiment cookie, following the same pattern as exp_var_pw_nav_signups_v1.
+
+What it does:
+
+• Stores the visitor's assigned variant for an experiment on squareup.com's pricing plan sub-navigation sign-up flow
+• pw = Public Web, signup = sign-up flow, pricing_plan = pricing/plans page, subnav = sub-navigation element
+
+
+
+Key details:AttributeValueDomain.squareup.com (first-party)TypeFirst-partyPurposeA/B testing — pricing page sub-navigation sign-up experienceVendorSquare (internal) via LaunchDarklyValuesLikely control / treatment (or named variants)OneTrust cate"
+Performance and analytical technology,banner,OneTrust,vs_conv_ai,squareup.com,,,,Session,,,,,"Declared, not set",squareup.com,Cookie associated with MarketLink used by the MarketLinc platform to track and analyze user behavior and interactions with AI features on websites.
+Performance and analytical technology,banner,OneTrust,cdpUserEntityType,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,"This cookie stores the information on the type of web visitor, for example, merchant, anonymous visitor, etc. This helps Square label a web visitor and understand their web interactions. An example of its use is in A/B testing."
+Performance and analytical technology,banner,OneTrust,vs_sid,squareup.com,,,,Session,,,,,"Declared, not set",squareup.com,Cookie associated with MarketLink used by the MarketLinc platform to track and analyze user behavior and interactions with AI features on websites.
+Performance and analytical technology,banner,OneTrust,_cta_ctr_us_en_pricing_experiment,squareup,,,,90 days,,,,,"Declared, not set",squareup,"is a Square Public Web A/B experiment cookie for testing pricing page CTA click-through rates.
+
+What it does:
+
+• Stores the visitor's assigned variant for an experiment measuring CTA (Call-to-Action) click-through rate on the US English pricing page
+• Breaking down the… AttributeValueDomain.squareup.com (first-party)TypeFirst-partyPurposeA/B testing — pricing page CTA optimization for US English visitorsVendorSquare (internal) via LaunchDarklyValuesLikely control / treatment (or named variants)OneTrust categoryC0002 (Performance) or C0003 (Functional)What's being tested:
+
+• Different CTA butto"
+Performance and analytical technology,banner,OneTrust,_performance_and_analytical,squareup.com,,,,Session,,,,,"Declared, not set",squareup.com,This is not a cookie but included here to ensure this category always appears to explain to web visitors about our cookies.
+Performance and analytical technology,banner,OneTrust,__utmt,app.squareup.com,,,,0 days,,,,,"Declared, not set",app.squareup.com,This cookie is set by Google Analytics.  According to their documentation it is used to throttle the request rate for the service - limiting the collection of data on high traffic sites. It expires after 10 minutes
+Performance and analytical technology,banner,OneTrust,__utma,app.squareup.com,,,,365 days,,,,,"Declared, not set",app.squareup.com,"This is one of the four main cookies set by the Google Analytics service, which enables website owners to track visitor behavior and measure site performance. This cookie lasts for 2 years by default and distinguishes between users and sessions. It is used to calculate new and returning visitor statistics. The cookie is updated every time data is sent to Google Analytics. Website owners can customize the lifespan of the cookie."
+Performance and analytical technology,banner,OneTrust,optimizelyDomainTestCookie,app.squareup.com,,,,0 days,,,,,"Declared, not set",app.squareup.com,These Optimizely cookies allow us to test different versions of website pages to different users at the same time and to track how users navigate around our website. We use this information to test new features and make the website easier to use.
+Performance and analytical technology,banner,OneTrust,_ga_65K13HQ4KD,squareup (google analytics),,,,Session,,,,,"Declared, not set",squareup (google analytics),"is a Google Analytics 4 (GA4) measurement ID cookie for squareup.com UK.
+
+What it does:
+
+• Stores session and engagement data for the UK-specific GA4 data stream/property
+• 65K13HQ4KD = the measurement ID suffix mapping to Square's UK GA4 property
+• Tracks UK visitor sessions, engagement ti… AttributeValueDomain.squareup.com (first-party)TypeFirst-partyPurposeGA4 session tracking for Square UK propertyVendorGoogle Analytics 4Lifespan2 yearsOneTrust categoryC0002 (Performance/Analytics)Why a separate GA4 property for UK:
+
+• Different regional teams/markets often have their own GA4 properties fo"
+Performance and analytical technology,banner,OneTrust,optimizelyDomainTestCookie,squareup.com,,,,150 days,,,,,"Declared, not set",squareup.com,These Optimizely cookies allow us to test different versions of website pages to different users at the same time and to track how users navigate around our website. We use this information to test new features and make the website easier to use.
+Performance and analytical technology,banner,OneTrust,vs_intent,squareup.com,,,,Session,,,,,"Declared, not set",squareup.com,Cookie associated with MarketLink used by the MarketLinc platform to track and analyze user behavior and interactions with AI features on websites.
+Performance and analytical technology,banner,OneTrust,cdpUserEntityId_cf390622-7d1b-4ac5-a06b-cfb14babf836,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,This cookie is used by Square to store a site visitor's unique identifier. This helps Square label a web visitor and understand their web interactions. An example is A/B testing.
+Performance and analytical technology,banner,OneTrust,cdpUserEntityType_cf390622-7d1b-4ac5-a06b-cfb14babf836,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,"This cookie stores the information on the type of web visitor, for example, merchant, anonymous visitor, etc. This helps Square label a web visitor and understand their web interactions. An example of its use is in A/B testing."
+Performance and analytical technology,banner,OneTrust,_hjHasCachedUserAttributes,squareup.com,,,,Session,,,,,"Declared, not set",squareup.com,This is a Hotjar cookie. Hotjar is a technology service that helps us better understand our website visitors' experience. This cookie is used to know whether the data set in _hjUserAttributes Local Storage item is up to date or not
+Performance and analytical technology,banner,OneTrust,_cs_same_site,t.contentsquare.net,,,,Session,,,,,"Declared, not set",t.contentsquare.net,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Performance and analytical technology,banner,OneTrust,dd_cookie_test_,dex-tech-fe-production-c.squarecdn.com,,,,0 days,,,,,"Declared, not set",dex-tech-fe-production-c.squarecdn.com,Datadog temporary cookie used to test for cookie support. Expires instantly.
+Performance and analytical technology,banner,OneTrust,cdpCookiesEnabled,dex-tech-fe-production-c.squarecdn.com,,,,0 days,,,,,"Declared, not set",dex-tech-fe-production-c.squarecdn.com,This cookie is used by Square's Customer Data Platform to identify whether other cdp cookies are enabled.
+Performance and analytical technology,banner,OneTrust,cdpCookiesEnabled,xms-production-f.squarecdn.com,,,,0 days,,,,,"Declared, not set",xms-production-f.squarecdn.com,This cookie is used by Square's Customer Data Platform to identify whether other cdp cookies are enabled.
+Performance and analytical technology,banner,OneTrust,dd_cookie_test_,xms-production-f.squarecdn.com,,,,0 days,,,,,"Declared, not set",xms-production-f.squarecdn.com,dd_cookie_test
+Performance and analytical technology,banner,OneTrust,dd_cookie_test_,onboardfrontend-production-c.squarecdn.com,,,,0 days,,,,,"Declared, not set",onboardfrontend-production-c.squarecdn.com,Datadog temporary cookie used to test for cookie support. Expires instantly.
+Performance and analytical technology,banner,OneTrust,dd_cookie_test_,supportcenter-production-f.squarecdn.com,,,,0 days,,,,,"Declared, not set",supportcenter-production-f.squarecdn.com,Datadog temporary cookie used to test for cookie support. Expires instantly.
+Performance and analytical technology,banner,OneTrust,dd_cookie_test_,www.datadoghq-browser-agent.com,,,,0 days,,,,,"Declared, not set",www.datadoghq-browser-agent.com,dd_cookie_test
+Performance and analytical technology,banner,OneTrust,ktcid,kargo.com,,,,365 days,,,,,"Declared, not set",kargo.com,This cookie is used to identify the visitor and optimize ad-relevance by collecting visitor data from multiple websites – this exchange of visitor data is normally provided by a third-party data-center or ad-exchange.
+Functionality technology,banner,OneTrust,nc-previous-guid,squareup.com,,,,0 days,,,,,"Declared, not set",squareup.com,This cookie name is associated with CIS Statistics which is used to store the ID of the last seen article published from CMP and tracks email addresses when a user submits their email.
+Functionality technology,banner,OneTrust,_functionality,squareup.com,,,,Session,,,,,"Declared, not set",squareup.com,This is not a cookie but included here to ensure this category always appears to explain to web visitors about our cookies.
+Functionality technology,banner,OneTrust,_cbp,squareup.com,,,,89 days,,,,,"Declared, not set",squareup.com,"This cookie name _cbp is used to store various data for functionalities across the website, including user preferences and settings."
+Functionality technology,banner,OneTrust,optimizelyOptOut,app.squareup.com,,,,0 days,,,,,"Declared, not set",app.squareup.com,Optimizely web experimentation cookie. Stores a boolean indicating whether the visitor has opted out of participating in Optimizely Experimentation powered experimentation
+Functionality technology,banner,OneTrust,_gdxxxxxxxxxxxxx,squareup.com,,,,Session,,,,,"Declared, not set",squareup.com,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Functionality technology,banner,OneTrust,_pin_unauth,developer.squareup.com,,,,365 days,,,,,"Declared, not set",developer.squareup.com,This cookie is assocate with pinterest.  It is used to track the usage of services.
+Functionality technology,banner,OneTrust,sto-id-*,weebly.com,,,,Session,,,,,"Declared, not set",weebly.com,"Weebly is a web hosting service that offers a drag-and-drop website builder, allowing users to create and host websites. It is designed to provide functionality for website creation and management."
+Functionality technology,banner,OneTrust,PublishedSiteSession,draft.sandbox.weebly.com,,,,0 days,,,,,"Declared, not set",draft.sandbox.weebly.com,This is the session cookie for customer websites published via Weebly.
+Functionality technology,banner,OneTrust,laravel_session,www.weebly.com,,,,0 days,,,,,"Declared, not set",www.weebly.com,Laravel is a PHP programming language framework for building website. This is a cookie used to identify unique sessions.
+Functionality technology,banner,OneTrust,PublishedSiteSession,www.weebly.com,,,,0 days,,,,,"Declared, not set",www.weebly.com,"Weebly is a web hosting service that offers a drag-and-drop website builder, allowing users to create and host websites. It is designed to provide functionality for website creation and management."
+Functionality technology,banner,OneTrust,*_session,www.weebly.com,,,,0 days,,,,,"Declared, not set",www.weebly.com,"Weebly is a web hosting service that offers a drag-and-drop website builder, allowing users to create and host websites. It is designed to provide functionality for website creation and management."
+Functionality technology,banner,OneTrust,optimizelyRumLB,rum.optimizely.com,,,,Session,,,,,"Declared, not set",rum.optimizely.com,"Controls the AWSELB cookie`s attributes (for example, SameSite and Secure)."
+Functionality technology,banner,OneTrust,optimizely*,rum.optimizely.com,,,,Session,,,,,"Declared, not set",rum.optimizely.com,"This domain is associated with Optimizely, a platform providing A/B testing and personalization for websites. The cookies are used to measure the performance and effectiveness of different website designs."
+Functionality technology,banner,OneTrust,AWSELBCORS,rum.optimizely.com,,,,Session,,,,,"Declared, not set",rum.optimizely.com,AWS Classic Load Balancer Cookie.Load Balancing Cookie: Used to map the session to the instance. Same value as AWSELBUsed to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Functionality technology,banner,OneTrust,AWSELB,rum.optimizely.com,,,,Session,,,,,"Declared, not set",rum.optimizely.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Functionality technology,banner,OneTrust,PublishedSiteSession,drafts.editmysite.com,,,,0 days,,,,,"Declared, not set",drafts.editmysite.com,This is the session cookie for customer websites published via Weebly.
+Retargeting or advertising technology,banner,OneTrust,khao_p,Khao restaurant,,,,Session,,,,,"Declared, not set",Khao restaurant,"The khao_p is not a standard, official Squareup (Square) cookie. It is highly likely an identifier left by Khao, a third-party Thai restaurant tool you have used, or a misspelled internal tracking token tied to advertising and analytics"
+Retargeting or advertising technology,banner,OneTrust,amzn_consent,amazon,,,,365 days,,,,,"Declared, not set",amazon,"n Amazon Ads consent/preference cookie on squareup.com.
+
+What it does:
+
+• Stores the user's consent state for Amazon's advertising services (Amazon Ads / Amazon Publisher Services)
+• Records whether the user has opted in or out of Amazon's ad tracking on squareup.com
+• Used by Amazon's ad… AttributeValueDomain.squareup.com (first-party) or .amazon-adsystem.com (third-party)TypeDepends on implementationPurposeAd consent state management for Amazon advertisingVendorAmazon Ads / Amazon Publisher ServicesLifespanTypically 1 yearOneTrust categoryC0004 (Targeting/Advertising)*Why it exists on square"
+Retargeting or advertising technology,banner,OneTrust,__ncuid,squareup.com,,,,364 days,,,,,"Declared, not set",squareup.com,"DoubleClick cookie used to track users for advertising and marketing purposes, including retargeting and displaying targeted ads across different websites and platforms."
+Retargeting or advertising technology,banner,OneTrust,_pin_unauth,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,This cookie is assocate with pinterest.  It is used to track the usage of services.
+Retargeting or advertising technology,banner,OneTrust,_cs_s,squareup.com,,,,0 days,,,,,"Declared, not set",squareup.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Retargeting or advertising technology,banner,OneTrust,_cs_c,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Retargeting or advertising technology,banner,OneTrust,drift_aid,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,"Cookie associated with Drift, a marketing platform. This is an anonymous identifier token used to tie the visitor on our website with the profile within the Drift system. This allows Drift to remember the information that this site visitor has provided through the chat on subsequent site visits"
+Retargeting or advertising technology,banner,OneTrust,ValueSurveyVisitorCount,community.squareup.com,,,,Session,,,,,"Declared, not set",community.squareup.com,"Cookie associated with Khoros (formerly Lithium), platform for customer engagement. This cookie stores the survey visit count of the user, which is used in logic that determines when a survey is triggered."
+Retargeting or advertising technology,banner,OneTrust,_cs_c,developer.squareup.com,,,,Session,,,,,"Declared, not set",developer.squareup.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Retargeting or advertising technology,banner,OneTrust,driftt_aid,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,This is the anonymous identifier token. It is used to tie the visitor on your website with the profile within the Drift system. This allows Drift to remember the information that this site visitor has provided through the chat on subsequent site visits.
+Retargeting or advertising technology,banner,OneTrust,_cs_s,developer.squareup.com,,,,Session,,,,,"Declared, not set",developer.squareup.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Retargeting or advertising technology,banner,OneTrust,AWSALBCORS,community.squareup.com,,,,180 days,,,,,"Declared, not set",community.squareup.com,This cookie is managed by AWS and is used for load balancing.Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Retargeting or advertising technology,banner,OneTrust,dajs_group_id,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,"This cookie is set by Square account authentication, containing the group id associated with an email campaign. A legacy cookie set for compatibility with the older Square library."
+Retargeting or advertising technology,banner,OneTrust,dajs_group_id,community.squareup.com,,,,Session,,,,,"Declared, not set",community.squareup.com,"This cookie is set by Square account authentication, containing the group id associated with an email campaign. A legacy cookie set for compatibility with the older Square library."
+Retargeting or advertising technology,banner,OneTrust,_gat_gtag_UA_9517040_46,squareup.com,,,,0 days,,,,,"Declared, not set",squareup.com,Google Analytics
+Retargeting or advertising technology,banner,OneTrust,_retargeting_or_advertising,squareup.com,,,,Session,,,,,"Declared, not set",squareup.com,This is not a cookie but included here to ensure this category always appears to explain to web visitors about our cookies.
+Retargeting or advertising technology,banner,OneTrust,AWSALB,community.squareup.com,,,,180 days,,,,,"Declared, not set",community.squareup.com,AWS ELB application load balancerUsed to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Retargeting or advertising technology,banner,OneTrust,_adroll_shared,squareup,,,,365 days,,,,,"Declared, not set",squareup,"NextRoll/AdRoll advertising cookies used for retargeting and programmatic ad delivery.
+
+What they do:
+
+• NextRoll (parent company of AdRoll and RollWorks) provides B2B and B2C retargeting — showing ads to people who previously visited squareup.com as they browse other sites
+• The cookies store a unique visitor identifier that NextRoll uses to build an audience profile and serve targeted display ads across their ad exchange network
+
+
+
+Common NextRoll cookies you might see:CookiePurposeLifespan__adroll_fpcFirst-party visitor ID for AdRoll retargeting1 year__adrollAdRoll campaign/segment tracking"
+Retargeting or advertising technology,banner,OneTrust,_cs_id,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Retargeting or advertising technology,banner,OneTrust,VISITOR_BEACON,community.squareup.com,,,,180 days,,,,,"Declared, not set",community.squareup.com,"This cookie collects and stores data on a per browser basis (with a unique ID per browser), but the data is used only in the aggregate to compile statistcs about different types of site / page visits. These statistics are then used to provide a unique visitor report to Lithium customers to track their usage of their community, and for Lithium to track usage for purposes of enforcing usage limits/ charging fees for excess usage."
+Retargeting or advertising technology,banner,OneTrust,optimizelyOptOut,squareup.com,,,,0 days,,,,,"Declared, not set",squareup.com,Optimizely web experimentation cookie. Stores a boolean indicating whether the visitor has opted out of participating in Optimizely Experimentation powered experimentation.
+Retargeting or advertising technology,banner,OneTrust,drift_campaign_refresh,squareup.com,,,,0 days,,,,,"Declared, not set",squareup.com,"This is the session identifier token. It is used to tie the visitor on your website with a current website session within the Drift system. This is enables session-specific features, such as popping up a messaging only once during a 30 minute session as to prevent a disruptive experience."
+Retargeting or advertising technology,banner,OneTrust,_cs_nnnnnnnnnnnnn,squareup.com,,,,Session,,,,,"Declared, not set",squareup.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Retargeting or advertising technology,banner,OneTrust,_cs_id,developer.squareup.com,,,,Session,,,,,"Declared, not set",developer.squareup.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Retargeting or advertising technology,banner,OneTrust,demdex,demdex.net,,,,150 days,,,,,"Declared, not set",demdex.net,"This cookie helps Adobe Audience Manger perform basic functions such as visitor identification, ID synchronization, segmentation, modeling, reporting, etc."
+Retargeting or advertising technology,banner,OneTrust,dpm,dpm.demdex.net,,,,150 days,,,,,"Declared, not set",dpm.demdex.net,This domain is owned by Adobe Audience Manager. The main business activity is online profiling for targeted marketing.
+Retargeting or advertising technology,banner,OneTrust,_adroll_fpc,NextRoll (AdRoll),,,,365 days,,,,,"Declared, not set",NextRoll (AdRoll),"__adroll / __adroll_fpc (NextRoll cookies) are NextRoll/AdRoll advertising cookies used for retargeting and programmatic ad delivery.
+
+What they do:
+
+• NextRoll (parent company of AdRoll and RollWorks) provides B2B and B2C retargeting — showing ads to people who previously visited squareup.com as they browse other sites
+• The cookies store a unique visitor identifier that NextRoll uses to build an audience profile and serve targeted display ads across their ad exchange network
+
+
+
+Common NextRoll cookies you might see:CookiePurposeLifespan__adroll_fpcFirst-party visitor ID for AdRoll retargetin"
+Retargeting or advertising technology,banner,OneTrust,dax_listenerid,thisisdax.com,,,,365 days,,,,,"Declared, not set",thisisdax.com,"This cookie name is associated with Global Dax and is used for campaign monitoring, reporting and optimisation when running digital audio activity."
+Retargeting or advertising technology,banner,OneTrust,_pin_aem,squareup.com,,,,365 days,,,,,"Declared, not set",squareup.com,"is a Pinterest Ads Enhanced Match cookie.
+
+What it does:
+
+• Stores hashed user data (typically hashed email) that Pinterest uses for Enhanced Match — a feature that improves conversion attribution accuracy
+• When a user visits squareup.com and later interacts with a Pinterest ad (or vice versa), Pinterest uses this hashed data to match the conversion back to the ad impression/click
+• ""AEM"" stands for Ads Enhanced Match
+
+
+
+Key details:AttributeValueDomain.squareup.com (first-party)TypeFirst-partyPurposeAd conversion attribution via hashed identity matchingVendorPinterest (Pinterest Tag / Conver"
+Retargeting or advertising technology,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Retargeting or advertising technology,banner,OneTrust,SEUNCY,semasio.net,,,,365 days,,,,,"Declared, not set",semasio.net,"This domain is owned by Semasio, a German business specialising in profiling and behavioral targeting of consumers."
+Retargeting or advertising technology,banner,OneTrust,__q_state_,Qualified,,,,Session,,,,,"Declared, not set",Qualified,"__q_state_ is a Qualified (qualified.com) cookie. It stores visitor state and interaction details for the Qualified chat/messenger experience — maintaining chat continuity across pages and supporting sales lead routing.
+
+Key details:
+
+• Provider: Qualified.com (sales chat/lead routing tool) • Purpose: Identifies the visitor and their interaction with the Qualified Chat Messenger so conversations persist across page navigations and leads can be routed to Sales/Salesforce • Category: Functionality or Marketing/Advertising (depends on how it's classified in OneTrust) • France/EU note: Should be g"
+Retargeting or advertising technology,banner,OneTrust,UID,ads.stickyadstv.com,,,,365 days,,,,,"Declared, not set",ads.stickyadstv.com,"This domain is owned by StickyAdsTV, a French company providing online video advertising services."
+Retargeting or advertising technology,banner,OneTrust,uid-bp-xxxxx,ads.stickyadstv.com,,,,13 days,,,,,"Declared, not set",ads.stickyadstv.com,"This domain is owned by StickyAdsTV, a French company providing online video advertising services."
+Retargeting or advertising technology,banner,OneTrust,uid,adform.net,,,,365 days,,,,,"Declared, not set",adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Retargeting or advertising technology,banner,OneTrust,C,adform.net,,,,365 days,,,,,"Declared, not set",adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Retargeting or advertising technology,banner,OneTrust,sp,ec.editmysite.com,,,,364 days,,,,,"Declared, not set",ec.editmysite.com,This domain is owned by Weebly which serves files and other content for websites created with their platform.
+Retargeting or advertising technology,banner,OneTrust,_pinterest_ct_ua,ct.pinterest.com,,,,365 days,,,,,"Declared, not set",ct.pinterest.com,"This domain is associated with Pinterest, a social media platform that allows users to share images and media content through collections known as pinboards. The domain is likely used for conversion tracking and advertising purposes."
+Retargeting or advertising technology,banner,OneTrust,d,quantserve.com,,,,60 days,,,,,"Declared, not set",quantserve.com,"This domain is owned by Quantcast. The main business activity is: Market and Audience Segmentation, Targeted advertising services"
+Retargeting or advertising technology,banner,OneTrust,tdid,trade desk,,,,365 days,,,,,"Declared, not set",trade desk,"he Trade Desk (TTD) unified ID cookie.
+
+What it does:
+
+• Stores a unique identifier assigned by The Trade Desk, one of the largest demand-side platforms (DSPs) for programmatic advertising
+• Enables The Trade Desk to recognize users across websites for ad targeting, frequency capping, and conversion attribution
+• Part of The Trade Desk's Unified ID framework — an industry alternative to third-party cookies for cross-site identity resolution
+
+
+
+Key details:
+
+
+
+
+
+Domain.adsrvr.org (The Trade Desk's domain) or first-party depending on implementTypeThird-party (if on .adsrvr.org) or First-party (i"
+Retargeting or advertising technology,banner,OneTrust,tdcpm,trade desk,,,,365 days,,,,,"Declared, not set",trade desk,"a The Trade Desk cookie match/sync cookie.
+
+What it does:
+
+• Works alongside tdid (which we discussed) as part of The Trade Desk's cookie-syncing infrastructure
+• Stores partner-mapping data that allows The Trade Desk to sync its user IDs with other ad tech platforms (SSPs, DMPs, data providers)… AttributeValueDomain.adsrvr.org (The Trade Desk)TypeThird-partyPurposeCookie matching / ID syncing between ad platformsVendorThe Trade DeskLifespan1 yearOneTrust categoryC0004 (Targeting/Advertising)How it relates to tdid:CookieRoletdidThe Trade Desk's unique user identifiertdcpmCookie partner match —"
+Retargeting or advertising technology,banner,OneTrust,viewer_token,csync.loopme.me,,,,60 days,,,,,"Declared, not set",csync.loopme.me,"This cookie is associated with LoopMe, a company that provides video advertising services. This cookie is used to identify the user on the website and attribute statistics to the user collected during the session"
+Retargeting or advertising technology,banner,OneTrust,__Secure-*,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Retargeting or advertising technology,banner,OneTrust,__Secure-YEC,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Retargeting or advertising technology,banner,OneTrust,tt_enable_cookie,tik tok,,,,395 days,,,,,"Declared, not set",tik tok,"s a TikTok Pixel functionality check cookie on squareup.com.
+
+What it does:
+
+• A simple flag cookie set by TikTok's Pixel JS to verify that the browser accepts cookies
+• TikTok's pixel checks whether it can set cookies on the domain — if _tt_enable_cookie is successfully written and read back, the pixel knows cookies are enabled and proceeds with full tracking
+• If the cookie can't be set (e.g., cookies are blocked), TikTok falls back to cookieless tracking methods
+
+
+
+Key details:AttributeValueDomain.squareup.com (first-party)TypeFirst-partyPurposeCookie support detection for TikTok PixelVendo"
+Retargeting or advertising technology,banner,OneTrust,zc,zeotap.com,,,,365 days,,,,,"Declared, not set",zeotap.com,"Cookie associated with Zeotap, a data platform for understanding and predicting the customer behaviour. It is used for user identification"
+Retargeting or advertising technology,banner,OneTrust,ar_debug,pinterest.com,,,,365 days,,,,,"Declared, not set",pinterest.com,This domain is owned by Pinterest. The main business activity is: Social Content Sharing platform

@@ -1,0 +1,50 @@
+# Round 13 batch, 2026-11-12: Japanese firms, tools, outdoor/bikes, baby/toys, crypto, UK finance.
+# From 252 new candidates checked with find_banner_sites (candidates_round13_2026-11-12_verified.csv):
+# 56 usable. Site = final_host. kleintools.com and carters.com listed twice. Dropped:
+#   already collected: consumercare.hasbro.com (via nerf.com), afterpay.com (Block), jpmorgan.com
+#   (via nutmeg.com), twelfthmagpie.com (via fool.co.uk; fool.com), subaru.co.jp (subaru.com),
+#   mazda.com (mazdausa.com), komatsu.jp (komatsu.com), milwaukeetool.eu (milwaukeetool.com),
+#   Emerson (emerson.com): ridgid.com, greenlee.com; fluke.com (Fortive)
+#   sister brands: atomic.com (Amer Sports; arcteryx.com kept), melissaanddoug.com (spinmaster.com kept)
+#   unrelated redirect: plum.com -> pacs.com
+# Columns: host vendor-folder
+www.mitsui.com onetrust
+www.marubeni.com onetrust
+www.kubota.com onetrust
+leica-geosystems.com onetrust
+www.kleintools.com onetrust
+gerbergear.com onetrust
+www.victorinox.com onetrust
+www.olight.com onetrust
+www.petzl.com onetrust
+arcteryx.com onetrust
+www.smithoptics.com cookiebot
+www.giro.com onetrust
+www.trekbikes.com cookiebot
+www.cannondale.com onetrust
+www.sram.com cookiebot
+www.wahoofitness.com onetrust
+www.polar.com cookiebot
+www.suunto.com onetrust
+www.eightsleep.com onetrust
+www.bugaboo.com cookiebot
+uppababy.com transcend
+www.graco.com onetrust
+www.chicco.com cookiebot
+www.carters.com onetrust
+www.playmobil.com onetrust
+funko.com onetrust
+www.spinmaster.com onetrust
+int.osmo.com cookiebot
+www.kucoin.com onetrust
+www.fireblocks.com onetrust
+bakkt.com onetrust
+www.circle.com onetrust
+stellar.org onetrust
+www.questrade.com onetrust
+us.plus500.com onetrust
+www.hl.co.uk onetrust
+www.iwoca.co.uk onetrust
+www.tide.co onetrust
+www.skipton.co.uk onetrust
+www.principality.co.uk cookiebot

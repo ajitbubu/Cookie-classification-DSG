@@ -1,0 +1,93 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Essential,banner,Ketch,__cf_bm,.kinsta.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,_wingify_uuid,.kinsta.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_wingify_s,.kinsta.com,/,First party,100.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_wingify_test_cookie,.kinsta.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_wingify_uuid_v2,.kinsta.com,/,First party,366.00 days,,false,false,unspecified,false,Not declared,,
+Essential,banner,Ketch,_swb,.kinsta.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Essential,banner,Ketch,_ketch_consent_v1_,.kinsta.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Essential,banner,Ketch,_swb_consent_,.kinsta.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Analytics,banner,Ketch,_ga,.kinsta.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Essential,banner,Ketch,__cf_bm,.bzrcdn.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential,banner,Ketch,_cfuvid,.bzrcdn.openai.com,/,Third party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Essential,banner,Ketch,__cf_bm,.g2crowd.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Advertising,banner,Ketch,li_sugr,.linkedin.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Advertising,banner,Ketch,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LinkedIn  
+Advertising,banner,Ketch,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,,LinkedIn  
+Essential,banner,Ketch,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Advertising,banner,Ketch,_gcl_au,.kinsta.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Essential,banner,Ketch,__cf_bm,.hs-scripts.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,__obref,.kinsta.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Advertising,banner,Ketch,_twpid,.kinsta.com,/,First party,390.00 days,390 days,false,true,strict,false,Declared & set,,Twitter Ads
+Advertising,banner,Ketch,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Advertising,banner,Ketch,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Advertising,banner,Ketch,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn  
+Advertising,banner,Ketch,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Advertising,banner,Ketch,bscookie,.www.linkedin.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,LinkedIn  
+Advertising,banner,Ketch,muc_ads,.t.co,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Essential,banner,Ketch,__cf_bm,.t.co,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential,banner,Ketch,__cf_bm,.g2.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential,banner,Ketch,__cf_bm,.hs-analytics.net,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential,banner,Ketch,__cf_bm,.usemessages.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential,banner,Ketch,__cf_bm,.hs-banner.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Advertising,banner,Ketch,personalization_id,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Essential,banner,Ketch,__cf_bm,.twitter.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,kinsta_hubspot_loaded,kinsta.com,/,First party,30.00 days,,false,false,unspecified,false,Not declared,,
+Analytics,banner,Ketch,__hstc,.kinsta.com,/,First party,180.00 days,179 days,false,false,lax,false,Declared & set,,HubSpot
+Analytics,banner,Ketch,hubspotutk,.kinsta.com,/,First party,180.00 days,179 days,false,false,lax,false,Declared & set,,HubSpot
+Analytics,banner,Ketch,__hssrc,.kinsta.com,/,First party,Session,,false,false,lax,false,Declared & set,,HubSpot
+Essential,banner,Ketch,__cf_bm,.hubspot.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential,banner,Ketch,__cf_bm,.hsadspixel.net,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Advertising,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Essential,banner,Ketch,__cf_bm,.hsforms.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential,banner,Ketch,m,m.stripe.com,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Stripe
+Essential,banner,Ketch,__stripe_mid,.kinsta.com,/,First party,365.00 days,364 days,false,true,strict,false,Declared & set,,Stripe
+Essential,banner,Ketch,__stripe_sid,.kinsta.com,/,First party,0.02 days,,false,true,strict,false,Declared & set,,Stripe
+Essential,banner,Ketch,__cf_bm,.hsappstatic.net,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Advertising,banner,Ketch,_fbp,.kinsta.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Facebook Ads
+Advertising,banner,Ketch,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Declared & set,,Facebook Ads
+Essential,banner,Ketch,__cf_bm,.bzr.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential,banner,Ketch,_cfuvid,.bzr.openai.com,/,Third party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Analytics,banner,Ketch,guest_id_marketing,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Advertising,banner,Ketch,guest_id_ads,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Advertising,banner,Ketch,guest_id,.twitter.com,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,Twitter Ads
+Unclassified,none,,_wingify_ds,.kinsta.com,/,First party,30.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_wingify_sn,.kinsta.com,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_R8LLNPRZTN,.kinsta.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Advertising,banner,Ketch,_rdt_uuid,.kinsta.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Advertising,banner,Ketch,_uetsid,.kinsta.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Advertising,banner,Ketch,_uetvid,.kinsta.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Analytics,banner,Ketch,__hssc,.kinsta.com,/,First party,0.02 days,,false,false,lax,false,Declared & set,,HubSpot
+Advertising,banner,Ketch,_twsid,.kinsta.com,/,First party,390.00 days,390 days,false,true,strict,false,Declared & set,,Twitter Ads
+Analytics,banner,Ketch,_ce.s,.kinsta.com,/,First party,365.00 days,364 days,false,false,strict,false,Declared & set,,Crazy Egg
+Essential,banner,Ketch,__cf_bm,.hs-sites.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Essential,banner,Ketch,__cf_bm,.hubspotusercontent-na1.net,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Advertising,banner,Ketch,_rdt_pn,.kinsta.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Advertising,banner,Ketch,arc_id,,,,,59 days,,,,,"Declared, not set",,
+Advertising,banner,Ketch,ar_debug,,,,,30 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Advertising,banner,Ketch,__lt__sid,,,,,,,,,,"Declared, not set",,
+Advertising,banner,Ketch,TapAd_3WAY_SYNCS,,,,,59 days,,,,,"Declared, not set",,Tapad (by Experian)
+Advertising,banner,Ketch,TapAd_DID,,,,,59 days,,,,,"Declared, not set",,Tapad (by Experian)
+Advertising,banner,Ketch,TapAd_TS,,,,,59 days,,,,,"Declared, not set",,Tapad (by Experian)
+Analytics,banner,Ketch,cebs,,,,,,,,,,"Declared, not set",,Crazy Egg
+Analytics,banner,Ketch,cebsp_,,,,,,,,,,"Declared, not set",,Crazy Egg
+Analytics,banner,Ketch,_ce.cch,,,,,,,,,,"Declared, not set",,Crazy Egg
+Analytics,banner,Ketch,_ce.clock_data,,,,,,,,,,"Declared, not set",,Crazy Egg
+Analytics,banner,Ketch,_CEFT,,,,,364 days,,,,,"Declared, not set",,Crazy Egg
+Analytics,banner,Ketch,_ce.seg.targeting,,,,,364 days,,,,,"Declared, not set",,Crazy Egg
+Analytics,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,_gat_gtag_UA_*,,,,,,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,_gid,,,,,,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,kinsta_xp,,,,,180 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,k_web_flags,,,,,1 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,k_web_id,,,,,1 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,messagesUtk,,,,,179 days,,,,,"Declared, not set",,HubSpot
+Essential,banner,Ketch,AWSALBTG,,,,,6 days,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Essential,banner,Ketch,AWSALBTGCORS,,,,,6 days,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Essential,banner,Ketch,cookietest,,,,,,,,,,"Declared, not set",,Shopify
+Essential,banner,Ketch,dd_cookie_test_*,,,,,,,,,,"Declared, not set",,Datadog
+Essential,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Essential,banner,Ketch,usprivacy,,,,,29 days,,,,,"Declared, not set",,IAB Tech Lab
+Essential,banner,Ketch,us_privacy,,,,,29 days,,,,,"Declared, not set",,IAB Tech Lab
+Essential,banner,Ketch,XSRF-TOKEN,,,,,1 days,,,,,"Declared, not set",,

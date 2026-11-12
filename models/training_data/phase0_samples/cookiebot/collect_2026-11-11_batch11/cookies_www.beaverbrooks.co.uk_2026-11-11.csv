@@ -1,0 +1,180 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,_li_ss,i.liadm.com,/s,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sessionId,www.beaverbrooks.co.uk,/,First party,Session,,false,true,strict,false,Not declared,,
+Necessary,banner,Cookiebot,abgroup.finance,www.beaverbrooks.co.uk,/,First party,Session,Session,false,true,strict,false,Declared & set,www.beaverbrooks.co.uk,Pending
+Necessary,banner,Cookiebot,CookieConsent,www.beaverbrooks.co.uk,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,data.beaverbrooks.co.uk,Stores the user's cookie consent state for the current domain
+Statistics,banner,Cookiebot,_ga,.beaverbrooks.co.uk,/,First party,400.00 days,,false,true,none,false,Declared & set,beaverbrooks.co.uk,Registers a unique ID that is used to generate statistical data on how the visitor uses the website.
+Marketing,banner,Cookiebot,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Preferences,banner,Cookiebot,PreferencesConsent,.beaverbrooks.co.uk,/,First party,30.42 days,,false,true,none,false,Declared & set,beaverbrooks.co.uk,Stores the users consent preference for preference cookies across the site. 
+Unclassified,banner,Cookiebot,StatisticsConsent,.beaverbrooks.co.uk,/,First party,30.42 days,,false,true,none,false,Declared & set,beaverbrooks.co.uk,Pending
+Marketing,banner,Cookiebot,MarketingConsent,.beaverbrooks.co.uk,/,First party,30.42 days,,false,true,none,false,Declared & set,beaverbrooks.co.uk,Stores the users consent preference for marketing cookies across the site. 
+Unclassified,banner,Cookiebot,hb_uid,.beaverbrooks.co.uk,/,First party,0.02 days,,false,true,none,false,Declared & set,beaverbrooks.co.uk,Pending
+Unclassified,banner,Cookiebot,hb_source,.beaverbrooks.co.uk,/,First party,90.00 days,,false,true,none,false,Declared & set,beaverbrooks.co.uk,Pending
+Statistics,banner,Cookiebot,FPID,.beaverbrooks.co.uk,/,First party,400.00 days,,true,true,unspecified,false,Declared & set,beaverbrooks.co.uk,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,FPLC,.beaverbrooks.co.uk,/,First party,0.83 days,,false,true,unspecified,false,Declared & set,beaverbrooks.co.uk,Registers a unique ID that is used to generate statistical data on how the visitor uses the website.
+Marketing,banner,Cookiebot,_ttp,.tiktok.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,beaverbrooks.co.uk,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Necessary,banner,Cookiebot,__cf_bm,.bzrcdn.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,bzr.openai.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,_cfuvid,.bzrcdn.openai.com,/,Third party,Session,Session,true,true,none,false,Declared & set,bzr.openai.com,"This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators. "
+Marketing,banner,Cookiebot,__obref,.beaverbrooks.co.uk,/,First party,365.00 days,Session,false,true,none,false,Declared & set,beaverbrooks.co.uk,Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. 
+Statistics,banner,Cookiebot,_tt_enable_cookie,.beaverbrooks.co.uk,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Marketing,banner,Cookiebot,_ttp,.beaverbrooks.co.uk,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Marketing,banner,Cookiebot,uid,.criteo.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,criteo.com,"Collects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads."
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,_pin_unauth,.beaverbrooks.co.uk,/,First party,365.00 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,Used by Pinterest to track the usage of services.
+Unclassified,banner,Cookiebot,lantern,.beaverbrooks.co.uk,/,First party,30.00 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,Pending
+Necessary,banner,Cookiebot,_cs_c,.beaverbrooks.co.uk,/,First party,395.42 days,,false,false,lax,false,Declared & set,beaverbrooks.co.uk,Determines whether the visitor has accepted the cookie consent box. This ensures that the cookie consent box will not be presented again upon re-entry.  
+Marketing,banner,Cookiebot,_fbp,.beaverbrooks.co.uk,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,5856_lantern,.roeye.com,/,Third party,182.00 days,,false,true,none,false,Not declared,,
+Preferences,banner,Cookiebot,g,.creativecdn.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,creativecdn.com,Used in context with the language setting on the website. Facilitates the translation into the preferred language of the visitor.
+Necessary,banner,Cookiebot,c,.creativecdn.com,/,Third party,365.00 days,,false,true,none,true,Declared & set,creativecdn.com,Used in order to detect spam and improve the website's security. 
+Necessary,banner,Cookiebot,ts,.creativecdn.com,/,Third party,365.00 days,,false,true,none,true,Declared & set,creativecdn.com,This cookie is necessary for the PayPal login-function on the website.
+Unclassified,none,,xnpe_a60470d0-a905-11eb-9109-761747e5ccaa,api.uk.exponea.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,__exponea_etc__,.beaverbrooks.co.uk,/,First party,400.00 days,,false,true,none,false,Declared & set,beaverbrooks.co.uk,This cookie is used to determine which products the visitor has viewed. This information is used to promote related products and optimize ad-efficiency. 
+Unclassified,none,,tt_viewer,.teads.tv,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KADUSERCOOKIE,.pubmatic.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Declared & set,doubleclick.net,Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.
+Marketing,banner,Cookiebot,__exponea_time2__,.beaverbrooks.co.uk,/,First party,0.04 days,,false,true,none,false,Declared & set,beaverbrooks.co.uk,This cookie is used to determine which products the visitor has viewed. This information is used to promote related products and optimize ad-efficiency. 
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,c,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Declared & set,creativecdn.com,Used in order to detect spam and improve the website's security. 
+Unclassified,none,,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,demdex,.demdex.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tvid,.tremorhub.com,/,Third party,365.24 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tv_UICR,.tremorhub.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Declared & set,adnxs.com,This cookie registers data on the visitor. The information is used to optimize advertisement relevance. 
+Marketing,banner,Cookiebot,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Declared & set,adnxs.com,Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.
+Unclassified,none,,mCookie,.mediawallahscript.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mUserCookie,.mediawallahscript.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dpm,.dpm.demdex.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tluid,.3lift.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid,.360yield.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,banner,Cookiebot,beyable-TrackingId,.beaverbrooks.co.uk,/,First party,395.00 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,Pending
+Unclassified,banner,Cookiebot,beyable-MustBeDisplayed,.beaverbrooks.co.uk,/,First party,395.00 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,Pending
+Unclassified,none,,_rxuuid,.1rx.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,banner,Cookiebot,aaaaaaaaa2b798c41f3b9495d9f74ace22a7843b9_cs,.beaverbrooks.co.uk,/,First party,0.02 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,Pending
+Unclassified,none,,ab,.agkn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,criteo,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,am_tokens,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,am_tokens_invalidate-verizon-pushes,exchange.mediavine.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidid,.liadm.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_cc_cc,.crwdcntrl.net,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,visitor,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,status,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.targeting.unrulymedia.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,visitor-id,.media.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,data-c,.media.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,criteo,.tpmn.co.kr,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,v1_151,.revcontent.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,v2_151,.revcontent.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,__cf_bm,.bzr.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,bzr.openai.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,_cfuvid,.bzr.openai.com,/,Third party,Session,Session,true,true,none,false,Declared & set,bzr.openai.com,"This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators. "
+Marketing,banner,Cookiebot,udmts,.udmserve.net,/,Third party,365.00 days,,false,true,none,false,Declared & set,udmserve.net,"Used to measure the efficiency of the website’s advertisement efforts, by collecting data on the conversion rate of the website’s ads across multiple websites."
+Marketing,banner,Cookiebot,dt,.udmserve.net,/,Third party,365.00 days,,false,true,none,false,Declared & set,udmserve.net,Enables the visitor to share content from the website onto social media platforms or websites. 
+Marketing,banner,Cookiebot,rtbh,.udmserve.net,/,Third party,90.00 days,,false,true,none,false,Declared & set,udmserve.net,Registers a unique ID that identifies the user's device during return visits. Used for conversion tracking and to measure the efficacy of online ads.
+Unclassified,none,,ver,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TestIfCookieP,.smartadserver.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pid,.smartadserver.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,t_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,t_pt_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,criteo,.tpmn.io,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,csync,.smartadserver.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_uid,.fwmrm.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ljt_reader,.lijit.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,did,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,didts,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,nnls,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,_ga_XXXXXXXXXX,.beaverbrooks.co.uk,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit. 
+Marketing,banner,Cookiebot,_gcl_au,.beaverbrooks.co.uk,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.  
+Statistics,banner,Cookiebot,_ga_14SJSHRB45,.beaverbrooks.co.uk,/,First party,400.00 days,,false,true,none,false,Declared & set,beaverbrooks.co.uk,Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit. 
+Marketing,banner,Cookiebot,__rtbh.lid,www.beaverbrooks.co.uk,/,First party,365.00 days,,false,true,none,false,Declared & set,www.beaverbrooks.co.uk,Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+Statistics,banner,Cookiebot,_cs_id,.beaverbrooks.co.uk,/,First party,395.42 days,,false,false,lax,false,Declared & set,beaverbrooks.co.uk,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,_cs_s,.beaverbrooks.co.uk,/,First party,0.02 days,,false,false,lax,false,Declared & set,beaverbrooks.co.uk,This cookie is used to identify the frequency of visits and how long the visitor is on the website. The cookie is also used to determine how many and which subpages the visitor visits on a website – this information can be used by the website to optimize the domain and its subpages.
+Marketing,banner,Cookiebot,_uetsid,.beaverbrooks.co.uk,/,First party,1.00 days,,false,true,none,false,Declared & set,beaverbrooks.co.uk,"Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement. "
+Marketing,banner,Cookiebot,cto_bundle,.beaverbrooks.co.uk,/,First party,395.42 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,"Presents the user with relevant content and advertisement. The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Unclassified,none,,yieldmo_id,.yieldmo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,__rtbh.uid,www.beaverbrooks.co.uk,/,First party,365.00 days,,false,true,none,false,Declared & set,www.beaverbrooks.co.uk,Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+Statistics,banner,Cookiebot,ABTastySession,.www.beaverbrooks.co.uk,/,First party,0.02 days,,false,false,lax,false,Declared & set,www.beaverbrooks.co.uk,This cookie is used by the website’s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site. 
+Statistics,banner,Cookiebot,ABTasty,.www.beaverbrooks.co.uk,/,First party,395.00 days,,false,false,lax,false,Declared & set,www.beaverbrooks.co.uk,This cookie is used by the website’s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site. 
+Marketing,banner,Cookiebot,_uetvid,.beaverbrooks.co.uk,/,First party,390.00 days,,false,true,none,false,Declared & set,beaverbrooks.co.uk,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,ttcsid_CC8U423C77U7LPPFFRNG,.beaverbrooks.co.uk,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. 
+Unclassified,none,,tuuid_lu,.360yield.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,um,.360yield.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,umeh,.360yield.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,SPugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,data-c-ts,.media.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,anj,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Declared & set,adnxs.com,Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.
+Unclassified,none,,i,.openx.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,cto_bundle,.criteo.com,/,Third party,390.00 days,,false,true,none,true,Declared & set,beaverbrooks.co.uk,"Presents the user with relevant content and advertisement. The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Unclassified,none,,pxrc,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,banner,Cookiebot,aaaaaaaaa2b798c41f3b9495d9f74ace22a7843b9,.beaverbrooks.co.uk,/,First party,0.02 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,Pending
+Unclassified,banner,Cookiebot,aaaaaaaaa2b798c41f3b9495d9f74ace22a7843b9_v,.beaverbrooks.co.uk,/,First party,395.00 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,Pending
+Unclassified,none,,rlas3,.rlcdn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.rlcdn.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,ttcsid,.beaverbrooks.co.uk,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Unclassified,none,,uuid,.mathtag.com,/,Third party,393.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mRemnantVisitedCookie_d41d8cd98f00b204e9800998ecf8427e_11_2026,.mediawallahscript.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bito,.bidr.io,/,Third party,394.79 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bitoIsSecure,.bidr.io,/,Third party,394.79 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,pixlee_analytics_cookie_legacy,.beaverbrooks.co.uk,/,First party,30.00 days,,false,false,unspecified,false,Declared & set,beaverbrooks.co.uk,Registers if the user has visited or interacted with pages containing pictures or galleries rooting from third-party services. Used to improve website content and make statistical reports for the website. 
+Necessary,banner,Cookiebot,__mp_opt_in_out_#,appointedd.com,,,,Session,,,,,"Declared, not set",appointedd.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,atoid,beaverbrooks.co.uk,,,,Session,,,,,"Declared, not set",beaverbrooks.co.uk,Used to ensure analytics scripts are only run for an order when allowed.
+Necessary,banner,Cookiebot,fl,beaverbrooks.co.uk,,,,Session,,,,,"Declared, not set",beaverbrooks.co.uk,"Contains the comma separated list of products favourited during a session, used for site navigation."
+Necessary,banner,Cookiebot,gaoid,beaverbrooks.co.uk,,,,Session,,,,,"Declared, not set",beaverbrooks.co.uk,Used to ensure analytics scripts are only run for an order when allowed.
+Necessary,banner,Cookiebot,lwc,beaverbrooks.co.uk,,,,,,,,,"Declared, not set",beaverbrooks.co.uk,"Holds the value of the last basket id used by a customer, required to allow the basket to function when visiting the website"
+Necessary,banner,Cookiebot,_cfruid,cardinalcommerce.com,,,,Session,,,,,"Declared, not set",cardinalcommerce.com,Rate-limiting cookies used by CyberSource and Cardinal to serve the secure card payment forms.
+Necessary,banner,Cookiebot,BIGipServer...,cardinalcommerce.com,,,,Session,,,,,"Declared, not set",cardinalcommerce.com,"Used by Cardinal to manage payment authentication on their servers, to ensure user requests are routed consistently to the correct server. "
+Necessary,banner,Cookiebot,JSESSIONID,cardinalcommerce.com,,,,Session,,,,,"Declared, not set",cardinalcommerce.com,General purpose platform session cookie. Used to maintain an anonymous user session by the server.
+Necessary,banner,Cookiebot,TS0...,cardinalcommerce.com,,,,Session,,,,,"Declared, not set",cardinalcommerce.com,Cookies used by Cardinal Commerce for payment authentication (3DS2) during checkout.
+Necessary,banner,Cookiebot,_abck,givex.com,,,,,,,,,"Declared, not set",givex.com,Used to detect and defend against replay-cookie-attacks – The cookie is necessary for the security and integrity of the website. 
+Necessary,banner,Cookiebot,ak_bmsc,givex.com,,,,,,,,,"Declared, not set",givex.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,bm_sz,givex.com,,,,,,,,,"Declared, not set",givex.com,"Used in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website."
+Necessary,banner,Cookiebot,_GRECAPTCHA,google,,,,,,,,,"Declared, not set",google,Cookie associated with Google's reCAPTCHA service – used for security and anti-spam control.
+Necessary,banner,Cookiebot,thx_global_guid,h.online-metrix.net,,,,,,,,,"Declared, not set",h.online-metrix.net,Authenticates individual users with the device being used to provide fraud prevention.
+Necessary,banner,Cookiebot,thx_guid,h.online-metrix.net,,,,,,,,,"Declared, not set",h.online-metrix.net,Authenticates individual users with the device being used to provide fraud prevention.
+Necessary,banner,Cookiebot,INGRESSCOOKIE,nr-data.net,,,,Session,,,,,"Declared, not set",nr-data.net,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience."
+Necessary,banner,Cookiebot,OptanonConsent,studentbeans.com,,,,,,,,,"Declared, not set",studentbeans.com,Determines whether the visitor has accepted the cookie consent box. This ensures that the cookie consent box will not be presented again upon re-entry.  
+Necessary,banner,Cookiebot,SESS#,www.beaverbrooks.co.uk,,,,Session,,,,,"Declared, not set",www.beaverbrooks.co.uk,Preserves users states across page requests.
+Necessary,banner,Cookiebot,section,wwws-uk1.givex.com,,,,Session,,,,,"Declared, not set",wwws-uk1.givex.com,Pending
+Necessary,banner,Cookiebot,webinfo_id,wwws-uk1.givex.com,,,,Session,,,,,"Declared, not set",wwws-uk1.givex.com,Pending
+Preferences,banner,Cookiebot,rr_rcs,www.beaverbrooks.co.uk,,,,,,,,,"Declared, not set",www.beaverbrooks.co.uk,Pending
+Preferences,banner,Cookiebot,x-attraqt-clusterid,www.beaverbrooks.co.uk,,,,,,,,,"Declared, not set",www.beaverbrooks.co.uk,Pending
+Statistics,banner,Cookiebot,_cs_root-domain,beaverbrooks.co.uk,,,,Session,,,,,"Declared, not set",beaverbrooks.co.uk,Registers data on current website domain. This is used for internal analysis and website optimization.
+Statistics,banner,Cookiebot,pixlee_analytics_cookie,beaverbrooks.co.uksamesite=none,,,,,,,,,"Declared, not set",beaverbrooks.co.uksamesite=none,Registers if the user has visited or interacted with pages containing pictures or galleries rooting from third-party services. Used to improve website content and make statistical reports for the website. 
+Statistics,banner,Cookiebot,guest,jotfor.ms,,,,,,,,,"Declared, not set",jotfor.ms,Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization. 
+Statistics,banner,Cookiebot,_sp_id.#,studentbeans.com,,,,,,,,,"Declared, not set",studentbeans.com,"Collects data on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded with the purpose of generating reports for optimising the website content."
+Statistics,banner,Cookiebot,_sp_ses.#,studentbeans.com,,,,,,,,,"Declared, not set",studentbeans.com,Used by Snowplow Analytics to track how users are browsing and engaging with a website.
+Statistics,banner,Cookiebot,sp,studentbeans.com,,,,,,,,,"Declared, not set",studentbeans.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,_cs_same_site,www.beaverbrooks.co.uk,,,,Session,,,,,"Declared, not set",www.beaverbrooks.co.uk,Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization. 
+Marketing,banner,Cookiebot,xnpe_#-#-#-#-#,api.uk.exponea.com,,,,,,,,,"Declared, not set",api.uk.exponea.com,This cookie registers data on the visitor. The information is used to optimize advertisement relevance. 
+Marketing,banner,Cookiebot,mp_#_mixpanel,appointedd.com,,,,,,,,,"Declared, not set",appointedd.com,Pending
+Marketing,banner,Cookiebot,__oaiq_domain_probe,beaverbrooks.co.uk,,,,Session,,,,,"Declared, not set",beaverbrooks.co.uk,Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. 
+Marketing,banner,Cookiebot,cto_tld_test,beaverbrooks.co.uk,,,,,,,,,"Declared, not set",beaverbrooks.co.uk,"Used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third party advertisement hubs, which facilitate real-time bidding for advertisers. "
+Marketing,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.
+Marketing,banner,Cookiebot,userReferer,jotfor.ms,,,,,,,,,"Declared, not set",jotfor.ms,Determines how the user accessed the website. This information is used by the website operator in order to measure the efficiency of their marketing.    
+Marketing,banner,Cookiebot,_pinterest_ct_ua,pinterest.com,,,,,,,,,"Declared, not set",pinterest.com,Used by Pinterest to track the usage of services.
+Marketing,banner,Cookiebot,#_lantern,roeye.com,,,,,,,,,"Declared, not set",roeye.com,Pending
+Marketing,banner,Cookiebot,criteo_write_test,www.beaverbrooks.co.uk,,,,,,,,,"Declared, not set",www.beaverbrooks.co.uk,"Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates real-time bidding for advertisers."
+Marketing,banner,Cookiebot,recentlyViewed,www.beaverbrooks.co.uk,,,,,,,,,"Declared, not set",www.beaverbrooks.co.uk,This cookie is used to determine which products the visitor has viewed. This information is used to promote related products and optimize ad-efficiency. 
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video
+Marketing,banner,Cookiebot,__Secure-YNID,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Marketing,banner,Cookiebot,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Unclassified,banner,Cookiebot,_wingify_uuid_v2,studentbeans.com,,,,,,,,,"Declared, not set",studentbeans.com,Pending
+Unclassified,banner,Cookiebot,v24TestCookiebeaverbrooks,web.vee24.com,,,,Session,,,,,"Declared, not set",web.vee24.com,Pending

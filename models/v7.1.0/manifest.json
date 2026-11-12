@@ -1,0 +1,35 @@
+{
+  "version": "7.1.0",
+  "created_at": "2026-11-12T17:25:00.734251+00:00",
+  "promotion_eligible": false,
+  "files": {
+    "model.ubj": {
+      "sha256": "820d770383efd2c8c850819d21fb297346b670c8d2a7392de5c1bca170bbf8c6",
+      "bytes": 4784000
+    },
+    "labels.json": {
+      "sha256": "f31472c7c7477d25eeee98e5a793e4839d9c21dd29cd5f12542ffe67744f18ab",
+      "bytes": 97
+    },
+    "features.json": {
+      "sha256": "32d8b244934e64c0f662d820f3ad46d97bf8958d32bd7846dc8dd32bba8f238f",
+      "bytes": 1405
+    },
+    "feature_lookups.json": {
+      "sha256": "1a5f6ed8f2f782e34cecc10d777b0a24cafb1090502ba9b8a103162ae20294db",
+      "bytes": 3374077
+    },
+    "label_disagreement.json": {
+      "sha256": "c019ded75b1cd080949d2a356d0516a1d1f748f0df6907b3860964d04671e3a2",
+      "bytes": 15823
+    },
+    "calibration.json": {
+      "sha256": "bd920772db78a19a6267c5ba5e946f7b595896c138b9f1b37a8b8cd47f3a989a",
+      "bytes": 1043
+    },
+    "metadata.json": {
+      "sha256": "15dbd3670d4bc438ed77eec1b551b17fdbd2d99ef71a8622410dd3205c25a3f5",
+      "bytes": 41078
+    }
+  }
+}

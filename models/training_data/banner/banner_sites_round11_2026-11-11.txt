@@ -1,0 +1,73 @@
+# Round 11 batch, 2026-11-12: insurance, telecoms, UK retail, resale, restaurants, coffee.
+# From 276 new candidates checked with find_banner_sites (candidates_round11_2026-11-11_verified.csv):
+# 83 usable. Site = final_host. Dropped:
+#   already collected: travelers.co.uk (travelers.com), swisscom.ch, thegeneral.com (American
+#   Family; amfam.com), directauto.com (Allstate), maggianos.com (Brinker; chilis.com),
+#   bluebottlecoffee.com (Nestle); Vodafone (vodafone.com): vodafone.co.uk, .ie, .nl, .es
+#   sister brands: hiscox.co.uk (hiscox.com kept), smarty.co.uk (CK Hutchison; three.ie kept),
+#   schuh.co.uk (JD Sports; size.co.uk kept), Next plc (joules.com kept): fatface.com, hobbs.com,
+#   reiss.com; cultbeauty.co.uk (THG; lookfantastic.com kept), Darden (cheddars.com kept):
+#   bahamabreeze.com, seasons52.com, eddiev.com, ruthschris.com
+# Columns: host vendor-folder
+www.markel.com onetrust
+www.hiscox.com onetrust
+www.aon.com onetrust
+www.primerica.com onetrust
+www.athene.com onetrust
+colonialpenn.com onetrust
+www.ladderlife.com onetrust
+www.goosehead.com onetrust
+www.selective.com onetrust
+www.dairylandinsurance.com onetrust
+openly.com onetrust
+www.mediacomcable.com onetrust
+tdstelecom.com onetrust
+www.viasat.com onetrust
+starlink.com onetrust
+www.ting.com ketch
+www.lycamobile.us onetrust
+www.lebara.com onetrust
+www.kpn.com onetrust
+www2.telenet.be onetrust
+www.salt.ch onetrust
+www.a1.net onetrust
+www.play.pl onetrust
+www.tim.it onetrust
+www.eir.ie onetrust
+www.three.ie onetrust
+www.libertylondon.com onetrust
+www.toolstation.com onetrust
+www.wickes.co.uk onetrust
+www.dunelm.com onetrust
+www.oliverbonas.com onetrust
+www.joules.com onetrust
+www.whitestuff.com onetrust
+www.seasaltcornwall.com onetrust
+www.boden.com onetrust
+www.allsaints.com onetrust
+www.superdry.com onetrust
+www.size.co.uk onetrust
+www.goldsmiths.co.uk onetrust
+www.beaverbrooks.co.uk cookiebot
+www.lookfantastic.com onetrust
+www.charlottetilbury.com onetrust
+www.thebodyshop.com onetrust
+www.rituals.com onetrust
+www.richersounds.com onetrust
+box.co.uk onetrust
+www.overclockers.co.uk cookiebot
+www.musicmagpie.co.uk onetrust
+buy.gazelle.com onetrust
+www.vinted.com onetrust
+www.grailed.com onetrust
+stockx.com onetrust
+www.goat.com onetrust
+www.cheddars.com onetrust
+www.mortons.com onetrust
+www.daveandbusters.com onetrust
+www.chuckecheese.com cookiebot
+www.puttshack.com transcend
+www.tropicalsmoothiecafe.com onetrust
+www.smoothieking.com onetrust
+7brew.com onetrust
+www.lacolombe.com onetrust

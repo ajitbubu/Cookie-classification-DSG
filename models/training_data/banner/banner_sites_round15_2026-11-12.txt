@@ -1,0 +1,78 @@
+# Round 15 batch, 2026-11-12: utilities, rail, staffing, research/data firms, exchanges, universities.
+# From 275 new candidates checked with find_banner_sites (candidates_round15_2026-11-12_verified.csv):
+# 79 usable. Site = final_host. lseg.com and circana.com listed twice. Dropped:
+#   already collected: generac.com (owns ecobee.com), fitchratings.com (Hearst; cosmopolitan.com)
+#   sister brands: comed.com (Exelon; exeloncorp.com kept), Allegis (teksystems.com kept):
+#   aerotek.com, allegisgroup.com; nyse.com (ICE; ice.com kept)
+# Columns: host vendor-folder
+www.duke-energy.com onetrust
+www.dominionenergy.com onetrust
+www.aep.com onetrust
+www.exeloncorp.com transcend
+www.pge.com onetrust
+www.sce.com ketch
+www.eversource.com onetrust
+www.ameren.com onetrust
+www.oge.com onetrust
+www.srpnet.com onetrust
+www.spireenergy.com onetrust
+www.constellation.com onetrust
+www.nrg.com onetrust
+enphase.com onetrust
+www.chargepoint.com onetrust
+www.electrifyamerica.com onetrust
+www.nationalrail.co.uk onetrust
+www.trenitalia.com onetrust
+www.ns.nl onetrust
+www.cp.pt onetrust
+www.adecco.com onetrust
+www.kellyservices.com cookiebot
+www.roberthalf.com onetrust
+www.teksystems.com onetrust
+www.kforce.com onetrust
+everforth.com onetrust
+www.michaelpage.com onetrust
+www.spencerstuart.com onetrust
+www.heidrick.com onetrust
+www.egonzehnder.com cookiebot
+www.kantar.com cookiebot
+www.nielsen.com onetrust
+www.circana.com onetrust
+yougov.com onetrust
+morningconsult.com onetrust
+www.statista.com onetrust
+www.cbinsights.com ketch
+pitchbook.com onetrust
+www.crunchbase.com onetrust
+www.creditsafe.com onetrust
+www.moodys.com onetrust
+www.msci.com onetrust
+www.lseg.com onetrust
+www.ice.com onetrust
+www.cboe.com onetrust
+www.euronext.com onetrust
+www.six-group.com onetrust
+www.hkex.com.hk onetrust
+www.asx.com.au onetrust
+www.osu.edu onetrust
+www.purdue.edu onetrust
+www.american.edu onetrust
+www.cmu.edu onetrust
+www.fordham.edu onetrust
+www.villanova.edu cookiebot
+www.manchester.ac.uk onetrust
+www.kcl.ac.uk onetrust
+www.lse.ac.uk onetrust
+www.nottingham.ac.uk onetrust
+www.exeter.ac.uk onetrust
+www.tcd.ie cookiebot
+www.sydney.edu.au ketch
+www.anu.edu.au onetrust
+www.unsw.edu.au onetrust
+www.kuleuven.be onetrust
+www.ie.edu onetrust
+www.esade.edu onetrust
+www.london.edu onetrust
+www.jbs.cam.ac.uk cookiebot
+www.imd.org onetrust
+www.kellogg.northwestern.edu onetrust

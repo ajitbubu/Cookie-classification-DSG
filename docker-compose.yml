@@ -108,7 +108,7 @@ services:
       - DB_USER=scanner
       - DB_PASSWORD=${DB_PASSWORD:-scanner_password}
       - ML_SECRET_KEY=${ML_SECRET_KEY:-}
-      - ML_MODEL_VERSION=7.0.0
+      - ML_MODEL_VERSION=7.1.0
       - ML_CONFIDENCE_HIGH=0.85
       - ML_CONFIDENCE_MEDIUM=0.65
       - ML_RATE_LIMIT_REQUESTS=100

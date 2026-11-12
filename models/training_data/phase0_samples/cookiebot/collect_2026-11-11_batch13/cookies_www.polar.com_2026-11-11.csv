@@ -1,0 +1,166 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Necessary,banner,Cookiebot,CookieConsent,www.polar.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,account.polar.com,Stores the user's cookie consent state for the current domain
+Preferences,banner,Cookiebot,polar_cookie_consent,.polar.com,/,First party,365.00 days,,false,true,none,false,Declared & set,polar.com,Pending
+Marketing,banner,Cookiebot,_gcl_au,.polar.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,polar.com,"Used to measure the efficiency of the website’s advertisement efforts, by collecting data on the conversion rate of the website’s ads across multiple websites."
+Necessary,banner,Cookiebot,__cf_bm,.hs-scripts.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,cookiepro.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,_ga,.polar.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,polar.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,_ttp,.tiktok.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,polar.com,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Necessary,banner,Cookiebot,__cf_bm,.hs-analytics.net,/,Third party,0.02 days,,true,true,none,true,Declared & set,cookiepro.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,linkedin.com,Used in order to detect spam and improve the website's security. 
+Preferences,banner,Cookiebot,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,linkedin.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,cookiepro.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,__cf_bm,.hs-banner.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,cookiepro.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,_tt_enable_cookie,.polar.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,polar.com,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Marketing,banner,Cookiebot,_ttp,.polar.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,polar.com,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Statistics,banner,Cookiebot,_clck,.polar.com,/,First party,365.00 days,,false,false,unspecified,false,Declared & set,polar.com,Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+Marketing,banner,Cookiebot,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Declared & set,doubleclick.net,Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.
+Necessary,banner,Cookiebot,__cf_bm,.hsforms.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,cookiepro.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Marketing,banner,Cookiebot,_fbp,.polar.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,polar.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,__hstc,.polar.com,/,First party,180.00 days,,false,false,lax,false,Declared & set,polar.com,Sets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.
+Statistics,banner,Cookiebot,hubspotutk,.polar.com,/,First party,180.00 days,,false,false,lax,false,Declared & set,polar.com,Sets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.
+Statistics,banner,Cookiebot,__hssrc,.polar.com,/,First party,Session,Session,false,false,lax,false,Declared & set,polar.com,Used to recognise the visitor's browser upon reentry on the website.
+Necessary,banner,Cookiebot,__cf_bm,.hubspot.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,cookiepro.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Marketing,banner,Cookiebot,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Marketing,banner,Cookiebot,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Tracks the user’s interaction with the website’s search-bar-function. This data can be used to present the user with relevant products or services.     
+Marketing,banner,Cookiebot,SM,.c.clarity.ms,/,Third party,Session,Session,false,true,none,false,Declared & set,c.clarity.ms,Registers a unique ID that identifies the user's device during return visits across websites that use the same ad network. The ID is used to allow targeted ads.
+Marketing,banner,Cookiebot,MUID,.clarity.ms,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Marketing,banner,Cookiebot,MR,.c.clarity.ms,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Declared & set,c.clarity.ms,Registers data on visitors from multiple visits and on multiple websites. This information is used to measure the efficiency of advertisement on websites.  
+Marketing,banner,Cookiebot,_ga_JFP771EMJN,.polar.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,polar.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,_ga_QT5RCH2N14,.polar.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,polar.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,_ga_VMQSLSZ6TE,.polar.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,polar.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,_clsk,.polar.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,polar.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Marketing,banner,Cookiebot,_uetsid,.polar.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,polar.com,"Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement. "
+Marketing,banner,Cookiebot,_uetvid,.polar.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,polar.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Declared & set,bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,ttcsid,.polar.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,polar.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,ttcsid_CAC4G7JC77U1DJB8DDQG,.polar.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,polar.com,Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. 
+Marketing,banner,Cookiebot,__attentive_id,.polar.com,/,First party,390.00 days,,false,true,unspecified,false,Declared & set,polar.com,Used for reporting and optimization of marketing text messages. 
+Unclassified,banner,Cookiebot,__attentive_session_id,.polar.com,/,First party,0.02 days,,false,true,unspecified,false,Declared & set,polar.com,Pending
+Marketing,banner,Cookiebot,_attn_,.polar.com,/,First party,390.00 days,,false,true,strict,false,Declared & set,polar.com,Used for reporting and optimization of marketing text messages. 
+Marketing,banner,Cookiebot,__attentive_cco,.polar.com,/,First party,390.00 days,Session,false,true,unspecified,false,Declared & set,www.polar.com,Used for reporting and optimization of marketing text messages. 
+Marketing,banner,Cookiebot,__attentive_pv,.polar.com,/,First party,0.02 days,,false,true,unspecified,false,Declared & set,www.polar.com,Used for reporting and optimization of marketing text messages. 
+Marketing,banner,Cookiebot,__attentive_ss_referrer,.polar.com,/,First party,0.02 days,,false,true,unspecified,false,Declared & set,www.polar.com,Used for reporting and optimization of marketing text messages. 
+Statistics,banner,Cookiebot,__hssc,.polar.com,/,First party,0.02 days,,false,false,lax,false,Declared & set,polar.com,Identifies if the cookie data needs to be updated in the visitor's browser.
+Necessary,banner,Cookiebot,__cf_bm,.attentivemobile.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,cookiepro.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Marketing,banner,Cookiebot,__attentive_dv,.polar.com,/,First party,1.00 days,,false,true,unspecified,false,Declared & set,www.polar.com,Used for reporting and optimization of marketing text messages. 
+Necessary,banner,Cookiebot,AwinChannelCookie,awin,,,,Session,,,,,"Declared, not set",awin,Pending
+Necessary,banner,Cookiebot,v,df-srv.de,,,,,,,,,"Declared, not set",df-srv.de,Detects whether the user should be presented with a notification-bar upon entry on the website. 
+Necessary,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.
+Necessary,banner,Cookiebot,AWSALB,flow.polar.com,,,,,,,,,"Declared, not set",flow.polar.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,AWSALBCORS,flow.polar.com,,,,,,,,,"Declared, not set",flow.polar.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,timezone,flow.polar.com,,,,Session,,,,,"Declared, not set",flow.polar.com,Holds the users timezone.
+Necessary,banner,Cookiebot,_cfuvid,hb.polar.com,,,,Session,,,,,"Declared, not set",hb.polar.com,"This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators. "
+Necessary,banner,Cookiebot,cookietest,hb.polar.com,,,,Session,,,,,"Declared, not set",hb.polar.com,This cookie is used to determine if the visitor has accepted the cookie consent box.
+Necessary,banner,Cookiebot,li_gc,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,ae_src,polar.com,,,,Session,,,,,"Declared, not set",polar.com,Pending
+Necessary,banner,Cookiebot,caixa,polar.com,,,,Session,,,,,"Declared, not set",polar.com,Pending
+Necessary,banner,Cookiebot,mid26,polar.com,,,,Session,,,,,"Declared, not set",polar.com,Pending
+Necessary,banner,Cookiebot,OptanonConsent,polar.com,,,,,,,,,"Declared, not set",polar.com,Determines whether the visitor has accepted the cookie consent box. This ensures that the cookie consent box will not be presented again upon re-entry.  
+Necessary,banner,Cookiebot,spring26,polar.com,,,,Session,,,,,"Declared, not set",polar.com,Pending
+Necessary,banner,Cookiebot,streetx_subscribers,polar.com,,,,Session,,,,,"Declared, not set",polar.com,Pending
+Necessary,banner,Cookiebot,AWSALBAPP-0,shopping-cart.dxp-api.polar.com,,,,,,,,,"Declared, not set",shopping-cart.dxp-api.polar.com,"This cookie is used in context with load balancing - This optimizes the response rate between the visitor and the site, by distributing the traffic load on multiple network links or servers.  "
+Necessary,banner,Cookiebot,AWSALBAPP-1,shopping-cart.dxp-api.polar.com,,,,,,,,,"Declared, not set",shopping-cart.dxp-api.polar.com,"This cookie is used in context with load balancing - This optimizes the response rate between the visitor and the site, by distributing the traffic load on multiple network links or servers.  "
+Necessary,banner,Cookiebot,AWSALBAPP-2,shopping-cart.dxp-api.polar.com,,,,,,,,,"Declared, not set",shopping-cart.dxp-api.polar.com,"This cookie is used in context with load balancing - This optimizes the response rate between the visitor and the site, by distributing the traffic load on multiple network links or servers.  "
+Necessary,banner,Cookiebot,AWSALBAPP-3,shopping-cart.dxp-api.polar.com,,,,,,,,,"Declared, not set",shopping-cart.dxp-api.polar.com,"This cookie is used in context with load balancing - This optimizes the response rate between the visitor and the site, by distributing the traffic load on multiple network links or servers.  "
+Necessary,banner,Cookiebot,polar-shop,shopping-cart.dxp-api.polar.com,,,,,,,,,"Declared, not set",shopping-cart.dxp-api.polar.com,Pending
+Necessary,banner,Cookiebot,wp_woocommerce_session_#,store2-pl.polar.com,,,,,,,,,"Declared, not set",store2-pl.polar.com,Pending
+Necessary,banner,Cookiebot,cf_clearance,vimeo.com,,,,,,,,,"Declared, not set",vimeo.com,This cookie is used to distinguish between humans and bots. 
+Necessary,banner,Cookiebot,6984641afc5db62ee3b74f7d.appUserId,zendesk,,,,Session,,,,,"Declared, not set",zendesk,Pending
+Necessary,banner,Cookiebot,6984641afc5db62ee3b74f7d.clientId,zendesk,,,,Session,,,,,"Declared, not set",zendesk,Pending
+Necessary,banner,Cookiebot,6984641afc5db62ee3b74f7d.sessionToken,zendesk,,,,Session,,,,,"Declared, not set",zendesk,Pending
+Necessary,banner,Cookiebot,699d30c86651b1e9ad560d1d.appUserId,zendesk,,,,Session,,,,,"Declared, not set",zendesk,Pending
+Necessary,banner,Cookiebot,699d30c86651b1e9ad560d1d.clientId,zendesk,,,,Session,,,,,"Declared, not set",zendesk,Pending
+Necessary,banner,Cookiebot,699d30c86651b1e9ad560d1d.sessionToken,zendesk,,,,Session,,,,,"Declared, not set",zendesk,Pending
+Preferences,banner,Cookiebot,pll_language,store2-pl.polar.com,,,,,,,,,"Declared, not set",store2-pl.polar.com,"This cookie is used to determine the preferred language of the visitor and sets the language accordingly on the website, if possible."
+Preferences,banner,Cookiebot,[object Object],www.polar.com,,,,Session,,,,,"Declared, not set",www.polar.com,Pending
+Statistics,banner,Cookiebot,_gd#,polar.com,,,,Session,,,,,"Declared, not set",polar.com,Pending
+Statistics,banner,Cookiebot,_hjSession_#,polar.com,,,,,,,,,"Declared, not set",polar.com,"Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Statistics,banner,Cookiebot,_hjSessionUser_#,polar.com,,,,,,,,,"Declared, not set",polar.com,"Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Statistics,banner,Cookiebot,_hjTLDTest,polar.com,,,,Session,,,,,"Declared, not set",polar.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,_vwo_uuid_v2,polar.com,,,,,,,,,"Declared, not set",polar.com,"This cookie is set to make split-tests on the website, which optimizes the website's relevance towards the visitor – the cookie can also be set to improve the visitor's experience on a website."
+Statistics,banner,Cookiebot,sa-user-id-v4,stackadapt.com,,,,,,,,,"Declared, not set",stackadapt.com,"Collects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads."
+Statistics,banner,Cookiebot,__kla_id,support.polar.com,,,,,,,,,"Declared, not set",support.polar.com,This cookie is used to collect information on the visitor's behavior. This information will be stored for internal use on the website – internal analytics is used to optimize the websites or to register if the visitor has subscribed to a newsletter.
+Statistics,banner,Cookiebot,_pk_id#,support.polar.com,,,,,,,,,"Declared, not set",support.polar.com,"Collects statistics on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Statistics,banner,Cookiebot,_pk_ses#,support.polar.com,,,,,,,,,"Declared, not set",support.polar.com,Used by Piwik Analytics Platform to track page requests from the visitor during the session.
+Statistics,banner,Cookiebot,_pk_ref#,www.polar.com,,,,,,,,,"Declared, not set",www.polar.com,Used by Piwik Analytics Platform to identify the referring website from which the visitor has come.
+Marketing,banner,Cookiebot,C,adform.net,,,,,,,,,"Declared, not set",adform.net,Used to check if the user's browser supports cookies.
+Marketing,banner,Cookiebot,uid,adform.net,,,,,,,,,"Declared, not set",adform.net,Registers a unique user ID that recognises the user's browser when visiting websites that use the same ad network. The purpose is to optimise display of ads based on the user's movements and various ad providers' bids for displaying user ads.
+Marketing,banner,Cookiebot,TDCPM,adsrvr.org,,,,,,,,,"Declared, not set",adsrvr.org,Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.
+Marketing,banner,Cookiebot,TDID,adsrvr.org,,,,,,,,,"Declared, not set",adsrvr.org,Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.
+Marketing,banner,Cookiebot,cto_bundle,criteo.com,,,,,,,,,"Declared, not set",criteo.com,"Presents the user with relevant content and advertisement. The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Marketing,banner,Cookiebot,vL,df-srv.de,,,,,,,,,"Declared, not set",df-srv.de,Pending
+Marketing,banner,Cookiebot,vS,df-srv.de,,,,Session,,,,,"Declared, not set",df-srv.de,Pending
+Marketing,banner,Cookiebot,vSL,df-srv.de,,,,Session,,,,,"Declared, not set",df-srv.de,Pending
+Marketing,banner,Cookiebot,rmuid,linksynergy.com,,,,,,,,,"Declared, not set",linksynergy.com,"Presents the user with relevant content and advertisement. The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Marketing,banner,Cookiebot,_gat,polar.com,,,,,,,,,"Declared, not set",polar.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,_gid,polar.com,,,,,,,,,"Declared, not set",polar.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,_pin_unauth,polar.com,,,,,,,,,"Declared, not set",polar.com,Used by Pinterest to track the usage of services.
+Marketing,banner,Cookiebot,cto_tld_test,polar.com,,,,,,,,,"Declared, not set",polar.com,"Used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third party advertisement hubs, which facilitate real-time bidding for advertisers. "
+Marketing,banner,Cookiebot,rmStore,polar.com,,,,Session,,,,,"Declared, not set",polar.com,Used in connection to the website’s bonus/loyalty point system. The cookie collects data on which products have been seen or bought. Serves for statistics or promotions of products.   
+Marketing,banner,Cookiebot,sp_landing,spotify.com,,,,,,,,,"Declared, not set",spotify.com,Used to implement audio-content from Spotify on the website. Can also be used to register user interaction and preferences in context with audio-content - This can serve statistics and marketing purposes.  
+Marketing,banner,Cookiebot,sp_t,spotify.com,,,,,,,,,"Declared, not set",spotify.com,Used to implement audio-content from Spotify on the website. Can also be used to register user interaction and preferences in context with audio-content - This can serve statistics and marketing purposes.  
+Marketing,banner,Cookiebot,sa-user-id,stackadapt.com,,,,,,,,,"Declared, not set",stackadapt.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,sa-user-id-v2,stackadapt.com,,,,,,,,,"Declared, not set",stackadapt.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,sbjs_current,store2-pl.polar.com,,,,Session,,,,,"Declared, not set",store2-pl.polar.com,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Marketing,banner,Cookiebot,sbjs_current_add,store2-pl.polar.com,,,,Session,,,,,"Declared, not set",store2-pl.polar.com,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Marketing,banner,Cookiebot,sbjs_first,store2-pl.polar.com,,,,Session,,,,,"Declared, not set",store2-pl.polar.com,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Marketing,banner,Cookiebot,sbjs_first_add,store2-pl.polar.com,,,,Session,,,,,"Declared, not set",store2-pl.polar.com,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Marketing,banner,Cookiebot,sbjs_migrations,store2-pl.polar.com,,,,Session,,,,,"Declared, not set",store2-pl.polar.com,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Marketing,banner,Cookiebot,sbjs_session,store2-pl.polar.com,,,,,,,,,"Declared, not set",store2-pl.polar.com,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Marketing,banner,Cookiebot,sbjs_udata,store2-pl.polar.com,,,,Session,,,,,"Declared, not set",store2-pl.polar.com,Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant. 
+Marketing,banner,Cookiebot,__cf_ob,vimeo.com,,,,Session,,,,,"Declared, not set",vimeo.com,Pending
+Marketing,banner,Cookiebot,criteo_write_test,www.polar.com,,,,,,,,,"Declared, not set",www.polar.com,"Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates real-time bidding for advertisers."
+Marketing,banner,Cookiebot,__Secure-BUCKET,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Pending
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video
+Marketing,banner,Cookiebot,__Secure-YNID,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Marketing,banner,Cookiebot,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Unclassified,banner,Cookiebot,nla_mb,api.hrznads.com,,,,,,,,,"Declared, not set",api.hrznads.com,Pending
+Unclassified,banner,Cookiebot,nla_mbn,api.hrznads.com,,,,,,,,,"Declared, not set",api.hrznads.com,Pending
+Unclassified,banner,Cookiebot,__Host-authjs.csrf-token,distributor.store.polar.com,,,,Session,,,,,"Declared, not set",distributor.store.polar.com,Pending
+Unclassified,banner,Cookiebot,__Secure-authjs.callback-url,distributor.store.polar.com,,,,Session,,,,,"Declared, not set",distributor.store.polar.com,Pending
+Unclassified,banner,Cookiebot,PLAY_SESSION_FLOW,flow.polar.com,,,,Session,,,,,"Declared, not set",flow.polar.com,Pending
+Unclassified,banner,Cookiebot,cookie_id,komoot.com,,,,Session,,,,,"Declared, not set",komoot.com,Pending
+Unclassified,banner,Cookiebot,_etg_67e3ff94,polar.com,,,,,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,_vv_deduplication,polar.com,,,,,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,_vv_source,polar.com,,,,,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,lantern,polar.com,,,,,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,measurement_id,polar.com,,,,Session,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,origem,polar.com,,,,,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,other_v2,polar.com,,,,,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,voxus_last_entry_before_impression,polar.com,,,,,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,voxusmediamanager_at_pg_ok,polar.com,,,,Session,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,voxusmediamanager_dataexclude,polar.com,,,,Session,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,voxusmediamanager_id,polar.com,,,,,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,voxusmediamanager_ignore,polar.com,,,,,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,voxusmediamanager_ignoreot_full,polar.com,,,,,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,voxusmediamanager_ip,polar.com,,,,,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,voxusmediamanager_ot_block_window,polar.com,,,,,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,vx_identifier,polar.com,,,,,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,vx_session_id,polar.com,,,,Session,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,vx_session_pages_qt,polar.com,,,,Session,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,vx_session_start,polar.com,,,,Session,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,vx_user_sessions,polar.com,,,,Session,,,,,"Declared, not set",polar.com,Pending
+Unclassified,banner,Cookiebot,#_lantern,roeye.com,,,,,,,,,"Declared, not set",roeye.com,Pending
+Unclassified,banner,Cookiebot,basket_binding_api_key,store2-pl.polar.com,,,,,,,,,"Declared, not set",store2-pl.polar.com,Pending
+Unclassified,banner,Cookiebot,inpost_pay_currency_restore_uid,store2-pl.polar.com,,,,,,,,,"Declared, not set",store2-pl.polar.com,Pending
+Unclassified,banner,Cookiebot,dinTrafficSource,support.polar.com,,,,,,,,,"Declared, not set",support.polar.com,Pending
+Unclassified,banner,Cookiebot,_dmp_,voxus.tv,,,,,,,,,"Declared, not set",voxus.tv,Pending
+Unclassified,banner,Cookiebot,voxusdsp_ret2,voxus.tv,,,,,,,,,"Declared, not set",voxus.tv,Pending
+Unclassified,banner,Cookiebot,COOKIE_ID_komoot_web,www.komoot.com,,,,,,,,,"Declared, not set",www.komoot.com,Pending
+Unclassified,banner,Cookiebot,kmt_advertising_analytics_consent,www.komoot.com,,,,Session,,,,,"Declared, not set",www.komoot.com,Pending
+Unclassified,banner,Cookiebot,kmt_fbclid,www.komoot.com,,,,Session,,,,,"Declared, not set",www.komoot.com,Pending
+Unclassified,banner,Cookiebot,kmt_profiling_consent,www.komoot.com,,,,Session,,,,,"Declared, not set",www.komoot.com,Pending
+Unclassified,banner,Cookiebot,kmt_sess,www.komoot.com,,,,Session,,,,,"Declared, not set",www.komoot.com,Pending
+Unclassified,banner,Cookiebot,kmt_sess.sig,www.komoot.com,,,,Session,,,,,"Declared, not set",www.komoot.com,Pending

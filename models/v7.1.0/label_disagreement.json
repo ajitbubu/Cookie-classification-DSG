@@ -1,0 +1,787 @@
+{
+ "rule": {
+  "minimum_sites": 3,
+  "minimum_share": 0.3
+ },
+ "families": {
+  ".epiform_visitoridentifier": {
+   "Functional": 2,
+   "Strictly_Necessary": 1
+  },
+  "3060738.3440491": {
+   "Analytics_Performance": 3,
+   "Functional": 5,
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 4
+  },
+  "_": {
+   "Analytics_Performance": 4,
+   "Functional": 1,
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 6
+  },
+  "__adal_ca": {
+   "Analytics_Performance": 3,
+   "Marketing_Advertising": 2
+  },
+  "__adal_cw": {
+   "Analytics_Performance": 3,
+   "Marketing_Advertising": 2
+  },
+  "__adal_id": {
+   "Analytics_Performance": 3,
+   "Marketing_Advertising": 2
+  },
+  "__adal_ses": {
+   "Analytics_Performance": 3,
+   "Marketing_Advertising": 2
+  },
+  "__adblocker": {
+   "Functional": 1,
+   "Strictly_Necessary": 2
+  },
+  "__attentive_ceid": {
+   "Marketing_Advertising": 2,
+   "Strictly_Necessary": 1
+  },
+  "__attentive_id": {
+   "Analytics_Performance": 6,
+   "Functional": 1,
+   "Marketing_Advertising": 8
+  },
+  "__attentive_pv": {
+   "Analytics_Performance": 6,
+   "Functional": 3,
+   "Marketing_Advertising": 5
+  },
+  "__attentive_ss_referrer": {
+   "Analytics_Performance": 6,
+   "Functional": 3,
+   "Marketing_Advertising": 6
+  },
+  "__cf_bm": {
+   "Analytics_Performance": 10,
+   "Functional": 120,
+   "Marketing_Advertising": 230,
+   "Strictly_Necessary": 334
+  },
+  "__cq_bc": {
+   "Analytics_Performance": 1,
+   "Functional": 1,
+   "Marketing_Advertising": 1
+  },
+  "__cq_dnt": {
+   "Functional": 9,
+   "Strictly_Necessary": 9
+  },
+  "__idcontext": {
+   "Analytics_Performance": 2,
+   "Marketing_Advertising": 2
+  },
+  "__pat": {
+   "Analytics_Performance": 1,
+   "Functional": 2,
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 2
+  },
+  "__q_state": {
+   "Functional": 4,
+   "Marketing_Advertising": 5,
+   "Strictly_Necessary": 5
+  },
+  "__secure-next-auth.callback-url": {
+   "Marketing_Advertising": 2,
+   "Strictly_Necessary": 4
+  },
+  "__ssid": {
+   "Marketing_Advertising": 2,
+   "Strictly_Necessary": 1
+  },
+  "__stripe_mid": {
+   "Functional": 6,
+   "Strictly_Necessary": 8
+  },
+  "__stripe_sid": {
+   "Functional": 6,
+   "Strictly_Necessary": 8
+  },
+  "__tld": {
+   "Functional": 1,
+   "Strictly_Necessary": 2
+  },
+  "__tmbid": {
+   "Analytics_Performance": 1,
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 1
+  },
+  "__uzmd": {
+   "Functional": 1,
+   "Strictly_Necessary": 2
+  },
+  "__uzmf": {
+   "Analytics_Performance": 2,
+   "Strictly_Necessary": 1
+  },
+  "__wid": {
+   "Analytics_Performance": 2,
+   "Strictly_Necessary": 2
+  },
+  "_an_uid": {
+   "Analytics_Performance": 18,
+   "Marketing_Advertising": 10
+  },
+  "_br_uid": {
+   "Analytics_Performance": 1,
+   "Functional": 2
+  },
+  "_buid": {
+   "Analytics_Performance": 11,
+   "Functional": 9,
+   "Marketing_Advertising": 8
+  },
+  "_cb": {
+   "Analytics_Performance": 4,
+   "Marketing_Advertising": 4
+  },
+  "_cls_s": {
+   "Analytics_Performance": 7,
+   "Functional": 3,
+   "Strictly_Necessary": 2
+  },
+  "_cls_v": {
+   "Analytics_Performance": 7,
+   "Functional": 3,
+   "Strictly_Necessary": 2
+  },
+  "_conv_v": {
+   "Analytics_Performance": 3,
+   "Strictly_Necessary": 5
+  },
+  "_cq_s": {
+   "Functional": 2,
+   "Marketing_Advertising": 2,
+   "Strictly_Necessary": 2
+  },
+  "_cq_session": {
+   "Marketing_Advertising": 2,
+   "Strictly_Necessary": 4
+  },
+  "_cs_c": {
+   "Analytics_Performance": 18,
+   "Functional": 1,
+   "Marketing_Advertising": 30,
+   "Strictly_Necessary": 5
+  },
+  "_cs_cvars": {
+   "Analytics_Performance": 6,
+   "Marketing_Advertising": 6
+  },
+  "_cs_id": {
+   "Analytics_Performance": 24,
+   "Marketing_Advertising": 30
+  },
+  "_cs_mk": {
+   "Analytics_Performance": 3,
+   "Marketing_Advertising": 3
+  },
+  "_cs_s": {
+   "Analytics_Performance": 25,
+   "Marketing_Advertising": 31
+  },
+  "_cs_s_ctx": {
+   "Analytics_Performance": 4,
+   "Marketing_Advertising": 8
+  },
+  "_dc_gtm_ua": {
+   "Analytics_Performance": 4,
+   "Strictly_Necessary": 8
+  },
+  "_dpm": {
+   "Analytics_Performance": 2,
+   "Marketing_Advertising": 2
+  },
+  "_dyid": {
+   "Functional": 2,
+   "Marketing_Advertising": 3,
+   "Strictly_Necessary": 1
+  },
+  "_fsuid": {
+   "Analytics_Performance": 1,
+   "Functional": 1,
+   "Marketing_Advertising": 1
+  },
+  "_fuid": {
+   "Analytics_Performance": 2,
+   "Marketing_Advertising": 1
+  },
+  "_fwb": {
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 2
+  },
+  "_gat_gtag_ua": {
+   "Analytics_Performance": 4,
+   "Marketing_Advertising": 2
+  },
+  "_gd_visitor": {
+   "Analytics_Performance": 2,
+   "Functional": 37,
+   "Marketing_Advertising": 19,
+   "Strictly_Necessary": 1
+  },
+  "_grecaptcha": {
+   "Analytics_Performance": 2,
+   "Functional": 6,
+   "Marketing_Advertising": 22,
+   "Strictly_Necessary": 30
+  },
+  "_gtmeec": {
+   "Analytics_Performance": 10,
+   "Marketing_Advertising": 6
+  },
+  "_gtmeec-tt": {
+   "Analytics_Performance": 1,
+   "Marketing_Advertising": 2
+  },
+  "_hp2": {
+   "Analytics_Performance": 3,
+   "Marketing_Advertising": 5
+  },
+  "_hp2_ses": {
+   "Analytics_Performance": 3,
+   "Marketing_Advertising": 5
+  },
+  "_iiq_fdata": {
+   "Functional": 3,
+   "Marketing_Advertising": 2
+  },
+  "_lr_retry_request": {
+   "Analytics_Performance": 11,
+   "Marketing_Advertising": 7
+  },
+  "_ml_id": {
+   "Analytics_Performance": 2,
+   "Strictly_Necessary": 1
+  },
+  "_nb_sp_cookie": {
+   "Analytics_Performance": 2,
+   "Marketing_Advertising": 1
+  },
+  "_parsely_session": {
+   "Analytics_Performance": 2,
+   "Functional": 4
+  },
+  "_parsely_visitor": {
+   "Analytics_Performance": 2,
+   "Functional": 4
+  },
+  "_pctx": {
+   "Functional": 3,
+   "Strictly_Necessary": 3
+  },
+  "_pcus": {
+   "Analytics_Performance": 1,
+   "Functional": 1,
+   "Strictly_Necessary": 1
+  },
+  "_pf": {
+   "Analytics_Performance": 1,
+   "Marketing_Advertising": 2,
+   "Strictly_Necessary": 1
+  },
+  "_pin_unauth": {
+   "Analytics_Performance": 3,
+   "Functional": 61,
+   "Marketing_Advertising": 49
+  },
+  "_px3": {
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 2
+  },
+  "_sg_b_p": {
+   "Analytics_Performance": 1,
+   "Functional": 2
+  },
+  "_sg_b_v": {
+   "Analytics_Performance": 2,
+   "Functional": 1
+  },
+  "_shop_app_essential": {
+   "Functional": 11,
+   "Strictly_Necessary": 7
+  },
+  "_uetvid": {
+   "Analytics_Performance": 175,
+   "Functional": 2,
+   "Marketing_Advertising": 113,
+   "Strictly_Necessary": 2
+  },
+  "_vuid": {
+   "Functional": 5,
+   "Marketing_Advertising": 4,
+   "Strictly_Necessary": 1
+  },
+  "_vwo_uuid": {
+   "Analytics_Performance": 34,
+   "Functional": 13,
+   "Marketing_Advertising": 2
+  },
+  "_zitok": {
+   "Analytics_Performance": 3,
+   "Functional": 2,
+   "Marketing_Advertising": 14,
+   "Strictly_Necessary": 17
+  },
+  "addshoppers": {
+   "Functional": 3,
+   "Marketing_Advertising": 3
+  },
+  "adrum_bta": {
+   "Functional": 1,
+   "Strictly_Necessary": 2
+  },
+  "af_id": {
+   "Analytics_Performance": 3,
+   "Functional": 2,
+   "Marketing_Advertising": 4
+  },
+  "af_sync": {
+   "Functional": 2,
+   "Marketing_Advertising": 3,
+   "Strictly_Necessary": 1
+  },
+  "aka": {
+   "Analytics_Performance": 10,
+   "Functional": 2,
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 8
+  },
+  "anonchk": {
+   "Analytics_Performance": 24,
+   "Functional": 64,
+   "Marketing_Advertising": 47,
+   "Strictly_Necessary": 5
+  },
+  "au_3p_check": {
+   "Analytics_Performance": 1,
+   "Marketing_Advertising": 2
+  },
+  "awsalbcors": {
+   "Analytics_Performance": 2,
+   "Functional": 8,
+   "Marketing_Advertising": 25,
+   "Strictly_Necessary": 52
+  },
+  "awsalbtg": {
+   "Marketing_Advertising": 3,
+   "Strictly_Necessary": 4
+  },
+  "bm_sz": {
+   "Analytics_Performance": 6,
+   "Strictly_Necessary": 13
+  },
+  "cart_currency": {
+   "Functional": 10,
+   "Strictly_Necessary": 9
+  },
+  "cb_group_id": {
+   "Analytics_Performance": 3,
+   "Marketing_Advertising": 5
+  },
+  "cdv": {
+   "Functional": 2,
+   "Marketing_Advertising": 3
+  },
+  "cee": {
+   "Analytics_Performance": 1,
+   "Functional": 1,
+   "Marketing_Advertising": 7,
+   "Strictly_Necessary": 4
+  },
+  "cf_clearance": {
+   "Functional": 37,
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 32
+  },
+  "checkout_continuity_service": {
+   "Functional": 7,
+   "Strictly_Necessary": 11
+  },
+  "cjuser": {
+   "Marketing_Advertising": 4,
+   "Strictly_Necessary": 8
+  },
+  "clid": {
+   "Analytics_Performance": 40,
+   "Functional": 57,
+   "Marketing_Advertising": 37,
+   "Strictly_Necessary": 2
+  },
+  "com.silverpop.ima.session": {
+   "Analytics_Performance": 1,
+   "Marketing_Advertising": 2
+  },
+  "com.silverpop.imawebcookie": {
+   "Functional": 1,
+   "Marketing_Advertising": 2
+  },
+  "constructorioid_client_id": {
+   "Functional": 2,
+   "Strictly_Necessary": 2
+  },
+  "constructorioid_session_id": {
+   "Functional": 2,
+   "Strictly_Necessary": 1
+  },
+  "countrycode": {
+   "Functional": 2,
+   "Strictly_Necessary": 2
+  },
+  "cqcid": {
+   "Analytics_Performance": 7,
+   "Functional": 2,
+   "Strictly_Necessary": 6
+  },
+  "cx_g": {
+   "Functional": 2,
+   "Marketing_Advertising": 2,
+   "Strictly_Necessary": 1
+  },
+  "d41id": {
+   "Analytics_Performance": 1,
+   "Marketing_Advertising": 2
+  },
+  "da_lid": {
+   "Analytics_Performance": 8,
+   "Functional": 3,
+   "Strictly_Necessary": 1
+  },
+  "dicbo_id": {
+   "Analytics_Performance": 3,
+   "Marketing_Advertising": 4
+  },
+  "did_compat": {
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 2
+  },
+  "dpm_time_site": {
+   "Functional": 2,
+   "Marketing_Advertising": 3
+  },
+  "elqcountry": {
+   "Analytics_Performance": 1,
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 1
+  },
+  "epistatemarker": {
+   "Analytics_Performance": 2,
+   "Functional": 2,
+   "Strictly_Necessary": 2
+  },
+  "fpc": {
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 2
+  },
+  "fpestid": {
+   "Analytics_Performance": 1,
+   "Functional": 1,
+   "Marketing_Advertising": 1
+  },
+  "fplc": {
+   "Analytics_Performance": 20,
+   "Functional": 2,
+   "Marketing_Advertising": 38,
+   "Strictly_Necessary": 2
+  },
+  "gckp": {
+   "Marketing_Advertising": 3,
+   "Strictly_Necessary": 2
+  },
+  "globale_analytics": {
+   "Analytics_Performance": 2,
+   "Strictly_Necessary": 1
+  },
+  "globale_ct_data": {
+   "Analytics_Performance": 1,
+   "Strictly_Necessary": 2
+  },
+  "gsid": {
+   "Marketing_Advertising": 4,
+   "Strictly_Necessary": 2
+  },
+  "guest_language_id": {
+   "Functional": 3,
+   "Strictly_Necessary": 4
+  },
+  "hasgmid": {
+   "Functional": 3,
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 3
+  },
+  "hubspotutk": {
+   "Analytics_Performance": 22,
+   "Functional": 32,
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 1
+  },
+  "ids": {
+   "Analytics_Performance": 1,
+   "Marketing_Advertising": 2
+  },
+  "instuid": {
+   "Functional": 5,
+   "Marketing_Advertising": 6
+  },
+  "intercom-device-id": {
+   "Functional": 4,
+   "Strictly_Necessary": 7
+  },
+  "intercom-session": {
+   "Functional": 4,
+   "Strictly_Necessary": 7
+  },
+  "io.narrative.guid.v2": {
+   "Functional": 5,
+   "Marketing_Advertising": 3
+  },
+  "irld": {
+   "Functional": 2,
+   "Marketing_Advertising": 4
+  },
+  "is": {
+   "Functional": 3,
+   "Marketing_Advertising": 2,
+   "Strictly_Necessary": 1
+  },
+  "jsscounter": {
+   "Analytics_Performance": 2,
+   "Functional": 4
+  },
+  "k": {
+   "Analytics_Performance": 1,
+   "Strictly_Necessary": 2
+  },
+  "kampylepageloadedtimestamp": {
+   "Analytics_Performance": 1,
+   "Functional": 2
+  },
+  "ktcid": {
+   "Analytics_Performance": 5,
+   "Marketing_Advertising": 6
+  },
+  "kwsu": {
+   "Analytics_Performance": 1,
+   "Marketing_Advertising": 2
+  },
+  "language": {
+   "Functional": 4,
+   "Strictly_Necessary": 2
+  },
+  "locale": {
+   "Functional": 6,
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 3
+  },
+  "localization": {
+   "Analytics_Performance": 1,
+   "Functional": 8,
+   "Strictly_Necessary": 10
+  },
+  "ltkpopup-session-depth": {
+   "Analytics_Performance": 1,
+   "Marketing_Advertising": 2
+  },
+  "messagesutk": {
+   "Functional": 2,
+   "Strictly_Necessary": 1
+  },
+  "mg": {
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 2
+  },
+  "ndat": {
+   "Analytics_Performance": 4,
+   "Marketing_Advertising": 4
+  },
+  "next_locale": {
+   "Functional": 3,
+   "Strictly_Necessary": 3
+  },
+  "optout": {
+   "Analytics_Performance": 1,
+   "Functional": 1,
+   "Marketing_Advertising": 1
+  },
+  "pagecount": {
+   "Analytics_Performance": 1,
+   "Strictly_Necessary": 2
+  },
+  "pt": {
+   "Analytics_Performance": 6,
+   "Marketing_Advertising": 7,
+   "Strictly_Necessary": 3
+  },
+  "reese84": {
+   "Marketing_Advertising": 6,
+   "Strictly_Necessary": 3
+  },
+  "rl_page_init_referrer": {
+   "Analytics_Performance": 3,
+   "Marketing_Advertising": 3
+  },
+  "rt": {
+   "Analytics_Performance": 17,
+   "Marketing_Advertising": 3,
+   "Strictly_Necessary": 11
+  },
+  "rto": {
+   "Analytics_Performance": 5,
+   "Functional": 4,
+   "Strictly_Necessary": 2
+  },
+  "s": {
+   "Analytics_Performance": 17,
+   "Functional": 2,
+   "Marketing_Advertising": 19,
+   "Strictly_Necessary": 4
+  },
+  "sa-user-id": {
+   "Analytics_Performance": 42,
+   "Functional": 34,
+   "Marketing_Advertising": 98,
+   "Strictly_Necessary": 1
+  },
+  "sailthru_visitor": {
+   "Analytics_Performance": 3,
+   "Functional": 2
+  },
+  "samesite": {
+   "Functional": 1,
+   "Strictly_Necessary": 2
+  },
+  "sc_at": {
+   "Analytics_Performance": 30,
+   "Marketing_Advertising": 30
+  },
+  "sd-session-id": {
+   "Analytics_Performance": 15,
+   "Functional": 2,
+   "Marketing_Advertising": 9
+  },
+  "session": {
+   "Functional": 6,
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 8
+  },
+  "sessionid": {
+   "Analytics_Performance": 3,
+   "Functional": 2,
+   "Marketing_Advertising": 14,
+   "Strictly_Necessary": 9
+  },
+  "signals-sdk-session-id": {
+   "Analytics_Performance": 2,
+   "Functional": 2,
+   "Marketing_Advertising": 1
+  },
+  "sliguid": {
+   "Analytics_Performance": 6,
+   "Marketing_Advertising": 10
+  },
+  "slirequested": {
+   "Analytics_Performance": 5,
+   "Marketing_Advertising": 10
+  },
+  "ssplink": {
+   "Analytics_Performance": 2,
+   "Marketing_Advertising": 2
+  },
+  "t_v2_s": {
+   "Analytics_Performance": 1,
+   "Functional": 4,
+   "Marketing_Advertising": 2,
+   "Strictly_Necessary": 6
+  },
+  "tatari-session-cookie": {
+   "Marketing_Advertising": 2,
+   "Strictly_Necessary": 1
+  },
+  "teal": {
+   "Analytics_Performance": 1,
+   "Strictly_Necessary": 2
+  },
+  "thx_guid": {
+   "Functional": 3,
+   "Marketing_Advertising": 3,
+   "Strictly_Necessary": 4
+  },
+  "tp": {
+   "Analytics_Performance": 3,
+   "Marketing_Advertising": 6,
+   "Strictly_Necessary": 1
+  },
+  "ucid": {
+   "Functional": 2,
+   "Marketing_Advertising": 3,
+   "Strictly_Necessary": 3
+  },
+  "unify_visitor_id": {
+   "Analytics_Performance": 1,
+   "Marketing_Advertising": 2
+  },
+  "usid": {
+   "Marketing_Advertising": 4,
+   "Strictly_Necessary": 2
+  },
+  "utm_content": {
+   "Analytics_Performance": 2,
+   "Marketing_Advertising": 2
+  },
+  "utm_source": {
+   "Analytics_Performance": 4,
+   "Marketing_Advertising": 3
+  },
+  "utm_term": {
+   "Analytics_Performance": 2,
+   "Marketing_Advertising": 1
+  },
+  "uws_storage": {
+   "Functional": 1,
+   "Strictly_Necessary": 2
+  },
+  "uzmxj": {
+   "Marketing_Advertising": 1,
+   "Strictly_Necessary": 2
+  },
+  "vid": {
+   "Analytics_Performance": 4,
+   "Functional": 2,
+   "Marketing_Advertising": 6
+  },
+  "visitor_id": {
+   "Analytics_Performance": 1,
+   "Marketing_Advertising": 2
+  },
+  "visitorid": {
+   "Analytics_Performance": 7,
+   "Functional": 1,
+   "Marketing_Advertising": 6,
+   "Strictly_Necessary": 4
+  },
+  "website#lang": {
+   "Functional": 2,
+   "Strictly_Necessary": 1
+  },
+  "wrvuserid": {
+   "Functional": 11,
+   "Marketing_Advertising": 11
+  },
+  "x": {
+   "Marketing_Advertising": 2,
+   "Strictly_Necessary": 1
+  },
+  "z_idsyncs": {
+   "Analytics_Performance": 1,
+   "Functional": 2
+  }
+ }
+}
