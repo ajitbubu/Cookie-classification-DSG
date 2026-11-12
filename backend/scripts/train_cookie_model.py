@@ -659,6 +659,61 @@ def _consensus_scores(predictions: np.ndarray, encoded_labels: np.ndarray, accep
     }
 
 
+# Codes reviewers type in a labelling sheet's reviewed_label column; "?" = can't tell.
+REVIEW_CODES = {
+    "SN": "Strictly_Necessary",
+    "F": "Functional",
+    "A": "Analytics_Performance",
+    "M": "Marketing_Advertising",
+    "?": None,
+}
+
+
+def load_reviewed_labels(paths: Iterable[Path]) -> dict[str, str | None]:
+    """Map observation_id -> human-reviewed label (None = reviewer couldn't tell).
+
+    Rows with a blank reviewed_label are not reviewed yet and are skipped; any
+    other value outside REVIEW_CODES is an error, so a typo never becomes a label.
+    """
+    reviewed: dict[str, str | None] = {}
+    for path in paths:
+        sheet = pd.read_csv(path, dtype=str, keep_default_na=False)
+        for line, (observation_id, raw) in enumerate(zip(sheet.observation_id, sheet.reviewed_label), start=2):
+            code = raw.strip().upper()
+            if not code:
+                continue
+            if code not in REVIEW_CODES:
+                raise ValueError(f"{path} line {line}: reviewed_label {raw!r} is not one of {', '.join(REVIEW_CODES)}")
+            reviewed[observation_id] = REVIEW_CODES[code]
+    return reviewed
+
+
+def _reviewed_scores(predictions: np.ndarray, rows: pd.DataFrame, classes: Sequence[str],
+                     reviewed: dict[str, str | None]) -> dict[str, Any] | None:
+    """Score predictions against human-reviewed labels instead of the website's own."""
+    from sklearn.metrics import accuracy_score, classification_report
+
+    labels = rows.observation_id.map(reviewed)
+    in_sheet = rows.observation_id.isin(reviewed).to_numpy()
+    scored = labels.notna().to_numpy()
+    if not scored.any():
+        return None
+    index = {label: position for position, label in enumerate(classes)}
+    targets = labels[scored].map(index).to_numpy()
+    report = classification_report(targets, predictions[scored], labels=list(range(len(classes))),
+                                   target_names=list(classes), output_dict=True, zero_division=0)
+    return _json_safe({
+        "rows_reviewed": int(in_sheet.sum()),
+        "rows_unsure": int((in_sheet & ~scored).sum()),
+        "rows_scored": int(scored.sum()),
+        "sites": int(rows.site_domain[scored].nunique()),
+        "website_label_agreement": float((rows.label[scored] == labels[scored]).mean()),
+        "accuracy": accuracy_score(targets, predictions[scored]),
+        "macro_f1": report["macro avg"]["f1-score"],
+        "per_class": {category: report[category] for category in classes},
+    })
+
+
 def _evaluate(
     probabilities: np.ndarray,
     encoded_labels: np.ndarray,
@@ -866,6 +921,11 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
                                  thresholds, eligible=all_test_eligible,
                                  sites=all_test_frame.site_domain.to_numpy(), gate=gate,
                                  acceptable=acceptable_label_matrix(cleaned, all_test_frame, classes))
+    reviewed_paths = [Path(path).resolve() for path in args.reviewed_labels or []]
+    reviewed = load_reviewed_labels(reviewed_paths)
+    test_metrics["reviewed"] = _reviewed_scores(test_probabilities.argmax(axis=1), test_frame, classes, reviewed)
+    all_test_metrics["reviewed"] = _reviewed_scores(all_test_probabilities.argmax(axis=1), all_test_frame,
+                                                    classes, reviewed)
     cmp_by_observation = _load_evidence_sidecars(Path(path).resolve() for path in args.evidence_sidecar or [])
     cmp_gate = per_cmp_gate(
         y_test,
@@ -944,6 +1004,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
             "split": split_audit,
             "train_only": {"sources": train_only_source_audits, **train_only_audit},
             "external_holdout": external_audit,
+            "reviewed_labels": [{"source": str(path), "sha256": _sha256(path)} for path in reviewed_paths],
         },
         "calibration": {
             "method": "temperature_scaling",
@@ -1051,6 +1112,11 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     )
     parser.add_argument("--external-holdout", help="Independent externally sourced labeled CSV")
     parser.add_argument("--external-provenance", help="Human-readable source/version for external holdout")
+    parser.add_argument(
+        "--reviewed-labels",
+        action="append",
+        help="Filled-in labelling sheet (build_review_sheet.py); scored separately, never trained on. Repeatable",
+    )
     parser.add_argument("--version", default="6.1.0")
     parser.add_argument("--output-dir", default="models/v6.1.0")
     parser.add_argument("--package-dir", default="model_artifacts")
