@@ -18,6 +18,33 @@ const formatCategory = (cat) =>
 
 const percent = (value) => (value == null ? '—' : `${(value * 100).toFixed(1)}%`);
 
+// The model's report scores three held-out tests. Each figure on this page names
+// the one it comes from: they differ a lot, and only the strictest drives the gates.
+const TEST_SETS = [
+  {
+    id: 'all',
+    label: 'All cookies',
+    description: "Every cookie on the held-out test websites, scored against that website's own label. Closest to what a real scan finds.",
+    pick: (metrics) => metrics?.internal_site_holdout_all_cookies,
+  },
+  {
+    id: 'consensus',
+    label: "Other websites' labels accepted",
+    description: 'The same cookies, but a pick also counts as right when at least 30% of the 3 or more websites declaring that cookie gave it. Websites disagree about many common cookies.',
+    pick: (metrics) => metrics?.internal_site_holdout_all_cookies?.consensus,
+  },
+  {
+    id: 'unseen',
+    label: 'Never-seen names',
+    description: 'Only cookies whose names never appear on a training website, the strictest test. The Macro F1 and Marketing recall gates are judged on it.',
+    pick: (metrics) => metrics?.internal_site_holdout,
+  },
+];
+
+const cookieCount = (scores) => (scores?.per_class
+  ? Math.round(Object.values(scores.per_class).reduce((sum, c) => sum + (c.support || 0), 0))
+  : null);
+
 const GATE_LABELS = {
   macro_f1: 'Macro F1 meets the minimum',
   marketing_recall: 'Marketing recall meets the minimum',
@@ -31,6 +58,7 @@ const GATE_LABELS = {
 function ModelPerformancePage({ onNavigate }) {
   const [info, setInfo] = useState(null);
   const [error, setError] = useState(null);
+  const [testSetId, setTestSetId] = useState('all');
   const overrideStats = useMemo(() => getOverrideStats(), []);
   const overrideHistory = useMemo(() => getOverrideHistory(), []);
 
@@ -107,7 +135,10 @@ function ModelPerformancePage({ onNavigate }) {
     );
   }
 
-  const holdout = info.metrics?.internal_site_holdout;
+  const testSets = TEST_SETS.map((set) => ({ ...set, scores: set.pick(info.metrics) }));
+  const available = testSets.filter((set) => set.scores?.per_class);
+  const shown = available.find((set) => set.id === testSetId) || available[0];
+  const allCookies = testSets.find((set) => set.id === 'all').scores;
   const acceptance = info.acceptance || {};
   const promoted = Boolean(acceptance.promotion_eligible);
   const samples = info.samples || {};
@@ -125,23 +156,18 @@ function ModelPerformancePage({ onNavigate }) {
         </span>
       )}
 
-      {/* Key Metrics */}
+      {/* Key Metrics: one tile per held-out test */}
       <div className="mp-stats">
-        <div className="mp-stat">
-          <div className="mp-stat__value">{percent(holdout?.accuracy)}</div>
-          <div className="mp-stat__label">Accuracy</div>
-          <div className="mp-stat__caption">Held-out test websites</div>
-        </div>
-        <div className="mp-stat">
-          <div className="mp-stat__value">{percent(holdout?.macro_f1)}</div>
-          <div className="mp-stat__label">Macro F1</div>
-          <div className="mp-stat__caption">Every category weighted equally</div>
-        </div>
-        <div className="mp-stat">
-          <div className="mp-stat__value">{percent(holdout?.weighted_f1)}</div>
-          <div className="mp-stat__label">Weighted F1</div>
-          <div className="mp-stat__caption">Weighted by test rows</div>
-        </div>
+        {testSets.map((set) => (
+          <div key={set.id} className="mp-stat">
+            <div className="mp-stat__value">{percent(set.scores?.accuracy)}</div>
+            <div className="mp-stat__label">{`Accuracy · ${set.label}`}</div>
+            <div className="mp-stat__caption">
+              {cookieCount(set.scores) == null ? 'Not recorded for this model'
+                : `${cookieCount(set.scores).toLocaleString()} test cookies · Macro F1 ${percent(set.scores.macro_f1)}`}
+            </div>
+          </div>
+        ))}
         <div className="mp-stat">
           <div className="mp-stat__value">{info.feature_count}</div>
           <div className="mp-stat__label">Features</div>
@@ -152,16 +178,34 @@ function ModelPerformancePage({ onNavigate }) {
       {/* Per-category performance */}
       <div className="mp-card">
         <h3 className="mp-card__title"><Target size={16} /> Performance by Category</h3>
-        {holdout?.per_class ? (
-          <div className="mp-table" role="region" aria-label="Performance by category" tabIndex={0}>
+        {shown ? (
+          <>
+          <div className="mp-tabs" role="tablist" aria-label="Test set">
+            {available.map((set) => (
+              <button
+                key={set.id}
+                type="button"
+                role="tab"
+                id={`mp-tab-${set.id}`}
+                aria-selected={set.id === shown.id}
+                aria-controls="mp-category-table"
+                className="mp-tab"
+                onClick={() => setTestSetId(set.id)}
+              >
+                {set.label}
+              </button>
+            ))}
+          </div>
+          <p className="mp-card__desc">{shown.description}</p>
+          <div className="mp-table" id="mp-category-table" role="region" aria-label={`Performance by category: ${shown.label}`} tabIndex={0}>
             <div className="mp-table__header">
               <span>Category</span>
               <span>Precision</span>
               <span>Recall</span>
               <span>F1</span>
-              <span>Test rows</span>
+              <span>Test cookies</span>
             </div>
-            {Object.entries(holdout.per_class).map(([category, scores]) => (
+            {Object.entries(shown.scores.per_class).map(([category, scores]) => (
               <div key={category} className="mp-table__row">
                 <span className="mp-table__name">{formatCategory(category)}</span>
                 <span className="mono">{percent(scores.precision)}</span>
@@ -171,6 +215,7 @@ function ModelPerformancePage({ onNavigate }) {
               </div>
             ))}
           </div>
+          </>
         ) : (
           <p className="mp-card__desc">No held-out evaluation is recorded for this model.</p>
         )}
@@ -182,6 +227,7 @@ function ModelPerformancePage({ onNavigate }) {
         <p className="mp-card__desc">
           Automatic classification is {acceptance.auto_classification_enabled ? 'on' : 'off'}.
           {' '}It stays off until every gate passes; until then each model suggestion goes to the Review Queue.
+          {' '}Macro F1 and Marketing recall are judged on never-seen cookie names, the strictest test.
         </p>
         <ul className="mp-gates">
           {gates.map(([label, passed]) => (
@@ -207,8 +253,9 @@ function ModelPerformancePage({ onNavigate }) {
             <div className="mp-training-stat__label">Calibration rows</div>
           </div>
           <div className="mp-training-stat">
-            <div className="mp-training-stat__value mono">{(samples.test || 0).toLocaleString()}</div>
-            <div className="mp-training-stat__label">Test rows</div>
+            <div className="mp-training-stat__value mono">{(cookieCount(allCookies) ?? samples.test ?? 0).toLocaleString()}</div>
+            <div className="mp-training-stat__label">Test cookies</div>
+            {allCookies && <div className="mp-training-stat__caption">{`${(samples.test || 0).toLocaleString()} with never-seen names`}</div>}
           </div>
         </div>
         <div className="mp-categories-list">
