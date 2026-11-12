@@ -692,3 +692,32 @@ def test_consensus_scores_count_any_acceptable_prediction_as_correct():
 
     assert scores["accuracy"] == 0.75  # only row 2 (C predicted as A) is wrong
     assert scores["rows_with_several_acceptable_labels"] == 1
+
+
+def test_gate_details_separate_unjudged_gates_from_failures():
+    from argparse import Namespace
+    from backend.scripts.train_cookie_model import gate_details
+
+    def policy(predictions, sites, wilson, bootstrap):
+        return {"eligible_predictions": predictions, "distinct_sites": sites, "accuracy": 0.94,
+                "wilson_lower_bound": wilson, "site_bootstrap_lower_bound": bootstrap,
+                "requirements": {"target_precision": 0.95, "minimum_predictions": 100, "minimum_sites": 20}}
+
+    test = {"consensus": {"macro_f1": 0.44}, "per_class": {"Marketing_Advertising": {"recall": 0.49}},
+            "auto_policy": policy(8, 8, 0.67, 1.0)}
+    all_cookies = {"auto_policy": policy(887, 99, 0.925, 0.900)}
+    cmp = {"requirements": {"maximum_gap": 0.05}, "per_cmp": {
+        "onetrust": {"passed": True, "gap": -0.01}, "ketch": {"passed": None}}}
+    split = {"site_domain_overlap": {"a": 0}, "cookie_name_family_overlap": {"a": 0}}
+    internal = {"macro_f1": False, "marketing_recall": False, "auto_precision": False,
+                "auto_precision_all_cookies": False, "per_cmp_macro_f1": True,
+                "site_holdout_is_disjoint": True, "name_holdout_is_disjoint": True}
+    gates = gate_details(internal, test, all_cookies, cmp, split, None, False,
+                         Namespace(minimum_macro_f1=0.75, minimum_marketing_recall=0.70))
+
+    assert gates["auto_precision"]["status"] == "not_enough_data"
+    # Both lower bounds must reach the target, so the smaller one is reported.
+    assert (gates["auto_precision_all_cookies"]["status"], gates["auto_precision_all_cookies"]["measured"]) == ("fail", 0.900)
+    assert gates["per_cmp_macro_f1"]["detail"] == {"judged": ["onetrust"], "too_small": ["ketch"]}
+    assert gates["external_holdout"]["status"] == "not_run"
+    assert (gates["macro_f1"]["measured"], gates["macro_f1"]["required"], gates["macro_f1"]["test"]) == (0.44, 0.75, "unseen")

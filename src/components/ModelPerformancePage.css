@@ -208,3 +208,13 @@
 @media (max-width: 768px), (pointer: coarse) {
   .mp-tab { min-height: 44px; }
 }
+
+/* Gates with their measured value and bar, grouped (acceptance.gates) */
+.mp-gate-group { display: grid; gap: 8px; }
+.mp-gate-group + .mp-gate-group { margin-top: 16px; }
+.mp-gate-group__title { margin: 0; font: 500 14px/1.2 var(--font-sans); color: var(--color-text-secondary); }
+.mp-gate__text { display: grid; gap: 4px; min-width: 0; }
+.mp-gate__detail { font-size: var(--fs-xs); line-height: 1.4; color: var(--color-text-secondary); font-variant-numeric: tabular-nums; }
+.mp-gate__status { flex-shrink: 0; }
+.mp-gate--na { color: var(--ucm-navy); }
+.mp-gate--na svg, .mp-gate--na .mp-gate__status { color: var(--color-text-secondary); }

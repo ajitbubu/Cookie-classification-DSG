@@ -110,3 +110,15 @@ def test_trainer_reports_reviewed_scores_from_a_filled_sheet(trained, tmp_path):
     assert reviewed["rows_scored"] == int(sheet.cookie_name.str.startswith("pxl").sum())
     assert reviewed["website_label_agreement"] == 1.0
     assert metadata["dataset"]["reviewed_labels"][0]["sha256"]
+
+
+def test_trained_report_explains_every_gate(trained):
+    gates = json.loads((trained[3] / "metadata.json").read_text())["acceptance"]["gates"]
+    internal = json.loads((trained[3] / "metadata.json").read_text())["acceptance"]["internal_gates"]
+    assert set(gates) == set(internal) | {"external_holdout"}
+    assert gates["external_holdout"]["status"] == "not_run"
+    assert {gates[k]["group"] for k in ("site_holdout_is_disjoint", "name_holdout_is_disjoint")} == {"setup"}
+    assert gates["macro_f1"]["required"] == 0.75 and gates["marketing_recall"]["required"] == 0.70
+    for key, passed in internal.items():
+        if gates[key]["status"] in ("pass", "fail"):
+            assert (gates[key]["status"] == "pass") is passed
