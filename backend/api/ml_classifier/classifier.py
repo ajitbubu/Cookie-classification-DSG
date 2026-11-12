@@ -69,7 +69,7 @@ class CookieClassifier:
         self._load_model()
         
         # Initialize feature extractor based on model version
-        self.feature_extractor = get_feature_extractor_for_model(self.model_version)
+        self.feature_extractor = get_feature_extractor_for_model(self.model_version, self.model_path)
         feature_names = self.feature_extractor.get_feature_names()
         self._evidence_indices = evidence_indices(feature_names)
         self._validate_artifacts()

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Train a reproducible cookie classifier with leakage-resistant evaluation.
 
-This pipeline intentionally uses the production FeatureExtractorV5 for both
+This pipeline intentionally uses the production feature extractor (V7: V5's
+52 features plus name-pattern and cookie-domain lookups learned here) for both
 training and evaluation. It never consumes vendor_type, tracker_category, or
 other precomputed columns that may encode the target label.
 """
@@ -23,6 +24,12 @@ import pandas as pd
 
 from backend.api.ml_classifier.evidence_guard import apply_evidence_guard, evidence_indices
 from backend.api.ml_classifier.feature_extractor_v5 import FeatureExtractorV5
+from backend.api.ml_classifier.feature_extractor_v7 import (
+    LOOKUP_FILE,
+    FeatureExtractorV7,
+    normalize_cookie_name,
+    registrable_domain,
+)
 from backend.scripts.build_production_dataset import cookie_name_family, normalize_label as _normalize_label_text
 
 
@@ -296,9 +303,9 @@ def add_train_only_rows(
     return combined, unseen_test.reset_index(drop=True), audit
 
 
-def build_feature_matrix(frame: pd.DataFrame) -> np.ndarray:
-    """Generate features exclusively through the production extractor."""
-    extractor = FeatureExtractorV5()
+def build_feature_matrix(frame: pd.DataFrame, extractor: Any = None) -> np.ndarray:
+    """Generate features exclusively through a production extractor (V5 by default)."""
+    extractor = extractor or FeatureExtractorV5()
     rows = []
     for row in frame.itertuples(index=False):
         rows.append(extractor.extract_features({
@@ -313,6 +320,71 @@ def build_feature_matrix(frame: pd.DataFrame) -> np.ndarray:
     if not rows:
         return np.empty((0, len(extractor.get_feature_names())), dtype=np.float32)
     return np.vstack(rows).astype(np.float32, copy=False)
+
+
+NAME_NGRAM_RANGE = (2, 5)
+DOMAIN_SMOOTHING = 3.0
+LOOKUP_FOLDS = 5
+
+
+def fit_feature_lookups(frame: pd.DataFrame, classes: Sequence[str]) -> dict[str, Any]:
+    """Learn FeatureExtractorV7's lookups from labelled rows.
+
+    Name patterns: TF-IDF over character n-grams of the normalized cookie name
+    and a class-balanced logistic regression. Cookie domains: per registrable
+    domain, the number of distinct sites that gave its cookies each label.
+    """
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.linear_model import LogisticRegression
+
+    index = {label: position for position, label in enumerate(classes)}
+    labels = frame["label"].map(index).to_numpy()
+    vectorizer = TfidfVectorizer(analyzer="char_wb", ngram_range=NAME_NGRAM_RANGE, min_df=2,
+                                 sublinear_tf=True, lowercase=False)
+    names = vectorizer.fit_transform(frame["cookie_name"].map(normalize_cookie_name))
+    regression = LogisticRegression(C=2.0, max_iter=2000, class_weight="balanced").fit(names, labels)
+
+    triples = pd.DataFrame({
+        "domain": frame["cookie_domain"].map(registrable_domain),
+        "site": frame["site_domain"],
+        "label": labels,
+    }).drop_duplicates()
+    triples = triples[triples["domain"] != ""]
+    counts = pd.crosstab(triples["domain"], triples["label"]).reindex(columns=range(len(classes)), fill_value=0)
+    return {
+        "classes": list(classes),
+        "name_patterns": {
+            "ngram_range": list(NAME_NGRAM_RANGE),
+            "ngrams": vectorizer.get_feature_names_out().tolist(),
+            "idf": vectorizer.idf_.tolist(),
+            "coef": regression.coef_.T.tolist(),
+            "intercept": regression.intercept_.tolist(),
+        },
+        "cookie_domains": {
+            "alpha": DOMAIN_SMOOTHING,
+            "prior": (np.bincount(labels, minlength=len(classes)) / len(labels)).tolist(),
+            "counts": {domain: [int(v) for v in row] for domain, row in zip(counts.index, counts.to_numpy())},
+        },
+    }
+
+
+def out_of_fold_feature_matrix(train: pd.DataFrame, classes: Sequence[str],
+                               folds: int = LOOKUP_FOLDS) -> np.ndarray:
+    """Training features whose learned columns come from lookups fitted without the row's site.
+
+    Otherwise a row's own label would leak into its name-pattern and domain
+    features and the model would learn to trust them more than it should.
+    """
+    from sklearn.model_selection import GroupKFold
+
+    matrix = None
+    for fit_rows, apply_rows in GroupKFold(folds).split(train, groups=train["site_domain"]):
+        extractor = FeatureExtractorV7(fit_feature_lookups(train.iloc[fit_rows], classes))
+        part = build_feature_matrix(train.iloc[apply_rows], extractor)
+        if matrix is None:
+            matrix = np.empty((len(train), part.shape[1]), dtype=np.float32)
+        matrix[apply_rows] = part
+    return matrix
 
 
 def apply_temperature(probabilities: np.ndarray, temperature: float) -> np.ndarray:
@@ -668,9 +740,11 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
 
     encoder = LabelEncoder().fit(TRAINED_LABELS)
     classes = [str(value) for value in encoder.classes_]
-    x_train = build_feature_matrix(train_frame)
-    x_calibration = build_feature_matrix(calibration_frame)
-    x_test = build_feature_matrix(test_frame)
+    lookups = fit_feature_lookups(train_frame, classes)
+    extractor = FeatureExtractorV7(lookups)
+    x_train = out_of_fold_feature_matrix(train_frame, classes)
+    x_calibration = build_feature_matrix(calibration_frame, extractor)
+    x_test = build_feature_matrix(test_frame, extractor)
     y_train = encoder.transform(train_frame.label)
     y_calibration = encoder.transform(calibration_frame.label)
     y_test = encoder.transform(test_frame.label)
@@ -693,7 +767,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
     )
     model.fit(x_train, y_train, eval_set=[(x_calibration, y_calibration)], verbose=False)
 
-    guard_indices = evidence_indices(FeatureExtractorV5().get_feature_names())
+    guard_indices = evidence_indices(extractor.get_feature_names())
 
     def guarded_probabilities(features: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
         """Calibrated, evidence-guarded probabilities and the auto-eligible mask, as in production."""
@@ -729,7 +803,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
         if train_only_paths and unseen_mask.any() else None
     )
     all_test_frame = all_rows_on_sites(cleaned, split_audit["test_sites"])
-    all_test_probabilities, all_test_eligible = guarded_probabilities(build_feature_matrix(all_test_frame))
+    all_test_probabilities, all_test_eligible = guarded_probabilities(build_feature_matrix(all_test_frame, extractor))
     all_test_metrics = _evaluate(all_test_probabilities, encoder.transform(all_test_frame.label), classes,
                                  thresholds, eligible=all_test_eligible,
                                  sites=all_test_frame.site_domain.to_numpy(), gate=gate)
@@ -746,7 +820,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
 
     external_metrics = None
     if external_frame is not None and len(external_frame):
-        x_external = build_feature_matrix(external_frame)
+        x_external = build_feature_matrix(external_frame, extractor)
         y_external = encoder.transform(external_frame.label)
         external_probabilities, external_eligible = guarded_probabilities(x_external)
         external_metrics = _evaluate(external_probabilities, y_external, classes, thresholds,
@@ -782,7 +856,8 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
     model_path = output_dir / "model.ubj"
     model.save_model(model_path)
     (output_dir / "labels.json").write_text(json.dumps(classes, indent=2) + "\n")
-    feature_names = FeatureExtractorV5().get_feature_names()
+    feature_names = extractor.get_feature_names()
+    (output_dir / LOOKUP_FILE).write_text(json.dumps(lookups) + "\n")
     (output_dir / "features.json").write_text(json.dumps(feature_names, indent=2) + "\n")
     (output_dir / "calibration.json").write_text(json.dumps({
         "method": "temperature_scaling",
@@ -846,6 +921,10 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
                 Path(__file__).resolve().parents[1]
                 / "api" / "ml_classifier" / "feature_extractor_v5.py"
             ),
+            "feature_extractor_v7_sha256": _sha256(
+                Path(__file__).resolve().parents[1]
+                / "api" / "ml_classifier" / "feature_extractor_v7.py"
+            ),
         },
         "training_parameters": {
             "seed": args.seed,
@@ -862,6 +941,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
         model_path,
         output_dir / "labels.json",
         output_dir / "features.json",
+        output_dir / LOOKUP_FILE,
         output_dir / "calibration.json",
         metadata_path,
     ]
