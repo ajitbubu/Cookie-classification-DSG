@@ -30,6 +30,7 @@ from backend.api.ml_classifier.feature_extractor_v7 import (
     normalize_cookie_name,
     registrable_domain,
 )
+from backend.api.ml_classifier.site_disagreement import DISAGREEMENT_FILE
 from backend.scripts.build_production_dataset import cookie_name_family, normalize_label as _normalize_label_text
 
 
@@ -642,6 +643,29 @@ def acceptable_label_matrix(reference: pd.DataFrame, rows: pd.DataFrame, classes
     return matrix
 
 
+def site_label_disagreement(frame: pd.DataFrame) -> dict[str, Any]:
+    """Cookie name families that sites label differently, for the Review Queue.
+
+    Same rule as consensus scoring: declared on at least CONSENSUS_MIN_SITES
+    sites, with at least two labels each given by CONSENSUS_MIN_SHARE of them.
+    Values are site counts per label (every label seen, not only the large ones).
+    """
+    declared = pd.DataFrame({
+        "family": frame["cookie_name"].map(cookie_name_family),
+        "site": frame["site_domain"],
+        "label": frame["label"],
+    }).drop_duplicates()
+    sites_per_label = declared.groupby(["family", "label"])["site"].nunique()
+    site_counts = declared.groupby("family")["site"].nunique()
+    families = {}
+    for family, counts in sites_per_label.groupby(level="family"):
+        total = site_counts[family]
+        if total >= CONSENSUS_MIN_SITES and (counts / total >= CONSENSUS_MIN_SHARE).sum() >= 2:
+            families[family] = {label: int(count) for (_, label), count in counts.items()}
+    return {"rule": {"minimum_sites": CONSENSUS_MIN_SITES, "minimum_share": CONSENSUS_MIN_SHARE},
+            "families": dict(sorted(families.items()))}
+
+
 def _consensus_scores(predictions: np.ndarray, encoded_labels: np.ndarray, acceptable: np.ndarray,
                       classes: Sequence[str]) -> dict[str, Any]:
     """Macro F1 where a prediction any acceptable label allows counts as correct."""
@@ -978,6 +1002,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
     (output_dir / "labels.json").write_text(json.dumps(classes, indent=2) + "\n")
     feature_names = extractor.get_feature_names()
     (output_dir / LOOKUP_FILE).write_text(json.dumps(lookups) + "\n")
+    (output_dir / DISAGREEMENT_FILE).write_text(json.dumps(site_label_disagreement(train_frame), indent=1) + "\n")
     (output_dir / "features.json").write_text(json.dumps(feature_names, indent=2) + "\n")
     (output_dir / "calibration.json").write_text(json.dumps({
         "method": "temperature_scaling",
@@ -1063,6 +1088,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
         output_dir / "labels.json",
         output_dir / "features.json",
         output_dir / LOOKUP_FILE,
+        output_dir / DISAGREEMENT_FILE,
         output_dir / "calibration.json",
         metadata_path,
     ]

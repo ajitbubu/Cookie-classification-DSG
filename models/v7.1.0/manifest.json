@@ -1,6 +1,6 @@
 {
   "version": "7.1.0",
-  "created_at": "2026-11-12T14:26:08.352068+00:00",
+  "created_at": "2026-11-12T17:25:00.734251+00:00",
   "promotion_eligible": false,
   "files": {
     "model.ubj": {
@@ -19,13 +19,17 @@
       "sha256": "1a5f6ed8f2f782e34cecc10d777b0a24cafb1090502ba9b8a103162ae20294db",
       "bytes": 3374077
     },
+    "label_disagreement.json": {
+      "sha256": "c019ded75b1cd080949d2a356d0516a1d1f748f0df6907b3860964d04671e3a2",
+      "bytes": 15823
+    },
     "calibration.json": {
       "sha256": "bd920772db78a19a6267c5ba5e946f7b595896c138b9f1b37a8b8cd47f3a989a",
       "bytes": 1043
     },
     "metadata.json": {
-      "sha256": "f0553d93f9e4dadff535af3b5a35b9075210084c57c226e1b887b03f1dcd61d8",
-      "bytes": 41003
+      "sha256": "15dbd3670d4bc438ed77eec1b551b17fdbd2d99ef71a8622410dd3205c25a3f5",
+      "bytes": 41078
     }
   }
 }

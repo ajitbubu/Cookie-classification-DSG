@@ -287,6 +287,25 @@ def test_cookie_without_identity_evidence_abstains_even_at_zero_threshold(client
     assert classification["requires_review"] is True
 
 
+def test_cookie_sites_label_differently_reports_the_split(client):
+    payload = {
+        "cookies": [
+            {"name": "__stripe_mid", "domain": "example-shop.com", "site_domain": "example-shop.com", "expiry_days": 365},
+            {"name": "_fbp", "domain": "example-shop.com", "site_domain": "example-shop.com", "expiry_days": 90},
+        ],
+        "options": {"return_explanation": False, "find_similar": False, "auto_classify": False},
+    }
+
+    r = client.post("/api/v1/ml/classify", json=payload)
+
+    assert r.status_code == 200
+    stripe, fbp = r.json()["classifications"]
+    split = stripe["site_label_split"]
+    assert set(split) >= {"Strictly Necessary", "Functional"}  # display names, not model labels
+    assert all(sites >= 1 for sites in split.values())
+    assert fbp["site_label_split"] is None
+
+
 def test_auto_classification_is_opt_in(client):
     payload = {
         "cookies": [{"name": "sessionid", "domain": "example.com"}],

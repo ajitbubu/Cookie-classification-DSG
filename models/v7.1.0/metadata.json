@@ -1,7 +1,7 @@
 {
   "version": "7.1.0",
   "model_type": "xgboost_native",
-  "trained_at": "2026-11-12T14:26:08.349571+00:00",
+  "trained_at": "2026-11-12T17:25:00.731533+00:00",
   "num_features": 61,
   "features": [
     "expiry_days",
@@ -1154,7 +1154,8 @@
       "train_rows_from_split": 35292,
       "test_rows_unseen_by_all_sources": 334
     },
-    "external_holdout": null
+    "external_holdout": null,
+    "reviewed_labels": []
   },
   "calibration": {
     "method": "temperature_scaling",
@@ -1301,7 +1302,8 @@
           "bootstrap_samples": 1000
         },
         "passed": false
-      }
+      },
+      "reviewed": null
     },
     "internal_site_holdout_unseen_by_all_sources": null,
     "internal_site_holdout_all_cookies": {
@@ -1411,7 +1413,8 @@
           "bootstrap_samples": 1000
         },
         "passed": false
-      }
+      },
+      "reviewed": null
     },
     "internal_site_holdout_per_cmp": {
       "overall_macro_f1": 0.43779725763281196,
@@ -1479,7 +1482,7 @@
     "joblib": "1.3.2"
   },
   "code": {
-    "training_pipeline_sha256": "82e258a2932471149eb62573993b2ed8a8ba673d32ead8099ec5a1a7b2febf7f",
+    "training_pipeline_sha256": "b8c7354a7b4972c7b56912d5398d2166c79f702e55a8d3c94890d4d72a503af9",
     "feature_extractor_sha256": "5b43e7acd8a8ac06d1be7113443c3259f276227e0637cde09698b982a1c69e8b",
     "feature_extractor_v7_sha256": "335c76548ed3f86efe383e4f8cbe5cd2c513a5084a97df9a27dc4870ab28909a"
   },

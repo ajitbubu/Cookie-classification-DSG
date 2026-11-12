@@ -30,6 +30,18 @@ export function manualCheckPrompt(category) {
   return `The model had no name or vendor signal for this cookie. Approve ${category}?`;
 }
 
+// Websites label this cookie differently (e.g. __stripe_mid: Strictly Necessary
+// on 8 sites, Functional on 7), so the model's pick is one defensible answer, not
+// the answer. Returns [[category, sites], ...] most common first, or null.
+export function siteLabelSplit(cookie) {
+  const entries = Object.entries(cookie?.siteLabelSplit || {}).filter(([, sites]) => sites > 0);
+  return entries.length > 1 ? entries.sort((a, b) => b[1] - a[1]) : null;
+}
+
+export function siteSplitText(split) {
+  return `Websites label this cookie differently: ${split.map(([category, sites]) => `${category} on ${sites} ${sites === 1 ? 'site' : 'sites'}`).join(', ')}.`;
+}
+
 /** Save an approval to the store (throws if it can't), then return the updated log. */
 export async function recordApproval({ key, name, domain, originalCategory, approvedCategory, confidence }) {
   const entry = { cookieKey: key, name, domain, originalCategory, approvedCategory, confidence, action: 'approved', timestamp: new Date().toISOString() };

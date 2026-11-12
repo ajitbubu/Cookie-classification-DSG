@@ -278,6 +278,8 @@ class Classification(BaseModel):
     classification_status: str = "suggested"
     abstain_reason: Optional[str] = None
     suggested_category: Optional[str] = None
+    # Training sites per category when websites label this cookie differently
+    site_label_split: Optional[Dict[str, int]] = None
     
     model_config = {
         'json_encoders': {
@@ -562,6 +564,10 @@ async def classify_cookies(request: ClassificationRequest):
                     'classification_status': classification_status,
                     'abstain_reason': abstain_reason,
                     'suggested_category': normalized_category if not auto_classified else None,
+                    'site_label_split': (
+                        {normalize_category(label): sites for label, sites in split.items()}
+                        if (split := getattr(result, 'site_label_split', None)) else None
+                    ),
                 }
                 
                 classification = Classification(**result_dict)
@@ -634,6 +640,7 @@ async def classify_cookies(request: ClassificationRequest):
                     'classification_status': c.classification_status,
                     'abstain_reason': c.abstain_reason,
                     'suggested_category': c.suggested_category,
+                    'site_label_split': c.site_label_split,
                 }
                 for c in classifications
             ],

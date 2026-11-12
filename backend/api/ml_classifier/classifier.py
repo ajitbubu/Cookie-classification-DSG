@@ -23,6 +23,7 @@ from .config import (
     CURRENT_MODEL_VERSION,
 )
 from .evidence_guard import apply_evidence_guard, evidence_indices
+from .site_disagreement import SiteDisagreement
 
 
 @dataclass
@@ -46,6 +47,8 @@ class ClassificationResult:
     model_version: str
     classified_at: datetime
     insufficient_evidence: bool = False
+    # Sites per label when training sites label this cookie differently (else None)
+    site_label_split: Optional[Dict[str, int]] = None
 
 
 class CookieClassifier:
@@ -67,6 +70,7 @@ class CookieClassifier:
         self._verify_manifest()
         # Load model components
         self._load_model()
+        self.site_disagreement = SiteDisagreement.load(self.model_path)
         
         # Initialize feature extractor based on model version
         self.feature_extractor = get_feature_extractor_for_model(self.model_version, self.model_path)
@@ -257,6 +261,7 @@ class CookieClassifier:
             model_version=self.model_version,
             classified_at=datetime.now(),
             insufficient_evidence=bool(lacks_evidence[0]),
+            site_label_split=self._site_label_split(cookie),
         )
 
     def classify_batch(
@@ -358,6 +363,7 @@ class CookieClassifier:
                 model_version=self.model_version,
                 classified_at=datetime.now(),
                 insufficient_evidence=bool(lacks_evidence[i]),
+                site_label_split=self._site_label_split(cookie),
             ))
         
         return results
@@ -412,6 +418,9 @@ class CookieClassifier:
     ) -> Tuple[np.ndarray, np.ndarray]:
         """Cap confidence for cookies with no name-pattern or vendor signal (see evidence_guard)."""
         return apply_evidence_guard(features, probabilities, self._evidence_indices)
+
+    def _site_label_split(self, cookie: Dict[str, Any]) -> Optional[Dict[str, int]]:
+        return self.site_disagreement.split(cookie.get('name')) if self.site_disagreement else None
 
     def can_auto_classify(self, category: str, confidence_score: float) -> bool:
         """Honor artifact acceptance gates and calibrated per-class thresholds."""
