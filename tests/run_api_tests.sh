@@ -13,7 +13,7 @@ IMAGE="${API_IMAGE:-cookie-classification-dsg-api-gateway:latest}"
 
 # Exercise the native, checksummed candidate by default. Promotion eligibility is
 # a separate policy gate and does not prevent runtime contract testing.
-MODEL_VERSION="${ML_MODEL_VERSION:-7.0.0}"
+MODEL_VERSION="${ML_MODEL_VERSION:-7.1.0}"
 
 echo "Running API tests in $IMAGE  (ML_MODEL_VERSION=$MODEL_VERSION)"
 docker run --rm \
