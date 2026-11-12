@@ -67,6 +67,33 @@ async def check_url(url: str) -> None:
             raise BlockedTarget(f"{host} resolves to non-public address {address}")
 
 
+def browser_launch_options(browser_name: str, egress_proxy: str | None) -> dict:
+    """Playwright launch() options that send every browser connection through
+    the egress proxy (backend/scanner/egress_proxy.py).
+
+    The request guard below checks a host with its own DNS lookup; the browser
+    then resolves the name again, so a rebinding DNS server can swap in an
+    internal address. The proxy connects to the address it checked. Loopback
+    must not bypass the proxy and WebRTC must not open direct UDP paths.
+    Returns {} when no proxy is configured (local runs without Docker).
+    """
+    if not egress_proxy:
+        return {}
+    options: dict = {"proxy": {"server": egress_proxy}}
+    if browser_name == "firefox":
+        options["firefox_user_prefs"] = {
+            "network.proxy.allow_hijacking_localhost": True,
+            "network.proxy.no_proxies_on": "",
+            "media.peerconnection.enabled": False,
+        }
+    elif browser_name == "chromium":
+        options["args"] = [
+            "--proxy-bypass-list=<-loopback>",
+            "--force-webrtc-ip-handling-policy=disable_non_proxied_udp",
+        ]
+    return options
+
+
 async def install_request_guard(context: "BrowserContext") -> None:
     """Abort every request the context makes to a non-public destination.
 

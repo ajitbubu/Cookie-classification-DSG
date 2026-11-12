@@ -1,6 +1,6 @@
 from playwright.async_api import async_playwright, Browser, BrowserContext, Playwright
 from backend.config import settings
-from backend.scanner.url_guard import install_request_guard
+from backend.scanner.url_guard import browser_launch_options, install_request_guard
 import logging
 
 logger = logging.getLogger(__name__)
@@ -27,12 +27,14 @@ class BrowserManager:
             if settings.BROWSER_TYPE.lower() == "firefox":
                 logger.info("Launching Firefox browser...")
                 self.browser = await self.playwright.firefox.launch(
-                    headless=settings.HEADLESS
+                    headless=settings.HEADLESS,
+                    **browser_launch_options("firefox", settings.SCAN_EGRESS_PROXY),
                 )
             else:
                 logger.info("Launching Chromium browser...")
                 self.browser = await self.playwright.chromium.launch(
-                    headless=settings.HEADLESS
+                    headless=settings.HEADLESS,
+                    **browser_launch_options("chromium", settings.SCAN_EGRESS_PROXY),
                 )
             
             self._initialized = True

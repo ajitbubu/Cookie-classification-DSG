@@ -55,6 +55,29 @@ services:
       retries: 5
     restart: unless-stopped
 
+  # Egress proxy for scanning browsers (DNS-rebinding guard, CSO-1). Browsers in
+  # api-gateway and the workers connect only through it; it resolves each host
+  # once and refuses non-public addresses, including this network's services.
+  egress-proxy:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    container_name: cookie-scanner-egress-proxy
+    command: ["python", "-m", "backend.scanner.egress_proxy"]
+    environment:
+      - EGRESS_PROXY_PORT=3128
+    volumes:
+      - ./backend:/app/backend
+    healthcheck:
+      test: ["CMD", "python", "-c", "import socket; socket.create_connection(('127.0.0.1', 3128), 2).close()"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+    networks:
+      - scanner-network
+    restart: unless-stopped
+
   # Main API Gateway
   api-gateway:
     build:
@@ -66,6 +89,7 @@ services:
     environment:
       - BACKEND_PORT=1001
       - BROWSER_TYPE=firefox
+      - SCAN_EGRESS_PROXY=http://egress-proxy:3128
       - REDIS_URL=redis://redis:6379
       - DATABASE_URL=postgresql://scanner:${DB_PASSWORD:-scanner_password}@postgres:5432/cookie_scanner
       - WORKER_COUNT=4
@@ -85,6 +109,8 @@ services:
       postgres:
         condition: service_healthy
       mongo:
+        condition: service_healthy
+      egress-proxy:
         condition: service_healthy
     volumes:
       - ./backend:/app/backend
@@ -155,11 +181,13 @@ services:
       - DATABASE_URL=postgresql://scanner:${DB_PASSWORD:-scanner_password}@postgres:5432/cookie_scanner
       - WORKER_ID=worker-1
       - BROWSER_TYPE=firefox
+      - SCAN_EGRESS_PROXY=http://egress-proxy:3128
       - MAX_CONCURRENT_PAGES=100
       - BROWSER_POOL_SIZE=10
     depends_on:
       - redis
       - postgres
+      - egress-proxy
     volumes:
       - ./backend:/app/backend
     networks:
@@ -182,11 +210,13 @@ services:
       - DATABASE_URL=postgresql://scanner:${DB_PASSWORD:-scanner_password}@postgres:5432/cookie_scanner
       - WORKER_ID=worker-2
       - BROWSER_TYPE=firefox
+      - SCAN_EGRESS_PROXY=http://egress-proxy:3128
       - MAX_CONCURRENT_PAGES=100
       - BROWSER_POOL_SIZE=10
     depends_on:
       - redis
       - postgres
+      - egress-proxy
     volumes:
       - ./backend:/app/backend
     networks:
@@ -209,11 +239,13 @@ services:
       - DATABASE_URL=postgresql://scanner:${DB_PASSWORD:-scanner_password}@postgres:5432/cookie_scanner
       - WORKER_ID=worker-3
       - BROWSER_TYPE=firefox
+      - SCAN_EGRESS_PROXY=http://egress-proxy:3128
       - MAX_CONCURRENT_PAGES=100
       - BROWSER_POOL_SIZE=10
     depends_on:
       - redis
       - postgres
+      - egress-proxy
     volumes:
       - ./backend:/app/backend
     networks:

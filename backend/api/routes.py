@@ -15,7 +15,7 @@ from backend.models import HealthResponse, ScanRequest
 from backend.scanner.classifier import CookieClassifier
 from backend.scanner.cookie_scanner import CookieScanner
 from backend.scanner.parallel import deep_scan_parallel
-from backend.scanner.url_guard import BlockedTarget, check_url, install_request_guard
+from backend.scanner.url_guard import BlockedTarget, browser_launch_options, check_url, install_request_guard
 
 logger = logging.getLogger(__name__)
 
@@ -70,7 +70,10 @@ async def scan_website_stream(request: ScanRequest):
     try:
         async with async_playwright() as playwright:
             browser_type = getattr(playwright, settings.BROWSER_TYPE.lower())
-            browser = await browser_type.launch(headless=True)
+            browser = await browser_type.launch(
+                headless=True,
+                **browser_launch_options(settings.BROWSER_TYPE.lower(), settings.SCAN_EGRESS_PROXY),
+            )
             await browser.close()
     except Exception as exc:
         logger.error("Browser preflight failed: %s", exc, exc_info=True)
@@ -87,7 +90,10 @@ async def scan_website_stream(request: ScanRequest):
         try:
             playwright = await async_playwright().start()
             browser_type = getattr(playwright, settings.BROWSER_TYPE.lower())
-            browser = await browser_type.launch(headless=True)
+            browser = await browser_type.launch(
+                headless=True,
+                **browser_launch_options(settings.BROWSER_TYPE.lower(), settings.SCAN_EGRESS_PROXY),
+            )
             context = await browser.new_context(
                 user_agent=(
                     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
