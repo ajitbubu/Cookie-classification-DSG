@@ -606,6 +606,59 @@ def _sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+CONSENSUS_MIN_SITES = 3
+CONSENSUS_MIN_SHARE = 0.30
+
+
+def acceptable_label_matrix(reference: pd.DataFrame, rows: pd.DataFrame, classes: Sequence[str]) -> np.ndarray:
+    """Which labels count as correct for each row, given how all sites label that cookie.
+
+    Websites disagree about the same cookie (``__stripe_mid`` is Strictly
+    Necessary on some banners, Functional on others), so a single site's label
+    is not the only defensible answer. A label is acceptable for a row when the
+    row's own site gave it, or when its cookie name family is declared on at
+    least CONSENSUS_MIN_SITES sites and at least CONSENSUS_MIN_SHARE of them
+    gave that label. ``reference`` is every labelled row; this decides only how
+    predictions are scored, never what the model sees.
+    """
+    index = {label: position for position, label in enumerate(classes)}
+    declared = pd.DataFrame({
+        "family": reference["cookie_name"].map(cookie_name_family),
+        "site": reference["site_domain"],
+        "label": reference["label"],
+    }).drop_duplicates()
+    site_counts = declared.groupby("family")["site"].nunique()
+    shares = declared.groupby(["family", "label"])["site"].nunique().div(site_counts, level="family")
+    agreed = shares[(shares >= CONSENSUS_MIN_SHARE)
+                    & (site_counts.reindex(shares.index.get_level_values("family")).to_numpy() >= CONSENSUS_MIN_SITES)]
+    agreed_by_family: dict[str, list[int]] = {}
+    for family, label in agreed.index:
+        agreed_by_family.setdefault(family, []).append(index[label])
+
+    matrix = np.zeros((len(rows), len(classes)), dtype=bool)
+    matrix[np.arange(len(rows)), rows["label"].map(index).to_numpy()] = True
+    for position, family in enumerate(rows["cookie_name"].map(cookie_name_family)):
+        matrix[position, agreed_by_family.get(family, [])] = True
+    return matrix
+
+
+def _consensus_scores(predictions: np.ndarray, encoded_labels: np.ndarray, acceptable: np.ndarray,
+                      classes: Sequence[str]) -> dict[str, Any]:
+    """Macro F1 where a prediction any acceptable label allows counts as correct."""
+    from sklearn.metrics import accuracy_score, classification_report
+
+    targets = np.where(acceptable[np.arange(len(predictions)), predictions], predictions, encoded_labels)
+    report = classification_report(targets, predictions, labels=list(range(len(classes))),
+                                   target_names=list(classes), output_dict=True, zero_division=0)
+    return {
+        "accuracy": accuracy_score(targets, predictions),
+        "macro_f1": report["macro avg"]["f1-score"],
+        "per_class": {category: report[category] for category in classes},
+        "rows_with_several_acceptable_labels": int((acceptable.sum(axis=1) > 1).sum()),
+        "rule": {"minimum_sites": CONSENSUS_MIN_SITES, "minimum_share": CONSENSUS_MIN_SHARE},
+    }
+
+
 def _evaluate(
     probabilities: np.ndarray,
     encoded_labels: np.ndarray,
@@ -615,6 +668,7 @@ def _evaluate(
     eligible: np.ndarray,
     sites: np.ndarray,
     gate: dict[str, Any],
+    acceptable: np.ndarray | None = None,
 ) -> dict[str, Any]:
     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, log_loss
 
@@ -642,6 +696,8 @@ def _evaluate(
             encoded_labels, predictions, labels=list(range(len(classes)))
         ),
         "rows_lacking_evidence": int((~eligible).sum()),
+        "consensus": (_consensus_scores(predictions, encoded_labels, acceptable, classes)
+                      if acceptable is not None else None),
         "auto_policy": {
             "coverage": auto_count / len(predictions) if len(predictions) else 0.0,
             **auto_gate,
@@ -794,19 +850,22 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
     }
     test_probabilities, test_eligible = guarded_probabilities(x_test)
     test_sites = test_frame.site_domain.to_numpy()
+    test_acceptable = acceptable_label_matrix(cleaned, test_frame, classes)
     test_metrics = _evaluate(test_probabilities, y_test, classes, thresholds,
-                             eligible=test_eligible, sites=test_sites, gate=gate)
+                             eligible=test_eligible, sites=test_sites, gate=gate, acceptable=test_acceptable)
     unseen_mask = unseen_test_mask.to_numpy()
     unseen_test_metrics = (
         _evaluate(test_probabilities[unseen_mask], y_test[unseen_mask], classes, thresholds,
-                  eligible=test_eligible[unseen_mask], sites=test_sites[unseen_mask], gate=gate)
+                  eligible=test_eligible[unseen_mask], sites=test_sites[unseen_mask], gate=gate,
+                  acceptable=test_acceptable[unseen_mask])
         if train_only_paths and unseen_mask.any() else None
     )
     all_test_frame = all_rows_on_sites(cleaned, split_audit["test_sites"])
     all_test_probabilities, all_test_eligible = guarded_probabilities(build_feature_matrix(all_test_frame, extractor))
     all_test_metrics = _evaluate(all_test_probabilities, encoder.transform(all_test_frame.label), classes,
                                  thresholds, eligible=all_test_eligible,
-                                 sites=all_test_frame.site_domain.to_numpy(), gate=gate)
+                                 sites=all_test_frame.site_domain.to_numpy(), gate=gate,
+                                 acceptable=acceptable_label_matrix(cleaned, all_test_frame, classes))
     cmp_by_observation = _load_evidence_sidecars(Path(path).resolve() for path in args.evidence_sidecar or [])
     cmp_gate = per_cmp_gate(
         y_test,
@@ -828,7 +887,8 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
                                      sites=external_frame.site_domain.to_numpy(), gate=gate)
 
     internal_gates = {
-        "macro_f1": test_metrics["macro_f1"] >= args.minimum_macro_f1,
+        # Consensus scoring: sites disagree about many cookies (see acceptable_label_matrix).
+        "macro_f1": test_metrics["consensus"]["macro_f1"] >= args.minimum_macro_f1,
         "marketing_recall": test_metrics["per_class"]["Marketing_Advertising"]["recall"] >= args.minimum_marketing_recall,
         "auto_precision": test_metrics["auto_policy"]["passed"],
         "auto_precision_all_cookies": all_test_metrics["auto_policy"]["passed"],

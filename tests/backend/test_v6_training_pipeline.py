@@ -656,3 +656,39 @@ def test_v5_feature_extractor_serves_v5_through_v7_models(version):
     from backend.api.ml_classifier.feature_extractor_v5 import FeatureExtractorV5, get_feature_extractor_for_model
 
     assert isinstance(get_feature_extractor_for_model(version), FeatureExtractorV5)
+
+
+def _declared(name, labels):
+    return [{"site_domain": f"s{i}.com", "cookie_name": name, "label": label} for i, label in enumerate(labels)]
+
+
+def test_consensus_accepts_labels_a_real_share_of_sites_gave():
+    from backend.scripts.train_cookie_model import TRAINED_LABELS, acceptable_label_matrix
+
+    classes = sorted(TRAINED_LABELS)
+    reference = pd.DataFrame(
+        _declared("__stripe_mid", ["Strictly_Necessary"] * 2 + ["Functional"] * 2)
+        + _declared("_ga", ["Analytics_Performance"] * 9 + ["Marketing_Advertising"])
+        + _declared("lang", ["Functional", "Strictly_Necessary"])  # two sites: too few to agree on anything
+    )
+    acceptable = acceptable_label_matrix(reference, reference, classes)
+    allowed = [{classes[i] for i in np.flatnonzero(row)} for row in acceptable]
+
+    assert allowed[0] == allowed[3] == {"Strictly_Necessary", "Functional"}
+    assert allowed[4] == {"Analytics_Performance"}  # 1 of 10 sites saying Marketing is not consensus
+    assert allowed[13] == {"Marketing_Advertising", "Analytics_Performance"}  # the site's own label always counts
+    assert allowed[14] == {"Functional"} and allowed[15] == {"Strictly_Necessary"}
+
+
+def test_consensus_scores_count_any_acceptable_prediction_as_correct():
+    from backend.scripts.train_cookie_model import _consensus_scores
+
+    classes = ["A", "B", "C", "D"]
+    labels = np.array([0, 1, 2, 3])
+    predictions = np.array([1, 1, 0, 3])
+    acceptable = np.eye(4, dtype=bool)
+    acceptable[0, 1] = True  # row 0 may be A or B: predicting B is right
+    scores = _consensus_scores(predictions, labels, acceptable, classes)
+
+    assert scores["accuracy"] == 0.75  # only row 2 (C predicted as A) is wrong
+    assert scores["rows_with_several_acceptable_labels"] == 1

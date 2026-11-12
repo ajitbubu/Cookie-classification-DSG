@@ -1,7 +1,7 @@
 {
   "version": "7.1.0",
   "model_type": "xgboost_native",
-  "trained_at": "2026-11-12T14:13:39.583502+00:00",
+  "trained_at": "2026-11-12T14:26:08.349571+00:00",
   "num_features": 61,
   "features": [
     "expiry_days",
@@ -1252,6 +1252,41 @@
         ]
       ],
       "rows_lacking_evidence": 276,
+      "consensus": {
+        "accuracy": 0.5389221556886228,
+        "macro_f1": 0.43779725763281196,
+        "per_class": {
+          "Analytics_Performance": {
+            "precision": 0.4057971014492754,
+            "recall": 0.42424242424242425,
+            "f1-score": 0.4148148148148148,
+            "support": 66.0
+          },
+          "Functional": {
+            "precision": 0.4166666666666667,
+            "recall": 0.11363636363636363,
+            "f1-score": 0.17857142857142858,
+            "support": 44.0
+          },
+          "Marketing_Advertising": {
+            "precision": 0.4675324675324675,
+            "recall": 0.4864864864864865,
+            "f1-score": 0.4768211920529801,
+            "support": 74.0
+          },
+          "Strictly_Necessary": {
+            "precision": 0.6306818181818182,
+            "recall": 0.74,
+            "f1-score": 0.6809815950920245,
+            "support": 150.0
+          }
+        },
+        "rows_with_several_acceptable_labels": 0,
+        "rule": {
+          "minimum_sites": 3,
+          "minimum_share": 0.3
+        }
+      },
       "auto_policy": {
         "coverage": 0.023952095808383235,
         "eligible_predictions": 8,
@@ -1327,6 +1362,41 @@
         ]
       ],
       "rows_lacking_evidence": 3038,
+      "consensus": {
+        "accuracy": 0.9458049886621315,
+        "macro_f1": 0.9036773701109874,
+        "per_class": {
+          "Analytics_Performance": {
+            "precision": 0.9330422125181951,
+            "recall": 0.9223021582733812,
+            "f1-score": 0.9276410998552822,
+            "support": 695.0
+          },
+          "Functional": {
+            "precision": 0.8532818532818532,
+            "recall": 0.778169014084507,
+            "f1-score": 0.8139963167587477,
+            "support": 284.0
+          },
+          "Marketing_Advertising": {
+            "precision": 0.977449168207024,
+            "recall": 0.977449168207024,
+            "f1-score": 0.977449168207024,
+            "support": 2705.0
+          },
+          "Strictly_Necessary": {
+            "precision": 0.8761528326745718,
+            "recall": 0.9159779614325069,
+            "f1-score": 0.8956228956228957,
+            "support": 726.0
+          }
+        },
+        "rows_with_several_acceptable_labels": 887,
+        "rule": {
+          "minimum_sites": 3,
+          "minimum_share": 0.3
+        }
+      },
       "auto_policy": {
         "coverage": 0.20113378684807257,
         "eligible_predictions": 887,
@@ -1409,7 +1479,7 @@
     "joblib": "1.3.2"
   },
   "code": {
-    "training_pipeline_sha256": "1418715d892c5dac95257ac56b40f00f7e2b3bac4a5c913443bf55c37a9ac3f2",
+    "training_pipeline_sha256": "82e258a2932471149eb62573993b2ed8a8ba673d32ead8099ec5a1a7b2febf7f",
     "feature_extractor_sha256": "5b43e7acd8a8ac06d1be7113443c3259f276227e0637cde09698b982a1c69e8b",
     "feature_extractor_v7_sha256": "335c76548ed3f86efe383e4f8cbe5cd2c513a5084a97df9a27dc4870ab28909a"
   },
