@@ -1,0 +1,60 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Marketing,banner,Cookiebot,cee,.capig.stape.us,/events/b400ce48282396de36c9e6d554631996132e170e68a5aa4e35677169bb5e5129,Third party,90.00 days,,true,true,none,false,Declared & set,capig.stape.us,Registers a unique ID that identifies the user's device during return visits. Used for conversion tracking and to measure the efficacy of online ads.
+Marketing,banner,Cookiebot,NID,.google.com,/,Third party,183.00 days,,true,true,none,false,Declared & set,google.com,Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.
+Necessary,banner,Cookiebot,CookieConsent,www.dfwairport.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,www.dfwairport.com,Stores the user's cookie consent state for the current domain
+Marketing,banner,Cookiebot,_gcl_au,.dfwairport.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,dfwairport.com,"Used to measure the efficiency of the website’s advertisement efforts, by collecting data on the conversion rate of the website’s ads across multiple websites."
+Statistics,banner,Cookiebot,_ga,.dfwairport.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,dfwairport.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Declared & set,doubleclick.net,Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.
+Unclassified,banner,Cookiebot,pontiacId,.pontiac.media,/,Third party,90.00 days,,true,true,none,false,Declared & set,pontiac.media,Pending
+Marketing,banner,Cookiebot,_ttp,.tiktok.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,dfwairport.com,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,_tt_enable_cookie,.dfwairport.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,dfwairport.com,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Marketing,banner,Cookiebot,_ttp,.dfwairport.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,dfwairport.com,"Used by the social networking service, TikTok, for tracking the use of embedded services."
+Marketing,banner,Cookiebot,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Declared & set,bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Marketing,banner,Cookiebot,_fbp,.dfwairport.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,dfwairport.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Marketing,banner,Cookiebot,mc,.quantserve.com,/,Third party,395.00 days,,false,true,none,false,Declared & set,quantserve.com,"Collects data on the user's visits to the website, such as what pages have been loaded. The registered data is used for targeted ads."
+Statistics,banner,Cookiebot,__qca,.dfwairport.com,/,First party,392.00 days,,false,false,unspecified,false,Declared & set,dfwairport.com,"Collects data on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded with the purpose of generating reports for optimising the website content."
+Necessary,banner,Cookiebot,cu,.ipredictive.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,ipredictive.com,Used to detect if the visitor has accepted the marketing category in the cookie banner. This cookie is necessary for GDPR-compliance of the website.  
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,bid,.consentag.eu,/,Third party,150.00 days,,false,true,none,false,Declared & set,consentag.eu,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Marketing,banner,Cookiebot,__tmbid,www.dfwairport.com,/,First party,365.00 days,,false,false,unspecified,false,Declared & set,www.dfwairport.com,Pending
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,ad-id,.amazon-adsystem.com,/,Third party,231.00 days,,true,true,none,false,Declared & set,amazon-adsystem.com,Used by Amazon Advertising to register user actions and target content on the website based on ad clicks on a different website.
+Marketing,banner,Cookiebot,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,,true,true,none,false,Declared & set,amazon-adsystem.com,Used by Amazon Advertising to register user actions and target content on the website based on ad clicks on a different website.
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,cid,.ctnsnet.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,ctnsnet.com,"Registers user behaviour and navigation on the website, and any interaction with active campaigns. This is used for optimizing advertisement and for efficient retargeting.  "
+Unclassified,none,,tuuid,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,c,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,_ga_JY80H9YV46,.dfwairport.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,dfwairport.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,_ga_NH154WP1NJ,.dfwairport.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,dfwairport.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,_uetsid,.dfwairport.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,dfwairport.com,"Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement. "
+Marketing,banner,Cookiebot,_uetvid,.dfwairport.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,dfwairport.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Unclassified,none,,anj,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,ttcsid,.dfwairport.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,dfwairport.com,Pending
+Marketing,banner,Cookiebot,ttcsid_CGQSSV3C77UC44HBVNI0,.dfwairport.com,/,First party,390.00 days,,false,false,unspecified,false,Declared & set,dfwairport.com,Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. 
+Necessary,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.
+Statistics,banner,Cookiebot,_dlt,dfwairport.com,,,,,,,,,"Declared, not set",dfwairport.com,Sets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.
+Statistics,banner,Cookiebot,_gat,dfwairport.com,,,,,,,,,"Declared, not set",dfwairport.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,cid_#,ctnsnet.com,,,,,,,,,"Declared, not set",ctnsnet.com,"Collects unidentifiable data that is sent to an unidentifiable source. The source's identity is kept secret by the company, Whois Privacy Protection Service, Inc."
+Marketing,banner,Cookiebot,_gid,dfwairport.com,,,,,,,,,"Declared, not set",dfwairport.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,cimcid,dfwairport.com,,,,Session,,,,,"Declared, not set",dfwairport.com,Pending
+Marketing,banner,Cookiebot,inmarket_pixid,dfwairport.com,,,,Session,,,,,"Declared, not set",dfwairport.com,Pending
+Marketing,banner,Cookiebot,ndat,ninthdecimal.com,,,,,,,,,"Declared, not set",ninthdecimal.com,Used to track the visitor across multiple devices including TV. This is done in order to re-target the visitor through multiple channels.  
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,pay.google.com,,,,,,,,,"Declared, not set",pay.google.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,suid,simpli.fi,,,,,,,,,"Declared, not set",simpli.fi,Collects information on user preferences and/or interaction with web-campaign content - This is used on CRM-campaign-platform used by website owners for promoting events or products.
+Marketing,banner,Cookiebot,suid_legacy,simpli.fi,,,,,,,,,"Declared, not set",simpli.fi,Collects information on user preferences and/or interaction with web-campaign content - This is used on CRM-campaign-platform used by website owners for promoting events or products.
+Marketing,banner,Cookiebot,TapAd_DID,tapad.com,,,,,,,,,"Declared, not set",tapad.com,"Used to determine what type of devices (smartphones, tablets, computers, TVs etc.) is used by a user."
+Marketing,banner,Cookiebot,TapAd_TS,tapad.com,,,,,,,,,"Declared, not set",tapad.com,"Used to determine what type of devices (smartphones, tablets, computers, TVs etc.) is used by a user."
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,www.youtube-nocookie.com,,,,Session,,,,,"Declared, not set",www.youtube-nocookie.com,Used to track user’s interaction with embedded content.

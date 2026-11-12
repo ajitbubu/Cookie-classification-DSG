@@ -1,0 +1,24 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Marketing,banner,Cookiebot,__cf_ob,player.vimeo.com,/cdn-cgi/challenge-platform,Third party,Session,Session,false,true,none,true,Declared & set,vimeo.com,Pending
+Necessary,banner,Cookiebot,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,,true,true,none,false,Declared & set,google.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Statistics,banner,Cookiebot,vuid,.vimeo.com,/,Third party,400.00 days,,false,true,none,false,Declared & set,vimeo.com,"Collects data on the user's visits to the website, such as which pages have been read."
+Necessary,banner,Cookiebot,CookieConsent,www.sarepta.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,investorrelations.sarepta.com,Stores the user's cookie consent state for the current domain
+Marketing,banner,Cookiebot,_gid,.sarepta.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,sarepta.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,_gat_UA-33339726-1,.sarepta.com,/,First party,0.00 days,,false,false,unspecified,false,Declared & set,sarepta.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,_fbp,.sarepta.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,sarepta.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,_dc_gtm_UA-33339726-1,.sarepta.com,/,First party,0.00 days,,false,false,unspecified,false,Declared & set,sarepta.com,Used by Google Tag Manager to control the loading of a Google Analytics script tag.
+Necessary,banner,Cookiebot,cf_clearance,.vimeo.com,/,Third party,365.00 days,,true,true,none,true,Declared & set,vimeo.com,This cookie is used to distinguish between humans and bots. 
+Marketing,banner,Cookiebot,__cf_bm,.vimeo.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,vimeo.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Statistics,banner,Cookiebot,_ga_W1GGJWPY3T,.sarepta.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,sarepta.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,_ga,.sarepta.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,sarepta.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Necessary,banner,Cookiebot,ak_bmsc,businesswire.com,,,,,,,,,"Declared, not set",businesswire.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,PHPSESSID,formstack.com,,,,Session,,,,,"Declared, not set",formstack.com,Preserves user session state across page requests.
+Necessary,banner,Cookiebot,TEST_AMCV_COOKIE_WRITE,sarepta.com,,,,Session,,,,,"Declared, not set",sarepta.com,Determines whether the user has accepted the cookie consent box. 
+Necessary,banner,Cookiebot,f5avraaaaaaaaaaaaaaaa_session_,www.businesswire.com,,,,Session,,,,,"Declared, not set",www.businesswire.com,Registers the website's speed and performance. This function can be used in context with statistics and load-balancing.
+Necessary,banner,Cookiebot,JSESSIONID,www.businesswire.com,,,,Session,,,,,"Declared, not set",www.businesswire.com,Preserves users states across page requests.
+Statistics,banner,Cookiebot,AMCV_#,sarepta.com,,,,,,,,,"Declared, not set",sarepta.com,Unique user ID that recognizes the user on returning visits
+Statistics,banner,Cookiebot,AMCVS_#AdobeOrg,sarepta.com,,,,Session,,,,,"Declared, not set",sarepta.com,Pending
+Statistics,banner,Cookiebot,s_cc,sarepta.com,,,,Session,,,,,"Declared, not set",sarepta.com,Used to check if the user's browser supports cookies.
+Marketing,banner,Cookiebot,_gcl_au,sarepta.com,,,,,,,,,"Declared, not set",sarepta.com,"Used to measure the efficiency of the website’s advertisement efforts, by collecting data on the conversion rate of the website’s ads across multiple websites."
+Unclassified,banner,Cookiebot,GZIP,api.nasdaqomx.wallst.com,,,,,,,,,"Declared, not set",api.nasdaqomx.wallst.com,Pending

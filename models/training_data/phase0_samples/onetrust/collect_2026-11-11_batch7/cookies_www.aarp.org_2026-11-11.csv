@@ -1,0 +1,766 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,cf_s2s_seen,sync.sparteo.com,/s2s_sync,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rxs_p_adaptmx,.plusoneads.com,/sync,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,rxs_b_krushmedia,.plusoneads.com,/sync,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,sync,.3lift.com,/sync,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_li_ss,i.liadm.com,/s,Third party,30.00 days,29 days,false,true,none,false,Declared & set,i.liadm.com,"This domain is owned by liadm.com. The company provides a range of marketing and advertising services.
+"
+Unclassified,none,,st_dt,s.seedtag.com,/c,Third party,7.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,AWSALB,www.aarp.org,/,First party,7.00 days,6 days,false,false,unspecified,false,Declared & set,stayingsharp.aarp.org,AWS ELB application load balancerUsed to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Targeting Cookies,banner,OneTrust,AWSALBCORS,www.aarp.org,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,stayingsharp.aarp.org,AWS ELB application load balancerUsed to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Functional Cookies,banner,OneTrust,at_check,.aarp.org,/,First party,Session,Session,false,false,unspecified,false,Declared & set,aarp.org,Used by Adobe Target to check if cookies are enabled/supported on the browser
+Targeting Cookies,banner,OneTrust,demdex,.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,demdex.net,"This cookie helps Adobe Audience Manger perform basic functions such as visitor identification, ID synchronization, segmentation, modeling, reporting, etc."
+Unclassified,none,,AMCVS_AA853BC75245B3CE0A490D4D%40AdobeOrg,.aarp.org,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,everest_g_v2,.everesttech.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,everesttech.net,This domain is owned by Adobe. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,dpm,.dpm.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,dpm.demdex.net,This domain is owned by Adobe Audience Manager. The main business activity is online profiling for targeted marketing.
+Unclassified,none,,AMCV_AA853BC75245B3CE0A490D4D%40AdobeOrg,.aarp.org,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,AT-ANI-663-SWAT-collapsed,www.aarp.org,/,First party,30.00 days,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,s_cc,.aarp.org,/,First party,Session,364 days,false,false,unspecified,false,Declared & set,aarp.org,This cookie is associated with the Adobe Site Catalyst. It determines whether cookies are enabled in the web browser.
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,OTGPPConsent,.aarp.org,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,ot_cid,.aarp.org,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,MR,.c.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,c.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Unclassified,none,,A3,.yahoo.com,/,Third party,365.25 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.33across.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Unclassified,none,,vst,.gumgum.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ktcid,.kargo.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_pubcid,.aarp.org,/,First party,270.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,st_ssp,.seedtag.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,st_usi,.seedtag.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,st_uid,.seedtag.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,dextp,.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,demdex.net,"This domain is owned by Adobe - Audience Manager.
+The main business activity is: Online profiling for targeted marketing"
+Unclassified,none,,33acrossIdTp,.aarp.org,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,permutive-id,.aarp.org,/,First party,180.96 days,182 days,false,true,none,false,Declared & set,aarp.org,"This cookie is used to track user behavior on the website, with the aim of improving the effectiveness of online advertising."
+Unclassified,none,,_cc_dc,.crwdcntrl.net,/,Third party,270.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_cc_id,.crwdcntrl.net,/,Third party,270.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_cc_id,.aarp.org,/,First party,270.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,panoramaId_expiry,.aarp.org,/,First party,7.00 days,,false,false,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,panoramaId,.aarp.org,/,First party,7.00 days,0 days,false,false,lax,false,Declared & set,aarp.org,This cookie name 'panoramaId' is associated with Lotame which is used for remarketing.
+Unclassified,none,,panoramaIdType,.aarp.org,/,First party,7.00 days,,false,false,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,ad-id,.amazon-adsystem.com,/,Third party,231.00 days,194 days,true,true,none,false,Declared & set,amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Targeting Cookies,banner,OneTrust,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,399 days,true,true,none,false,Declared & set,amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,presage-ssp,.presage.io,/,Third party,180.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,89 days,false,true,none,true,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Targeting Cookies,banner,OneTrust,uuid2,.adnxs.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Unclassified,none,,presage-freshness,.presage.io,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,visitor-id,.media.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,xxuid,.nexx360.io,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,3639 days,true,true,none,true,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Unclassified,none,,visitor,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,status,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,yieldmo_id,.yieldmo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,re_sync,.ads.yieldmo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TXUSERID,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TXCD,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,wrvUserID,.yellowblue.io,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,i,.openx.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,tuuid,.bidswitch.net,/,Third party,365.00 days,359 days,false,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Targeting Cookies,banner,OneTrust,c,.bidswitch.net,/,Third party,365.00 days,359 days,false,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Targeting Cookies,banner,OneTrust,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,359 days,false,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Unclassified,none,,ver,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,tuuid,.360yield.com,/,Third party,90.00 days,359 days,true,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Targeting Cookies,banner,OneTrust,uid,syncingbridge.com,/,Third party,25.00 days,59 days,true,true,none,false,Declared & set,adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Unclassified,none,,tluid,.3lift.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ym_user_cookie,.ymmobi.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.360yield.com,/,Third party,180.00 days,3639 days,true,true,none,false,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Unclassified,none,,ADKUID,cpm.chocolateplatform.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,gdpr,syncingbridge.com,/,Third party,0.04 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ljt_reader,.lijit.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TXCSDMN_965,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TXCSDMN_869,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TXCSDMN_28,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TXCSDMN_253,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,OTP,.onetag-sys.com,/,Third party,395.68 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,uid,.turn.com,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,turn.com,This domain is owned by Turn. The main business activity is: Marketing and Data Management Platform provider
+Unclassified,none,,admtr,.admanmedia.com,/,Third party,6.99 days,,true,true,none,false,Not declared,,
+Unclassified,none,,CID,.sync-us-east.escalax.io,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,new,measureadv.com,/,Third party,21.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,uid,measureadv.com,/,Third party,30.00 days,59 days,true,true,none,false,Declared & set,adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Targeting Cookies,banner,OneTrust,lidid,.liadm.com,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,liadm.com,This domain is owned by liadm.com. The company provides a range of marketing and advertising services.
+Unclassified,none,,zeta-ssp-user-id,.disqus.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SCMrise,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SCMtappx,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SCM,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SCMbrv,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,33x_ps,.33across.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,ts,.creativecdn.com,/,Third party,365.00 days,364 days,false,true,none,true,Declared & set,creativecdn.com,TS
+Unclassified,none,,pdid,.richaudience.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TXCSDMN_13,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TXCSDMN_241,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TXCSDMN_1083,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TXCSDMN_82,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.targeting.unrulymedia.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,wrvUserID,.minutemedia-prebid.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__uis,.go.sonobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,HAPLB8G,.go.sonobi.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,st_cs,.seedtag.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,st_csd,.seedtag.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,V,.contextweb.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,VP,.contextweb.com,/,Third party,360.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,INGRESSCOOKIE,bh.contextweb.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,c,.mfadsrvr.com,/,Third party,365.00 days,359 days,false,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Targeting Cookies,banner,OneTrust,tuuid_lu,.mfadsrvr.com,/,Third party,365.00 days,359 days,false,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Unclassified,none,,KADUSERCOOKIE,.pubmatic.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,visitor-id,.trustedstack.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,g,.creativecdn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,creativecdn.com,This domain is associated with the delivery of advertising material or scripts for advertising content. It is a service used by advertising agencies to optimize their online ad campaigns.
+Unclassified,none,,TXCSDMN_918,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,viewer_token,.csync.loopme.me,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,csync.loopme.me,"This domain is associated with LoopMe, a company that provides video advertising services, including targeted and personalized ad content."
+Targeting Cookies,banner,OneTrust,uid,.criteo.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,tuuid,.mfadsrvr.com,/,Third party,365.00 days,359 days,false,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Unclassified,none,,xeluid,.lunamedia.live,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,s-251,.lunamedia.live,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TEST-COOKIE,.inmobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TXCSDMN_109,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,uid,.adform.net,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Targeting Cookies,banner,OneTrust,C,.adform.net,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Unclassified,none,,KRTBCOOKIE_80,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,copr_key,.copper6.com,/,Third party,14.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,cto_bundle,.aarp.org,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,aarp.org,This cookie is associated with Criteo's advertising platform. It tracks user activity and ad engagement to provide targeted advertising.
+Unclassified,none,,TXCSDMN_108,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TXCSDMN_24,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TXCSDMN_998,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ssh,.mfadsrvr.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ayl_visitor,.omnitagjs.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,xeroid,.rbstsystems.live,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,xeroid_311,.rbstsystems.live,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,instUid,.ingage.tech,/,Third party,0.09 days,,true,true,none,false,Not declared,,
+Unclassified,none,,amuid2,.a-mo.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,sd_amuid2,.prebid.a-mo.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,pamuid2,.a-mo.net,/,Third party,365.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,psd_amuid2,.prebid.a-mo.net,/,Third party,365.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_sv3_14,.a-mo.net,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,p_sv3_14,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,uid,.ssp.cadent.com,/,Third party,90.00 days,59 days,true,true,none,false,Declared & set,adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Unclassified,none,,new_app,.ssp.cadent.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__eDId,.eskimi.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,iid,.inmobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,uid,.tynt.com,/,Third party,365.00 days,59 days,false,true,none,false,Declared & set,adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Unclassified,none,,OAU,.opera.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,s-249,.pmbmonetize.live,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__gads,.aarp.org,/,First party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__gpi,.aarp.org,/,First party,390.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__eoi,.aarp.org,/,First party,180.00 days,179 days,false,true,none,false,Declared & set,aarp.org,This cookie name __eoi is associated with Google which is used to detect spam and improve the website's security.
+Targeting Cookies,banner,OneTrust,_uid,.fwmrm.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,fwmrm.net,"This domain is owned by Freewheel Media, a USA based company specialising in online video advertising."
+Unclassified,none,,sw_marker,.smilewanted.com,/,Third party,365.24 days,,true,true,none,false,Not declared,,
+Unclassified,none,,st_par,.seedtag.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,new,syncingbridge.com,/,Third party,14.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__eSSync,.eskimi.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,avcid-ayl-uid,.richaudience.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TXCSDMN_814,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,ruds,.rfihub.com,/,Third party,Session,Session,false,true,none,false,Declared & set,rfihub.com,This domain is owned by Rocketfuel. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,rud,.rfihub.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,rfihub.com,This domain is owned by Rocketfuel. The main business activity is: Advertising
+Unclassified,none,,TXCSDMN_52,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,Cas_User_ID,.thecas.xyz,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,s-219,.pmbmonetize.live,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,lluid,.rtb-oveeo.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vdz_sync,.cootlogix.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TXCSDMN_58,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,TapAd_TS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,TS
+Targeting Cookies,banner,OneTrust,TapAd_DID,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,This domain is owned by Tapad Inc. a US based company that provides technology to track users across devices to enhance targeting capabilities.
+Unclassified,none,,sw_user_params_infos,.smilewanted.com,/,Third party,365.24 days,,true,true,none,false,Not declared,,
+Unclassified,none,,amuid2,.a-mx.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,amuid2_p,.a-mx.com,/,Third party,365.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,amdt_t,.a-mx.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,amdt_t_p,.a-mx.com,/,Third party,365.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,vmuid,.adtelligent.com,/,Third party,93.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,krm_usr,.krushmedia.com,/,Third party,14.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_sv3_7,.a-mo.net,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,p_sv3_7,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,sd_amuid2,.sync.a-mo.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,psd_amuid2,.sync.a-mo.net,/,Third party,365.00 days,,true,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,bito,.bidr.io,/,Third party,394.79 days,394 days,false,true,none,false,Declared & set,bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Targeting Cookies,banner,OneTrust,bitoIsSecure,.bidr.io,/,Third party,394.79 days,394 days,false,true,none,false,Declared & set,bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Unclassified,none,,sd_amuid2,.use3-sync.a-mo.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,psd_amuid2,.use3-sync.a-mo.net,/,Third party,365.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_sv3_8,.a-mo.net,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,p_sv3_8,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,sa-user-id,sync.srv.stackadapt.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,sync.srv.stackadapt.com,"This domain is associated with StackAdapt, a platform for programmatic advertising, which uses cookies for targeting and advertising purposes."
+Targeting Cookies,banner,OneTrust,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,tags.srv.stackadapt.com,"This domain is associated with StackAdapt, a platform for programmatic advertising, which suggests that it is used for targeting and advertising purposes."
+Targeting Cookies,banner,OneTrust,sa-user-id-v2,sync.srv.stackadapt.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,sync.srv.stackadapt.com,"This domain is associated with StackAdapt, a platform for programmatic advertising, which uses cookies for targeting and advertising purposes."
+Targeting Cookies,banner,OneTrust,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,tags.srv.stackadapt.com,"This domain is associated with StackAdapt, a platform for programmatic advertising, which suggests that it is used for targeting and advertising purposes."
+Targeting Cookies,banner,OneTrust,uid,.pixad.com.tr,/,Third party,30.00 days,59 days,false,true,none,false,Declared & set,adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Targeting Cookies,banner,OneTrust,cu,.ipredictive.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,ipredictive.com,"This domain is owned by Adelphic, a USA based company engaged in mobile and cross-device programmatic online advertising."
+Unclassified,none,,sa-user-id-v4,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,lidc,.linkedin.com,/,Third party,1.00 days,0 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Unclassified,none,,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Unclassified,none,,cf_sync,.sparteo.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_sv3_isyn,.a-mo.net,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,p_sv3_isyn,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,ssi,.sitescout.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,sitescout.com,"This domain is owned by Sitescout.
+The main business activity is: Real time advertising platform"
+Targeting Cookies,banner,OneTrust,suid,.simpli.fi,/,Third party,366.00 days,365 days,false,true,none,false,Declared & set,simpli.fi,This domain is owned by simpli.fi. The main business activity is: Advertising
+Unclassified,none,,_nauid,.nrich.ai,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CDIUSER,.deepintent.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_148,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_860,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_452,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__eDSync,.eskimi.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,obuid,.outbrain.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_sparteo,.sparteo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,b,.blismedia.com,/,Third party,365.05 days,365 days,false,true,none,false,Declared & set,blismedia.com,"This domain is owned by Bliss. The company provides a range of marketing and advertising services.
+"
+Unclassified,none,,TXCSDMN_1028,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,novauid,.rtbwise.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,novasig,.rtbwise.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,novaexp,.rtbwise.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,novasyncts,.rtbwise.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,did,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,didts,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,nnls,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SCMp,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,iqm.retarget.uid,.pxl.iqm.com,/,Third party,15.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ljtrtbexp,.lijit.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,s-81,.pmbmonetize.live,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,s-75,.pmbmonetize.live,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,sskyu,.sundaysky.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sskyCreationTime,.sundaysky.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ccpa,.contextweb.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lluid,.ads-tinyorbit.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,wrvUserID,.openwebmp.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,vidazoo,.pxl.iqm.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,tuuid,.creative-serving.com,/,Third party,360.00 days,359 days,false,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Targeting Cookies,banner,OneTrust,c,.creative-serving.com,/,Third party,360.00 days,359 days,false,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Targeting Cookies,banner,OneTrust,tuuid_lu,.creative-serving.com,/,Third party,360.00 days,359 days,false,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Targeting Cookies,banner,OneTrust,mc,.quantserve.com,/,Third party,395.00 days,395 days,false,true,none,false,Declared & set,quantserve.com,"This domain is owned by Quantcast. The main business activity is: Market and Audience Segmentation, Targeted advertising services"
+Unclassified,none,,s-175,.pmbmonetize.live,/,Third party,0.25 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_sv3_11,.a-mo.net,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,p_sv3_11,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_sv3_4,.a-mo.net,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,p_sv3_4,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_sv3_17,.a-mo.net,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,p_sv3_17,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_sv3_3,.a-mo.net,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,p_sv3_3,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_sv3_0,.a-mo.net,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,p_sv3_0,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,UID_EXT_46,.undertone.com,/,Third party,365.24 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,c,.sportradarserving.com,/,Third party,364.00 days,359 days,false,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Unclassified,none,,zuuid_lu,.sportradarserving.com,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_sv3_13,.a-mo.net,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,p_sv3_13,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,copr_red,.copper6.com,/,Third party,14.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_sv3_6,.a-mo.net,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,p_sv3_6,.a-mo.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,llum,.rtb-oveeo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,UTID,.undertone.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,UTID_ENC,.undertone.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_adnxs,.sparteo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_grid,.sparteo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_sovrn,.sparteo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,um,.360yield.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,umeh,.360yield.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,zuuid,.sportradarserving.com,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,zuuid_k,.sportradarserving.com,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,zuuid_k_lu,.sportradarserving.com,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,am-uid,.admixer.net,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,uids_onetag,.sparteo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vdz_sync,.kueezrtb.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_unruly,.sparteo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,smart_usr,.shb-sync.com,/,Third party,10.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,s-248,.pmbmonetize.live,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.d.adroll.com,/,Third party,395.00 days,3639 days,true,true,none,true,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.adroll.com,/,Third party,395.00 days,3639 days,true,true,none,true,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Unclassified,none,,__adroll,.d.adroll.com,/,Third party,395.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__adroll_shared,.adroll.com,/,Third party,395.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,cb,.clickagy.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,auid,.acuityplatform.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rxid,.plusoneads.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_699,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ssplink,syncingbridge.com,/,Third party,0.01 days,,true,true,none,false,Not declared,,
+Unclassified,none,,SCMkuz,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,s-399,.pmbmonetize.live,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,dc,.betweendigital.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ss,.betweendigital.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,tuuid,.betweendigital.com,/,Third party,365.00 days,359 days,false,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Unclassified,none,,otad_key,.ottadvisors.com,/,Third party,14.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,otad_red,.ottadvisors.com,/,Third party,14.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,IQver,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,intentIQ,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,intentIQCDate,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,adtheorent[cuid],.adentifi.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,xeroid_268,.rbstsystems.live,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,did,syncingbridge.com,/,Third party,14.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__uin_i5,.go.sonobi.com,/,Third party,0.04 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uir_i5,.go.sonobi.com,/,Third party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uin_cx,.go.sonobi.com,/,Third party,32.50 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uir_cx,.go.sonobi.com,/,Third party,13.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uin_tp,.go.sonobi.com,/,Third party,0.04 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uir_tp,.go.sonobi.com,/,Third party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uir_kr,.go.sonobi.com,/,Third party,32.50 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uin_kr,.go.sonobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lluid,.balance-x.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ids,syncingbridge.com,/,Third party,0.01 days,,true,true,none,false,Not declared,,
+Unclassified,none,,IQMID,.intentiq.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IQPData,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,xeadiu,.pmbmonetize.live,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,s-91,.pmbmonetize.live,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,sskya,.sundaysky.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SCM1132,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SCMs,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SCMkrush,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_smilewanted,.sparteo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,data-pbs,.media.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,CMID,.casalemedia.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMPS,.casalemedia.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMPRO,.casalemedia.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,This domain is owned by Tapad Inc. a US based company that provides technology to track users across devices to enhance targeting capabilities.
+Unclassified,none,,_sv3_18,.amx1.net,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,p_sv3_18,.amx1.net,/,Third party,1.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,amuid2,.amx1.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,pamuid2,.amx1.net,/,Third party,365.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,uids,.pixad.com.tr,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,xeroid_268214,.rbstsystems.live,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,SCMinmobi,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TestIfCookieP,.smartadserver.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,csync,.smartadserver.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pid,.smartadserver.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,um,.altitude-arena.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mako_uid,.eyeota.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,SCMco,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,c,pool.liftdsp.com,/,Third party,365.00 days,359 days,false,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Targeting Cookies,banner,OneTrust,tuuid_lu,pool.liftdsp.com,/,Third party,365.00 days,359 days,false,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Targeting Cookies,banner,OneTrust,tuuid,pool.liftdsp.com,/,Third party,365.00 days,359 days,false,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Unclassified,none,,__uir_zt,.go.sonobi.com,/,Third party,32.50 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uin_zt,.go.sonobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uir_st,.go.sonobi.com,/,Third party,32.50 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uin_st,.go.sonobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uir_td,.go.sonobi.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uin_td,.go.sonobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uir_bs,.go.sonobi.com,/,Third party,32.50 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uin_bs,.go.sonobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uir_rh,.go.sonobi.com,/,Third party,32.50 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uin_rh,.go.sonobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,cnx_userId,.connatix.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_smilewanted,.bricks-co.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_adnxs,.bricks-co.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_grid,.bricks-co.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_onetag,.bricks-co.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_sovrn,.bricks-co.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_unruly,.bricks-co.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids,.pbs.yahoo.com,/,Third party,182.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,1_C_61,.aniview.com,/,Third party,10.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,1_C_61,sync.aniview.com,/,Third party,10.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SERVERID,.eyeota.net,/,Third party,0.01 days,,true,true,none,false,Not declared,,
+Unclassified,none,,SCMill,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dsp_22,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uir_if,.go.sonobi.com,/,Third party,32.50 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SCMindex,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_lr_sampling_rate,www.aarp.org,/,First party,7.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__uir_bw,.go.sonobi.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__uin_bw,.go.sonobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__106_cid,.bfmio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__io_cid,.bfmio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pbw,.smartadserver.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SCMroqads,.smaato.net,/,Third party,21.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_richaudience,.sparteo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,data-ttd,.media.net,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dsp_4,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__bfio_sync,.bfmio.com,/,Third party,3.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,uuid,.mathtag.com,/,Third party,393.00 days,392 days,false,true,none,false,Declared & set,mathtag.com,This domain is owned by MediaMath Inc. a US based digital advertising business.
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.dotomi.com,/,Third party,393.00 days,3639 days,true,true,none,true,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Unclassified,none,,avcid-bsx-uid,.richaudience.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,uids_fwssp,.sparteo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_improvedigital,.sparteo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_adf,.sparteo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_amx,.sparteo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ut,.betweendigital.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,avcid-inm-uid,.richaudience.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,DotomiTest,.dotomi.com,/,Third party,0.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_richaudience,.bricks-co.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_medianet,.sparteo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,UID,beacon.lynx.cognitivlabs.com,/,Third party,365.00 days,29 days,false,true,none,false,Declared & set,ads.stickyadstv.com,"This domain is owned by StickyAdsTV, a French company providing online video advertising services."
+Unclassified,none,,__uin_if,.go.sonobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,uid,.adotmob.com,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,adotmob.com,Adotmob is a mobile advertising company that provides targeted advertising services.
+Targeting Cookies,banner,OneTrust,uuid,.adotmob.com,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,adotmob.com,Adotmob is a mobile advertising company that provides targeted advertising services.
+Targeting Cookies,banner,OneTrust,partners,.adotmob.com,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,adotmob.com,Adotmob is a mobile advertising company that provides targeted advertising services.
+Unclassified,none,,uids_fwssp,.bricks-co.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_improvedigital,.bricks-co.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_adf,.bricks-co.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_amx,.bricks-co.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dsp_97,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dsp_20,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_medianet,.bricks-co.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,amuid2,.rtb.mx,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,amuid2_p,.rtb.mx,/,Third party,365.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,amdt_t,.rtb.mx,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,amdt_t_p,.rtb.mx,/,Third party,365.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,vdz_sync,.programmaticx.ai,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,u,.agkn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_3ci,.alcmpn.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,uids_adot,.sparteo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,DotomiUser,.dotomi.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dsp_43,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,_lr_retry_request,www.aarp.org,/,First party,0.04 days,0 days,false,false,unspecified,false,Declared & set,stayingsharp.aarp.org,This cookie name is associated with pub.network which is used to retry a call to RTIS endpoint and stop simultaneous API calls.
+Strictly Necessary Cookies,banner,OneTrust,_lr_env_src_ats,www.aarp.org,/,First party,30.00 days,29 days,false,false,unspecified,false,Declared & set,blog.aarp.org,"This cookie name is associated with LiveRamp and pub.network which is used to determine the source of RampID envelope and to establish that the visitor is a real user, not a search engine bot.TS"
+Unclassified,none,,dsp_79,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,s-92,.pmbmonetize.live,/,Third party,0.25 days,,true,true,none,false,Not declared,,
+Unclassified,none,,uids_adot,.bricks-co.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ADKUID,.adkernel.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dsp_55,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,n360-gumgum,.nexx360.io,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,n360-seedtag,.nexx360.io,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,n360-vidazoo,.nexx360.io,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,smart_r,.shb-sync.com,/,Third party,10.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,chs,aorta.clickagy.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pd,.openx.net,/,Third party,15.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lluid,.ads-pubsfusion.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lluid,.amitydigital.io,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dsp_71,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pids,.tynt.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,EE,.exelator.com,/,Third party,120.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,xedpxl,.driftpixel.live,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,s-358,.driftpixel.live,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,pid_312,.servenobid.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ud,.exelator.com,/,Third party,120.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ab,.agkn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,cto_bundle,.criteo.com,/,Third party,390.00 days,389 days,false,true,none,true,Declared & set,criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Unclassified,none,,dsp_48,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,s-182,.adtech.ink,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ac_r,.admanmedia.com,/,Third party,6.99 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,mc,.thrtle.com,/,Third party,200.00 days,395 days,false,true,none,false,Declared & set,quantserve.com,"This domain is owned by Quantcast. The main business activity is: Market and Audience Segmentation, Targeted advertising services"
+Unclassified,none,,sc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,uid,.adtarget.biz,/,Third party,30.00 days,59 days,false,true,none,false,Declared & set,adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Unclassified,none,,pi,.ml314.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,bcu,.marphezis.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,DSP2F_71,.adkernel.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,dsp_64,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IDSYNC,.analytics.yahoo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_279,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_218,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_1251,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dsp_30,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_32,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dsp_3,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,tuuid_lu,.360yield.com,/,Third party,90.00 days,359 days,true,true,none,false,Declared & set,creative-serving.com,This host is owned by Platform161 it is used to serve advertisements.
+Unclassified,none,,dsp_60,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_1323,.pubmatic.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids,.4dex.io,/,Third party,59.83 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SEUNCY,.semasio.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,cookie,.onaudience.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,done_redirects219,.onaudience.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,DPSync4,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,browser_id,.rqtrk.eu,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,zsc,.rqtrk.eu,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TXCSDMN_76,.tappx.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,sp,.quantserve.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,quantserve.com,"This domain is owned by Quantcast. The main business activity is: Market and Audience Segmentation, Targeted advertising services"
+Unclassified,none,,KRTBCOOKIE_57,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_22,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_18,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_964,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_153,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_391,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_188,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_27,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_740,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_ssuma,.sitescout.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,sitescout.com,"This domain is owned by Sitescout.
+The main business activity is: Real time advertising platform"
+Targeting Cookies,banner,OneTrust,pxrc,.pippio.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Unclassified,none,,KRTBCOOKIE_1278,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_632,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,rlas3,.rlcdn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Targeting Cookies,banner,OneTrust,pxrc,.rlcdn.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Unclassified,none,,mxpim,.mxptint.net,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ss,beacon.lynx.cognitivlabs.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_466,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,ANON_ID,.tribalfusion.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,tribalfusion.com,This domain is owned by TribalFusion. The main business activity is: Advertising
+Unclassified,none,,KRTBCOOKIE_52,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,__ktpct,.adsby.bidtheatre.com,/,Third party,0.01 days,0 days,true,true,none,false,Declared & set,adsby.bidtheatre.com,"This domain is owned by BidTheater. The company provides media display optimization, and also provides a range of marketing and advertising services."
+Unclassified,none,,io.narrative.guid.v2,io.narrative.io,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,__kuid,.adsby.bidtheatre.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,adsby.bidtheatre.com,"This domain is owned by BidTheater. The company provides media display optimization, and also provides a range of marketing and advertising services."
+Unclassified,none,,dsp_34,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dsp_80,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SyncRTB4,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SSPZ,.adkernel.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_1481,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_1469,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_945,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ckbk,.resetdigital.co,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_1199,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ADGRX_UID,.adgrx.com,/,Third party,395.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,bidexchange_uid,exchange.appnerve.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,OAU,.rtbscale.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,LoudEcho,.loudecho.ai,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,tuuid,.company-target.com,/,Third party,396.00 days,395 days,true,true,none,false,Declared & set,company-target.com,This cookie is used for analytics and advertising services provided by Demandbase products.
+Targeting Cookies,banner,OneTrust,tuuid_lu,.company-target.com,/,Third party,396.00 days,395 days,true,true,none,false,Declared & set,company-target.com,"This domain is owned by USA based company Demandbase, which provides technology for B2B marketing."
+Unclassified,none,,SSPZ,cpm.vistarsagency.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,DSP2F_142,cpm.vistarsagency.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,ADKUID,cpm.vistarsagency.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,cid_70f2e499d8544430b140c944fb0a05ba,.ctnsnet.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,ctnsnet.com,Ownership of this domain is unknown as it is masked behind a privacy registration service. It appears to be some form of tracking domain.
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.aarp.org,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.aarp.org,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Unclassified,none,,x,.advolve.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,aum,.acuityplatform.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ADGRX_CM_PUBMATIC_BRIDGED,.adgrx.com,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_1571,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,xeadth,.adtech.ink,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,s-350,.adtech.ink,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,pubsyncexp,.ads.pubmatic.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dsp_29,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_1003,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_1515,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_469,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_1493,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,eud,.rfihub.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,rfihub.com,This domain is owned by Rocketfuel. The main business activity is: Advertising
+Unclassified,none,,muidn,.mgid.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pb_rtb_ev,.contextweb.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pb_rtb_ev_part,.contextweb.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,prism_dsp_uid,prism-tracking.pacvue.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_1253,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_1531,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mg_sync,cm.mgid.com,/,Third party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,chkChromeAb67Sec,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_svsid,.aarp.org,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,xeiqid,.iqzonertb.live,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,s-444,.iqzonertb.live,/,Third party,7.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_1466,.pubmatic.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dsp_69,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CDIPARTNERS,.deepintent.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dsp_70,.user-sync.fwmrm.net,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids,.adtarget.biz,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_svsidss,.aarp.org,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,kndctr_AA853BC75245B3CE0A490D4D_AdobeOrg_cluster,.aarp.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,kndctr_AA853BC75245B3CE0A490D4D_AdobeOrg_identity,.aarp.org,/,First party,395.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_auid,.c.appier.net,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,c.appier.net,"This domain is owned by Appier, a Taiwan based business.  They provide technology for cross-device tracking of users for better targeting."
+Unclassified,none,,KRTBCOOKIE_904,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__mguid_,.mediagotechnology.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_pubmatic,.sparteo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sync_expire,.sparteo.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uids_pubmatic,.bricks-co.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sync_expire,.bricks-co.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,krm_r,.krushmedia.com,/,Third party,14.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,id5,.id5-sync.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,3pi,.id5-sync.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,callback,.id5-sync.com,/,Third party,0.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SPugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uws_storage,.aarp.org,/,First party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uws_prop_p3t3jkz0,.aarp.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uws_rate_comparators,.aarp.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uws_prop_AskAARP,.aarp.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uws_story_cfm555au,.aarp.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uws_story_ppxxbsyc,.aarp.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uws_story_bld8jloy,.aarp.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uws_story_8dhywdml,.aarp.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uws_recording,.aarp.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uws_story_ul15bvf6,.aarp.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.1rx.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,adcloud,.aarp.org,/,First party,400.00 days,730 days,false,false,unspecified,false,Declared & set,aarp.org,"This cookie is typically associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Performance Cookies,banner,OneTrust,pt,.ispot.tv,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,ispot.tv,This domain is associated with a company that provides a platform for tracking television advertising campaigns.
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,_ttp,.tiktok.com,/,Third party,390.00 days,89 days,false,true,none,false,Declared & set,tiktok.com,"TikTok is a social media platform owned by ByteDance, known for short-form video sharing. The service is used to create and share videos, and it utilizes cookies for various purposes including advertising and analytics."
+Functional Cookies,banner,OneTrust,CLID,www.clarity.ms,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,www.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics service that provides insights into user behavior on websites."
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_tt_enable_cookie,.aarp.org,/,First party,390.00 days,89 days,false,false,unspecified,false,Declared & set,aarp.org,This cookie name is associated with TikTok which is used to collect data about behavior and purchases on the website and to measure the effect of advertising. It is also used to track website activity to help optimize advertising efforts.
+Targeting Cookies,banner,OneTrust,_ttp,.aarp.org,/,First party,390.00 days,89 days,false,false,unspecified,false,Declared & set,aarp.org,"This cookie is typically associated with the use of Taptap Digital, a company specializing in digital advertising. It is used for tracking and ad personalization purposes."
+Targeting Cookies,banner,OneTrust,tst,.pinterest.com,/,Third party,2.00 days,364 days,true,true,none,false,Declared & set,creativecdn.com,TS
+Functional Cookies,banner,OneTrust,_pin_unauth,.aarp.org,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,help.aarp.org,"This cookie is assocate with pinterest.  It is used to track the usage of services.
+"
+Targeting Cookies,banner,OneTrust,SRM_B,.c.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,c.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Functional Cookies,banner,OneTrust,SM,.c.clarity.ms,/,Third party,Session,Session,false,true,none,false,Declared & set,c.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics product that provides insights on user behavior and website performance."
+Functional Cookies,banner,OneTrust,MUID,.clarity.ms,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics service that provides insights into user behavior on websites."
+Functional Cookies,banner,OneTrust,MR,.c.clarity.ms,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,c.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics product that provides insights on user behavior and website performance."
+Functional Cookies,banner,OneTrust,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,0 days,false,true,none,false,Declared & set,c.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics product that provides insights on user behavior and website performance."
+Unclassified,none,,ndp_session_id,.aarp.org,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Performance Cookies,banner,OneTrust,_clck,.aarp.org,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,aarp.org,"This cookie is related to Microsoft Clarity analytics service. It is used to collect information about how visitors interact with the website, which helps in creating reports and improving the site."
+Performance Cookies,banner,OneTrust,AMP_TOKEN,.aarp.org,/,First party,0.04 days,0 days,false,false,unspecified,false,Declared & set,aarp.org,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service."
+Performance Cookies,banner,OneTrust,_ga,.aarp.org,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,aarp.org,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Performance Cookies,banner,OneTrust,_gid,.aarp.org,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,aarp.org,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Unclassified,none,,_gat_gtag_UA_4991397_1,.aarp.org,/,First party,0.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,wfivefivec,.w55c.net,/,Third party,395.42 days,395 days,false,true,none,false,Declared & set,w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Unclassified,none,,matchgoogle,.w55c.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,brwsr,.pxf.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,irtps,.pxf.io,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_fbp,.aarp.org,/,First party,90.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Performance Cookies,banner,OneTrust,_iconTracker,www.aarp.org,/,First party,60.00 days,59 days,false,false,unspecified,false,Declared & set,www.aarp.org,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,kndctr_AA853BC75245B3CE0A490D4D_AdobeOrg_consent,.aarp.org,/,First party,180.00 days,0 days,false,true,none,false,Declared & set,assets.adobedtm.com,If you know anything about this host and its uses please add your contributions here. 
+Unclassified,none,,brwsr,.ojrq.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,matchbluekai,.w55c.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,anj,.adnxs.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Targeting Cookies,banner,OneTrust,matchcasale,.w55c.net,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Performance Cookies,banner,OneTrust,s_plt,.aarp.org,/,First party,Session,Session,false,false,unspecified,false,Declared & set,aarp.org,"This cookie is used to measure the time taken for pages to load, allowing website owners to identify slow loading pages and improve user experience."
+Performance Cookies,banner,OneTrust,s_pltp,.aarp.org,/,First party,Session,Session,false,false,unspecified,false,Declared & set,aarp.org,"This cookie is typically associated with Adobe Analytics (formerly SiteCatalyst). It is used to identify the previous link clicked within the site, which helps in analyzing site usage patterns."
+Unclassified,none,,uws_prop_61w8grtc,.aarp.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,tfpsi,.aarp.org,/,First party,0.02 days,0 days,false,true,none,false,Declared & set,aarp.org,"This cookie name is associated with Teads which is used to register user behavior and navigation on the website, and any interaction with active campaigns for optimizing advertisement and for efficient retargeting."
+Targeting Cookies,banner,OneTrust,AWSALBCORS,cdn.aarp.net,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,stayingsharp.aarp.org,AWS ELB application load balancerUsed to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.aarp.org,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,aarp.org,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Functional Cookies,banner,OneTrust,mbox,.aarp.org,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,aarp.org,"Used by Adobe Target to generate dynamic content in a marketing box on the page. Contains the following values:
+PC ID - ID for visitor's browser. Removed when cookie deleted.
+Session ID - A unique ID for a user session.
+Check  - checks if cookies are supported. Set on each page load."
+Performance Cookies,banner,OneTrust,gpv_pn,.aarp.org,/,First party,0.02 days,0 days,false,false,unspecified,false,Declared & set,aarp.org,This cookie is typically associated with the use of Adobe Analytics software and is used to measure the performance of page views on the website.
+Performance Cookies,banner,OneTrust,s_ips,.aarp.org,/,First party,Session,Session,false,false,unspecified,false,Declared & set,aarp.org,This cookie is associated with Adobe Analytics. The cookie is used for measuring a visitor’s scroll activity to see how much of a page they view before moving on to another page.
+Performance Cookies,banner,OneTrust,s_tp,.aarp.org,/,First party,Session,Session,false,false,unspecified,false,Declared & set,aarp.org,This cookie is associated with Adobe Analytics. The cookie is used for measuring a visitor’s scroll activity to see how much of a page they view before moving on to another page.
+Performance Cookies,banner,OneTrust,s_ppv,.aarp.org,/,First party,Session,364 days,false,false,unspecified,false,Declared & set,aarp.org,This cookie is associated with Adobe Analytics site tracking and is used to measure a user's scroll activity to see how much of a page they view before moving to another page.
+Unclassified,none,,uws_prop_4fnmq7zq,.aarp.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uws_prop_v11azhpf,.aarp.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uws_session,.aarp.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uws_visitor,.aarp.org,/,First party,7.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_uetsid,.aarp.org,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,aarp.org,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Performance Cookies,banner,OneTrust,_uetvid,.aarp.org,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,aarp.org,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Targeting Cookies,banner,OneTrust,_gcl_au,.aarp.org,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,aarp.org,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services
+Unclassified,none,,IR_PI,.aarp.org,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,IR_16056,.aarp.org,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,_clsk,.aarp.org,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,aarp.org,Used by Microsoft Clarity to connect multiple page views by a user into a single Clarity session recording.
+Unclassified,none,,ttcsid,.aarp.org,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,ttcsid_CIO7FE3C77U75BD524F0,.aarp.org,/,First party,390.00 days,89 days,false,false,unspecified,false,Declared & set,aarp.org,This cookie is used for detection and prevention of fraudulent website traffic (bots).
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID,secure.aarp.org,,,,Session,,,,,"Declared, not set",secure.aarp.org,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server."
+Strictly Necessary Cookies,banner,OneTrust,__VCAP_ID__,secure.aarp.org,,,,364 days,,,,,"Declared, not set",secure.aarp.org,This cookie name is used to maintain a user's session state across multiple pages on a website.
+Strictly Necessary Cookies,banner,OneTrust,TEST_AMCV_COOKIE_WRITE,stayingsharp.aarp.org,,,,Session,,,,,"Declared, not set",stayingsharp.aarp.org,This cookie is used to test whether cookies are enabled in the browser. It is a temporary cookie used to determine if the browser accepts cookies.
+Strictly Necessary Cookies,banner,OneTrust,renderCtx,help.aarp.org,,,,364 days,,,,,"Declared, not set",help.aarp.org,Used to store site parameters in the session for reuse across requests by a single client for functionality and performance reasons.
+Strictly Necessary Cookies,banner,OneTrust,MEM11818-swat-fv,www.aarp.org,,,,0 days,,,,,"Declared, not set",www.aarp.org,
+Strictly Necessary Cookies,banner,OneTrust,x-d-token,secure.aarp.org,,,,0 days,,,,,"Declared, not set",secure.aarp.org,This cookie name is associated with Imperva Networks and it is used to determine if website requests are coming from real or automated devices.
+Strictly Necessary Cookies,banner,OneTrust,incap_ses_xxxxxxxxxxxxxxxx,secure.aarp.org,,,,Session,,,,,"Declared, not set",secure.aarp.org,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Strictly Necessary Cookies,banner,OneTrust,CookieConsentPolicy,help.aarp.org,,,,364 days,,,,,"Declared, not set",help.aarp.org,Used to apply end-user cookie consent preferences set by our client-side utility.
+Strictly Necessary Cookies,banner,OneTrust,laravel_session,answers.aarp.org,,,,0 days,,,,,"Declared, not set",answers.aarp.org,"This cookie is used to handle the session state in a Laravel web application, which is a PHP web application framework. It is essential for maintaining the session of a user across multiple pages."
+Strictly Necessary Cookies,banner,OneTrust,LSKey-c$CookieConsentPolicy,help.aarp.org,,,,364 days,,,,,"Declared, not set",help.aarp.org,"Used to apply end-user cookie consent preferences set by our client-side utility.Custom- Short Duration. Unique ID of an Enquiry- used to validate access to case, and load exisiting data.
+"
+Strictly Necessary Cookies,banner,OneTrust,pctrk,help.aarp.org,,,,364 days,,,,,"Declared, not set",help.aarp.org,Used to count page views by unauthenticated users against license usage.
+Strictly Necessary Cookies,banner,OneTrust,session_last_active,answers.aarp.org,,,,0 days,,,,,"Declared, not set",answers.aarp.org,This cookie is generated as part of the sign-in process and used to defend against Cross Site Request Forgery (CSRF)
+Strictly Necessary Cookies,banner,OneTrust,TEST_AMCV_COOKIE_WRITE,blog.aarp.org,,,,Session,,,,,"Declared, not set",blog.aarp.org,This cookie is used to test whether cookies are enabled in the browser. It is a temporary cookie used to determine if the browser accepts cookies.
+Strictly Necessary Cookies,banner,OneTrust,cdContextId,aarp.org,,,,Session,,,,,"Declared, not set",aarp.org,"This cookie name is used to identify patterns in how a user interacts with the site, recognize their unique style, and protect from fraud. It also helps to improve the experience and security for Online Banking."
+Strictly Necessary Cookies,banner,OneTrust,incap_ses_xxxxxxxxxxxxxxxx,share.aarp.org,,,,Session,,,,,"Declared, not set",share.aarp.org,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Strictly Necessary Cookies,banner,OneTrust,nlbi_XXXXXXX,aarp.org,,,,364 days,,,,,"Declared, not set",aarp.org,N/A
+Strictly Necessary Cookies,banner,OneTrust,x-d-token,aarp.org,,,,0 days,,,,,"Declared, not set",aarp.org,This cookie name is associated with Imperva Networks and it is used to determine if website requests are coming from real or automated devices.
+Strictly Necessary Cookies,banner,OneTrust,nlbi_XXXXXXX,secure.aarp.org,,,,364 days,,,,,"Declared, not set",secure.aarp.org,N/A
+Strictly Necessary Cookies,banner,OneTrust,XSRF-TOKEN,answers.aarp.org,,,,0 days,,,,,"Declared, not set",answers.aarp.org,This cookie is written to help with site security in preventing Cross-Site Request Forgery attacks.This cookie helps with site security in preventing Cross-Site Request Forgery attacks.
+Strictly Necessary Cookies,banner,OneTrust,visid_incap_xxxxxxx,secure.aarp.org,,,,364 days,,,,,"Declared, not set",secure.aarp.org,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking certain sessions to a specific visitor (visitor representing a specific computer). In order to identify clients that have already visited Incapsula. The only cookie that is persistent for the duration of 12 months."
+Strictly Necessary Cookies,banner,OneTrust,visid_incap_xxxxxxx,aarp.org,,,,364 days,,,,,"Declared, not set",aarp.org,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking certain sessions to a specific visitor (visitor representing a specific computer). In order to identify clients that have already visited Incapsula. The only cookie that is persistent for the duration of 12 months."
+Strictly Necessary Cookies,banner,OneTrust,incap_ses_xxxxxxxxxxxxxxxx,aarp.org,,,,Session,,,,,"Declared, not set",aarp.org,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Strictly Necessary Cookies,banner,OneTrust,testcookie,aarp.org,,,,0 days,,,,,"Declared, not set",aarp.org,This is a very generic cookie name that could relate to a number of different uses.  However in most cases it would be a session cookie designed to test whether a browser is set to accept first party cookies.
+Strictly Necessary Cookies,banner,OneTrust,TEST_AMCV_COOKIE_WRITE,www.aarp.org,,,,Session,,,,,"Declared, not set",www.aarp.org,This cookie is used to test whether cookies are enabled in the browser. It is a temporary cookie used to determine if the browser accepts cookies.
+Strictly Necessary Cookies,banner,OneTrust,nlbi_XXXXXXX,share.aarp.org,,,,Session,,,,,"Declared, not set",share.aarp.org,This cookie is used for load balancing to ensure that visitor page requests are routed to the same server in any browsing session.N/A
+Strictly Necessary Cookies,banner,OneTrust,com.adobe.alloy.getTld,aarp.org,,,,Session,,,,,"Declared, not set",aarp.org,This cookie name is associated with the Adobe WebSDK which is used to determine the top-most domain that can accept cookies.
+Strictly Necessary Cookies,banner,OneTrust,TEST_AMCV_COOKIE_WRITE,secure.aarp.org,,,,Session,,,,,"Declared, not set",secure.aarp.org,This cookie is used to test whether cookies are enabled in the browser. It is a temporary cookie used to determine if the browser accepts cookies.
+Strictly Necessary Cookies,banner,OneTrust,TEST_AMCV_COOKIE_WRITE,aarp.org,,,,Session,,,,,"Declared, not set",aarp.org,This cookie is used to test whether cookies are enabled in the browser. It is a temporary cookie used to determine if the browser accepts cookies.
+Strictly Necessary Cookies,banner,OneTrust,visid_incap_xxxxxxx,share.aarp.org,,,,364 days,,,,,"Declared, not set",share.aarp.org,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking certain sessions to a specific visitor (visitor representing a specific computer). In order to identify clients that have already visited Incapsula. The only cookie that is persistent for the duration of 12 months."
+Performance Cookies,banner,OneTrust,_vfa,aarp.org,,,,364 days,,,,,"Declared, not set",aarp.org,This cookie is used to store user and session identifiers for analytics.
+Performance Cookies,banner,OneTrust,sa-user-id-v2,secure.aarp.org,,,,364 days,,,,,"Declared, not set",secure.aarp.org,This cookie is used to identify the user's session on the website and is often associated with analytics or personalization.
+Performance Cookies,banner,OneTrust,_vfb,aarp.org,,,,0 days,,,,,"Declared, not set",aarp.org,This cookie name is used to store recirculation data for analytics and referral data for analytics.
+Performance Cookies,banner,OneTrust,s_ecid,aarp.org,,,,0 days,,,,,"Declared, not set",aarp.org,Adobe Analytics cookie containing the the Adobe Experience Cloud 1st party visitor id if the Analytics AMCV visitor id is not found.
+Performance Cookies,banner,OneTrust,sa-user-id-v2,www.aarp.org,,,,364 days,,,,,"Declared, not set",www.aarp.org,This cookie is used to identify the user's session on the website and is often associated with analytics or personalization.
+Performance Cookies,banner,OneTrust,_vfz,www.aarp.org,,,,0 days,,,,,"Declared, not set",www.aarp.org,This cookie is used to store referral data for analytics.
+Performance Cookies,banner,OneTrust,s_ac,aarp.org,,,,Session,,,,,"Declared, not set",aarp.org,This cookie name is associated with Adobe Analytics which is used to identify a user and track their activity where cookies are enabled in the web browser. It handles cookieDomainPeriod and determines the correct domain to set AppMeasurement cookies.
+Performance Cookies,banner,OneTrust,sa-user-id-v2,blog.aarp.org,,,,364 days,,,,,"Declared, not set",blog.aarp.org,This cookie is used to identify the user's session on the website and is often associated with analytics or personalization.
+Performance Cookies,banner,OneTrust,sa-user-id-v2,help.aarp.org,,,,364 days,,,,,"Declared, not set",help.aarp.org,This cookie is used to identify the user's session on the website and is often associated with analytics or personalization.
+Performance Cookies,banner,OneTrust,s_ac,org,,,,Session,,,,,"Declared, not set",org,This cookie name is associated with Adobe Analytics which is used to identify a user and track their activity where cookies are enabled in the web browser. It handles cookieDomainPeriod and determines the correct domain to set AppMeasurement cookies.
+Performance Cookies,banner,OneTrust,sd-session-id,live.rezync.com,,,,179 days,,,,,"Declared, not set",live.rezync.com,"This domain is associated with the Rezync real-time messaging service, which is often used for live chat and customer support functionalities on websites."
+Performance Cookies,banner,OneTrust,BrowserId,force.com,,,,364 days,,,,,"Declared, not set",force.com,Used to log secure browser sessions/visits for internal-only product analytics.
+Performance Cookies,banner,OneTrust,LSKey-c$CookieConsentPolicy,service.force.com,,,,364 days,,,,,"Declared, not set",service.force.com,"With this cookie, Salesforce can identify your preferences from cookies collected on the website. It`s also used with Lightning Locker. You can find more details on Salesforce Cloud Service Cookies and Salesforce Embedded Chat Cookies.Custom- Short Duration. Unique ID of an Enquiry- used to validate access to case, and load exisiting data.
+"
+Performance Cookies,banner,OneTrust,CookieConsentPolicy,service.force.com,,,,364 days,,,,,"Declared, not set",service.force.com,Used to apply end-user cookie consent preferences set by Salesforce Experience Cloud.
+Functional Cookies,banner,OneTrust,cto_writeable,www.aarp.org,,,,0 days,,,,,"Declared, not set",www.aarp.org,This cookie is set by the audience manager of a website in order to determine if any additional third-party cookies can be set in the visitor’s browser.  
+Functional Cookies,banner,OneTrust,sa-user-id,www.aarp.org,,,,364 days,,,,,"Declared, not set",www.aarp.org,"This cookie is typically associated with SnackTools, which is a suite of web applications for creating and sharing multimedia content. It is used to identify a user across sessions and track user activities."
+Functional Cookies,banner,OneTrust,_gdxxxxxxxxxxxxx,blog.aarp.org,,,,Session,,,,,"Declared, not set",blog.aarp.org,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Functional Cookies,banner,OneTrust,cto_writeable,stayingsharp.aarp.org,,,,0 days,,,,,"Declared, not set",stayingsharp.aarp.org,This cookie is set by the audience manager of a website in order to determine if any additional third-party cookies can be set in the visitor’s browser.  
+Functional Cookies,banner,OneTrust,_gdxxxxxxxxxxxxx,aarp.org,,,,Session,,,,,"Declared, not set",aarp.org,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Functional Cookies,banner,OneTrust,sa-user-id,secure.aarp.org,,,,364 days,,,,,"Declared, not set",secure.aarp.org,"This cookie is typically associated with SnackTools, which is a suite of web applications for creating and sharing multimedia content. It is used to identify a user across sessions and track user activities."
+Functional Cookies,banner,OneTrust,_4c_,aarp.org,,,,399 days,,,,,"Declared, not set",aarp.org,"This cookie name _4c_ is used for the ForeSee customer survey and feedback functionality to record part of a user's visit to help improve the user experience, such as how easy it is to use search features."
+Functional Cookies,banner,OneTrust,cto_writeable,blog.aarp.org,,,,0 days,,,,,"Declared, not set",blog.aarp.org,This cookie is set by the audience manager of a website in order to determine if any additional third-party cookies can be set in the visitor’s browser.  
+Functional Cookies,banner,OneTrust,bmuid,aarp.org,,,,364 days,,,,,"Declared, not set",aarp.org,"Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+"
+Functional Cookies,banner,OneTrust,_gdxxxxxxxxxxxxx,org,,,,Session,,,,,"Declared, not set",org,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Functional Cookies,banner,OneTrust,_gdxxxxxxxxxxxxx,www.aarp.org,,,,Session,,,,,"Declared, not set",www.aarp.org,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Functional Cookies,banner,OneTrust,cto_writeable,aarp.org,,,,0 days,,,,,"Declared, not set",aarp.org,This cookie is set by the audience manager of a website in order to determine if any additional third-party cookies can be set in the visitor’s browser.  
+Functional Cookies,banner,OneTrust,___utmvxxxxxxxxxxxxxx,secure.aarp.org,,,,0 days,,,,,"Declared, not set",secure.aarp.org,___utmv
+Functional Cookies,banner,OneTrust,sa-user-id,help.aarp.org,,,,364 days,,,,,"Declared, not set",help.aarp.org,"This cookie is typically associated with SnackTools, which is a suite of web applications for creating and sharing multimedia content. It is used to identify a user across sessions and track user activities."
+Functional Cookies,banner,OneTrust,sa-user-id,blog.aarp.org,,,,364 days,,,,,"Declared, not set",blog.aarp.org,"This cookie is typically associated with SnackTools, which is a suite of web applications for creating and sharing multimedia content. It is used to identify a user across sessions and track user activities."
+Functional Cookies,banner,OneTrust,at_aarp,api-adobe.com,,,,0 days,,,,,"Declared, not set",api-adobe.com,"This domain is owned by Adobe which provides a range of services including APIs for interacting with Adobe products and services, as well as data ingestion, governance, insights, and integration with Adobe Document Cloud."
+Functional Cookies,banner,OneTrust,_vfz,cdn.viafoura.net,,,,0 days,,,,,"Declared, not set",cdn.viafoura.net,This domain is owned by Viafoura which provides a platform that helps publishers and digital media companies enhance their audience engagement and build online communities.
+Functional Cookies,banner,OneTrust,tableau_locale,public.tableau.com,,,,Session,,,,,"Declared, not set",public.tableau.com,"This domain is owned by Tableau Software, Inc. It is used for hosting interactive data visualizations and dashboards."
+Functional Cookies,banner,OneTrust,tableau_public_negotiated_locale,public.tableau.com,,,,Session,,,,,"Declared, not set",public.tableau.com,"This domain is owned by Tableau Software, Inc. It is used for hosting interactive data visualizations and dashboards."
+Targeting Cookies,banner,OneTrust,AMCVS_xxxxxAdobeOrg,secure.aarp.org,,,,Session,,,,,"Declared, not set",secure.aarp.org,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services.This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier."
+Targeting Cookies,banner,OneTrust,_li_dcdm_c,org,,,,Session,,,,,"Declared, not set",org,"This cookie is used by LinkedIn for targeting and advertising purposes, to deliver relevant ads to the user and to track the effectiveness of ad campaigns."
+Targeting Cookies,banner,OneTrust,cto_pub_test_tld,blog.aarp.org,,,,0 days,,,,,"Declared, not set",blog.aarp.org,"This cookie is used by the ad network, Criteo."
+Targeting Cookies,banner,OneTrust,pbjs-unifiedid_cst,www.aarp.org,,,,59 days,,,,,"Declared, not set",www.aarp.org,
+Targeting Cookies,banner,OneTrust,pbjs-unifiedid,stayingsharp.aarp.org,,,,59 days,,,,,"Declared, not set",stayingsharp.aarp.org,"This cookie is set by PubMatic, an advertising technology company. It stores a unique ID to identify a returning user's device which then is used for targeted advertising."
+Targeting Cookies,banner,OneTrust,IR_gbd,aarp.org,,,,Session,,,,,"Declared, not set",aarp.org,This cookie is used for targeting and advertising purposes. It is associated with the company Impact Radius to track the effectiveness of marketing campaigns by understanding user actions.
+Targeting Cookies,banner,OneTrust,tfpvi,aarp.org,,,,0 days,,,,,"Declared, not set",aarp.org,"This cookie name is associated with Teads which is used to read and recognise users visiting the advertiser website, exclude them from campaigns, measure the efficiency of advertisement on websites, and optimize advertising campaigns."
+Targeting Cookies,banner,OneTrust,cto_pub_test_tld,aarp.org,,,,0 days,,,,,"Declared, not set",aarp.org,"This cookie is used by the ad network, Criteo."
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,secure.aarp.org,,,,364 days,,,,,"Declared, not set",secure.aarp.org,This cookie is likely used to track user identity by assigning a unique user ID when the user engages with the website. It is commonly used for analytics and personalization of content.
+Targeting Cookies,banner,OneTrust,reese84,aarp.org,,,,29 days,,,,,"Declared, not set",aarp.org,This cookie is typically associated with the ad tech company MediaMath. It is used for tracking user actions and targeting advertising based on user behavior.
+Targeting Cookies,banner,OneTrust,_li_ss,aarp.org,,,,399 days,,,,,"Declared, not set",aarp.org,This cookie name is associated with liadm.com which is used to provide a range of marketing and advertising services.
+Targeting Cookies,banner,OneTrust,IR_gbd,secure.aarp.org,,,,Session,,,,,"Declared, not set",secure.aarp.org,This cookie is used for targeting and advertising purposes. It is associated with the company Impact Radius to track the effectiveness of marketing campaigns by understanding user actions.
+Targeting Cookies,banner,OneTrust,_li_dcdm_c,aarp.org,,,,Session,,,,,"Declared, not set",aarp.org,"This cookie is used by LinkedIn for targeting and advertising purposes, to deliver relevant ads to the user and to track the effectiveness of ad campaigns."
+Targeting Cookies,banner,OneTrust,cto_bidid,www.aarp.org,,,,0 days,,,,,"Declared, not set",www.aarp.org,"This cookie is typically written to the browser upon the first visit to the site from that web browser. If the cookie has been deleted by the browser operator, and the browser subsequently visits the site, a new 'cto_bidid' cookie is written with a different ID. This cookie is used to identify unique visitors to a site and it is updated with each page view. Additionally, this cookie is provided with a unique ID that the advertiser uses to track the user's browsing behavior."
+Targeting Cookies,banner,OneTrust,cto_bidid,stayingsharp.aarp.org,,,,0 days,,,,,"Declared, not set",stayingsharp.aarp.org,"This cookie is typically written to the browser upon the first visit to the site from that web browser. If the cookie has been deleted by the browser operator, and the browser subsequently visits the site, a new 'cto_bidid' cookie is written with a different ID. This cookie is used to identify unique visitors to a site and it is updated with each page view. Additionally, this cookie is provided with a unique ID that the advertiser uses to track the user's browsing behavior."
+Targeting Cookies,banner,OneTrust,cto_bidid,aarp.org,,,,0 days,,,,,"Declared, not set",aarp.org,"This cookie is typically written to the browser upon the first visit to the site from that web browser. If the cookie has been deleted by the browser operator, and the browser subsequently visits the site, a new 'cto_bidid' cookie is written with a different ID. This cookie is used to identify unique visitors to a site and it is updated with each page view. Additionally, this cookie is provided with a unique ID that the advertiser uses to track the user's browsing behavior."
+Targeting Cookies,banner,OneTrust,pt_,aarp.org,,,,0 days,,,,,"Declared, not set",aarp.org,NA
+Targeting Cookies,banner,OneTrust,AMCV_xxxxxAdobeOrg,blog.aarp.org,,,,364 days,,,,,"Declared, not set",blog.aarp.org,"This cookie is used to identify a unique visitor for tracking purposes by Adobe Experience Cloud.This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Targeting Cookies,banner,OneTrust,IR_gbd,www.aarp.org,,,,Session,,,,,"Declared, not set",www.aarp.org,This cookie is used for targeting and advertising purposes. It is associated with the company Impact Radius to track the effectiveness of marketing campaigns by understanding user actions.
+Targeting Cookies,banner,OneTrust,cto_pub_test_tld,stayingsharp.aarp.org,,,,0 days,,,,,"Declared, not set",stayingsharp.aarp.org,"This cookie is used by the ad network, Criteo."
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,www.aarp.org,,,,364 days,,,,,"Declared, not set",www.aarp.org,This cookie is likely used to track user identity by assigning a unique user ID when the user engages with the website. It is commonly used for analytics and personalization of content.
+Targeting Cookies,banner,OneTrust,_lc2_fpi,aarp.org,,,,Session,,,,,"Declared, not set",aarp.org,"This cookie name is associated with LiveIntent which is used to enable targeted advertising by storing a random, unique, device identifier as a 1st party cookie."
+Targeting Cookies,banner,OneTrust,permutive-session,aarp.org,,,,0 days,,,,,"Declared, not set",aarp.org,"This cookie is used to track user behavior on the website, with the aim of improving the effectiveness of online advertising."
+Targeting Cookies,banner,OneTrust,AMCVS_xxxxxAdobeOrg,www.aarp.org,,,,Session,,,,,"Declared, not set",www.aarp.org,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services.This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier."
+Targeting Cookies,banner,OneTrust,AMCV_xxxxxAdobeOrg,secure.aarp.org,,,,0 days,,,,,"Declared, not set",secure.aarp.org,"This cookie is used to identify a unique visitor for tracking purposes by Adobe Experience Cloud.This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Targeting Cookies,banner,OneTrust,pbjs-unifiedid,www.aarp.org,,,,59 days,,,,,"Declared, not set",www.aarp.org,"This cookie is set by PubMatic, an advertising technology company. It stores a unique ID to identify a returning user's device which then is used for targeted advertising."
+Targeting Cookies,banner,OneTrust,cto_bidid,blog.aarp.org,,,,0 days,,,,,"Declared, not set",blog.aarp.org,"This cookie is typically written to the browser upon the first visit to the site from that web browser. If the cookie has been deleted by the browser operator, and the browser subsequently visits the site, a new 'cto_bidid' cookie is written with a different ID. This cookie is used to identify unique visitors to a site and it is updated with each page view. Additionally, this cookie is provided with a unique ID that the advertiser uses to track the user's browsing behavior."
+Targeting Cookies,banner,OneTrust,AMCV_xxxxxAdobeOrg,www.aarp.org,,,,0 days,,,,,"Declared, not set",www.aarp.org,"This cookie is used to identify a unique visitor for tracking purposes by Adobe Experience Cloud.This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Targeting Cookies,banner,OneTrust,cto_bidid,org,,,,0 days,,,,,"Declared, not set",org,"This cookie is typically written to the browser upon the first visit to the site from that web browser. If the cookie has been deleted by the browser operator, and the browser subsequently visits the site, a new 'cto_bidid' cookie is written with a different ID. This cookie is used to identify unique visitors to a site and it is updated with each page view. Additionally, this cookie is provided with a unique ID that the advertiser uses to track the user's browsing behavior."
+Targeting Cookies,banner,OneTrust,reese84,secure.aarp.org,,,,0 days,,,,,"Declared, not set",secure.aarp.org,This cookie is typically associated with the ad tech company MediaMath. It is used for tracking user actions and targeting advertising based on user behavior.
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,help.aarp.org,,,,364 days,,,,,"Declared, not set",help.aarp.org,This cookie is likely used to track user identity by assigning a unique user ID when the user engages with the website. It is commonly used for analytics and personalization of content.
+Targeting Cookies,banner,OneTrust,AMCVS_xxxxxAdobeOrg,aarp.org,,,,364 days,,,,,"Declared, not set",aarp.org,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services.This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier."
+Targeting Cookies,banner,OneTrust,AMCVS_xxxxxAdobeOrg,blog.aarp.org,,,,Session,,,,,"Declared, not set",blog.aarp.org,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services.This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier."
+Targeting Cookies,banner,OneTrust,AMCV_xxxxxAdobeOrg,aarp.org,,,,389 days,,,,,"Declared, not set",aarp.org,"This cookie is used to identify a unique visitor for tracking purposes by Adobe Experience Cloud.This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Targeting Cookies,banner,OneTrust,pbjs-unifiedid,blog.aarp.org,,,,59 days,,,,,"Declared, not set",blog.aarp.org,"This cookie is set by PubMatic, an advertising technology company. It stores a unique ID to identify a returning user's device which then is used for targeted advertising."
+Targeting Cookies,banner,OneTrust,_pdfps,aarp.org,,,,0 days,,,,,"Declared, not set",aarp.org,This cookie name is associated with Permutive which is used to register data on visitors from multiple visits and on multiple websites to measure the efficiency of advertisement on websites.
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,blog.aarp.org,,,,364 days,,,,,"Declared, not set",blog.aarp.org,This cookie is likely used to track user identity by assigning a unique user ID when the user engages with the website. It is commonly used for analytics and personalization of content.
+Targeting Cookies,banner,OneTrust,cto_pub_test_tld,www.aarp.org,,,,0 days,,,,,"Declared, not set",www.aarp.org,"This cookie is used by the ad network, Criteo."
+Targeting Cookies,banner,OneTrust,zync-uuid,rezync.com,,,,179 days,,,,,"Declared, not set",rezync.com,Rezync.com appears to be associated with providing online advertising technologies and services.
+Targeting Cookies,banner,OneTrust,MSPTC,bing.com,,,,389 days,,,,,"Declared, not set",bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,AMCV_xxxxxAdobeOrg,assets.adobedtm.com,,,,364 days,,,,,"Declared, not set",assets.adobedtm.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Targeting Cookies,banner,OneTrust,at_check,assets.adobedtm.com,,,,0 days,,,,,"Declared, not set",assets.adobedtm.com,If you know anything about this host and its uses please add your contributions here. 
+Targeting Cookies,banner,OneTrust,uid-bp-xxxxx,ads.stickyadstv.com,,,,29 days,,,,,"Declared, not set",ads.stickyadstv.com,"This domain is owned by StickyAdsTV, a French company providing online video advertising services."
+Targeting Cookies,banner,OneTrust,MRM_UID,ads.stickyadstv.com,,,,59 days,,,,,"Declared, not set",ads.stickyadstv.com,"This domain is owned by StickyAdsTV, a French company providing online video advertising services."
+Targeting Cookies,banner,OneTrust,ANON_ID_old,tribalfusion.com,,,,89 days,,,,,"Declared, not set",tribalfusion.com,This domain is owned by TribalFusion. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,euds,rfihub.com,,,,Session,,,,,"Declared, not set",rfihub.com,This domain is owned by Rocketfuel. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,ar_debug,pinterest.com,,,,364 days,,,,,"Declared, not set",pinterest.com,This domain is owned by Pinterest. The main business activity is: Social Content Sharing platform
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,tags.srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",tags.srv.stackadapt.com,"This domain is associated with StackAdapt, a platform for programmatic advertising, which suggests that it is used for targeting and advertising purposes."
+Targeting Cookies,banner,OneTrust,li_gc,linkedin.com,,,,179 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,sync.srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",sync.srv.stackadapt.com,"This domain is associated with StackAdapt, a platform for programmatic advertising, which uses cookies for targeting and advertising purposes."
+Targeting Cookies,banner,OneTrust,de_tp_cookie,digitaleast.mobi,,,,364 days,,,,,"Declared, not set",digitaleast.mobi,This domain is associated with a mobile advertising network that specializes in the delivery of advertisements to mobile devices.
+Targeting Cookies,banner,OneTrust,TESTCOOKIESENABLED,securepubads.g.doubleclick.net,,,,0 days,,,,,"Declared, not set",securepubads.g.doubleclick.net,This domain is part of Google's advertising network and is used for serving and targeting advertisements.
+Targeting Cookies,banner,OneTrust,optout,criteo.com,,,,0 days,,,,,"Declared, not set",criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,everest_session_v2,everesttech.net,,,,Session,,,,,"Declared, not set",everesttech.net,This domain is owned by Adobe. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",srv.stackadapt.com,"This domain is owned by Stackadapt. The company provides marketing and advertising services.
+"
+Targeting Cookies,banner,OneTrust,KTPCACOOKIE,pubmatic.com,,,,89 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,VISITOR_PRIVACY_METADATA,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,__Secure-xxxxxxx,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,adcloud,www.everestjs.net,,,,0 days,,,,,"Declared, not set",www.everestjs.net,"This domain is associated with the Everest Tech company, which provides analytics and advertising services, often related to tracking for targeted advertising."
+Targeting Cookies,banner,OneTrust,suid_legacy,simpli.fi,,,,365 days,,,,,"Declared, not set",simpli.fi," These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.    They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising. "
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,ar_debug,doubleclick.net,,,,29 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,KCCH,ads.pubmatic.com,,,,0 days,,,,,"Declared, not set",ads.pubmatic.com,This domain is owned by PubMatic. The company provides a range of marketing and advertising services.
+Targeting Cookies,banner,OneTrust,checkForPermission,bidr.io,,,,0 days,,,,,"Declared, not set",bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Targeting Cookies,banner,OneTrust,_knxq_,brand-display.com,,,,399 days,,,,,"Declared, not set",brand-display.com,"This domain is likely associated with advertising and marketing activities, typically used for displaying brand-related content and tracking for advertising purposes."
+Targeting Cookies,banner,OneTrust,bsw_origin_init,bidswitch.net,,,,0 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,licd,bidswitch.net,,,,0 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.

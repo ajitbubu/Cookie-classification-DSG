@@ -1,0 +1,24 @@
+# Round 14 batch, 2026-11-12: beauty, fashion, luggage, jewelry. From 174 new candidates checked with
+# find_banner_sites (candidates_round14_2026-11-12_verified.csv): 32 usable. Site = final_host.
+# bluenile.com listed twice (jamesallen.com redirects there). Dropped as sister brands:
+#   L'Oreal (loreal.com): kiehls.com, giorgioarmanibeauty-usa.com, urbandecay.com, nyxcosmetics.com,
+#   cerave.com, laroche-posay.us, vichyusa.com, skinceuticals.com, kerastase-usa.com, redken.com,
+#   matrix.com, essie.com; Estee Lauder (clinique.com): lelabofragrances.com; Kering (kering.com):
+#   creedboutique.com; Coty (coty.com kept): covergirl.com
+# Columns: host vendor-folder
+hudabeauty.com onetrust
+www.sisley-paris.com onetrust
+olaplex.com ketch
+www.moroccanoil.com onetrust
+www.revlon.com onetrust
+www.coty.com onetrust
+www.atkinsons1799.com cookiebot
+www.pepejeans.com cookiebot
+www.briggs-riley.com onetrust
+www.napapijri.com onetrust
+skims.com onetrust
+www.fabletics.com onetrust
+girlfriend.com onetrust
+nobullproject.com ketch
+bonobos.com onetrust
+www.bluenile.com onetrust

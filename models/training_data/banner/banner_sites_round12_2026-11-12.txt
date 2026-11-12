@@ -1,0 +1,79 @@
+# Round 12 batch, 2026-11-12: data/marketing SaaS, payments, travel deals, cruises, car rental,
+# car media, audio, smart home. From 300 new candidates checked with find_banner_sites
+# (candidates_round12_2026-11-11_verified.csv): 88 usable. Site = final_host. getdbt.com, clevertap.com,
+# thepointsguy.com, going.com listed twice. Dropped as already collected or sister brands:
+#   Hertz (hertz.com): hertz.co.uk, thrifty.com, dollar.com; paylesscar.com (Avis); vikingrivercruises.com
+#   (vikingcruises.com); quarkexpeditions.com (Travelopia; exodustravels.com kept); Hearst
+#   (cosmopolitan.com): caranddriver.com, roadandtrack.com; Ziff Davis (pcmag.com): offers.com,
+#   retailmenot.com; nerdwallet.fundera.com (nerdwallet.com); bose.co.uk (bose.com); Assa Abloy
+#   (assaabloy.com): kwikset.com, shopyalehome.com, august.com
+# Columns: host vendor-folder
+www.cloudera.com onetrust
+www.dremio.com onetrust
+www.getdbt.com onetrust
+hightouch.com onetrust
+www.rudderstack.com ketch
+www.rokt.com onetrust
+www.contentstack.com onetrust
+www.algolia.com onetrust
+www.coveo.com onetrust
+www.nosto.com onetrust
+clevertap.com onetrust
+www.appsflyer.com onetrust
+www.branch.io onetrust
+birdeye.com onetrust
+reputation.com onetrust
+www.bazaarvoice.com onetrust
+getrecharge.com onetrust
+recurly.com onetrust
+fastspring.com onetrust
+www.verifone.com cookiebot
+ingenico.com onetrust
+www.checkout.com onetrust
+www.rapyd.net onetrust
+www.payoneer.com onetrust
+www.westernunion.com onetrust
+www.worldremit.com onetrust
+www.ofx.com onetrust
+www.marqeta.com onetrust
+mercury.com transcend
+www.bluevine.com onetrust
+www.airalo.com onetrust
+www.travelguard.com onetrust
+www.insuremytrip.com onetrust
+www.img.com onetrust
+www.clearme.com onetrust
+thepointsguy.com onetrust
+www.going.com cookiebot
+www.airfarewatchdog.com onetrust
+ibotta.com transcend
+slickdeals.net onetrust
+bensbargains.com onetrust
+www.silversea.com onetrust
+www.windstarcruises.com onetrust
+www.gate1travel.com onetrust
+www.intrepidtravel.com onetrust
+www.gadventures.com onetrust
+www.exodustravels.com onetrust
+www.backroads.com cookiebot
+www.roadscholar.org onetrust
+www.hurtigruten.com onetrust
+www.margaritavilleatsea.com onetrust
+www.dealerware.com onetrust
+shift.com ketch
+www.carsdirect.com onetrust
+www.carfax.com onetrust
+www.consumerreports.org onetrust
+www.motortrend.com onetrust
+www.bluesound.com onetrust
+us.kef.com cookiebot
+www.cambridgeaudio.com cookiebot
+www.arlo.com ketch
+simplisafe.com onetrust
+www.vivint.com onetrust
+us.brinks.com onetrust
+www.ecobee.com onetrust
+www.lutron.com onetrust
+leviton.com onetrust
+www.schlage.com onetrust
+level.co onetrust

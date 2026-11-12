@@ -1,0 +1,80 @@
+# Round 6 batch, 2026-11-11: consulting, chips, games, hotels, health, education, logistics,
+# finance/insurance. From 237 new candidates checked with find_banner_sites
+# (candidates_round6_2026-11-11_verified.csv): 83 usable. Site = final_host. 11 dropped as sister
+# brands: crucial.com (Micron), take2games.com (Take-Two; rockstargames.com kept), bethesda.net
+# (Microsoft; blizzard.com collected), crunchyroll.com (Sony; playstation.com), genesis.com
+# (Hyundai), wynnresorts.com (wynnlasvegas.com), budgettruck.com (Avis Budget), udacity.com
+# (Accenture), jpmorganchase.com (jpmorgan.com), pimco.com (Allianz), broadcom.com (VMware)
+# Columns: host vendor-folder
+www.accenture.com onetrust
+www.deloitte.com onetrust
+kpmg.com onetrust
+www.gartner.com onetrust
+www.forrester.com onetrust
+www.micron.com onetrust
+www.nxp.com onetrust
+www.seagate.com onetrust
+www.rockstargames.com onetrust
+www.bandainamcoent.com onetrust
+www.konami.com onetrust
+www.indiegogo.com transcend
+www.gofundme.com transcend
+www.consumercellular.com onetrust
+www.polestar.com onetrust
+www.jaguar.com onetrust
+www.mitsubishicars.com onetrust
+www.komatsu.com onetrust
+www.cummins.com onetrust
+www.omnihotels.com onetrust
+www.mandarinoriental.com onetrust
+www.rosewoodhotels.com onetrust
+www.kempinski.com cookiebot
+www.riu.com onetrust
+www.sandals.com ketch
+hotel.hardrock.com onetrust
+www.epicpass.com transcend
+www.ikonpass.com onetrust
+www.ucsfhealth.org onetrust
+www.stjude.org onetrust
+www.dana-farber.org onetrust
+www.mdlive.com onetrust
+www.talkspace.com onetrust
+www.headspace.com onetrust
+www.strava.com cookiebot
+ouraring.com onetrust
+www.23andme.org ketch
+www.imperial.ac.uk onetrust
+ethz.ch onetrust
+www.edx.org onetrust
+brainly.com ketch
+www.babbel.com onetrust
+www.rosettastone.com onetrust
+www.busuu.com onetrust
+www.pluralsight.com transcend
+www.dhl.de onetrust
+www.canadapost-postescanada.ca onetrust
+www.flexport.com ketch
+www.jbhunt.com securiti
+www.ryder.com onetrust
+www.pods.com onetrust
+www.publicstorage.com onetrust
+www.loandepot.com onetrust
+www.freddiemac.com onetrust
+www.fanniemae.com onetrust
+www.statestreet.com onetrust
+www.bny.com onetrust
+www.citadel.com onetrust
+www.ameriprise.com onetrust
+www.lpl.com onetrust
+www.invesco.com onetrust
+www.franklintempleton.com onetrust
+www.nuveen.com onetrust
+www.guardianlife.com onetrust
+equitable.com onetrust
+www.brighthousefinancial.com onetrust
+www.empower.com onetrust
+www.securian.com onetrust
+www.mutualofomaha.com onetrust
+www.amfam.com onetrust
+www.policygenius.com onetrust
+www.hippo.com onetrust

@@ -1,0 +1,56 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,,true,true,none,false,Not declared,,
+Essential Cookies,banner,Ketch,PHPSESSID,.nearpod.com,/,First party,Session,,true,true,none,false,Declared & set,,
+Analytic and Performance Cookies ,banner,Ketch,metrics_session,.nearpod.com,/,First party,1.00 days,1 days,true,true,none,false,Declared & set,,
+Essential Cookies,banner,Ketch,_swb,.nearpod.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Essential Cookies,banner,Ketch,_ketch_consent_v1_,.nearpod.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Analytic and Performance Cookies ,banner,Ketch,_ga,.nearpod.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Unclassified,none,,_vwo_uuid_v2,.nearpod.com,/,First party,366.00 days,,false,false,unspecified,false,Not declared,,
+Analytic and Performance Cookies ,banner,Ketch,_biz_uid,.nearpod.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Analytic and Performance Cookies ,banner,Ketch,_BUID,.bizible.com,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,,Adobe Marketo Measure
+Marketing and Targeted Advertising Cookies ,banner,Ketch,_mkto_trk,.nearpod.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Engage
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,YSC,.youtube.com,/,Third party,Session,,true,true,none,true,Not declared,,
+Unclassified,none,,VISITOR_INFO1_LIVE,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,VISITOR_PRIVACY_METADATA,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Marketing and Targeted Advertising Cookies ,banner,Ketch,li_sugr,.linkedin.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Marketing and Targeted Advertising Cookies ,banner,Ketch,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LinkedIn  
+Essential Cookies,banner,Ketch,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,,LinkedIn  
+Essential Cookies,banner,Ketch,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,_gcl_au,.nearpod.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Marketing and Targeted Advertising Cookies ,banner,Ketch,_fbp,.nearpod.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Facebook Ads
+Marketing and Targeted Advertising Cookies ,banner,Ketch,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Analytic and Performance Cookies ,banner,Ketch,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn  
+Marketing and Targeted Advertising Cookies ,banner,Ketch,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Declared & set,,Facebook Ads
+Essential Cookies,banner,Ketch,bscookie,.www.linkedin.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,LinkedIn  
+Analytic and Performance Cookies ,banner,Ketch,_biz_flagsA,.nearpod.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Essential Cookies,banner,Ketch,_swb_consent_,.nearpod.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Marketing and Targeted Advertising Cookies ,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,729 days,true,true,none,false,Declared & set,,Google Ads
+Unclassified,none,,__Secure-YNID,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,__Secure-ROLLOUT_TOKEN,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Marketing and Targeted Advertising Cookies ,banner,Ketch,test_cookie,.nearpod.com,/,First party,0.00 days,,true,true,none,false,Declared & set,,Google Ads
+Analytic and Performance Cookies ,banner,Ketch,_biz_nA,.nearpod.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Unclassified,none,,_ga_D9PBND51C1,.nearpod.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Analytic and Performance Cookies ,banner,Ketch,_rdt_uuid,.nearpod.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Unclassified,none,,trwv.uid,.nearpod.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,trwsa.sid,.nearpod.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Analytic and Performance Cookies ,banner,Ketch,_biz_pendingA,.nearpod.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Adobe Marketo Measure
+Essential Cookies,banner,Ketch,ANONCHK,,,,,,,,,,"Declared, not set",,Microsoft Ads
+Essential Cookies,banner,Ketch,G_ENABLED_IDPS,,,,,2913024 days,,,,,"Declared, not set",,
+Essential Cookies,banner,Ketch,__mp_opt_in_out_*,,,,,,,,,,"Declared, not set",,Mixpanel
+Essential Cookies,banner,Ketch,SM,,,,,,,,,,"Declared, not set",,Microsoft Clarity
+Essential Cookies,banner,Ketch,_uetmsdns,,,,,364 days,,,,,"Declared, not set",,Microsoft Ads
+Essential Cookies,banner,Ketch,userid,,,,,,,,,,"Declared, not set",,
+Analytic and Performance Cookies ,banner,Ketch,_biz_dfsA,,,,,,,,,,"Declared, not set",,Adobe Marketo Measure
+Analytic and Performance Cookies ,banner,Ketch,_clck,,,,,364 days,,,,,"Declared, not set",,Microsoft Clarity
+Analytic and Performance Cookies ,banner,Ketch,CLID,,,,,364 days,,,,,"Declared, not set",,Microsoft Clarity
+Analytic and Performance Cookies ,banner,Ketch,_clsk,,,,,,,,,,"Declared, not set",,Microsoft Clarity
+Analytic and Performance Cookies ,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytic and Performance Cookies ,banner,Ketch,_gat_UA-*,,,,,,,,,,"Declared, not set",,Google Analytics
+Analytic and Performance Cookies ,banner,Ketch,_gid,,,,,,,,,,"Declared, not set",,Google Analytics
+Analytic and Performance Cookies ,banner,Ketch,mp_*_mixpanel,,,,,,,,,,"Declared, not set",,Mixpanel
+Marketing and Targeted Advertising Cookies ,banner,Ketch,ar_debug,,,,,30 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Marketing and Targeted Advertising Cookies ,banner,Ketch,_biz_kvpA,,,,,,,,,,"Declared, not set",,Adobe Marketo Measure
+Marketing and Targeted Advertising Cookies ,banner,Ketch,MR,,,,,6 days,,,,,"Declared, not set",,Microsoft Clarity
+Marketing and Targeted Advertising Cookies ,banner,Ketch,MUID,,,,,389 days,,,,,"Declared, not set",,Microsoft Clarity
+Marketing and Targeted Advertising Cookies ,banner,Ketch,SRM_B,,,,,389 days,,,,,"Declared, not set",,Microsoft Ads

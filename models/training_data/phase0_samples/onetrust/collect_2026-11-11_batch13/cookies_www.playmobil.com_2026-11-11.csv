@@ -1,0 +1,12 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,dwanonymous_e2e58576ae07a4b4112da00df51b8242,www.playmobil.com,/,First party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sid,www.playmobil.com,/,First party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,__cq_dnt,www.playmobil.com,/,First party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,dw_dnt,www.playmobil.com,/,First party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,dwsid,www.playmobil.com,/,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,dwanonymous_7254072e2668c23dc3bf6cca213a6657,www.playmobil.com,/,First party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,jctr_sid,.playmobil.com,/,First party,0.02 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,jts-rw,.playmobil.com,/,First party,390.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,__cflb,geobra-privacy.my.onetrust.eu,/,Third party,0.02 days,,true,true,none,false,Not declared,,
+Unclassified,none,,OptanonConsent,.playmobil.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,amzn_consent,www.playmobil.com,/,First party,28.00 days,,false,true,strict,false,Not declared,,

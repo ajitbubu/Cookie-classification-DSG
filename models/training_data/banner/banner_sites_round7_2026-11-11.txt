@@ -1,0 +1,66 @@
+# Round 7 batch, 2026-11-11: Australia, Canada, India, Japan, Korea, China, LatAm, Africa,
+# nonprofits/museums, US retail. From 319 new candidates checked with find_banner_sites
+# (candidates_round7_2026-11-11_verified.csv): 69 usable. Site = final_host. Dropped:
+#   already collected: atlassian.com, xero.com, hyundaiusa.com; canadalife.com listed twice
+#   sister brands: bce.ca (BCE; bell.ca kept), timhortons.ca (Restaurant Brands; bk.com),
+#   sony.co.jp (Sony; playstation.com), nikon.com (nikonusa.com), techmahindra.com (Mahindra
+#   Group; mahindra.com kept), wwf.org.uk (WWF; worldwildlife.org kept), familydollar.com
+#   (dollartree.com kept), nationalgeographic.com (Disney; espn.com)
+# Columns: host vendor-folder
+www.macquarie.com onetrust
+www.coles.com.au onetrust
+www.riotinto.com onetrust
+www.sunlife.com onetrust
+www.canadalife.com onetrust
+www.bell.ca onetrust
+www.metro.ca onetrust
+www.indigo.ca onetrust
+www.aircanada.com onetrust
+www.westjet.com onetrust
+bombardier.com onetrust
+www.cae.com onetrust
+www.thomsonreuters.com onetrust
+www.nutrien.com cookiebot
+www.wipro.com onetrust
+www.mahindra.com securiti
+global.toyota cookiebot
+www.nissan-global.com onetrust
+www.mitsubishielectric.com onetrust
+www.olympus-global.com onetrust
+www.shiseido.com onetrust
+www.kao.com onetrust
+www.asahigroup-holdings.com onetrust
+yamaha-motor.com onetrust
+www.keyence.com cookiebot
+us.amorepacific.com onetrust
+www.xpeng.com onetrust
+www.midea.com onetrust
+www.ecovacs.com cookiebot
+www.vale.com onetrust
+www.cemex.com cookiebot
+www.grupobimbo.com onetrust
+www.discovery.co.za onetrust
+www.worldwildlife.org onetrust
+www.habitat.org onetrust
+www.unitedway.org onetrust
+www.aarp.org onetrust
+www.nrdc.org onetrust
+www.nature.org onetrust
+www.cancer.org onetrust
+www.alz.org onetrust
+www.kiva.org onetrust
+www.smithsonianmag.com onetrust
+www.britishmuseum.org cookiebot
+www.vam.ac.uk onetrust
+scottsmiraclegro.com onetrust
+www.acehardware.com onetrust
+www.truevalue.com onetrust
+www.hobbylobby.com onetrust
+www.dollartree.com onetrust
+biglots.com cookiebot
+www.rossstores.com onetrust
+www.burlington.com onetrust
+www.chicos.com onetrust
+www.dsw.com onetrust
+www.on.com onetrust
+www.pearlevision.com onetrust

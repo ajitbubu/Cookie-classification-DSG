@@ -1,0 +1,10 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,JSESSIONID,global.toyota,/globaltoyota/,First party,Session,,true,false,unspecified,false,Not declared,,
+Unclassified,none,,PIM-SESSION-ID,.global.toyota,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,AWSELBCORS,onetag.tws.toyota.jp,/,Third party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_gid,.global.toyota,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_gat_UA-134379612-1,.global.toyota,/,First party,0.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,AWSELB,global.toyota,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,AWSELBCORS,global.toyota,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_ga_FW87SM9FNZ,.global.toyota,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga,.global.toyota,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,

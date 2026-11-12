@@ -1,0 +1,150 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Targeting Cookies,banner,OneTrust,edition,www.habitat.org,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,www.habitat.org,
+Unclassified,none,,_gid,.habitat.org,/,First party,1.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,_gat_gtag_UA_92354329_1,.habitat.org,/,First party,0.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,ad-id,.amazon-adsystem.com,/,Third party,231.00 days,204 days,true,true,none,false,Declared & set,amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Targeting Cookies,banner,OneTrust,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,399 days,true,true,none,false,Declared & set,amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Targeting Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,bat.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,_clck,.habitat.org,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,tgbwidget.com,"This cookie is related to Microsoft Clarity analytics service. It is used to collect information about how visitors interact with the website, which helps in creating reports and improving the site."
+Targeting Cookies,banner,OneTrust,_fbp,.habitat.org,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,habitat.org,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Targeting Cookies,banner,OneTrust,_gcl_au,.habitat.org,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,habitat.org,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,uuid2,.adnxs.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,mc,.quantserve.com,/,Third party,395.00 days,394 days,false,true,none,false,Declared & set,quantserve.com,"This domain is owned by Quantcast. The main business activity is: Market and Audience Segmentation, Targeted advertising services"
+Targeting Cookies,banner,OneTrust,__qca,.habitat.org,/,First party,392.00 days,391 days,false,false,unspecified,false,Declared & set,habitat.org,"This is a cookie usually associated with Quantcast, a digital advertising company.  They provide website rankings, and the data they collect is also used for audience segmentation and targeted advertising."
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,MR,.c.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,bat.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Unclassified,none,,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SM,.c.clarity.ms,/,Third party,Session,,false,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,MUID,.clarity.ms,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics service that provides insights into user behavior on websites."
+Targeting Cookies,banner,OneTrust,MR,.c.clarity.ms,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,bat.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Unclassified,none,,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,c,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,i,.openx.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,digitalAudience,.target.digitalaudience.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ab,.agkn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,UID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XID,.scorecardresearch.com,/,Third party,390.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,tvid,.tremorhub.com,/,Third party,365.24 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tv_UIAM,.tremorhub.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,pt,.ispot.tv,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,ispot.tv,Testing
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,www.habitat.org,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.habitat.org,
+Unclassified,none,,EE,.exelator.com,/,Third party,120.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ud,.exelator.com,/,Third party,120.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,ndat,.ninthdecimal.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,ninthdecimal.com,Testing
+Targeting Cookies,banner,OneTrust,demdex,.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,demdex.net,"This cookie helps Adobe Audience Manger perform basic functions such as visitor identification, ID synchronization, segmentation, modeling, reporting, etc."
+Targeting Cookies,banner,OneTrust,dpm,.dpm.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,dpm.demdex.net,This domain is owned by Adobe Audience Manager. The main business activity is online profiling for targeted marketing.
+Targeting Cookies,banner,OneTrust,SEUNCY,.semasio.net,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,semasio.net,"This domain is owned by Semasio, a German business specialising in profiling and behavioural targeting of consumers. "
+Targeting Cookies,banner,OneTrust,mics_vid,.mediarithmics.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,mediarithmics.com,"This domain is associated with a French company that provides a data marketing platform, including data management, analytics, and programmatic advertising services."
+Targeting Cookies,banner,OneTrust,mics_uaid,.mediarithmics.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,mediarithmics.com,"This domain is associated with a French company that provides a data marketing platform, including data management, analytics, and programmatic advertising services."
+Targeting Cookies,banner,OneTrust,mics_lts,.mediarithmics.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,mediarithmics.com,TS
+Unclassified,none,,t_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,t_pt_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,www.habitat.org,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,secure.habitat.org,
+Targeting Cookies,banner,OneTrust,ABTastySession,.habitat.org,/,First party,0.02 days,0 days,false,false,lax,false,Declared & set,habitat.org,
+Performance Cookies,banner,OneTrust,ABTasty,.habitat.org,/,First party,395.00 days,394 days,false,false,lax,false,Declared & set,habitat.org,
+Performance Cookies,banner,OneTrust,_ga_HL6QKWG5V6,.habitat.org,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,habitat.org,NAUsed by Google Analytics to identify and track an individual session with your device.
+Unclassified,none,,_ga,.habitat.org,/,First party,400.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,_uetsid,.habitat.org,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,habitat.org,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Performance Cookies,banner,OneTrust,_uetvid,.habitat.org,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,habitat.org,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Performance Cookies,banner,OneTrust,_clsk,.habitat.org,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,tgbwidget.com,Used by Microsoft Clarity to connect multiple page views by a user into a single Clarity session recording.
+Targeting Cookies,banner,OneTrust,anj,.adnxs.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Performance Cookies,banner,OneTrust,_ga_VD37XK5DBV,.habitat.org,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,habitat.org,NAUsed by Google Analytics to identify and track an individual session with your device.
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID,secure.habitat.org,,,,Session,,,,,"Declared, not set",secure.habitat.org,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server."
+Strictly Necessary Cookies,banner,OneTrust,_dc_gtm_UA-xxxxxxxx,habitat.org,,,,0 days,,,,,"Declared, not set",habitat.org,"This cookie is associated with sites using Google Tag Manager to load other scripts and code into a page. Where it is used it may be regarded as Strictly Necessary as without it, other scripts may not function correctly. The end of the name is a unique number which is also an identifier for an associated Google Analytics account.This cookie is associated with sites using Google Tag Manager to load other scripts and code into a page.  Where it is used it may be regarded as Strictly Necessary as without it, other scripts may not function correctly. The end of the name is a unique number which is"
+Strictly Necessary Cookies,banner,OneTrust,ASP.NET_SessionId,www.habitat.org,,,,Session,,,,,"Declared, not set",www.habitat.org,"General purpose platform session cookie, used by sites written with Microsoft .NET based technologies. Usually used to maintain an anonymised user session by the server."
+Strictly Necessary Cookies,banner,OneTrust,__cr_user,habitat.org,,,,399 days,,,,,"Declared, not set",habitat.org,user
+Strictly Necessary Cookies,banner,OneTrust,__RequestVerificationToken_,myhabitat.habitat.org,,,,Session,,,,,"Declared, not set",myhabitat.habitat.org,
+Strictly Necessary Cookies,banner,OneTrust,_gat_shorthand,www.habitat.org,,,,Session,,,,,"Declared, not set",www.habitat.org,
+Strictly Necessary Cookies,banner,OneTrust,_gcl_aw,habitat.org,,,,89 days,,,,,"Declared, not set",habitat.org,
+Strictly Necessary Cookies,banner,OneTrust,_gat_shorthand,habitat.org,,,,0 days,,,,,"Declared, not set",habitat.org,
+Strictly Necessary Cookies,banner,OneTrust,optimizelyOptOut,secure.habitat.org,,,,0 days,,,,,"Declared, not set",secure.habitat.org,
+Strictly Necessary Cookies,banner,OneTrust,sa-user-id,www.habitat.org,,,,364 days,,,,,"Declared, not set",www.habitat.org,
+Strictly Necessary Cookies,banner,OneTrust,_gat_section_linger,habitat.org,,,,0 days,,,,,"Declared, not set",habitat.org,
+Strictly Necessary Cookies,banner,OneTrust,AWSALB,widgets.guidestar.org,,,,6 days,,,,,"Declared, not set",widgets.guidestar.org,
+Strictly Necessary Cookies,banner,OneTrust,sa-user-id,tags.srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",tags.srv.stackadapt.com,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,piano.io,,,,0 days,,,,,"Declared, not set",piano.io,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,twitter.com,,,,0 days,,,,,"Declared, not set",twitter.com,
+Strictly Necessary Cookies,banner,OneTrust,TS01xxxxxxxx,seal.entrust.net,,,,Session,,,,,"Declared, not set",seal.entrust.net,"This cookie is typically associated with a security feature, such as a Web Application Firewall, to track session information and ensure consistent and secure interactions.TS"
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,sectigo.com,,,,0 days,,,,,"Declared, not set",sectigo.com,
+Strictly Necessary Cookies,banner,OneTrust,bm_s,npr.org,,,,30 days,,,,,"Declared, not set",npr.org,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,x.com,,,,0 days,,,,,"Declared, not set",x.com,
+Strictly Necessary Cookies,banner,OneTrust,__Secure-YNID,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,
+Strictly Necessary Cookies,banner,OneTrust,__Secure-ROLLOUT_TOKEN,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,
+Functional Cookies,banner,OneTrust,form,secure.habitat.org,,,,0 days,,,,,"Declared, not set",secure.habitat.org,
+Functional Cookies,banner,OneTrust,optimizelyDomainTestCookie,www.habitat.org,,,,0 days,,,,,"Declared, not set",www.habitat.org,
+Functional Cookies,banner,OneTrust,__cr_session,habitat.org,,,,0 days,,,,,"Declared, not set",habitat.org,
+Functional Cookies,banner,OneTrust,_gat_UA-XXXXXX-X,habitat.org,,,,0 days,,,,,"Declared, not set",habitat.org,
+Functional Cookies,banner,OneTrust,habitat_entrance_source_code,www.habitat.org,,,,Session,,,,,"Declared, not set",www.habitat.org,
+Functional Cookies,banner,OneTrust,_hjSession_xxxxxx,tgbwidget.com,,,,0 days,,,,,"Declared, not set",tgbwidget.com,A cookie that holds the current session data. This ensues that subsequent requests within the session window will be attributed to the same Hotjar session.
+Functional Cookies,banner,OneTrust,_hjSessionUser_xxxxxx,tgbwidget.com,,,,364 days,,,,,"Declared, not set",tgbwidget.com,"Hotjar cookie that is set when a user first lands on a page with the Hotjar script. It is used to persist the Hotjar User ID, unique to that site on the browser. This ensures that behavior in subsequent visits to the same site will be attributed to the same user ID."
+Functional Cookies,banner,OneTrust,__cf_bm,fonts.net,,,,0 days,,,,,"Declared, not set",fonts.net,This is a CloudFoundry cookie
+Functional Cookies,banner,OneTrust,crct,www.conversionruler.com,,,,3649 days,,,,,"Declared, not set",www.conversionruler.com,
+Functional Cookies,banner,OneTrust,CRSess_3115,www.conversionruler.com,,,,0 days,,,,,"Declared, not set",www.conversionruler.com,
+Functional Cookies,banner,OneTrust,AWSELBCORS,payments.blackbaud.com,,,,0 days,,,,,"Declared, not set",payments.blackbaud.com,
+Functional Cookies,banner,OneTrust,_GRECAPTCHA,www.google.com,,,,179 days,,,,,"Declared, not set",www.google.com,
+Functional Cookies,banner,OneTrust,optimizelyRumLB,rum.optimizely.com,,,,Session,,,,,"Declared, not set",rum.optimizely.com,"Controls the AWSELB cookie`s attributes (for example, SameSite and Secure)."
+Functional Cookies,banner,OneTrust,AWSELB,rum.optimizely.com,,,,Session,,,,,"Declared, not set",rum.optimizely.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Functional Cookies,banner,OneTrust,AWSELBCORS,rum.optimizely.com,,,,Session,,,,,"Declared, not set",rum.optimizely.com,AWS Classic Load Balancer Cookie.Load Balancing Cookie: Used to map the session to the instance. Same value as AWSELBUsed to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Targeting Cookies,banner,OneTrust,_gat,www.habitat.org,,,,Session,,,,,"Declared, not set",www.habitat.org,
+Targeting Cookies,banner,OneTrust,_rdt_uuid,www.habitat.org,,,,89 days,,,,,"Declared, not set",www.habitat.org,
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,www.habitat.org,,,,364 days,,,,,"Declared, not set",www.habitat.org,
+Targeting Cookies,banner,OneTrust,optimizelyOptOut,www.habitat.org,,,,0 days,,,,,"Declared, not set",www.habitat.org,n/a
+Targeting Cookies,banner,OneTrust,_dlt,habitat.org,,,,0 days,,,,,"Declared, not set",habitat.org,This cookie is associated with Google's real time bidding advertising exchange. The main purpose of this cookie is targeting.
+Targeting Cookies,banner,OneTrust,_gcl_au,tgbwidget.com,,,,89 days,,,,,"Declared, not set",tgbwidget.com,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services
+Targeting Cookies,banner,OneTrust,_gat_UA-XXXXXX-X,tgbwidget.com,,,,0 days,,,,,"Declared, not set",tgbwidget.com,Google Analytics Cookies
+Targeting Cookies,banner,OneTrust,GCL_AW_P,googleadservices.com,,,,89 days,,,,,"Declared, not set",googleadservices.com,
+Targeting Cookies,banner,OneTrust,AWSALBCORS,widgets.guidestar.org,,,,6 days,,,,,"Declared, not set",widgets.guidestar.org,
+Targeting Cookies,banner,OneTrust,GCL_AW_P,google.com,,,,89 days,,,,,"Declared, not set",google.com,
+Targeting Cookies,banner,OneTrust,sa-user-id-v4,tags.srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",tags.srv.stackadapt.com,
+Targeting Cookies,banner,OneTrust,sa-user-id-v2,tags.srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",tags.srv.stackadapt.com,
+Targeting Cookies,banner,OneTrust,personalization_id,twitter.com,,,,729 days,,,,,"Declared, not set",twitter.com,"This domain is owned by Twitter. The main business activity is: Social Networking Services.  Where twitter acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+Targeting Cookies,banner,OneTrust,d,quantserve.com,,,,89 days,,,,,"Declared, not set",quantserve.com,"This domain is owned by Quantcast. The main business activity is: Market and Audience Segmentation, Targeted advertising services"
+Targeting Cookies,banner,OneTrust,m,m.stripe.com,,,,399 days,,,,,"Declared, not set",m.stripe.com,
+Targeting Cookies,banner,OneTrust,cu,ipredictive.com,,,,364 days,,,,,"Declared, not set",ipredictive.com,"This domain is owned by Adelphic, a USA based company engaged in mobile and cross-device programmatic online advertising."
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,GCL_AW_P,doubleclick.net,,,,89 days,,,,,"Declared, not set",doubleclick.net,
+Targeting Cookies,banner,OneTrust,_fbp,doubleclick.net,,,,89 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,MSPTC,bing.com,,,,389 days,,,,,"Declared, not set",bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,fbsr_137277619672315,connect.facebook.net,,,,0 days,,,,,"Declared, not set",connect.facebook.net,
+Targeting Cookies,banner,OneTrust,TESTCOOKIESENABLED,www.youtube.com,,,,0 days,,,,,"Declared, not set",www.youtube.com,Testing
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Testing
+Targeting Cookies,banner,OneTrust,__Secure-YEC,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,
+Targeting Cookies,banner,OneTrust,VISITOR_PRIVACY_METADATA,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,Testing
+Performance Cookies,banner,OneTrust,_gac_UA-92354329-1,habitat.org,,,,89 days,,,,,"Declared, not set",habitat.org,
+Performance Cookies,banner,OneTrust,_dc_gtm_UA-xxxxxxxx,secure.habitat.org,,,,0 days,,,,,"Declared, not set",secure.habitat.org,
+Performance Cookies,banner,OneTrust,_gat_UA-XXXXXX-X,secure.habitat.org,,,,0 days,,,,,"Declared, not set",secure.habitat.org,
+Performance Cookies,banner,OneTrust,sa-user-id-v4,www.habitat.org,,,,364 days,,,,,"Declared, not set",www.habitat.org,
+Performance Cookies,banner,OneTrust,_gat_gtag_UA_138251578_1,habitat.org,,,,0 days,,,,,"Declared, not set",habitat.org,
+Performance Cookies,banner,OneTrust,optimizelyDomainTestCookie,habitat.org,,,,179 days,,,,,"Declared, not set",habitat.org,These Optimizely cookies allow us to test different versions of website pages to different users at the same time and to track how users navigate around our website. We use this information to test new features and make the website easier to use.
+Performance Cookies,banner,OneTrust,optimizelyEndUserId,habitat.org,,,,179 days,,,,,"Declared, not set",habitat.org,Cookie set by the Optimizely website optimisation platform. This cookie is a unique user identifier
+Performance Cookies,banner,OneTrust,sa-user-id-v2,www.habitat.org,,,,364 days,,,,,"Declared, not set",www.habitat.org,
+Performance Cookies,banner,OneTrust,optimizelyDomainTestCookie,secure.habitat.org,,,,0 days,,,,,"Declared, not set",secure.habitat.org,
+Performance Cookies,banner,OneTrust,_gat,habitat.org,,,,0 days,,,,,"Declared, not set",habitat.org,"This cookie name is associated with Google Universal Analytics, according to documentation it is used to throttle the request rate - limiting the collection of data on high traffic sites. It expires after 10 minutes."
+Performance Cookies,banner,OneTrust,_ga_xxxxxxxxxx,tgbwidget.com,,,,729 days,,,,,"Declared, not set",tgbwidget.com,Used by Google Analytics to identify and track an individual session with your device.
+Performance Cookies,banner,OneTrust,_ga,tgbwidget.com,,,,729 days,,,,,"Declared, not set",tgbwidget.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Performance Cookies,banner,OneTrust,_gid,tgbwidget.com,,,,0 days,,,,,"Declared, not set",tgbwidget.com,_gid
+Performance Cookies,banner,OneTrust,Path,tgbwidget.com,,,,Session,,,,,"Declared, not set",tgbwidget.com,
+Performance Cookies,banner,OneTrust,settings3115,www.conversionruler.com,,,,1824 days,,,,,"Declared, not set",www.conversionruler.com,
+Performance Cookies,banner,OneTrust,PHPVERROLLOUT,survey.alchemer.com,,,,0 days,,,,,"Declared, not set",survey.alchemer.com,
+Performance Cookies,banner,OneTrust,PHPVERROLLOUT,www.surveygizmo.com,,,,0 days,,,,,"Declared, not set",www.surveygizmo.com,
+Performance Cookies,banner,OneTrust,AWSELB,payments.blackbaud.com,,,,0 days,,,,,"Declared, not set",payments.blackbaud.com,
+Performance Cookies,banner,OneTrust,ak_bmsc,npr.org,,,,0 days,,,,,"Declared, not set",npr.org,
+Performance Cookies,banner,OneTrust,bm_so,npr.org,,,,0 days,,,,,"Declared, not set",npr.org,

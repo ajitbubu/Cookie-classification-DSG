@@ -1,0 +1,49 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Necessary,banner,Cookiebot,PHPSESSID,www.coursehero.com,/,First party,Session,Session,false,true,none,false,Declared & set,www.coursehero.com,Preserves user session state across page requests.
+Unclassified,banner,Cookiebot,root_session_id,www.coursehero.com,/,First party,400.00 days,,true,true,none,false,Declared & set,www.coursehero.com,Pending
+Necessary,banner,Cookiebot,device_view,www.coursehero.com,/,First party,30.00 days,,true,false,unspecified,false,Declared & set,www.coursehero.com,"This cookie is used to determine which type of device the visitor is using, so the website can be properly formatted."
+Unclassified,none,,cf_clearance,.coursehero.com,/,First party,365.00 days,,true,true,none,true,Not declared,,
+Statistics,banner,Cookiebot,AMP_3a41cfadba,.coursehero.com,/,First party,365.00 days,,false,false,lax,false,Declared & set,coursehero.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,_ga,.coursehero.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,coursehero.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Marketing,banner,Cookiebot,__ssid,.coursehero.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,coursehero.com,"Registers user behaviour and navigation on the website, and any interaction with active campaigns. This is used for optimizing advertisement and for efficient retargeting.  "
+Marketing,banner,Cookiebot,_gtmeec,.coursehero.com,/,First party,90.00 days,,true,true,strict,false,Declared & set,coursehero.com,Used to temporarily store and process ecommerce-related interaction data in order to ensure reliable analytics event tracking across page loads.
+Marketing,banner,Cookiebot,_fbp,.coursehero.com,/,First party,90.00 days,,false,true,lax,false,Declared & set,coursehero.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Necessary,banner,Cookiebot,CookieConsent,www.coursehero.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,gtm.coursehero.com,Stores the user's cookie consent state for the current domain
+Statistics,banner,Cookiebot,_ga_HR7CRKGJMD,.coursehero.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,coursehero.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Necessary,banner,Cookiebot,__cf_bm,.coursehero.com,/,First party,0.02 days,,true,true,none,true,Declared & set,coursehero.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,AWSALB,app.careerpuck.com,,,,,,,,,"Declared, not set",app.careerpuck.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,AWSALBCORS,app.careerpuck.com,,,,,,,,,"Declared, not set",app.careerpuck.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,OptanonConsent,coursehero.com,,,,,,,,,"Declared, not set",coursehero.com,Determines whether the visitor has accepted the cookie consent box. This ensures that the cookie consent box will not be presented again upon re-entry.  
+Necessary,banner,Cookiebot,connect.sid,qb.coursehero.com,,,,,,,,,"Declared, not set",qb.coursehero.com,The cookie is necessary for secure log-in and the detection of any spam or abuse of the website.
+Necessary,banner,Cookiebot,cookietest,www.coursehero.com,,,,Session,,,,,"Declared, not set",www.coursehero.com,This cookie is used to determine if the visitor has accepted the cookie consent box.
+Necessary,banner,Cookiebot,OneTrustWPCCPAGoogleOptOut,www.coursehero.com,,,,,,,,,"Declared, not set",www.coursehero.com,"Detects users' geographical location, in order to determine whether a Do Not Sell My Personal Information button or link should be displayed. This is a requirement in the California Consumer Privacy Act (CCPA). "
+Necessary,banner,Cookiebot,usprivacy,www.coursehero.com,,,,,,,,,"Declared, not set",www.coursehero.com,Detects whether the user has checked the Do Not Sell My Personal Information-button on the website. This feature is a part of the CCPA. 
+Preferences,banner,Cookiebot,SnapABugHistory,www.coursehero.com,,,,,,,,,"Declared, not set",www.coursehero.com,Registers a unique ID that identifies the user's device in the event of online assistance.
+Preferences,banner,Cookiebot,SnapABugRef,www.coursehero.com,,,,,,,,,"Declared, not set",www.coursehero.com,Registers a unique ID that identifies the user's device in the event of online assistance.
+Preferences,banner,Cookiebot,SnapABugVisit,www.coursehero.com,,,,Session,,,,,"Declared, not set",www.coursehero.com,Registers a unique ID that identifies the user's device in the event of online assistance.
+Statistics,banner,Cookiebot,_sp_id.#,coursehero.com,,,,,,,,,"Declared, not set",coursehero.com,"Collects data on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded with the purpose of generating reports for optimising the website content."
+Statistics,banner,Cookiebot,_sp_root_domain_test_#,coursehero.com,,,,Session,,,,,"Declared, not set",coursehero.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,_sp_ses.#,coursehero.com,,,,,,,,,"Declared, not set",coursehero.com,Used by Snowplow Analytics to track how users are browsing and engaging with a website.
+Statistics,banner,Cookiebot,AMP_TLDTEST,coursehero.com,,,,Session,,,,,"Declared, not set",coursehero.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,AMP_TEST,www.coursehero.com,,,,Session,,,,,"Declared, not set",www.coursehero.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video
+Marketing,banner,Cookiebot,__Secure-YNID,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Marketing,banner,Cookiebot,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Unclassified,banner,Cookiebot,abIDV2,qb.coursehero.com,,,,,,,,,"Declared, not set",qb.coursehero.com,Pending
+Unclassified,banner,Cookiebot,acceptedPremiumModesTnc,qb.coursehero.com,,,,,,,,,"Declared, not set",qb.coursehero.com,Pending
+Unclassified,banner,Cookiebot,anonID,qb.coursehero.com,,,,,,,,,"Declared, not set",qb.coursehero.com,Pending
+Unclassified,banner,Cookiebot,authenticated,qb.coursehero.com,,,,,,,,,"Declared, not set",qb.coursehero.com,Pending
+Unclassified,banner,Cookiebot,isExtInstalled,qb.coursehero.com,,,,,,,,,"Declared, not set",qb.coursehero.com,Pending
+Unclassified,banner,Cookiebot,premium,qb.coursehero.com,,,,,,,,,"Declared, not set",qb.coursehero.com,Pending
+Unclassified,banner,Cookiebot,qb_anon_id,qb.coursehero.com,,,,,,,,,"Declared, not set",qb.coursehero.com,Pending
+Unclassified,banner,Cookiebot,qdid,qb.coursehero.com,,,,Session,,,,,"Declared, not set",qb.coursehero.com,Pending
+Unclassified,banner,Cookiebot,useridtoken,qb.coursehero.com,,,,,,,,,"Declared, not set",qb.coursehero.com,Pending
+Unclassified,banner,Cookiebot,g_state,www.coursehero.com,,,,,,,,,"Declared, not set",www.coursehero.com,Pending
+Unclassified,banner,Cookiebot,growth_restrict_views_v5,www.coursehero.com,,,,,,,,,"Declared, not set",www.coursehero.com,Pending
+Unclassified,banner,Cookiebot,has_called_TBM,www.coursehero.com,,,,Session,,,,,"Declared, not set",www.coursehero.com,Pending
+Unclassified,banner,Cookiebot,recently_viewed_docs,www.coursehero.com,,,,,,,,,"Declared, not set",www.coursehero.com,Pending
+Unclassified,banner,Cookiebot,remember_me,www.coursehero.com,,,,Session,,,,,"Declared, not set",www.coursehero.com,Pending

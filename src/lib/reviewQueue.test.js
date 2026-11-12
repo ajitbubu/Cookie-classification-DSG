@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
-import { pendingReviews, loadApprovals, readApprovals, recordApproval, needsManualCheck, manualCheckPrompt } from './reviewQueue';
+import { pendingReviews, loadApprovals, readApprovals, recordApproval, needsManualCheck, manualCheckPrompt, siteLabelSplit, siteSplitText } from './reviewQueue';
 
 const history = [
   { id: 'a2', domain: 'a.com', timestamp: '2026-10-11', fullResults: { cookies: [
@@ -70,5 +70,20 @@ describe('recordApproval', () => {
     vi.spyOn(globalThis, 'fetch').mockResolvedValue({ ok: false, status: 503, json: async () => ({}) });
     await expect(recordApproval({ key: 'a.com:_ga', name: '_ga', approvedCategory: 'Analytics' })).rejects.toThrow('503');
     expect(readApprovals()).toEqual([]);
+  });
+});
+
+describe('site label split', () => {
+  it('reports cookies websites label differently, larger side first', () => {
+    const split = siteLabelSplit({ siteLabelSplit: { Functional: 7, 'Strictly Necessary': 8 } });
+    expect(split).toEqual([['Strictly Necessary', 8], ['Functional', 7]]);
+    expect(siteSplitText(split)).toBe('Websites label this cookie differently: Strictly Necessary on 8 sites, Functional on 7 sites.');
+    expect(siteSplitText([['Analytics', 3], ['Marketing', 1]])).toContain('Marketing on 1 site.');
+  });
+
+  it('is null when sites agree or the model sent nothing', () => {
+    expect(siteLabelSplit({ siteLabelSplit: { Analytics: 5 } })).toBeNull();
+    expect(siteLabelSplit({ siteLabelSplit: null })).toBeNull();
+    expect(siteLabelSplit({})).toBeNull();
   });
 });

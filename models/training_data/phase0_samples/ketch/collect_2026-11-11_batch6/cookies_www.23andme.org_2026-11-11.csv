@@ -1,0 +1,108 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Necessary,banner,Ketch,selected_country,www.23andme.org,/,First party,365.00 days,364 days,false,true,unspecified,false,Declared & set,,
+Necessary,banner,Ketch,ttam_locale,www.23andme.org,/,First party,1.00 days,,false,true,unspecified,false,Declared & set,,
+Necessary,banner,Ketch,__cf_bm,.23andme.org,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Analytics,banner,Ketch,optimizelyEndUserId,.23andme.org,/,First party,180.00 days,179 days,false,false,unspecified,false,Declared & set,,Optimizely
+Necessary,banner,Ketch,_swb,.23andme.org,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Necessary,banner,Ketch,_ketch_consent_v1_,.23andme.org,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Necessary,banner,Ketch,_swb_consent_,.23andme.org,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Advertising,banner,Ketch,_gcl_au,.23andme.org,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Analytics,banner,Ketch,_cs_c,.23andme.org,/,First party,395.42 days,395 days,false,false,lax,false,Declared & set,,Contentsquare
+Unclassified,none,,_hp2_ses_props.244557998,.23andme.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Analytics,banner,Ketch,_ga,.23andme.org,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Necessary,banner,Ketch,__cf_bm,.23andme.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Necessary,banner,Ketch,_cfuvid,.23andme.com,/,Third party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Unclassified,none,,_nb_sp_ses.ae74,www.23andme.org,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Advertising,banner,Ketch,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Advertising,banner,Ketch,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Analytics,banner,Ketch,ajs_anonymous_id,.23andme.org,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,,Customer.io
+Advertising,banner,Ketch,li_sugr,.linkedin.com,/,Third party,90.00 days,91 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Analytics,banner,Ketch,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,,LinkedIn  
+Analytics,banner,Ketch,FPID,.23andme.org,/,First party,400.00 days,400 days,true,true,unspecified,false,Declared & set,,Google Analytics
+Analytics,banner,Ketch,FPLC,.23andme.org,/,First party,0.83 days,1 days,false,true,unspecified,false,Declared & set,,Google Analytics
+Advertising,banner,Ketch,FPAU,.23andme.org,/,First party,90.00 days,91 days,false,true,unspecified,false,Declared & set,,Google Ads
+Necessary,banner,Ketch,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Advertising,banner,Ketch,CLID,www.clarity.ms,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,Microsoft Clarity
+Advertising,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Advertising,banner,Ketch,_fbp,.23andme.org,/,First party,90.00 days,91 days,false,false,unspecified,false,Declared & set,,Facebook Ads
+Advertising,banner,Ketch,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,31 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Analytics,banner,Ketch,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,31 days,false,true,none,false,Declared & set,,LinkedIn  
+Advertising,banner,Ketch,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LinkedIn  
+Advertising,banner,Ketch,_scid,.23andme.org,/,First party,365.00 days,366 days,false,true,lax,false,Declared & set,,Snap
+Advertising,banner,Ketch,bscookie,.www.linkedin.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,LinkedIn  
+Advertising,banner,Ketch,_clck,.23andme.org,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Microsoft Clarity
+Advertising,banner,Ketch,MR,.c.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Advertising,banner,Ketch,SRM_B,.c.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Ads
+Advertising,banner,Ketch,_nb_sp_cookie,i.23andme.org,/,First party,365.00 days,364 days,true,true,none,false,Declared & set,,Northbeam
+Advertising,banner,Ketch,SM,.c.clarity.ms,/,Third party,Session,,false,true,none,false,Declared & set,,Microsoft Clarity
+Advertising,banner,Ketch,MUID,.clarity.ms,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Advertising,banner,Ketch,MR,.c.clarity.ms,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Advertising,banner,Ketch,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Declared & set,,Microsoft Ads
+Necessary,banner,Ketch,_cfuvid,.23andme.org,/,First party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Analytics,banner,Ketch,optimizelySession,.23andme.org,/,First party,180.00 days,179 days,false,false,unspecified,false,Declared & set,,Optimizely
+Unclassified,none,,_ga_G330GF3ZFF,.23andme.org,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_M0P4G1SMQY,.23andme.org,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_hp2_id.244557998,.23andme.org,/,First party,394.42 days,,false,true,none,false,Not declared,,
+Analytics,banner,Ketch,_cs_id,.23andme.org,/,First party,395.42 days,395 days,false,false,lax,false,Declared & set,,Contentsquare
+Advertising,banner,Ketch,_uetsid,.23andme.org,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Advertising,banner,Ketch,_uetvid,.23andme.org,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Analytics,banner,Ketch,_cs_s,.23andme.org,/,First party,0.02 days,,false,false,lax,false,Declared & set,,Contentsquare
+Unclassified,none,,_nb_sp_id.ae74,www.23andme.org,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Advertising,banner,Ketch,_clsk,.23andme.org,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Clarity
+Analytics,banner,Ketch,_dd_s,www.23andme.org,/,First party,365.00 days,364 days,false,false,strict,false,Declared & set,,Datadog
+Advertising,banner,Ketch,ad-id,,,,,400 days,,,,,"Declared, not set",,Amazon Ads
+Advertising,banner,Ketch,ar_debug,,,,,30 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Advertising,banner,Ketch,c,,,,,400 days,,,,,"Declared, not set",,tinuiti
+Advertising,banner,Ketch,_gtmeec,,,,,91 days,,,,,"Declared, not set",,
+Advertising,banner,Ketch,_nb_sp_id.*,,,,,400 days,,,,,"Declared, not set",,Northbeam
+Advertising,banner,Ketch,_nb_sp_ses.*,,,,,,,,,,"Declared, not set",,Northbeam
+Advertising,banner,Ketch,NID,,,,,182 days,,,,,"Declared, not set",,Google Ads
+Advertising,banner,Ketch,_rdt_uuid,,,,,89 days,,,,,"Declared, not set",,Reddit
+Advertising,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Advertising,banner,Ketch,ts,,,,,364 days,,,,,"Declared, not set",,Taboola
+Advertising,banner,Ketch,uet_vid,,,,,391 days,,,,,"Declared, not set",,Microsoft Ads
+Advertising,banner,Ketch,uuid,,,,,400 days,,,,,"Declared, not set",,MediaMath
+Analytics,banner,Ketch,ajs_user_id,,,,,,,,,,"Declared, not set",,Customer.io
+Analytics,banner,Ketch,BVBRANDID,,,,,364 days,,,,,"Declared, not set",,Bazaarvoice
+Analytics,banner,Ketch,BVBRANDSID,,,,,,,,,,"Declared, not set",,Bazaarvoice
+Analytics,banner,Ketch,BVImplmain_site,,,,,,,,,,"Declared, not set",,Bazaarvoice
+Analytics,banner,Ketch,_cs_root-domain,,,,,,,,,,"Declared, not set",,Contentsquare
+Analytics,banner,Ketch,_cs_same_site,,,,,,,,,,"Declared, not set",,Contentsquare
+Analytics,banner,Ketch,dd_cookie_test_*,,,,,,,,,,"Declared, not set",,Datadog
+Analytics,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,_gd*,,,,,,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,_gid,,,,,,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,helix_ga,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,helix_ga_EM567B66ZZ,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,_hp2_hld*,,,,,,,,,,"Declared, not set",,Heap
+Analytics,banner,Ketch,_hp2_id.*,,,,,394 days,,,,,"Declared, not set",,Heap
+Analytics,banner,Ketch,_hp2_ses_props.*,,,,,,,,,,"Declared, not set",,Heap
+Analytics,banner,Ketch,_hp5_event_props.*,,,,,394 days,,,,,"Declared, not set",,Heap
+Analytics,banner,Ketch,_hp5_let.*,,,,,394 days,,,,,"Declared, not set",,Heap
+Analytics,banner,Ketch,_hp5_meta.*,,,,,394 days,,,,,"Declared, not set",,Heap
+Analytics,banner,Ketch,optimizelyDomainTestCookie,,,,,,,,,,"Declared, not set",,Optimizely
+Analytics,banner,Ketch,optimizelyRumLB,,,,,,,,,,"Declared, not set",,Optimizely
+Analytics,banner,Ketch,ttam_optly,,,,,,,,,,"Declared, not set",,Optimizely
+Necessary,banner,Ketch,AWSELB,,,,,,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Necessary,banner,Ketch,AWSELBCORS,,,,,,,,,,"Declared, not set",,Amazon Web Service (AWS)
+Necessary,banner,Ketch,cart_count.en-us,,,,,31 days,,,,,"Declared, not set",,
+Necessary,banner,Ketch,cf_clearance,,,,,364 days,,,,,"Declared, not set",,Cloudflare
+Necessary,banner,Ketch,coupon,,,,,,,,,,"Declared, not set",,
+Necessary,banner,Ketch,csrftoken,,,,,364 days,,,,,"Declared, not set",,
+Necessary,banner,Ketch,enforce_policy,,,,,365 days,,,,,"Declared, not set",,PayPal
+Necessary,banner,Ketch,_help_center_session,,,,,,,,,,"Declared, not set",,
+Necessary,banner,Ketch,KHcl0EuY7AKSMgfvHl7J5E7hPtK,,,,,400 days,,,,,"Declared, not set",,PayPal
+Necessary,banner,Ketch,l7_az,,,,,,,,,,"Declared, not set",,PayPal
+Necessary,banner,Ketch,LANG,,,,,,,,,,"Declared, not set",,PayPal
+Necessary,banner,Ketch,max-age,,,,,180 days,,,,,"Declared, not set",,
+Necessary,banner,Ketch,notice_behavior,,,,,400 days,,,,,"Declared, not set",,
+Necessary,banner,Ketch,notice_location,,,,,400 days,,,,,"Declared, not set",,
+Necessary,banner,Ketch,optimizelyOptOut,,,,,,,,,,"Declared, not set",,Optimizely
+Necessary,banner,Ketch,sc_f,,,,,400 days,,,,,"Declared, not set",,PayPal
+Necessary,banner,Ketch,sessionid,,,,,14 days,,,,,"Declared, not set",,
+Necessary,banner,Ketch,TAsessionID,,,,,,,,,,"Declared, not set",,
+Necessary,banner,Ketch,TESTCOOKIESENABLED,,,,,,,,,,"Declared, not set",,Google Ad Manager
+Necessary,banner,Ketch,ts_c,,,,,364 days,,,,,"Declared, not set",,PayPal
+Necessary,banner,Ketch,tsrce,,,,,2 days,,,,,"Declared, not set",,PayPal
+Necessary,banner,Ketch,usprivacy,,,,,394 days,,,,,"Declared, not set",,IAB Tech Lab
+Necessary,banner,Ketch,x-pp-s,,,,,,,,,,"Declared, not set",,PayPal

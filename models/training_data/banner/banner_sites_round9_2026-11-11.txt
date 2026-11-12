@@ -1,0 +1,51 @@
+# Round 9 batch, 2026-11-11: US health systems, grocers, pets, education, meal kits, travel.
+# From 228 new candidates checked with find_banner_sites (candidates_round9_2026-11-11_verified.csv):
+# 60 usable. Site = final_host. Dropped as sister brands: wellcare.com (Centene; ambetterhealth.com
+#   kept), vons.com + jewelosco.com (Albertsons, collected), Mars Petcare (mars.com): banfield.com,
+#   vcahospitals.com, bluepearlvet.com, royalcanin.com, greenies.com; bluebuffalo.com (General
+#   Mills), zoetispetcare.com (Zoetis), ticketmaster.co.uk (Live Nation; ticketmaster.com),
+#   mathway.com (Chegg; busuu.com), symbolab.com (Learneo; coursehero.com kept), nick.com
+#   (Paramount), dinnerly.com (marleyspoon.com kept), Lufthansa Group (lufthansa.com):
+#   brusselsairlines.com, austrian.com, eurowings.com, ita-airways.com
+# Columns: host vendor-folder
+www.unum.com onetrust
+www.ambetterhealth.com securiti
+www.highmark.com onetrust
+www.hcahealthcare.com securiti
+www.commonspirit.org onetrust
+www.bannerhealth.com onetrust
+www.sutterhealth.org onetrust
+www.houstonmethodist.org onetrust
+www.pennmedicine.org onetrust
+www.upmc.com cookiebot
+www.hy-vee.com onetrust
+www.smartandfinal.com onetrust
+www.rover.com ketch
+frontline.com onetrust
+www.akc.org onetrust
+www.aspca.org onetrust
+www.adoptapet.com onetrust
+www.songkick.com onetrust
+www.bandsintown.com onetrust
+www.simonandschuster.com onetrust
+www.sagepub.com onetrust
+www.turnitin.com onetrust
+www.coursehero.com cookiebot
+nearpod.com ketch
+www.classdojo.com onetrust
+www.instructure.com onetrust
+www.blackboard.com onetrust
+moodle.com onetrust
+www.renaissance.com ketch
+code.org onetrust
+brilliant.org onetrust
+www.homechef.com onetrust
+sunbasket.com onetrust
+marleyspoon.com onetrust
+www.vivino.com onetrust
+www.nakedwines.com onetrust
+www.firstleaf.com onetrust
+www.loganair.co.uk cookiebot
+www.stenaline.co.uk onetrust
+www.brittany-ferries.co.uk onetrust
+www.nationalexpress.com onetrust

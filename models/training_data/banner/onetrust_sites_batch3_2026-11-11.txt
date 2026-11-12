@@ -1,0 +1,60 @@
+# OneTrust sites approved for banner collection, batch 3, 2026-11-11.
+# From candidates_vendors_2026-11-11b_verified.csv: 68 usable OneTrust sites (robots.txt
+# allows '/', homepage runs OneTrust with a non-empty declaration). Site = final_host.
+# One site per parent company, across all earlier batches. 19 dropped:
+#   already collected: ulta.com, t-mobile.com, open.spotify.com, iheart.com
+#   sister brands: metrobyt-mobile.com (T-Mobile), mint.intuit.com (Intuit; TurboTax kept),
+#   cash.app + afterpay.com (Block; squareup.com kept), popeyes.com + timhortons.com +
+#   firehousesubs.com (Restaurant Brands; bk.com collected), eater.com (Vox Media; vox.com),
+#   lifehacker.com (Ziff Davis; pcmag.com), bleacherreport.com (Warner Bros. Discovery; cnn.com),
+#   wwe.com (TKO; ufc.com kept), cvshealth.com (CVS; aetna.com), lidl.de (Schwarz; lidl.com),
+#   bitbucket.org (Atlassian), heap.io (Contentsquare)
+zapier.com
+www.intercom.com
+about.gitlab.com
+www.fastly.com
+plaid.com
+gusto.com
+turbotax.intuit.com
+www.acorns.com
+squareup.com
+www.affirm.com
+www.klarna.com
+discord.com
+www.duolingo.com
+www.coursera.org
+www.wingstop.com
+www.jackinthebox.com
+whataburger.com
+www.culvers.com
+www.sweetgreen.com
+www.longhornsteakhouse.com
+www.texasroadhouse.com
+www.redrobin.com
+www.nfl.com
+www.mlb.com
+www.nhl.com
+www.pga.com
+www.nascar.com
+www.ufc.com
+www.si.com
+apnews.com
+www.redfin.com
+www.booking.com
+www.glossier.com
+www.victoriassecret.com
+lucidmotors.com
+www.corsair.com
+www.noom.com
+www.weightwatchers.com
+www.crayola.com
+www.volvo.com
+www.allianz.com
+www.carrefour.com
+www.marksandspencer.com
+deliveroo.co.uk
+www.otto.de
+www.abnamro.nl
+www.nordea.com
+www.novonesis.com
+www.genmab.com

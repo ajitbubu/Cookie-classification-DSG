@@ -1,0 +1,77 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,test,www.size.co.uk,/collections,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,,www.size.co.uk,/collections,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,xnpe_1945d144-f2d4-11ef-8b03-3ec4b934ff0f,jdsports-api.bloomreach.co,/track/u/v1,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,test,www.size.co.uk,/pages,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,,www.size.co.uk,/pages,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,localization,www.size.co.uk,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Functional,banner,OneTrust,cart_currency,www.size.co.uk,/,First party,14.00 days,13 days,false,false,lax,false,Declared & set,size.co.uk,This cookie is used to store the currency preference of a user on an e-commerce platform to facilitate transactions in the user's chosen currency.
+Unclassified,none,,_shopify_essential,www.size.co.uk,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,_cs_c,.size.co.uk,/,First party,395.42 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,tfa_tra_src,www.size.co.uk,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_clck,.size.co.uk,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SM,.c.clarity.ms,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,MUID,.clarity.ms,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.c.clarity.ms,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Not declared,,
+Strictly Necessary,banner,OneTrust,OptanonAlertBoxClosed,.size.co.uk,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.size.co.uk,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Unclassified,none,,_shopify_analytics,www.size.co.uk,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,_shopify_marketing,www.size.co.uk,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,_hjHasCachedUserAttributes,.size.co.uk,/,First party,Session,,false,false,lax,false,Not declared,,
+Unclassified,none,,_shop_app_essential,.shop.app,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_gcl_au,.size.co.uk,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga,.size.co.uk,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,lantern,.size.co.uk,/,First party,30.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__exponea_etc__,.size.co.uk,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_ttp,.www.size.co.uk,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__exponea_time2__,.size.co.uk,/,First party,0.04 days,,false,true,none,false,Not declared,,
+Unclassified,none,,2767_lantern,.roeye.com,/,Third party,182.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,xnpe_1945d144-f2d4-11ef-8b03-3ec4b934ff0f,jdsports-api.bloomreach.co,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_fbp,.size.co.uk,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Strictly Necessary,banner,OneTrust,ts,.creativecdn.com,/,Third party,365.00 days,364 days,false,true,none,true,Declared & set,creativecdn.com,This domain is associated with the delivery of advertising material or scripts for advertising content. It is a service used by advertising agencies to optimize their online ad campaigns.
+Targeting,banner,OneTrust,g,.creativecdn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,creativecdn.com,This domain is associated with the delivery of advertising material or scripts for advertising content. It is a service used by advertising agencies to optimize their online ad campaigns.
+Targeting,banner,OneTrust,c,.creativecdn.com,/,Third party,365.00 days,364 days,false,true,none,true,Declared & set,creativecdn.com,This domain is associated with the delivery of advertising material or scripts for advertising content. It is a service used by advertising agencies to optimize their online ad campaigns.
+Unclassified,none,,cart,www.size.co.uk,/,First party,91.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,test,www.size.co.uk,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,,www.size.co.uk,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Targeting,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,_shopify_cmp,.size.co.uk,/,First party,365.25 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,__rtbh.lid,www.size.co.uk,/,First party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,ttcsid_C8AG71J2O2B8AM2851O0,.www.size.co.uk,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_rdt_uuid,.size.co.uk,/,First party,90.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,ttcsid,.www.size.co.uk,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_30GL69BHPX,.size.co.uk,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_cs_id,.size.co.uk,/,First party,395.42 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_cs_s,.size.co.uk,/,First party,0.02 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_cs_s_ctx,.size.co.uk,/,First party,0.02 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_br_uid_2,.size.co.uk,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary,banner,OneTrust,OptanonConsent,.size.co.uk,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.size.co.uk,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,_clsk,.size.co.uk,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Targeting,banner,OneTrust,CMID,casalemedia.com,,,,364 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting,banner,OneTrust,CMPRO,casalemedia.com,,,,89 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting,banner,OneTrust,CMPS,casalemedia.com,,,,89 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting,banner,OneTrust,guest_id_marketing,twitter.com,,,,399 days,,,,,"Declared, not set",twitter.com,"This domain is owned by X (formerly Twitter). The main business activity is Social Networking Services.  Where X (formerly Twitter) acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+Targeting,banner,OneTrust,guest_id_ads,twitter.com,,,,399 days,,,,,"Declared, not set",twitter.com,"This domain is owned by X (formerly Twitter). The main business activity is: Social Networking Services.  Where X (formerly Twitter) acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+Targeting,banner,OneTrust,guest_id,twitter.com,,,,399 days,,,,,"Declared, not set",twitter.com,X (formerly Twitter) does not currently provide information on the use of specific cookies.
+Targeting,banner,OneTrust,__cf_bm,twitter.com,,,,0 days,,,,,"Declared, not set",twitter.com,This is a CloudFoundry cookie
+Targeting,banner,OneTrust,personalization_id,twitter.com,,,,399 days,,,,,"Declared, not set",twitter.com,"This domain is owned by X (formerly Twitter). The main business activity is: Social Networking Services.  Where X (formerly Twitter) acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+Targeting,banner,OneTrust,rtbh,udmserve.net,,,,89 days,,,,,"Declared, not set",udmserve.net,"This domain is owned by Underdog Media, a US based online behavioural advertising business."
+Targeting,banner,OneTrust,udmts,udmserve.net,,,,364 days,,,,,"Declared, not set",udmserve.net,"This domain is owned by Underdog Media, a US based online behavioural advertising business."
+Targeting,banner,OneTrust,dt,udmserve.net,,,,364 days,,,,,"Declared, not set",udmserve.net,"This domain is owned by Underdog Media, a US based online behavioural advertising business."
+Targeting,banner,OneTrust,__cf_bm,t.co,,,,0 days,,,,,"Declared, not set",t.co,This is a CloudFoundry cookie
+Targeting,banner,OneTrust,muc_ads,t.co,,,,399 days,,,,,"Declared, not set",t.co,"This domain is owned by X (formerly Twitter). It is used as a URL shortening service, which allows X (formerly Twitter) to collect data on how links are shared."
+Targeting,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Strictly Necessary,banner,OneTrust,x-pp-s,paypal.com,,,,Session,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary,banner,OneTrust,l7_az,paypal.com,,,,0 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary,banner,OneTrust,enforce_policy,paypal.com,,,,364 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary,banner,OneTrust,tsrce,paypal.com,,,,2 days,,,,,"Declared, not set",paypal.com,TS
+Strictly Necessary,banner,OneTrust,LANG,paypal.com,,,,0 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary,banner,OneTrust,ts,paypal.com,,,,364 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary,banner,OneTrust,ts_c,paypal.com,,,,364 days,,,,,"Declared, not set",paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Performance,banner,OneTrust,dd_cookie_test_,cdn.shopify.com,,,,0 days,,,,,"Declared, not set",cdn.shopify.com,dd_cookie_test

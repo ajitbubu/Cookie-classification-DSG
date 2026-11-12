@@ -98,6 +98,7 @@
 .rq-why ul { margin: 6px 0 0; padding-left: 18px; white-space: normal; }
 
 .rq-suggestion { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+.rq-split { display: block; margin-top: 6px; max-width: 32ch; font-size: 14px; color: var(--color-text-secondary); white-space: normal; }
 .rq-actions { display: inline-flex; gap: 8px; }
 /* Row Approve: the shared outline blue is 4.47:1 on white and 4.23:1 on row hover;
    the brand hover blue keeps the label at 5.7:1 or better */

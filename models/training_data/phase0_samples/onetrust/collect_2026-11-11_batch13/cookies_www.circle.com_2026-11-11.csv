@@ -1,0 +1,244 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.circle.com,/,First party,0.02 days,0 days,true,true,none,true,Declared & set,circle.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+This is a CloudFoundry cookie"
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.hubspotusercontent-na1.net,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,hubspotusercontent-na1.net,This is a CloudFoundry cookie
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.hsforms.net,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,hsforms.net,This is a CloudFoundry cookie
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.hsforms.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,hsforms.com,This is a CloudFoundry cookie
+Targeting Cookies,banner,OneTrust,_twpid,.circle.com,/,First party,390.00 days,389 days,false,true,strict,false,Declared & set,circle.com,This cookie name is associated with static.ads-twitter.com which is used to manage advertising-related functions.
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,__cf_bm,.hs-scripts.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,hs-scripts.com,This is a CloudFoundry cookie
+Targeting Cookies,banner,OneTrust,muc_ads,.t.co,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,t.co,"This domain is owned by Twitter. It is used as a URL shortening service, which allows Twitter to collect data on how links are shared."
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.t.co,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,t.co,This is a CloudFoundry cookie
+Targeting Cookies,banner,OneTrust,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,TDID,.adsrvr.org,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,.adsrvr.org,This domain is owned by TheTradeDesk. The main business activity is: Ad Serving Platform. This cookie carries out information about how the end user uses the website and any advertising that the end user may have seen before visiting the said website.
+Targeting Cookies,banner,OneTrust,guest_id_marketing,.twitter.com,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,twitter.com,"This domain is owned by Twitter. The main business activity is: Social Networking Services.  Where twitter acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+Targeting Cookies,banner,OneTrust,guest_id_ads,.twitter.com,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,twitter.com,"This domain is owned by Twitter. The main business activity is: Social Networking Services.  Where twitter acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+Targeting Cookies,banner,OneTrust,personalization_id,.twitter.com,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,twitter.com,"This domain is owned by Twitter. The main business activity is: Social Networking Services.  Where twitter acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting."
+Targeting Cookies,banner,OneTrust,guest_id,.twitter.com,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,twitter.com,Twitter does not currently provide information on the use of specific cookies.
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.twitter.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,twitter.com,This is a CloudFoundry cookie
+Targeting Cookies,banner,OneTrust,li_sugr,.linkedin.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,.linkedin.com,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.hs-banner.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,hs-banner.com,This is a CloudFoundry cookie
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,slireg,www.circle.com,/,First party,7.00 days,Session,false,false,unspecified,false,Declared & set,developers.circle.com,
+Functional Cookies,banner,OneTrust,__cf_bm,.hs-analytics.net,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,hs-analytics.net,This is a CloudFoundry cookie
+Targeting Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Performance Cookies,banner,OneTrust,MR,.bat.bing.com,/,Third party,7.00 days,1 days,false,true,none,false,Declared & set,.bat.bing.com,Used by Microsoft Clarity to indicate whether to refresh MUID.
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Performance Cookies,banner,OneTrust,__hstc,.circle.com,/,First party,180.00 days,179 days,false,false,lax,false,Declared & set,circle.com,This cookie name is associated with websites built on the HubSpot platform. It is reported by them as being used for website analytics.
+Performance Cookies,banner,OneTrust,hubspotutk,.circle.com,/,First party,180.00 days,180 days,false,false,lax,false,Declared & set,.circle.com,This cookie name is associated with websites built on the HubSpot platform.  HubSpot report that its purpose is user authentication. As a persistent rather than a session cookie it cannot be classified as Strictly Necessary.
+Performance Cookies,banner,OneTrust,__hssrc,.circle.com,/,First party,Session,Session,false,false,lax,false,Declared & set,circle.com,This cookie name is associated with websites built on the HubSpot platform. It is reported by them as being used for website analytics.
+Targeting Cookies,banner,OneTrust,sliguid,www.circle.com,/,First party,365.00 days,Session,false,false,unspecified,false,Declared & set,developers.circle.com,
+Targeting Cookies,banner,OneTrust,slirequested,www.circle.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,www.circle.com,
+Targeting Cookies,banner,OneTrust,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,.linkedin.com,This cookie is used to track visitors so that more relevant ads can be presented based on the visitor's preferences.
+Performance Cookies,banner,OneTrust,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,.linkedin.com,Used to store information about the time a sync took place with the lms_analytics cookie
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_gcl_au,.circle.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,circle.com,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services
+Unclassified,none,,__cflb,privacyportal.onetrust.com,/,Third party,0.02 days,,true,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga,.circle.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,.circle.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Targeting Cookies,banner,OneTrust,_clck,.circle.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,circle.com,This cookie is installed by Microsoft Clarity to store information of how visitors use a website and help in creating an analytics report of how the website is doing
+Strictly Necessary Cookies,banner,OneTrust,_cfuvid,.www.circle.com,/,First party,Session,Session,true,true,none,false,Declared & set,circle.com,The _cfuvid cookie is used by Cloudflare to distinguish individual users who share the same IP address for the purpose of enforcing rate limiting rules.
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.hubspot.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,hubspot.com,This is a CloudFoundry cookie
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,MR,.c.bing.com,/,Third party,7.00 days,1 days,false,true,none,false,Declared & set,.bat.bing.com,Used by Microsoft Clarity to indicate whether to refresh MUID.
+Unclassified,none,,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,c,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SM,.c.clarity.ms,/,Third party,Session,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,MUID,.clarity.ms,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Performance Cookies,banner,OneTrust,MR,.c.clarity.ms,/,Third party,7.00 days,1 days,false,true,none,false,Declared & set,.bat.bing.com,Used by Microsoft Clarity to indicate whether to refresh MUID.
+Unclassified,none,,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.circle.com,/,First party,365.00 days,179 days,false,false,lax,false,Declared & set,circle.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Functional Cookies,banner,OneTrust,__cf_bm,.hs-sites.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,hs-sites.com,This is a CloudFoundry cookie
+Functional Cookies,banner,OneTrust,__cf_bm,.hsappstatic.net,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,hsappstatic.net,This is a CloudFoundry cookie
+Targeting Cookies,banner,OneTrust,_rdt_uuid,.circle.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,app.circle.com,This cookie is set by Reddit and is used for tracking the views of embedded videos and performance of the advertisements.
+Unclassified,none,,_rdt_pn,.circle.com,/,First party,90.00 days,,false,true,strict,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.circle.com,/,First party,365.00 days,179 days,false,false,lax,false,Declared & set,circle.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Targeting Cookies,banner,OneTrust,_uetsid,.circle.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,circle.com,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Targeting Cookies,banner,OneTrust,_uetvid,.circle.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,circle.com,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Unclassified,none,,_twsid,.circle.com,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Performance Cookies,banner,OneTrust,__hssc,.circle.com,/,First party,0.02 days,0 days,false,false,lax,false,Declared & set,.circle.com,This cookie name is associated with websites built on the HubSpot platform.  It is reported by them as being used for website analytics.
+Targeting Cookies,banner,OneTrust,_clsk,.circle.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,circle.com,This cookie is installed by Microsoft Clarity to store information of how visitors use a website and help in creating an analytics report of how the website is doing.
+Performance Cookies,banner,OneTrust,_ga_GJDVPCQNRV,.circle.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,www.circle.com,NAUsed by Google Analytics to identify and track an individual session with your device.
+Targeting Cookies,banner,OneTrust,TDCPM,.adsrvr.org,/,Third party,365.00 days,365 days,false,true,none,false,Declared & set,.adsrvr.org,This domain is owned by TheTradeDesk. The main business activity is: Ad Serving Platform. This cookie carries out information about how the end user uses the website and any advertising that the end user may have seen before visiting the said website.
+Functional Cookies,banner,OneTrust,hs_ab_test,www.circle.com,,,,Session,,,,,"Declared, not set",www.circle.com,Hubspot use it to store ID's of experiments and sessions for A/B testing
+Functional Cookies,banner,OneTrust,hs_high_contrast,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Functional Cookies,banner,OneTrust,hs_c2l,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Functional Cookies,banner,OneTrust,hubspotauthremember,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,HubSpot Authentication
+Functional Cookies,banner,OneTrust,visit,.linkedin.com,,,,368 days,,,,,"Declared, not set",.linkedin.com,
+Functional Cookies,banner,OneTrust,cookietest,js.hs-analytics.net,,,,0 days,,,,,"Declared, not set",js.hs-analytics.net,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Strictly Necessary Cookies,banner,OneTrust,__Secure-next-auth.state,app.circle.com,,,,0 days,,,,,"Declared, not set",app.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,__hs_do_not_track,console.circle.com,,,,188 days,,,,,"Declared, not set",console.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,dd_cookie_test_,app.circle.com,,,,0 days,,,,,"Declared, not set",app.circle.com,dd_cookie_test
+Strictly Necessary Cookies,banner,OneTrust,__hs_do_not_track,app.circle.com,,,,188 days,,,,,"Declared, not set",app.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,__Host-next-auth.csrf-token,app-staging.circle.com,,,,Session,,,,,"Declared, not set",app-staging.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,mint-client-config,app.circle.com,,,,Session,,,,,"Declared, not set",app.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,__hs_do_not_track,console-staging.circle.com,,,,188 days,,,,,"Declared, not set",console-staging.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,__hs_do_not_track,app-staging.circle.com,,,,188 days,,,,,"Declared, not set",app-staging.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,__hs_do_not_track,login-stg.circle.com,,,,188 days,,,,,"Declared, not set",login-stg.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,__Secure-next-auth.callback-url,app.circle.com,,,,Session,,,,,"Declared, not set",app.circle.com,This cookie name is used for callback URL value retrieval after authentication flow procedures for different auth providers and to detect spam and improve the website's security.
+Strictly Necessary Cookies,banner,OneTrust,__Secure-next-auth.pkce.code_verifier,app.circle.com,,,,0 days,,,,,"Declared, not set",app.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,guest-user,app.circle.com,,,,Session,,,,,"Declared, not set",app.circle.com,user
+Strictly Necessary Cookies,banner,OneTrust,client-config,auth.circle.com,,,,Session,,,,,"Declared, not set",auth.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,oktaStateToken,login-stg.circle.com,,,,8 days,,,,,"Declared, not set",login-stg.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,t,login-stg.circle.com,,,,Session,,,,,"Declared, not set",login-stg.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,__Host-next-auth.csrf-token,app.circle.com,,,,Session,,,,,"Declared, not set",app.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID,login-stg.circle.com,,,,Session,,,,,"Declared, not set",login-stg.circle.com,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server."
+Strictly Necessary Cookies,banner,OneTrust,cookietest,www.circle.com,,,,Session,,,,,"Declared, not set",www.circle.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies.Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Strictly Necessary Cookies,banner,OneTrust,__hs_do_not_track,login.circle.com,,,,188 days,,,,,"Declared, not set",login.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,__Secure-next-auth.session-token,app-staging.circle.com,,,,0 days,,,,,"Declared, not set",app-staging.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,__Secure-next-auth.callback-url,app-staging.circle.com,,,,Session,,,,,"Declared, not set",app-staging.circle.com,
+Strictly Necessary Cookies,banner,OneTrust,_hs_opt_out,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,Opt out of HubSpot tracking
+Strictly Necessary Cookies,banner,OneTrust,hubspotauthcms,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,HubSpot Authentication
+Strictly Necessary Cookies,banner,OneTrust,hubspotauth,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,HubSpot Authentication
+Strictly Necessary Cookies,banner,OneTrust,hubspot.hub.id,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,HubSpot Authentication
+Strictly Necessary Cookies,banner,OneTrust,_cfuvid,hubspot.com,,,,Session,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Strictly Necessary Cookies,banner,OneTrust,__hs_preview_auth,preview.hs-sites.com,,,,180 days,,,,,"Declared, not set",preview.hs-sites.com,Memberships Authentication
+Performance Cookies,banner,OneTrust,SID,.google.com,,,,366 days,,,,,"Declared, not set",.google.com,This is a very common cookie name but where it is found as a session cookie it is likely to be used as for session state management.
+Performance Cookies,banner,OneTrust,mp_5cb8cc91-e409-41c2-af0d-b337e1d966a7_perfalytics,.circle.com,,,,365 days,,,,,"Declared, not set",.circle.com,
+Performance Cookies,banner,OneTrust,__hssc,localhost,,,,1 days,,,,,"Declared, not set",localhost,
+Performance Cookies,banner,OneTrust,mutiny.user.session_number,.circle.com,,,,1 days,,,,,"Declared, not set",.circle.com,
+Performance Cookies,banner,OneTrust,ajs_anonymous_id,login-stg.circle.com,,,,373 days,,,,,"Declared, not set",login-stg.circle.com,These cookies are generally used for Analytics and help count how many people visit a certain site by tracking if you have visited before. This cookie has a lifespan of 1 year.
+Performance Cookies,banner,OneTrust,hssc,.circle.com,,,,0 days,,,,,"Declared, not set",.circle.com,This cookie name is associated with websites built on the HubSpot platform. It is reported by them as being used for website analytics.
+Performance Cookies,banner,OneTrust,_dd_s,app.circle.com,,,,0 days,,,,,"Declared, not set",app.circle.com,
+Performance Cookies,banner,OneTrust,_dd_s,auth.circle.com,,,,Session,,,,,"Declared, not set",auth.circle.com,
+Performance Cookies,banner,OneTrust,ajs_anonymous_id,.circle.com,,,,365 days,,,,,"Declared, not set",.circle.com,These cookies are generally used for Analytics and help count how many people visit a certain site by tracking if you have visited before. This cookie has a lifespan of 1 year.
+Performance Cookies,banner,OneTrust,mutiny.user.session_number,.www.circle.com,,,,1 days,,,,,"Declared, not set",.www.circle.com,
+Performance Cookies,banner,OneTrust,ajs_anonymous_id,login.circle.com,,,,373 days,,,,,"Declared, not set",login.circle.com,These cookies are generally used for Analytics and help count how many people visit a certain site by tracking if you have visited before. This cookie has a lifespan of 1 year.
+Performance Cookies,banner,OneTrust,_gauges_unique_hour,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Performance Cookies,banner,OneTrust,apex__product,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Performance Cookies,banner,OneTrust,_gauges_unique_month,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Performance Cookies,banner,OneTrust,_gauges_unique_year,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Performance Cookies,banner,OneTrust,hubspotutk,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Performance Cookies,banner,OneTrust,hsPagesViewedThisSession,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Performance Cookies,banner,OneTrust,__utmz,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Performance Cookies,banner,OneTrust,_gauges_unique,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Performance Cookies,banner,OneTrust,__utmc,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Performance Cookies,banner,OneTrust,_gauges_unique_day,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Performance Cookies,banner,OneTrust,OTZ,www.google.com,,,,18 days,,,,,"Declared, not set",www.google.com,A cookie used by Google Analytics that provides an aggregate analysis of Website visitors.
+Performance Cookies,banner,OneTrust,PREF,.youtube.com,,,,400 days,,,,,"Declared, not set",.youtube.com,Used by YouTube to store user preferences. 
+Performance Cookies,banner,OneTrust,AWSELB,app.hubspot.com,,,,180 days,,,,,"Declared, not set",app.hubspot.com,This cookie name is associated with the Amazon Web Services Elastic Load Balancing functionality for routing client request on the server.
+Performance Cookies,banner,OneTrust,gpv_pn,.linkedin.com,,,,167 days,,,,,"Declared, not set",.linkedin.com,Used to retain and fetch previous page visited in Adobe Analytics
+Performance Cookies,banner,OneTrust,s_pltp,.linkedin.com,,,,Session,,,,,"Declared, not set",.linkedin.com,Provides page name value (URL) for use by Adobe Analytics
+Performance Cookies,banner,OneTrust,s_tp,.linkedin.com,,,,167 days,,,,,"Declared, not set",.linkedin.com,Tracks percent of page viewed
+Performance Cookies,banner,OneTrust,s_cc,.linkedin.com,,,,Session,,,,,"Declared, not set",.linkedin.com,Used to determine if cookies are enabled for Adobe Analytics
+Performance Cookies,banner,OneTrust,s_plt,.linkedin.com,,,,Session,,,,,"Declared, not set",.linkedin.com,Tracks the time that the previous page took to load
+Performance Cookies,banner,OneTrust,lms_analytics,.linkedin.com,,,,29 days,,,,,"Declared, not set",.linkedin.com,
+Performance Cookies,banner,OneTrust,s_ppv,.linkedin.com,,,,Session,,,,,"Declared, not set",.linkedin.com,Used by Adobe Analytics to retain and fetch what percentage of a page was viewed
+Performance Cookies,banner,OneTrust,s_tslv,.linkedin.com,,,,167 days,,,,,"Declared, not set",.linkedin.com,Used to retain and fetch time since last visit in Adobe Analytics
+Performance Cookies,banner,OneTrust,s_ips,.linkedin.com,,,,167 days,,,,,"Declared, not set",.linkedin.com,Tracks percent of page viewed
+Performance Cookies,banner,OneTrust,A1,.yahoo.com,,,,343 days,,,,,"Declared, not set",.yahoo.com,"""These cookies allow us to count visits and traffic sources, so
+we can measure and improve the performance of our site.
+They help us know which pages are the most and least
+popular and see how visitors move around the site. All
+information these cookies collect is aggregated and therefore
+anonymous. If you do not allow these cookies, we will not
+know when you have visited our site."""
+Performance Cookies,banner,OneTrust,hubspotutktzo,academy.hubspot.com,,,,180 days,,,,,"Declared, not set",academy.hubspot.com,
+Performance Cookies,banner,OneTrust,site_identity,scout.salesloft.com,,,,364 days,,,,,"Declared, not set",scout.salesloft.com,"This domain is owned by Salesloft which provides live website tracking to collect information about site visitors, determine the number of unique users, improve the website by measuring errors, and conduct research and diagnostics to improve product offerings."
+Performance Cookies,banner,OneTrust,ecure-3PSIDCC,.google.com,,,,365 days,,,,,"Declared, not set",.google.com,Cookie required to use website options and services.
+Performance Cookies,banner,OneTrust,SSID,.google.com,,,,400 days,,,,,"Declared, not set",.google.com,This cookie carries out information about how the end user uses the website and any advertising that the end user may have seen before visiting the said website.
+Performance Cookies,banner,OneTrust,SIDCC,.google.com,,,,366 days,,,,,"Declared, not set",.google.com,This cookie carries out information about how the end user uses the website and any advertising that the end user may have seen before visiting the said website.
+Performance Cookies,banner,OneTrust,AEC,.google.com,,,,174 days,,,,,"Declared, not set",.google.com,"Ensure that requests within a browsing session are made by the user, and not by other sites"
+Performance Cookies,banner,OneTrust,SEARCH_SAMESITE,.google.com,,,,160 days,,,,,"Declared, not set",.google.com,
+Targeting Cookies,banner,OneTrust,_scid_r,.circle.com,,,,263 days,,,,,"Declared, not set",.circle.com,
+Targeting Cookies,banner,OneTrust,_dd_s,app-staging.circle.com,,,,0 days,,,,,"Declared, not set",app-staging.circle.com,
+Targeting Cookies,banner,OneTrust,Social Media Cookie,www.circle.com,,,,Session,,,,,"Declared, not set",www.circle.com,
+Targeting Cookies,banner,OneTrust,__Secure-3PSID,.google.com,,,,400 days,,,,,"Declared, not set",.google.com,
+Targeting Cookies,banner,OneTrust,__analytics__,console-staging.circle.com,,,,Session,,,,,"Declared, not set",console-staging.circle.com,Used to track individuals for segment. 
+Targeting Cookies,banner,OneTrust,__analytics__,auth.circle.com,,,,Session,,,,,"Declared, not set",auth.circle.com,
+Targeting Cookies,banner,OneTrust,ajs_user_id,.circle.com,,,,365 days,,,,,"Declared, not set",.circle.com,"This cookie helps track visitor usage, events, target marketing, and can also measure application performance and stability. Cookies in this domain have lifespan of 1 year."
+Targeting Cookies,banner,OneTrust,Social Media Cookie,.circle.com,,,,Session,,,,,"Declared, not set",.circle.com,
+Targeting Cookies,banner,OneTrust,_sctr,.circle.com,,,,390 days,,,,,"Declared, not set",.circle.com,
+Targeting Cookies,banner,OneTrust,li_gc,linkedin.com,,,,179 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,mop,.mathtag.com,,,,30 days,,,,,"Declared, not set",.mathtag.com,
+Targeting Cookies,banner,OneTrust,id,.mathtag.com,,,,352 days,,,,,"Declared, not set",.mathtag.com,
+Targeting Cookies,banner,OneTrust,op,.mathtag.com,,,,30 days,,,,,"Declared, not set",.mathtag.com,
+Targeting Cookies,banner,OneTrust,t_mop,.mathtag.com,,,,30 days,,,,,"Declared, not set",.mathtag.com,
+Targeting Cookies,banner,OneTrust,ID,.mathtag.com,,,,352 days,,,,,"Declared, not set",.mathtag.com,
+Targeting Cookies,banner,OneTrust,mt_mop,.mathtag.com,,,,30 days,,,,,"Declared, not set",.mathtag.com,This domain is owned by MediaMath Inc. a US based digital advertising business.
+Targeting Cookies,banner,OneTrust,mt_misc,.mathtag.com,,,,24 days,,,,,"Declared, not set",.mathtag.com,This domain is owned by MediaMath Inc. a US based digital advertising business.
+Targeting Cookies,banner,OneTrust,mp_id_mixpanel,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Targeting Cookies,banner,OneTrust,__hssc,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,HubSpot Analytics
+Targeting Cookies,banner,OneTrust,__utmb,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Targeting Cookies,banner,OneTrust,__hstc,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Targeting Cookies,banner,OneTrust,__hssrc,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Targeting Cookies,banner,OneTrust,__hluid,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Targeting Cookies,banner,OneTrust,__utma,hubspot.com,,,,180 days,,,,,"Declared, not set",hubspot.com,This domain is owned by Hubspot. This company provides a range of online marketing and sales technology and services.
+Targeting Cookies,banner,OneTrust,DV,www.google.com,,,,6 days,,,,,"Declared, not set",www.google.com,
+Targeting Cookies,banner,OneTrust,LOGIN_INFO,.youtube.com,,,,365 days,,,,,"Declared, not set",.youtube.com,This cookie is used to play YouTube videos embedded on the website.
+Targeting Cookies,banner,OneTrust,DEVICE_INFO,.youtube.com,,,,170 days,,,,,"Declared, not set",.youtube.com,
+Targeting Cookies,banner,OneTrust,bitoIsSecure,.bidr.io,,,,351 days,,,,,"Declared, not set",.bidr.io,
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,sessionid,.mid.rkdms.com,,,,314 days,,,,,"Declared, not set",.mid.rkdms.com,
+Targeting Cookies,banner,OneTrust,sc,.rkdms.com,,,,361 days,,,,,"Declared, not set",.rkdms.com,
+Targeting Cookies,banner,OneTrust,sdsc,.linkedin.com,,,,Session,,,,,"Declared, not set",.linkedin.com,
+Targeting Cookies,banner,OneTrust,liap,.linkedin.com,,,,362 days,,,,,"Declared, not set",.linkedin.com,
+Targeting Cookies,banner,OneTrust,aam_uuid,.linkedin.com,,,,28 days,,,,,"Declared, not set",.linkedin.com,Set for ID sync for Adobe Audience Manager
+Targeting Cookies,banner,OneTrust,at_check,.linkedin.com,,,,Session,,,,,"Declared, not set",.linkedin.com,Used to determine if a visitor has accepted the use of cookies for Adobe Target
+Targeting Cookies,banner,OneTrust,lms_ads,.linkedin.com,,,,29 days,,,,,"Declared, not set",.linkedin.com,
+Targeting Cookies,banner,OneTrust,lang,.linkedin.com,,,,Session,,,,,"Declared, not set",.linkedin.com,"There are many different types of cookies associated with this name, and a more detailed look at how it is used on a particular website is generally recommended.  However, in most cases it will likely be used to store language preferences, potentially to serve up content in the stored language."
+Targeting Cookies,banner,OneTrust,__ssid,.linkedin.com,,,,369 days,,,,,"Declared, not set",.linkedin.com,Used to prevent fraud and abuse in payment flows
+Targeting Cookies,banner,OneTrust,AMCV_14215E3D5995C57C0A495C55%40AdobeOrg,.linkedin.com,,,,178 days,,,,,"Declared, not set",.linkedin.com,This cookie is provided by LinkedIn and associated with Adobe Marketing Cloud. This stores a unique visitor ID to track users across their domains and services.
+Targeting Cookies,banner,OneTrust,li_mc,.linkedin.com,,,,180 days,,,,,"Declared, not set",.linkedin.com,
+Targeting Cookies,banner,OneTrust,mbox,.linkedin.com,,,,167 days,,,,,"Declared, not set",.linkedin.com,"Used by Adobe Target to generate dynamic content in a marketing box on the page. Contains the following values:
+PC ID - ID for visitor's browser. Removed when cookie deleted.
+Session ID - A unique ID for a user session.
+Check  - checks if cookies are supported. Set on each page load."
+Targeting Cookies,banner,OneTrust,VID,.linkedin.com,,,,352 days,,,,,"Declared, not set",.linkedin.com,ID associated with a visitor to a LinkedIn microsite which is used to determine conversions for lead gen purposes
+Targeting Cookies,banner,OneTrust,_guid,.linkedin.com,,,,53 days,,,,,"Declared, not set",.linkedin.com,Used to identify a LinkedIn Member for advertising through Google Ads
+Targeting Cookies,banner,OneTrust,AMCVS_14215E3D5995C57C0A495C55%40AdobeOrg,.linkedin.com,,,,Session,,,,,"Declared, not set",.linkedin.com,This cookie is provided by LinkedIn and associated with Adobe Marketing Cloud. This stores a unique visitor ID to track users across their domains and services.
+Targeting Cookies,banner,OneTrust,GUC,.yahoo.com,,,,343 days,,,,,"Declared, not set",.yahoo.com,
+Targeting Cookies,banner,OneTrust,B,.yahoo.com,,,,343 days,,,,,"Declared, not set",.yahoo.com,
+Targeting Cookies,banner,OneTrust,cmp,.yahoo.com,,,,343 days,,,,,"Declared, not set",.yahoo.com,
+Targeting Cookies,banner,OneTrust,DSID,.doubleclick.net,,,,8 days,,,,,"Declared, not set",.doubleclick.net,Used to identify a signed-in user on non-Google sites and to remember whether the user has agreed to ad personalization.
+Targeting Cookies,banner,OneTrust,SRCHD,.bing.com,,,,368 days,,,,,"Declared, not set",.bing.com,This is a Microsoft MSN 1st party cookie that ensures the proper functioning of the website.
+Targeting Cookies,banner,OneTrust,SRCHHPGUSR,.bing.com,,,,388 days,,,,,"Declared, not set",.bing.com,
+Targeting Cookies,banner,OneTrust,_SS,.bing.com,,,,Session,,,,,"Declared, not set",.bing.com,Indicates if the page viewed is the first in a session.
+Targeting Cookies,banner,OneTrust,SRCHUID,.bing.com,,,,368 days,,,,,"Declared, not set",.bing.com,This is a Microsoft MSN 1st party cookie that ensures the proper functioning of the website.
+Targeting Cookies,banner,OneTrust,SRCHUSR,.bing.com,,,,368 days,,,,,"Declared, not set",.bing.com,This is a Microsoft MSN 1st party cookie that ensures the proper functioning of the website.
+Targeting Cookies,banner,OneTrust,D,.adsrvr.org,,,,365 days,,,,,"Declared, not set",.adsrvr.org,
+Targeting Cookies,banner,OneTrust,PM,.adsrvr.org,,,,365 days,,,,,"Declared, not set",.adsrvr.org,
+Targeting Cookies,banner,OneTrust,CPM,.adsrvr.org,,,,365 days,,,,,"Declared, not set",.adsrvr.org,
+Targeting Cookies,banner,OneTrust,DCPM,.adsrvr.org,,,,365 days,,,,,"Declared, not set",.adsrvr.org,
+Targeting Cookies,banner,OneTrust,fr,.facebook.com,,,,84 days,,,,,"Declared, not set",.facebook.com,"used to deliver, measure and improve the relevancy of ads, with a lifespan of 90 days"
+Targeting Cookies,banner,OneTrust,datr,.facebook.com,,,,393 days,,,,,"Declared, not set",.facebook.com,"Helps Meta to identify the browsers used by malicious actors and to prevent cyber-security attacks, such as a denial of service attack that could prevent you from accessing the Meta Products"
+Targeting Cookies,banner,OneTrust,sb,.facebook.com,,,,393 days,,,,,"Declared, not set",.facebook.com,enables Meta to identify your browser securely
+Targeting Cookies,banner,OneTrust,wd,.facebook.com,,,,1 days,,,,,"Declared, not set",.facebook.com,This cookie carries out information about how the end user uses the website and any advertising that the end user may have seen before visiting the said website.
+Targeting Cookies,banner,OneTrust,AWSALBCORS,player.cnbc.com,,,,6 days,,,,,"Declared, not set",player.cnbc.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Targeting Cookies,banner,OneTrust,AWSALB,player.cnbc.com,,,,6 days,,,,,"Declared, not set",player.cnbc.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Targeting Cookies,banner,OneTrust,SAPISID,.google.com,,,,394 days,,,,,"Declared, not set",.google.com,"These cookies are used by Google to display personalized advertisements on Google sites, based on recent searches and previous interactions. HSID, SSID, APISID and SAPISID cookies enable Google to collect user information for videos hosted by YouTube."
+Targeting Cookies,banner,OneTrust,NID,.google.com,,,,183 days,,,,,"Declared, not set",.google.com,"Used by Google Ads to provide ad delivery or retargeting, store user preferences. Expiration: 6 mos"
+Targeting Cookies,banner,OneTrust,APISID,.google.com,,,,394 days,,,,,"Declared, not set",.google.com,"These cookies are used by Google to display personalized advertisements on Google sites, based on recent searches and previous interactions. HSID, SSID, APISID and SAPISID cookies enable Google to collect user information for videos hosted by YouTube."
+Targeting Cookies,banner,OneTrust,1P_JAR,.google.com,,,,30 days,,,,,"Declared, not set",.google.com,to provide ad delivery or retargeting
+Targeting Cookies,banner,OneTrust,__Secure-3PSIDCC,.google.com,,,,366 days,,,,,"Declared, not set",.google.com,
+Targeting Cookies,banner,OneTrust,S,.google.com,,,,Session,,,,,"Declared, not set",.google.com,
+Targeting Cookies,banner,OneTrust,_Secure-3PSIDCC,.google.com,,,,365 days,,,,,"Declared, not set",.google.com,Builds a profile of website visitor interests to show relevant and personalized ads through retargeting.
+Targeting Cookies,banner,OneTrust,HSID,.google.com,,,,394 days,,,,,"Declared, not set",.google.com,Google Ads use it to provide fraud prevention. 
+Targeting Cookies,banner,OneTrust,csv,.reddit.com,,,,386 days,,,,,"Declared, not set",.reddit.com,
+Targeting Cookies,banner,OneTrust,loid,.reddit.com,,,,386 days,,,,,"Declared, not set",.reddit.com,
+Targeting Cookies,banner,OneTrust,recent_srs,.reddit.com,,,,386 days,,,,,"Declared, not set",.reddit.com,
+Targeting Cookies,banner,OneTrust,edgebucket,.reddit.com,,,,386 days,,,,,"Declared, not set",.reddit.com,
+Targeting Cookies,banner,OneTrust,token_v2,.reddit.com,,,,386 days,,,,,"Declared, not set",.reddit.com,
+Targeting Cookies,banner,OneTrust,datadome,.reddit.com,,,,351 days,,,,,"Declared, not set",.reddit.com,
+Targeting Cookies,banner,OneTrust,session_tracker,.reddit.com,,,,Session,,,,,"Declared, not set",.reddit.com,
+Targeting Cookies,banner,OneTrust,USER,.reddit.com,,,,386 days,,,,,"Declared, not set",.reddit.com,
+Targeting Cookies,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,__Secure-YEC,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,VISITOR_PRIVACY_METADATA,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,__Secure-ROLLOUT_TOKEN,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,__Secure-YNID,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,tluid,.3lift.com,,,,90 days,,,,,"Declared, not set",.3lift.com,

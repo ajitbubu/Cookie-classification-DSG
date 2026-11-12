@@ -1,0 +1,75 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Targeting Cookies,banner,OneTrust,_gcl_au,.box.co.uk,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,box.co.uk,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services
+Unclassified,none,,lantern,.box.co.uk,/,First party,30.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__cf_bm,.tangoo.it,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,private_content_version,box.co.uk,/,First party,400.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,__cf_bm,.feefo.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Performance Cookies,banner,OneTrust,_ga,.box.co.uk,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,box.co.uk,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Unclassified,none,,_rdt_uuid,.box.co.uk,/,First party,90.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,g_state,box.co.uk,/,First party,180.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_twpid,.box.co.uk,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Functional Cookies,banner,OneTrust,cf_clearance,.box.co.uk,/,First party,365.00 days,364 days,true,true,none,true,Declared & set,box.co.uk,"Used to verify user is not a bot; user/system has solved a challenge successfully
+"
+Unclassified,none,,100685_lantern,.roeye.com,/,Third party,182.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_fbp,.box.co.uk,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,box.co.uk,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,muc_ads,.t.co,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.t.co,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_ce.s,.box.co.uk,/,First party,365.00 days,,false,false,strict,false,Not declared,,
+Unclassified,none,,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,guest_id_marketing,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id_ads,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,personalization_id,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.twitter.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mcforms-210147866-sessionId,box.co.uk,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,sf_id,.box.co.uk,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,sf_session_ses.ee27,.box.co.uk,/,First party,0.01 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,fingerprint,.tangooserver.com,/,Third party,60.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.tangooserver.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.box.co.uk,/,First party,365.00 days,29 days,false,false,lax,false,Declared & set,box.co.uk,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust. It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down. It enables the website not to show the message more than once to a user. The cookie has a normal lifespan of one year and contains no personal information.
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.box.co.uk,/,First party,365.00 days,29 days,false,false,lax,false,Declared & set,box.co.uk,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Targeting Cookies,banner,OneTrust,_uetsid,.box.co.uk,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,box.co.uk,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Performance Cookies,banner,OneTrust,_uetvid,.box.co.uk,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,box.co.uk,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Targeting Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,390 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,"Declared, conflicting",,
+Functional Cookies,banner,OneTrust,CLID,www.clarity.ms,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,www.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics service that provides insights into user behavior on websites."
+Unclassified,none,,_clck,.box.co.uk,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,MR,.c.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,c.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,SRM_B,.c.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,c.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Functional Cookies,banner,OneTrust,SM,.c.clarity.ms,/,Third party,Session,364 days,false,true,none,false,Declared & set,c.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics product that provides insights on user behavior and website performance."
+Functional Cookies,banner,OneTrust,MUID,.clarity.ms,/,Third party,390.00 days,390 days,false,true,none,false,Declared & set,clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics service that provides insights into user behavior on websites."
+Functional Cookies,banner,OneTrust,MR,.c.clarity.ms,/,Third party,7.00 days,7 days,false,true,none,false,Declared & set,c.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics product that provides insights on user behavior and website performance."
+Functional Cookies,banner,OneTrust,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,0 days,false,true,none,false,Declared & set,c.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics product that provides insights on user behavior and website performance."
+Performance Cookies,banner,OneTrust,_clsk,.box.co.uk,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,box.co.uk,Used by Microsoft Clarity to connect multiple page views by a user into a single Clarity session recording.
+Unclassified,none,,_twsid,.box.co.uk,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_ga_0HZ7Q26Q0W,.box.co.uk,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_C8R4WNDEP2,.box.co.uk,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,sf_session_id.ee27,.box.co.uk,/,First party,400.00 days,,false,true,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_PRIVACY_METADATA,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,,www.facebook.com,,,,Session,,,,,"Declared, not set",www.facebook.com,"This domain is owned by Facebook, which is the world's largest social networking service.  As a third party host provider, it mostly collects data on the interests of users via widgets such as the 'Like' button found on many websites.  This is used to serve targeted advertising to its users when logged into its services.  In 2014 it also started serving up behaviourally targeted advertising on other websites, similar to most dedicated online marketing companies."
+Targeting Cookies,banner,OneTrust,TESTCOOKIESENABLED,www.youtube.com,,,,0 days,,,,,"Declared, not set",www.youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,MSPTC,bing.com,,,,389 days,,,,,"Declared, not set",bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,_ttp,tiktok.com,,,,89 days,,,,,"Declared, not set",tiktok.com,"TikTok is a social media platform owned by ByteDance, known for short-form video sharing. The service is used to create and share videos, and it utilizes cookies for various purposes including advertising and analytics."
+Targeting Cookies,banner,OneTrust,NID,google.com,,,,182 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Functional Cookies,banner,OneTrust,form_key,box.co.uk,,,,0 days,,,,,"Declared, not set",box.co.uk,"This cookie is used to facilitate content caching on the browser to make pages load faster.
+"
+Functional Cookies,banner,OneTrust,mage-cache-storage,box.co.uk,,,,0 days,,,,,"Declared, not set",box.co.uk,"This cookie is used to facilitate content caching on the browser to make pages load faster.
+"
+Functional Cookies,banner,OneTrust,TawkConnectionTime,box.co.uk,,,,Session,,,,,"Declared, not set",box.co.uk,"This cookie is usually set by a website utilizing Taw.to, which is a Live chat service. This cookie remembers the end user so that past chat conversations can be identified to improve service.
+"
+Functional Cookies,banner,OneTrust,mage-cache-storage-section-invalidation,box.co.uk,,,,0 days,,,,,"Declared, not set",box.co.uk,"This cookie is used to facilitate content caching on the browser to make pages load faster.
+"
+Strictly Necessary Cookies,banner,OneTrust,PHPSESSID,www.box.co.uk,,,,0 days,,,,,"Declared, not set",www.box.co.uk,"PHP session cookie associated with embedded content from this domain.
+"
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,connect.studentbeans.com,,,,364 days,,,,,"Declared, not set",connect.studentbeans.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."

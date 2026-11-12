@@ -1,0 +1,121 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Advertising Cookies,banner,OneTrust,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,0 days,false,true,none,false,Declared & set,sc-static.net,"This domain is commonly associated with Scorecard Research, a service that provides marketers with analytics and other tracking information."
+Unclassified,none,,_vid,arcteryx.com,/,First party,180.00 days,,false,true,unspecified,false,Not declared,,
+Necessary Cookies,banner,OneTrust,country,arcteryx.com,/,First party,365.00 days,Session,false,false,unspecified,false,Declared & set,arcteryx.com,
+Necessary Cookies,banner,OneTrust,language,arcteryx.com,/,First party,365.00 days,Session,false,false,unspecified,false,Declared & set,arcteryx.com,"There are many different types of cookies associated with this name, and a more detailed look at how it is used on a particular website is generally recommended.  However, in most cases it will likely be used to store language preferences, potentially to serve up content in the stored language. The ICC category given here is based on this usage."
+Necessary Cookies,banner,OneTrust,enableClickAndCollectCA,arcteryx.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,www.arcteryx.com,
+Necessary Cookies,banner,OneTrust,enableClickAndCollectUS,arcteryx.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,arcteryx.com,
+Unclassified,none,,enableNewSearch,arcteryx.com,/,First party,Session,,false,true,lax,false,Not declared,,
+Unclassified,none,,_evga_0581,.arcteryx.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,_sfid_836c,.arcteryx.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,arcteryx.com,
+Unclassified,none,,s_fid,.arcteryx.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.arcteryx.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,arcteryx.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Performance Cookies,banner,OneTrust,_ga,.arcteryx.com,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,arcteryx.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Performance Cookies,banner,OneTrust,_gcl_au,.arcteryx.com,/,First party,90.00 days,90 days,false,false,unspecified,false,Declared & set,arcteryx.com,Google conversion tracking cookie
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,lg_session_v1,.locally.com,/,Third party,0.08 days,,true,true,none,false,Not declared,,
+Unclassified,none,,s_gspvc,arcteryx.com,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Advertising Cookies,banner,OneTrust,facebookConversionGuid,arcteryx.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,arcteryx.com,
+Performance Cookies,banner,OneTrust,prevPageType,arcteryx.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,arcteryx.com,
+Advertising Cookies,banner,OneTrust,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,bat.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Advertising Cookies,banner,OneTrust,_pin_unauth,.arcteryx.com,/,First party,365.00 days,365 days,false,false,unspecified,false,Declared & set,arcteryx.com,"This cookie is assocate with pinterest.  It is used to track the usage of services.
+"
+Advertising Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Mircosoft - it is the site for the search engine Bing.
+Advertising Cookies,banner,OneTrust,_uetsid,.arcteryx.com,/,First party,1.00 days,1 days,false,false,unspecified,false,Declared & set,arcteryx.com,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Performance Cookies,banner,OneTrust,_uetvid,.arcteryx.com,/,First party,390.00 days,16 days,false,false,unspecified,false,Declared & set,arcteryx.com,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Advertising Cookies,banner,OneTrust,_scid,.arcteryx.com,/,First party,395.00 days,395 days,false,false,lax,false,Declared & set,arcteryx.com,"Cookie associated with Snapchat. Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates realtime bidding for advertisers."
+Unclassified,none,,_scid_r,.arcteryx.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Advertising Cookies,banner,OneTrust,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,ct.pinterest.com,"This domain is associated with Pinterest, a social media platform that allows users to share images and media content through collections known as pinboards. The domain is likely used for conversion tracking and advertising purposes."
+Unclassified,none,,_s,.app.link,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_dd_s_v2,arcteryx.com,/,First party,365.00 days,,false,true,strict,false,Not declared,,
+Advertising Cookies,banner,OneTrust,sc_at,.snapchat.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,snapchat.com,Cookie associated with embedding content from Snapchat.
+Necessary Cookies,banner,OneTrust,OptanonConsent,.arcteryx.com,/,First party,365.00 days,330 days,false,false,lax,false,Declared & set,arcteryx.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Performance Cookies,banner,OneTrust,AWSALBTGCORS,arcteryx.us-5.evergage.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,arcteryx.us-5.evergage.com,
+Performance Cookies,banner,OneTrust,_ga_N8XJLJFM2Z,.arcteryx.com,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,arcteryx.com,
+Unclassified,none,,KP_UIDz-ssn,arcteryx.com,/,First party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,KP_UIDz,arcteryx.com,/,First party,1.00 days,,true,false,unspecified,false,Not declared,,
+Necessary Cookies,banner,OneTrust,enableEnhancedAssets,www.arcteryx.com,,,,Session,,,,,"Declared, not set",www.arcteryx.com,
+Necessary Cookies,banner,OneTrust,_pxTestCookie,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,
+Necessary Cookies,banner,OneTrust,AWSALBCORS,arcteryx.com,,,,6 days,,,,,"Declared, not set",arcteryx.com,This cookie is managed by AWS and is used for load balancing.
+Necessary Cookies,banner,OneTrust,enableFredhopperLive1Env,www.arcteryx.com,,,,Session,,,,,"Declared, not set",www.arcteryx.com,
+Necessary Cookies,banner,OneTrust,visid_incap_XXXXXX,arcteryx.com,,,,364 days,,,,,"Declared, not set",arcteryx.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking certain sessions to a specific visitor (visitor representing a specific computer). In order to identify clients that have already visited Incapsula. The only cookie that is persistent for the duration of 12 months."
+Necessary Cookies,banner,OneTrust,NoCookie,arcteryx.com,,,,330 days,,,,,"Declared, not set",arcteryx.com,"This cookie is set when a user opts out of tracking or indicates that they are under the age of 13 (COPPA requirement). If NoCookie=true on either the client site or Bazaarvoice site, then existing tracking cookies are unset. This value is honored as long as the cookie exists."
+Necessary Cookies,banner,OneTrust,_pxvid,arcteryx.com,,,,364 days,,,,,"Declared, not set",arcteryx.com,
+Necessary Cookies,banner,OneTrust,enableBrochureMode,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,
+Necessary Cookies,banner,OneTrust,_pxhd,arcteryx.com,,,,364 days,,,,,"Declared, not set",arcteryx.com,
+Necessary Cookies,banner,OneTrust,pxcts,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,
+Necessary Cookies,banner,OneTrust,enableOutletFlashSaleModal,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,
+Necessary Cookies,banner,OneTrust,enableFredhopperLive1Env,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,
+Necessary Cookies,banner,OneTrust,enableSerratusFeatures,www.arcteryx.com,,,,Session,,,,,"Declared, not set",www.arcteryx.com,
+Necessary Cookies,banner,OneTrust,enableEnhancedAssets,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,
+Necessary Cookies,banner,OneTrust,enableFredhopperTest1Env,www.arcteryx.com,,,,Session,,,,,"Declared, not set",www.arcteryx.com,
+Necessary Cookies,banner,OneTrust,enableFredhopperTest1Env,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,
+Necessary Cookies,banner,OneTrust,nlbi_XXXXXXX,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,N/A
+Necessary Cookies,banner,OneTrust,AWSALB,arcteryx.com,,,,6 days,,,,,"Declared, not set",arcteryx.com,AWS ELB application load balancer
+Necessary Cookies,banner,OneTrust,enableMixedOrders,www.arcteryx.com,,,,Session,,,,,"Declared, not set",www.arcteryx.com,
+Necessary Cookies,banner,OneTrust,_br_uid_2,arcteryx.com,,,,36499 days,,,,,"Declared, not set",arcteryx.com,"This cookie is used to enable user to share pages through third party social networking websites.
+"
+Necessary Cookies,banner,OneTrust,incap_ses_*,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,"Incapsula DDoS Protectiona and Web Application Firewall:
+cookie for linking HTTP requests to a certain session (AKA visit).
+Re-opening the browser and accessing same site are registered as different visits.
+In order to maintain existing sessions (ie, session cookie)"
+Necessary Cookies,banner,OneTrust,enableSerratusFeatures,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,
+Necessary Cookies,banner,OneTrust,enableOutletFlashSaleModal,www.arcteryx.com,,,,Session,,,,,"Declared, not set",www.arcteryx.com,
+Necessary Cookies,banner,OneTrust,enableMixedOrders,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,
+Necessary Cookies,banner,OneTrust,_px2,arcteryx.com,,,,0 days,,,,,"Declared, not set",arcteryx.com,
+Necessary Cookies,banner,OneTrust,JSESSIONID,nr-data.net,,,,Session,,,,,"Declared, not set",nr-data.net,"This domain is controlled by New Relic, which provides a platform for monitoring the performance of web and mobile applications."
+Performance Cookies,banner,OneTrust,_gid,arcteryx.com,,,,0 days,,,,,"Declared, not set",arcteryx.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited.
+Performance Cookies,banner,OneTrust,_hjAbsoluteSessionInProgress,arcteryx.com,,,,0 days,,,,,"Declared, not set",arcteryx.com,This cookie is used by HotJar to detect the first pageview session of a user. This is a True/False flag set by the cookie.
+Performance Cookies,banner,OneTrust,_evga_a7e2,arcteryx.com,,,,729 days,,,,,"Declared, not set",arcteryx.com,
+Performance Cookies,banner,OneTrust,_hjSession_xxxxxx,arcteryx.com,,,,0 days,,,,,"Declared, not set",arcteryx.com,A cookie that holds the current session data. This ensues that subsequent requests within the session window will be attributed to the same Hotjar session.
+Performance Cookies,banner,OneTrust,ipe_s,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,This cookie is associated with Iperception 'intent recognition' software which enables customer experience to be altered dynamically based on perceived intent.
+Performance Cookies,banner,OneTrust,ipe_32236_fov,arcteryx.com,,,,30 days,,,,,"Declared, not set",arcteryx.com,
+Performance Cookies,banner,OneTrust,BVBRANDSID,arcteryx.com,,,,0 days,,,,,"Declared, not set",arcteryx.com,This cookie allows internal Bazaarvoice web analytics to be correlated to the same user browsing session for interactions within a particular client domain.
+Performance Cookies,banner,OneTrust,AMCV_,arcteryx.com,,,,730 days,,,,,"Declared, not set",arcteryx.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Performance Cookies,banner,OneTrust,_hjIncludedInSessionSample_xxx,arcteryx.com,,,,0 days,,,,,"Declared, not set",arcteryx.com,
+Performance Cookies,banner,OneTrust,s_cc,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,"Adobe Site Catalyst cookie, determines whether cookies are enabled in the browser"
+Performance Cookies,banner,OneTrust,s_sq,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,"Adobe Site Catalyst cookie, stores information about the previous link clicked within the site"
+Performance Cookies,banner,OneTrust,_hjSessionUser_xxxxxx,arcteryx.com,,,,364 days,,,,,"Declared, not set",arcteryx.com,"Hotjar cookie that is set when a user first lands on a page with the Hotjar script. It is used to persist the Hotjar User ID, unique to that site on the browser. This ensures that behavior in subsequent visits to the same site will be attributed to the same user ID."
+Performance Cookies,banner,OneTrust,s_ecid,arcteryx.com,,,,0 days,,,,,"Declared, not set",arcteryx.com,Adobe Analytics cookie containing the the Adobe Experience Cloud 1st party visitor id if the Analytics AMCV visitor id is not found.
+Performance Cookies,banner,OneTrust,BVBRANDID,arcteryx.com,,,,364 days,,,,,"Declared, not set",arcteryx.com,This cookie allows internal Bazaarvoice web analytics to be correlated to the same user for interactions within a particular client domain.
+Performance Cookies,banner,OneTrust,_gat_gtag_xxxxxxxxxxxxxxxxxxxxxxxxxxx,arcteryx.com,,,,0 days,,,,,"Declared, not set",arcteryx.com,Google Analytics
+Performance Cookies,banner,OneTrust,___utmvxxxxxxxxxxxxxx,arcteryx.com,,,,0 days,,,,,"Declared, not set",arcteryx.com,___utmv
+Performance Cookies,banner,OneTrust,AMCVS_,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier."
+Performance Cookies,banner,OneTrust,___utmvxxxxxxxxxxxxxx,www.arcteryx.com,,,,0 days,,,,,"Declared, not set",www.arcteryx.com,___utmv
+Performance Cookies,banner,OneTrust,_hjFirstSeen,arcteryx.com,,,,0 days,,,,,"Declared, not set",arcteryx.com,"Identifies a new user's first session on a website, indicating whether or not Hotjar's seeing this user for the first time."
+Performance Cookies,banner,OneTrust,NoCookie,cdn.cookielaw.org,,,,0 days,,,,,"Declared, not set",cdn.cookielaw.org,This cookie name is associated with the Piwik open source web analytics platform. It is used to help website owners track visitor behaviour and measure site performance. It stores the name of the campaign that directed the visitor to your site.
+Performance Cookies,banner,OneTrust,demdex,demdex.net,,,,179 days,,,,,"Declared, not set",demdex.net,"This cookie helps Adobe Audience Manger perform basic functions such as visitor identification, ID synchronization, segmentation, modeling, reporting, etc."
+Performance Cookies,banner,OneTrust,dextp,demdex.net,,,,180 days,,,,,"Declared, not set",demdex.net,"This domain is owned by Adobe - Audience Manager.
+The main business activity is: Online profiling for targeted marketing"
+Performance Cookies,banner,OneTrust,dpm,dpm.demdex.net,,,,179 days,,,,,"Declared, not set",dpm.demdex.net,This domain is owned by Adobe Audience Manager. The main business activity is online profiling for targeted marketing.
+Performance Cookies,banner,OneTrust,AWSALBTG,arcteryx.us-5.evergage.com,,,,6 days,,,,,"Declared, not set",arcteryx.us-5.evergage.com,
+Functional Cookies,banner,OneTrust,__wknd_4467e,arcteryx.com,,,,0 days,,,,,"Declared, not set",arcteryx.com,
+Functional Cookies,banner,OneTrust,test,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,Adobe Analytics site tracking.
+Functional Cookies,banner,OneTrust,bounceClientVisitxxxxx,arcteryx.com,,,,0 days,,,,,"Declared, not set",arcteryx.com,
+Functional Cookies,banner,OneTrust,bounceClientVisitxxxxx,bounceexchange.com,,,,0 days,,,,,"Declared, not set",bounceexchange.com,"This domain is associated with Bounce Exchange, a technology company that provides behavioral automation software and analytics."
+Functional Cookies,banner,OneTrust,dgzsdl08v4,api.bounceexchange.com,,,,0 days,,,,,"Declared, not set",api.bounceexchange.com,
+Functional Cookies,banner,OneTrust,__wknd_4468e,api.bounceexchange.com,,,,0 days,,,,,"Declared, not set",api.bounceexchange.com,
+Advertising Cookies,banner,OneTrust,TEST_AMCV_COOKIE_WRITE,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,
+Advertising Cookies,banner,OneTrust,_tt_enable_cookie,arcteryx.com,,,,389 days,,,,,"Declared, not set",arcteryx.com,
+Advertising Cookies,banner,OneTrust,_gd,arcteryx.com,,,,Session,,,,,"Declared, not set",arcteryx.com,"This cookie contains no identifying information and is used for diagnostic purposes by Impact Radius, a service we use to track signup commissions for our affiliate program. We have categorized it under Functionality because it is necessary for the operation of our affiliate program."
+Advertising Cookies,banner,OneTrust,_fbp,arcteryx.com,,,,55 days,,,,,"Declared, not set",arcteryx.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Advertising Cookies,banner,OneTrust,_ttp,arcteryx.com,,,,389 days,,,,,"Declared, not set",arcteryx.com,
+Advertising Cookies,banner,OneTrust,MSPTC,bing.com,,,,389 days,,,,,"Declared, not set",bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Advertising Cookies,banner,OneTrust,sa-user-id-v2,10273489.fls.doubleclick.net,,,,364 days,,,,,"Declared, not set",10273489.fls.doubleclick.net,
+Advertising Cookies,banner,OneTrust,sa-user-id,10273489.fls.doubleclick.net,,,,364 days,,,,,"Declared, not set",10273489.fls.doubleclick.net,
+Advertising Cookies,banner,OneTrust,sa-user-id-v3,10273489.fls.doubleclick.net,,,,364 days,,,,,"Declared, not set",10273489.fls.doubleclick.net,
+Advertising Cookies,banner,OneTrust,_ttp,tiktok.com,,,,89 days,,,,,"Declared, not set",tiktok.com,"TikTok is a social media platform owned by ByteDance, known for short-form video sharing. The service is used to create and share videos, and it utilizes cookies for various purposes including advertising and analytics."
+Advertising Cookies,banner,OneTrust,sa-user-id-v3,qvdt3feo.com,,,,364 days,,,,,"Declared, not set",qvdt3feo.com,This domain is likely associated with advertising services and is used to track user behavior and deliver targeted advertising.
+Advertising Cookies,banner,OneTrust,sa-user-id-v2,qvdt3feo.com,,,,364 days,,,,,"Declared, not set",qvdt3feo.com,This domain is likely associated with advertising services and is used to track user behavior and deliver targeted advertising.
+Advertising Cookies,banner,OneTrust,sa-user-id,qvdt3feo.com,,,,364 days,,,,,"Declared, not set",qvdt3feo.com,This domain is likely associated with advertising services and is used to track user behavior and deliver targeted advertising.
+Advertising Cookies,banner,OneTrust,iperceptions.com,universal.iperceptions.com,,,,89 days,,,,,"Declared, not set",universal.iperceptions.com,Iperceptions is a Canadian business providing customer survey functionality and what it calls 'intent recognition' to enable websites to customise the user experience based on intent.
+Advertising Cookies,banner,OneTrust,IDE,doubleclick.net,,,,389 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Advertising Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Advertising Cookies,banner,OneTrust,everest_g_v2,everesttech.net,,,,364 days,,,,,"Declared, not set",everesttech.net,This domain is owned by Adobe. The main business activity is: Advertising
+Advertising Cookies,banner,OneTrust,everest_session_v2,everesttech.net,,,,Session,,,,,"Declared, not set",everesttech.net,This domain is owned by Adobe. The main business activity is: Advertising
+Advertising Cookies,banner,OneTrust,sa-user-id-v3,srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",srv.stackadapt.com,"This domain is owned by Stackadapt. The company provides marketing and advertising services.
+"
+Advertising Cookies,banner,OneTrust,TDID,adsrvr.org,,,,364 days,,,,,"Declared, not set",adsrvr.org,This domain is owned by TheTradeDesk. The main business activity is: Ad Serving Platform
+Advertising Cookies,banner,OneTrust,TDCPM,adsrvr.org,,,,364 days,,,,,"Declared, not set",adsrvr.org,This domain is owned by TheTradeDesk. The main business activity is: Ad Serving Platform
+Advertising Cookies,banner,OneTrust,ar_debug,pinterest.com,,,,364 days,,,,,"Declared, not set",pinterest.com,This domain is owned by Pinterest. The main business activity is: Social Content Sharing platform

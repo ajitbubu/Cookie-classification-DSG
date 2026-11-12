@@ -1,0 +1,129 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Necessary,banner,Cookiebot,CookieConsent,www.tcd.ie,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,www.tcd.ie,Stores the user's cookie consent state for the current domain
+Statistics,banner,Cookiebot,nmstat,.tcd.ie,/,First party,400.00 days,,false,false,lax,false,Declared & set,tcd.ie,This cookie contains an ID string on the current session. This contains non-personal information on what subpages the visitor enters – this information is used to optimize the visitor's experience.
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,linkedin.com,Used in order to detect spam and improve the website's security. 
+Preferences,banner,Cookiebot,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,linkedin.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,hsadspixel.net,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,_fbp,.tcd.ie,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,tcd.ie,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Marketing,banner,Cookiebot,_gid,.tcd.ie,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,hosted.panopto.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,_gat_UA-92409737-1,.tcd.ie,/,First party,0.00 days,,false,false,unspecified,false,Declared & set,tcd.ie,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,_ga,.tcd.ie,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,culturalspot.org,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,_ga_4SBMC2H5RN,.tcd.ie,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,culturalspot.org,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,_ga_9DJVNQ99V7,.tcd.ie,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,culturalspot.org,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,_ga_QW60T31KZC,.tcd.ie,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,culturalspot.org,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Necessary,banner,Cookiebot,AWSALBCORS,alt-62b985ffa0afc.blackboard.com,,,,,,,,,"Declared, not set",alt-62b985ffa0afc.blackboard.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,AADNonce,cloud.microsoft,,,,Session,,,,,"Declared, not set",cloud.microsoft,Used to implement Microsoft-forms on the website. 
+Necessary,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.
+Necessary,banner,Cookiebot,__RequestVerificationToken,forms.cloud.microsoft,,,,Session,,,,,"Declared, not set",forms.cloud.microsoft,Helps prevent Cross-Site Request Forgery (CSRF) attacks.
+Necessary,banner,Cookiebot,msal.cache.encryption,forms.cloud.microsoft,,,,Session,,,,,"Declared, not set",forms.cloud.microsoft,Pending
+Necessary,banner,Cookiebot,_GRECAPTCHA,google.com,,,,,,,,,"Declared, not set",google.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,testcookie,howtovideos.hosted.panopto.com,,,,Session,,,,,"Declared, not set",howtovideos.hosted.panopto.com,This cookie determines whether the browser accepts cookies.
+Necessary,banner,Cookiebot,BIGipServer#,idp.tcd.ie,,,,Session,,,,,"Declared, not set",idp.tcd.ie,Used to distribute traffic to the website on several servers in order to optimise response times.
+Necessary,banner,Cookiebot,li_gc,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,AADSSO,login.microsoftonline.com,,,,Session,,,,,"Declared, not set",login.microsoftonline.com,This cookie is necessary for the login function on the website. 
+Necessary,banner,Cookiebot,brcap,login.microsoftonline.com,,,,,,,,,"Declared, not set",login.microsoftonline.com,This cookie is necessary for the login function on the website. 
+Necessary,banner,Cookiebot,buid,login.microsoftonline.com,,,,,,,,,"Declared, not set",login.microsoftonline.com,This cookie is necessary for the login function on the website. 
+Necessary,banner,Cookiebot,esctx,login.microsoftonline.com,,,,Session,,,,,"Declared, not set",login.microsoftonline.com,This cookie is necessary for the login function on the website. 
+Necessary,banner,Cookiebot,esctx-#,login.microsoftonline.com,,,,Session,,,,,"Declared, not set",login.microsoftonline.com,Pending
+Necessary,banner,Cookiebot,nSGt-#,login.microsoftonline.com,,,,,,,,,"Declared, not set",login.microsoftonline.com,Pending
+Necessary,banner,Cookiebot,RpsContextCookie,login.microsoftonline.com,,,,,,,,,"Declared, not set",login.microsoftonline.com,Used to validate user's request and maintain session information. 
+Necessary,banner,Cookiebot,SSOCOOKIEPULLED,login.microsoftonline.com,,,,,,,,,"Declared, not set",login.microsoftonline.com,This cookie is necessary for the login function on the website. 
+Necessary,banner,Cookiebot,stsservicecookie,login.microsoftonline.com,,,,Session,,,,,"Declared, not set",login.microsoftonline.com,Used in connection with the synchronisation between the website and third-party Data Management Platform. The cookie serves to monitor this process for security reasons.  
+Necessary,banner,Cookiebot,x-ms-gateway-slice,login.microsoftonline.com,,,,Session,,,,,"Declared, not set",login.microsoftonline.com,Used in connection with the synchronisation between the website and third-party Data Management Platform. The cookie serves to monitor this process for security reasons.  
+Necessary,banner,Cookiebot,AWSALB,media.heanet.ie,,,,,,,,,"Declared, not set",media.heanet.ie,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,__mp_opt_in_out_#,newsoveraudio.com,,,,Session,,,,,"Declared, not set",newsoveraudio.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,datadome,soundcloud.com,,,,Session,,,,,"Declared, not set",soundcloud.com,"Used in context with the website's BotManager. The BotManager detects, categorizes and compiles reports on potential bots trying to access the website."
+Necessary,banner,Cookiebot,sc_anonymous_id,soundcloud.com,,,,,,,,,"Declared, not set",soundcloud.com,Used in context with the 3D-view-function on the website.
+Necessary,banner,Cookiebot,CookieConsentPolicy,support.panopto.com,,,,,,,,,"Declared, not set",support.panopto.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,LSKey-c$CookieConsentPolicy,support.panopto.com,,,,,,,,,"Declared, not set",support.panopto.com,Determines whether the user has accepted the cookie consent box. 
+Necessary,banner,Cookiebot,anonuserid,sway.cloud.microsoft,,,,,,,,,"Declared, not set",sway.cloud.microsoft,Pending
+Necessary,banner,Cookiebot,pagerequesttime,sway.cloud.microsoft,,,,Session,,,,,"Declared, not set",sway.cloud.microsoft,Pending
+Necessary,banner,Cookiebot,idsrv.partial,tcd.cloud.panopto.eu,,,,Session,,,,,"Declared, not set",tcd.cloud.panopto.eu,Pending
+Necessary,banner,Cookiebot,SignInMessage.#,tcd.cloud.panopto.eu,,,,Session,,,,,"Declared, not set",tcd.cloud.panopto.eu,Pending
+Necessary,banner,Cookiebot,_cs_c,tcd.ie,,,,,,,,,"Declared, not set",tcd.ie,Determines whether the visitor has accepted the cookie consent box. This ensures that the cookie consent box will not be presented again upon re-entry.  
+Necessary,banner,Cookiebot,__session,tcd-estates.maps.arcgis.com,,,,,,,,,"Declared, not set",tcd-estates.maps.arcgis.com,Pending
+Necessary,banner,Cookiebot,cf_clearance,vimeo.com,,,,,,,,,"Declared, not set",vimeo.com,This cookie is used to distinguish between humans and bots. 
+Necessary,banner,Cookiebot,cookietest,www.tcd.ie,,,,Session,,,,,"Declared, not set",www.tcd.ie,This cookie is used to determine if the visitor has accepted the cookie consent box.
+Necessary,banner,Cookiebot,g_state,www.trumba.com,,,,,,,,,"Declared, not set",www.trumba.com,Pending
+Necessary,banner,Cookiebot,GPS,youtube.com,,,,,,,,,"Declared, not set",youtube.com,"Used to determine whether the user is logged in on a YouTube account, when watching embedded videos."
+Preferences,banner,Cookiebot,AuthSess,eus-www.sway-cdn.com,,,,Session,,,,,"Declared, not set",eus-www.sway-cdn.com,This cookie allows visitors to leave comments on their use of the website.
+Preferences,banner,Cookiebot,FormsWebSessionId,forms.cloud.microsoft,,,,,,,,,"Declared, not set",forms.cloud.microsoft,The cookie is used if the visitor has filled in personal information on a formula. This information will be filled in automatically on other formulas. This process is used to optimize visitor experience.   
+Preferences,banner,Cookiebot,UserSettings,howtovideos.hosted.panopto.com,,,,,,,,,"Declared, not set",howtovideos.hosted.panopto.com,"This cookie is used to determine the preferred quality of video content, this is based on visitor settings. "
+Preferences,banner,Cookiebot,MSPRequ,login.live.com,,,,Session,,,,,"Declared, not set",login.live.com,Used by Microsoft to enable secure login to a website
+Preferences,banner,Cookiebot,tableau_locale,public.tableau.com,,,,Session,,,,,"Declared, not set",public.tableau.com,The cookie determines the preferred language and country-setting of the visitor - This allows the website to show content most relevant to that region and language.
+Preferences,banner,Cookiebot,tableau_public_negotiated_locale,public.tableau.com,,,,Session,,,,,"Declared, not set",public.tableau.com,Used in context with the language setting on the website. Facilitates the translation into the preferred language of the visitor.
+Preferences,banner,Cookiebot,CalloutShownCount,sway.cloud.microsoft,,,,Session,,,,,"Declared, not set",sway.cloud.microsoft,Pending
+Preferences,banner,Cookiebot,CDNFailureCount,sway.cloud.microsoft,,,,Session,,,,,"Declared, not set",sway.cloud.microsoft,Pending
+Preferences,banner,Cookiebot,pagerequestoperation,sway.cloud.microsoft,,,,Session,,,,,"Declared, not set",sway.cloud.microsoft,Pending
+Preferences,banner,Cookiebot,pagerequesttarget,sway.cloud.microsoft,,,,Session,,,,,"Declared, not set",sway.cloud.microsoft,Pending
+Preferences,banner,Cookiebot,x-akamai-user-country,www.phonak.com,,,,Session,,,,,"Declared, not set",www.phonak.com,Pending
+Preferences,banner,Cookiebot,eacookieprobe,www.trumba.com,,,,Session,,,,,"Declared, not set",www.trumba.com,Pending
+Statistics,banner,Cookiebot,cusid,analytics-eu.clickdimensions.com,,,,,,,,,"Declared, not set",analytics-eu.clickdimensions.com,This cookie is used to identify the frequency of visits and how long the visitor is on the website.
+Statistics,banner,Cookiebot,geo,apple.com,,,,Session,,,,,"Declared, not set",apple.com,Saves the user's current geographical location based on the user's IP address.
+Statistics,banner,Cookiebot,cuvon,clickdimensions.com,,,,,,,,,"Declared, not set",clickdimensions.com,This cookie is used to determine when the visitor last entered the different subpages on the website.
+Statistics,banner,Cookiebot,COOKIE_ID_pico_lsid,issuu.com,,,,,,,,,"Declared, not set",issuu.com,Used to track user’s interaction with embedded content.
+Statistics,banner,Cookiebot,fpc,login.microsoftonline.com,,,,,,,,,"Declared, not set",login.microsoftonline.com,Registers a unique ID that is used to generate statistical data on how the visitor uses the website.
+Statistics,banner,Cookiebot,__hssc,tcd.ie,,,,,,,,,"Declared, not set",tcd.ie,Identifies if the cookie data needs to be updated in the visitor's browser.
+Statistics,banner,Cookiebot,__hssrc,tcd.ie,,,,Session,,,,,"Declared, not set",tcd.ie,Used to recognise the visitor's browser upon reentry on the website.
+Statistics,banner,Cookiebot,__hstc,tcd.ie,,,,,,,,,"Declared, not set",tcd.ie,Sets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.
+Statistics,banner,Cookiebot,_clck,tcd.ie,,,,,,,,,"Declared, not set",tcd.ie,Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+Statistics,banner,Cookiebot,_clsk,tcd.ie,,,,,,,,,"Declared, not set",tcd.ie,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,_cs_id,tcd.ie,,,,,,,,,"Declared, not set",tcd.ie,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,_cs_root-domain,tcd.ie,,,,Session,,,,,"Declared, not set",tcd.ie,Registers how the user has reached the website to enable pay-out of referral commission fees to partners.
+Statistics,banner,Cookiebot,_cs_s,tcd.ie,,,,,,,,,"Declared, not set",tcd.ie,This cookie is used to identify the frequency of visits and how long the visitor is on the website. The cookie is also used to determine how many and which subpages the visitor visits on a website – this information can be used by the website to optimize the domain and its subpages.
+Statistics,banner,Cookiebot,hubspotutk,tcd.ie,,,,,,,,,"Declared, not set",tcd.ie,Sets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.
+Statistics,banner,Cookiebot,cookiecookie,tcd-estates.maps.arcgis.com,,,,Session,,,,,"Declared, not set",tcd-estates.maps.arcgis.com,This cookie is used by the website’s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.
+Statistics,banner,Cookiebot,guest,tda.jotform.com,,,,,,,,,"Declared, not set",tda.jotform.com,Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization. 
+Statistics,banner,Cookiebot,_hjCookieTest,unibuddy.co,,,,Session,,,,,"Declared, not set",unibuddy.co,Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+Statistics,banner,Cookiebot,_hjSession_#,unibuddy.co,,,,,,,,,"Declared, not set",unibuddy.co,"Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Statistics,banner,Cookiebot,_hjSessionUser_#,unibuddy.co,,,,,,,,,"Declared, not set",unibuddy.co,"Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Statistics,banner,Cookiebot,ugid,unsplash.com,,,,,,,,,"Declared, not set",unsplash.com,Necessary for the implementation of video-content on the website.
+Statistics,banner,Cookiebot,vuid,vimeo.com,,,,,,,,,"Declared, not set",vimeo.com,"Collects data on the user's visits to the website, such as which pages have been read."
+Statistics,banner,Cookiebot,_cs_same_site,www.tcd.ie,,,,Session,,,,,"Declared, not set",www.tcd.ie,Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization. 
+Marketing,banner,Cookiebot,MR,bing.com,,,,,,,,,"Declared, not set",bing.com,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,MUID,bing.com,,,,,,,,,"Declared, not set",bing.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Marketing,banner,Cookiebot,SRM_B,bing.com,,,,,,,,,"Declared, not set",bing.com,Tracks the user’s interaction with the website’s search-bar-function. This data can be used to present the user with relevant products or services.     
+Marketing,banner,Cookiebot,ANONCHK,c.clarity.ms,,,,,,,,,"Declared, not set",c.clarity.ms,Registers data on visitors from multiple visits and on multiple websites. This information is used to measure the efficiency of advertisement on websites.  
+Marketing,banner,Cookiebot,SM,c.clarity.ms,,,,Session,,,,,"Declared, not set",c.clarity.ms,Registers a unique ID that identifies the user's device during return visits across websites that use the same ad network. The ID is used to allow targeted ads.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,calendar.google.com,,,,,,,,,"Declared, not set",calendar.google.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,cuvid,clickdimensions.com,,,,,,,,,"Declared, not set",clickdimensions.com,"This cookie is used to collect information on a visitor. This information will become an ID string with information on a specific visitor – ID information strings can be used to target groups with similar preferences, or can be used by third-party domains or ad-exchanges."
+Marketing,banner,Cookiebot,IDE,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.
+Marketing,banner,Cookiebot,mp_#_mixpanel,embed-player.newsoveraudio.com,,,,Session,,,,,"Declared, not set",embed-player.newsoveraudio.com,Pending
+Marketing,banner,Cookiebot,NID,google.com,,,,,,,,,"Declared, not set",google.com,Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.
+Marketing,banner,Cookiebot,uaid,login.live.com,,,,Session,,,,,"Declared, not set",login.live.com,Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+Marketing,banner,Cookiebot,dd_testcookie,soundcloud.com,,,,Session,,,,,"Declared, not set",soundcloud.com,Pending
+Marketing,banner,Cookiebot,sp_landing,spotify.com,,,,,,,,,"Declared, not set",spotify.com,Used to implement audio-content from Spotify on the website. Can also be used to register user interaction and preferences in context with audio-content - This can serve statistics and marketing purposes.  
+Marketing,banner,Cookiebot,sp_t,spotify.com,,,,,,,,,"Declared, not set",spotify.com,Used to implement audio-content from Spotify on the website. Can also be used to register user interaction and preferences in context with audio-content - This can serve statistics and marketing purposes.  
+Marketing,banner,Cookiebot,_gcl_au,tcd.ie,,,,,,,,,"Declared, not set",tcd.ie,"Used to measure the efficiency of the website’s advertisement efforts, by collecting data on the conversion rate of the website’s ads across multiple websites."
+Marketing,banner,Cookiebot,_uetsid,tcd.ie,,,,,,,,,"Declared, not set",tcd.ie,"Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement. "
+Marketing,banner,Cookiebot,_uetvid,tcd.ie,,,,,,,,,"Declared, not set",tcd.ie,"Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. "
+Marketing,banner,Cookiebot,userReferer,tda.jotform.com,,,,,,,,,"Declared, not set",tda.jotform.com,Determines how the user accessed the website. This information is used by the website operator in order to measure the efficiency of their marketing.    
+Marketing,banner,Cookiebot,__cf_ob,vimeo.com,,,,Session,,,,,"Declared, not set",vimeo.com,Pending
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,www.youtube-nocookie.com,,,,Session,,,,,"Declared, not set",www.youtube-nocookie.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video
+Marketing,banner,Cookiebot,__Secure-YNID,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Marketing,banner,Cookiebot,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Unclassified,banner,Cookiebot,mod_auth_openidc_state_9SIGvbRcRGqHIelX5EO6030D9B0,idp.tcd.ie,,,,Session,,,,,"Declared, not set",idp.tcd.ie,Pending
+Unclassified,banner,Cookiebot,mod_auth_openidc_state_f5di-Ieopjc0StbG8nLfB18Rkt8,idp.tcd.ie,,,,Session,,,,,"Declared, not set",idp.tcd.ie,Pending
+Unclassified,banner,Cookiebot,mod_auth_openidc_state_fFLUvX2hP43vq7cV2rlmpXcY0Cc,idp.tcd.ie,,,,Session,,,,,"Declared, not set",idp.tcd.ie,Pending
+Unclassified,banner,Cookiebot,mod_auth_openidc_state_mhGsy7EqICCpOg6k3diyGSpNZ2o,idp.tcd.ie,,,,Session,,,,,"Declared, not set",idp.tcd.ie,Pending
+Unclassified,banner,Cookiebot,mod_auth_openidc_state_RFny0Ob72VHNPgTE_RdPBZV04f8,idp.tcd.ie,,,,Session,,,,,"Declared, not set",idp.tcd.ie,Pending
+Unclassified,banner,Cookiebot,mod_auth_openidc_state_zVkpRKZRguLAO9-rFfO3swOGbtw,idp.tcd.ie,,,,Session,,,,,"Declared, not set",idp.tcd.ie,Pending
+Unclassified,banner,Cookiebot,mod_auth_openidc_state_GbOTzJdqhEEW8s3CG-Usu8e0Dwo,login.microsoftonline.com,,,,Session,,,,,"Declared, not set",login.microsoftonline.com,Pending
+Unclassified,banner,Cookiebot,mod_auth_openidc_state_lVHjtgtNH_usnL7yugKdmH17_YI,login.microsoftonline.com,,,,Session,,,,,"Declared, not set",login.microsoftonline.com,Pending
+Unclassified,banner,Cookiebot,mod_auth_openidc_state_Mo2DNFHg-jH2tXEbi_Ro00_tvCo,login.microsoftonline.com,,,,Session,,,,,"Declared, not set",login.microsoftonline.com,Pending
+Unclassified,banner,Cookiebot,mod_auth_openidc_state_NfqI3C_a87zl5XPApUwtobiOfgQ,login.microsoftonline.com,,,,Session,,,,,"Declared, not set",login.microsoftonline.com,Pending
+Unclassified,banner,Cookiebot,mod_auth_openidc_state_s4hnsj8H1rlosJN87ILmOSI7y-g,login.microsoftonline.com,,,,Session,,,,,"Declared, not set",login.microsoftonline.com,Pending
+Unclassified,banner,Cookiebot,mod_auth_openidc_state_XkrbKOyErx4lLSci5xnPGLd2B3c,login.microsoftonline.com,,,,Session,,,,,"Declared, not set",login.microsoftonline.com,Pending
+Unclassified,banner,Cookiebot,mod_auth_openidc_state_ZnKk9F4R-872T41wq5ygKSw1loM,login.microsoftonline.com,,,,Session,,,,,"Declared, not set",login.microsoftonline.com,Pending
+Unclassified,banner,Cookiebot,proxyDomainOriginUrl,www.tributearchive.com,,,,Session,,,,,"Declared, not set",www.tributearchive.com,Pending
+Unclassified,banner,Cookiebot,proxyExternalObit,www.tributearchive.com,,,,Session,,,,,"Declared, not set",www.tributearchive.com,Pending
+Unclassified,banner,Cookiebot,proxyFullOriginUrl,www.tributearchive.com,,,,Session,,,,,"Declared, not set",www.tributearchive.com,Pending
+Unclassified,banner,Cookiebot,proxyProviderId,www.tributearchive.com,,,,Session,,,,,"Declared, not set",www.tributearchive.com,Pending

@@ -1,0 +1,444 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,taboola_session_id,.taboola.com,/riuhotelsresorts-riuhotelsusa-sc/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,_li_ss,i.liadm.com,/s,Third party,30.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.riu.com,/,First party,0.02 days,0 days,true,true,none,true,Declared & set,riu.com,"The __cf_bm cookie is a cookie necessary to support Cloudflare Bot Management, currently in private beta. As part of our bot management service, this cookie helps manage incoming traffic that matches criteria associated with bots.
+"
+Unclassified,none,,TLTSID,.riu.com,/,First party,Session,,false,false,strict,false,"Declared, conflicting",,
+Unclassified,none,,_dyjsession,.riu.com,/,First party,0.02 days,,false,true,lax,false,"Declared, conflicting",,
+Unclassified,none,,TealiumUserID,.riu.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,contadorRechazar,.riu.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,_dyid,.riu.com,/,First party,30.00 days,,false,true,lax,false,"Declared, conflicting",,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.riu.com,/,First party,365.00 days,Session,false,false,lax,false,Declared & set,www.riu.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust. It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down. It enables the website not to show the message more than once to a user. The cookie has a normal lifespan of one year and contains no personal information.
+Performance Cookies,banner,OneTrust,_ga,.riu.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,riu.com,"Used to distinguish users by Google Analytics – third-party analytics cookies: google analytics for statistical purposes. Type of data processed: IP addresses. To maximize the privacy of users / visitors, we use the “masking IP” feature, which imposes on the system the darkening of the last 8 digits of the IP address of the user / visitor before any type of processing is performed, making in fact the analyzed Purpose: to collect information, in aggregate form, on the number of users and on how they visit our site, to process statistics."
+Strictly Necessary Cookies,banner,OneTrust,FPID,.riu.com,/,First party,400.00 days,399 days,true,true,unspecified,false,Declared & set,riu.com,"A cookie from Google that stores a value used for setting the Client ID in the request to Google’s servers for the purpose of web analytics. For more information about Google&#39;s processing of your personal data, please consult Google&#39;s <a href=""https://business.safety.google/privacy/"" rel=""nofollow"">Privacy &amp; Terms</a> site."
+Unclassified,none,,FPGSID,.riu.com,/,First party,0.02 days,,false,true,strict,false,"Declared, conflicting",,
+Unclassified,none,,_dyid_server,www.riu.com,/,First party,365.24 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_dyjsession,www.riu.com,/,First party,0.02 days,,false,false,lax,false,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,_ttp,.tiktok.com,/,Third party,390.00 days,89 days,false,true,none,false,Declared & set,tiktok.com,"TikTok is a social media platform owned by ByteDance, known for short-form video sharing. The service is used to create and share videos, and it utilizes cookies for various purposes including advertising and analytics."
+Unclassified,none,,_gcl_au,.riu.com,/,First party,90.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,t_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,t_pt_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,TAPID,.tealiumiq.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,tealiumiq.com,This domain is owned by Tealium and is used for its audience streaming service which enables targeting and personalisation of content on a domain.
+Functional Cookies,banner,OneTrust,gp_gaussUserId,www.riu.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,www.riu.com,
+Unclassified,none,,_tt_enable_cookie,.riu.com,/,First party,390.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,_ttp,.riu.com,/,First party,395.72 days,Session,false,true,lax,false,Declared & set,www.riu.com,"This cookie is typically associated with the use of Taptap Digital, a company specializing in digital advertising. It is used for tracking and ad personalization purposes."
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,FPLC,.riu.com,/,First party,0.83 days,,false,true,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,FPAU,.riu.com,/,First party,90.00 days,,false,true,unspecified,false,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,uid,.criteo.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,ad-id,.amazon-adsystem.com,/,Third party,231.00 days,197 days,true,true,none,false,Declared & set,amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Targeting Cookies,banner,OneTrust,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,399 days,true,true,none,false,Declared & set,amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Targeting Cookies,banner,OneTrust,_fbp,.riu.com,/,First party,90.00 days,89 days,false,true,lax,false,Declared & set,com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,89 days,false,true,none,true,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Targeting Cookies,banner,OneTrust,uuid2,.adnxs.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Unclassified,none,,KADUSERCOOKIE,.pubmatic.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tt_viewer,.teads.tv,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tluid,.3lift.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,tvid,.tremorhub.com,/,Third party,365.24 days,365 days,false,true,none,false,Declared & set,tremorhub.com,This domain is owned by Tremor Video which provides a marketplace for online video based cross-device advertising.
+Targeting Cookies,banner,OneTrust,tv_UICR,.tremorhub.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,tremorhub.com,This domain is owned by Tremor Video which provides a marketplace for online video based cross-device advertising.
+Unclassified,none,,mCookie,.mediawallahscript.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mUserCookie,.mediawallahscript.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,tuuid,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,c,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,demdex,.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,demdex.net,"This cookie helps Adobe Audience Manger perform basic functions such as visitor identification, ID synchronization, segmentation, modeling, reporting, etc."
+Targeting Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Mircosoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,MR,.c.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,c.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,dpm,.dpm.demdex.net,/,Third party,180.00 days,179 days,false,true,none,false,Declared & set,dpm.demdex.net,This domain is owned by Adobe Audience Manager. The main business activity is online profiling for targeted marketing.
+Targeting Cookies,banner,OneTrust,CMID,.casalemedia.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMPS,.casalemedia.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMPRO,.casalemedia.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,criteo,exchange.mediavine.com,/,Third party,14.00 days,13 days,false,true,none,false,Declared & set,exchange.mediavine.com,"This domain is associated with Mediavine, Inc. which provides website monetization services, including advertising optimization for publishers."
+Targeting Cookies,banner,OneTrust,am_tokens,exchange.mediavine.com,/,Third party,14.00 days,13 days,false,true,none,false,Declared & set,exchange.mediavine.com,"This domain is associated with Mediavine, Inc. which provides website monetization services, including advertising optimization for publishers."
+Strictly Necessary Cookies,banner,OneTrust,am_tokens_invalidate-verizon-pushes,exchange.mediavine.com,/,Third party,14.00 days,13 days,false,true,none,false,Declared & set,exchange.mediavine.com,
+Targeting Cookies,banner,OneTrust,_rxuuid,.1rx.io,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,targeting.unrulymedia.com,"This domain is owned by Unruly Media, part of News Corp.  It provides an online video advertising platform and services."
+Unclassified,none,,lidid,.liadm.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,criteo,.tpmn.co.kr,/,Third party,30.00 days,13 days,false,true,none,false,Declared & set,exchange.mediavine.com,"This domain is associated with Mediavine, Inc. which provides website monetization services, including advertising optimization for publishers."
+Unclassified,none,,visitor,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,status,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,ab,.agkn.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,agkn.com,"This domain is owned by Aggregate Knowledge, which has been acquired by Neustar Inc. Aggregate Knowledge provides a data management platform which enables real time targeting and consumer profiling functionality. "
+Unclassified,none,,_cc_cc,.crwdcntrl.net,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,v1_151,.revcontent.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,v2_151,.revcontent.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,visitor-id,.media.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,media.net,Media.net is a global online advertising technology network.
+Targeting Cookies,banner,OneTrust,data-c,.media.net,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,media.net,Media.net is a global online advertising technology network.
+Targeting Cookies,banner,OneTrust,_rxuuid,.targeting.unrulymedia.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,targeting.unrulymedia.com,"This domain is owned by Unruly Media, part of News Corp.  It provides an online video advertising platform and services."
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,179 days,true,true,none,true,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,criteo,.tpmn.io,/,Third party,30.00 days,13 days,false,true,none,false,Declared & set,exchange.mediavine.com,"This domain is associated with Mediavine, Inc. which provides website monetization services, including advertising optimization for publishers."
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ljt_reader,.lijit.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,A3,.yahoo.com,/,Third party,365.25 days,,true,true,none,false,Not declared,,
+Unclassified,none,,IDSYNC,.analytics.yahoo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,c.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics product that provides insights on user behavior and website performance."
+Unclassified,none,,ver,.postrelease.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_cs_c,.riu.com,/,First party,395.42 days,395 days,false,false,lax,false,Declared & set,riu.com,This cookie name is associated with ContentSquare which is used to store cookie consent preferences.This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Unclassified,none,,_3ci,.alcmpn.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,uuid,.mathtag.com,/,Third party,393.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bito,.bidr.io,/,Third party,394.79 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bitoIsSecure,.bidr.io,/,Third party,394.79 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,repCI,www.riu.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,www.riu.com,
+Performance Cookies,banner,OneTrust,LDC-GA,www.riu.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,X-RIU-GP,.riu.com,/,First party,7.00 days,6 days,false,false,unspecified,false,Declared & set,riu.com,
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID,www.riu.com,/,First party,Session,Session,true,true,none,false,Declared & set,www.riu.com,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server."
+Strictly Necessary Cookies,banner,OneTrust,LDC,.riu.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,riu.com,
+Strictly Necessary Cookies,banner,OneTrust,LDC-EXT,.riu.com,/,First party,7.00 days,7 days,false,false,unspecified,false,Declared & set,riu.com,
+Unclassified,none,,cb,.clickagy.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,chs,aorta.clickagy.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,AWSALBCORS,lib-eu-1.brilliantcollector.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,match.sharethrough.com,This cookie is managed by AWS and is used for load balancing.
+Performance Cookies,banner,OneTrust,_ga_G4KXL6RLNW,.riu.com,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,jobs.riu.com,NAUsed by Google Analytics to identify and track an individual session with your device.
+Strictly Necessary Cookies,banner,OneTrust,LDC-LV,.riu.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,riu.com,
+Strictly Necessary Cookies,banner,OneTrust,RCookie,www.riu.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,www.riu.com,Necessary for traffic control.
+Unclassified,none,,c308758032ce7dd1249ad0ba87094250,www.riu.com,/,First party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,did,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,didts,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,nnls,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga_QY7EW6WXQQ,.riu.com,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,jobs.riu.com,NAUsed by Google Analytics to identify and track an individual session with your device.
+Performance Cookies,banner,OneTrust,_ga_3R6ETS6W44,.riu.com,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,jobs.riu.com,NAUsed by Google Analytics to identify and track an individual session with your device.
+Strictly Necessary Cookies,banner,OneTrust,TEAL,.riu.com,/,First party,365.00 days,Session,false,false,unspecified,false,Declared & set,jobs.riu.com,"This cookie name is associated with TEAL Mobility and Government Project Delivery which is used to make the website work, remember settings, and improve government services."
+Targeting Cookies,banner,OneTrust,_cs_id,.riu.com,/,First party,395.42 days,Session,false,false,lax,false,Declared & set,www.riu.com,This cookie is typically associated with ContentSquare and is used for analytics and personalization to improve user experience by tracking visitor behavior on the website.This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Targeting Cookies,banner,OneTrust,_cs_s,.riu.com,/,First party,0.02 days,0 days,false,false,lax,false,Declared & set,riu.com,This cookie is typically associated with ContentSquare and is used for analytics and personalization. It stores information on how visitors use a website and helps in creating an analytics report of how the website is doing.This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Targeting Cookies,banner,OneTrust,_cs_s_ctx,.riu.com,/,First party,0.02 days,0 days,false,false,lax,false,Declared & set,riu.com,This cookie is typically associated with ContentSquare and is used for analytics and personalization. It stores information on how visitors use a website and helps in creating an analytics report of how the website is doing.This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Unclassified,none,,_dy_soct,.riu.com,/,First party,365.00 days,,false,true,lax,false,"Declared, conflicting",,
+Performance Cookies,banner,OneTrust,_ga_Z76TJPF8C5,.riu.com,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,jobs.riu.com,NAUsed by Google Analytics to identify and track an individual session with your device.
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.riu.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,riu.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Performance Cookies,banner,OneTrust,_ga_123T,.riu.com,/,First party,400.00 days,Session,false,false,unspecified,false,Declared & set,jobs.riu.com,NAUsed by Google Analytics to identify and track an individual session with your device.
+Unclassified,none,,amzn_consent,www.riu.com,/,First party,28.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,cto_bundle,.riu.com,/,First party,395.42 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,SPugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_uetsid,.riu.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,riu.com,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,data-c-ts,.media.net,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,media.net,Media.net is a global online advertising technology network.
+Targeting Cookies,banner,OneTrust,cto_bundle,.criteo.com,/,Third party,390.00 days,395 days,false,true,none,true,Declared & set,com,This cookie is associated with Criteo's advertising platform. It tracks user activity and ad engagement to provide targeted advertising.
+Targeting Cookies,banner,OneTrust,anj,.adnxs.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Performance Cookies,banner,OneTrust,_uetvid,.riu.com,/,First party,390.00 days,Session,false,false,unspecified,false,Declared & set,jobs.riu.com,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,idmap_cookie_id,pixel.idmap.ai,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,mRemnantVisitedCookie_d41d8cd98f00b204e9800998ecf8427e_11_2026,.mediawallahscript.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,ttcsid,.riu.com,/,First party,390.00 days,Session,false,false,unspecified,false,Declared & set,jobs.riu.com,"This cookie name is associated with TikTok which is used to enable TikTok Ads session tracking by assigning a unique session ID to users who click on TikTok ads, allowing for the attribution of user behavior and conversions within the same session.This cookie is associated with TikTok. It helps track your activity on the platform, including how you interact with their embedded services on other websites."
+Targeting Cookies,banner,OneTrust,ttcsid_C5FCNUU9UAPPK4PE8T9G,.riu.com,/,First party,390.00 days,Session,false,false,unspecified,false,Declared & set,jobs.riu.com,"This cookie name is associated with TikTok which is used to enable TikTok Ads session tracking by assigning a unique session ID to users who click on TikTok ads, allowing for the attribution of user behavior and conversions within the same session.This cookie is associated with TikTok. It helps track your activity on the platform, including how you interact with their embedded services on other websites."
+Unclassified,none,,vcnpxid,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxst,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxe,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxsn,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rlas3,.rlcdn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.rlcdn.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,PHPSESSID,vacation.riu.com,,,,Session,,,,,"Declared, not set",vacation.riu.com,"PHP session cookie associated with embedded content from this domain.
+"
+Strictly Necessary Cookies,banner,OneTrust,_ttCookiePermissions,jobs.riu.com,,,,183 days,,,,,"Declared, not set",jobs.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,s_prop_5,riu.com,,,,Session,,,,,"Declared, not set",riu.com,
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsentEncode,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,_dycst,riu.com,,,,29 days,,,,,"Declared, not set",riu.com,
+Strictly Necessary Cookies,banner,OneTrust,IDVisitedDestino,www.riu.com,,,,181 days,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,_dy_csc_ses,riu.com,,,,0 days,,,,,"Declared, not set",riu.com,
+Strictly Necessary Cookies,banner,OneTrust,ef9d6a31d40d7845df89ae387e1184ac,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,_dy_toffset,riu.com,,,,29 days,,,,,"Declared, not set",riu.com,This cookie name is used to validate the user's clock drift.
+Strictly Necessary Cookies,banner,OneTrust,_dy_df_geo,riu.com,,,,29 days,,,,,"Declared, not set",riu.com,"Stores the geographical location of browsers and targets ads.
+"
+Strictly Necessary Cookies,banner,OneTrust,cf_ob_info,lb-g.riu.com,,,,0 days,,,,,"Declared, not set",lb-g.riu.com,This cookie is associated with sites using CloudFlare.  It is used to improve page load times and to override any security restrictions based on the visitors IP address.  It does not contain any user identification information.
+Strictly Necessary Cookies,banner,OneTrust,_dycnst,riu.com,,,,29 days,,,,,"Declared, not set",riu.com,
+Strictly Necessary Cookies,banner,OneTrust,s_prop_4,riu.com,,,,Session,,,,,"Declared, not set",riu.com,
+Strictly Necessary Cookies,banner,OneTrust,3bc32d71395329c37484b0b56eacab46,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,brand,riu.com,,,,Session,,,,,"Declared, not set",riu.com,
+Strictly Necessary Cookies,banner,OneTrust,_tt_session,jobs.riu.com,,,,1 days,,,,,"Declared, not set",jobs.riu.com,This _tt_session cookie is used to keep the context of a visitor (e.g. to keep you logged in on the site).
+Strictly Necessary Cookies,banner,OneTrust,8be282f8f323f8add238b5f54d948e23,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,SSLB,vacation.riu.com,,,,Session,,,,,"Declared, not set",vacation.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,cmsJESSIONID,www.riu.com,,,,364 days,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,DY_#2022_137,www.riu.com,,,,181 days,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,339c89bf6cb0def34f93850555eaff3b,www.riu.com,,,,364 days,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,ba1c48d22c89e79f0a00725f5e6ba098,www.riu.com,,,,364 days,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,68e1328bce13f3f97cd3cdb7c54d04e4,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,b9d1ff4d2b114ec0bb0ccb0c0a9ea3e7,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,mkt_pref,riu.com,,,,44 days,,,,,"Declared, not set",riu.com,
+Strictly Necessary Cookies,banner,OneTrust,_ha_dc,riu.com,,,,89 days,,,,,"Declared, not set",riu.com,
+Strictly Necessary Cookies,banner,OneTrust,f10dfe84e79bb2db3a2dde10fd73f4b8,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,137a2b4d64e75ca890873837e4e63cda,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,4736c4728449e53a807e99bbdd5f98e1,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,d308000277f5733aa75b8fab18ebba83,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,idSearchedHotel,www.riu.com,,,,181 days,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,7d8fc9f5352bb22263884d89babf3957,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,dy_fs_page,riu.com,,,,Session,,,,,"Declared, not set",riu.com,"This cookie name is associated with Dynamic Yield which is used to determine which products the visitor has viewed, to promote related products and optimize ad-efficiency."
+Strictly Necessary Cookies,banner,OneTrust,olt_pref,riu.com,,,,44 days,,,,,"Declared, not set",riu.com,
+Strictly Necessary Cookies,banner,OneTrust,IDVisitedHotel,www.riu.com,,,,181 days,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,cf_ob_info,www.riu.com,,,,0 days,,,,,"Declared, not set",www.riu.com,This cookie is associated with sites using CloudFlare.  It is used to improve page load times and to override any security restrictions based on the visitors IP address.  It does not contain any user identification information.
+Strictly Necessary Cookies,banner,OneTrust,chatSessionID,www.riu.com,,,,0 days,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,38c57ab46d42c7d0e0b2e8bcc0f6718e,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,9a74d608e77b4e55c313b8f9e858d7a6,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,oil_cookie_exp,vacation.riu.com,,,,Session,,,,,"Declared, not set",vacation.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,446adeac07e552ef6fe6c40b356290b6,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,19d9b5be5b8b84a29fc63e0138d74a38,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,4110bc8393ce9cb47ac6bc9df3210aae,www.riu.com,,,,364 days,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,fp_cookieWarningSeen,riu.com,,,,399 days,,,,,"Declared, not set",riu.com,Controla el banner de la política de cookies.
+Strictly Necessary Cookies,banner,OneTrust,b9bae3170c54b4f7ca2aa01b54ed388a,www.riu.com,,,,364 days,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,af40970ad183b4a83fff65b546e9ff0d,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,_dy_geo,riu.com,,,,29 days,,,,,"Declared, not set",riu.com,"Stores the geographical location of browsers and targets ads.
+"
+Strictly Necessary Cookies,banner,OneTrust,cf_use_ob,www.riu.com,,,,0 days,,,,,"Declared, not set",www.riu.com,This cookie is associated with sites using CloudFlare.  It is used to improve page load times and to override any security restrictions based on the visitors IP address.  It does not contain any user identification information. 
+Strictly Necessary Cookies,banner,OneTrust,DY_#2022_114,www.riu.com,,,,181 days,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,7df5a6d25cb173475f03907557746aab,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,fp_cookieWarningSeen,www.riu.com,,,,399 days,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,cf_use_ob,lb-g.riu.com,,,,0 days,,,,,"Declared, not set",lb-g.riu.com,This cookie is associated with sites using CloudFlare.  It is used to improve page load times and to override any security restrictions based on the visitors IP address.  It does not contain any user identification information. 
+Strictly Necessary Cookies,banner,OneTrust,_dy_c_exps,riu.com,,,,29 days,,,,,"Declared, not set",riu.com,
+Strictly Necessary Cookies,banner,OneTrust,info_localizacion,riu.com,,,,14 days,,,,,"Declared, not set",riu.com,
+Strictly Necessary Cookies,banner,OneTrust,_ttAnalytics,jobs.riu.com,,,,183 days,,,,,"Declared, not set",jobs.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,IDVisitedHotel-2024,www.riu.com,,,,181 days,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,27c4bf99d3eafd313b7d12596fa403a3,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,_dyfs,riu.com,,,,364 days,,,,,"Declared, not set",riu.com,
+Strictly Necessary Cookies,banner,OneTrust,ebbf034a44dc80547187bafac064e267,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,199ef9b66402c42312dc2d747c50fa61,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,dv,www.riu.com,,,,9 days,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,eaf593a4fb4ee82de9686aadc5494cda,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,XSRF-TOKEN,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,This cookie is written to help with site security in preventing Cross-Site Request Forgery attacks.
+Strictly Necessary Cookies,banner,OneTrust,dtCookie,riu.com,,,,Session,,,,,"Declared, not set",riu.com,"This cookie name is associated with, software from Dynatrace, an application performance management (APM) software company.
+Their software manages the availability and performance of software applications and the impact on user experience in the form of deep transaction tracing, synthetic monitoring, real user monitoring, and network monitoring.
+"
+Strictly Necessary Cookies,banner,OneTrust,591875df7f23ff4aa91c3fc0823224dd,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,56d00de1aabf5ff8ef77aface4150882,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,
+Strictly Necessary Cookies,banner,OneTrust,_dy_c_att_exps,riu.com,,,,29 days,,,,,"Declared, not set",riu.com,
+Strictly Necessary Cookies,banner,OneTrust,DYID,dynamicyield.com,,,,364 days,,,,,"Declared, not set",dynamicyield.com,
+Strictly Necessary Cookies,banner,OneTrust,mv_tokens_invalidate-verizon-pushes,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,
+Strictly Necessary Cookies,banner,OneTrust,user_language,destinia.ie,,,,44 days,,,,,"Declared, not set",destinia.ie,user
+Strictly Necessary Cookies,banner,OneTrust,browser_data,dnacdn.net,,,,0 days,,,,,"Declared, not set",dnacdn.net,
+Strictly Necessary Cookies,banner,OneTrust,s,storage.googleapis.com,,,,364 days,,,,,"Declared, not set",storage.googleapis.com,"This domain is used by Google Cloud Storage, which provides object storage for various types of data. It is often used to host website content, store data for archival and disaster recovery, or distribute large data objects to users via direct download."
+Strictly Necessary Cookies,banner,OneTrust,_ab_htdeals_banner,riu.com,,,,90 days,,,,,"Declared, not set",riu.com,This cookie drives the changes at page level to keep a coherence in time.
+Strictly Necessary Cookies,banner,OneTrust,dv,riu.com,,,,10 days,,,,,"Declared, not set",riu.com,The browsed destinations is only used to build the grid of destinations at home page.
+Strictly Necessary Cookies,banner,OneTrust,objValorarCookieSes,riu.com,,,,Session,,,,,"Declared, not set",riu.com,This cookie allows data to be passed between steps in the booking process.
+Strictly Necessary Cookies,banner,OneTrust,_ab_nform,riu.com,,,,90 days,,,,,"Declared, not set",riu.com,This cookie is used to maintain aesthetic and functional consistency between different versions of riu.com.
+Strictly Necessary Cookies,banner,OneTrust,ub,riu.com,,,,1 days,,,,,"Declared, not set",riu.com,The last search is only used to show then at booking form.
+Strictly Necessary Cookies,banner,OneTrust,SSLB,consent.onlinetravel.es,,,,Session,,,,,"Declared, not set",consent.onlinetravel.es,
+Strictly Necessary Cookies,banner,OneTrust,_clsk,hotelverse.tech,,,,0 days,,,,,"Declared, not set",hotelverse.tech,Used by Microsoft Clarity to connect multiple page views by a user into a single Clarity session recording.
+Strictly Necessary Cookies,banner,OneTrust,_clck,hotelverse.tech,,,,364 days,,,,,"Declared, not set",hotelverse.tech,
+Performance Cookies,banner,OneTrust,_ga_1234T,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,Used by Google Analytics to identify and track an individual session with your device.
+Performance Cookies,banner,OneTrust,_clsk,riu.com,,,,Session,,,,,"Declared, not set",riu.com,Used by Microsoft Clarity to connect multiple page views by a user into a single Clarity session recording.
+Performance Cookies,banner,OneTrust,s_cc,riu.com,,,,Session,,,,,"Declared, not set",riu.com,This cookie is associated with the Adobe Site Catalyst. It determines whether cookies are enabled in the web browser.
+Performance Cookies,banner,OneTrust,dtPC,riu.com,,,,Session,,,,,"Declared, not set",riu.com,"This cookie name is associated with, software from Dynatrace, an application performance management (APM) software company.
+Their software manages the availability and performance of software applications and the impact on user experience in the form of deep transaction tracing, synthetic monitoring, real user monitoring, and network monitoring.
+"
+Performance Cookies,banner,OneTrust,dtSa,riu.com,,,,Session,,,,,"Declared, not set",riu.com,"This cookie is used to save action names across pages so that performance can be monitored across pages.
+"
+Performance Cookies,banner,OneTrust,s_sq,riu.com,,,,Session,,,,,"Declared, not set",riu.com,"Adobe Site Catalyst cookie, stores information about the previous link clicked within the site"
+Performance Cookies,banner,OneTrust,s_ria,riu.com,,,,Session,,,,,"Declared, not set",riu.com,"Cookie set by Adobe SiteCatalyst, which reportedly detects whether a browser supports rich media like Flash or Silverlight."
+Performance Cookies,banner,OneTrust,_pk_id*,www.riu.com,,,,393 days,,,,,"Declared, not set",www.riu.com,"This cookie name is associated with the Piwik open source web analytics platform. It is used to help website owners track visitor behaviour and measure site performance. It is a pattern type cookie, where the prefix _pk_id is followed by a short series of numbers and letters, which is believed to be a reference code for the domain setting the cookie."
+Performance Cookies,banner,OneTrust,_clsk,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,Used by Microsoft Clarity to connect multiple page views by a user into a single Clarity session recording.
+Performance Cookies,banner,OneTrust,rxvt,riu.com,,,,Session,,,,,"Declared, not set",riu.com,"This cookie is used to store two timestamps to determine session length and the end of a session.
+"
+Performance Cookies,banner,OneTrust,_pk_ses*,www.riu.com,,,,0 days,,,,,"Declared, not set",www.riu.com,"This cookie name is associated with the Piwik open source web analytics platform. It is used to help website owners track visitor behaviour and measure site performance. It is a pattern type cookie, where the prefix _pk_ses is followed by a short series of numbers and letters, which is believed to be a reference code for the domain setting the cookie."
+Performance Cookies,banner,OneTrust,_clck,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,"This cookie is related to Microsoft Clarity analytics service. It is used to collect information about how visitors interact with the website, which helps in creating reports and improving the site."
+Performance Cookies,banner,OneTrust,_clck,riu.com,,,,Session,,,,,"Declared, not set",riu.com,"This cookie is related to Microsoft Clarity analytics service. It is used to collect information about how visitors interact with the website, which helps in creating reports and improving the site."
+Performance Cookies,banner,OneTrust,_ga_1234T,riu.com,,,,399 days,,,,,"Declared, not set",riu.com,Used by Google Analytics to identify and track an individual session with your device.
+Performance Cookies,banner,OneTrust,_gtmeec,riu.com,,,,89 days,,,,,"Declared, not set",riu.com,This cookie name _gtmeec is used for event enrichment.
+Performance Cookies,banner,OneTrust,_gid,riu.com,,,,1 days,,,,,"Declared, not set",riu.com,"Used to distinguish users by Google Analytics – third-party analytics cookies: google analytics for statistical purposes. Type of data processed: IP addresses. To maximize the privacy of users / visitors, we use the “masking IP” feature, which imposes on the system the darkening of the last 8 digits of the IP address of the user / visitor before any type of processing is performed, making in fact the analyzed Purpose: to collect information, in aggregate form, on the number of users and on how they visit our site, to process statistics."
+Performance Cookies,banner,OneTrust,_gac_UA-217920-2,riu.com,,,,89 days,,,,,"Declared, not set",riu.com,
+Performance Cookies,banner,OneTrust,s_vi_zfowx7Cgx7Bykjjgx60i,2o7.net,,,,729 days,,,,,"Declared, not set",2o7.net,This domain is owned by Adobe. The main business activity is: Analytics
+Performance Cookies,banner,OneTrust,s_vi_yeltx7Fdxxebyhax7E,2o7.net,,,,729 days,,,,,"Declared, not set",2o7.net,This domain is owned by Adobe. The main business activity is: Analytics
+Performance Cookies,banner,OneTrust,_cs_same_site,t.contentsquare.net,,,,Session,,,,,"Declared, not set",t.contentsquare.net,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Functional Cookies,banner,OneTrust,_dy_toffset,www.riu.com,,,,0 days,,,,,"Declared, not set",www.riu.com,This cookie name is used to validate the user's clock drift.
+Functional Cookies,banner,OneTrust,pll_language,www.riu.com,,,,365 days,,,,,"Declared, not set",www.riu.com,"This cookie name is associated with the Polylang plug-in for WordPress powered websites. it stores a language preference for the visitor to support multi-lingual websites. When set as a persistent cookie, or with the default lifespan of 1 year, it has to e considered Functional rather than strictly necessary."
+Functional Cookies,banner,OneTrust,rxVisitor,riu.com,,,,Session,,,,,"Declared, not set",riu.com,"This cookie is used to store an anonymous ID for the user to correlate across sessions on the world service.
+"
+Functional Cookies,banner,OneTrust,_dycst,www.riu.com,,,,0 days,,,,,"Declared, not set",www.riu.com,This cookie _dycst is used to provide enhanced functionality on the website.
+Functional Cookies,banner,OneTrust,__cf_bm,vimeo.com,,,,0 days,,,,,"Declared, not set",vimeo.com,This is a CloudFoundry cookie
+Functional Cookies,banner,OneTrust,_cfuvid,vimeo.com,,,,Session,,,,,"Declared, not set",vimeo.com,This domain is owned by Vimeo. The main business activity is: Video Hosting/Sharing
+Functional Cookies,banner,OneTrust,cnac,id5-sync.com,,,,0 days,,,,,"Declared, not set",id5-sync.com,"This domain is associated with ID5, a company that provides online identification solutions for ad tech companies, enabling them to create and distribute a unique user ID to track individuals for advertising purposes."
+Functional Cookies,banner,OneTrust,cf,id5-sync.com,,,,0 days,,,,,"Declared, not set",id5-sync.com,"This domain is associated with ID5, a company that provides online identification solutions for ad tech companies, enabling them to create and distribute a unique user ID to track individuals for advertising purposes."
+Functional Cookies,banner,OneTrust,callback,id5-sync.com,,,,0 days,,,,,"Declared, not set",id5-sync.com,"This domain is associated with ID5, a company that provides online identification solutions for ad tech companies, enabling them to create and distribute a unique user ID to track individuals for advertising purposes."
+Functional Cookies,banner,OneTrust,cip,id5-sync.com,,,,0 days,,,,,"Declared, not set",id5-sync.com,"This domain is associated with ID5, a company that provides online identification solutions for ad tech companies, enabling them to create and distribute a unique user ID to track individuals for advertising purposes."
+Functional Cookies,banner,OneTrust,gdpr,id5-sync.com,,,,0 days,,,,,"Declared, not set",id5-sync.com,"This domain is associated with ID5, a company that provides online identification solutions for ad tech companies, enabling them to create and distribute a unique user ID to track individuals for advertising purposes."
+Functional Cookies,banner,OneTrust,car,id5-sync.com,,,,0 days,,,,,"Declared, not set",id5-sync.com,"This domain is associated with ID5, a company that provides online identification solutions for ad tech companies, enabling them to create and distribute a unique user ID to track individuals for advertising purposes."
+Targeting Cookies,banner,OneTrust,lbDebug,riu.com,,,,0 days,,,,,"Declared, not set",riu.com,Cookie used by Google Analytics.
+Targeting Cookies,banner,OneTrust,_ha_aw,riu.com,,,,89 days,,,,,"Declared, not set",riu.com,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Targeting Cookies,banner,OneTrust,dy_fs_page,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,"This cookie name is associated with Dynamic Yield which is used to determine which products the visitor has viewed, to promote related products and optimize ad-efficiency."
+Targeting Cookies,banner,OneTrust,_dy_geo,www.riu.com,,,,0 days,,,,,"Declared, not set",www.riu.com,"Stores the geographical location of browsers and targets ads.
+"
+Targeting Cookies,banner,OneTrust,criteo_write_test,www.riu.com,,,,0 days,,,,,"Declared, not set",www.riu.com,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,__rtbh.lid,www.riu.com,,,,364 days,,,,,"Declared, not set",www.riu.com,This cookie name is associated with RTB House which is used to collect information on user behaviour on multiple websites to optimize the relevance of advertisement on the website.
+Targeting Cookies,banner,OneTrust,_ab_htdeals_banner,www.riu.com,,,,89 days,,,,,"Declared, not set",www.riu.com,
+Targeting Cookies,banner,OneTrust,ttcsid_XXXXXXXXXXXXXXXXXXXXCategory,jobs.riu.com,,,,Session,,,,,"Declared, not set",jobs.riu.com,"This cookie name is associated with TikTok which is used to track your activity on the platform, including how you interact with their embedded services on other websites.This cookie is associated with TikTok. It helps track your activity on the platform, including how you interact with their embedded services on other websites."
+Targeting Cookies,banner,OneTrust,_cs_cvars,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,This cookie name is associated with Contentsquare which is used to capture analytics on the web page and record custom variables.This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Targeting Cookies,banner,OneTrust,seerses,www.riu.com,,,,0 days,,,,,"Declared, not set",www.riu.com,
+Targeting Cookies,banner,OneTrust,ttcsid_XXXXXXXXXXXXXXXXXXXXCategory,riu.com,,,,89 days,,,,,"Declared, not set",riu.com,"This cookie name is associated with TikTok which is used to track your activity on the platform, including how you interact with their embedded services on other websites.This cookie is associated with TikTok. It helps track your activity on the platform, including how you interact with their embedded services on other websites."
+Targeting Cookies,banner,OneTrust,_gat_UA-XXXXXX-X,riu.com,,,,0 days,,,,,"Declared, not set",riu.com,Google Analytics Cookies
+Targeting Cookies,banner,OneTrust,seerid,www.riu.com,,,,90 days,,,,,"Declared, not set",www.riu.com,
+Targeting Cookies,banner,OneTrust,_dycnst,www.riu.com,,,,0 days,,,,,"Declared, not set",www.riu.com,"This cookie name is associated with Dynamic Yield which is used to determine which products the visitor has viewed, to promote related products and optimize ad-efficiency."
+Targeting Cookies,banner,OneTrust,__rtbh.uid,www.riu.com,,,,364 days,,,,,"Declared, not set",www.riu.com,This cookie name is associated with RTB House which is used to collect information on user behaviour on multiple websites in order to optimize the relevance of advertisement on the website.
+Targeting Cookies,banner,OneTrust,eupubconsent-v2,riu.com,,,,364 days,,,,,"Declared, not set",riu.com,"This cookie name is used to store IAB TCF v2 preferences and consent strings for vendors registered with the IAB framework, and is also associated with remarketing purposes."
+Targeting Cookies,banner,OneTrust,_dy_df_geo,www.riu.com,,,,0 days,,,,,"Declared, not set",www.riu.com,"Stores the geographical location of browsers and targets ads.
+"
+Targeting Cookies,banner,OneTrust,ttcsid_XXXXXXXXXXXXXXXXXXXXCategory,www.riu.com,,,,Session,,,,,"Declared, not set",www.riu.com,"This cookie name is associated with TikTok which is used to track your activity on the platform, including how you interact with their embedded services on other websites.This cookie is associated with TikTok. It helps track your activity on the platform, including how you interact with their embedded services on other websites."
+Targeting Cookies,banner,OneTrust,cto_tld_test,www.riu.com,,,,0 days,,,,,"Declared, not set",www.riu.com,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,__rtbh.lid,jobs.riu.com,,,,364 days,,,,,"Declared, not set",jobs.riu.com,This cookie name is associated with RTB House which is used to collect information on user behaviour on multiple websites to optimize the relevance of advertisement on the website.
+Targeting Cookies,banner,OneTrust,cto_tld_test,riu.com,,,,0 days,,,,,"Declared, not set",riu.com,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,_cs_cvars,riu.com,,,,Session,,,,,"Declared, not set",riu.com,This cookie name is associated with Contentsquare which is used to capture analytics on the web page and record custom variables.This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Targeting Cookies,banner,OneTrust,cto_tld_test,com,,,,0 days,,,,,"Declared, not set",com,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,TASameSite,www.tripadvisor.it,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.it,
+Targeting Cookies,banner,OneTrust,TADCID,www.tripadvisor.it,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.it,
+Targeting Cookies,banner,OneTrust,__vt,www.tripadvisor.it,,,,0 days,,,,,"Declared, not set",www.tripadvisor.it,
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,ar_debug,doubleclick.net,,,,29 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,SM,c.clarity.ms,,,,Session,,,,,"Declared, not set",c.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics product that provides insights on user behavior and website performance."
+Targeting Cookies,banner,OneTrust,ANONCHK,c.clarity.ms,,,,0 days,,,,,"Declared, not set",c.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics product that provides insights on user behavior and website performance."
+Targeting Cookies,banner,OneTrust,yieldmo_id,yieldmo.com,,,,364 days,,,,,"Declared, not set",yieldmo.com,Yieldmo is a digital advertising technology company that operates an advertising platform. They use cookies to track user interactions with ads to optimize ad performance.
+Targeting Cookies,banner,OneTrust,TACds,tripadvisor.com.br,,,,59 days,,,,,"Declared, not set",tripadvisor.com.br,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,TASession,tripadvisor.com.br,,,,364 days,,,,,"Declared, not set",tripadvisor.com.br,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,TAUnique,tripadvisor.com.br,,,,729 days,,,,,"Declared, not set",tripadvisor.com.br,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,ServerPool,tripadvisor.com.br,,,,364 days,,,,,"Declared, not set",tripadvisor.com.br,"This cookie is generally provided by TripAdvisor and is used for advertising purposes.
+"
+Targeting Cookies,banner,OneTrust,AWSALB,match.sharethrough.com,,,,6 days,,,,,"Declared, not set",match.sharethrough.com,AWS ELB application load balancer
+Targeting Cookies,banner,OneTrust,MSPTC,bing.com,,,,389 days,,,,,"Declared, not set",bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,CLID,www.clarity.ms,,,,364 days,,,,,"Declared, not set",www.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics service that provides insights into user behavior on websites."
+Targeting Cookies,banner,OneTrust,x5secdata,taobao.com,,,,0 days,,,,,"Declared, not set",taobao.com,
+Targeting Cookies,banner,OneTrust,li_gc,linkedin.com,,,,179 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,lang,linkedin.com,,,,Session,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,lidc,linkedin.com,,,,0 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,bcookie,linkedin.com,,,,364 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,ServerPool,tripadvisor.com,,,,364 days,,,,,"Declared, not set",tripadvisor.com,This domain is owned by Trip Adviser. The main business activity is: Travel Information/Tracking/Advertising
+Targeting Cookies,banner,OneTrust,TASession,tripadvisor.com,,,,364 days,,,,,"Declared, not set",tripadvisor.com,This domain is owned by Trip Adviser. The main business activity is: Travel Information/Tracking/Advertising
+Targeting Cookies,banner,OneTrust,TAUnique,tripadvisor.com,,,,730 days,,,,,"Declared, not set",tripadvisor.com,This domain is owned by Trip Adviser. The main business activity is: Travel Information/Tracking/Advertising
+Targeting Cookies,banner,OneTrust,TACds,tripadvisor.com,,,,59 days,,,,,"Declared, not set",tripadvisor.com,This domain is owned by Trip Adviser. The main business activity is: Travel Information/Tracking/Advertising
+Targeting Cookies,banner,OneTrust,cna,mmstat.com,,,,364 days,,,,,"Declared, not set",mmstat.com,"This domain is owned by Alibaba. As a third party host, the company uses cookies to tailor advertisements and ads."
+Targeting Cookies,banner,OneTrust,sca,mmstat.com,,,,364 days,,,,,"Declared, not set",mmstat.com,"This domain is owned by Alibaba. As a third party host, the company uses cookies to tailor advertisements and ads."
+Targeting Cookies,banner,OneTrust,TADCID,www.tripadvisor.es,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.es,
+Targeting Cookies,banner,OneTrust,__vt,www.tripadvisor.es,,,,0 days,,,,,"Declared, not set",www.tripadvisor.es,
+Targeting Cookies,banner,OneTrust,TASameSite,www.tripadvisor.es,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.es,
+Targeting Cookies,banner,OneTrust,TASameSite,www.tripadvisor.ru,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.ru,
+Targeting Cookies,banner,OneTrust,TADCID,www.tripadvisor.ru,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.ru,
+Targeting Cookies,banner,OneTrust,__vt,www.tripadvisor.ru,,,,0 days,,,,,"Declared, not set",www.tripadvisor.ru,
+Targeting Cookies,banner,OneTrust,c,creativecdn.com,,,,364 days,,,,,"Declared, not set",creativecdn.com,This domain is associated with the delivery of advertising material or scripts for advertising content. It is a service used by advertising agencies to optimize their online ad campaigns.
+Targeting Cookies,banner,OneTrust,ts,creativecdn.com,,,,364 days,,,,,"Declared, not set",creativecdn.com,TS
+Targeting Cookies,banner,OneTrust,g,creativecdn.com,,,,364 days,,,,,"Declared, not set",creativecdn.com,This domain is associated with the delivery of advertising material or scripts for advertising content. It is a service used by advertising agencies to optimize their online ad campaigns.
+Targeting Cookies,banner,OneTrust,am_tokens_eu-v1,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,"This domain is associated with Mediavine, Inc. which provides website monetization services, including advertising optimization for publishers."
+Targeting Cookies,banner,OneTrust,mv_tokens,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,"This domain is associated with Mediavine, Inc. which provides website monetization services, including advertising optimization for publishers."
+Targeting Cookies,banner,OneTrust,mv_tokens_eu-v1,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,"This domain is associated with Mediavine, Inc. which provides website monetization services, including advertising optimization for publishers."
+Targeting Cookies,banner,OneTrust,TAUnique,tripadvisor.ru,,,,729 days,,,,,"Declared, not set",tripadvisor.ru,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,ServerPool,tripadvisor.ru,,,,364 days,,,,,"Declared, not set",tripadvisor.ru,"This cookie is generally provided by TripAdvisor and is used for advertising purposes.
+"
+Targeting Cookies,banner,OneTrust,TASession,tripadvisor.ru,,,,364 days,,,,,"Declared, not set",tripadvisor.ru,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,TACds,tripadvisor.ru,,,,59 days,,,,,"Declared, not set",tripadvisor.ru,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,TASession,tripadvisor.it,,,,364 days,,,,,"Declared, not set",tripadvisor.it,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,TAUnique,tripadvisor.it,,,,729 days,,,,,"Declared, not set",tripadvisor.it,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,ServerPool,tripadvisor.it,,,,364 days,,,,,"Declared, not set",tripadvisor.it,"This cookie is generally provided by TripAdvisor and is used for advertising purposes.
+"
+Targeting Cookies,banner,OneTrust,TACds,tripadvisor.it,,,,59 days,,,,,"Declared, not set",tripadvisor.it,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,C,adform.net,,,,30 days,,,,,"Declared, not set",adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Targeting Cookies,banner,OneTrust,uid,adform.net,,,,59 days,,,,,"Declared, not set",adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Targeting Cookies,banner,OneTrust,optout,criteo.com,,,,0 days,,,,,"Declared, not set",criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,,www.facebook.com,,,,Session,,,,,"Declared, not set",www.facebook.com,"This domain is owned by Facebook, which is the world's largest social networking service.  As a third party host provider, it mostly collects data on the interests of users via widgets such as the 'Like' button found on many websites.  This is used to serve targeted advertising to its users when logged into its services.  In 2014 it also started serving up behaviourally targeted advertising on other websites, similar to most dedicated online marketing companies."
+Targeting Cookies,banner,OneTrust,__aypstp,youku.com,,,,Session,,,,,"Declared, not set",youku.com,
+Targeting Cookies,banner,OneTrust,tfstk,youku.com,,,,179 days,,,,,"Declared, not set",youku.com,
+Targeting Cookies,banner,OneTrust,__ysuid,youku.com,,,,364 days,,,,,"Declared, not set",youku.com,
+Targeting Cookies,banner,OneTrust,__ayspstp,youku.com,,,,1 days,,,,,"Declared, not set",youku.com,
+Targeting Cookies,banner,OneTrust,xlly_s,youku.com,,,,2 days,,,,,"Declared, not set",youku.com,
+Targeting Cookies,banner,OneTrust,__aysvstp,youku.com,,,,1 days,,,,,"Declared, not set",youku.com,
+Targeting Cookies,banner,OneTrust,__ayvstp,youku.com,,,,Session,,,,,"Declared, not set",youku.com,
+Targeting Cookies,banner,OneTrust,cna,youku.com,,,,364 days,,,,,"Declared, not set",youku.com,
+Targeting Cookies,banner,OneTrust,__aysid,youku.com,,,,1 days,,,,,"Declared, not set",youku.com,
+Targeting Cookies,banner,OneTrust,__ayft,youku.com,,,,Session,,,,,"Declared, not set",youku.com,
+Targeting Cookies,banner,OneTrust,isg,youku.com,,,,179 days,,,,,"Declared, not set",youku.com,
+Targeting Cookies,banner,OneTrust,__ayscnt,youku.com,,,,Session,,,,,"Declared, not set",youku.com,
+Targeting Cookies,banner,OneTrust,__arpvid,youku.com,,,,Session,,,,,"Declared, not set",youku.com,
+Targeting Cookies,banner,OneTrust,TACds,tripadvisor.fr,,,,59 days,,,,,"Declared, not set",tripadvisor.fr,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,TAUnique,tripadvisor.fr,,,,729 days,,,,,"Declared, not set",tripadvisor.fr,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,TASession,tripadvisor.fr,,,,364 days,,,,,"Declared, not set",tripadvisor.fr,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,ServerPool,tripadvisor.fr,,,,364 days,,,,,"Declared, not set",tripadvisor.fr,"This cookie is generally provided by TripAdvisor and is used for advertising purposes.
+"
+Targeting Cookies,banner,OneTrust,TADCID,www.tripadvisor.nl,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.nl,
+Targeting Cookies,banner,OneTrust,__vt,www.tripadvisor.nl,,,,0 days,,,,,"Declared, not set",www.tripadvisor.nl,
+Targeting Cookies,banner,OneTrust,TASameSite,www.tripadvisor.nl,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.nl,
+Targeting Cookies,banner,OneTrust,TASession,tripadvisor.de,,,,364 days,,,,,"Declared, not set",tripadvisor.de,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,ServerPool,tripadvisor.de,,,,364 days,,,,,"Declared, not set",tripadvisor.de,"This cookie is generally provided by TripAdvisor and is used for advertising purposes.
+"
+Targeting Cookies,banner,OneTrust,TAUnique,tripadvisor.de,,,,729 days,,,,,"Declared, not set",tripadvisor.de,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,TACds,tripadvisor.de,,,,59 days,,,,,"Declared, not set",tripadvisor.de,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,__vt,www.tripadvisor.de,,,,0 days,,,,,"Declared, not set",www.tripadvisor.de,
+Targeting Cookies,banner,OneTrust,TADCID,www.tripadvisor.de,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.de,
+Targeting Cookies,banner,OneTrust,TASameSite,www.tripadvisor.de,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.de,
+Targeting Cookies,banner,OneTrust,TAUnique,tripadvisor.nl,,,,729 days,,,,,"Declared, not set",tripadvisor.nl,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,TASession,tripadvisor.nl,,,,364 days,,,,,"Declared, not set",tripadvisor.nl,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,TACds,tripadvisor.nl,,,,59 days,,,,,"Declared, not set",tripadvisor.nl,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,ServerPool,tripadvisor.nl,,,,364 days,,,,,"Declared, not set",tripadvisor.nl,"This cookie is generally provided by TripAdvisor and is used for advertising purposes.
+"
+Targeting Cookies,banner,OneTrust,_kuid_,krxd.net,,,,179 days,,,,,"Declared, not set",krxd.net,Cookie used by NetworkAd.net for purpose of targeting.
+Targeting Cookies,banner,OneTrust,udmts,udmserve.net,,,,364 days,,,,,"Declared, not set",udmserve.net,TS
+Targeting Cookies,banner,OneTrust,dt,udmserve.net,,,,364 days,,,,,"Declared, not set",udmserve.net,"This domain is owned by Underdog Media, a US based online behavioural advertising business."
+Targeting Cookies,banner,OneTrust,rtbh,udmserve.net,,,,89 days,,,,,"Declared, not set",udmserve.net,"This domain is owned by Underdog Media, a US based online behavioural advertising business."
+Targeting Cookies,banner,OneTrust,TADCID,www.tripadvisor.fr,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.fr,
+Targeting Cookies,banner,OneTrust,__vt,www.tripadvisor.fr,,,,0 days,,,,,"Declared, not set",www.tripadvisor.fr,
+Targeting Cookies,banner,OneTrust,TASameSite,www.tripadvisor.fr,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.fr,
+Targeting Cookies,banner,OneTrust,TASession,tripadvisor.es,,,,364 days,,,,,"Declared, not set",tripadvisor.es,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,TAUnique,tripadvisor.es,,,,729 days,,,,,"Declared, not set",tripadvisor.es,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,TACds,tripadvisor.es,,,,59 days,,,,,"Declared, not set",tripadvisor.es,"This cookie is used to track visitors across websites to build a profile of search and browsing history.
+"
+Targeting Cookies,banner,OneTrust,ServerPool,tripadvisor.es,,,,364 days,,,,,"Declared, not set",tripadvisor.es,"This cookie is generally provided by TripAdvisor and is used for advertising purposes.
+"
+Targeting Cookies,banner,OneTrust,li_alerts,www.linkedin.com,,,,364 days,,,,,"Declared, not set",www.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,bscookie,www.linkedin.com,,,,364 days,,,,,"Declared, not set",www.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,JSESSIONID,www.linkedin.com,,,,Session,,,,,"Declared, not set",www.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,KRTBCOOKIE_xxxx,pubmatic.com,,,,29 days,,,,,"Declared, not set",pubmatic.com,This cookie is used to correlate IDs with those of Pubmatic partners (such as demand side platform clients or other advertising technology companies). Pubmatic passes information stored by the partner in this cookie to the partner when it is considering whether to purchase advertisements. This enables the partner to make better decisions about whether to display an advertisement to you.
+Targeting Cookies,banner,OneTrust,PugT,pubmatic.com,,,,29 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Targeting Cookies,banner,OneTrust,TADCID,cn.tripadvisor.com,,,,3649 days,,,,,"Declared, not set",cn.tripadvisor.com,
+Targeting Cookies,banner,OneTrust,__vt,cn.tripadvisor.com,,,,0 days,,,,,"Declared, not set",cn.tripadvisor.com,
+Targeting Cookies,banner,OneTrust,TASameSite,cn.tripadvisor.com,,,,3649 days,,,,,"Declared, not set",cn.tripadvisor.com,
+Targeting Cookies,banner,OneTrust,opt_out,postrelease.com,,,,364 days,,,,,"Declared, not set",postrelease.com,"This domain is owned by Nativo. The company provides a range of marketing and advertising services.
+"
+Targeting Cookies,banner,OneTrust,MUID,clarity.ms,,,,389 days,,,,,"Declared, not set",clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics service that provides insights into user behavior on websites."
+Targeting Cookies,banner,OneTrust,TESTCOOKIESENABLED,www.youtube.com,,,,0 days,,,,,"Declared, not set",www.youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,criteo_write_test,dynamic.criteo.com,,,,0 days,,,,,"Declared, not set",dynamic.criteo.com,"This domain is associated with Criteo, a digital advertising company that provides targeted advertising services."
+Targeting Cookies,banner,OneTrust,TADCID,www.tripadvisor.com,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.com,This domain is owned by Trip Adviser. The main business activity is: Travel Information/Tracking/Advertising
+Targeting Cookies,banner,OneTrust,__vt,www.tripadvisor.com,,,,0 days,,,,,"Declared, not set",www.tripadvisor.com,This domain is owned by Trip Adviser. The main business activity is: Travel Information/Tracking/Advertising
+Targeting Cookies,banner,OneTrust,TASameSite,www.tripadvisor.com,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.com,This domain is owned by Trip Adviser. The main business activity is: Travel Information/Tracking/Advertising
+Targeting Cookies,banner,OneTrust,__Secure-xxxxxxx,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_PRIVACY_METADATA,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,CONSENT,youtube.com,,,,6018 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,__Secure-ROLLOUT_TOKEN,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,__Secure-YEC,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,SRM_B,c.bing.com,,,,389 days,,,,,"Declared, not set",c.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,gpp,id5-sync.com,,,,0 days,,,,,"Declared, not set",id5-sync.com,"This domain is associated with ID5, a company that provides online identification solutions for ad tech companies, enabling them to create and distribute a unique user ID to track individuals for advertising purposes."
+Targeting Cookies,banner,OneTrust,TASameSite,www.tripadvisor.com.br,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.com.br,
+Targeting Cookies,banner,OneTrust,TADCID,www.tripadvisor.com.br,,,,3649 days,,,,,"Declared, not set",www.tripadvisor.com.br,
+Targeting Cookies,banner,OneTrust,__vt,www.tripadvisor.com.br,,,,0 days,,,,,"Declared, not set",www.tripadvisor.com.br,
+Targeting Cookies,banner,OneTrust,CONSENT,google.com,,,,729 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Targeting Cookies,banner,OneTrust,NID,google.com,,,,182 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Targeting Cookies,banner,OneTrust,ayl_visitor,omnitagjs.com,,,,29 days,,,,,"Declared, not set",omnitagjs.com,This host is used by Ads You Like for deep native advertising.
+Targeting Cookies,banner,OneTrust,umeh,360yield.com,,,,89 days,,,,,"Declared, not set",360yield.com,"This domain is owned by Improve Digital, a company based in the Netherlands with offices in various EU locations. Improve Digital is itself majority owned by Swiss-based PubliGroupe. The company provides a technology platform to enable website owners to manage online third party advertising through their websites."
+Targeting Cookies,banner,OneTrust,um,360yield.com,,,,89 days,,,,,"Declared, not set",360yield.com,"This domain is owned by Improve Digital, a company based in the Netherlands with offices in various EU locations. Improve Digital is itself majority owned by Swiss-based PubliGroupe. The company provides a technology platform to enable website owners to manage online third party advertising through their websites."
+Targeting Cookies,banner,OneTrust,tuuid_lu,360yield.com,,,,89 days,,,,,"Declared, not set",360yield.com,"This domain is owned by Improve Digital, a company based in the Netherlands with offices in various EU locations. Improve Digital is itself majority owned by Swiss-based PubliGroupe. The company provides a technology platform to enable website owners to manage online third party advertising through their websites."
+Targeting Cookies,banner,OneTrust,tuuid,360yield.com,,,,89 days,,,,,"Declared, not set",360yield.com,"This domain is owned by Improve Digital, a company based in the Netherlands with offices in various EU locations. Improve Digital is itself majority owned by Swiss-based PubliGroupe. The company provides a technology platform to enable website owners to manage online third party advertising through their websites."
+Targeting Cookies,banner,OneTrust,ar_debug,ara.paa-reporting-advertising.amazon,,,,Session,,,,,"Declared, not set",ara.paa-reporting-advertising.amazon,This domain is owned by Amazon which provides advertising and analytics services.
+Targeting Cookies,banner,OneTrust,XSRF-TOKEN,api.youku.com,,,,Session,,,,,"Declared, not set",api.youku.com,This cookie is written to help with site security in preventing Cross-Site Request Forgery attacks.

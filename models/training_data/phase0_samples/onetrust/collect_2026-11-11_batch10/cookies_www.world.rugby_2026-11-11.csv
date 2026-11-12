@@ -1,0 +1,68 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Targeting Cookies,banner,OneTrust,xnpe_584a2910-3793-11ee-8fb8-badd09eede69,api.uk.exponea.com,/,Third party,400.00 days,399 days,false,true,none,false,Declared & set,api.uk.exponea.com,Customer's Bloomreach Engagement generated client-side cookie
+Performance Cookies,banner,OneTrust,aly_user_id,www.world.rugby,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,www.world.rugby,"A unique, randomized string or ID which allows the server or internal analytics scripts to tie specific actions (like page views, button clicks, or form submissions) to a single user without knowing their real-world identity"
+Functional Cookies,banner,OneTrust,req_language,www.world.rugby,/,First party,30.00 days,29 days,false,false,unspecified,false,Declared & set,www.world.rugby,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.www.world.rugby,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.world.rugby,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Performance Cookies,banner,OneTrust,_ga_CDPKQTE1P9,.world.rugby,/,First party,400.00 days,398 days,false,false,unspecified,false,Declared & set,world.rugby,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Performance Cookies,banner,OneTrust,_ga,.world.rugby,/,First party,400.00 days,398 days,false,false,unspecified,false,Declared & set,world.rugby,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Targeting Cookies,banner,OneTrust,_gcl_au,.world.rugby,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,world.rugby,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services
+Unclassified,none,,mc,.quantserve.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,__qca,.world.rugby,/,First party,392.00 days,0 days,false,false,unspecified,false,Declared & set,secure.quantserve.com,"This domain is associated with Quantcast, a digital marketing company that provides website rankings and the data behind them."
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,KRTBCOOKIE_153,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rlas3,.rlcdn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.rlcdn.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,did,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,didts,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,nnls,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,anj,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,tluid,.3lift.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pid,.smartadserver.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TestIfCookieP,.smartadserver.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,i,.openx.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,c,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dax_listenerid,.thisisdax.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,ph_phc_s8kG86T6k9fFTp3L9wNTDspFF3Jo1S3tzym2YfMk8eN_posthog,.world.rugby,/,First party,365.00 days,364 days,false,true,lax,false,Declared & set,world.rugby,"The PostHog ph_phc_xxx cookie is a session cookie used for identifying and tracking visitors on websites, helping us understand user behavior and website performance."
+Unclassified,none,,csync,.smartadserver.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tvid,.tremorhub.com,/,Third party,365.24 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tv_UIQC,.tremorhub.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_uid,.fwmrm.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ljt_reader,.lijit.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.1rx.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,QCUSERCOOKIE,.infolinks.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tt_viewer,.teads.tv,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.targeting.unrulymedia.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ab,.agkn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,demdex,.demdex.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dspuuid,.sxp.smartclip.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,psyn,.sxp.smartclip.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uuid,.sxp.smartclip.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dpm,.dpm.demdex.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,__exponea_etc__,.world.rugby,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,world.rugby,Customer's Bloomreach Engagement generated client-side cookie
+Targeting Cookies,banner,OneTrust,__exponea_time2__,.world.rugby,/,First party,0.04 days,0 days,false,true,none,false,Declared & set,world.rugby,Timestamp offset between browser and server time
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.www.world.rugby,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.world.rugby,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Performance Cookies,banner,OneTrust,_ga_130HE4C938,.world.rugby,/,First party,400.00 days,398 days,false,false,unspecified,false,Declared & set,world.rugby,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Unclassified,none,,sp,.quantserve.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga_1PSXDXGBG8,.world.rugby,/,First party,400.00 days,398 days,false,false,unspecified,false,Declared & set,world.rugby,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Targeting Cookies,banner,OneTrust,_dlt,world.rugby,,,,0 days,,,,,"Declared, not set",world.rugby,This cookie is associated with Google's real time bidding advertising exchange. The main purpose of this cookie is targeting.
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,csrftoken,instagram.com,,,,399 days,,,,,"Declared, not set",instagram.com,"Instagram is a social networking service owned by Facebook, Inc. It's designed for sharing photos and videos from a smartphone. The service also uses cookies for various purposes, including analytics, personalization, and advertising."
+Performance Cookies,banner,OneTrust,dmn_chk_-xxxxxxxxxxxx,world.rugby,,,,0 days,,,,,"Declared, not set",world.rugby,Posthog Analytics

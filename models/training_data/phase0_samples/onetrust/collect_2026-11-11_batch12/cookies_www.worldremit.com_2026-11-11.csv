@@ -1,0 +1,80 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_GRECAPTCHA,www.google.com,/recaptcha,Third party,180.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,selectFrom,www.worldremit.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Functional Cookies,banner,OneTrust,locationCountry,www.worldremit.com,/,First party,0.04 days,0 days,false,false,unspecified,false,Declared & set,www.worldremit.com,
+Performance Cookies,banner,OneTrust,gaVisitorTypeShort,www.worldremit.com,/,First party,0.02 days,0 days,false,false,unspecified,false,Declared & set,www.worldremit.com,
+Performance Cookies,banner,OneTrust,gaVisitorTypeLong,www.worldremit.com,/,First party,400.00 days,730 days,false,false,unspecified,false,Declared & set,www.worldremit.com,
+Strictly Necessary Cookies,banner,OneTrust,rskxRunCookie,.worldremit.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,worldremit.com,
+Strictly Necessary Cookies,banner,OneTrust,rCookie,.worldremit.com,/,First party,400.00 days,0 days,false,false,unspecified,false,Declared & set,beacon.riskified.com,
+Unclassified,none,,optimizelyEndUserId,.worldremit.com,/,First party,180.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,_pxhd,api.worldremit.com,/,First party,Session,Session,false,false,lax,false,Declared & set,www.worldremit.com,
+Unclassified,none,,_ttp,.tiktok.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_scid,.worldremit.com,/,First party,395.00 days,395 days,false,false,lax,false,Declared & set,www.worldremit.com,"Cookie associated with Snapchat. Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates realtime bidding for advertisers."
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_twpid,.worldremit.com,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Targeting Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Unclassified,none,,_tt_enable_cookie,.worldremit.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ttp,.worldremit.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,_pxvid,.worldremit.com,/,First party,365.00 days,365 days,false,true,lax,false,Declared & set,worldremit.com,PerimetrX is a security tool used to protect the website from attacks and security threats.
+Targeting Cookies,banner,OneTrust,_fbp,.worldremit.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,worldremit.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Unclassified,none,,brwsr,.sjv.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,irtps,.sjv.io,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,muc_ads,.t.co,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.t.co,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,personalization_id,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.twitter.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,af_id,.appsflyersdk.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,afUserId,.worldremit.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,af_id,.onelink.me,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AF_SYNC,.worldremit.com,/,First party,7.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,brwsr,.ojrq.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,sc_at,.snapchat.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,snapchat.com,Cookie associated with embedding content from Snapchat.
+Unclassified,none,,_sctr,.worldremit.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.www.worldremit.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.worldremit.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Performance Cookies,banner,OneTrust,_ga,.worldremit.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,worldremit.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Unclassified,none,,guest_id_marketing,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id_ads,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guest_id,.twitter.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lastRskxRun,.worldremit.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.www.worldremit.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.worldremit.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,fs_lua,.worldremit.com,/,First party,0.02 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,fs_uid,.worldremit.com,/,First party,365.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_scid_r,.worldremit.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Functional Cookies,banner,OneTrust,_tq_id.TV-8181094581-1.7575,www.worldremit.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,www.worldremit.com,_tq_id.TV
+Unclassified,none,,IR_PI,.worldremit.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,IR_17563,.worldremit.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,_twsid,.worldremit.com,/,First party,390.00 days,,false,true,strict,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_uetsid,.worldremit.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,worldremit.com,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Performance Cookies,banner,OneTrust,_uetvid,.worldremit.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,worldremit.com,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Performance Cookies,banner,OneTrust,_ga_JMDY11H0YJ,.worldremit.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,worldremit.com,_ga
+Unclassified,none,,ttcsid,.worldremit.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_C31NBQNG09F87OJKRVAG,.worldremit.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,_px3,.worldremit.com,/,First party,0.00 days,0 days,false,true,lax,false,Declared & set,worldremit.com,PerimetrX is a security tool used to protect the website from attacks and security threats.
+Strictly Necessary Cookies,banner,OneTrust,pxcts,.worldremit.com,/,First party,Session,Session,false,true,lax,false,Declared & set,worldremit.com,Used to maintain a cross tab session
+Functional Cookies,banner,OneTrust,_sp_xxxxxxxxxx,worldremit.com,,,,730 days,,,,,"Declared, not set",worldremit.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,_sp_root_domain_test_,worldremit.com,,,,Session,,,,,"Declared, not set",worldremit.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,Eg9be,www.worldremit.com,,,,179 days,,,,,"Declared, not set",www.worldremit.com,
+Strictly Necessary Cookies,banner,OneTrust,cookietest,www.worldremit.com,,,,Session,,,,,"Declared, not set",www.worldremit.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies.Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Strictly Necessary Cookies,banner,OneTrust,_pxff_fp,www.worldremit.com,,,,0 days,,,,,"Declared, not set",www.worldremit.com,PerimetrX is a security tool used to protect the website from attacks and security threats.
+Strictly Necessary Cookies,banner,OneTrust,_pxff_rf,www.worldremit.com,,,,0 days,,,,,"Declared, not set",www.worldremit.com,PerimetrX is a security tool used to protect the website from attacks and security threats.
+Strictly Necessary Cookies,banner,OneTrust,__pxvid,worldremit.com,,,,366 days,,,,,"Declared, not set",worldremit.com,Used for browser detection and distinguishing whether it is a real user or malicious bot.
+Strictly Necessary Cookies,banner,OneTrust,_pxff_idp_c,www.worldremit.com,,,,0 days,,,,,"Declared, not set",www.worldremit.com,Used to flag features for browser detection and distinguishing whether it is a real user or malicious bot.
+Strictly Necessary Cookies,banner,OneTrust,_pxff_cc,www.worldremit.com,,,,0 days,,,,,"Declared, not set",www.worldremit.com,
+Strictly Necessary Cookies,banner,OneTrust,cf_chl_cc_,www.worldremit.com,,,,Session,,,,,"Declared, not set",www.worldremit.com,cf_chl_cc_
+Strictly Necessary Cookies,banner,OneTrust,cf_use_ob,www.worldremit.com,,,,0 days,,,,,"Declared, not set",www.worldremit.com,This cookie is associated with sites using CloudFlare.  It is used to improve page load times and to override any security restrictions based on the visitors IP address.  It does not contain any user identification information. 
+Strictly Necessary Cookies,banner,OneTrust,rskxRunCookie,beacon.riskified.com,,,,0 days,,,,,"Declared, not set",beacon.riskified.com,
+Performance Cookies,banner,OneTrust,ADRUM,worldremit.com,,,,Session,,,,,"Declared, not set",worldremit.com,"AppDynamics -  browser performance management tool uses this cookies to collect web performance data and IP addresses.
+"
+Performance Cookies,banner,OneTrust,ADRUM_BT,www.worldremit.com,,,,365 days,,,,,"Declared, not set",www.worldremit.com,Cookie to support function of AppDyanmics 
+Performance Cookies,banner,OneTrust,_gat_UA-nnnnnnn-nn,worldremit.com,,,,0 days,,,,,"Declared, not set",worldremit.com,"This is a pattern type cookie set by Google Analytics, where the pattern element on the name contains the unique identity number of the account or website it relates to. It appears to be a variation of the _gat cookie which is used to limit the amount of data recorded by Google on high traffic volume websites."
+Performance Cookies,banner,OneTrust,_gid,worldremit.com,,,,0 days,,,,,"Declared, not set",worldremit.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Performance Cookies,banner,OneTrust,_gclxxxx,worldremit.com,,,,89 days,,,,,"Declared, not set",worldremit.com,Google conversion tracking cookie
+Targeting Cookies,banner,OneTrust,cf_chl_2,www.worldremit.com,,,,0 days,,,,,"Declared, not set",www.worldremit.com,"These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising."
+Targeting Cookies,banner,OneTrust,cf_chl_rc_ni,www.worldremit.com,,,,0 days,,,,,"Declared, not set",www.worldremit.com,"These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising."
+Targeting Cookies,banner,OneTrust,ad-id,amazon-adsystem.com,,,,235 days,,,,,"Declared, not set",amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.
+Targeting Cookies,banner,OneTrust,ad-privacy,amazon-adsystem.com,,,,1880 days,,,,,"Declared, not set",amazon-adsystem.com,This domain is owned by online retailer Amazon and is used as part of its affiliate marketing programme.

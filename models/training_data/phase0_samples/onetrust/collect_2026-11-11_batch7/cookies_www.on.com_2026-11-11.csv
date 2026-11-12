@@ -1,0 +1,110 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,cuid,.celtraidentity.com,/363651c8,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bounceClientVisit4364c,.bounceexchange.com,/state,Third party,0.02 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,on_uuid,.on.com,/,First party,400.00 days,730 days,false,true,none,false,Declared & set,on.com,
+Unclassified,none,,on_session_id,.on.com,/,First party,Session,,false,true,lax,false,Not declared,,
+Unclassified,none,,locale,www.on.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,force_cs_locale,.on.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,cf_clearance,.on.com,/,First party,365.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,api-router-id,www.on.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,v1_0_0,.on.com,/,First party,1.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,force_new_site_for_checkout,www.on.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,guest_token,www.on.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,order_guest_token,www.on.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.on-running.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,on-running.com,This is a CloudFoundry cookie
+Unclassified,none,,cai_sid,www.on.com,/,First party,1.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,cai_csrf,www.on.com,/,First party,1.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,_gcl_au,.on.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,AwinChannelCookie,.on.com,/,First party,30.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_scid,.on.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_ttp,.tiktok.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ajs_anonymous_id,.on.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_sp_ses.0f09,.on.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rstr_d,.on.com,/,First party,29.79 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_tt_enable_cookie,.on.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ttp,.on.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,lantern,.on.com,/,First party,30.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_pin_unauth,.on.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.bzrcdn.openai.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,on-running.com,This is a CloudFoundry cookie
+Unclassified,none,,_cfuvid,.bzrcdn.openai.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,__obref,.on.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,EXP_37c05b1384_identity,.on.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,sc_at,.snapchat.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_fbp,.on.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,on.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Unclassified,none,,_hjSession_197558,.on.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sp,t.getletterpress.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,uuid,.innovid.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga,.on.com,/,First party,400.00 days,730 days,false,true,none,false,Declared & set,on.com,
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,sailthru_visitor,www.on.com,/,First party,365.00 days,365 days,false,true,lax,false,Declared & set,on.com,
+Unclassified,none,,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_sctr,.on.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,123518_lantern,.roeye.com,/,Third party,182.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,FPID,.on.com,/,First party,400.00 days,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,bounceClientVisit4364,.on.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__wknd_4364e,.on.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,FPLC,.on.com,/,First party,0.83 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,FPAU,.on.com,/,First party,90.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,bounceClientVisit4364v,www.on.com,/,First party,0.02 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ga4_cid,.on.com,/,First party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ga4_sid,.on.com,/,First party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,ServerAwinChannelCookie,.on.com,/,First party,30.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,__3idcontext,.cdnwidget.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__idcontext,.on.com,/,First party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__ga_max_age_set,.on.com,/,First party,400.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,FPGSID,.on.com,/,First party,0.02 days,,false,true,strict,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.bzr.openai.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,on-running.com,This is a CloudFoundry cookie
+Unclassified,none,,_cfuvid,.bzr.openai.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,AMP_MKTG_37c05b1384,.on.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.on.com,/,First party,400.00 days,1094 days,false,true,none,false,Declared & set,on.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Unclassified,none,,_hjSessionUser_197558,.on.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,on_gender_affinity_experiment_variant,www.on.com,/,First party,7.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,page_count,www.on.com,/,First party,0.02 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_rdt_uuid,.on.com,/,First party,90.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_sp_id.0f09,.on.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,on_rollout_test_group,.on.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,on_rollout_test_name,.on.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_scid_r,.on.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,sailthru_pageviews,www.on.com,/,First party,0.02 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,_tq_id.TV-6354908109-1.4cb1,www.on.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.on.com,/,First party,400.00 days,1094 days,false,true,none,false,Declared & set,on.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,_uetsid,.on.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_uetvid,.on.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,sailthru_content,www.on.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,_ga_2YCD2JC1VD,.on.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ttcsid,.on.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_BVQ70VGJIVA2UID92230,.on.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_br_uid_2,.on.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,__wknd_4364e,www.on.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,AMP_37c05b1384,.on.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,CSRF-TOKEN,www.on.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,_on_running_session,www.on.com,/,First party,Session,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,__cfwaitingroom_waitingroom,.www.on.com,/,First party,0.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,chatUuid,www.on.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,on-running.com,,,,1094 days,,,,,"Declared, not set",on-running.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,on-running.com,,,,1094 days,,,,,"Declared, not set",on-running.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Functional Cookies,banner,OneTrust,sp_landing,spotify.com,,,,0 days,,,,,"Declared, not set",spotify.com,"This domain is owned by Spotify, a USA based music streaming service.  Spotify provides a number of tools to embed into websites, which enable the tracking of users and non-users across domains."
+Functional Cookies,banner,OneTrust,sp_t,spotify.com,,,,364 days,,,,,"Declared, not set",spotify.com,"This domain is owned by Spotify, a USA based music streaming service.  Spotify provides a number of tools to embed into websites, which enable the tracking of users and non-users across domains."
+Targeting Cookies,banner,OneTrust,_fbclid,on.com,,,,365 days,,,,,"Declared, not set",on.com,
+Targeting Cookies,banner,OneTrust,CONSENT,google.com,,,,729 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Targeting Cookies,banner,OneTrust,bscookie,www.linkedin.com,,,,364 days,,,,,"Declared, not set",www.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_PRIVACY_METADATA,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,CONSENT,youtube.com,,,,729 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,,www.facebook.com,,,,Session,,,,,"Declared, not set",www.facebook.com,"This domain is owned by Facebook, which is the world's largest social networking service.  As a third party host provider, it mostly collects data on the interests of users via widgets such as the 'Like' button found on many websites.  This is used to serve targeted advertising to its users when logged into its services.  In 2014 it also started serving up behaviourally targeted advertising on other websites, similar to most dedicated online marketing companies."
+Targeting Cookies,banner,OneTrust,lidc,linkedin.com,,,,0 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,bcookie,linkedin.com,,,,364 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,AnalyticsSyncHistory,linkedin.com,,,,29 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,li_gc,linkedin.com,,,,179 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,UserMatchHistory,linkedin.com,,,,29 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,li_sugr,linkedin.com,,,,89 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."

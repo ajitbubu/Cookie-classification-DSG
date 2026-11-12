@@ -1,0 +1,48 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,__cf_ob,www.rover.com,/cdn-cgi/challenge-platform,First party,Session,,false,true,none,true,Not declared,,
+Strictly Necessary,banner,Ketch,csrftoken,.rover.com,/,First party,364.00 days,364 days,false,true,lax,false,Declared & set,,
+Strictly Necessary,banner,Ketch,ncc,www.rover.com,/,First party,365.00 days,365 days,true,true,unspecified,false,Declared & set,,
+Strictly Necessary,banner,Ketch,rover_cid,.www.rover.com,/,First party,365.00 days,365 days,false,true,none,false,Declared & set,,
+Strictly Necessary,banner,Ketch,_cfuvid,.rover.com,/,First party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Unclassified,none,,AMP_MKTG_60c8c8da24,.rover.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Targeted Advertising & Data Selling or Sharing,banner,Ketch,_gcl_au,.rover.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Strictly Necessary,banner,Ketch,__cf_bm,.bzrcdn.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Strictly Necessary,banner,Ketch,_cfuvid,.bzrcdn.openai.com,/,Third party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Unclassified,none,,__obref,.rover.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary,banner,Ketch,_swb,.rover.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Strictly Necessary,banner,Ketch,_ketch_consent_v1_,.rover.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Strictly Necessary,banner,Ketch,_swb_consent_,.rover.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Performance/Analytics,banner,Ketch,alooma_session_key,.rover.com,/,First party,365.00 days,365 days,false,false,unspecified,false,Declared & set,,
+Targeted Advertising & Data Selling or Sharing,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Performance/Analytics,banner,Ketch,_ga,.rover.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Targeted Advertising & Data Selling or Sharing,banner,Ketch,c,.pointmediatracker.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,tinuiti
+Targeted Advertising & Data Selling or Sharing,banner,Ketch,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Targeted Advertising & Data Selling or Sharing,banner,Ketch,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Strictly Necessary,banner,Ketch,__cf_bm,.bzr.openai.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Strictly Necessary,banner,Ketch,_cfuvid,.bzr.openai.com,/,Third party,Session,,true,true,none,false,Declared & set,,Cloudflare
+Performance/Analytics,banner,Ketch,mp_rover_alooma,.rover.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,
+Performance/Analytics,banner,Ketch,entry_page,.rover.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,
+Targeted Advertising & Data Selling or Sharing,banner,Ketch,_uetsid,.rover.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Strictly Necessary,banner,Ketch,cf_clearance,.rover.com,/,First party,365.00 days,364 days,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,AMP_60c8c8da24,.rover.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Targeted Advertising & Data Selling or Sharing,banner,Ketch,_uetvid,.rover.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Unclassified,none,,_ga_TDDJRNWB1T,.rover.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary,banner,Ketch,__cf_bm,.rover.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Functional,banner,Ketch,fbsr_*,,,,,,,,,,"Declared, not set",,
+Functionality,banner,Ketch,fbsr_*,,,,,,,,,,"Declared, not set",,
+Performance/Analytics,banner,Ketch,AMP_*,,,,,364 days,,,,,"Declared, not set",,Amplitude
+Performance/Analytics,banner,Ketch,AMP_MKTG_*,,,,,364 days,,,,,"Declared, not set",,Amplitude
+Performance/Analytics,banner,Ketch,AMP_TEST,,,,,,,,,,"Declared, not set",,Amplitude
+Performance/Analytics,banner,Ketch,AMP_TLDTEST,,,,,,,,,,"Declared, not set",,Amplitude
+Performance/Analytics,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Performance/Analytics,banner,Ketch,AMP_*,,,,,364 days,,,,,"Declared, not set",,Amplitude
+Performance/Analytics,banner,Ketch,AMP_MKTG_*,,,,,364 days,,,,,"Declared, not set",,Amplitude
+Performance/Analytics,banner,Ketch,AMP_TEST,,,,,,,,,,"Declared, not set",,Amplitude
+Performance/Analytics,banner,Ketch,AMP_TLDTEST,,,,,,,,,,"Declared, not set",,Amplitude
+Strictly Necessary,banner,Ketch,cookietest,,,,,,,,,,"Declared, not set",,Shopify
+Strictly Necessary,banner,Ketch,GCLB,,,,,,,,,,"Declared, not set",,
+Strictly Necessary,banner,Ketch,__kla_off,,,,,,,,,,"Declared, not set",,Klaviyo
+Strictly Necessary,banner,Ketch,sessionid,,,,,30 days,,,,,"Declared, not set",,
+Strictly Necessary,banner,Ketch,__ssid,,,,,400 days,,,,,"Declared, not set",,sift
+Targeted Advertising & Data Selling or Sharing,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Advertising (“Selling” or “Sharing”),banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads

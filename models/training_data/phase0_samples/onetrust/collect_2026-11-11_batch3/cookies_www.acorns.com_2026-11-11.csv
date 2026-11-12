@@ -1,0 +1,214 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_vb,www.acorns.com,/invest-my-tips,First party,30.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,_vb,www.acorns.com,/banking,First party,30.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,_vb,www.acorns.com,/invest,First party,30.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,_vb,www.acorns.com,/later,First party,30.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,rl_page_init_referrer,.acorns.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,acorns.com,
+Unclassified,none,,rl_page_init_referring_domain,.acorns.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,EXP_5ccb29d8e2_identity,.acorns.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,_clck,.acorns.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,_gcl_au,.acorns.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,acorns.com,Google conversion tracking cookie
+Functional Cookies,banner,OneTrust,FPC,www.acorns.com,/,First party,7.00 days,6 days,false,false,unspecified,false,Declared & set,share.acorns.com,
+Functional Cookies,banner,OneTrust,fp_webid,www.acorns.com,/,First party,7.00 days,6 days,false,false,unspecified,false,Declared & set,hello.acorns.com,
+Performance Cookies,banner,OneTrust,_gid,.acorns.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,acorns.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Performance Cookies,banner,OneTrust,_gat_UA-46142661-9,.acorns.com,/,First party,0.00 days,729 days,false,false,unspecified,false,Declared & set,acorns.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Unclassified,none,,MUID,.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,brwsr,.sjv.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_vb,www.acorns.com,/,First party,30.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,_mlcp,.acorns.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_mlcs,.acorns.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,MR,.c.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SRM_B,.c.bing.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,uuid2,.adnxs.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Functional Cookies,banner,OneTrust,sa-user-id,tags.srv.stackadapt.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,hello.acorns.com,
+Functional Cookies,banner,OneTrust,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,hello.acorns.com,
+Functional Cookies,banner,OneTrust,sa-user-id-v2,tags.srv.stackadapt.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,tags.srv.stackadapt.com,
+Functional Cookies,banner,OneTrust,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,tags.srv.stackadapt.com,
+Unclassified,none,,sa-user-id-v4,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,sa-user-id,www.acorns.com,/,First party,365.00 days,364 days,false,true,unspecified,false,Declared & set,hello.acorns.com,
+Functional Cookies,banner,OneTrust,sa-user-id-v2,www.acorns.com,/,First party,365.00 days,364 days,false,true,unspecified,false,Declared & set,hello.acorns.com,
+Unclassified,none,,sa-user-id-v3,www.acorns.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,www.acorns.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Functional Cookies,banner,OneTrust,_dpm_ses.3641,.acorns.com,/,First party,0.02 days,0 days,false,true,none,false,Declared & set,acorns.com,
+Performance Cookies,banner,OneTrust,__pdst,www.acorns.com,/,First party,365.00 days,364 days,false,false,strict,false,Declared & set,hello.acorns.com,Podsights cookie used to track Hubspots podcast advertising results.
+Targeting Cookies,banner,OneTrust,_scid,.acorns.com,/,First party,395.00 days,394 days,false,false,lax,false,Declared & set,hello.acorns.com,"Cookie associated with Snapchat. Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates realtime bidding for advertisers."
+Social Media Cookies,banner,OneTrust,_ttp,.tiktok.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,tiktok.com,
+Unclassified,none,,SM,.c.clarity.ms,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,MUID,.clarity.ms,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,MR,.c.clarity.ms,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Not declared,,
+Unclassified,none,,arc_id,.mgln.ai,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,_tt_enable_cookie,.acorns.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,acorns.com,
+Functional Cookies,banner,OneTrust,_ttp,.acorns.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,acorns.com,
+Unclassified,none,,KRTBCOOKIE_1208,.pubmatic.com,/,Third party,14.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,receive-cookie-deprecation,.rubiconproject.com,/,Third party,90.00 days,,true,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,wfivefivec,.w55c.net,/,Third party,395.42 days,395 days,false,true,none,false,Declared & set,w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Unclassified,none,,_axwrt_ts,.acorns.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_axwrt,.acorns.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,c,.pointmediatracker.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,pointmediatracker.com,
+Unclassified,none,,matchgoogle,.w55c.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sc_at,.snapchat.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_fbp,.acorns.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,acorns.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,sp,.tvpixel.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,tvpixel.com,This cookie is associated with Eventbrite and is used to deliver content tailored to the end user's interests and improve content creation. This cookie is also used for event-booking purposes.
+Unclassified,none,,mlcwc,.moloco.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,bito,.bidr.io,/,Third party,394.79 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bitoIsSecure,.bidr.io,/,Third party,394.79 days,,false,true,none,false,Not declared,,
+Unclassified,none,,axcrt,.applovin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_sctr,.acorns.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,t_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,t_pt_gid,.taboola.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,guid,.mountain.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,DSPR,.ds.kakao.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tt,.px.mountain.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rt,.mountain.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_mpxl_guid,.acorns.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,DSPR,.ad.daum.net,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.acorns.com,/,First party,400.00 days,365 days,false,false,lax,false,Declared & set,.acorns.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Unclassified,none,,matchbluekai,.w55c.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,tatari-session-cookie,.acorns.com,/,First party,400.00 days,3559 days,false,false,unspecified,false,Declared & set,acorns.com,
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,c,.bidswitch.net,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,pointmediatracker.com,
+Unclassified,none,,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,matchcasale,.w55c.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__Secure-YNID,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,YSC,.youtube.com,/,Third party,Session,Session,true,true,none,true,Declared & set,youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Unclassified,none,,__Secure-ROLLOUT_TOKEN,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,.youtube.com,/,Third party,180.00 days,179 days,true,true,none,true,Declared & set,youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Unclassified,none,,VISITOR_PRIVACY_METADATA,.youtube.com,/,Third party,180.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,matchliveramp,.w55c.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rlas3,.rlcdn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.rlcdn.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,didts,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,nnls,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,did,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,__cf_bm,.linkedin.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,acorns.zendesk.com,This is a CloudFoundry cookie
+Unclassified,none,,matchrubicon,.w55c.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga_H13DBYQ3KY,.acorns.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,acorns.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Performance Cookies,banner,OneTrust,_ga_N6KB6DJJP1,.acorns.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,acorns.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Performance Cookies,banner,OneTrust,_ga_16ZLW2X4JG,.acorns.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,acorns.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Performance Cookies,banner,OneTrust,_ga,.acorns.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,acorns.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Functional Cookies,banner,OneTrust,_dpm_id.3641,.acorns.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,acorns.com,
+Functional Cookies,banner,OneTrust,IR_5136,.acorns.com,/,First party,Session,Session,false,true,unspecified,false,Declared & set,acorns.com,
+Unclassified,none,,IR_PI,.acorns.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,_scid_r,.acorns.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.acorns.com,/,First party,400.00 days,365 days,false,false,lax,false,Declared & set,.acorns.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,ax_visitor,.acorns.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Functional Cookies,banner,OneTrust,rl_user_id,.acorns.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,acorns.com,
+Functional Cookies,banner,OneTrust,rl_trait,.acorns.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,acorns.com,
+Functional Cookies,banner,OneTrust,rl_group_id,.acorns.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,acorns.com,
+Unclassified,none,,rl_group_trait,.acorns.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Functional Cookies,banner,OneTrust,rl_anonymous_id,.acorns.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,acorns.com,
+Unclassified,none,,_uetsid,.acorns.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,matchtapad,.w55c.net,/,Third party,5.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,anj,.adnxs.com,/,Third party,90.00 days,89 days,true,true,none,false,Declared & set,adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Unclassified,none,,irld,acorns.sjv.io,/,Third party,180.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,tatari-cookie-test,www.acorns.com,/,First party,400.00 days,3559 days,false,false,unspecified,false,Declared & set,hello.acorns.com,
+Functional Cookies,banner,OneTrust,rl_session,.acorns.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,acorns.com,
+Unclassified,none,,__rkp,.acorns.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,AMP_5ccb29d8e2,.acorns.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_mlss,.acorns.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_clsk,.acorns.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_uetvid,.acorns.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_C554HR000UN7QUNFFK40,.acorns.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid,.acorns.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Functional Cookies,banner,OneTrust,__Secure-next-auth.callback-url,support.acorns.com,,,,Session,,,,,"Declared, not set",support.acorns.com,
+Functional Cookies,banner,OneTrust,__tld__,acorns.com,,,,Session,,,,,"Declared, not set",acorns.com,From Segment Analytics.js library; this cookie helps to figure out a top-level domain for a user.__tld__
+Functional Cookies,banner,OneTrust,__zlcmid,acorns.com,,,,364 days,,,,,"Declared, not set",acorns.com,Live chat widget sets the cookies to store the Zopim Live Chat ID used to identify a device across visits.
+Functional Cookies,banner,OneTrust,__zlcstore,acorns.com,,,,0 days,,,,,"Declared, not set",acorns.com,
+Functional Cookies,banner,OneTrust,_dd_s,hello.acorns.com,,,,0 days,,,,,"Declared, not set",hello.acorns.com,
+Functional Cookies,banner,OneTrust,_sp_root_domain_test_xxxxxxxxxxxxx,acorns.com,,,,Session,,,,,"Declared, not set",acorns.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,_tq_id.TV,hello.acorns.com,,,,729 days,,,,,"Declared, not set",hello.acorns.com,_tq_id.TV
+Functional Cookies,banner,OneTrust,access_token,share.acorns.com,,,,364 days,,,,,"Declared, not set",share.acorns.com,
+Functional Cookies,banner,OneTrust,cart_currency,store.acorns.com,,,,13 days,,,,,"Declared, not set",store.acorns.com,
+Functional Cookies,banner,OneTrust,extole_access_token,share.acorns.com,,,,Session,,,,,"Declared, not set",share.acorns.com,
+Functional Cookies,banner,OneTrust,FPID,acorns.com,,,,729 days,,,,,"Declared, not set",acorns.com,
+Functional Cookies,banner,OneTrust,FPLC,acorns.com,,,,0 days,,,,,"Declared, not set",acorns.com,
+Functional Cookies,banner,OneTrust,IR_gbd,acorns.com,,,,Session,,,,,"Declared, not set",acorns.com,
+Functional Cookies,banner,OneTrust,localization,store.acorns.com,,,,364 days,,,,,"Declared, not set",store.acorns.com,"These cookies are set on pages with the Flickr widget.
+"
+Functional Cookies,banner,OneTrust,optimizelyOptOut,acorns.com,,,,364 days,,,,,"Declared, not set",acorns.com,
+Functional Cookies,banner,OneTrust,test_rudder,acorns.com,,,,364 days,,,,,"Declared, not set",acorns.com,
+Functional Cookies,banner,OneTrust,test_rudder_cookie,acorns.com,,,,364 days,,,,,"Declared, not set",acorns.com,
+Functional Cookies,banner,OneTrust,t-ip,acorns.com,,,,0 days,,,,,"Declared, not set",acorns.com,
+Functional Cookies,banner,OneTrust,AWSALB,widget-mediator.zopim.com,,,,6 days,,,,,"Declared, not set",widget-mediator.zopim.com,AWS ELB application load balancer
+Functional Cookies,banner,OneTrust,__zlcstore,zendesk.com,,,,0 days,,,,,"Declared, not set",zendesk.com,"This domain is owned by Zendesk. Although mainly a tool to track tickets and support issues for a company, Zendesk also has cookies that are used to capture advertising-related information for campaigns and other advertising purposes."
+Functional Cookies,banner,OneTrust,_ga,zendesk.com,,,,729 days,,,,,"Declared, not set",zendesk.com,_ga
+Functional Cookies,banner,OneTrust,_gid,zendesk.com,,,,0 days,,,,,"Declared, not set",zendesk.com,_gid
+Functional Cookies,banner,OneTrust,zte2095,zendesk.com,,,,Session,,,,,"Declared, not set",zendesk.com,"This domain is owned by Zendesk. Although mainly a tool to track tickets and support issues for a company, Zendesk also has cookies that are used to capture advertising-related information for campaigns and other advertising purposes."
+Functional Cookies,banner,OneTrust,_GRECAPTCHA,www.google.com,,,,179 days,,,,,"Declared, not set",www.google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Functional Cookies,banner,OneTrust,__zlcid,static.zdassets.com,,,,0 days,,,,,"Declared, not set",static.zdassets.com,This domain is owned by Zendesk. This particular domain for the company ensures that all Zendesk features and functionality are added to the site correctly.
+Functional Cookies,banner,OneTrust,AWSELBCORS,rum.optimizely.com,,,,Session,,,,,"Declared, not set",rum.optimizely.com,
+Functional Cookies,banner,OneTrust,__cfruid,acorns.zendesk.com,,,,Session,,,,,"Declared, not set",acorns.zendesk.com,"Cookie associated with sites using CloudFlare, used to identify trusted web traffic."
+Functional Cookies,banner,OneTrust,cf_chl_2,acorns.zendesk.com,,,,0 days,,,,,"Declared, not set",acorns.zendesk.com,"These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising."
+Functional Cookies,banner,OneTrust,cf_chl_cc_xxxxxxxxxxxxxxxxxxxxx,acorns.zendesk.com,,,,Session,,,,,"Declared, not set",acorns.zendesk.com,cf_chl_cc_
+Functional Cookies,banner,OneTrust,vuid,vimeo.com,,,,729 days,,,,,"Declared, not set",vimeo.com,This domain is owned by Vimeo. The main business activity is: Video Hosting/Sharing
+Functional Cookies,banner,OneTrust,cf_chl_prog,challenges.cloudflare.com,,,,0 days,,,,,"Declared, not set",challenges.cloudflare.com,"These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising."
+Performance Cookies,banner,OneTrust,_landing_page,acorns.com,,,,13 days,,,,,"Declared, not set",acorns.com,"This cookie is used to track, report, and analyze on landing pages.
+"
+Performance Cookies,banner,OneTrust,_s,acorns.com,,,,0 days,,,,,"Declared, not set",acorns.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_s,acorns.com,,,,0 days,,,,,"Declared, not set",acorns.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_sa_p,acorns.com,,,,0 days,,,,,"Declared, not set",acorns.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_shopify_sa_t,acorns.com,,,,0 days,,,,,"Declared, not set",acorns.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_shopify_y,acorns.com,,,,364 days,,,,,"Declared, not set",acorns.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_y,acorns.com,,,,364 days,,,,,"Declared, not set",acorns.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,optimizelyDomainTestCookie,acorns.com,,,,179 days,,,,,"Declared, not set",acorns.com,These Optimizely cookies allow us to test different versions of website pages to different users at the same time and to track how users navigate around our website. We use this information to test new features and make the website easier to use.
+Performance Cookies,banner,OneTrust,optimizelyEndUserId,acorns.com,,,,179 days,,,,,"Declared, not set",acorns.com,Cookie set by the Optimizely website optimisation plaftform. This cookie is a unique user identifier
+Performance Cookies,banner,OneTrust,rudder_cookies,acorns.com,,,,364 days,,,,,"Declared, not set",acorns.com,
+Performance Cookies,banner,OneTrust,zte2095,acorns.com,,,,Session,,,,,"Declared, not set",acorns.com,"This cookie is generally set to enhance the performance and functionality of the website. However, it is nonessential to its use.
+"
+Performance Cookies,banner,OneTrust,__zlcmid,zendesk.com,,,,364 days,,,,,"Declared, not set",zendesk.com,"This domain is owned by Zendesk. Although mainly a tool to track tickets and support issues for a company, Zendesk also has cookies that are used to capture advertising-related information for campaigns and other advertising purposes."
+Strictly Necessary Cookies,banner,OneTrust,_orig_referrer,acorns.com,,,,13 days,,,,,"Declared, not set",acorns.com,"This cookie is generally provided by Shopify and is used in connection with a shopping part.
+"
+Strictly Necessary Cookies,banner,OneTrust,cookietest,store.acorns.com,,,,Session,,,,,"Declared, not set",store.acorns.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies.Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Strictly Necessary Cookies,banner,OneTrust,dd_cookie_test_,hello.acorns.com,,,,0 days,,,,,"Declared, not set",hello.acorns.com,dd_cookie_test
+Strictly Necessary Cookies,banner,OneTrust,secure_customer_sig,store.acorns.com,,,,364 days,,,,,"Declared, not set",store.acorns.com,"This cookie is generally provided by Shopify and is used in connection with a customer login.
+"
+Targeting Cookies,banner,OneTrust,_gat_gtag_xxxxxxxxxxxxxxxxxxxxxxxxxxx,acorns.com,,,,0 days,,,,,"Declared, not set",acorns.com,Google Analytics
+Targeting Cookies,banner,OneTrust,_shopify_d,acorns.com,,,,Session,,,,,"Declared, not set",acorns.com,
+Targeting Cookies,banner,OneTrust,_shopify_evids,acorns.com,,,,364 days,,,,,"Declared, not set",acorns.com,
+Targeting Cookies,banner,OneTrust,CONSENT,youtube.com,,,,729 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,_shopify_evids,cdn.shopify.com,,,,364 days,,,,,"Declared, not set",cdn.shopify.com,
+Targeting Cookies,banner,OneTrust,cookietest,cdn.shopify.com,,,,Session,,,,,"Declared, not set",cdn.shopify.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Targeting Cookies,banner,OneTrust,,www.facebook.com,,,,Session,,,,,"Declared, not set",www.facebook.com,"This domain is owned by Facebook, which is the world's largest social networking service. As a third party host provider, it mostly collects data on the interests of users via widgets such as the 'Like' button found on many websites. This is used to serve targeted advertising to its users when logged into its services. In 2014 it also started serving up behaviourally targeted advertising on other websites, similar to most dedicated online marketing companies."
+Targeting Cookies,banner,OneTrust,tatari-cookie-test,d2hrivdxn8ekm8.cloudfront.net,,,,3559 days,,,,,"Declared, not set",d2hrivdxn8ekm8.cloudfront.net,
+Targeting Cookies,banner,OneTrust,tatari-session-cookie,d2hrivdxn8ekm8.cloudfront.net,,,,0 days,,,,,"Declared, not set",d2hrivdxn8ekm8.cloudfront.net,
+Targeting Cookies,banner,OneTrust,NID,google.com,,,,182 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Targeting Cookies,banner,OneTrust,__pdst,cdn.pdst.fm,,,,364 days,,,,,"Declared, not set",cdn.pdst.fm,Podsights cookie used to track Hubspots podcast advertising results.
+Targeting Cookies,banner,OneTrust,CONSENT,youtube-nocookie.com,,,,729 days,,,,,"Declared, not set",youtube-nocookie.com,This cookie carries out information about how the end user uses the website and any advertising that the end user may have seen before visiting the said website.
+Targeting Cookies,banner,OneTrust,_tq_id.TV,collector-4820.tvsquared.com,,,,729 days,,,,,"Declared, not set",collector-4820.tvsquared.com,_tq_id.TV
+Social Media Cookies,banner,OneTrust,_scid,sc-static.net,,,,395 days,,,,,"Declared, not set",sc-static.net,"Cookie associated with Snapchat. Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates realtime bidding for advertisers."
+Social Media Cookies,banner,OneTrust,_schn,com.acorns.hello,,,,Session,,,,,"Declared, not set",com.acorns.hello,"This cookie is associated with Snapchat. It tracks individual sessions on the website, allowing the website to compile statistical data from multiple visits. This data can also be used to create leads for marketing purposes."
+Social Media Cookies,banner,OneTrust,_schn,acorns.hello,,,,Session,,,,,"Declared, not set",acorns.hello,"This cookie is associated with Snapchat. It tracks individual sessions on the website, allowing the website to compile statistical data from multiple visits. This data can also be used to create leads for marketing purposes."
+Social Media Cookies,banner,OneTrust,_schn,com.acorns.share,,,,Session,,,,,"Declared, not set",com.acorns.share,"This cookie is associated with Snapchat. It tracks individual sessions on the website, allowing the website to compile statistical data from multiple visits. This data can also be used to create leads for marketing purposes."
+Social Media Cookies,banner,OneTrust,_schn,acorns.share,,,,Session,,,,,"Declared, not set",acorns.share,"This cookie is associated with Snapchat. It tracks individual sessions on the website, allowing the website to compile statistical data from multiple visits. This data can also be used to create leads for marketing purposes."

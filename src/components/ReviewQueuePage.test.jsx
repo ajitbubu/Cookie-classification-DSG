@@ -63,6 +63,18 @@ describe('ReviewQueuePage review rows (12A)', () => {
     expect(within(card('_ga')).queryByText('Needs manual check')).not.toBeInTheDocument();
   });
 
+  it('shows how websites split on a cookie they label differently', () => {
+    api();
+    renderRQ(historyWith([
+      cookie('__stripe_mid', { mlClassification: 'Functional', siteLabelSplit: { 'Strictly Necessary': 8, Functional: 7 } }),
+      cookie('_ga'),
+    ]));
+    const row = card('__stripe_mid');
+    expect(within(row).getByText('Sites disagree')).toBeInTheDocument();
+    expect(within(row).getByText(/Strictly Necessary on 8 sites, Functional on 7 sites/)).toBeInTheDocument();
+    expect(within(card('_ga')).queryByText('Sites disagree')).not.toBeInTheDocument();
+  });
+
   it('publishes an approval and removes the row with a success toast (E4)', async () => {
     api({ published: true });
     renderRQ();

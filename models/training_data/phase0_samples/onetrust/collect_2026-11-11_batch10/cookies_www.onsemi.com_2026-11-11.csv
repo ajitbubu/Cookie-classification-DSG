@@ -1,0 +1,162 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Strictly Necessary Cookies,banner,OneTrust,Apache,www.onsemi.com,/,First party,115.74 days,115 days,false,false,unspecified,false,Declared & set,my.onsemi.com,"This cookie is associated with the Apache web server functionality
+"
+Unclassified,none,,CLID,www.clarity.ms,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,NPS_1f1ec90f_last_seen,www.onsemi.com,/,First party,90.00 days,89 days,false,true,lax,false,Declared & set,www.onsemi.cn,"Used by Wootric to identify last seen survey
+"
+Unclassified,none,,demdex,.demdex.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AMCVS_B46927F363E9FD120A495F99%40AdobeOrg,.onsemi.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_clck,.onsemi.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga,.onsemi.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,onsemi.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Unclassified,none,,everest_g_v2,.everesttech.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dpm,.dpm.demdex.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AMCV_B46927F363E9FD120A495F99%40AdobeOrg,.onsemi.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,_gcl_au,.onsemi.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,onsemi.com,Google conversion tracking cookie
+Unclassified,none,,sessionid-cookie,www.onsemi.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,_mkto_trk,.onsemi.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,onsemi.com,"This cookie is associated with an email marketing service provided by Marketo. This tracking cookie allows a website to link visitor behaviour to the recipient of an email marketing campaign, to measure campaign effectiveness."
+Unclassified,none,,__cf_bm,.abrtp3-cdn.marketo.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,li_sugr,.linkedin.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,lidc,.linkedin.com,/,Third party,1.00 days,0 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Unclassified,none,,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Targeting Cookies,banner,OneTrust,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,bscookie,.www.linkedin.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,www.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Unclassified,none,,_gd_visitor,www.onsemi.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_gd_session,www.onsemi.com,/,First party,0.17 days,,false,true,none,false,Not declared,,
+Unclassified,none,,6suuid,.6sc.co,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_gd_svisitor,www.onsemi.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.onsemi.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.onsemi.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,MkHcLang,.onsemi.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,MkHcCurrencyId,.onsemi.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,MkHcToken,www.onsemi.com,/,First party,0.01 days,,false,true,strict,false,Not declared,,
+Targeting Cookies,banner,OneTrust,TS01454ec8,www.onsemi.com,/,First party,Session,Session,true,true,unspecified,false,Declared & set,www.digikey.com,"Used for content personalization via digikey
+"
+Targeting Cookies,banner,OneTrust,TS012b1131,.onsemi.com,/,First party,Session,Session,true,true,unspecified,false,Declared & set,www.digikey.com,"Used for content personalization via digikey
+"
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,SM,.c.clarity.ms,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,MUID,.clarity.ms,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,cxemail,.onsemi.com,/,First party,0.33 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,QSI_ReplaySession_Throttled_ZN_5gyYqvISjmbkMMx,www.onsemi.com,/,First party,0.00 days,,false,true,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_mkto_leadid,www.onsemi.com,/,First party,7.00 days,6 days,false,false,unspecified,false,Declared & set,www.onsemi.com,This cookie sets a unique lead id to trace back to Marketo
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,audit_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,audit,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_377,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,c,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Performance Cookies,banner,OneTrust,_ga_5F4SFLB7CX,.onsemi.com,/,First party,Session,729 days,false,false,unspecified,false,Declared & set,onsemi.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners.
+"
+Performance Cookies,banner,OneTrust,_ga_JCJR1YBJ34,.onsemi.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,onsemi.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners.
+"
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.onsemi.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.onsemi.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,trwv.uid,.onsemi.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,trwsa.sid,.onsemi.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_clsk,.onsemi.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,TS012a951d,www.onsemi.com,/,First party,Session,Session,true,true,unspecified,false,Declared & set,www.digikey.com,"Used for content personalization via digikey
+"
+Targeting Cookies,banner,OneTrust,TS0144cae4,.onsemi.com,/,First party,Session,Session,true,true,unspecified,false,Declared & set,www.digikey.com,"Used for content personalization via digikey
+"
+Targeting Cookies,banner,OneTrust,TS4f333982027,www.onsemi.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,www.digikey.com,"Used for content personalization via digikey
+"
+Targeting Cookies,banner,OneTrust,TSb7f2b94b027,www.onsemi.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,www.digikey.com,"Used for content personalization via digikey
+"
+Strictly Necessary Cookies,banner,OneTrust,BIGipServerab57web-nginx-app_https,go.onsemi.com,,,,Session,,,,,"Declared, not set",go.onsemi.com,"This cookie name is associated with the BIG-IP product suite from company F5. Usually associated with managing sessions on load balanced servers, to ensure user requests are routed consistently to the correct server. The common root is BIGipServer most commonly followed by a domain name, usually the one that it is hosted on, but not always."
+Strictly Necessary Cookies,banner,OneTrust,BIGipServerisupplier_443,isupplier.onsemi.com,,,,Session,,,,,"Declared, not set",isupplier.onsemi.com,"This cookie name is associated with the BIG-IP product suite from company F5. Usually associated with managing sessions on load balanced servers, to ensure user requests are routed consistently to the correct server. The common root is BIGipServer most commonly followed by a domain name, usually the one that it is hosted on, but not always."
+Strictly Necessary Cookies,banner,OneTrust,CONSENTMGR,onsemi.cn,,,,1094 days,,,,,"Declared, not set",onsemi.cn,"Used for Cookie Consent and User Preferences.
+"
+Strictly Necessary Cookies,banner,OneTrust,CookieConsentPolicy,community.onsemi.com,,,,364 days,,,,,"Declared, not set",community.onsemi.com,Used to apply end-user cookie consent preferences set by our client-side utility.
+Strictly Necessary Cookies,banner,OneTrust,hazelcast.sessionId,www.onsemi.cn,,,,Session,,,,,"Declared, not set",www.onsemi.cn,"Sets the name for the Hazelcast session cookie for Web filters and session timeouts.
+"
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID,identity.onsemi.com,,,,Session,,,,,"Declared, not set",identity.onsemi.com,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server."
+Strictly Necessary Cookies,banner,OneTrust,LSKey-c$CookieConsentPolicy,community.onsemi.com,,,,364 days,,,,,"Declared, not set",community.onsemi.com,Used to apply end-user cookie consent preferences set by our client-side utility.
+Strictly Necessary Cookies,banner,OneTrust,myon-auth-conf,www.onsemi.com,,,,Session,,,,,"Declared, not set",www.onsemi.com,"Used for myon login authorization
+"
+Strictly Necessary Cookies,banner,OneTrust,myon-auth-request,www.onsemi.cn,,,,Session,,,,,"Declared, not set",www.onsemi.cn,"Used for myon login authorization
+"
+Strictly Necessary Cookies,banner,OneTrust,pctrk,community.onsemi.com,,,,364 days,,,,,"Declared, not set",community.onsemi.com,Used to count page views by unauthenticated users against license usage.
+Strictly Necessary Cookies,banner,OneTrust,relayState,www.onsemi.com,,,,Session,,,,,"Declared, not set",www.onsemi.com,"Used to redirect the user back to the requested resource based on this value.
+"
+Strictly Necessary Cookies,banner,OneTrust,renderCtx,community.onsemi.com,,,,Session,,,,,"Declared, not set",community.onsemi.com,Used to store site parameters in the session for reuse across requests by a single client for functionality and performance reasons.
+Strictly Necessary Cookies,banner,OneTrust,samlInitialRequest,www.onsemi.com,,,,Session,,,,,"Declared, not set",www.onsemi.com,"Used for user authentication
+"
+Strictly Necessary Cookies,banner,OneTrust,sfdc-stream,community.onsemi.com,,,,0 days,,,,,"Declared, not set",community.onsemi.com,Common Salesforce Cookie
+Strictly Necessary Cookies,banner,OneTrust,SimpleSAMLSessionID,www.onsemi.com,,,,Session,,,,,"Declared, not set",www.onsemi.com,"Used for user authentication.
+"
+Strictly Necessary Cookies,banner,OneTrust,utag_main,onsemi.com,,,,364 days,,,,,"Declared, not set",onsemi.com,This cookie name is associated with the Tealium data platform and is used to enforce consent preferences across 3rd party tags. Within the cookie are several built-in values that keep track of the visitor session.
+Strictly Necessary Cookies,banner,OneTrust,CookieConsentPolicy,onsemineworg.my.salesforce.com,,,,364 days,,,,,"Declared, not set",onsemineworg.my.salesforce.com,Used to apply end-user cookie consent preferences set by our client-side utility.
+Strictly Necessary Cookies,banner,OneTrust,LSKey-c$CookieConsentPolicy,onsemineworg.my.salesforce.com,,,,364 days,,,,,"Declared, not set",onsemineworg.my.salesforce.com,Used to apply end-user cookie consent preferences set by our client-side utility.
+Strictly Necessary Cookies,banner,OneTrust,BrowserId,force.com,,,,364 days,,,,,"Declared, not set",force.com,Used to log secure browser sessions/visits for internal-only product analytics to ensure security protection
+Strictly Necessary Cookies,banner,OneTrust,BrowserId_sec,force.com,,,,364 days,,,,,"Declared, not set",force.com,Used to log secure browser sessions/visits for internal-only product analytics.
+Strictly Necessary Cookies,banner,OneTrust,ak_bmsc,businesswire.com,,,,0 days,,,,,"Declared, not set",businesswire.com,This cookie is associated with Akamai and is used to differentiate between traffic from humans and bots.
+Strictly Necessary Cookies,banner,OneTrust,BrowserId,salesforce.com,,,,364 days,,,,,"Declared, not set",salesforce.com,Used to log secure browser sessions/visits for internal-only product analytics to ensure security protection
+Strictly Necessary Cookies,banner,OneTrust,BrowserId_sec,salesforce.com,,,,364 days,,,,,"Declared, not set",salesforce.com,Used to log secure browser sessions/visits for internal-only product analytics.
+Strictly Necessary Cookies,banner,OneTrust,CookieConsentPolicy,service.force.com,,,,364 days,,,,,"Declared, not set",service.force.com,Used to apply end-user cookie consent preferences set by our client-side utility.
+Strictly Necessary Cookies,banner,OneTrust,LSKey-c$CookieConsentPolicy,service.force.com,,,,364 days,,,,,"Declared, not set",service.force.com,Used to apply end-user cookie consent preferences set by our client-side utility.
+Strictly Necessary Cookies,banner,OneTrust,_GRECAPTCHA,www.recaptcha.net,,,,179 days,,,,,"Declared, not set",www.recaptcha.net,"reCAPTCHA sets a necessary cookie (_GRECAPTCHA) when executed for the purpose of providing its risk analysis.
+"
+Functional Cookies,banner,OneTrust,_feedbackVisible,www.onsemi.com,,,,Session,,,,,"Declared, not set",www.onsemi.com,Used by the feedback tool to indicate that the feedback button is visible.
+Functional Cookies,banner,OneTrust,_onTrac,www.onsemi.com,,,,Session,,,,,"Declared, not set",www.onsemi.com,"This cookie is used for OnTrac's package delivery
+"
+Functional Cookies,banner,OneTrust,_onTracInit,www.onsemi.com,,,,Session,,,,,"Declared, not set",www.onsemi.com,"This cookie is used for OnTrac's package delivery
+
+"
+Functional Cookies,banner,OneTrust,coveo_visitorId,onsemi.com,,,,365 days,,,,,"Declared, not set",onsemi.com,This cookie is used to set and store a unique user ID
+Functional Cookies,banner,OneTrust,DrupalVisitorMobile,investor.onsemi.com,,,,Session,,,,,"Declared, not set",investor.onsemi.com,"Determines whether the visitor is originating from a mobile device, and routes the user to a mobile-version if applicable.
+"
+Functional Cookies,banner,OneTrust,onsemi.lastAccess,www.onsemi.cn,,,,24855 days,,,,,"Declared, not set",www.onsemi.cn,"Used to determine when the website was last accessed
+"
+Functional Cookies,banner,OneTrust,OnsemiPreviousProducts,www.onsemi.cn,,,,24855 days,,,,,"Declared, not set",www.onsemi.cn,"Used to showcase previous products viewed
+"
+Functional Cookies,banner,OneTrust,Requested-File-Download,www.onsemi.cn,,,,0 days,,,,,"Declared, not set",www.onsemi.cn,"Used to understand the requested file download.
+"
+Functional Cookies,banner,OneTrust,slm_sesTrac,www.onsemi.com,,,,Session,,,,,"Declared, not set",www.onsemi.com,
+Functional Cookies,banner,OneTrust,TEST_AMCV_COOKIE_WRITE,onsemi.com,,,,Session,,,,,"Declared, not set",onsemi.com,"Used by Adobe to see if it has written cookie capabilities
+"
+Functional Cookies,banner,OneTrust,X-Salesforce-CHAT,d.la2-c1-ia5.salesforceliveagent.com,,,,Session,,,,,"Declared, not set",d.la2-c1-ia5.salesforceliveagent.com, Sales Force uses these cookies to be able to provide live chat functionality to the user.
+Functional Cookies,banner,OneTrust,SplitTestGroup,platform.cloud.coveo.com,,,,0 days,,,,,"Declared, not set",platform.cloud.coveo.com,This cookie is set by Coveo to split test dynamic search results.
+Functional Cookies,banner,OneTrust,JSESSIONID,www.linkedin.com,,,,Session,,,,,"Declared, not set",www.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Functional Cookies,banner,OneTrust,_pxhd,www.digikey.com,,,,364 days,,,,,"Declared, not set",www.digikey.com,This cookie is used for bot detection
+Functional Cookies,banner,OneTrust,JSESSIONID,cts.businesswire.com,,,,Session,,,,,"Declared, not set",cts.businesswire.com,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server.
+"
+Functional Cookies,banner,OneTrust,4341%5F0,api.nasdaqomx.wallst.com,,,,Session,,,,,"Declared, not set",api.nasdaqomx.wallst.com,Used by the Nasdaq Web Service API when displaying real time stock information
+Functional Cookies,banner,OneTrust,4341%5F1,api.nasdaqomx.wallst.com,,,,Session,,,,,"Declared, not set",api.nasdaqomx.wallst.com,Used by the Nasdaq Web Service API when displaying real time stock information
+Functional Cookies,banner,OneTrust,GZIP,api.nasdaqomx.wallst.com,,,,1824 days,,,,,"Declared, not set",api.nasdaqomx.wallst.com,"Used by the Nasdaq Web Service API when displaying real time stock information
+"
+Targeting Cookies,banner,OneTrust,_fbp,onsemi.com,,,,89 days,,,,,"Declared, not set",onsemi.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Targeting Cookies,banner,OneTrust,_gat_gtag_xxxxxxxxxxxxxxxxxxxxxxxxxxx,onsemi.com,,,,0 days,,,,,"Declared, not set",onsemi.com,Google Analytics
+Targeting Cookies,banner,OneTrust,_gat_UA-XXXXXX-X,onsemi.com,,,,0 days,,,,,"Declared, not set",onsemi.com,Google Analytics Cookies
+Targeting Cookies,banner,OneTrust,AMCV_,onsemi.com,,,,730 days,,,,,"Declared, not set",onsemi.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier to allow a company to track users across their domains and services."
+Targeting Cookies,banner,OneTrust,AMCVS_,onsemi.com,,,,Session,,,,,"Declared, not set",onsemi.com,"This is a pattern type cookie name associated with Adobe Marketing Cloud. It stores a unique visitor identifier, and uses an organisation identifier."
+Targeting Cookies,banner,OneTrust,ln_or,www.onsemi.com,,,,0 days,,,,,"Declared, not set",www.onsemi.com,This is a LinkedIn cookie used to determine if Oribi analytics can be carried out on a specific domain
+Targeting Cookies,banner,OneTrust,wd_sesTrac,www.onsemi.com,,,,Session,,,,,"Declared, not set",www.onsemi.com,
+Targeting Cookies,banner,OneTrust,BIGipServerabdweb-nginx-app_https,app-abd.marketo.com,,,,Session,,,,,"Declared, not set",app-abd.marketo.com,"This cookie name is associated with the BIG-IP product suite from company F5. Usually associated with managing sessions on load balanced servers, to ensure user requests are routed consistently to the correct server. The common root is BIGipServer most commonly followed by a domain name, usually the one that it is hosted on, but not always."
+Targeting Cookies,banner,OneTrust,,www.facebook.com,,,,Session,,,,,"Declared, not set",www.facebook.com,"This domain is owned by Facebook, which is the world's largest social networking service. As a third party host provider, it mostly collects data on the interests of users via widgets such as the 'Like' button found on many websites. This is used to serve targeted advertising to its users when logged into its services. In 2014 it also started serving up behaviourally targeted advertising on other websites, similar to most dedicated online marketing companies."
+Targeting Cookies,banner,OneTrust,A3,yahoo.com,,,,365 days,,,,,"Declared, not set",yahoo.com,This domain is owned by Yahoo. The main business activity is: Search / Advertising
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,TAPID,tealiumiq.com,,,,364 days,,,,,"Declared, not set",tealiumiq.com,This domain is owned by Tealium and is used for its audience streaming service which enables targeting and personalisation of content on a domain.
+Targeting Cookies,banner,OneTrust,dk_mfr_trk,www.digikey.com,,,,6 days,,,,,"Declared, not set",www.digikey.com,"Identifies company name to utilize for optimized content.
+"
+Targeting Cookies,banner,OneTrust,BIGipServersjrtp_https,sjrtp-cdn.marketo.com,,,,0 days,,,,,"Declared, not set",sjrtp-cdn.marketo.com,"This cookie name is associated with the BIG-IP product suite from company F5. Usually associated with managing sessions on load balanced servers, to ensure user requests are routed consistently to the correct server. The common root is BIGipServer most commonly followed by a domain name, usually the one that it is hosted on, but not always."
+Targeting Cookies,banner,OneTrust,lang,linkedin.com,,,,Session,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,li_gc,linkedin.com,,,,179 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Performance Cookies,banner,OneTrust,_ce.cch,onsemi.com,,,,Session,,,,,"Declared, not set",onsemi.com,The _ce.cch cookie from crazy egg is used to check if cookies can be added.
+Performance Cookies,banner,OneTrust,_ce.gtld,onsemi.com,,,,Session,,,,,"Declared, not set",onsemi.com,"The _ce.gtld cookie from crazy egg is used to identify the top level domain.
+"
+Performance Cookies,banner,OneTrust,_gid,onsemi.com,,,,0 days,,,,,"Declared, not set",onsemi.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Performance Cookies,banner,OneTrust,channel_category,onsemi.com,,,,364 days,,,,,"Declared, not set",onsemi.com,"Used for internal marketing attribution
+"
+Performance Cookies,banner,OneTrust,channel_name,onsemi.com,,,,364 days,,,,,"Declared, not set",onsemi.com,"Used for internal marketing attribution
+"
+Performance Cookies,banner,OneTrust,s_cc,onsemi.com,,,,Session,,,,,"Declared, not set",onsemi.com,This cookie is associated with the Adobe Site Catalyst. It determines whether cookies are enabled in the web browser.

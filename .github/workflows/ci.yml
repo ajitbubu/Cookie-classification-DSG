@@ -37,7 +37,7 @@ jobs:
     # Same base image as docker/Dockerfile.api, so tests run on the production Python.
     container: mcr.microsoft.com/playwright/python:v1.60.0-jammy
     env:
-      ML_MODEL_VERSION: "7.0.0"
+      ML_MODEL_VERSION: "7.1.0"
     steps:
       - uses: actions/checkout@v4
       - run: pip install -q -r requirements.txt -r requirements-test.txt

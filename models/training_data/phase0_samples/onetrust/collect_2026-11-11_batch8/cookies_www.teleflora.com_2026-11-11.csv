@@ -1,0 +1,255 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Functional Cookies,banner,OneTrust,SSLB,.teleflora.com,/,First party,Session,729 days,false,false,unspecified,false,Declared & set,fr.teleflora.com,
+Targeting Cookies,banner,OneTrust,SSID,.teleflora.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,teleflora.com,This cookie carries out information about how the end user uses the website and any advertising that the end user may have seen before visiting the said website.
+Functional Cookies,banner,OneTrust,SSSC,.teleflora.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID,www.teleflora.com,/,First party,Session,Session,true,true,none,false,Declared & set,fr.teleflora.com,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server."
+Unclassified,none,,b1p,www.teleflora.com,/,First party,Session,,true,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,__cf_bm,.www.teleflora.com,/,First party,0.02 days,0 days,true,true,none,true,Declared & set,afterpay.com,This is a CloudFoundry cookie
+Functional Cookies,banner,OneTrust,__cf_bm,.affirm.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,afterpay.com,This is a CloudFoundry cookie
+Functional Cookies,banner,OneTrust,SSRT,.teleflora.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,fr.teleflora.com,
+Performance Cookies,banner,OneTrust,_gcl_au,.teleflora.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,teleflora.com,Google conversion tracking cookie
+Strictly Necessary Cookies,banner,OneTrust,LANG,.paypal.com,/,Third party,0.36 days,0 days,true,true,none,false,Declared & set,paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,enforce_policy,.paypal.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,x-pp-s,.paypal.com,/,Third party,Session,Session,true,true,none,false,Declared & set,paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,tsrce,.paypal.com,/,Third party,3.00 days,2 days,true,true,none,false,Declared & set,paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,nsid,www.paypal.com,/,Third party,Session,Session,true,true,none,false,Declared & set,www.paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,l7_az,.paypal.com,/,Third party,0.02 days,0 days,true,true,none,false,Declared & set,paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,ts,.paypal.com,/,Third party,365.00 days,1095 days,true,true,none,false,Declared & set,paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Strictly Necessary Cookies,banner,OneTrust,ts_c,.paypal.com,/,Third party,365.00 days,1095 days,false,true,none,false,Declared & set,paypal.com,This domain is owned by Paypal. The main business activity is: E-commerce Provision
+Unclassified,none,,cjConsent,.teleflora.com,/,First party,395.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,cjUser,.teleflora.com,/,First party,395.00 days,,false,true,unspecified,false,Not declared,,
+Functional Cookies,banner,OneTrust,__cf_bm,.bzrcdn.openai.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,afterpay.com,This is a CloudFoundry cookie
+Unclassified,none,,_cfuvid,.bzrcdn.openai.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,__obref,.teleflora.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cvg_uid,.teleflora.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,__cvg_sid,.teleflora.com,/,First party,0.04 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,__cvg_session,.teleflora.com,/,First party,0.04 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,MR,.bat.bing.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Functional Cookies,banner,OneTrust,loggedin,www.teleflora.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,es.teleflora.com,
+Performance Cookies,banner,OneTrust,_ga,.teleflora.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,teleflora.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_pin_unauth,.teleflora.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,bc_invalidateUrlCache_targeting,www.teleflora.com,/,First party,0.01 days,0 days,false,false,unspecified,false,Declared & set,international.teleflora.com,
+Targeting Cookies,banner,OneTrust,wfivefivec,.w55c.net,/,Third party,395.42 days,394 days,false,true,none,false,Declared & set,w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Unclassified,none,,matchgoogle,.w55c.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,bluecoreNV,www.teleflora.com,/,First party,347.18 days,346 days,false,false,unspecified,false,Declared & set,international.teleflora.com,
+Functional Cookies,banner,OneTrust,addshoppers,app.shop.pe,/,Third party,400.00 days,999 days,false,true,none,false,Declared & set,shop.pe,
+Functional Cookies,banner,OneTrust,addshoppers.com,app.shop.pe,/,Third party,400.00 days,999 days,false,true,none,false,Declared & set,shop.pe,
+Functional Cookies,banner,OneTrust,addshoppers.com,www.teleflora.com,/,First party,400.00 days,999 days,false,true,unspecified,false,Declared & set,www.teleflora.com,
+Unclassified,none,,_ttp,.tiktok.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,b1p,assets.teleflora.com,/,First party,Session,,true,true,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.teleflora.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.teleflora.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Unclassified,none,,_tt_enable_cookie,.teleflora.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ttp,.teleflora.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Functional Cookies,banner,OneTrust,__cf_bm,.bzr.openai.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,afterpay.com,This is a CloudFoundry cookie
+Unclassified,none,,_cfuvid,.bzr.openai.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,vcnpxid,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxst,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__attn_eat_id,.teleflora.com,/,First party,390.00 days,,false,true,lax,true,Not declared,,
+Targeting Cookies,banner,OneTrust,__attentive_id,.teleflora.com,/,First party,390.00 days,21899 days,false,true,unspecified,false,Declared & set,www.teleflora.com,
+Unclassified,none,,__attentive_session_id,.teleflora.com,/,First party,0.02 days,,false,true,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,__attentive_cco,.teleflora.com,/,First party,390.00 days,21899 days,false,true,unspecified,false,Declared & set,www.teleflora.com,
+Targeting Cookies,banner,OneTrust,__attentive_ss_referrer,.teleflora.com,/,First party,0.02 days,0 days,false,true,unspecified,false,Declared & set,www.teleflora.com,
+Unclassified,none,,_attn_bopd_,.teleflora.com,/,First party,390.00 days,,false,true,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,__attentive_dv,.teleflora.com,/,First party,1.00 days,0 days,false,true,unspecified,false,Declared & set,www.teleflora.com,
+Unclassified,none,,matchbluekai,.w55c.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,matchcasale,.w55c.net,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,LOGIN_REDIRECT,www.teleflora.com,/,First party,0.04 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rc,www.teleflora.com,/,First party,7.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,lastLogInDayToTeleflora,www.teleflora.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,es.teleflora.com,
+Targeting Cookies,banner,OneTrust,_uetsid,.teleflora.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,teleflora.com,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Unclassified,none,,cookiedURL,www.teleflora.com,/,First party,1.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.teleflora.com,/,First party,365.00 days,365 days,false,false,lax,false,Declared & set,.teleflora.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Performance Cookies,banner,OneTrust,_ga_7XQFLPJ28Q,.teleflora.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,teleflora.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Targeting Cookies,banner,OneTrust,mp_teleflora_mixpanel,.teleflora.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,pageCount,www.teleflora.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,es.teleflora.com,
+Performance Cookies,banner,OneTrust,_uetvid,.teleflora.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,teleflora.com,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Unclassified,none,,checkout_continuity_service,.affirm.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,t_v2_s,.affirm.com,/,Third party,400.00 days,729 days,true,true,none,false,Declared & set,affirm.com,
+Functional Cookies,banner,OneTrust,3060738.3440491,.affirm.com,/,Third party,400.00 days,729 days,false,true,none,false,Declared & set,affirm.com,
+Unclassified,none,,session,www.affirm.com,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_cfuvid,.affirm.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,checkout_continuity_service,www.teleflora.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,SSOD,.teleflora.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid,.teleflora.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid_D5TTAPBC77U1TOJA1DC0,.teleflora.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_attn_,.teleflora.com,/,First party,390.00 days,3649 days,false,true,strict,false,Declared & set,www.teleflora.com,
+Targeting Cookies,banner,OneTrust,__attentive_pv,.teleflora.com,/,First party,0.02 days,0 days,false,true,unspecified,false,Declared & set,www.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,_ens_hashEm,assets.teleflora.com,,,,0 days,,,,,"Declared, not set",assets.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,_ens_hashEm,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,_tldtest_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx,teleflora.com,,,,Session,,,,,"Declared, not set",teleflora.com,Amplitude
+Strictly Necessary Cookies,banner,OneTrust,amp_cookie_test,es.teleflora.com,,,,Session,,,,,"Declared, not set",es.teleflora.com,These cookies are used by Amplitude for session tracking for analytics purposes.
+Strictly Necessary Cookies,banner,OneTrust,amp_cookie_test,fr.teleflora.com,,,,Session,,,,,"Declared, not set",fr.teleflora.com,These cookies are used by Amplitude for session tracking for analytics purposes.
+Strictly Necessary Cookies,banner,OneTrust,amp_cookie_test,teleflora.com,,,,364 days,,,,,"Declared, not set",teleflora.com,These cookies are used by Amplitude for session tracking for analytics purposes.
+Strictly Necessary Cookies,banner,OneTrust,amp_cookie_test,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,These cookies are used by Amplitude for session tracking for analytics purposes.
+Strictly Necessary Cookies,banner,OneTrust,amplitude_testteleflora.com,teleflora.com,,,,364 days,,,,,"Declared, not set",teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,b1P,fr.teleflora.com,,,,Session,,,,,"Declared, not set",fr.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,b1P,international.teleflora.com,,,,Session,,,,,"Declared, not set",international.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,b1P,teleflora.com,,,,Session,,,,,"Declared, not set",teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,b1P,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,BIGipServeroc_static_content_http_pool,assets.stage.teleflora.com,,,,Session,,,,,"Declared, not set",assets.stage.teleflora.com,"This cookie name is associated with the BIG-IP product suite from company F5. Usually associated with managing sessions on load balanced servers, to ensure user requests are routed consistently to the correct server. The common root is BIGipServer most commonly followed by a domain name, usually the one that it is hosted on, but not always."
+Strictly Necessary Cookies,banner,OneTrust,BIGipServeroc_static_content_http_pool,assets.teleflora.com,,,,Session,,,,,"Declared, not set",assets.teleflora.com,"This cookie name is associated with the BIG-IP product suite from company F5. Usually associated with managing sessions on load balanced servers, to ensure user requests are routed consistently to the correct server. The common root is BIGipServer most commonly followed by a domain name, usually the one that it is hosted on, but not always."
+Strictly Necessary Cookies,banner,OneTrust,BIGipServeroc_static_content_http_pool,fr-assets.teleflora.com,,,,Session,,,,,"Declared, not set",fr-assets.teleflora.com,"This cookie name is associated with the BIG-IP product suite from company F5. Usually associated with managing sessions on load balanced servers, to ensure user requests are routed consistently to the correct server. The common root is BIGipServer most commonly followed by a domain name, usually the one that it is hosted on, but not always."
+Strictly Necessary Cookies,banner,OneTrust,BIGipServeroc_static_content_http_pool,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,"This cookie name is associated with the BIG-IP product suite from company F5. Usually associated with managing sessions on load balanced servers, to ensure user requests are routed consistently to the correct server. The common root is BIGipServer most commonly followed by a domain name, usually the one that it is hosted on, but not always."
+Strictly Necessary Cookies,banner,OneTrust,cookietest,es.teleflora.com,,,,Session,,,,,"Declared, not set",es.teleflora.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies.Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Strictly Necessary Cookies,banner,OneTrust,cookietest,fr.teleflora.com,,,,Session,,,,,"Declared, not set",fr.teleflora.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies.Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Strictly Necessary Cookies,banner,OneTrust,cookietest,sendflowers.teleflora.com,,,,Session,,,,,"Declared, not set",sendflowers.teleflora.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies.Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Strictly Necessary Cookies,banner,OneTrust,cookietest,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies.Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Strictly Necessary Cookies,banner,OneTrust,dotdVisit,fr.teleflora.com,,,,Session,,,,,"Declared, not set",fr.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,dotdVisit,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,emCookie,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,ledgerCurrency,assets.teleflora.com,,,,0 days,,,,,"Declared, not set",assets.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,ledgerCurrency,es.teleflora.com,,,,0 days,,,,,"Declared, not set",es.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,ledgerCurrency,fr.teleflora.com,,,,0 days,,,,,"Declared, not set",fr.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,ledgerCurrency,fr-assets.teleflora.com,,,,0 days,,,,,"Declared, not set",fr-assets.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,ledgerCurrency,www.teleflora.com,,,,0 days,,,,,"Declared, not set",www.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,modalPhase2,www.teleflora.com,,,,364 days,,,,,"Declared, not set",www.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,newPageCount,www.teleflora.com,,,,364 days,,,,,"Declared, not set",www.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,pagecount,www.teleflora.com,,,,0 days,,,,,"Declared, not set",www.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,PHPSESSID,blog.teleflora.com,,,,Session,,,,,"Declared, not set",blog.teleflora.com,"PHP session cookie associated with embedded content from this domain.
+"
+Strictly Necessary Cookies,banner,OneTrust,prevArray,assets.teleflora.com,,,,364 days,,,,,"Declared, not set",assets.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,prevArray,www.teleflora.com,,,,364 days,,,,,"Declared, not set",www.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,PROMOID,fr.teleflora.com,,,,0 days,,,,,"Declared, not set",fr.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,PROMOID,teleflora.com,,,,Session,,,,,"Declared, not set",teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,PROMOID,www.teleflora.com,,,,0 days,,,,,"Declared, not set",www.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,SERVICE_PROMO,fr.teleflora.com,,,,29 days,,,,,"Declared, not set",fr.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,SERVICE_PROMO,teleflora.com,,,,29 days,,,,,"Declared, not set",teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,SERVICE_PROMO,www.teleflora.com,,,,29 days,,,,,"Declared, not set",www.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,t_category,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,t_subcategory,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,-test-amp-cookie-tmp,teleflora.com,,,,0 days,,,,,"Declared, not set",teleflora.com,
+Strictly Necessary Cookies,banner,OneTrust,TS01xxxxxxxx,assets.stage.teleflora.com,,,,Session,,,,,"Declared, not set",assets.stage.teleflora.com,TS
+Strictly Necessary Cookies,banner,OneTrust,TS01xxxxxxxx,assets.teleflora.com,,,,Session,,,,,"Declared, not set",assets.teleflora.com,TS
+Strictly Necessary Cookies,banner,OneTrust,TS01xxxxxxxx,fr.teleflora.com,,,,Session,,,,,"Declared, not set",fr.teleflora.com,TS
+Strictly Necessary Cookies,banner,OneTrust,TS01xxxxxxxx,fr-assets.teleflora.com,,,,Session,,,,,"Declared, not set",fr-assets.teleflora.com,TS
+Strictly Necessary Cookies,banner,OneTrust,TS01xxxxxxxx,international.teleflora.com,,,,Session,,,,,"Declared, not set",international.teleflora.com,TS
+Strictly Necessary Cookies,banner,OneTrust,TS01xxxxxxxx,teleflora.com,,,,Session,,,,,"Declared, not set",teleflora.com,TS
+Strictly Necessary Cookies,banner,OneTrust,TS01xxxxxxxx,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,TS
+Strictly Necessary Cookies,banner,OneTrust,wordpress_test_cookie,blog.teleflora.com,,,,Session,,,,,"Declared, not set",blog.teleflora.com,"Used on sites built with Wordpress.  Tests whether or not the browser has cookies enabledOn login, WordPress uses the wordpress_[hash] cookie to store your authentication details. Its use is limited to the Administration Screen area, /wp-admin/"
+Strictly Necessary Cookies,banner,OneTrust,cookietest,cdn.quadpay.com,,,,Session,,,,,"Declared, not set",cdn.quadpay.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Strictly Necessary Cookies,banner,OneTrust,cookietest,cdn1.affirm.com,,,,Session,,,,,"Declared, not set",cdn1.affirm.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Strictly Necessary Cookies,banner,OneTrust,tracker_device,cdn1.affirm.com,,,,1824 days,,,,,"Declared, not set",cdn1.affirm.com,
+Strictly Necessary Cookies,banner,OneTrust,amp_cookie_test,js.afterpay.com,,,,Session,,,,,"Declared, not set",js.afterpay.com,These cookies are used by Amplitude for session tracking for analytics purposes.
+Social Media Cookies,banner,OneTrust,AWSALB,careers.smartrecruiters.com,,,,6 days,,,,,"Declared, not set",careers.smartrecruiters.com,AWS ELB application load balancer
+Social Media Cookies,banner,OneTrust,AWSALBCORS,careers.smartrecruiters.com,,,,6 days,,,,,"Declared, not set",careers.smartrecruiters.com,This cookie is managed by AWS and is used for load balancing.
+Targeting Cookies,banner,OneTrust,__attentive_utm_param_campaign,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,
+Targeting Cookies,banner,OneTrust,__attentive_utm_param_medium,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,
+Targeting Cookies,banner,OneTrust,__attentive_utm_param_source,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,
+Targeting Cookies,banner,OneTrust,_gat_gtag_xxxxxxxxxxxxxxxxxxxxxxxxxxx,teleflora.com,,,,0 days,,,,,"Declared, not set",teleflora.com,Google Analytics
+Targeting Cookies,banner,OneTrust,amp_,teleflora.com,,,,364 days,,,,,"Declared, not set",teleflora.com,Supports Amplitude product analytics.
+Targeting Cookies,banner,OneTrust,com.silverpop.iMA.page_visit,teleflora.com,,,,0 days,,,,,"Declared, not set",teleflora.com,
+Targeting Cookies,banner,OneTrust,com.silverpop.iMA.session,teleflora.com,,,,0 days,,,,,"Declared, not set",teleflora.com,
+Targeting Cookies,banner,OneTrust,com.silverpop.iMAWebCookie,teleflora.com,,,,999 days,,,,,"Declared, not set",teleflora.com,
+Targeting Cookies,banner,OneTrust,ForeseeFire,www.teleflora.com,,,,0 days,,,,,"Declared, not set",www.teleflora.com,
+Targeting Cookies,banner,OneTrust,mp_dev_mixpanel,teleflora.com,,,,364 days,,,,,"Declared, not set",teleflora.com,
+Targeting Cookies,banner,OneTrust,usi_id,teleflora.com,,,,29 days,,,,,"Declared, not set",teleflora.com,
+Targeting Cookies,banner,OneTrust,pxrc,rlcdn.com,,,,59 days,,,,,"Declared, not set",rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Targeting Cookies,banner,OneTrust,rlas3,rlcdn.com,,,,364 days,,,,,"Declared, not set",rlcdn.com,"This domain is owned by Live Ramp Inc, providers of a platform for targeted marketing and profiling."
+Targeting Cookies,banner,OneTrust,Silverpop_cookie,www.sc.pages05.net,,,,Session,,,,,"Declared, not set",www.sc.pages05.net,
+Targeting Cookies,banner,OneTrust,CONSENT,youtube.com,,,,729 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,DEVICE_INFO,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,tpc_b_D0C,attentivemobile.com,,,,729 days,,,,,"Declared, not set",attentivemobile.com,
+Targeting Cookies,banner,OneTrust,tpc_c_D0C,attentivemobile.com,,,,729 days,,,,,"Declared, not set",attentivemobile.com,
+Targeting Cookies,banner,OneTrust,lidid,liadm.com,,,,729 days,,,,,"Declared, not set",liadm.com,This domain is owned by liadm.com. The company provides a range of marketing and advertising services.
+Targeting Cookies,banner,OneTrust,JSESSIONID,www.upsellit.com,,,,Session,,,,,"Declared, not set",www.upsellit.com,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server."
+Targeting Cookies,banner,OneTrust,Silverpop_cookie,www.pages05.net,,,,Session,,,,,"Declared, not set",www.pages05.net,
+Targeting Cookies,banner,OneTrust,__attentive_cco,cdn.attn.tv,,,,21899 days,,,,,"Declared, not set",cdn.attn.tv,
+Targeting Cookies,banner,OneTrust,__attentive_dv,cdn.attn.tv,,,,0 days,,,,,"Declared, not set",cdn.attn.tv,"This domain is associated with the technology provided by Attention Interactive, Inc for hosting video content and tracking video interactions."
+Targeting Cookies,banner,OneTrust,__attentive_id,cdn.attn.tv,,,,0 days,,,,,"Declared, not set",cdn.attn.tv,"This domain is associated with the technology provided by Attention Interactive, Inc for hosting video content and tracking video interactions."
+Targeting Cookies,banner,OneTrust,__attentive_pv,cdn.attn.tv,,,,0 days,,,,,"Declared, not set",cdn.attn.tv,"This domain is associated with the technology provided by Attention Interactive, Inc for hosting video content and tracking video interactions."
+Targeting Cookies,banner,OneTrust,__attentive_ss_referrer,cdn.attn.tv,,,,0 days,,,,,"Declared, not set",cdn.attn.tv,
+Targeting Cookies,banner,OneTrust,__attentive_utm_param_campaign,cdn.attn.tv,,,,0 days,,,,,"Declared, not set",cdn.attn.tv,
+Targeting Cookies,banner,OneTrust,__attentive_utm_param_medium,cdn.attn.tv,,,,0 days,,,,,"Declared, not set",cdn.attn.tv,
+Targeting Cookies,banner,OneTrust,__attentive_utm_param_source,cdn.attn.tv,,,,0 days,,,,,"Declared, not set",cdn.attn.tv,
+Targeting Cookies,banner,OneTrust,_attn_,cdn.attn.tv,,,,0 days,,,,,"Declared, not set",cdn.attn.tv,"This domain is associated with the technology provided by Attention Interactive, Inc for hosting video content and tracking video interactions."
+Targeting Cookies,banner,OneTrust,tpc_a,cdn.attn.tv,,,,729 days,,,,,"Declared, not set",cdn.attn.tv,
+Targeting Cookies,banner,OneTrust,_li_ss,i.liadm.com,,,,29 days,,,,,"Declared, not set",i.liadm.com,"This domain is owned by liadm.com. The company provides a range of marketing and advertising services.
+"
+Targeting Cookies,banner,OneTrust,icts,linksynergy.com,,,,364 days,,,,,"Declared, not set",linksynergy.com,
+Targeting Cookies,banner,OneTrust,rmuid,linksynergy.com,,,,364 days,,,,,"Declared, not set",linksynergy.com,"This cookie is generally provided by linsynergy.com and is used for advertising purposes.
+"
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,TelefloraCookie,images.shopflowers.net,,,,Session,,,,,"Declared, not set",images.shopflowers.net,
+Targeting Cookies,banner,OneTrust,TS01xxxxxxxx,images.shopflowers.net,,,,Session,,,,,"Declared, not set",images.shopflowers.net,TS
+Functional Cookies,banner,OneTrust,__tld__,teleflora.com,,,,Session,,,,,"Declared, not set",teleflora.com,From Segment Analytics.js library; this cookie helps to figure out a top-level domain for a user.__tld__
+Functional Cookies,banner,OneTrust,_ens_srccode,fr.teleflora.com,,,,Session,,,,,"Declared, not set",fr.teleflora.com,
+Functional Cookies,banner,OneTrust,_ens_srccode,international.teleflora.com,,,,Session,,,,,"Declared, not set",international.teleflora.com,
+Functional Cookies,banner,OneTrust,_ens_srccode,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,
+Functional Cookies,banner,OneTrust,_ens_srccode2,fr.teleflora.com,,,,Session,,,,,"Declared, not set",fr.teleflora.com,
+Functional Cookies,banner,OneTrust,_ens_srccode2,international.teleflora.com,,,,Session,,,,,"Declared, not set",international.teleflora.com,
+Functional Cookies,banner,OneTrust,_ens_srccode2,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,
+Functional Cookies,banner,OneTrust,ajs_anonymous_id,teleflora.com,,,,364 days,,,,,"Declared, not set",teleflora.com,These cookies are generally used for Analytics and help count how many people visit a certain site by tracking if you have visited before. This cookie has a lifespan of 1 year.
+Functional Cookies,banner,OneTrust,apay-session-set,es.teleflora.com,,,,364 days,,,,,"Declared, not set",es.teleflora.com,
+Functional Cookies,banner,OneTrust,apay-session-set,fr.teleflora.com,,,,364 days,,,,,"Declared, not set",fr.teleflora.com,
+Functional Cookies,banner,OneTrust,apay-session-set,www.teleflora.com,,,,364 days,,,,,"Declared, not set",www.teleflora.com,
+Functional Cookies,banner,OneTrust,email,www.teleflora.com,,,,364 days,,,,,"Declared, not set",www.teleflora.com,
+Functional Cookies,banner,OneTrust,flexCutoff,assets.teleflora.com,,,,0 days,,,,,"Declared, not set",assets.teleflora.com,
+Functional Cookies,banner,OneTrust,flexCutoff,fr-assets.teleflora.com,,,,0 days,,,,,"Declared, not set",fr-assets.teleflora.com,
+Functional Cookies,banner,OneTrust,language,assets.teleflora.com,,,,0 days,,,,,"Declared, not set",assets.teleflora.com,"There are many different types of cookies associated with this name, and a more detailed look at how it is used on a particular website is generally recommended.  However, in most cases it will likely be used to store language preferences, potentially to serve up content in the stored language. The ICC category given here is based on this usage."
+Functional Cookies,banner,OneTrust,language,es.teleflora.com,,,,0 days,,,,,"Declared, not set",es.teleflora.com,"There are many different types of cookies associated with this name, and a more detailed look at how it is used on a particular website is generally recommended.  However, in most cases it will likely be used to store language preferences, potentially to serve up content in the stored language. The ICC category given here is based on this usage."
+Functional Cookies,banner,OneTrust,language,fr.teleflora.com,,,,0 days,,,,,"Declared, not set",fr.teleflora.com,"There are many different types of cookies associated with this name, and a more detailed look at how it is used on a particular website is generally recommended.  However, in most cases it will likely be used to store language preferences, potentially to serve up content in the stored language. The ICC category given here is based on this usage."
+Functional Cookies,banner,OneTrust,language,fr-assets.teleflora.com,,,,0 days,,,,,"Declared, not set",fr-assets.teleflora.com,"There are many different types of cookies associated with this name, and a more detailed look at how it is used on a particular website is generally recommended.  However, in most cases it will likely be used to store language preferences, potentially to serve up content in the stored language. The ICC category given here is based on this usage."
+Functional Cookies,banner,OneTrust,language,www.teleflora.com,,,,0 days,,,,,"Declared, not set",www.teleflora.com,"There are many different types of cookies associated with this name, and a more detailed look at how it is used on a particular website is generally recommended.  However, in most cases it will likely be used to store language preferences, potentially to serve up content in the stored language. The ICC category given here is based on this usage."
+Functional Cookies,banner,OneTrust,newTime,www.teleflora.com,,,,6 days,,,,,"Declared, not set",www.teleflora.com,
+Functional Cookies,banner,OneTrust,OC,fr.teleflora.com,,,,Session,,,,,"Declared, not set",fr.teleflora.com,
+Functional Cookies,banner,OneTrust,OC,international.teleflora.com,,,,Session,,,,,"Declared, not set",international.teleflora.com,
+Functional Cookies,banner,OneTrust,OC,teleflora.com,,,,Session,,,,,"Declared, not set",teleflora.com,
+Functional Cookies,banner,OneTrust,OC,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,
+Functional Cookies,banner,OneTrust,pasbuffer,fr.teleflora.com,,,,Session,,,,,"Declared, not set",fr.teleflora.com,
+Functional Cookies,banner,OneTrust,pasbuffer,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,
+Functional Cookies,banner,OneTrust,SSID_P,teleflora.com,,,,364 days,,,,,"Declared, not set",teleflora.com,
+Functional Cookies,banner,OneTrust,SSRT_P,teleflora.com,,,,364 days,,,,,"Declared, not set",teleflora.com,
+Functional Cookies,banner,OneTrust,SSSC_P,teleflora.com,,,,Session,,,,,"Declared, not set",teleflora.com,
+Functional Cookies,banner,OneTrust,sympathy,fr.teleflora.com,,,,Session,,,,,"Declared, not set",fr.teleflora.com,
+Functional Cookies,banner,OneTrust,sympathy,www.teleflora.com,,,,Session,,,,,"Declared, not set",www.teleflora.com,
+Functional Cookies,banner,OneTrust,testGroup,www.teleflora.com,,,,0 days,,,,,"Declared, not set",www.teleflora.com,
+Functional Cookies,banner,OneTrust,usi_cpn_mntr,teleflora.com,,,,0 days,,,,,"Declared, not set",teleflora.com,
+Functional Cookies,banner,OneTrust,DCID,webapp.src.discover.com,,,,Session,,,,,"Declared, not set",webapp.src.discover.com,
+Functional Cookies,banner,OneTrust,test,www.v.me,,,,364 days,,,,,"Declared, not set",www.v.me,This cookie is associated with Adobe Analytics. It checks to see if cookies are enabled.
+Functional Cookies,banner,OneTrust,bc_invalidateUrlCache_targeting,www.bluecore.com,,,,0 days,,,,,"Declared, not set",www.bluecore.com,
+Functional Cookies,banner,OneTrust,bluecoreNV,www.bluecore.com,,,,346 days,,,,,"Declared, not set",www.bluecore.com,
+Functional Cookies,banner,OneTrust,mp_teleflora_mixpanel,www.bluecore.com,,,,0 days,,,,,"Declared, not set",www.bluecore.com,
+Functional Cookies,banner,OneTrust,bc_invalidateUrlCache_targeting,api.bluecore.com,,,,0 days,,,,,"Declared, not set",api.bluecore.com,"This domain is associated with Bluecore, a marketing technology company that provides a platform for ecommerce businesses to personalize customer experiences."
+Functional Cookies,banner,OneTrust,bluecoreNV,api.bluecore.com,,,,347 days,,,,,"Declared, not set",api.bluecore.com,"This domain is associated with Bluecore, a marketing technology company that provides a platform for ecommerce businesses to personalize customer experiences."
+Functional Cookies,banner,OneTrust,mp_dev_mixpanel,api.bluecore.com,,,,0 days,,,,,"Declared, not set",api.bluecore.com,
+Functional Cookies,banner,OneTrust,livetest-persist,tulipssystem.com,,,,Session,,,,,"Declared, not set",tulipssystem.com,
+Functional Cookies,banner,OneTrust,apay-session-set,static-na.payments-amazon.com,,,,364 days,,,,,"Declared, not set",static-na.payments-amazon.com,
+Functional Cookies,banner,OneTrust,_abck,mastercard.com,,,,364 days,,,,,"Declared, not set",mastercard.com,
+Functional Cookies,banner,OneTrust,ak_bmsc,mastercard.com,,,,0 days,,,,,"Declared, not set",mastercard.com,This cookie is associated with Akamai and is used to differentiate between traffic from humans and bots.
+Functional Cookies,banner,OneTrust,bm_mi,mastercard.com,,,,0 days,,,,,"Declared, not set",mastercard.com,This cookie is associated with Akamai. It is used to analyse traffic to determine if it is automated traffic generated by bots or a human user.
+Functional Cookies,banner,OneTrust,bm_sz,mastercard.com,,,,0 days,,,,,"Declared, not set",mastercard.com,
+Functional Cookies,banner,OneTrust,paypal-offers--cust,paypalobjects.com,,,,0 days,,,,,"Declared, not set",paypalobjects.com,
+Functional Cookies,banner,OneTrust,DUMMY_COOKIE,affirm.com,,,,Session,,,,,"Declared, not set",affirm.com,
+Functional Cookies,banner,OneTrust,tracker_device,affirm.com,,,,729 days,,,,,"Declared, not set",affirm.com,
+Functional Cookies,banner,OneTrust,__cfruid,secure.checkout.visa.com,,,,Session,,,,,"Declared, not set",secure.checkout.visa.com,"Cookie associated with sites using CloudFlare, used to identify trusted web traffic."
+Functional Cookies,banner,OneTrust,TS01xxxxxxxx,srcdcf.americanexpress.com,,,,Session,,,,,"Declared, not set",srcdcf.americanexpress.com,TS
+Functional Cookies,banner,OneTrust,JSESSIONID,apay-us.amazon.com,,,,Session,,,,,"Declared, not set",apay-us.amazon.com,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server."
+Functional Cookies,banner,OneTrust,session-id,amazon.com,,,,364 days,,,,,"Declared, not set",amazon.com,"Identifies the current session, the user and their shopping cart."
+Functional Cookies,banner,OneTrust,session-id-apay,amazon.com,,,,364 days,,,,,"Declared, not set",amazon.com,"Identifies the current session, the user and their shopping cart."
+Functional Cookies,banner,OneTrust,session-id-time,amazon.com,,,,364 days,,,,,"Declared, not set",amazon.com,"Identifies the current session, the user and their shopping cart."
+Functional Cookies,banner,OneTrust,session-token,amazon.com,,,,364 days,,,,,"Declared, not set",amazon.com,"Identifies the current session, the user and their shopping cart."
+Performance Cookies,banner,OneTrust,__utma,international.teleflora.com,,,,729 days,,,,,"Declared, not set",international.teleflora.com,This is one of the four main cookies set by the Google Analytics service which enables website owners to track visitor behaviour and measure site performance. This cookie lasts for 2 years by default and distinguishes between users and sessions. It it used to calculate new and returning visitor statistics. The cookie is updated every time data is sent to Google Analytics. The lifespan of the cookie can be customised by website owners.
+Performance Cookies,banner,OneTrust,__utmb,international.teleflora.com,,,,0 days,,,,,"Declared, not set",international.teleflora.com,"This is one of the four main cookies set by the Google Analytics service which enables website owners to track visitor behaviour and measure site performance. This cookie determines new sessions and visits and expires after 30 minutes. The cookie is updated every time data is sent to Google Analytics. Any activity by a user within the 30 minute life span will count as a single visit, even if the user leaves and then returns to the site. A return after 30 minutes will count as a new visit, but a returning visitor."
+Performance Cookies,banner,OneTrust,__utmc,international.teleflora.com,,,,Session,,,,,"Declared, not set",international.teleflora.com,"This is one of the four main cookies set by the Google Analytics service which enables website owners to track visitor behaviour and measure site performance. It is not used in most sites but is set to enable interoperability with the older version of Google Analytics code known as Urchin.  In this older versions this was used in combination with the __utmb cookie to identify new sessions/visits for returning visitors.
+When used by Google Analytics this is always a Session cookie which is destroyed when the user closes their browser. Where it is seen as a Persistent cookie it is therefore like"
+Performance Cookies,banner,OneTrust,__utmt,international.teleflora.com,,,,0 days,,,,,"Declared, not set",international.teleflora.com,This cookie is set by Google Analytics.  According to their documentation it is used to throttle the request rate for the service - limiting the collection of data on high traffic sites. It expires after 10 minutes
+Performance Cookies,banner,OneTrust,__utmz,international.teleflora.com,,,,182 days,,,,,"Declared, not set",international.teleflora.com,This is one of the four main cookies set by the Google Analytics service which enables website owners to track visitor behaviour measure of site performance. This cookie identifies the source of traffic to the site - so Google Analytics can tell site owners where visitors came from when arriving on the site. The cookie has a life span of 6 months and is updated every time data is sent to Google Analytics.
+Performance Cookies,banner,OneTrust,_gat_UA-,teleflora.com,,,,0 days,,,,,"Declared, not set",teleflora.com,"This is a pattern type cookie set by Google Analytics, where the pattern element on the name contains the unique identity number of the account or website it relates to. It appears to be a variation of the _gat cookie which is used to limit the amount of data recorded by Google on high traffic volume websites."
+Performance Cookies,banner,OneTrust,_gid,teleflora.com,,,,0 days,,,,,"Declared, not set",teleflora.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Performance Cookies,banner,OneTrust,_utmv#########,international.teleflora.com,,,,0 days,,,,,"Declared, not set",international.teleflora.com,
+Performance Cookies,banner,OneTrust,AKA_A2,teleflora.com,,,,0 days,,,,,"Declared, not set",teleflora.com,"This cookie is generally provided by Akamai and is used for the Advanced Acceleration feature, which enables DNS Prefetch and HTTP2 Push."
+Performance Cookies,banner,OneTrust,AMP_TOKEN,teleflora.com,,,,0 days,,,,,"Declared, not set",teleflora.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service."
+Performance Cookies,banner,OneTrust,RT,teleflora.com,,,,6 days,,,,,"Declared, not set",teleflora.com,"The roundtrip (RT) Boomerang 
+cookie is used by Akamai to measure page load time and/or other timers associated with the page."
+Performance Cookies,banner,OneTrust,RT,www.teleflora.com,,,,6 days,,,,,"Declared, not set",www.teleflora.com,"The roundtrip (RT) Boomerang 
+cookie is used by Akamai to measure page load time and/or other timers associated with the page."
+Performance Cookies,banner,OneTrust,bc_invalidateUrlCache_targeting,cdn.yottaa.com,,,,0 days,,,,,"Declared, not set",cdn.yottaa.com,

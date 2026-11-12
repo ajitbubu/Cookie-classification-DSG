@@ -1,0 +1,156 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,_li_ss,i.liadm.com,/s,Third party,30.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies​,banner,OneTrust,dtCookie,.forrester.com,/,First party,Session,365 days,false,true,unspecified,false,Declared & set,forrester.com,"This cookie name is associated with, software from Dynatrace, an application performance management (APM) software company.
+Their software manages the availability and performance of software applications and the impact on user experience in the form of deep transaction tracing, synthetic monitoring, real user monitoring, and network monitoring.
+"
+Performance and Functional Cookies,banner,OneTrust,rxVisitor,.forrester.com,/,First party,Session,365 days,false,true,unspecified,false,Declared & set,forrester.com,"This cookie is used to store an anonymous ID for the user to correlate across sessions on the world service.
+"
+Unclassified,none,,_gcl_au,.forrester.com,/,First party,90.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies​,banner,OneTrust,return_visitor_check,.forrester.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,return_visitor,.forrester.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,forrester.com,
+Targeting Cookies​,banner,OneTrust,ELQCOUNTRY,.forrester.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,forrester.com,"Eloqua Business Marketing platform - this cookie is used to recognise unique visitors to website pages and to track the pages they visit.
+"
+Unclassified,none,,zync-uuid,.rezync.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ELOQUA,.forrester.com,/,First party,395.00 days,,false,false,unspecified,false,Not declared,,
+Performance and Functional Cookies,banner,OneTrust,_ga,.forrester.com,/,First party,400.00 days,729 days,false,false,unspecified,false,Declared & set,forrester.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies​,banner,OneTrust,li_sugr,.linkedin.com,/,Third party,90.00 days,89 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies​,banner,OneTrust,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies​,banner,OneTrust,lidc,.linkedin.com,/,Third party,1.00 days,0 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Unclassified,none,,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Targeting Cookies​,banner,OneTrust,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies​,banner,OneTrust,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,29 days,false,true,none,false,Declared & set,linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies​,banner,OneTrust,bscookie,.www.linkedin.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,www.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Unclassified,none,,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,visitorId,.ws.zoominfo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.zoominfo.com,/,Third party,0.02 days,,true,true,none,true,Not declared,,
+Unclassified,none,,_cfuvid,.zoominfo.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,_bts,.forrester.com,/,First party,0.04 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,cu,.ipredictive.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ruds,.rfihub.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,rud,.rfihub.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,FPID,.forrester.com,/,First party,400.00 days,,true,true,unspecified,false,Not declared,,
+Unclassified,none,,FPAU,.forrester.com,/,First party,90.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,FPLC,.forrester.com,/,First party,0.83 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,FPGSID,.forrester.com,/,First party,0.02 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_bti,.forrester.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,demdex,.demdex.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,everest_g_v2,.everesttech.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_18,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,XANDR_PANID,.adnxs.com,/,Third party,90.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,uuid2,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,i,.openx.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,QuantumMetricSessionID,.forrester.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,QuantumMetricUserID,.forrester.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,dpm,.dpm.demdex.net,/,Third party,180.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,visitor-id,.media.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,data-rk,.media.net,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,c,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tuuid_lu,.bidswitch.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mako_uid,.eyeota.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,SERVERID,.eyeota.net,/,Third party,0.01 days,,true,true,none,false,Not declared,,
+Unclassified,none,,lidid,.liadm.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,did,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,didts,.pippio.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,nnls,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,sync.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TDID,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TDCPM,.adsrvr.org,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies​,banner,OneTrust,OptanonAlertBoxClosed,.forrester.com,/,First party,400.00 days,365 days,false,false,lax,false,Declared & set,.forrester.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Unclassified,none,,browser_id,.rqtrk.eu,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,A3,.yahoo.com,/,Third party,365.25 days,,true,true,none,false,Not declared,,
+Unclassified,none,,IDSYNC,.analytics.yahoo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__q_state_c2pm6UmLFpqKykqE,.forrester.com,/,First party,400.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,adtheorent[cuid],.adentifi.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ljt_reader,.lijit.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,idmap_cookie_id,pixel.idmap.ai,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,vcnpxid,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxe,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxst,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,vcnpxsn,nytrng.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,euds,.rfihub.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.pippio.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.rlcdn.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,khaos_p,.rubiconproject.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Strictly Necessary Cookies​,banner,OneTrust,dtSa,.forrester.com,/,First party,Session,Session,false,true,unspecified,false,Declared & set,forrester.com,"This cookie is used to save action names across pages so that performance can be monitored across pages.
+"
+Strictly Necessary Cookies​,banner,OneTrust,AWSALB,www.forrester.com,/,First party,7.00 days,6 days,false,false,unspecified,false,Declared & set,www.forrester.com,AWS ELB application load balancer
+Strictly Necessary Cookies​,banner,OneTrust,AWSALBCORS,www.forrester.com,/,First party,7.00 days,365 days,false,true,none,false,Declared & set,www.forrester.com,This cookie is managed by AWS and is used for load balancing.
+Strictly Necessary Cookies​,banner,OneTrust,OptanonConsent,.forrester.com,/,First party,400.00 days,365 days,false,false,lax,false,Declared & set,.forrester.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,_ga_PMXYWTHPVN,.forrester.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,sd-session-id,live.rezync.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_rdt_uuid,.forrester.com,/,First party,90.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,anj,.adnxs.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rlas3,.rlcdn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,eud,.rfihub.com,/,Third party,390.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,intentIQ,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IQver,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,intentIQCDate,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IQadv,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IQMID,.intentiq.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IQPData,.intentiq.com,/,Third party,400.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies​,banner,OneTrust,rxvt,.forrester.com,/,First party,Session,Session,false,true,unspecified,false,Declared & set,forrester.com,"This cookie is used to store two timestamps to determine session length and the end of a session.
+"
+Strictly Necessary Cookies​,banner,OneTrust,dtPC,.forrester.com,/,First party,Session,Session,false,true,unspecified,false,Declared & set,forrester.com,"This cookie name is associated with, software from Dynatrace, an application performance management (APM) software company.
+Their software manages the availability and performance of software applications and the impact on user experience in the form of deep transaction tracing, synthetic monitoring, real user monitoring, and network monitoring.
+"
+Strictly Necessary Cookies​,banner,OneTrust,^incap_ses_,incapsula.com,,,,730 days,,,,,"Declared, not set",incapsula.com,
+Strictly Necessary Cookies​,banner,OneTrust,^unregforrid$,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,^forruseridtoken$,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,^passwordlesstoken$,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,^forrbwlg$,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,.*\.strategy$,auth0.com,,,,730 days,,,,,"Declared, not set",auth0.com,
+Strictly Necessary Cookies​,banner,OneTrust,^return_visitor$,google.com,,,,730 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Strictly Necessary Cookies​,banner,OneTrust,^browserCookie$,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,^reese84,incapsula.com,,,,0 days,,,,,"Declared, not set",incapsula.com,
+Strictly Necessary Cookies​,banner,OneTrust,^passwordlessemail$,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,.*\._token.auth0$,auth0.com,,,,730 days,,,,,"Declared, not set",auth0.com,
+Strictly Necessary Cookies​,banner,OneTrust,^forrester-web$,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,.*\._refresh_token.auth0$,auth0.com,,,,730 days,,,,,"Declared, not set",auth0.com,
+Strictly Necessary Cookies​,banner,OneTrust,.*\._refresh_token_expiration.auth0$,auth0.com,,,,730 days,,,,,"Declared, not set",auth0.com,
+Strictly Necessary Cookies​,banner,OneTrust,^STYXKEY_forrcookies$,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,^forresterid$,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,^forruserprefs$,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,^optin_nw$,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,^nlbi_,incapsula.com,,,,Session,,,,,"Declared, not set",incapsula.com,
+Strictly Necessary Cookies​,banner,OneTrust,^forrcookieconsent$,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,^visid_incap_,incapsula.com,,,,730 days,,,,,"Declared, not set",incapsula.com,
+Strictly Necessary Cookies​,banner,OneTrust,^JSESSIONID$,forrester.com,,,,Session,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,^__utma$,google.com,,,,730 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Strictly Necessary Cookies​,banner,OneTrust,^_dc_gtm_,google.com,,,,730 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Strictly Necessary Cookies​,banner,OneTrust,^_glc_au$,google.com,,,,730 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Strictly Necessary Cookies​,banner,OneTrust,^cartItemsCount$,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,.*\._token_expiration.auth0$,auth0.com,,,,730 days,,,,,"Declared, not set",auth0.com,
+Strictly Necessary Cookies​,banner,OneTrust,^__utmz$,google.com,,,,730 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Strictly Necessary Cookies​,banner,OneTrust,^appcookie$,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,^__utmc$,google.com,,,,730 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Strictly Necessary Cookies​,banner,OneTrust,^purchase.cart_type,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,^forrbwlg,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Strictly Necessary Cookies​,banner,OneTrust,.*\.forrtools._auth$,forrester.com,,,,730 days,,,,,"Declared, not set",forrester.com,
+Performance and Functional Cookies,banner,OneTrust,_gid,forrester.com,,,,0 days,,,,,"Declared, not set",forrester.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Performance and Functional Cookies,banner,OneTrust,___utmvxxxxxxxxxxxxxx,www.forrester.com,,,,0 days,,,,,"Declared, not set",www.forrester.com,___utmv
+Performance and Functional Cookies,banner,OneTrust,^ELOQUA$,eloqua.com,,,,730 days,,,,,"Declared, not set",eloqua.com,This domain is owned by Oracle for the delivery of online marketing services that were previously branded under the Eloqua name.
+Performance and Functional Cookies,banner,OneTrust,^ELQCOUNTRY$,eloqua.com,,,,730 days,,,,,"Declared, not set",eloqua.com,This domain is owned by Oracle for the delivery of online marketing services that were previously branded under the Eloqua name.
+Performance and Functional Cookies,banner,OneTrust,^QuantumMetric,quantummetric.com,,,,730 days,,,,,"Declared, not set",quantummetric.com,
+Targeting Cookies​,banner,OneTrust,^rxvt$,dynatrace.com,,,,365 days,,,,,"Declared, not set",dynatrace.com,
+Targeting Cookies​,banner,OneTrust,^dtCookie$,dynatrace.com,,,,730 days,,,,,"Declared, not set",dynatrace.com,
+Targeting Cookies​,banner,OneTrust,^sess,adnxs.com,,,,Session,,,,,"Declared, not set",adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Targeting Cookies​,banner,OneTrust,^dtPC$,dynatrace.com,,,,730 days,,,,,"Declared, not set",dynatrace.com,
+Targeting Cookies​,banner,OneTrust,^dtSa$,dynatrace.com,,,,730 days,,,,,"Declared, not set",dynatrace.com,
+Targeting Cookies​,banner,OneTrust,^dtLatC$,dynatrace.com,,,,730 days,,,,,"Declared, not set",dynatrace.com,
+Targeting Cookies​,banner,OneTrust,^anj,adnxs.com,,,,730 days,,,,,"Declared, not set",adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Targeting Cookies​,banner,OneTrust,^rxVisitor$,dynatrace.com,,,,730 days,,,,,"Declared, not set",dynatrace.com,
+Targeting Cookies​,banner,OneTrust,^uuid2,adnxs.com,,,,730 days,,,,,"Declared, not set",adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.

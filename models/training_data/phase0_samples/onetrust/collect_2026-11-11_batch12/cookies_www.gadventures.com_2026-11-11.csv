@@ -1,0 +1,282 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,,false,true,none,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,cnt,www.gadventures.com,/,First party,Session,364 days,false,true,unspecified,false,Declared & set,www.gadventures.com,
+Strictly Necessary Cookies,banner,OneTrust,aff,www.gadventures.com,/,First party,60.00 days,59 days,false,true,unspecified,false,Declared & set,www.gadventures.com,
+Unclassified,none,,guuid,www.gadventures.com,/,First party,365.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_gcl_au,.gadventures.com,/,First party,90.00 days,,false,false,unspecified,false,"Declared, conflicting",,
+Unclassified,none,,__cf_bm,.bzrcdn.openai.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Functional Cookies,banner,OneTrust,_cfuvid,.bzrcdn.openai.com,/,Third party,Session,364 days,true,true,none,false,Declared & set,vimeo.com,This domain is owned by Vimeo. The main business activity is: Video Hosting/Sharing
+Performance Cookies,banner,OneTrust,_ga,.gadventures.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,gadventures.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Unclassified,none,,__obref,.gadventures.com,/,First party,365.00 days,,false,true,none,false,Not declared,,
+Functional Cookies,banner,OneTrust,_dyjsession,.gadventures.com,/,First party,0.02 days,0 days,false,true,lax,false,Declared & set,gadventures.com,
+Unclassified,none,,_switch_session_id,.gadventures.com,/,First party,7.00 days,,false,false,unspecified,false,Not declared,,
+Performance Cookies,banner,OneTrust,FPID,.gadventures.com,/,First party,400.00 days,399 days,true,true,unspecified,false,Declared & set,gadventures.com,
+Performance Cookies,banner,OneTrust,FPLC,.gadventures.com,/,First party,0.83 days,0 days,false,true,unspecified,false,Declared & set,gadventures.com,
+Unclassified,none,,FPAU,.gadventures.com,/,First party,90.00 days,,false,true,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,cjConsent,.gadventures.com,/,First party,395.00 days,394 days,false,true,unspecified,false,Declared & set,gadventures.com,This cookie name is used to store the user's cookie consent state for the current domain.
+Unclassified,none,,cjUser,.gadventures.com,/,First party,395.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,__spdt,www.gadventures.com,/,First party,365.00 days,,false,false,strict,false,Not declared,,
+Performance Cookies,banner,OneTrust,_mkto_trk,.gadventures.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,gadventures.com,"This cookie is associated with an email marketing service provided by Marketo. This tracking cookie allows a website to link visitor behaviour to the recipient of an email marketing campaign, to measure campaign effectiveness."
+Unclassified,none,,FPGSID,.gadventures.com,/,First party,0.02 days,,false,true,strict,false,Not declared,,
+Targeting Cookies,banner,OneTrust,IDE,.doubleclick.net,/,Third party,400.00 days,389 days,true,true,none,false,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Unclassified,none,,_sfid_e7ba,.www.gadventures.com,/,First party,400.00 days,,false,true,strict,false,Not declared,,
+Targeting Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,bat.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Functional Cookies,banner,OneTrust,_dyid,.gadventures.com,/,First party,30.00 days,29 days,false,true,lax,false,Declared & set,gadventures.com,
+Unclassified,none,,brwsr,.sjv.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,irtps,.sjv.io,/,Third party,1.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_cs_c,.gadventures.com,/,First party,395.42 days,364 days,false,false,lax,false,Declared & set,gadventures.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Targeting Cookies,banner,OneTrust,_ttp,.tiktok.com,/,Third party,390.00 days,89 days,false,true,none,false,Declared & set,tiktok.com,
+Unclassified,none,,sa-user-id,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,tags.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,.srv.stackadapt.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,sa-user-id,www.gadventures.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,sa-user-id-v2,www.gadventures.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,sa-user-id-v3,www.gadventures.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,sa-user-id-v4,www.gadventures.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_tt_enable_cookie,.gadventures.com,/,First party,390.00 days,89 days,false,false,unspecified,false,Declared & set,gadventures.com,This cookie name is associated with TikTok which is used to collect data about behavior and purchases on the website and to measure the effect of advertising. It is also used to track website activity to help optimize advertising efforts.
+Targeting Cookies,banner,OneTrust,_ttp,.gadventures.com,/,First party,390.00 days,89 days,false,false,unspecified,false,Declared & set,gadventures.com,
+Targeting Cookies,banner,OneTrust,_fbp,.gadventures.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,gadventures.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Unclassified,none,,brwsr,.ojrq.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,DotomiConsent,.dotomi.com,/,Third party,400.00 days,,false,true,none,true,Not declared,,
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,.dotomi.com,/,Third party,395.00 days,179 days,true,true,none,true,Declared & set,doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Performance Cookies,banner,OneTrust,_hp2_ses_props.581971293,.gadventures.com,/,First party,0.02 days,0 days,false,true,none,false,Declared & set,gadventures.com,This cookie is used by Heap Analytics to track user behavior on the website. Cookies in this domain have lifespan of 2 years.
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.gadventures.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,gadventures.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust.  It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down.  It enables the website not to show the message more than once to a user.  The cookie has a one year lifespan and contains no personal information.
+Unclassified,none,,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,dtm_token,.gadventures.com,/,First party,395.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,dtm_consent,.gadventures.com,/,First party,395.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,mako_uid,.eyeota.net,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,SERVERID,.eyeota.net,/,Third party,0.01 days,,true,true,none,false,Not declared,,
+Unclassified,none,,pid,.smartadserver.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TestIfCookieP,.smartadserver.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,csync,.smartadserver.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,st_cs,.seedtag.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,st_csd,.seedtag.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,st_uid,.seedtag.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rlas3,.rlcdn.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,visitor-id,.media.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,data-co,.media.net,/,Third party,364.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,V,.contextweb.com,/,Third party,360.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,VP,.contextweb.com,/,Third party,360.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,pb_rtb_ev,.contextweb.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pb_rtb_ev_part,.contextweb.com,/,Third party,365.00 days,,false,true,none,true,Not declared,,
+Unclassified,none,,INGRESSCOOKIE,bh.contextweb.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,i,.openx.net,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,pxrc,.rlcdn.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,KRTBCOOKIE_32,.pubmatic.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,PugT,.pubmatic.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,guid,.mountain.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,A3,.yahoo.com,/,Third party,365.25 days,,true,true,none,false,Not declared,,
+Unclassified,none,,CMID,.casalemedia.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPS,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,CMPRO,.casalemedia.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,IDSYNC,.analytics.yahoo.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TEST-COOKIE,.inmobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,mc,.thrtle.com,/,Third party,200.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,idsync-eps-uid-s,.live.streamtheworld.com,/,Third party,7.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,98ef4fb143edeb370e6413f21de2650a,idsync.live.streamtheworld.com,/,Third party,Session,,true,true,none,false,Not declared,,
+Unclassified,none,,iid,.inmobi.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,tt,.px.mountain.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,rt,.mountain.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_mpxl_guid,.gadventures.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,__cf_bm,.bzr.openai.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Functional Cookies,banner,OneTrust,_cfuvid,.bzr.openai.com,/,Third party,Session,364 days,true,true,none,false,Declared & set,vimeo.com,This domain is owned by Vimeo. The main business activity is: Video Hosting/Sharing
+Functional Cookies,banner,OneTrust,_pin_unauth,.gadventures.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,gadventures.com,"This cookie is assocate with pinterest.  It is used to track the usage of services.
+"
+Unclassified,none,,DotomiSync,.dotomi.com,/,Third party,10.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.1rx.io,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_rxuuid,.targeting.unrulymedia.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_scid,.gadventures.com,/,First party,395.00 days,395 days,false,false,lax,false,Declared & set,gadventures.com,"Cookie associated with Snapchat. Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates realtime bidding for advertisers."
+Performance Cookies,banner,OneTrust,sc_at,.snapchat.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,snapchat.com,Cookie associated with embedding content from Snapchat.
+Unclassified,none,,TapAd_TS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_DID,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,TapAd_3WAY_SYNCS,.tapad.com,/,Third party,60.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,_sctr,.gadventures.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Performance Cookies,banner,OneTrust,_hp2_id.581971293,.gadventures.com,/,First party,394.42 days,394 days,false,true,none,false,Declared & set,gadventures.com,This cookie is used by Heap Analytics to track user behavior on the website. Cookies in this domain have lifespan of 2 years.
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.gadventures.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,gadventures.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Functional Cookies,banner,OneTrust,_dy_soct,.gadventures.com,/,First party,365.00 days,0 days,false,true,lax,false,Declared & set,www.gadventures.com,
+Unclassified,none,,IR_PI,.gadventures.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,IR_14092,.gadventures.com,/,First party,Session,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,_scid_r,.gadventures.com,/,First party,395.00 days,,false,false,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_rdt_uuid,.gadventures.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,gadventures.com,This cookie is set by Reddit and is used for tracking the views of embedded videos and performance of the advertisements.
+Targeting Cookies,banner,OneTrust,_cs_id,.gadventures.com,/,First party,395.42 days,395 days,false,false,lax,false,Declared & set,gadventures.com,This cookie is typically associated with ContentSquare and is used for analytics and personalization to improve user experience by tracking visitor behavior on the website.This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Performance Cookies,banner,OneTrust,_ga_2VL6TKVMGB,.gadventures.com,/,First party,400.00 days,399 days,false,false,unspecified,false,Declared & set,gadventures.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners._ga"
+Unclassified,none,,_tq_id.TV-5445186372-1.d854,www.gadventures.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_uetsid,.gadventures.com,/,First party,1.00 days,0 days,false,false,unspecified,false,Declared & set,gadventures.com,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Targeting Cookies,banner,OneTrust,_cs_s,.gadventures.com,/,First party,0.02 days,364 days,false,false,lax,false,Declared & set,gadventures.com,This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_.
+Unclassified,none,,DotomiSession_86163,.dotomi.com,/,Third party,Session,,false,true,none,false,Not declared,,
+Unclassified,none,,DotomiUser,.dotomi.com,/,Third party,395.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,ph_phc_z3EinHSUq3TGeQnLQ2YNKyLDboYMsQFGPbuswWKHLeBM_posthog,.gadventures.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,ct.pinterest.com,
+Performance Cookies,banner,OneTrust,_uetvid,.gadventures.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,gadventures.com,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Unclassified,none,,ttcsid_CGCCDDRC77U77CS2J470,.gadventures.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ttcsid,.gadventures.com,/,First party,390.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,_orig_referrer,gadventures.com,,,,13 days,,,,,"Declared, not set",gadventures.com,"This cookie is generally provided by Shopify and is used in connection with a shopping part.
+"
+Strictly Necessary Cookies,banner,OneTrust,sessionid,www.gadventures.com,,,,6 days,,,,,"Declared, not set",www.gadventures.com,"This is a very generic cookie name that may have different purposes on different sites, but generally it will be some kind of anonymous session identifier."
+Strictly Necessary Cookies,banner,OneTrust,keep_alive,gear.gadventures.com,,,,13 days,,,,,"Declared, not set",gear.gadventures.com,
+Strictly Necessary Cookies,banner,OneTrust,__stripe_mid,www.gadventures.com,,,,364 days,,,,,"Declared, not set",www.gadventures.com,Stripe is used to making credit card payments. Stripe uses a cookie to remember who you are and to enable the website to process payments without storing any credit card information on its own servers.
+Strictly Necessary Cookies,banner,OneTrust,developers_sessionid,developers.gadventures.com,,,,6 days,,,,,"Declared, not set",developers.gadventures.com,
+Strictly Necessary Cookies,banner,OneTrust,__stripe_mid,sherpa.gadventures.com,,,,364 days,,,,,"Declared, not set",sherpa.gadventures.com,Stripe is used to making credit card payments. Stripe uses a cookie to remember who you are and to enable the website to process payments without storing any credit card information on its own servers.
+Strictly Necessary Cookies,banner,OneTrust,__stripe_sid,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,Stripe is used to making credit card payments. Stripe uses a cookie to remember who you are and to enable the website to process payments without storing any credit card information on its own servers.
+Strictly Necessary Cookies,banner,OneTrust,cookietest,gear.gadventures.com,,,,Session,,,,,"Declared, not set",gear.gadventures.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies.Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Strictly Necessary Cookies,banner,OneTrust,_shopify_evids,gadventures.com,,,,364 days,,,,,"Declared, not set",gadventures.com,
+Strictly Necessary Cookies,banner,OneTrust,cart_currency,gear.gadventures.com,,,,13 days,,,,,"Declared, not set",gear.gadventures.com,
+Strictly Necessary Cookies,banner,OneTrust,_shopify_d,gadventures.com,,,,Session,,,,,"Declared, not set",gadventures.com,
+Strictly Necessary Cookies,banner,OneTrust,is_a,www.gadventures.com,,,,364 days,,,,,"Declared, not set",www.gadventures.com,
+Strictly Necessary Cookies,banner,OneTrust,country,developers.gadventures.com,,,,Session,,,,,"Declared, not set",developers.gadventures.com,
+Strictly Necessary Cookies,banner,OneTrust,secure_customer_sig,gear.gadventures.com,,,,364 days,,,,,"Declared, not set",gear.gadventures.com,"This cookie is generally provided by Shopify and is used in connection with a customer login.
+"
+Strictly Necessary Cookies,banner,OneTrust,csrftoken,www.gadventures.com,,,,364 days,,,,,"Declared, not set",www.gadventures.com,This cookie is associated with the Django web development platform for Python. It is designed to help protect a site against at particular type of software attack on web forms.
+Strictly Necessary Cookies,banner,OneTrust,dd_cookie_test_,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,dd_cookie_test
+Strictly Necessary Cookies,banner,OneTrust,sherpa_csrftoken,sherpa.gadventures.com,,,,363 days,,,,,"Declared, not set",sherpa.gadventures.com,
+Strictly Necessary Cookies,banner,OneTrust,__stripe_sid,sherpa.gadventures.com,,,,0 days,,,,,"Declared, not set",sherpa.gadventures.com,Stripe is used to making credit card payments. Stripe uses a cookie to remember who you are and to enable the website to process payments without storing any credit card information on its own servers.
+Strictly Necessary Cookies,banner,OneTrust,dd_cookie_test_,tech.gadventures.com,,,,0 days,,,,,"Declared, not set",tech.gadventures.com,dd_cookie_test
+Strictly Necessary Cookies,banner,OneTrust,localization,gear.gadventures.com,,,,364 days,,,,,"Declared, not set",gear.gadventures.com,"These cookies are set on pages with the Flickr widget.
+"
+Strictly Necessary Cookies,banner,OneTrust,_ju_v,gear.gadventures.com,,,,0 days,,,,,"Declared, not set",gear.gadventures.com,
+Strictly Necessary Cookies,banner,OneTrust,BIGipServerab06web-nginx-app_https,letsgo.gadventures.com,,,,Session,,,,,"Declared, not set",letsgo.gadventures.com,"This cookie name is associated with the BIG-IP product suite from company F5. Usually associated with managing sessions on load balanced servers, to ensure user requests are routed consistently to the correct server. The common root is BIGipServer most commonly followed by a domain name, usually the one that it is hosted on, but not always."
+Strictly Necessary Cookies,banner,OneTrust,shopify_pay_redirect,gear.gadventures.com,,,,0 days,,,,,"Declared, not set",gear.gadventures.com,
+Strictly Necessary Cookies,banner,OneTrust,csrftoken,developers.gadventures.com,,,,363 days,,,,,"Declared, not set",developers.gadventures.com,This cookie is associated with the Django web development platform for Python. It is designed to help protect a site against at particular type of software attack on web forms.
+Strictly Necessary Cookies,banner,OneTrust,LSKey-c$CookieConsentPolicy,gadventures.my.salesforce.com,,,,364 days,,,,,"Declared, not set",gadventures.my.salesforce.com,
+Strictly Necessary Cookies,banner,OneTrust,CookieConsentPolicy,gadventures.my.salesforce.com,,,,364 days,,,,,"Declared, not set",gadventures.my.salesforce.com,
+Strictly Necessary Cookies,banner,OneTrust,X-Salesforce-CHAT,d.la3-c1cs-ph2.salesforceliveagent.com,,,,Session,,,,,"Declared, not set",d.la3-c1cs-ph2.salesforceliveagent.com, Sales Force uses these cookies to be able to provide live chat functionality to the user.
+Strictly Necessary Cookies,banner,OneTrust,m,m.stripe.com,,,,729 days,,,,,"Declared, not set",m.stripe.com,Stripe is used to making credit card payments. Stripe uses a cookie to remember who you are and to enable the website to process payments without storing any credit card information on its own servers.
+Strictly Necessary Cookies,banner,OneTrust,LSKey-c$CookieConsentPolicy,csp-report.force.com,,,,364 days,,,,,"Declared, not set",csp-report.force.com,
+Strictly Necessary Cookies,banner,OneTrust,CookieConsentPolicy,csp-report.force.com,,,,364 days,,,,,"Declared, not set",csp-report.force.com,
+Strictly Necessary Cookies,banner,OneTrust,shopify_pay_redirect,cdn.shopify.com,,,,0 days,,,,,"Declared, not set",cdn.shopify.com,
+Strictly Necessary Cookies,banner,OneTrust,_shopify_evids,cdn.shopify.com,,,,364 days,,,,,"Declared, not set",cdn.shopify.com,
+Strictly Necessary Cookies,banner,OneTrust,cookietest,cdn.shopify.com,,,,Session,,,,,"Declared, not set",cdn.shopify.com,"Common cookie name could have a number of different origins.  Where this is first party and a session cookie, its most likely to do with checking to see if the browser is set to block or allow cookies."
+Strictly Necessary Cookies,banner,OneTrust,_s,app.link,,,,364 days,,,,,"Declared, not set",app.link,"This cookie is associated with Shopify's analytics suite.
+"
+Strictly Necessary Cookies,banner,OneTrust,X-Salesforce-CHAT,d.la3-c2-ia4.salesforceliveagent.com,,,,Session,,,,,"Declared, not set",d.la3-c2-ia4.salesforceliveagent.com, Sales Force uses these cookies to be able to provide live chat functionality to the user.
+Strictly Necessary Cookies,banner,OneTrust,BrowserId_sec,force.com,,,,364 days,,,,,"Declared, not set",force.com,Used to log secure browser sessions/visits for internal-only product analytics.
+Strictly Necessary Cookies,banner,OneTrust,BrowserId,force.com,,,,364 days,,,,,"Declared, not set",force.com,
+Performance Cookies,banner,OneTrust,_gat_UA-,gadventures.com,,,,0 days,,,,,"Declared, not set",gadventures.com,"This is a pattern type cookie set by Google Analytics, where the pattern element on the name contains the unique identity number of the account or website it relates to. It appears to be a variation of the _gat cookie which is used to limit the amount of data recorded by Google on high traffic volume websites."
+Performance Cookies,banner,OneTrust,_y,gadventures.com,,,,364 days,,,,,"Declared, not set",gadventures.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_y,gadventures.com,,,,364 days,,,,,"Declared, not set",gadventures.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_s,gadventures.com,,,,0 days,,,,,"Declared, not set",gadventures.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_landing_page,gadventures.com,,,,13 days,,,,,"Declared, not set",gadventures.com,"This cookie is used to track, report, and analyze on landing pages.
+"
+Performance Cookies,banner,OneTrust,_shopify_s,gadventures.com,,,,0 days,,,,,"Declared, not set",gadventures.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_shopify_sa_t,gadventures.com,,,,0 days,,,,,"Declared, not set",gadventures.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_gid,gadventures.com,,,,0 days,,,,,"Declared, not set",gadventures.com,This cookie name is associated with Google Universal Analytics. This appears to be a new cookie and as of Spring 2017 no information is available from Google.  It appears to store and update a unique value for each page visited._gid
+Performance Cookies,banner,OneTrust,_clck,gadventures.com,,,,364 days,,,,,"Declared, not set",gadventures.com,
+Performance Cookies,banner,OneTrust,_gat,gadventures.com,,,,0 days,,,,,"Declared, not set",gadventures.com,"This cookie name is associated with Google Universal Analytics, according to documentation it is used to throttle the request rate - limiting the collection of data on high traffic sites. It expires after 10 minutes."
+Performance Cookies,banner,OneTrust,_clsk,media.gadventures.com,,,,0 days,,,,,"Declared, not set",media.gadventures.com,
+Performance Cookies,banner,OneTrust,_clsk,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,
+Performance Cookies,banner,OneTrust,MR,c.clarity.ms,,,,6 days,,,,,"Declared, not set",c.clarity.ms,This is a Microsoft MSN 1st party cookie which we use to measure the use of the website for internal analytics.
+Performance Cookies,banner,OneTrust,_dd_s,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,"Datadog Cookie used to group all events generated from a unique user session across multiple pages. It contains the current session ID, whether the session is excluded due to sampling, and the expiration date of the session. The cookie is extended for an extra 15 minutes every time the user interacts with the website, up to the maximum user session duration (4 hours)."
+Performance Cookies,banner,OneTrust,_ALGOLIA,www.gadventures.com,,,,180 days,,,,,"Declared, not set",www.gadventures.com,
+Performance Cookies,banner,OneTrust,_hp2_hld,gadventures.com,,,,0 days,,,,,"Declared, not set",gadventures.com,"This cookie is used to determine which domain a cookie can be set on, since public suffix domains block setting cookies at the top level."
+Performance Cookies,banner,OneTrust,_shopify_sa_p,gadventures.com,,,,0 days,,,,,"Declared, not set",gadventures.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_clsk,gadventures.com,,,,0 days,,,,,"Declared, not set",gadventures.com,
+Performance Cookies,banner,OneTrust,JSESSIONID,nr-data.net,,,,Session,,,,,"Declared, not set",nr-data.net,"This domain is controlled by New Relic, which provides a platform for monitoring the performance of web and mobile applications."
+Performance Cookies,banner,OneTrust,CLID,www.clarity.ms,,,,364 days,,,,,"Declared, not set",www.clarity.ms,
+Performance Cookies,banner,OneTrust,_clsk,www.clarity.ms,,,,0 days,,,,,"Declared, not set",www.clarity.ms,
+Performance Cookies,banner,OneTrust,AWSALBCORS,starling.crowdriff.com,,,,6 days,,,,,"Declared, not set",starling.crowdriff.com,This cookie is managed by AWS and is used for load balancing.
+Performance Cookies,banner,OneTrust,AWSALB,starling.crowdriff.com,,,,6 days,,,,,"Declared, not set",starling.crowdriff.com,AWS ELB application load balancer
+Performance Cookies,banner,OneTrust,ANONCHK,c.clarity.ms,,,,0 days,,,,,"Declared, not set",c.clarity.ms,This cookie carries out information about how the end user uses the website and any advertising that the end user may have seen before visiting the said website.
+Performance Cookies,banner,OneTrust,SM,c.clarity.ms,,,,Session,,,,,"Declared, not set",c.clarity.ms,This is a Microsoft MSN 1st party cookie which we use to measure the use of the website for internal analytics.
+Performance Cookies,banner,OneTrust,BIGipServerab06web-nginx-app_https,app-ab06.marketo.com,,,,Session,,,,,"Declared, not set",app-ab06.marketo.com,"This cookie name is associated with the BIG-IP product suite from company F5. Usually associated with managing sessions on load balanced servers, to ensure user requests are routed consistently to the correct server. The common root is BIGipServer most commonly followed by a domain name, usually the one that it is hosted on, but not always."
+Performance Cookies,banner,OneTrust,MUID,clarity.ms,,,,389 days,,,,,"Declared, not set",clarity.ms,"This cookie is widely used my Microsoft as a unique user identifier.  It can be set by embedded microsoft scripts.  Widely believed to sync across many different Microsoft domains, allowing user tracking."
+Functional Cookies,banner,OneTrust,_dy_csc_ses,gadventures.com,,,,0 days,,,,,"Declared, not set",gadventures.com,
+Functional Cookies,banner,OneTrust,_dycst,gadventures.com,,,,29 days,,,,,"Declared, not set",gadventures.com,
+Functional Cookies,banner,OneTrust,_dy_df_geo,gadventures.com,,,,29 days,,,,,"Declared, not set",gadventures.com,"Stores the geographical location of browsers and targets ads.
+"
+Functional Cookies,banner,OneTrust,_dy_toffset,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,
+Functional Cookies,banner,OneTrust,_dy_df_geo,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,"Stores the geographical location of browsers and targets ads.
+"
+Functional Cookies,banner,OneTrust,_dycst,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,
+Functional Cookies,banner,OneTrust,_dy_toffset,gadventures.com,,,,29 days,,,,,"Declared, not set",gadventures.com,
+Functional Cookies,banner,OneTrust,_dy_c_att_exps,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,
+Functional Cookies,banner,OneTrust,_ju_dn,gadventures.com,,,,29 days,,,,,"Declared, not set",gadventures.com,
+Functional Cookies,banner,OneTrust,_dy_ses_load_seq,gadventures.com,,,,29 days,,,,,"Declared, not set",gadventures.com,
+Functional Cookies,banner,OneTrust,cookies.js,media.gadventures.com,,,,Session,,,,,"Declared, not set",media.gadventures.com,"This cookie determines whether to show the end user the cookie policy modal.
+"
+Functional Cookies,banner,OneTrust,_dy_geo,gadventures.com,,,,29 days,,,,,"Declared, not set",gadventures.com,"Stores the geographical location of browsers and targets ads.
+"
+Functional Cookies,banner,OneTrust,__atuvc,www.gadventures.com,,,,395 days,,,,,"Declared, not set",www.gadventures.com,This cookie is associated with the AddThis social sharing site. It allows the user to see an updated count if they share a page and return to it before our share count cache is updated.
+Functional Cookies,banner,OneTrust,_dy_geo,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,"Stores the geographical location of browsers and targets ads.
+"
+Functional Cookies,banner,OneTrust,_dy_c_exps,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,
+Functional Cookies,banner,OneTrust,dy_fs_page,gadventures.com,,,,364 days,,,,,"Declared, not set",gadventures.com,
+Functional Cookies,banner,OneTrust,_dy_lu_ses,gadventures.com,,,,Session,,,,,"Declared, not set",gadventures.com,
+Functional Cookies,banner,OneTrust,_ju_dm,gadventures.com,,,,0 days,,,,,"Declared, not set",gadventures.com,
+Functional Cookies,banner,OneTrust,_dy_lu_ses,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,
+Functional Cookies,banner,OneTrust,_dycnst,gadventures.com,,,,29 days,,,,,"Declared, not set",gadventures.com,
+Functional Cookies,banner,OneTrust,_dy_c_exps,gadventures.com,,,,29 days,,,,,"Declared, not set",gadventures.com,
+Functional Cookies,banner,OneTrust,dy_fs_page,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,
+Functional Cookies,banner,OneTrust,cookies.js,www.gadventures.com,,,,Session,,,,,"Declared, not set",www.gadventures.com,"This cookie determines whether to show the end user the cookie policy modal.
+"
+Functional Cookies,banner,OneTrust,_dy_ses_load_seq,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,
+Functional Cookies,banner,OneTrust,_ju_pn,gadventures.com,,,,0 days,,,,,"Declared, not set",gadventures.com,
+Functional Cookies,banner,OneTrust,__atuvs,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,This cookie is associated with the AddThis social sharing widget which is commonly embedded in websites to enable visitors to share content with a range of networking and sharing platforms.
+Functional Cookies,banner,OneTrust,_dy_csc_ses,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,
+Functional Cookies,banner,OneTrust,_dycnst,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,
+Functional Cookies,banner,OneTrust,_ju_dc,gadventures.com,,,,364 days,,,,,"Declared, not set",gadventures.com,
+Functional Cookies,banner,OneTrust,_dy_c_att_exps,gadventures.com,,,,29 days,,,,,"Declared, not set",gadventures.com,
+Functional Cookies,banner,OneTrust,DYSES,dynamicyield.com,,,,Session,,,,,"Declared, not set",dynamicyield.com,
+Functional Cookies,banner,OneTrust,DYID,dynamicyield.com,,,,364 days,,,,,"Declared, not set",dynamicyield.com,
+Functional Cookies,banner,OneTrust,CookieConsentPolicy,service.force.com,,,,364 days,,,,,"Declared, not set",service.force.com,
+Functional Cookies,banner,OneTrust,LSKey-c$CookieConsentPolicy,service.force.com,,,,364 days,,,,,"Declared, not set",service.force.com,
+Functional Cookies,banner,OneTrust,BrowserId_sec,salesforce.com,,,,364 days,,,,,"Declared, not set",salesforce.com,Used to log secure browser sessions/visits for internal-only product analytics.
+Functional Cookies,banner,OneTrust,BrowserId,salesforce.com,,,,364 days,,,,,"Declared, not set",salesforce.com,
+Functional Cookies,banner,OneTrust,vuid,vimeo.com,,,,399 days,,,,,"Declared, not set",vimeo.com,This domain is owned by Vimeo. The main business activity is: Video Hosting/Sharing
+Functional Cookies,banner,OneTrust,cf_clearance,vimeo.com,,,,364 days,,,,,"Declared, not set",vimeo.com,This domain is owned by Vimeo. The main business activity is: Video Hosting/Sharing
+Targeting Cookies,banner,OneTrust,_gat_UA-XXXXXX-X,gadventures.com,,,,0 days,,,,,"Declared, not set",gadventures.com,Google Analytics Cookies
+Targeting Cookies,banner,OneTrust,ln_or,www.gadventures.com,,,,0 days,,,,,"Declared, not set",www.gadventures.com,
+Targeting Cookies,banner,OneTrust,_gat_xxxxxxxxxxxxxxxxxxxxxxxxxx,gadventures.com,,,,0 days,,,,,"Declared, not set",gadventures.com,Google Analytics Cookies
+Targeting Cookies,banner,OneTrust,_cs_same_site,www.gadventures.com,,,,364 days,,,,,"Declared, not set",www.gadventures.com,"This cookie is used to support Cloudflare's 'SameSite' cookie attribute enforcement feature, which enhances security by preventing cross-site request forgery (CSRF) and other cross-site attacks.This is a session cookie. This is a pattern type cookie where a random 13-digit number is appended to the prefix _cs_."
+Targeting Cookies,banner,OneTrust,bscookie,www.linkedin.com,,,,364 days,,,,,"Declared, not set",www.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,MSPTC,bing.com,,,,389 days,,,,,"Declared, not set",bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,lang,ads.linkedin.com,,,,Session,,,,,"Declared, not set",ads.linkedin.com,"This domain is owned by LinkedIn, the business networking platform. This sub-domain is connected with LinkedIn's marketing services that enable website owners to gain insight into types of users on their site based on LinkedIn profile data, to improve targetng."
+Targeting Cookies,banner,OneTrust,CONSENT,google.com,,,,729 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Targeting Cookies,banner,OneTrust,alr,www.glassdoor.ca,,,,0 days,,,,,"Declared, not set",www.glassdoor.ca,
+Targeting Cookies,banner,OneTrust,ADRUM_BT1,www.glassdoor.ca,,,,0 days,,,,,"Declared, not set",www.glassdoor.ca,
+Targeting Cookies,banner,OneTrust,AWSALBCORS,www.glassdoor.ca,,,,6 days,,,,,"Declared, not set",www.glassdoor.ca,This cookie is managed by AWS and is used for load balancing.
+Targeting Cookies,banner,OneTrust,ADRUM_BTa,www.glassdoor.ca,,,,0 days,,,,,"Declared, not set",www.glassdoor.ca,
+Targeting Cookies,banner,OneTrust,AWSALB,www.glassdoor.ca,,,,6 days,,,,,"Declared, not set",www.glassdoor.ca,AWS ELB application load balancer
+Targeting Cookies,banner,OneTrust,AWSALBTGCORS,www.glassdoor.ca,,,,6 days,,,,,"Declared, not set",www.glassdoor.ca,
+Targeting Cookies,banner,OneTrust,cass,www.glassdoor.ca,,,,0 days,,,,,"Declared, not set",www.glassdoor.ca,
+Targeting Cookies,banner,OneTrust,GSESSIONID,www.glassdoor.ca,,,,0 days,,,,,"Declared, not set",www.glassdoor.ca,
+Targeting Cookies,banner,OneTrust,ADRUM_BT2,www.glassdoor.ca,,,,0 days,,,,,"Declared, not set",www.glassdoor.ca,
+Targeting Cookies,banner,OneTrust,gdId,www.glassdoor.ca,,,,3649 days,,,,,"Declared, not set",www.glassdoor.ca,
+Targeting Cookies,banner,OneTrust,trs,www.glassdoor.ca,,,,364 days,,,,,"Declared, not set",www.glassdoor.ca,
+Targeting Cookies,banner,OneTrust,gdsid,www.glassdoor.ca,,,,0 days,,,,,"Declared, not set",www.glassdoor.ca,
+Targeting Cookies,banner,OneTrust,asst,www.glassdoor.ca,,,,0 days,,,,,"Declared, not set",www.glassdoor.ca,
+Targeting Cookies,banner,OneTrust,AWSALBTG,www.glassdoor.ca,,,,6 days,,,,,"Declared, not set",www.glassdoor.ca,
+Targeting Cookies,banner,OneTrust,SameSite,www.glassdoor.ca,,,,0 days,,,,,"Declared, not set",www.glassdoor.ca,
+Targeting Cookies,banner,OneTrust,JSESSIONID,www.glassdoor.ca,,,,0 days,,,,,"Declared, not set",www.glassdoor.ca,"General purpose platform session cookie, used by sites written in JSP. Usually used to maintain an anonymous user session by the server."
+Targeting Cookies,banner,OneTrust,SRM_B,c.bing.com,,,,389 days,,,,,"Declared, not set",c.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,MR,c.bing.com,,,,6 days,,,,,"Declared, not set",c.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,csrftoken,instagram.com,,,,363 days,,,,,"Declared, not set",instagram.com,"Instagram is a social networking service owned by Facebook, Inc. It's designed for sharing photos and videos from a smartphone. The service also uses cookies for various purposes, including analytics, personalization, and advertising."
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,ar_debug,doubleclick.net,,,,29 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,TESTCOOKIESENABLED,www.youtube.com,,,,0 days,,,,,"Declared, not set",www.youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_PRIVACY_METADATA,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,__Secure-xxxxxxx,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Targeting Cookies,banner,OneTrust,CONSENT,youtube.com,,,,729 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,YSC,youtube.com,,,,364 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Targeting Cookies,banner,OneTrust,ar_debug,pinterest.com,,,,364 days,,,,,"Declared, not set",pinterest.com,This domain is owned by Pinterest. The main business activity is: Social Content Sharing platform
+Targeting Cookies,banner,OneTrust,,www.facebook.com,,,,Session,,,,,"Declared, not set",www.facebook.com,"This domain is owned by Facebook, which is the world's largest social networking service. As a third party host provider, it mostly collects data on the interests of users via widgets such as the 'Like' button found on many websites. This is used to serve targeted advertising to its users when logged into its services. In 2014 it also started serving up behaviourally targeted advertising on other websites, similar to most dedicated online marketing companies."
+Targeting Cookies,banner,OneTrust,ln_or,snap.licdn.com,,,,0 days,,,,,"Declared, not set",snap.licdn.com,
+Targeting Cookies,banner,OneTrust,lidc,linkedin.com,,,,0 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,li_gc,linkedin.com,,,,179 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,bcookie,linkedin.com,,,,364 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,lang,linkedin.com,,,,Session,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,UserMatchHistory,linkedin.com,,,,29 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,AnalyticsSyncHistory,linkedin.com,,,,29 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,li_sugr,linkedin.com,,,,89 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active Linkedin profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."

@@ -1,0 +1,454 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Targeting Cookies,banner,OneTrust,X-AB,sc-static.net,/scevent.min.js,Third party,1.00 days,0 days,false,true,none,false,Declared & set,sc-static.net,"This domain is commonly associated with Scorecard Research, a service that provides marketers with analytics and other tracking information."
+Strictly Necessary Cookies,banner,OneTrust,GlobalE_Analytics,www.briggs-riley.com,/collections,First party,Session,Session,false,false,unspecified,false,Declared & set,www.briggs-riley.com,This cookie name is associated with Global-E which is used to store cookie policies and privacy policies across multiple sessions and websites.
+Strictly Necessary Cookies,banner,OneTrust,test,www.briggs-riley.com,/collections,First party,Session,Session,false,false,unspecified,false,Declared & set,www.briggs-riley.com,This cookie is associated with Adobe Analytics. It checks to see if cookies are enabled.
+Unclassified,none,,,www.briggs-riley.com,/collections,First party,Session,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,test,www.briggs-riley.com,/pages,First party,Session,Session,false,false,unspecified,false,Declared & set,www.briggs-riley.com,This cookie is associated with Adobe Analytics. It checks to see if cookies are enabled.
+Unclassified,none,,,www.briggs-riley.com,/pages,First party,Session,,false,false,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,GlobalE_Analytics,www.briggs-riley.com,/pages,First party,Session,Session,false,false,unspecified,false,Declared & set,www.briggs-riley.com,This cookie name is associated with Global-E which is used to store cookie policies and privacy policies across multiple sessions and websites.
+Strictly Necessary Cookies,banner,OneTrust,localization,www.briggs-riley.com,/,First party,365.00 days,365 days,false,false,unspecified,false,Declared & set,www.briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,cart_currency,www.briggs-riley.com,/,First party,14.00 days,13 days,false,false,lax,false,Declared & set,www.briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,_shopify_essential,www.briggs-riley.com,/,First party,365.00 days,Session,true,true,lax,false,Declared & set,www.briggs-riley.com,This cookie name is associated with Shopify which is used to contain essential information for the correct functionality of a store such as session and checkout information and anti-tampering data.
+Unclassified,none,,_shopify_analytics,www.briggs-riley.com,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,_shopify_marketing,www.briggs-riley.com,/,First party,365.00 days,,true,true,lax,false,Not declared,,
+Unclassified,none,,__eventn_id,.briggs-riley.com,/,First party,400.00 days,,false,true,unspecified,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,__cf_bm,.global-e.com,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,global-e.com,This is a CloudFoundry cookie
+Unclassified,none,,smartDash,.briggs-riley.com,/,First party,60.00 days,,false,true,lax,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,_shop_app_essential,.shop.app,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,shop.app,"This domain is associated with Shopify's Shop app, which provides a shopping assistant experience for users, including personalized recommendations and order tracking."
+Unclassified,none,,__attn_eat_id,.briggs-riley.com,/,First party,390.00 days,,false,true,lax,true,Not declared,,
+Functional Cookies,banner,OneTrust,__cf_bm,.cdn.506.io,/,Third party,0.02 days,0 days,true,true,none,true,Declared & set,cdn.506.io,This is a CloudFoundry cookie
+Unclassified,none,,__cf_bm,.calendly.com,/,Third party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Unclassified,none,,storefront_url,www.briggs-riley.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonAlertBoxClosed,.www.briggs-riley.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.briggs-riley.com,This cookie is set by websites using certain versions of the cookie law compliance solution from OneTrust. It is set after visitors have seen a cookie information notice and in some cases only when they actively close the notice down. It enables the website not to show the message more than once to a user. The cookie has a normal lifespan of one year and contains no personal information.
+Strictly Necessary Cookies,banner,OneTrust,cart,www.briggs-riley.com,/,First party,91.00 days,30 days,false,false,lax,false,Declared & set,www.briggs-riley.com,"This cookie is generally provided by Shopify and is used in connection with a shopping cart.
+"
+Functional Cookies,banner,OneTrust,2c.cId,www.briggs-riley.com,/,First party,400.00 days,0 days,false,false,lax,false,Declared & set,briggs-riley.com,"This cookie name is used for assigning a unique identifier to each browser for tracking visits and interactions, building customer profiles based on site activity, and merging customer profiles from multiple devices."
+Unclassified,none,,shopify_client_id,www.briggs-riley.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,ssCartProducts,.briggs-riley.com,/,First party,Session,,false,true,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_scid,.briggs-riley.com,/,First party,395.00 days,395 days,false,false,lax,false,Declared & set,briggs-riley.com,"Cookie associated with Snapchat. Sets a unique ID for the visitor, that allows third party advertisers to target the visitor with relevant advertisement. This pairing service is provided by third party advertisement hubs, which facilitates realtime bidding for advertisers."
+Targeting Cookies,banner,OneTrust,barometric[cuid],.trkn.us,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,trkn.us,
+Unclassified,none,,_nb_sp_ses.4209,www.briggs-riley.com,/,First party,0.02 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__cf_bm,.www.briggs-riley.com,/,First party,0.02 days,,true,true,none,true,"Declared, conflicting",,
+Strictly Necessary Cookies,banner,OneTrust,test,www.briggs-riley.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,www.briggs-riley.com,This cookie is associated with Adobe Analytics. It checks to see if cookies are enabled.
+Unclassified,none,,,www.briggs-riley.com,/,First party,Session,,false,false,unspecified,false,Not declared,,
+Targeting Cookies,banner,OneTrust,uid,.criteo.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Unclassified,none,,first_pla_call,www.briggs-riley.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,bat.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Strictly Necessary Cookies,banner,OneTrust,GlobalE_Analytics,www.briggs-riley.com,/,First party,Session,Session,false,false,unspecified,false,Declared & set,www.briggs-riley.com,This cookie name is associated with Global-E which is used to store cookie policies and privacy policies across multiple sessions and websites.
+Unclassified,none,,__attn_shp_cid,www.briggs-riley.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Targeting Cookies,banner,OneTrust,_pin_unauth,www.briggs-riley.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,briggs-riley.com,
+Unclassified,none,,_nb_sp_id.4209,www.briggs-riley.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Targeting Cookies,banner,OneTrust,cjConsent,.briggs-riley.com,/,First party,395.00 days,394 days,false,true,unspecified,false,Declared & set,briggs-riley.com,
+Targeting Cookies,banner,OneTrust,cjUser,.briggs-riley.com,/,First party,395.00 days,Session,false,true,unspecified,false,Declared & set,www.briggs-riley.com,Used to track usage of the embedded video player.
+Targeting Cookies,banner,OneTrust,TapAd_TS,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,
+Targeting Cookies,banner,OneTrust,TapAd_DID,.tapad.com,/,Third party,60.00 days,59 days,false,true,none,false,Declared & set,tapad.com,
+Targeting Cookies,banner,OneTrust,_gcl_au,.briggs-riley.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,briggs-riley.com,Used by Google AdSense for experimenting with advertisement efficiency across websites using their services
+Unclassified,none,,_shopify_cmp,.briggs-riley.com,/,First party,365.25 days,,false,true,lax,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,OptanonConsent,.www.briggs-riley.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,www.briggs-riley.com,"This cookie is set by the cookie compliance solution from OneTrust. It stores information about the categories of cookies the site uses and whether visitors have given or withdrawn consent for the use of each category. This enables site owners to prevent cookies in each category from being set in the users browser, when consent is not given. The cookie has a normal lifespan of one year, so that returning visitors to the site will have their preferences remembered. It contains no information that can identify the site visitor."
+Unclassified,none,,_rdt_uuid,.briggs-riley.com,/,First party,90.00 days,,false,true,strict,false,Not declared,,
+Targeting Cookies,banner,OneTrust,cto_bundle,.criteo.com,/,Third party,390.00 days,389 days,false,true,none,true,Declared & set,criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Unclassified,none,,_gepix,.briggs-riley.com,/,First party,1.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_gecntaos,.briggs-riley.com,/,First party,365.00 days,,false,true,strict,false,Not declared,,
+Strictly Necessary Cookies,banner,OneTrust,_geppv,.briggs-riley.com,/,First party,0.04 days,Session,false,true,strict,false,Declared & set,www.briggs-riley.com,
+Targeting Cookies,banner,OneTrust,_scid_r,.briggs-riley.com,/,First party,395.00 days,Session,false,false,lax,false,Declared & set,www.briggs-riley.com,Retrieving data. Wait a few seconds and try to cut or copy again.
+Targeting Cookies,banner,OneTrust,_uetsid,.briggs-riley.com,/,First party,1.00 days,Session,false,false,unspecified,false,Declared & set,www.briggs-riley.com,This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site. 
+Targeting Cookies,banner,OneTrust,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,ct.pinterest.com,
+Targeting Cookies,banner,OneTrust,sc_at,.snapchat.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,snapchat.com,Cookie associated with embedding content from Snapchat.
+Targeting Cookies,banner,OneTrust,_uetvid,.briggs-riley.com,/,First party,390.00 days,Session,false,false,unspecified,false,Declared & set,www.briggs-riley.com,This is a cookie utilised by Microsoft Bing Ads and is a tracking cookie. It allows us to engage with a user that has previously visited our website.
+Strictly Necessary Cookies,banner,OneTrust,_geps,www.briggs-riley.com,,,,0 days,,,,,"Declared, not set",www.briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,ssSessionIdNamespace,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,_geran,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,forterToken,briggs-riley.com,,,,399 days,,,,,"Declared, not set",briggs-riley.com,This cookie stores the Forter-generated device identifier and is used to identify the browser between browsing sessions and to aid in fraud detection.
+Strictly Necessary Cookies,banner,OneTrust,_tracking_consent,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,This cookie _tracking_consent is used to store a user's preferences if a merchant has set up privacy rules in the visitor's region.
+Strictly Necessary Cookies,banner,OneTrust,_getdran,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,This cookie name is associated with managing expiration functions for various cookies and is used for core functionalities related to cookie management and expiration.
+Strictly Necessary Cookies,banner,OneTrust,keep_alive,www.briggs-riley.com,,,,0 days,,,,,"Declared, not set",www.briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,ssSessionIdNamespace,briggs-riley.com,,,,Session,,,,,"Declared, not set",briggs-riley.com,This cookie name is used to track the user's interaction with the website's search-bar-function and to ensure accurate and fast search results.
+Strictly Necessary Cookies,banner,OneTrust,secure_customer_sig,www.briggs-riley.com,,,,364 days,,,,,"Declared, not set",www.briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,wpm-test-cookie,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,This cookie name is associated with Shopify which is used to help you navigate efficiently and perform certain functions.
+Strictly Necessary Cookies,banner,OneTrust,_secure_session_id,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,_geuid,briggs-riley.com,,,,359 days,,,,,"Declared, not set",briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,_cmp_a,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,_gepe,www.briggs-riley.com,,,,0 days,,,,,"Declared, not set",www.briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,_shopify_test,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,This cookie name is associated with Shopify which is used to manage sessions on various Shopify websites.
+Strictly Necessary Cookies,banner,OneTrust,_geffran,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,"This cookie name _geffran is used to manage user opt-out preferences and consent for cookies, including the use of non-functional cookies."
+Strictly Necessary Cookies,banner,OneTrust,_attn_bopd_,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,This cookie name is associated with managing user opt-out preferences and consent for non-functional cookies.
+Strictly Necessary Cookies,banner,OneTrust,_tracking_consent,briggs-riley.com,,,,364 days,,,,,"Declared, not set",briggs-riley.com,This cookie _tracking_consent is used to store a user's preferences if a merchant has set up privacy rules in the visitor's region.
+Strictly Necessary Cookies,banner,OneTrust,forterToken,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,This cookie stores the Forter-generated device identifier and is used to identify the browser between browsing sessions and to aid in fraud detection.
+Strictly Necessary Cookies,banner,OneTrust,forterToken,com,,,,399 days,,,,,"Declared, not set",com,This cookie stores the Forter-generated device identifier and is used to identify the browser between browsing sessions and to aid in fraud detection.
+Strictly Necessary Cookies,banner,OneTrust,_geffresponse,briggs-riley.com,,,,6 days,,,,,"Declared, not set",briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,_isuid,briggs-riley.com,,,,364 days,,,,,"Declared, not set",briggs-riley.com,This cookie name is associated with Searchspring which is used to track the user's interaction with the website's search-bar-function and to present the user with relevant products or services.
+Strictly Necessary Cookies,banner,OneTrust,_geran,briggs-riley.com,,,,1 days,,,,,"Declared, not set",briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,GlobalE_Consent,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,_geffran,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,"This cookie name _geffran is used to manage user opt-out preferences and consent for cookies, including the use of non-functional cookies."
+Strictly Necessary Cookies,banner,OneTrust,_attn_bopd_,briggs-riley.com,,,,389 days,,,,,"Declared, not set",briggs-riley.com,This cookie name is associated with managing user opt-out preferences and consent for non-functional cookies.
+Strictly Necessary Cookies,banner,OneTrust,_gers,briggs-riley.com,,,,1 days,,,,,"Declared, not set",briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,cart_sig,www.briggs-riley.com,,,,30 days,,,,,"Declared, not set",www.briggs-riley.com,"This cookie is generally provided by Shopify and is used in connection with checkout.
+"
+Strictly Necessary Cookies,banner,OneTrust,shopify_pay_redirect,www.briggs-riley.com,,,,0 days,,,,,"Declared, not set",www.briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,_getdran,briggs-riley.com,,,,1 days,,,,,"Declared, not set",briggs-riley.com,This cookie name is associated with managing expiration functions for various cookies and is used for core functionalities related to cookie management and expiration.
+Strictly Necessary Cookies,banner,OneTrust,_attn_bopd_,rizdb.briggs-riley.com,,,,0 days,,,,,"Declared, not set",rizdb.briggs-riley.com,This cookie name is associated with managing user opt-out preferences and consent for non-functional cookies.
+Strictly Necessary Cookies,banner,OneTrust,ssUserId,briggs-riley.com,,,,364 days,,,,,"Declared, not set",briggs-riley.com,"This cookie name 'ssUserId' is used to store a unique shopper string ID of the current logged-in shopper for personalization features, and generate a new ID if the shopper is anonymous."
+Strictly Necessary Cookies,banner,OneTrust,wpm-test-cookie,com,,,,Session,,,,,"Declared, not set",com,This cookie name is associated with Shopify which is used to help you navigate efficiently and perform certain functions.
+Strictly Necessary Cookies,banner,OneTrust,wpm-domain-test,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,This cookie is related to Shopify Store to test the storage of parameters about products added to the cart or payment currency on store.onetrust.com.	
+Strictly Necessary Cookies,banner,OneTrust,ssShopperId,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,Searchspring required for various API endpoints to primarily allow reporting to function properly.
+Strictly Necessary Cookies,banner,OneTrust,wpm-domain-test,briggs-riley.com,,,,Session,,,,,"Declared, not set",briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,wpm-test-cookie,briggs-riley.com,,,,Session,,,,,"Declared, not set",briggs-riley.com,This cookie name is associated with Shopify which is used to help you navigate efficiently and perform certain functions.
+Strictly Necessary Cookies,banner,OneTrust,GLBE_SESS_ID,www.briggs-riley.com,,,,729 days,,,,,"Declared, not set",www.briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,_geli,briggs-riley.com,,,,6 days,,,,,"Declared, not set",briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,_geffresponse,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,
+Strictly Necessary Cookies,banner,OneTrust,_shopify_essential,briggs-and-riley.myshopify.com,,,,364 days,,,,,"Declared, not set",briggs-and-riley.myshopify.com,This cookie name is associated with Shopify which is used to contain essential information for the correct functionality of a store such as session and checkout information and anti-tampering data.
+Strictly Necessary Cookies,banner,OneTrust,JSESSIONID,nr-data.net,,,,Session,,,,,"Declared, not set",nr-data.net,"This domain is controlled by New Relic, which provides a platform for monitoring the performance of web and mobile applications."
+Strictly Necessary Cookies,banner,OneTrust,m,m.stripe.com,,,,729 days,,,,,"Declared, not set",m.stripe.com,
+Strictly Necessary Cookies,banner,OneTrust,_shop_app_essential,pay.shopify.com,,,,364 days,,,,,"Declared, not set",pay.shopify.com,"This domain is associated with Shopify, an e-commerce platform that allows merchants to set up their own online shops. It is used for processing payments."
+Strictly Necessary Cookies,banner,OneTrust,_pay_session,pay.shopify.com,,,,Session,,,,,"Declared, not set",pay.shopify.com,
+Strictly Necessary Cookies,banner,OneTrust,forterSId,7ce243a1e1a2.cdn4.forter.com,,,,364 days,,,,,"Declared, not set",7ce243a1e1a2.cdn4.forter.com,
+Strictly Necessary Cookies,banner,OneTrust,_geffran,cdn.shopify.com,,,,0 days,,,,,"Declared, not set",cdn.shopify.com,"This domain is part of the content delivery network of Shopify, which is used to host website content and deliver it efficiently to users."
+Strictly Necessary Cookies,banner,OneTrust,_geffresponse,cdn.shopify.com,,,,0 days,,,,,"Declared, not set",cdn.shopify.com,"This domain is part of the content delivery network of Shopify, which is used to host website content and deliver it efficiently to users."
+Strictly Necessary Cookies,banner,OneTrust,_geli,cdn.shopify.com,,,,0 days,,,,,"Declared, not set",cdn.shopify.com,"This domain is part of the content delivery network of Shopify, which is used to host website content and deliver it efficiently to users."
+Strictly Necessary Cookies,banner,OneTrust,_geuid,cdn.shopify.com,,,,0 days,,,,,"Declared, not set",cdn.shopify.com,"This domain is part of the content delivery network of Shopify, which is used to host website content and deliver it efficiently to users."
+Strictly Necessary Cookies,banner,OneTrust,_getdran,cdn.shopify.com,,,,0 days,,,,,"Declared, not set",cdn.shopify.com,"This domain is part of the content delivery network of Shopify, which is used to host website content and deliver it efficiently to users."
+Strictly Necessary Cookies,banner,OneTrust,_geran,cdn.shopify.com,,,,0 days,,,,,"Declared, not set",cdn.shopify.com,"This domain is part of the content delivery network of Shopify, which is used to host website content and deliver it efficiently to users."
+Strictly Necessary Cookies,banner,OneTrust,_gers,cdn.shopify.com,,,,0 days,,,,,"Declared, not set",cdn.shopify.com,"This domain is part of the content delivery network of Shopify, which is used to host website content and deliver it efficiently to users."
+Strictly Necessary Cookies,banner,OneTrust,__cflb,api2.hcaptcha.com,,,,0 days,,,,,"Declared, not set",api2.hcaptcha.com,"This domain is associated with hCaptcha, a service that provides CAPTCHA and reCAPTCHA functionalities to websites for the purpose of bot and spam protection."
+Strictly Necessary Cookies,banner,OneTrust,ApplicationGatewayAffinityCORS,api.dyrect.co,,,,Session,,,,,"Declared, not set",api.dyrect.co,
+Strictly Necessary Cookies,banner,OneTrust,ApplicationGatewayAffinity,api.dyrect.co,,,,Session,,,,,"Declared, not set",api.dyrect.co,
+Strictly Necessary Cookies,banner,OneTrust,AWSALB,cdn.aarp.net,,,,6 days,,,,,"Declared, not set",cdn.aarp.net,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Strictly Necessary Cookies,banner,OneTrust,AWSALBCORS,cdn.aarp.net,,,,6 days,,,,,"Declared, not set",cdn.aarp.net,Used to attribute commission to affiliates when you arrive at the website from an affiliate referral link. It is set when you click on one of our links and used to let the advertiser and us know the website from which you came.
+Strictly Necessary Cookies,banner,OneTrust,ApplicationGatewayAffinityCORS,usluggage.dyrect.co,,,,Session,,,,,"Declared, not set",usluggage.dyrect.co,
+Strictly Necessary Cookies,banner,OneTrust,ApplicationGatewayAffinity,usluggage.dyrect.co,,,,Session,,,,,"Declared, not set",usluggage.dyrect.co,"Used for maintaining user sessions. When a user sends the first request to Application Gateway, it sets an affinity cookie in the response with a hash value which contains the session details, so that the subsequent requests carrying the affinity cookie will be routed to the same backend server for maintaining stickiness. Required for Dyrect product registration functionality."
+Strictly Necessary Cookies,banner,OneTrust,jebbit_auth_token,jebbit.com,,,,364 days,,,,,"Declared, not set",jebbit.com,
+Strictly Necessary Cookies,banner,OneTrust,jebbit_session_id,jebbit.com,,,,364 days,,,,,"Declared, not set",jebbit.com,
+Strictly Necessary Cookies,banner,OneTrust,_pay_session,shop.app,,,,Session,,,,,"Declared, not set",shop.app,"This domain is associated with Shopify's Shop app, which provides a shopping assistant experience for users, including personalized recommendations and order tracking."
+Strictly Necessary Cookies,banner,OneTrust,_shopify_template_session,szero.narvar.com,,,,13 days,,,,,"Declared, not set",szero.narvar.com,
+Strictly Necessary Cookies,banner,OneTrust,_GRECAPTCHA,www.google.com,,,,179 days,,,,,"Declared, not set",www.google.com,
+Performance Cookies,banner,OneTrust,_conv_s,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,"Convert AB testing  
+"
+Performance Cookies,banner,OneTrust,_conv_s,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,"Convert AB testing  
+"
+Performance Cookies,banner,OneTrust,_shopify_s,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_ga,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google&#39;s more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners. For more information about Google&#39;s processing of your personal data, please consult Google&#39;s <a h"
+Performance Cookies,banner,OneTrust,_shopify_s,briggs-riley.com,,,,Session,,,,,"Declared, not set",briggs-riley.com,
+Performance Cookies,banner,OneTrust,_shopify_y,briggs-riley.com,,,,365 days,,,,,"Declared, not set",briggs-riley.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_conv_v,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,This cookie is the visitor-centric cookie that has a lifetime of max 6 months from the last update time.
+Performance Cookies,banner,OneTrust,_ga,briggs-riley.com,,,,729 days,,,,,"Declared, not set",briggs-riley.com,
+Performance Cookies,banner,OneTrust,_shopify_y,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_clck,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,"This cookie is related to Microsoft Clarity analytics service. It is used to collect information about how visitors interact with the website, which helps in creating reports and improving the site."
+Performance Cookies,banner,OneTrust,_gat_UA-XXXXXX-X,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,
+Performance Cookies,banner,OneTrust,zte2095,briggs-riley.com,,,,Session,,,,,"Declared, not set",briggs-riley.com,
+Performance Cookies,banner,OneTrust,_clck,briggs-riley.com,,,,364 days,,,,,"Declared, not set",briggs-riley.com,"This cookie is related to Microsoft Clarity analytics service. It is used to collect information about how visitors interact with the website, which helps in creating reports and improving the site."
+Performance Cookies,banner,OneTrust,_clsk,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,Used by Microsoft Clarity to connect multiple page views by a user into a single Clarity session recording.
+Performance Cookies,banner,OneTrust,_shopify_s,com,,,,Session,,,,,"Declared, not set",com,"This cookie is associated with Shopify's analytics suite.
+"
+Performance Cookies,banner,OneTrust,_nb_sp_id.c6bd,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,
+Performance Cookies,banner,OneTrust,_shopify_sa_p,www.briggs-riley.com,,,,0 days,,,,,"Declared, not set",www.briggs-riley.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_clsk,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,Used by Microsoft Clarity to connect multiple page views by a user into a single Clarity session recording.
+Performance Cookies,banner,OneTrust,_ce.cch,briggs-riley.com,,,,Session,,,,,"Declared, not set",briggs-riley.com,
+Performance Cookies,banner,OneTrust,_shopify_sa_t,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,
+Performance Cookies,banner,OneTrust,_gat,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,
+Performance Cookies,banner,OneTrust,_gat_UA-,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,This cookie name is associated with Google Analytics which is used to throttle the request rate to the Google Analytics service.Google Analytics Cookies
+Performance Cookies,banner,OneTrust,_landing_page,briggs-riley.com,,,,13 days,,,,,"Declared, not set",briggs-riley.com,
+Performance Cookies,banner,OneTrust,_ga_xxxxxxxxxx,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,NAUsed by Google Analytics to identify and track an individual session with your device.
+Performance Cookies,banner,OneTrust,_gid,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,
+Performance Cookies,banner,OneTrust,_ga_xxxxxxxxxx,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,
+Performance Cookies,banner,OneTrust,_conv_sptest,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,"Convert AB testing  
+"
+Performance Cookies,banner,OneTrust,_shopify_sa_t,www.briggs-riley.com,,,,0 days,,,,,"Declared, not set",www.briggs-riley.com,"This cookie is associated with Shopify's analytics suite concerning marketing and referrals.
+"
+Performance Cookies,banner,OneTrust,_nb_sp_ses.c6bd,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,
+Performance Cookies,banner,OneTrust,_ce.gtld,briggs-riley.com,,,,Session,,,,,"Declared, not set",briggs-riley.com,
+Performance Cookies,banner,OneTrust,_conv_r,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,"This cookie name is used to hold the referral data for the current visitor, including source name, referral medium, and referrer search terms. It is overwritten each time the visitor comes from a new referrer."
+Performance Cookies,banner,OneTrust,_shopify_sa_p,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,
+Performance Cookies,banner,OneTrust,_conv_v,briggs-riley.com,,,,182 days,,,,,"Declared, not set",briggs-riley.com,This cookie is the visitor-centric cookie that has a lifetime of max 6 months from the last update time.
+Performance Cookies,banner,OneTrust,CLID,www.clarity.ms,,,,364 days,,,,,"Declared, not set",www.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics service that provides insights into user behavior on websites."
+Performance Cookies,banner,OneTrust,SM,c.clarity.ms,,,,Session,,,,,"Declared, not set",c.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics product that provides insights on user behavior and website performance."
+Performance Cookies,banner,OneTrust,_sp_xxxxxxxxxx,i.northbeam.io,,,,364 days,,,,,"Declared, not set",i.northbeam.io,simplybusiness.co.uk
+Performance Cookies,banner,OneTrust,ahoy_visitor,www.powr.io,,,,729 days,,,,,"Declared, not set",www.powr.io,"This cookie is generally provided by Shopify and is used to help identify a specific user across multiple devices.
+"
+Performance Cookies,banner,OneTrust,ahoy_visit,www.powr.io,,,,0 days,,,,,"Declared, not set",www.powr.io,
+Performance Cookies,banner,OneTrust,ahoy_unique_36456275,www.powr.io,,,,0 days,,,,,"Declared, not set",www.powr.io,
+Performance Cookies,banner,OneTrust,_nb_sp_id.c6bd,j.northbeam.io,,,,729 days,,,,,"Declared, not set",j.northbeam.io,"This domain is owned by North Beam, Inc. which provides data analytics and marketing performance measurement services."
+Performance Cookies,banner,OneTrust,_nb_sp_ses.c6bd,j.northbeam.io,,,,0 days,,,,,"Declared, not set",j.northbeam.io,"This domain is owned by North Beam, Inc. which provides data analytics and marketing performance measurement services."
+Performance Cookies,banner,OneTrust,_ga,powr.io,,,,729 days,,,,,"Declared, not set",powr.io,"This cookie name is associated with Google Universal Analytics - which is a significant update to Google's more commonly used analytics service. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.  By default it is set to expire after 2 years, although this is customisable by website owners."
+Performance Cookies,banner,OneTrust,_gid,powr.io,,,,0 days,,,,,"Declared, not set",powr.io,_gid
+Performance Cookies,banner,OneTrust,MUID,clarity.ms,,,,389 days,,,,,"Declared, not set",clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics service that provides insights into user behavior on websites."
+Functional Cookies,banner,OneTrust,nf42768_services_exp,www.briggs-riley.com,,,,0 days,,,,,"Declared, not set",www.briggs-riley.com,
+Functional Cookies,banner,OneTrust,ssViewedProducts,www.briggs-riley.com,,,,2554 days,,,,,"Declared, not set",www.briggs-riley.com,TS
+Functional Cookies,banner,OneTrust,__zlcstore,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,
+Functional Cookies,banner,OneTrust,_reidsn,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,
+Functional Cookies,banner,OneTrust,tangiblee:widget:user,www.briggs-riley.com,,,,364 days,,,,,"Declared, not set",www.briggs-riley.com,
+Functional Cookies,banner,OneTrust,__zlcmid,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,Live chat widget sets the cookies to store the Zopim Live Chat ID used to identify a device across visits.
+Functional Cookies,banner,OneTrust,__utest__2,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,
+Functional Cookies,banner,OneTrust,_sp_ses.xxxx,www.briggs-riley.com,,,,0 days,,,,,"Declared, not set",www.briggs-riley.com,
+Functional Cookies,banner,OneTrust,tangiblee_widget_container_type,www.briggs-riley.com,,,,364 days,,,,,"Declared, not set",www.briggs-riley.com,
+Functional Cookies,banner,OneTrust,_orig_referrer,briggs-riley.com,,,,13 days,,,,,"Declared, not set",briggs-riley.com,
+Functional Cookies,banner,OneTrust,yotpo_pixel,www.briggs-riley.com,,,,1 days,,,,,"Declared, not set",www.briggs-riley.com,
+Functional Cookies,banner,OneTrust,__itest__2,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,
+Functional Cookies,banner,OneTrust,ssUserId,www.briggs-riley.com,,,,364 days,,,,,"Declared, not set",www.briggs-riley.com,
+Functional Cookies,banner,OneTrust,_reidsn,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,
+Functional Cookies,banner,OneTrust,__zlcmid,briggs-riley.com,,,,364 days,,,,,"Declared, not set",briggs-riley.com,
+Functional Cookies,banner,OneTrust,_isuid,www.briggs-riley.com,,,,364 days,,,,,"Declared, not set",www.briggs-riley.com,
+Functional Cookies,banner,OneTrust,_sp_id.xxxx,www.briggs-riley.com,,,,729 days,,,,,"Declared, not set",www.briggs-riley.com,
+Functional Cookies,banner,OneTrust,ssViewedProducts,briggs-riley.com,,,,399 days,,,,,"Declared, not set",briggs-riley.com,TS
+Functional Cookies,banner,OneTrust,AWSALBCORS,widget-mediator.zopim.com,,,,6 days,,,,,"Declared, not set",widget-mediator.zopim.com,
+Functional Cookies,banner,OneTrust,AWSALB,widget-mediator.zopim.com,,,,6 days,,,,,"Declared, not set",widget-mediator.zopim.com,"This domain is associated with Zendesk, which provides a range of customer service and engagement products, including live chat features."
+Functional Cookies,banner,OneTrust,_reidsn,cdn.shopify.com,,,,0 days,,,,,"Declared, not set",cdn.shopify.com,"This domain is part of the content delivery network of Shopify, which is used to host website content and deliver it efficiently to users."
+Functional Cookies,banner,OneTrust,nostomarketspreview,cdn.shopify.com,,,,0 days,,,,,"Declared, not set",cdn.shopify.com,"This domain is part of the content delivery network of Shopify, which is used to host website content and deliver it efficiently to users."
+Functional Cookies,banner,OneTrust,yotpo_pixel,staticw2.yotpo.com,,,,1 days,,,,,"Declared, not set",staticw2.yotpo.com,This domain is owned by Yotpo Ltd. which provides e-commerce marketing services.
+Functional Cookies,banner,OneTrust,_sp_ses.xxxx,staticw2.yotpo.com,,,,0 days,,,,,"Declared, not set",staticw2.yotpo.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,_sp_id.xxxx,staticw2.yotpo.com,,,,729 days,,,,,"Declared, not set",staticw2.yotpo.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,x-ms-routing-name,api.tangiblee.com,,,,0 days,,,,,"Declared, not set",api.tangiblee.com,This cookie name is used in Azure to route a user to a deployment slot which is used for load balancing and to route traffic to deployment slots during deployments.
+Functional Cookies,banner,OneTrust,TiPMix,api.tangiblee.com,,,,0 days,,,,,"Declared, not set",api.tangiblee.com,Used to track the load balancing of Azure cloud services to ensure user requests are distributed effectively.
+Functional Cookies,banner,OneTrust,pixel,yotpo.com,,,,364 days,,,,,"Declared, not set",yotpo.com,"This domain is owned by Yotpo which provides solutions that power the whole customer journey, including loyalty and referrals, email and SMS marketing, subscriptions, reviews, and visual user-generated content."
+Functional Cookies,banner,OneTrust,_cfuvid,vimeo.com,,,,Session,,,,,"Declared, not set",vimeo.com,This domain is owned by Vimeo. The main business activity is: Video Hosting/Sharing
+Functional Cookies,banner,OneTrust,__zlcid,static.zdassets.com,,,,0 days,,,,,"Declared, not set",static.zdassets.com,
+Functional Cookies,banner,OneTrust,userAffinity,www.powr.io,,,,0 days,,,,,"Declared, not set",www.powr.io,Used to track usage of the embedded video player.
+Functional Cookies,banner,OneTrust,_cfuvid,usluggage.zendesk.com,,,,Session,,,,,"Declared, not set",usluggage.zendesk.com,The _cfuvid cookie is used by Cloudflare to distinguish individual users who share the same IP address for the purpose of enforcing rate limiting rules.
+Functional Cookies,banner,OneTrust,tangiblee_widget_container_type,cdn.tangiblee.com,,,,364 days,,,,,"Declared, not set",cdn.tangiblee.com,"This domain is owned by Tangiblee which provides a service that integrates with e-commerce websites to enhance the shopping experience with features such as dynamic comparison items, CTA design best practices, and marketing insights."
+Functional Cookies,banner,OneTrust,tangiblee:widget:user,cdn.tangiblee.com,,,,364 days,,,,,"Declared, not set",cdn.tangiblee.com,Used to track usage of the embedded video player.
+Functional Cookies,banner,OneTrust,yotpo_pixel,cdn-widgetsrepository.yotpo.com,,,,1 days,,,,,"Declared, not set",cdn-widgetsrepository.yotpo.com,"This domain is owned by Yotpo Ltd. which provides e-commerce marketing services including user-generated content marketing, loyalty, and referrals."
+Functional Cookies,banner,OneTrust,_sp_id.xxxx,cdn-widgetsrepository.yotpo.com,,,,729 days,,,,,"Declared, not set",cdn-widgetsrepository.yotpo.com,simplybusiness.co.uk
+Functional Cookies,banner,OneTrust,_sp_ses.xxxx,cdn-widgetsrepository.yotpo.com,,,,0 days,,,,,"Declared, not set",cdn-widgetsrepository.yotpo.com,simplybusiness.co.uk
+Targeting Cookies,banner,OneTrust,_lc2_fpi,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,"This cookie name is associated with LiveIntent which is used to enable targeted advertising by storing a random, unique, device identifier as a 1st party cookie."
+Targeting Cookies,banner,OneTrust,_li_dcdm_c,com,,,,Session,,,,,"Declared, not set",com,"This cookie is used by LinkedIn for targeting and advertising purposes, to deliver relevant ads to the user and to track the effectiveness of ad campaigns."
+Targeting Cookies,banner,OneTrust,_ScCbts,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,This cookie name is associated with SnapChat which is used for targeted advertising.TS
+Targeting Cookies,banner,OneTrust,_attn_,rizdb.briggs-riley.com,,,,0 days,,,,,"Declared, not set",rizdb.briggs-riley.com,"This cookie name is associated with Attentive which is used to contain the visitor ID and some page view and session details for analytics/identity purposes, and to attribute onsite events to the visitor."
+Targeting Cookies,banner,OneTrust,__attentive_cco,rizdb.briggs-riley.com,,,,0 days,,,,,"Declared, not set",rizdb.briggs-riley.com,"This cookie name is associated with Attentive which is used to track campaign engagement and order/offer conversions and values, calculate expiration, attribute emails to users and events, and assist in managing mobile messaging programs."
+Targeting Cookies,banner,OneTrust,__attentive_session_id,rizdb.briggs-riley.com,,,,0 days,,,,,"Declared, not set",rizdb.briggs-riley.com,This cookie name is associated with cdn.attn.tv which is used to maintain session state across pages.
+Targeting Cookies,banner,OneTrust,__attentive_cco,www.briggs-riley.com,,,,21899 days,,,,,"Declared, not set",www.briggs-riley.com,
+Targeting Cookies,banner,OneTrust,cto_bundle,briggs-riley.com,,,,395 days,,,,,"Declared, not set",briggs-riley.com,
+Targeting Cookies,banner,OneTrust,_schn1,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,"This cookie name is associated with Snapchat which is used to set a unique ID for the visitor, allowing third-party advertisers to target the visitor with relevant advertisements. It facilitates real-time bidding for advertisers and tracks individual sessions on the website to compile statistical data for marketing purposes."
+Targeting Cookies,banner,OneTrust,tag_user_id,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,This cookie name is associated with Blotout which is used for services usage analytics and marketing and advertising.
+Targeting Cookies,banner,OneTrust,__attentive_ss_referrer,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,This cookie name __attentive_ss_referrer is used to track where the user came from and is primarily used for sign-up unit display logic and for configurable fatigue rules based on browser referrer.
+Targeting Cookies,banner,OneTrust,_fbp,briggs-riley.com,,,,89 days,,,,,"Declared, not set",briggs-riley.com,
+Targeting Cookies,banner,OneTrust,_screload,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,Retrieving data. Wait a few seconds and try to cut or copy again.
+Targeting Cookies,banner,OneTrust,__attentive_dv,www.briggs-riley.com,,,,0 days,,,,,"Declared, not set",www.briggs-riley.com,
+Targeting Cookies,banner,OneTrust,_shg_user_id,www.briggs-riley.com,,,,1824 days,,,,,"Declared, not set",www.briggs-riley.com,
+Targeting Cookies,banner,OneTrust,__attentive_dv,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,"This cookie name is associated with Attentive Mobile Inc. which is used to track campaign engagement and order/offer conversions and values, ensure CCPA compliance, and optimize marketing text messages."
+Targeting Cookies,banner,OneTrust,__attentive_pv,rizdb.briggs-riley.com,,,,0 days,,,,,"Declared, not set",rizdb.briggs-riley.com,This cookie name is used to track the number of page views in a visitor's session and is primarily used for sign-up unit display logic and configurable fatigue rules based on page view count.
+Targeting Cookies,banner,OneTrust,__attentive_pv,www.briggs-riley.com,,,,0 days,,,,,"Declared, not set",www.briggs-riley.com,
+Targeting Cookies,banner,OneTrust,cto_tld_test,www.briggs-riley.com,,,,0 days,,,,,"Declared, not set",www.briggs-riley.com,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,This cookie name is associated with Google which is used to collect information on user behavior on multiple websites in order to optimize the relevance of advertisement on the website.
+Targeting Cookies,banner,OneTrust,__attentive_dv,rizdb.briggs-riley.com,,,,0 days,,,,,"Declared, not set",rizdb.briggs-riley.com,"This cookie name is associated with Attentive Mobile Inc. which is used to track campaign engagement and order/offer conversions and values, ensure CCPA compliance, and optimize marketing text messages."
+Targeting Cookies,banner,OneTrust,tag_user_id,briggs-riley.com,,,,399 days,,,,,"Declared, not set",briggs-riley.com,This cookie name is associated with Blotout which is used for services usage analytics and marketing and advertising.
+Targeting Cookies,banner,OneTrust,cto_tld_test,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,__attentive_id,www.briggs-riley.com,,,,21899 days,,,,,"Declared, not set",www.briggs-riley.com,
+Targeting Cookies,banner,OneTrust,_shg_session_id,www.briggs-riley.com,,,,0 days,,,,,"Declared, not set",www.briggs-riley.com,
+Targeting Cookies,banner,OneTrust,__attentive_pv,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,This cookie name is used to track the number of page views in a visitor's session and is primarily used for sign-up unit display logic and configurable fatigue rules based on page view count.
+Targeting Cookies,banner,OneTrust,_fbp,com,,,,89 days,,,,,"Declared, not set",com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Targeting Cookies,banner,OneTrust,_lc2_fpi,briggs-riley.com,,,,399 days,,,,,"Declared, not set",briggs-riley.com,"This cookie name is associated with LiveIntent which is used to enable targeted advertising by storing a random, unique, device identifier as a 1st party cookie."
+Targeting Cookies,banner,OneTrust,_li_dcdm_c,briggs-riley.com,,,,Session,,,,,"Declared, not set",briggs-riley.com,"This cookie is used by LinkedIn for targeting and advertising purposes, to deliver relevant ads to the user and to track the effectiveness of ad campaigns."
+Targeting Cookies,banner,OneTrust,__attentive_session_id,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,This cookie name is associated with cdn.attn.tv which is used to maintain session state across pages.
+Targeting Cookies,banner,OneTrust,_lc2_fpi_js,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,"This cookie name is associated with LiveIntent which is used to enable targeted advertising by storing a random, unique, device identifier as a 1st party cookie."
+Targeting Cookies,banner,OneTrust,__attentive_id,rizdb.briggs-riley.com,,,,0 days,,,,,"Declared, not set",rizdb.briggs-riley.com,This cookie name is associated with Attentive which is used to attribute onsite events to the visitor and to govern display rules for Attentive sign-up units.
+Targeting Cookies,banner,OneTrust,__attentive_ss_referrer,rizdb.briggs-riley.com,,,,0 days,,,,,"Declared, not set",rizdb.briggs-riley.com,This cookie name __attentive_ss_referrer is used to track where the user came from and is primarily used for sign-up unit display logic and for configurable fatigue rules based on browser referrer.
+Targeting Cookies,banner,OneTrust,_li_dcdm_c,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,"This cookie is used by LinkedIn for targeting and advertising purposes, to deliver relevant ads to the user and to track the effectiveness of ad campaigns."
+Targeting Cookies,banner,OneTrust,_lc2_fpi_js,briggs-riley.com,,,,Session,,,,,"Declared, not set",briggs-riley.com,"This cookie name is associated with LiveIntent which is used to enable targeted advertising by storing a random, unique, device identifier as a 1st party cookie."
+Targeting Cookies,banner,OneTrust,__attentive_cco,briggs-riley.com,,,,389 days,,,,,"Declared, not set",briggs-riley.com,"This cookie name is associated with Attentive which is used to track campaign engagement and order/offer conversions and values, calculate expiration, attribute emails to users and events, and assist in managing mobile messaging programs."
+Targeting Cookies,banner,OneTrust,tag_session,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,"This cookie name is used for storing user session identifier in web applications and remembers choices you have made in the past, like what language you prefer, what your user name and password are and other similar preferences."
+Targeting Cookies,banner,OneTrust,__attentive_session_id,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,This cookie name is associated with cdn.attn.tv which is used to maintain session state across pages.
+Targeting Cookies,banner,OneTrust,tag_session,briggs-riley.com,,,,0 days,,,,,"Declared, not set",briggs-riley.com,"This cookie name is used for storing user session identifier in web applications and remembers choices you have made in the past, like what language you prefer, what your user name and password are and other similar preferences."
+Targeting Cookies,banner,OneTrust,criteo_write_test,www.briggs-riley.com,,,,0 days,,,,,"Declared, not set",www.briggs-riley.com,
+Targeting Cookies,banner,OneTrust,__attentive_id,briggs-riley.com,,,,389 days,,,,,"Declared, not set",briggs-riley.com,This cookie name is associated with Attentive which is used to attribute onsite events to the visitor and to govern display rules for Attentive sign-up units.
+Targeting Cookies,banner,OneTrust,__kla_id,www.briggs-riley.com,,,,729 days,,,,,"Declared, not set",www.briggs-riley.com,
+Targeting Cookies,banner,OneTrust,__attentive_ss_referrer,www.briggs-riley.com,,,,0 days,,,,,"Declared, not set",www.briggs-riley.com,
+Targeting Cookies,banner,OneTrust,_attn_,www.briggs-riley.com,,,,3649 days,,,,,"Declared, not set",www.briggs-riley.com,
+Targeting Cookies,banner,OneTrust,_fbp,www.briggs-riley.com,,,,Session,,,,,"Declared, not set",www.briggs-riley.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers
+Targeting Cookies,banner,OneTrust,_ScCbts,briggs-riley.com,,,,6 days,,,,,"Declared, not set",briggs-riley.com,TS
+Targeting Cookies,banner,OneTrust,optout,criteo.com,,,,0 days,,,,,"Declared, not set",criteo.com,This domain is owned by Criteo. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,MSPTC,bat.bing.com,,,,389 days,,,,,"Declared, not set",bat.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,KRTBCOOKIE_xxxx,pubmatic.com,,,,29 days,,,,,"Declared, not set",pubmatic.com,This cookie is used to correlate IDs with those of Pubmatic partners (such as demand side platform clients or other advertising technology companies). Pubmatic passes information stored by the partner in this cookie to the partner when it is considering whether to purchase advertisements. This enables the partner to make better decisions about whether to display an advertisement to you.
+Targeting Cookies,banner,OneTrust,ipc,pubmatic.com,,,,0 days,,,,,"Declared, not set",pubmatic.com,
+Targeting Cookies,banner,OneTrust,chkSecSet,pubmatic.com,,,,89 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Targeting Cookies,banner,OneTrust,PugT,pubmatic.com,,,,29 days,,,,,"Declared, not set",pubmatic.com,
+Targeting Cookies,banner,OneTrust,KADUSERCOOKIE,pubmatic.com,,,,364 days,,,,,"Declared, not set",pubmatic.com,This domain is owned by Pubmatic. It operates an advertising exchange platform where online publishers can sell targeted advertising space to media buyers using real time bidding.
+Targeting Cookies,banner,OneTrust,SyncRTB2,pubmatic.com,,,,89 days,,,,,"Declared, not set",pubmatic.com,
+Targeting Cookies,banner,OneTrust,SPugT,pubmatic.com,,,,29 days,,,,,"Declared, not set",pubmatic.com,
+Targeting Cookies,banner,OneTrust,pi,pubmatic.com,,,,0 days,,,,,"Declared, not set",pubmatic.com,
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,doubleclick.net,,,,179 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,ar_debug,doubleclick.net,,,,29 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,IDE,doubleclick.net,,,,389 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,test_cookie,doubleclick.net,,,,0 days,,,,,"Declared, not set",doubleclick.net,This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange
+Targeting Cookies,banner,OneTrust,d,quantserve.com,,,,89 days,,,,,"Declared, not set",quantserve.com,
+Targeting Cookies,banner,OneTrust,mc,quantserve.com,,,,395 days,,,,,"Declared, not set",quantserve.com,
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,briggs-and-riley.myshopify.com,,,,Session,,,,,"Declared, not set",briggs-and-riley.myshopify.com,This cookie name is associated with Google which is used to collect information on user behavior on multiple websites in order to optimize the relevance of advertisement on the website.
+Targeting Cookies,banner,OneTrust,sa-user-id-v2,qvdt3feo.com,,,,364 days,,,,,"Declared, not set",qvdt3feo.com,
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,qvdt3feo.com,,,,364 days,,,,,"Declared, not set",qvdt3feo.com,
+Targeting Cookies,banner,OneTrust,sa-user-id,qvdt3feo.com,,,,364 days,,,,,"Declared, not set",qvdt3feo.com,
+Targeting Cookies,banner,OneTrust,A3,yahoo.com,,,,365 days,,,,,"Declared, not set",yahoo.com,
+Targeting Cookies,banner,OneTrust,uid,turn.com,,,,179 days,,,,,"Declared, not set",turn.com,This domain is owned by Turn. The main business activity is: Marketing and Data Management Platform provider
+Targeting Cookies,banner,OneTrust,browser_data,dnacdn.net,,,,389 days,,,,,"Declared, not set",dnacdn.net,
+Targeting Cookies,banner,OneTrust,everest_g_v2,everesttech.net,,,,364 days,,,,,"Declared, not set",everesttech.net,This domain is owned by Adobe. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,sd-session-id,live.rezync.com,,,,389 days,,,,,"Declared, not set",live.rezync.com,
+Targeting Cookies,banner,OneTrust,ADGRX_CM_FREEWHEEL_BRIDGED,adgrx.com,,,,0 days,,,,,"Declared, not set",adgrx.com,
+Targeting Cookies,banner,OneTrust,ADGRX_UID,adgrx.com,,,,394 days,,,,,"Declared, not set",adgrx.com,"This domain is owned by AdGear, a Canadian advertising technology network company."
+Targeting Cookies,banner,OneTrust,yieldmo_id,yieldmo.com,,,,364 days,,,,,"Declared, not set",yieldmo.com,
+Targeting Cookies,banner,OneTrust,i,openx.net,,,,364 days,,,,,"Declared, not set",openx.net,
+Targeting Cookies,banner,OneTrust,lidid,liadm.com,,,,729 days,,,,,"Declared, not set",liadm.com,
+Targeting Cookies,banner,OneTrust,ar_debug,pinterest.com,,,,364 days,,,,,"Declared, not set",pinterest.com,This domain is owned by Pinterest. The main business activity is: Social Content Sharing platform
+Targeting Cookies,banner,OneTrust,ab,agkn.com,,,,364 days,,,,,"Declared, not set",agkn.com,"This domain is owned by Aggregate Knowledge, which has been acquired by Neustar Inc. Aggregate Knowledge provides a data management platform which enables real time targeting and consumer profiling functionality. "
+Targeting Cookies,banner,OneTrust,_uid,fwmrm.net,,,,179 days,,,,,"Declared, not set",fwmrm.net,
+Targeting Cookies,banner,OneTrust,__kla_id,static-tracking.klaviyo.com,,,,729 days,,,,,"Declared, not set",static-tracking.klaviyo.com,NA
+Targeting Cookies,banner,OneTrust,TDID,adsrvr.org,,,,365 days,,,,,"Declared, not set",adsrvr.org,This domain is owned by TheTradeDesk. The main business activity is: Ad Serving Platform
+Targeting Cookies,banner,OneTrust,TDCPM,adsrvr.org,,,,365 days,,,,,"Declared, not set",adsrvr.org,
+Targeting Cookies,banner,OneTrust,ruds,rfihub.com,,,,Session,,,,,"Declared, not set",rfihub.com,
+Targeting Cookies,banner,OneTrust,rud,rfihub.com,,,,389 days,,,,,"Declared, not set",rfihub.com,This domain is owned by Rocketfuel. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,eud,rfihub.com,,,,389 days,,,,,"Declared, not set",rfihub.com,This domain is owned by Rocketfuel. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,euds,rfihub.com,,,,Session,,,,,"Declared, not set",rfihub.com,
+Targeting Cookies,banner,OneTrust,IMRID,imrworldwide.com,,,,389 days,,,,,"Declared, not set",imrworldwide.com,
+Targeting Cookies,banner,OneTrust,CMPRO,casalemedia.com,,,,89 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMPS,casalemedia.com,,,,89 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,CMID,casalemedia.com,,,,364 days,,,,,"Declared, not set",casalemedia.com,This domain is owned by Casale Media. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,ouid,addthis.com,,,,395 days,,,,,"Declared, not set",addthis.com,
+Targeting Cookies,banner,OneTrust,na_id,addthis.com,,,,395 days,,,,,"Declared, not set",addthis.com,This domain is owned by AddThis. AddThis provides web widgets that site owners embed into their pages or other content to enable visitors to create and share links to the content across social networks. They also make use of the data collected to provide advertisers and marketers with profile information for targeted behavioral advertising. 
+Targeting Cookies,banner,OneTrust,uid,addthis.com,,,,395 days,,,,,"Declared, not set",addthis.com,This domain is owned by AddThis. AddThis provides web widgets that site owners embed into their pages or other content to enable visitors to create and share links to the content across social networks. They also make use of the data collected to provide advertisers and marketers with profile information for targeted behavioral advertising. 
+Targeting Cookies,banner,OneTrust,na_tc,addthis.com,,,,395 days,,,,,"Declared, not set",addthis.com,
+Targeting Cookies,banner,OneTrust,na_sc_x,dlx.addthis.com,,,,29 days,,,,,"Declared, not set",dlx.addthis.com,Testing
+Targeting Cookies,banner,OneTrust,criteo,tpmn.io,,,,29 days,,,,,"Declared, not set",tpmn.io,"This is a Criteo cookie used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement - The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers."
+Targeting Cookies,banner,OneTrust,NID,google.com,,,,182 days,,,,,"Declared, not set",google.com,"This domain is owned by Google Inc. Although Google is primarily known as a search engine, the company provides a diverse range of products and services. Its main source of revenue however is advertising. Google tracks users extensively both through its own products and sites, and the numerous technologies embedded into many millions of websites around the world. It uses the data gathered from most of these services to profile the interests of web users and sell advertising space to organisations based on such interest profiles as well as aligning adverts to the content on the pages where its "
+Targeting Cookies,banner,OneTrust,tuuid_lu,bidswitch.net,,,,364 days,,,,,"Declared, not set",bidswitch.net,This domain is owned by IPONWEB and is used to provide a real time bidding platform for online advertising.
+Targeting Cookies,banner,OneTrust,c,bidswitch.net,,,,364 days,,,,,"Declared, not set",bidswitch.net,
+Targeting Cookies,banner,OneTrust,bsw_origin_init,bidswitch.net,,,,0 days,,,,,"Declared, not set",bidswitch.net,
+Targeting Cookies,banner,OneTrust,licd,bidswitch.net,,,,0 days,,,,,"Declared, not set",bidswitch.net,
+Targeting Cookies,banner,OneTrust,tuuid,bidswitch.net,,,,364 days,,,,,"Declared, not set",bidswitch.net,
+Targeting Cookies,banner,OneTrust,uid,adform.net,,,,59 days,,,,,"Declared, not set",adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Targeting Cookies,banner,OneTrust,C,adform.net,,,,30 days,,,,,"Declared, not set",adform.net,This domain is owned by Adform. The main business activity is: Real time bidding for display advertising to targeted audiences.
+Targeting Cookies,banner,OneTrust,ayl_visitor,omnitagjs.com,,,,29 days,,,,,"Declared, not set",omnitagjs.com,This host is used by Ads You Like for deep native advertising.
+Targeting Cookies,banner,OneTrust,tluidp,3lift.com,,,,89 days,,,,,"Declared, not set",3lift.com,"This domain is owned by TripleLift, a USA based business providing programmatic native advertising services."
+Targeting Cookies,banner,OneTrust,tluid,3lift.com,,,,89 days,,,,,"Declared, not set",3lift.com,
+Targeting Cookies,banner,OneTrust,stx_user_id,sharethrough.com,,,,29 days,,,,,"Declared, not set",sharethrough.com,
+Targeting Cookies,banner,OneTrust,cookieJartestCookie,sync.outbrain.com,,,,0 days,,,,,"Declared, not set",sync.outbrain.com,"This domain is associated with Outbrain, a content discovery platform that provides web content recommendations, serving as a form of native advertising."
+Targeting Cookies,banner,OneTrust,ANONCHK,c.clarity.ms,,,,0 days,,,,,"Declared, not set",c.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics product that provides insights on user behavior and website performance."
+Targeting Cookies,banner,OneTrust,MR,c.clarity.ms,,,,6 days,,,,,"Declared, not set",c.clarity.ms,"This domain is associated with Microsoft Clarity, a web analytics product that provides insights on user behavior and website performance."
+Targeting Cookies,banner,OneTrust,obuid,outbrain.com,,,,89 days,,,,,"Declared, not set",outbrain.com,"This domain is owned by Outbrain, which describes itself as a content discovery platform.  It provides technology to help distribute content targeted to individuals interests."
+Targeting Cookies,banner,OneTrust,mdata,mookie1.com,,,,394 days,,,,,"Declared, not set",mookie1.com,"This domain is owned by Media Innovation Group, as US based digital marketing business. The main business focus is providing targeted online marketing services."
+Targeting Cookies,banner,OneTrust,id,mookie1.com,,,,394 days,,,,,"Declared, not set",mookie1.com,"This domain is owned by Media Innovation Group, as US based digital marketing business. The main business focus is providing targeted online marketing services."
+Targeting Cookies,banner,OneTrust,ov,mookie1.com,,,,394 days,,,,,"Declared, not set",mookie1.com,"This domain is owned by Media Innovation Group, as US based digital marketing business. The main business focus is providing targeted online marketing services."
+Targeting Cookies,banner,OneTrust,demdex,demdex.net,,,,179 days,,,,,"Declared, not set",demdex.net,"This cookie helps Adobe Audience Manger perform basic functions such as visitor identification, ID synchronization, segmentation, modeling, reporting, etc."
+Targeting Cookies,banner,OneTrust,browser_id,rqtrk.eu,,,,6 days,,,,,"Declared, not set",rqtrk.eu,
+Targeting Cookies,banner,OneTrust,_cc_id,crwdcntrl.net,,,,269 days,,,,,"Declared, not set",crwdcntrl.net,
+Targeting Cookies,banner,OneTrust,_cc_dc,crwdcntrl.net,,,,269 days,,,,,"Declared, not set",crwdcntrl.net,
+Targeting Cookies,banner,OneTrust,_cc_cc,crwdcntrl.net,,,,Session,,,,,"Declared, not set",crwdcntrl.net,
+Targeting Cookies,banner,OneTrust,_cc_aud,crwdcntrl.net,,,,269 days,,,,,"Declared, not set",crwdcntrl.net,This domain is owned by Lotame. The main business activity is: Data Management Platform - Targeting /Advertising
+Targeting Cookies,banner,OneTrust,data-c-ts,media.net,,,,29 days,,,,,"Declared, not set",media.net,Media.net is a global online advertising technology network.
+Targeting Cookies,banner,OneTrust,data-c,media.net,,,,29 days,,,,,"Declared, not set",media.net,Media.net is a global online advertising technology network.
+Targeting Cookies,banner,OneTrust,visitor-id,media.net,,,,364 days,,,,,"Declared, not set",media.net,Media.net is a global online advertising technology network.
+Targeting Cookies,banner,OneTrust,tuuid,360yield.com,,,,89 days,,,,,"Declared, not set",360yield.com,
+Targeting Cookies,banner,OneTrust,tuuid_lu,360yield.com,,,,89 days,,,,,"Declared, not set",360yield.com,
+Targeting Cookies,banner,OneTrust,um,360yield.com,,,,89 days,,,,,"Declared, not set",360yield.com,
+Targeting Cookies,banner,OneTrust,umeh,360yield.com,,,,89 days,,,,,"Declared, not set",360yield.com,
+Targeting Cookies,banner,OneTrust,sc,rkdms.com,,,,364 days,,,,,"Declared, not set",rkdms.com,
+Targeting Cookies,banner,OneTrust,sessionid,rkdms.com,,,,364 days,,,,,"Declared, not set",rkdms.com,
+Targeting Cookies,banner,OneTrust,ssi,sitescout.com,,,,364 days,,,,,"Declared, not set",sitescout.com,
+Targeting Cookies,banner,OneTrust,_ssuma,sitescout.com,,,,29 days,,,,,"Declared, not set",sitescout.com,
+Targeting Cookies,banner,OneTrust,PHPSESSID,www.keywestvacationhomes.com,,,,Session,,,,,"Declared, not set",www.keywestvacationhomes.com,
+Targeting Cookies,banner,OneTrust,INGRESSCOOKIE,bh.contextweb.com,,,,Session,,,,,"Declared, not set",bh.contextweb.com,"This domain is owned by Pulsepoint (formerly Contextweb). The main business activity is: Digital marketing, real time ad bidding exchange and audience profiling"
+Targeting Cookies,banner,OneTrust,mRemnantVisitedCookie_d41d8cd98f00b204e9800998ecf8427e_04_2024,mediawallahscript.com,,,,0 days,,,,,"Declared, not set",mediawallahscript.com,"This domain is associated with MediaWallah, which provides identity management services to enable cross-platform ad targeting and audience insights."
+Targeting Cookies,banner,OneTrust,mRemnantVisitedCookie_d41d8cd98f00b204e9800998ecf8427e_01_2024,mediawallahscript.com,,,,0 days,,,,,"Declared, not set",mediawallahscript.com,
+Targeting Cookies,banner,OneTrust,mUserCookie,mediawallahscript.com,,,,729 days,,,,,"Declared, not set",mediawallahscript.com,
+Targeting Cookies,banner,OneTrust,mRemnantVisitedCookie_d41d8cd98f00b204e9800998ecf8427e_05_2024,mediawallahscript.com,,,,0 days,,,,,"Declared, not set",mediawallahscript.com,"This domain is associated with MediaWallah, which provides identity management services to enable cross-platform ad targeting and audience insights."
+Targeting Cookies,banner,OneTrust,mCookie,mediawallahscript.com,,,,729 days,,,,,"Declared, not set",mediawallahscript.com,
+Targeting Cookies,banner,OneTrust,wfivefivec,w55c.net,,,,396 days,,,,,"Declared, not set",w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,matchfreewheel,w55c.net,,,,29 days,,,,,"Declared, not set",w55c.net,
+Targeting Cookies,banner,OneTrust,matchbidswitch,w55c.net,,,,29 days,,,,,"Declared, not set",w55c.net,This domain is owned by Dataxu. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,uid,adhaven.com,,,,3649 days,,,,,"Declared, not set",adhaven.com,
+Targeting Cookies,banner,OneTrust,barometric[idfa],trkn.us,,,,0 days,,,,,"Declared, not set",trkn.us,
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,pixel.rubiconproject.com,,,,89 days,,,,,"Declared, not set",pixel.rubiconproject.com,
+Targeting Cookies,banner,OneTrust,uuid,alocdn.com,,,,364 days,,,,,"Declared, not set",alocdn.com,"This cookie is used to optimize ad relevance by collecting visitor data from multiple websites – this exchange of visitor data is normally provided by a third-party data-center or ad-exchange.
+"
+Targeting Cookies,banner,OneTrust,sspid,aralego.com,,,,364 days,,,,,"Declared, not set",aralego.com,
+Targeting Cookies,banner,OneTrust,io_token_7c6a6574-f011-4c9a-abdd-9894a102ccef,mpsnare.iesnare.com,,,,364 days,,,,,"Declared, not set",mpsnare.iesnare.com,
+Targeting Cookies,banner,OneTrust,io_token_xxxxx,mpsnare.iesnare.com,,,,364 days,,,,,"Declared, not set",mpsnare.iesnare.com,This domain is associated with Iovation Inc which provides fraud prevention services and device reputation checks for various online industries.
+Targeting Cookies,banner,OneTrust,c,pswec.com,,,,729 days,,,,,"Declared, not set",pswec.com,
+Targeting Cookies,banner,OneTrust,tuuid_lu,pswec.com,,,,729 days,,,,,"Declared, not set",pswec.com,
+Targeting Cookies,banner,OneTrust,tuuid,pswec.com,,,,729 days,,,,,"Declared, not set",pswec.com,
+Targeting Cookies,banner,OneTrust,MSPTC,bing.com,,,,389 days,,,,,"Declared, not set",bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,_li_ss,i.liadm.com,,,,29 days,,,,,"Declared, not set",i.liadm.com,
+Targeting Cookies,banner,OneTrust,IDSYNC,analytics.yahoo.com,,,,364 days,,,,,"Declared, not set",analytics.yahoo.com,"This domain is owned by Yahoo Inc. whose main business model is online advertising.  Although this domain is associated with Yahoo's web analytics service, because these are third party cookies they can allow Yahoo, in combination with other cookies set, to collect data for targeted advertising purposes."
+Targeting Cookies,banner,OneTrust,suid,simpli.fi,,,,365 days,,,,,"Declared, not set",simpli.fi,
+Targeting Cookies,banner,OneTrust,suid_legacy,simpli.fi,,,,365 days,,,,,"Declared, not set",simpli.fi,
+Targeting Cookies,banner,OneTrust,t_gid,taboola.com,,,,364 days,,,,,"Declared, not set",taboola.com,
+Targeting Cookies,banner,OneTrust,t_pt_gid,taboola.com,,,,364 days,,,,,"Declared, not set",taboola.com,
+Targeting Cookies,banner,OneTrust,TapAd_3WAY_SYNCS,tapad.com,,,,59 days,,,,,"Declared, not set",tapad.com,
+Targeting Cookies,banner,OneTrust,zync-uuid,rezync.com,,,,389 days,,,,,"Declared, not set",rezync.com,
+Targeting Cookies,banner,OneTrust,criteo,tpmn.co.kr,,,,29 days,,,,,"Declared, not set",tpmn.co.kr,
+Targeting Cookies,banner,OneTrust,uid-bp-xxxxx,ads.stickyadstv.com,,,,59 days,,,,,"Declared, not set",ads.stickyadstv.com,
+Targeting Cookies,banner,OneTrust,MRM_UID,ads.stickyadstv.com,,,,59 days,,,,,"Declared, not set",ads.stickyadstv.com,
+Targeting Cookies,banner,OneTrust,uid-bp-xxx,ads.stickyadstv.com,,,,29 days,,,,,"Declared, not set",ads.stickyadstv.com,
+Targeting Cookies,banner,OneTrust,uid-bp-45,ads.stickyadstv.com,,,,59 days,,,,,"Declared, not set",ads.stickyadstv.com,
+Targeting Cookies,banner,OneTrust,UID,ads.stickyadstv.com,,,,29 days,,,,,"Declared, not set",ads.stickyadstv.com,
+Targeting Cookies,banner,OneTrust,tv_UICR,tremorhub.com,,,,29 days,,,,,"Declared, not set",tremorhub.com,This domain is owned by Tremor Video which provides a marketplace for online video based cross-device advertising.
+Targeting Cookies,banner,OneTrust,tvid,tremorhub.com,,,,365 days,,,,,"Declared, not set",tremorhub.com,This domain is owned by Tremor Video which provides a marketplace for online video based cross-device advertising.
+Targeting Cookies,banner,OneTrust,pb_rtb_ev,contextweb.com,,,,364 days,,,,,"Declared, not set",contextweb.com,"This domain is owned by Pulsepoint (formerly Contextweb). The main business activity is: Digital marketing, real time ad bidding exchange and audience profiling"
+Targeting Cookies,banner,OneTrust,VP,contextweb.com,,,,359 days,,,,,"Declared, not set",contextweb.com,"This domain is owned by Pulsepoint (formerly Contextweb). The main business activity is: Digital marketing, real time ad bidding exchange and audience profiling"
+Targeting Cookies,banner,OneTrust,V,contextweb.com,,,,359 days,,,,,"Declared, not set",contextweb.com,"This domain is owned by Pulsepoint (formerly Contextweb). The main business activity is: Digital marketing, real time ad bidding exchange and audience profiling"
+Targeting Cookies,banner,OneTrust,pb_rtb_ev_part,contextweb.com,,,,364 days,,,,,"Declared, not set",contextweb.com,"This domain is owned by Pulsepoint (formerly Contextweb). The main business activity is: Digital marketing, real time ad bidding exchange and audience profiling"
+Targeting Cookies,banner,OneTrust,tuid,a.usbrowserspeed.com,,,,364 days,,,,,"Declared, not set",a.usbrowserspeed.com,This domain is owned by Ookla which provides internet speed testing services through its Speedtest application.
+Targeting Cookies,banner,OneTrust,bkpa,bluekai.com,,,,179 days,,,,,"Declared, not set",bluekai.com,
+Targeting Cookies,banner,OneTrust,bku,bluekai.com,,,,179 days,,,,,"Declared, not set",bluekai.com,
+Targeting Cookies,banner,OneTrust,bkdc,bluekai.com,,,,179 days,,,,,"Declared, not set",bluekai.com,
+Targeting Cookies,banner,OneTrust,visitor-id,hb.yahoo.net,,,,179 days,,,,,"Declared, not set",hb.yahoo.net,
+Targeting Cookies,banner,OneTrust,data-crt,hb.yahoo.net,,,,179 days,,,,,"Declared, not set",hb.yahoo.net,
+Targeting Cookies,banner,OneTrust,dpm,dpm.demdex.net,,,,179 days,,,,,"Declared, not set",dpm.demdex.net,This domain is owned by Adobe Audience Manager. The main business activity is online profiling for targeted marketing.
+Targeting Cookies,banner,OneTrust,uuid,mathtag.com,,,,392 days,,,,,"Declared, not set",mathtag.com,
+Targeting Cookies,banner,OneTrust,sa-user-id-v3,srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",srv.stackadapt.com,
+Targeting Cookies,banner,OneTrust,sa-user-id-v2,srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",srv.stackadapt.com,
+Targeting Cookies,banner,OneTrust,sa-user-id,srv.stackadapt.com,,,,364 days,,,,,"Declared, not set",srv.stackadapt.com,
+Targeting Cookies,banner,OneTrust,cu,ipredictive.com,,,,364 days,,,,,"Declared, not set",ipredictive.com,
+Targeting Cookies,banner,OneTrust,zuid,zemanta.com,,,,364 days,,,,,"Declared, not set",zemanta.com,
+Targeting Cookies,banner,OneTrust,CDIPARTNERS,deepintent.com,,,,546 days,,,,,"Declared, not set",deepintent.com,
+Targeting Cookies,banner,OneTrust,CDIUSER,deepintent.com,,,,546 days,,,,,"Declared, not set",deepintent.com,
+Targeting Cookies,banner,OneTrust,cjUser,mczbf.com,,,,394 days,,,,,"Declared, not set",mczbf.com,Used to track usage of the embedded video player.
+Targeting Cookies,banner,OneTrust,uuid2,adnxs.com,,,,89 days,,,,,"Declared, not set",adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Targeting Cookies,banner,OneTrust,anj,adnxs.com,,,,89 days,,,,,"Declared, not set",adnxs.com,This domain is owned by AppNexus Inc. The company provides a range of online advertising technology and services.
+Targeting Cookies,banner,OneTrust,muidn,mgid.com,,,,364 days,,,,,"Declared, not set",mgid.com,Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Targeting Cookies,banner,OneTrust,bitoIsSecure,bidr.io,,,,394 days,,,,,"Declared, not set",bidr.io,
+Targeting Cookies,banner,OneTrust,checkForPermission,bidr.io,,,,0 days,,,,,"Declared, not set",bidr.io,This domain appears to be registered privately in the US.  The purpose of its cookies is unclear. In the absence of further information they are classified in the most intrusive category.
+Targeting Cookies,banner,OneTrust,bito,bidr.io,,,,394 days,,,,,"Declared, not set",bidr.io,
+Targeting Cookies,banner,OneTrust,SRM_B,c.bing.com,,,,389 days,,,,,"Declared, not set",c.bing.com,This domain is owned by Microsoft - it is the site for the search engine Bing.
+Targeting Cookies,banner,OneTrust,MR,c.bing.com,,,,6 days,,,,,"Declared, not set",c.bing.com,
+Targeting Cookies,banner,OneTrust,pxrc,pippio.com,,,,59 days,,,,,"Declared, not set",pippio.com,
+Targeting Cookies,banner,OneTrust,didts,pippio.com,,,,364 days,,,,,"Declared, not set",pippio.com,
+Targeting Cookies,banner,OneTrust,nnls,pippio.com,,,,59 days,,,,,"Declared, not set",pippio.com,"This domain appears to be owned by Arbor Technologies, a USA based company providing user tracking and data services for online advertising."
+Targeting Cookies,banner,OneTrust,did,pippio.com,,,,364 days,,,,,"Declared, not set",pippio.com,
+Targeting Cookies,banner,OneTrust,visitor,postrelease.com,,,,364 days,,,,,"Declared, not set",postrelease.com,
+Targeting Cookies,banner,OneTrust,status,postrelease.com,,,,364 days,,,,,"Declared, not set",postrelease.com,
+Targeting Cookies,banner,OneTrust,ver,postrelease.com,,,,364 days,,,,,"Declared, not set",postrelease.com,
+Targeting Cookies,banner,OneTrust,am_tokens_invalidate-verizon-pushes,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,
+Targeting Cookies,banner,OneTrust,mv_tokens,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,
+Targeting Cookies,banner,OneTrust,am_tokens,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,
+Targeting Cookies,banner,OneTrust,mv_tokens_invalidate-verizon-pushes,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,
+Targeting Cookies,banner,OneTrust,criteo,exchange.mediavine.com,,,,13 days,,,,,"Declared, not set",exchange.mediavine.com,"This domain is associated with Mediavine, Inc. which provides website monetization services, including advertising optimization for publishers."
+Targeting Cookies,banner,OneTrust,mxpim,mxptint.net,,,,729 days,,,,,"Declared, not set",mxptint.net,Ownership and purpose of this domain is hidden behind a privacy registration service. Without any reliable infomation it can only therefore be classified in the most privacy intrusive category.
+Targeting Cookies,banner,OneTrust,csync,smartadserver.com,,,,365 days,,,,,"Declared, not set",smartadserver.com,This domain is owned by Smart Ad Server. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,pid,smartadserver.com,,,,396 days,,,,,"Declared, not set",smartadserver.com,This domain is owned by Smart Ad Server. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,TestIfCookieP,smartadserver.com,,,,396 days,,,,,"Declared, not set",smartadserver.com,This domain is owned by Smart Ad Server. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,bcookie,linkedin.com,,,,364 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active LinkedIn profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,lidc,linkedin.com,,,,0 days,,,,,"Declared, not set",linkedin.com,"This domain is owned by LinkedIn, the business networking platform. It typically acts as a third party host where website owners have placed one of its content sharing buttons in their pages, although its content and services can be embedded in other ways. Although such buttons add functionality to the website they are on, cookies are set regardless of whether or not the visitor has an active LinkedIn profile, or agreed to their terms and conditions.  For this reason it is classified as a primarily tracking/targeting domain."
+Targeting Cookies,banner,OneTrust,UserID1,adfarm1.adition.com,,,,89 days,,,,,"Declared, not set",adfarm1.adition.com,
+Targeting Cookies,banner,OneTrust,DotomiTest,dotomi.com,,,,0 days,,,,,"Declared, not set",dotomi.com,This domain is owned by Dotomi. The main business activity is:  Profiling and Personalised Display Advertising
+Targeting Cookies,banner,OneTrust,fr,facebook.com,,,,89 days,,,,,"Declared, not set",facebook.com,
+Targeting Cookies,banner,OneTrust,khaos,rubiconproject.com,,,,364 days,,,,,"Declared, not set",rubiconproject.com,
+Targeting Cookies,banner,OneTrust,receive-cookie-deprecation,rubiconproject.com,,,,89 days,,,,,"Declared, not set",rubiconproject.com,This domain is owned by Rubicon Project. The main business activity is: Advertising
+Targeting Cookies,banner,OneTrust,audit,rubiconproject.com,,,,364 days,,,,,"Declared, not set",rubiconproject.com,
+Targeting Cookies,banner,OneTrust,ptrcriteo,ads.yieldmo.com,,,,364 days,,,,,"Declared, not set",ads.yieldmo.com,
+Social Media Cookies,banner,OneTrust,LOGIN_INFO,www.youtube.com,,,,0 days,,,,,"Declared, not set",www.youtube.com,
+Social Media Cookies,banner,OneTrust,TESTCOOKIESENABLED,www.youtube.com,,,,0 days,,,,,"Declared, not set",www.youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Social Media Cookies,banner,OneTrust,LOGIN_INFO,m.youtube.com,,,,0 days,,,,,"Declared, not set",m.youtube.com,
+Social Media Cookies,banner,OneTrust,SAPISID,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,
+Social Media Cookies,banner,OneTrust,LOGIN_INFO,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,
+Social Media Cookies,banner,OneTrust,__Secure-xxxxxxx,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Social Media Cookies,banner,OneTrust,SID,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,
+Social Media Cookies,banner,OneTrust,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Social Media Cookies,banner,OneTrust,HSID,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,
+Social Media Cookies,banner,OneTrust,VISITOR_PRIVACY_METADATA,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,"YouTube is a Google owned platform for hosting and sharing videos. YouTube collects user data through videos embedded in websites, which is aggregated with profile data from other Google services in order to display targeted advertising to web visitors across a broad range of their own and other websites."
+Social Media Cookies,banner,OneTrust,__Secure-1PAPISID,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,
+Social Media Cookies,banner,OneTrust,VISITOR_INFO1_LIVE,youtube.com,,,,179 days,,,,,"Declared, not set",youtube.com,This cookie is used as a unique identifier to track viewing of videos
+Social Media Cookies,banner,OneTrust,__Secure-1PSID,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,
+Social Media Cookies,banner,OneTrust,APISID,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,
+Social Media Cookies,banner,OneTrust,SSID,youtube.com,,,,0 days,,,,,"Declared, not set",youtube.com,

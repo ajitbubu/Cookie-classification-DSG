@@ -1,0 +1,104 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Unclassified,none,,__cf_ob,www.expensify.com,/cdn-cgi/challenge-platform,First party,Session,,false,true,none,true,Not declared,,
+Functional,banner,Ketch,initialReferer,.expensify.com,/,First party,400.00 days,400 days,true,true,unspecified,false,Declared & set,,Expensify
+Analytics,banner,Ketch,browserGUID,.expensify.com,/,First party,400.00 days,400 days,true,true,unspecified,false,Declared & set,,Expensify
+Functional,banner,Ketch,agentroutestate,www.expensify.com,/,First party,0.01 days,,false,true,none,false,Declared & set,,
+Targeted Advertising,banner,Ketch,_gcl_au,.expensify.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Google Ads
+Functional,banner,Ketch,landing_page,.expensify.com,/,First party,90.00 days,89 days,false,false,lax,false,Declared & set,,Expensify
+Functional,banner,Ketch,source,.expensify.com,/,First party,90.00 days,89 days,false,false,lax,false,Declared & set,,Expensify
+Functional,banner,Ketch,medium,.expensify.com,/,First party,90.00 days,89 days,false,false,lax,false,Declared & set,,Expensify
+Analytics,banner,Ketch,CLID,www.clarity.ms,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,Microsoft Clarity
+Functional,banner,Ketch,__cf_bm,.hs-scripts.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Analytics,banner,Ketch,_ga,.expensify.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Functional,banner,Ketch,_swb,.expensify.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Targeted Advertising,banner,Ketch,_gd_visitor,www.expensify.com,/,First party,400.00 days,400 days,false,true,none,false,Declared & set,,6sense
+Functional,banner,Ketch,_gd_session,www.expensify.com,/,First party,0.17 days,,false,true,none,false,Declared & set,,6sense
+Analytics,banner,Ketch,_clck,.expensify.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Microsoft Clarity
+Targeted Advertising,banner,Ketch,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Targeted Advertising,banner,Ketch,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Functional,banner,Ketch,__cf_bm,.hs-banner.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Functional,banner,Ketch,__cf_bm,.hs-analytics.net,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Analytics,banner,Ketch,6suuid,.6sc.co,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,6sense
+Analytics,banner,Ketch,_gd_svisitor,www.expensify.com,/,First party,400.00 days,400 days,false,true,none,false,Declared & set,,
+Analytics,banner,Ketch,cb_user_id,.expensify.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Clearbit (by Hubspot)
+Analytics,banner,Ketch,cb_group_id,.expensify.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Clearbit (by Hubspot)
+Analytics,banner,Ketch,cb_anonymous_id,.expensify.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Clearbit (by Hubspot)
+Targeted Advertising,banner,Ketch,IDE,.doubleclick.net,/,Third party,400.00 days,400 days,true,true,none,false,Declared & set,,Google Ads
+Unclassified,none,,__hstc,.expensify.com,/,First party,180.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,hubspotutk,.expensify.com,/,First party,180.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,__hssrc,.expensify.com,/,First party,Session,,false,true,lax,false,Not declared,,
+Functional,banner,Ketch,_swb_consent_,.expensify.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Functional,banner,Ketch,__cf_bm,.hubspot.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeted Advertising,banner,Ketch,MR,.c.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Targeted Advertising,banner,Ketch,SRM_B,.c.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Ads
+Targeted Advertising,banner,Ketch,_fbp,.expensify.com,/,First party,90.00 days,89 days,false,false,unspecified,false,Declared & set,,Facebook Ads
+Analytics,banner,Ketch,SM,.c.clarity.ms,/,Third party,Session,,false,true,none,false,Declared & set,,Microsoft Clarity
+Targeted Advertising,banner,Ketch,MUID,.clarity.ms,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Targeted Advertising,banner,Ketch,MR,.c.clarity.ms,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Functional,banner,Ketch,ANONCHK,.c.clarity.ms,/,Third party,0.01 days,,false,true,none,false,Declared & set,,Microsoft Ads
+Unclassified,none,,rbu,.reddit.com,/,Third party,390.00 days,,true,true,none,false,Not declared,,
+Targeted Advertising,banner,Ketch,fr,.facebook.com,/,Third party,90.00 days,,true,true,none,false,Declared & set,,Facebook Ads
+Targeted Advertising,banner,Ketch,li_sugr,.linkedin.com,/,Third party,90.00 days,90 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Targeted Advertising,banner,Ketch,bcookie,.linkedin.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,LinkedIn  
+Analytics,banner,Ketch,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,,LinkedIn  
+Functional,banner,Ketch,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Targeted Advertising,banner,Ketch,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn Ads
+Analytics,banner,Ketch,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,30 days,false,true,none,false,Declared & set,,LinkedIn  
+Analytics,banner,Ketch,bscookie,.www.linkedin.com,/,Third party,365.00 days,364 days,true,true,none,false,Declared & set,,LinkedIn  
+Functional,banner,Ketch,_gib_details,.expensify.com,/,First party,Session,,false,false,unspecified,false,Declared & set,,Expensify
+Functional,banner,Ketch,__zzatgib-w-expensify,.www.expensify.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Expensify
+Functional,banner,Ketch,__zzatgib-w-expensify,.expensify.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Expensify
+Functional,banner,Ketch,g_state,www.expensify.com,/,First party,180.00 days,179 days,false,false,unspecified,false,Declared & set,,
+Functional,banner,Ketch,gcfids,.id.group-ib.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,Expensify
+Analytics,banner,Ketch,_rdt_uuid,.expensify.com,/,First party,90.00 days,89 days,false,true,strict,false,Declared & set,,Reddit
+Unclassified,none,,NID,.google.com,/,Third party,183.00 days,,true,true,none,false,Not declared,,
+Analytics,banner,Ketch,_ce.s,.expensify.com,/,First party,365.00 days,364 days,false,false,strict,false,Declared & set,,Crazy Egg
+Functional,banner,Ketch,cfidsgib-w-expensify,.www.expensify.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Expensify
+Functional,banner,Ketch,cfidsgib-w-expensify,.expensify.com,/,First party,365.00 days,364 days,false,false,unspecified,false,Declared & set,,Expensify
+Functional,banner,Ketch,cfidsgib-w-expensify,www.expensify.com,/,First party,365.00 days,364 days,false,true,none,false,Declared & set,,Expensify
+Functional,banner,Ketch,expensifyWeb,www.expensify.com,/,First party,400.00 days,9998 days,false,false,unspecified,false,Declared & set,,Expensify
+Analytics,banner,Ketch,_conv_v,.expensify.com,/,First party,182.50 days,182 days,false,false,lax,false,Declared & set,,Convert
+Analytics,banner,Ketch,_conv_s,.expensify.com,/,First party,0.01 days,,false,false,lax,false,Declared & set,,Convert
+Functional,banner,Ketch,fs_lua,.expensify.com,/,First party,0.02 days,,false,true,strict,false,Declared & set,,FullStory
+Analytics,banner,Ketch,fs_uid,.expensify.com,/,First party,365.00 days,365 days,false,true,strict,false,Declared & set,,FullStory
+Analytics,banner,Ketch,_clsk,.expensify.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Clarity
+Targeted Advertising,banner,Ketch,_uetsid,.expensify.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Targeted Advertising,banner,Ketch,_uetvid,.expensify.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Unclassified,none,,__hssc,.expensify.com,/,First party,0.02 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,_ga_6BR2QJRCCD,.expensify.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Unclassified,none,,_ga_6GG5PB0CBH,.expensify.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Functional,banner,Ketch,cf_clearance,.expensify.com,/,First party,365.00 days,364 days,true,true,none,true,Declared & set,,Cloudflare
+Functional,banner,Ketch,__cf_bm,.expensify.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Analytics,banner,Ketch,cebs,,,,,,,,,,"Declared, not set",,Crazy Egg
+Analytics,banner,Ketch,cebsp_,,,,,,,,,,"Declared, not set",,Crazy Egg
+Analytics,banner,Ketch,_ce.cch,,,,,,,,,,"Declared, not set",,Crazy Egg
+Analytics,banner,Ketch,_ce.clock_data,,,,,,,,,,"Declared, not set",,Crazy Egg
+Analytics,banner,Ketch,_CEFT,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,_conv_check_cookies,,,,,400 days,,,,,"Declared, not set",,
+Analytics,banner,Ketch,_conv_r,,,,,,,,,,"Declared, not set",,Convert
+Analytics,banner,Ketch,_conv_sptest,,,,,,,,,,"Declared, not set",,Convert
+Analytics,banner,Ketch,_conv_t,,,,,,,,,,"Declared, not set",,
+Analytics,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,_gat,,,,,,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,_gid,,,,,,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,ss_cvr,,,,,400 days,,,,,"Declared, not set",,Squarespace
+Analytics,banner,Ketch,ss_cvt,,,,,,,,,,"Declared, not set",,Squarespace
+Analytics,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Analytics
+Analytics,banner,Ketch,__tld__,,,,,,,,,,"Declared, not set",,Clearbit (by Hubspot)
+Functional,banner,Ketch,authToken,,,,,,,,,,"Declared, not set",,Expensify
+Functional,banner,Ketch,cfidsgib-w-expensify-stg,,,,,364 days,,,,,"Declared, not set",,Expensify
+Functional,banner,Ketch,_cfuvid,,,,,,,,,,"Declared, not set",,Cloudflare
+Functional,banner,Ketch,_conv_check_cookies,,,,,400 days,,,,,"Declared, not set",,
+Functional,banner,Ketch,cookieTest_*,,,,,,,,,,"Declared, not set",,Expensify
+Functional,banner,Ketch,crumb,,,,,,,,,,"Declared, not set",,Squarespace
+Functional,banner,Ketch,GCLB,,,,,,,,,,"Declared, not set",,
+Functional,banner,Ketch,_ketch_consent_v1_,,,,,399 days,,,,,"Declared, not set",,Ketch
+Functional,banner,Ketch,path,,,,,179 days,,,,,"Declared, not set",,
+Functional,banner,Ketch,region,,,,,,,,,,"Declared, not set",,
+Functional,banner,Ketch,_s,,,,,365 days,,,,,"Declared, not set",,Branch
+Functional,banner,Ketch,_stashedSupportLogin,,,,,,,,,,"Declared, not set",,Expensify
+Functional,banner,Ketch,__zzatgib-w-expensify-stg,,,,,364 days,,,,,"Declared, not set",,Expensify
+Targeted Advertising,banner,Ketch,ar_debug,,,,,30 days,,,,,"Declared, not set",,Google Privacy Sandbox
+Targeted Advertising,banner,Ketch,ttcsid.*,,,,,389 days,,,,,"Declared, not set",,Tiktok Ads
+Targeted Advertising,banner,Ketch,_tt_enable_cookie,,,,,389 days,,,,,"Declared, not set",,Tiktok Ads
+Targeted Advertising,banner,Ketch,_ttp,,,,,389 days,,,,,"Declared, not set",,Tiktok Ads

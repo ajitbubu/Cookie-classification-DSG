@@ -1,0 +1,56 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Marketing,banner,Cookiebot,__cf_ob,player.vimeo.com,/cdn-cgi/challenge-platform,Third party,Session,Session,false,true,none,true,Declared & set,vimeo.com,Pending
+Necessary,banner,Cookiebot,utm_last,www.mentimeter.com,/,First party,Session,Session,false,true,unspecified,false,Declared & set,www.mentimeter.com,Pending
+Necessary,banner,Cookiebot,utm_first,www.mentimeter.com,/,First party,400.00 days,,false,true,unspecified,false,Declared & set,www.mentimeter.com,Pending
+Necessary,banner,Cookiebot,visitorToken,www.mentimeter.com,/,First party,30.00 days,,false,true,lax,false,Declared & set,www.mentimeter.com,Pending
+Necessary,banner,Cookiebot,__cf_bm,.mentimeter.com,/,First party,0.02 days,,true,true,none,true,Declared & set,g2.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,CookieConsent,www.mentimeter.com,/,First party,365.00 days,,false,true,unspecified,false,Declared & set,gtm.mentimeter.com,Stores the user's cookie consent state for the current domain
+Marketing,banner,Cookiebot,_gcl_au,.mentimeter.com,/,First party,90.00 days,,false,false,unspecified,false,Declared & set,mentimeter.com,"Used to measure the efficiency of the website’s advertisement efforts, by collecting data on the conversion rate of the website’s ads across multiple websites."
+Necessary,banner,Cookiebot,__cf_bm,.g2crowd.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,g2.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Statistics,banner,Cookiebot,_ga,.mentimeter.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,menti.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Statistics,banner,Cookiebot,FPID,.mentimeter.com,/,First party,400.00 days,,true,true,unspecified,false,Declared & set,mentimeter.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Statistics,banner,Cookiebot,FPLC,.mentimeter.com,/,First party,0.83 days,,false,true,unspecified,false,Declared & set,mentimeter.com,Registers a unique ID that is used to generate statistical data on how the visitor uses the website.
+Statistics,banner,Cookiebot,FPGSID,.mentimeter.com,/,First party,0.02 days,,false,true,strict,false,Declared & set,mentimeter.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Unclassified,none,,li_sugr,.linkedin.com,/,Third party,90.00 days,,false,true,none,false,Not declared,,
+Statistics,banner,Cookiebot,_hjSession_2434865,.mentimeter.com,/,First party,0.02 days,,false,true,none,false,Declared & set,mentimeter.com,"Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Preferences,banner,Cookiebot,lidc,.linkedin.com,/,Third party,1.00 days,,false,true,none,false,Declared & set,linkedin.com,"Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.  "
+Necessary,banner,Cookiebot,__cf_bm,.linkedin.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,g2.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Unclassified,none,,UserMatchHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,AnalyticsSyncHistory,.linkedin.com,/,Third party,30.00 days,,false,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,bcookie,.linkedin.com,/,Third party,365.00 days,,false,true,none,false,Declared & set,linkedin.com,Used in order to detect spam and improve the website's security. 
+Unclassified,none,,bscookie,.www.linkedin.com,/,Third party,365.00 days,,true,true,none,false,Not declared,,
+Necessary,banner,Cookiebot,__cf_bm,.g2.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,g2.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Statistics,banner,Cookiebot,_hjSessionUser_2434865,.mentimeter.com,/,First party,365.00 days,,false,true,none,false,Declared & set,mentimeter.com,"Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read."
+Marketing,banner,Cookiebot,IDE,.doubleclick.net,/,Third party,400.00 days,,true,true,none,false,Declared & set,doubleclick.net,Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.
+Unclassified,none,,visitorCountry,www.mentimeter.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Necessary,banner,Cookiebot,vuid,.vimeo.com,/,Third party,400.00 days,,false,true,none,false,Declared & set,vimeo.com,"Collects data on the user's visits to the website, such as which pages have been read."
+Statistics,banner,Cookiebot,_ga_5V8GZ3NSZE,.mentimeter.com,/,First party,400.00 days,,false,false,unspecified,false,Declared & set,menti.com,Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+Unclassified,none,,mp_a63c5c0e28c12257b6e0596dd9624589_mixpanel,.mentimeter.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Necessary,banner,Cookiebot,cf_clearance,.vimeo.com,/,Third party,365.00 days,,true,true,none,true,Declared & set,vimeo.com,This cookie is used to distinguish between humans and bots. 
+Necessary,banner,Cookiebot,__cf_bm,.vimeo.com,/,Third party,0.02 days,,true,true,none,true,Declared & set,g2.com,"This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+Necessary,banner,Cookiebot,test_cookie,doubleclick.net,,,,,,,,,"Declared, not set",doubleclick.net,Used to check if the user's browser supports cookies.
+Necessary,banner,Cookiebot,__Host-mm_survey-api_handshake,form.mentimeter.com,,,,Session,,,,,"Declared, not set",form.mentimeter.com,Used during Form sign-in.
+Necessary,banner,Cookiebot,__Host-mm_survey-api_session,form.mentimeter.com,,,,,,,,,"Declared, not set",form.mentimeter.com,"Keeps someone signed in after login, signup, or SSO. Logged-in Form needs this cookie."
+Necessary,banner,Cookiebot,identifier1,form.mentimeter.com,,,,Session,,,,,"Declared, not set",form.mentimeter.com,Links Form responses to one anonymous participant.
+Necessary,banner,Cookiebot,identifierjwt,form.mentimeter.com,,,,Session,,,,,"Declared, not set",form.mentimeter.com,Stores that same participant id as a signed token.
+Necessary,banner,Cookiebot,li_gc,linkedin.com,,,,,,,,,"Declared, not set",linkedin.com,Stores the user's cookie consent state for the current domain
+Necessary,banner,Cookiebot,intercom-device-id-#,mentimeter.com,,,,,,,,,"Declared, not set",mentimeter.com,Sets a specific ID for the user which ensures the integrity of the website’s chat function. 
+Necessary,banner,Cookiebot,intercom-id-#,mentimeter.com,,,,,,,,,"Declared, not set",mentimeter.com,"Allows the website to recoqnise the visitor, in order to optimize the chat-box functionality. "
+Necessary,banner,Cookiebot,intercom-session-#,mentimeter.com,,,,,,,,,"Declared, not set",mentimeter.com,Sets a specific ID for the user which ensures the integrity of the website’s chat function. 
+Necessary,banner,Cookiebot,pulse_vote_cookie_notice_dismissed,pulse.menti.com,,,,,,,,,"Declared, not set",pulse.menti.com,Remembers that the voter closed the vote-page notice. The review form marks it functional; the policy lists it as strictly necessary.
+Necessary,banner,Cookiebot,pulse_voter_id,pulse.menti.com,,,,,,,,,"Declared, not set",pulse.menti.com,Recognises a returning voter so votes stay with one anonymous participant and repeat votes can be limited.
+Necessary,banner,Cookiebot,__Host-mm_pulse_handshake,pulse.mentimeter.com,,,,Session,,,,,"Declared, not set",pulse.mentimeter.com,Used during Pulse sign-in.
+Necessary,banner,Cookiebot,__Host-mm_pulse_session,pulse.mentimeter.com,,,,,,,,,"Declared, not set",pulse.mentimeter.com,Keeps the creator signed in so they can be recognised and manage a Pulse.
+Necessary,banner,Cookiebot,pulse_create_auth_retry,pulse.mentimeter.com,,,,Session,,,,,"Declared, not set",pulse.mentimeter.com,Purpose isn’t documented in the policy or Pulse review forms.
+Necessary,banner,Cookiebot,mm-user-locale,www.mentimeter.com,,,,,,,,,"Declared, not set",www.mentimeter.com,Pending
+Statistics,banner,Cookiebot,_hjTLDTest,mentimeter.com,,,,Session,,,,,"Declared, not set",mentimeter.com,Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. 
+Marketing,banner,Cookiebot,_fbp,mentimeter.com,,,,,,,,,"Declared, not set",mentimeter.com,Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Marketing,banner,Cookiebot,_gtmeec,mentimeter.com,,,,,,,,,"Declared, not set",mentimeter.com,Used to temporarily store and process ecommerce-related interaction data in order to ensure reliable analytics event tracking across page loads.
+Marketing,banner,Cookiebot,__Secure-BUCKET,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Pending
+Marketing,banner,Cookiebot,__Secure-ROLLOUT_TOKEN,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,__Secure-YEC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Stores the user's video player preferences using embedded YouTube video
+Marketing,banner,Cookiebot,__Secure-YNID,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,LAST_RESULT_ENTRY_KEY,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,TESTCOOKIESENABLED,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Used to track user’s interaction with embedded content.
+Marketing,banner,Cookiebot,VISITOR_INFO1_LIVE,youtube.com,,,,,,,,,"Declared, not set",youtube.com,Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+Marketing,banner,Cookiebot,YSC,youtube.com,,,,Session,,,,,"Declared, not set",youtube.com,Registers a unique ID to keep statistics of what videos from YouTube the user has seen.

@@ -1,0 +1,84 @@
+category,categorySource,cmp,name,domain,path,party,expires,declaredDuration,httpOnly,secure,sameSite,partitioned,status,provider,description
+Strictly Necessary,banner,Ketch,localization,www.moen.com,/,First party,365.00 days,364 days,false,false,lax,false,Declared & set,,Shopify
+Strictly Necessary,banner,Ketch,cart_currency,www.moen.com,/,First party,14.00 days,13 days,false,false,lax,false,Declared & set,,Shopify
+Strictly Necessary,banner,Ketch,_shopify_essential,www.moen.com,/,First party,365.00 days,365 days,true,true,lax,false,Declared & set,,Shopify
+Performance,banner,Ketch,_shopify_analytics,www.moen.com,/,First party,365.00 days,365 days,true,true,lax,false,Declared & set,,
+Unclassified,none,,_shopify_marketing,www.moen.com,/,First party,365.00 days,,true,true,lax,false,"Declared, conflicting",,
+Strictly Necessary,banner,Ketch,_shop_app_essential,.shop.app,/,Third party,365.00 days,365 days,true,true,none,false,Declared & set,,Shopify
+Unclassified,none,,__attn_eat_id,.moen.com,/,First party,390.00 days,,false,true,lax,true,Not declared,,
+Unclassified,none,,BVBRANDID,.moen.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,BVBRANDSID,.moen.com,/,First party,0.02 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,zoovu-cid,.moen.com,/,First party,365.00 days,,false,true,unspecified,false,Not declared,,
+Advertising,banner,Ketch,__attentive_id,.moen.com,/,First party,390.00 days,389 days,false,true,unspecified,false,Declared & set,,attentive
+Performance,banner,Ketch,__attentive_session_id,.moen.com,/,First party,0.02 days,,false,true,unspecified,false,Declared & set,,attentive
+Performance,banner,Ketch,__attentive_cco,.moen.com,/,First party,390.00 days,389 days,false,true,unspecified,false,Declared & set,,attentive
+Advertising,banner,Ketch,MUID,.bing.com,/,Third party,390.00 days,389 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Advertising,banner,Ketch,MR,.bat.bing.com,/,Third party,7.00 days,6 days,false,true,none,false,Declared & set,,Microsoft Clarity
+Strictly Necessary,banner,Ketch,__cf_bm,.www.moen.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Unclassified,none,,ad-id,.amazon-adsystem.com,/,Third party,231.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,ad-privacy,.amazon-adsystem.com,/,Third party,400.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_attn_bopd_,.moen.com,/,First party,390.00 days,,false,true,unspecified,false,Not declared,,
+Strictly Necessary,banner,Ketch,__cf_bm,.moen.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Strictly Necessary,banner,Ketch,__attentive_dv,.moen.com,/,First party,1.00 days,,false,true,unspecified,false,Declared & set,,attentive
+Unclassified,none,,cf_clearance,.moen.com,/,First party,365.00 days,,true,true,none,true,Not declared,,
+Unclassified,none,,storefront_url,www.moen.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Performance,banner,Ketch,__attentive_ss_referrer,.moen.com,/,First party,0.02 days,,false,true,unspecified,false,Declared & set,,attentive
+Unclassified,none,,__attn_shp_cid,www.moen.com,/,First party,365.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,tst,.pinterest.com,/,Third party,2.00 days,,true,true,none,false,Not declared,,
+Unclassified,none,,_pin_unauth,www.moen.com,/,First party,365.00 days,,false,false,unspecified,false,Not declared,,
+Performance,banner,Ketch,_ga,.moen.com,/,First party,400.00 days,400 days,false,false,unspecified,false,Declared & set,,Google Analytics
+Strictly Necessary,banner,Ketch,_swb,.moen.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Strictly Necessary,banner,Ketch,_ketch_consent_v1_,.moen.com,/,First party,400.00 days,399 days,false,true,none,false,Declared & set,,Ketch
+Advertising,banner,Ketch,addshoppers,app.shop.pe,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,
+Advertising,banner,Ketch,addshoppers.com,app.shop.pe,/,Third party,400.00 days,400 days,false,true,none,false,Declared & set,,
+Advertising,banner,Ketch,addshoppers.com,www.moen.com,/,First party,400.00 days,400 days,false,true,unspecified,false,Declared & set,,
+Advertising,banner,Ketch,vcnpxid,nytrng.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,
+Advertising,banner,Ketch,vcnpxst,nytrng.com,/,Third party,365.00 days,364 days,false,true,none,false,Declared & set,,
+Strictly Necessary,banner,Ketch,_swb_consent_,.moen.com,/,First party,7.00 days,6 days,false,true,none,false,Declared & set,,Ketch
+Unclassified,none,,usi_return_visitor,.moen.com,/,First party,400.00 days,,false,true,none,false,Not declared,,
+Unclassified,none,,__attentive_domain,.moen.com,/,First party,7.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,__attentive_ceid,.moen.com,/,First party,7.00 days,,false,true,unspecified,false,Not declared,,
+Unclassified,none,,first_pla_call,www.moen.com,/,First party,30.00 days,,false,true,lax,false,Not declared,,
+Unclassified,none,,ps-location,www.moen.com,/,First party,30.00 days,,false,false,lax,false,Not declared,,
+Unclassified,none,,_shopify_cmp,.moen.com,/,First party,365.25 days,,false,true,lax,false,Not declared,,
+Strictly Necessary,banner,Ketch,_attn_,.moen.com,/,First party,390.00 days,389 days,false,true,strict,false,Declared & set,,attentive
+Unclassified,none,,_ga_PSEH38DH3V,.moen.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Performance,banner,Ketch,__attentive_pv,.moen.com,/,First party,0.02 days,,false,true,unspecified,false,Declared & set,,attentive
+Advertising,banner,Ketch,_uetsid,.moen.com,/,First party,1.00 days,,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Unclassified,none,,fs_lua,.moen.com,/,First party,0.02 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,fs_uid,.moen.com,/,First party,365.00 days,,false,true,strict,false,Not declared,,
+Unclassified,none,,_pinterest_ct_ua,.ct.pinterest.com,/,Third party,365.00 days,,false,true,none,false,Not declared,,
+Advertising,banner,Ketch,_uetvid,.moen.com,/,First party,390.00 days,389 days,false,false,unspecified,false,Declared & set,,Microsoft Ads
+Unclassified,none,,_ga_30CZG6RXJX,.moen.com,/,First party,400.00 days,,false,false,unspecified,false,Not declared,,
+Strictly Necessary,banner,Ketch,__cf_bm,.moen.com,/,First party,0.02 days,,true,true,none,true,Declared & set,,Cloudflare
+Advertising,banner,Ketch,arc_id,,,,,59 days,,,,,"Declared, not set",,
+Advertising,banner,Ketch,audit,,,,,365 days,,,,,"Declared, not set",,Magnite
+Advertising,banner,Ketch,audit_p,,,,,365 days,,,,,"Declared, not set",,Magnite
+Advertising,banner,Ketch,_br_uid_2,,,,,400 days,,,,,"Declared, not set",,
+Advertising,banner,Ketch,_gcl_au,,,,,89 days,,,,,"Declared, not set",,Google Ads
+Advertising,banner,Ketch,IDE,,,,,400 days,,,,,"Declared, not set",,Google Ads
+Advertising,banner,Ketch,khaos,,,,,365 days,,,,,"Declared, not set",,Magnite
+Advertising,banner,Ketch,khaos_p,,,,,365 days,,,,,"Declared, not set",,Magnite
+Advertising,banner,Ketch,TapAd_3WAY_SYNCS,,,,,59 days,,,,,"Declared, not set",,Tapad (by Experian)
+Advertising,banner,Ketch,TapAd_DID,,,,,59 days,,,,,"Declared, not set",,Tapad (by Experian)
+Advertising,banner,Ketch,TapAd_TS,,,,,59 days,,,,,"Declared, not set",,Tapad (by Experian)
+Advertising,banner,Ketch,TDCPM,,,,,364 days,,,,,"Declared, not set",,theTradeDesk
+Advertising,banner,Ketch,TDID,,,,,364 days,,,,,"Declared, not set",,theTradeDesk
+Advertising,banner,Ketch,uuid,,,,,30 days,,,,,"Declared, not set",,MediaMath
+Advertising,banner,Ketch,uuid2,,,,,90 days,,,,,"Declared, not set",,Microsoft Ads
+Advertising,banner,Ketch,XANDR_PANID,,,,,90 days,,,,,"Declared, not set",,Microsoft Ads
+Performance,banner,Ketch,_ga_*,,,,,400 days,,,,,"Declared, not set",,Google Analytics
+Performance,banner,Ketch,__hssc,,,,,,,,,,"Declared, not set",,HubSpot
+Performance,banner,Ketch,__hssrc,,,,,,,,,,"Declared, not set",,HubSpot
+Performance,banner,Ketch,__hstc,,,,,179 days,,,,,"Declared, not set",,HubSpot
+Performance,banner,Ketch,hubspotutk,,,,,179 days,,,,,"Declared, not set",,HubSpot
+Performance,banner,Ketch,_shopify_s,,,,,,,,,,"Declared, not set",,Shopify
+Performance,banner,Ketch,_shopify_sa_p,,,,,,,,,,"Declared, not set",,Shopify
+Performance,banner,Ketch,_shopify_sa_t,,,,,,,,,,"Declared, not set",,Shopify
+Performance,banner,Ketch,_shopify_y,,,,,365 days,,,,,"Declared, not set",,Shopify
+Strictly Necessary,banner,Ketch,cookietest,,,,,,,,,,"Declared, not set",,Shopify
+Strictly Necessary,banner,Ketch,__rbtld__,,,,,,,,,,"Declared, not set",,
+Strictly Necessary,banner,Ketch,rbuid,,,,,29 days,,,,,"Declared, not set",,
+Strictly Necessary,banner,Ketch,_shopify_test,,,,,,,,,,"Declared, not set",,Shopify
+Strictly Necessary,banner,Ketch,test_cookie,,,,,,,,,,"Declared, not set",,Google Ads
+Strictly Necessary,banner,Ketch,_xsrf,,,,,,,,,,"Declared, not set",,
