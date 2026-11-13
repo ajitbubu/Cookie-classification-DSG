@@ -226,3 +226,32 @@ describe('Property 6: Visual Agreement Indicators', () => {
     );
   });
 });
+
+describe('closed dropdown colour', () => {
+  const colorOf = (category, extra = {}) => {
+    const { container } = render(
+      <MLClassificationDropdown actualCategory={category} cookieName="c" cookieDomain="d" scanId="s" onCategoryUpdate={vi.fn()} {...extra} />
+    );
+    const trigger = container.querySelector('.ml-dropdown-trigger');
+    return {
+      variable: trigger.style.getPropertyValue('--ml-category-color'),
+      dot: trigger.querySelector('.ml-category-color-indicator').style.backgroundColor,
+    };
+  };
+
+  it('matches the category dot shown in the open menu', () => {
+    fireEvent.click(render(
+      <MLClassificationDropdown actualCategory="Analytics" cookieName="c" cookieDomain="d" scanId="s" onCategoryUpdate={vi.fn()} />
+    ).container.querySelector('.ml-dropdown-trigger'));
+    const menuDot = screen.getByRole('option', { name: /^Analytics/ }).querySelector('.ml-category-color-indicator').style.backgroundColor;
+    expect(colorOf('Analytics').dot).toBe(menuDot);
+  });
+
+  it('gives every category its own colour and unknown ones the Unclassified grey', () => {
+    const colours = ['Strictly Necessary', 'Functional', 'Analytics', 'Marketing'].map((c) => colorOf(c).variable);
+    expect(new Set(colours).size).toBe(4);
+    expect(colorOf('Uncategorized').variable).toBe('#95A5A6');
+    expect(colorOf('Unclassified').variable).toBe('#95A5A6');
+    expect(colorOf('Analytics', { displayValue: 'Marketing' }).variable).toBe('#FF4D4D');
+  });
+});
