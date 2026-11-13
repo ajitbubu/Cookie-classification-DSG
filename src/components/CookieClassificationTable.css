@@ -52,6 +52,11 @@
   font: 400 18px/1 var(--font-sans);
   box-shadow: 0 4px 8px rgba(145, 158, 171, 0.14);
 }
+/* Tinted by the selected category, matching its dot in the menu; text stays navy for contrast */
+.cct .ml-dropdown-trigger {
+  border-color: color-mix(in srgb, var(--ml-category-color, var(--ucm-blue-4)) 55%, var(--ucm-blue-4));
+  background: color-mix(in srgb, var(--ml-category-color, transparent) 10%, var(--ucm-surface));
+}
 
 .cct-confidence { display: inline-flex; align-items: center; gap: 10px; }
 .cct-confidence svg { flex-shrink: 0; }
