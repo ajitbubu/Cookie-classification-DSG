@@ -98,7 +98,8 @@ describe('DashboardPage', () => {
     expect(within(card('Website')).getByText('1 Active')).toBeInTheDocument();
     expect(card('Cookies')).toHaveTextContent('3');
     expect(within(card('Cookies')).getByText('2 Unclassified')).toBeInTheDocument();
-    expect(card('Risk Score')).toHaveTextContent('C (67)');
+    // shop.com publishes a Marketing cookie, so GDPR, CCPA and DPDP are all HIGH (re-scored from its cookies).
+    expect(card('Risk Score')).toHaveTextContent('F (0)');
     expect(within(card('Risk Score')).getByText('1 Critical + High')).toBeInTheDocument();
     expect(card('Reviews')).toHaveTextContent('2');
     expect(within(card('Reviews')).getByText('1 High Priority')).toBeInTheDocument();
