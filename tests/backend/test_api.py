@@ -245,6 +245,40 @@ def test_pattern_match_is_not_a_human_decision(client, monkeypatch):
     assert r.json()["classifications"][0]["classification_status"] != "classified"
 
 
+def test_known_cookie_category_replaces_the_model_but_still_needs_review(client, monkeypatch):
+    _stub_knowledge_base(monkeypatch, None)
+    r = client.post("/api/v1/ml/classify", json={
+        "cookies": [{"name": "_fbp", "domain": ".facebook.com", "site_domain": "shop.com"}],
+        "options": _CLASSIFY_OPTIONS,
+    })
+    assert r.status_code == 200
+    c = r.json()["classifications"][0]
+    assert c["source"] == "known_cookie"
+    assert c["predicted_category"] == "Marketing"
+    assert c["known_cookie"]["source"] == "website_declarations"
+    assert c["known_cookie"]["sites"] >= 3 and c["known_cookie"]["total_sites"] >= c["known_cookie"]["sites"]
+    assert c["classification_status"] == "suggested" and c["requires_review"] is True
+    assert 0 < c["confidence_score"] <= 1
+
+
+def test_reviewer_decision_beats_a_known_cookie(client, monkeypatch):
+    _stub_knowledge_base(monkeypatch, {"category": "Functional", "confidence": 1.0, "source": "user_override"})
+    r = client.post("/api/v1/ml/classify", json={
+        "cookies": [{"name": "_fbp", "domain": ".facebook.com"}], "options": _CLASSIFY_OPTIONS,
+    })
+    c = r.json()["classifications"][0]
+    assert (c["source"], c["predicted_category"], c["known_cookie"]) == ("user_override", "Functional", None)
+
+
+def test_unknown_cookie_falls_back_to_the_model(client, monkeypatch):
+    _stub_knowledge_base(monkeypatch, None)
+    r = client.post("/api/v1/ml/classify", json={
+        "cookies": [{"name": "xq7_zzkp_unlisted", "domain": "example.com"}], "options": _CLASSIFY_OPTIONS,
+    })
+    c = r.json()["classifications"][0]
+    assert c["source"] == "ml_prediction" and c["known_cookie"] is None
+
+
 def test_model_info_reports_served_model_metrics(client):
     r = client.get("/api/v1/ml/model-info")
 
@@ -697,37 +731,3 @@ def test_cors_does_not_trust_arbitrary_origins(client):
 
     dev = client.get("/api/health", headers={"Origin": "http://localhost:5173"})
     assert dev.headers["access-control-allow-origin"] == "http://localhost:5173"
-
-
-def test_known_cookie_category_replaces_the_model_but_still_needs_review(client, monkeypatch):
-    _stub_knowledge_base(monkeypatch, None)
-    r = client.post("/api/v1/ml/classify", json={
-        "cookies": [{"name": "_fbp", "domain": ".facebook.com", "site_domain": "shop.com"}],
-        "options": _CLASSIFY_OPTIONS,
-    })
-    assert r.status_code == 200
-    c = r.json()["classifications"][0]
-    assert c["source"] == "known_cookie"
-    assert c["predicted_category"] == "Marketing"
-    assert c["known_cookie"]["source"] == "website_declarations"
-    assert c["known_cookie"]["sites"] >= 3 and c["known_cookie"]["total_sites"] >= c["known_cookie"]["sites"]
-    assert c["classification_status"] == "suggested" and c["requires_review"] is True
-    assert 0 < c["confidence_score"] <= 1
-
-
-def test_reviewer_decision_beats_a_known_cookie(client, monkeypatch):
-    _stub_knowledge_base(monkeypatch, {"category": "Functional", "confidence": 1.0, "source": "user_override"})
-    r = client.post("/api/v1/ml/classify", json={
-        "cookies": [{"name": "_fbp", "domain": ".facebook.com"}], "options": _CLASSIFY_OPTIONS,
-    })
-    c = r.json()["classifications"][0]
-    assert (c["source"], c["predicted_category"], c["known_cookie"]) == ("user_override", "Functional", None)
-
-
-def test_unknown_cookie_falls_back_to_the_model(client, monkeypatch):
-    _stub_knowledge_base(monkeypatch, None)
-    r = client.post("/api/v1/ml/classify", json={
-        "cookies": [{"name": "xq7_zzkp_unlisted", "domain": "example.com"}], "options": _CLASSIFY_OPTIONS,
-    })
-    c = r.json()["classifications"][0]
-    assert c["source"] == "ml_prediction" and c["known_cookie"] is None
