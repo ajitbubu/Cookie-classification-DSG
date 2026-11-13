@@ -4,6 +4,9 @@ How Cookie Scanner (DataSafeguard) works end to end: what runs, how a scan becom
 published cookie list, and how the ML model is built. Checked against the code on
 2026-11-12 (`docker-compose.yml`, `nginx/nginx.conf`, `backend/`, `src/`).
 
+How a single cookie gets its category and how risk is worked out is in
+[cookie-classification-flow.md](cookie-classification-flow.md).
+
 Diagram sources live in [`diagrams/`](../diagrams/): edit the `.mmd`, or open the
 `.excalidraw` at excalidraw.com. The diagrams below are the same sources, inline.
 
