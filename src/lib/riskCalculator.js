@@ -2,6 +2,9 @@
  * Privacy Risk Calculator
  * Calculates GDPR, CCPA, and DPDP compliance risk levels
  */
+import { normalizeCategory, UNCLASSIFIED_CATEGORY } from './classificationPolicy';
+
+const UNPUBLISHED = new Set([UNCLASSIFIED_CATEGORY, 'Uncategorized', 'Unknown']);
 
 /**
  * Calculate GDPR (EU) compliance risk
@@ -94,6 +97,54 @@ export function calculateComplianceRisks(cookies, statistics) {
     ccpaRisk: calculateCCPARisk(cookies, statistics),
     dpdpRisk: calculateDPDPRisk(cookies, statistics)
   };
+}
+
+/**
+ * The category a person has decided for a cookie: its Review Queue approval
+ * (keyed `<website>:<cookie name>`) if there is one, else the cookie's own
+ * published category. A model suggestion nobody approved stays Unclassified.
+ */
+export function reviewedCategory(cookie, website, approvalsByKey = new Map()) {
+  const approved = approvalsByKey.get(`${website}:${cookie?.name}`);
+  if (approved?.approvedCategory) return normalizeCategory(approved.approvedCategory);
+  const own = normalizeCategory(cookie?.category);
+  return UNPUBLISHED.has(own) ? UNCLASSIFIED_CATEGORY : own;
+}
+
+/**
+ * Risk inputs counted from the cookies' reviewed categories. Unreviewed
+ * cookies count as needing consent, since nobody has shown they are essential.
+ */
+export function reviewedStatistics(cookies = [], website, approvals = []) {
+  const approvalsByKey = new Map(approvals.map((a) => [a.cookieKey, a]));
+  const stats = { totalCount: cookies.length, byCategory: {}, requiresConsent: 0, thirdParty: 0, unreviewed: 0 };
+  for (const cookie of cookies) {
+    const category = reviewedCategory(cookie, website, approvalsByKey);
+    stats.byCategory[category] = (stats.byCategory[category] || 0) + 1;
+    if (category !== 'Strictly Necessary') stats.requiresConsent++;
+    if (category === UNCLASSIFIED_CATEGORY) stats.unreviewed++;
+    if (cookie.isThirdParty || cookie.type === 'third-party') stats.thirdParty++;
+  }
+  return stats;
+}
+
+/** GDPR / CCPA / DPDP risk from reviewed categories, plus the statistics behind it. */
+export function reviewedComplianceRisks(cookies, website, approvals = []) {
+  const statistics = reviewedStatistics(cookies, website, approvals);
+  return { ...calculateComplianceRisks(cookies, statistics), statistics };
+}
+
+/**
+ * Risk for a stored scan. Scans that kept their cookies are re-scored from
+ * reviewed categories; older entries without cookies keep their saved levels.
+ */
+export function scanRisks(scan, approvals = []) {
+  const cookies = scan?.fullResults?.cookies;
+  if (!Array.isArray(cookies) || cookies.length === 0) {
+    return { gdprRisk: scan?.gdprRisk, ccpaRisk: scan?.ccpaRisk, dpdpRisk: scan?.dpdpRisk };
+  }
+  const { gdprRisk, ccpaRisk, dpdpRisk } = reviewedComplianceRisks(cookies, scan.domain, approvals);
+  return { gdprRisk, ccpaRisk, dpdpRisk };
 }
 
 /**
@@ -241,5 +292,9 @@ export default {
   calculateComplianceRisks,
   getRiskExplanation,
   getRiskRecommendations,
-  getRiskSummary
+  getRiskSummary,
+  reviewedCategory,
+  reviewedStatistics,
+  reviewedComplianceRisks,
+  scanRisks
 };

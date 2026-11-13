@@ -172,7 +172,7 @@ function DashboardPage({ scanHistory = [], launchControl, running = null, onNavi
   const [rowState, setRowState] = useState({}); // key -> 'saving' | 'unpublished' | 'error' (E4)
   const toast = useToast();
 
-  const kpis = useMemo(() => dashboardKpis(scanHistory), [scanHistory]);
+  const kpis = useMemo(() => dashboardKpis(scanHistory, Date.now(), approvals), [scanHistory, approvals]);
   const daysOf = (v) => PERIODS.find((p) => p.value === v)?.days ?? null;
   // Figma labels "Strictly Necessary" as "Necessary" on the charts.
   const chartLabels = (mix) => mix.map((d) => (d.label === 'Strictly Necessary' ? { ...d, label: 'Necessary' } : d));

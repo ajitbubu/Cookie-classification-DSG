@@ -3,6 +3,7 @@
  * Each website is described by its newest scan. Framework-free.
  */
 import { scanStatus } from './scanResults';
+import { scanRisks } from './riskCalculator';
 
 export const RISK_ORDER = { HIGH: 0, MEDIUM: 1, LOW: 2 };
 const UNPUBLISHED = new Set(['Unclassified', 'Uncategorized', 'Unknown']);
@@ -13,7 +14,8 @@ const highestRisk = (scan) => {
   return levels.sort((a, b) => RISK_ORDER[a] - RISK_ORDER[b])[0];
 };
 
-export function websitesFromHistory(scanHistory = [], domainHistory = {}) {
+// Risk follows reviewed categories: `approvals` is the Review Queue log.
+export function websitesFromHistory(scanHistory = [], domainHistory = {}, approvals = []) {
   const byDomain = new Map();
   const add = (scan) => {
     if (!scan?.domain) return;
@@ -36,7 +38,7 @@ export function websitesFromHistory(scanHistory = [], domainHistory = {}) {
       scans: all.length,
       cookies: latest.totalCookies || 0,
       unclassified: Object.entries(latest.categories || {}).reduce((n, [cat, c]) => n + (UNPUBLISHED.has(cat) ? c : 0), 0),
-      risk: highestRisk(latest),
+      risk: highestRisk(scanRisks(latest, approvals)),
       status: scanStatus(latest),
     };
   });
