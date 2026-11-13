@@ -17,7 +17,8 @@ import CookieClassificationTable from './CookieClassificationTable';
 import BulkUpdateDrawer from './BulkUpdateDrawer';
 import { BULK_CATEGORIES, categoryBreakdown, cookieKey, pagesFromScan, vendorsFromCookies } from '../lib/domainDetails';
 import { formatScanDate, scanStatus } from '../lib/scanResults';
-import { calculateComplianceRisks, getRiskExplanation } from '../lib/riskCalculator';
+import { reviewedComplianceRisks, getRiskExplanation } from '../lib/riskCalculator';
+import { readApprovals } from '../lib/reviewQueue';
 import './DomainDetailsPage.css';
 
 // UCM tags: Critical/High red, Moderate amber, Low green.
@@ -84,7 +85,8 @@ function DomainDetailsPage({
   const categories = useMemo(() => categoryBreakdown(cookies), [cookies]);
   const pages = useMemo(() => pagesFromScan(scan), [scan]);
   const vendors = useMemo(() => vendorsFromCookies(cookies), [cookies]);
-  const risks = useMemo(() => calculateComplianceRisks(cookies, scan.statistics || {}), [cookies, scan.statistics]);
+  // Scored from reviewed categories (Review Queue approvals), not model suggestions.
+  const risks = useMemo(() => reviewedComplianceRisks(cookies, scan.domain, readApprovals()), [cookies, scan.domain]);
   const selectedCookies = useMemo(() => cookies.filter((c) => selected.has(cookieKey(c))), [cookies, selected]);
 
   const q = query.trim().toLowerCase();
@@ -255,7 +257,7 @@ function DomainDetailsPage({
               <li key={key} className="dd-risk__row">
                 <span className="dd-risk__name">
                   {name}
-                  <span className="dd-risk__why">{getRiskExplanation(id, risks[key], scan.statistics || {})}</span>
+                  <span className="dd-risk__why">{getRiskExplanation(id, risks[key], risks.statistics)}</span>
                 </span>
                 <Chip tone={RISK_TONE[risks[key]]}>{RISK_LABEL[risks[key]]}</Chip>
               </li>

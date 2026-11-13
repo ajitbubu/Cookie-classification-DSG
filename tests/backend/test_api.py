@@ -131,7 +131,8 @@ def test_classify_accepts_fractional_expiry_days(client):
     assert len(r.json()["classifications"]) == 2
 
 
-def test_classification_threshold_creates_abstention(client):
+def test_classification_threshold_creates_abstention(client, monkeypatch):
+    monkeypatch.setattr("backend.api.ml_routes.get_known_cookies", lambda: None)  # threshold applies to model predictions
     payload = {
         "cookies": [{"name": "_ga", "domain": ".example.com"}],
         "options": {
@@ -219,6 +220,7 @@ def test_human_override_publishes_its_category(client, monkeypatch):
 
 def test_model_only_suggestion_never_publishes(client, monkeypatch):
     _stub_knowledge_base(monkeypatch, None)
+    monkeypatch.setattr("backend.api.ml_routes.get_known_cookies", lambda: None)  # model path only
 
     r = client.post("/api/v1/ml/classify", json={
         "cookies": [{"name": "_ga", "domain": "example.com"}],
@@ -241,6 +243,40 @@ def test_pattern_match_is_not_a_human_decision(client, monkeypatch):
 
     assert r.status_code == 200
     assert r.json()["classifications"][0]["classification_status"] != "classified"
+
+
+def test_known_cookie_category_replaces_the_model_but_still_needs_review(client, monkeypatch):
+    _stub_knowledge_base(monkeypatch, None)
+    r = client.post("/api/v1/ml/classify", json={
+        "cookies": [{"name": "_fbp", "domain": ".facebook.com", "site_domain": "shop.com"}],
+        "options": _CLASSIFY_OPTIONS,
+    })
+    assert r.status_code == 200
+    c = r.json()["classifications"][0]
+    assert c["source"] == "known_cookie"
+    assert c["predicted_category"] == "Marketing"
+    assert c["known_cookie"]["source"] == "website_declarations"
+    assert c["known_cookie"]["sites"] >= 3 and c["known_cookie"]["total_sites"] >= c["known_cookie"]["sites"]
+    assert c["classification_status"] == "suggested" and c["requires_review"] is True
+    assert 0 < c["confidence_score"] <= 1
+
+
+def test_reviewer_decision_beats_a_known_cookie(client, monkeypatch):
+    _stub_knowledge_base(monkeypatch, {"category": "Functional", "confidence": 1.0, "source": "user_override"})
+    r = client.post("/api/v1/ml/classify", json={
+        "cookies": [{"name": "_fbp", "domain": ".facebook.com"}], "options": _CLASSIFY_OPTIONS,
+    })
+    c = r.json()["classifications"][0]
+    assert (c["source"], c["predicted_category"], c["known_cookie"]) == ("user_override", "Functional", None)
+
+
+def test_unknown_cookie_falls_back_to_the_model(client, monkeypatch):
+    _stub_knowledge_base(monkeypatch, None)
+    r = client.post("/api/v1/ml/classify", json={
+        "cookies": [{"name": "xq7_zzkp_unlisted", "domain": "example.com"}], "options": _CLASSIFY_OPTIONS,
+    })
+    c = r.json()["classifications"][0]
+    assert c["source"] == "ml_prediction" and c["known_cookie"] is None
 
 
 def test_model_info_reports_served_model_metrics(client):
@@ -695,3 +731,23 @@ def test_cors_does_not_trust_arbitrary_origins(client):
 
     dev = client.get("/api/health", headers={"Origin": "http://localhost:5173"})
     assert dev.headers["access-control-allow-origin"] == "http://localhost:5173"
+
+
+def test_store_never_keeps_cookie_values(store):
+    """Cookie values can be session tokens or personal data; the store drops them."""
+    scan = _scan("v1")
+    scan["fullResults"]["cookies"][0]["value"] = "GA1.2.123456.789"
+    scan["fullResults"]["pageResults"] = [{"url": "https://shop.com/", "cookies": [{"name": "sid", "value": "secret-session"}]}]
+    assert store.put("/api/store/scans/v1", json=scan).status_code == 200
+    saved = store.get("/api/store/scans").json()["scans"][0]["fullResults"]
+    assert "value" not in saved["cookies"][0] and saved["cookies"][0]["name"] == "_ga"
+    assert saved["pageResults"][0]["cookies"] == [{"name": "sid"}]
+
+
+def test_strip_cookie_values_handles_partial_scans():
+    from backend.db.scan_store import strip_cookie_values
+    assert strip_cookie_values({"id": "x"}) is False
+    assert strip_cookie_values({"fullResults": {"cookies": None, "pageResults": [{"url": "u"}]}}) is False
+    scan = {"fullResults": {"cookies": [{"name": "a", "value": "1"}, {"name": "b"}]}}
+    assert strip_cookie_values(scan) is True and scan["fullResults"]["cookies"] == [{"name": "a"}, {"name": "b"}]
+

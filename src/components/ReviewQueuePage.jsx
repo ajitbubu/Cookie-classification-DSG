@@ -6,7 +6,7 @@ import EmptyState from './ui/EmptyState';
 import './ui/DataTable.css';
 import { CategoryTag, Chip } from './ui/Chip';
 import { ruleBasedClassify } from '../lib/classificationPolicy';
-import { manualCheckPrompt, needsManualCheck, recordApproval, siteLabelSplit, siteSplitText } from '../lib/reviewQueue';
+import { knownCookieText, manualCheckPrompt, needsManualCheck, recordApproval, siteLabelSplit, siteSplitText } from '../lib/reviewQueue';
 import { publishCategory, publishCategories, publishSummary } from '../lib/categoryApi';
 import { useToast } from './Toast';
 import './ReviewQueuePage.css';
@@ -375,6 +375,7 @@ const ReviewQueuePage = ({ scanHistory }) => {
                 const chosenCategory = categoryOverrides[cookieKey] || cookie.mlClassification || cookie.category || '';
                 const bullets = getExplanationBullets(cookie);
                 const split = siteLabelSplit(cookie);
+                const known = knownCookieText(cookie);
                 return (
                   <tr key={cookieKey} data-active={selectedForBulk.has(cookieKey) || undefined}>
                     <td className="rq-check">
@@ -395,8 +396,10 @@ const ReviewQueuePage = ({ scanHistory }) => {
                       <span className="rq-suggestion">
                         <CategoryTag category={cookie.mlClassification} />
                         {needsManualCheck(cookie) && <Chip tone="marketing" size="sm">Needs manual check</Chip>}
+                        {known && <Chip tone="neutral" size="sm">Known cookie</Chip>}
                         {split && <Chip tone="neutral" size="sm">Sites disagree</Chip>}
                       </span>
+                      {known && <span className="rq-split">{known}</span>}
                       {split && <span className="rq-split">{siteSplitText(split)}</span>}
                     </td>
                     <td className="ui-table__cell--end">{`${confidencePercent}%`}</td>

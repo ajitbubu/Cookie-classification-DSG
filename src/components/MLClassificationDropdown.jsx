@@ -73,6 +73,9 @@ function MLClassificationDropdown({
 
   // By default the dropdown shows the actual category (what's stored), not the ML suggestion
   const displayedCategory = displayValue || actualCategory || 'Uncategorized';
+  // The closed control carries the same colour as its category's dot in the menu.
+  const displayedColor = (CATEGORIES.find((c) => c.value === displayedCategory || c.label === displayedCategory)
+    || CATEGORIES.find((c) => c.value === 'Unknown')).color;
 
   // Handle click outside to close dropdown
   useEffect(() => {
@@ -211,6 +214,7 @@ function MLClassificationDropdown({
         <button
           ref={triggerRef}
           className={`ml-dropdown-trigger ml-category-${getCategoryClass(displayedCategory)}`}
+          style={{ '--ml-category-color': displayedColor }}
           onClick={() => {
             setIsOpen(!isOpen);
             if (!isOpen) {
@@ -231,7 +235,10 @@ function MLClassificationDropdown({
           aria-controls="ml-category-listbox"
           title={`Current: ${displayedCategory}${currentMLClassification && currentMLClassification !== displayedCategory ? ` | ML suggests: ${currentMLClassification}` : ''}`}
         >
-          <span className="ml-category-label">{displayedCategory}</span>
+          <span className="ml-dropdown-value">
+            <span className="ml-category-color-indicator" style={{ backgroundColor: displayedColor }} aria-hidden="true" />
+            <span className="ml-category-label">{displayedCategory}</span>
+          </span>
           <ChevronDown size={14} className={`ml-dropdown-icon ${isOpen ? 'open' : ''}`} aria-hidden="true" />
         </button>
 

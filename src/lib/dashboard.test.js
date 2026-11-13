@@ -21,7 +21,9 @@ describe('latestPerDomain', () => {
 
 describe('dashboardKpis', () => {
   it('counts websites, cookies and unclassified from each site\'s latest scan, and high-risk websites', () => {
-    expect(dashboardKpis(history, Date.parse('2026-10-12T00:00:00Z'))).toMatchObject({ websites: 2, cookies: 10, unclassified: 3, highRiskWebsites: 1 });
+    // a.com's saved gdprRisk HIGH is re-scored from its kept cookies (Analytics + Unclassified -> MEDIUM);
+    // b.com kept no cookies, so its saved LOW stands. Approval-driven HIGH is covered in riskCalculator.test.js.
+    expect(dashboardKpis(history, Date.parse('2026-10-12T00:00:00Z'))).toMatchObject({ websites: 2, cookies: 10, unclassified: 3, highRiskWebsites: 0 });
   });
 
   it('counts websites scanned in the last 7 days as active', () => {

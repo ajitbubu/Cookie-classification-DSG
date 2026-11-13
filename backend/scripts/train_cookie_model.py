@@ -585,6 +585,73 @@ def per_cmp_gate(
     }
 
 
+def _auto_gate_detail(policy: dict[str, Any], test: str, passed: bool) -> dict[str, Any]:
+    requirements = policy["requirements"]
+    enough = (policy["eligible_predictions"] >= requirements["minimum_predictions"]
+              and policy["distinct_sites"] >= requirements["minimum_sites"])
+    bounds = [b for b in (policy["wilson_lower_bound"], policy["site_bootstrap_lower_bound"]) if b is not None]
+    return {
+        "group": "quality", "test": test, "direction": "at_least",
+        # Both lower bounds must reach the target, so the smaller one decides.
+        "measured": min(bounds) if bounds else None,
+        "required": requirements["target_precision"],
+        "status": ("pass" if passed else "fail") if enough else "not_enough_data",
+        "detail": {
+            "accuracy": policy["accuracy"],
+            "predictions": policy["eligible_predictions"], "minimum_predictions": requirements["minimum_predictions"],
+            "sites": policy["distinct_sites"], "minimum_sites": requirements["minimum_sites"],
+        },
+    }
+
+
+def gate_details(
+    internal_gates: dict[str, bool],
+    test_metrics: dict[str, Any],
+    all_test_metrics: dict[str, Any],
+    cmp_gate: dict[str, Any],
+    split_audit: dict[str, Any],
+    external_metrics: dict[str, Any] | None,
+    external_gate: bool,
+    args: argparse.Namespace,
+) -> dict[str, dict[str, Any]]:
+    """What each acceptance gate measured against what it needs, for the ML Model page.
+
+    ``status`` is "pass", "fail", "not_enough_data" (too few predictions or
+    rows to judge) or "not_run". Only internal_gates and external_holdout_gate
+    decide promotion; this explains them and changes nothing.
+    """
+    def scored(key: str, measured: Any, required: Any, test: str, direction: str = "at_least") -> dict[str, Any]:
+        return {"group": "quality", "test": test, "direction": direction, "measured": measured,
+                "required": required, "status": "pass" if internal_gates[key] else "fail"}
+
+    judged = {name: entry for name, entry in cmp_gate["per_cmp"].items() if entry["passed"] is not None}
+    overlaps = lambda kind: sum(split_audit[kind].values())  # noqa: E731
+    return {
+        "macro_f1": scored("macro_f1", test_metrics["consensus"]["macro_f1"], args.minimum_macro_f1, "unseen"),
+        "marketing_recall": scored("marketing_recall", test_metrics["per_class"]["Marketing_Advertising"]["recall"],
+                                   args.minimum_marketing_recall, "unseen"),
+        "auto_precision": _auto_gate_detail(test_metrics["auto_policy"], "unseen", internal_gates["auto_precision"]),
+        "auto_precision_all_cookies": _auto_gate_detail(all_test_metrics["auto_policy"], "all",
+                                                        internal_gates["auto_precision_all_cookies"]),
+        "per_cmp_macro_f1": {
+            **scored("per_cmp_macro_f1", max((entry["gap"] for entry in judged.values()), default=None),
+                     cmp_gate["requirements"]["maximum_gap"], "unseen", "at_most"),
+            **({} if judged else {"status": "not_enough_data"}),
+            "detail": {"judged": sorted(judged), "too_small": sorted(set(cmp_gate["per_cmp"]) - set(judged))},
+        },
+        "site_holdout_is_disjoint": {**scored("site_holdout_is_disjoint", overlaps("site_domain_overlap"), 0, "split",
+                                              "at_most"), "group": "setup"},
+        "name_holdout_is_disjoint": {**scored("name_holdout_is_disjoint", overlaps("cookie_name_family_overlap"), 0,
+                                              "split", "at_most"), "group": "setup"},
+        "external_holdout": {
+            "group": "quality", "test": "external", "direction": "at_least",
+            "measured": external_metrics["macro_f1"] if external_metrics else None,
+            "required": args.minimum_macro_f1,
+            "status": ("pass" if external_gate else "fail") if external_metrics else "not_run",
+        },
+    }
+
+
 def _json_safe(value: Any) -> Any:
     if isinstance(value, (np.integer,)):
         return int(value)
@@ -1051,6 +1118,8 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
             "external_holdout_gate": external_gate,
             "promotion_eligible": promotion_eligible,
             "auto_classification_enabled": auto_classification_enabled,
+            "gates": gate_details(internal_gates, test_metrics, all_test_metrics, cmp_gate, split_audit,
+                                  external_metrics, external_gate, args),
         },
         "runtime": {
             "python": platform.python_version(),

@@ -5,6 +5,7 @@ import EmptyState from './ui/EmptyState';
 import MenuButton from './ui/MenuButton';
 import { Chip, StatusChip } from './ui/Chip';
 import { RISK_ORDER, websitesFromHistory } from '../lib/websites';
+import { readApprovals } from '../lib/reviewQueue';
 import { formatScanDate } from '../lib/scanResults';
 import './WebsitesPage.css';
 
@@ -23,7 +24,7 @@ const SORTS = {
 function WebsitesPage({ scanHistory = [], domainHistory = {}, loading = false, error = false, onRetry, onOpenScan, onScanNow, onNewScan }) {
   const [query, setQuery] = useState('');
   const [sort, setSort] = useState('recent');
-  const sites = useMemo(() => websitesFromHistory(scanHistory, domainHistory), [scanHistory, domainHistory]);
+  const sites = useMemo(() => websitesFromHistory(scanHistory, domainHistory, readApprovals()), [scanHistory, domainHistory]);
   const q = query.trim().toLowerCase();
   const rows = useMemo(
     () => [...sites].filter((s) => !q || s.domain.toLowerCase().includes(q)).sort(SORTS[sort]),
