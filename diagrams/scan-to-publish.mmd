@@ -1,0 +1,26 @@
+sequenceDiagram
+  actor A as Analyst
+  participant FE as Frontend
+  participant GW as api-gateway
+  participant SC as Scanner (Playwright)
+  participant EP as egress-proxy
+  participant ML as ML classifier
+  participant DB as MongoDB / Postgres
+  A->>FE: Enter site URL, Scan
+  FE->>GW: POST /api/scan-stream
+  GW->>GW: url_guard checks target
+  GW->>SC: launch browser
+  SC->>EP: load pages (proxy only)
+  EP-->>SC: responses, cookies set
+  SC-->>GW: cookie names + attributes
+  GW-->>FE: SSE progress + cookies
+  FE->>GW: POST /api/v1/ml/classify
+  GW->>ML: reviewer decision, else known-cookie list, else model
+  ML-->>FE: category, confidence, evidence, site split
+  FE->>DB: PUT /api/store/scans/{id} (via api-gateway)
+  A->>FE: Review Queue: approve / change category
+  FE->>DB: POST /api/store/approvals (via api-gateway)
+  FE->>GW: POST /api/categories/update-category
+  GW->>DB: cookie_knowledge_base (Postgres)
+  A->>FE: Publish
+  FE->>DB: PUT /api/store/published/{domain} (via api-gateway)
