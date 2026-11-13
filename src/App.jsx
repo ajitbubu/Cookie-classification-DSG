@@ -298,6 +298,7 @@ function App() {
       ),
       abstainReason: mlData.abstain_reason || null,
       siteLabelSplit: mlData.site_label_split || null,
+      knownCookie: mlData.known_cookie || null,
       requiresReview: mlData.requires_review ?? true,
       requiresConsent: isPublishedClassification
         ? publishableCategory !== 'Strictly Necessary'
@@ -718,7 +719,8 @@ function App() {
         mlConfidenceLevel: cookie.mlConfidenceLevel,
         mlReasoning: cookie.mlReasoning,
         abstainReason: cookie.abstainReason,
-        siteLabelSplit: cookie.siteLabelSplit
+        siteLabelSplit: cookie.siteLabelSplit,
+        knownCookie: cookie.knownCookie
       })),
       statistics: {
         byCategory: { ...results.statistics.byCategory },
@@ -754,7 +756,8 @@ function App() {
           mlConfidenceLevel: cookie.mlConfidenceLevel,
           mlReasoning: cookie.mlReasoning,
           abstainReason: cookie.abstainReason,
-          siteLabelSplit: cookie.siteLabelSplit
+          siteLabelSplit: cookie.siteLabelSplit,
+          knownCookie: cookie.knownCookie
         }))
       })) : undefined
     };

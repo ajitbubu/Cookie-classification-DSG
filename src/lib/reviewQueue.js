@@ -42,6 +42,18 @@ export function siteSplitText(split) {
   return `Websites label this cookie differently: ${split.map(([category, sites]) => `${category} on ${sites} ${sites === 1 ? 'site' : 'sites'}`).join(', ')}.`;
 }
 
+// The suggestion came from a known-cookie list, not the model: say which one.
+export function knownCookieText(cookie) {
+  const known = cookie?.knownCookie;
+  if (known?.source === 'website_declarations') {
+    return `Declared this way by ${known.sites} of ${known.total_sites} websites' consent banners.`;
+  }
+  if (known?.source === 'open_cookie_database') {
+    return `Listed in the Open Cookie Database${known.platform ? ` (${known.platform})` : ''}.`;
+  }
+  return null;
+}
+
 /** Save an approval to the store (throws if it can't), then return the updated log. */
 export async function recordApproval({ key, name, domain, originalCategory, approvedCategory, confidence }) {
   const entry = { cookieKey: key, name, domain, originalCategory, approvedCategory, confidence, action: 'approved', timestamp: new Date().toISOString() };

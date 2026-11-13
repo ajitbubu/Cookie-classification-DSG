@@ -68,3 +68,31 @@ The data is not committed. `cookieblock_manifest.json` records the download URL,
 checksums and profile; the value-stripped copy lives in the gitignored
 `external/cookieblock/` folder. `backend/scripts/cookieblock_adapter.py` turns it
 into a 16-column CSV that is only passed to the trainer as train-only input.
+
+## Third-party data: Open Cookie Database
+
+Used only for the known-cookie table (`models/known_cookies/known_cookies.json`),
+not for training. Open Cookie Database by jkwakman and contributors,
+https://github.com/jkwakman/Open-Cookie-Database, licensed Apache License 2.0
+(copy in `external/ocd/LICENSE`). Retrieved 2026-11-12, `open-cookie-database.csv`
+sha256 `ed4836ea285719d77c7340582be68d355f7358edded50e6b96bb3139fc0eb8c0`.
+Changes made here: categories mapped to ours (Functional, Security, Necessary ->
+Strictly Necessary; Personalization -> Functional; Analytics; Marketing), wildcard
+entries shorter than 4 characters dropped. The CSV lives in the gitignored
+`external/ocd/` folder like CookieBlock.
+
+## Known-cookie table
+
+`backend/scripts/build_known_cookies.py` turns website declarations (banner
+collection + CookieBlock) and the Open Cookie Database into
+`models/known_cookies/known_cookies.json`, which `/api/v1/ml/classify` checks
+before the model. A cookie gets a website category when at least 3 websites
+declare it and at least two thirds agree; otherwise an Open Cookie Database entry
+is used; otherwise the model predicts. Matches are suggestions and still go to the
+Review Queue. Rebuild after new banner collection:
+
+    python -m backend.scripts.build_known_cookies \
+        --declarations models/training_data/banner/banner_all_2026-11-11b.csv \
+        --declarations models/training_data/external/cookieblock/cookieblock_train_2021-05-10.csv \
+        --open-cookie-database models/training_data/external/ocd/open-cookie-database.csv \
+        --output models/known_cookies/known_cookies.json

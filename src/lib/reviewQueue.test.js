@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
-import { pendingReviews, loadApprovals, readApprovals, recordApproval, needsManualCheck, manualCheckPrompt, siteLabelSplit, siteSplitText } from './reviewQueue';
+import { pendingReviews, loadApprovals, readApprovals, recordApproval, needsManualCheck, manualCheckPrompt, siteLabelSplit, siteSplitText, knownCookieText } from './reviewQueue';
 
 const history = [
   { id: 'a2', domain: 'a.com', timestamp: '2026-10-11', fullResults: { cookies: [
@@ -85,5 +85,21 @@ describe('site label split', () => {
     expect(siteLabelSplit({ siteLabelSplit: { Analytics: 5 } })).toBeNull();
     expect(siteLabelSplit({ siteLabelSplit: null })).toBeNull();
     expect(siteLabelSplit({})).toBeNull();
+  });
+});
+
+describe('known cookie source', () => {
+  it('names the websites or list the suggestion came from', () => {
+    expect(knownCookieText({ knownCookie: { source: 'website_declarations', sites: 41, total_sites: 44 } }))
+      .toBe("Declared this way by 41 of 44 websites' consent banners.");
+    expect(knownCookieText({ knownCookie: { source: 'open_cookie_database', platform: 'Stripe' } }))
+      .toBe('Listed in the Open Cookie Database (Stripe).');
+    expect(knownCookieText({ knownCookie: { source: 'open_cookie_database', platform: null } }))
+      .toBe('Listed in the Open Cookie Database.');
+  });
+
+  it('is null for model predictions', () => {
+    expect(knownCookieText({ knownCookie: null })).toBeNull();
+    expect(knownCookieText({})).toBeNull();
   });
 });
