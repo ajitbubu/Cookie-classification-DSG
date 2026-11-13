@@ -1,0 +1,16 @@
+graph LR
+  U[User browser] -->|:80 basic auth| N[nginx]
+  N -->|/| FE[frontend<br/>React + Vite :5173]
+  N -->|/api/*| GW[api-gateway<br/>FastAPI :1001]
+  R[(Redis<br/>queue + cache)]
+  R -->|jobs| W[scanner-worker x3<br/>Playwright]
+  GW -->|/api/scan-stream SSE| PW[in-process scanner<br/>Playwright]
+  W -->|all page traffic| EP[egress-proxy :3128<br/>blocks private IPs]
+  PW --> EP
+  EP --> WEB((Public websites))
+  GW -->|/api/v1/ml/classify| ML[ML classifier<br/>XGBoost v7.1.0]
+  MLAPI[ml-api :8001<br/>same app, ML routes] --- ML
+  GW -->|knowledge base, overrides| PG[(PostgreSQL)]
+  W --> PG
+  GW -->|/api/store: scans, approvals, publishes| MG[(MongoDB)]
+  ML -->|loads| MOD[[models/v7.1.0<br/>model + metadata]]

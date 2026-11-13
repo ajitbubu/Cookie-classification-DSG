@@ -1,0 +1,14 @@
+graph LR
+  FS[find_banner_sites.py<br/>robots.txt allows /] --> CB[collect_banner_cookies.py<br/>OneTrust, Cookiebot, Ketch,<br/>Transcend, Securiti banners]
+  CB --> BC[banner CSV + evidence sidecar<br/>1,008 sites, names only]
+  CK[CookieBlock<br/>Zenodo, CC BY 4.0] --> AD[cookieblock_adapter.py]
+  AD --> PD[build_production_dataset.py]
+  BC --> PD
+  PD --> TR[train_cookie_model.py<br/>XGBoost, 61 features]
+  TR -->|split by site| EV[3 held-out tests<br/>gates + label_disagreement.json]
+  RS[build_review_sheet.py<br/>blind labels] -->|--reviewed-labels| TR
+  EV --> PK[[models/v7.x.0]]
+  PK -->|ML_MODEL_VERSION| SRV[ml-api / api-gateway]
+  SRV --> MP[ML Model page<br/>accuracy + gates]
+  SRV --> RQ[Review Queue<br/>human approves]
+  RQ -.->|approvals = future gold labels| RS
