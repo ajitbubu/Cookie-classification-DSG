@@ -1,6 +1,8 @@
 /**
  * Dashboard aggregates from stored scan history (plan 7.1). Framework-free.
  */
+import { scanRisks } from './riskCalculator';
+
 const UNPUBLISHED = new Set(['Unclassified', 'Uncategorized', 'Unknown']);
 const label = (category) => (UNPUBLISHED.has(category) || !category ? 'Unclassified' : category);
 
@@ -40,8 +42,9 @@ export function cookieRisk(category) {
   return label(category) === 'Unclassified' ? 'Critical' : 'Low';
 }
 
-export function dashboardKpis(history = [], now = Date.now()) {
-  const latest = latestPerDomain(history);
+// Risk follows reviewed categories: `approvals` is the Review Queue log.
+export function dashboardKpis(history = [], now = Date.now(), approvals = []) {
+  const latest = latestPerDomain(history).map((s) => ({ ...s, ...scanRisks(s, approvals) }));
   return {
     websites: latest.length,
     activeThisWeek: latest.filter((s) => Date.parse(s.timestamp) > now - 7 * DAY_MS).length,

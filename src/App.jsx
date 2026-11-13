@@ -699,12 +699,12 @@ function App() {
   });
 
   const cleanResultsForStorage = (results) => {
-    // Create a clean copy without circular references or complex objects
+    // Create a clean copy without circular references or complex objects.
+    // Cookie values are never stored: they can hold session tokens and personal data.
     return {
       cookies: results.cookies.map(cookie => ({
         name: cookie.name,
         domain: cookie.domain,
-        value: cookie.value,
         category: cookie.category,
         originalCategory: cookie.originalCategory,
         type: cookie.type,
@@ -741,7 +741,6 @@ function App() {
         cookies: page.cookies.map(cookie => ({
           name: cookie.name,
           domain: cookie.domain,
-          value: cookie.value,
           category: cookie.category,
           originalCategory: cookie.originalCategory,
           type: cookie.type,
