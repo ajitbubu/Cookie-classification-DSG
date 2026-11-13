@@ -1,7 +1,7 @@
 {
   "version": "7.1.0",
   "model_type": "xgboost_native",
-  "trained_at": "2026-11-12T17:25:00.731533+00:00",
+  "trained_at": "2026-11-12T19:08:43.730642+00:00",
   "num_features": 61,
   "features": [
     "expiry_days",
@@ -1470,7 +1470,98 @@
     },
     "external_holdout_gate": false,
     "promotion_eligible": false,
-    "auto_classification_enabled": false
+    "auto_classification_enabled": false,
+    "gates": {
+      "macro_f1": {
+        "group": "quality",
+        "test": "unseen",
+        "direction": "at_least",
+        "measured": 0.43779725763281196,
+        "required": 0.75,
+        "status": "fail"
+      },
+      "marketing_recall": {
+        "group": "quality",
+        "test": "unseen",
+        "direction": "at_least",
+        "measured": 0.4864864864864865,
+        "required": 0.7,
+        "status": "fail"
+      },
+      "auto_precision": {
+        "group": "quality",
+        "test": "unseen",
+        "direction": "at_least",
+        "measured": 0.6755843804891231,
+        "required": 0.95,
+        "status": "not_enough_data",
+        "detail": {
+          "accuracy": 1.0,
+          "predictions": 8,
+          "minimum_predictions": 100,
+          "sites": 8,
+          "minimum_sites": 20
+        }
+      },
+      "auto_precision_all_cookies": {
+        "group": "quality",
+        "test": "all",
+        "direction": "at_least",
+        "measured": 0.9003568093904228,
+        "required": 0.95,
+        "status": "fail",
+        "detail": {
+          "accuracy": 0.9425028184892897,
+          "predictions": 887,
+          "minimum_predictions": 100,
+          "sites": 99,
+          "minimum_sites": 20
+        }
+      },
+      "per_cmp_macro_f1": {
+        "group": "quality",
+        "test": "unseen",
+        "direction": "at_most",
+        "measured": -0.009929880912413425,
+        "required": 0.05,
+        "status": "pass",
+        "detail": {
+          "judged": [
+            "onetrust"
+          ],
+          "too_small": [
+            "cookiebot",
+            "ketch",
+            "securiti",
+            "transcend"
+          ]
+        }
+      },
+      "site_holdout_is_disjoint": {
+        "group": "setup",
+        "test": "split",
+        "direction": "at_most",
+        "measured": 0,
+        "required": 0,
+        "status": "pass"
+      },
+      "name_holdout_is_disjoint": {
+        "group": "setup",
+        "test": "split",
+        "direction": "at_most",
+        "measured": 0,
+        "required": 0,
+        "status": "pass"
+      },
+      "external_holdout": {
+        "group": "quality",
+        "test": "external",
+        "direction": "at_least",
+        "measured": null,
+        "required": 0.75,
+        "status": "not_run"
+      }
+    }
   },
   "runtime": {
     "python": "3.10.12",
@@ -1482,7 +1573,7 @@
     "joblib": "1.3.2"
   },
   "code": {
-    "training_pipeline_sha256": "b8c7354a7b4972c7b56912d5398d2166c79f702e55a8d3c94890d4d72a503af9",
+    "training_pipeline_sha256": "f43a99e3b144938ccd3a29c5420e94888e2fc5a06679f73040902979ef5e55b5",
     "feature_extractor_sha256": "5b43e7acd8a8ac06d1be7113443c3259f276227e0637cde09698b982a1c69e8b",
     "feature_extractor_v7_sha256": "335c76548ed3f86efe383e4f8cbe5cd2c513a5084a97df9a27dc4870ab28909a"
   },
