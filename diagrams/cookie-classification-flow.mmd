@@ -1,0 +1,16 @@
+graph TD
+  S[Scan finishes<br/>cookie names + attributes, no values] --> C[POST /api/v1/ml/classify]
+  C --> Q1{Reviewer already<br/>decided this cookie?}
+  Q1 -->|yes: knowledge base<br/>user_override| P1[Category published<br/>no review needed]
+  Q1 -->|no| Q2{3+ websites declare it<br/>and 2/3 agree?}
+  Q2 -->|yes| K1[Known cookie<br/>website declarations]
+  Q2 -->|no| Q3{In Open Cookie<br/>Database?}
+  Q3 -->|yes| K2[Known cookie<br/>Open Cookie Database]
+  Q3 -->|no| Q4{Name pattern match?}
+  Q4 -->|yes| K3[Pattern match]
+  Q4 -->|no| M[XGBoost model v7.1.0<br/>61 features]
+  M -->|low confidence or<br/>no evidence| AB[Abstained<br/>Unclassified]
+  K1 & K2 & K3 & M --> RQ[Suggestion shown<br/>stays Unclassified]
+  AB --> RQ
+  RQ --> R[Review Queue<br/>person approves or changes]
+  R -->|approval log + knowledge base| P1
