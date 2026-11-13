@@ -34,6 +34,10 @@ class Settings(BaseSettings):
     # issued elsewhere will verify); set it to share tokens across processes.
     ML_SECRET_KEY: str = ""
 
+    # Known-cookie table checked before the model (backend/scripts/build_known_cookies.py).
+    # Relative paths resolve from the repo root.
+    KNOWN_COOKIES_PATH: str = "models/known_cookies/known_cookies.json"
+
     # Scanning configuration - Industry Grade
     MAX_CONCURRENT_PAGES: int = 100  # Increased from 50 for faster scanning
     MIN_CONCURRENT_PAGES: int = 10   # Increased from 5

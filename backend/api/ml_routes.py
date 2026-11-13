@@ -54,6 +54,7 @@ from backend.api.ml_classifier.feature_extractor import FeatureExtractor
 from backend.api.ml_classifier.classifier import CookieClassifier
 from backend.api.ml_classifier.explainer import ExplainabilityEngine
 from backend.api.ml_classifier.similarity import SimilarityDetector
+from backend.api.ml_classifier.known_cookies import KnownCookies
 from backend.api.ml_classifier.config import (
     CURRENT_MODEL_VERSION,
     CONFIDENCE_HIGH_THRESHOLD,
@@ -92,6 +93,24 @@ def get_feature_extractor() -> FeatureExtractor:
     if _feature_extractor is None:
         _feature_extractor = get_classifier().feature_extractor
     return _feature_extractor
+
+
+_known_cookies = None
+_known_cookies_loaded = False
+
+
+def get_known_cookies() -> Optional[KnownCookies]:
+    """The known-cookie table, or None when it isn't built (scans then use the model only)."""
+    global _known_cookies, _known_cookies_loaded
+    if not _known_cookies_loaded:
+        from pathlib import Path
+        from backend.config import settings
+        path = Path(settings.KNOWN_COOKIES_PATH)
+        if not path.is_absolute():
+            path = Path(__file__).resolve().parents[2] / path
+        _known_cookies = KnownCookies.load(path)
+        _known_cookies_loaded = True
+    return _known_cookies
 
 
 def get_classifier() -> CookieClassifier:
@@ -280,6 +299,9 @@ class Classification(BaseModel):
     suggested_category: Optional[str] = None
     # Training sites per category when websites label this cookie differently
     site_label_split: Optional[Dict[str, int]] = None
+    # Set when source == "known_cookie": where the category came from
+    # ({"source": "website_declarations"|"open_cookie_database", "sites", "total_sites", "platform"})
+    known_cookie: Optional[Dict[str, Any]] = None
     
     model_config = {
         'json_encoders': {
@@ -392,8 +414,25 @@ async def classify_cookies(request: ClassificationRequest):
                     ml_prediction=None  # Don't provide ML prediction yet
                 )
                 
-                # 2. If knowledge base or pattern match found, use it
-                if kb_result and kb_result['source'] in ['user_override', 'pattern_match']:
+                # 2. A reviewer's decision wins; next, a category other websites or the
+                # Open Cookie Database already give this cookie (still sent to review).
+                human_override = bool(kb_result and kb_result['source'] == 'user_override')
+                known_tables = None if human_override else get_known_cookies()
+                known = known_tables.lookup(cookie_input.name) if known_tables else None
+                if known:
+                    class KnownResult:
+                        def __init__(self, match):
+                            self.predicted_category = match['category']
+                            self.confidence_score = match['confidence']
+                            self.confidence_level = get_confidence_level(match['confidence'])
+                            self.alternatives = []
+                            self.source = 'known_cookie'
+                            self.site_label_split = match['site_split']
+
+                    result = KnownResult(known)
+                    features = None
+                    logger.info(f"Using known cookie ({known['source']}) for {cookie_input.name}: {known['category']}")
+                elif kb_result and kb_result['source'] in ['user_override', 'pattern_match']:
                     # Use stored category instead of ML prediction
                     result_category = kb_result['category']
                     result_confidence = kb_result['confidence']
@@ -568,6 +607,10 @@ async def classify_cookies(request: ClassificationRequest):
                         {normalize_category(label): sites for label, sites in split.items()}
                         if (split := getattr(result, 'site_label_split', None)) else None
                     ),
+                    'known_cookie': (
+                        {key: known.get(key) for key in ('source', 'sites', 'total_sites', 'platform')}
+                        if known else None
+                    ),
                 }
                 
                 classification = Classification(**result_dict)
@@ -641,6 +684,7 @@ async def classify_cookies(request: ClassificationRequest):
                     'abstain_reason': c.abstain_reason,
                     'suggested_category': c.suggested_category,
                     'site_label_split': c.site_label_split,
+                    'known_cookie': convert_numpy_types(c.known_cookie),
                 }
                 for c in classifications
             ],

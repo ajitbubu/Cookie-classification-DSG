@@ -75,6 +75,19 @@ describe('ReviewQueuePage review rows (12A)', () => {
     expect(within(card('_ga')).queryByText('Sites disagree')).not.toBeInTheDocument();
   });
 
+  it('marks a suggestion that came from a known-cookie list, and still asks for approval', () => {
+    api();
+    renderRQ(historyWith([
+      cookie('_fbp', { mlClassification: 'Marketing', knownCookie: { source: 'website_declarations', sites: 41, total_sites: 44 } }),
+      cookie('_ga'),
+    ]));
+    const row = card('_fbp');
+    expect(within(row).getByText('Known cookie')).toBeInTheDocument();
+    expect(within(row).getByText("Declared this way by 41 of 44 websites' consent banners.")).toBeInTheDocument();
+    expect(within(row).getByRole('button', { name: /^Approve/ })).toBeInTheDocument();
+    expect(within(card('_ga')).queryByText('Known cookie')).not.toBeInTheDocument();
+  });
+
   it('publishes an approval and removes the row with a success toast (E4)', async () => {
     api({ published: true });
     renderRQ();
