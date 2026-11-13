@@ -695,3 +695,23 @@ def test_cors_does_not_trust_arbitrary_origins(client):
 
     dev = client.get("/api/health", headers={"Origin": "http://localhost:5173"})
     assert dev.headers["access-control-allow-origin"] == "http://localhost:5173"
+
+
+def test_store_never_keeps_cookie_values(store):
+    """Cookie values can be session tokens or personal data; the store drops them."""
+    scan = _scan("v1")
+    scan["fullResults"]["cookies"][0]["value"] = "GA1.2.123456.789"
+    scan["fullResults"]["pageResults"] = [{"url": "https://shop.com/", "cookies": [{"name": "sid", "value": "secret-session"}]}]
+    assert store.put("/api/store/scans/v1", json=scan).status_code == 200
+    saved = store.get("/api/store/scans").json()["scans"][0]["fullResults"]
+    assert "value" not in saved["cookies"][0] and saved["cookies"][0]["name"] == "_ga"
+    assert saved["pageResults"][0]["cookies"] == [{"name": "sid"}]
+
+
+def test_strip_cookie_values_handles_partial_scans():
+    from backend.db.scan_store import strip_cookie_values
+    assert strip_cookie_values({"id": "x"}) is False
+    assert strip_cookie_values({"fullResults": {"cookies": None, "pageResults": [{"url": "u"}]}}) is False
+    scan = {"fullResults": {"cookies": [{"name": "a", "value": "1"}, {"name": "b"}]}}
+    assert strip_cookie_values(scan) is True and scan["fullResults"]["cookies"] == [{"name": "a"}, {"name": "b"}]
+
