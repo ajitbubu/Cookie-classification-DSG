@@ -1,0 +1,15 @@
+graph LR
+  CK[Stored scan cookies] --> RC{Category per cookie}
+  AP[Review Queue approvals<br/>website:cookie] --> RC
+  RC -->|approved, else published,<br/>else Unclassified| ST[Counts: Marketing, Analytics,<br/>Social Media, needs consent,<br/>third-party]
+  ST --> REG
+  subgraph REG[Risk per regulation: HIGH / MEDIUM / LOW]
+    direction TB
+    G[GDPR<br/>HIGH: marketing/social or >5 consent<br/>MEDIUM: analytics, 3rd-party or consent]
+    CC[CCPA/CPRA<br/>HIGH: marketing/social or >5 3rd-party<br/>MEDIUM: analytics or 3rd-party]
+    D[DPDP<br/>HIGH: marketing/social or >5 consent<br/>MEDIUM: consent or 3rd-party]
+  end
+  REG --> DD[Domain Details<br/>Risk Assessment]
+  REG --> WL[Websites list<br/>highest of the three]
+  REG --> SC[Dashboard Risk Score<br/>100 x 1 - flags / sites x 3<br/>HIGH=1, MEDIUM=0.5]
+  SC --> GR[Grade A 90+, B 75+,<br/>C 60+, D 40+, else F]
