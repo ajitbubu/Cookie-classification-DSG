@@ -8,6 +8,7 @@ Order:
 1. Website majority: at least MAJORITY_MIN_SITES websites declare the cookie in
    their banners and at least MAJORITY_MIN_SHARE of them agree on a category.
 2. Open Cookie Database: an exact name, else the longest wildcard prefix.
+3. IAB TCF vendor list: advertising cookies ad-tech vendors disclose, matched the same way.
 Otherwise None, and the model's prediction stands.
 """
 
@@ -42,6 +43,10 @@ class KnownCookies:
         self._ocd_exact: Dict[str, Dict[str, str]] = ocd.get("exact", {})
         self._ocd_prefix = ocd.get("prefix", [])
         self._ocd_agreement: Dict[str, Dict[str, float]] = table.get("ocd_agreement", {})
+        gvl = table.get("iab_gvl", {})
+        self._gvl_exact: Dict[str, Dict[str, str]] = gvl.get("exact", {})
+        self._gvl_prefix = gvl.get("prefix", [])
+        self._gvl_agreement: Dict[str, Dict[str, float]] = table.get("gvl_agreement", {})
 
     @classmethod
     def load(cls, path: Path) -> Optional["KnownCookies"]:
@@ -63,20 +68,25 @@ class KnownCookies:
             return {"category": category, "source": "website_declarations", "confidence": agreeing / declaring,
                     # "N of M websites" already tells the reviewer about the minority.
                     "sites": agreeing, "total_sites": declaring, "site_split": None}
-        entry = self._ocd_entry(name.lower())
-        if entry:
-            category, platform = entry
-            # Confidence = how often this OCD category agrees with a clear website majority.
-            agreement = self._ocd_agreement.get(category, {}).get("agreement", 0.5)
-            return {"category": category, "source": "open_cookie_database", "confidence": agreement,
-                    "platform": platform or None, "site_split": dict(counts) if counts else None}
+        for source, exact, prefixes, agreements in (
+            ("open_cookie_database", self._ocd_exact, self._ocd_prefix, self._ocd_agreement),
+            ("iab_gvl", self._gvl_exact, self._gvl_prefix, self._gvl_agreement),
+        ):
+            entry = self._list_entry(name.lower(), exact, prefixes)
+            if entry:
+                category, platform = entry
+                # Confidence = how often this list's category agrees with a clear website majority.
+                agreement = agreements.get(category, {}).get("agreement", 0.5)
+                return {"category": category, "source": source, "confidence": agreement,
+                        "platform": platform or None, "site_split": dict(counts) if counts else None}
         return None
 
-    def _ocd_entry(self, name: str) -> Optional[Tuple[str, str]]:
-        exact = self._ocd_exact.get(name)
+    @staticmethod
+    def _list_entry(name: str, exact_names: Dict[str, Dict[str, str]], prefixes: list) -> Optional[Tuple[str, str]]:
+        exact = exact_names.get(name)
         if exact:
             return exact["category"], exact.get("platform", "")
-        for prefix, category, platform in self._ocd_prefix:  # longest first
+        for prefix, category, platform in prefixes:  # longest first
             if name.startswith(prefix):
                 return category, platform
         return None

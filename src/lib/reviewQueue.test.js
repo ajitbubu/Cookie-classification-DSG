@@ -96,6 +96,8 @@ describe('known cookie source', () => {
       .toBe('Listed in the Open Cookie Database (Stripe).');
     expect(knownCookieText({ knownCookie: { source: 'open_cookie_database', platform: null } }))
       .toBe('Listed in the Open Cookie Database.');
+    expect(knownCookieText({ knownCookie: { source: 'iab_gvl', platform: 'Xandr' } }))
+      .toBe('Disclosed for advertising by Xandr in the IAB TCF vendor list.');
   });
 
   it('is null for model predictions', () => {
