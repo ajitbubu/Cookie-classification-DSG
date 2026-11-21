@@ -15,7 +15,7 @@ it sets (``identifier``, ``domains``, ``maxAgeSeconds``, ``purposes``). This scr
 
 Nothing here feeds training yet: the CSV is for inspecting the label spread first.
 
-    python -m backend.scripts.crawl_gvl_disclosures --out-dir data/category_overrides/iab_gvl
+    python -m backend.scripts.crawl_gvl_disclosures --out-dir models/known_cookies/sources/iab_gvl
     python -m backend.scripts.crawl_gvl_disclosures --gvl saved-vendor-list.json --out-dir ...
 """
 

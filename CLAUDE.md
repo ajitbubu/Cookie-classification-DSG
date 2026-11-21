@@ -7,7 +7,7 @@ Non-Claude agents (OpenAI Codex, Cursor, etc.) don't read this file — they rea
 architecture, commands, and conventions in a tool-agnostic form. Keep the two in sync
 when either changes.
 
-UI work follows design-system/README.md. Take colours, spacing and radii from
+UI work follows design-system/PMP-README.md. Take colours, spacing and radii from
 design-system/tokens.json; never hard-code hex values. Check
 design-system/components/<Name>/README.md before building or changing a component.
 
@@ -76,7 +76,7 @@ No project skill launches the app end-to-end yet — see `/run` for ad-hoc launc
 ## Conventions
 
 - UI follows the design system in `design-system/`. For this app (UCM) read
-  `design-system/ucm/README.md` first, then `design-system/README.md` for shared rules.
+  `design-system/ucm/README.md` first, then `design-system/PMP-README.md` for shared rules.
   `design-system/components/Ucm*/preview.html` show the target look for each pattern.
 - Use CSS variables from `design-system/tokens.css` (`var(--ucm-brand-accent)`,
   `var(--ucm-blue-4)`, `var(--ucm-radius-control)` …) in each component's `.css`; never
