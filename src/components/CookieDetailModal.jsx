@@ -438,7 +438,7 @@ function CookieDetailModal({ cookie, onClose, onOverride }) {
                   Cookie Value (Sample)
                 </h3>
                 <code className="cdm-code-block">
-                  {cookie.value ? cookie.value.substring(0, 120) + (cookie.value.length > 120 ? '...' : '') : '(empty or not captured)'}
+                  {cookie.value ? cookie.value.substring(0, 120) + (cookie.value.length > 120 ? '...' : '') : 'Not collected: scans never keep cookie values.'}
                 </code>
               </div>
 

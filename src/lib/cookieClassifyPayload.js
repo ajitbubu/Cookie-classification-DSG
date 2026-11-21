@@ -34,6 +34,18 @@ export function toClassifyCookie(cookie, siteDomain, nowMs = Date.now()) {
     site_domain: cookie.siteDomain || cookie.site_domain || siteDomain,
     // Derived features instead of the raw value. Cookie values carry
     // session tokens; the model only ever needed length/uuid/base64.
-    ...deriveValueFeatures(cookie.value),
+    ...valueFeaturesOf(cookie),
   };
+}
+
+/** Backend scans send the features and no value; the in-browser Quick Scan still has the value. */
+function valueFeaturesOf(cookie) {
+  if (typeof cookie.value_length === 'number') {
+    return {
+      value_length: cookie.value_length,
+      value_is_uuid: Boolean(cookie.value_is_uuid),
+      value_is_base64: Boolean(cookie.value_is_base64),
+    };
+  }
+  return deriveValueFeatures(cookie.value);
 }
