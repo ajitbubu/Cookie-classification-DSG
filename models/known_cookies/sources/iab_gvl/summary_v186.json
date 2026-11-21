@@ -1,0 +1,28 @@
+{
+  "vendorListVersion": 186,
+  "lastUpdated": "2026-11-19T16:00:24Z",
+  "activeVendors": 1037,
+  "vendorsWithCookieRows": 644,
+  "fetchFailures": {
+    "HTTPError": 15,
+    "JSONDecodeError": 4,
+    "URLError": 9,
+    "UnicodeDecodeError": 3
+  },
+  "cookieRows": 3329,
+  "uniqueCookieNames": 2436,
+  "labels": {
+    "Marketing_Advertising": 2339,
+    "Ambiguous": 856,
+    "Analytics_Performance": 91,
+    "Strictly_Necessary": 26,
+    "Functional": 17
+  },
+  "labelsExcludingCopiedVendorPurposes": {
+    "Marketing_Advertising": 1416,
+    "Ambiguous": 856,
+    "Analytics_Performance": 82,
+    "Strictly_Necessary": 26,
+    "Functional": 17
+  }
+}

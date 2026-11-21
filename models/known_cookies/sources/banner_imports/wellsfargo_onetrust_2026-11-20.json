@@ -1,0 +1,205 @@
+{
+  "ADRUM_BT1|www.wellsfargo.com": {
+    "cookie_name": "ADRUM_BT1",
+    "cookie_domain": "www.wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "ADRUM_BTa|www.wellsfargo.com": {
+    "cookie_name": "ADRUM_BTa",
+    "cookie_domain": "www.wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "AMCV_1BAA15F354F731E60A4C98A4%40AdobeOrg|.wellsfargo.com": {
+    "cookie_name": "AMCV_1BAA15F354F731E60A4C98A4%40AdobeOrg",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "CookiesAreEnabled|.wellsfargo.com": {
+    "cookie_name": "CookiesAreEnabled",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "DCID|.connect.secure.wellsfargo.com": {
+    "cookie_name": "DCID",
+    "cookie_domain": ".connect.secure.wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "DCID|.static.wellsfargo.com": {
+    "cookie_name": "DCID",
+    "cookie_domain": ".static.wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "DCID|.www.wellsfargo.com": {
+    "cookie_name": "DCID",
+    "cookie_domain": ".www.wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "DCT_SUM|.wellsfargo.com": {
+    "cookie_name": "DCT_SUM",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "INLANG|.wellsfargo.com": {
+    "cookie_name": "INLANG",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "ISD_AB_COOKIE|.connect.secure.wellsfargo.com": {
+    "cookie_name": "ISD_AB_COOKIE",
+    "cookie_domain": ".connect.secure.wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "ISD_AB_COOKIE|.www.wellsfargo.com": {
+    "cookie_name": "ISD_AB_COOKIE",
+    "cookie_domain": ".www.wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "ISD_WCM_COOKIE|www.wellsfargo.com": {
+    "cookie_name": "ISD_WCM_COOKIE",
+    "cookie_domain": "www.wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "ISD_WWWAF_COOKIE|www.wellsfargo.com": {
+    "cookie_name": "ISD_WWWAF_COOKIE",
+    "cookie_domain": "www.wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "OptanonConsent|.wellsfargo.com": {
+    "cookie_name": "OptanonConsent",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "SIMSCookie|.wellsfargo.com": {
+    "cookie_name": "SIMSCookie",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "WFBFPAffiliate|.wellsfargo.com": {
+    "cookie_name": "WFBFPAffiliate",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "_abck|.wellsfargo.com": {
+    "cookie_name": "_abck",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "_cls_s|.wellsfargo.com": {
+    "cookie_name": "_cls_s",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "_cls_v|.wellsfargo.com": {
+    "cookie_name": "_cls_v",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "_ga|.wellsfargo.com": {
+    "cookie_name": "_ga",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Marketing",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "_ga_7JXJJ2JF12|.wellsfargo.com": {
+    "cookie_name": "_ga_7JXJJ2JF12",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Marketing",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "_gcl_au|.wellsfargo.com": {
+    "cookie_name": "_gcl_au",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Marketing",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "bm_sz|.wellsfargo.com": {
+    "cookie_name": "bm_sz",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "bmuid|.wellsfargo.com": {
+    "cookie_name": "bmuid",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Functional",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "secondEntrytoApp|.wellsfargo.com": {
+    "cookie_name": "secondEntrytoApp",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "tempestCookie|.wellsfargo.com": {
+    "cookie_name": "tempestCookie",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "wcmcookiehp|.www.wellsfargo.com": {
+    "cookie_name": "wcmcookiehp",
+    "cookie_domain": ".www.wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "wcmcookiewf|.www.wellsfargo.com": {
+    "cookie_name": "wcmcookiewf",
+    "cookie_domain": ".www.wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  },
+  "wfacookie|.wellsfargo.com": {
+    "cookie_name": "wfacookie",
+    "cookie_domain": ".wellsfargo.com",
+    "new_category": "Strictly Necessary",
+    "updated_at": "2026-11-20T03:58:33.511401+00:00",
+    "user_id": "banner_import:onetrust:wellsfargo.com"
+  }
+}

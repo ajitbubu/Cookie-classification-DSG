@@ -19,8 +19,8 @@ Usage:
   python -m backend.scripts.build_known_cookies \
       --declarations models/training_data/banner/banner_all_2026-11-11b.csv \
       --declarations models/training_data/external/cookieblock/cookieblock_train_2021-05-10.csv \
-      --open-cookie-database models/training_data/external/ocd/open-cookie-database.csv \
-      --gvl-disclosures models/training_data/external/iab_gvl/disclosures_v186.csv \
+      --open-cookie-database models/known_cookies/sources/open-cookie-database/open-cookie-database.csv \
+      --gvl-disclosures models/known_cookies/sources/iab_gvl/disclosures_v186.csv \
       --output models/known_cookies/known_cookies.json
 """
 
