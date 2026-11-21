@@ -3,6 +3,8 @@ import re
 from concurrent.futures import ThreadPoolExecutor
 import asyncio
 
+from backend.scanner.cookie_values import without_value
+
 
 class CookieClassifier:
     """Classifies cookies by category, type, and purpose"""
@@ -58,18 +60,15 @@ class CookieClassifier:
         
         # Determine if consent required
         requires_consent = category not in ["Strictly Necessary"]
-        
-        # Calculate size
-        size = len(cookie.get("value", ""))
-        
+
+        # Value -> size + the model's value features; the value itself is dropped.
         return {
-            **cookie,
+            **without_value(cookie),
             "category": category,
             "type": cookie_type,
             "purpose": purpose,
             "isThirdParty": is_third_party,
             "requiresConsent": requires_consent,
-            "size": size
         }
     
     @classmethod
