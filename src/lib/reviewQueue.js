@@ -51,6 +51,9 @@ export function knownCookieText(cookie) {
   if (known?.source === 'open_cookie_database') {
     return `Listed in the Open Cookie Database${known.platform ? ` (${known.platform})` : ''}.`;
   }
+  if (known?.source === 'iab_gvl') {
+    return `Disclosed for advertising${known.platform ? ` by ${known.platform}` : ''} in the IAB TCF vendor list.`;
+  }
   return null;
 }
 

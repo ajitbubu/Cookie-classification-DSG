@@ -10,12 +10,17 @@ Two kinds of evidence go in:
   Its categories are mapped to ours, and the share of its entries that agree
   with a clear website majority is recorded per category, so a match can carry
   an honest confidence.
+* The IAB TCF Global Vendor List: cookies that ad-tech vendors disclose for
+  advertising purposes (``crawl_gvl_disclosures.py`` output, ``Marketing_Advertising``
+  rows only; its other labels are too sparse to trust). Checked after the OCD, with
+  the vendor as the platform and the same agreement-based confidence.
 
 Usage:
   python -m backend.scripts.build_known_cookies \
       --declarations models/training_data/banner/banner_all_2026-11-11b.csv \
       --declarations models/training_data/external/cookieblock/cookieblock_train_2021-05-10.csv \
       --open-cookie-database models/training_data/external/ocd/open-cookie-database.csv \
+      --gvl-disclosures models/training_data/external/iab_gvl/disclosures_v186.csv \
       --output models/known_cookies/known_cookies.json
 """
 
@@ -80,8 +85,31 @@ def open_cookie_database(path: Path) -> Dict[str, list]:
     return {"exact": dict(sorted(exact.items())), "prefix": prefix}
 
 
+GVL_LABEL = "Marketing_Advertising"
+
+
+def iab_gvl(path: Path) -> Dict[str, list]:
+    """Advertising cookies vendors disclose in the GVL: exact names, and ``name*`` as a prefix."""
+    exact, prefix = {}, {}
+    with Path(path).open(newline="", encoding="utf-8") as handle:
+        for row in csv.DictReader(handle):
+            name, vendor = row.get("name", "").strip(), row.get("vendorName", "").strip()
+            if row.get("label") != GVL_LABEL or not name:
+                continue
+            stem = name[:-1] if name.endswith("*") else name
+            if "*" in stem:  # leading or inner wildcards ("*uxid", "*udc*") match too much
+                continue
+            if stem != name:
+                if len(stem) >= OCD_MIN_PREFIX:
+                    prefix.setdefault(stem.lower(), vendor)
+            else:
+                exact.setdefault(name.lower(), {"category": GVL_LABEL, "platform": vendor})
+    prefixes = sorted(([p, GVL_LABEL, v] for p, v in prefix.items()), key=lambda item: (-len(item[0]), item[0]))
+    return {"exact": dict(sorted(exact.items())), "prefix": prefixes}
+
+
 def ocd_agreement(ocd: Dict[str, list], families: Dict[str, Dict[str, int]]) -> Dict[str, dict]:
-    """Per mapped category: how often an OCD entry agrees with a clear website majority."""
+    """Per mapped category: how often a list entry (OCD or GVL) agrees with a clear website majority."""
     tally = defaultdict(Counter)
     for name, entry in ocd["exact"].items():
         majority = site_majority(families.get(cookie_name_family(name)))
@@ -93,23 +121,29 @@ def ocd_agreement(ocd: Dict[str, list], families: Dict[str, Dict[str, int]]) -> 
     }
 
 
-def build(declarations: Sequence[Path], ocd_path: Path | None) -> dict:
+def build(declarations: Sequence[Path], ocd_path: Path | None, gvl_path: Path | None = None) -> dict:
     families = website_declarations(declarations)
     ocd = open_cookie_database(ocd_path) if ocd_path else {"exact": {}, "prefix": []}
+    gvl = iab_gvl(gvl_path) if gvl_path else {"exact": {}, "prefix": []}
     sources = [{"path": str(p), "sha256": sha256(Path(p)), "kind": "website_declarations"} for p in declarations]
     if ocd_path:
         sources.append({"path": str(ocd_path), "sha256": sha256(Path(ocd_path)), "kind": "open_cookie_database",
                         "license": "Apache-2.0", "url": "https://github.com/jkwakman/Open-Cookie-Database"})
+    if gvl_path:
+        sources.append({"path": str(gvl_path), "sha256": sha256(Path(gvl_path)), "kind": "iab_gvl",
+                        "url": "https://vendor-list.consensu.org/v3/vendor-list.json"})
     return {
         "built": date.today().isoformat(),
         "rule": {"majority_min_sites": MAJORITY_MIN_SITES, "majority_min_share": MAJORITY_MIN_SHARE,
                  "ocd_min_prefix": OCD_MIN_PREFIX,
-                 "order": ["website_majority", "open_cookie_database"]},
+                 "order": ["website_majority", "open_cookie_database", "iab_gvl"]},
         "sources": sources,
         "ocd_category_map": OCD_CATEGORY_MAP,
         "ocd_agreement": ocd_agreement(ocd, families),
         "families": families,
         "open_cookie_database": ocd,
+        "gvl_agreement": ocd_agreement(gvl, families),
+        "iab_gvl": gvl,
     }
 
 
@@ -117,13 +151,15 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--declarations", action="append", required=True, help="Banner-style CSV; repeatable")
     parser.add_argument("--open-cookie-database", help="Open Cookie Database CSV")
+    parser.add_argument("--gvl-disclosures", help="crawl_gvl_disclosures.py CSV (IAB TCF vendor disclosures)")
     parser.add_argument("--output", required=True)
     return parser.parse_args(argv)
 
 
 def main(argv: Sequence[str] | None = None) -> dict:
     args = parse_args(argv)
-    table = build([Path(p) for p in args.declarations], Path(args.open_cookie_database) if args.open_cookie_database else None)
+    table = build([Path(p) for p in args.declarations], Path(args.open_cookie_database) if args.open_cookie_database else None,
+                  Path(args.gvl_disclosures) if args.gvl_disclosures else None)
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(table, separators=(",", ":")) + "\n")
@@ -131,6 +167,8 @@ def main(argv: Sequence[str] | None = None) -> dict:
     print(f"{len(table['families'])} name families, {majorities} with a clear website majority; "
           f"{len(table['open_cookie_database']['exact'])} OCD names + {len(table['open_cookie_database']['prefix'])} prefixes -> {output}")
     print("OCD agreement with website majorities: " + json.dumps(table["ocd_agreement"]))
+    print(f"{len(table['iab_gvl']['exact'])} GVL names + {len(table['iab_gvl']['prefix'])} prefixes; "
+          "agreement: " + json.dumps(table["gvl_agreement"]))
     return table
 
 
