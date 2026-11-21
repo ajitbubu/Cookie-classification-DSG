@@ -114,17 +114,33 @@ All 12 audit findings and the Web Interface Guidelines review are resolved on th
 
 ## QA (2026-10-12, /qa on feat/ucm-figma-redesign)
 
-### Scanner times out on most real sites
-
-- **What:** The backend browser hits `Page.goto: Timeout 60000ms` on vodafone.com, att.com and github.com,
-  and queued requests then time out too (even example.com after a while; `/api/scan` returns 503).
-- **Why:** Most real scans fail; the app now shows these as failed scans with Retry, but no data is collected.
-- **Repro:** Launch New Scan → `https://github.com` → Start Scan; API log shows the 60 s goto timeout.
-
 ### Consistent page names (ISSUE-003, Low, content)
 
 - **What:** Breadcrumb says "Websites" while the sidebar says "Website"; the Cookie Inventory page heading
   reads "Cookie inventory".
+
+## Scanner (2026-11-21)
+
+The 2026-10-12 "scanner times out on most real sites" item no longer reproduces: quick scans of github.com,
+att.com and vodafone.com return in 1-2 s (6, 32 and 9 cookies) and UI-default deep scans (10 pages,
+concurrency 20, depth 3) finish in 16-22 s. Two findings from re-testing:
+
+### Scan responses still carry cookie values (Medium, privacy)
+
+- **What:** `/api/scan` and `/api/scan-stream` return each cookie's `value` to the browser (a deep scan of
+  github.com returned the `_gh_sess` session value). The store already strips values on save
+  (`strip_cookie_values` in `backend/db/scan_store.py`; 0 of 50 stored scans hold one), so this is transit only.
+- **Fix:** Drop `value` where the scanner builds cookie dicts, before classification and the response;
+  check that nothing downstream (classifier features, risk rules) reads it first.
+
+### Scans fail with a healthy API when the egress proxy is down (Medium, infrastructure)
+
+- **What:** With `egress-proxy` (or the whole stack except `api-gateway`) stopped, `/api/health` stays 200
+  but every scan returns 503 `Page.goto: NS_ERROR_UNKNOWN_PROXY_HOST` within a second.
+- **Why:** The stack was stopped with clean exits three times between 2026-11-16 and 2026-11-21 (not a
+  crash, so `restart: unless-stopped` doesn't bring it back), and the UI only shows "scan failed".
+- **Fix option:** Have `/api/health` report the egress proxy as a dependency, and map the proxy error to a
+  clear "scanning service is down" message.
 
 ## QA (2026-11-11, /qa on main)
 
