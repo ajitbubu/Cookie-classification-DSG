@@ -114,16 +114,6 @@ All 12 audit findings and the Web Interface Guidelines review are resolved on th
 
 ## QA (2026-10-12, /qa on feat/ucm-figma-redesign)
 
-### Keep Postgres and Redis running (ISSUE-002, High, infrastructure)
-
-- **What:** Add `restart: unless-stopped` to the `postgres` and `redis` services in `docker-compose.yml`.
-- **Why:** Both stopped twice on 2026-10-12 (Docker restarts) while every other service came back. With
-  Postgres down, approvals and bulk updates are saved to a file but not published ("Saved, but not
-  published: the database is unavailable"), and scanner workers go unhealthy without Redis.
-- **Repro:** `docker compose ps -a` shows postgres/redis `Exited (0)`; bulk-update any cookies on
-  Domain Details → warning toast; API log "Database unavailable, using file storage fallback".
-- **Fix after the change:** `docker compose up -d postgres redis && docker compose restart api-gateway ml-api`.
-
 ### Scanner times out on most real sites
 
 - **What:** The backend browser hits `Page.goto: Timeout 60000ms` on vodafone.com, att.com and github.com,
