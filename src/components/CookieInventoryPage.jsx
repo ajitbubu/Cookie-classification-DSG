@@ -46,7 +46,7 @@ function CookieInventoryPage({ scanHistory = [], loading = false, error = false,
     <section className="ci-card" aria-labelledby="ci-heading">
       <div className="ci-header">
         <div>
-          <h2 id="ci-heading" className="ci-title">Cookie inventory</h2>
+          <h2 id="ci-heading" className="ci-title">Cookie Inventory</h2>
           {!loading && !error && <p className="ci-subtitle">{inventory.length} distinct cookies across your stored scans</p>}
         </div>
         {!error && (
@@ -67,7 +67,7 @@ function CookieInventoryPage({ scanHistory = [], loading = false, error = false,
         )}
       </div>
       <DataTable
-        caption="Cookie inventory"
+        caption="Cookie Inventory"
         rowKey={(c) => `${c.name}|${c.domain}`}
         rows={visible}
         loading={loading}

@@ -26,8 +26,6 @@ All 12 audit findings and the Web Interface Guidelines review are resolved on th
   DESIGN.md "Contrast exceptions" (user decision 2026-10-12), so only the chart series changed.
 - **011, no change needed:** the sidebar was already full-height (position: fixed); full-page
   screenshots made it look short.
-- **Open decision:** 72e1095 changed the Schedule scan pill to navy text, but DESIGN.md lists white on
-  #1CC279 as a deliberate exception. Either record the new pair in DESIGN.md or revert the pill text.
 - **Follow-up to 001:** `/api/store/scans` returns 4.8 MB (`fullResults` on all 200 scans). Return
   summaries from the list and fetch detail on demand.
 - **Follow-up to 003:** the "N in progress" chip counts scheduled jobs, and schedules show next-run
@@ -112,13 +110,6 @@ All 12 audit findings and the Web Interface Guidelines review are resolved on th
 - **Context:** Holdout sites are the `split=holdout` rows of `models/training_data/collection_sites.csv`.
 - **Depends on / blocked by:** v7 promotion.
 
-## QA (2026-10-12, /qa on feat/ucm-figma-redesign)
-
-### Consistent page names (ISSUE-003, Low, content)
-
-- **What:** Breadcrumb says "Websites" while the sidebar says "Website"; the Cookie Inventory page heading
-  reads "Cookie inventory".
-
 ## Scanner (2026-11-21)
 
 The 2026-10-12 "scanner times out on most real sites" item no longer reproduces: quick scans of github.com,
@@ -137,23 +128,4 @@ concurrency 20, depth 3) finish in 16-22 s. Finding from re-testing:
 ## QA (2026-11-11, /qa on main)
 
 Report: `.gstack/qa-reports/run-20261111T170950Z/qa-report-localhost-2026-11-11.md`. Fixed: ISSUE-001 (classify
-payload missing lifetime and site, critical) and ISSUE-002 (fractional `expiry_days` rejected).
-
-### nginx config mount goes stale after a git checkout (ISSUE-006, Medium, infrastructure)
-
-- **Repro:** switch branches or merge so git rewrites `nginx/nginx.conf`, recreate api-gateway, then
-  `docker exec cookie-scanner-nginx nginx -s reload` → `open() "/etc/nginx/nginx.conf" failed`.
-- **Workaround:** `docker compose restart nginx` (in the runbook). **Fix option:** mount the `nginx/` directory
-  instead of single files.
-
-### ML Model page wording (ISSUE-003, ISSUE-004, Low, content)
-
-- The gate `per_cmp_macro_f1` shows as "Per Cmp Macro F1" (missing from `GATE_LABELS` in
-  `src/components/ModelPerformancePage.jsx`).
-- The headline "Accuracy — Held-out test websites" (and the dashboard's "Classification accuracy") is the strict
-  unseen-cookie-name score (60.8% for v7.0.0); the all-cookies score (85.3%) isn't shown. Label it or show both.
-
-### Review Queue Action column off-screen at 1280 px (ISSUE-005, Low, UX)
-
-- **Repro:** open `/review` at 1280 px wide: the table (1057 px) scrolls inside a 904 px container, so Approve/Edit
-  need a horizontal scroll.
+payload missing lifetime and site, critical) and ISSUE-002 (fractional `expiry_days` rejected); ISSUE-003/004/005/006 fixed 2026-11-21.

@@ -37,6 +37,7 @@ function AiInsights({ awaitingReview, unclassified, autoClassified, onNavigate, 
   }, []);
 
   const accuracy = info?.metrics?.internal_site_holdout?.accuracy;
+  const accuracyAll = info?.metrics?.internal_site_holdout_all_cookies?.accuracy;
   const auto = info?.acceptance?.auto_classification_enabled;
 
   return (
@@ -56,6 +57,11 @@ function AiInsights({ awaitingReview, unclassified, autoClassified, onNavigate, 
               <div className="ai-stat">
                 <span className="ai-stat__label">Classification accuracy</span>
                 <span className="ai-stat__value">{accuracy == null ? '—' : `${(accuracy * 100).toFixed(1)}%`}</span>
+                {accuracy != null && (
+                  <span className="ai-stat__caption">
+                    {`On cookie names never seen in training${accuracyAll == null ? '' : `; ${(accuracyAll * 100).toFixed(1)}% across all cookies on test websites`}`}
+                  </span>
+                )}
               </div>
               <div className="ai-stat">
                 <span className="ai-stat__label">Cookies auto classified</span>

@@ -30,8 +30,8 @@ binds to `127.0.0.1`, so it is reachable from this machine only.
    to the insecure dev password `scanner_password` if `DB_PASSWORD` is unset, and an unset
    `ML_SECRET_KEY` gives each process a random JWT key. Fine for local dev, not for anything shared.
 2. Create the nginx login if `nginx/htpasswd` doesn't exist (gitignored):
-   `htpasswd -cB nginx/htpasswd <user>`. Without it Docker mounts an empty directory
-   there and nginx answers 500 to everything. Basic auth over plain HTTP sends the
+   `htpasswd -cB nginx/htpasswd <user>`. Without it nginx answers 500 to everything
+   (compose mounts the whole `nginx/` folder at `/etc/nginx/site`). Basic auth over plain HTTP sends the
    password in clear text, so anything beyond localhost needs TLS in front.
 3. `docker compose up --build` (first run pulls Firefox for the Playwright workers —
    expect the `worker` build to be the slowest layer).

@@ -15,7 +15,7 @@ import LeftSidebar from './LeftSidebar';
  *   the full product menu is shown; Cookie Classification is expanded to its
  *   five pages; modules this app does not have are listed but disabled.
  */
-const COOKIE_ITEMS = ['Dashboard', 'Scanning', 'Website', 'Cookie Inventory', 'Review Queue'];
+const COOKIE_ITEMS = ['Dashboard', 'Scanning', 'Websites', 'Cookie Inventory', 'Review Queue'];
 const OTHER_MODULES = ['UCM', 'PIA', 'CDD', 'DSAR', 'CDR', 'DPM', 'Compliance Audit', 'Organization'];
 
 describe('LeftSidebar — Figma product menu', () => {
@@ -50,7 +50,7 @@ describe('LeftSidebar — Figma product menu', () => {
     render(<LeftSidebar currentPage="home" onNavigate={onNavigate} />);
     await userEvent.click(screen.getByRole('menuitem', { name: 'Scanning' }));
     expect(onNavigate).toHaveBeenLastCalledWith('launch');
-    await userEvent.click(screen.getByRole('menuitem', { name: 'Website' }));
+    await userEvent.click(screen.getByRole('menuitem', { name: 'Websites' }));
     expect(onNavigate).toHaveBeenLastCalledWith('websites');
   });
 

@@ -257,8 +257,16 @@ describe('datasafeguard theme follows the Data Safeguard UCM design system', () 
   it('lists every design-system pair below AA as a documented exception in DESIGN.md', () => {
     const exceptions = DESIGN.split('## Contrast exceptions')[1];
     expect(exceptions, 'DESIGN.md needs a "## Contrast exceptions" section').toBeTruthy();
-    for (const pair of ['#1CC279', '#E94141', '#148018', '#E1EBF5', '#4879B8', '#FF5757', '#DF7900']) {
+    for (const pair of ['#E94141', '#148018', '#E1EBF5', '#4879B8', '#FF5757', '#DF7900']) {
       expect(exceptions, pair).toContain(pair);
     }
+  });
+
+  it('gives the Schedule pill navy text that passes AA, not a white-text exception (2026-11-21)', () => {
+    const rule = css('../components/ui/Chip.css').match(/\.ui-pill--schedule\s*\{[^}]*\}/);
+    expect(rule[0]).toMatch(/background:\s*var\(--ucm-green-1\)/);
+    expect(rule[0]).toMatch(/color:\s*var\(--ucm-navy\)/);
+    expect(contrastRatio(ucm('navy'), ucm('green-1'))).toBeGreaterThanOrEqual(4.5);
+    expect(DESIGN.split('## Contrast exceptions')[1]).not.toContain('#1CC279');
   });
 });

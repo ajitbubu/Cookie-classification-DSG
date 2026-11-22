@@ -9,7 +9,7 @@ import { LiveRegionProvider } from './ui/LiveRegion';
 
 const MODEL_INFO = {
   model_version: '6.1.0',
-  metrics: { internal_site_holdout: { accuracy: 0.9461 } },
+  metrics: { internal_site_holdout: { accuracy: 0.9461 }, internal_site_holdout_all_cookies: { accuracy: 0.983 } },
   acceptance: { auto_classification_enabled: false },
 };
 
@@ -51,6 +51,9 @@ describe('DashboardPage', () => {
     const banner = screen.getByRole('region', { name: 'AI insights' });
     await waitFor(() => expect(within(banner).getByText('94.6%')).toBeInTheDocument());
     expect(within(banner).getByText('Classification accuracy')).toBeInTheDocument();
+    // The headline is the strict never-seen-names score; say so and give the all-cookies figure.
+    expect(within(banner).getByText('Classification accuracy').closest('.ai-stat'))
+      .toHaveTextContent('On cookie names never seen in training; 98.3% across all cookies on test websites');
     expect(within(banner).getByText('Model v6.1.0')).toBeInTheDocument();
     expect(within(banner).getByText('Based on your recent reviews and classifications')).toBeInTheDocument();
     // auto-classification is off, so nothing was auto classified

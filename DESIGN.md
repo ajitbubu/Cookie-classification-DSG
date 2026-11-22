@@ -70,8 +70,9 @@ underlines and progress, never PMP's `#086DE8`.
   `#FFF5E6`; Advertising/Deep `#1B1480` on `#C8C7E1`; Unclassified/Critical
   `#E94141` on `#FAD1D1`. Functional has no tag colour in the design system and
   uses the neutral version-chip pair (`#092339` on `#F4F5F7`).
-- **Scan-type pills** (solid, 32px): Quick `#3979BD`, Deep `#092339`,
-  Schedule `#1CC279`, all with white text.
+- **Scan-type pills** (solid, 32px): Quick `#3979BD` and Deep `#092339` with white
+  text; Schedule `#1CC279` with navy `#092339` text (6.9:1; white was 2.3:1, user
+  decision 2026-11-21).
 - **Charts**: series `#00AEFE`, `#0088FE`, `#FFBB28`, `#00C49F`, `#3979BD`.
 
 ## Contrast exceptions
@@ -82,7 +83,6 @@ decision 19A ("every pair at WCAG AA"). These design-system pairs are below
 
 | Pair | Ratio | Where |
 |---|---|---|
-| white on Schedule green `#1CC279` | 2.3:1 | Schedule scan pill |
 | Unclassified/Critical `#E94141` on `#FAD1D1` | 2.9:1 | category and risk tags |
 | `#E94141` text on white | 4.0:1 | Delete, Deactivate, failed states |
 | Necessary/Low `#148018` on `#C7E1C8` | 3.6:1 | category, status and risk tags |
@@ -92,8 +92,8 @@ decision 19A ("every pair at WCAG AA"). These design-system pairs are below
 | white on Republish `#DF7900` | 3.1:1 | not used in this app yet |
 | muted text at 55% (`#788692`) | 3.7:1 | timestamps, hints |
 
-The design system's own suggested fixes, if this decision is revisited: navy
-text on the Schedule pill and `#B42318` for red text.
+The Schedule pill already takes the design system's suggested fix (navy text). The
+other one, if this decision is revisited: `#B42318` for red text.
 
 ## Type
 
