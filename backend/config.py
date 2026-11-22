@@ -58,6 +58,9 @@ class Settings(BaseSettings):
     # Longest wait for a detected OneTrust/Cookiebot banner to expose its cookie declaration
     # (backend/scanner/cmp_declarations.py); pages without one aren't delayed.
     CMP_DECLARATION_WAIT_MS: int = 4000
+    # Deep scans: pages that fail while many load at once are retried one at a time
+    # afterwards (some sites abort parallel navigations: NS_ERROR_ABORT). 0 = no retries.
+    MAX_PAGE_RETRIES: int = 50
     
     # Browser configuration
     BROWSER_TYPE: str = "chromium"  # or "firefox"
