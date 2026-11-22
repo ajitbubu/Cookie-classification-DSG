@@ -135,7 +135,5 @@ vite.config.js.timestamp-*.mjs
 frontend.log
 backend.log
 
-# Docs (generated, not needed in repo)
-docs/
 GITIGNORE_CLEANUP.md
 .gstack/

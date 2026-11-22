@@ -32,6 +32,10 @@ compliance. React dashboard on top of a Python scanning/classification backend.
 
 ## Architecture
 
+Long-form docs: `docs/architecture.md` (system, scan-to-publish, model) links the rest:
+`docs/reference/` (scan API, scan store API, scheduler), `docs/how-to/` (scheduled scans,
+failing scans), `docs/explanation/`, and `docs/tutorial-first-scan.md`.
+
 - `src/` — React frontend. `src/components/` is one component + co-located `.css`
   per feature (Scanner, Scan History, Vendors, ML Model, Review Queue, etc.).
   `src/lib/` holds framework-free scan logic (`CookieScanner.js`, `DeepScanner.js`,
