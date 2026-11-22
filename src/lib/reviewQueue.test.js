@@ -105,3 +105,16 @@ describe('known cookie source', () => {
     expect(knownCookieText({})).toBeNull();
   });
 });
+
+describe('pendingReviews with a name set by several domains', () => {
+  it('counts it once per website, like the Review Queue row', async () => {
+    const { pendingReviews } = await import('./reviewQueue');
+    const scan = { id: 's1', domain: 'verizon.com', timestamp: '2026-11-22T10:00:00Z', fullResults: { cookies: [
+      { name: '__cf_bm', domain: '.twitter.com', category: 'Unclassified' },
+      { name: '__cf_bm', domain: '.linkedin.com', category: 'Unclassified' },
+      { name: '_ga', domain: '.verizon.com', category: 'Unclassified' },
+    ] } };
+    expect(pendingReviews([scan], []).map((i) => i.key)).toEqual(['verizon.com:__cf_bm', 'verizon.com:_ga']);
+  });
+});
+

@@ -114,6 +114,26 @@ describe('ReviewQueuePage review rows (12A)', () => {
     expect(within(row).getByText("The model suggests Marketing (92%), but the site declares Strictly Necessary. Check the site's banner.")).toBeInTheDocument();
   });
 
+  it('shows a cookie name set by several domains as one row and publishes it for each domain', async () => {
+    const warn = vi.spyOn(console, 'error').mockImplementation(() => {});
+    api();
+    renderRQ(historyWith([
+      cookie('__cf_bm', { domain: '.twitter.com', mlClassification: 'Strictly Necessary' }),
+      cookie('__cf_bm', { domain: '.linkedin.com', mlClassification: 'Strictly Necessary' }),
+      cookie('_ga'),
+    ]));
+    expect(screen.getAllByRole('rowheader', { name: /^__cf_bm/ })).toHaveLength(1);
+    expect(card('__cf_bm')).toHaveTextContent('.twitter.com, .linkedin.com');
+    expect(warn.mock.calls.some(([msg]) => String(msg).includes('same key'))).toBe(false);
+
+    await userEvent.click(within(card('__cf_bm')).getByRole('button', { name: /^Approve/ }));
+    await waitFor(() => expect(readApprovals().map((a) => a.cookieKey)).toEqual(['shop.com:__cf_bm']));
+    const [url, init] = fetch.mock.calls[0];
+    expect(url).toMatch(/bulk-update-categories$/);
+    expect(JSON.parse(init.body).map((d) => d.cookie_domain)).toEqual(['.twitter.com', '.linkedin.com']);
+    expect(screen.queryByRole('rowheader', { name: /^__cf_bm/ })).not.toBeInTheDocument();
+  });
+
   it('publishes an approval and removes the row with a success toast (E4)', async () => {
     api({ published: true });
     renderRQ();
