@@ -53,6 +53,7 @@ async def health_check(response: Response):
 
 
 def _quick_scan_result(request: ScanRequest, page_result: dict) -> dict:
+    page_result.pop("_declarations", None)
     cookies = page_result.get("cookies", [])
     return {
         "scanType": "quick",
@@ -65,6 +66,7 @@ def _quick_scan_result(request: ScanRequest, page_result: dict) -> dict:
         "pageResults": [page_result],
         "totalPagesScanned": 1,
         "dataSource": "browser_scan",
+        "cmp": page_result.get("cmp"),
     }
 
 
@@ -160,7 +162,7 @@ async def scan_website_stream(request: ScanRequest):
                         "status": "scanning",
                         "currentUrl": request.url,
                     })
-                    page_result = await scanner.scan_page(request.url)
+                    page_result = await scanner.scan_page(request.url, read_cmp=True)
                     if page_result.get("error"):
                         raise RuntimeError(page_result["error"])
                     return _quick_scan_result(request, page_result)
@@ -227,7 +229,7 @@ async def scan_website(request: ScanRequest):
             return result
 
         scanner = CookieScanner(context)
-        page_result = await scanner.scan_page(request.url)
+        page_result = await scanner.scan_page(request.url, read_cmp=True)
         if page_result.get("error"):
             raise RuntimeError(page_result["error"])
         return _quick_scan_result(request, page_result)

@@ -6,6 +6,7 @@ import logging
 import asyncio
 
 from backend.scanner.classifier import CookieClassifier
+from backend.scanner.cmp_declarations import annotate_cookies, read_site_declarations
 from backend.config import settings
 from backend.scanner.url_guard import check_url
 
@@ -40,8 +41,14 @@ class CookieScanner:
         self.context = context
         self.classifier = CookieClassifier()
     
-    async def scan_page(self, url: str) -> Dict:
-        """Scan a single page for cookies"""
+    async def scan_page(self, url: str, read_cmp: bool = False) -> Dict:
+        """Scan a single page for cookies.
+
+        read_cmp (quick scans, a deep scan's start page): also read the site's
+        OneTrust/Cookiebot declaration and set ``websiteDeclaration`` on the cookies it
+        covers. The declaration list comes back under ``_declarations`` for the caller to
+        apply to other pages' cookies; it must be popped before the result is returned.
+        """
         page: Page = None
         
         try:
@@ -55,7 +62,10 @@ class CookieScanner:
             
             # Reduced wait time for cookies to be set
             await asyncio.sleep(settings.COOKIE_WAIT_TIME)
-            
+
+            cmp, declarations = (await read_site_declarations(page, settings.CMP_DECLARATION_WAIT_MS)
+                                 if read_cmp else ("", []))
+
             # Get all cookies from the context
             cookies = await self.context.cookies()
             
@@ -69,8 +79,8 @@ class CookieScanner:
             )
             
             logger.info(f"Found {len(classified_cookies)} cookies on {url}")
-            
-            return {
+
+            result = {
                 "url": url,
                 "domain": domain,
                 "cookies": classified_cookies,
@@ -78,6 +88,13 @@ class CookieScanner:
                 "scannedAt": datetime.now().isoformat(),
                 "error": None
             }
+            if declarations:
+                matched = annotate_cookies(classified_cookies, declarations)
+                result["cmp"] = {"vendor": cmp, "declared": len(declarations), "matched": matched, "url": page.url}
+                result["_declarations"] = declarations
+                logger.info(f"{cmp} declaration on {url}: {len(declarations)} declared, {matched} of "
+                            f"{len(classified_cookies)} observed cookies matched")
+            return result
             
         except Exception as e:
             logger.error(f"Error scanning {url}: {e}")
