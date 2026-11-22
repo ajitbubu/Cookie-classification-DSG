@@ -44,6 +44,15 @@ async def list_scans(limit: int = Query(200, ge=1, le=500), domain: str = Query(
     return {"scans": await (await _store()).list_scans(limit=limit, domain=domain)}
 
 
+@router.get("/scans/{scan_id}")
+async def get_scan(scan_id: str = Path(pattern=STORE_ID_PATTERN)) -> dict:
+    """The full stored scan; the list leaves out per-page results."""
+    scan = await (await _store()).get_scan(scan_id)
+    if scan is None:
+        raise HTTPException(status_code=404, detail="Scan not found")
+    return scan
+
+
 @router.put("/scans/{scan_id}")
 async def save_scan(scan: StoredScan, scan_id: str = Path(pattern=STORE_ID_PATTERN)) -> Dict[str, str]:
     if scan.id != scan_id:

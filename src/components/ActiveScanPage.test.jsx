@@ -22,7 +22,12 @@ describe('ActiveScanPage (5.1 states)', () => {
   it('heads the list "Active Scan" with an in-progress count', () => {
     render(<ActiveScanPage {...props({ scheduledJobs: [job], running: { url: 'https://a.com', type: 'deep', progress: null } })} />);
     expect(screen.getByRole('heading', { name: 'Active Scan' })).toBeInTheDocument();
-    expect(screen.getByText('2 in progress')).toBeInTheDocument();
+    expect(screen.getByText('1 in progress')).toBeInTheDocument(); // the running scan, not the schedule
+  });
+
+  it('shows no in-progress count when only scheduled jobs are waiting', () => {
+    render(<ActiveScanPage {...props({ scheduledJobs: [job] })} />);
+    expect(screen.queryByText(/in progress/)).not.toBeInTheDocument();
   });
 
   it('loading: three card skeletons (7A)', () => {
