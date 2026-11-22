@@ -41,6 +41,22 @@ graph TD
   R -->|approval log + knowledge base| P1
 ```
 
+### Before classifying: the site's own declaration
+
+On sites using OneTrust or Cookiebot, the scan reads the banner's cookie
+declaration (`backend/scanner/cmp_declarations.py`) and sets
+`websiteDeclaration` (category, the site's group name, CMP, provider) on each
+observed cookie it covers. A quick scan reads it on the page; a deep scan reads it
+on the start page and applies it to every page's cookies. Pages without a CMP
+aren't delayed; on a CMP site the read waits up to `CMP_DECLARATION_WAIT_MS` (4 s).
+
+The app then makes the site's category the suggestion (`classificationSource:
+website_declaration`, `websiteProvided: true`), still for a reviewer to approve.
+The cookie is still classified below; when that answer is High confidence and
+names a different category, the cookie gets `declarationConflict` and goes to the
+Review Queue's High priority tab (`src/lib/websiteDeclaration.js`). A site calling
+a tracking cookie "Necessary" is a compliance finding, not a label to trust.
+
 ### The checks, in order
 
 The route is `classify_cookies` in `backend/api/ml_routes.py`. For each cookie it
@@ -51,6 +67,7 @@ stops at the first check that answers:
 | 1 | A reviewer already chose this cookie's category | Postgres `cookie_knowledge_base`, via `CategoryManager.get_category_with_fallback` | `user_override` | **Published** (`classification_status: classified`) |
 | 2 | At least 3 websites declare the cookie in their consent banners and at least two thirds agree | `models/known_cookies/known_cookies.json` (banner collection + CookieBlock), matched by name family, so `_ga_ABC123` counts as `_ga` | `known_cookie` | Suggestion |
 | 3 | The Open Cookie Database lists it: exact name, else the longest wildcard prefix (4+ characters) | same file | `known_cookie` | Suggestion |
+| 3b | An ad-tech vendor discloses it for advertising in the IAB TCF vendor list | same file (see `models/known_cookies/README.md`) | `known_cookie` | Suggestion |
 | 4 | A stored name pattern matches | knowledge base patterns | `pattern_match` | Suggestion |
 | 5 | None of the above | XGBoost model `models/v7.1.0` | `ml_prediction` | Suggestion, or **abstained** |
 
@@ -70,6 +87,9 @@ Every suggestion keeps where it came from, and the Review Queue shows it:
   (`site_label_split`), such as `__stripe_mid`: Strictly Necessary on 8 sites,
   Functional on 7.
 - **Needs manual check** when the model had no name or vendor signal.
+- **Site declared** with "Declared as Marketing ("Targeting Cookies") in the
+  site's OneTrust banner", and **Site and model disagree** with "The model
+  suggests Marketing (92%), but the site declares Strictly Necessary".
 
 ### Why nothing publishes without a person
 

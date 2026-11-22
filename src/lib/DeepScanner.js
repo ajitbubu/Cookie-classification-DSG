@@ -217,6 +217,7 @@ export class DeepScanner {
       scannedAt: backendResult.scannedAt,
       maxDepthReached: backendResult.maxDepthReached,
       errorPages: backendResult.errorPages,
+      cmp: backendResult.cmp || null, // the site's OneTrust/Cookiebot declaration summary
 
       // Category breakdown
       byCategory: this.groupByCategory(backendResult.cookies || []),

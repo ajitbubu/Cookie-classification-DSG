@@ -88,6 +88,32 @@ describe('ReviewQueuePage review rows (12A)', () => {
     expect(within(card('_ga')).queryByText('Known cookie')).not.toBeInTheDocument();
   });
 
+  it("shows the site's own declaration as the suggestion, still asking for approval", () => {
+    api();
+    const declared = { websiteDeclaration: { category: 'Marketing', group: 'Targeting Cookies', cmp: 'OneTrust' },
+      classificationSource: 'website_declaration', mlClassification: 'Marketing', mlConfidence: 0.5,
+      knownCookie: { source: 'open_cookie_database', platform: 'Google' } };
+    renderRQ(historyWith([cookie('IDE', declared), cookie('_ga')]));
+    const row = card('IDE');
+    expect(within(row).getByText('Site declared')).toBeInTheDocument();
+    expect(within(row).getByText('Declared as Marketing ("Targeting Cookies") in the site\'s OneTrust banner.')).toBeInTheDocument();
+    expect(within(row).queryByText('Known cookie')).not.toBeInTheDocument(); // the site's own label takes over
+    expect(within(row).getByText('Site')).toBeInTheDocument(); // not a model confidence
+    expect(within(row).getByRole('combobox', { name: 'Category for IDE' })).toHaveValue('Marketing');
+    expect(within(row).getByRole('button', { name: /^Approve/ })).toBeInTheDocument();
+  });
+
+  it('puts a site label the model disagrees with in High priority, saying why', () => {
+    api();
+    const conflict = { websiteDeclaration: { category: 'Strictly Necessary', group: 'Strictly Necessary Cookies', cmp: 'OneTrust' },
+      classificationSource: 'website_declaration', mlClassification: 'Strictly Necessary', mlConfidence: 1,
+      declarationConflict: { declared: 'Strictly Necessary', suggested: 'Marketing', confidence: 0.92 } };
+    renderRQ(historyWith([cookie('trk', conflict)]));
+    const row = card('trk'); // confidence 1 would otherwise land in the 10% validation sample
+    expect(within(row).getByText('Site and model disagree')).toBeInTheDocument();
+    expect(within(row).getByText("The model suggests Marketing (92%), but the site declares Strictly Necessary. Check the site's banner.")).toBeInTheDocument();
+  });
+
   it('publishes an approval and removes the row with a success toast (E4)', async () => {
     api({ published: true });
     renderRQ();

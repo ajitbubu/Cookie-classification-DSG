@@ -76,16 +76,14 @@ All 12 audit findings and the Web Interface Guidelines review are resolved on th
 - **Context:** Holdout sites come from the `split` column in `models/training_data/collection_sites.csv`.
 - **Depends on / blocked by:** Naming a reviewer.
 
-### Read each site's CMP declaration during customer scans
+### CMP declarations in scans: follow-ups (OneTrust/Cookiebot shipped 2026-11-21)
 
-- **What:** Reuse the collector's OneTrust/Cookiebot readers in `backend/scanner/` so scan results carry the
-  site's own declared category (`websiteProvided`, evidence URL) and only undeclared cookies go to the model.
-- **Why:** Customers get exact, sourced labels on CMP sites instead of ML guesses (CEO review 2026-11-09, E1).
-- **Pros:** Biggest direct accuracy win; every scan can also feed training.
-- **Cons:** Changes the production scanner and API; needs the async rules in `.claude/rules/code-style.md`.
-- **Context:** `src/App.jsx` sets `websiteProvided: false` today. Readers are built and tested first in
-  `backend/scripts/collect_banner_cookies.py` (v7 plan).
-- **Depends on / blocked by:** Collector readers proven on the v7 crawl.
+- **More platforms:** Ketch, Transcend and Securiti parsers exist in `collect_banner_cookies.py` but read network
+  responses, so the scanner would need to capture responses during page load.
+- **Declarations as training data:** every CMP scan yields labelled cookies; blocked on the same data-use decision
+  as "Reviewer approvals as training labels".
+- **`classificationSource`/`classificationStatus` weren't stored** with scans before 2026-11-21 (only new scans
+  keep `classificationSource`), so the dashboard's "auto classified" count can't see stored model results.
 
 ### Reviewer approvals as training labels
 
