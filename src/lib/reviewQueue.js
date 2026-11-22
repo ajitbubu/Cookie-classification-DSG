@@ -73,13 +73,15 @@ const confidenceOf = (cookie) => {
 
 export function pendingReviews(history = [], approvals = []) {
   const approved = new Set(approvals.map((a) => a.cookieKey));
+  const seen = new Set();
   const items = [];
   for (const scan of latestPerDomain(history).sort((a, b) => (a.timestamp < b.timestamp ? 1 : -1))) {
     for (const cookie of scan.fullResults?.cookies || []) {
       if (cookie.category && !UNPUBLISHED.has(cookie.category)) continue;
       // Same key as the Review Queue's approval log: <website>:<cookie name>
       const key = `${scan.domain}:${cookie.name}`;
-      if (approved.has(key)) continue;
+      if (approved.has(key) || seen.has(key)) continue; // one item per name, like the Review Queue rows
+      seen.add(key);
       const suggestion = cookie.mlClassification && !UNPUBLISHED.has(cookie.mlClassification) ? cookie.mlClassification : null;
       items.push({
         key, scanId: scan.id, name: cookie.name, domain: cookie.domain, website: scan.domain, suggestion,

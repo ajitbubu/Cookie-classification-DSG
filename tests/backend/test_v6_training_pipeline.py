@@ -3,7 +3,7 @@
 import numpy as np
 import pandas as pd
 from pathlib import Path
-from hypothesis import given, settings, strategies as st
+from hypothesis import assume, given, settings, strategies as st
 
 from backend.scripts.train_cookie_model import (
     CANONICAL_LABELS,
@@ -323,9 +323,14 @@ def test_no_attribute_combination_makes_an_unknown_name_confident(
 ):
     from backend.api.ml_classifier.config import NO_EVIDENCE_CONFIDENCE_CAP
 
-    # The alphabet avoids every keyword the extractor looks for, so the name
-    # carries no identity signal and only generic attributes vary.
-    result = _v61_classifier().classify({
+    # The alphabet avoids the extractor's keywords, but short strings can still spell a
+    # real cookie name (hypothesis found "fr", Facebook's ad cookie, which is_fb_like
+    # rightly recognises). Keep names the model doesn't know with plain attributes;
+    # the property is that no attribute combination then creates confidence.
+    classifier = _v61_classifier()
+    baseline = classifier.classify({"name": name, "domain": "site.com", "site_domain": "site.com", "expiry_days": 0})
+    assume(baseline.insufficient_evidence)
+    result = classifier.classify({
         "name": name,
         "domain": "zzqk.io" if third_party else "site.com",
         "site_domain": "site.com",

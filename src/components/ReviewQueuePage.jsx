@@ -49,10 +49,21 @@ const ReviewQueuePage = ({ scanHistory }) => {
       for (const scan of sortedScans) {
         if (!domainsProcessed.has(scan.domain) && scan.fullResults?.cookies) {
           domainsProcessed.add(scan.domain);
+          // One row per cookie name on a website: approvals are kept per website + name,
+          // so a name set by several domains (Cloudflare's __cf_bm from twitter.com,
+          // linkedin.com and t.co) is one decision, published for each of its domains.
           scan.fullResults.cookies.forEach((cookie) => {
-            const key = `${cookie.domain}:${cookie.name}`;
+            const key = `${scan.domain}:${cookie.name}`;
+            const row = cookieMap[key];
+            if (row) {
+              if (!row.domains.includes(cookie.domain)) row.domains.push(cookie.domain);
+              row.members.push(cookie);
+              return;
+            }
             cookieMap[key] = {
               ...cookie,
+              domains: [cookie.domain],
+              members: [cookie],
               scanId: scan.id,
               scanDomain: scan.domain,
               scanTimestamp: scan.timestamp,
@@ -153,14 +164,20 @@ const ReviewQueuePage = ({ scanHistory }) => {
     confidence: getConfidence(cookie || {}),
   });
 
+  // One publish per cookie domain in the row.
+  const decisionFor = (row, member, category) => ({
+    scanId: row.scanId, name: member.name, domain: member.domain, oldCategory: member.category, newCategory: category,
+  });
+
   // An approval only counts once it is published (eng R1/R4): the API can save
   // to its file fallback and still answer success with knowledge_base_updated: false.
   const approveNow = async (cookieKey, cookie, category) => {
     setRow(cookieKey, { status: 'saving', category });
     try {
-      const { published } = await publishCategory({
-        scanId: cookie.scanId, name: cookie.name, domain: cookie.domain, oldCategory: cookie.category, newCategory: category,
-      });
+      const members = cookie.members || [cookie];
+      const published = members.length === 1
+        ? (await publishCategory(decisionFor(cookie, members[0], category))).published
+        : (await publishCategories(members.map((m) => decisionFor(cookie, m, category)))).published === members.length;
       if (published) {
         await logApproval(cookieKey, cookie, category);
         setApprovedCookies((prev) => new Set(prev).add(cookieKey));
@@ -229,14 +246,13 @@ const ReviewQueuePage = ({ scanHistory }) => {
     const keyOf = (c) => `${c.scanDomain}:${c.name}`;
     setBulkApproving(true);
     const categoryOf = (c) => categoryOverrides[keyOf(c)] || c.mlClassification || c.category || 'Unclassified';
-    publishCategories(target.map((c) => ({
-      scanId: c.scanId, name: c.name, domain: c.domain, oldCategory: c.category, newCategory: categoryOf(c),
-    })))
+    publishCategories(target.flatMap((c) => (c.members || [c]).map((m) => decisionFor(c, m, categoryOf(c)))))
       .then(async ({ total, published, publishedNames }) => {
-        const done = new Set(publishedNames);
+        // A row counts as published only when every one of its domains was.
+        const publishedCount = publishedNames.reduce((counts, name) => counts.set(name, (counts.get(name) || 0) + 1), new Map());
         const newApproved = new Set(approvedCookies);
         await Promise.all(target.map(async (c) => {
-          if (!done.has(c.name)) {
+          if ((publishedCount.get(c.name) || 0) < (c.members || [c]).length) {
             setRow(keyOf(c), { status: 'unpublished', category: categoryOf(c) });
             return;
           }
@@ -387,7 +403,7 @@ const ReviewQueuePage = ({ scanHistory }) => {
                     </td>
                     <th scope="row" className="rq-cookie">
                       <span className="rq-cookie__name">{cookie.name}</span>
-                      <span className="rq-cookie__domain">{cookie.domain || cookie.scanDomain}</span>
+                      <span className="rq-cookie__domain">{(cookie.domains?.length ? cookie.domains : [cookie.domain || cookie.scanDomain]).join(', ')}</span>
                       {bullets.length > 0 && (
                         <details className="rq-why">
                           <summary>{`Why ${cookie.mlClassification || 'this'}?`}</summary>

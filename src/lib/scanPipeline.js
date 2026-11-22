@@ -171,7 +171,7 @@ export function cleanResultsForStorage(results) {
     scanDuration: results.scanDuration,
     cmp: results.cmp,
     pageResults: results.pageResults
-      ? results.pageResults.map((page) => ({ url: page.url, cookies: page.cookies.map((c) => pick(c, PAGE_COOKIE_FIELDS)) }))
+      ? results.pageResults.map((page) => ({ url: page.url, durationMs: page.durationMs, cookies: page.cookies.map((c) => pick(c, PAGE_COOKIE_FIELDS)) }))
       : undefined,
   };
 }

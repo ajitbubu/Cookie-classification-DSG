@@ -149,6 +149,7 @@ async def test_scan_page_labels_declared_cookies_only_when_asked(monkeypatch, re
     context = FakeContext(page, [{"name": "IDE", "domain": ".doubleclick.net", "value": "x", "expires": -1},
                                  {"name": "other", "domain": "shop.com", "value": "y", "expires": -1}])
     result = await cookie_scanner.CookieScanner(context).scan_page("https://shop.com/", read_cmp=read_cmp)
+    assert isinstance(result["durationMs"], int) and result["durationMs"] >= 0  # shown per page in Domain Details
     by_name = {c["name"]: c for c in result["cookies"]}
     if read_cmp:
         assert by_name["IDE"]["websiteDeclaration"]["category"] == "Marketing"

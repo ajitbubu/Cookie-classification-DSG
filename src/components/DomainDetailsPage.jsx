@@ -35,6 +35,11 @@ const timeTaken = (ms) => {
   const total = Math.round(ms / 1000);
   return total >= 60 ? `${Math.floor(total / 60)} Min ${total % 60} sec` : `${total} sec`;
 };
+// One page: open, load, wait for cookies, read them ("2.4 s"); older scans didn't record it.
+const pageDuration = (ms) => {
+  if (typeof ms !== 'number' || ms < 0) return '—';
+  return ms < 60000 ? `${(ms / 1000).toFixed(1)} s` : timeTaken(ms);
+};
 const scanTypeName = (type) => (type === 'deep' ? 'Deep' : type === 'scheduled' ? 'Scheduled' : 'Quick');
 
 function usePaged(rows, initialSize = 5) {
@@ -369,7 +374,7 @@ function DomainDetailsPage({
               { key: 'url', header: 'Pages URL', render: (p) => <span className="dd-with-icon"><Globe size={22} aria-hidden="true" />{p.url}</span> },
               { key: 'domains', header: 'Domain', render: (p) => (p.failed ? '—' : p.domains) },
               { key: 'initiators', header: 'Initiators', render: () => '—' },
-              { key: 'duration', header: 'Duration', render: () => '—' },
+              { key: 'duration', header: 'Duration', render: (p) => (p.failed ? '—' : pageDuration(p.durationMs)) },
               { key: 'secure', header: 'Secure', render: (p) => (p.failed ? '—' : p.secure) },
               { key: 'httpOnly', header: 'HttpOnly', render: (p) => (p.failed ? '—' : p.httpOnly) },
               { key: 'method', header: 'Method', render: (p) => (p.failed ? <StatusChip status="failed" /> : <span className="dd-method">Page Load</span>) },
