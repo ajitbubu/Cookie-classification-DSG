@@ -26,6 +26,21 @@ npm run build
 npm run preview
 ```
 
+## 📚 Documentation
+
+| Start here | |
+|---|---|
+| [Your first scan](./docs/tutorial-first-scan.md) | Scan a site, review its cookies, publish the list (tutorial) |
+| [Architecture](./docs/architecture.md) | What runs, scan to publish, how the model is built |
+| [How a cookie gets its category](./docs/cookie-classification-flow.md) | Classification order and risk |
+
+| Reference | How-to | Why |
+|---|---|---|
+| [Scan API](./docs/reference/scan-api.md) | [Run scheduled scans](./docs/how-to/run-scheduled-scans.md) | [Site declarations](./docs/explanation/site-declarations.md) |
+| [Scan store API](./docs/reference/scan-store-api.md) | [Diagnose failing scans](./docs/how-to/diagnose-failing-scans.md) | [Server-side scheduling](./docs/explanation/server-side-scheduling.md) |
+| [Scheduler](./docs/reference/scheduler.md) | [ML training runbook](./docs/ml-training-runbook.md) | |
+| [Known cookies](./models/known_cookies/README.md) | | |
+
 ## ✨ Features
 
 ### Core Scanning Features
@@ -49,7 +64,7 @@ npm run preview
   - 90-95% classification accuracy (up from 70%)
   - 3-5x faster classification (pattern matching vs ML)
   - Automatic vendor identification for 95%+ of cookies
-  - 📖 **[Deployment Guide](./docs/vendor-integration/READY_TO_DEPLOY.md)**
+  - 📖 **[Known cookies: data checked before the model](./models/known_cookies/README.md)**
 
 - **Multi-Jurisdiction Compliance** 
   - GDPR (EU) compliance checking
@@ -71,12 +86,12 @@ npm run preview
 - **Comprehensive History Table** - View all past scans in a sortable, filterable table
 - **Advanced Filtering** - Filter by date range, domain, risk level, regulation, and cookie count
 - **Bulk Operations** - Select multiple scans for batch deletion
-- **Persistent Storage** - History automatically saved to browser localStorage
+- **Persistent Storage** - Scans are saved in the scan store (MongoDB), shared by every browser
 - **CSV Export** - Export filtered history for compliance reporting
 - **Detailed View** - Click any scan to reload full results
 - **Risk Tracking** - Track GDPR, CCPA, and DPDP compliance over time
 
-📖 **[Quick Start Guide](./docs/QUICK_START_SCAN_HISTORY.md)** | **[Full Documentation](./docs/SCAN_HISTORY.md)**
+📖 **[Your first scan](./docs/tutorial-first-scan.md)** | **[Scan store API](./docs/reference/scan-store-api.md)**
 
 ## 📁 Project Structure
 
@@ -156,7 +171,7 @@ View and manage your scan history:
 4. **Delete** individual or multiple scans
 5. **Export** history as CSV for reporting
 
-See the [Scan History Quick Start](./docs/QUICK_START_SCAN_HISTORY.md) for detailed instructions.
+See [Your first scan](./docs/tutorial-first-scan.md) for a walk-through, and the [Scan store API](./docs/reference/scan-store-api.md) for how scans are stored.
 
 ### Exporting
 

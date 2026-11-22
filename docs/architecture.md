@@ -2,10 +2,17 @@
 
 How Cookie Scanner (DataSafeguard) works end to end: what runs, how a scan becomes a
 published cookie list, and how the ML model is built. Checked against the code on
-2026-11-12 (`docker-compose.yml`, `nginx/nginx.conf`, `backend/`, `src/`).
+2026-11-22 (`docker-compose.yml`, `nginx/nginx.conf`, `backend/`, `scheduler/`, `src/`).
 
 How a single cookie gets its category and how risk is worked out is in
 [cookie-classification-flow.md](cookie-classification-flow.md).
+
+More docs:
+
+- Start here: [Your first scan](tutorial-first-scan.md)
+- Reference: [Scan API](reference/scan-api.md) · [Scan store API](reference/scan-store-api.md) · [Scheduler](reference/scheduler.md) · [Known cookies](../models/known_cookies/README.md)
+- How-to: [Run scheduled scans](how-to/run-scheduled-scans.md) · [Diagnose failing scans](how-to/diagnose-failing-scans.md)
+- Why: [Site declarations](explanation/site-declarations.md) · [Server-side scheduling](explanation/server-side-scheduling.md)
 
 Diagram sources live in [`diagrams/`](../diagrams/): edit the `.mmd`, or open the
 `.excalidraw` at excalidraw.com. The diagrams below are the same sources, inline.
@@ -50,10 +57,10 @@ graph LR
 
 | Prefix | Routes | Module |
 |---|---|---|
-| `/` | `GET /health`, `POST /scan`, `POST /scan-stream` (SSE) | `backend/api/routes.py` |
+| `/` | `GET /health` (503 when the egress proxy is down), `POST /scan`, `POST /scan-stream` (SSE). [Reference](reference/scan-api.md) | `backend/api/routes.py` |
 | `/categories` | `update-category`, `bulk-update-categories`, `category-history/{scan_id}`, `available-categories`, `query-knowledge-base`, `patterns` | `backend/api/category_routes.py` |
 | `/v1/ml` | `classify`, `model-info`, `health`, `feedback`, `similar-cookies/{id}`, `metrics`, `drift/check`, `drift/status` | `backend/api/ml_routes.py` |
-| `/store` | `scans`, `published`, `schedules`, `approvals`, `import` (GET/PUT/DELETE as fits) | `backend/api/store_routes.py` |
+| `/store` | `scans` (list without per-page results), `scans/{id}`, `published`, `schedules`, `schedules/claim`, `schedules/{id}/finish`, `approvals`, `import`. [Reference](reference/scan-store-api.md) | `backend/api/store_routes.py` |
 
 ## 2. From scan to published cookie list
 
@@ -91,21 +98,31 @@ sequenceDiagram
 1. **Scan.** The frontend calls `POST /api/scan-stream`. `backend/scanner/url_guard.py`
    checks the target first (`check_url`) and installs a request guard on the browser.
    Pages load only through the egress proxy. The scanner records cookie names and
-   attributes (domain, expiry, Secure, HttpOnly, SameSite), never cookie values.
-   Progress streams back as Server-Sent Events.
+   attributes (domain, expiry, Secure, HttpOnly, SameSite), never cookie values, and
+   how long each page took. On OneTrust and Cookiebot sites it also reads the site's own
+   declared category for each cookie
+   ([site declarations](explanation/site-declarations.md)). Deep scans retry pages that
+   failed under parallel load one at a time. Progress streams back as Server-Sent
+   Events. Several websites can be scanned at once, one scan per website.
 2. **Classify.** The frontend sends the cookies to `POST /api/v1/ml/classify`, which
    picks each cookie's category in this order:
    1. a category a reviewer already set (Postgres knowledge base; publishes);
    2. a **known cookie** (`models/known_cookies/known_cookies.json`): at least 3
       websites declare it in their consent banners and two thirds agree, else an
-      Open Cookie Database entry (`source: "known_cookie"`, still sent to review);
+      Open Cookie Database entry, else an advertising cookie disclosed in the IAB TCF
+      vendor list (`source: "known_cookie"`, still sent to review; see
+      [Known cookies](../models/known_cookies/README.md));
    3. a name-pattern match from the knowledge base;
    4. the XGBoost model (`backend/api/ml_classifier/classifier.py`, 61 features).
 
    Each result carries a category, a confidence score, where it came from, and, for
    cookies websites label differently, how the training sites split
    (`site_label_split`, from `label_disagreement.json`). On recent scans about two
-   thirds of cookies match a known-cookie list.
+   thirds of cookies match a known-cookie list. When the site's own banner declared a
+   cookie, the app makes that the suggestion and flags it if the model confidently
+   disagrees (`src/lib/websiteDeclaration.js`). The post-scan steps (classify, publish
+   policy, statistics, risk) live in `src/lib/scanPipeline.js`, shared by the app and
+   the [scheduler](reference/scheduler.md).
 3. **Review.** The model is **review-only**: auto-classification is off, so every
    cookie waits in the Review Queue for a person. Approvals go to MongoDB
    (`/api/store/approvals`) and category decisions to the Postgres knowledge base
@@ -178,11 +195,17 @@ All scripts are in `backend/scripts/`. Step-by-step commands are in
 
 ## Known gaps
 
+- **Per-page cookie counts are cumulative in deep scans.** The browser's cookie jar is
+  shared across a deep scan's pages, so a page's cookies include those set by earlier
+  pages; the Pages tab's Domain/Secure/HttpOnly numbers are running totals.
+- **The Pages tab's Initiators column is empty.** The scanner doesn't record which
+  request or script set each cookie.
 - **Scanner workers get no jobs from the app.** `DistributedScanner.enqueue_scan`
   (`backend/worker/distributed_scanner.py:52`) pushes to `scanner:queue:pending`, but
   nothing in `backend/api/` calls it, and the API doesn't use Redis. Every UI scan runs
-  inside the api-gateway through `/api/scan-stream`, so the three worker containers
-  wait on an empty queue.
+  inside the api-gateway through `/api/scan-stream`, and scheduled scans run through the
+  `scheduler` service calling the same API, so the three worker containers wait on an
+  empty queue.
 - **Postgres doesn't reconnect.** `backend/db/database.py` tries Postgres 3 times at
   startup, then falls back to JSON files for the life of the process. If the gateway
   starts before Postgres is healthy, restart it: `docker compose restart api-gateway`.
