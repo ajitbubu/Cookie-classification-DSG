@@ -166,3 +166,19 @@ describe('row selection for bulk update (T9, opt-in)', () => {
     expect(onToggleSelectAll).toHaveBeenCalled();
   });
 });
+
+describe('long cookie names', () => {
+  it('keep their full text but can wrap after _ . - %', () => {
+    const name = 'kndctr_A9893BC75245B1D70A490D4D_AdobeOrg_identity';
+    render(<CookieClassificationTable cookies={[{ ...baseCookie, name, domain: '.realestatecenter.bankofamerica.com' }]} scanId="s" totalCount={1} onCategoryUpdate={vi.fn()} />);
+    const cell = screen.getByText((_, el) => el?.tagName === 'TD' && el.textContent === name);
+    expect(cell.querySelectorAll('wbr')).toHaveLength(4); // kndctr_|A9893…_|Adobe|Org_|identity
+    expect(screen.getByText((_, el) => el?.tagName === 'TD' && el.textContent === '.realestatecenter.bankofamerica.com').querySelectorAll('wbr')).toHaveLength(3);
+  });
+
+  it('can also wrap between camelCase words', () => {
+    render(<CookieClassificationTable cookies={[{ ...baseCookie, name: 'ApplicationGatewayAffinityCORS' }]} scanId="s" totalCount={1} onCategoryUpdate={vi.fn()} />);
+    const cell = screen.getByText((_, el) => el?.tagName === 'TD' && el.textContent === 'ApplicationGatewayAffinityCORS');
+    expect(cell.querySelectorAll('wbr')).toHaveLength(3); // Application|Gateway|Affinity|CORS
+  });
+});

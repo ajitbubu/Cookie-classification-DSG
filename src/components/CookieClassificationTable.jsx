@@ -10,6 +10,13 @@ const ABSTAIN_REASON_TEXT = {
   missing_classification_result: 'No result returned',
 };
 
+// Long names (kndctr_A9893BC75245B1D70A490D4D_AdobeOrg_identity, ApplicationGatewayAffinityCORS)
+// wrap after _ - . % and between camelCase words first, instead of widening the column
+// and pushing the category dropdown off screen.
+function breakable(text = '') {
+  return String(text).split(/(?<=[_\-.%])|(?<=[a-z])(?=[A-Z])/).map((part, i) => (i ? [<wbr key={i} />, part] : part));
+}
+
 /**
  * Resolve how the rule engine and the ML model relate for one cookie.
  *   - 'no-call'  the model never ran (fell back to rules)
@@ -140,8 +147,8 @@ function CookieClassificationTable({
                       />
                     </td>
                   )}
-                  <td className="cct-name">{cookie.name}</td>
-                  <td className="cct-domain">{cookie.domain}</td>
+                  <td className="cct-name">{breakable(cookie.name)}</td>
+                  <td className="cct-domain">{breakable(cookie.domain)}</td>
                   <td>
                     <span className="cct-category">
                       <CategoryTag category={current} solid />
