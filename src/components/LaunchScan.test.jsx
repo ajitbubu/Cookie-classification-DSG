@@ -66,9 +66,9 @@ describe('LaunchScan (decision 27C)', () => {
     expect(onScheduleScan).toHaveBeenCalledWith('https://a.com');
   });
 
-  it('disables everything while a scan runs', () => {
+  it('holds Start while the website in the box is being scanned, but keeps the box editable for another', () => {
     render(<Harness scanning />);
-    expect(screen.getByLabelText('Website URL')).toBeDisabled();
+    expect(screen.getByLabelText('Website URL')).toBeEnabled();
     expect(screen.getByRole('button', { name: /scanning/i })).toBeDisabled();
   });
 });
