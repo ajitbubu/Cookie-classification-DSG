@@ -99,6 +99,28 @@ async def scan_pages_parallel(
     return valid_results
 
 
+async def retry_failed_pages(scanner, page_results: List[dict], error_pages: List[str], start_url: str,
+                             on_progress: Optional[Callable] = None, max_pages: int = 0) -> int:
+    """Re-scan failed pages sequentially; a success replaces the failed entry. Returns how many recovered."""
+    retry = [url for url in dict.fromkeys(error_pages) if url != start_url][:settings.MAX_PAGE_RETRIES]
+    recovered = 0
+    for index, url in enumerate(retry):
+        if on_progress:
+            await on_progress({
+                "type": "progress", "current": len(page_results), "total": max_pages, "status": "retrying",
+                "currentUrl": url, "message": f"Retrying failed page {index + 1} of {len(retry)}...",
+            })
+        result = await scanner.scan_page(url)
+        if result.get("error"):
+            continue
+        page_results[:] = [r for r in page_results if not (r.get("url") == url and r.get("error"))] + [result]
+        error_pages[:] = [u for u in error_pages if u != url]
+        recovered += 1
+    if retry:
+        logger.info(f"Retried {len(retry)} failed pages one at a time: {recovered} recovered, {len(retry) - recovered} still failing")
+    return recovered
+
+
 async def deep_scan_parallel(
     start_url: str,
     context: BrowserContext,
@@ -288,6 +310,11 @@ async def deep_scan_parallel(
             # Move to next depth
             current_depth += 1
         
+        # Step 2b: retry failed pages one at a time. Some sites abort navigations when
+        # many of their pages load at once in one browser (exlservice.com: 9 of 12 pages
+        # failed at concurrency 8, none at 1), and those pages load fine alone.
+        await retry_failed_pages(scanner, page_results, error_pages, start_url, on_progress, max_pages)
+
         # Step 3: Aggregate results
         if on_progress:
             await on_progress({
