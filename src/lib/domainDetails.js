@@ -70,6 +70,7 @@ export function pagesFromScan(scan = {}) {
     const cookies = page.cookies || [];
     return {
       url: page.url,
+      durationMs: typeof page.durationMs === 'number' ? page.durationMs : null, // scans from 2026-11-22 on
       cookies: cookies.length,
       domains: new Set(cookies.map((c) => (c.domain || '').replace(/^\./, ''))).size,
       secure: cookies.filter((c) => c.secure).length,

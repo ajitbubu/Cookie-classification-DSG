@@ -4,6 +4,7 @@ from typing import List, Dict, Optional
 from datetime import datetime
 import logging
 import asyncio
+import time
 
 from backend.scanner.classifier import CookieClassifier
 from backend.scanner.cmp_declarations import annotate_cookies, read_site_declarations
@@ -50,7 +51,8 @@ class CookieScanner:
         apply to other pages' cookies; it must be popped before the result is returned.
         """
         page: Page = None
-        
+        started = time.monotonic()  # durationMs: open, load, wait, read cookies (or fail)
+
         try:
             logger.info(f"Scanning page: {url}")
             page = await self.context.new_page()
@@ -86,6 +88,7 @@ class CookieScanner:
                 "cookies": classified_cookies,
                 "cookieCount": len(classified_cookies),
                 "scannedAt": datetime.now().isoformat(),
+                "durationMs": round((time.monotonic() - started) * 1000),
                 "error": None
             }
             if declarations:
@@ -104,6 +107,7 @@ class CookieScanner:
                 "cookies": [],
                 "cookieCount": 0,
                 "scannedAt": datetime.now().isoformat(),
+                "durationMs": round((time.monotonic() - started) * 1000),
                 "error": str(e)
             }
             
