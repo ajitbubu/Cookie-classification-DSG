@@ -1,3 +1,5 @@
+import { responseErrorMessage } from './apiError';
+
 /**
  * Deep Scanner Module - Backend Integration
  * Uses Python backend API for server-side parallel scanning
@@ -59,7 +61,7 @@ export class DeepScanner {
 
       if (!response.ok) {
         clearTimeout(timeoutId);
-        throw new Error(`Backend error: ${response.status} ${response.statusText}`);
+        throw new Error(await responseErrorMessage(response, 'Backend error: '));
       }
 
       // Read SSE stream

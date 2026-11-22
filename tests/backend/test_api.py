@@ -23,6 +23,46 @@ def test_health_ok(client):
     body = r.json()
     assert body["status"] == "healthy"
     assert "version" in body
+    assert body["checks"] == {"egress_proxy": "not_configured"}  # no proxy outside Docker
+
+
+def _closed_port():
+    """A localhost port with nothing listening on it."""
+    import socket
+    with socket.socket() as sock:
+        sock.bind(("127.0.0.1", 0))
+        return sock.getsockname()[1]
+
+
+def test_health_reports_a_reachable_egress_proxy(client, monkeypatch):
+    import socket
+    with socket.socket() as listener:
+        listener.bind(("127.0.0.1", 0))
+        listener.listen()
+        monkeypatch.setattr("backend.api.routes.settings.SCAN_EGRESS_PROXY", f"http://127.0.0.1:{listener.getsockname()[1]}")
+        r = client.get("/api/health")
+    assert r.status_code == 200
+    assert r.json()["checks"] == {"egress_proxy": "ok"}
+
+
+def test_health_degraded_when_egress_proxy_is_down(client, monkeypatch):
+    monkeypatch.setattr("backend.api.routes.settings.SCAN_EGRESS_PROXY", f"http://127.0.0.1:{_closed_port()}")
+    r = client.get("/api/health")
+    assert r.status_code == 503  # Docker's healthcheck (curl -f) then marks the gateway unhealthy
+    body = r.json()
+    assert body["status"] == "degraded"
+    assert "unreachable" in body["checks"]["egress_proxy"]
+
+
+@pytest.mark.parametrize("path", ["/api/scan", "/api/scan-stream"])
+def test_scans_refused_with_a_clear_reason_when_egress_proxy_is_down(client, monkeypatch, path):
+    async def allowed(url):
+        return None
+    monkeypatch.setattr("backend.api.routes._reject_blocked_target", allowed)  # no DNS in tests
+    monkeypatch.setattr("backend.api.routes.settings.SCAN_EGRESS_PROXY", f"http://127.0.0.1:{_closed_port()}")
+    r = client.post(path, json={"url": "https://example.com", "scanType": "quick"})
+    assert r.status_code == 503
+    assert r.json()["detail"].startswith("Scanning is unavailable: the scan egress proxy can't be reached")
 
 
 def test_openapi_schema_published(client):

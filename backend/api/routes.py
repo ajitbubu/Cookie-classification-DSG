@@ -4,7 +4,7 @@ import logging
 from datetime import datetime
 from urllib.parse import urlparse
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Response
 from fastapi.responses import StreamingResponse
 
 from backend.api.category_routes import router as category_router
@@ -14,6 +14,7 @@ from backend.config import settings
 from backend.models import HealthResponse, ScanRequest
 from backend.scanner.classifier import CookieClassifier
 from backend.scanner.cookie_scanner import CookieScanner
+from backend.scanner.egress_proxy import proxy_unreachable_reason
 from backend.scanner.parallel import deep_scan_parallel
 from backend.scanner.url_guard import BlockedTarget, browser_launch_options, check_url, install_request_guard
 
@@ -25,12 +26,29 @@ router.include_router(ml_router, prefix="/v1/ml", tags=["ml-classification"])
 router.include_router(store_router, prefix="/store", tags=["scan-store"])
 
 
+SCANNING_DOWN = "Scanning is unavailable: the scan egress proxy can't be reached. Other features still work."
+
+
+async def _egress_proxy_check() -> str:
+    """"ok", "not_configured" (local runs without Docker), or why the proxy is unreachable."""
+    if not settings.SCAN_EGRESS_PROXY:
+        return "not_configured"
+    return await proxy_unreachable_reason(settings.SCAN_EGRESS_PROXY) or "ok"
+
+
 @router.get("/health", response_model=HealthResponse)
-async def health_check():
+async def health_check(response: Response):
+    """503 "degraded" when scanning can't work, so Docker marks the gateway unhealthy."""
+    checks = {"egress_proxy": await _egress_proxy_check()}
+    healthy = all(result in ("ok", "not_configured") for result in checks.values())
+    if not healthy:
+        response.status_code = 503
+        logger.warning("Health degraded: %s", checks)
     return HealthResponse(
-        status="healthy",
+        status="healthy" if healthy else "degraded",
         timestamp=datetime.now().isoformat(),
         version="1.0.0",
+        checks=checks,
     )
 
 
@@ -50,6 +68,14 @@ def _quick_scan_result(request: ScanRequest, page_result: dict) -> dict:
     }
 
 
+async def _require_egress_proxy() -> None:
+    """503 with a plain reason instead of launching a browser into a dead proxy."""
+    result = await _egress_proxy_check()
+    if result not in ("ok", "not_configured"):
+        logger.error("Refusing scan, egress proxy down: %s", result)
+        raise HTTPException(status_code=503, detail=SCANNING_DOWN)
+
+
 async def _reject_blocked_target(url: str) -> None:
     """400 for a scan target that resolves to a non-public address (SSRF guard)."""
     try:
@@ -65,6 +91,7 @@ async def scan_website_stream(request: ScanRequest):
     from playwright.async_api import async_playwright
 
     await _reject_blocked_target(request.url)
+    await _require_egress_proxy()
 
     # Fail before opening an SSE response so clients receive a useful HTTP status.
     try:
@@ -182,6 +209,7 @@ async def scan_website(request: ScanRequest):
     from backend.scanner.browser import browser_manager
 
     await _reject_blocked_target(request.url)
+    await _require_egress_proxy()
     context = None
     try:
         await browser_manager.start()

@@ -42,6 +42,7 @@ import CookieDetailModal from './components/CookieDetailModal';
 import VendorDashboard from './components/VendorDashboard';
 import OverrideModal from './components/OverrideModal';
 import ModelPerformancePage from './components/ModelPerformancePage';
+import { responseErrorMessage } from './lib/apiError';
 import './App.css';
 
 function App() {
@@ -566,7 +567,7 @@ function App() {
       );
 
       if (!response.ok) {
-        throw new Error(response.statusText || `HTTP ${response.status}`);
+        throw new Error(await responseErrorMessage(response, 'HTTP '));
       }
 
       const results = await response.json();
