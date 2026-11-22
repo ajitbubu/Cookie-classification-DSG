@@ -35,9 +35,12 @@
 .cct-table tbody tr:hover td { background: var(--ucm-row-hover); }
 
 .cct-name, .cct-domain { color: var(--ucm-navy); }
+/* Wrap long names and hosts (breakable() adds break points) instead of widening the table */
+.cct-table tbody td.cct-name { white-space: normal; overflow-wrap: anywhere; min-width: 18ch; max-width: 30ch; } /* 18ch keeps normal names whole */
+.cct-table tbody td.cct-domain { white-space: normal; overflow-wrap: break-word; min-width: 18ch; max-width: 24ch; } /* hosts break only at dots */
 
 .cct-category, .cct-ml { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 4px; }
-.cct-note { font: 400 12px/1.2 var(--font-sans); color: var(--color-text-secondary); }
+.cct-note { font: 400 12px/1.2 var(--font-sans); color: var(--color-text-secondary); white-space: normal; } /* "Rule engine: Unclassified" wraps under the tag */
 .cct-muted { color: var(--color-text-muted); }
 
 /* Category dropdown: white, blue-4 border, 220x48 (Figma) */
@@ -112,7 +115,7 @@
    Action columns fall out of view, so step the type and dropdown down. */
 @media (max-width: 1699px) {
   .cct-table { font-size: 16px; }
-  .cct-table thead th { padding: 18px 10px; }
+  .cct-table thead th { padding: 18px 10px; white-space: normal; } /* "ML Classification", "Party Type" wrap */
   .cct-table tbody td { height: 72px; padding: 0 10px; }
   .cct .ml-dropdown-trigger { min-width: 164px; height: 40px; padding: 0 12px; font-size: 16px; }
 }

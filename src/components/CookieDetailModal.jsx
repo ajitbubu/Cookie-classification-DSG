@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, Cookie, Shield, Globe, Clock, AlertTriangle, CheckCircle, Info, Lock, Unlock, Eye, ChevronDown, ChevronUp } from 'lucide-react';
 import './CookieDetailModal.css';
+import { categorySource, heuristicSignals, signalsNote } from '../lib/classificationEvidence';
 
 // Risk scoring per PRD Section 7 — 5 factors
 function calculateCookieRiskScore(cookie) {
@@ -89,67 +90,6 @@ function calculateCookieRiskScore(cookie) {
   return { totalScore, level, icon, factors };
 }
 
-// Generate "Why this category?" explanations
-function getClassificationReasons(cookie) {
-  const name = (cookie.name || '').toLowerCase();
-  const domain = (cookie.domain || '').toLowerCase();
-  const category = cookie.mlClassification || cookie.category || 'Unknown';
-  const reasons = [];
-
-  if (category === 'Analytics') {
-    if (name.includes('_ga') || name.includes('_gid') || name.includes('_gat'))
-      reasons.push({ text: `Cookie name matches known Analytics pattern ("${cookie.name}")`, weight: 35 });
-    if (domain.includes('google'))
-      reasons.push({ text: 'Set by Google Analytics vendor', weight: 25 });
-    if (cookie.expiry_days && cookie.expiry_days > 300)
-      reasons.push({ text: `Long expiry (${cookie.expiry_days} days) typical for analytics tracking`, weight: 15 });
-    if (!cookie.isThirdParty)
-      reasons.push({ text: 'First-party cookie on tracked domain', weight: 10 });
-    if (domain.includes('analytics') || name.includes('analytics'))
-      reasons.push({ text: 'Name/domain contains "analytics" keyword', weight: 30 });
-  } else if (category === 'Marketing') {
-    if (name.includes('_fb') || name.includes('fbp') || name.includes('fbc'))
-      reasons.push({ text: `Cookie name matches Facebook tracking pattern`, weight: 35 });
-    if (domain.includes('facebook') || domain.includes('doubleclick') || domain.includes('google'))
-      reasons.push({ text: `Set by known advertising vendor (${cookie.domain})`, weight: 30 });
-    if (cookie.isThirdParty)
-      reasons.push({ text: 'Third-party domain pattern indicates cross-site tracking', weight: 20 });
-    if (name.includes('ads') || name.includes('click') || name.includes('track'))
-      reasons.push({ text: `Name contains advertising keyword`, weight: 25 });
-  } else if (category === 'Strictly Necessary') {
-    if (name.includes('session') || name.includes('sess'))
-      reasons.push({ text: 'Session management cookie — essential for functionality', weight: 40 });
-    if (name.includes('csrf') || name.includes('xsrf'))
-      reasons.push({ text: 'CSRF protection token — security essential', weight: 45 });
-    if (name.includes('auth') || name.includes('token'))
-      reasons.push({ text: 'Authentication cookie — required for user sessions', weight: 40 });
-    if (cookie.httpOnly)
-      reasons.push({ text: 'HTTP-only flag indicates server-side security cookie', weight: 15 });
-  } else if (category === 'Functional') {
-    if (name.includes('pref') || name.includes('lang') || name.includes('locale'))
-      reasons.push({ text: 'Name indicates user preference storage', weight: 35 });
-    if (name.includes('theme') || name.includes('dark') || name.includes('display'))
-      reasons.push({ text: 'UI customization cookie — functional enhancement', weight: 30 });
-    if (name.includes('consent') || name.includes('accept'))
-      reasons.push({ text: 'Consent state storage — functional purpose', weight: 25 });
-  }
-
-  // Generic fallbacks
-  if (reasons.length === 0) {
-    reasons.push({
-      text: `No model explanation was returned. Classification source: ${cookie.classificationSource || 'unknown'}`,
-      weight: 100,
-    });
-  }
-
-  // Normalize weights to sum to 100
-  const total = reasons.reduce((s, r) => s + r.weight, 0);
-  return reasons
-    .map(r => ({ ...r, weight: Math.round((r.weight / total) * 100) }))
-    .sort((a, b) => b.weight - a.weight)
-    .slice(0, 5);
-}
-
 // Alternative category probabilities
 function getAlternativeProbabilities(cookie) {
   return (cookie.mlAlternativePredictions || []).map((alternative) => ({
@@ -172,7 +112,9 @@ function CookieDetailModal({ cookie, onClose, onOverride }) {
   if (!cookie) return null;
 
   const risk = calculateCookieRiskScore(cookie);
-  const reasons = getClassificationReasons(cookie);
+  const source = categorySource(cookie);
+  const signals = heuristicSignals(cookie);
+  const note = signalsNote(signals);
   const alternatives = getAlternativeProbabilities(cookie);
   const confidence = Math.round((cookie.mlConfidence ?? 0) * 100);
   const category = cookie.mlClassification || cookie.category || 'Unknown';
@@ -261,16 +203,23 @@ function CookieDetailModal({ cookie, onClose, onOverride }) {
               <div className="cdm-card">
                 <h3 className="cdm-card__title">
                   <Info size={16} />
-                  Observed signals for {category}
+                  Why {category}
                 </h3>
-                <p className="cdm-card__note">These are factual heuristics, not model feature attributions.</p>
-                <div className="cdm-reasons">
-                  {reasons.map((r, i) => (
-                    <div key={i} className="cdm-reason">
-                      <span className="cdm-reason__text">{r.text}</span>
-                    </div>
-                  ))}
-                </div>
+                <p className="cdm-source">{source.text}</p>
+                {source.warning && <p className="cdm-source cdm-source--warning cdm-stat--warn"><AlertTriangle size={14} aria-hidden="true" />{source.warning}</p>}
+                <h4 className="cdm-card__subtitle">Other signals</h4>
+                <p className="cdm-card__note">{"Simple checks on the cookie's name and flags, not the model's reasoning."}</p>
+                {signals.length > 0 && (
+                  <ul className="cdm-reasons">
+                    {signals.map((signal) => (
+                      <li key={signal.text} className="cdm-reason">
+                        <span className="cdm-reason__text">{signal.text}</span>
+                        {signal.weak && <span className="cdm-reason__weak">Weak signal</span>}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {note && <p className="cdm-card__note cdm-card__note--verdict">{note}</p>}
               </div>
 
               {/* Alternative Possibilities */}
