@@ -5,6 +5,7 @@ from playwright.async_api import BrowserContext
 from urllib.parse import urlparse
 import logging
 
+from backend.scanner.cmp_declarations import annotate_cookies
 from backend.scanner.cookie_scanner import CookieScanner, site_root
 from backend.scanner.adaptive import AdaptiveConcurrencyManager
 from backend.config import settings
@@ -127,6 +128,7 @@ async def deep_scan_parallel(
     scanner = CookieScanner(context)
     root = site_root(start_url)
     page_results = []
+    declarations = []  # the start page's CMP declaration, applied to every page's cookies
     error_pages = []
     
     # Adaptive concurrency manager
@@ -150,7 +152,8 @@ async def deep_scan_parallel(
             })
 
         try:
-            main_result = await scanner.scan_page(start_url)
+            main_result = await scanner.scan_page(start_url, read_cmp=True)
+            declarations = main_result.pop("_declarations", [])
             page_results.append(main_result)
             visited_urls.add(start_url)
 
@@ -295,8 +298,9 @@ async def deep_scan_parallel(
                 "message": "Aggregating results..."
             })
         
-        # Deduplicate cookies
+        # Deduplicate cookies, then apply the start page's CMP declaration to every page's cookies
         unique_cookies = scanner.deduplicate_cookies(page_results)
+        annotate_cookies(unique_cookies, declarations)
         
         # Calculate statistics
         from backend.scanner.classifier import CookieClassifier
@@ -320,7 +324,8 @@ async def deep_scan_parallel(
             "pageResults": page_results,
             "errorPages": error_pages if error_pages else None,
             "maxDepthReached": current_depth,
-            "totalPagesScanned": len(page_results)
+            "totalPagesScanned": len(page_results),
+            "cmp": page_results[0].get("cmp") if page_results else None,
         }
         
         # Final progress update
