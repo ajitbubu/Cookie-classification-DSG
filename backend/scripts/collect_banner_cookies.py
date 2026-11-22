@@ -44,6 +44,11 @@ from datetime import date
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit
 
+from backend.scanner.cmp_declarations import (  # shared with the production scanner
+    _TEMPLATE, COOKIEBOT_GROUPS, COOKIEBOT_JS, ONETRUST_JS, _declaration, _declared_duration, _host_matches,
+    matching_declarations, parse_cookiebot_tables,
+)
+
 COLUMNS = [
     "category", "categorySource", "cmp", "name", "domain", "path", "party", "expires",
     "declaredDuration", "httpOnly", "secure", "sameSite", "partitioned", "status",
@@ -53,36 +58,7 @@ USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 )
-_TEMPLATE = re.compile(r"(x{3,}|n{3,}|\[x\]|#+)$", re.IGNORECASE)
-
-ONETRUST_JS = """() => {
-  if (!window.OneTrust || !window.OneTrust.GetDomainData) return null;
-  const out = [];
-  for (const g of window.OneTrust.GetDomainData().Groups || []) {
-    const add = (c, host) => out.push({
-      group: g.GroupName || "", name: c.Name || "", host: host || c.Host || "",
-      length: c.Length, session: !!c.IsSession, pattern: !!(c.patternKey || c.PatternKey),
-      description: (c.description || "").slice(0, 600), cmp: "OneTrust"});
-    for (const c of g.FirstPartyCookies || []) add(c, c.Host);
-    for (const h of g.Hosts || []) for (const c of h.Cookies || []) add(c, h.HostName);
-  }
-  return out;
-}"""
 DECLARATION_JS = ONETRUST_JS  # kept for callers of the earlier OneTrust-only collector
-
-COOKIEBOT_JS = """() => {
-  const d = window.CookieConsentDialog;
-  if (!d) return null;
-  const tables = {};
-  for (const key of ["Necessary", "Preference", "Statistics", "Advertising", "Unclassified"]) {
-    tables[key] = d["cookieTable" + key] || [];
-  }
-  return tables;
-}"""
-
-# Cookiebot's table names -> the category name written to the export.
-COOKIEBOT_GROUPS = {"Necessary": "Necessary", "Preference": "Preferences", "Statistics": "Statistics",
-                    "Advertising": "Marketing", "Unclassified": "Unclassified"}
 
 # Network responses that carry a vendor's declaration.
 VENDOR_RESPONSES = {
@@ -106,34 +82,11 @@ GENERIC_ACCEPT = re.compile(
 _REGEX_META = re.compile(r"[\\.^$*+?{}\[\]()|]")
 
 
-def _declaration(cmp: str, group: str, name: str, *, host: str = "", length=None, session: bool = False,
-                 pattern: bool = False, description: str = "") -> dict:
-    return {"group": group, "name": name, "host": host, "length": length, "session": session,
-            "pattern": pattern, "description": (description or "")[:600], "cmp": cmp}
-
-
 def _regex_prefix(regex: str) -> str:
     """Literal prefix of a cookie-name regex (``^_gac_\\w+`` -> ``_gac_``)."""
     literal = regex.lstrip("^").replace("\\\\", "\\")
     cut = _REGEX_META.search(literal)
     return literal[:cut.start()] if cut else literal
-
-
-def parse_cookiebot_tables(tables: dict) -> list[dict]:
-    """Cookiebot rows: [name, provider domains, purpose, expiry, type, _, regex, ...]; HTTP cookies only."""
-    declarations = []
-    for key, rows in (tables or {}).items():
-        group = COOKIEBOT_GROUPS.get(key, key)
-        for row in rows or []:
-            if len(row) < 5 or str(row[4]).strip().lower() != "http cookie":
-                continue
-            name, regex = str(row[0]).strip(), str(row[6]).strip() if len(row) > 6 else ""
-            host = str(row[1]).split("<br/>")[0].strip()
-            declarations.append(_declaration("Cookiebot", group, name, host=host,
-                                             session=str(row[3]).strip().lower() == "session",
-                                             pattern=bool(regex) or bool(_TEMPLATE.search(name)),
-                                             description=str(row[2])))
-    return declarations
 
 
 def parse_ketch_config(config: dict) -> list[dict]:
@@ -211,24 +164,6 @@ def parse_vendor_response(vendor: str, body: str) -> list[dict]:
     return []
 
 
-def _bare(host: str) -> str:
-    return (host or "").lower().lstrip(".").removeprefix("www.")
-
-
-def _name_matches(declared: dict, observed: str) -> bool:
-    name = declared["name"]
-    if name == observed:
-        return True
-    prefix = _TEMPLATE.sub("", name)
-    templated = declared["pattern"] or prefix != name
-    return templated and len(prefix) >= 2 and observed.startswith(prefix)
-
-
-def _host_matches(declared_host: str, cookie_domain: str) -> bool:
-    d, c = _bare(declared_host), _bare(cookie_domain)
-    return bool(d) and (c == d or c.endswith("." + d) or d.endswith("." + c))
-
-
 def _expires(cookie: dict, now: float) -> str:
     if cookie.get("session") or cookie.get("expires", -1) <= 0:
         return "Session"
@@ -236,19 +171,11 @@ def _expires(cookie: dict, now: float) -> str:
     return f"{days:.2f} days"
 
 
-def _declared_duration(declared: dict) -> str:
-    if declared["session"]:
-        return "Session"
-    return f"{declared['length']} days" if declared["length"] not in (None, "") else ""
-
-
 def build_rows(declarations: list[dict], cookies: list[dict], site_host: str, now: float) -> list[dict]:
     """Join declarations with observed cookies into export rows."""
     rows, matched = [], set()
     for cookie in cookies:
-        candidates = [d for d in declarations if _name_matches(d, cookie["name"])]
-        by_host = [d for d in candidates if _host_matches(d["host"], cookie["domain"])]
-        pick = by_host or candidates
+        pick = matching_declarations(declarations, cookie["name"], cookie["domain"])
         groups = {d["group"] for d in pick}
         party = "First party" if _host_matches(site_host, cookie["domain"]) else "Third party"
         observed = {

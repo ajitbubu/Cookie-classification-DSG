@@ -55,6 +55,9 @@ class Settings(BaseSettings):
     COOKIE_WAIT_TIME: float = 0.5  # Reduced from 1s - wait for cookies to be set
     LINK_EXTRACTION_WAIT: float = 0.5  # Reduced from 2s - wait for dynamic content
     INTER_SCAN_DELAY: float = 0.05  # Reduced from 0.1s - delay between scans
+    # Longest wait for a detected OneTrust/Cookiebot banner to expose its cookie declaration
+    # (backend/scanner/cmp_declarations.py); pages without one aren't delayed.
+    CMP_DECLARATION_WAIT_MS: int = 4000
     
     # Browser configuration
     BROWSER_TYPE: str = "chromium"  # or "firefox"

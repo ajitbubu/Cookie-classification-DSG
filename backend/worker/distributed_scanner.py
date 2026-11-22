@@ -11,6 +11,7 @@ import redis.asyncio as redis
 from urllib.parse import urlparse
 
 from backend.worker.browser_pool import get_browser_pool
+from backend.scanner.cmp_declarations import annotate_cookies
 from backend.scanner.cookie_scanner import CookieScanner
 
 logger = logging.getLogger(__name__)
@@ -165,13 +166,15 @@ class DistributedScanner:
         try:
             scanner = CookieScanner(context)
             page_results = []
+            declarations = []  # the start page's CMP declaration, applied to every page's cookies
             visited_urls = set()
             
             # Check Redis for already visited URLs (distributed deduplication)
             visited_key = f"{self.visited_urls_key}{urlparse(start_url).netloc}"
             
             # Scan main page
-            main_result = await scanner.scan_page(start_url)
+            main_result = await scanner.scan_page(start_url, read_cmp=True)
+            declarations = main_result.pop("_declarations", [])
             page_results.append(main_result)
             visited_urls.add(start_url)
             
@@ -215,8 +218,9 @@ class DistributedScanner:
                 
                 current_depth += 1
             
-            # Deduplicate cookies
+            # Deduplicate cookies, then apply the start page's CMP declaration to every page's cookies
             unique_cookies = scanner.deduplicate_cookies(page_results)
+            annotate_cookies(unique_cookies, declarations)
             
             # Build result
             from backend.scanner.classifier import CookieClassifier
@@ -232,7 +236,8 @@ class DistributedScanner:
                 "pageResults": page_results,
                 "totalPagesScanned": len(page_results),
                 "maxDepthReached": current_depth,
-                "workerId": self.worker_id
+                "workerId": self.worker_id,
+                "cmp": main_result.get("cmp"),
             }
             
             return result
