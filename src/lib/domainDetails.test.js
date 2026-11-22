@@ -85,6 +85,12 @@ describe('pagesFromScan', () => {
     expect(page).toMatchObject({ domains: 2, secure: 2, httpOnly: 1 });
   });
 
+  it("passes each page's scan time through; older scans have none", () => {
+    const [timed, untimed] = pagesFromScan({ pageResults: [{ url: 'https://a.com/', durationMs: 2350, cookies: [] }, { url: 'https://a.com/b', cookies: [] }] });
+    expect(timed.durationMs).toBe(2350);
+    expect(untimed.durationMs).toBeNull();
+  });
+
   it('is empty when the scan stored no pages', () => {
     expect(pagesFromScan({})).toEqual([]);
   });

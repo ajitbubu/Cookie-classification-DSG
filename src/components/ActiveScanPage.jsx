@@ -12,12 +12,17 @@ import './ActiveScanPage.css';
 // this shows: the running scan, a failed or just-finished one, and every
 // scheduled job (decision 4A). Cards or table, per the Figma list/grid toggle.
 
+// running, failure and completed may each be one scan or a list: several websites
+// can be scanned at once, each with its own card.
+const listOf = (value) => (Array.isArray(value) ? value : value ? [value] : []);
+
 function buildItems({ running, failure, completed, scheduledJobs, interrupted }) {
   const items = [];
-  if (running) items.push({ kind: 'running', key: 'running', url: running.url, type: running.type, data: running });
-  else if (interrupted) items.push({ kind: 'interrupted', key: 'interrupted', url: interrupted.url, type: interrupted.type, data: interrupted });
-  else if (failure) items.push({ kind: 'failed', key: 'failed', url: failure.url, type: failure.type, data: failure });
-  if (completed && !running) items.push({ kind: 'completed', key: `done-${completed.id}`, url: completed.url || completed.domain, type: completed.scanType, data: completed });
+  const runningList = listOf(running);
+  runningList.forEach((scan, i) => items.push({ kind: 'running', key: `running-${scan.key || i}`, url: scan.url, type: scan.type, data: scan }));
+  if (interrupted && runningList.length === 0) items.push({ kind: 'interrupted', key: 'interrupted', url: interrupted.url, type: interrupted.type, data: interrupted });
+  listOf(failure).forEach((scan, i) => items.push({ kind: 'failed', key: `failed-${scan.key || i}`, url: scan.url, type: scan.type, data: scan }));
+  listOf(completed).forEach((done) => items.push({ kind: 'completed', key: `done-${done.id}`, url: done.url || done.domain, type: done.scanType, data: done }));
   for (const job of scheduledJobs) items.push({ kind: 'scheduled', key: job.id, url: job.url, type: job.scanType, data: job });
   return items;
 }
@@ -71,12 +76,15 @@ function actionsFor(item, handlers) {
     case 'running':
       return item.type === 'deep' ? [
         item.data.paused
-          ? { label: 'Resume scan', onSelect: handlers.onResumeRunning }
-          : { label: 'Pause scan', onSelect: handlers.onPauseRunning },
-        { label: 'Cancel Scan', tone: 'critical', onSelect: handlers.onCancelRunning },
+          ? { label: 'Resume scan', onSelect: () => handlers.onResumeRunning(item.data) }
+          : { label: 'Pause scan', onSelect: () => handlers.onPauseRunning(item.data) },
+        { label: 'Cancel Scan', tone: 'critical', onSelect: () => handlers.onCancelRunning(item.data) },
       ] : [];
     case 'failed':
-      return [{ label: item.data.cancelled ? 'Run again' : 'Retry scan', onSelect: handlers.onRetryScan }];
+      return [
+        { label: item.data.cancelled ? 'Run again' : 'Retry scan', onSelect: () => handlers.onRetryScan(item.data) },
+        ...(handlers.onDismissFailed ? [{ label: 'Dismiss', onSelect: () => handlers.onDismissFailed(item.data) }] : []),
+      ];
     case 'interrupted':
       return [
         { label: 'Rescan', onSelect: () => handlers.onRescanInterrupted(item.data) },
@@ -85,7 +93,7 @@ function actionsFor(item, handlers) {
     case 'completed':
       return [
         { label: 'View results', onSelect: () => handlers.onViewResults(item.data) },
-        { label: 'Dismiss', onSelect: handlers.onDismissCompleted },
+        { label: 'Dismiss', onSelect: () => handlers.onDismissCompleted(item.data) },
       ];
     default:
       return [
@@ -149,10 +157,10 @@ function LastRun({ job }) {
 
 function ActiveScanPage({
   running, failure, completed, scheduledJobs = [], interrupted = null, loading = false, error = false, onRetry, launchControl,
-  onCancelRunning, onPauseRunning, onResumeRunning, onRescanInterrupted, onDismissInterrupted, onRetryScan, onViewResults, onDismissCompleted, onCancelJob, onRescheduleJob, onTogglePauseJob,
+  onCancelRunning, onPauseRunning, onResumeRunning, onRescanInterrupted, onDismissInterrupted, onRetryScan, onDismissFailed, onViewResults, onDismissCompleted, onCancelJob, onRescheduleJob, onTogglePauseJob,
 }) {
   const [view, setView] = useState('cards');
-  const handlers = { onCancelRunning, onPauseRunning, onResumeRunning, onRescanInterrupted, onDismissInterrupted, onRetryScan, onViewResults, onDismissCompleted, onCancelJob, onRescheduleJob, onTogglePauseJob };
+  const handlers = { onCancelRunning, onPauseRunning, onResumeRunning, onRescanInterrupted, onDismissInterrupted, onRetryScan, onDismissFailed, onViewResults, onDismissCompleted, onCancelJob, onRescheduleJob, onTogglePauseJob };
   const items = buildItems({ running, failure, completed, scheduledJobs, interrupted });
   // Scheduled jobs are waiting, not in progress (design-review follow-up to 003).
   const inProgress = items.filter((item) => item.kind === 'running').length;

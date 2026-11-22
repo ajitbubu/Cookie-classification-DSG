@@ -9,6 +9,8 @@ import './LaunchScan.css';
 // menu, Start Scan. Enter starts a Quick scan; Deep and Schedule open their
 // modals with the URL pre-filled. An empty URL keeps today's Quick scan of
 // this page.
+// `scanning`: the website in the box is already being scanned. The box stays editable
+// so another website can be scanned alongside it; only Start is held.
 function LaunchScan({ value, onChange, onQuickScan, onDeepScan, onScheduleScan, scanning = false, inputRef }) {
   const [error, setError] = useState(null);
   const inputId = useId();
@@ -38,7 +40,6 @@ function LaunchScan({ value, onChange, onQuickScan, onDeepScan, onScheduleScan, 
             value={value}
             onChange={(e) => { onChange(e.target.value); if (error) setError(null); }}
             onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); startQuick(); } }}
-            disabled={scanning}
             aria-invalid={error ? 'true' : undefined}
             aria-describedby={error ? errorId : undefined}
           />

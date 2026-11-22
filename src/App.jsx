@@ -37,14 +37,13 @@ import OverrideModal from './components/OverrideModal';
 import ModelPerformancePage from './components/ModelPerformancePage';
 import { responseErrorMessage } from './lib/apiError';
 import { applyClassifications, buildHistoryEntry, classifyCookies, fetchWithTimeout } from './lib/scanPipeline';
+import { scanKey, withCompleted } from './lib/runningScans';
 import './App.css';
 
 function App() {
   const toast = useToast();
   const [scanner] = useState(() => new CookieScanner());
   const [scanResult, setScanResult] = useState(null);
-  const [scanning, setScanning] = useState(false);
-  const [scanError, setScanError] = useState(null);
   const [selectedCookie, setSelectedCookie] = useState(null); // for cookie detail modal
   const [overrideCookie, setOverrideCookie] = useState(null); // for override modal
 
@@ -52,10 +51,8 @@ function App() {
   const [targetUrl, setTargetUrl] = useState('');
   const [scanModal, setScanModal] = useState(null); // { type: 'choose' | 'deep' | 'schedule', url }
   // What the current (or last) scan was, for the Active Scan cards and Retry.
-  const [activeScan, setActiveScan] = useState(null); // { url, type, settings }
   // A scan left running when the tab was refreshed or closed (E5, eng R5)
   const [interrupted, setInterrupted] = useState(readInterruptedScan);
-  const [lastCompleted, setLastCompleted] = useState(null);
   const [reschedulingJob, setReschedulingJob] = useState(null);
   const [publishTick, setPublishTick] = useState(0); // re-read the published version after Publish
 
@@ -64,9 +61,15 @@ function App() {
   const [maxPages, setMaxPages] = useState(10);  // Default to 10 pages
   const [concurrency, setConcurrency] = useState(20);  // Default to 20 concurrent
   const [maxDepth, setMaxDepth] = useState(3);  // Default depth 3
-  const [deepScanProgress, setDeepScanProgress] = useState(null);
-  const [scanPaused, setScanPaused] = useState(false);
-  const deepScannerRef = useRef(null);
+  // Several scans can run at once, one per website (scanKey): each has its own card,
+  // progress and deep-scanner handle, so a new scan never replaces a running one.
+  const [runningScans, setRunningScans] = useState([]); // [{ key, url, type, settings, currentPage, progress, paused, startedAt }]
+  const [failedScans, setFailedScans] = useState([]); // [{ key, url, type, settings, currentPage, message, cancelled }]
+  const [completedScans, setCompletedScans] = useState([]); // history entries, newest first
+  const deepScannersRef = useRef(new Map()); // scan key -> DeepScanner
+  const runningRef = useRef([]);
+  runningRef.current = runningScans;
+  const scanning = runningScans.length > 0;
 
   // Scheduled Scanning
   // Scans, schedules, publishes and approvals live in the scan store (MongoDB);
@@ -108,13 +111,41 @@ function App() {
     requestAnimationFrame(() => urlInputRef.current?.focus());
   };
 
-  useScanGuard(scanning, activeScan);
+  useScanGuard(scanning, runningScans[runningScans.length - 1] || null);
 
-  const retryLastScan = () => {
-    if (!activeScan) return;
-    if (activeScan.type === 'deep') handleDeepScan(activeScan.url, activeScan.settings);
-    else if (activeScan.currentPage) handleQuickScan();
-    else handleQuickScanRemote(activeScan.url);
+  const retryScan = (scan) => {
+    if (!scan) return;
+    if (scan.type === 'deep') handleDeepScan(scan.url, scan.settings);
+    else if (scan.currentPage) handleQuickScan();
+    else handleQuickScanRemote(scan.url);
+  };
+
+  // Start tracking a scan; null (and a note) when that website is already being scanned.
+  const beginScan = (scan) => {
+    const key = scanKey(scan.url);
+    const running = runningRef.current.find(s => s.key === key);
+    if (running) {
+      toast.info(`A scan of ${key} is already running. It continues; you can follow it on Active Scan.`);
+      handleNavigate('active');
+      return null;
+    }
+    const entry = { ...scan, key, progress: null, paused: false, startedAt: new Date().toISOString() };
+    runningRef.current = [...runningRef.current, entry]; // a double click sees it before the re-render
+    setRunningScans(prev => [...prev, entry]);
+    setFailedScans(prev => prev.filter(f => f.key !== key));
+    return key;
+  };
+  const updateScan = (key, patch) => setRunningScans(prev => prev.map(s => (s.key === key ? { ...s, ...patch } : s)));
+  // While other scans run, a finished one doesn't take over the screen; it gets a card and a toast.
+  const isOnlyScan = (key) => !runningRef.current.some(s => s.key !== key);
+  const endScan = (key, failure = null) => {
+    const scan = runningRef.current.find(s => s.key === key);
+    runningRef.current = runningRef.current.filter(s => s.key !== key);
+    setRunningScans(prev => prev.filter(s => s.key !== key));
+    deepScannersRef.current.delete(key);
+    if (failure && scan) {
+      setFailedScans(prev => [...prev.filter(f => f.key !== key), { ...scan, ...failure, cancelled: /cancelled/i.test(failure.message) }]);
+    }
   };
 
   const handleNavigate = (page, { tab } = {}) => {
@@ -210,11 +241,9 @@ function App() {
   };
 
   const handleQuickScan = async (url = null) => {
-    setActiveScan({ url: url || window.location.href, type: 'quick', currentPage: !url });
-    setScanError(null);
+    const key = beginScan({ url: url || window.location.href, type: 'quick', currentPage: !url });
+    if (!key) return;
     const scanStartTime = Date.now();
-    setScanning(true);
-    setDeepScanProgress(null);
 
     // Use async/await properly instead of setTimeout
     await new Promise(resolve => setTimeout(resolve, 500));
@@ -244,27 +273,28 @@ function App() {
       _scanId: `${Date.now()}-${Math.random().toString(36).substring(2, 11)}`
     };
 
-    setScanResult(enhancedResults);
-    addToHistory(enhancedResults);
-    setScanning(false);
+    const focus = isOnlyScan(key);
+    if (focus) setScanResult(enhancedResults);
+    addToHistory(enhancedResults, { focus });
+    finishScan(key, focus, enhancedResults);
 
     // Classify cookies with ML in the background
     if (results.cookies && results.cookies.length > 0) {
       const mlClassifications = await classifyCookies(results.cookies, enhancedResults.domain);
       if (mlClassifications && mlClassifications.length > 0) {
         const finalResults = applyClassifications(enhancedResults, mlClassifications);
-        setScanResult(finalResults);
-        addToHistory(finalResults); // ML-corrected save of the same scan
+        showIfOpen(finalResults);
+        addToHistory(finalResults, { focus: false }); // ML-corrected save of the same scan
       }
     }
   };
 
   const handleDeepScan = async (url = null, settings = {}) => {
-    setActiveScan({ url: url || window.location.href, type: 'deep', settings });
+    const key = beginScan({ url: url || window.location.href, type: 'deep', settings });
+    if (!key) return;
     const scanStartTime = Date.now();
-    setScanError(null);
-    setScanning(true);
-    setDeepScanProgress(null);
+    let failure = null;
+    let finished = null;
 
     try {
       const targetUrl = url || window.location.href;
@@ -274,14 +304,12 @@ function App() {
         maxDepth: settings.maxDepth ?? maxDepth,  // Pass maxDepth to backend
         includeSubdomains: Boolean(settings.includeSubdomains)
       });
-      deepScannerRef.current = deepScannerInstance;
+      deepScannersRef.current.set(key, deepScannerInstance);
 
       const results = await deepScannerInstance.deepScan(
         targetUrl,
         scanner,
-        (progress) => {
-          setDeepScanProgress(progress);
-        }
+        (progress) => updateScan(key, { progress })
       );
 
       // Extract domain from the scanned URL
@@ -306,34 +334,33 @@ function App() {
         _scanId: deepScanId
       };
 
-      setScanResult(enhancedResults);
-      addToHistory(enhancedResults);
+      const focus = isOnlyScan(key);
+      if (focus) setScanResult(enhancedResults);
+      addToHistory(enhancedResults, { focus });
+      finished = { focus, results: enhancedResults };
 
       // Classify cookies with ML in the background
       if (results.cookies && results.cookies.length > 0) {
         const mlClassifications = await classifyCookies(results.cookies, enhancedResults.domain);
         if (mlClassifications && mlClassifications.length > 0) {
           const finalResults = applyClassifications(enhancedResults, mlClassifications);
-          setScanResult(finalResults);
-          addToHistory(finalResults); // ML-corrected save of the same scan
+          showIfOpen(finalResults);
+          addToHistory(finalResults, { focus: false }); // ML-corrected save of the same scan
+          finished.results = finalResults;
         }
       }
     } catch (error) {
-      setScanError(error.message || 'Deep scan failed. Please try again.');
+      failure = { message: error.message || 'Deep scan failed. Please try again.' };
     } finally {
-      setScanning(false);
-      setDeepScanProgress(null);
-      setScanPaused(false);
-      deepScannerRef.current = null;
+      if (failure) endScan(key, failure);
+      else finishScan(key, finished?.focus ?? false, finished?.results);
     }
   };
 
   const handleQuickScanRemote = async (url) => {
-    setActiveScan({ url, type: 'quick' });
-    setScanError(null);
+    const key = beginScan({ url, type: 'quick' });
+    if (!key) return;
     const scanStartTime = Date.now();
-    setScanning(true);
-    setDeepScanProgress(null);
 
     try {
       // Use backend API for remote URL scanning
@@ -374,23 +401,37 @@ function App() {
         _scanId: results._scanId || `${Date.now()}-${Math.random().toString(36).substring(2, 11)}`
       };
 
-      setScanResult(enhancedResults);
-      addToHistory(enhancedResults);
-      setScanning(false);
+      const focus = isOnlyScan(key);
+      if (focus) setScanResult(enhancedResults);
+      addToHistory(enhancedResults, { focus });
+      finishScan(key, focus, enhancedResults);
 
       // Classify cookies with ML in the background
       if (results.cookies && results.cookies.length > 0) {
         const mlClassifications = await classifyCookies(results.cookies, enhancedResults.domain);
         if (mlClassifications) {
           const finalResults = applyClassifications(enhancedResults, mlClassifications);
-          setScanResult(finalResults);
-          addToHistory(finalResults); // ML-corrected save of the same scan
+          showIfOpen(finalResults);
+          addToHistory(finalResults, { focus: false }); // ML-corrected save of the same scan
         }
       }
     } catch (error) {
-      // Shown as the failed-scan card on Active Scan, with Retry (ISSUE-001).
-      setScanError(error.message || 'The scan could not be completed.');
-      setScanning(false);
+      // Shown as a failed-scan card on Active Scan, with Retry (ISSUE-001).
+      endScan(key, { message: error.message || 'The scan could not be completed.' });
+    }
+  };
+
+  // The ML-corrected result replaces what's on screen only if that scan is the one open.
+  const showIfOpen = (results) => setScanResult(current => (current?._scanId && current._scanId === results._scanId ? results : current));
+
+  // A scan is done: the only (or last) one opens its results, as before; one that
+  // finishes while others still run is announced instead.
+  const finishScan = (key, focus, results) => {
+    endScan(key);
+    if (focus) handleNavigate('results');
+    else if (results) {
+      const n = results.totalCount ?? results.cookies?.length ?? 0;
+      toast.success(`Scan of ${results.domain} finished: ${n.toLocaleString()} ${n === 1 ? 'cookie' : 'cookies'}. Open it from Active Scan.`);
     }
   };
 
@@ -458,11 +499,13 @@ function App() {
     );
   });
 
-  const addToHistory = (results) => {
+  const addToHistory = (results, { focus = true } = {}) => {
     const historyEntry = buildHistoryEntry(results);
-    setLastCompleted(historyEntry);
-    setOpenScan({ domain: historyEntry.domain, scanId: historyEntry.id });
-    setDomainMissing(null);
+    setCompletedScans(prev => withCompleted(prev, historyEntry));
+    if (focus) {
+      setOpenScan({ domain: historyEntry.domain, scanId: historyEntry.id });
+      setDomainMissing(null);
+    }
 
     // Add to domain-based history (capped per domain), replacing existing entry with same id
     setDomainHistory(prev => {
@@ -930,14 +973,6 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps -- setters and toast are stable
   }, [storeStatus]);
 
-  // Navigate to results page when scan finishes
-  const wasScanningRef = useRef(false);
-  useEffect(() => {
-    if (wasScanningRef.current && !scanning && scanResult) {
-      handleNavigate('results');
-    }
-    wasScanningRef.current = scanning;
-  }, [scanning]);
 
   const handleExport = (format) => {
     if (!scanResult) return;
@@ -972,7 +1007,8 @@ function App() {
     <LaunchScan
       value={targetUrl}
       onChange={setTargetUrl}
-      scanning={scanning}
+      // Busy only for the website in the box: other websites can be scanned alongside.
+      scanning={targetUrl.trim() ? runningScans.some(r => r.key === scanKey(targetUrl)) : runningScans.some(r => r.currentPage)}
       inputRef={urlInputRef}
       onQuickScan={(url) => {
         handleNavigate('active');
@@ -1015,7 +1051,7 @@ function App() {
           currentPage={currentPage}
           tabs={currentPage === 'home' ? DASHBOARD_TABS : SCANNING_TABS}
           label={currentPage === 'home' ? 'Cookie Classification' : 'Scanning'}
-          activeCount={scanning ? 1 : 0}
+          activeCount={runningScans.length}
           onNavigate={handleNavigate}
           // Launch New Scan has its own Start Scan, so a second primary there competes (FINDING-008)
           onNewScan={storeStatus === 'ready' && currentPage !== 'launch' ? () => setScanModal({ type: 'choose', url: '' }) : undefined}
@@ -1085,11 +1121,9 @@ function App() {
       {currentPage === 'active' && (
         <main className="main-content page-content">
           <ActiveScanPage
-            running={scanning && activeScan ? { ...activeScan, progress: deepScanProgress, paused: scanPaused } : null}
-            failure={!scanning && scanError && activeScan
-              ? { ...activeScan, message: scanError, cancelled: /cancelled/i.test(scanError) }
-              : null}
-            completed={lastCompleted}
+            running={runningScans}
+            failure={failedScans}
+            completed={completedScans.filter(done => !runningScans.some(r => r.key === scanKey(done.url || done.domain)))}
             scheduledJobs={scheduledJobs}
             interrupted={interrupted}
             onRescanInterrupted={(scan) => {
@@ -1101,12 +1135,13 @@ function App() {
               setInterrupted(null);
               clearActiveScan();
             }}
-            onCancelRunning={() => deepScannerRef.current?.cancel()}
-            onPauseRunning={() => { deepScannerRef.current?.pause(); setScanPaused(true); }}
-            onResumeRunning={() => { deepScannerRef.current?.resume(); setScanPaused(false); }}
-            onRetryScan={retryLastScan}
+            onCancelRunning={(scan) => deepScannersRef.current.get(scan.key)?.cancel()}
+            onPauseRunning={(scan) => { deepScannersRef.current.get(scan.key)?.pause(); updateScan(scan.key, { paused: true }); }}
+            onResumeRunning={(scan) => { deepScannersRef.current.get(scan.key)?.resume(); updateScan(scan.key, { paused: false }); }}
+            onRetryScan={(scan) => retryScan(scan)}
+            onDismissFailed={(scan) => setFailedScans(prev => prev.filter(f => f.key !== scan.key))}
             onViewResults={viewScan}
-            onDismissCompleted={() => setLastCompleted(null)}
+            onDismissCompleted={(done) => setCompletedScans(prev => prev.filter(c => c.id !== done.id))}
             onCancelJob={(jobId) => {
               deleteScheduledJob(jobId);
               toast.info('Scheduled scan cancelled.');
@@ -1175,7 +1210,7 @@ function App() {
             onNavigate={handleNavigate}
             onOpenScan={viewScan}
             launchControl={launchControl}
-            running={scanning && activeScan ? { ...activeScan, progress: deepScanProgress } : null}
+            running={runningScans}
           />
         </main>
       )}

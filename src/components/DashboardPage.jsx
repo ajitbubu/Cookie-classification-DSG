@@ -252,7 +252,9 @@ function DashboardPage({ scanHistory = [], launchControl, running = null, onNavi
       </div>
       {insights}
 
-      {running && <RunningScan running={running} />}
+      {(Array.isArray(running) ? running : running ? [running] : []).map((scan) => (
+        <RunningScan key={scan.key || scan.url} running={scan} />
+      ))}
 
       <div className="db-kpis">
         <KpiCard label="Website" value={kpis.websites} icon={Globe} badge={{ text: `${kpis.activeThisWeek} Active`, tone: 'necessary' }} />

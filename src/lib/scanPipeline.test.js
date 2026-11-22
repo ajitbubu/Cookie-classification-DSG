@@ -86,6 +86,11 @@ describe('applyClassifications', () => {
 });
 
 describe('stored record', () => {
+  it("keeps each page's scan time", () => {
+    const stored = cleanResultsForStorage(scan({ pageResults: [{ url: 'https://shop.com/', durationMs: 1840, cookies: [cookie('_ga')] }] }));
+    expect(stored.pageResults[0]).toMatchObject({ url: 'https://shop.com/', durationMs: 1840 });
+  });
+
   it('keeps only the stored fields, never the cookie value', () => {
     const stored = cleanResultsForStorage(scan());
     expect(JSON.stringify(stored)).not.toContain('secret');
