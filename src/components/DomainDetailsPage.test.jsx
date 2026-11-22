@@ -164,6 +164,17 @@ describe('DomainDetailsPage', () => {
     expect(screen.getByText('google-analytics.com')).toBeInTheDocument();
   });
 
+  it("pages tab shows how long each page took to scan, '—' for older scans", async () => {
+    setup({ scan: { ...scan, pageResults: [{ ...scan.pageResults[0], durationMs: 2350 }, { url: 'https://shop.com/old', cookies: [] }], errorPages: [] } });
+    await userEvent.click(screen.getByRole('tab', { name: /Pages/ }));
+    const cell = (url, header) => {
+      const headers = screen.getAllByRole('columnheader').map((h) => h.textContent);
+      return screen.getByText(url).closest('tr').children[headers.indexOf(header)];
+    };
+    expect(cell('https://shop.com/', 'Duration')).toHaveTextContent('2.4 s');
+    expect(cell('https://shop.com/old', 'Duration')).toHaveTextContent('—');
+  });
+
   it('pages tab: empty state with Scan Now when the scan stored no pages (6A)', async () => {
     const p = setup({ scan: { ...scan, pageResults: undefined, errorPages: [] } });
     await userEvent.click(screen.getByRole('tab', { name: /Pages/ }));
