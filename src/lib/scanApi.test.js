@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import {
-  listScans, getScan, saveScan, deleteScan, saveSchedule, readLegacyBrowserData, loadStore, historyFromScans,
+  listScans, getScan, saveScan, deleteScan, addNewScans, configureScanApi, claimSchedule, finishScheduleRun, saveSchedule, readLegacyBrowserData, loadStore, historyFromScans,
 } from './scanApi';
 import { MAX_SCAN_HISTORY, MAX_SCANS_PER_DOMAIN } from './scanStorage';
 
@@ -114,4 +114,44 @@ describe('historyFromScans', () => {
     expect(domainHistory['a.com']).toHaveLength(MAX_SCANS_PER_DOMAIN);
     expect(domainHistory['a.com'][0]).toEqual({ id: 's1', domain: 'a.com', fullResults: { n: 1 } });
   });
+
+  it('talks to an absolute base URL when configured (the server-side scheduler)', async () => {
+    const fetchImpl = vi.fn(async () => ok({ schedule: { id: 'j1' } }));
+    const globalFetch = vi.spyOn(globalThis, 'fetch');
+    configureScanApi({ baseUrl: 'http://api-gateway:1001', fetchImpl });
+    try {
+      expect(await claimSchedule('w1')).toEqual({ id: 'j1' });
+      await finishScheduleRun('j 1', { workerId: 'w1', claimedNextRun: 'a', nextRun: 'b', lastRun: { status: 'ok' } });
+      expect(fetchImpl.mock.calls.map(([u]) => u)).toEqual([
+        'http://api-gateway:1001/api/store/schedules/claim', 'http://api-gateway:1001/api/store/schedules/j%201/finish']);
+      expect(JSON.parse(fetchImpl.mock.calls[1][1].body)).toEqual({ workerId: 'w1', claimedNextRun: 'a', nextRun: 'b', lastRun: { status: 'ok' } });
+      expect(globalFetch).not.toHaveBeenCalled();
+    } finally {
+      configureScanApi(); // back to same-origin fetch for the other tests
+      globalFetch.mockRestore();
+    }
+  });
 });
+
+describe('addNewScans', () => {
+  const s = (id, timestamp, domain = 'shop.com', extra = {}) => ({ id, domain, timestamp, ...extra });
+
+  it("adds only scans the app doesn't have, newest first, per domain too", () => {
+    const local = s('a', '2026-11-22T05:00:00Z', 'shop.com', { totalCookies: 9 }); // newer local copy wins
+    const history = { scanHistory: [local], domainHistory: { 'shop.com': [local] } };
+    const out = addNewScans(history, [s('a', '2026-11-22T05:00:00Z'), s('b', '2026-11-22T06:00:00Z'), s('c', '2026-11-22T04:00:00Z', 'x.com')]);
+    expect(out.added.map((x) => x.id)).toEqual(['b', 'c']);
+    expect(out.scanHistory.map((x) => x.id)).toEqual(['b', 'a', 'c']);
+    expect(out.scanHistory[1].totalCookies).toBe(9);
+    expect(out.domainHistory['shop.com'].map((x) => x.id)).toEqual(['b', 'a']);
+    expect(out.domainHistory['x.com'].map((x) => x.id)).toEqual(['c']);
+  });
+
+  it('returns the same objects when nothing is new', () => {
+    const history = { scanHistory: [s('a', '1')], domainHistory: { 'shop.com': [s('a', '1')] } };
+    const out = addNewScans(history, [s('a', '1')]);
+    expect(out.scanHistory).toBe(history.scanHistory);
+    expect(out.added).toEqual([]);
+  });
+});
+

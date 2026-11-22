@@ -6,13 +6,15 @@ so the frontend can show "Couldn't load" with Retry.
 """
 import logging
 import time
-from typing import Dict, List
+from datetime import datetime, timedelta, timezone
+from typing import Dict, List, Optional
 
 from fastapi import APIRouter, HTTPException, Path, Query
 
 from backend.db.scan_store import ScanStore, get_scan_store, initialize_scan_store
 from backend.models import (
-    STORE_ID_PATTERN, PublishedVersion, StoredApproval, StoredScan, StoredSchedule, StoreImportRequest,
+    STORE_ID_PATTERN, PublishedVersion, ScheduleClaimRequest, ScheduleRunResult, StoredApproval, StoredScan,
+    StoredSchedule, StoreImportRequest,
 )
 
 logger = logging.getLogger(__name__)
@@ -98,6 +100,31 @@ async def save_schedule(job: StoredSchedule, job_id: str = Path(pattern=STORE_ID
         raise HTTPException(status_code=400, detail="Schedule id in the path and body differ")
     await (await _store()).upsert_schedule(_dump(job))
     return {"id": job_id}
+
+
+def _utc_iso(moment: datetime) -> str:
+    """Same format as the app's Date.toISOString(), so stored times compare as strings."""
+    return moment.astimezone(timezone.utc).isoformat(timespec="milliseconds").replace("+00:00", "Z")
+
+
+@router.post("/schedules/claim")
+async def claim_schedule(request: ScheduleClaimRequest) -> Dict[str, Optional[dict]]:
+    """The next due job for the scheduler, claimed so no other run takes it; null when none is due."""
+    now = datetime.now(timezone.utc)
+    job = await (await _store()).claim_due_schedule(
+        _utc_iso(now), request.workerId, _utc_iso(now - timedelta(seconds=request.staleAfterSeconds)))
+    if job:
+        logger.info(f"Scheduler {request.workerId} claimed schedule {job['id']} ({job.get('url')})")
+    return {"schedule": job}
+
+
+@router.post("/schedules/{job_id}/finish")
+async def finish_schedule(result: ScheduleRunResult, job_id: str = Path(pattern=STORE_ID_PATTERN)) -> Dict[str, bool]:
+    released = await (await _store()).finish_schedule_run(
+        job_id, result.workerId, result.claimedNextRun, result.nextRun, result.lastRun)
+    if not released:
+        raise HTTPException(status_code=409, detail="This worker no longer holds the schedule")
+    return {"released": True}
 
 
 @router.delete("/schedules/{job_id}")

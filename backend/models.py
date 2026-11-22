@@ -145,6 +145,20 @@ class StoredSchedule(BaseModel):
     unit: str
 
 
+class ScheduleClaimRequest(BaseModel):
+    """The scheduler asking for the next due job."""
+    workerId: str = Field(pattern=STORE_ID_PATTERN)
+    staleAfterSeconds: int = Field(2700, ge=60, le=86400)  # a deep scan can take 10+ minutes
+
+
+class ScheduleRunResult(BaseModel):
+    """The scheduler reporting a finished run."""
+    workerId: str = Field(pattern=STORE_ID_PATTERN)
+    claimedNextRun: str = Field(min_length=1, max_length=40)
+    nextRun: str = Field(min_length=1, max_length=40)
+    lastRun: Dict[str, Any]
+
+
 class StoredApproval(BaseModel):
     """A review-queue approval, keyed by "<domain>:<cookie name>"."""
     model_config = ConfigDict(extra="allow")

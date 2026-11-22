@@ -15,7 +15,7 @@ import DomainDetailsPage from './components/DomainDetailsPage';
 import DomainDetailsMissing from './components/DomainDetailsMissing';
 import { getPublishedVersion, loadPublishedVersions, publishVersion } from './lib/publishStore';
 import { loadApprovals } from './lib/reviewQueue';
-import { clearScans, deleteScan as deleteStoredScan, deleteSchedule, getScan, historyFromScans, loadStore, saveScan, saveSchedule } from './lib/scanApi';
+import { addNewScans, clearScans, deleteScan as deleteStoredScan, deleteSchedule, getScan, historyFromScans, listScans, listSchedules, loadStore, saveScan, saveSchedule } from './lib/scanApi';
 import { applyCategoryChanges, resolveDomainScan, versionsForDomain } from './lib/domainDetails';
 import { publishCategories, publishSummary } from './lib/categoryApi';
 import LaunchScan from './components/LaunchScan';
@@ -26,7 +26,7 @@ import CookieInventoryPage from './components/CookieInventoryPage';
 import LeftSidebar from './components/LeftSidebar';
 import ReviewQueuePage from './components/ReviewQueuePage';
 import { useToast } from './components/Toast';
-import { nextRunTime, resumedNextRun, startsLater } from './lib/schedule';
+import { browserTimeZone, nextRunTime, startsLater } from './lib/schedule';
 import { readInterruptedScan, clearActiveScan, MAX_SCAN_HISTORY, MAX_SCANS_PER_DOMAIN } from './lib/scanStorage';
 import { useScanGuard } from './hooks/useScanGuard';
 import { DASHBOARD_TABS, DOMAIN_TABS, SCANNING_TABS, pathForRoute, routeFromPath } from './lib/routes';
@@ -69,8 +69,6 @@ function App() {
   const deepScannerRef = useRef(null);
 
   // Scheduled Scanning
-  const [scheduleInterval] = useState(30);
-  const [scheduleUnit] = useState('minutes');
   // Scans, schedules, publishes and approvals live in the scan store (MongoDB);
   // nothing renders until they load, and a failed load offers Retry.
   const [storeStatus, setStoreStatus] = useState('loading'); // 'loading' | 'ready' | 'error'
@@ -505,17 +503,6 @@ function App() {
   // Scheduling rules live in lib/schedule.js (shared with the Schedule Scan preview).
   const getNextRunTime = (job) => nextRunTime(job);
 
-  const getIntervalInMs = (interval, unit) => {
-    const multipliers = {
-      'minutes': 60 * 1000,
-      'hourly': 60 * 60 * 1000,
-      'daily': 24 * 60 * 60 * 1000,
-      'weekly': 7 * 24 * 60 * 60 * 1000,
-      'monthly': 30 * 24 * 60 * 60 * 1000
-    };
-    return (interval || scheduleInterval) * multipliers[unit || scheduleUnit];
-  };
-  
   // Save one job to the scan store after a change.
   const persistScheduledJobs = (jobs, jobId) => {
     const job = jobs.find(j => j.id === jobId);
@@ -538,11 +525,9 @@ function App() {
     }
   };
 
+  // The scheduler service (scheduler/) runs scheduled scans on the server, whether or not
+  // the app is open; the app only shows each job's countdown to its next run.
   const startJobTimers = (job) => {
-    const unit = job.unit;
-    const nextRun = getNextRunTime(job);
-
-    // Countdown timer — updates every second
     const countdownId = setInterval(() => {
       setScheduledJobs(prev => prev.map(j => {
         if (j.id !== job.id) return j;
@@ -550,45 +535,8 @@ function App() {
         return { ...j, timeLeft: Math.max(0, timeLeft) };
       }));
     }, 1000);
-
-    let timerId;
-    if (unit === 'minutes' || unit === 'hourly') {
-      // Simple interval for short durations
-      const intervalMs = getIntervalInMs(job.interval, job.unit);
-      timerId = setInterval(() => {
-        runScheduledJob(job);
-        const next = getNextRunTime(job);
-        setScheduledJobs(prev => {
-          const updated = prev.map(j => j.id === job.id ? { ...j, nextRun: next.toISOString() } : j);
-          persistScheduledJobs(updated, job.id);
-          return updated;
-        });
-      }, intervalMs);
-    } else {
-      // For daily/weekly/monthly, check every 30 seconds if it's time to run, and once now
-      // so a run missed while the app was closed doesn't sit on screen as a past time.
-      const checkDue = () => {
-        const now = Date.now();
-        setScheduledJobs(prev => {
-          const jobState = prev.find(j => j.id === job.id);
-          if (!jobState || jobState.paused) return prev;
-          const runAt = new Date(jobState.nextRun).getTime();
-          if (now >= runAt) {
-            runScheduledJob(job);
-            const next = getNextRunTime(job);
-            const updated = prev.map(j => j.id === job.id ? { ...j, nextRun: next.toISOString() } : j);
-            persistScheduledJobs(updated, job.id);
-            return updated;
-          }
-          return prev;
-        });
-      };
-      timerId = setInterval(checkDue, 30000);
-      checkDue();
-    }
-
-    jobTimersRef.current[job.id] = { timerId, countdownId };
-    return { timerId, countdownId, nextRun };
+    jobTimersRef.current[job.id] = { timerId: null, countdownId };
+    return { timerId: null, countdownId };
   };
 
   // Settings come from the Schedule Scan modal, which validates the URL.
@@ -607,6 +555,7 @@ function App() {
       maxPages: config.scanType === 'deep' ? config.maxPages : 1,
       maxDepth: config.scanType === 'deep' ? config.maxDepth : 1,
       concurrency: config.scanType === 'deep' ? config.concurrency : 1,
+      timeZone: browserTimeZone(),
       createdAt: new Date().toISOString()
     };
 
@@ -615,10 +564,9 @@ function App() {
     newJob.nextRun = nextRun.toISOString();
     newJob.timeLeft = nextRun.getTime() - Date.now();
 
-    // Start timers
     startJobTimers(newJob);
 
-    // Run the first scan now, unless the schedule starts on a later date
+    // Run the first scan here, so its progress shows now; the scheduler runs the later ones
     if (!startsLater(newJob)) runScheduledJob(newJob);
 
     setScheduledJobs(prev => {
@@ -705,6 +653,7 @@ function App() {
           maxPages: form.scanType === 'deep' ? form.maxPages : 1,
           maxDepth: form.scanType === 'deep' ? form.maxDepth : 1,
           concurrency: form.scanType === 'deep' ? form.concurrency : 1,
+          timeZone: browserTimeZone(),
           paused: j.paused
         };
         const nextRun = getNextRunTime(updatedJob);
@@ -911,9 +860,11 @@ function App() {
       setDomainHistory(history.domainHistory);
       loadPublishedVersions(published);
       loadApprovals(approvals);
-      const jobs = schedules.map(job => ({ ...job, nextRun: resumedNextRun(job), timerId: null, countdownId: null, timeLeft: null }));
+      // Jobs saved before time zones were recorded get this browser's, so the server
+      // reads "02:00" as the creator's local time.
+      const jobs = schedules.map(job => ({ ...job, timeZone: job.timeZone || browserTimeZone(), timerId: null, countdownId: null, timeLeft: null }));
       setScheduledJobs(jobs);
-      jobs.filter((job, i) => job.nextRun !== schedules[i].nextRun).forEach(job => persistScheduledJobs(jobs, job.id));
+      jobs.filter((job, i) => !schedules[i].timeZone).forEach(job => persistScheduledJobs(jobs, job.id));
       jobs.forEach(job => {
         startJobTimers(job);
       });
@@ -939,6 +890,45 @@ function App() {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps -- loads once per attempt; Retry bumps storeAttempt
   }, [storeAttempt]);
+
+  // Scheduled scans run on the server: every minute, pick up the jobs' new times and last
+  // runs, and any scans the scheduler saved since the store was loaded.
+  const historyRef = useRef({ scanHistory, domainHistory });
+  historyRef.current = { scanHistory, domainHistory };
+  useEffect(() => {
+    if (storeStatus !== 'ready') return undefined;
+    const refresh = async () => {
+      try {
+        const [stored, scans] = await Promise.all([listSchedules(), listScans()]);
+        // Countdowns for jobs created elsewhere; drop those of jobs deleted elsewhere.
+        const kept = new Set(stored.map(job => job.id));
+        stored.filter(job => !jobTimersRef.current[job.id]).forEach(job => startJobTimers(job));
+        Object.keys(jobTimersRef.current).filter(id => !kept.has(id)).forEach(id => {
+          clearInterval(jobTimersRef.current[id].countdownId);
+          delete jobTimersRef.current[id];
+        });
+        setScheduledJobs(prev => stored.map(job => ({
+          ...job,
+          timerId: null,
+          countdownId: jobTimersRef.current[job.id]?.countdownId ?? null,
+          timeLeft: prev.find(j => j.id === job.id)?.timeLeft ?? null,
+        })));
+        const merged = addNewScans(historyRef.current, scans);
+        if (merged.added.length) {
+          setScanHistory(merged.scanHistory);
+          setDomainHistory(merged.domainHistory);
+          merged.added.filter(scan => scan.scheduledJobId).forEach(scan => {
+            toast.success(`Scheduled scan of ${scan.domain} finished: ${(scan.totalCookies ?? 0).toLocaleString()} cookies.`);
+          });
+        }
+      } catch (e) {
+        console.error('Could not refresh schedules and scans:', e);
+      }
+    };
+    const id = setInterval(refresh, 60000);
+    return () => clearInterval(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- setters and toast are stable
+  }, [storeStatus]);
 
   // Navigate to results page when scan finishes
   const wasScanningRef = useRef(false);

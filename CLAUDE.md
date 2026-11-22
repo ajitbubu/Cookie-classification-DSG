@@ -43,11 +43,14 @@ compliance. React dashboard on top of a Python scanning/classification backend.
   browser control, parallel execution).
 - `backend/worker/` — distributed scan workers, browser pool management (these are
   what `scanner-worker-1/2/3` run in `docker-compose.yml`).
+- `scheduler/` — Node service (`scheduler` in `docker-compose.yml`) that runs scheduled
+  scans on the server: claims due jobs from the scan store and saves each scan with the
+  app's own post-scan pipeline (`src/lib/scanPipeline.js`).
 - `backend/db/` — SQLAlchemy/asyncpg access + hand-written SQL migrations
   (`backend/db/migrations/NNN_*.sql`, numbered sequentially, tracked in
   `MIGRATION_STATUS.md`).
 - Services communicate over Postgres, MongoDB + Redis; see `docker-compose.yml` for the full
-  topology (api-gateway :1001, ml-api :8001→:8000, workers, frontend :5173, nginx).
+  topology (api-gateway :1001, ml-api :8001→:8000, workers, scheduler, frontend :5173, nginx).
 
 ## Commands
 
@@ -67,7 +70,7 @@ bash tests/run_api_tests.sh
 
 # Full stack
 docker compose up --build                            # redis, postgres, mongo, api-gateway, ml-api,
-                                                       # 3 scanner workers, frontend, nginx
+                                                       # 3 scanner workers, scheduler, frontend, nginx
 ```
 
 No project skill launches the app end-to-end yet — see `/run` for ad-hoc launch, or

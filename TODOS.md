@@ -37,8 +37,8 @@ All 12 audit findings and the Web Interface Guidelines review are resolved on th
   MongoDB (`mongo` service, `backend/db/scan_store.py`, `/api/store/*` in `backend/api/store_routes.py`).
   The app loads them at startup (`src/lib/scanApi.js`), imports each browser's old localStorage copy
   once, and shows "Couldn't load saved scans" with Retry when the store is down. No local copy is kept.
-- **Still open:** "Published By" (needs user accounts), and running scheduled jobs on the server:
-  timers still run in the open tab, so a schedule only fires while someone has the app open.
+- **Still open:** "Published By" (needs user accounts). Scheduled jobs run on the server since 2026-11-22
+  (`scheduler/`); the app shows their last run and picks up their scans every minute.
 - **Watch:** One scan is one Mongo document (16 MB limit); a very large deep scan's `fullResults` could
   exceed it. The API also answers its first requests slowly (2-10 s) right after a restart.
 

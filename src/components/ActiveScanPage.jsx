@@ -131,9 +131,20 @@ function detail(item) {
           )}
           <span>{describeSchedule(item.data)}</span>
         </p>
+        <LastRun job={item.data} />
       </>
     );
   }
+}
+
+// Scheduled scans run on the server (scheduler/): say what the last run did.
+function LastRun({ job }) {
+  if (job.runningSince) return <p className="as-card__meta">Scanning now</p>;
+  const last = job.lastRun;
+  if (!last?.at) return null;
+  return last.status === 'failed'
+    ? <p className="as-card__failure">{`Last run failed ${formatScanDate(last.at)}: ${last.error || 'unknown error'}`}</p>
+    : <p className="as-card__meta">{`Last run ${formatScanDate(last.at)} · ${(last.totalCookies ?? 0).toLocaleString()} cookies`}</p>;
 }
 
 function ActiveScanPage({

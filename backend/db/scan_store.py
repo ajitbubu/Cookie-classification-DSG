@@ -14,12 +14,16 @@ import logging
 from typing import Any, Dict, List, Optional
 
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase
+from pymongo import ReturnDocument
 
 from backend.config import settings
 
 logger = logging.getLogger(__name__)
 
 MAX_SCANS = 500  # newest scans returned in one list call
+# Schedule fields only the scheduler writes, and the ones that define when a job runs.
+SCHEDULER_FIELDS = ("lastRun", "runningSince", "runningBy")
+TIMING_FIELDS = ("unit", "interval", "scheduleTime", "scheduleDay", "scheduleDate", "startDate", "timeZone")
 # Per-page cookie lists: over half of a stored scan, and only the opened scan's
 # Pages tab uses them. Lists leave them out; GET /api/store/scans/{id} has them.
 LIST_EXCLUDES = {"fullResults.pageResults": 0}
@@ -123,7 +127,46 @@ class ScanStore:
         return [_from_doc(d, "id") async for d in self.db.schedules.find({}).sort("createdAt", 1)]
 
     async def upsert_schedule(self, job: Dict[str, Any]) -> None:
+        """Save a job from the app without undoing what the scheduler wrote.
+
+        The scheduler (scheduler/) owns lastRun and the running claim, and moves nextRun
+        on after each run; an app save made from an older copy keeps those, unless the
+        user changed the job's timing (then the app's nextRun is the new schedule).
+        """
+        stored = await self.db.schedules.find_one({"_id": job["id"]})
+        if stored:
+            for field in SCHEDULER_FIELDS:
+                if field not in job and field in stored:
+                    job[field] = stored[field]
+            same_timing = all(job.get(f) == stored.get(f) for f in TIMING_FIELDS)
+            if same_timing and (stored.get("nextRun") or "") > (job.get("nextRun") or ""):
+                job["nextRun"] = stored["nextRun"]
         await self.db.schedules.replace_one({"_id": job["id"]}, _to_doc(job, "id"), upsert=True)
+
+    async def claim_due_schedule(self, now: str, worker: str, stale_before: str) -> Optional[Dict[str, Any]]:
+        """Atomically claim the most overdue job (nextRun <= now, not paused, not running).
+
+        A claim older than stale_before (a scheduler that died mid-run) can be taken over.
+        """
+        doc = await self.db.schedules.find_one_and_update(
+            {"nextRun": {"$lte": now}, "paused": {"$ne": True},
+             "$or": [{"runningSince": None}, {"runningSince": {"$lt": stale_before}}]},
+            {"$set": {"runningSince": now, "runningBy": worker}},
+            sort=[("nextRun", 1)], return_document=ReturnDocument.AFTER)
+        return _from_doc(doc, "id") if doc else None
+
+    async def finish_schedule_run(self, job_id: str, worker: str, claimed_next_run: str,
+                                  next_run: str, last_run: Dict[str, Any]) -> bool:
+        """Record a run and release the claim; False if this worker no longer holds it.
+
+        nextRun only moves on if nobody rescheduled the job while it ran.
+        """
+        released = await self.db.schedules.update_one(
+            {"_id": job_id, "runningBy": worker},
+            {"$set": {"lastRun": last_run}, "$unset": {"runningSince": "", "runningBy": ""}})
+        if released.matched_count:
+            await self.db.schedules.update_one({"_id": job_id, "nextRun": claimed_next_run}, {"$set": {"nextRun": next_run}})
+        return released.matched_count == 1
 
     async def delete_schedule(self, job_id: str) -> bool:
         result = await self.db.schedules.delete_one({"_id": job_id})
