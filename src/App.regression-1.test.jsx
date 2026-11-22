@@ -29,7 +29,7 @@ const classifications = scanResponse.cookies.map((c) => ({
   confidence: 0.9, confidence_level: 'High', classification_status: 'review', source: 'ml_prediction',
 }));
 
-function routeFetch({ scanStatus = 200, storeStatus = 200, stored = [], full = {} } = {}) {
+function routeFetch({ scanStatus = 200, storeStatus = 200, stored = [], full = {}, scan = scanResponse, classified = classifications } = {}) {
   return vi.spyOn(globalThis, 'fetch').mockImplementation(async (url) => {
     const u = String(url);
     if (u.startsWith('/api/store')) {
@@ -42,10 +42,10 @@ function routeFetch({ scanStatus = 200, storeStatus = 200, stored = [], full = {
     }
     if (u.includes('/api/scan')) {
       return scanStatus === 200
-        ? { ok: true, status: 200, statusText: 'OK', json: async () => scanResponse }
+        ? { ok: true, status: 200, statusText: 'OK', json: async () => scan }
         : { ok: false, status: scanStatus, statusText: 'Service Unavailable', json: async () => ({}) };
     }
-    if (u.includes('/api/v1/ml/classify')) return { ok: true, status: 200, json: async () => ({ classifications }) };
+    if (u.includes('/api/v1/ml/classify')) return { ok: true, status: 200, json: async () => ({ classifications: classified }) };
     return { ok: true, status: 200, json: async () => ({}) };
   });
 }
@@ -86,6 +86,30 @@ describe('Quick scan from Launch New Scan (App wiring)', () => {
     await waitFor(() => expect(scanSaves().length).toBeGreaterThanOrEqual(2));
     expect(new Set(scanSaves().map(([u]) => u)).size).toBe(1);
     expect(localStorage.getItem('cookieScanHistory')).toBeNull(); // the store is the only copy
+  });
+
+  it("saves the site's declared category as the suggestion and flags a confident model disagreement", async () => {
+    const declared = (category, group) => ({ category, group, cmp: 'OneTrust', provider: 'shop.com', declaredDuration: '' });
+    const scan = { ...scanResponse, cmp: { vendor: 'OneTrust', declared: 2, matched: 2, url: 'https://shop.com/' },
+      cookies: [
+        { ...scanResponse.cookies[0], websiteDeclaration: declared('Strictly Necessary', 'Strictly Necessary Cookies') }, // _ga
+        { ...scanResponse.cookies[1], websiteDeclaration: declared('Strictly Necessary', 'Strictly Necessary Cookies') }, // sid
+      ] };
+    const classified = classifications.map((c) => ({ ...c, classification_status: 'suggested', confidence_score: 0.9, confidence_level: 'High' }));
+    routeFetch({ scan, classified });
+    renderApp();
+    await startQuickScan('https://shop.com');
+    const saved = async () => {
+      const puts = globalThis.fetch.mock.calls.filter(([u, init]) => String(u).startsWith('/api/store/scans/') && init?.method === 'PUT');
+      return JSON.parse(puts.at(-1)[1].body).fullResults.cookies;
+    };
+    await waitFor(async () => expect((await saved()).find((c) => c.name === '_ga')?.classificationSource).toBe('website_declaration'));
+    const byName = Object.fromEntries((await saved()).map((c) => [c.name, c]));
+    expect(byName._ga).toMatchObject({
+      mlClassification: 'Strictly Necessary', websiteProvided: true, category: 'Unclassified', // still to be reviewed
+      declarationConflict: { declared: 'Strictly Necessary', suggested: 'Analytics', confidence: 0.9 },
+    });
+    expect(byName.sid).toMatchObject({ mlClassification: 'Strictly Necessary', declarationConflict: null }); // model agrees
   });
 });
 

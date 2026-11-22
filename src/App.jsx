@@ -43,6 +43,7 @@ import VendorDashboard from './components/VendorDashboard';
 import OverrideModal from './components/OverrideModal';
 import ModelPerformancePage from './components/ModelPerformancePage';
 import { responseErrorMessage } from './lib/apiError';
+import { applyWebsiteDeclaration } from './lib/websiteDeclaration';
 import './App.css';
 
 function App() {
@@ -296,7 +297,7 @@ function App() {
     const classificationSource = mlData.source || 'ml_prediction';
     const isPublishedClassification = mlData.classification_status === 'classified';
 
-    return {
+    return applyWebsiteDeclaration({
       ...cookie,
       originalCategory: cookie.category,
       category: publishableCategory,
@@ -324,7 +325,7 @@ function App() {
         : true,
       websiteProvided: false,
       categorySource: isPublishedClassification ? classificationSource : 'unclassified',
-    };
+    });
   };
 
   // ML Classification function
@@ -733,7 +734,13 @@ function App() {
         mlReasoning: cookie.mlReasoning,
         abstainReason: cookie.abstainReason,
         siteLabelSplit: cookie.siteLabelSplit,
-        knownCookie: cookie.knownCookie
+        knownCookie: cookie.knownCookie,
+        // The site's own banner declaration (OneTrust/Cookiebot) and what the model said about it
+        websiteDeclaration: cookie.websiteDeclaration,
+        websiteProvided: cookie.websiteProvided,
+        classificationSource: cookie.classificationSource,
+        modelSuggestion: cookie.modelSuggestion,
+        declarationConflict: cookie.declarationConflict
       })),
       statistics: {
         byCategory: { ...results.statistics.byCategory },
@@ -749,6 +756,7 @@ function App() {
       scanType: results.scanType,
       errorPages: results.errorPages,
       scanDuration: results.scanDuration,
+      cmp: results.cmp,
       pageResults: results.pageResults ? results.pageResults.map(page => ({
         url: page.url,
         cookies: page.cookies.map(cookie => ({
