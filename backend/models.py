@@ -109,9 +109,11 @@ class ScanResult(BaseModel):
 
 class HealthResponse(BaseModel):
     """Health check response"""
-    status: str
+    status: str  # "healthy", or "degraded" (HTTP 503) when a check fails
     timestamp: str
     version: str = "1.0.0"
+    # Dependency checks: "ok", "not_configured", or why it failed.
+    checks: Dict[str, str] = {}
 
 
 # ── MongoDB scan store (/api/store) ─────────────────────────────────────────

@@ -152,6 +152,27 @@ async def _reply(writer: asyncio.StreamWriter, status: int, reason: str) -> None
         pass
 
 
+async def proxy_unreachable_reason(proxy_url: str, timeout: float = 2.0) -> Optional[str]:
+    """None when the proxy at ``proxy_url`` accepts a TCP connection, else why not.
+
+    Scans need it: browsers launched with this proxy fail every page load in under a
+    second (Firefox ``NS_ERROR_UNKNOWN_PROXY_HOST``) when it's down or not resolvable.
+    """
+    parts = urlsplit(proxy_url)
+    if not parts.hostname or not parts.port:
+        return f"proxy URL {proxy_url!r} has no host and port"
+    try:
+        _, writer = await asyncio.wait_for(asyncio.open_connection(parts.hostname, parts.port), timeout)
+    except (OSError, asyncio.TimeoutError) as exc:
+        return f"{parts.hostname}:{parts.port} unreachable ({type(exc).__name__}: {exc})"
+    writer.close()
+    try:
+        await writer.wait_closed()
+    except ConnectionError:
+        pass
+    return None
+
+
 async def serve(host: str, port: int, proxy: Optional[EgressProxy] = None) -> asyncio.base_events.Server:
     proxy = proxy or EgressProxy()
     return await asyncio.start_server(proxy.handle, host, port, limit=MAX_HEAD_BYTES)

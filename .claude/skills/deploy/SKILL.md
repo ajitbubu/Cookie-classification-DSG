@@ -39,7 +39,8 @@ binds to `127.0.0.1`, so it is reachable from this machine only.
    explicit healthchecks; `api-gateway`/`workers`/`frontend` start once their
    dependencies report healthy.
 5. Verify:
-   - `curl http://localhost:1001/api/health` — API gateway up
+   - `curl http://localhost:1001/api/health` — API gateway up; `checks.egress_proxy` must be `ok`
+     (503 `degraded` means scans can't run: `docker compose up -d egress-proxy`)
    - `curl http://localhost:8001/api/v1/ml/health` — ML API up
    - open `http://localhost:5173` — frontend, now proxying `/api` to the real gateway
      instead of nothing.

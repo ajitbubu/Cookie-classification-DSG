@@ -114,16 +114,8 @@ All 12 audit findings and the Web Interface Guidelines review are resolved on th
 
 The 2026-10-12 "scanner times out on most real sites" item no longer reproduces: quick scans of github.com,
 att.com and vodafone.com return in 1-2 s (6, 32 and 9 cookies) and UI-default deep scans (10 pages,
-concurrency 20, depth 3) finish in 16-22 s. Finding from re-testing:
-
-### Scans fail with a healthy API when the egress proxy is down (Medium, infrastructure)
-
-- **What:** With `egress-proxy` (or the whole stack except `api-gateway`) stopped, `/api/health` stays 200
-  but every scan returns 503 `Page.goto: NS_ERROR_UNKNOWN_PROXY_HOST` within a second.
-- **Why:** The stack was stopped with clean exits three times between 2026-11-16 and 2026-11-21 (not a
-  crash, so `restart: unless-stopped` doesn't bring it back), and the UI only shows "scan failed".
-- **Fix option:** Have `/api/health` report the egress proxy as a dependency, and map the proxy error to a
-  clear "scanning service is down" message.
+concurrency 20, depth 3) finish in 16-22 s. Both findings from that re-test (cookie values in scan
+responses, scans failing behind a healthy `/api/health`) are fixed.
 
 ## QA (2026-11-11, /qa on main)
 
