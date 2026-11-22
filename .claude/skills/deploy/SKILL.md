@@ -18,6 +18,7 @@ be exercised for real.
 | `api-gateway` | 1001 | redis, postgres |
 | `ml-api` | 8001→8000 | redis, postgres |
 | `scanner-worker-1/2/3` | — | redis, postgres |
+| `scheduler` | — | api-gateway (runs scheduled scans; heartbeat healthcheck) |
 | `frontend` | 5173 | api-gateway |
 | `nginx` | 80/443 | api-gateway, frontend |
 

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import * as fc from 'fast-check';
-import { nextRunTime, resumedNextRun, startsLater, utcTimeToLocal, scheduleFromStartDate } from './schedule';
+import { browserTimeZone, nextRunTime, startsLater, utcTimeToLocal, scheduleFromStartDate } from './schedule';
 
 // Local-time helpers so the tests hold in any timezone.
 const at = (y, m, d, h = 0, min = 0) => new Date(y, m - 1, d, h, min, 0, 0);
@@ -65,40 +65,8 @@ describe('utcTimeToLocal', () => {
   });
 });
 
-describe('resumedNextRun (stored jobs restarted on page load)', () => {
-  const now = at(2026, 11, 21, 19, 0);
-  const iso = (d) => d.toISOString();
-
-  it('keeps a stored time that is still ahead', () => {
-    const job = { unit: 'minutes', interval: 30, nextRun: iso(at(2026, 11, 21, 19, 20)) };
-    expect(resumedNextRun(job, now)).toBe(job.nextRun);
-  });
-
-  it('restarts a past minutes/hourly time from now, when the timer will fire', () => {
-    expect(resumedNextRun({ unit: 'minutes', interval: 30, nextRun: iso(at(2026, 11, 21, 13, 8)) }, now))
-      .toBe(iso(at(2026, 11, 21, 19, 30)));
-    expect(resumedNextRun({ unit: 'hourly', interval: 2, nextRun: iso(at(2026, 11, 20, 9, 0)) }, now))
-      .toBe(iso(at(2026, 11, 21, 21, 0)));
-  });
-
-  it('keeps a missed daily/weekly/monthly time so the due check runs it once', () => {
-    const job = { unit: 'daily', scheduleTime: '02:00', nextRun: iso(at(2026, 11, 21, 2, 0)) };
-    expect(resumedNextRun(job, now)).toBe(job.nextRun);
-  });
-
-  it('computes a time when none (or garbage) was stored', () => {
-    expect(resumedNextRun({ unit: 'daily', scheduleTime: '02:00' }, now)).toBe(iso(at(2026, 11, 22, 2, 0)));
-    expect(resumedNextRun({ unit: 'weekly', scheduleDay: 'monday', scheduleTime: '07:30', nextRun: 'not a date' }, now))
-      .toBe(iso(at(2026, 11, 23, 7, 30)));
-  });
-
-  it('never leaves a minutes/hourly job showing a past time', () => {
-    fc.assert(fc.property(
-      fc.constantFrom('minutes', 'hourly'), fc.integer({ min: 1, max: 48 }), fc.integer({ min: -100000, max: 100000 }),
-      (unit, interval, offsetMin) => {
-        const job = { unit, interval, nextRun: iso(new Date(now.getTime() + offsetMin * 60000)) };
-        return new Date(resumedNextRun(job, now)) > now;
-      },
-    ));
+describe('browserTimeZone', () => {
+  it('names an IANA time zone', () => {
+    expect(browserTimeZone()).toMatch(/^[A-Za-z_]+(\/[A-Za-z_+-]+)*$|^UTC$/);
   });
 });

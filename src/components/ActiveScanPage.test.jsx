@@ -30,6 +30,15 @@ describe('ActiveScanPage (5.1 states)', () => {
     expect(screen.queryByText(/in progress/)).not.toBeInTheDocument();
   });
 
+  it("shows a scheduled job's last server run, or that it is running now", () => {
+    const { rerender } = render(<ActiveScanPage {...props({ scheduledJobs: [{ ...job, lastRun: { status: 'ok', at: '2026-11-22T06:30:00Z', totalCookies: 82 } }] })} />);
+    expect(screen.getByText(/^Last run .* · 82 cookies$/)).toBeInTheDocument();
+    rerender(<ActiveScanPage {...props({ scheduledJobs: [{ ...job, lastRun: { status: 'failed', at: '2026-11-22T06:30:00Z', error: 'proxy down' } }] })} />);
+    expect(screen.getByText(/^Last run failed .*: proxy down$/)).toBeInTheDocument();
+    rerender(<ActiveScanPage {...props({ scheduledJobs: [{ ...job, runningSince: '2026-11-22T06:30:00Z' }] })} />);
+    expect(screen.getByText('Scanning now')).toBeInTheDocument();
+  });
+
   it('loading: three card skeletons (7A)', () => {
     const { container } = render(<ActiveScanPage {...props({ loading: true })} />);
     expect(container.querySelectorAll('.as-card--skeleton')).toHaveLength(3);

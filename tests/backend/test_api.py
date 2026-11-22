@@ -688,6 +688,62 @@ def test_store_keeps_schedules_and_approvals(store):
     assert store.get("/api/store/approvals").json()["approvals"] == [approval]
 
 
+PAST, FUTURE = "2026-01-01T00:00:00.000Z", "2099-01-01T00:00:00.000Z"
+
+
+def _job(job_id, next_run=PAST, **extra):
+    return {"id": job_id, "url": "https://shop.com", "unit": "minutes", "interval": 30, "nextRun": next_run, **extra}
+
+
+def _claim(store, worker="w1", **extra):
+    return store.post("/api/store/schedules/claim", json={"workerId": worker, **extra}).json()["schedule"]
+
+
+def test_scheduler_claims_each_due_job_once(store):
+    store.put("/api/store/schedules/due", json=_job("due"))
+    store.put("/api/store/schedules/later", json=_job("later", FUTURE))
+    store.put("/api/store/schedules/paused", json=_job("paused", paused=True))
+    job = _claim(store)
+    assert job["id"] == "due" and job["runningBy"] == "w1" and job["runningSince"]
+    assert _claim(store, worker="w2") is None  # claimed, future and paused jobs are not handed out
+
+
+def test_a_stale_claim_can_be_taken_over(store):
+    store.put("/api/store/schedules/due", json=_job("due", runningSince=PAST, runningBy="dead-worker"))
+    assert _claim(store, staleAfterSeconds=60)["runningBy"] == "w1"
+
+
+def test_finishing_a_run_records_it_and_moves_next_run_on(store):
+    store.put("/api/store/schedules/due", json=_job("due"))
+    job = _claim(store)
+    last = {"status": "ok", "at": "2026-11-22T06:30:00.000Z", "scanId": "s9", "totalCookies": 82}
+    r = store.post("/api/store/schedules/due/finish", json={"workerId": "w1", "claimedNextRun": job["nextRun"], "nextRun": FUTURE, "lastRun": last})
+    assert r.json() == {"released": True}
+    saved = store.get("/api/store/schedules").json()["schedules"][0]
+    assert saved["nextRun"] == FUTURE and saved["lastRun"] == last
+    assert "runningSince" not in saved and "runningBy" not in saved
+    again = store.post("/api/store/schedules/due/finish", json={"workerId": "w1", "claimedNextRun": PAST, "nextRun": FUTURE, "lastRun": last})
+    assert again.status_code == 409  # no longer claimed by this worker
+
+
+def test_a_reschedule_during_a_run_is_kept(store):
+    store.put("/api/store/schedules/due", json=_job("due"))
+    job = _claim(store)
+    store.put("/api/store/schedules/due", json=_job("due", "2030-05-05T05:05:00.000Z", unit="daily", scheduleTime="05:05"))
+    store.post("/api/store/schedules/due/finish", json={"workerId": "w1", "claimedNextRun": job["nextRun"], "nextRun": FUTURE, "lastRun": {"status": "ok"}})
+    saved = store.get("/api/store/schedules").json()["schedules"][0]
+    assert saved["nextRun"] == "2030-05-05T05:05:00.000Z" and saved["unit"] == "daily"
+
+
+def test_an_app_save_from_an_old_copy_keeps_what_the_scheduler_wrote(store):
+    store.put("/api/store/schedules/j", json=_job("j"))
+    job = _claim(store)
+    store.post("/api/store/schedules/j/finish", json={"workerId": "w1", "claimedNextRun": job["nextRun"], "nextRun": FUTURE, "lastRun": {"status": "ok"}})
+    store.put("/api/store/schedules/j", json=_job("j", PAST, paused=True))  # the app's copy predates the run
+    saved = store.get("/api/store/schedules").json()["schedules"][0]
+    assert saved["paused"] is True and saved["lastRun"] == {"status": "ok"} and saved["nextRun"] == FUTURE
+
+
 def test_store_imports_a_browsers_saved_data_once_idempotently(store):
     payload = {
         "scans": [_scan("s1"), _scan("s2", ts="2026-10-13T10:00:00.000Z")],

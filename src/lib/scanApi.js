@@ -11,11 +11,18 @@ import { MAX_SCAN_HISTORY, MAX_SCANS_PER_DOMAIN } from './scanStorage';
 
 const BASE = '/api/store';
 
+// The browser calls /api same-origin; the server-side scheduler (scheduler/) sets an absolute base URL.
+let config = { baseUrl: '', fetchImpl: (...args) => fetch(...args) };
+
+export function configureScanApi({ baseUrl = '', fetchImpl } = {}) {
+  config = { baseUrl, fetchImpl: fetchImpl || ((...args) => fetch(...args)) };
+}
+
 /** Newest scans loaded at startup (the backend caps a list call at 500). */
 export const STORE_SCAN_LIMIT = 500;
 
 async function request(path, { method = 'GET', body } = {}) {
-  const res = await fetch(`${BASE}${path}`, {
+  const res = await config.fetchImpl(`${config.baseUrl}${BASE}${path}`, {
     method,
     ...(body === undefined ? {} : { headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }),
   });
@@ -38,6 +45,23 @@ export function historyFromScans(scans) {
   return { scanHistory: scans.slice(0, MAX_SCAN_HISTORY), domainHistory };
 }
 
+/**
+ * Stored scans the app doesn't have yet (e.g. the scheduler's), added newest first.
+ * Additive only: a scan this browser is still saving keeps its newer local copy.
+ */
+export function addNewScans({ scanHistory = [], domainHistory = {} }, stored = []) {
+  const known = new Set(scanHistory.map((s) => s.id));
+  for (const list of Object.values(domainHistory)) for (const s of list) known.add(s.id);
+  const added = stored.filter((s) => s?.id && !known.has(s.id));
+  if (added.length === 0) return { scanHistory, domainHistory, added };
+  const byTime = (a, b) => (a.timestamp < b.timestamp ? 1 : -1);
+  const nextDomains = { ...domainHistory };
+  for (const scan of added) {
+    nextDomains[scan.domain] = [scan, ...(nextDomains[scan.domain] || [])].sort(byTime).slice(0, MAX_SCANS_PER_DOMAIN);
+  }
+  return { scanHistory: [...added, ...scanHistory].sort(byTime).slice(0, MAX_SCAN_HISTORY), domainHistory: nextDomains, added };
+}
+
 export const listScans = async (limit = STORE_SCAN_LIMIT) => (await request(`/scans?limit=${limit}`)).scans || [];
 /** One scan in full: the list leaves out `fullResults.pageResults` (over half of each scan). */
 export const getScan = (id) => request(`/scans/${enc(id)}`);
@@ -53,6 +77,11 @@ const storedJob = ({ timerId, countdownId, timeLeft, ...job }) => job;
 export const listSchedules = async () => (await request('/schedules')).schedules || [];
 export const saveSchedule = (job) => request(`/schedules/${enc(job.id)}`, { method: 'PUT', body: storedJob(job) });
 export const deleteSchedule = (id) => request(`/schedules/${enc(id)}`, { method: 'DELETE' });
+/** Scheduler only: atomically claim the most overdue job, or null when none is due. */
+export const claimSchedule = async (workerId) => (await request('/schedules/claim', { method: 'POST', body: { workerId } })).schedule;
+/** Scheduler only: record a run and release the claim. */
+export const finishScheduleRun = (id, { workerId, claimedNextRun, nextRun, lastRun }) =>
+  request(`/schedules/${enc(id)}/finish`, { method: 'POST', body: { workerId, claimedNextRun, nextRun, lastRun } });
 
 export const listApprovals = async () => (await request('/approvals')).approvals || [];
 export const saveApproval = (approval) => request('/approvals', { method: 'POST', body: approval });

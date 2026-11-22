@@ -38,18 +38,13 @@ export function utcTimeToLocal(time, onDate) {
   return `${String(instant.getHours()).padStart(2, '0')}:${String(instant.getMinutes()).padStart(2, '0')}`;
 }
 
-/**
- * A stored job's nextRun when its timers restart on page load. Timers only run while
- * the app is open, so a stored time may already have passed. Minutes/hourly timers
- * restart from now, so they get now + interval (when they will really fire); longer
- * units keep the missed time, which the due check runs once (catch-up).
- */
-export function resumedNextRun(job, now = new Date()) {
-  const stored = job.nextRun ? new Date(job.nextRun) : null;
-  const valid = stored && !Number.isNaN(stored.getTime());
-  if (valid && stored > now) return job.nextRun;
-  if (job.unit === 'minutes' || job.unit === 'hourly' || !valid) return nextRunTime(job, now).toISOString();
-  return job.nextRun;
+/** The browser's IANA time zone ("America/New_York"), saved on jobs for the server-side scheduler. */
+export function browserTimeZone() {
+  try {
+    return Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
+  } catch {
+    return 'UTC';
+  }
 }
 
 /** When a scheduled job runs next. A future start date is honoured. */

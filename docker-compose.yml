@@ -260,6 +260,35 @@ services:
           memory: 4G
 
   # Frontend
+  # Scheduled scans (scheduler/): runs due jobs from the scan store whether or not anyone
+  # has the app open, building each record with the app's own src/lib pipeline. Same
+  # image as the frontend; esbuild bundles scheduler/ + src/lib for plain Node at start.
+  scheduler:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.frontend
+    container_name: cookie-scanner-scheduler
+    command: ["sh", "-c", "npx esbuild scheduler/index.js --bundle --platform=node --format=esm --target=node22 --log-level=warning --outfile=/tmp/scheduler.mjs && exec node /tmp/scheduler.mjs"]
+    environment:
+      - API_BASE_URL=http://api-gateway:1001
+      - SCHEDULER_DEFAULT_TIME_ZONE=${SCHEDULER_DEFAULT_TIME_ZONE:-UTC}
+    volumes:
+      - ./src:/app/src:ro
+      - ./scheduler:/app/scheduler:ro
+    healthcheck:
+      # index.js touches the heartbeat file after every tick (30 s)
+      test: ["CMD", "node", "-e", "process.exit(Date.now() - require('fs').statSync('/tmp/scheduler-heartbeat').mtimeMs < 120000 ? 0 : 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    depends_on:
+      api-gateway:
+        condition: service_healthy
+    networks:
+      - scanner-network
+    restart: unless-stopped
+
   frontend:
     build:
       context: .

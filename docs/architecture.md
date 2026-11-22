@@ -40,6 +40,7 @@ graph LR
 | api-gateway | 127.0.0.1:1001 | FastAPI app (`backend.main:app`). All routes are under `/api`. | `backend/main.py`, `backend/api/routes.py` |
 | ml-api | 127.0.0.1:8001 | The same FastAPI app with `models/` baked in, 4 uvicorn workers. Serves `/api/v1/ml/*` on its own port. | `docker/Dockerfile.ml-api` |
 | scanner-worker-1/2/3 | none | Pull scan jobs from Redis and scan with Playwright. See [Known gaps](#known-gaps). | `backend/worker/` |
+| scheduler | none | Runs scheduled scans whether or not the app is open: every 30 s it claims due jobs (`POST /api/store/schedules/claim`), scans, classifies and saves with the app's `src/lib/scanPipeline.js`, then records `lastRun` and the next run in the job's time zone. | `scheduler/` |
 | egress-proxy | 3128 (internal) | Every scanning browser goes through it. Refuses private, loopback and metadata addresses so a scan target can't reach internal services. | `backend/scanner/egress_proxy.py` |
 | PostgreSQL 17 | 127.0.0.1:5432 | `cookie_knowledge_base`, category overrides, ML tables. Hand-written migrations in `backend/db/migrations/`. | `backend/db/` |
 | MongoDB 7 | internal | Scan store: scans, approvals, published lists, schedules. | `backend/db/scan_store.py` |
