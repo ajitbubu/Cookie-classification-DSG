@@ -625,6 +625,37 @@ def test_store_saving_the_same_scan_again_replaces_it(store):
     assert len(scans) == 1 and scans[0]["totalCookies"] == 5
 
 
+def _paged_scan(scan_id):
+    pages = [{"url": "https://shop.com/", "cookies": [{"name": "_ga", "domain": ".shop.com"}]},
+             {"url": "https://shop.com/cart", "cookies": [{"name": "cart", "domain": "shop.com"}]}]
+    scan = _scan(scan_id)
+    scan["fullResults"]["pageResults"] = pages
+    return scan, pages
+
+
+def test_store_list_leaves_out_page_results_and_get_returns_them(store):
+    """The startup list carried every scan's per-page cookies (13.9 MB for 500 scans)."""
+    scan, pages = _paged_scan("s1")
+    store.put("/api/store/scans/s1", json=scan)
+    listed = store.get("/api/store/scans").json()["scans"][0]
+    assert "pageResults" not in listed["fullResults"]
+    assert listed["fullResults"]["cookies"][0]["name"] == "_ga"  # cookies stay: most pages read them
+    full = store.get("/api/store/scans/s1").json()
+    assert full["fullResults"]["pageResults"] == pages and full["totalCookies"] == 2
+    assert store.get("/api/store/scans/missing").status_code == 404
+    assert store.get("/api/store/scans/bad$id").status_code == 422
+
+
+def test_store_saving_a_list_copy_keeps_the_stored_pages(store):
+    scan, pages = _paged_scan("s1")
+    store.put("/api/store/scans/s1", json=scan)
+    listed = store.get("/api/store/scans").json()["scans"][0]
+    listed["totalCookies"] = 3
+    store.put("/api/store/scans/s1", json=listed)  # no pageResults in the body
+    full = store.get("/api/store/scans/s1").json()
+    assert full["totalCookies"] == 3 and full["fullResults"]["pageResults"] == pages
+
+
 def test_store_filters_scans_by_domain_and_deletes(store):
     store.put("/api/store/scans/a", json=_scan("a", domain="a.com"))
     store.put("/api/store/scans/b", json=_scan("b", domain="b.com"))
@@ -781,7 +812,8 @@ def test_store_never_keeps_cookie_values(store):
     assert store.put("/api/store/scans/v1", json=scan).status_code == 200
     saved = store.get("/api/store/scans").json()["scans"][0]["fullResults"]
     assert "value" not in saved["cookies"][0] and saved["cookies"][0]["name"] == "_ga"
-    assert saved["pageResults"][0]["cookies"] == [{"name": "sid"}]
+    pages = store.get("/api/store/scans/v1").json()["fullResults"]["pageResults"]  # the list leaves pages out
+    assert pages[0]["cookies"] == [{"name": "sid"}]
 
 
 def test_strip_cookie_values_handles_partial_scans():

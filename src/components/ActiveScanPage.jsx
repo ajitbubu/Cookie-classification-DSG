@@ -143,7 +143,8 @@ function ActiveScanPage({
   const [view, setView] = useState('cards');
   const handlers = { onCancelRunning, onPauseRunning, onResumeRunning, onRescanInterrupted, onDismissInterrupted, onRetryScan, onViewResults, onDismissCompleted, onCancelJob, onRescheduleJob, onTogglePauseJob };
   const items = buildItems({ running, failure, completed, scheduledJobs, interrupted });
-  const inProgress = items.filter((item) => item.kind === 'running' || item.kind === 'scheduled').length;
+  // Scheduled jobs are waiting, not in progress (design-review follow-up to 003).
+  const inProgress = items.filter((item) => item.kind === 'running').length;
 
   let body;
   if (error) {

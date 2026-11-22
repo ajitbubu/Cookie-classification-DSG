@@ -39,6 +39,8 @@ export function historyFromScans(scans) {
 }
 
 export const listScans = async (limit = STORE_SCAN_LIMIT) => (await request(`/scans?limit=${limit}`)).scans || [];
+/** One scan in full: the list leaves out `fullResults.pageResults` (over half of each scan). */
+export const getScan = (id) => request(`/scans/${enc(id)}`);
 export const saveScan = (scan) => request(`/scans/${enc(scan.id)}`, { method: 'PUT', body: scan });
 export const deleteScan = (id) => request(`/scans/${enc(id)}`, { method: 'DELETE' });
 export const clearScans = () => request('/scans', { method: 'DELETE' });

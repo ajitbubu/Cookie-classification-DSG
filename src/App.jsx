@@ -21,7 +21,7 @@ import DomainDetailsPage from './components/DomainDetailsPage';
 import DomainDetailsMissing from './components/DomainDetailsMissing';
 import { getPublishedVersion, loadPublishedVersions, publishVersion } from './lib/publishStore';
 import { loadApprovals } from './lib/reviewQueue';
-import { clearScans, deleteScan as deleteStoredScan, deleteSchedule, historyFromScans, loadStore, saveScan, saveSchedule } from './lib/scanApi';
+import { clearScans, deleteScan as deleteStoredScan, deleteSchedule, getScan, historyFromScans, loadStore, saveScan, saveSchedule } from './lib/scanApi';
 import { applyCategoryChanges, resolveDomainScan, versionsForDomain } from './lib/domainDetails';
 import { publishCategories, publishSummary } from './lib/categoryApi';
 import LaunchScan from './components/LaunchScan';
@@ -32,7 +32,7 @@ import CookieInventoryPage from './components/CookieInventoryPage';
 import LeftSidebar from './components/LeftSidebar';
 import ReviewQueuePage from './components/ReviewQueuePage';
 import { useToast } from './components/Toast';
-import { nextRunTime, startsLater } from './lib/schedule';
+import { nextRunTime, resumedNextRun, startsLater } from './lib/schedule';
 import { readInterruptedScan, clearActiveScan, MAX_SCAN_HISTORY, MAX_SCANS_PER_DOMAIN } from './lib/scanStorage';
 import { useScanGuard } from './hooks/useScanGuard';
 import { toClassifyCookie } from './lib/cookieClassifyPayload';
@@ -138,13 +138,25 @@ function App() {
     }
   }, [currentPage, resultsTab, openScan]);
 
+  // Scans from the startup list have no per-page results (scanApi.getScan has them):
+  // show the cookies now, then swap in the full scan if it is still the one open.
+  const showStoredScan = (entry) => {
+    setScanResult(entry.fullResults);
+    if (!entry.id || entry.fullResults?.pageResults) return;
+    getScan(entry.id)
+      .then((full) => {
+        if (full?.fullResults) setScanResult((current) => (current === entry.fullResults ? full.fullResults : current));
+      })
+      .catch((e) => console.error(`Could not load the pages of scan ${entry.id}:`, e));
+  };
+
   // E3 loader: open the stored scan a /domains/:domain[?scan=] link points at.
   const loadDomainRoute = (route) => {
     const resolved = resolveDomainScan({ scanHistory, domainHistory, domain: route.domain, scanId: route.scanId });
     setOpenScan({ domain: route.domain, scanId: resolved.entry?.id ?? route.scanId ?? null });
     if (resolved.status === 'found') {
       setDomainMissing(null);
-      setScanResult(resolved.entry.fullResults);
+      showStoredScan(resolved.entry);
     } else {
       setDomainMissing({ status: resolved.status, domain: route.domain, entry: resolved.entry });
     }
@@ -915,8 +927,9 @@ function App() {
         });
       }, intervalMs);
     } else {
-      // For daily/weekly/monthly, check every 30 seconds if it's time to run
-      timerId = setInterval(() => {
+      // For daily/weekly/monthly, check every 30 seconds if it's time to run, and once now
+      // so a run missed while the app was closed doesn't sit on screen as a past time.
+      const checkDue = () => {
         const now = Date.now();
         setScheduledJobs(prev => {
           const jobState = prev.find(j => j.id === job.id);
@@ -931,7 +944,9 @@ function App() {
           }
           return prev;
         });
-      }, 30000);
+      };
+      timerId = setInterval(checkDue, 30000);
+      checkDue();
     }
 
     jobTimersRef.current[job.id] = { timerId, countdownId };
@@ -1097,7 +1112,7 @@ function App() {
     setOpenScan({ domain: version.domain, scanId: version.id });
     if (version.fullResults) {
       setDomainMissing(null);
-      setScanResult(version.fullResults);
+      showStoredScan(version);
     } else {
       setDomainMissing({ status: 'pruned', domain: version.domain, entry: version });
     }
@@ -1108,7 +1123,7 @@ function App() {
     setOpenScan({ domain: scan.domain, scanId: scan.id });
     if (scan.fullResults) {
       setDomainMissing(null);
-      setScanResult(scan.fullResults);
+      showStoredScan(scan);
     } else {
       setDomainMissing({ status: 'pruned', domain: scan.domain, entry: scan });
     }
@@ -1258,8 +1273,9 @@ function App() {
       setDomainHistory(history.domainHistory);
       loadPublishedVersions(published);
       loadApprovals(approvals);
-      const jobs = schedules.map(job => ({ ...job, timerId: null, countdownId: null, timeLeft: null }));
+      const jobs = schedules.map(job => ({ ...job, nextRun: resumedNextRun(job), timerId: null, countdownId: null, timeLeft: null }));
       setScheduledJobs(jobs);
+      jobs.filter((job, i) => job.nextRun !== schedules[i].nextRun).forEach(job => persistScheduledJobs(jobs, job.id));
       jobs.forEach(job => {
         startJobTimers(job);
       });

@@ -20,6 +20,9 @@ from backend.config import settings
 logger = logging.getLogger(__name__)
 
 MAX_SCANS = 500  # newest scans returned in one list call
+# Per-page cookie lists: over half of a stored scan, and only the opened scan's
+# Pages tab uses them. Lists leave them out; GET /api/store/scans/{id} has them.
+LIST_EXCLUDES = {"fullResults.pageResults": 0}
 
 
 def _to_doc(record: Dict[str, Any], key: str) -> Dict[str, Any]:
@@ -78,12 +81,24 @@ class ScanStore:
     # ── Scans ─────────────────────────────────────────────
     async def list_scans(self, limit: int = MAX_SCANS, domain: Optional[str] = None) -> List[Dict[str, Any]]:
         query = {"domain": domain} if domain else {}
-        cursor = self.db.scans.find(query).sort("timestamp", -1).limit(max(1, min(limit, MAX_SCANS)))
+        cursor = self.db.scans.find(query, LIST_EXCLUDES).sort("timestamp", -1).limit(max(1, min(limit, MAX_SCANS)))
         return [_from_doc(d, "id") async for d in cursor]
+
+    async def get_scan(self, scan_id: str) -> Optional[Dict[str, Any]]:
+        """One scan with everything stored, including per-page results."""
+        doc = await self.db.scans.find_one({"_id": scan_id})
+        return _from_doc(doc, "id") if doc else None
 
     async def upsert_scan(self, scan: Dict[str, Any]) -> None:
         """Insert a scan, or replace it when the same id is saved again (ML-corrected save)."""
         strip_cookie_values(scan)
+        full = scan.get("fullResults")
+        if isinstance(full, dict) and "pageResults" not in full:
+            # Saved from a list copy: keep the stored pages rather than erase them.
+            stored = await self.db.scans.find_one({"_id": scan["id"]}, {"fullResults.pageResults": 1})
+            pages = ((stored or {}).get("fullResults") or {}).get("pageResults")
+            if pages is not None:
+                full["pageResults"] = pages
         await self.db.scans.replace_one({"_id": scan["id"]}, _to_doc(scan, "id"), upsert=True)
 
     async def delete_scan(self, scan_id: str) -> bool:

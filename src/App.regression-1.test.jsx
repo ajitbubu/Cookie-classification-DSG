@@ -29,12 +29,14 @@ const classifications = scanResponse.cookies.map((c) => ({
   confidence: 0.9, confidence_level: 'High', classification_status: 'review', source: 'ml_prediction',
 }));
 
-function routeFetch({ scanStatus = 200, storeStatus = 200, stored = [] } = {}) {
+function routeFetch({ scanStatus = 200, storeStatus = 200, stored = [], full = {} } = {}) {
   return vi.spyOn(globalThis, 'fetch').mockImplementation(async (url) => {
     const u = String(url);
     if (u.startsWith('/api/store')) {
       if (storeStatus !== 200) return { ok: false, status: storeStatus, json: async () => ({}) };
       if (u.startsWith('/api/store/scans?')) return { ok: true, status: 200, json: async () => ({ scans: stored }) };
+      const one = u.match(/^\/api\/store\/scans\/([^/?]+)$/);
+      if (one && full[one[1]]) return { ok: true, status: 200, json: async () => full[one[1]] };
       if (u === '/api/store/import') return { ok: true, status: 200, json: async () => ({ scans: 1, published: 0, schedules: 0, approvals: 0 }) };
       return { ok: true, status: 200, json: async () => ({}) };
     }
@@ -98,6 +100,19 @@ describe('Saved scans load from the scan store', () => {
     routeFetch({ stored: [{ id: 's1', domain: 'stored.com', timestamp: '2026-10-12T09:00:00.000Z', totalCookies: 3, fullResults: { cookies: [] } }] });
     renderApp();
     expect(await screen.findByText('stored.com')).toBeInTheDocument();
+  });
+
+  it('fetches the pages of a stored scan when it is opened (the list leaves them out)', async () => {
+    const cookies = [{ name: '_ga', domain: '.stored.com', category: 'Analytics' }];
+    const listed = { id: 's1', domain: 'stored.com', timestamp: '2026-10-12T09:00:00.000Z', totalCookies: 1,
+      fullResults: { domain: 'stored.com', scannedAt: '2026-10-12T09:00:00.000Z', cookies,
+        statistics: { byCategory: { Analytics: 1 }, byType: {}, requiresConsent: 1, thirdParty: 0, totalSize: 0 } } };
+    const pageResults = [{ url: 'https://stored.com/', cookies }, { url: 'https://stored.com/cart', cookies: [] }];
+    const fetchMock = routeFetch({ stored: [listed], full: { s1: { ...listed, fullResults: { ...listed.fullResults, pageResults } } } });
+    window.history.pushState({}, '', '/domains/stored.com');
+    renderApp();
+    expect(await screen.findByRole('tab', { name: /Pages\s*2/ })).toBeInTheDocument();
+    expect(fetchMock).toHaveBeenCalledWith('/api/store/scans/s1', { method: 'GET' });
   });
 
   it('says it could not load, with Retry, when the database is unavailable', async () => {

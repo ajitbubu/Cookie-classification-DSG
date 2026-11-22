@@ -26,10 +26,6 @@ All 12 audit findings and the Web Interface Guidelines review are resolved on th
   DESIGN.md "Contrast exceptions" (user decision 2026-10-12), so only the chart series changed.
 - **011, no change needed:** the sidebar was already full-height (position: fixed); full-page
   screenshots made it look short.
-- **Follow-up to 001:** `/api/store/scans` returns 4.8 MB (`fullResults` on all 200 scans). Return
-  summaries from the list and fetch detail on demand.
-- **Follow-up to 003:** the "N in progress" chip counts scheduled jobs, and schedules show next-run
-  times that have already passed.
 - **Domain Details Version History:** the Figma "Published By" column returns once publishes record who
   published them.
 

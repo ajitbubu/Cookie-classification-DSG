@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import {
-  listScans, saveScan, deleteScan, saveSchedule, readLegacyBrowserData, loadStore, historyFromScans,
+  listScans, getScan, saveScan, deleteScan, saveSchedule, readLegacyBrowserData, loadStore, historyFromScans,
 } from './scanApi';
 import { MAX_SCAN_HISTORY, MAX_SCANS_PER_DOMAIN } from './scanStorage';
 
@@ -20,6 +20,12 @@ describe('scanApi', () => {
     fetchMock.mockResolvedValue(ok({ scans: [scan('a')] }));
     expect(await listScans()).toEqual([scan('a')]);
     expect(fetchMock).toHaveBeenCalledWith('/api/store/scans?limit=500', { method: 'GET' });
+  });
+
+  it('gets one full scan by id', async () => {
+    fetchMock.mockResolvedValue(ok(scan('a b', { fullResults: { pageResults: [] } })));
+    expect((await getScan('a b')).fullResults.pageResults).toEqual([]);
+    expect(fetchMock).toHaveBeenCalledWith('/api/store/scans/a%20b', { method: 'GET' });
   });
 
   it('saves a scan with PUT to its id', async () => {
