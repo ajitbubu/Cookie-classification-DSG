@@ -3,12 +3,6 @@ import { Download, Eye, EyeOff, History } from 'lucide-react';
 import CookieScanner from './lib/CookieScanner';
 import DeepScanner from './lib/DeepScanner';
 import { downloadFile } from './lib/utils';
-import { calculateComplianceRisks } from './lib/riskCalculator';
-import {
-  createRuleFallbackClassifications,
-  normalizeCategory,
-  publishableCategory as publishableCategoryFor,
-} from './lib/classificationPolicy';
 import Navbar from './components/Navbar';
 import CookieTabs from './components/CookieTabs';
 import PanelError from './components/ui/PanelError';
@@ -35,7 +29,6 @@ import { useToast } from './components/Toast';
 import { nextRunTime, resumedNextRun, startsLater } from './lib/schedule';
 import { readInterruptedScan, clearActiveScan, MAX_SCAN_HISTORY, MAX_SCANS_PER_DOMAIN } from './lib/scanStorage';
 import { useScanGuard } from './hooks/useScanGuard';
-import { toClassifyCookie } from './lib/cookieClassifyPayload';
 import { DASHBOARD_TABS, DOMAIN_TABS, SCANNING_TABS, pathForRoute, routeFromPath } from './lib/routes';
 import { formatScanDate } from './lib/scanResults';
 import CookieDetailModal from './components/CookieDetailModal';
@@ -43,7 +36,7 @@ import VendorDashboard from './components/VendorDashboard';
 import OverrideModal from './components/OverrideModal';
 import ModelPerformancePage from './components/ModelPerformancePage';
 import { responseErrorMessage } from './lib/apiError';
-import { applyWebsiteDeclaration } from './lib/websiteDeclaration';
+import { applyClassifications, buildHistoryEntry, classifyCookies, fetchWithTimeout } from './lib/scanPipeline';
 import './App.css';
 
 function App() {
@@ -218,168 +211,6 @@ function App() {
     setSelectedCookie(null);
   };
 
-  // Helper function to recalculate statistics based on updated cookie categories
-  const calculateStatistics = (cookies) => {
-    const stats = {
-      byCategory: {},
-      byType: {},
-      requiresConsent: 0,
-      thirdParty: 0,
-      totalSize: 0
-    };
-
-    cookies.forEach(cookie => {
-      // Count by category
-      const category = cookie.category || 'Uncategorized';
-      stats.byCategory[category] = (stats.byCategory[category] || 0) + 1;
-
-      // Count by type
-      const type = cookie.type || 'session';
-      stats.byType[type] = (stats.byType[type] || 0) + 1;
-
-      // Count consent requirements
-      if (cookie.requiresConsent) {
-        stats.requiresConsent++;
-      }
-
-      // Count third-party
-      if (cookie.isThirdParty) {
-        stats.thirdParty++;
-      }
-
-      // Sum sizes
-      stats.totalSize += cookie.size || 0;
-    });
-
-    return stats;
-  };
-
-  // Helper function to create fetch with timeout
-  const fetchWithTimeout = async (url, options = {}, timeoutMs = 30000) => {
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
-    
-    try {
-      const response = await fetch(url, {
-        ...options,
-        signal: controller.signal
-      });
-      clearTimeout(timeoutId);
-      return response;
-    } catch (error) {
-      clearTimeout(timeoutId);
-      if (error.name === 'AbortError') {
-        throw new Error(`Request timeout after ${timeoutMs / 1000} seconds`);
-      }
-      throw error;
-    }
-  };
-
-  // Model confidence must remain the calibrated model output. Rule agreement is
-  // useful evidence, but adding an arbitrary boost makes the score misleading.
-  const adjustMLConfidence = (_cookie, mlData) => {
-    return {
-      adjustedConfidence: mlData.confidence_score ?? 0,
-      adjustedLevel: mlData.confidence_level || 'Low',
-    };
-  };
-
-  const enrichCookieWithClassification = (cookie, classification) => {
-    const mlData = classification || createRuleFallbackClassifications(
-      [cookie],
-      'missing_classification_result'
-    )[0];
-    const suggestedCategory = normalizeCategory(
-      mlData.suggested_category || mlData.predicted_category
-    );
-    const publishableCategory = publishableCategoryFor(mlData);
-    const { adjustedConfidence, adjustedLevel } = adjustMLConfidence(cookie, mlData);
-    const classificationSource = mlData.source || 'ml_prediction';
-    const isPublishedClassification = mlData.classification_status === 'classified';
-
-    return applyWebsiteDeclaration({
-      ...cookie,
-      originalCategory: cookie.category,
-      category: publishableCategory,
-      mlClassification: suggestedCategory,
-      mlSuggestedClassification: suggestedCategory,
-      mlConfidence: adjustedConfidence,
-      mlConfidenceLevel: adjustedLevel,
-      mlAlternativePredictions: mlData.alternative_predictions || [],
-      classificationSource,
-      classificationStatus: mlData.classification_status || (
-        publishableCategory === 'Unclassified' ? 'suggested' : 'classified'
-      ),
-      abstainReason: mlData.abstain_reason || null,
-      siteLabelSplit: mlData.site_label_split || null,
-      knownCookie: mlData.known_cookie || null,
-      requiresReview: mlData.requires_review ?? true,
-      requiresConsent: isPublishedClassification
-        ? publishableCategory !== 'Strictly Necessary'
-        : true,
-      gdprCompliant: isPublishedClassification
-        ? publishableCategory === 'Strictly Necessary'
-        : false,
-      ccpaApplicable: isPublishedClassification
-        ? ['Analytics', 'Marketing'].includes(publishableCategory)
-        : true,
-      websiteProvided: false,
-      categorySource: isPublishedClassification ? classificationSource : 'unclassified',
-    });
-  };
-
-  // ML Classification function
-  const classifyCookiesWithML = async (cookies, siteDomain) => {
-    try {
-      const requestBody = {
-        cookies: cookies.map(cookie => toClassifyCookie(cookie, siteDomain)),
-        options: {
-          return_explanation: false,
-          find_similar: false,
-          auto_classify: false,
-        }
-      };
-      
-      console.log(`🤖 Calling ML API for ${cookies.length} cookies...`);
-      
-      // ML Classification timeout: 30 seconds
-      const response = await fetchWithTimeout(
-        '/api/v1/ml/classify',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(requestBody)
-        },
-        30000 // 30 seconds timeout
-      );
-
-      if (response.ok) {
-        const data = await response.json();
-        console.log('✅ ML API Response:', data.summary);
-        console.log('Sample classification:', data.classifications[0]);
-        console.log('All classifications:', data.classifications.map(c => ({
-          category: c.predicted_category,
-          confidence: c.confidence_score,
-          level: c.confidence_level
-        })));
-        
-        return data.classifications;
-      } else {
-        console.error('❌ ML API returned error:', response.status, response.statusText);
-      }
-    } catch (error) {
-      if (error.message.includes('timeout')) {
-        console.error('❌ ML API timeout after 30 seconds');
-      } else {
-        console.error('❌ ML API failed:', error);
-      }
-    }
-    
-    return createRuleFallbackClassifications(cookies, 'model_unavailable');
-  };
-
   const handleQuickScan = async (url = null) => {
     setActiveScan({ url: url || window.location.href, type: 'quick', currentPage: !url });
     setScanError(null);
@@ -421,30 +252,11 @@ function App() {
 
     // Classify cookies with ML in the background
     if (results.cookies && results.cookies.length > 0) {
-      const mlClassifications = await classifyCookiesWithML(results.cookies, enhancedResults.domain);
-      
+      const mlClassifications = await classifyCookies(results.cookies, enhancedResults.domain);
       if (mlClassifications && mlClassifications.length > 0) {
-        const updatedCookies = results.cookies.map((cookie, idx) =>
-          enrichCookieWithClassification(cookie, mlClassifications[idx])
-        );
-        
-        const updatedResults = {
-          ...enhancedResults,
-          cookies: updatedCookies
-        };
-        
-        setScanResult(updatedResults);
-        
-        // Re-calculate statistics with updated categories
-        const updatedStats = calculateStatistics(updatedCookies);
-        const finalResults = {
-          ...updatedResults,
-          statistics: updatedStats
-        };
-        
+        const finalResults = applyClassifications(enhancedResults, mlClassifications);
         setScanResult(finalResults);
-        // Update history with corrected statistics
-        addToHistory(finalResults);
+        addToHistory(finalResults); // ML-corrected save of the same scan
       }
     }
   };
@@ -501,44 +313,11 @@ function App() {
 
       // Classify cookies with ML in the background
       if (results.cookies && results.cookies.length > 0) {
-        const mlClassifications = await classifyCookiesWithML(results.cookies, enhancedResults.domain);
-        
+        const mlClassifications = await classifyCookies(results.cookies, enhancedResults.domain);
         if (mlClassifications && mlClassifications.length > 0) {
-          const updatedCookies = results.cookies.map((cookie, idx) =>
-            enrichCookieWithClassification(cookie, mlClassifications[idx])
-          );
-
-          // Build a lookup map: name+domain -> ML-enriched cookie
-          const mlCookieMap = {};
-          updatedCookies.forEach(c => { mlCookieMap[`${c.name}||${c.domain}`] = c; });
-
-          // Propagate ML data into pageResults cookies
-          const updatedPageResults = (enhancedResults.pageResults || []).map(page => ({
-            ...page,
-            cookies: (page.cookies || []).map(c => {
-              const enriched = mlCookieMap[`${c.name}||${c.domain}`];
-              return enriched ? { ...c, ...enriched } : c;
-            })
-          }));
-
-          const updatedResults = {
-            ...enhancedResults,
-            cookies: updatedCookies,
-            pageResults: updatedPageResults
-          };
-
-          setScanResult(updatedResults);
-
-          // Re-calculate statistics with updated categories
-          const updatedStats = calculateStatistics(updatedCookies);
-          const finalResults = {
-            ...updatedResults,
-            statistics: updatedStats
-          };
-
+          const finalResults = applyClassifications(enhancedResults, mlClassifications);
           setScanResult(finalResults);
-          // Update history with ML-corrected statistics (like quick scan does)
-          addToHistory(finalResults);
+          addToHistory(finalResults); // ML-corrected save of the same scan
         }
       }
     } catch (error) {
@@ -603,42 +382,11 @@ function App() {
 
       // Classify cookies with ML in the background
       if (results.cookies && results.cookies.length > 0) {
-        const mlClassifications = await classifyCookiesWithML(results.cookies, enhancedResults.domain);
-        
+        const mlClassifications = await classifyCookies(results.cookies, enhancedResults.domain);
         if (mlClassifications) {
-          const updatedCookies = results.cookies.map((cookie, idx) =>
-            enrichCookieWithClassification(cookie, mlClassifications[idx])
-          );
-
-          const mlCookieMap2 = {};
-          updatedCookies.forEach(c => { mlCookieMap2[`${c.name}||${c.domain}`] = c; });
-
-          const updatedPageResults2 = (enhancedResults.pageResults || []).map(page => ({
-            ...page,
-            cookies: (page.cookies || []).map(c => {
-              const enriched = mlCookieMap2[`${c.name}||${c.domain}`];
-              return enriched ? { ...c, ...enriched } : c;
-            })
-          }));
-
-          const updatedResults = {
-            ...enhancedResults,
-            cookies: updatedCookies,
-            pageResults: updatedPageResults2
-          };
-
-          setScanResult(updatedResults);
-
-          // Re-calculate statistics with updated categories
-          const updatedStats = calculateStatistics(updatedCookies);
-          const finalResults = {
-            ...updatedResults,
-            statistics: updatedStats
-          };
-
+          const finalResults = applyClassifications(enhancedResults, mlClassifications);
           setScanResult(finalResults);
-          // Update history with ML-corrected statistics
-          addToHistory(finalResults);
+          addToHistory(finalResults); // ML-corrected save of the same scan
         }
       }
     } catch (error) {
@@ -712,126 +460,8 @@ function App() {
     );
   });
 
-  const cleanResultsForStorage = (results) => {
-    // Create a clean copy without circular references or complex objects.
-    // Cookie values are never stored: they can hold session tokens and personal data.
-    return {
-      cookies: results.cookies.map(cookie => ({
-        name: cookie.name,
-        domain: cookie.domain,
-        category: cookie.category,
-        originalCategory: cookie.originalCategory,
-        type: cookie.type,
-        purpose: cookie.purpose,
-        requiresConsent: cookie.requiresConsent,
-        isThirdParty: cookie.isThirdParty,
-        size: cookie.size,
-        secure: cookie.secure,
-        httpOnly: cookie.httpOnly,
-        mlClassification: cookie.mlClassification,
-        mlConfidence: cookie.mlConfidence,
-        mlConfidenceLevel: cookie.mlConfidenceLevel,
-        mlReasoning: cookie.mlReasoning,
-        abstainReason: cookie.abstainReason,
-        siteLabelSplit: cookie.siteLabelSplit,
-        knownCookie: cookie.knownCookie,
-        // The site's own banner declaration (OneTrust/Cookiebot) and what the model said about it
-        websiteDeclaration: cookie.websiteDeclaration,
-        websiteProvided: cookie.websiteProvided,
-        classificationSource: cookie.classificationSource,
-        modelSuggestion: cookie.modelSuggestion,
-        declarationConflict: cookie.declarationConflict
-      })),
-      statistics: {
-        byCategory: { ...results.statistics.byCategory },
-        byType: { ...results.statistics.byType },
-        requiresConsent: results.statistics.requiresConsent,
-        thirdParty: results.statistics.thirdParty,
-        totalSize: results.statistics.totalSize
-      },
-      domain: results.domain,
-      scannedAt: results.scannedAt,
-      totalCount: results.totalCount,
-      scannedUrl: results.scannedUrl,
-      scanType: results.scanType,
-      errorPages: results.errorPages,
-      scanDuration: results.scanDuration,
-      cmp: results.cmp,
-      pageResults: results.pageResults ? results.pageResults.map(page => ({
-        url: page.url,
-        cookies: page.cookies.map(cookie => ({
-          name: cookie.name,
-          domain: cookie.domain,
-          category: cookie.category,
-          originalCategory: cookie.originalCategory,
-          type: cookie.type,
-          purpose: cookie.purpose,
-          requiresConsent: cookie.requiresConsent,
-          isThirdParty: cookie.isThirdParty,
-          size: cookie.size,
-          secure: cookie.secure,
-          httpOnly: cookie.httpOnly,
-          mlClassification: cookie.mlClassification,
-          mlConfidence: cookie.mlConfidence,
-          mlConfidenceLevel: cookie.mlConfidenceLevel,
-          mlReasoning: cookie.mlReasoning,
-          abstainReason: cookie.abstainReason,
-          siteLabelSplit: cookie.siteLabelSplit,
-          knownCookie: cookie.knownCookie
-        }))
-      })) : undefined
-    };
-  };
-
   const addToHistory = (results) => {
-    const cleanResults = cleanResultsForStorage(results);
-
-    // Derive stats from cookies array when summary fields are missing/zero
-    const cookies = results.cookies || [];
-    const stats = results.statistics || {};
-    const totalCookies = results.totalCount || stats.totalCount || cookies.length || 0;
-    const requiresConsent = stats.requiresConsent || cookies.filter(c => c.requiresConsent).length || 0;
-    const thirdParty = stats.thirdParty || cookies.filter(c => c.isThirdParty || c.type === 'third-party').length || 0;
-
-    // Derive category breakdown from cookies if stats.byCategory is missing or empty
-    let byCategory = stats.byCategory && Object.keys(stats.byCategory).length > 0
-      ? { ...stats.byCategory }
-      : {};
-    if (Object.keys(byCategory).length === 0 && cookies.length > 0) {
-      cookies.forEach(c => {
-        const cat = c.category || 'Uncategorized';
-        byCategory[cat] = (byCategory[cat] || 0) + 1;
-      });
-    }
-
-    // Derive type breakdown from cookies if stats.byType is missing or empty
-    let byType = stats.byType && Object.keys(stats.byType).length > 0
-      ? { ...stats.byType }
-      : {};
-    if (Object.keys(byType).length === 0 && cookies.length > 0) {
-      cookies.forEach(c => {
-        const t = c.isThirdParty ? 'third-party' : (c.type || 'first-party');
-        byType[t] = (byType[t] || 0) + 1;
-      });
-    }
-
-    const historyEntry = {
-      id: results._scanId || `${Date.now()}-${Math.random().toString(36).substring(2, 11)}`,
-      timestamp: new Date().toISOString(),
-      domain: results.domain,
-      url: results.scannedUrl,
-      totalCookies,
-      requiresConsent,
-      thirdParty,
-      categories: byCategory,
-      types: byType,
-      ...calculateComplianceRisks(cookies, { ...stats, requiresConsent, thirdParty }),
-      scanType: results.scanType || 'quick',
-      pagesScanned: results.totalPages || results.pageResults?.length || 1,
-      failedPages: results.errorPages?.length || 0,
-      durationMs: results.scanDuration || null,
-      fullResults: cleanResults // Store cleaned results for detailed view
-    };
+    const historyEntry = buildHistoryEntry(results);
     setLastCompleted(historyEntry);
     setOpenScan({ domain: historyEntry.domain, scanId: historyEntry.id });
     setDomainMissing(null);
