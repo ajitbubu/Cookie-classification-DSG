@@ -14,7 +14,7 @@ const history = [
 describe('CookieInventoryPage', () => {
   it('lists every stored cookie with its category, sites and source scan', () => {
     render(<CookieInventoryPage scanHistory={history} onNewScan={vi.fn()} />);
-    const rows = within(screen.getByRole('table', { name: 'Cookie inventory' })).getAllByRole('row').slice(1);
+    const rows = within(screen.getByRole('table', { name: 'Cookie Inventory' })).getAllByRole('row').slice(1);
     expect(rows).toHaveLength(2);
     expect(within(rows[0]).getByRole('rowheader')).toHaveTextContent('_ga');
     expect(within(rows[0]).getByText('Analytics')).toBeInTheDocument();

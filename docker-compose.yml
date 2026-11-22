@@ -286,10 +286,11 @@ services:
     ports:
       - "80:80"
       - "443:443"
+    # The whole nginx/ folder, not single files: git replaces nginx.conf on checkout/merge,
+    # and a single-file mount keeps serving the old, deleted file (ISSUE-006).
+    command: ["nginx", "-c", "/etc/nginx/site/nginx.conf", "-g", "daemon off;"]
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./nginx/ssl:/etc/nginx/ssl:ro
-      - ./nginx/htpasswd:/etc/nginx/htpasswd:ro
+      - ./nginx:/etc/nginx/site:ro
     depends_on:
       - api-gateway
       - frontend

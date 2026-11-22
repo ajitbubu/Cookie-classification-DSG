@@ -31,7 +31,7 @@ const LEGACY_PATHS = {
 export const COOKIE_PAGES = [
   { page: 'home', label: 'Dashboard' },
   { page: 'launch', label: 'Scanning' },
-  { page: 'websites', label: 'Website' },
+  { page: 'websites', label: 'Websites' },
   { page: 'inventory', label: 'Cookie Inventory' },
   { page: 'review', label: 'Review Queue' },
 ];

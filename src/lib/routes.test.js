@@ -79,7 +79,7 @@ describe('Figma navigation: sidebar pages, Scanning tabs (1:189760) and settings
   });
 
   it('lists the Cookie Classification sidebar pages in Figma order', () => {
-    expect(COOKIE_PAGES.map((t) => t.label)).toEqual(['Dashboard', 'Scanning', 'Website', 'Cookie Inventory', 'Review Queue']);
+    expect(COOKIE_PAGES.map((t) => t.label)).toEqual(['Dashboard', 'Scanning', 'Websites', 'Cookie Inventory', 'Review Queue']);
     expect(COOKIE_PAGES.every((t) => PAGES.includes(t.page))).toBe(true);
   });
 
