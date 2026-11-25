@@ -9,21 +9,30 @@ export const BULK_CATEGORIES = ['Strictly Necessary', 'Functional', 'Analytics',
 export const cookieKey = (cookie) => `${cookie.name}|${cookie.domain}`;
 
 const cookiesOf = (scan) => scan?.fullResults?.cookies;
+const categoryOf = (cookie) => cookie.category || 'Unclassified';
+
+// What changed from one stored version to another (any two, either order): cookies
+// only in `to`, cookies only in `from`, and cookies in both whose category differs.
+// Null when either version lost its cookie details to storage pruning.
+export function compareVersions(from, to) {
+  if (!cookiesOf(from) || !cookiesOf(to)) return null;
+  const before = new Map(cookiesOf(from).map((c) => [cookieKey(c), c]));
+  const after = new Map(cookiesOf(to).map((c) => [cookieKey(c), c]));
+  return {
+    added: [...after].filter(([key]) => !before.has(key)).map(([, c]) => c),
+    removed: [...before].filter(([key]) => !after.has(key)).map(([, c]) => c),
+    recategorised: [...after]
+      .filter(([key, c]) => before.has(key) && categoryOf(before.get(key)) !== categoryOf(c))
+      .map(([key, c]) => ({ cookie: c, from: categoryOf(before.get(key)), to: categoryOf(c) })),
+  };
+}
 
 // A domain's stored scans as versions: v1 is the oldest; newest is listed first.
 export function versionsForDomain(scans = []) {
   const oldestFirst = [...scans].sort((a, b) => (a.timestamp < b.timestamp ? -1 : 1));
   const versions = oldestFirst.map((scan, i) => {
-    const prev = oldestFirst[i - 1];
-    let diff = null;
-    if (prev && cookiesOf(scan) && cookiesOf(prev)) {
-      const now = new Set(cookiesOf(scan).map(cookieKey));
-      const before = new Set(cookiesOf(prev).map(cookieKey));
-      diff = {
-        added: [...now].filter((k) => !before.has(k)).length,
-        removed: [...before].filter((k) => !now.has(k)).length,
-      };
-    }
+    const changes = i > 0 ? compareVersions(oldestFirst[i - 1], scan) : null;
+    const diff = changes && { added: changes.added.length, removed: changes.removed.length };
     return { ...scan, version: i + 1, diff };
   });
   return versions.reverse();

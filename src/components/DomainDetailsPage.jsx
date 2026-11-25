@@ -15,7 +15,7 @@ import { Chip, StatusChip, CategoryTag } from './ui/Chip';
 import { useAnnounce } from './ui/LiveRegion';
 import CookieClassificationTable from './CookieClassificationTable';
 import BulkUpdateDrawer from './BulkUpdateDrawer';
-import { BULK_CATEGORIES, categoryBreakdown, cookieKey, pagesFromScan, vendorsFromCookies } from '../lib/domainDetails';
+import { BULK_CATEGORIES, categoryBreakdown, compareVersions, cookieKey, pagesFromScan, vendorsFromCookies } from '../lib/domainDetails';
 import { formatScanDate, scanStatus } from '../lib/scanResults';
 import { reviewedComplianceRisks, getRiskExplanation } from '../lib/riskCalculator';
 import { readApprovals } from '../lib/reviewQueue';
@@ -41,6 +41,30 @@ const pageDuration = (ms) => {
   return ms < 60000 ? `${(ms / 1000).toFixed(1)} s` : timeTaken(ms);
 };
 const scanTypeName = (type) => (type === 'deep' ? 'Deep' : type === 'scheduled' ? 'Scheduled' : 'Quick');
+const versionName = (v) => `V ${v.version}`;
+// Compare Versions table: added green, removed red, recategorised amber (UCM tag tones)
+const CHANGE = {
+  added: { label: 'Added', tone: 'necessary' },
+  removed: { label: 'Removed', tone: 'unclassified' },
+  recategorised: { label: 'Recategorised', tone: 'marketing' },
+};
+
+// Rows for the Compare Versions table, or the reason there are none.
+function comparison(from, to) {
+  if (!from || !to) return { message: 'Pick two versions to compare.' };
+  if (from.id === to.id) return { message: 'Pick two different versions to compare.' };
+  const changes = compareVersions(from, to);
+  if (!changes) {
+    const missing = [from, to].filter((v) => !v.fullResults?.cookies).map(versionName);
+    return { message: `${missing.join(' and ')}'s cookie details are no longer stored, so ${missing.length > 1 ? 'they' : 'it'} can't be compared.` };
+  }
+  const rows = [
+    ...changes.added.map((cookie) => ({ kind: 'added', cookie })),
+    ...changes.removed.map((cookie) => ({ kind: 'removed', cookie })),
+    ...changes.recategorised.map(({ cookie, from: before, to: after }) => ({ kind: 'recategorised', cookie, before, after })),
+  ];
+  return { changes, rows };
+}
 
 function usePaged(rows, initialSize = 5) {
   const [page, setPage] = useState(1);
@@ -82,8 +106,10 @@ function DomainDetailsPage({
   const [allVersions, setAllVersions] = useState(false);
   const [query, setQuery] = useState('');
   const [categoryFilter, setCategoryFilter] = useState('all');
+  const [comparePair, setComparePair] = useState(null); // { fromId, toId } once the user picks
   const tabRefs = useRef({});
   const versionsRef = useRef(null);
+  const compareHeadingRef = useRef(null);
   const announce = useAnnounce();
 
   const cookies = useMemo(() => scan.cookies || [], [scan.cookies]);
@@ -160,6 +186,17 @@ function DomainDetailsPage({
     requestAnimationFrame(() => versionsRef.current?.scrollIntoView?.({ behavior: 'smooth', block: 'start' }));
   };
 
+  // Compare Versions: the user's pick, else the previous version against the latest.
+  // A pick that no longer exists (another domain's versions) falls back to that default.
+  const versionById = (id) => versions.find((v) => v.id === id);
+  const compareFrom = (comparePair && versionById(comparePair.fromId)) || versions[1];
+  const compareTo = (comparePair && versionById(comparePair.toId)) || versions[0];
+  const pickCompare = (fromId, toId) => setComparePair({ fromId, toId });
+  const openComparison = (from, to) => {
+    pickCompare(from.id, to.id);
+    compareHeadingRef.current?.focus();
+  };
+
   const scanNowAction = { label: 'Scan Now', onClick: onScanNow };
   const toolbar = (label, filters) => (
     <TableToolbar
@@ -175,6 +212,7 @@ function DomainDetailsPage({
   let panel;
   if (tab === 'overview') {
     const shownVersions = allVersions ? versions : versions.slice(0, VERSIONS_SHOWN);
+    const compared = comparison(compareFrom, compareTo);
     panel = (
       <>
         <div className="dd-kpis">
@@ -230,11 +268,23 @@ function DomainDetailsPage({
                 key: 'cookies',
                 header: 'Updated Cookies',
                 render: (v) => {
-                  const net = v.diff ? v.diff.added - v.diff.removed : null;
+                  // Added and removed shown apart: a net count hides cookies swapped one for one
+                  const previous = versions[versions.findIndex((x) => x.id === v.id) + 1];
+                  const { added = 0, removed = 0 } = v.diff || {};
                   return (
                     <span className="dd-updated">
                       {(v.totalCookies ?? 0).toLocaleString()}
-                      {net != null && net !== 0 && <span className={net > 0 ? 'dd-up' : 'dd-down'}>{net > 0 ? `+${net}` : `${net}`}</span>}
+                      {previous && (added > 0 || removed > 0) && (
+                        <button
+                          type="button"
+                          className="dd-changes"
+                          aria-label={`${added} added, ${removed} removed: compare version ${previous.version} with version ${v.version}`}
+                          onClick={() => openComparison(previous, v)}
+                        >
+                          {added > 0 && <span className="dd-up">{`+${added}`}</span>}
+                          {removed > 0 && <span className="dd-down">{`−${removed}`}</span>}
+                        </button>
+                      )}
                     </span>
                   );
                 },
@@ -254,6 +304,69 @@ function DomainDetailsPage({
             ]}
           />
         </section>
+
+        {versions.length > 1 && (
+          <section className="dd-card dd-compare" aria-labelledby="dd-compare">
+            <div className="dd-card__head">
+              <h3 id="dd-compare" className="dd-card__title" tabIndex={-1} ref={compareHeadingRef}>Compare Versions</h3>
+              <div className="dd-compare__pick">
+                {[['from', 'From', compareFrom], ['to', 'To', compareTo]].map(([end, label, chosen]) => (
+                  <span key={end} className="dd-compare__field">
+                    <label htmlFor={`dd-compare-${end}`}>{label}</label>
+                    <select
+                      id={`dd-compare-${end}`}
+                      className="dd-compare__select"
+                      value={chosen?.id ?? ''}
+                      onChange={(e) => (end === 'from' ? pickCompare(e.target.value, compareTo?.id) : pickCompare(compareFrom?.id, e.target.value))}
+                    >
+                      {versions.map((v) => <option key={v.id} value={v.id}>{`${versionName(v)} · ${formatScanDate(v.timestamp)}`}</option>)}
+                    </select>
+                  </span>
+                ))}
+              </div>
+            </div>
+            {compared.message ? <p className="dd-none">{compared.message}</p> : (
+              <>
+                <p className="dd-compare__summary">
+                  {`${compared.changes.added.length} added · ${compared.changes.removed.length} removed · ${compared.changes.recategorised.length} recategorised`}
+                </p>
+                <DataTable
+                  caption={`Changes from ${versionName(compareFrom)} to ${versionName(compareTo)}`}
+                  rowKey={(r) => `${r.kind}|${cookieKey(r.cookie)}`}
+                  rows={compared.rows}
+                  empty={<p className="dd-none">{`No cookie changes between ${versionName(compareFrom)} and ${versionName(compareTo)}.`}</p>}
+                  columns={[
+                    { key: 'change', header: 'Change', render: (r) => <Chip tone={CHANGE[r.kind].tone} size="sm">{CHANGE[r.kind].label}</Chip> },
+                    {
+                      key: 'cookie',
+                      header: 'Cookie',
+                      render: (r) => (
+                        <span className="dd-change__cookie">
+                          <span className="dd-change__name">{r.cookie.name}</span>
+                          <span className="dd-change__domain">{r.cookie.domain}</span>
+                        </span>
+                      ),
+                    },
+                    {
+                      key: 'category',
+                      header: 'Category',
+                      render: (r) => (r.kind === 'recategorised' ? (
+                        <span className="dd-change__move">
+                          <CategoryTag category={r.before} solid />
+                          {' '}
+                          <span aria-hidden="true">→</span>
+                          <span className="sr-only">changed to</span>
+                          {' '}
+                          <CategoryTag category={r.after} solid />
+                        </span>
+                      ) : <CategoryTag category={r.cookie.category} solid />),
+                    },
+                  ]}
+                />
+              </>
+            )}
+          </section>
+        )}
 
         <section className="dd-risk" aria-labelledby="dd-risk">
           <h3 id="dd-risk" className="dd-card__title">Risk Assessment</h3>

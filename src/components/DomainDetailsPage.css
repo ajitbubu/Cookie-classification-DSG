@@ -141,9 +141,45 @@ section.dd-card { margin: 0; }
 .dd-version__id:focus-visible { outline: 2px solid var(--ucm-brand-accent); outline-offset: 2px; }
 .dd-version__tag { font-weight: 500; }
 .dd-version__viewing { font: 400 12px/1 var(--font-sans); color: var(--color-text-secondary); }
-.dd-updated { display: inline-flex; gap: 10px; }
+.dd-updated { display: inline-flex; align-items: center; gap: 10px; }
 .dd-up { color: var(--ucm-green-2); }
 .dd-down { color: var(--ucm-red); }
+/* "+2 −1" opens that version's comparison with the one before it */
+.dd-changes {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
+  padding: 0 4px;
+  border: none;
+  border-radius: var(--ucm-radius-control);
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+.dd-changes:hover { text-decoration: underline; }
+.dd-changes:focus-visible { outline: 2px solid var(--ucm-brand-accent); outline-offset: 2px; }
+
+/* Compare Versions card: any two stored versions */
+.dd-compare .dd-card__title:focus { outline: none; }
+.dd-compare .dd-card__title:focus-visible { outline: 2px solid var(--ucm-brand-accent); outline-offset: 2px; }
+.dd-compare__pick { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-left: auto; }
+.dd-compare__field { display: inline-flex; align-items: center; gap: 10px; font: 400 16px/1 var(--font-sans); color: var(--color-text-secondary); }
+.dd-compare__select {
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--ucm-blue-4);
+  border-radius: var(--ucm-radius-control);
+  background: var(--ucm-surface);
+  color: var(--ucm-navy);
+  font: 400 16px/1 var(--font-sans);
+}
+.dd-compare__select:focus-visible { outline: 2px solid var(--ucm-brand-accent); outline-offset: 1px; }
+.dd-compare__summary { margin: 0; font: 500 16px/1.4 var(--font-sans); color: var(--ucm-navy); }
+.dd-change__cookie { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.dd-change__name { color: var(--ucm-navy); overflow-wrap: anywhere; }
+.dd-change__domain { font-size: var(--fs-sm); color: var(--color-text-secondary); }
+.dd-change__move { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 8px; }
 .dd-muted-dots { padding: 0 12px; color: var(--color-text-muted); font-size: 20px; }
 
 /* Risk Assessment rows (Figma 1:184549) */
@@ -235,6 +271,9 @@ section.dd-risk { display: flex; flex-direction: column; gap: 24px; margin: 0; p
   .dd-identity__actions { width: 100%; gap: 8px; }
   .dd-identity__actions .ui-btn { flex: 1; }
   .dd-card { padding: 16px 12px; }
+  .dd-compare__pick { width: 100%; margin-left: 0; }
+  .dd-compare__field { flex: 1 1 100%; }
+  .dd-compare__select { flex: 1; min-width: 0; }
   .dd-selection { flex-wrap: wrap; gap: 8px 12px; padding: 12px; font-size: 16px; }
   .dd-selection__count { padding-right: 0; border-right: none; }
   .dd-selection__clear { margin-left: 0; }
