@@ -15,9 +15,14 @@ const scan = {
   statistics: { byCategory: { Unclassified: 1, Marketing: 1, 'Strictly Necessary': 1 }, thirdParty: 2, requiresConsent: 2 },
   pageResults: [{ url: 'https://shop.com/', cookies }], errorPages: ['https://shop.com/broken'],
 };
+// v1 -> v2: _fbp and sid added, old_pref removed, _ga moved Analytics -> Unclassified
+const v1Cookies = [
+  { name: '_ga', domain: '.google-analytics.com', category: 'Analytics' },
+  { name: 'old_pref', domain: 'shop.com', category: 'Functional' },
+];
 const versions = [
-  { id: 'v2', version: 2, timestamp: '2026-10-11T10:00:00Z', totalCookies: 3, failedPages: 1, diff: { added: 2, removed: 1 } },
-  { id: 'v1', version: 1, timestamp: '2026-10-01T10:00:00Z', totalCookies: 2, failedPages: 0, diff: null },
+  { id: 'v2', version: 2, timestamp: '2026-10-11T10:00:00Z', totalCookies: 3, failedPages: 1, diff: { added: 2, removed: 1 }, fullResults: { cookies } },
+  { id: 'v1', version: 1, timestamp: '2026-10-01T10:00:00Z', totalCookies: 2, failedPages: 0, diff: null, fullResults: { cookies: v1Cookies } },
 ];
 
 const selectionBar = () => document.querySelector('.dd-selection');
@@ -79,7 +84,7 @@ describe('DomainDetailsPage', () => {
 
   it('overview: Unclassified KPI offers Review, risk rows per regulation', async () => {
     const p = setup();
-    const unclassified = screen.getByText('Unclassified').closest('.ui-kpi');
+    const unclassified = screen.getByText('Unclassified', { selector: '.ui-kpi__label' }).closest('.ui-kpi');
     expect(unclassified).toHaveTextContent('1');
     await userEvent.click(within(unclassified).getByRole('button', { name: 'Review' }));
     expect(p.onReview).toHaveBeenCalled();
@@ -92,9 +97,68 @@ describe('DomainDetailsPage', () => {
     setup();
     const table = screen.getByRole('table', { name: 'Version history' });
     const [v2, v1] = within(table).getAllByRole('row').slice(1);
-    expect(within(v2).getByText('+1')).toBeInTheDocument(); // 2 added, 1 removed
+    // Added and removed separately: a net "+1" would hide that a cookie also went away
+    const changes = within(v2).getByRole('button', { name: '2 added, 1 removed: compare version 1 with version 2' });
+    expect(changes).toHaveTextContent('+2');
+    expect(changes).toHaveTextContent('−1');
+    expect(within(v1).queryByRole('button', { name: /compare/ })).toBeNull(); // nothing before v1
     expect(within(v1).getByText('(Published)')).toBeInTheDocument();
     expect(screen.getByText('Published Version:').nextSibling).toHaveTextContent('V 1');
+  });
+
+  const compareCard = () => screen.getByRole('region', { name: 'Compare Versions' });
+  // Visible text of each change row (screen-reader-only words left out)
+  const changeRows = () => within(within(compareCard()).getByRole('table', { name: /Changes from/ })).getAllByRole('row').slice(1)
+    .map((row) => [...row.querySelectorAll('th, td')].map((cell) => {
+      const copy = cell.cloneNode(true);
+      copy.querySelectorAll('.sr-only').forEach((n) => n.remove());
+      return copy.textContent;
+    }));
+
+  it('compare: starts with the previous and latest versions and lists every change', () => {
+    setup();
+    expect(within(compareCard()).getByLabelText('From')).toHaveValue('v1');
+    expect(within(compareCard()).getByLabelText('To')).toHaveValue('v2');
+    expect(compareCard()).toHaveTextContent('2 added · 1 removed · 1 recategorised');
+    expect(changeRows()).toEqual([
+      ['Added', '_fbp.facebook.com', 'Marketing'],
+      ['Added', 'sidshop.com', 'Necessary'],
+      ['Removed', 'old_prefshop.com', 'Functional'],
+      ['Recategorised', '_ga.google-analytics.com', 'Analytics → Unclassified'],
+    ]);
+  });
+
+  it('compare: any two versions can be picked, not just neighbours', async () => {
+    const v3 = { id: 'v3', version: 3, timestamp: '2026-10-20T10:00:00Z', totalCookies: 1, failedPages: 0, diff: { added: 0, removed: 2 },
+      fullResults: { cookies: [{ name: '_ga', domain: '.google-analytics.com', category: 'Analytics' }] } };
+    setup({ versions: [v3, ...versions], currentVersionId: 'v3' });
+    expect(within(compareCard()).getByLabelText('From')).toHaveValue('v2');
+    await userEvent.selectOptions(within(compareCard()).getByLabelText('From'), 'v1');
+    expect(compareCard()).toHaveTextContent('0 added · 1 removed · 0 recategorised');
+    expect(changeRows()).toEqual([['Removed', 'old_prefshop.com', 'Functional']]);
+
+    await userEvent.selectOptions(within(compareCard()).getByLabelText('To'), 'v1');
+    expect(compareCard()).toHaveTextContent('Pick two different versions to compare.');
+  });
+
+  it("compare: a row's change counts open that version's comparison with the one before", async () => {
+    const v3 = { id: 'v3', version: 3, timestamp: '2026-10-20T10:00:00Z', totalCookies: 1, failedPages: 0, diff: { added: 0, removed: 2 },
+      fullResults: { cookies: [{ name: '_ga', domain: '.google-analytics.com', category: 'Analytics' }] } };
+    setup({ versions: [v3, ...versions], currentVersionId: 'v3' });
+    await userEvent.click(screen.getByRole('button', { name: '2 added, 1 removed: compare version 1 with version 2' }));
+    expect(within(compareCard()).getByLabelText('From')).toHaveValue('v1');
+    expect(within(compareCard()).getByLabelText('To')).toHaveValue('v2');
+    expect(within(compareCard()).getByRole('heading', { name: 'Compare Versions' })).toHaveFocus();
+  });
+
+  it('compare: says so when a version no longer has its cookie details', () => {
+    setup({ versions: [versions[0], { ...versions[1], fullResults: undefined }] });
+    expect(compareCard()).toHaveTextContent("V 1's cookie details are no longer stored, so it can't be compared.");
+  });
+
+  it('compare: no comparison card with a single version', () => {
+    setup({ versions: [versions[0]] });
+    expect(screen.queryByRole('region', { name: 'Compare Versions' })).toBeNull();
   });
 
   it('opens a version from Version History (Figma 12.12.31 -> 12.12.39)', async () => {

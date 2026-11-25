@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import * as fc from 'fast-check';
 import {
-  BULK_CATEGORIES, cookieKey, versionsForDomain, categoryBreakdown, vendorsFromCookies, pagesFromScan, applyCategoryChanges, resolveDomainScan,
+  BULK_CATEGORIES, cookieKey, versionsForDomain, compareVersions, categoryBreakdown, vendorsFromCookies, pagesFromScan, applyCategoryChanges, resolveDomainScan,
 } from './domainDetails';
 
 const c = (name, domain, category = 'Analytics', extra = {}) => ({ name, domain, category, ...extra });
@@ -27,6 +27,44 @@ describe('versionsForDomain', () => {
   it('gives no diff when either version lost its details to storage pruning', () => {
     const versions = versionsForDomain([scan('new', '2026-10-02', [c('_ga', 'a')]), scan('old', '2026-10-01', null, { totalCookies: 4 })]);
     expect(versions[0].diff).toBeNull();
+  });
+});
+
+describe('compareVersions', () => {
+  const names = (list) => list.map((k) => k.name).sort();
+
+  it('lists cookies added, removed and recategorised between any two versions', () => {
+    const v1 = scan('v1', '2026-10-01', [c('_ga', '.a.com', 'Analytics'), c('gone', 'a.com'), c('sid', 'a.com', 'Strictly Necessary')]);
+    const v3 = scan('v3', '2026-10-03', [c('_ga', '.a.com', 'Marketing'), c('sid', 'a.com', 'Strictly Necessary'), c('_fbp', '.a.com', 'Marketing')]);
+    const diff = compareVersions(v1, v3);
+    expect(names(diff.added)).toEqual(['_fbp']);
+    expect(names(diff.removed)).toEqual(['gone']);
+    expect(diff.recategorised).toEqual([{ cookie: v3.fullResults.cookies[0], from: 'Analytics', to: 'Marketing' }]);
+  });
+
+  it('treats a missing category as Unclassified, so no change is reported for it', () => {
+    const diff = compareVersions(scan('a', '1', [c('x', 'a', null)]), scan('b', '2', [c('x', 'a', 'Unclassified')]));
+    expect(diff.recategorised).toEqual([]);
+  });
+
+  it('is null when either version lost its cookie details to storage pruning', () => {
+    expect(compareVersions(scan('a', '1', null, { totalCookies: 3 }), scan('b', '2', []))).toBeNull();
+    expect(compareVersions(scan('a', '1', []), undefined)).toBeNull();
+  });
+
+  it('is symmetric: swapping the versions swaps added and removed, and reverses each category change', () => {
+    const cookie = fc.record({ name: fc.constantFrom('a', 'b', 'c', 'd', 'e'), domain: fc.constantFrom('x', 'y'), category: fc.constantFrom(...BULK_CATEGORIES) });
+    const cookies = fc.uniqueArray(cookie, { selector: cookieKey });
+    fc.assert(fc.property(cookies, cookies, (before, after) => {
+      const forward = compareVersions(scan('1', '1', before), scan('2', '2', after));
+      const back = compareVersions(scan('2', '2', after), scan('1', '1', before));
+      expect(forward.added.map(cookieKey).sort()).toEqual(back.removed.map(cookieKey).sort());
+      expect(forward.removed.map(cookieKey).sort()).toEqual(back.added.map(cookieKey).sort());
+      const flip = (r) => `${cookieKey(r.cookie)}:${r.to}->${r.from}`;
+      expect(forward.recategorised.map((r) => `${cookieKey(r.cookie)}:${r.from}->${r.to}`).sort()).toEqual(back.recategorised.map(flip).sort());
+      const self = compareVersions(scan('1', '1', before), scan('1', '1', before));
+      expect([self.added, self.removed, self.recategorised]).toEqual([[], [], []]);
+    }));
   });
 });
 
