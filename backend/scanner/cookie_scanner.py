@@ -35,6 +35,55 @@ def is_link_in_scope(link_host: str, page_host: str, root: str, include_subdomai
     return link_host == root or link_host.endswith("." + root)
 
 
+# Every anchor's href on the page, as written (relative ones are resolved by in_scope_links).
+LINKS_JS = """
+    () => {
+        const links = [];
+        const anchors = document.querySelectorAll('a');
+        anchors.forEach(a => {
+            const href = a.getAttribute('href') || a.href;
+            if (href) {
+                links.push(href);
+            }
+        });
+        return links;
+    }
+"""
+
+
+def in_scope_links(links: List[str], url: str, root: str, include_subdomains: bool, max_links: int) -> List[str]:
+    """The page's links a deep scan may follow: in scope, absolute, without fragments or file links."""
+    base_domain = urlparse(url).netloc
+    unique_links = set()
+    for link in links:
+        try:
+            parsed_link = urlparse(link)
+
+            # Same-origin links, plus the site's subdomains when asked
+            if is_link_in_scope(parsed_link.netloc, base_domain, root, include_subdomains):
+                # Handle relative URLs
+                if parsed_link.netloc == '':
+                    link = urljoin(url, link)
+                    parsed_link = urlparse(link)
+
+                # Remove fragment
+                clean_url = f"{parsed_link.scheme}://{parsed_link.netloc}{parsed_link.path}"
+                if parsed_link.query:
+                    clean_url += f"?{parsed_link.query}"
+
+                # Skip common non-page URLs
+                if not any(ext in clean_url.lower() for ext in ['.pdf', '.jpg', '.png', '.gif', '.zip', '.mp4', '.mp3', 'javascript:', 'mailto:', 'tel:']):
+                    unique_links.add(clean_url)
+
+            if len(unique_links) >= max_links:
+                break
+
+        except Exception as e:
+            logger.debug(f"Error parsing link {link}: {e}")
+            continue
+    return list(unique_links)[:max_links]
+
+
 class CookieScanner:
     """Core cookie scanning functionality using Playwright"""
     
@@ -42,13 +91,22 @@ class CookieScanner:
         self.context = context
         self.classifier = CookieClassifier()
     
-    async def scan_page(self, url: str, read_cmp: bool = False) -> Dict:
+    async def scan_page(self, url: str, read_cmp: bool = False, links: bool = False,
+                        include_subdomains: bool = False, root: Optional[str] = None,
+                        settle: bool = False) -> Dict:
         """Scan a single page for cookies.
 
         read_cmp (quick scans, a deep scan's start page): also read the site's
         OneTrust/Cookiebot declaration and set ``websiteDeclaration`` on the cookies it
         covers. The declaration list comes back under ``_declarations`` for the caller to
         apply to other pages' cookies; it must be popped before the result is returned.
+
+        links (deep scans): also read the page's in-scope links in the same visit, under
+        ``_links`` (popped by the caller like ``_declarations``), so a deep scan loads each
+        page once instead of again to find its links.
+
+        settle (deep scans: the start page and pages whose links are followed): first wait, up to PAGE_SETTLE_MS, for the
+        network to go idle, so cookies set by requests fired after load are counted.
         """
         page: Page = None
         started = time.monotonic()  # durationMs: open, load, wait, read cookies (or fail)
@@ -61,12 +119,22 @@ class CookieScanner:
             await page.goto(url, wait_until="domcontentloaded", timeout=settings.PAGE_TIMEOUT)
             # Redirect hops bypass the context's request guard; refuse internal landings.
             await check_url(page.url)
-            
+
+            if settle:
+                try:
+                    await page.wait_for_load_state("networkidle", timeout=settings.PAGE_SETTLE_MS)
+                except Exception:
+                    pass  # pages that never go idle (polling, ads): scan what has loaded by now
+
             # Reduced wait time for cookies to be set
             await asyncio.sleep(settings.COOKIE_WAIT_TIME)
 
             cmp, declarations = (await read_site_declarations(page, settings.CMP_DECLARATION_WAIT_MS)
                                  if read_cmp else ("", []))
+
+            # Before reading cookies, so cookies set by lazy-loaded content are counted too
+            page_links = (await self._read_links(page, url, include_subdomains, root or site_root(url))
+                          if links else None)
 
             # Get all cookies from the context
             cookies = await self.context.cookies()
@@ -97,6 +165,8 @@ class CookieScanner:
                 result["_declarations"] = declarations
                 logger.info(f"{cmp} declaration on {url}: {len(declarations)} declared, {matched} of "
                             f"{len(classified_cookies)} observed cookies matched")
+            if page_links is not None:
+                result["_links"] = page_links
             return result
             
         except Exception as e:
@@ -114,7 +184,18 @@ class CookieScanner:
         finally:
             if page:
                 await page.close()
-    
+
+    async def _read_links(self, page: Page, url: str, include_subdomains: bool, root: str) -> List[str]:
+        """The loaded page's in-scope links, after a scroll for lazy-loaded ones; [] if they can't be read."""
+        try:
+            await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            await asyncio.sleep(settings.LINK_EXTRACTION_WAIT)
+            raw = await page.evaluate(LINKS_JS)
+        except Exception as e:
+            logger.warning(f"Could not read links on {url}: {e}")
+            return []
+        return in_scope_links(raw, url, root, include_subdomains, settings.BATCH_SIZE)
+
     async def extract_links(self, url: str, max_links: int = 50, include_subdomains: bool = False, root: Optional[str] = None) -> List[str]:
         """Extract links from a page for deep scanning"""
         page: Page = None
@@ -161,57 +242,13 @@ class CookieScanner:
             
             # Extract all links - use JavaScript evaluation for reliability
             try:
-                links = await page.evaluate("""
-                    () => {
-                        const links = [];
-                        const anchors = document.querySelectorAll('a');
-                        anchors.forEach(a => {
-                            const href = a.getAttribute('href') || a.href;
-                            if (href) {
-                                links.push(href);
-                            }
-                        });
-                        return links;
-                    }
-                """)
+                links = await page.evaluate(LINKS_JS)
                 logger.info(f"Found {len(links)} raw links on {url}")
             except Exception as e:
                 logger.error(f"Error extracting links: {e}")
                 links = []
-            
-            # Filter and clean links
-            parsed_base = urlparse(url)
-            base_domain = parsed_base.netloc
-            
-            unique_links = set()
-            for link in links:
-                try:
-                    parsed_link = urlparse(link)
-                    
-                    # Same-origin links, plus the site's subdomains when asked
-                    if is_link_in_scope(parsed_link.netloc, base_domain, root or site_root(url), include_subdomains):
-                        # Handle relative URLs
-                        if parsed_link.netloc == '':
-                            link = urljoin(url, link)
-                            parsed_link = urlparse(link)
-                        
-                        # Remove fragment
-                        clean_url = f"{parsed_link.scheme}://{parsed_link.netloc}{parsed_link.path}"
-                        if parsed_link.query:
-                            clean_url += f"?{parsed_link.query}"
-                        
-                        # Skip common non-page URLs
-                        if not any(ext in clean_url.lower() for ext in ['.pdf', '.jpg', '.png', '.gif', '.zip', '.mp4', '.mp3', 'javascript:', 'mailto:', 'tel:']):
-                            unique_links.add(clean_url)
-                    
-                    if len(unique_links) >= max_links:
-                        break
-                        
-                except Exception as e:
-                    logger.debug(f"Error parsing link {link}: {e}")
-                    continue
-            
-            result = list(unique_links)[:max_links]
+
+            result = in_scope_links(links, url, root or site_root(url), include_subdomains, max_links)
             logger.info(f"Extracted {len(result)} unique same-origin links from {url} (from {len(links)} total links found)")
             
             # If no links found, try to get sitemap URLs

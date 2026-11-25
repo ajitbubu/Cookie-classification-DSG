@@ -39,8 +39,13 @@ class Settings(BaseSettings):
     KNOWN_COOKIES_PATH: str = "models/known_cookies/known_cookies.json"
 
     # Scanning configuration - Industry Grade
-    MAX_CONCURRENT_PAGES: int = 100  # Increased from 50 for faster scanning
-    MIN_CONCURRENT_PAGES: int = 10   # Increased from 5
+    # Pages one deep scan loads at once in its browser. A scan starts at its requested
+    # concurrency capped to START_, and adaptive concurrency moves it between MIN_ and MAX_
+    # as pages succeed or fail. Sites abort navigations when many of their pages load at
+    # once (exlservice.com failed 9 of 12 pages at 8, none at 1), so start low.
+    START_CONCURRENT_PAGES: int = 5
+    MAX_CONCURRENT_PAGES: int = 10
+    MIN_CONCURRENT_PAGES: int = 1
     MAX_PAGES_PER_SCAN: int = 20000  # Industry-grade: 20K pages
     MAX_DEPTH: int = 500  # Maximum crawl depth
     PAGE_TIMEOUT: int = 60000  # 60 seconds timeout for complex pages
@@ -53,6 +58,11 @@ class Settings(BaseSettings):
     
     # Speed optimizations
     COOKIE_WAIT_TIME: float = 0.5  # Reduced from 1s - wait for cookies to be set
+    # Deep scans: the start page and each page whose links are followed also wait (up to
+    # this long) for the network to go idle, as the old separate link-reading load did.
+    # Some cookies only come from requests fired seconds after load (bbc.com: Piano's
+    # _pcid/_pctx/_pprv, account.bbc.com's aws-waf-token). Pages that never go idle use the full wait.
+    PAGE_SETTLE_MS: int = 5000
     LINK_EXTRACTION_WAIT: float = 0.5  # Reduced from 2s - wait for dynamic content
     INTER_SCAN_DELAY: float = 0.05  # Reduced from 0.1s - delay between scans
     # Longest wait for a detected OneTrust/Cookiebot banner to expose its cookie declaration

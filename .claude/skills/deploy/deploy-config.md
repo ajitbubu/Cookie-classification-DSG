@@ -11,7 +11,7 @@ Environment variables read by `docker-compose.yml`. All have dev-safe defaults s
 Fixed (not overridable via env today — edit `docker-compose.yml` directly if needed):
 
 - `BROWSER_TYPE=firefox` (api-gateway, workers)
-- `WORKER_COUNT=4`, `MAX_CONCURRENT_PAGES=200` (api-gateway) vs `100` per worker
+- `WORKER_COUNT=4`, `MAX_CONCURRENT_PAGES=10` (api-gateway: the most pages one deep scan loads at once) vs `100` per worker (unused by worker code)
 - `ML_MODEL_VERSION=6.0.0`, `ML_CONFIDENCE_HIGH=0.85`, `ML_CONFIDENCE_MEDIUM=0.65`
 - `ML_RATE_LIMIT_REQUESTS=100` per `ML_RATE_LIMIT_WINDOW=60`s
 

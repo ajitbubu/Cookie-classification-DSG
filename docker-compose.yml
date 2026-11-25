@@ -95,7 +95,7 @@ services:
       - REDIS_URL=redis://redis:6379
       - DATABASE_URL=postgresql://scanner:${DB_PASSWORD:-scanner_password}@postgres:5432/cookie_scanner
       - WORKER_COUNT=4
-      - MAX_CONCURRENT_PAGES=200
+      - MAX_CONCURRENT_PAGES=10  # per deep scan; see backend/config.py
       - ENABLE_CACHING=true
       - PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
       - DB_HOST=postgres
