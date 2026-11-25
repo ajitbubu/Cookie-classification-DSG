@@ -15,9 +15,11 @@ class AdaptiveConcurrencyManager:
     """
     
     def __init__(self, initial_concurrency: int = None):
-        self.current_concurrency = initial_concurrency or settings.MAX_CONCURRENT_PAGES
-        self.min_concurrency = settings.MIN_CONCURRENT_PAGES
-        self.max_concurrency = 500  # Increased from 200 for high-performance scanning
+        # One site's pages in one browser: past a handful, sites abort navigations
+        self.max_concurrency = max(1, settings.MAX_CONCURRENT_PAGES)
+        self.min_concurrency = max(1, min(settings.MIN_CONCURRENT_PAGES, self.max_concurrency))
+        start = min(settings.START_CONCURRENT_PAGES, self.max_concurrency)
+        self.current_concurrency = max(1, min(initial_concurrency or start, start))
         
         # Performance tracking
         self.total_scans = 0
@@ -59,8 +61,8 @@ class AdaptiveConcurrencyManager:
         
         # Increase concurrency if success rate is high and batches are fast
         if success_rate > self.increase_threshold and avg_batch_time < 8.0:
-            # Increase by 30% (more aggressive)
-            new_concurrency = int(self.current_concurrency * 1.3)
+            # Increase by 30%, and by at least one (int(3 * 1.3) is still 3)
+            new_concurrency = max(self.current_concurrency + 1, int(self.current_concurrency * 1.3))
             self.current_concurrency = min(new_concurrency, self.max_concurrency)
         
         # Decrease concurrency if success rate is low

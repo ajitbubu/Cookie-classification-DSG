@@ -1,6 +1,7 @@
 import asyncio
 import time
-from typing import List, Callable, Optional, Set
+from types import SimpleNamespace
+from typing import List, Callable, Optional, Set, Tuple
 from playwright.async_api import BrowserContext
 from urllib.parse import urlparse
 import logging
@@ -11,92 +12,6 @@ from backend.scanner.adaptive import AdaptiveConcurrencyManager
 from backend.config import settings
 
 logger = logging.getLogger(__name__)
-
-
-async def scan_pages_parallel(
-    urls: List[str],
-    context: BrowserContext,
-    max_concurrent: int = 5,
-    on_progress: Optional[Callable] = None,
-    batch_number: int = 1,
-    total_batches: int = 1,
-    scanned_count: int = 0,
-    max_pages: int = 100
-) -> List[dict]:
-    """
-    Scan multiple pages concurrently using asyncio with semaphore control.
-    
-    Args:
-        urls: List of URLs to scan
-        context: Playwright browser context
-        max_concurrent: Maximum number of concurrent scans
-        on_progress: Callback function for progress updates
-        batch_number: Current batch number
-        total_batches: Total number of batches
-        scanned_count: Number of pages already scanned
-        max_pages: Maximum total pages to scan (for progress calculation)
-    
-    Returns:
-        List of scan results
-    """
-    
-    # Create semaphore for concurrency control
-    semaphore = asyncio.Semaphore(max_concurrent)
-    scanner = CookieScanner(context)
-    results = []
-    
-    async def scan_with_semaphore(url: str, index: int):
-        """Scan a single page with semaphore control"""
-        async with semaphore:
-            try:
-                # Progress callback before scanning
-                if on_progress:
-                    await on_progress({
-                        "type": "progress",
-                        "current": scanned_count + index + 1,
-                        "total": max_pages,
-                        "currentBatch": batch_number,
-                        "totalBatches": total_batches,
-                        "currentUrl": url,
-                        "activeScanUrls": urls[:max_concurrent],  # Show first N active URLs
-                        "status": "scanning",
-                        "batchProgress": index + 1,
-                        "batchSize": len(urls)
-                    })
-                
-                # Scan the page
-                result = await scanner.scan_page(url)
-                
-                # Minimal delay to prevent overwhelming the target
-                await asyncio.sleep(settings.INTER_SCAN_DELAY)
-                
-                return result
-                
-            except Exception as e:
-                logger.error(f"Error scanning {url}: {e}")
-                return {
-                    "url": url,
-                    "domain": "",
-                    "cookies": [],
-                    "cookieCount": 0,
-                    "error": str(e)
-                }
-    
-    # Create tasks for all URLs
-    tasks = [scan_with_semaphore(url, i) for i, url in enumerate(urls)]
-    
-    # Execute all tasks concurrently with error handling
-    results = await asyncio.gather(*tasks, return_exceptions=True)
-    
-    # Filter out exceptions and convert to list
-    valid_results = []
-    for result in results:
-        if isinstance(result, Exception):
-            logger.error(f"Task failed with exception: {result}")
-        else:
-            valid_results.append(result)
-    
-    return valid_results
 
 
 async def retry_failed_pages(scanner, page_results: List[dict], error_pages: List[str], start_url: str,
@@ -131,38 +46,39 @@ async def deep_scan_parallel(
     include_subdomains: bool = False
 ) -> dict:
     """
-    Perform deep scan with parallel page scanning and depth tracking.
-    Industry-grade: supports up to 20K pages and depth 500.
-    
+    Perform deep scan: a breadth-first crawl that scans each page once.
+
+    Each page's cookies and links come from the same visit. A fixed set of crawl tasks
+    takes pages from one queue, so a slow page holds up only its own task, not a batch.
+    Pages open at once start at ``concurrency``, capped at START_CONCURRENT_PAGES, and
+    adapt up to MAX_CONCURRENT_PAGES as the site copes (AdaptiveConcurrencyManager).
+
     Args:
         start_url: Starting URL to scan
         context: Playwright browser context
         max_pages: Maximum number of pages to scan
-        concurrency: Number of pages to scan concurrently
+        concurrency: Number of pages to scan concurrently at the start (capped at START_CONCURRENT_PAGES)
         max_depth: Maximum crawl depth
         on_progress: Callback for progress updates
         include_subdomains: Also follow links to the site's subdomains
-    
+
     Returns:
         Complete scan result with aggregated data
     """
-    
+
     scanner = CookieScanner(context)
     root = site_root(start_url)
     page_results = []
     declarations = []  # the start page's CMP declaration, applied to every page's cookies
     error_pages = []
-    
+
     # Adaptive concurrency manager
     concurrency_manager = AdaptiveConcurrencyManager(initial_concurrency=concurrency)
-    
-    # Track visited URLs and URLs by depth
-    visited_urls: Set[str] = set()
-    urls_by_depth = {0: [start_url]}  # depth -> [urls]
-    
+
     try:
         # Step 1: Scan the main page (depth 0)
-        logger.info(f"Starting deep scan for: {start_url} (max_pages={max_pages}, max_depth={max_depth}, include_subdomains={include_subdomains})")
+        logger.info(f"Starting deep scan for: {start_url} (max_pages={max_pages}, max_depth={max_depth}, "
+                    f"include_subdomains={include_subdomains}, concurrency={concurrency_manager.get_concurrency()})")
 
         if on_progress:
             await on_progress({
@@ -173,11 +89,13 @@ async def deep_scan_parallel(
                 "message": "Scanning main page..."
             })
 
+        follow_links = max_depth > 0 and max_pages > 1
         try:
-            main_result = await scanner.scan_page(start_url, read_cmp=True)
+            main_result = await scanner.scan_page(start_url, read_cmp=True, links=follow_links, settle=follow_links,
+                                                  include_subdomains=include_subdomains, root=root)
             declarations = main_result.pop("_declarations", [])
+            start_links = main_result.pop("_links", [])
             page_results.append(main_result)
-            visited_urls.add(start_url)
 
             if main_result.get("error"):
                 error_pages.append(start_url)
@@ -189,131 +107,108 @@ async def deep_scan_parallel(
         except Exception as e:
             logger.error(f"Critical error scanning main page {start_url}: {e}")
             raise Exception(f"Failed to scan main page: {str(e)}")
-        
-        # Step 2: Breadth-first crawl with depth tracking
-        current_depth = 0
-        
-        while current_depth < max_depth and len(page_results) < max_pages:
-            # Get URLs at current depth
-            current_level_urls = urls_by_depth.get(current_depth, [])
-            
-            if not current_level_urls:
-                logger.info(f"No more URLs at depth {current_depth}, stopping crawl")
-                break
-            
-            # Extract links from current level in parallel
-            next_level_urls = []
-            
+
+        if not start_links and follow_links:
+            # Nothing to follow from the first load (links rendered late, or none in scope):
+            # the slower reader waits for the network to settle, then tries the sitemap and
+            # common paths. Only the start page gets this second load.
+            start_links = await scanner.extract_links(start_url, max_links=settings.BATCH_SIZE,
+                                                      include_subdomains=include_subdomains, root=root)
+
+        # Step 2: Breadth-first crawl. Queued URLs are counted against max_pages when queued.
+        visited_urls: Set[str] = {start_url}
+        queue: "asyncio.Queue[Tuple[str, int]]" = asyncio.Queue()
+        depth_of = {start_url: 0}
+        active_urls: List[str] = []
+        deepest = 0
+
+        def enqueue(links: List[str], depth: int):
+            if depth > max_depth:
+                return
+            for link in links:
+                if len(visited_urls) >= max_pages:
+                    return
+                if link not in visited_urls:
+                    visited_urls.add(link)
+                    depth_of[link] = depth
+                    queue.put_nowait((link, depth))
+
+        async def scan_and_follow(url: str) -> dict:
+            """Scan one page and queue its links; used by the crawl and by the retries."""
+            depth = depth_of[url]
+            # No link reading once the queue holds max_pages URLs: none could be followed.
+            # Pages whose links are read also settle, as the old separate link load did
+            # (it waited for network idle): late requests set cookies others never see.
+            read_links = depth < max_depth and len(visited_urls) < max_pages
+            result = await scanner.scan_page(url, links=read_links, settle=read_links,
+                                             include_subdomains=include_subdomains, root=root)
+            enqueue(result.pop("_links", []), depth + 1)
+            return result
+
+        async def scan_one(url: str, depth: int):
+            nonlocal deepest
             if on_progress:
                 await on_progress({
                     "type": "progress",
-                    "current": len(page_results),
+                    "current": len(page_results) + 1,
                     "total": max_pages,
-                    "status": "extracting",
-                    "message": f"Extracting links from depth {current_depth}..."
+                    "currentUrl": url,
+                    "activeScanUrls": list(active_urls),
+                    "status": "scanning",
                 })
-            
-            # Extract links from multiple pages in parallel
-            # Extract from more pages to find more URLs (up to 50 pages per depth level)
-            pages_to_extract_from = min(50, len(current_level_urls), max_pages - len(page_results))
-            link_extraction_tasks = [
-                scanner.extract_links(url, max_links=settings.BATCH_SIZE, include_subdomains=include_subdomains, root=root)
-                for url in current_level_urls[:pages_to_extract_from]
-            ]
-            
-            all_extracted_links = await asyncio.gather(*link_extraction_tasks, return_exceptions=True)
-            
-            # Collect all links
-            for links in all_extracted_links:
-                if isinstance(links, Exception):
-                    logger.error(f"Link extraction failed: {links}")
+            started = time.time()
+            result = await scan_and_follow(url)
+            page_results.append(result)
+            deepest = max(deepest, depth)
+            failed = bool(result.get("error"))
+            if failed:
+                error_pages.append(url)
+            concurrency_manager.record_batch_result(0 if failed else 1, 1 if failed else 0, time.time() - started)
+            # Minimal delay to prevent overwhelming the target
+            await asyncio.sleep(settings.INTER_SCAN_DELAY)
+
+        async def crawl(slot: int):
+            while True:
+                # Slots above the current concurrency sit out until it rises again
+                while slot >= concurrency_manager.get_concurrency():
+                    await asyncio.sleep(0.2)
+                url, depth = await queue.get()
+                if slot >= concurrency_manager.get_concurrency():
+                    # Concurrency dropped while this slot waited for work: hand the page back
+                    queue.put_nowait((url, depth))
+                    queue.task_done()
                     continue
-                
-                # Add unvisited links to next level
-                for link in links:
-                    if link not in visited_urls and len(next_level_urls) < max_pages:
-                        next_level_urls.append(link)
-                        visited_urls.add(link)
-                
-                if len(next_level_urls) >= max_pages:
-                    break
-            
-            # Store next level URLs
-            if next_level_urls:
-                urls_by_depth[current_depth + 1] = next_level_urls
-                
-                # Scan next level URLs in batches
-                urls_to_scan = next_level_urls[:max_pages - len(page_results)]
-                
-                if urls_to_scan:
-                    # Get current concurrency level
-                    current_concurrency = concurrency_manager.get_concurrency()
-                    
-                    # Calculate batches
-                    batch_size = min(current_concurrency, settings.BATCH_SIZE)
-                    total_batches = (len(urls_to_scan) + batch_size - 1) // batch_size
-                    
-                    logger.info(
-                        f"Scanning depth {current_depth + 1}: {len(urls_to_scan)} URLs "
-                        f"in {total_batches} batches (concurrency={current_concurrency})"
-                    )
-                    
-                    for batch_idx in range(total_batches):
-                        if len(page_results) >= max_pages:
-                            break
-                        
-                        start_idx = batch_idx * batch_size
-                        end_idx = min(start_idx + batch_size, len(urls_to_scan))
-                        batch_urls = urls_to_scan[start_idx:end_idx]
-                        
-                        # Scan batch in parallel
-                        batch_start_time = time.time()
-                        
-                        batch_results = await scan_pages_parallel(
-                            urls=batch_urls,
-                            context=context,
-                            max_concurrent=current_concurrency,
-                            on_progress=on_progress,
-                            batch_number=batch_idx + 1,
-                            total_batches=total_batches,
-                            scanned_count=len(page_results),
-                            max_pages=max_pages
-                        )
-                        
-                        batch_duration = time.time() - batch_start_time
-                        
-                        # Collect results and track performance
-                        success_count = 0
-                        failure_count = 0
-                        
-                        for result in batch_results:
-                            page_results.append(result)
-                            if result.get("error"):
-                                error_pages.append(result["url"])
-                                failure_count += 1
-                            else:
-                                success_count += 1
-                        
-                        # Update adaptive concurrency
-                        concurrency_manager.record_batch_result(
-                            success_count, failure_count, batch_duration
-                        )
-                        
-                        # Log performance stats
-                        stats = concurrency_manager.get_stats()
-                        logger.info(
-                            f"Batch {batch_idx + 1}/{total_batches} complete: "
-                            f"{success_count} success, {failure_count} failures, "
-                            f"{batch_duration:.2f}s (success rate: {stats['success_rate']:.2%})"
-                        )
-            
-            # Move to next depth
-            current_depth += 1
-        
+                active_urls.append(url)
+                try:
+                    await scan_one(url, depth)
+                except Exception as e:  # a crawl task must not die: queue.join() would wait forever
+                    logger.error(f"Error scanning {url}: {e}")
+                    page_results.append({"url": url, "domain": "", "cookies": [], "cookieCount": 0, "error": str(e)})
+                    error_pages.append(url)
+                finally:
+                    active_urls.remove(url)
+                    queue.task_done()
+
+        async def crawl_queue():
+            crawlers = [asyncio.create_task(crawl(slot)) for slot in range(concurrency_manager.max_concurrency)]
+            try:
+                await queue.join()
+            finally:
+                for task in crawlers:
+                    task.cancel()
+                await asyncio.gather(*crawlers, return_exceptions=True)
+
+        enqueue(start_links, 1)
+        await crawl_queue()
+
         # Step 2b: retry failed pages one at a time. Some sites abort navigations when
         # many of their pages load at once in one browser (exlservice.com: 9 of 12 pages
-        # failed at concurrency 8, none at 1), and those pages load fine alone.
-        await retry_failed_pages(scanner, page_results, error_pages, start_url, on_progress, max_pages)
+        # failed at concurrency 8, none at 1), and those pages load fine alone. A recovered
+        # page's links are queued too, then crawled (pages failing in that pass stay failed).
+        retry_scanner = SimpleNamespace(scan_page=scan_and_follow)
+        await retry_failed_pages(retry_scanner, page_results, error_pages, start_url, on_progress, max_pages)
+        if not queue.empty():
+            await crawl_queue()
 
         # Step 3: Aggregate results
         if on_progress:
@@ -324,22 +219,24 @@ async def deep_scan_parallel(
                 "status": "aggregating",
                 "message": "Aggregating results..."
             })
-        
+
         # Deduplicate cookies, then apply the start page's CMP declaration to every page's cookies
         unique_cookies = scanner.deduplicate_cookies(page_results)
         annotate_cookies(unique_cookies, declarations)
-        
+
         # Calculate statistics
         from backend.scanner.classifier import CookieClassifier
         statistics = CookieClassifier.aggregate_statistics(unique_cookies)
-        
+
         # Add performance stats
         perf_stats = concurrency_manager.get_stats()
         statistics["performance"] = perf_stats
-        
+        logger.info(f"Deep scan of {start_url} done: {len(page_results)} pages to depth {deepest}, "
+                    f"{len(error_pages)} failed, concurrency ended at {perf_stats['current_concurrency']}")
+
         # Build final result
         from datetime import datetime
-        
+
         result = {
             "scanType": "deep",
             "domain": urlparse(start_url).netloc,
@@ -350,11 +247,11 @@ async def deep_scan_parallel(
             "statistics": statistics,
             "pageResults": page_results,
             "errorPages": error_pages if error_pages else None,
-            "maxDepthReached": current_depth,
+            "maxDepthReached": deepest,
             "totalPagesScanned": len(page_results),
             "cmp": page_results[0].get("cmp") if page_results else None,
         }
-        
+
         # Final progress update
         if on_progress:
             await on_progress({
@@ -364,12 +261,12 @@ async def deep_scan_parallel(
                 "status": "complete",
                 "message": f"Scan complete! Found {len(unique_cookies)} unique cookies across {len(page_results)} pages"
             })
-        
+
         return result
-        
+
     except Exception as e:
         logger.error(f"Deep scan failed: {e}")
-        
+
         if on_progress:
             await on_progress({
                 "type": "error",
@@ -378,6 +275,5 @@ async def deep_scan_parallel(
                 "status": "error",
                 "message": str(e)
             })
-        
-        raise
 
+        raise
