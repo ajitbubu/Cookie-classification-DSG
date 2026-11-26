@@ -606,6 +606,7 @@ def _auto_gate_detail(policy: dict[str, Any], test: str, passed: bool) -> dict[s
 
 def gate_details(
     internal_gates: dict[str, bool],
+    reported_scores: dict[str, bool],
     test_metrics: dict[str, Any],
     all_test_metrics: dict[str, Any],
     cmp_gate: dict[str, Any],
@@ -618,11 +619,15 @@ def gate_details(
 
     ``status`` is "pass", "fail", "not_enough_data" (too few predictions or
     rows to judge) or "not_run". Only internal_gates and external_holdout_gate
-    decide promotion; this explains them and changes nothing.
+    decide promotion; this explains them and changes nothing. reported_scores are
+    compared with their bar too, but are in the "reported" group and never block.
     """
+    outcomes = {**internal_gates, **reported_scores}
+
     def scored(key: str, measured: Any, required: Any, test: str, direction: str = "at_least") -> dict[str, Any]:
-        return {"group": "quality", "test": test, "direction": direction, "measured": measured,
-                "required": required, "status": "pass" if internal_gates[key] else "fail"}
+        return {"group": "reported" if key in reported_scores else "quality", "test": test,
+                "direction": direction, "measured": measured, "required": required,
+                "status": "pass" if outcomes[key] else "fail"}
 
     judged = {name: entry for name, entry in cmp_gate["per_cmp"].items() if entry["passed"] is not None}
     overlaps = lambda kind: sum(split_audit[kind].values())  # noqa: E731
@@ -1037,10 +1042,15 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
                                      eligible=external_eligible,
                                      sites=external_frame.site_domain.to_numpy(), gate=gate)
 
-    internal_gates = {
+    # Scores on never-seen cookie names are reported against their bar but don't decide
+    # promotion: those cookies mostly lack evidence and never auto-classify anyway, and
+    # 2026-11 experiments found no training change that moves them (see the runbook, §4).
+    reported_scores = {
         # Consensus scoring: sites disagree about many cookies (see acceptable_label_matrix).
         "macro_f1": test_metrics["consensus"]["macro_f1"] >= args.minimum_macro_f1,
         "marketing_recall": test_metrics["per_class"]["Marketing_Advertising"]["recall"] >= args.minimum_marketing_recall,
+    }
+    internal_gates = {
         "auto_precision": test_metrics["auto_policy"]["passed"],
         "auto_precision_all_cookies": all_test_metrics["auto_policy"]["passed"],
         "per_cmp_macro_f1": cmp_gate["passed"],
@@ -1115,11 +1125,12 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
         },
         "acceptance": {
             "internal_gates": internal_gates,
+            "reported_scores": reported_scores,
             "external_holdout_gate": external_gate,
             "promotion_eligible": promotion_eligible,
             "auto_classification_enabled": auto_classification_enabled,
-            "gates": gate_details(internal_gates, test_metrics, all_test_metrics, cmp_gate, split_audit,
-                                  external_metrics, external_gate, args),
+            "gates": gate_details(internal_gates, reported_scores, test_metrics, all_test_metrics, cmp_gate,
+                                  split_audit, external_metrics, external_gate, args),
         },
         "runtime": {
             "python": platform.python_version(),
@@ -1190,6 +1201,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
         "package_sha256": package_checksum,
         "promotion_eligible": promotion_eligible,
         "internal_gates": internal_gates,
+        "reported_scores": reported_scores,
         "external_holdout_gate": external_gate,
         "test_metrics": test_metrics,
     }

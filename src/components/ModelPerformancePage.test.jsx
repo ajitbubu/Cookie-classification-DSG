@@ -62,7 +62,7 @@ describe('ModelPerformancePage test sets', () => {
     await userEvent.click(screen.getByRole('tab', { name: 'Never-seen names' }));
     const unseen = screen.getByRole('region', { name: 'Performance by category: Never-seen names' });
     expect(within(unseen).getAllByText('40.0%').length).toBeGreaterThan(0);
-    expect(screen.getByText(/gates are judged on it/)).toBeInTheDocument();
+    expect(screen.getByText(/never-seen names come from it/)).toBeInTheDocument();
   });
 
   it('falls back to the one test an older model recorded', async () => {
@@ -122,6 +122,22 @@ describe('ModelPerformancePage gates', () => {
     expect(unjudged).toHaveClass('mp-gate--na');
     expect(within(gate('Independent external test set passes')).getByText('Not run')).toBeInTheDocument();
     expect(within(gate('Macro F1 meets the minimum')).getByText('Not met')).toBeInTheDocument();
+  });
+
+  it('shows never-seen scores as reported, not as gates, when the report says so', async () => {
+    const reportedGates = {
+      ...info.gates,
+      macro_f1: { ...info.gates.macro_f1, group: 'reported' },
+      marketing_recall: { group: 'reported', test: 'unseen', measured: 0.486, required: 0.7, status: 'fail' },
+    };
+    renderPage({ ...withGates, acceptance: { ...withGates.acceptance, gates: reportedGates } });
+    const reported = await screen.findByRole('region', { name: 'Reported, not a gate' });
+    expect(within(reported).getByText('Macro F1 on never-seen names')).toBeInTheDocument();
+    expect(within(reported).getByText('Marketing recall on never-seen names')).toBeInTheDocument();
+    expect(within(reported).getAllByText('Below the bar')).toHaveLength(2);
+    const quality = screen.getByRole('region', { name: 'Model quality' });
+    expect(within(quality).queryByText(/Macro F1/)).not.toBeInTheDocument();
+    expect(screen.getByText(/reported for tracking and don't decide promotion/)).toBeInTheDocument();
   });
 
   it('puts test setup checks in their own group', async () => {
