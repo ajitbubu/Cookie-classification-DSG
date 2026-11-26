@@ -625,17 +625,16 @@ def gate_details(
     outcomes = {**internal_gates, **reported_scores}
 
     def scored(key: str, measured: Any, required: Any, test: str, direction: str = "at_least") -> dict[str, Any]:
-        return {"group": "reported" if key in reported_scores else "quality", "test": test,
-                "direction": direction, "measured": measured, "required": required,
-                "status": "pass" if outcomes[key] else "fail"}
+        return {"group": "quality", "test": test, "direction": direction, "measured": measured,
+                "required": required, "status": "pass" if outcomes[key] else "fail"}
 
     judged = {name: entry for name, entry in cmp_gate["per_cmp"].items() if entry["passed"] is not None}
     overlaps = lambda kind: sum(split_audit[kind].values())  # noqa: E731
-    return {
+    gates = {
         "macro_f1": scored("macro_f1", test_metrics["consensus"]["macro_f1"], args.minimum_macro_f1, "unseen"),
         "marketing_recall": scored("marketing_recall", test_metrics["per_class"]["Marketing_Advertising"]["recall"],
                                    args.minimum_marketing_recall, "unseen"),
-        "auto_precision": _auto_gate_detail(test_metrics["auto_policy"], "unseen", internal_gates["auto_precision"]),
+        "auto_precision": _auto_gate_detail(test_metrics["auto_policy"], "unseen", outcomes["auto_precision"]),
         "auto_precision_all_cookies": _auto_gate_detail(all_test_metrics["auto_policy"], "all",
                                                         internal_gates["auto_precision_all_cookies"]),
         "per_cmp_macro_f1": {
@@ -655,6 +654,9 @@ def gate_details(
             "status": ("pass" if external_gate else "fail") if external_metrics else "not_run",
         },
     }
+    for key in reported_scores:
+        gates[key]["group"] = "reported"
+    return gates
 
 
 def _json_safe(value: Any) -> Any:
@@ -1043,15 +1045,16 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
                                      sites=external_frame.site_domain.to_numpy(), gate=gate)
 
     # Scores on never-seen cookie names are reported against their bar but don't decide
-    # promotion: those cookies mostly lack evidence and never auto-classify anyway, and
-    # 2026-11 experiments found no training change that moves them (see the runbook, §4).
+    # promotion: those cookies mostly lack evidence and never auto-classify anyway (so the
+    # auto-precision check rarely has enough picks to judge), and 2026-11 experiments found
+    # no training change that moves them (see the runbook, §4).
     reported_scores = {
         # Consensus scoring: sites disagree about many cookies (see acceptable_label_matrix).
         "macro_f1": test_metrics["consensus"]["macro_f1"] >= args.minimum_macro_f1,
         "marketing_recall": test_metrics["per_class"]["Marketing_Advertising"]["recall"] >= args.minimum_marketing_recall,
+        "auto_precision": test_metrics["auto_policy"]["passed"],
     }
     internal_gates = {
-        "auto_precision": test_metrics["auto_policy"]["passed"],
         "auto_precision_all_cookies": all_test_metrics["auto_policy"]["passed"],
         "per_cmp_macro_f1": cmp_gate["passed"],
         "site_holdout_is_disjoint": all(value == 0 for value in split_audit["site_domain_overlap"].values()),

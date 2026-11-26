@@ -129,12 +129,15 @@ describe('ModelPerformancePage gates', () => {
       ...info.gates,
       macro_f1: { ...info.gates.macro_f1, group: 'reported' },
       marketing_recall: { group: 'reported', test: 'unseen', measured: 0.486, required: 0.7, status: 'fail' },
+      auto_precision: { ...info.gates.auto_precision, group: 'reported' },
     };
     renderPage({ ...withGates, acceptance: { ...withGates.acceptance, gates: reportedGates } });
     const reported = await screen.findByRole('region', { name: 'Reported, not a gate' });
     expect(within(reported).getByText('Macro F1 on never-seen names')).toBeInTheDocument();
     expect(within(reported).getByText('Marketing recall on never-seen names')).toBeInTheDocument();
     expect(within(reported).getAllByText('Below the bar')).toHaveLength(2);
+    const autoUnseen = within(reported).getByText('Auto-classification precision on never-seen names').closest('li');
+    expect(within(autoUnseen).getByText('Not enough data')).toBeInTheDocument();
     const quality = screen.getByRole('region', { name: 'Model quality' });
     expect(within(quality).queryByText(/Macro F1/)).not.toBeInTheDocument();
     expect(screen.getByText(/reported for tracking and don't decide promotion/)).toBeInTheDocument();

@@ -126,8 +126,8 @@ def test_trained_report_explains_every_gate(trained):
 
 
 def test_never_seen_scores_are_reported_not_gates(trained):
-    """Macro F1 and Marketing recall on never-seen names are shown but don't decide promotion."""
+    """Scores on never-seen names (macro F1, Marketing recall, auto precision) are shown but don't decide promotion."""
     acceptance = json.loads((trained[3] / "metadata.json").read_text())["acceptance"]
-    assert set(acceptance["reported_scores"]) == {"macro_f1", "marketing_recall"}
+    assert set(acceptance["reported_scores"]) == {"macro_f1", "marketing_recall", "auto_precision"}
     assert not set(acceptance["reported_scores"]) & set(acceptance["internal_gates"])
     assert {acceptance["gates"][k]["group"] for k in acceptance["reported_scores"]} == {"reported"}

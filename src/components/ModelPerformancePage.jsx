@@ -64,6 +64,7 @@ const GATE_GROUPS = [['quality', 'Model quality'], ['reported', 'Reported, not a
 const REPORTED_LABELS = {
   macro_f1: 'Macro F1 on never-seen names',
   marketing_recall: 'Marketing recall on never-seen names',
+  auto_precision: 'Auto-classification precision on never-seen names',
 };
 const REPORTED_BELOW = { text: 'Below the bar', tone: 'na', Icon: MinusCircle };
 const GATE_STATUS = {
@@ -304,7 +305,7 @@ function ModelPerformancePage({ onNavigate }) {
           Automatic classification is {acceptance.auto_classification_enabled ? 'on' : 'off'}.
           {' '}It stays off until every gate passes; until then each model suggestion goes to the Review Queue.
           {' '}{Object.values(acceptance.gates || {}).some((gate) => gate.group === 'reported')
-            ? "Macro F1 and Marketing recall on never-seen cookie names are reported for tracking and don't decide promotion."
+            ? "Scores on never-seen cookie names are reported for tracking and don't decide promotion."
             : 'Macro F1 and Marketing recall are judged on never-seen cookie names, the strictest test.'}
           {acceptance.gates && ' Gates marked Not enough data or Not run also keep it off.'}
         </p>

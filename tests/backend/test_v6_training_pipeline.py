@@ -714,9 +714,9 @@ def test_gate_details_separate_unjudged_gates_from_failures():
     cmp = {"requirements": {"maximum_gap": 0.05}, "per_cmp": {
         "onetrust": {"passed": True, "gap": -0.01}, "ketch": {"passed": None}}}
     split = {"site_domain_overlap": {"a": 0}, "cookie_name_family_overlap": {"a": 0}}
-    internal = {"auto_precision": False, "auto_precision_all_cookies": False, "per_cmp_macro_f1": True,
+    internal = {"auto_precision_all_cookies": False, "per_cmp_macro_f1": True,
                 "site_holdout_is_disjoint": True, "name_holdout_is_disjoint": True}
-    reported = {"macro_f1": False, "marketing_recall": False}
+    reported = {"macro_f1": False, "marketing_recall": False, "auto_precision": False}
     gates = gate_details(internal, reported, test, all_cookies, cmp, split, None, False,
                          Namespace(minimum_macro_f1=0.75, minimum_marketing_recall=0.70))
 
@@ -728,3 +728,5 @@ def test_gate_details_separate_unjudged_gates_from_failures():
     assert (gates["macro_f1"]["measured"], gates["macro_f1"]["required"], gates["macro_f1"]["test"]) == (0.44, 0.75, "unseen")
     assert (gates["macro_f1"]["group"], gates["macro_f1"]["status"]) == ("reported", "fail")
     assert gates["marketing_recall"]["group"] == "reported"
+    assert (gates["auto_precision"]["group"], gates["auto_precision"]["status"]) == ("reported", "not_enough_data")
+    assert gates["auto_precision_all_cookies"]["group"] == "quality"
