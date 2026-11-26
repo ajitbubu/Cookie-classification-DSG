@@ -74,8 +74,13 @@ const listOf = (names = []) => names.map((n) => CMP_NAMES[n] || n).join(', ') ||
 function gateDetail(key, gate) {
   const { measured: m, required: r, detail: d = {} } = gate;
   const test = TEST_NAMES[gate.test];
-  if (key === 'macro_f1') return `${decimal(m)} measured · needs ${decimal(r)} or more · ${test}`;
-  if (key === 'marketing_recall') return `${percent(m)} measured · needs ${percent(r)} or more · ${test}`;
+  const failed = gate.status === 'fail' && m != null && r != null;
+  if (key === 'macro_f1') {
+    return `${decimal(m)} measured · needs ${decimal(r)} or more${failed ? ` · ${decimal(r - m)} short` : ''} · ${test}`;
+  }
+  if (key === 'marketing_recall') {
+    return `${percent(m)} measured · needs ${percent(r)} or more${failed ? ` · ${((r - m) * 100).toFixed(1)} points short` : ''} · ${test}`;
+  }
   if (key.startsWith('auto_precision')) {
     return gate.status === 'not_enough_data'
       ? `${d.predictions} confident picks on ${d.sites} websites · needs ${d.minimum_predictions} picks on ${d.minimum_sites} websites to judge · ${test}`
@@ -90,6 +95,32 @@ function gateDetail(key, gate) {
   if (key === 'name_holdout_is_disjoint') return `${m} test cookie names also in training · needs 0`;
   if (key === 'external_holdout') {
     return gate.status === 'not_run' ? 'No external test set has been provided' : `Macro F1 ${decimal(m)} · needs ${decimal(r)} or more`;
+  }
+  return null;
+}
+
+// For a failed score gate: the categories behind the shortfall, read from the test it was judged on.
+// confusion_matrix rows are the true category and columns the pick, both in per_class order.
+function gateReason(key, gate, metrics) {
+  if (gate.status !== 'fail') return null;
+  const scores = TEST_SETS.find((set) => set.id === gate.test)?.pick(metrics);
+  const classes = Object.keys(scores?.per_class || {});
+  if (key === 'macro_f1' && classes.length) {
+    const weakest = classes
+      .map((c) => [c, scores.per_class[c]['f1-score']])
+      .sort((a, b) => a[1] - b[1])
+      .slice(0, 2);
+    return `Weakest categories: ${weakest.map(([c, f1]) => `${formatCategory(c)} ${decimal(f1)}`).join(', ')}`;
+  }
+  if (key === 'marketing_recall') {
+    const row = scores?.confusion_matrix?.[classes.indexOf('Marketing_Advertising')];
+    if (!row || row.length !== classes.length) return null;
+    const missed = classes
+      .map((c, i) => [c, row[i]])
+      .filter(([c, n]) => c !== 'Marketing_Advertising' && n > 0)
+      .sort((a, b) => b[1] - a[1]);
+    if (!missed.length) return null;
+    return `Missed marketing cookies were labelled ${missed.map(([c, n]) => `${formatCategory(c)} (${n})`).join(', ')}`;
   }
   return null;
 }
@@ -279,12 +310,14 @@ function ModelPerformancePage({ onNavigate }) {
                 {entries.map(([key, gate]) => {
                   const { text, tone, Icon } = GATE_STATUS[gate.status] || GATE_STATUS.fail;
                   const detail = gateDetail(key, gate);
+                  const reason = gateReason(key, gate, info.metrics);
                   return (
                     <li key={key} className={`mp-gate mp-gate--${tone}`}>
                       <Icon size={16} aria-hidden="true" />
                       <span className="mp-gate__text">
                         <span>{GATE_LABELS[key] || formatCategory(key)}</span>
                         {detail && <span className="mp-gate__detail">{detail}</span>}
+                        {reason && <span className="mp-gate__detail">{reason}</span>}
                       </span>
                       <span className="mp-gate__status">{text}</span>
                     </li>

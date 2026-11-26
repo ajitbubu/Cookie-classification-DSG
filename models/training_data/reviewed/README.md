@@ -12,6 +12,11 @@ training (77 sites). Built by `backend/scripts/build_review_sheet.py`.
 The sheet is **blind**: the website's own category and the model's guess are
 left out on purpose, so they don't anchor the reviewer.
 
+**Status (2026-11-26):** fully reviewed: 308 cookies labelled, 26 marked `?`. The
+reviewer agrees with the website's own label on 55.8% of them, and v7.1.0 scores
+macro F1 0.420 against the reviewed labels (0.439 against the websites' labels).
+These are v7.1.0's test cookies: score models against them, don't train on them.
+
 ### How to fill it in
 
 For each row, put one code in `reviewed_label`:
