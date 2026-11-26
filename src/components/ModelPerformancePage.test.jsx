@@ -81,9 +81,37 @@ describe('ModelPerformancePage gates', () => {
   it('shows each gate with what it measured and what it needs', async () => {
     renderPage(withGates);
     await screen.findByText('Model quality');
-    expect(within(gate('Macro F1 meets the minimum')).getByText('0.438 measured · needs 0.750 or more · never-seen names')).toBeInTheDocument();
+    expect(within(gate('Macro F1 meets the minimum')).getByText('0.438 measured · needs 0.750 or more · 0.312 short · never-seen names')).toBeInTheDocument();
     expect(within(gate('Auto-classification precision meets the target (all cookies on test websites)'))
       .getByText('Lower estimate 90.0% (measured 94.3% on 887 picks, 99 websites) · needs 95.0% · all cookies')).toBeInTheDocument();
+  });
+
+  it('says how far a failed score is short and which categories pull it down', async () => {
+    const classes = {
+      Analytics_Performance: { precision: 0.41, recall: 0.42, 'f1-score': 0.415, support: 66 },
+      Functional: { precision: 0.42, recall: 0.11, 'f1-score': 0.179, support: 44 },
+      Marketing_Advertising: { precision: 0.47, recall: 0.486, 'f1-score': 0.477, support: 74 },
+      Strictly_Necessary: { precision: 0.63, recall: 0.74, 'f1-score': 0.681, support: 150 },
+    };
+    renderPage({
+      ...withGates,
+      acceptance: { ...withGates.acceptance, gates: {
+        ...info.gates,
+        marketing_recall: { group: 'quality', test: 'unseen', measured: 0.486, required: 0.7, status: 'fail' },
+      } },
+      metrics: { ...info.metrics, internal_site_holdout: {
+        accuracy: 0.539, macro_f1: 0.438, per_class: classes,
+        // Rows are the true category, columns the pick, in per_class order.
+        confusion_matrix: [[28, 4, 11, 23], [8, 5, 10, 21], [17, 0, 36, 21], [16, 3, 20, 111]],
+      } },
+    });
+    await screen.findByText('Model quality');
+    const macro = gate('Macro F1 meets the minimum');
+    expect(within(macro).getByText('0.438 measured · needs 0.750 or more · 0.312 short · never-seen names')).toBeInTheDocument();
+    expect(within(macro).getByText('Weakest categories: Functional 0.179, Analytics 0.415')).toBeInTheDocument();
+    const marketing = gate('Marketing recall meets the minimum');
+    expect(within(marketing).getByText('48.6% measured · needs 70.0% or more · 21.4 points short · never-seen names')).toBeInTheDocument();
+    expect(within(marketing).getByText('Missed marketing cookies were labelled Strictly Necessary (21), Analytics (17)')).toBeInTheDocument();
   });
 
   it('marks gates that could not be judged as grey, not failed', async () => {
