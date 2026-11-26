@@ -36,7 +36,7 @@ const TEST_SETS = [
   {
     id: 'unseen',
     label: 'Never-seen names',
-    description: 'Only cookies whose names never appear on a training website, the strictest test. The Macro F1 and Marketing recall gates are judged on it.',
+    description: 'Only cookies whose names never appear on a training website, the strictest test. The Macro F1 and Marketing recall scores on never-seen names come from it.',
     pick: (metrics) => metrics?.internal_site_holdout,
   },
 ];
@@ -59,7 +59,14 @@ const GATE_LABELS = {
 
 // acceptance.gates (v7.1.0+ reports): each gate's measured value, its bar and a status.
 // Not enough data / Not run are grey: nothing failed, but the gate still keeps auto off.
-const GATE_GROUPS = [['quality', 'Model quality'], ['setup', 'Test setup checks']];
+// "reported" (newer reports): scored against a bar for tracking, but never blocks promotion.
+const GATE_GROUPS = [['quality', 'Model quality'], ['reported', 'Reported, not a gate'], ['setup', 'Test setup checks']];
+const REPORTED_LABELS = {
+  macro_f1: 'Macro F1 on never-seen names',
+  marketing_recall: 'Marketing recall on never-seen names',
+  auto_precision: 'Auto-classification precision on never-seen names',
+};
+const REPORTED_BELOW = { text: 'Below the bar', tone: 'na', Icon: MinusCircle };
 const GATE_STATUS = {
   pass: { text: 'Pass', tone: 'pass', Icon: CheckCircle2 },
   fail: { text: 'Not met', tone: 'fail', Icon: XCircle },
@@ -297,7 +304,9 @@ function ModelPerformancePage({ onNavigate }) {
         <p className="mp-card__desc">
           Automatic classification is {acceptance.auto_classification_enabled ? 'on' : 'off'}.
           {' '}It stays off until every gate passes; until then each model suggestion goes to the Review Queue.
-          {' '}Macro F1 and Marketing recall are judged on never-seen cookie names, the strictest test.
+          {' '}{Object.values(acceptance.gates || {}).some((gate) => gate.group === 'reported')
+            ? "Scores on never-seen cookie names are reported for tracking and don't decide promotion."
+            : 'Macro F1 and Marketing recall are judged on never-seen cookie names, the strictest test.'}
           {acceptance.gates && ' Gates marked Not enough data or Not run also keep it off.'}
         </p>
         {acceptance.gates ? GATE_GROUPS.map(([group, title]) => {
@@ -308,14 +317,15 @@ function ModelPerformancePage({ onNavigate }) {
               <h4 className="mp-gate-group__title" id={`mp-gates-${group}`}>{title}</h4>
               <ul className="mp-gates">
                 {entries.map(([key, gate]) => {
-                  const { text, tone, Icon } = GATE_STATUS[gate.status] || GATE_STATUS.fail;
+                  const reportedBelow = group === 'reported' && gate.status === 'fail';
+                  const { text, tone, Icon } = reportedBelow ? REPORTED_BELOW : GATE_STATUS[gate.status] || GATE_STATUS.fail;
                   const detail = gateDetail(key, gate);
                   const reason = gateReason(key, gate, info.metrics);
                   return (
                     <li key={key} className={`mp-gate mp-gate--${tone}`}>
                       <Icon size={16} aria-hidden="true" />
                       <span className="mp-gate__text">
-                        <span>{GATE_LABELS[key] || formatCategory(key)}</span>
+                        <span>{(group === 'reported' && REPORTED_LABELS[key]) || GATE_LABELS[key] || formatCategory(key)}</span>
                         {detail && <span className="mp-gate__detail">{detail}</span>}
                         {reason && <span className="mp-gate__detail">{reason}</span>}
                       </span>

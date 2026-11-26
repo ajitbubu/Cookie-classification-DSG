@@ -114,11 +114,20 @@ def test_trainer_reports_reviewed_scores_from_a_filled_sheet(trained, tmp_path):
 
 def test_trained_report_explains_every_gate(trained):
     gates = json.loads((trained[3] / "metadata.json").read_text())["acceptance"]["gates"]
-    internal = json.loads((trained[3] / "metadata.json").read_text())["acceptance"]["internal_gates"]
-    assert set(gates) == set(internal) | {"external_holdout"}
+    acceptance = json.loads((trained[3] / "metadata.json").read_text())["acceptance"]
+    internal, reported = acceptance["internal_gates"], acceptance["reported_scores"]
+    assert set(gates) == set(internal) | set(reported) | {"external_holdout"}
     assert gates["external_holdout"]["status"] == "not_run"
     assert {gates[k]["group"] for k in ("site_holdout_is_disjoint", "name_holdout_is_disjoint")} == {"setup"}
     assert gates["macro_f1"]["required"] == 0.75 and gates["marketing_recall"]["required"] == 0.70
-    for key, passed in internal.items():
+    for key, passed in {**internal, **reported}.items():
         if gates[key]["status"] in ("pass", "fail"):
             assert (gates[key]["status"] == "pass") is passed
+
+
+def test_never_seen_scores_are_reported_not_gates(trained):
+    """Scores on never-seen names (macro F1, Marketing recall, auto precision) are shown but don't decide promotion."""
+    acceptance = json.loads((trained[3] / "metadata.json").read_text())["acceptance"]
+    assert set(acceptance["reported_scores"]) == {"macro_f1", "marketing_recall", "auto_precision"}
+    assert not set(acceptance["reported_scores"]) & set(acceptance["internal_gates"])
+    assert {acceptance["gates"][k]["group"] for k in acceptance["reported_scores"]} == {"reported"}
