@@ -417,7 +417,7 @@ Read `models/v<version>/metadata.json`:
 |---|---|
 | `acceptance.reported_scores.macro_f1` | **Reported, not a gate.** Macro F1 on never-seen names ≥ 0.75 (`--minimum-macro-f1`) |
 | `acceptance.reported_scores.marketing_recall` | **Reported, not a gate.** Marketing recall on never-seen names ≥ 0.70 (`--minimum-marketing-recall`) |
-| `acceptance.internal_gates.auto_precision` | on **new cookie names** in the test set: ≥ 100 auto-classified predictions from ≥ 20 sites, with Wilson and site-bootstrap lower bounds ≥ 95% |
+| `acceptance.reported_scores.auto_precision` | **Reported, not a gate.** On **new cookie names** in the test set: ≥ 100 auto-classified predictions from ≥ 20 sites, with Wilson and site-bootstrap lower bounds ≥ 95% |
 | `acceptance.internal_gates.auto_precision_all_cookies` | the same rule on **all cookies** of the test sites (`metrics.internal_site_holdout_all_cookies`) |
 | `acceptance.internal_gates.per_cmp_macro_f1` | each CMP with ≥ 300 test rows from ≥ 20 sites is within 5 points of overall macro F1 (needs `--evidence-sidecar`) |
 | `acceptance.internal_gates.site_holdout_is_disjoint`, `name_holdout_is_disjoint` | no site, and no cookie-name family, in both train and test |
